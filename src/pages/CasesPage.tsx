@@ -60,6 +60,34 @@ export default function CasesPage() {
                   value
                 ),
             },
+            {
+              title: "Citation",
+              dataIndex: "citation",
+            },
+            {
+              title: "Decision date",
+              dataIndex: "decisionDate",
+            },
+            {
+              title: "Court",
+              dataIndex: "court",
+            },
+            {
+              title: "Summary",
+              dataIndex: "summary",
+            },
+            {
+              title: "Opinion URL",
+              dataIndex: "opinionUrl",
+              render: (value) =>
+                value ? (
+                  <a href={value} target="_blank" rel="noreferrer">
+                    Link
+                  </a>
+                ) : (
+                  ""
+                ),
+            },
           ]}
           dataSource={cases}
           loading={filesLoading}
