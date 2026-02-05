@@ -9,14 +9,23 @@ const schema = a.schema({
     .model({
       caseId: a.string().required(),
       caseName: a.string().required(),
+      slipOp: a.string(),
+      ny3dCite: a.string(),
       opinionUrl: a.url().required(),
       court: a.string(),
       decisionDate: a.date(),
+      arguedDate: a.date(),
+      correctedDate: a.date(),
       citation: a.string(),
+      lowerCourtCite: a.string(),
+      disposition: a.string(),
+      authoringJudge: a.string(),
+      partiesCaption: a.string(),
+      statutesCited: a.string().array(),
       summary: a.string(),
     })
     .identifier(["caseId"])
-    .authorization((allow) => [allow.publicApiKey().to(["read"])]),
+    .authorization((allow) => [allow.publicApiKey().to(["read", "update"])]),
 
   Tag: a
     .model({
