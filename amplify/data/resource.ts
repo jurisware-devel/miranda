@@ -16,7 +16,7 @@ const schema = a.schema({
       summary: a.string(),
     })
     .identifier(["caseId"])
-    .authorization((allow) => [allow.owner()]),
+    .authorization((allow) => [allow.authenticated.to(["read"])]),
 
   Tag: a
     .model({
@@ -24,7 +24,7 @@ const schema = a.schema({
       label: a.string().required(),
     })
     .identifier(["tagId"])
-    .authorization((allow) => [allow.owner()]),
+    .authorization((allow) => [allow.authenticated.to(["read"])]),
 
   CaseTag: a
     .model({
@@ -33,6 +33,14 @@ const schema = a.schema({
     })
     .identifier(["caseId", "tagId"])
     .secondaryIndexes((index) => [index("tagId").sortKeys(["caseId"])])
+    .authorization((allow) => [allow.authenticated.to(["read"])]),
+
+  Profile: a
+    .model({
+      displayName: a.string(),
+      bio: a.string(),
+      avatarUrl: a.url(),
+    })
     .authorization((allow) => [allow.owner()]),
 });
 
