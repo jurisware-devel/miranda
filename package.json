@@ -4,13 +4,16 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
+    "generate:texts-index": "node scripts/generate-texts-index.mjs",
+    "dev": "npm run generate:texts-index && vite",
+    "build": "npm run generate:texts-index && tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@ant-design/icons": "^6.1.0",
     "@aws-amplify/ui-react": "~6.13.2",
+    "antd": "^6.2.3",
     "aws-amplify": "~6.15.10",
     "react": "~18.3.1",
     "react-dom": "~18.3.1"

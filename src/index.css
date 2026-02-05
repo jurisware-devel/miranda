@@ -15,6 +15,12 @@ main {
   align-items: stretch;
 }
 
+.table-shell {
+  max-height: calc(100vh - 200px);
+  overflow: auto;
+  padding-bottom: 8px;
+}
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -62,4 +68,37 @@ li:hover {
 a {
   font-weight: 800;
   text-decoration: none;
+}
+
+.pagination-bar {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(100%, 960px);
+  bottom: 0;
+  padding: 12px 24px;
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  z-index: 10;
+}
+
+.pagination-bar .ant-pagination {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 8px;
+  align-items: center;
+  flex-direction: row;
+}
+
+.pagination-bar .ant-pagination-item,
+.pagination-bar .ant-pagination-prev,
+.pagination-bar .ant-pagination-next {
+  margin: 0;
+  display: inline-flex;
+}
+
+.pagination-bar .ant-pagination > li {
+  display: inline-flex;
 }

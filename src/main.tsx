@@ -4,6 +4,7 @@ import App from "./App.tsx";
 import "./index.css";
 import { Authenticator } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
+import 'antd/dist/reset.css';
 import { Amplify } from "aws-amplify";
 import outputs from "../amplify_outputs.json";
 
