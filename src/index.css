@@ -213,17 +213,6 @@ body {
   left: 12px;
 }
 
-.grid-card__edit {
-  position: absolute;
-  top: 6px;
-  right: 6px;
-  color: rgba(0, 0, 0, 0.55);
-}
-
-.grid-card__edit:hover {
-  color: rgba(0, 0, 0, 0.85);
-}
-
 .card-grid__loading {
   display: flex;
   align-items: center;
@@ -260,6 +249,21 @@ body {
   font-weight: 700;
   font-size: 22px;
   text-align: center;
+}
+
+.case-detail__title-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.case-detail__edit {
+  color: rgba(0, 0, 0, 0.55);
+}
+
+.case-detail__edit:hover {
+  color: rgba(0, 0, 0, 0.85);
 }
 
 .case-detail__meta {

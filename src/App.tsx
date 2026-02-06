@@ -13,7 +13,7 @@ import {
 } from "antd";
 import { ArrowLeftOutlined, EditOutlined } from "@ant-design/icons";
 import { generateClient } from "aws-amplify/data";
-import { Route, Routes, useNavigate, useParams } from "react-router-dom";
+import { Route, Routes, useLocation, useNavigate, useParams } from "react-router-dom";
 import type { Schema } from "../amplify/data/resource";
 
 const { Header, Footer, Content } = Layout;
@@ -116,6 +116,7 @@ const CaseDetail: React.FC<CaseDetailProps> = ({
   const [saveLoading, setSaveLoading] = useState(false);
   const [saveError, setSaveError] = useState<string | null>(null);
   const [saveSuccess, setSaveSuccess] = useState<string | null>(null);
+  const [isEditing, setIsEditing] = useState(editable);
 
   useEffect(() => {
     let active = true;
@@ -180,25 +181,34 @@ const CaseDetail: React.FC<CaseDetailProps> = ({
     };
   }, [caseItem?.opinionUrl]);
 
+  const resetFormState = (item: CaseItem | null) => {
+    if (!item) return;
+    setFormState({
+      caseName: item.caseName ?? "",
+      slipOp: item.slipOp ?? "",
+      ny3dCite: item.ny3dCite ?? "",
+      court: item.court ?? "",
+      decisionDate: normalizeDate(item.decisionDate),
+      arguedDate: normalizeDate(item.arguedDate),
+      correctedDate: normalizeDate(item.correctedDate),
+      lowerCourtCite: item.lowerCourtCite ?? "",
+      disposition: item.disposition ?? "",
+      authoringJudge: item.authoringJudge ?? "",
+      partiesCaption: item.partiesCaption ?? "",
+    });
+  };
+
   useEffect(() => {
     if (!caseItem) return;
-    setFormState({
-      caseName: caseItem.caseName ?? "",
-      slipOp: caseItem.slipOp ?? "",
-      ny3dCite: caseItem.ny3dCite ?? "",
-      court: caseItem.court ?? "",
-      decisionDate: normalizeDate(caseItem.decisionDate),
-      arguedDate: normalizeDate(caseItem.arguedDate),
-      correctedDate: normalizeDate(caseItem.correctedDate),
-      lowerCourtCite: caseItem.lowerCourtCite ?? "",
-      disposition: caseItem.disposition ?? "",
-      authoringJudge: caseItem.authoringJudge ?? "",
-      partiesCaption: caseItem.partiesCaption ?? "",
-    });
+    resetFormState(caseItem);
   }, [caseItem]);
 
+  useEffect(() => {
+    setIsEditing(editable);
+  }, [editable]);
+
   const handleSave = async () => {
-    if (!caseItem) return;
+    if (!caseItem) return false;
     try {
       setSaveLoading(true);
       setSaveError(null);
@@ -225,11 +235,20 @@ const CaseDetail: React.FC<CaseDetailProps> = ({
         onCaseUpdated(updated);
       }
       setSaveSuccess("Saved");
+      return true;
     } catch (err) {
       setSaveError(err instanceof Error ? err.message : "Failed to save");
+      return false;
     } finally {
       setSaveLoading(false);
     }
+  };
+
+  const handleCancelEdit = () => {
+    resetFormState(caseItem);
+    setSaveError(null);
+    setSaveSuccess(null);
+    setIsEditing(false);
   };
 
   const title = caseItem?.caseName ?? caseId ?? "Case";
@@ -264,12 +283,20 @@ const CaseDetail: React.FC<CaseDetailProps> = ({
         </div>
       ) : caseItem ? (
         <div className="case-detail__panel">
-          <div className="case-detail__title">{title}</div>
+          <div className="case-detail__title-row">
+            <div className="case-detail__title">{title}</div>
+            <Button
+              className="case-detail__edit"
+              type="text"
+              icon={<EditOutlined />}
+              onClick={() => setIsEditing(true)}
+            />
+          </div>
           <div className="case-detail__meta">{citeLine}</div>
           <div className="case-detail__author">
             {caseItem.authoringJudge || "Memorandum"}
           </div>
-          {editable ? (
+          {isEditing ? (
             <div className="case-detail__form">
               <div className="case-detail__form-row">
                 <label>Case Name</label>
@@ -408,8 +435,17 @@ const CaseDetail: React.FC<CaseDetailProps> = ({
                 />
               </div>
               <div className="case-detail__form-actions">
-                <Button onClick={() => navigate(-1)}>Cancel</Button>
-                <Button type="primary" loading={saveLoading} onClick={handleSave}>
+                <Button onClick={handleCancelEdit}>Cancel</Button>
+                <Button
+                  type="primary"
+                  loading={saveLoading}
+                  onClick={async () => {
+                    const saved = await handleSave();
+                    if (saved) {
+                      setIsEditing(false);
+                    }
+                  }}
+                >
                   Save
                 </Button>
               </div>
@@ -446,6 +482,8 @@ const App: React.FC = () => {
   const [filtersOpen, setFiltersOpen] = useState(false);
   const screens = Grid.useBreakpoint();
   const isMobile = !screens.sm;
+  const location = useLocation();
+  const isCaseView = location.pathname.startsWith("/case/");
 
   const sortedCases = useMemo(() => {
     return [...cases].sort((a, b) => {
@@ -592,7 +630,7 @@ const App: React.FC = () => {
     <Layout className="app-shell" style={{ background: "transparent" }}>
       <Header className="app-header">
         <div className="app-header-title">Miranda</div>
-        {isMobile ? (
+        {isCaseView ? null : isMobile ? (
           <Button
             type="text"
             className="app-header-filter-toggle"
@@ -670,18 +708,12 @@ const App: React.FC = () => {
                         : "—";
                       const citeLine = `${cite} (${decision})`;
                       const handleReviewClick = () =>
-                        navigate(`/case/${data.caseId}/edit`);
+                        navigate(`/case/${data.caseId}`);
                       return (
                         <Card key={data.caseId ?? index} className="grid-card" size="small">
                           <div className="grid-card__badge">
                             <span className="badge badge--coa">CoA</span>
                           </div>
-                          <Button
-                            className="grid-card__edit"
-                            type="text"
-                            icon={<EditOutlined />}
-                            onClick={() => navigate(`/case/${data.caseId}/edit`)}
-                          />
                           <div className="grid-card__title">
                             <button
                               type="button"
@@ -742,15 +774,17 @@ const App: React.FC = () => {
         </Routes>
       </Content>
       <Footer className="app-footer">
-        <div className="pagination-wrap">
-          <Pagination
-            current={currentPage}
-            pageSize={pageSize}
-            total={summaries.length}
-            showSizeChanger={false}
-            onChange={(page) => setCurrentPage(page)}
-          />
-        </div>
+        {isCaseView ? null : (
+          <div className="pagination-wrap">
+            <Pagination
+              current={currentPage}
+              pageSize={pageSize}
+              total={summaries.length}
+              showSizeChanger={false}
+              onChange={(page) => setCurrentPage(page)}
+            />
+          </div>
+        )}
       </Footer>
     </Layout>
   );
