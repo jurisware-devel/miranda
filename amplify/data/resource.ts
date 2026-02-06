@@ -11,7 +11,7 @@ const schema = a.schema({
       caseName: a.string().required(),
       slipOp: a.string(),
       ny3dCite: a.string(),
-      opinionUrl: a.url().required(),
+      opinionUrl: a.string().required(),
       court: a.string(),
       decisionDate: a.date(),
       arguedDate: a.date(),
@@ -25,7 +25,7 @@ const schema = a.schema({
       summary: a.string(),
     })
     .identifier(["caseId"])
-    .authorization((allow) => [allow.publicApiKey().to(["read", "update"])]),
+    .authorization((allow) => [allow.publicApiKey().to(["read", "update", "delete"])]),
 
   Tag: a
     .model({
@@ -33,7 +33,7 @@ const schema = a.schema({
       label: a.string().required(),
     })
     .identifier(["tagId"])
-    .authorization((allow) => [allow.publicApiKey().to(["create", "read"])]),
+    .authorization((allow) => [allow.publicApiKey().to(["create", "read", "delete"])]),
 
   CaseTag: a
     .model({

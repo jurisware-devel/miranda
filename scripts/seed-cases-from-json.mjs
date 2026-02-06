@@ -1,4 +1,4 @@
-import { readFile } from "node:fs/promises";
+import { readFile, readdir } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { generateClient } from "aws-amplify/data";
@@ -13,11 +13,27 @@ const outputs = JSON.parse(await readFile(outputsPath, "utf-8"));
 Amplify.configure(outputs);
 const client = generateClient();
 
-const indexPath = path.join(repoRoot, "public", "texts", "coa", "index.json");
+const coaDir = path.join(repoRoot, "public", "texts", "coa");
 
 async function main() {
-  const payload = JSON.parse(await readFile(indexPath, "utf-8"));
-  const items = Array.isArray(payload.items) ? payload.items : [];
+const items = [];
+const OPINION_URL_BASE =
+  process.env.OPINION_URL_BASE ?? "https://miranda.jurisware.com/texts/";
+  const yearDirs = (await readdir(coaDir, { withFileTypes: true })).filter(
+    (entry) => entry.isDirectory() && /^\d{4}$/.test(entry.name)
+  );
+
+  for (const yearDir of yearDirs) {
+    const indexPath = path.join(coaDir, yearDir.name, "index.json");
+    try {
+      const payload = JSON.parse(await readFile(indexPath, "utf-8"));
+      if (Array.isArray(payload.items)) {
+        items.push(...payload.items);
+      }
+    } catch (err) {
+      console.log(`Skip ${indexPath}: ${err instanceof Error ? err.message : err}`);
+    }
+  }
 
   let created = 0;
   let failed = 0;
@@ -32,12 +48,14 @@ async function main() {
       continue;
     }
 
+    const opinionUrl =
+      item.opinionUrl ?? `coa/${item.caseId.slice(0, 4)}/${item.caseId}.txt`;
     const { errors } = await client.models.Case.create({
       caseId: item.caseId,
       caseName: item.caseName,
       slipOp: item.slipOp ?? undefined,
       ny3dCite: item.ny3dCite ?? undefined,
-      opinionUrl: item.opinionUrl,
+      opinionUrl,
       court: item.court ?? undefined,
       decisionDate: item.decisionDate ?? undefined,
       arguedDate: item.arguedDate ?? undefined,

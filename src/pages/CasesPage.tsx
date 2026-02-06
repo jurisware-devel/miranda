@@ -57,14 +57,17 @@ export default function CasesPage() {
               dataIndex: "caseName",
               width: 200,
               ellipsis: true,
-              render: (value, record) =>
-                record.opinionUrl ? (
-                  <a href={record.opinionUrl} target="_blank" rel="noreferrer">
+              render: (value, record) => {
+                if (!record.opinionUrl) return value;
+                const href = record.opinionUrl.startsWith("http")
+                  ? record.opinionUrl
+                  : `https://miranda.jurisware.com/texts/${record.opinionUrl}`;
+                return (
+                  <a href={href} target="_blank" rel="noreferrer">
                     {value}
                   </a>
-                ) : (
-                  value
-                ),
+                );
+              },
             },
             {
               title: "Case ID",
@@ -156,14 +159,17 @@ export default function CasesPage() {
               dataIndex: "opinionUrl",
               width: 140,
               ellipsis: true,
-              render: (value) =>
-                value ? (
-                  <a href={value} target="_blank" rel="noreferrer">
+              render: (value) => {
+                if (!value) return "";
+                const href = value.startsWith("http")
+                  ? value
+                  : `https://miranda.jurisware.com/texts/${value}`;
+                return (
+                  <a href={href} target="_blank" rel="noreferrer">
                     Link
                   </a>
-                ) : (
-                  ""
-                ),
+                );
+              },
             },
           ]}
           dataSource={cases.slice((currentPage - 1) * pageSize, currentPage * pageSize)}
