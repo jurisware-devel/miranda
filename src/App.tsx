@@ -59,6 +59,7 @@ type CaseDetailProps = {
   loading: boolean;
   error: string | null;
   editable?: boolean;
+  onCaseUpdated?: (updated: CaseItem) => void;
 };
 
 type CaseFormState = {
@@ -96,6 +97,7 @@ const CaseDetail: React.FC<CaseDetailProps> = ({
   loading,
   error,
   editable = false,
+  onCaseUpdated,
 }) => {
   const { caseId } = useParams();
   const navigate = useNavigate();
@@ -212,7 +214,11 @@ const CaseDetail: React.FC<CaseDetailProps> = ({
         partiesCaption: formState.partiesCaption.trim() || undefined,
       };
       const result = await client.models.Case.update(payload);
-      setCaseItem((result?.data ?? null) as CaseItem | null);
+      const updated = (result?.data ?? null) as CaseItem | null;
+      setCaseItem(updated);
+      if (updated && onCaseUpdated) {
+        onCaseUpdated(updated);
+      }
       setSaveSuccess("Saved");
     } catch (err) {
       setSaveError(err instanceof Error ? err.message : "Failed to save");
@@ -568,6 +574,11 @@ const App: React.FC = () => {
   }, []);
 
   const navigate = useNavigate();
+  const handleCaseUpdated = (updated: CaseItem) => {
+    setCases((prev) =>
+      prev.map((item) => (item.caseId === updated.caseId ? updated : item)),
+    );
+  };
 
   return (
     <Layout className="app-shell" style={{ background: "transparent" }}>
@@ -670,7 +681,14 @@ const App: React.FC = () => {
           />
           <Route
             path="/case/:caseId"
-            element={<CaseDetail cases={cases} loading={loading} error={error} />}
+            element={
+              <CaseDetail
+                cases={cases}
+                loading={loading}
+                error={error}
+                onCaseUpdated={handleCaseUpdated}
+              />
+            }
           />
           <Route
             path="/case/:caseId/edit"
@@ -680,6 +698,7 @@ const App: React.FC = () => {
                 loading={loading}
                 error={error}
                 editable
+                onCaseUpdated={handleCaseUpdated}
               />
             }
           />
