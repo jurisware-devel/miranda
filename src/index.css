@@ -75,8 +75,21 @@ body {
   font-size: 18px;
 }
 
-.app-header-filter {
+.app-header-filters {
   margin-left: auto;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.app-header-filter {
+  display: flex;
+  align-items: center;
+}
+
+.app-header-filter-toggle {
+  margin-left: auto;
+  color: #fff;
 }
 
 .masonry-wrap {
@@ -84,6 +97,16 @@ body {
   height: 100%;
   padding: 16px;
   box-sizing: border-box;
+}
+
+.filter-panel {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 

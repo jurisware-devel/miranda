@@ -3,6 +3,7 @@ import {
   Alert,
   Button,
   Card,
+  Grid,
   Input,
   Layout,
   Masonry,
@@ -438,6 +439,9 @@ const App: React.FC = () => {
   const [debouncedNameQuery, setDebouncedNameQuery] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const pageSize = 100;
+  const [filtersOpen, setFiltersOpen] = useState(false);
+  const screens = Grid.useBreakpoint();
+  const isMobile = !screens.sm;
 
   const sortedCases = useMemo(() => {
     return [...cases].sort((a, b) => {
@@ -584,25 +588,37 @@ const App: React.FC = () => {
     <Layout className="app-shell" style={{ background: "transparent" }}>
       <Header className="app-header">
         <div className="app-header-title">Miranda</div>
-        <div className="app-header-filter">
-          <Select
-            allowClear
-            placeholder="Author"
-            options={authorOptions}
-            value={selectedAuthor ?? undefined}
-            onChange={(value) => setSelectedAuthor(value ?? null)}
-            style={{ minWidth: 200 }}
-          />
-        </div>
-        <div className="app-header-filter">
-          <Input
-            placeholder="Search case name"
-            value={nameQuery}
-            allowClear
-            onChange={(event) => setNameQuery(event.target.value)}
-            style={{ minWidth: 240 }}
-          />
-        </div>
+        {isMobile ? (
+          <Button
+            type="text"
+            className="app-header-filter-toggle"
+            onClick={() => setFiltersOpen((open) => !open)}
+          >
+            Filters
+          </Button>
+        ) : (
+          <div className="app-header-filters">
+            <div className="app-header-filter">
+              <Select
+                allowClear
+                placeholder="Author"
+                options={authorOptions}
+                value={selectedAuthor ?? undefined}
+                onChange={(value) => setSelectedAuthor(value ?? null)}
+                style={{ minWidth: 200 }}
+              />
+            </div>
+            <div className="app-header-filter">
+              <Input
+                placeholder="Search case name"
+                value={nameQuery}
+                allowClear
+                onChange={(event) => setNameQuery(event.target.value)}
+                style={{ minWidth: 240 }}
+              />
+            </div>
+          </div>
+        )}
       </Header>
       <Content className="app-content">
         <Routes>
@@ -610,6 +626,23 @@ const App: React.FC = () => {
             path="/"
             element={
               <div className="masonry-wrap">
+                {isMobile && filtersOpen ? (
+                  <div className="filter-panel">
+                    <Select
+                      allowClear
+                      placeholder="Author"
+                      options={authorOptions}
+                      value={selectedAuthor ?? undefined}
+                      onChange={(value) => setSelectedAuthor(value ?? null)}
+                    />
+                    <Input
+                      placeholder="Search case name"
+                      value={nameQuery}
+                      allowClear
+                      onChange={(event) => setNameQuery(event.target.value)}
+                    />
+                  </div>
+                ) : null}
                 {error ? <Alert type="error" message={error} showIcon /> : null}
                 {loading ? (
                   <div className="card-grid__loading">
