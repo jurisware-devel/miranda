@@ -4,9 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "generate:texts-index": "node scripts/generate-texts-index.mjs",
-    "dev": "npm run generate:texts-index && vite",
-    "build": "npm run generate:texts-index && tsc && vite build",
+    "dev": "vite",
+    "build": "tsc && vite build",
     "seed:cases:json": "node scripts/seed-cases-from-json.mjs",
     "clear:cases": "node scripts/clear-cases.mjs",
     "verify:cases": "node scripts/verify-cases-against-index.mjs",
@@ -19,7 +18,8 @@
     "antd": "^6.2.3",
     "aws-amplify": "~6.15.10",
     "react": "~18.3.1",
-    "react-dom": "~18.3.1"
+    "react-dom": "~18.3.1",
+    "react-router-dom": "^6.30.3"
   },
   "engines": {
     "node": ">= 20.20.0",
