@@ -1,28 +1,21 @@
 import React, { useEffect, useMemo, useState } from "react";
-import { Alert, Card, Layout, Masonry, Select, Spin } from "antd";
+import { Alert, Card, Input, Layout, Masonry, Select, Spin } from "antd";
 import { generateClient } from "aws-amplify/data";
+import type { Schema } from "../amplify/data/resource";
 
 const { Header, Footer, Content } = Layout;
 
-const client = generateClient();
+const client = generateClient<Schema>();
 
-type CaseItem = {
-  caseId?: string;
-  caseName?: string;
-  citation?: string;
-  decisionDate?: string;
-  court?: string;
-  opinionUrl?: string;
-  slipOp?: string;
-  ny3dCite?: string;
-  summaryText?: string;
-};
+type CaseItem = Schema["Case"]["type"] & { summaryText?: string };
 
 const App: React.FC = () => {
   const [cases, setCases] = useState<CaseItem[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [selectedAuthor, setSelectedAuthor] = useState<string | null>(null);
+  const [nameQuery, setNameQuery] = useState("");
+  const [debouncedNameQuery, setDebouncedNameQuery] = useState("");
 
   const sortedCases = useMemo(() => {
     return [...cases].sort((a, b) => {
@@ -43,10 +36,23 @@ const App: React.FC = () => {
     return [{ value: "Memorandum", label: "Memorandum" }, ...options];
   }, [cases]);
 
+  useEffect(() => {
+    const handle = setTimeout(() => {
+      setDebouncedNameQuery(nameQuery);
+    }, 300);
+    return () => clearTimeout(handle);
+  }, [nameQuery]);
+
   const filteredCases = useMemo(() => {
-    if (!selectedAuthor) return sortedCases;
-    return sortedCases.filter((item) => item.authoringJudge === selectedAuthor);
-  }, [sortedCases, selectedAuthor]);
+    const query = debouncedNameQuery.trim().toLowerCase();
+    return sortedCases.filter((item) => {
+      if (selectedAuthor && item.authoringJudge !== selectedAuthor) {
+        return false;
+      }
+      if (!query) return true;
+      return (item.caseName ?? "").toLowerCase().includes(query);
+    });
+  }, [sortedCases, selectedAuthor, debouncedNameQuery]);
 
   const summaries = useMemo(() => {
     const words = [
@@ -106,6 +112,15 @@ const App: React.FC = () => {
     }));
   }, [filteredCases]);
 
+  const masonryItems = useMemo(
+    () =>
+      summaries.map((item) => ({
+        key: item.caseId,
+        data: item,
+      })),
+    [summaries],
+  );
+
   useEffect(() => {
     let active = true;
     async function loadCases() {
@@ -141,6 +156,15 @@ const App: React.FC = () => {
             style={{ minWidth: 200 }}
           />
         </div>
+        <div className="app-header-filter">
+          <Input
+            placeholder="Search case name"
+            value={nameQuery}
+            allowClear
+            onChange={(event) => setNameQuery(event.target.value)}
+            style={{ minWidth: 240 }}
+          />
+        </div>
       </Header>
       <Content className="app-content">
         <div className="masonry-wrap">
@@ -153,17 +177,17 @@ const App: React.FC = () => {
             <Masonry
               columns={{ xs: 1, sm: 2, md: 3, lg: 4 }}
               gutter={{ xs: 8, sm: 12, md: 16 }}
-              items={summaries}
-              itemRender={(item, index) => {
-                const href = item.opinionUrl
-                  ? item.opinionUrl.startsWith("http")
-                    ? item.opinionUrl
-                    : `https://miranda.jurisware.com/texts/${item.opinionUrl}`
+              items={masonryItems}
+              itemRender={({ data, index }) => {
+                const href = data.opinionUrl
+                  ? data.opinionUrl.startsWith("http")
+                    ? data.opinionUrl
+                    : `https://miranda.jurisware.com/texts/${data.opinionUrl}`
                   : "";
-                const title = item.caseName ?? `Case ${index + 1}`;
-                const cite = item.ny3dCite || item.slipOp || item.citation || "—";
-                const decision = item.decisionDate
-                  ? new Date(item.decisionDate).toLocaleDateString("en-US", {
+                const title = data.caseName ?? `Case ${index + 1}`;
+                const cite = data.ny3dCite || data.slipOp || data.citation || "—";
+                const decision = data.decisionDate
+                  ? new Date(data.decisionDate).toLocaleDateString("en-US", {
                       month: "short",
                       day: "numeric",
                       year: "numeric",
@@ -171,7 +195,7 @@ const App: React.FC = () => {
                   : "—";
                 const citeLine = `${cite} (${decision})`;
                 return (
-                  <Card key={item.caseId ?? index} className="grid-card" size="small">
+                  <Card key={data.caseId ?? index} className="grid-card" size="small">
                     <div className="grid-card__badge">
                       <span className="badge badge--coa">CoA</span>
                     </div>
@@ -186,9 +210,9 @@ const App: React.FC = () => {
                     </div>
                     <div className="grid-card__meta">{citeLine}</div>
                     <div className="grid-card__author">
-                      {item.authoringJudge || "Memorandum"}
+                      {data.authoringJudge || "Memorandum"}
                     </div>
-                    <div className="grid-card__summary">{item.summaryText}</div>
+                    <div className="grid-card__summary">{data.summaryText}</div>
                   </Card>
                 );
               }}
