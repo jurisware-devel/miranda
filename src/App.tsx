@@ -13,8 +13,16 @@ import {
 } from "antd";
 import { ArrowLeftOutlined, EditOutlined } from "@ant-design/icons";
 import { generateClient } from "aws-amplify/data";
-import { Route, Routes, useLocation, useNavigate, useParams } from "react-router-dom";
+import {
+  NavLink,
+  Route,
+  Routes,
+  useLocation,
+  useNavigate,
+  useParams,
+} from "react-router-dom";
 import type { Schema } from "../amplify/data/resource";
+import TagsPage from "./pages/TagsPage";
 
 const { Header, Footer, Content } = Layout;
 
@@ -75,6 +83,7 @@ type CaseFormState = {
   disposition: string;
   authoringJudge: string;
   partiesCaption: string;
+  summary: string;
 };
 
 const emptyForm: CaseFormState = {
@@ -89,6 +98,7 @@ const emptyForm: CaseFormState = {
   disposition: "",
   authoringJudge: "",
   partiesCaption: "",
+  summary: "",
 };
 
 const normalizeDate = (value?: string | null) => value ?? "";
@@ -195,6 +205,7 @@ const CaseDetail: React.FC<CaseDetailProps> = ({
       disposition: item.disposition ?? "",
       authoringJudge: item.authoringJudge ?? "",
       partiesCaption: item.partiesCaption ?? "",
+      summary: item.summary ?? "",
     });
   };
 
@@ -227,6 +238,7 @@ const CaseDetail: React.FC<CaseDetailProps> = ({
         disposition: normalizeNullableField(formState.disposition),
         authoringJudge: normalizeNullableField(formState.authoringJudge),
         partiesCaption: normalizeNullableField(formState.partiesCaption),
+        summary: normalizeNullableField(formState.summary),
       };
       const result = await client.models.Case.update(payload);
       const updated = (result?.data ?? null) as CaseItem | null;
@@ -422,6 +434,19 @@ const CaseDetail: React.FC<CaseDetailProps> = ({
                 />
               </div>
               <div className="case-detail__form-row case-detail__form-row--full">
+                <label>Summary</label>
+                <Input.TextArea
+                  rows={3}
+                  value={formState.summary}
+                  onChange={(event) =>
+                    setFormState((prev) => ({
+                      ...prev,
+                      summary: event.target.value,
+                    }))
+                  }
+                />
+              </div>
+              <div className="case-detail__form-row case-detail__form-row--full">
                 <label>Caption</label>
                 <Input.TextArea
                   rows={2}
@@ -484,6 +509,8 @@ const App: React.FC = () => {
   const isMobile = !screens.sm;
   const location = useLocation();
   const isCaseView = location.pathname.startsWith("/case/");
+  const isCasesPage = location.pathname === "/";
+  const showFilters = isCasesPage && !isCaseView;
 
   const sortedCases = useMemo(() => {
     return [...cases].sort((a, b) => {
@@ -629,8 +656,29 @@ const App: React.FC = () => {
   return (
     <Layout className="app-shell" style={{ background: "transparent" }}>
       <Header className="app-header">
-        <div className="app-header-title">Miranda</div>
-        {isCaseView ? null : isMobile ? (
+        <div className="app-header-brand">
+          <div className="app-header-title">Miranda</div>
+          <nav className="app-header-nav">
+            <NavLink
+              to="/"
+              end
+              className={({ isActive }) =>
+                `app-header-link${isActive ? " app-header-link--active" : ""}`
+              }
+            >
+              Cases
+            </NavLink>
+            <NavLink
+              to="/tags"
+              className={({ isActive }) =>
+                `app-header-link${isActive ? " app-header-link--active" : ""}`
+              }
+            >
+              Tags
+            </NavLink>
+          </nav>
+        </div>
+        {!showFilters ? null : isMobile ? (
           <Button
             type="text"
             className="app-header-filter-toggle"
@@ -771,6 +819,7 @@ const App: React.FC = () => {
               />
             }
           />
+          <Route path="/tags" element={<TagsPage />} />
         </Routes>
       </Content>
       <Footer className="app-footer">

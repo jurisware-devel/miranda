@@ -55,6 +55,12 @@ body {
   gap: 16px;
 }
 
+.app-header-brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
 .app-content {
   flex: 1 1 auto;
   background: transparent;
@@ -75,11 +81,32 @@ body {
   background: #e2e2e2;
   padding: 6px 12px;
   border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 .app-header-title {
   font-weight: 700;
   font-size: 18px;
+}
+
+.app-header-nav {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.app-header-link {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.app-header-link--active {
+  text-decoration: underline;
 }
 
 .app-header-filters {
@@ -218,6 +245,72 @@ body {
   align-items: center;
   justify-content: center;
   height: 100%;
+}
+
+.tags-page {
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.tags-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.tag-card {
+  position: relative;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 12px;
+}
+
+.tag-card .ant-card-body {
+  padding: 16px;
+}
+
+.tag-card__label {
+  word-break: break-word;
+}
+
+.tag-card__edit {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  border: none;
+  background: transparent;
+  color: rgba(0, 0, 0, 0.45);
+  cursor: pointer;
+  padding: 4px;
+}
+
+.tag-card__edit:hover {
+  color: #1677ff;
+}
+
+.tag-card--new {
+  border: 2px dashed rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  cursor: pointer;
+  width: 100%;
+  padding: 16px;
+  font: inherit;
+}
+
+.tags-modal {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tags-modal__label {
+  font-weight: 600;
 }
 
 .case-detail {
