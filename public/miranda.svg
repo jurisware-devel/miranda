@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="miranda-gradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#4b5563" />
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="url(#miranda-gradient)" />
+  <path
+    d="M32 90V38h14l18 28 18-28h14v52h-14V60l-18 27-18-27v30H32z"
+    fill="#f9fafb"
+  />
+</svg>
