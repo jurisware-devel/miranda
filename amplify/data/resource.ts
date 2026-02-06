@@ -33,7 +33,7 @@ const schema = a.schema({
       label: a.string().required(),
     })
     .identifier(["tagId"])
-    .authorization((allow) => [allow.publicApiKey().to(["read"])]),
+    .authorization((allow) => [allow.publicApiKey().to(["create", "read"])]),
 
   CaseTag: a
     .model({

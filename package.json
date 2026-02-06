@@ -7,6 +7,7 @@
     "generate:texts-index": "node scripts/generate-texts-index.mjs",
     "dev": "npm run generate:texts-index && vite",
     "build": "npm run generate:texts-index && tsc && vite build",
+    "seed:cases:json": "node scripts/seed-cases-from-json.mjs",
     "enrich:cases": "node scripts/enrich-cases.mjs",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"

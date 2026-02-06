@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background: linear-gradient(180deg, rgb(117, 81, 194), rgb(255, 255, 255));
+  background: #ffffff;
   display: flex;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   height: 100vh;
@@ -18,9 +18,16 @@ main {
 }
 
 .table-shell {
-  max-height: calc(100vh - 200px);
+  height: calc(100vh - 200px);
   overflow: auto;
-  padding-bottom: 8px;
+  padding-bottom: 80px;
+}
+
+.table-shell .ant-table-cell {
+  max-width: 100ch;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 button {
@@ -73,7 +80,8 @@ a {
 }
 
 .app-shell {
-  width: min(100%, 960px);
+  width: 95vw;
+  max-width: 95vw;
   margin: 0 auto;
 }
 
@@ -92,9 +100,20 @@ a {
   padding: 12px 24px;
   display: flex;
   justify-content: center;
-  background: #fff;
+  background: #ffffff;
   border-top: 1px solid rgba(0, 0, 0, 0.08);
   z-index: 10;
+}
+
+.pagination-bar::before {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 56px;
+  background: #ffffff;
+  z-index: -1;
 }
 
 .pagination-bar .ant-pagination {
@@ -103,6 +122,13 @@ a {
   gap: 8px;
   align-items: center;
   flex-direction: row;
+}
+
+.pagination-bar .ant-pagination-item,
+.pagination-bar .ant-pagination-prev,
+.pagination-bar .ant-pagination-next,
+.pagination-bar .ant-pagination-item-link {
+  background: #ffffff;
 }
 
 .pagination-bar .ant-pagination-item,

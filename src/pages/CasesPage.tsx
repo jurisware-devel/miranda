@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import type { Schema } from "../../amplify/data/resource";
 import { generateClient } from "aws-amplify/data";
-import { Alert, Space, Table, Typography } from "antd";
+import { Alert, Pagination, Space, Table, Typography } from "antd";
 
 const client = generateClient<Schema>();
 
@@ -11,6 +11,8 @@ export default function CasesPage() {
   const [cases, setCases] = useState<CaseRow[]>([]);
   const [filesLoading, setFilesLoading] = useState(true);
   const [filesError, setFilesError] = useState<string | null>(null);
+  const [currentPage, setCurrentPage] = useState(1);
+  const pageSize = 50;
 
   useEffect(() => {
     let active = true;
@@ -47,10 +49,14 @@ export default function CasesPage() {
 
       <div className="table-shell">
         <Table
+          tableLayout="fixed"
+          scroll={{ x: "max-content" }}
           columns={[
             {
               title: "Case name",
               dataIndex: "caseName",
+              width: 200,
+              ellipsis: true,
               render: (value, record) =>
                 record.opinionUrl ? (
                   <a href={record.opinionUrl} target="_blank" rel="noreferrer">
@@ -61,24 +67,95 @@ export default function CasesPage() {
                 ),
             },
             {
+              title: "Case ID",
+              dataIndex: "caseId",
+              width: 140,
+              ellipsis: true,
+            },
+            {
+              title: "Slip Op",
+              dataIndex: "slipOp",
+              width: 160,
+              ellipsis: true,
+            },
+            {
+              title: "NY3d Cite",
+              dataIndex: "ny3dCite",
+              width: 140,
+              ellipsis: true,
+            },
+            {
               title: "Citation",
               dataIndex: "citation",
+              width: 180,
+              ellipsis: true,
             },
             {
               title: "Decision date",
               dataIndex: "decisionDate",
+              width: 140,
+              ellipsis: true,
+            },
+            {
+              title: "Argued date",
+              dataIndex: "arguedDate",
+              width: 140,
+              ellipsis: true,
+            },
+            {
+              title: "Corrected date",
+              dataIndex: "correctedDate",
+              width: 160,
+              ellipsis: true,
             },
             {
               title: "Court",
               dataIndex: "court",
+              width: 160,
+              ellipsis: true,
+            },
+            {
+              title: "Authoring judge",
+              dataIndex: "authoringJudge",
+              width: 160,
+              ellipsis: true,
+            },
+            {
+              title: "Disposition",
+              dataIndex: "disposition",
+              width: 140,
+              ellipsis: true,
+            },
+            {
+              title: "Lower court cite",
+              dataIndex: "lowerCourtCite",
+              width: 180,
+              ellipsis: true,
+            },
+            {
+              title: "Statutes cited",
+              dataIndex: "statutesCited",
+              width: 220,
+              ellipsis: true,
+              render: (value) => (Array.isArray(value) ? value.join(", ") : value),
+            },
+            {
+              title: "Parties caption",
+              dataIndex: "partiesCaption",
+              width: 260,
+              ellipsis: true,
             },
             {
               title: "Summary",
               dataIndex: "summary",
+              width: 280,
+              ellipsis: true,
             },
             {
               title: "Opinion URL",
               dataIndex: "opinionUrl",
+              width: 140,
+              ellipsis: true,
               render: (value) =>
                 value ? (
                   <a href={value} target="_blank" rel="noreferrer">
@@ -89,11 +166,21 @@ export default function CasesPage() {
                 ),
             },
           ]}
-          dataSource={cases}
+          dataSource={cases.slice((currentPage - 1) * pageSize, currentPage * pageSize)}
           loading={filesLoading}
           pagination={false}
           size="middle"
           rowKey="caseId"
+        />
+      </div>
+
+      <div className="pagination-bar">
+        <Pagination
+          current={currentPage}
+          pageSize={pageSize}
+          total={cases.length}
+          showSizeChanger={false}
+          onChange={setCurrentPage}
         />
       </div>
     </Space>
