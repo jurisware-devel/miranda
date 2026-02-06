@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import type { Schema } from "../../amplify/data/resource";
 import { generateClient } from "aws-amplify/data";
-import { Alert, Pagination, Space, Table, Typography } from "antd";
+import { Alert, Card, Pagination, Space } from "antd";
 
 const client = generateClient<Schema>();
 
@@ -39,156 +39,68 @@ export default function CasesPage() {
 
   return (
     <Space direction="vertical" size="large" style={{ width: "100%" }}>
-      <Typography.Title level={2} style={{ margin: 0 }}>
-        Text Files
-      </Typography.Title>
-
-      {filesError ? (
-        <Alert type="error" message="Index load failed" description={filesError} />
-      ) : null}
-
-      <div className="table-shell">
-        <Table
-          tableLayout="fixed"
-          scroll={{ x: "max-content" }}
-          columns={[
-            {
-              title: "Case name",
-              dataIndex: "caseName",
-              width: 200,
-              ellipsis: true,
-              render: (value, record) => {
-                if (!record.opinionUrl) return value;
-                const href = record.opinionUrl.startsWith("http")
-                  ? record.opinionUrl
-                  : `https://miranda.jurisware.com/texts/${record.opinionUrl}`;
-                return (
+      <div className="table-card">
+        <div className="app-card-grid">
+          {filesError ? (
+            <Alert type="error" message="Index load failed" description={filesError} />
+          ) : null}
+          <div className="card-scroll">
+            {cases
+              .slice((currentPage - 1) * pageSize, currentPage * pageSize)
+              .map((record) => {
+                const href = record.opinionUrl
+                  ? record.opinionUrl.startsWith("http")
+                    ? record.opinionUrl
+                    : `https://miranda.jurisware.com/texts/${record.opinionUrl}`
+                  : "";
+                const title = href ? (
                   <a href={href} target="_blank" rel="noreferrer">
-                    {value}
+                    {record.caseName}
                   </a>
+                ) : (
+                  record.caseName
                 );
-              },
-            },
-            {
-              title: "Case ID",
-              dataIndex: "caseId",
-              width: 140,
-              ellipsis: true,
-            },
-            {
-              title: "Slip Op",
-              dataIndex: "slipOp",
-              width: 160,
-              ellipsis: true,
-            },
-            {
-              title: "NY3d Cite",
-              dataIndex: "ny3dCite",
-              width: 140,
-              ellipsis: true,
-            },
-            {
-              title: "Citation",
-              dataIndex: "citation",
-              width: 180,
-              ellipsis: true,
-            },
-            {
-              title: "Decision date",
-              dataIndex: "decisionDate",
-              width: 140,
-              ellipsis: true,
-            },
-            {
-              title: "Argued date",
-              dataIndex: "arguedDate",
-              width: 140,
-              ellipsis: true,
-            },
-            {
-              title: "Corrected date",
-              dataIndex: "correctedDate",
-              width: 160,
-              ellipsis: true,
-            },
-            {
-              title: "Court",
-              dataIndex: "court",
-              width: 160,
-              ellipsis: true,
-            },
-            {
-              title: "Authoring judge",
-              dataIndex: "authoringJudge",
-              width: 160,
-              ellipsis: true,
-            },
-            {
-              title: "Disposition",
-              dataIndex: "disposition",
-              width: 140,
-              ellipsis: true,
-            },
-            {
-              title: "Lower court cite",
-              dataIndex: "lowerCourtCite",
-              width: 180,
-              ellipsis: true,
-            },
-            {
-              title: "Statutes cited",
-              dataIndex: "statutesCited",
-              width: 220,
-              ellipsis: true,
-              render: (value) => (Array.isArray(value) ? value.join(", ") : value),
-            },
-            {
-              title: "Parties caption",
-              dataIndex: "partiesCaption",
-              width: 260,
-              ellipsis: true,
-            },
-            {
-              title: "Summary",
-              dataIndex: "summary",
-              width: 280,
-              ellipsis: true,
-            },
-            {
-              title: "Opinion URL",
-              dataIndex: "opinionUrl",
-              width: 140,
-              ellipsis: true,
-              render: (value) => {
-                if (!value) return "";
-                const href = value.startsWith("http")
-                  ? value
-                  : `https://miranda.jurisware.com/texts/${value}`;
                 return (
-                  <a href={href} target="_blank" rel="noreferrer">
-                    Link
-                  </a>
+                  <Card
+                    key={record.caseId}
+                    className="case-card"
+                    title={title}
+                    size="small"
+                  >
+                    <div className="case-card__meta">
+                      {record.citation || record.slipOp || record.ny3dCite || "—"}
+                    </div>
+                    <div className="case-card__row">
+                      <span>Decision</span>
+                      <span>{record.decisionDate || "—"}</span>
+                    </div>
+                    <div className="case-card__row">
+                      <span>Court</span>
+                      <span>{record.court || "—"}</span>
+                    </div>
+                    <div className="case-card__row">
+                      <span>Judge</span>
+                      <span>{record.authoringJudge || "—"}</span>
+                    </div>
+                    {record.summary ? (
+                      <div className="case-card__summary">{record.summary}</div>
+                    ) : null}
+                  </Card>
                 );
-              },
-            },
-          ]}
-          dataSource={cases.slice((currentPage - 1) * pageSize, currentPage * pageSize)}
-          loading={filesLoading}
-          pagination={false}
-          size="middle"
-          rowKey="caseId"
-        />
+              })}
+          </div>
+        </div>
+        <div className="cases-footer">
+          <Pagination
+            current={currentPage}
+            pageSize={pageSize}
+            total={cases.length}
+            showSizeChanger={false}
+            onChange={setCurrentPage}
+          />
+        </div>
       </div>
 
-      <div className="pagination-bar">
-        <Pagination
-          current={currentPage}
-          pageSize={pageSize}
-          total={cases.length}
-          showSizeChanger={false}
-          onChange={setCurrentPage}
-        />
-      </div>
     </Space>
   );
 }
