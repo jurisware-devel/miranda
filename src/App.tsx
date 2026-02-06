@@ -92,6 +92,10 @@ const emptyForm: CaseFormState = {
 };
 
 const normalizeDate = (value?: string | null) => value ?? "";
+const normalizeNullableField = (value: string) => {
+  const trimmed = value.trim();
+  return trimmed ? trimmed : null;
+};
 
 const CaseDetail: React.FC<CaseDetailProps> = ({
   cases,
@@ -203,16 +207,16 @@ const CaseDetail: React.FC<CaseDetailProps> = ({
         caseId: caseItem.caseId,
         caseName: formState.caseName.trim() || caseItem.caseName,
         opinionUrl: caseItem.opinionUrl,
-        slipOp: formState.slipOp.trim() || undefined,
-        ny3dCite: formState.ny3dCite.trim() || undefined,
+        slipOp: normalizeNullableField(formState.slipOp),
+        ny3dCite: normalizeNullableField(formState.ny3dCite),
         court: formState.court.trim() || undefined,
         decisionDate: formState.decisionDate.trim() || undefined,
-        arguedDate: formState.arguedDate.trim() || undefined,
-        correctedDate: formState.correctedDate.trim() || undefined,
-        lowerCourtCite: formState.lowerCourtCite.trim() || undefined,
-        disposition: formState.disposition.trim() || undefined,
-        authoringJudge: formState.authoringJudge.trim() || undefined,
-        partiesCaption: formState.partiesCaption.trim() || undefined,
+        arguedDate: normalizeNullableField(formState.arguedDate),
+        correctedDate: normalizeNullableField(formState.correctedDate),
+        lowerCourtCite: normalizeNullableField(formState.lowerCourtCite),
+        disposition: normalizeNullableField(formState.disposition),
+        authoringJudge: normalizeNullableField(formState.authoringJudge),
+        partiesCaption: normalizeNullableField(formState.partiesCaption),
       };
       const result = await client.models.Case.update(payload);
       const updated = (result?.data ?? null) as CaseItem | null;
