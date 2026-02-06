@@ -25,7 +25,7 @@ const schema = a.schema({
       summary: a.string(),
     })
     .identifier(["caseId"])
-    .authorization((allow) => [allow.publicApiKey().to(["read", "update", "delete"])]),
+    .authorization((allow) => [allow.publicApiKey().to(["create", "read", "update", "delete"])]),
 
   Tag: a
     .model({
