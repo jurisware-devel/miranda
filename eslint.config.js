@@ -47,4 +47,11 @@ export default defineConfig([{
             allowConstantExport: true,
         }],
     },
+}, {
+    files: ["scripts/**/*.mjs"],
+    languageOptions: {
+        globals: {
+            ...globals.node,
+        },
+    },
 }, globalIgnores(["**/dist"])]);

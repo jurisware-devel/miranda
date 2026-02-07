@@ -26,27 +26,21 @@ const schema = a.schema({
       ai_review: a.boolean().default(true),
     })
     .identifier(["caseId"])
-    .authorization((allow) => [allow.publicApiKey().to(["create", "read", "update", "delete"])]),
+    .authorization((allow) => [
+      allow.group("Admin").to(["create", "read", "update", "delete"]),
+      allow.group("User").to(["read"]),
+    ]),
 
   Tag: a
     .model({
       tagId: a.string().required(),
       label: a.string().required(),
-      categoryId: a.string(),
+      parentTagId: a.string(),
     })
     .identifier(["tagId"])
     .authorization((allow) => [
-      allow.publicApiKey().to(["create", "read", "update", "delete"]),
-    ]),
-
-  Category: a
-    .model({
-      categoryId: a.string().required(),
-      label: a.string().required(),
-    })
-    .identifier(["categoryId"])
-    .authorization((allow) => [
-      allow.publicApiKey().to(["create", "read", "update", "delete"]),
+      allow.group("Admin").to(["create", "read", "update", "delete"]),
+      allow.group("User").to(["read"]),
     ]),
 
   CaseTag: a
@@ -57,7 +51,21 @@ const schema = a.schema({
     .identifier(["caseId", "tagId"])
     .secondaryIndexes((index) => [index("tagId").sortKeys(["caseId"])])
     .authorization((allow) => [
-      allow.publicApiKey().to(["create", "read", "delete"]),
+      allow.group("Admin").to(["create", "read", "delete"]),
+      allow.group("User").to(["read"]),
+    ]),
+
+  UserProfile: a
+    .model({
+      userId: a.string().required(),
+      email: a.string().required(),
+      name: a.string(),
+      organization: a.string(),
+    })
+    .identifier(["userId"])
+    .authorization((allow) => [
+      allow.owner().to(["create", "read", "update"]),
+      allow.group("Admin").to(["read", "update"]),
     ]),
 });
 
@@ -66,10 +74,7 @@ export type Schema = ClientSchema<typeof schema>;
 export const data = defineData({
   schema,
   authorizationModes: {
-    defaultAuthorizationMode: 'apiKey',
-    apiKeyAuthorizationMode: {
-      expiresInDays: 30,
-    },
+    defaultAuthorizationMode: 'userPool',
   },
 });
 

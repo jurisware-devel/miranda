@@ -2,58 +2,83 @@ import { useEffect, useMemo, useState } from "react";
 import { Alert, Button, Card, Input, Modal, Spin, Select } from "antd";
 import { generateClient } from "aws-amplify/data";
 import type { Schema } from "../../amplify/data/resource";
+import { useAuth } from "../logic/auth/AuthContext";
 
 const client = generateClient<Schema>();
 
 type TagRow = Schema["Tag"]["type"];
-type CategoryRow = Schema["Category"]["type"];
-
 type TagModalMode = "create" | "edit";
-type CategoryModalMode = "create" | "edit";
 
 const sortTags = (values: TagRow[]) =>
   [...values].sort((a, b) =>
     (a.label ?? "").localeCompare(b.label ?? "", undefined, { sensitivity: "base" }),
   );
 
-const sortCategories = (values: CategoryRow[]) =>
-  [...values].sort((a, b) =>
-    (a.label ?? "").localeCompare(b.label ?? "", undefined, { sensitivity: "base" }),
-  );
+type TagTreeNodeItem = {
+  tag: TagRow;
+  depth: number;
+  children: TagTreeNodeItem[];
+};
+
+const TagTreeNode = ({
+  node,
+  onEdit,
+  canEdit,
+}: {
+  node: TagTreeNodeItem;
+  onEdit: (tag: TagRow) => void;
+  canEdit: boolean;
+}) => (
+  <div className="tags-tree__node">
+    <Card className="tag-card tag-card--tree" size="small">
+      <button
+        type="button"
+        className="tag-card__label"
+        onClick={() => (canEdit ? onEdit(node.tag) : null)}
+        aria-label={`Edit ${node.tag.label ?? "tag"}`}
+        disabled={!canEdit}
+        style={{ paddingLeft: `${node.depth * 16}px` }}
+      >
+        {node.tag.label}
+      </button>
+    </Card>
+    {node.children.length ? (
+      <div className="tags-tree__children">
+        {node.children.map((child) => (
+          <TagTreeNode
+            key={child.tag.tagId}
+            node={child}
+            onEdit={onEdit}
+            canEdit={canEdit}
+          />
+        ))}
+      </div>
+    ) : null}
+  </div>
+);
 
 export default function TagsPage() {
+  const { role } = useAuth();
+  const canEdit = role === "Admin";
   const [tags, setTags] = useState<TagRow[]>([]);
-  const [categories, setCategories] = useState<CategoryRow[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [modalOpen, setModalOpen] = useState(false);
   const [modalMode, setModalMode] = useState<TagModalMode>("create");
   const [activeTag, setActiveTag] = useState<TagRow | null>(null);
   const [labelInput, setLabelInput] = useState("");
-  const [categoryInput, setCategoryInput] = useState<string | null>(null);
+  const [parentTagInput, setParentTagInput] = useState<string | null>(null);
   const [modalError, setModalError] = useState<string | null>(null);
   const [saving, setSaving] = useState(false);
-  const [categoryModalOpen, setCategoryModalOpen] = useState(false);
-  const [categoryModalMode, setCategoryModalMode] =
-    useState<CategoryModalMode>("create");
-  const [activeCategory, setActiveCategory] = useState<CategoryRow | null>(null);
-  const [categoryLabelInput, setCategoryLabelInput] = useState("");
-  const [categoryModalError, setCategoryModalError] = useState<string | null>(null);
 
   useEffect(() => {
     let active = true;
     async function loadTags() {
       try {
         setLoading(true);
-        const [{ data: tagData }, categoryResult] = await Promise.all([
-          client.models.Tag.list({ limit: 5000 }),
-          client.models.Category
-            ? client.models.Category.list({ limit: 5000 })
-            : Promise.resolve({ data: [] }),
-        ]);
+        const { data: tagData } = await client.models.Tag.list({ limit: 5000 });
         if (!active) return;
         setTags(tagData ?? []);
-        setCategories(categoryResult?.data ?? []);
         setError(null);
       } catch (err) {
         if (!active) return;
@@ -70,12 +95,11 @@ export default function TagsPage() {
   }, []);
 
   const sortedTags = useMemo(() => sortTags(tags), [tags]);
-  const sortedCategories = useMemo(() => sortCategories(categories), [categories]);
 
-  const tagsByCategory = useMemo(() => {
+  const tagChildren = useMemo(() => {
     const map = new Map<string | null, TagRow[]>();
     for (const tag of sortedTags) {
-      const key = tag.categoryId ?? null;
+      const key = tag.parentTagId ?? null;
       if (!map.has(key)) {
         map.set(key, []);
       }
@@ -84,20 +108,34 @@ export default function TagsPage() {
     return map;
   }, [sortedTags]);
 
+  const tagTree = useMemo<TagTreeNodeItem[]>(() => {
+    const build = (parentId: string | null, depth: number): TagTreeNodeItem[] => {
+      const children = tagChildren.get(parentId) ?? [];
+      return children.map((tag) => ({
+        tag,
+        depth,
+        children: build(tag.tagId, depth + 1),
+      }));
+    };
+    return build(null, 0);
+  }, [tagChildren]);
+
   const openCreateModal = () => {
+    if (!canEdit) return;
     setModalMode("create");
     setActiveTag(null);
     setLabelInput("");
-    setCategoryInput(null);
+    setParentTagInput(null);
     setModalError(null);
     setModalOpen(true);
   };
 
   const openEditModal = (tag: TagRow) => {
+    if (!canEdit) return;
     setModalMode("edit");
     setActiveTag(tag);
     setLabelInput(tag.label ?? "");
-    setCategoryInput(tag.categoryId ?? null);
+    setParentTagInput(tag.parentTagId ?? null);
     setModalError(null);
     setModalOpen(true);
   };
@@ -108,29 +146,11 @@ export default function TagsPage() {
     setModalError(null);
   };
 
-  const openCreateCategoryModal = () => {
-    setCategoryModalMode("create");
-    setActiveCategory(null);
-    setCategoryLabelInput("");
-    setCategoryModalError(null);
-    setCategoryModalOpen(true);
-  };
-
-  const openEditCategoryModal = (category: CategoryRow) => {
-    setCategoryModalMode("edit");
-    setActiveCategory(category);
-    setCategoryLabelInput(category.label ?? "");
-    setCategoryModalError(null);
-    setCategoryModalOpen(true);
-  };
-
-  const closeCategoryModal = () => {
-    if (saving) return;
-    setCategoryModalOpen(false);
-    setCategoryModalError(null);
-  };
-
   const handleSave = async () => {
+    if (!canEdit) {
+      setModalError("Read-only access.");
+      return;
+    }
     const trimmed = labelInput.trim();
     if (!trimmed) {
       setModalError("Tag label is required.");
@@ -145,7 +165,7 @@ export default function TagsPage() {
         const result = await client.models.Tag.create({
           tagId,
           label: trimmed,
-          categoryId: categoryInput ?? undefined,
+          parentTagId: parentTagInput ?? undefined,
         });
         const created = result?.data ?? null;
         if (created) {
@@ -155,7 +175,7 @@ export default function TagsPage() {
         const result = await client.models.Tag.update({
           tagId: activeTag.tagId,
           label: trimmed,
-          categoryId: categoryInput ?? undefined,
+          parentTagId: parentTagInput ?? undefined,
         });
         const updated = result?.data ?? null;
         if (updated) {
@@ -172,77 +192,11 @@ export default function TagsPage() {
     }
   };
 
-  const handleSaveCategory = async () => {
-    const trimmed = categoryLabelInput.trim();
-    if (!trimmed) {
-      setCategoryModalError("Category label is required.");
+  const handleDelete = async () => {
+    if (!canEdit) {
+      setModalError("Read-only access.");
       return;
     }
-
-    try {
-      setSaving(true);
-      setCategoryModalError(null);
-      if (categoryModalMode === "create") {
-        const categoryId = crypto.randomUUID();
-        const result = await client.models.Category.create({
-          categoryId,
-          label: trimmed,
-        });
-        const created = result?.data ?? null;
-        if (created) {
-          setCategories((prev) => sortCategories([...prev, created]));
-        }
-      } else if (activeCategory) {
-        const result = await client.models.Category.update({
-          categoryId: activeCategory.categoryId,
-          label: trimmed,
-        });
-        const updated = result?.data ?? null;
-        if (updated) {
-          setCategories((prev) =>
-            prev.map((item) =>
-              item.categoryId === updated.categoryId ? updated : item,
-            ),
-          );
-        }
-      }
-      setCategoryModalOpen(false);
-    } catch (err) {
-      setCategoryModalError(
-        err instanceof Error ? err.message : "Failed to save category",
-      );
-    } finally {
-      setSaving(false);
-    }
-  };
-
-  const handleDeleteCategory = async () => {
-    if (!activeCategory) return;
-    try {
-      setSaving(true);
-      setCategoryModalError(null);
-      await client.models.Category.delete({ categoryId: activeCategory.categoryId });
-      setCategories((prev) =>
-        prev.filter((item) => item.categoryId !== activeCategory.categoryId),
-      );
-      setTags((prev) =>
-        prev.map((tag) =>
-          tag.categoryId === activeCategory.categoryId
-            ? { ...tag, categoryId: undefined }
-            : tag,
-        ),
-      );
-      setCategoryModalOpen(false);
-    } catch (err) {
-      setCategoryModalError(
-        err instanceof Error ? err.message : "Failed to delete category",
-      );
-    } finally {
-      setSaving(false);
-    }
-  };
-
-  const handleDelete = async () => {
     if (!activeTag) return;
     try {
       setSaving(true);
@@ -266,77 +220,28 @@ export default function TagsPage() {
         </div>
       ) : (
         <div>
-          <div className="tags-grid tags-grid--categories">
-            {sortedCategories.map((category) => (
-              <Card key={category.categoryId} className="tag-card" size="small">
-                <button
-                  type="button"
-                  className="tag-card__label"
-                  onClick={() => openEditCategoryModal(category)}
-                  aria-label={`Edit ${category.label ?? "category"}`}
-                >
-                  {category.label}
-                </button>
-              </Card>
+          <div className="tags-tree">
+            {tagTree.map(({ tag, depth, children }) => (
+              <TagTreeNode
+                key={tag.tagId}
+                node={{ tag, depth, children }}
+                onEdit={openEditModal}
+                canEdit={canEdit}
+              />
             ))}
-            <button
-              type="button"
-              className="tag-card tag-card--new"
-              onClick={openCreateCategoryModal}
-            >
-              + Category
-            </button>
           </div>
-          {sortedCategories.map((category) => {
-            const group = tagsByCategory.get(category.categoryId) ?? [];
-            if (!group.length) return null;
-            return (
-              <div key={category.categoryId} className="tags-group">
-                <div className="tags-group__title">{category.label}</div>
-                <div className="tags-grid">
-                  {group.map((tag) => (
-                    <Card key={tag.tagId} className="tag-card" size="small">
-                      <button
-                        type="button"
-                        className="tag-card__label"
-                        onClick={() => openEditModal(tag)}
-                        aria-label={`Edit ${tag.label ?? "tag"}`}
-                      >
-                        {tag.label}
-                      </button>
-                    </Card>
-                  ))}
-                </div>
-              </div>
-            );
-          })}
-          {(tagsByCategory.get(null) ?? []).length ? (
-            <div className="tags-group">
-              <div className="tags-group__title">Uncategorized</div>
-              <div className="tags-grid">
-                {(tagsByCategory.get(null) ?? []).map((tag) => (
-                  <Card key={tag.tagId} className="tag-card" size="small">
-                    <button
-                      type="button"
-                      className="tag-card__label"
-                      onClick={() => openEditModal(tag)}
-                      aria-label={`Edit ${tag.label ?? "tag"}`}
-                    >
-                      {tag.label}
-                    </button>
-                  </Card>
-                ))}
-              </div>
-            </div>
-          ) : null}
           <div className="tags-grid">
-            <button
-              type="button"
-              className="tag-card tag-card--new"
-              onClick={openCreateModal}
-            >
-              + Tag
-            </button>
+            {canEdit ? (
+              <button
+                type="button"
+                className="tag-card tag-card--new"
+                onClick={openCreateModal}
+              >
+                + Tag
+              </button>
+            ) : (
+              <div className="tags-readonly">Read-only access</div>
+            )}
           </div>
         </div>
       )}
@@ -388,83 +293,23 @@ export default function TagsPage() {
             placeholder="Enter tag label"
           />
           <label className="tags-modal__label" htmlFor="tag-category-select">
-            Category
+            Parent Tag
           </label>
           <Select
             id="tag-category-select"
-            value={categoryInput ?? undefined}
+            value={parentTagInput ?? undefined}
             allowClear
-            placeholder="Uncategorized"
-            options={sortedCategories.map((category) => ({
-              value: category.categoryId,
-              label: category.label ?? "Untitled",
-            }))}
-            onChange={(value) => setCategoryInput(value ?? null)}
+            placeholder="No parent"
+            options={sortedTags
+              .filter((tag) => tag.tagId !== activeTag?.tagId)
+              .map((tag) => ({
+                value: tag.tagId,
+                label: tag.label ?? "Untitled",
+              }))}
+            onChange={(value) => setParentTagInput(value ?? null)}
           />
           {modalError ? (
             <Alert type="error" message={modalError} showIcon style={{ marginTop: 12 }} />
-          ) : null}
-        </div>
-      </Modal>
-      <Modal
-        open={categoryModalOpen}
-        onCancel={closeCategoryModal}
-        title={categoryModalMode === "create" ? "Create Category" : "Edit Category"}
-        footer={
-          categoryModalMode === "edit"
-            ? [
-                <Button
-                  key="delete"
-                  danger
-                  onClick={handleDeleteCategory}
-                  disabled={saving}
-                >
-                  Delete
-                </Button>,
-                <Button key="cancel" onClick={closeCategoryModal} disabled={saving}>
-                  Cancel
-                </Button>,
-                <Button
-                  key="save"
-                  type="primary"
-                  onClick={handleSaveCategory}
-                  loading={saving}
-                >
-                  Save
-                </Button>,
-              ]
-            : [
-                <Button key="cancel" onClick={closeCategoryModal} disabled={saving}>
-                  Cancel
-                </Button>,
-                <Button
-                  key="create"
-                  type="primary"
-                  onClick={handleSaveCategory}
-                  loading={saving}
-                >
-                  Create
-                </Button>,
-              ]
-        }
-      >
-        <div className="tags-modal">
-          <label className="tags-modal__label" htmlFor="category-label-input">
-            Category label
-          </label>
-          <Input
-            id="category-label-input"
-            value={categoryLabelInput}
-            onChange={(event) => setCategoryLabelInput(event.target.value)}
-            placeholder="Enter category label"
-          />
-          {categoryModalError ? (
-            <Alert
-              type="error"
-              message={categoryModalError}
-              showIcon
-              style={{ marginTop: 12 }}
-            />
           ) : null}
         </div>
       </Modal>
