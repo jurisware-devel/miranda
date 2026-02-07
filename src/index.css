@@ -202,6 +202,15 @@ body {
   text-align: left;
 }
 
+.grid-card__ai-flag {
+  font-size: 12px;
+  font-weight: 700;
+  color: #b91c1c;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 6px;
+}
+
 .grid-card__tags {
   display: flex;
   flex-wrap: wrap;

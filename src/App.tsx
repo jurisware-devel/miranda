@@ -9,6 +9,7 @@ import {
   Masonry,
   Pagination,
   Select,
+  Switch,
   Spin,
 } from "antd";
 import { ArrowLeftOutlined, EditOutlined } from "@ant-design/icons";
@@ -89,6 +90,7 @@ type CaseFormState = {
   authoringJudge: string;
   partiesCaption: string;
   summary: string;
+  ai_review: boolean;
 };
 
 const emptyForm: CaseFormState = {
@@ -104,6 +106,7 @@ const emptyForm: CaseFormState = {
   authoringJudge: "",
   partiesCaption: "",
   summary: "",
+  ai_review: true,
 };
 
 const normalizeDate = (value?: string | null) => value ?? "";
@@ -215,6 +218,7 @@ const CaseDetail: React.FC<CaseDetailProps> = ({
       authoringJudge: item.authoringJudge ?? "",
       partiesCaption: item.partiesCaption ?? "",
       summary: item.summary ?? "",
+      ai_review: item.ai_review ?? true,
     });
   };
 
@@ -256,6 +260,7 @@ const CaseDetail: React.FC<CaseDetailProps> = ({
         authoringJudge: normalizeNullableField(formState.authoringJudge),
         partiesCaption: normalizeNullableField(formState.partiesCaption),
         summary: normalizeNullableField(formState.summary),
+        ai_review: formState.ai_review,
       };
       const result = await client.models.Case.update(payload);
       const updated = (result?.data ?? null) as CaseItem | null;
@@ -489,6 +494,18 @@ const CaseDetail: React.FC<CaseDetailProps> = ({
                     setFormState((prev) => ({
                       ...prev,
                       summary: event.target.value,
+                    }))
+                  }
+                />
+              </div>
+              <div className="case-detail__form-row">
+                <label>AI Review</label>
+                <Switch
+                  checked={formState.ai_review}
+                  onChange={(checked) =>
+                    setFormState((prev) => ({
+                      ...prev,
+                      ai_review: checked,
                     }))
                   }
                 />
@@ -842,17 +859,25 @@ const App: React.FC = () => {
                               handleReviewClick,
                             )}
                           </div>
-                          <div className="grid-card__summary">
-                            {tagLabels.length ? (
-                              <div className="grid-card__tags">
-                                {tagLabels.map((tagId) => (
+                          <div className="grid-card__tags">
+                            {tagLabels.length
+                              ? tagLabels.map((tagId) => (
                                   <span key={tagId} className="tag-pill">
                                     {tagsById.get(tagId) ?? "Untitled"}
                                   </span>
-                                ))}
+                                ))
+                              : null}
+                          </div>
+                          <div className="grid-card__summary">
+                            {(data.ai_review ?? true) ? (
+                              <div className="grid-card__ai-flag">
+                                AI gen - needs review
                               </div>
-                            ) : (
-                              "—"
+                            ) : null}
+                            {renderReviewField(
+                              data.summary ?? undefined,
+                              "—",
+                              handleReviewClick,
                             )}
                           </div>
                         </Card>

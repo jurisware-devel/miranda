@@ -23,6 +23,7 @@ const schema = a.schema({
       partiesCaption: a.string(),
       statutesCited: a.string().array(),
       summary: a.string(),
+      ai_review: a.boolean().default(true),
     })
     .identifier(["caseId"])
     .authorization((allow) => [allow.publicApiKey().to(["create", "read", "update", "delete"])]),
