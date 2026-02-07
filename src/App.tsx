@@ -140,6 +140,16 @@ const CaseDetail: React.FC<CaseDetailProps> = ({
   const [isEditing, setIsEditing] = useState(editable);
   const [selectedTagIds, setSelectedTagIds] = useState<string[]>([]);
 
+  const tagsById = useMemo(() => {
+    return new Map(tags.map((tag) => [tag.tagId, tag.label ?? ""]));
+  }, [tags]);
+
+  const sortedTags = useMemo(() => {
+    return [...tags].sort((a, b) =>
+      (a.label ?? "").localeCompare(b.label ?? "", undefined, { sensitivity: "base" }),
+    );
+  }, [tags]);
+
   useEffect(() => {
     let active = true;
     if (!caseId) return;
@@ -597,6 +607,7 @@ const App: React.FC = () => {
   const [selectedAuthor, setSelectedAuthor] = useState<string | null>(null);
   const [nameQuery, setNameQuery] = useState("");
   const [debouncedNameQuery, setDebouncedNameQuery] = useState("");
+  const [sortOrder, setSortOrder] = useState("date_desc");
   const [currentPage, setCurrentPage] = useState(1);
   const pageSize = 100;
   const [filtersOpen, setFiltersOpen] = useState(false);
@@ -609,12 +620,6 @@ const App: React.FC = () => {
 
   const tagsById = useMemo(() => {
     return new Map(tags.map((tag) => [tag.tagId, tag.label ?? ""]));
-  }, [tags]);
-
-  const sortedTags = useMemo(() => {
-    return [...tags].sort((a, b) =>
-      (a.label ?? "").localeCompare(b.label ?? "", undefined, { sensitivity: "base" }),
-    );
   }, [tags]);
 
   const caseTagsByCaseId = useMemo(() => {
@@ -637,12 +642,21 @@ const App: React.FC = () => {
   }, [caseTags, tagsById]);
 
   const sortedCases = useMemo(() => {
-    return [...cases].sort((a, b) => {
+    const sorted = [...cases];
+    sorted.sort((a, b) => {
+      if (sortOrder.startsWith("name")) {
+        const aName = (a.caseName ?? "").toLowerCase();
+        const bName = (b.caseName ?? "").toLowerCase();
+        return sortOrder === "name_asc"
+          ? aName.localeCompare(bName)
+          : bName.localeCompare(aName);
+      }
       const aDate = a.decisionDate ? Date.parse(a.decisionDate) : 0;
       const bDate = b.decisionDate ? Date.parse(b.decisionDate) : 0;
-      return bDate - aDate;
+      return sortOrder === "date_asc" ? aDate - bDate : bDate - aDate;
     });
-  }, [cases]);
+    return sorted;
+  }, [cases, sortOrder]);
 
   const authorOptions = useMemo(() => {
     const set = new Set<string>();
@@ -675,7 +689,7 @@ const App: React.FC = () => {
 
   useEffect(() => {
     setCurrentPage(1);
-  }, [selectedAuthor, debouncedNameQuery]);
+  }, [selectedAuthor, debouncedNameQuery, sortOrder]);
 
   const pagedSummaries = useMemo(() => {
     const start = (currentPage - 1) * pageSize;
@@ -803,6 +817,19 @@ const App: React.FC = () => {
                 style={{ minWidth: 240 }}
               />
             </div>
+            <div className="app-header-filter">
+              <Select
+                value={sortOrder}
+                onChange={(value) => setSortOrder(value)}
+                options={[
+                  { value: "date_desc", label: "Date (newest)" },
+                  { value: "date_asc", label: "Date (oldest)" },
+                  { value: "name_asc", label: "Case name (A–Z)" },
+                  { value: "name_desc", label: "Case name (Z–A)" },
+                ]}
+                style={{ minWidth: 200 }}
+              />
+            </div>
           </div>
         )}
       </Header>
@@ -826,6 +853,16 @@ const App: React.FC = () => {
                       value={nameQuery}
                       allowClear
                       onChange={(event) => setNameQuery(event.target.value)}
+                    />
+                    <Select
+                      value={sortOrder}
+                      onChange={(value) => setSortOrder(value)}
+                      options={[
+                        { value: "date_desc", label: "Date (newest)" },
+                        { value: "date_asc", label: "Date (oldest)" },
+                        { value: "name_asc", label: "Case name (A–Z)" },
+                        { value: "name_desc", label: "Case name (Z–A)" },
+                      ]}
                     />
                   </div>
                 ) : null}
