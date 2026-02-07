@@ -32,8 +32,19 @@ const schema = a.schema({
     .model({
       tagId: a.string().required(),
       label: a.string().required(),
+      categoryId: a.string(),
     })
     .identifier(["tagId"])
+    .authorization((allow) => [
+      allow.publicApiKey().to(["create", "read", "update", "delete"]),
+    ]),
+
+  Category: a
+    .model({
+      categoryId: a.string().required(),
+      label: a.string().required(),
+    })
+    .identifier(["categoryId"])
     .authorization((allow) => [
       allow.publicApiKey().to(["create", "read", "update", "delete"]),
     ]),

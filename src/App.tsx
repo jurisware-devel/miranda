@@ -32,6 +32,7 @@ const client = generateClient<Schema>();
 type CaseItem = Schema["Case"]["type"];
 type TagItem = Schema["Tag"]["type"];
 type CaseTagItem = Schema["CaseTag"]["type"];
+type CategoryItem = Schema["Category"]["type"];
 
 const buildOpinionUrl = (opinionUrl?: string) => {
   if (!opinionUrl) return "";
@@ -71,6 +72,7 @@ type CaseDetailProps = {
   loading: boolean;
   error: string | null;
   tags: TagItem[];
+  categories: CategoryItem[];
   caseTags: CaseTagItem[];
   editable?: boolean;
   onCaseUpdated?: (updated: CaseItem) => void;
@@ -120,6 +122,7 @@ const CaseDetail: React.FC<CaseDetailProps> = ({
   loading,
   error,
   tags,
+  categories,
   caseTags,
   editable = false,
   onCaseUpdated,
@@ -149,6 +152,37 @@ const CaseDetail: React.FC<CaseDetailProps> = ({
       (a.label ?? "").localeCompare(b.label ?? "", undefined, { sensitivity: "base" }),
     );
   }, [tags]);
+
+  const tagOptions = useMemo(() => {
+    const categoryMap = new Map(
+      categories.map((category) => [category.categoryId, category.label ?? ""]),
+    );
+    const grouped = new Map<string, TagItem[]>();
+    for (const tag of sortedTags) {
+      const key = tag.categoryId ?? "uncategorized";
+      if (!grouped.has(key)) {
+        grouped.set(key, []);
+      }
+      grouped.get(key)?.push(tag);
+    }
+    const sortedGroups = Array.from(grouped.entries()).sort((a, b) => {
+      const aLabel =
+        a[0] === "uncategorized" ? "Uncategorized" : categoryMap.get(a[0]) ?? "";
+      const bLabel =
+        b[0] === "uncategorized" ? "Uncategorized" : categoryMap.get(b[0]) ?? "";
+      return aLabel.localeCompare(bLabel, undefined, { sensitivity: "base" });
+    });
+    return sortedGroups.map(([categoryId, groupTags]) => ({
+      label:
+        categoryId === "uncategorized"
+          ? "Uncategorized"
+          : categoryMap.get(categoryId) ?? "Uncategorized",
+      options: groupTags.map((tag) => ({
+        value: tag.tagId,
+        label: tag.label ?? "Untitled",
+      })),
+    }));
+  }, [categories, sortedTags]);
 
   useEffect(() => {
     let active = true;
@@ -541,10 +575,7 @@ const CaseDetail: React.FC<CaseDetailProps> = ({
                     );
                     setSelectedTagIds(next);
                   }}
-                  options={sortedTags.map((tag) => ({
-                    value: tag.tagId,
-                    label: tag.label ?? "Untitled",
-                  }))}
+                  options={tagOptions}
                 />
               </div>
               <div className="case-detail__form-row case-detail__form-row--full">
@@ -600,10 +631,12 @@ const App: React.FC = () => {
   const [cases, setCases] = useState<CaseItem[]>([]);
   const [tags, setTags] = useState<TagItem[]>([]);
   const [caseTags, setCaseTags] = useState<CaseTagItem[]>([]);
+  const [categories, setCategories] = useState<CategoryItem[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [tagsError, setTagsError] = useState<string | null>(null);
   const [caseTagsError, setCaseTagsError] = useState<string | null>(null);
+  const [categoriesError, setCategoriesError] = useState<string | null>(null);
   const [selectedAuthor, setSelectedAuthor] = useState<string | null>(null);
   const [nameQuery, setNameQuery] = useState("");
   const [debouncedNameQuery, setDebouncedNameQuery] = useState("");
@@ -730,20 +763,27 @@ const App: React.FC = () => {
     let active = true;
     async function loadTagsAndLinks() {
       try {
-        const [{ data: tagData }, { data: linkData }] = await Promise.all([
-          client.models.Tag.list({ limit: 5000 }),
-          client.models.CaseTag.list({ limit: 5000 }),
-        ]);
+        const [{ data: tagData }, { data: linkData }, categoryResult] =
+          await Promise.all([
+            client.models.Tag.list({ limit: 5000 }),
+            client.models.CaseTag.list({ limit: 5000 }),
+            client.models.Category
+              ? client.models.Category.list({ limit: 5000 })
+              : Promise.resolve({ data: [] }),
+          ]);
         if (!active) return;
         setTags(tagData ?? []);
         setCaseTags(linkData ?? []);
+        setCategories(categoryResult?.data ?? []);
         setTagsError(null);
         setCaseTagsError(null);
+        setCategoriesError(null);
       } catch (err) {
         if (!active) return;
         const message = err instanceof Error ? err.message : "Failed to load tags";
         setTagsError(message);
         setCaseTagsError(message);
+        setCategoriesError(message);
       }
     }
 
@@ -871,6 +911,9 @@ const App: React.FC = () => {
                 {caseTagsError ? (
                   <Alert type="error" message={caseTagsError} showIcon />
                 ) : null}
+                {categoriesError ? (
+                  <Alert type="error" message={categoriesError} showIcon />
+                ) : null}
                 {loading ? (
                   <div className="card-grid__loading">
                     <Spin />
@@ -961,6 +1004,7 @@ const App: React.FC = () => {
                 loading={loading}
                 error={error}
                 tags={tags}
+                categories={categories}
                 caseTags={caseTags}
                 onCaseUpdated={handleCaseUpdated}
                 onCaseTagsUpdated={handleCaseTagsUpdated}
@@ -975,6 +1019,7 @@ const App: React.FC = () => {
                 loading={loading}
                 error={error}
                 tags={tags}
+                categories={categories}
                 caseTags={caseTags}
                 editable
                 onCaseUpdated={handleCaseUpdated}
