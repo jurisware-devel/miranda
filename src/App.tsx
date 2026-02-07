@@ -264,9 +264,10 @@ const CaseDetail: React.FC<CaseDetailProps> = ({
       };
       const result = await client.models.Case.update(payload);
       const updated = (result?.data ?? null) as CaseItem | null;
-      setCaseItem(updated);
-      if (updated && onCaseUpdated) {
-        onCaseUpdated(updated);
+      const updatedCase = updated ?? ({ ...caseItem, ...payload } as CaseItem);
+      setCaseItem(updatedCase);
+      if (onCaseUpdated) {
+        onCaseUpdated(updatedCase);
       }
       const existingTagIds = new Set(
         caseTags
@@ -501,6 +502,7 @@ const CaseDetail: React.FC<CaseDetailProps> = ({
               <div className="case-detail__form-row">
                 <label>AI Review</label>
                 <Switch
+                  className="case-detail__switch"
                   checked={formState.ai_review}
                   onChange={(checked) =>
                     setFormState((prev) => ({
@@ -869,7 +871,7 @@ const App: React.FC = () => {
                               : null}
                           </div>
                           <div className="grid-card__summary">
-                            {(data.ai_review ?? true) ? (
+                            {(data.summary ?? "").trim() && (data.ai_review ?? true) ? (
                               <div className="grid-card__ai-flag">
                                 AI gen - needs review
                               </div>
