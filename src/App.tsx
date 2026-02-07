@@ -231,9 +231,14 @@ const CaseDetail: React.FC<CaseDetailProps> = ({
     if (!caseItem) return;
     const nextTagIds = caseTags
       .filter((item) => item.caseId === caseItem.caseId)
-      .map((item) => item.tagId);
+      .map((item) => item.tagId)
+      .sort((a, b) =>
+        (tagsById.get(a) ?? "").localeCompare(tagsById.get(b) ?? "", undefined, {
+          sensitivity: "base",
+        }),
+      );
     setSelectedTagIds(nextTagIds);
-  }, [caseItem, caseTags]);
+  }, [caseItem, caseTags, tagsById]);
 
   useEffect(() => {
     setIsEditing(editable);
@@ -518,8 +523,15 @@ const CaseDetail: React.FC<CaseDetailProps> = ({
                   mode="multiple"
                   placeholder={tags.length ? "Select tags" : "Create tags first"}
                   value={selectedTagIds}
-                  onChange={(value) => setSelectedTagIds(value as string[])}
-                  options={tags.map((tag) => ({
+                  onChange={(value) => {
+                    const next = (value as string[]).slice().sort((a, b) =>
+                      (tagsById.get(a) ?? "").localeCompare(tagsById.get(b) ?? "", undefined, {
+                        sensitivity: "base",
+                      }),
+                    );
+                    setSelectedTagIds(next);
+                  }}
+                  options={sortedTags.map((tag) => ({
                     value: tag.tagId,
                     label: tag.label ?? "Untitled",
                   }))}
@@ -599,6 +611,12 @@ const App: React.FC = () => {
     return new Map(tags.map((tag) => [tag.tagId, tag.label ?? ""]));
   }, [tags]);
 
+  const sortedTags = useMemo(() => {
+    return [...tags].sort((a, b) =>
+      (a.label ?? "").localeCompare(b.label ?? "", undefined, { sensitivity: "base" }),
+    );
+  }, [tags]);
+
   const caseTagsByCaseId = useMemo(() => {
     const map = new Map<string, string[]>();
     for (const item of caseTags) {
@@ -607,8 +625,16 @@ const App: React.FC = () => {
       }
       map.get(item.caseId)?.push(item.tagId);
     }
+    for (const [caseId, tagIds] of map.entries()) {
+      const sorted = [...tagIds].sort((a, b) =>
+        (tagsById.get(a) ?? "").localeCompare(tagsById.get(b) ?? "", undefined, {
+          sensitivity: "base",
+        }),
+      );
+      map.set(caseId, sorted);
+    }
     return map;
-  }, [caseTags]);
+  }, [caseTags, tagsById]);
 
   const sortedCases = useMemo(() => {
     return [...cases].sort((a, b) => {
