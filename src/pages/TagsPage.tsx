@@ -1,6 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
 import { Alert, Button, Card, Input, Modal, Spin } from "antd";
-import { EditOutlined } from "@ant-design/icons";
 import { generateClient } from "aws-amplify/data";
 import type { Schema } from "../../amplify/data/resource";
 
@@ -138,13 +137,12 @@ export default function TagsPage() {
             <Card key={tag.tagId} className="tag-card" size="small">
               <button
                 type="button"
-                className="tag-card__edit"
+                className="tag-card__label"
                 onClick={() => openEditModal(tag)}
                 aria-label={`Edit ${tag.label ?? "tag"}`}
               >
-                <EditOutlined />
+                {tag.label}
               </button>
-              <div className="tag-card__label">{tag.label}</div>
             </Card>
           ))}
           <button type="button" className="tag-card tag-card--new" onClick={openCreateModal}>

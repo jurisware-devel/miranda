@@ -28,7 +28,9 @@ const { Header, Footer, Content } = Layout;
 
 const client = generateClient<Schema>();
 
-type CaseItem = Schema["Case"]["type"] & { summaryText?: string };
+type CaseItem = Schema["Case"]["type"];
+type TagItem = Schema["Tag"]["type"];
+type CaseTagItem = Schema["CaseTag"]["type"];
 
 const buildOpinionUrl = (opinionUrl?: string) => {
   if (!opinionUrl) return "";
@@ -67,8 +69,11 @@ type CaseDetailProps = {
   cases: CaseItem[];
   loading: boolean;
   error: string | null;
+  tags: TagItem[];
+  caseTags: CaseTagItem[];
   editable?: boolean;
   onCaseUpdated?: (updated: CaseItem) => void;
+  onCaseTagsUpdated?: (caseId: string, nextCaseTags: CaseTagItem[]) => void;
 };
 
 type CaseFormState = {
@@ -111,8 +116,11 @@ const CaseDetail: React.FC<CaseDetailProps> = ({
   cases,
   loading,
   error,
+  tags,
+  caseTags,
   editable = false,
   onCaseUpdated,
+  onCaseTagsUpdated,
 }) => {
   const { caseId } = useParams();
   const navigate = useNavigate();
@@ -127,6 +135,7 @@ const CaseDetail: React.FC<CaseDetailProps> = ({
   const [saveError, setSaveError] = useState<string | null>(null);
   const [saveSuccess, setSaveSuccess] = useState<string | null>(null);
   const [isEditing, setIsEditing] = useState(editable);
+  const [selectedTagIds, setSelectedTagIds] = useState<string[]>([]);
 
   useEffect(() => {
     let active = true;
@@ -215,6 +224,14 @@ const CaseDetail: React.FC<CaseDetailProps> = ({
   }, [caseItem]);
 
   useEffect(() => {
+    if (!caseItem) return;
+    const nextTagIds = caseTags
+      .filter((item) => item.caseId === caseItem.caseId)
+      .map((item) => item.tagId);
+    setSelectedTagIds(nextTagIds);
+  }, [caseItem, caseTags]);
+
+  useEffect(() => {
     setIsEditing(editable);
   }, [editable]);
 
@@ -245,6 +262,36 @@ const CaseDetail: React.FC<CaseDetailProps> = ({
       setCaseItem(updated);
       if (updated && onCaseUpdated) {
         onCaseUpdated(updated);
+      }
+      const existingTagIds = new Set(
+        caseTags
+          .filter((item) => item.caseId === caseItem.caseId)
+          .map((item) => item.tagId),
+      );
+      const desiredTagIds = new Set(selectedTagIds);
+      const toCreate = selectedTagIds.filter((tagId) => !existingTagIds.has(tagId));
+      const toDelete = Array.from(existingTagIds).filter(
+        (tagId) => !desiredTagIds.has(tagId),
+      );
+      if (toCreate.length || toDelete.length) {
+        await Promise.all([
+          ...toCreate.map((tagId) =>
+            client.models.CaseTag.create({ caseId: caseItem.caseId, tagId }),
+          ),
+          ...toDelete.map((tagId) =>
+            client.models.CaseTag.delete({ caseId: caseItem.caseId, tagId }),
+          ),
+        ]);
+        if (onCaseTagsUpdated) {
+          const retained = caseTags.filter(
+            (item) =>
+              item.caseId !== caseItem.caseId || desiredTagIds.has(item.tagId),
+          );
+          const created = toCreate.map(
+            (tagId) => ({ caseId: caseItem.caseId, tagId }) as CaseTagItem,
+          );
+          onCaseTagsUpdated(caseItem.caseId, [...retained, ...created]);
+        }
       }
       setSaveSuccess("Saved");
       return true;
@@ -447,6 +494,19 @@ const CaseDetail: React.FC<CaseDetailProps> = ({
                 />
               </div>
               <div className="case-detail__form-row case-detail__form-row--full">
+                <label>Tags</label>
+                <Select
+                  mode="multiple"
+                  placeholder={tags.length ? "Select tags" : "Create tags first"}
+                  value={selectedTagIds}
+                  onChange={(value) => setSelectedTagIds(value as string[])}
+                  options={tags.map((tag) => ({
+                    value: tag.tagId,
+                    label: tag.label ?? "Untitled",
+                  }))}
+                />
+              </div>
+              <div className="case-detail__form-row case-detail__form-row--full">
                 <label>Caption</label>
                 <Input.TextArea
                   rows={2}
@@ -497,8 +557,12 @@ const CaseDetail: React.FC<CaseDetailProps> = ({
 
 const App: React.FC = () => {
   const [cases, setCases] = useState<CaseItem[]>([]);
+  const [tags, setTags] = useState<TagItem[]>([]);
+  const [caseTags, setCaseTags] = useState<CaseTagItem[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [tagsError, setTagsError] = useState<string | null>(null);
+  const [caseTagsError, setCaseTagsError] = useState<string | null>(null);
   const [selectedAuthor, setSelectedAuthor] = useState<string | null>(null);
   const [nameQuery, setNameQuery] = useState("");
   const [debouncedNameQuery, setDebouncedNameQuery] = useState("");
@@ -511,6 +575,21 @@ const App: React.FC = () => {
   const isCaseView = location.pathname.startsWith("/case/");
   const isCasesPage = location.pathname === "/";
   const showFilters = isCasesPage && !isCaseView;
+
+  const tagsById = useMemo(() => {
+    return new Map(tags.map((tag) => [tag.tagId, tag.label ?? ""]));
+  }, [tags]);
+
+  const caseTagsByCaseId = useMemo(() => {
+    const map = new Map<string, string[]>();
+    for (const item of caseTags) {
+      if (!map.has(item.caseId)) {
+        map.set(item.caseId, []);
+      }
+      map.get(item.caseId)?.push(item.tagId);
+    }
+    return map;
+  }, [caseTags]);
 
   const sortedCases = useMemo(() => {
     return [...cases].sort((a, b) => {
@@ -553,68 +632,10 @@ const App: React.FC = () => {
     setCurrentPage(1);
   }, [selectedAuthor, debouncedNameQuery]);
 
-  const summaries = useMemo(() => {
-    const words = [
-      "lorem",
-      "ipsum",
-      "dolor",
-      "sit",
-      "amet",
-      "consectetur",
-      "adipiscing",
-      "elit",
-      "sed",
-      "do",
-      "eiusmod",
-      "tempor",
-      "incididunt",
-      "ut",
-      "labore",
-      "et",
-      "dolore",
-      "magna",
-      "aliqua",
-      "ut",
-      "enim",
-      "ad",
-      "minim",
-      "veniam",
-      "quis",
-      "nostrud",
-      "exercitation",
-      "ullamco",
-      "laboris",
-      "nisi",
-      "ut",
-      "aliquip",
-      "ex",
-      "ea",
-      "commodo",
-      "consequat",
-    ];
-
-    function makeSummary(seed: number) {
-      let count = (seed % 141) + 10; // 10-150
-      const result = [];
-      let idx = seed % words.length;
-      while (count > 0) {
-        result.push(words[idx % words.length]);
-        idx += 7;
-        count -= 1;
-      }
-      return result.join(" ");
-    }
-
-    return filteredCases.map((item, index) => ({
-      ...item,
-      summaryText: makeSummary(index + 1),
-    }));
-  }, [filteredCases]);
-
   const pagedSummaries = useMemo(() => {
     const start = (currentPage - 1) * pageSize;
-    return summaries.slice(start, start + pageSize);
-  }, [summaries, currentPage, pageSize]);
+    return filteredCases.slice(start, start + pageSize);
+  }, [filteredCases, currentPage, pageSize]);
 
   const masonryItems = useMemo(
     () =>
@@ -646,11 +667,41 @@ const App: React.FC = () => {
     };
   }, []);
 
+  useEffect(() => {
+    let active = true;
+    async function loadTagsAndLinks() {
+      try {
+        const [{ data: tagData }, { data: linkData }] = await Promise.all([
+          client.models.Tag.list({ limit: 5000 }),
+          client.models.CaseTag.list({ limit: 5000 }),
+        ]);
+        if (!active) return;
+        setTags(tagData ?? []);
+        setCaseTags(linkData ?? []);
+        setTagsError(null);
+        setCaseTagsError(null);
+      } catch (err) {
+        if (!active) return;
+        const message = err instanceof Error ? err.message : "Failed to load tags";
+        setTagsError(message);
+        setCaseTagsError(message);
+      }
+    }
+
+    void loadTagsAndLinks();
+    return () => {
+      active = false;
+    };
+  }, []);
+
   const navigate = useNavigate();
   const handleCaseUpdated = (updated: CaseItem) => {
     setCases((prev) =>
       prev.map((item) => (item.caseId === updated.caseId ? updated : item)),
     );
+  };
+  const handleCaseTagsUpdated = (_caseId: string, nextCaseTags: CaseTagItem[]) => {
+    setCaseTags(nextCaseTags);
   };
 
   return (
@@ -734,6 +785,10 @@ const App: React.FC = () => {
                   </div>
                 ) : null}
                 {error ? <Alert type="error" message={error} showIcon /> : null}
+                {tagsError ? <Alert type="error" message={tagsError} showIcon /> : null}
+                {caseTagsError ? (
+                  <Alert type="error" message={caseTagsError} showIcon />
+                ) : null}
                 {loading ? (
                   <div className="card-grid__loading">
                     <Spin />
@@ -757,6 +812,8 @@ const App: React.FC = () => {
                       const citeLine = `${cite} (${decision})`;
                       const handleReviewClick = () =>
                         navigate(`/case/${data.caseId}`);
+                      const tagLabels =
+                        caseTagsByCaseId.get(data.caseId) ?? [];
                       return (
                         <Card key={data.caseId ?? index} className="grid-card" size="small">
                           <div className="grid-card__badge">
@@ -786,7 +843,17 @@ const App: React.FC = () => {
                             )}
                           </div>
                           <div className="grid-card__summary">
-                            {renderReviewField(data.summaryText, "—", handleReviewClick)}
+                            {tagLabels.length ? (
+                              <div className="grid-card__tags">
+                                {tagLabels.map((tagId) => (
+                                  <span key={tagId} className="tag-pill">
+                                    {tagsById.get(tagId) ?? "Untitled"}
+                                  </span>
+                                ))}
+                              </div>
+                            ) : (
+                              "—"
+                            )}
                           </div>
                         </Card>
                       );
@@ -803,7 +870,10 @@ const App: React.FC = () => {
                 cases={cases}
                 loading={loading}
                 error={error}
+                tags={tags}
+                caseTags={caseTags}
                 onCaseUpdated={handleCaseUpdated}
+                onCaseTagsUpdated={handleCaseTagsUpdated}
               />
             }
           />
@@ -814,8 +884,11 @@ const App: React.FC = () => {
                 cases={cases}
                 loading={loading}
                 error={error}
+                tags={tags}
+                caseTags={caseTags}
                 editable
                 onCaseUpdated={handleCaseUpdated}
+                onCaseTagsUpdated={handleCaseTagsUpdated}
               />
             }
           />
@@ -828,7 +901,7 @@ const App: React.FC = () => {
             <Pagination
               current={currentPage}
               pageSize={pageSize}
-              total={summaries.length}
+              total={filteredCases.length}
               showSizeChanger={false}
               onChange={(page) => setCurrentPage(page)}
             />

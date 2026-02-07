@@ -44,7 +44,9 @@ const schema = a.schema({
     })
     .identifier(["caseId", "tagId"])
     .secondaryIndexes((index) => [index("tagId").sortKeys(["caseId"])])
-    .authorization((allow) => [allow.publicApiKey().to(["read"])]),
+    .authorization((allow) => [
+      allow.publicApiKey().to(["create", "read", "delete"]),
+    ]),
 });
 
 export type Schema = ClientSchema<typeof schema>;
