@@ -54,4 +54,4 @@ export default defineConfig([{
             ...globals.node,
         },
     },
-}, globalIgnores(["**/dist"])]);
+}, globalIgnores(["**/dist", "**/.amplify/**"])]);

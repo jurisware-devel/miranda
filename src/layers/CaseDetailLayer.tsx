@@ -6,6 +6,7 @@ import { client } from "../logic/amplifyClient";
 import type { CaseItem, CaseTagItem, TagItem } from "../logic/types";
 import {
   buildOpinionUrl,
+  formatCaseCaption,
   normalizeDate,
   normalizeNullableField,
 } from "../logic/caseUtils";
@@ -13,6 +14,7 @@ import { buildTagOptions, mapTagsById } from "../logic/tagUtils";
 
 type CaseDetailLayerProps = {
   cases: CaseItem[];
+  filteredCases: CaseItem[];
   loading: boolean;
   error: string | null;
   tags: TagItem[];
@@ -56,6 +58,7 @@ const emptyForm: CaseFormState = {
 
 const CaseDetailLayer: React.FC<CaseDetailLayerProps> = ({
   cases,
+  filteredCases,
   loading,
   error,
   tags,
@@ -76,10 +79,22 @@ const CaseDetailLayer: React.FC<CaseDetailLayerProps> = ({
   const [saveLoading, setSaveLoading] = useState(false);
   const [saveError, setSaveError] = useState<string | null>(null);
   const [saveSuccess, setSaveSuccess] = useState<string | null>(null);
+  const [toastVisible, setToastVisible] = useState(false);
+  const [isEditing, setIsEditing] = useState(false);
   const [selectedTagIds, setSelectedTagIds] = useState<string[]>([]);
 
   const tagsById = useMemo(() => mapTagsById(tags), [tags]);
   const tagOptions = useMemo(() => buildTagOptions(tags), [tags]);
+  const filteredIndex = useMemo(() => {
+    if (!caseId) return -1;
+    return filteredCases.findIndex((item) => item.caseId === caseId);
+  }, [caseId, filteredCases]);
+  const prevCase =
+    filteredIndex > 0 ? filteredCases[filteredIndex - 1] : null;
+  const nextCase =
+    filteredIndex >= 0 && filteredIndex < filteredCases.length - 1
+      ? filteredCases[filteredIndex + 1]
+      : null;
 
   useEffect(() => {
     let active = true;
@@ -166,7 +181,25 @@ const CaseDetailLayer: React.FC<CaseDetailLayerProps> = ({
   useEffect(() => {
     if (!caseItem) return;
     resetFormState(caseItem);
+    setIsEditing(false);
   }, [caseItem]);
+
+  useEffect(() => {
+    if (!saveSuccess) return;
+    setToastVisible(true);
+    const handleDismiss = () => {
+      setToastVisible(false);
+      window.setTimeout(() => {
+        setSaveSuccess(null);
+      }, 200);
+    };
+    const autoDismiss = window.setTimeout(handleDismiss, 5000);
+    document.addEventListener("pointerdown", handleDismiss);
+    return () => {
+      document.removeEventListener("pointerdown", handleDismiss);
+      window.clearTimeout(autoDismiss);
+    };
+  }, [saveSuccess]);
 
   useEffect(() => {
     if (!caseItem) return;
@@ -182,7 +215,7 @@ const CaseDetailLayer: React.FC<CaseDetailLayerProps> = ({
   }, [caseItem, caseTags, tagsById]);
 
   const handleSave = async () => {
-    if (!canEdit) return false;
+    if (!canEdit || !isEditing) return false;
     if (!caseItem) return false;
     try {
       setSaveLoading(true);
@@ -243,6 +276,7 @@ const CaseDetailLayer: React.FC<CaseDetailLayerProps> = ({
         }
       }
       setSaveSuccess("Saved");
+      setIsEditing(false);
       return true;
     } catch (err) {
       setSaveError(err instanceof Error ? err.message : "Failed to save");
@@ -256,30 +290,71 @@ const CaseDetailLayer: React.FC<CaseDetailLayerProps> = ({
     resetFormState(caseItem);
     setSaveError(null);
     setSaveSuccess(null);
+    setIsEditing(false);
   };
 
   return (
     <div className="case-detail">
-      <div className="case-detail__bar">
-        <Button
-          icon={<ArrowLeftOutlined />}
-          type="text"
-          onClick={() => navigate(-1)}
-        >
-          Back
-        </Button>
-      </div>
       {error ? <Alert type="error" message={error} showIcon /> : null}
       {caseError ? <Alert type="error" message={caseError} showIcon /> : null}
       {saveError ? <Alert type="error" message={saveError} showIcon /> : null}
-      {saveSuccess ? <Alert type="success" message={saveSuccess} showIcon /> : null}
+      {saveSuccess ? (
+        <button
+          type="button"
+          className={`case-detail__toast${
+            toastVisible ? " case-detail__toast--visible" : ""
+          }`}
+          onClick={() => {
+            setToastVisible(false);
+            window.setTimeout(() => {
+              setSaveSuccess(null);
+            }, 200);
+          }}
+        >
+          {saveSuccess}
+        </button>
+      ) : null}
       {loading || caseLoading ? (
         <div className="card-grid__loading">
           <Spin />
         </div>
       ) : caseItem ? (
         <div className="case-detail__panel">
-          <div className="case-detail__body">
+          <div className="case-detail__bar">
+            <Button
+              icon={<ArrowLeftOutlined />}
+              type="text"
+              onClick={() => navigate(-1)}
+            >
+              Back
+            </Button>
+            <Button
+              type="text"
+              className="case-detail__caption-button case-detail__caption-button--prev"
+              disabled={!prevCase}
+              onClick={() => {
+                if (prevCase) navigate(`/case/${prevCase.caseId}`);
+              }}
+            >
+              Previous
+            </Button>
+            {caseItem ? (
+              <div className="case-detail__title">{formatCaseCaption(caseItem)}</div>
+            ) : null}
+            <Button
+              type="text"
+              className="case-detail__caption-button case-detail__caption-button--next"
+              disabled={!nextCase}
+              onClick={() => {
+                if (nextCase) navigate(`/case/${nextCase.caseId}`);
+              }}
+            >
+              Next
+            </Button>
+          </div>
+          <div
+            className={`case-detail__body${canEdit ? "" : " case-detail__body--full"}`}
+          >
             <div className="case-detail__text">
               {opinionError ? (
                 <Alert type="error" message={opinionError} showIcon />
@@ -291,17 +366,15 @@ const CaseDetailLayer: React.FC<CaseDetailLayerProps> = ({
                 <pre>{opinionText}</pre>
               )}
             </div>
-            <div className="case-detail__side">
-              <div className="case-detail__form">
-                <div className="case-detail__form-grid">
-                  {!canEdit ? (
-                    <div className="case-detail__readonly">Read-only access</div>
-                  ) : null}
+            {canEdit ? (
+              <div className="case-detail__side">
+                <div className="case-detail__form">
+                  <div className="case-detail__form-grid">
                 <div className="case-detail__form-row">
                   <label>Case Name</label>
                   <Input
                     value={formState.caseName}
-                    disabled={!canEdit}
+                    disabled={!canEdit || !isEditing}
                     onChange={(event) =>
                       setFormState((prev) => ({
                         ...prev,
@@ -314,7 +387,7 @@ const CaseDetailLayer: React.FC<CaseDetailLayerProps> = ({
                   <label>Slip Citation</label>
                   <Input
                     value={formState.slipOp}
-                    disabled={!canEdit}
+                    disabled={!canEdit || !isEditing}
                     onChange={(event) =>
                       setFormState((prev) => ({
                         ...prev,
@@ -327,7 +400,7 @@ const CaseDetailLayer: React.FC<CaseDetailLayerProps> = ({
                   <label>NY3d Citation</label>
                   <Input
                     value={formState.ny3dCite}
-                    disabled={!canEdit}
+                    disabled={!canEdit || !isEditing}
                     onChange={(event) =>
                       setFormState((prev) => ({
                         ...prev,
@@ -340,7 +413,7 @@ const CaseDetailLayer: React.FC<CaseDetailLayerProps> = ({
                   <label>Court</label>
                   <Input
                     value={formState.court}
-                    disabled={!canEdit}
+                    disabled={!canEdit || !isEditing}
                     onChange={(event) =>
                       setFormState((prev) => ({
                         ...prev,
@@ -354,7 +427,7 @@ const CaseDetailLayer: React.FC<CaseDetailLayerProps> = ({
                   <Input
                     type="date"
                     value={formState.arguedDate}
-                    disabled={!canEdit}
+                    disabled={!canEdit || !isEditing}
                     onChange={(event) =>
                       setFormState((prev) => ({
                         ...prev,
@@ -368,7 +441,7 @@ const CaseDetailLayer: React.FC<CaseDetailLayerProps> = ({
                   <Input
                     type="date"
                     value={formState.decisionDate}
-                    disabled={!canEdit}
+                    disabled={!canEdit || !isEditing}
                     onChange={(event) =>
                       setFormState((prev) => ({
                         ...prev,
@@ -382,7 +455,7 @@ const CaseDetailLayer: React.FC<CaseDetailLayerProps> = ({
                   <Input
                     type="date"
                     value={formState.correctedDate}
-                    disabled={!canEdit}
+                    disabled={!canEdit || !isEditing}
                     onChange={(event) =>
                       setFormState((prev) => ({
                         ...prev,
@@ -395,7 +468,7 @@ const CaseDetailLayer: React.FC<CaseDetailLayerProps> = ({
                   <label>Lower Court Cite</label>
                   <Input
                     value={formState.lowerCourtCite}
-                    disabled={!canEdit}
+                    disabled={!canEdit || !isEditing}
                     onChange={(event) =>
                       setFormState((prev) => ({
                         ...prev,
@@ -408,7 +481,7 @@ const CaseDetailLayer: React.FC<CaseDetailLayerProps> = ({
                   <label>Disposition</label>
                   <Input
                     value={formState.disposition}
-                    disabled={!canEdit}
+                    disabled={!canEdit || !isEditing}
                     onChange={(event) =>
                       setFormState((prev) => ({
                         ...prev,
@@ -421,7 +494,7 @@ const CaseDetailLayer: React.FC<CaseDetailLayerProps> = ({
                   <label>Author</label>
                   <Input
                     value={formState.authoringJudge}
-                    disabled={!canEdit}
+                    disabled={!canEdit || !isEditing}
                     onChange={(event) =>
                       setFormState((prev) => ({
                         ...prev,
@@ -435,7 +508,7 @@ const CaseDetailLayer: React.FC<CaseDetailLayerProps> = ({
                   <Input.TextArea
                     rows={3}
                     value={formState.summary}
-                    disabled={!canEdit}
+                    disabled={!canEdit || !isEditing}
                     onChange={(event) =>
                       setFormState((prev) => ({
                         ...prev,
@@ -449,7 +522,7 @@ const CaseDetailLayer: React.FC<CaseDetailLayerProps> = ({
                   <Switch
                     className="case-detail__switch"
                     checked={formState.ai_review}
-                    disabled={!canEdit}
+                    disabled={!canEdit || !isEditing}
                     onChange={(checked) =>
                       setFormState((prev) => ({
                         ...prev,
@@ -464,7 +537,7 @@ const CaseDetailLayer: React.FC<CaseDetailLayerProps> = ({
                     mode="multiple"
                     placeholder={tags.length ? "Select tags" : "Create tags first"}
                     value={selectedTagIds}
-                    disabled={!canEdit}
+                    disabled={!canEdit || !isEditing}
                     onChange={(value) => {
                       const next = (value as string[]).slice().sort((a, b) =>
                         (tagsById.get(a) ?? "").localeCompare(
@@ -483,7 +556,7 @@ const CaseDetailLayer: React.FC<CaseDetailLayerProps> = ({
                   <Input.TextArea
                     rows={2}
                     value={formState.partiesCaption}
-                    disabled={!canEdit}
+                    disabled={!canEdit || !isEditing}
                     onChange={(event) =>
                       setFormState((prev) => ({
                         ...prev,
@@ -493,22 +566,35 @@ const CaseDetailLayer: React.FC<CaseDetailLayerProps> = ({
                   />
                 </div>
                 </div>
-                {canEdit ? (
-                  <div className="case-detail__form-actions">
-                    <Button onClick={handleCancelEdit}>Cancel</Button>
-                    <Button
-                      type="primary"
-                      loading={saveLoading}
-                      onClick={async () => {
-                        await handleSave();
-                      }}
-                    >
-                      Save
-                    </Button>
-                  </div>
-                ) : null}
+                <div className="case-detail__form-actions">
+                  {isEditing ? (
+                    <>
+                      <div className="case-detail__form-actions-left">
+                        <Button onClick={handleCancelEdit}>Cancel</Button>
+                      </div>
+                      <div className="case-detail__form-actions-right">
+                        <Button
+                          type="primary"
+                          loading={saveLoading}
+                          onClick={async () => {
+                            await handleSave();
+                          }}
+                        >
+                          Save
+                        </Button>
+                      </div>
+                    </>
+                  ) : (
+                    <div className="case-detail__form-actions-right">
+                      <Button onClick={() => setIsEditing(true)}>
+                        Edit
+                      </Button>
+                    </div>
+                  )}
+                </div>
               </div>
             </div>
+            ) : null}
           </div>
         </div>
       ) : (

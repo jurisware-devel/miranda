@@ -2,7 +2,7 @@ import React from "react";
 import { Authenticator } from "@aws-amplify/ui-react";
 import "@aws-amplify/ui-react/styles.css";
 import { Navigate } from "react-router-dom";
-import { useAuth } from "../logic/auth/AuthContext";
+import { useAuth } from "../logic/auth/useAuth";
 
 const SignupPage: React.FC = () => {
   const { user, loading } = useAuth();

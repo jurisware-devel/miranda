@@ -1,23 +1,11 @@
-import React, { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
+import React, { useCallback, useEffect, useMemo, useState } from "react";
 import { fetchAuthSession, getCurrentUser, signOut } from "aws-amplify/auth";
 import { Hub } from "aws-amplify/utils";
 import type { AuthUser } from "aws-amplify/auth";
 import { client } from "../amplifyClient";
+import type { UserRole } from "./authTypes";
+import { AuthContext, type AuthState } from "./authContextState";
 import type { UserProfileItem } from "../types";
-
-export type UserRole = "Admin" | "User";
-
-type AuthState = {
-  user: AuthUser | null;
-  profile: UserProfileItem | null;
-  role: UserRole | null;
-  loading: boolean;
-  error: string | null;
-  refresh: () => Promise<void>;
-  signOut: () => Promise<void>;
-};
-
-const AuthContext = createContext<AuthState | undefined>(undefined);
 
 const resolveRole = (groups: string[] | undefined): UserRole =>
   groups?.includes("Admin") ? "Admin" : "User";
@@ -116,12 +104,4 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   );
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
-};
-
-export const useAuth = () => {
-  const ctx = useContext(AuthContext);
-  if (!ctx) {
-    throw new Error("useAuth must be used within AuthProvider");
-  }
-  return ctx;
 };

@@ -10,7 +10,7 @@ import LoginPage from "./pages/LoginPage";
 import SignupPage from "./pages/SignupPage";
 import TagsPage from "./pages/TagsPage";
 import RequireAuth from "./logic/auth/RequireAuth";
-import { useAuth } from "./logic/auth/AuthContext";
+import { useAuth } from "./logic/auth/useAuth";
 import { useCaseFilters } from "./logic/hooks/useCaseFilters";
 import { useCasesData } from "./logic/hooks/useCasesData";
 import { useTagsData } from "./logic/hooks/useTagsData";
@@ -50,7 +50,8 @@ const AppShell: React.FC = () => {
   const location = useLocation();
   const isCaseView = location.pathname.startsWith("/case/");
   const isCasesPage = location.pathname === "/";
-  const showFilters = isCasesPage && !isCaseView;
+  const showFilters = isCasesPage || isCaseView;
+  const lockFilters = isCaseView;
   const showPagination = isCasesPage;
   const userLabel =
     profile?.name?.trim() ||
@@ -78,6 +79,7 @@ const AppShell: React.FC = () => {
     <Layout className="app-shell" style={{ background: "transparent" }}>
       <AppHeader
         showFilters={showFilters}
+        lockFilters={lockFilters}
         isMobile={isMobile}
         onToggleFilters={() => setFiltersOpen((open) => !open)}
         authorOptions={authorOptions}
@@ -122,6 +124,7 @@ const AppShell: React.FC = () => {
             element={
               <CaseDetailLayer
                 cases={cases}
+                filteredCases={filteredCases}
                 loading={loading}
                 error={error}
                 tags={tags}

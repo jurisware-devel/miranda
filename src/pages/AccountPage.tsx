@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Alert, Button, Card, Input, Spin } from "antd";
 import { client } from "../logic/amplifyClient";
-import { useAuth } from "../logic/auth/AuthContext";
+import { useAuth } from "../logic/auth/useAuth";
 import type { UserProfileItem } from "../logic/types";
 
 const AccountPage: React.FC = () => {

@@ -10,6 +10,7 @@ type Option = { value: string; label: string };
 
 type AppHeaderProps = {
   showFilters: boolean;
+  lockFilters?: boolean;
   isMobile: boolean;
   onToggleFilters: () => void;
   authorOptions: Option[];
@@ -26,6 +27,7 @@ type AppHeaderProps = {
 
 const AppHeader: React.FC<AppHeaderProps> = ({
   showFilters,
+  lockFilters = false,
   isMobile,
   onToggleFilters,
   authorOptions,
@@ -42,7 +44,11 @@ const AppHeader: React.FC<AppHeaderProps> = ({
   return (
     <Header className="app-header">
       <div className="app-header-brand">
-        <div className="app-header-title">Miranda</div>
+        <img
+          className="app-header-logo"
+          src="/miranda-logotype.svg"
+          alt="Miranda"
+        />
         <nav className="app-header-nav">
           <NavLink
             to="/"
@@ -63,7 +69,7 @@ const AppHeader: React.FC<AppHeaderProps> = ({
           </NavLink>
         </nav>
       </div>
-      {!showFilters ? null : isMobile ? (
+      {!showFilters ? null : isMobile && !lockFilters ? (
         <Button
           type="text"
           className="app-header-filter-toggle"
@@ -82,6 +88,7 @@ const AppHeader: React.FC<AppHeaderProps> = ({
             sortOrder={sortOrder}
             onSortOrderChange={onSortOrderChange}
             wrapClassName="app-header-filter"
+            disabled={lockFilters}
           />
         </div>
       )}

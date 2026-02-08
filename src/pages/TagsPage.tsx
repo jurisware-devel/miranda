@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { Alert, Button, Card, Input, Modal, Spin, Select } from "antd";
 import { generateClient } from "aws-amplify/data";
 import type { Schema } from "../../amplify/data/resource";
-import { useAuth } from "../logic/auth/AuthContext";
+import { useAuth } from "../logic/auth/useAuth";
 
 const client = generateClient<Schema>();
 
@@ -117,8 +117,16 @@ export default function TagsPage() {
         children: build(tag.tagId, depth + 1),
       }));
     };
-    return build(null, 0);
-  }, [tagChildren]);
+    const roots = build(null, 0);
+    if (roots.length || !sortedTags.length) {
+      return roots;
+    }
+    return sortedTags.map((tag) => ({
+      tag,
+      depth: 0,
+      children: [],
+    }));
+  }, [sortedTags, tagChildren]);
 
   const openCreateModal = () => {
     if (!canEdit) return;
@@ -239,9 +247,7 @@ export default function TagsPage() {
               >
                 + Tag
               </button>
-            ) : (
-              <div className="tags-readonly">Read-only access</div>
-            )}
+            ) : null}
           </div>
         </div>
       )}

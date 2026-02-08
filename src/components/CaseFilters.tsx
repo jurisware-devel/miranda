@@ -11,6 +11,7 @@ type CaseFiltersProps = {
   onNameQueryChange: (value: string) => void;
   sortOrder: string;
   onSortOrderChange: (value: string) => void;
+  disabled?: boolean;
   compact?: boolean;
   wrapClassName?: string;
 };
@@ -23,6 +24,7 @@ const CaseFilters: React.FC<CaseFiltersProps> = ({
   onNameQueryChange,
   sortOrder,
   onSortOrderChange,
+  disabled = false,
   compact = false,
   wrapClassName,
 }) => {
@@ -40,6 +42,7 @@ const CaseFilters: React.FC<CaseFiltersProps> = ({
           value={selectedAuthor ?? undefined}
           onChange={(value) => onAuthorChange(value ?? null)}
           style={selectStyle}
+          disabled={disabled}
         />
       ),
     },
@@ -52,6 +55,7 @@ const CaseFilters: React.FC<CaseFiltersProps> = ({
           allowClear
           onChange={(event) => onNameQueryChange(event.target.value)}
           style={inputStyle}
+          disabled={disabled}
         />
       ),
     },
@@ -68,6 +72,7 @@ const CaseFilters: React.FC<CaseFiltersProps> = ({
             { value: "name_desc", label: "Case name (Z–A)" },
           ]}
           style={selectStyle}
+          disabled={disabled}
         />
       ),
     },

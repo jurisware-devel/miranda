@@ -2,6 +2,7 @@ import React from "react";
 import { Card } from "antd";
 import ReviewField from "./ReviewField";
 import type { CaseItem } from "../logic/types";
+import { formatCaseCitationLine } from "../logic/caseUtils";
 
 type CaseCardProps = {
   caseItem: CaseItem;
@@ -19,15 +20,7 @@ const CaseCard: React.FC<CaseCardProps> = ({
   onOpenCase,
 }) => {
   const title = caseItem.caseName ?? `Case ${index + 1}`;
-  const cite = caseItem.ny3dCite || caseItem.slipOp || caseItem.citation || "—";
-  const decision = caseItem.decisionDate
-    ? new Date(caseItem.decisionDate).toLocaleDateString("en-US", {
-        month: "short",
-        day: "numeric",
-        year: "numeric",
-      })
-    : "—";
-  const citeLine = `${cite} (${decision})`;
+  const citeLine = formatCaseCitationLine(caseItem) || "—";
   const handleReviewClick = () => onOpenCase(caseItem.caseId);
 
   return (

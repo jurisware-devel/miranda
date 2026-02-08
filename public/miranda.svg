@@ -5,7 +5,7 @@
       <stop offset="100%" stop-color="#4b5563" />
     </linearGradient>
   </defs>
-  <rect width="128" height="128" rx="28" fill="url(#miranda-gradient)" />
+  <rect width="128" height="128" rx="28" fill="#2563eb" />
   <path
     d="M32 90V38h14l18 28 18-28h14v52h-14V60l-18 27-18-27v30H32z"
     fill="#f9fafb"
