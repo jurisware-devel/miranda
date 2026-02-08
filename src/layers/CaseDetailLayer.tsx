@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState } from "react";
-import { Alert, Button, Input, Select, Spin, Switch } from "antd";
+import { Alert, Button, Input, Select, Spin } from "antd";
 import { ArrowLeftOutlined } from "@ant-design/icons";
 import { useNavigate, useParams } from "react-router-dom";
 import { client } from "../logic/amplifyClient";
@@ -37,7 +37,6 @@ type CaseFormState = {
   authoringJudge: string;
   partiesCaption: string;
   summary: string;
-  ai_review: boolean;
 };
 
 const emptyForm: CaseFormState = {
@@ -53,7 +52,6 @@ const emptyForm: CaseFormState = {
   authoringJudge: "",
   partiesCaption: "",
   summary: "",
-  ai_review: true,
 };
 
 const CaseDetailLayer: React.FC<CaseDetailLayerProps> = ({
@@ -174,7 +172,6 @@ const CaseDetailLayer: React.FC<CaseDetailLayerProps> = ({
       authoringJudge: item.authoringJudge ?? "",
       partiesCaption: item.partiesCaption ?? "",
       summary: item.summary ?? "",
-      ai_review: item.ai_review ?? true,
     });
   };
 
@@ -236,7 +233,6 @@ const CaseDetailLayer: React.FC<CaseDetailLayerProps> = ({
         authoringJudge: normalizeNullableField(formState.authoringJudge),
         partiesCaption: normalizeNullableField(formState.partiesCaption),
         summary: normalizeNullableField(formState.summary),
-        ai_review: formState.ai_review,
       };
       const result = await client.models.Case.update(payload);
       const updated = (result?.data ?? null) as CaseItem | null;
@@ -525,20 +521,6 @@ const CaseDetailLayer: React.FC<CaseDetailLayerProps> = ({
                       setFormState((prev) => ({
                         ...prev,
                         summary: event.target.value,
-                      }))
-                    }
-                  />
-                </div>
-                <div className="case-detail__form-row">
-                  <label>AI Review</label>
-                  <Switch
-                    className="case-detail__switch"
-                    checked={formState.ai_review}
-                    disabled={!canEdit || !isEditing}
-                    onChange={(checked) =>
-                      setFormState((prev) => ({
-                        ...prev,
-                        ai_review: checked,
                       }))
                     }
                   />

@@ -1,84 +1,62 @@
 import { useEffect, useMemo, useState } from "react";
-import { Alert, Button, Card, Input, Modal, Spin, Select } from "antd";
+import { Alert, Button, Card, Input, Modal, Spin, Masonry, ColorPicker } from "antd";
 import { generateClient } from "aws-amplify/data";
 import type { Schema } from "../../amplify/data/resource";
+import { EditOutlined, CloseCircleOutlined } from "@ant-design/icons";
+import { useNavigate } from "react-router-dom";
 import { useAuth } from "../logic/auth/useAuth";
 
 const client = generateClient<Schema>();
 
 type TagRow = Schema["Tag"]["type"];
-type TagModalMode = "create" | "edit";
+const TAG_PALETTE = [
+  { bg: "#E0F2FE", text: "#0C4A6E" },
+  { bg: "#DCFCE7", text: "#166534" },
+  { bg: "#FFE4E6", text: "#9F1239" },
+  { bg: "#FEF3C7", text: "#92400E" },
+  { bg: "#EDE9FE", text: "#5B21B6" },
+  { bg: "#ECFEFF", text: "#155E75" },
+  { bg: "#FEE2E2", text: "#991B1B" },
+  { bg: "#E2E8F0", text: "#1E293B" },
+  { bg: "#FCE7F3", text: "#9D174D" },
+  { bg: "#D1FAE5", text: "#065F46" },
+  { bg: "#FDE68A", text: "#78350F" },
+  { bg: "#DBEAFE", text: "#1D4ED8" },
+];
 
 const sortTags = (values: TagRow[]) =>
   [...values].sort((a, b) =>
     (a.label ?? "").localeCompare(b.label ?? "", undefined, { sensitivity: "base" }),
   );
 
-type TagTreeNodeItem = {
-  tag: TagRow;
-  depth: number;
-  children: TagTreeNodeItem[];
-};
-
-const TagTreeNode = ({
-  node,
-  onEdit,
-  canEdit,
-}: {
-  node: TagTreeNodeItem;
-  onEdit: (tag: TagRow) => void;
-  canEdit: boolean;
-}) => (
-  <div className="tags-tree__node">
-    <Card className="tag-card tag-card--tree" size="small">
-      <button
-        type="button"
-        className="tag-card__label"
-        onClick={() => (canEdit ? onEdit(node.tag) : null)}
-        aria-label={`Edit ${node.tag.label ?? "tag"}`}
-        disabled={!canEdit}
-        style={{ paddingLeft: `${node.depth * 16}px` }}
-      >
-        {node.tag.label}
-      </button>
-    </Card>
-    {node.children.length ? (
-      <div className="tags-tree__children">
-        {node.children.map((child) => (
-          <TagTreeNode
-            key={child.tag.tagId}
-            node={child}
-            onEdit={onEdit}
-            canEdit={canEdit}
-          />
-        ))}
-      </div>
-    ) : null}
-  </div>
-);
-
 export default function TagsPage() {
   const { role } = useAuth();
   const canEdit = role === "Admin";
+  const navigate = useNavigate();
   const [tags, setTags] = useState<TagRow[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [modalOpen, setModalOpen] = useState(false);
-  const [modalMode, setModalMode] = useState<TagModalMode>("create");
-  const [activeTag, setActiveTag] = useState<TagRow | null>(null);
-  const [labelInput, setLabelInput] = useState("");
-  const [parentTagInput, setParentTagInput] = useState<string | null>(null);
-  const [modalError, setModalError] = useState<string | null>(null);
-  const [saving, setSaving] = useState(false);
+  const [caseTags, setCaseTags] = useState<Schema["CaseTag"]["type"][]>([]);
+  const [editModalOpen, setEditModalOpen] = useState(false);
+  const [editTag, setEditTag] = useState<TagRow | null>(null);
+  const [editLabel, setEditLabel] = useState("");
+  const [editColor, setEditColor] = useState<string>("#E2E8F0");
+  const [childEdits, setChildEdits] = useState<Record<string, boolean>>({});
+  const [editError, setEditError] = useState<string | null>(null);
+  const [editSaving, setEditSaving] = useState(false);
 
   useEffect(() => {
     let active = true;
     async function loadTags() {
       try {
         setLoading(true);
-        const { data: tagData } = await client.models.Tag.list({ limit: 5000 });
+        const [{ data: tagData }, { data: caseTagData }] = await Promise.all([
+          client.models.Tag.list({ limit: 5000 }),
+          client.models.CaseTag.list({ limit: 5000 }),
+        ]);
         if (!active) return;
         setTags(tagData ?? []);
+        setCaseTags(caseTagData ?? []);
         setError(null);
       } catch (err) {
         if (!active) return;
@@ -94,6 +72,15 @@ export default function TagsPage() {
     };
   }, []);
 
+  const refreshTags = async () => {
+    const [{ data: tagData }, { data: caseTagData }] = await Promise.all([
+      client.models.Tag.list({ limit: 5000 }),
+      client.models.CaseTag.list({ limit: 5000 }),
+    ]);
+    setTags(tagData ?? []);
+    setCaseTags(caseTagData ?? []);
+  };
+
   const sortedTags = useMemo(() => sortTags(tags), [tags]);
 
   const tagChildren = useMemo(() => {
@@ -108,116 +95,144 @@ export default function TagsPage() {
     return map;
   }, [sortedTags]);
 
-  const tagTree = useMemo<TagTreeNodeItem[]>(() => {
-    const build = (parentId: string | null, depth: number): TagTreeNodeItem[] => {
-      const children = tagChildren.get(parentId) ?? [];
-      return children.map((tag) => ({
-        tag,
-        depth,
-        children: build(tag.tagId, depth + 1),
-      }));
-    };
-    const roots = build(null, 0);
-    if (roots.length || !sortedTags.length) {
-      return roots;
-    }
-    return sortedTags.map((tag) => ({
-      tag,
-      depth: 0,
-      children: [],
-    }));
-  }, [sortedTags, tagChildren]);
-
-  const openCreateModal = () => {
-    if (!canEdit) return;
-    setModalMode("create");
-    setActiveTag(null);
-    setLabelInput("");
-    setParentTagInput(null);
-    setModalError(null);
-    setModalOpen(true);
-  };
-
   const openEditModal = (tag: TagRow) => {
     if (!canEdit) return;
-    setModalMode("edit");
-    setActiveTag(tag);
-    setLabelInput(tag.label ?? "");
-    setParentTagInput(tag.parentTagId ?? null);
-    setModalError(null);
-    setModalOpen(true);
-  };
-
-  const closeModal = () => {
-    if (saving) return;
-    setModalOpen(false);
-    setModalError(null);
-  };
-
-  const handleSave = async () => {
-    if (!canEdit) {
-      setModalError("Read-only access.");
-      return;
+    const children = tagChildren.get(tag.tagId) ?? [];
+    const edits: Record<string, boolean> = {};
+    for (const child of children) {
+      edits[child.tagId] = false;
     }
-    const trimmed = labelInput.trim();
+    setEditTag(tag);
+    setEditLabel(tag.label ?? "");
+    setEditColor(tag.color ?? "#E2E8F0");
+    setChildEdits(edits);
+    setEditError(null);
+    setEditModalOpen(true);
+  };
+
+  const closeEditModal = () => {
+    if (editSaving) return;
+    setEditModalOpen(false);
+    setEditError(null);
+  };
+
+  const handleEditSave = async () => {
+    if (!editTag) return;
+    const trimmed = editLabel.trim();
     if (!trimmed) {
-      setModalError("Tag label is required.");
+      setEditError("Tag label is required.");
       return;
     }
-
     try {
-      setSaving(true);
-      setModalError(null);
-      if (modalMode === "create") {
-        const tagId = crypto.randomUUID();
-        const result = await client.models.Tag.create({
-          tagId,
-          label: trimmed,
-          parentTagId: parentTagInput ?? undefined,
-        });
-        const created = result?.data ?? null;
-        if (created) {
-          setTags((prev) => sortTags([...prev, created]));
-        }
-      } else if (activeTag) {
-        const result = await client.models.Tag.update({
-          tagId: activeTag.tagId,
-          label: trimmed,
-          parentTagId: parentTagInput ?? undefined,
-        });
-        const updated = result?.data ?? null;
-        if (updated) {
-          setTags((prev) =>
-            prev.map((item) => (item.tagId === updated.tagId ? updated : item)),
+      setEditSaving(true);
+      setEditError(null);
+      const updates: Promise<unknown>[] = [];
+      if (trimmed !== (editTag.label ?? "") || editColor !== (editTag.color ?? "")) {
+        updates.push(
+          client.models.Tag.update({
+            tagId: editTag.tagId,
+            label: trimmed,
+            parentTagId: null,
+            color: editColor,
+          }),
+        );
+      }
+      for (const [childId, state] of Object.entries(childEdits)) {
+        const child = tags.find((item) => item.tagId === childId);
+        if (!child) continue;
+        if (state) {
+          updates.push(
+            client.models.Tag.update({
+              tagId: child.tagId,
+              label: child.label ?? "",
+              parentTagId: null,
+              color: null,
+            }),
           );
+          continue;
         }
       }
-      setModalOpen(false);
+      if (updates.length) {
+        await Promise.all(updates);
+      }
+      await refreshTags();
+      setEditModalOpen(false);
     } catch (err) {
-      setModalError(err instanceof Error ? err.message : "Failed to save tag");
+      setEditError(err instanceof Error ? err.message : "Failed to save tag");
     } finally {
-      setSaving(false);
+      setEditSaving(false);
     }
   };
 
-  const handleDelete = async () => {
-    if (!canEdit) {
-      setModalError("Read-only access.");
+  const handleEditDelete = async () => {
+    if (!editTag) return;
+    const isInUse = caseTags.some((item) => item.tagId === editTag.tagId);
+    const hasChildren = (tagChildren.get(editTag.tagId) ?? []).length > 0;
+    if (isInUse || hasChildren) {
+      setEditError("Tags with children or associated cases cannot be deleted.");
       return;
     }
-    if (!activeTag) return;
     try {
-      setSaving(true);
-      setModalError(null);
-      await client.models.Tag.delete({ tagId: activeTag.tagId });
-      setTags((prev) => prev.filter((item) => item.tagId !== activeTag.tagId));
-      setModalOpen(false);
+      setEditSaving(true);
+      setEditError(null);
+      await client.models.Tag.delete({ tagId: editTag.tagId });
+      await refreshTags();
+      setEditModalOpen(false);
     } catch (err) {
-      setModalError(err instanceof Error ? err.message : "Failed to delete tag");
+      setEditError(err instanceof Error ? err.message : "Failed to delete tag");
     } finally {
-      setSaving(false);
+      setEditSaving(false);
     }
   };
+
+  const tagCaseCounts = useMemo(() => {
+    const map = new Map<string, number>();
+    for (const item of caseTags) {
+      map.set(item.tagId, (map.get(item.tagId) ?? 0) + 1);
+    }
+    return map;
+  }, [caseTags]);
+
+  const formatTagLabel = (tag: TagRow) => {
+    const count = tagCaseCounts.get(tag.tagId) ?? 0;
+    if (count <= 0) return tag.label ?? "Untitled";
+    return `${tag.label ?? "Untitled"} (${count})`;
+  };
+
+  const rootTags = useMemo(() => {
+    const ids = new Set(sortedTags.map((tag) => tag.tagId));
+    return sortedTags.filter(
+      (tag) => !tag.parentTagId || !ids.has(tag.parentTagId),
+    );
+  }, [sortedTags]);
+
+  const tagColorMap = useMemo(() => {
+    const map = new Map<string, { bg: string; text: string }>();
+    rootTags.forEach((tag, index) => {
+      const color = TAG_PALETTE[index % TAG_PALETTE.length];
+      const bg = tag.color ?? color.bg;
+      const text = color.text;
+      map.set(tag.tagId, { bg, text });
+    });
+    return map;
+  }, [rootTags]);
+
+  const darkenHex = (hex: string, amount: number) => {
+    const normalized = hex.replace("#", "");
+    if (normalized.length !== 6) return hex;
+    const clamp = (value: number) => Math.max(0, Math.min(255, value));
+    const adjust = (channel: number) => clamp(Math.round(channel * (1 - amount)));
+    const r = parseInt(normalized.slice(0, 2), 16);
+    const g = parseInt(normalized.slice(2, 4), 16);
+    const b = parseInt(normalized.slice(4, 6), 16);
+    const toHex = (value: number) => value.toString(16).padStart(2, "0");
+    return `#${toHex(adjust(r))}${toHex(adjust(g))}${toHex(adjust(b))}`;
+  };
+
+  const masonryItems = useMemo(
+    () => rootTags.map((tag) => ({ key: tag.tagId, data: { tag } })),
+    [rootTags],
+  );
 
   return (
     <div className="tags-page">
@@ -227,97 +242,186 @@ export default function TagsPage() {
           <Spin />
         </div>
       ) : (
-        <div>
-          <div className="tags-tree">
-            {tagTree.map(({ tag, depth, children }) => (
-              <TagTreeNode
-                key={tag.tagId}
-                node={{ tag, depth, children }}
-                onEdit={openEditModal}
-                canEdit={canEdit}
-              />
-            ))}
-          </div>
-          <div className="tags-grid">
-            {canEdit ? (
-              <button
-                type="button"
-                className="tag-card tag-card--new"
-                onClick={openCreateModal}
-              >
-                + Tag
-              </button>
-            ) : null}
-          </div>
+        <div className="tags-masonry-wrap">
+          <Masonry
+            columns={{ xs: 1, sm: 2, md: 3, lg: 4 }}
+            gutter={{ xs: 12, sm: 12, md: 16 }}
+            items={masonryItems}
+            itemRender={({ data }) => {
+              if (!data.tag) {
+                return null;
+              }
+              const tag = data.tag;
+              const children = tagChildren.get(tag.tagId) ?? [];
+              const hasChildren = children.length > 0;
+              const color =
+                tagColorMap.get(tag.tagId) ?? { bg: "#E2E8F0", text: "#1E293B" };
+              const parentBg = darkenHex(color.bg, 0.08);
+              return (
+                <div className="tags-masonry-item">
+                  <Card
+                    className={`tag-card tag-card--parent${
+                      hasChildren ? "" : " tag-card--parent-empty"
+                    }`}
+                    size="small"
+                  >
+                    {canEdit ? (
+                      <button
+                        type="button"
+                        className="tag-card__edit"
+                        onClick={(event) => {
+                          event.stopPropagation();
+                          openEditModal(tag);
+                        }}
+                        aria-label={`Edit ${tag.label ?? "tag"}`}
+                      >
+                        <EditOutlined />
+                      </button>
+                    ) : null}
+                    <button
+                      type="button"
+                      className="tag-card__label tag-card__title"
+                      onClick={() =>
+                        navigate("/", { state: { tagId: tag.tagId } })
+                      }
+                      aria-label={`Filter by ${tag.label ?? "tag"}`}
+                      style={{ background: parentBg, color: color.text }}
+                    >
+                      {formatTagLabel(tag)}
+                    </button>
+                    {hasChildren ? (
+                      <div className="tag-card__children">
+                        {children.map((child) => (
+                          <button
+                            key={child.tagId}
+                            type="button"
+                            className="tag-card__child"
+                            onClick={() =>
+                              navigate("/", { state: { tagId: child.tagId } })
+                            }
+                            aria-label={`Filter by ${child.label ?? "tag"}`}
+                            style={{ background: color.bg, color: color.text }}
+                          >
+                            {formatTagLabel(child)}
+                          </button>
+                        ))}
+                      </div>
+                    ) : null}
+                  </Card>
+                </div>
+              );
+            }}
+          />
         </div>
       )}
       <Modal
-        open={modalOpen}
-        onCancel={closeModal}
-        title={modalMode === "create" ? "Create Tag" : "Edit Tag"}
+        open={editModalOpen}
+        onCancel={closeEditModal}
+        title="Edit Tag Group"
         footer={
-          modalMode === "edit"
+          editTag
             ? [
-                <Button key="delete" danger onClick={handleDelete} disabled={saving}>
+                <Button
+                  key="delete"
+                  danger
+                  onClick={handleEditDelete}
+                  disabled={
+                    editSaving ||
+                    caseTags.some((item) => item.tagId === editTag.tagId) ||
+                    (tagChildren.get(editTag.tagId) ?? []).length > 0
+                  }
+                >
                   Delete
                 </Button>,
-                <Button key="cancel" onClick={closeModal} disabled={saving}>
+                <Button key="cancel" onClick={closeEditModal} disabled={editSaving}>
                   Cancel
                 </Button>,
                 <Button
                   key="save"
                   type="primary"
-                  onClick={handleSave}
-                  loading={saving}
+                  onClick={handleEditSave}
+                  loading={editSaving}
                 >
                   Save
                 </Button>,
               ]
-            : [
-                <Button key="cancel" onClick={closeModal} disabled={saving}>
-                  Cancel
-                </Button>,
-                <Button
-                  key="create"
-                  type="primary"
-                  onClick={handleSave}
-                  loading={saving}
-                >
-                  Create
-                </Button>,
-              ]
+            : null
         }
       >
-        <div className="tags-modal">
-          <label className="tags-modal__label" htmlFor="tag-label-input">
-            Tag label
-          </label>
-          <Input
-            id="tag-label-input"
-            value={labelInput}
-            onChange={(event) => setLabelInput(event.target.value)}
-            placeholder="Enter tag label"
-          />
-          <label className="tags-modal__label" htmlFor="tag-category-select">
-            Parent Tag
-          </label>
-          <Select
-            id="tag-category-select"
-            value={parentTagInput ?? undefined}
-            allowClear
-            placeholder="No parent"
-            options={sortedTags
-              .filter((tag) => tag.tagId !== activeTag?.tagId)
-              .map((tag) => ({
-                value: tag.tagId,
-                label: tag.label ?? "Untitled",
-              }))}
-            onChange={(value) => setParentTagInput(value ?? null)}
-          />
-          {modalError ? (
-            <Alert type="error" message={modalError} showIcon style={{ marginTop: 12 }} />
-          ) : null}
-        </div>
+        {editTag ? (
+          <div className="tags-modal">
+            <div className="tags-modal__row">
+              <div className="tags-modal__field">
+                <label className="tags-modal__label" htmlFor="tag-label-input">
+                  Parent tag label
+                </label>
+                <Input
+                  id="tag-label-input"
+                  value={editLabel}
+                  onChange={(event) => setEditLabel(event.target.value)}
+                />
+              </div>
+              <ColorPicker
+                value={editColor}
+                disabledAlpha
+                presets={[
+                  {
+                    label: "Tag Colors",
+                    colors: TAG_PALETTE.map((item) => item.bg),
+                  },
+                ]}
+                onChange={(value) => setEditColor(value.toHexString())}
+              >
+                <button
+                  type="button"
+                  className="tags-modal__color-swatch"
+                  aria-label="Group color"
+                  style={{ background: editColor }}
+                />
+              </ColorPicker>
+            </div>
+            {(tagChildren.get(editTag.tagId) ?? []).length ? (
+              <div className="tags-modal__section">
+                <div className="tags-modal__label">Child tags</div>
+                {(tagChildren.get(editTag.tagId) ?? []).map((child) => {
+                  const isDisassociated = childEdits[child.tagId] ?? false;
+                  return (
+                    <div key={child.tagId} className="tags-modal__child-row">
+                      <div
+                        className={`tags-modal__child-pill${
+                          isDisassociated ? " tags-modal__child-pill--muted" : ""
+                        }`}
+                        style={{ background: editColor }}
+                      >
+                        <span>{child.label ?? "Untitled"}</span>
+                        <button
+                          type="button"
+                          className="tags-modal__child-remove"
+                          onClick={() =>
+                            setChildEdits((prev) => ({
+                              ...prev,
+                              [child.tagId]: !prev[child.tagId],
+                            }))
+                          }
+                          aria-label={
+                            isDisassociated
+                              ? `Undo disassociate ${child.label ?? "tag"}`
+                              : `Disassociate ${child.label ?? "tag"}`
+                          }
+                        >
+                          <CloseCircleOutlined />
+                        </button>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            ) : null}
+            {editError ? (
+              <Alert type="error" message={editError} showIcon style={{ marginTop: 12 }} />
+            ) : null}
+          </div>
+        ) : null}
       </Modal>
     </div>
   );

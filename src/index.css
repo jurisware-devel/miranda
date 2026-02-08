@@ -272,6 +272,35 @@ body {
   margin-top: 8px;
 }
 
+.grid-card__summary-markdown {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.grid-card__summary-markdown p {
+  margin: 0;
+}
+
+.grid-card__summary-markdown ul,
+.grid-card__summary-markdown ol {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.grid-card__summary-markdown li {
+  margin: 0;
+}
+
+.grid-card__summary-markdown strong {
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.grid-card__summary-markdown a {
+  color: inherit;
+  text-decoration: underline;
+}
+
 .grid-card__ai-flag {
   font-size: 12px;
   font-weight: 700;
@@ -348,37 +377,31 @@ body {
 .tags-page {
   padding: 24px;
   box-sizing: border-box;
+  width: 100%;
+  flex: 1 1 auto;
+}
+
+.tags-masonry-wrap {
+  width: 100%;
+}
+
+.tags-page .ant-masonry {
+  width: 100%;
+}
+
+.tags-masonry-item {
+  width: 100%;
+}
+
+.tags-masonry-item .tag-card,
+.tags-masonry-item .tag-card--new {
+  width: 100%;
 }
 
 .tags-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 16px;
-}
-
-.tags-tree {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  margin-bottom: 16px;
-}
-
-.tags-tree__children {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  margin-top: 12px;
-}
-
-.tag-card--tree {
-  min-height: 0;
-  align-items: stretch;
-}
-
-.tag-card--tree .tag-card__label {
-  width: 100%;
-  justify-content: flex-start;
-  text-align: left;
 }
 
 @media (min-width: 540px) {
@@ -421,6 +444,33 @@ body {
   padding: 16px;
 }
 
+.tag-card--parent {
+  min-height: 0;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+.tag-card--parent .ant-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+
+.tag-card--parent-empty .ant-card-body {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 120px;
+}
+
+.tag-card--parent-empty .tag-card__title {
+  align-self: center;
+  text-align: center;
+}
+
 .tag-card__label {
   word-break: break-word;
   border: none;
@@ -429,6 +479,64 @@ body {
   color: inherit;
   cursor: pointer;
   padding: 0;
+}
+
+.tag-card__edit {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: rgba(15, 23, 42, 0.08);
+  color: #0f172a;
+  border-radius: 999px;
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.tag-card__edit:hover {
+  background: rgba(15, 23, 42, 0.14);
+}
+
+.tag-card__title {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  align-self: center;
+  border-radius: 999px;
+  padding: 6px 12px;
+}
+
+.tag-card__children {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  width: 100%;
+}
+
+.tag-card__children--empty {
+  color: rgba(15, 23, 42, 0.5);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.tag-card__child {
+  border: none;
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.tag-card__child:disabled,
+.tag-card__label:disabled {
+  cursor: default;
+  opacity: 0.7;
 }
 
 .tag-card--new {
@@ -457,8 +565,74 @@ body {
   gap: 8px;
 }
 
+.tags-modal__row {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.tags-modal__field {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tags-modal__color-swatch {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  border: 1px solid rgba(15, 23, 42, 0.2);
+  background: #e2e8f0;
+  cursor: pointer;
+  padding: 0;
+}
+
 .tags-modal__label {
   font-weight: 600;
+}
+
+.tags-modal__section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.tags-modal__child-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 8px;
+  align-items: center;
+}
+
+.tags-modal__child-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.tags-modal__child-pill--muted {
+  opacity: 0.55;
+}
+
+.tags-modal__child-remove {
+  border: none;
+  background: transparent;
+  color: inherit;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.tags-modal__child-remove:hover {
+  opacity: 0.8;
 }
 
 .case-detail {

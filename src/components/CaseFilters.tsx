@@ -5,8 +5,11 @@ type Option = { value: string; label: string };
 
 type CaseFiltersProps = {
   authorOptions: Option[];
+  tagOptions: Option[];
   selectedAuthor: string | null;
   onAuthorChange: (value: string | null) => void;
+  selectedTagIds: string[];
+  onTagChange: (value: string[]) => void;
   nameQuery: string;
   onNameQueryChange: (value: string) => void;
   sortOrder: string;
@@ -18,8 +21,11 @@ type CaseFiltersProps = {
 
 const CaseFilters: React.FC<CaseFiltersProps> = ({
   authorOptions,
+  tagOptions,
   selectedAuthor,
   onAuthorChange,
+  selectedTagIds,
+  onTagChange,
   nameQuery,
   onNameQueryChange,
   sortOrder,
@@ -41,6 +47,21 @@ const CaseFilters: React.FC<CaseFiltersProps> = ({
           options={authorOptions}
           value={selectedAuthor ?? undefined}
           onChange={(value) => onAuthorChange(value ?? null)}
+          style={selectStyle}
+          disabled={disabled}
+        />
+      ),
+    },
+    {
+      key: "tags",
+      node: (
+        <Select
+          mode="multiple"
+          allowClear
+          placeholder="Tags"
+          options={tagOptions}
+          value={selectedTagIds.length ? selectedTagIds : undefined}
+          onChange={(value) => onTagChange(value)}
           style={selectStyle}
           disabled={disabled}
         />

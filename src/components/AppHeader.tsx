@@ -14,8 +14,11 @@ type AppHeaderProps = {
   isMobile: boolean;
   onToggleFilters: () => void;
   authorOptions: Option[];
+  tagOptions: Option[];
   selectedAuthor: string | null;
   onAuthorChange: (value: string | null) => void;
+  selectedTagIds: string[];
+  onTagChange: (value: string[]) => void;
   nameQuery: string;
   onNameQueryChange: (value: string) => void;
   sortOrder: string;
@@ -31,8 +34,11 @@ const AppHeader: React.FC<AppHeaderProps> = ({
   isMobile,
   onToggleFilters,
   authorOptions,
+  tagOptions,
   selectedAuthor,
   onAuthorChange,
+  selectedTagIds,
+  onTagChange,
   nameQuery,
   onNameQueryChange,
   sortOrder,
@@ -81,8 +87,11 @@ const AppHeader: React.FC<AppHeaderProps> = ({
         <div className="app-header-filters">
           <CaseFilters
             authorOptions={authorOptions}
+            tagOptions={tagOptions}
             selectedAuthor={selectedAuthor}
             onAuthorChange={onAuthorChange}
+            selectedTagIds={selectedTagIds}
+            onTagChange={onTagChange}
             nameQuery={nameQuery}
             onNameQueryChange={onNameQueryChange}
             sortOrder={sortOrder}

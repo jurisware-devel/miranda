@@ -23,7 +23,6 @@ const schema = a.schema({
       partiesCaption: a.string(),
       statutesCited: a.string().array(),
       summary: a.string(),
-      ai_review: a.boolean().default(true),
     })
     .identifier(["caseId"])
     .authorization((allow) => [
@@ -36,6 +35,7 @@ const schema = a.schema({
       tagId: a.string().required(),
       label: a.string().required(),
       parentTagId: a.string(),
+      color: a.string(),
     })
     .identifier(["tagId"])
     .authorization((allow) => [

@@ -1,8 +1,9 @@
 import React from "react";
 import { Card } from "antd";
+import ReactMarkdown from "react-markdown";
 import ReviewField from "./ReviewField";
 import type { CaseItem } from "../logic/types";
-import { formatCaseCitationLine } from "../logic/caseUtils";
+import { formatCaseCitationLine, REVIEW_MARKER } from "../logic/caseUtils";
 
 type CaseCardProps = {
   caseItem: CaseItem;
@@ -22,6 +23,9 @@ const CaseCard: React.FC<CaseCardProps> = ({
   const title = caseItem.caseName ?? `Case ${index + 1}`;
   const citeLine = formatCaseCitationLine(caseItem) || "—";
   const handleReviewClick = () => onOpenCase(caseItem.caseId);
+  const summary = caseItem.summary ?? "";
+  const hasSummary = summary.trim().length > 0;
+  const needsReview = summary.includes(REVIEW_MARKER);
 
   return (
     <Card key={caseItem.caseId ?? index} className="grid-card" size="small">
@@ -61,14 +65,21 @@ const CaseCard: React.FC<CaseCardProps> = ({
           : null}
       </div>
       <div className="grid-card__summary">
-        {(caseItem.summary ?? "").trim() && (caseItem.ai_review ?? true) ? (
-          <div className="grid-card__ai-flag">AI gen - needs review</div>
-        ) : null}
-        <ReviewField
-          value={caseItem.summary ?? undefined}
-          fallback="—"
-          onReviewClick={handleReviewClick}
-        />
+        {hasSummary ? (
+          needsReview ? (
+            <ReviewField
+              value={summary}
+              fallback="—"
+              onReviewClick={handleReviewClick}
+            />
+          ) : (
+            <ReactMarkdown className="grid-card__summary-markdown">
+              {summary}
+            </ReactMarkdown>
+          )
+        ) : (
+          <ReviewField fallback="—" onReviewClick={handleReviewClick} />
+        )}
       </div>
     </Card>
   );

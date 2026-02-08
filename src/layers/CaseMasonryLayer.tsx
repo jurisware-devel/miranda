@@ -18,8 +18,11 @@ type CaseMasonryLayerProps = {
   caseTagsByCaseId: Map<string, string[]>;
   onOpenCase: (caseId: string) => void;
   authorOptions: Option[];
+  tagOptions: Option[];
   selectedAuthor: string | null;
   onAuthorChange: (value: string | null) => void;
+  selectedTagIds: string[];
+  onTagChange: (value: string[]) => void;
   nameQuery: string;
   onNameQueryChange: (value: string) => void;
   sortOrder: string;
@@ -38,8 +41,11 @@ const CaseMasonryLayer: React.FC<CaseMasonryLayerProps> = ({
   caseTagsByCaseId,
   onOpenCase,
   authorOptions,
+  tagOptions,
   selectedAuthor,
   onAuthorChange,
+  selectedTagIds,
+  onTagChange,
   nameQuery,
   onNameQueryChange,
   sortOrder,
@@ -54,8 +60,11 @@ const CaseMasonryLayer: React.FC<CaseMasonryLayerProps> = ({
           <CaseFilters
             compact
             authorOptions={authorOptions}
+            tagOptions={tagOptions}
             selectedAuthor={selectedAuthor}
             onAuthorChange={onAuthorChange}
+            selectedTagIds={selectedTagIds}
+            onTagChange={onTagChange}
             nameQuery={nameQuery}
             onNameQueryChange={onNameQueryChange}
             sortOrder={sortOrder}

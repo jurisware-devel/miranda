@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { Grid, Layout } from "antd";
 import { Route, Routes, useLocation, useNavigate } from "react-router-dom";
 import AppFooter from "./components/AppFooter";
@@ -32,8 +32,11 @@ const AppShell: React.FC = () => {
   } = useTagsData(true);
   const {
     authorOptions,
+    tagOptions,
     selectedAuthor,
     setSelectedAuthor,
+    selectedTagIds,
+    setSelectedTagIds,
     nameQuery,
     setNameQuery,
     sortOrder,
@@ -43,7 +46,7 @@ const AppShell: React.FC = () => {
     pageSize,
     filteredCases,
     pagedCases,
-  } = useCaseFilters(cases);
+  } = useCaseFilters(cases, tags, caseTags);
   const [filtersOpen, setFiltersOpen] = useState(false);
   const screens = Grid.useBreakpoint();
   const isMobile = !screens.sm;
@@ -66,6 +69,26 @@ const AppShell: React.FC = () => {
   );
 
   const navigate = useNavigate();
+  useEffect(() => {
+    if (location.pathname !== "/") return;
+    const state = (location.state as { tagId?: string } | null) ?? null;
+    if (!state?.tagId) return;
+    setSelectedAuthor(null);
+    setSelectedTagIds([state.tagId]);
+    setNameQuery("");
+    setSortOrder("date_desc");
+    setFiltersOpen(false);
+    navigate(".", { replace: true, state: null });
+  }, [
+    location.pathname,
+    location.state,
+    navigate,
+    setNameQuery,
+    setSelectedAuthor,
+    setSelectedTagIds,
+    setSortOrder,
+    setFiltersOpen,
+  ]);
   const handleCaseUpdated = (updated: CaseItem) => {
     setCases((prev) =>
       prev.map((item) => (item.caseId === updated.caseId ? updated : item)),
@@ -83,8 +106,11 @@ const AppShell: React.FC = () => {
         isMobile={isMobile}
         onToggleFilters={() => setFiltersOpen((open) => !open)}
         authorOptions={authorOptions}
+        tagOptions={tagOptions}
         selectedAuthor={selectedAuthor}
         onAuthorChange={setSelectedAuthor}
+        selectedTagIds={selectedTagIds}
+        onTagChange={setSelectedTagIds}
         nameQuery={nameQuery}
         onNameQueryChange={setNameQuery}
         sortOrder={sortOrder}
@@ -110,8 +136,11 @@ const AppShell: React.FC = () => {
                 caseTagsByCaseId={caseTagsByCaseId}
                 onOpenCase={(caseId) => navigate(`/case/${caseId}`)}
                 authorOptions={authorOptions}
+                tagOptions={tagOptions}
                 selectedAuthor={selectedAuthor}
                 onAuthorChange={setSelectedAuthor}
+                selectedTagIds={selectedTagIds}
+                onTagChange={setSelectedTagIds}
                 nameQuery={nameQuery}
                 onNameQueryChange={setNameQuery}
                 sortOrder={sortOrder}
