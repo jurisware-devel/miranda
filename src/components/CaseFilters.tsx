@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Input, Select } from "antd";
 
 type Option = { value: string; label: string };
@@ -34,6 +34,7 @@ const CaseFilters: React.FC<CaseFiltersProps> = ({
   compact = false,
   wrapClassName,
 }) => {
+  const [tagOpen, setTagOpen] = useState(false);
   const selectStyle = compact ? undefined : { minWidth: 200 };
   const inputStyle = compact ? undefined : { minWidth: 240 };
 
@@ -59,9 +60,31 @@ const CaseFilters: React.FC<CaseFiltersProps> = ({
           mode="multiple"
           allowClear
           placeholder="Tags"
+          showSearch={false}
+          filterOption={false}
+          className="case-tags-select"
           options={tagOptions}
           value={selectedTagIds.length ? selectedTagIds : undefined}
-          onChange={(value) => onTagChange(value)}
+          maxTagTextLength={0}
+          maxTagCount={0}
+          maxTagPlaceholder={() => null}
+          onChange={(value) => {
+            const next = (value as string[]).slice();
+            const hasAny = next.includes("__any__");
+            if (hasAny && next.length === 1) {
+              onTagChange(["__any__"]);
+              setTagOpen(false);
+              return;
+            }
+            const filtered = next.filter((item) => item !== "__any__");
+            if (filtered.length > 2) {
+              onTagChange(filtered.slice(0, 2));
+              return;
+            }
+            onTagChange(filtered);
+          }}
+          open={tagOpen}
+          onDropdownVisibleChange={setTagOpen}
           style={selectStyle}
           disabled={disabled}
         />

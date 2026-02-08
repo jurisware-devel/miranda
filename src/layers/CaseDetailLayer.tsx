@@ -204,9 +204,13 @@ const CaseDetailLayer: React.FC<CaseDetailLayerProps> = ({
       .filter((item) => item.caseId === caseItem.caseId)
       .map((item) => item.tagId)
       .sort((a, b) =>
-        (tagsById.get(a) ?? "").localeCompare(tagsById.get(b) ?? "", undefined, {
-          sensitivity: "base",
-        }),
+        (tagsById.get(a)?.label ?? "").localeCompare(
+          tagsById.get(b)?.label ?? "",
+          undefined,
+          {
+            sensitivity: "base",
+          },
+        ),
       );
     setSelectedTagIds(nextTagIds);
   }, [caseItem, caseTags, tagsById]);
@@ -534,8 +538,8 @@ const CaseDetailLayer: React.FC<CaseDetailLayerProps> = ({
                     disabled={!canEdit || !isEditing}
                     onChange={(value) => {
                       const next = (value as string[]).slice().sort((a, b) =>
-                        (tagsById.get(a) ?? "").localeCompare(
-                          tagsById.get(b) ?? "",
+                        (tagsById.get(a)?.label ?? "").localeCompare(
+                          tagsById.get(b)?.label ?? "",
                           undefined,
                           { sensitivity: "base" },
                         ),

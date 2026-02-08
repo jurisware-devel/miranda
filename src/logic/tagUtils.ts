@@ -1,7 +1,28 @@
 import type { CaseTagItem, TagItem } from "./types";
 
-export const mapTagsById = (tags: TagItem[]) =>
-  new Map(tags.map((tag) => [tag.tagId, tag.label ?? ""]));
+export type TagMeta = {
+  label: string;
+  color?: string | null;
+  parentTagId?: string | null;
+};
+
+export const mapTagsById = (tags: TagItem[]) => {
+  const byId = new Map(tags.map((tag) => [tag.tagId, tag]));
+  const getRootColor = (tag: TagItem): string | null | undefined => {
+    if (!tag.parentTagId) return tag.color;
+    const parent = byId.get(tag.parentTagId);
+    return parent?.color ?? tag.color ?? null;
+  };
+  const map = new Map<string, TagMeta>();
+  for (const tag of tags) {
+    map.set(tag.tagId, {
+      label: tag.label ?? "",
+      color: getRootColor(tag),
+      parentTagId: tag.parentTagId ?? null,
+    });
+  }
+  return map;
+};
 
 export const buildSortedTags = (tags: TagItem[]) =>
   [...tags].sort((a, b) =>
@@ -35,7 +56,7 @@ export const buildTagOptions = (tags: TagItem[]) => {
 
 export const mapCaseTagsByCaseId = (
   caseTags: CaseTagItem[],
-  tagsById: Map<string, string>,
+  tagsById: Map<string, TagMeta>,
 ) => {
   const map = new Map<string, string[]>();
   for (const item of caseTags) {
@@ -46,9 +67,13 @@ export const mapCaseTagsByCaseId = (
   }
   for (const [caseId, tagIds] of map.entries()) {
     const sorted = [...tagIds].sort((a, b) =>
-      (tagsById.get(a) ?? "").localeCompare(tagsById.get(b) ?? "", undefined, {
-        sensitivity: "base",
-      }),
+      (tagsById.get(a)?.label ?? "").localeCompare(
+        tagsById.get(b)?.label ?? "",
+        undefined,
+        {
+          sensitivity: "base",
+        },
+      ),
     );
     map.set(caseId, sorted);
   }

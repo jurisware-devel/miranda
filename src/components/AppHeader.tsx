@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, Layout } from "antd";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import CaseFilters from "./CaseFilters";
 import UserMenu from "./UserMenu";
 
@@ -13,6 +13,7 @@ type AppHeaderProps = {
   lockFilters?: boolean;
   isMobile: boolean;
   onToggleFilters: () => void;
+  onClearFilters: () => void;
   authorOptions: Option[];
   tagOptions: Option[];
   selectedAuthor: string | null;
@@ -33,6 +34,7 @@ const AppHeader: React.FC<AppHeaderProps> = ({
   lockFilters = false,
   isMobile,
   onToggleFilters,
+  onClearFilters,
   authorOptions,
   tagOptions,
   selectedAuthor,
@@ -47,14 +49,21 @@ const AppHeader: React.FC<AppHeaderProps> = ({
   onAccount,
   onSignOut,
 }) => {
+  const navigate = useNavigate();
   return (
     <Header className="app-header">
       <div className="app-header-brand">
-        <img
-          className="app-header-logo"
-          src="/miranda-logotype.svg"
-          alt="Miranda"
-        />
+        <button
+          type="button"
+          className="app-header-logo-button"
+          onClick={() => {
+            onClearFilters();
+            navigate("/");
+          }}
+          aria-label="Go to cases"
+        >
+          <img className="app-header-logo" src="/miranda-logotype.svg" alt="Miranda" />
+        </button>
         <nav className="app-header-nav">
           <NavLink
             to="/"

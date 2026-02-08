@@ -1,10 +1,22 @@
 import { useEffect, useMemo, useState } from "react";
-import { Alert, Button, Card, Input, Modal, Spin, Masonry, ColorPicker } from "antd";
+import {
+  Alert,
+  Button,
+  Card,
+  Input,
+  Modal,
+  Spin,
+  Masonry,
+  ColorPicker,
+  Select,
+} from "antd";
 import { generateClient } from "aws-amplify/data";
 import type { Schema } from "../../amplify/data/resource";
-import { EditOutlined, CloseCircleOutlined } from "@ant-design/icons";
-import { useNavigate } from "react-router-dom";
+import { EditOutlined, CloseCircleOutlined, UndoOutlined } from "@ant-design/icons";
+import { useLocation, useNavigate } from "react-router-dom";
 import { useAuth } from "../logic/auth/useAuth";
+import { darkenHex, getReadableTextColor } from "../logic/colorUtils";
+import TagCapsule from "../components/TagCapsule";
 
 const client = generateClient<Schema>();
 
@@ -33,14 +45,17 @@ export default function TagsPage() {
   const { role } = useAuth();
   const canEdit = role === "Admin";
   const navigate = useNavigate();
+  const location = useLocation();
   const [tags, setTags] = useState<TagRow[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [caseTags, setCaseTags] = useState<Schema["CaseTag"]["type"][]>([]);
   const [editModalOpen, setEditModalOpen] = useState(false);
+  const [editMode, setEditMode] = useState<"create" | "edit">("edit");
   const [editTag, setEditTag] = useState<TagRow | null>(null);
   const [editLabel, setEditLabel] = useState("");
   const [editColor, setEditColor] = useState<string>("#E2E8F0");
+  const [editParentId, setEditParentId] = useState<string | null>(null);
   const [childEdits, setChildEdits] = useState<Record<string, boolean>>({});
   const [editError, setEditError] = useState<string | null>(null);
   const [editSaving, setEditSaving] = useState(false);
@@ -72,6 +87,13 @@ export default function TagsPage() {
     };
   }, []);
 
+  useEffect(() => {
+    const state = (location.state as { openCreateTag?: boolean } | null) ?? null;
+    if (!state?.openCreateTag || !canEdit) return;
+    openCreateModal();
+    navigate(".", { replace: true, state: null });
+  }, [location.state, canEdit, navigate]);
+
   const refreshTags = async () => {
     const [{ data: tagData }, { data: caseTagData }] = await Promise.all([
       client.models.Tag.list({ limit: 5000 }),
@@ -102,10 +124,24 @@ export default function TagsPage() {
     for (const child of children) {
       edits[child.tagId] = false;
     }
+    setEditMode("edit");
     setEditTag(tag);
     setEditLabel(tag.label ?? "");
     setEditColor(tag.color ?? "#E2E8F0");
+    setEditParentId(tag.parentTagId ?? null);
     setChildEdits(edits);
+    setEditError(null);
+    setEditModalOpen(true);
+  };
+
+  const openCreateModal = () => {
+    if (!canEdit) return;
+    setEditMode("create");
+    setEditTag(null);
+    setEditLabel("");
+    setEditColor(TAG_PALETTE[0]?.bg ?? "#E2E8F0");
+    setEditParentId(null);
+    setChildEdits({});
     setEditError(null);
     setEditModalOpen(true);
   };
@@ -117,7 +153,6 @@ export default function TagsPage() {
   };
 
   const handleEditSave = async () => {
-    if (!editTag) return;
     const trimmed = editLabel.trim();
     if (!trimmed) {
       setEditError("Tag label is required.");
@@ -127,29 +162,46 @@ export default function TagsPage() {
       setEditSaving(true);
       setEditError(null);
       const updates: Promise<unknown>[] = [];
-      if (trimmed !== (editTag.label ?? "") || editColor !== (editTag.color ?? "")) {
+      const nextParentId = editParentId ?? null;
+      const nextColor = nextParentId ? null : editColor;
+      if (editMode === "create") {
         updates.push(
-          client.models.Tag.update({
-            tagId: editTag.tagId,
+          client.models.Tag.create({
+            tagId: crypto.randomUUID(),
             label: trimmed,
-            parentTagId: null,
-            color: editColor,
+            parentTagId: nextParentId,
+            color: nextColor,
           }),
         );
-      }
-      for (const [childId, state] of Object.entries(childEdits)) {
-        const child = tags.find((item) => item.tagId === childId);
-        if (!child) continue;
-        if (state) {
+      } else if (editTag) {
+        if (
+          trimmed !== (editTag.label ?? "") ||
+          nextColor !== (editTag.color ?? "") ||
+          nextParentId !== (editTag.parentTagId ?? null)
+        ) {
           updates.push(
             client.models.Tag.update({
-              tagId: child.tagId,
-              label: child.label ?? "",
-              parentTagId: null,
-              color: null,
+              tagId: editTag.tagId,
+              label: trimmed,
+              parentTagId: nextParentId,
+              color: nextColor,
             }),
           );
-          continue;
+        }
+        for (const [childId, state] of Object.entries(childEdits)) {
+          const child = tags.find((item) => item.tagId === childId);
+          if (!child) continue;
+          if (state) {
+            updates.push(
+              client.models.Tag.update({
+                tagId: child.tagId,
+                label: child.label ?? "",
+                parentTagId: null,
+                color: null,
+              }),
+            );
+            continue;
+          }
         }
       }
       if (updates.length) {
@@ -217,17 +269,7 @@ export default function TagsPage() {
     return map;
   }, [rootTags]);
 
-  const darkenHex = (hex: string, amount: number) => {
-    const normalized = hex.replace("#", "");
-    if (normalized.length !== 6) return hex;
-    const clamp = (value: number) => Math.max(0, Math.min(255, value));
-    const adjust = (channel: number) => clamp(Math.round(channel * (1 - amount)));
-    const r = parseInt(normalized.slice(0, 2), 16);
-    const g = parseInt(normalized.slice(2, 4), 16);
-    const b = parseInt(normalized.slice(4, 6), 16);
-    const toHex = (value: number) => value.toString(16).padStart(2, "0");
-    return `#${toHex(adjust(r))}${toHex(adjust(g))}${toHex(adjust(b))}`;
-  };
+  // color helpers in colorUtils
 
   const masonryItems = useMemo(
     () => rootTags.map((tag) => ({ key: tag.tagId, data: { tag } })),
@@ -257,6 +299,8 @@ export default function TagsPage() {
               const color =
                 tagColorMap.get(tag.tagId) ?? { bg: "#E2E8F0", text: "#1E293B" };
               const parentBg = darkenHex(color.bg, 0.08);
+              const parentText = getReadableTextColor(parentBg, color.text);
+              const childText = getReadableTextColor(color.bg, color.text);
               return (
                 <div className="tags-masonry-item">
                   <Card
@@ -278,32 +322,29 @@ export default function TagsPage() {
                         <EditOutlined />
                       </button>
                     ) : null}
-                    <button
-                      type="button"
-                      className="tag-card__label tag-card__title"
-                      onClick={() =>
-                        navigate("/", { state: { tagId: tag.tagId } })
-                      }
-                      aria-label={`Filter by ${tag.label ?? "tag"}`}
-                      style={{ background: parentBg, color: color.text }}
-                    >
-                      {formatTagLabel(tag)}
-                    </button>
+                    <TagCapsule
+                      size="lg"
+                      label={formatTagLabel(tag)}
+                      background={parentBg}
+                      color={parentText}
+                      onClick={() => navigate("/", { state: { tagId: tag.tagId } })}
+                      className="tag-card__title"
+                      ariaLabel={`Filter by ${tag.label ?? "tag"}`}
+                    />
                     {hasChildren ? (
                       <div className="tag-card__children">
                         {children.map((child) => (
-                          <button
+                          <TagCapsule
                             key={child.tagId}
-                            type="button"
-                            className="tag-card__child"
+                            label={formatTagLabel(child)}
+                            background={color.bg}
+                            color={childText}
                             onClick={() =>
                               navigate("/", { state: { tagId: child.tagId } })
                             }
-                            aria-label={`Filter by ${child.label ?? "tag"}`}
-                            style={{ background: color.bg, color: color.text }}
-                          >
-                            {formatTagLabel(child)}
-                          </button>
+                            className="tag-card__child"
+                            ariaLabel={`Filter by ${child.label ?? "tag"}`}
+                          />
                         ))}
                       </div>
                     ) : null}
@@ -317,9 +358,9 @@ export default function TagsPage() {
       <Modal
         open={editModalOpen}
         onCancel={closeEditModal}
-        title="Edit Tag Group"
+        title={editMode === "create" ? "New Tag" : "Edit Tag"}
         footer={
-          editTag
+          editMode === "edit" && editTag
             ? [
                 <Button
                   key="delete"
@@ -345,15 +386,27 @@ export default function TagsPage() {
                   Save
                 </Button>,
               ]
-            : null
+            : [
+                <Button key="cancel" onClick={closeEditModal} disabled={editSaving}>
+                  Cancel
+                </Button>,
+                <Button
+                  key="create"
+                  type="primary"
+                  onClick={handleEditSave}
+                  loading={editSaving}
+                >
+                  Create
+                </Button>,
+              ]
         }
       >
-        {editTag ? (
+        {editMode === "edit" || editMode === "create" ? (
           <div className="tags-modal">
             <div className="tags-modal__row">
               <div className="tags-modal__field">
                 <label className="tags-modal__label" htmlFor="tag-label-input">
-                  Parent tag label
+                  Label
                 </label>
                 <Input
                   id="tag-label-input"
@@ -361,57 +414,85 @@ export default function TagsPage() {
                   onChange={(event) => setEditLabel(event.target.value)}
                 />
               </div>
-              <ColorPicker
-                value={editColor}
-                disabledAlpha
-                presets={[
-                  {
-                    label: "Tag Colors",
-                    colors: TAG_PALETTE.map((item) => item.bg),
-                  },
-                ]}
-                onChange={(value) => setEditColor(value.toHexString())}
-              >
-                <button
-                  type="button"
-                  className="tags-modal__color-swatch"
-                  aria-label="Group color"
-                  style={{ background: editColor }}
-                />
-              </ColorPicker>
+              {editParentId ? null : (
+                <ColorPicker
+                  value={editColor}
+                  disabledAlpha
+                  presets={[
+                    {
+                      label: "Tag Colors",
+                      colors: TAG_PALETTE.map((item) => item.bg),
+                    },
+                  ]}
+                  onChange={(value) => setEditColor(value.toHexString())}
+                >
+                  <button
+                    type="button"
+                    className="tags-modal__color-swatch"
+                    aria-label="Group color"
+                    style={{ background: editColor }}
+                  />
+                </ColorPicker>
+              )}
             </div>
-            {(tagChildren.get(editTag.tagId) ?? []).length ? (
+            {editMode === "create" ||
+            (editTag && (tagChildren.get(editTag.tagId) ?? []).length === 0) ? (
+              <>
+                <label className="tags-modal__label" htmlFor="tag-parent-select">
+                  Parent
+                </label>
+                <Select
+                  id="tag-parent-select"
+                  value={editParentId ?? undefined}
+                  allowClear
+                  placeholder="No parent"
+                  options={sortedTags
+                    .filter((tag) => !tag.parentTagId)
+                    .filter((tag) => (editTag ? tag.tagId !== editTag.tagId : true))
+                    .map((tag) => ({
+                      value: tag.tagId,
+                      label: tag.label ?? "Untitled",
+                    }))}
+                  onChange={(value) => setEditParentId(value ?? null)}
+                />
+              </>
+            ) : null}
+            {editMode === "edit" &&
+            editTag &&
+            (tagChildren.get(editTag.tagId) ?? []).length ? (
               <div className="tags-modal__section">
                 <div className="tags-modal__label">Child tags</div>
                 {(tagChildren.get(editTag.tagId) ?? []).map((child) => {
                   const isDisassociated = childEdits[child.tagId] ?? false;
                   return (
                     <div key={child.tagId} className="tags-modal__child-row">
-                      <div
-                        className={`tags-modal__child-pill${
-                          isDisassociated ? " tags-modal__child-pill--muted" : ""
-                        }`}
-                        style={{ background: editColor }}
-                      >
-                        <span>{child.label ?? "Untitled"}</span>
-                        <button
-                          type="button"
-                          className="tags-modal__child-remove"
-                          onClick={() =>
-                            setChildEdits((prev) => ({
-                              ...prev,
-                              [child.tagId]: !prev[child.tagId],
-                            }))
-                          }
-                          aria-label={
-                            isDisassociated
-                              ? `Undo disassociate ${child.label ?? "tag"}`
-                              : `Disassociate ${child.label ?? "tag"}`
-                          }
-                        >
-                          <CloseCircleOutlined />
-                        </button>
-                      </div>
+                      <TagCapsule
+                        label={child.label ?? "Untitled"}
+                        background={editColor}
+                        color={getReadableTextColor(editColor)}
+                        className={
+                          isDisassociated ? "tags-modal__child-pill--muted" : undefined
+                        }
+                        rightSlot={
+                          <button
+                            type="button"
+                            className="tags-modal__child-remove"
+                            onClick={() =>
+                              setChildEdits((prev) => ({
+                                ...prev,
+                                [child.tagId]: !prev[child.tagId],
+                              }))
+                            }
+                            aria-label={
+                              isDisassociated
+                                ? `Undo disassociate ${child.label ?? "tag"}`
+                                : `Disassociate ${child.label ?? "tag"}`
+                            }
+                          >
+                            {isDisassociated ? <UndoOutlined /> : <CloseCircleOutlined />}
+                          </button>
+                        }
+                      />
                     </div>
                   );
                 })}

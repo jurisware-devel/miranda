@@ -1,8 +1,12 @@
 import React from "react";
 import { Alert, Masonry, Spin } from "antd";
+import { CloseCircleOutlined } from "@ant-design/icons";
 import CaseFilters from "../components/CaseFilters";
 import CaseCard from "../components/CaseCard";
 import type { CaseItem } from "../logic/types";
+import type { TagMeta } from "../logic/tagUtils";
+import TagCapsule from "../components/TagCapsule";
+import { getReadableTextColor } from "../logic/colorUtils";
 
 type Option = { value: string; label: string };
 
@@ -13,8 +17,10 @@ type CaseMasonryLayerProps = {
   tagsError: string | null;
   caseTagsError: string | null;
   loading: boolean;
+  totalCases: number;
+  filteredCount: number;
   cases: CaseItem[];
-  tagsById: Map<string, string>;
+  tagsById: Map<string, TagMeta>;
   caseTagsByCaseId: Map<string, string[]>;
   onOpenCase: (caseId: string) => void;
   authorOptions: Option[];
@@ -36,6 +42,8 @@ const CaseMasonryLayer: React.FC<CaseMasonryLayerProps> = ({
   tagsError,
   caseTagsError,
   loading,
+  totalCases,
+  filteredCount,
   cases,
   tagsById,
   caseTagsByCaseId,
@@ -52,9 +60,46 @@ const CaseMasonryLayer: React.FC<CaseMasonryLayerProps> = ({
   onSortOrderChange,
 }) => {
   const masonryItems = cases.map((item) => ({ key: item.caseId, data: item }));
+  const activeTags = selectedTagIds;
+  const showActiveTags = activeTags.length > 0;
 
   return (
-    <div className="masonry-wrap">
+    <div
+      className={`masonry-wrap${showActiveTags ? " masonry-wrap--with-tags" : ""}`}
+    >
+      {showActiveTags ? (
+        <div className="case-active-tags">
+          {activeTags.map((tagId) => {
+            const isAny = tagId === "__any__";
+            const tag = tagsById.get(tagId);
+            const label = isAny ? "[Any Tag]" : tag?.label ?? "Untitled";
+            const background = isAny ? "#e2e8f0" : tag?.color ?? undefined;
+            const color = getReadableTextColor(background, "#0f172a");
+            return (
+              <TagCapsule
+                key={tagId}
+                label={label}
+                background={background}
+                color={color}
+                size="md"
+                rightSlot={
+                  <button
+                    type="button"
+                    className="case-active-tags__remove"
+                    aria-label={`Remove ${label}`}
+                    onClick={() => {
+                      const next = activeTags.filter((value) => value !== tagId);
+                      onTagChange(next);
+                    }}
+                  >
+                    <CloseCircleOutlined />
+                  </button>
+                }
+              />
+            );
+          })}
+        </div>
+      ) : null}
       {isMobile && filtersOpen ? (
         <div className="filter-panel">
           <CaseFilters

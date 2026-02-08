@@ -53,6 +53,7 @@ const AppShell: React.FC = () => {
   const location = useLocation();
   const isCaseView = location.pathname.startsWith("/case/");
   const isCasesPage = location.pathname === "/";
+  const isTagsPage = location.pathname === "/tags";
   const showFilters = isCasesPage || isCaseView;
   const lockFilters = isCaseView;
   const showPagination = isCasesPage;
@@ -105,6 +106,13 @@ const AppShell: React.FC = () => {
         lockFilters={lockFilters}
         isMobile={isMobile}
         onToggleFilters={() => setFiltersOpen((open) => !open)}
+        onClearFilters={() => {
+          setSelectedAuthor(null);
+          setSelectedTagIds([]);
+          setNameQuery("");
+          setSortOrder("date_desc");
+          setFiltersOpen(false);
+        }}
         authorOptions={authorOptions}
         tagOptions={tagOptions}
         selectedAuthor={selectedAuthor}
@@ -131,6 +139,8 @@ const AppShell: React.FC = () => {
                 tagsError={tagsError}
                 caseTagsError={caseTagsError}
                 loading={loading}
+                totalCases={cases.length}
+                filteredCount={filteredCases.length}
                 cases={pagedCases}
                 tagsById={tagsById}
                 caseTagsByCaseId={caseTagsByCaseId}
@@ -174,6 +184,17 @@ const AppShell: React.FC = () => {
         pageSize={pageSize}
         total={filteredCases.length}
         onPageChange={setCurrentPage}
+        footerAction={
+          isTagsPage && canEdit ? (
+            <button
+              type="button"
+              className="tag-footer-action"
+              onClick={() => navigate("/tags", { state: { openCreateTag: true } })}
+            >
+              + Tag
+            </button>
+          ) : null
+        }
       />
     </Layout>
   );

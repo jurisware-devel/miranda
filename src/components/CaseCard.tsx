@@ -2,14 +2,17 @@ import React from "react";
 import { Card } from "antd";
 import ReactMarkdown from "react-markdown";
 import ReviewField from "./ReviewField";
+import TagCapsule from "./TagCapsule";
 import type { CaseItem } from "../logic/types";
+import type { TagMeta } from "../logic/tagUtils";
 import { formatCaseCitationLine, REVIEW_MARKER } from "../logic/caseUtils";
+import { getReadableTextColor } from "../logic/colorUtils";
 
 type CaseCardProps = {
   caseItem: CaseItem;
   index: number;
   tagIds: string[];
-  tagsById: Map<string, string>;
+  tagsById: Map<string, TagMeta>;
   onOpenCase: (caseId: string) => void;
 };
 
@@ -26,6 +29,7 @@ const CaseCard: React.FC<CaseCardProps> = ({
   const summary = caseItem.summary ?? "";
   const hasSummary = summary.trim().length > 0;
   const needsReview = summary.includes(REVIEW_MARKER);
+
 
   return (
     <Card key={caseItem.caseId ?? index} className="grid-card" size="small">
@@ -58,9 +62,12 @@ const CaseCard: React.FC<CaseCardProps> = ({
       <div className="grid-card__tags">
         {tagIds.length
           ? tagIds.map((tagId) => (
-              <span key={tagId} className="tag-pill">
-                {tagsById.get(tagId) ?? "Untitled"}
-              </span>
+              <TagCapsule
+                key={tagId}
+                label={tagsById.get(tagId)?.label ?? "Untitled"}
+                background={tagsById.get(tagId)?.color ?? undefined}
+                color={getReadableTextColor(tagsById.get(tagId)?.color)}
+              />
             ))
           : null}
       </div>

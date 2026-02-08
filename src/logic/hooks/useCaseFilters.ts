@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import type { CaseItem, CaseTagItem, TagItem } from "../types";
+import { buildTagOptions } from "../tagUtils";
 
 export const useCaseFilters = (
   cases: CaseItem[],
@@ -32,15 +33,20 @@ export const useCaseFilters = (
   }, [cases]);
 
   const tagOptions = useMemo(() => {
-    return [...tags]
-      .sort((a, b) =>
-        (a.label ?? "").localeCompare(b.label ?? "", undefined, { sensitivity: "base" }),
-      )
-      .map((tag) => ({
-        value: tag.tagId,
-        label: tag.label ?? "Untitled",
-      }));
+    return [{ value: "__any__", label: "[Any Tag]" }, ...buildTagOptions(tags)];
   }, [tags]);
+
+  useEffect(() => {
+    if (!selectedTagIds.length) return;
+    const valid = new Set(tags.map((tag) => tag.tagId));
+    const next = selectedTagIds.filter(
+      (tagId) => tagId === "__any__" || valid.has(tagId),
+    );
+    if (next.length !== selectedTagIds.length) {
+      setSelectedTagIdsInternal(next);
+      setCurrentPage(1);
+    }
+  }, [selectedTagIds, tags]);
 
   const caseTagIdsByCaseId = useMemo(() => {
     const map = new Map<string, Set<string>>();
@@ -84,6 +90,12 @@ export const useCaseFilters = (
         return false;
       }
       if (selectedTagIds.length) {
+        if (selectedTagIds.includes("__any__")) {
+          return caseTagIdsByCaseId.has(item.caseId);
+        }
+        if (caseTagIdsByCaseId.size === 0) {
+          return true;
+        }
         const tagIds = caseTagIdsByCaseId.get(item.caseId);
         if (!tagIds) return false;
         const matchesAll = selectedTagIds.every((tagId) => tagIds.has(tagId));

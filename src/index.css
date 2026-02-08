@@ -68,6 +68,15 @@ body {
   background: transparent;
 }
 
+.app-header-logo-button {
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+}
+
 .app-content {
   flex: 1 1 auto;
   background: transparent;
@@ -82,6 +91,27 @@ body {
   background: transparent;
   margin-bottom: 0;
   flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-footer-action {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.tag-footer-action {
+  width: min(520px, 90%);
+  height: 36px;
+  border-radius: 999px;
+  border: 2px dashed rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 .pagination-wrap {
@@ -202,6 +232,45 @@ body {
   box-sizing: border-box;
 }
 
+.masonry-wrap--with-tags {
+  padding-top: calc(16px + 2.5vh);
+}
+
+.case-active-tags {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.case-active-tags .tag-capsule {
+  cursor: default;
+}
+
+.case-active-tags__remove {
+  border: none;
+  background: transparent;
+  color: inherit;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.case-active-tags__remove:hover {
+  opacity: 0.8;
+}
+
+.case-tags-select .ant-select-selection-overflow {
+  display: none;
+}
+
+.case-tags-select .ant-select-selection-placeholder {
+  display: block !important;
+  opacity: 1 !important;
+}
+
 .filter-panel {
   background: rgba(255, 255, 255, 0.95);
   border-radius: 12px;
@@ -317,9 +386,10 @@ body {
   margin-top: 8px;
 }
 
-.tag-pill {
+.tag-capsule {
   display: inline-flex;
   align-items: center;
+  gap: 6px;
   padding: 4px 10px;
   border-radius: 999px;
   background: #f1f2f4;
@@ -327,6 +397,33 @@ body {
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.02em;
+  border: none;
+  cursor: pointer;
+}
+
+.tag-capsule--sm {
+  font-size: 12px;
+}
+
+.tag-capsule--md {
+  font-size: 14px;
+  padding: 6px 12px;
+}
+
+.tag-capsule--lg {
+  font-size: 18px;
+  padding: 6px 12px;
+  font-weight: 700;
+}
+
+.tag-capsule__label {
+  display: inline-flex;
+  align-items: center;
+}
+
+.tag-capsule__slot {
+  display: inline-flex;
+  align-items: center;
 }
 
 .grid-card__author {
@@ -502,12 +599,7 @@ body {
 }
 
 .tag-card__title {
-  font-size: 18px;
-  font-weight: 700;
-  text-align: center;
   align-self: center;
-  border-radius: 999px;
-  padding: 6px 12px;
 }
 
 .tag-card__children {
@@ -526,11 +618,6 @@ body {
 
 .tag-card__child {
   border: none;
-  border-radius: 999px;
-  padding: 6px 10px;
-  font-size: 13px;
-  font-weight: 600;
-  cursor: pointer;
 }
 
 .tag-card__child:disabled,
@@ -547,6 +634,8 @@ body {
   width: 100%;
   padding: 16px;
   font: inherit;
+  font-size: 36px;
+  font-weight: 700;
 }
 
 .tags-readonly {
@@ -601,20 +690,9 @@ body {
 }
 
 .tags-modal__child-row {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 8px;
-  align-items: center;
-}
-
-.tags-modal__child-pill {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 8px;
-  padding: 6px 10px;
-  border-radius: 999px;
-  font-weight: 600;
-  color: #0f172a;
 }
 
 .tags-modal__child-pill--muted {

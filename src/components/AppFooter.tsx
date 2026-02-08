@@ -9,6 +9,7 @@ type AppFooterProps = {
   pageSize: number;
   total: number;
   onPageChange: (page: number) => void;
+  footerAction?: React.ReactNode;
 };
 
 const AppFooter: React.FC<AppFooterProps> = ({
@@ -17,6 +18,7 @@ const AppFooter: React.FC<AppFooterProps> = ({
   pageSize,
   total,
   onPageChange,
+  footerAction,
 }) => {
   return (
     <Footer className="app-footer">
@@ -29,6 +31,7 @@ const AppFooter: React.FC<AppFooterProps> = ({
           onChange={(page) => onPageChange(page)}
         />
       ) : null}
+      {footerAction ? <div className="app-footer-action">{footerAction}</div> : null}
     </Footer>
   );
 };
