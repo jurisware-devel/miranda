@@ -139,8 +139,6 @@ const AppShell: React.FC = () => {
                 tagsError={tagsError}
                 caseTagsError={caseTagsError}
                 loading={loading}
-                totalCases={cases.length}
-                filteredCount={filteredCases.length}
                 cases={pagedCases}
                 tagsById={tagsById}
                 caseTagsByCaseId={caseTagsByCaseId}

@@ -17,8 +17,6 @@ type CaseMasonryLayerProps = {
   tagsError: string | null;
   caseTagsError: string | null;
   loading: boolean;
-  totalCases: number;
-  filteredCount: number;
   cases: CaseItem[];
   tagsById: Map<string, TagMeta>;
   caseTagsByCaseId: Map<string, string[]>;
@@ -42,8 +40,6 @@ const CaseMasonryLayer: React.FC<CaseMasonryLayerProps> = ({
   tagsError,
   caseTagsError,
   loading,
-  totalCases,
-  filteredCount,
   cases,
   tagsById,
   caseTagsByCaseId,
