@@ -64,42 +64,41 @@ const CaseMasonryLayer: React.FC<CaseMasonryLayerProps> = ({
   const showActiveTags = activeTags.length > 0;
 
   return (
-    <div
-      className={`masonry-wrap${showActiveTags ? " masonry-wrap--with-tags" : ""}`}
-    >
-      {showActiveTags ? (
-        <div className="case-active-tags">
-          {activeTags.map((tagId) => {
-            const isAny = tagId === "__any__";
-            const tag = tagsById.get(tagId);
-            const label = isAny ? "[Any Tag]" : tag?.label ?? "Untitled";
-            const background = isAny ? "#e2e8f0" : tag?.color ?? undefined;
-            const color = getReadableTextColor(background, "#0f172a");
-            return (
-              <TagCapsule
-                key={tagId}
-                label={label}
-                background={background}
-                color={color}
-                size="md"
-                rightSlot={
-                  <button
-                    type="button"
-                    className="case-active-tags__remove"
-                    aria-label={`Remove ${label}`}
-                    onClick={() => {
-                      const next = activeTags.filter((value) => value !== tagId);
-                      onTagChange(next);
-                    }}
-                  >
-                    <CloseCircleOutlined />
-                  </button>
-                }
-              />
-            );
-          })}
-        </div>
-      ) : null}
+    <div className="masonry-wrap">
+      <div className="case-filter-bar">
+        {showActiveTags ? (
+          <div className="case-active-tags">
+            {activeTags.map((tagId) => {
+              const tag = tagsById.get(tagId);
+              const label = tag?.label ?? "Untitled";
+              const background = tag?.color ?? undefined;
+              const color = getReadableTextColor(background, "#0f172a");
+              return (
+                <TagCapsule
+                  key={tagId}
+                  label={label}
+                  background={background}
+                  color={color}
+                  size="md"
+                  rightSlot={
+                    <button
+                      type="button"
+                      className="case-active-tags__remove"
+                      aria-label={`Remove ${label}`}
+                      onClick={() => {
+                        const next = activeTags.filter((value) => value !== tagId);
+                        onTagChange(next);
+                      }}
+                    >
+                      <CloseCircleOutlined />
+                    </button>
+                  }
+                />
+              );
+            })}
+          </div>
+        ) : null}
+      </div>
       {isMobile && filtersOpen ? (
         <div className="filter-panel">
           <CaseFilters

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Input, Select } from "antd";
+import { Button, Dropdown, Input, Select } from "antd";
+import { CloseCircleOutlined } from "@ant-design/icons";
 
 type Option = { value: string; label: string };
 
@@ -35,6 +36,7 @@ const CaseFilters: React.FC<CaseFiltersProps> = ({
   wrapClassName,
 }) => {
   const [tagOpen, setTagOpen] = useState(false);
+  const [authorOpen, setAuthorOpen] = useState(false);
   const selectStyle = compact ? undefined : { minWidth: 200 };
   const inputStyle = compact ? undefined : { minWidth: 240 };
 
@@ -42,52 +44,104 @@ const CaseFilters: React.FC<CaseFiltersProps> = ({
     {
       key: "author",
       node: (
-        <Select
-          allowClear
-          placeholder="Author"
-          options={authorOptions}
-          value={selectedAuthor ?? undefined}
-          onChange={(value) => onAuthorChange(value ?? null)}
-          style={selectStyle}
+        <Dropdown
+          trigger={["click"]}
+          open={authorOpen}
+          onOpenChange={setAuthorOpen}
+          menu={{
+            items: [
+              ...(selectedAuthor
+                ? [{ key: "__clear__", label: "All Authors" }]
+                : []),
+              ...authorOptions.map((option) => ({
+                key: option.value,
+                label: option.label,
+              })),
+            ],
+            selectable: true,
+            multiple: false,
+            selectedKeys: selectedAuthor ? [selectedAuthor] : [],
+            onSelect: (info) => {
+              if (info.key === "__clear__") {
+                onAuthorChange(null);
+              } else {
+                onAuthorChange(info.key as string);
+              }
+              setAuthorOpen(false);
+            },
+          }}
           disabled={disabled}
-        />
+        >
+          <Button className="case-tags-trigger" style={selectStyle}>
+            {selectedAuthor ?? "All Authors"}
+            {selectedAuthor ? (
+              <button
+                type="button"
+                className="case-filter-clear"
+                onClick={(event) => {
+                  event.stopPropagation();
+                  onAuthorChange(null);
+                }}
+                aria-label="Clear author filter"
+              >
+                <CloseCircleOutlined />
+              </button>
+            ) : null}
+          </Button>
+        </Dropdown>
       ),
     },
     {
       key: "tags",
       node: (
-        <Select
-          mode="multiple"
-          allowClear
-          placeholder="Tags"
-          showSearch={false}
-          filterOption={false}
-          className="case-tags-select"
-          options={tagOptions}
-          value={selectedTagIds.length ? selectedTagIds : undefined}
-          maxTagTextLength={0}
-          maxTagCount={0}
-          maxTagPlaceholder={() => null}
-          onChange={(value) => {
-            const next = (value as string[]).slice();
-            const hasAny = next.includes("__any__");
-            if (hasAny && next.length === 1) {
-              onTagChange(["__any__"]);
-              setTagOpen(false);
-              return;
-            }
-            const filtered = next.filter((item) => item !== "__any__");
-            if (filtered.length > 2) {
-              onTagChange(filtered.slice(0, 2));
-              return;
-            }
-            onTagChange(filtered);
-          }}
+        <Dropdown
+          trigger={["click"]}
           open={tagOpen}
-          onDropdownVisibleChange={setTagOpen}
-          style={selectStyle}
+          onOpenChange={setTagOpen}
+          menu={{
+            items: tagOptions.map((option) => ({
+              key: option.value,
+              label: option.label,
+            })),
+            selectable: true,
+            multiple: true,
+            selectedKeys: selectedTagIds,
+            onSelect: (info) => {
+              const next = Array.from(
+                new Set([...selectedTagIds, info.key as string]),
+              );
+              if (next.length > 3) {
+                setTagOpen(false);
+                return;
+              }
+              onTagChange(next);
+              setTagOpen(false);
+            },
+            onDeselect: (info) => {
+              const next = selectedTagIds.filter((id) => id !== info.key);
+              onTagChange(next);
+              setTagOpen(false);
+            },
+          }}
           disabled={disabled}
-        />
+        >
+          <Button className="case-tags-trigger" style={selectStyle}>
+            {`Tags${selectedTagIds.length ? ` (${selectedTagIds.length})` : ""}`}
+            {selectedTagIds.length ? (
+              <button
+                type="button"
+                className="case-filter-clear"
+                onClick={(event) => {
+                  event.stopPropagation();
+                  onTagChange([]);
+                }}
+                aria-label="Clear tag filters"
+              >
+                <CloseCircleOutlined />
+              </button>
+            ) : null}
+          </Button>
+        </Dropdown>
       ),
     },
     {

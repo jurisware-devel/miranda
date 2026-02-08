@@ -33,15 +33,13 @@ export const useCaseFilters = (
   }, [cases]);
 
   const tagOptions = useMemo(() => {
-    return [{ value: "__any__", label: "[Any Tag]" }, ...buildTagOptions(tags)];
+    return buildTagOptions(tags);
   }, [tags]);
 
   useEffect(() => {
     if (!selectedTagIds.length) return;
     const valid = new Set(tags.map((tag) => tag.tagId));
-    const next = selectedTagIds.filter(
-      (tagId) => tagId === "__any__" || valid.has(tagId),
-    );
+    const next = selectedTagIds.filter((tagId) => valid.has(tagId));
     if (next.length !== selectedTagIds.length) {
       setSelectedTagIdsInternal(next);
       setCurrentPage(1);
@@ -90,9 +88,6 @@ export const useCaseFilters = (
         return false;
       }
       if (selectedTagIds.length) {
-        if (selectedTagIds.includes("__any__")) {
-          return caseTagIdsByCaseId.has(item.caseId);
-        }
         if (caseTagIdsByCaseId.size === 0) {
           return true;
         }
