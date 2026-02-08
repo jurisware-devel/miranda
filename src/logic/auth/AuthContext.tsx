@@ -1,5 +1,6 @@
 import React, { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
 import { fetchAuthSession, getCurrentUser, signOut } from "aws-amplify/auth";
+import { Hub } from "aws-amplify/utils";
 import type { AuthUser } from "aws-amplify/auth";
 import { client } from "../amplifyClient";
 import type { UserProfileItem } from "../types";
@@ -47,16 +48,21 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   }, []);
 
   const refresh = useCallback(async () => {
+    setLoading(true);
+    setError(null);
     try {
-      setLoading(true);
-      setError(null);
       const authUser = await getCurrentUser();
       const session = await fetchAuthSession();
       const groups = (session.tokens?.idToken?.payload?.["cognito:groups"] ??
         []) as string[];
       setUser(authUser);
       setRole(resolveRole(groups));
-      await loadProfile(authUser);
+      try {
+        await loadProfile(authUser);
+      } catch (err) {
+        setProfile(null);
+        setError(err instanceof Error ? err.message : "Failed to load profile");
+      }
     } catch (err) {
       setUser(null);
       setProfile(null);
@@ -69,6 +75,24 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   useEffect(() => {
     void refresh();
+  }, [refresh]);
+
+  useEffect(() => {
+    const unsubscribe = Hub.listen("auth", ({ payload }) => {
+      switch (payload.event) {
+        case "signedIn":
+        case "signedOut":
+        case "tokenRefresh":
+        case "tokenRefresh_failure":
+          void refresh();
+          break;
+        default:
+          break;
+      }
+    });
+    return () => {
+      unsubscribe();
+    };
   }, [refresh]);
 
   const handleSignOut = useCallback(async () => {

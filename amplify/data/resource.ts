@@ -27,8 +27,8 @@ const schema = a.schema({
     })
     .identifier(["caseId"])
     .authorization((allow) => [
+      allow.authenticated().to(["read"]),
       allow.group("Admin").to(["create", "read", "update", "delete"]),
-      allow.group("User").to(["read"]),
     ]),
 
   Tag: a
@@ -39,8 +39,8 @@ const schema = a.schema({
     })
     .identifier(["tagId"])
     .authorization((allow) => [
+      allow.authenticated().to(["read"]),
       allow.group("Admin").to(["create", "read", "update", "delete"]),
-      allow.group("User").to(["read"]),
     ]),
 
   CaseTag: a
@@ -51,8 +51,8 @@ const schema = a.schema({
     .identifier(["caseId", "tagId"])
     .secondaryIndexes((index) => [index("tagId").sortKeys(["caseId"])])
     .authorization((allow) => [
+      allow.authenticated().to(["read"]),
       allow.group("Admin").to(["create", "read", "delete"]),
-      allow.group("User").to(["read"]),
     ]),
 
   UserProfile: a
