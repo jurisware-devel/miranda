@@ -1,6 +1,6 @@
 import React from "react";
-import { Button, Layout } from "antd";
-import { NavLink, useNavigate } from "react-router-dom";
+import { Button, Dropdown, Layout } from "antd";
+import { useNavigate } from "react-router-dom";
 import CaseFilters from "./CaseFilters";
 import UserMenu from "./UserMenu";
 
@@ -13,7 +13,6 @@ type AppHeaderProps = {
   lockFilters?: boolean;
   isMobile: boolean;
   onToggleFilters: () => void;
-  onClearFilters: () => void;
   authorOptions: Option[];
   tagOptions: Option[];
   selectedAuthor: string | null;
@@ -24,7 +23,6 @@ type AppHeaderProps = {
   onNameQueryChange: (value: string) => void;
   sortOrder: string;
   onSortOrderChange: (value: string) => void;
-  userLabel: string;
   onAccount: () => void;
   onSignOut: () => void;
 };
@@ -34,7 +32,6 @@ const AppHeader: React.FC<AppHeaderProps> = ({
   lockFilters = false,
   isMobile,
   onToggleFilters,
-  onClearFilters,
   authorOptions,
   tagOptions,
   selectedAuthor,
@@ -45,7 +42,6 @@ const AppHeader: React.FC<AppHeaderProps> = ({
   onNameQueryChange,
   sortOrder,
   onSortOrderChange,
-  userLabel,
   onAccount,
   onSignOut,
 }) => {
@@ -53,36 +49,26 @@ const AppHeader: React.FC<AppHeaderProps> = ({
   return (
     <Header className="app-header">
       <div className="app-header-brand">
-        <button
-          type="button"
-          className="app-header-logo-button"
-          onClick={() => {
-            onClearFilters();
-            navigate("/");
+        <Dropdown
+          trigger={["click"]}
+          menu={{
+            items: [
+              { key: "cases", label: "Cases" },
+              { key: "tags", label: "Tags" },
+            ],
+            onClick: ({ key }) => {
+              navigate(key === "tags" ? "/tags" : "/");
+            },
           }}
-          aria-label="Go to cases"
         >
-          <img className="app-header-logo" src="/miranda-logotype.svg" alt="Miranda" />
-        </button>
-        <nav className="app-header-nav">
-          <NavLink
-            to="/"
-            end
-            className={({ isActive }) =>
-              `app-header-link${isActive ? " app-header-link--active" : ""}`
-            }
-          >
-            Cases
-          </NavLink>
-          <NavLink
-            to="/tags"
-            className={({ isActive }) =>
-              `app-header-link${isActive ? " app-header-link--active" : ""}`
-            }
-          >
-            Tags
-          </NavLink>
-        </nav>
+          <button type="button" className="app-header-logo-button" aria-label="Open menu">
+            <img
+              className="app-header-logo"
+              src="/miranda-logotype.svg"
+              alt="Miranda"
+            />
+          </button>
+        </Dropdown>
       </div>
       {!showFilters ? null : isMobile && !lockFilters ? (
         <Button
@@ -111,7 +97,7 @@ const AppHeader: React.FC<AppHeaderProps> = ({
         </div>
       )}
       <div className="app-header-user-wrap">
-        <UserMenu label={userLabel} onAccount={onAccount} onSignOut={onSignOut} />
+        <UserMenu onAccount={onAccount} onSignOut={onSignOut} />
       </div>
     </Header>
   );

@@ -1,14 +1,14 @@
 import React from "react";
 import { Button, Dropdown } from "antd";
+import { UserOutlined } from "@ant-design/icons";
 import type { MenuProps } from "antd";
 
 type UserMenuProps = {
-  label: string;
   onAccount: () => void;
   onSignOut: () => void;
 };
 
-const UserMenu: React.FC<UserMenuProps> = ({ label, onAccount, onSignOut }) => {
+const UserMenu: React.FC<UserMenuProps> = ({ onAccount, onSignOut }) => {
   const items: MenuProps["items"] = [
     {
       key: "account",
@@ -24,8 +24,8 @@ const UserMenu: React.FC<UserMenuProps> = ({ label, onAccount, onSignOut }) => {
 
   return (
     <Dropdown menu={{ items }} placement="bottomRight" trigger={["click"]}>
-      <Button type="text" className="app-header-user">
-        {label}
+      <Button type="text" className="app-header-user" aria-label="User menu">
+        <UserOutlined />
       </Button>
     </Dropdown>
   );

@@ -20,7 +20,7 @@ import type { CaseItem, CaseTagItem } from "./logic/types";
 const { Content } = Layout;
 
 const AppShell: React.FC = () => {
-  const { user, profile, role, signOut } = useAuth();
+  const { role, signOut } = useAuth();
   const canEdit = role === "Admin";
   const { cases, setCases, loading, error } = useCasesData(true);
   const {
@@ -57,11 +57,6 @@ const AppShell: React.FC = () => {
   const showFilters = isCasesPage || isCaseView;
   const lockFilters = isCaseView;
   const showPagination = isCasesPage;
-  const userLabel =
-    profile?.name?.trim() ||
-    profile?.email ||
-    user?.signInDetails?.loginId ||
-    "Account";
 
   const tagsById = useMemo(() => mapTagsById(tags), [tags]);
   const caseTagsByCaseId = useMemo(
@@ -106,13 +101,6 @@ const AppShell: React.FC = () => {
         lockFilters={lockFilters}
         isMobile={isMobile}
         onToggleFilters={() => setFiltersOpen((open) => !open)}
-        onClearFilters={() => {
-          setSelectedAuthor(null);
-          setSelectedTagIds([]);
-          setNameQuery("");
-          setSortOrder("date_desc");
-          setFiltersOpen(false);
-        }}
         authorOptions={authorOptions}
         tagOptions={tagOptions}
         selectedAuthor={selectedAuthor}
@@ -123,7 +111,6 @@ const AppShell: React.FC = () => {
         onNameQueryChange={setNameQuery}
         sortOrder={sortOrder}
         onSortOrderChange={setSortOrder}
-        userLabel={userLabel}
         onAccount={() => navigate("/account")}
         onSignOut={signOut}
       />
