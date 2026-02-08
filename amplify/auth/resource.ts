@@ -8,9 +8,6 @@ export const auth = defineAuth({
     email: {
       required: true,
     },
-    name: {
-      required: false,
-    },
   },
   groups: ['Admin', 'User'],
 });
