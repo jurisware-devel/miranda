@@ -353,7 +353,9 @@ const CaseDetailLayer: React.FC<CaseDetailLayerProps> = ({
             </Button>
           </div>
           <div
-            className={`case-detail__body${canEdit ? "" : " case-detail__body--full"}`}
+            className={`case-detail__body${
+              canEdit ? " case-detail__body--admin" : " case-detail__body--full"
+            }`}
           >
             <div className="case-detail__text">
               {opinionError ? (
@@ -362,8 +364,18 @@ const CaseDetailLayer: React.FC<CaseDetailLayerProps> = ({
                 <div className="card-grid__loading">
                   <Spin />
                 </div>
-              ) : (
+              ) : opinionText ? (
                 <pre>{opinionText}</pre>
+              ) : (
+                <div className="case-detail__placeholder" aria-hidden="true">
+                  <div className="case-detail__placeholder-line case-detail__placeholder-line--long" />
+                  <div className="case-detail__placeholder-line case-detail__placeholder-line--medium" />
+                  <div className="case-detail__placeholder-line case-detail__placeholder-line--long" />
+                  <div className="case-detail__placeholder-line case-detail__placeholder-line--short" />
+                  <div className="case-detail__placeholder-line case-detail__placeholder-line--long" />
+                  <div className="case-detail__placeholder-line case-detail__placeholder-line--medium" />
+                  <div className="case-detail__placeholder-line case-detail__placeholder-line--long" />
+                </div>
               )}
             </div>
             {canEdit ? (

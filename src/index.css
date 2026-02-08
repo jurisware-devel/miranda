@@ -47,7 +47,7 @@ body {
 
 .app-header {
   height: 5vh;
-  background: #ff0000;
+  background: transparent;
   flex: 0 0 auto;
   justify-content: flex-start;
   padding-left: 24px;
@@ -79,7 +79,7 @@ body {
 
 .app-footer {
   height: 5vh;
-  background: #ff0000;
+  background: transparent;
   margin-bottom: 0;
   flex: 0 0 auto;
 }
@@ -467,6 +467,7 @@ body {
   flex-direction: column;
   gap: 12px;
   min-height: 0;
+  width: 100%;
 }
 
 .case-detail__bar {
@@ -478,6 +479,7 @@ body {
   align-items: center;
   column-gap: 12px;
   margin-bottom: 8px;
+  width: 100%;
 }
 
 .case-detail__caption-button {
@@ -515,7 +517,7 @@ body {
 }
 
 .case-detail__panel {
-  background: #fff7ed;
+  background: #ffffff;
   border-radius: 12px;
   padding: 16px;
   color: #111;
@@ -525,6 +527,7 @@ body {
   flex: 1 1 auto;
   min-height: 0;
   height: 100%;
+  width: 100%;
 }
 
 .case-detail__title {
@@ -577,13 +580,51 @@ body {
 }
 
 .case-detail__text {
-  background: #fce7f3;
+  background: #f6f6f6;
   border-radius: 10px;
   padding: 12px;
   flex: 1 1 auto;
   min-height: 0;
   height: 100%;
+  width: 100%;
+  min-width: 0;
   overflow: auto;
+}
+
+.case-detail__placeholder {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 6px 4px;
+}
+
+.case-detail__placeholder-line {
+  height: 14px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #e5e7eb 0%, #f3f4f6 40%, #e5e7eb 80%);
+  background-size: 200% 100%;
+  animation: case-detail-shimmer 1.2s ease-in-out infinite;
+}
+
+.case-detail__placeholder-line--short {
+  width: 55%;
+}
+
+.case-detail__placeholder-line--medium {
+  width: 75%;
+}
+
+.case-detail__placeholder-line--long {
+  width: 92%;
+}
+
+@keyframes case-detail-shimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
 }
 
 .case-detail__form {
@@ -617,15 +658,17 @@ body {
 
 .case-detail__body {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(280px, 360px);
+  grid-template-columns: minmax(0, 1fr);
   gap: 16px;
   flex: 1 1 auto;
   min-height: 0;
   height: 100%;
-  align-items: start;
-  background: #e0f2fe;
-  border-radius: 10px;
-  padding: 12px;
+  align-items: stretch;
+  width: 100%;
+}
+
+.case-detail__body--admin {
+  grid-template-columns: minmax(0, 1fr) 320px;
 }
 
 .case-detail__body--full {
@@ -633,7 +676,7 @@ body {
 }
 
 .case-detail__side {
-  background: #ecfccb;
+  background: #f9fafb;
   border-radius: 10px;
   padding: 12px;
   border: 1px solid rgba(15, 23, 42, 0.1);
@@ -646,6 +689,10 @@ body {
 
 @media (max-width: 900px) {
   .case-detail__body {
+    grid-template-columns: 1fr;
+  }
+
+  .case-detail__body--admin {
     grid-template-columns: 1fr;
   }
 
