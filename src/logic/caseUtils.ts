@@ -7,14 +7,12 @@ export const buildOpinionUrl = (opinionUrl?: string) => {
   if (opinionUrl.startsWith("http")) return opinionUrl;
   const trimmed = opinionUrl.replace(/^\//, "");
   let normalized = trimmed.replace(/\.txt/gi, "");
-  if (!/\.md$/i.test(normalized)) {
-    normalized = `${normalized}.md`;
-  }
+  normalized = normalized.replace(/\.md$/i, "");
   const base =
     typeof import.meta !== "undefined" && import.meta.env?.VITE_OPINIONS_BASE_URL
       ? String(import.meta.env.VITE_OPINIONS_BASE_URL).replace(/\/$/, "")
       : "https://opinions.jurisware.com";
-  return `${base}/texts/${normalized}`;
+  return `${base}/${normalized}.md`;
 };
 
 export const normalizeDate = (value?: string | null) => value ?? "";
