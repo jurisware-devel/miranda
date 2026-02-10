@@ -411,6 +411,8 @@ const CaseDetailLayer: React.FC<CaseDetailLayerProps> = ({
                   <Input.TextArea
                     rows={18}
                     value={opinionDraft}
+                    className="case-detail__opinion-textarea"
+                    wrap="off"
                     onChange={(event) => setOpinionDraft(event.target.value)}
                   />
                   <div className="case-detail__opinion-actions">

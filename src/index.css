@@ -892,12 +892,14 @@ body {
   width: 100%;
   min-width: 0;
   overflow: auto;
+  text-align: left;
 }
 
 .case-detail__opinion {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  text-align: left;
 }
 
 .case-detail__opinion-actions {
@@ -910,6 +912,14 @@ body {
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+
+.case-detail__opinion-textarea {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  white-space: pre;
+  overflow-wrap: normal;
+  word-break: normal;
 }
 
 .case-detail__opinion :is(p, ul, ol, blockquote) {
