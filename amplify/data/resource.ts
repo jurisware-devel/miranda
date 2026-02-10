@@ -1,4 +1,5 @@
 import { type ClientSchema, a, defineData } from '@aws-amplify/backend';
+import { saveOpinion } from '../functions/save-opinion/resource';
 
 /*== STEP 1 ===============================================================
 The section below defines the core models for cases and tagging.
@@ -54,6 +55,16 @@ const schema = a.schema({
       allow.authenticated().to(["read"]),
       allow.group("Admin").to(["create", "read", "delete"]),
     ]),
+
+  saveOpinionText: a
+    .mutation()
+    .arguments({
+      key: a.string().required(),
+      markdown: a.string().required(),
+    })
+    .returns(a.string())
+    .authorization((allow) => [allow.group("Admin")])
+    .handler(a.handler.function(saveOpinion)),
 
   UserProfile: a
     .model({

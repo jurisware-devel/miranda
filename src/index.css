@@ -894,6 +894,32 @@ body {
   overflow: auto;
 }
 
+.case-detail__opinion {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.case-detail__opinion-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.case-detail__opinion-editor {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.case-detail__opinion :is(p, ul, ol, blockquote) {
+  margin: 0 0 12px;
+}
+
+.case-detail__opinion :is(ul, ol) {
+  padding-left: 20px;
+}
+
 .case-detail__placeholder {
   display: flex;
   flex-direction: column;

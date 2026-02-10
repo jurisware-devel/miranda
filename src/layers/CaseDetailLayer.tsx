@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useState } from "react";
 import { Alert, Button, Input, Select, Spin } from "antd";
 import { ArrowLeftOutlined } from "@ant-design/icons";
 import { useNavigate, useParams } from "react-router-dom";
+import ReactMarkdown from "react-markdown";
 import { client } from "../logic/amplifyClient";
 import type { CaseItem, CaseTagItem, TagItem } from "../logic/types";
 import {
@@ -73,6 +74,13 @@ const CaseDetailLayer: React.FC<CaseDetailLayerProps> = ({
   const [opinionText, setOpinionText] = useState<string>("");
   const [opinionLoading, setOpinionLoading] = useState(false);
   const [opinionError, setOpinionError] = useState<string | null>(null);
+  const [opinionDraft, setOpinionDraft] = useState<string>("");
+  const [opinionEditing, setOpinionEditing] = useState(false);
+  const [opinionSaving, setOpinionSaving] = useState(false);
+  const [opinionSaveError, setOpinionSaveError] = useState<string | null>(null);
+  const [opinionSaveSuccess, setOpinionSaveSuccess] = useState<string | null>(
+    null,
+  );
   const [formState, setFormState] = useState<CaseFormState>(emptyForm);
   const [saveLoading, setSaveLoading] = useState(false);
   const [saveError, setSaveError] = useState<string | null>(null);
@@ -141,6 +149,7 @@ const CaseDetailLayer: React.FC<CaseDetailLayerProps> = ({
         const text = await response.text();
         if (!active) return;
         setOpinionText(text);
+        setOpinionDraft(text);
         setOpinionError(null);
       } catch (err) {
         if (!active) return;
@@ -179,6 +188,9 @@ const CaseDetailLayer: React.FC<CaseDetailLayerProps> = ({
     if (!caseItem) return;
     resetFormState(caseItem);
     setIsEditing(false);
+    setOpinionEditing(false);
+    setOpinionSaveError(null);
+    setOpinionSaveSuccess(null);
   }, [caseItem]);
 
   useEffect(() => {
@@ -293,6 +305,32 @@ const CaseDetailLayer: React.FC<CaseDetailLayerProps> = ({
     setIsEditing(false);
   };
 
+  const handleSaveOpinion = async () => {
+    if (!canEdit || !caseItem?.opinionUrl) return false;
+    try {
+      setOpinionSaving(true);
+      setOpinionSaveError(null);
+      setOpinionSaveSuccess(null);
+      const result = await client.mutations.saveOpinionText({
+        key: caseItem.opinionUrl,
+        markdown: opinionDraft,
+      });
+      if (result?.data) {
+        setOpinionText(opinionDraft);
+        setOpinionSaveSuccess("Opinion saved");
+      }
+      setOpinionEditing(false);
+      return true;
+    } catch (err) {
+      setOpinionSaveError(
+        err instanceof Error ? err.message : "Failed to save opinion",
+      );
+      return false;
+    } finally {
+      setOpinionSaving(false);
+    }
+  };
+
   return (
     <div className="case-detail">
       {error ? <Alert type="error" message={error} showIcon /> : null}
@@ -360,21 +398,65 @@ const CaseDetailLayer: React.FC<CaseDetailLayerProps> = ({
             <div className="case-detail__text">
               {opinionError ? (
                 <Alert type="error" message={opinionError} showIcon />
+              ) : opinionSaveError ? (
+                <Alert type="error" message={opinionSaveError} showIcon />
+              ) : opinionSaveSuccess ? (
+                <Alert type="success" message={opinionSaveSuccess} showIcon />
               ) : opinionLoading ? (
                 <div className="card-grid__loading">
                   <Spin />
                 </div>
+              ) : opinionEditing ? (
+                <div className="case-detail__opinion-editor">
+                  <Input.TextArea
+                    rows={18}
+                    value={opinionDraft}
+                    onChange={(event) => setOpinionDraft(event.target.value)}
+                  />
+                  <div className="case-detail__opinion-actions">
+                    <Button onClick={() => setOpinionEditing(false)}>
+                      Cancel
+                    </Button>
+                    <Button
+                      type="primary"
+                      loading={opinionSaving}
+                      onClick={async () => {
+                        await handleSaveOpinion();
+                      }}
+                    >
+                      Save Opinion
+                    </Button>
+                  </div>
+                </div>
               ) : opinionText ? (
-                <pre>{opinionText}</pre>
+                <div className="case-detail__opinion">
+                  {canEdit ? (
+                    <div className="case-detail__opinion-actions">
+                      <Button onClick={() => setOpinionEditing(true)}>
+                        Edit Opinion
+                      </Button>
+                    </div>
+                  ) : null}
+                  <ReactMarkdown>{opinionText}</ReactMarkdown>
+                </div>
               ) : (
-                <div className="case-detail__placeholder" aria-hidden="true">
-                  <div className="case-detail__placeholder-line case-detail__placeholder-line--long" />
-                  <div className="case-detail__placeholder-line case-detail__placeholder-line--medium" />
-                  <div className="case-detail__placeholder-line case-detail__placeholder-line--long" />
-                  <div className="case-detail__placeholder-line case-detail__placeholder-line--short" />
-                  <div className="case-detail__placeholder-line case-detail__placeholder-line--long" />
-                  <div className="case-detail__placeholder-line case-detail__placeholder-line--medium" />
-                  <div className="case-detail__placeholder-line case-detail__placeholder-line--long" />
+                <div className="case-detail__opinion">
+                  {canEdit ? (
+                    <div className="case-detail__opinion-actions">
+                      <Button onClick={() => setOpinionEditing(true)}>
+                        Edit Opinion
+                      </Button>
+                    </div>
+                  ) : null}
+                  <div className="case-detail__placeholder" aria-hidden="true">
+                    <div className="case-detail__placeholder-line case-detail__placeholder-line--long" />
+                    <div className="case-detail__placeholder-line case-detail__placeholder-line--medium" />
+                    <div className="case-detail__placeholder-line case-detail__placeholder-line--long" />
+                    <div className="case-detail__placeholder-line case-detail__placeholder-line--short" />
+                    <div className="case-detail__placeholder-line case-detail__placeholder-line--long" />
+                    <div className="case-detail__placeholder-line case-detail__placeholder-line--medium" />
+                    <div className="case-detail__placeholder-line case-detail__placeholder-line--long" />
+                  </div>
                 </div>
               )}
             </div>
