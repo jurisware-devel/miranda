@@ -842,6 +842,16 @@ body {
   justify-self: center;
 }
 
+@media (max-width: 600px) {
+  .case-detail__bar {
+    grid-template-columns: auto minmax(0, 1fr) minmax(0, 1fr);
+  }
+
+  .case-detail__title {
+    display: none;
+  }
+}
+
 .case-detail__title-button {
   appearance: none;
   border: none;
