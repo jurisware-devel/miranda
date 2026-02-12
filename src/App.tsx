@@ -9,7 +9,7 @@ import AccountPage from "./pages/AccountPage";
 import LoginPage from "./pages/LoginPage";
 import SignupPage from "./pages/SignupPage";
 import TagsPage from "./pages/TagsPage";
-import RequireAuth from "./logic/auth/RequireAuth";
+import RequireAdmin from "./logic/auth/RequireAdmin";
 import { useAuth } from "./logic/auth/useAuth";
 import { useCaseFilters } from "./logic/hooks/useCaseFilters";
 import { useCasesData } from "./logic/hooks/useCasesData";
@@ -19,9 +19,14 @@ import type { CaseItem, CaseTagItem } from "./logic/types";
 
 const { Content } = Layout;
 
-const AppShell: React.FC = () => {
-  const { role, signOut } = useAuth();
-  const canEdit = role === "Admin";
+type AppShellProps = {
+  basePath?: string;
+  adminMode?: boolean;
+};
+
+const AppShell: React.FC<AppShellProps> = ({ basePath = "", adminMode = false }) => {
+  const { signOut } = useAuth();
+  const canEdit = adminMode;
   const { cases, setCases, loading, error } = useCasesData(true);
   const {
     tags,
@@ -51,9 +56,14 @@ const AppShell: React.FC = () => {
   const screens = Grid.useBreakpoint();
   const isMobile = !screens.sm;
   const location = useLocation();
-  const isCaseView = location.pathname.startsWith("/case/");
-  const isCasesPage = location.pathname === "/";
-  const isTagsPage = location.pathname === "/tags";
+  const rootPath = basePath || "/";
+  const tagsPath = basePath ? `${basePath}/tags` : "/tags";
+  const accountPath = basePath ? `${basePath}/account` : "/account";
+  const isCaseView = basePath
+    ? location.pathname.startsWith(`${basePath}/case/`)
+    : location.pathname.startsWith("/case/");
+  const isCasesPage = location.pathname === rootPath;
+  const isTagsPage = location.pathname === tagsPath;
   const showFilters = isCasesPage || isCaseView;
   const lockFilters = isCaseView;
   const showPagination = isCasesPage;
@@ -66,7 +76,7 @@ const AppShell: React.FC = () => {
 
   const navigate = useNavigate();
   useEffect(() => {
-    if (location.pathname !== "/") return;
+    if (location.pathname !== rootPath) return;
     const state = (location.state as { tagId?: string } | null) ?? null;
     if (!state?.tagId) return;
     setSelectedAuthor(null);
@@ -79,6 +89,7 @@ const AppShell: React.FC = () => {
     location.pathname,
     location.state,
     navigate,
+    rootPath,
     setNameQuery,
     setSelectedAuthor,
     setSelectedTagIds,
@@ -97,6 +108,8 @@ const AppShell: React.FC = () => {
   return (
     <Layout className="app-shell" style={{ background: "transparent" }}>
       <AppHeader
+        basePath={basePath}
+        showUserMenu={adminMode}
         showFilters={showFilters}
         lockFilters={lockFilters}
         isMobile={isMobile}
@@ -111,13 +124,13 @@ const AppShell: React.FC = () => {
         onNameQueryChange={setNameQuery}
         sortOrder={sortOrder}
         onSortOrderChange={setSortOrder}
-        onAccount={() => navigate("/account")}
+        onAccount={() => navigate(accountPath)}
         onSignOut={signOut}
       />
       <Content className="app-content">
         <Routes>
           <Route
-            path="/"
+            path={rootPath}
             element={
               <CaseMasonryLayer
                 isMobile={isMobile}
@@ -129,7 +142,9 @@ const AppShell: React.FC = () => {
                 cases={pagedCases}
                 tagsById={tagsById}
                 caseTagsByCaseId={caseTagsByCaseId}
-                onOpenCase={(caseId) => navigate(`/case/${caseId}`)}
+                onOpenCase={(caseId) =>
+                  navigate(basePath ? `${basePath}/case/${caseId}` : `/case/${caseId}`)
+                }
                 authorOptions={authorOptions}
                 tagOptions={tagOptions}
                 selectedAuthor={selectedAuthor}
@@ -144,9 +159,10 @@ const AppShell: React.FC = () => {
             }
           />
           <Route
-            path="/case/:caseId"
+            path={basePath ? `${basePath}/case/:caseId` : "/case/:caseId"}
             element={
               <CaseDetailLayer
+                routePrefix={basePath}
                 cases={cases}
                 filteredCases={filteredCases}
                 loading={loading}
@@ -159,8 +175,8 @@ const AppShell: React.FC = () => {
               />
             }
           />
-          <Route path="/account" element={<AccountPage />} />
-          <Route path="/tags" element={<TagsPage />} />
+          <Route path={tagsPath} element={<TagsPage canEdit={canEdit} basePath={basePath} />} />
+          {adminMode ? <Route path={accountPath} element={<AccountPage />} /> : null}
         </Routes>
       </Content>
       <AppFooter
@@ -174,7 +190,7 @@ const AppShell: React.FC = () => {
             <button
               type="button"
               className="tag-footer-action"
-              onClick={() => navigate("/tags", { state: { openCreateTag: true } })}
+              onClick={() => navigate(tagsPath, { state: { openCreateTag: true } })}
             >
               + Tag
             </button>
@@ -191,12 +207,16 @@ const App: React.FC = () => {
       <Route path="/login" element={<LoginPage />} />
       <Route path="/signup" element={<SignupPage />} />
       <Route
-        path="/*"
+        path="/admin/*"
         element={
-          <RequireAuth>
-            <AppShell />
-          </RequireAuth>
+          <RequireAdmin>
+            <AppShell basePath="/admin" adminMode />
+          </RequireAdmin>
         }
+      />
+      <Route
+        path="/*"
+        element={<AppShell />}
       />
     </Routes>
   );

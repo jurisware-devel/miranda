@@ -14,7 +14,6 @@ import { generateClient } from "aws-amplify/data";
 import type { Schema } from "../../amplify/data/resource";
 import { EditOutlined, CloseCircleOutlined, UndoOutlined } from "@ant-design/icons";
 import { useLocation, useNavigate } from "react-router-dom";
-import { useAuth } from "../logic/auth/useAuth";
 import { darkenHex, getReadableTextColor } from "../logic/colorUtils";
 import TagCapsule from "../components/TagCapsule";
 
@@ -41,11 +40,15 @@ const sortTags = (values: TagRow[]) =>
     (a.label ?? "").localeCompare(b.label ?? "", undefined, { sensitivity: "base" }),
   );
 
-export default function TagsPage() {
-  const { role } = useAuth();
-  const canEdit = role === "Admin";
+type TagsPageProps = {
+  canEdit?: boolean;
+  basePath?: string;
+};
+
+export default function TagsPage({ canEdit = false, basePath = "" }: TagsPageProps) {
   const navigate = useNavigate();
   const location = useLocation();
+  const rootPath = basePath || "/";
   const [tags, setTags] = useState<TagRow[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -327,7 +330,7 @@ export default function TagsPage() {
                       label={formatTagLabel(tag)}
                       background={parentBg}
                       color={parentText}
-                      onClick={() => navigate("/", { state: { tagId: tag.tagId } })}
+                      onClick={() => navigate(rootPath, { state: { tagId: tag.tagId } })}
                       className="tag-card__title"
                       ariaLabel={`Filter by ${tag.label ?? "tag"}`}
                     />
@@ -340,7 +343,7 @@ export default function TagsPage() {
                             background={color.bg}
                             color={childText}
                             onClick={() =>
-                              navigate("/", { state: { tagId: child.tagId } })
+                              navigate(rootPath, { state: { tagId: child.tagId } })
                             }
                             className="tag-card__child"
                             ariaLabel={`Filter by ${child.label ?? "tag"}`}

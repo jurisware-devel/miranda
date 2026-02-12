@@ -27,6 +27,7 @@ const schema = a.schema({
     })
     .identifier(["caseId"])
     .authorization((allow) => [
+      allow.guest().to(["read"]),
       allow.authenticated().to(["read"]),
       allow.group("Admin").to(["create", "read", "update", "delete"]),
     ]),
@@ -40,6 +41,7 @@ const schema = a.schema({
     })
     .identifier(["tagId"])
     .authorization((allow) => [
+      allow.guest().to(["read"]),
       allow.authenticated().to(["read"]),
       allow.group("Admin").to(["create", "read", "update", "delete"]),
     ]),
@@ -52,6 +54,7 @@ const schema = a.schema({
     .identifier(["caseId", "tagId"])
     .secondaryIndexes((index) => [index("tagId").sortKeys(["caseId"])])
     .authorization((allow) => [
+      allow.guest().to(["read"]),
       allow.authenticated().to(["read"]),
       allow.group("Admin").to(["create", "read", "delete"]),
     ]),

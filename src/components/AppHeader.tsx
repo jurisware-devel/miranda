@@ -9,6 +9,8 @@ const { Header } = Layout;
 type Option = { value: string; label: string };
 
 type AppHeaderProps = {
+  basePath?: string;
+  showUserMenu?: boolean;
   showFilters: boolean;
   lockFilters?: boolean;
   isMobile: boolean;
@@ -23,11 +25,13 @@ type AppHeaderProps = {
   onNameQueryChange: (value: string) => void;
   sortOrder: string;
   onSortOrderChange: (value: string) => void;
-  onAccount: () => void;
-  onSignOut: () => void;
+  onAccount?: () => void;
+  onSignOut?: () => void;
 };
 
 const AppHeader: React.FC<AppHeaderProps> = ({
+  basePath = "",
+  showUserMenu = false,
   showFilters,
   lockFilters = false,
   isMobile,
@@ -46,6 +50,8 @@ const AppHeader: React.FC<AppHeaderProps> = ({
   onSignOut,
 }) => {
   const navigate = useNavigate();
+  const rootPath = basePath || "/";
+  const tagsPath = basePath ? `${basePath}/tags` : "/tags";
   return (
     <Header className="app-header">
       <div className="app-header-brand">
@@ -57,7 +63,7 @@ const AppHeader: React.FC<AppHeaderProps> = ({
               { key: "tags", label: "Tags" },
             ],
             onClick: ({ key }) => {
-              navigate(key === "tags" ? "/tags" : "/");
+              navigate(key === "tags" ? tagsPath : rootPath);
             },
           }}
         >
@@ -96,9 +102,11 @@ const AppHeader: React.FC<AppHeaderProps> = ({
           />
         </div>
       )}
-      <div className="app-header-user-wrap">
-        <UserMenu onAccount={onAccount} onSignOut={onSignOut} />
-      </div>
+      {showUserMenu && onAccount && onSignOut ? (
+        <div className="app-header-user-wrap">
+          <UserMenu onAccount={onAccount} onSignOut={onSignOut} />
+        </div>
+      ) : null}
     </Header>
   );
 };

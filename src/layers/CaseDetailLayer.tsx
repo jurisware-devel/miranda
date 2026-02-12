@@ -14,6 +14,7 @@ import {
 import { buildTagOptions, mapTagsById } from "../logic/tagUtils";
 
 type CaseDetailLayerProps = {
+  routePrefix?: string;
   cases: CaseItem[];
   filteredCases: CaseItem[];
   loading: boolean;
@@ -56,6 +57,7 @@ const emptyForm: CaseFormState = {
 };
 
 const CaseDetailLayer: React.FC<CaseDetailLayerProps> = ({
+  routePrefix = "",
   cases,
   filteredCases,
   loading,
@@ -371,7 +373,12 @@ const CaseDetailLayer: React.FC<CaseDetailLayerProps> = ({
               className="case-detail__caption-button case-detail__caption-button--prev"
               disabled={!prevCase}
               onClick={() => {
-                if (prevCase) navigate(`/case/${prevCase.caseId}`);
+                if (prevCase) {
+                  const nextPath = routePrefix
+                    ? `${routePrefix}/case/${prevCase.caseId}`
+                    : `/case/${prevCase.caseId}`;
+                  navigate(nextPath);
+                }
               }}
             >
               Previous
@@ -384,7 +391,12 @@ const CaseDetailLayer: React.FC<CaseDetailLayerProps> = ({
               className="case-detail__caption-button case-detail__caption-button--next"
               disabled={!nextCase}
               onClick={() => {
-                if (nextCase) navigate(`/case/${nextCase.caseId}`);
+                if (nextCase) {
+                  const nextPath = routePrefix
+                    ? `${routePrefix}/case/${nextCase.caseId}`
+                    : `/case/${nextCase.caseId}`;
+                  navigate(nextPath);
+                }
               }}
             >
               Next

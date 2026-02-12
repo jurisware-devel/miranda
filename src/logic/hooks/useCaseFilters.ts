@@ -89,7 +89,7 @@ export const useCaseFilters = (
       }
       if (selectedTagIds.length) {
         if (caseTagIdsByCaseId.size === 0) {
-          return true;
+          return false;
         }
         const tagIds = caseTagIdsByCaseId.get(item.caseId);
         if (!tagIds) return false;
