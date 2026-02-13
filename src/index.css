@@ -158,13 +158,6 @@ body {
   align-items: center;
 }
 
-.app-header-user-wrap {
-  margin-left: auto;
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
-}
-
 @media (max-width: 600px) {
   .app-header {
     padding-left: 12px;
@@ -179,61 +172,6 @@ body {
   .app-header-link {
     font-size: 14px;
   }
-}
-
-.app-header-user {
-  color: #fff;
-  font-weight: 600;
-}
-
-.auth-page {
-  min-height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 24px;
-}
-
-.auth-loading {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.account-page {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 24px;
-}
-
-.account-card {
-  width: min(520px, 100%);
-}
-
-.account-form {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.account-form__row {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.account-form__row label {
-  font-size: 12px;
-  font-weight: 600;
-  color: rgba(0, 0, 0, 0.65);
-}
-
-.account-form__actions {
-  display: flex;
-  justify-content: flex-end;
 }
 
 .app-header-filter {
@@ -499,16 +437,6 @@ body {
   color: #8a4b00;
 }
 
-.badge--review {
-  background: #ffe6e6;
-  color: #9a1b1b;
-}
-
-.badge--review-button {
-  border: none;
-  cursor: pointer;
-}
-
 .grid-card__badge {
   position: absolute;
   top: 12px;
@@ -629,26 +557,6 @@ body {
   padding: 0;
 }
 
-.tag-card__edit {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  border: none;
-  background: rgba(15, 23, 42, 0.08);
-  color: #0f172a;
-  border-radius: 999px;
-  width: 28px;
-  height: 28px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-
-.tag-card__edit:hover {
-  background: rgba(15, 23, 42, 0.14);
-}
-
 .tag-card__title {
   align-self: center;
 }
@@ -675,93 +583,6 @@ body {
 .tag-card__label:disabled {
   cursor: default;
   opacity: 0.7;
-}
-
-.tag-card--new {
-  border: 2px dashed rgba(255, 255, 255, 0.6);
-  background: rgba(255, 255, 255, 0.15);
-  color: #fff;
-  cursor: pointer;
-  width: 100%;
-  padding: 16px;
-  font: inherit;
-  font-size: 36px;
-  font-weight: 700;
-}
-
-.tags-readonly {
-  width: 100%;
-  padding: 16px;
-  border-radius: 12px;
-  background: rgba(255, 255, 255, 0.12);
-  color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  font-weight: 600;
-}
-
-.tags-modal {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.tags-modal__row {
-  display: flex;
-  align-items: flex-end;
-  gap: 12px;
-}
-
-.tags-modal__field {
-  flex: 1 1 auto;
-  min-width: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.tags-modal__color-swatch {
-  width: 32px;
-  height: 32px;
-  border-radius: 6px;
-  border: 1px solid rgba(15, 23, 42, 0.2);
-  background: #e2e8f0;
-  cursor: pointer;
-  padding: 0;
-}
-
-.tags-modal__label {
-  font-weight: 600;
-}
-
-.tags-modal__section {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  margin-top: 12px;
-}
-
-.tags-modal__child-row {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.tags-modal__child-pill--muted {
-  opacity: 0.55;
-}
-
-.tags-modal__child-remove {
-  border: none;
-  background: transparent;
-  color: inherit;
-  padding: 0;
-  display: inline-flex;
-  align-items: center;
-  cursor: pointer;
-}
-
-.tags-modal__child-remove:hover {
-  opacity: 0.8;
 }
 
 .case-detail {
@@ -912,24 +733,11 @@ body {
   text-align: left;
 }
 
-.case-detail__opinion-actions {
-  display: flex;
-  justify-content: flex-end;
-  gap: 8px;
-}
-
-.case-detail__opinion-editor {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.case-detail__opinion-textarea {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-    "Liberation Mono", "Courier New", monospace;
-  white-space: pre;
-  overflow-wrap: normal;
-  word-break: normal;
+.case-detail__opinion-content {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  line-height: 1.75;
+  color: #111;
 }
 
 .case-detail__opinion :is(p, ul, ol, blockquote) {
@@ -938,6 +746,13 @@ body {
 
 .case-detail__opinion :is(ul, ol) {
   padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .case-detail__opinion-content {
+    font-size: 16px;
+    line-height: 1.7;
+  }
 }
 
 .case-detail__placeholder {
@@ -976,35 +791,6 @@ body {
   }
 }
 
-.case-detail__form {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  height: 100%;
-  min-height: 0;
-}
-
-.case-detail__form-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 12px;
-  flex: 1 1 auto;
-  min-height: 0;
-  overflow: auto;
-  padding-right: 4px;
-}
-
-.case-detail__readonly {
-  grid-column: 1 / -1;
-  background: rgba(148, 163, 184, 0.2);
-  color: #475569;
-  font-size: 12px;
-  font-weight: 600;
-  padding: 6px 10px;
-  border-radius: 999px;
-  text-align: center;
-}
-
 .case-detail__body {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
@@ -1016,87 +802,14 @@ body {
   width: 100%;
 }
 
-.case-detail__body--admin {
-  grid-template-columns: minmax(0, 1fr) 320px;
-}
-
 .case-detail__body--full {
   grid-template-columns: minmax(0, 1fr);
-}
-
-.case-detail__side {
-  background: #f9fafb;
-  border-radius: 10px;
-  padding: 12px;
-  border: 1px solid rgba(15, 23, 42, 0.1);
-  align-self: stretch;
-  max-height: 100%;
-  display: flex;
-  flex-direction: column;
-  min-height: 0;
 }
 
 @media (max-width: 900px) {
   .case-detail__body {
     grid-template-columns: 1fr;
   }
-
-  .case-detail__body--admin {
-    grid-template-columns: 1fr;
-  }
-
-  .case-detail__side {
-    display: none;
-  }
-}
-
-.case-detail__form-row {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  text-align: left;
-}
-
-.case-detail__form-row label {
-  font-size: 12px;
-  font-weight: 600;
-  color: rgba(0, 0, 0, 0.65);
-}
-
-.case-detail__switch {
-  width: auto;
-  min-width: 0;
-  max-width: 60px;
-  align-self: flex-start;
-  display: inline-flex;
-}
-
-.case-detail__switch.ant-switch {
-  width: 44px;
-}
-
-.case-detail__form-row--full {
-  grid-column: 1 / -1;
-}
-
-.case-detail__form-actions {
-  grid-column: 1 / -1;
-  display: flex;
-  justify-content: space-between;
-  gap: 8px;
-  margin-top: auto;
-  flex: 0 0 auto;
-}
-
-.case-detail__form-actions-left {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.case-detail__form-actions-right {
-  display: flex;
-  justify-content: flex-end;
-  margin-left: auto;
 }
 
 .case-detail__text pre {

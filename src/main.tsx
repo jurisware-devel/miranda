@@ -6,16 +6,13 @@ import "antd/dist/reset.css";
 import { Amplify } from "aws-amplify";
 import outputs from "../amplify_outputs.json";
 import { BrowserRouter } from "react-router-dom";
-import { AuthProvider } from "./logic/auth/AuthContext";
 
 Amplify.configure(outputs);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <BrowserRouter>
-      <AuthProvider>
-        <App />
-      </AuthProvider>
+      <App />
     </BrowserRouter>
-  </React.StrictMode>
+  </React.StrictMode>,
 );

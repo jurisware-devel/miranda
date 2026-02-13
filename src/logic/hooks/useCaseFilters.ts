@@ -36,16 +36,6 @@ export const useCaseFilters = (
     return buildTagOptions(tags);
   }, [tags]);
 
-  useEffect(() => {
-    if (!selectedTagIds.length) return;
-    const valid = new Set(tags.map((tag) => tag.tagId));
-    const next = selectedTagIds.filter((tagId) => valid.has(tagId));
-    if (next.length !== selectedTagIds.length) {
-      setSelectedTagIdsInternal(next);
-      setCurrentPage(1);
-    }
-  }, [selectedTagIds, tags]);
-
   const caseTagIdsByCaseId = useMemo(() => {
     const map = new Map<string, Set<string>>();
     for (const item of caseTags) {

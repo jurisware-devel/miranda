@@ -1,11 +1,10 @@
 import React from "react";
 import { Card } from "antd";
 import ReactMarkdown from "react-markdown";
-import ReviewField from "./ReviewField";
 import TagCapsule from "./TagCapsule";
 import type { CaseItem } from "../logic/types";
 import type { TagMeta } from "../logic/tagUtils";
-import { formatCaseCitationLine, REVIEW_MARKER } from "../logic/caseUtils";
+import { formatCaseCitationLine } from "../logic/caseUtils";
 import { getReadableTextColor } from "../logic/colorUtils";
 
 type CaseCardProps = {
@@ -25,11 +24,8 @@ const CaseCard: React.FC<CaseCardProps> = ({
 }) => {
   const title = caseItem.caseName ?? `Case ${index + 1}`;
   const citeLine = formatCaseCitationLine(caseItem) || "—";
-  const handleReviewClick = () => onOpenCase(caseItem.caseId);
   const summary = caseItem.summary ?? "";
   const hasSummary = summary.trim().length > 0;
-  const needsReview = summary.includes(REVIEW_MARKER);
-
 
   return (
     <Card key={caseItem.caseId ?? index} className="grid-card" size="small">
@@ -42,23 +38,11 @@ const CaseCard: React.FC<CaseCardProps> = ({
           className="grid-card__link"
           onClick={() => onOpenCase(caseItem.caseId)}
         >
-          <ReviewField
-            value={title}
-            fallback={`Case ${index + 1}`}
-            onReviewClick={handleReviewClick}
-          />
+          {title}
         </button>
       </div>
-      <div className="grid-card__meta">
-        <ReviewField value={citeLine} fallback="—" onReviewClick={handleReviewClick} />
-      </div>
-      <div className="grid-card__author">
-        <ReviewField
-          value={caseItem.authoringJudge || "Memorandum"}
-          fallback="Memorandum"
-          onReviewClick={handleReviewClick}
-        />
-      </div>
+      <div className="grid-card__meta">{citeLine}</div>
+      <div className="grid-card__author">{caseItem.authoringJudge || "Memorandum"}</div>
       <div className="grid-card__tags">
         {tagIds.length
           ? tagIds.map((tagId) => (
@@ -73,19 +57,9 @@ const CaseCard: React.FC<CaseCardProps> = ({
       </div>
       <div className="grid-card__summary">
         {hasSummary ? (
-          needsReview ? (
-            <ReviewField
-              value={summary}
-              fallback="—"
-              onReviewClick={handleReviewClick}
-            />
-          ) : (
-            <ReactMarkdown className="grid-card__summary-markdown">
-              {summary}
-            </ReactMarkdown>
-          )
+          <ReactMarkdown className="grid-card__summary-markdown">{summary}</ReactMarkdown>
         ) : (
-          <ReviewField fallback="—" onReviewClick={handleReviewClick} />
+          "—"
         )}
       </div>
     </Card>

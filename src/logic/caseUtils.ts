@@ -1,7 +1,5 @@
 import type { CaseItem } from "./types";
 
-export const REVIEW_MARKER = "_REVIEW_";
-
 export const buildOpinionUrl = (opinionUrl?: string) => {
   if (!opinionUrl) return "";
   if (opinionUrl.startsWith("http")) return opinionUrl;
@@ -16,11 +14,6 @@ export const buildOpinionUrl = (opinionUrl?: string) => {
 };
 
 export const normalizeDate = (value?: string | null) => value ?? "";
-
-export const normalizeNullableField = (value: string) => {
-  const trimmed = value.trim();
-  return trimmed ? trimmed : null;
-};
 
 export const formatCaseDateLabel = (
   decisionDate?: string | null,
