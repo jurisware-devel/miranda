@@ -15,7 +15,10 @@ export const useCasesData = (enabled = true) => {
     let active = true;
     async function loadCases() {
       try {
-        const { data, errors } = await client.models.Case.list({ limit: 5000 });
+        const { data, errors } = await client.models.Case.list({
+          limit: 5000,
+          authMode: "iam",
+        });
         if (errors?.length) {
           throw new Error(
             errors

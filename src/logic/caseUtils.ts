@@ -13,8 +13,6 @@ export const buildOpinionUrl = (opinionUrl?: string) => {
   return `${base}/${normalized}.md`;
 };
 
-export const normalizeDate = (value?: string | null) => value ?? "";
-
 export const formatCaseDateLabel = (
   decisionDate?: string | null,
   now: Date = new Date(),
@@ -42,11 +40,4 @@ export const formatCaseCitationLine = (item: CaseItem, now?: Date) => {
   if (citation) return citation;
   if (dateLabel) return `(${dateLabel})`;
   return "";
-};
-
-export const formatCaseCaption = (item: CaseItem, now?: Date) => {
-  const name = item.caseName?.trim() || "";
-  const citationLine = formatCaseCitationLine(item, now);
-  if (name && citationLine) return `${name}, ${citationLine}`;
-  return name || citationLine;
 };

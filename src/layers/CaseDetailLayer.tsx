@@ -1,11 +1,11 @@
 import React, { useEffect, useMemo, useState } from "react";
-import { Alert, Button, Spin } from "antd";
-import { ArrowLeftOutlined } from "@ant-design/icons";
+import { Alert, Spin } from "antd";
 import { useNavigate, useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import { client } from "../logic/amplifyClient";
 import type { CaseItem } from "../logic/types";
-import { buildOpinionUrl, formatCaseCaption } from "../logic/caseUtils";
+import { buildOpinionUrl } from "../logic/caseUtils";
+import CaseDetailNav from "../components/CaseDetailNav";
 
 type CaseDetailLayerProps = {
   cases: CaseItem[];
@@ -55,7 +55,10 @@ const CaseDetailLayer: React.FC<CaseDetailLayerProps> = ({
     async function loadCase() {
       try {
         setCaseLoading(true);
-        const result = await client.models.Case.get({ caseId: caseIdValue });
+        const result = await client.models.Case.get(
+          { caseId: caseIdValue },
+          { authMode: "iam" },
+        );
         if (!active) return;
         setCaseItem((result?.data ?? null) as CaseItem | null);
         setCaseError(null);
@@ -116,28 +119,13 @@ const CaseDetailLayer: React.FC<CaseDetailLayerProps> = ({
         </div>
       ) : caseItem ? (
         <div className="case-detail__panel">
-          <div className="case-detail__bar">
-            <Button icon={<ArrowLeftOutlined />} type="text" onClick={() => navigate(-1)}>
-              Back
-            </Button>
-            <Button
-              type="text"
-              className="case-detail__caption-button case-detail__caption-button--prev"
-              disabled={!prevCase}
-              onClick={() => prevCase && navigate(`/case/${prevCase.caseId}`)}
-            >
-              Previous
-            </Button>
-            <div className="case-detail__title">{formatCaseCaption(caseItem)}</div>
-            <Button
-              type="text"
-              className="case-detail__caption-button case-detail__caption-button--next"
-              disabled={!nextCase}
-              onClick={() => nextCase && navigate(`/case/${nextCase.caseId}`)}
-            >
-              Next
-            </Button>
-          </div>
+          <CaseDetailNav
+            hasPrevious={Boolean(prevCase)}
+            hasNext={Boolean(nextCase)}
+            onBack={() => navigate("/")}
+            onPrevious={() => prevCase && navigate(`/case/${prevCase.caseId}`)}
+            onNext={() => nextCase && navigate(`/case/${nextCase.caseId}`)}
+          />
 
           <div className="case-detail__body case-detail__body--full">
             <div className="case-detail__text">

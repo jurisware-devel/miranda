@@ -2,26 +2,16 @@ import React from "react";
 import { Button, Dropdown, Layout } from "antd";
 import { useNavigate } from "react-router-dom";
 import CaseFilters from "./CaseFilters";
+import type { CaseFilterControls } from "../logic/filterControls";
 
 const { Header } = Layout;
-
-type Option = { value: string; label: string };
 
 type AppHeaderProps = {
   showFilters: boolean;
   lockFilters?: boolean;
   isMobile: boolean;
   onToggleFilters: () => void;
-  authorOptions: Option[];
-  tagOptions: Option[];
-  selectedAuthor: string | null;
-  onAuthorChange: (value: string | null) => void;
-  selectedTagIds: string[];
-  onTagChange: (value: string[]) => void;
-  nameQuery: string;
-  onNameQueryChange: (value: string) => void;
-  sortOrder: string;
-  onSortOrderChange: (value: string) => void;
+  filters: CaseFilterControls;
 };
 
 const AppHeader: React.FC<AppHeaderProps> = ({
@@ -29,16 +19,7 @@ const AppHeader: React.FC<AppHeaderProps> = ({
   lockFilters = false,
   isMobile,
   onToggleFilters,
-  authorOptions,
-  tagOptions,
-  selectedAuthor,
-  onAuthorChange,
-  selectedTagIds,
-  onTagChange,
-  nameQuery,
-  onNameQueryChange,
-  sortOrder,
-  onSortOrderChange,
+  filters,
 }) => {
   const navigate = useNavigate();
   return (
@@ -61,27 +42,29 @@ const AppHeader: React.FC<AppHeaderProps> = ({
           </button>
         </Dropdown>
       </div>
-      {!showFilters ? null : isMobile && !lockFilters ? (
-        <Button
-          type="text"
-          className="app-header-filter-toggle"
-          onClick={onToggleFilters}
-        >
-          Filters
-        </Button>
+      {!showFilters ? null : isMobile ? (
+        lockFilters ? null : (
+          <Button
+            type="text"
+            className="app-header-filter-toggle"
+            onClick={onToggleFilters}
+          >
+            Filters
+          </Button>
+        )
       ) : (
         <div className="app-header-filters">
           <CaseFilters
-            authorOptions={authorOptions}
-            tagOptions={tagOptions}
-            selectedAuthor={selectedAuthor}
-            onAuthorChange={onAuthorChange}
-            selectedTagIds={selectedTagIds}
-            onTagChange={onTagChange}
-            nameQuery={nameQuery}
-            onNameQueryChange={onNameQueryChange}
-            sortOrder={sortOrder}
-            onSortOrderChange={onSortOrderChange}
+            authorOptions={filters.authorOptions}
+            tagOptions={filters.tagOptions}
+            selectedAuthor={filters.selectedAuthor}
+            onAuthorChange={filters.onAuthorChange}
+            selectedTagIds={filters.selectedTagIds}
+            onTagChange={filters.onTagChange}
+            nameQuery={filters.nameQuery}
+            onNameQueryChange={filters.onNameQueryChange}
+            sortOrder={filters.sortOrder}
+            onSortOrderChange={filters.onSortOrderChange}
             wrapClassName="app-header-filter"
             disabled={lockFilters}
           />

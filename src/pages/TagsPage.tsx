@@ -45,8 +45,8 @@ export default function TagsPage() {
           { data: tagData, errors: tagErrors },
           { data: caseTagData, errors: caseTagErrors },
         ] = await Promise.all([
-          client.models.Tag.list({ limit: 5000 }),
-          client.models.CaseTag.list({ limit: 5000 }),
+          client.models.Tag.list({ limit: 5000, authMode: "iam" }),
+          client.models.CaseTag.list({ limit: 5000, authMode: "iam" }),
         ]);
         const allErrors = [...(tagErrors ?? []), ...(caseTagErrors ?? [])];
         if (allErrors.length) {

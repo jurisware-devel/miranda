@@ -7,8 +7,7 @@ import type { CaseItem } from "../logic/types";
 import type { TagMeta } from "../logic/tagUtils";
 import TagCapsule from "../components/TagCapsule";
 import { getReadableTextColor } from "../logic/colorUtils";
-
-type Option = { value: string; label: string };
+import type { CaseFilterControls } from "../logic/filterControls";
 
 type CaseMasonryLayerProps = {
   isMobile: boolean;
@@ -21,16 +20,7 @@ type CaseMasonryLayerProps = {
   tagsById: Map<string, TagMeta>;
   caseTagsByCaseId: Map<string, string[]>;
   onOpenCase: (caseId: string) => void;
-  authorOptions: Option[];
-  tagOptions: Option[];
-  selectedAuthor: string | null;
-  onAuthorChange: (value: string | null) => void;
-  selectedTagIds: string[];
-  onTagChange: (value: string[]) => void;
-  nameQuery: string;
-  onNameQueryChange: (value: string) => void;
-  sortOrder: string;
-  onSortOrderChange: (value: string) => void;
+  filters: CaseFilterControls;
 };
 
 const CaseMasonryLayer: React.FC<CaseMasonryLayerProps> = ({
@@ -44,19 +34,10 @@ const CaseMasonryLayer: React.FC<CaseMasonryLayerProps> = ({
   tagsById,
   caseTagsByCaseId,
   onOpenCase,
-  authorOptions,
-  tagOptions,
-  selectedAuthor,
-  onAuthorChange,
-  selectedTagIds,
-  onTagChange,
-  nameQuery,
-  onNameQueryChange,
-  sortOrder,
-  onSortOrderChange,
+  filters,
 }) => {
   const masonryItems = cases.map((item) => ({ key: item.caseId, data: item }));
-  const activeTags = selectedTagIds;
+  const activeTags = filters.selectedTagIds;
   const showActiveTags = activeTags.length > 0;
 
   return (
@@ -83,7 +64,7 @@ const CaseMasonryLayer: React.FC<CaseMasonryLayerProps> = ({
                       aria-label={`Remove ${label}`}
                       onClick={() => {
                         const next = activeTags.filter((value) => value !== tagId);
-                        onTagChange(next);
+                        filters.onTagChange(next);
                       }}
                     >
                       <CloseCircleOutlined />
@@ -99,16 +80,16 @@ const CaseMasonryLayer: React.FC<CaseMasonryLayerProps> = ({
         <div className="filter-panel">
           <CaseFilters
             compact
-            authorOptions={authorOptions}
-            tagOptions={tagOptions}
-            selectedAuthor={selectedAuthor}
-            onAuthorChange={onAuthorChange}
-            selectedTagIds={selectedTagIds}
-            onTagChange={onTagChange}
-            nameQuery={nameQuery}
-            onNameQueryChange={onNameQueryChange}
-            sortOrder={sortOrder}
-            onSortOrderChange={onSortOrderChange}
+            authorOptions={filters.authorOptions}
+            tagOptions={filters.tagOptions}
+            selectedAuthor={filters.selectedAuthor}
+            onAuthorChange={filters.onAuthorChange}
+            selectedTagIds={filters.selectedTagIds}
+            onTagChange={filters.onTagChange}
+            nameQuery={filters.nameQuery}
+            onNameQueryChange={filters.onNameQueryChange}
+            sortOrder={filters.sortOrder}
+            onSortOrderChange={filters.onSortOrderChange}
           />
         </div>
       ) : null}
