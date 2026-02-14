@@ -81,13 +81,13 @@ const App: React.FC = () => {
         showFilters={showFilters}
         lockFilters={lockFilters}
         isMobile={isMobile}
+        filtersOpen={filtersOpen}
         onToggleFilters={() => setFiltersOpen((open) => !open)}
+        onCloseFilters={() => setFiltersOpen(false)}
         filters={filters}
       />
       <Content className="app-content">
         <AppContentRoutes
-          isMobile={isMobile}
-          filtersOpen={filtersOpen}
           error={error}
           tagsError={tagsError}
           caseTagsError={caseTagsError}

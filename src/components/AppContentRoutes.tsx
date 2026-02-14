@@ -1,15 +1,12 @@
 import React from "react";
-import { Route, Routes, useNavigate } from "react-router-dom";
+import { Navigate, Route, Routes, useNavigate } from "react-router-dom";
 import CaseDetailLayer from "../layers/CaseDetailLayer";
 import CaseMasonryLayer from "../layers/CaseMasonryLayer";
-import TagsPage from "../pages/TagsPage";
 import type { CaseItem } from "../logic/types";
 import type { TagMeta } from "../logic/tagUtils";
 import type { CaseFilterControls } from "../logic/filterControls";
 
 type AppContentRoutesProps = {
-  isMobile: boolean;
-  filtersOpen: boolean;
   error: string | null;
   tagsError: string | null;
   caseTagsError: string | null;
@@ -23,8 +20,6 @@ type AppContentRoutesProps = {
 };
 
 const AppContentRoutes: React.FC<AppContentRoutesProps> = ({
-  isMobile,
-  filtersOpen,
   error,
   tagsError,
   caseTagsError,
@@ -44,8 +39,6 @@ const AppContentRoutes: React.FC<AppContentRoutesProps> = ({
         path="/"
         element={
           <CaseMasonryLayer
-            isMobile={isMobile}
-            filtersOpen={filtersOpen}
             error={error}
             tagsError={tagsError}
             caseTagsError={caseTagsError}
@@ -69,7 +62,7 @@ const AppContentRoutes: React.FC<AppContentRoutesProps> = ({
           />
         }
       />
-      <Route path="/tags" element={<TagsPage />} />
+      <Route path="/tags" element={<Navigate to="/" replace />} />
     </Routes>
   );
 };

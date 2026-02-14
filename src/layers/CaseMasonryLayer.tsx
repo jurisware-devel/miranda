@@ -1,7 +1,6 @@
 import React from "react";
 import { Alert, Masonry, Spin } from "antd";
 import { CloseCircleOutlined } from "@ant-design/icons";
-import CaseFilters from "../components/CaseFilters";
 import CaseCard from "../components/CaseCard";
 import type { CaseItem } from "../logic/types";
 import type { TagMeta } from "../logic/tagUtils";
@@ -10,8 +9,6 @@ import { getReadableTextColor } from "../logic/colorUtils";
 import type { CaseFilterControls } from "../logic/filterControls";
 
 type CaseMasonryLayerProps = {
-  isMobile: boolean;
-  filtersOpen: boolean;
   error: string | null;
   tagsError: string | null;
   caseTagsError: string | null;
@@ -24,8 +21,6 @@ type CaseMasonryLayerProps = {
 };
 
 const CaseMasonryLayer: React.FC<CaseMasonryLayerProps> = ({
-  isMobile,
-  filtersOpen,
   error,
   tagsError,
   caseTagsError,
@@ -76,23 +71,6 @@ const CaseMasonryLayer: React.FC<CaseMasonryLayerProps> = ({
           </div>
         ) : null}
       </div>
-      {isMobile && filtersOpen ? (
-        <div className="filter-panel">
-          <CaseFilters
-            compact
-            authorOptions={filters.authorOptions}
-            tagOptions={filters.tagOptions}
-            selectedAuthor={filters.selectedAuthor}
-            onAuthorChange={filters.onAuthorChange}
-            selectedTagIds={filters.selectedTagIds}
-            onTagChange={filters.onTagChange}
-            nameQuery={filters.nameQuery}
-            onNameQueryChange={filters.onNameQueryChange}
-            sortOrder={filters.sortOrder}
-            onSortOrderChange={filters.onSortOrderChange}
-          />
-        </div>
-      ) : null}
       {error ? <Alert type="error" message={error} showIcon /> : null}
       {tagsError ? <Alert type="error" message={tagsError} showIcon /> : null}
       {caseTagsError ? <Alert type="error" message={caseTagsError} showIcon /> : null}
