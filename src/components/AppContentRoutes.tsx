@@ -12,7 +12,6 @@ type AppContentRoutesProps = {
   caseTagsError: string | null;
   loading: boolean;
   cases: CaseItem[];
-  filteredCases: CaseItem[];
   pagedCases: CaseItem[];
   tagsById: Map<string, TagMeta>;
   caseTagsByCaseId: Map<string, string[]>;
@@ -25,7 +24,6 @@ const AppContentRoutes: React.FC<AppContentRoutesProps> = ({
   caseTagsError,
   loading,
   cases,
-  filteredCases,
   pagedCases,
   tagsById,
   caseTagsByCaseId,
@@ -56,7 +54,6 @@ const AppContentRoutes: React.FC<AppContentRoutesProps> = ({
         element={
           <CaseDetailLayer
             cases={cases}
-            filteredCases={filteredCases}
             loading={loading}
             error={error}
           />

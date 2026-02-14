@@ -1,44 +1,29 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Alert, Spin } from "antd";
-import { useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import { client } from "../logic/amplifyClient";
 import type { CaseItem } from "../logic/types";
 import { buildOpinionUrl } from "../logic/caseUtils";
-import CaseDetailNav from "../components/CaseDetailNav";
 
 type CaseDetailLayerProps = {
   cases: CaseItem[];
-  filteredCases: CaseItem[];
   loading: boolean;
   error: string | null;
 };
 
 const CaseDetailLayer: React.FC<CaseDetailLayerProps> = ({
   cases,
-  filteredCases,
   loading,
   error,
 }) => {
   const { caseId } = useParams();
-  const navigate = useNavigate();
   const [caseItem, setCaseItem] = useState<CaseItem | null>(null);
   const [caseLoading, setCaseLoading] = useState(false);
   const [caseError, setCaseError] = useState<string | null>(null);
   const [opinionText, setOpinionText] = useState<string>("");
   const [opinionLoading, setOpinionLoading] = useState(false);
   const [opinionError, setOpinionError] = useState<string | null>(null);
-
-  const filteredIndex = useMemo(() => {
-    if (!caseId) return -1;
-    return filteredCases.findIndex((item) => item.caseId === caseId);
-  }, [caseId, filteredCases]);
-
-  const prevCase = filteredIndex > 0 ? filteredCases[filteredIndex - 1] : null;
-  const nextCase =
-    filteredIndex >= 0 && filteredIndex < filteredCases.length - 1
-      ? filteredCases[filteredIndex + 1]
-      : null;
 
   useEffect(() => {
     let active = true;
@@ -119,43 +104,48 @@ const CaseDetailLayer: React.FC<CaseDetailLayerProps> = ({
         </div>
       ) : caseItem ? (
         <div className="case-detail__panel">
-          <CaseDetailNav
-            hasPrevious={Boolean(prevCase)}
-            hasNext={Boolean(nextCase)}
-            onBack={() => navigate("/")}
-            onPrevious={() => prevCase && navigate(`/case/${prevCase.caseId}`)}
-            onNext={() => nextCase && navigate(`/case/${nextCase.caseId}`)}
-          />
-
-          <div className="case-detail__body case-detail__body--full">
-            <div className="case-detail__text">
-              {opinionError ? (
-                <Alert type="error" message={opinionError} showIcon />
-              ) : opinionLoading ? (
-                <div className="card-grid__loading">
-                  <Spin />
-                </div>
-              ) : opinionText ? (
-                <div className="case-detail__opinion">
-                  <div className="case-detail__opinion-content">
-                    <ReactMarkdown>{opinionText}</ReactMarkdown>
-                  </div>
-                </div>
-              ) : (
-                <div className="case-detail__opinion">
-                  <div className="case-detail__placeholder" aria-hidden="true">
-                    <div className="case-detail__placeholder-line case-detail__placeholder-line--long" />
-                    <div className="case-detail__placeholder-line case-detail__placeholder-line--medium" />
-                    <div className="case-detail__placeholder-line case-detail__placeholder-line--long" />
-                    <div className="case-detail__placeholder-line case-detail__placeholder-line--short" />
-                    <div className="case-detail__placeholder-line case-detail__placeholder-line--long" />
-                    <div className="case-detail__placeholder-line case-detail__placeholder-line--medium" />
-                    <div className="case-detail__placeholder-line case-detail__placeholder-line--long" />
-                  </div>
-                </div>
-              )}
+          {opinionError ? (
+            <Alert type="error" message={opinionError} showIcon />
+          ) : opinionLoading ? (
+            <div className="card-grid__loading">
+              <Spin />
             </div>
-          </div>
+          ) : opinionText ? (
+            <div className="case-detail__opinion-content">
+              <ReactMarkdown>{opinionText}</ReactMarkdown>
+            </div>
+          ) : (
+            <>
+              <div
+                aria-hidden="true"
+                className="case-detail__placeholder-line case-detail__placeholder-line--long"
+              />
+              <div
+                aria-hidden="true"
+                className="case-detail__placeholder-line case-detail__placeholder-line--medium"
+              />
+              <div
+                aria-hidden="true"
+                className="case-detail__placeholder-line case-detail__placeholder-line--long"
+              />
+              <div
+                aria-hidden="true"
+                className="case-detail__placeholder-line case-detail__placeholder-line--short"
+              />
+              <div
+                aria-hidden="true"
+                className="case-detail__placeholder-line case-detail__placeholder-line--long"
+              />
+              <div
+                aria-hidden="true"
+                className="case-detail__placeholder-line case-detail__placeholder-line--medium"
+              />
+              <div
+                aria-hidden="true"
+                className="case-detail__placeholder-line case-detail__placeholder-line--long"
+              />
+            </>
+          )}
         </div>
       ) : (
         <Alert type="warning" message="Case not found" showIcon />

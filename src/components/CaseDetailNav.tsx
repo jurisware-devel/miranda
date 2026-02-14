@@ -8,6 +8,7 @@ type CaseDetailNavProps = {
   onBack: () => void;
   onPrevious: () => void;
   onNext: () => void;
+  className?: string;
 };
 
 const CaseDetailNav: React.FC<CaseDetailNavProps> = ({
@@ -16,9 +17,11 @@ const CaseDetailNav: React.FC<CaseDetailNavProps> = ({
   onBack,
   onPrevious,
   onNext,
+  className,
 }) => {
+  const navClassName = className ? `case-detail__bar ${className}` : "case-detail__bar";
   return (
-    <div className="case-detail__bar">
+    <div className={navClassName}>
       <Button icon={<ArrowLeftOutlined />} type="text" onClick={onBack}>
         Back
       </Button>

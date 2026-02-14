@@ -3,6 +3,9 @@ body,
 #root {
   height: 100%;
   margin: 0;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -18,8 +21,9 @@ body {
 }
 
 .app-shell {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  height: 100dvh;
   margin: 0;
   background: linear-gradient(180deg, #4096ff 0%, #1f5fbf 25%, #0958d9 50%, #1f5fbf 75%, #4096ff 100%);
   padding: 0;
@@ -27,6 +31,7 @@ body {
   min-width: 0;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 .ant-layout {
@@ -86,6 +91,7 @@ body {
   align-items: stretch;
   min-width: 0;
   overflow: auto;
+  overflow-x: hidden;
   min-height: 0;
 }
 
@@ -172,6 +178,14 @@ body {
   .app-header-link {
     font-size: 14px;
   }
+
+  .app-header-mobile-filter-panel .ant-btn,
+  .app-header-mobile-filter-panel .ant-input,
+  .app-header-mobile-filter-panel .ant-select-selector,
+  .app-header-mobile-filter-panel .ant-select-selection-item,
+  .app-header-mobile-filter-panel .ant-select-selection-placeholder {
+    font-size: 16px !important;
+  }
 }
 
 .app-header-filter {
@@ -207,7 +221,7 @@ body {
 .masonry-wrap {
   width: 100%;
   height: 100%;
-  padding: 0 16px 16px;
+  padding: 0 16px 24px;
   box-sizing: border-box;
 }
 
@@ -601,7 +615,7 @@ body {
   gap: 12px;
   min-height: 0;
   width: 100%;
-  padding: 0 16px 16px;
+  padding: 8px 16px 0;
   box-sizing: border-box;
 }
 
@@ -611,6 +625,26 @@ body {
   gap: 12px;
   margin-bottom: 8px;
   width: 100%;
+}
+
+.case-detail__bar--footer {
+  width: auto;
+  margin-bottom: 0;
+  background: #fff;
+  border-radius: 999px;
+  padding: 2px 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.16);
+}
+
+.case-detail__bar--footer .ant-btn {
+  color: #0f172a;
+}
+
+.case-detail__bar--footer .ant-btn:hover,
+.case-detail__bar--footer .ant-btn:focus {
+  color: #0f172a !important;
+  background: rgba(15, 23, 42, 0.08) !important;
+  border-radius: 999px;
 }
 
 .case-detail__caption-button {
@@ -637,6 +671,11 @@ body {
   min-height: 0;
   height: 100%;
   width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior-x: none;
+  text-align: left;
+  min-width: 0;
 }
 
 @media (max-width: 600px) {
@@ -645,49 +684,29 @@ body {
   }
 }
 
-.case-detail__text {
-  background: #f6f6f6;
-  border-radius: 10px;
-  padding: 12px;
-  flex: 1 1 auto;
-  min-height: 0;
-  height: 100%;
-  width: 100%;
-  min-width: 0;
-  overflow-y: auto;
-  overflow-x: hidden;
-  overscroll-behavior-x: none;
-  text-align: left;
-}
-
-.case-detail__opinion {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  text-align: left;
-}
-
 .case-detail__opinion-content {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 18px;
   line-height: 1.75;
   color: #111;
+  padding: 8px;
+  text-align: left;
   min-width: 0;
   max-width: 100%;
   overflow-x: hidden;
 }
 
-.case-detail__opinion :is(p, ul, ol, blockquote) {
+.case-detail__opinion-content :is(p, ul, ol, blockquote) {
   margin: 0 0 12px;
 }
 
-.case-detail__opinion :is(ul, ol) {
+.case-detail__opinion-content :is(ul, ol) {
   padding-left: 20px;
 }
 
 /* Keep page scroll vertical while allowing very long unbreakable tokens
    (such as raw URLs) to be inspected without widening the whole container. */
-.case-detail__opinion :is(p, li, blockquote) {
+.case-detail__opinion-content :is(p, li, blockquote) {
   max-width: 100%;
   overflow-x: auto;
   overflow-y: hidden;
@@ -701,19 +720,25 @@ body {
   }
 }
 
-.case-detail__placeholder {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding: 6px 4px;
-}
-
 .case-detail__placeholder-line {
   height: 14px;
+  margin: 0 4px;
   border-radius: 999px;
   background: linear-gradient(90deg, #e5e7eb 0%, #f3f4f6 40%, #e5e7eb 80%);
   background-size: 200% 100%;
   animation: case-detail-shimmer 1.2s ease-in-out infinite;
+}
+
+.case-detail__placeholder-line:first-child {
+  margin-top: 6px;
+}
+
+.case-detail__placeholder-line + .case-detail__placeholder-line {
+  margin-top: 10px;
+}
+
+.case-detail__placeholder-line:last-child {
+  margin-bottom: 6px;
 }
 
 .case-detail__placeholder-line--short {
@@ -737,28 +762,7 @@ body {
   }
 }
 
-.case-detail__body {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  gap: 16px;
-  flex: 1 1 auto;
-  min-height: 0;
-  height: 100%;
-  align-items: stretch;
-  width: 100%;
-}
-
-.case-detail__body--full {
-  grid-template-columns: minmax(0, 1fr);
-}
-
-@media (max-width: 900px) {
-  .case-detail__body {
-    grid-template-columns: 1fr;
-  }
-}
-
-.case-detail__text pre {
+.case-detail__opinion-content pre {
   margin: 0;
   white-space: pre-wrap;
   text-align: left;

@@ -9,7 +9,7 @@ const { Header } = Layout;
 type AppHeaderProps = {
   showFilters: boolean;
   lockFilters?: boolean;
-  isMobile: boolean;
+  isXlUp: boolean;
   filtersOpen: boolean;
   onToggleFilters: () => void;
   onCloseFilters: () => void;
@@ -19,7 +19,7 @@ type AppHeaderProps = {
 const AppHeader: React.FC<AppHeaderProps> = ({
   showFilters,
   lockFilters = false,
-  isMobile,
+  isXlUp,
   filtersOpen,
   onToggleFilters,
   onCloseFilters,
@@ -38,7 +38,7 @@ const AppHeader: React.FC<AppHeaderProps> = ({
           <img className="app-header-logo" src="/miranda-logotype.svg" alt="Miranda" />
         </button>
       </div>
-      {!showFilters ? null : isMobile ? (
+      {!showFilters ? null : !isXlUp ? (
         lockFilters ? null : (
           <>
             <Button
@@ -76,7 +76,7 @@ const AppHeader: React.FC<AppHeaderProps> = ({
             ) : null}
           </>
         )
-      ) : (
+      ) : lockFilters && !isXlUp ? null : (
         <div className="app-header-filters">
           <CaseFilters
             authorOptions={filters.authorOptions}
