@@ -645,7 +645,9 @@ body {
   height: 100%;
   width: 100%;
   min-width: 0;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior-x: none;
   text-align: left;
 }
 
@@ -661,6 +663,9 @@ body {
   font-size: 18px;
   line-height: 1.75;
   color: #111;
+  min-width: 0;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .case-detail__opinion :is(p, ul, ol, blockquote) {
@@ -669,6 +674,15 @@ body {
 
 .case-detail__opinion :is(ul, ol) {
   padding-left: 20px;
+}
+
+/* Keep page scroll vertical while allowing very long unbreakable tokens
+   (such as raw URLs) to be inspected without widening the whole container. */
+.case-detail__opinion :is(p, li, blockquote) {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
 @media (max-width: 768px) {
