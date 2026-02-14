@@ -15,10 +15,19 @@ export const useTagsData = (enabled = true) => {
     let active = true;
     async function loadTagsAndLinks() {
       try {
-        const [{ data: tagData }, { data: linkData }] = await Promise.all([
+        const [{ data: tagData, errors: tagErrors }, { data: linkData, errors: linkErrors }] =
+          await Promise.all([
           client.models.Tag.list({ limit: 5000 }),
           client.models.CaseTag.list({ limit: 5000 }),
         ]);
+        const allErrors = [...(tagErrors ?? []), ...(linkErrors ?? [])];
+        if (allErrors.length) {
+          throw new Error(
+            allErrors
+              .map((err) => ("message" in err && err.message ? err.message : String(err)))
+              .join("; "),
+          );
+        }
         if (!active) return;
         setTags(tagData ?? []);
         setCaseTags(linkData ?? []);

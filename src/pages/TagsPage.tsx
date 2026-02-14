@@ -41,10 +41,21 @@ export default function TagsPage() {
     async function loadTags() {
       try {
         setLoading(true);
-        const [{ data: tagData }, { data: caseTagData }] = await Promise.all([
+        const [
+          { data: tagData, errors: tagErrors },
+          { data: caseTagData, errors: caseTagErrors },
+        ] = await Promise.all([
           client.models.Tag.list({ limit: 5000 }),
           client.models.CaseTag.list({ limit: 5000 }),
         ]);
+        const allErrors = [...(tagErrors ?? []), ...(caseTagErrors ?? [])];
+        if (allErrors.length) {
+          throw new Error(
+            allErrors
+              .map((err) => ("message" in err && err.message ? err.message : String(err)))
+              .join("; "),
+          );
+        }
         if (!active) return;
         setTags(tagData ?? []);
         setCaseTags(caseTagData ?? []);

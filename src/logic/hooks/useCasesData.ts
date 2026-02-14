@@ -15,7 +15,14 @@ export const useCasesData = (enabled = true) => {
     let active = true;
     async function loadCases() {
       try {
-        const { data } = await client.models.Case.list({ limit: 5000 });
+        const { data, errors } = await client.models.Case.list({ limit: 5000 });
+        if (errors?.length) {
+          throw new Error(
+            errors
+              .map((err) => ("message" in err && err.message ? err.message : String(err)))
+              .join("; "),
+          );
+        }
         if (!active) return;
         setCases((data ?? []) as CaseItem[]);
         setError(null);
