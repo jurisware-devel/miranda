@@ -1,5 +1,5 @@
-import React, { useEffect, useMemo, useRef, useState } from "react";
-import { Grid, Layout, message } from "antd";
+import React, { useMemo, useState } from "react";
+import { Grid, Layout } from "antd";
 import { useLocation, useNavigate } from "react-router-dom";
 import AppFooter from "./components/AppFooter";
 import AppHeader from "./components/AppHeader";
@@ -13,15 +13,6 @@ import { mapCaseTagsByCaseId, mapTagsById } from "./logic/tagUtils";
 import type { CaseFilterControls } from "./logic/filterControls";
 
 const { Content } = Layout;
-const BREAKPOINT_ORDER = ["xxl", "xl", "lg", "md", "sm", "xs"] as const;
-
-const getActiveBreakpoint = (screens: Partial<Record<(typeof BREAKPOINT_ORDER)[number], boolean>>) => {
-  for (const key of BREAKPOINT_ORDER) {
-    if (screens[key]) return key;
-  }
-  return "unknown";
-};
-
 const App: React.FC = () => {
   const { cases, loading, error } = useCasesData(true);
   const { tags, caseTags, tagsError, caseTagsError } = useTagsData(true);
@@ -45,7 +36,6 @@ const App: React.FC = () => {
 
   const [filtersOpen, setFiltersOpen] = useState(false);
   const screens = Grid.useBreakpoint();
-  const previousBreakpointRef = useRef<string | null>(null);
   const location = useLocation();
   const navigate = useNavigate();
   const isXlUp = Boolean(screens.xl);
@@ -87,19 +77,6 @@ const App: React.FC = () => {
       setSortOrder,
     ],
   );
-
-  useEffect(() => {
-    const currentBreakpoint = getActiveBreakpoint(screens);
-    const previousBreakpoint = previousBreakpointRef.current;
-
-    if (previousBreakpoint && previousBreakpoint !== currentBreakpoint) {
-      message.info(
-        `Breakpoint: ${previousBreakpoint} -> ${currentBreakpoint} (width: ${window.innerWidth}px)`,
-      );
-    }
-
-    previousBreakpointRef.current = currentBreakpoint;
-  }, [screens]);
 
   const activeCaseId = useMemo(() => {
     if (!location.pathname.startsWith("/case/")) return null;
