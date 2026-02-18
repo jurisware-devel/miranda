@@ -24,22 +24,18 @@ export const buildOpinionUrl = (opinionUrl?: string | null, caseItem?: CaseItem 
     .replace(/^\//, "")
     .replace(/\.txt$/i, "")
     .replace(/\.md$/i, "");
-
-  const parts = sanitized.split("/").filter(Boolean);
-  let normalized = "";
-
-  if (parts.length >= 3) {
-    normalized = `${parts[0]}/${parts[1]}/${parts.slice(2).join("/")}`;
-  } else {
-    const court = normalizeCourtCode(caseItem?.court);
-    const year = getOpinionYear(caseItem);
-    const name = parts.length ? parts[parts.length - 1] : "";
-    if (year && name) {
-      normalized = `${court}/${year}/${name}`;
-    } else {
-      normalized = sanitized;
-    }
-  }
+  const court = normalizeCourtCode(caseItem?.court);
+  const withoutCourtPrefix = sanitized.replace(new RegExp(`^${court}/`, "i"), "");
+  const parts = withoutCourtPrefix.split("/").filter(Boolean);
+  const year = getOpinionYear(caseItem);
+  const name = parts.length ? parts[parts.length - 1] : "";
+  const opinionPath =
+    parts.length >= 2
+      ? withoutCourtPrefix
+      : year && name
+        ? `${year}/${name}`
+        : withoutCourtPrefix;
+  const normalized = `${court}/${opinionPath}`;
 
   const base =
     typeof import.meta !== "undefined" && import.meta.env?.VITE_OPINIONS_BASE_URL
