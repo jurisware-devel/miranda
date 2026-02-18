@@ -6,6 +6,10 @@ export const buildOpinionUrl = (opinionUrl?: string) => {
   const trimmed = opinionUrl.replace(/^\//, "");
   let normalized = trimmed.replace(/\.txt/gi, "");
   normalized = normalized.replace(/\.md$/i, "");
+  normalized = normalized.replace(
+    /^coa\/(\d{4})_(.+)$/i,
+    (_value, year, caseSuffix) => `coa/${year}/${year}_${caseSuffix}`,
+  );
   const base =
     typeof import.meta !== "undefined" && import.meta.env?.VITE_OPINIONS_BASE_URL
       ? String(import.meta.env.VITE_OPINIONS_BASE_URL).replace(/\/$/, "")
