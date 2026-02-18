@@ -23,6 +23,9 @@ const App: React.FC = () => {
     setSelectedAuthor,
     selectedTagIds,
     setSelectedTagIds,
+    courtOptions,
+    selectedCourt,
+    setSelectedCourt,
     nameQuery,
     setNameQuery,
     sortOrder,
@@ -44,6 +47,7 @@ const App: React.FC = () => {
     setSelectedTagIds,
     setNameQuery,
     setSortOrder,
+    setSelectedCourt,
   });
 
   const tagsById = useMemo(() => mapTagsById(tags), [tags]);
@@ -55,10 +59,13 @@ const App: React.FC = () => {
     () => ({
       authorOptions,
       tagOptions,
+      courtOptions,
       selectedAuthor,
       onAuthorChange: setSelectedAuthor,
       selectedTagIds,
       onTagChange: setSelectedTagIds,
+      selectedCourt,
+      onCourtChange: setSelectedCourt,
       nameQuery,
       onNameQueryChange: setNameQuery,
       sortOrder,
@@ -67,10 +74,13 @@ const App: React.FC = () => {
     [
       authorOptions,
       tagOptions,
+      courtOptions,
       selectedAuthor,
       setSelectedAuthor,
       selectedTagIds,
       setSelectedTagIds,
+      selectedCourt,
+      setSelectedCourt,
       nameQuery,
       setNameQuery,
       sortOrder,

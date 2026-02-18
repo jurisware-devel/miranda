@@ -4,7 +4,7 @@ import ReactMarkdown from "react-markdown";
 import TagCapsule from "./TagCapsule";
 import type { CaseItem } from "../logic/types";
 import type { TagMeta } from "../logic/tagUtils";
-import { formatCaseCitationLine } from "../logic/caseUtils";
+import { formatCaseCitationLine, getCourtBadgeLabel, getCourtCode } from "../logic/caseUtils";
 import { getReadableTextColor } from "../logic/colorUtils";
 
 type CaseCardProps = {
@@ -30,7 +30,7 @@ const CaseCard: React.FC<CaseCardProps> = ({
   return (
     <Card key={caseItem.caseId ?? index} className="grid-card" size="small">
       <div className="grid-card__badge">
-        <span className="badge badge--coa">CoA</span>
+        <span className={`badge badge--court badge--court-${getCourtCode(caseItem.court)}`}>{getCourtBadgeLabel(caseItem.court)}</span>
       </div>
       <div className="grid-card__title">
         <button

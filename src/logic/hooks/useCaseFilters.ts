@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import type { CaseItem, CaseTagItem, TagItem } from "../types";
 import { buildTagOptions } from "../tagUtils";
+import { getCourtCode, getCourtBadgeLabel } from "../caseUtils";
 
 export const useCaseFilters = (
   cases: CaseItem[],
@@ -9,6 +10,7 @@ export const useCaseFilters = (
 ) => {
   const [selectedAuthor, setSelectedAuthorInternal] = useState<string | null>(null);
   const [selectedTagIds, setSelectedTagIdsInternal] = useState<string[]>([]);
+  const [selectedCourt, setSelectedCourtInternal] = useState<string | null>(null);
   const [nameQuery, setNameQuery] = useState("");
   const [debouncedNameQuery, setDebouncedNameQuery] = useState("");
   const [sortOrder, setSortOrderInternal] = useState("date_desc");
@@ -35,6 +37,16 @@ export const useCaseFilters = (
   const tagOptions = useMemo(() => {
     return buildTagOptions(tags);
   }, [tags]);
+
+  const courtOptions = useMemo(() => {
+    const set = new Set<string>();
+    for (const item of cases) {
+      set.add(getCourtCode(item.court));
+    }
+    return Array.from(set)
+      .sort()
+      .map((value) => ({ value, label: getCourtBadgeLabel(value) }));
+  }, [cases]);
 
   const caseTagIdsByCaseId = useMemo(() => {
     const map = new Map<string, Set<string>>();
@@ -77,6 +89,9 @@ export const useCaseFilters = (
       if (selectedAuthor && item.authoringJudge !== selectedAuthor) {
         return false;
       }
+      if (selectedCourt && getCourtCode(item.court) !== selectedCourt) {
+        return false;
+      }
       if (selectedTagIds.length) {
         if (caseTagIdsByCaseId.size === 0) {
           return false;
@@ -89,7 +104,7 @@ export const useCaseFilters = (
       if (!query) return true;
       return (item.caseName ?? "").toLowerCase().includes(query);
     });
-  }, [sortedCases, selectedAuthor, selectedTagIds, debouncedNameQuery, caseTagIdsByCaseId]);
+  }, [sortedCases, selectedAuthor, selectedCourt, selectedTagIds, debouncedNameQuery, caseTagIdsByCaseId]);
 
   const setSelectedAuthor = (value: string | null) => {
     setSelectedAuthorInternal(value);
@@ -98,6 +113,11 @@ export const useCaseFilters = (
 
   const setSelectedTagIds = (value: string[]) => {
     setSelectedTagIdsInternal(value);
+    setCurrentPage(1);
+  };
+
+  const setSelectedCourt = (value: string | null) => {
+    setSelectedCourtInternal(value);
     setCurrentPage(1);
   };
 
@@ -119,10 +139,13 @@ export const useCaseFilters = (
   return {
     authorOptions,
     tagOptions,
+    courtOptions,
     selectedAuthor,
     setSelectedAuthor,
     selectedTagIds,
     setSelectedTagIds,
+    selectedCourt,
+    setSelectedCourt,
     nameQuery,
     setNameQuery: handleNameQueryChange,
     sortOrder,

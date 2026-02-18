@@ -62,10 +62,13 @@ const AppHeader: React.FC<AppHeaderProps> = ({
                     compact
                     authorOptions={filters.authorOptions}
                     tagOptions={filters.tagOptions}
+                    courtOptions={filters.courtOptions}
                     selectedAuthor={filters.selectedAuthor}
                     onAuthorChange={filters.onAuthorChange}
                     selectedTagIds={filters.selectedTagIds}
                     onTagChange={filters.onTagChange}
+                    selectedCourt={filters.selectedCourt}
+                    onCourtChange={filters.onCourtChange}
                     nameQuery={filters.nameQuery}
                     onNameQueryChange={filters.onNameQueryChange}
                     sortOrder={filters.sortOrder}
@@ -81,10 +84,13 @@ const AppHeader: React.FC<AppHeaderProps> = ({
           <CaseFilters
             authorOptions={filters.authorOptions}
             tagOptions={filters.tagOptions}
+            courtOptions={filters.courtOptions}
             selectedAuthor={filters.selectedAuthor}
             onAuthorChange={filters.onAuthorChange}
             selectedTagIds={filters.selectedTagIds}
             onTagChange={filters.onTagChange}
+            selectedCourt={filters.selectedCourt}
+            onCourtChange={filters.onCourtChange}
             nameQuery={filters.nameQuery}
             onNameQueryChange={filters.onNameQueryChange}
             sortOrder={filters.sortOrder}

@@ -5,6 +5,7 @@ type UseAppRouteUiOptions = {
   setSelectedAuthor: (value: string | null) => void;
   setSelectedTagIds: (value: string[]) => void;
   setNameQuery: (value: string) => void;
+  setSelectedCourt: (value: string | null) => void;
   setSortOrder: (value: string) => void;
 };
 
@@ -13,6 +14,7 @@ export const useAppRouteUi = ({
   setSelectedTagIds,
   setNameQuery,
   setSortOrder,
+  setSelectedCourt,
 }: UseAppRouteUiOptions) => {
   const location = useLocation();
   const navigate = useNavigate();
@@ -27,6 +29,7 @@ export const useAppRouteUi = ({
     setSelectedAuthor(null);
     setSelectedTagIds([state.tagId]);
     setNameQuery("");
+    setSelectedCourt(null);
     setSortOrder("date_desc");
     navigate(".", { replace: true, state: null });
   }, [
@@ -37,6 +40,7 @@ export const useAppRouteUi = ({
     setSelectedAuthor,
     setSelectedTagIds,
     setSortOrder,
+    setSelectedCourt,
   ]);
 
   return {

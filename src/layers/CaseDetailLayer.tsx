@@ -63,7 +63,7 @@ const CaseDetailLayer: React.FC<CaseDetailLayerProps> = ({
 
   useEffect(() => {
     let active = true;
-    const url = buildOpinionUrl(caseItem?.opinionUrl);
+    const url = buildOpinionUrl(caseItem?.opinionUrl, caseItem);
     if (!url) {
       setOpinionText("");
       return;
@@ -92,7 +92,7 @@ const CaseDetailLayer: React.FC<CaseDetailLayerProps> = ({
     return () => {
       active = false;
     };
-  }, [caseItem?.opinionUrl]);
+  }, [caseItem]);
 
   return (
     <div className="case-detail">

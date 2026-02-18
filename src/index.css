@@ -455,9 +455,28 @@ body {
   vertical-align: middle;
 }
 
-.badge--coa {
+.badge--court {
+  text-transform: uppercase;
+}
+
+.badge--court-coa {
   background: #ffe0b2;
   color: #8a4b00;
+}
+
+.badge--court-scotus {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.badge--court-ad3d {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.badge--court-albany {
+  background: #dcfce7;
+  color: #166534;
 }
 
 .grid-card__badge {

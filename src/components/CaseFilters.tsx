@@ -7,10 +7,13 @@ type Option = { value: string; label: string };
 type CaseFiltersProps = {
   authorOptions: Option[];
   tagOptions: Option[];
+  courtOptions: Option[];
   selectedAuthor: string | null;
   onAuthorChange: (value: string | null) => void;
   selectedTagIds: string[];
   onTagChange: (value: string[]) => void;
+  selectedCourt: string | null;
+  onCourtChange: (value: string | null) => void;
   nameQuery: string;
   onNameQueryChange: (value: string) => void;
   sortOrder: string;
@@ -23,10 +26,13 @@ type CaseFiltersProps = {
 const CaseFilters: React.FC<CaseFiltersProps> = ({
   authorOptions,
   tagOptions,
+  courtOptions,
   selectedAuthor,
   onAuthorChange,
   selectedTagIds,
   onTagChange,
+  selectedCourt,
+  onCourtChange,
   nameQuery,
   onNameQueryChange,
   sortOrder,
@@ -37,6 +43,7 @@ const CaseFilters: React.FC<CaseFiltersProps> = ({
 }) => {
   const [tagOpen, setTagOpen] = useState(false);
   const [authorOpen, setAuthorOpen] = useState(false);
+  const [courtOpen, setCourtOpen] = useState(false);
   const selectStyle = compact ? undefined : { minWidth: 200 };
   const inputStyle = compact ? undefined : { minWidth: 240 };
 
@@ -83,6 +90,56 @@ const CaseFilters: React.FC<CaseFiltersProps> = ({
                   onAuthorChange(null);
                 }}
                 aria-label="Clear author filter"
+              >
+                <CloseCircleOutlined />
+              </button>
+            ) : null}
+          </Button>
+        </Dropdown>
+      ),
+    },
+    {
+      key: "court",
+      node: (
+        <Dropdown
+          trigger={["click"]}
+          open={courtOpen}
+          onOpenChange={setCourtOpen}
+          menu={{
+            items: [
+              ...(selectedCourt ? [{ key: "__clear__", label: "All Courts" }] : []),
+              ...courtOptions.map((option) => ({
+                key: option.value,
+                label: option.label,
+              })),
+            ],
+            selectable: true,
+            multiple: false,
+            selectedKeys: selectedCourt ? [selectedCourt] : [],
+            onSelect: (info) => {
+              if (info.key === "__clear__") {
+                onCourtChange(null);
+              } else {
+                onCourtChange(info.key as string);
+              }
+              setCourtOpen(false);
+            },
+          }}
+          disabled={disabled}
+        >
+          <Button className="case-tags-trigger" style={selectStyle}>
+            {selectedCourt
+              ? courtOptions.find((option) => option.value === selectedCourt)?.label ?? selectedCourt
+              : "All Courts"}
+            {selectedCourt ? (
+              <button
+                type="button"
+                className="case-filter-clear"
+                onClick={(event) => {
+                  event.stopPropagation();
+                  onCourtChange(null);
+                }}
+                aria-label="Clear court filter"
               >
                 <CloseCircleOutlined />
               </button>
