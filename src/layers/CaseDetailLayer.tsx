@@ -22,6 +22,7 @@ const CaseDetailLayer: React.FC<CaseDetailLayerProps> = ({
   const [caseLoading, setCaseLoading] = useState(false);
   const [caseError, setCaseError] = useState<string | null>(null);
   const [opinionText, setOpinionText] = useState<string>("");
+  const [opinionPdfUrl, setOpinionPdfUrl] = useState<string>("");
   const [opinionLoading, setOpinionLoading] = useState(false);
   const [opinionError, setOpinionError] = useState<string | null>(null);
 
@@ -66,20 +67,43 @@ const CaseDetailLayer: React.FC<CaseDetailLayerProps> = ({
     const url = buildOpinionUrl(caseItem?.opinionUrl, caseItem);
     if (!url) {
       setOpinionText("");
+      setOpinionPdfUrl("");
       return;
     }
+
+    const hasKnownExtension = /\.(md|pdf)$/i.test(url);
+    const candidateUrls = hasKnownExtension ? [url] : [`${url}.md`, `${url}.pdf`, url];
 
     async function loadOpinion() {
       try {
         setOpinionLoading(true);
-        const response = await fetch(url);
-        if (!response.ok) {
-          throw new Error(`Failed to load opinion (${response.status})`);
-        }
-        const text = await response.text();
-        if (!active) return;
-        setOpinionText(text);
         setOpinionError(null);
+        setOpinionText("");
+        setOpinionPdfUrl("");
+
+        let lastStatus = "";
+        for (const candidate of candidateUrls) {
+          const response = await fetch(candidate);
+          if (!response.ok) {
+            lastStatus = String(response.status);
+            continue;
+          }
+
+          const contentType = response.headers.get("content-type")?.toLowerCase() ?? "";
+          const isPdf = /\.pdf($|\?)/i.test(candidate) || contentType.includes("application/pdf");
+          if (!active) return;
+          if (isPdf) {
+            setOpinionPdfUrl(candidate);
+            return;
+          }
+
+          const text = await response.text();
+          if (!active) return;
+          setOpinionText(text);
+          return;
+        }
+
+        throw new Error(`Failed to load opinion${lastStatus ? ` (${lastStatus})` : ""}`);
       } catch (err) {
         if (!active) return;
         setOpinionError(err instanceof Error ? err.message : "Failed to load opinion text");
@@ -113,6 +137,14 @@ const CaseDetailLayer: React.FC<CaseDetailLayerProps> = ({
           ) : opinionText ? (
             <div className="case-detail__opinion-content">
               <ReactMarkdown>{opinionText}</ReactMarkdown>
+            </div>
+          ) : opinionPdfUrl ? (
+            <div className="case-detail__opinion-content">
+              <iframe
+                title="Opinion PDF"
+                src={opinionPdfUrl}
+                style={{ width: "100%", minHeight: "80vh", border: 0 }}
+              />
             </div>
           ) : (
             <>

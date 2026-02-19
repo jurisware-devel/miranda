@@ -19,11 +19,13 @@ export const buildOpinionUrl = (opinionUrl?: string | null, caseItem?: CaseItem 
   if (!source) return "";
   if (/^https?:\/\//i.test(source)) return source;
 
+  const sourceExtension = source.match(/\.(md|pdf|txt)$/i)?.[1]?.toLowerCase() ?? "";
   const sanitized = source
     .replace(/^s3:\/\/opinions\.jurisware\.com\//i, "")
     .replace(/^\//, "")
     .replace(/\.txt$/i, "")
-    .replace(/\.md$/i, "");
+    .replace(/\.md$/i, "")
+    .replace(/\.pdf$/i, "");
   const court = normalizeCourtCode(caseItem?.court);
   const withoutCourtPrefix = sanitized.replace(new RegExp(`^${court}/`, "i"), "");
   const parts = withoutCourtPrefix.split("/").filter(Boolean);
@@ -41,7 +43,9 @@ export const buildOpinionUrl = (opinionUrl?: string | null, caseItem?: CaseItem 
     typeof import.meta !== "undefined" && import.meta.env?.VITE_OPINIONS_BASE_URL
       ? String(import.meta.env.VITE_OPINIONS_BASE_URL).replace(/\/$/, "")
       : `https://${OPINIONS_BUCKET}`;
-  return `${base}/${normalized}.md`;
+  if (sourceExtension === "pdf") return `${base}/${normalized}.pdf`;
+  if (sourceExtension === "md" || sourceExtension === "txt") return `${base}/${normalized}.md`;
+  return `${base}/${normalized}`;
 };
 
 export const getCourtCode = (court?: string | null) => normalizeCourtCode(court);
