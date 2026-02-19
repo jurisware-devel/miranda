@@ -17,36 +17,67 @@ export const useCaseFilters = (
   const [currentPage, setCurrentPage] = useState(1);
   const pageSize = 100;
 
-  const authorOptions = useMemo(() => {
-    const set = new Set<string>();
+  const judgeToCourts = useMemo(() => {
+    const map = new Map<string, Set<string>>();
     for (const item of cases) {
-      if (item.authoringJudge) set.add(item.authoringJudge);
+      const judge = item.authoringJudge;
+      if (!judge || judge === "Memorandum") {
+        continue;
+      }
+      if (!map.has(judge)) {
+        map.set(judge, new Set());
+      }
+      map.get(judge)?.add(getCourtCode(item.court));
     }
-    set.delete("Memorandum");
-    const options = Array.from(set)
+    return map;
+  }, [cases]);
+
+  const courtToJudges = useMemo(() => {
+    const map = new Map<string, Set<string>>();
+    for (const item of cases) {
+      const judge = item.authoringJudge;
+      if (!judge || judge === "Memorandum") {
+        continue;
+      }
+      const courtCode = getCourtCode(item.court);
+      if (!map.has(courtCode)) {
+        map.set(courtCode, new Set());
+      }
+      map.get(courtCode)?.add(judge);
+    }
+    return map;
+  }, [cases]);
+
+  const authorOptions = useMemo(() => {
+    const candidates = selectedCourt
+      ? Array.from(courtToJudges.get(selectedCourt) ?? [])
+      : Array.from(judgeToCourts.keys());
+
+    const options = candidates
       .sort()
       .map((value) => ({ value, label: value }));
+
     const perCuriamIndex = options.findIndex((option) => option.value === "Per Curiam");
     if (perCuriamIndex > 0) {
       const [perCuriam] = options.splice(perCuriamIndex, 1);
       options.unshift(perCuriam);
     }
     return options;
-  }, [cases]);
+  }, [selectedCourt, courtToJudges, judgeToCourts]);
 
   const tagOptions = useMemo(() => {
     return buildTagOptions(tags);
   }, [tags]);
 
   const courtOptions = useMemo(() => {
-    const set = new Set<string>();
-    for (const item of cases) {
-      set.add(getCourtCode(item.court));
-    }
-    return Array.from(set)
+    const candidates = selectedAuthor
+      ? Array.from(judgeToCourts.get(selectedAuthor) ?? [])
+      : Array.from(courtToJudges.keys());
+
+    return candidates
       .sort()
       .map((value) => ({ value, label: getCourtBadgeLabel(value) }));
-  }, [cases]);
+  }, [selectedAuthor, judgeToCourts, courtToJudges]);
 
   const caseTagIdsByCaseId = useMemo(() => {
     const map = new Map<string, Set<string>>();
@@ -65,6 +96,7 @@ export const useCaseFilters = (
     }, 300);
     return () => clearTimeout(handle);
   }, [nameQuery]);
+
 
   const sortedCases = useMemo(() => {
     const sorted = [...cases];
