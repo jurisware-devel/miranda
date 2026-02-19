@@ -44,6 +44,7 @@ const CaseFilters: React.FC<CaseFiltersProps> = ({
   const [tagOpen, setTagOpen] = useState(false);
   const [authorOpen, setAuthorOpen] = useState(false);
   const [courtOpen, setCourtOpen] = useState(false);
+  const dropdownMenuStyle = { maxHeight: 320, overflowY: "auto" as const };
   const selectStyle = compact ? undefined : { minWidth: 200 };
   const inputStyle = compact ? undefined : { minWidth: 240 };
 
@@ -56,6 +57,7 @@ const CaseFilters: React.FC<CaseFiltersProps> = ({
           open={authorOpen}
           onOpenChange={setAuthorOpen}
           menu={{
+            style: dropdownMenuStyle,
             items: [
               ...(selectedAuthor
                 ? [{ key: "__clear__", label: "All Authors" }]
@@ -106,6 +108,7 @@ const CaseFilters: React.FC<CaseFiltersProps> = ({
           open={courtOpen}
           onOpenChange={setCourtOpen}
           menu={{
+            style: dropdownMenuStyle,
             items: [
               ...(selectedCourt ? [{ key: "__clear__", label: "All Courts" }] : []),
               ...courtOptions.map((option) => ({
@@ -156,6 +159,7 @@ const CaseFilters: React.FC<CaseFiltersProps> = ({
           open={tagOpen}
           onOpenChange={setTagOpen}
           menu={{
+            style: dropdownMenuStyle,
             items: tagOptions.map((option) => ({
               key: option.value,
               label: option.label,
