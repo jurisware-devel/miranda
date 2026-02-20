@@ -1,7 +1,14 @@
 import { useEffect, useMemo, useState } from "react";
 import type { CaseItem, CaseTagItem, TagItem } from "../types";
 import { buildTagOptions } from "../tagUtils";
-import { getCourtCode, getCourtBadgeLabel } from "../caseUtils";
+import { getCourtCode } from "../caseUtils";
+
+const COURT_FILTER_OPTIONS = [
+  { value: "scotus", label: "SCOTUS" },
+  { value: "coa", label: "Ct. of Appeals" },
+  { value: "ad3", label: "3d Dept" },
+  { value: "albany", label: "Albany County" },
+];
 
 export const useCaseFilters = (
   cases: CaseItem[],
@@ -70,14 +77,11 @@ export const useCaseFilters = (
   }, [tags]);
 
   const courtOptions = useMemo(() => {
-    const candidates = selectedAuthor
-      ? Array.from(judgeToCourts.get(selectedAuthor) ?? [])
-      : Array.from(courtToJudges.keys());
+    if (!selectedAuthor) return COURT_FILTER_OPTIONS;
 
-    return candidates
-      .sort()
-      .map((value) => ({ value, label: getCourtBadgeLabel(value) }));
-  }, [selectedAuthor, judgeToCourts, courtToJudges]);
+    const authorCourts = judgeToCourts.get(selectedAuthor) ?? new Set<string>();
+    return COURT_FILTER_OPTIONS.filter((option) => authorCourts.has(option.value));
+  }, [selectedAuthor, judgeToCourts]);
 
   const caseTagIdsByCaseId = useMemo(() => {
     const map = new Map<string, Set<string>>();
