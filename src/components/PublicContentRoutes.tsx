@@ -2,11 +2,11 @@ import React from "react";
 import { Navigate, Route, Routes, useNavigate } from "react-router-dom";
 import CaseDetailLayer from "../layers/CaseDetailLayer";
 import CaseMasonryLayer from "../layers/CaseMasonryLayer";
-import type { AppCapabilities, CaseItem } from "../logic/types";
-import type { TagMeta } from "../logic/tagUtils";
-import type { CaseFilterControls } from "../logic/filterControls";
+import type { CaseItem } from "../core/types";
+import type { TagMeta } from "../core/utils/tagUtils";
+import type { CaseFilterControls } from "../core/filterControls";
 
-type AppContentRoutesProps = {
+type PublicContentRoutesProps = {
   error: string | null;
   tagsError: string | null;
   caseTagsError: string | null;
@@ -16,10 +16,9 @@ type AppContentRoutesProps = {
   tagsById: Map<string, TagMeta>;
   caseTagsByCaseId: Map<string, string[]>;
   filters: CaseFilterControls;
-  capabilities: AppCapabilities;
 };
 
-const AppContentRoutes: React.FC<AppContentRoutesProps> = ({
+const PublicContentRoutes: React.FC<PublicContentRoutesProps> = ({
   error,
   tagsError,
   caseTagsError,
@@ -29,7 +28,6 @@ const AppContentRoutes: React.FC<AppContentRoutesProps> = ({
   tagsById,
   caseTagsByCaseId,
   filters,
-  capabilities,
 }) => {
   const navigate = useNavigate();
 
@@ -53,27 +51,12 @@ const AppContentRoutes: React.FC<AppContentRoutesProps> = ({
       />
       <Route
         path="/case/:caseId"
-        element={
-          <CaseDetailLayer
-            cases={cases}
-            loading={loading}
-            error={error}
-          />
-        }
-      />
-      <Route
-        path="/admin"
-        element={
-          capabilities.canAccessAdminRoutes ? (
-            <div style={{ padding: 24 }}>Admin tools are not enabled yet.</div>
-          ) : (
-            <Navigate to="/" replace />
-          )
-        }
+        element={<CaseDetailLayer cases={cases} loading={loading} error={error} />}
       />
       <Route path="/tags" element={<Navigate to="/" replace />} />
+      <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   );
 };
 
-export default AppContentRoutes;
+export default PublicContentRoutes;

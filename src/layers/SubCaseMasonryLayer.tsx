@@ -1,14 +1,14 @@
 import React from "react";
 import { Alert, Masonry, Spin } from "antd";
 import { CloseCircleOutlined } from "@ant-design/icons";
-import CaseCard from "../components/CaseCard";
+import SubCaseCard from "../components/SubCaseCard";
+import type { CaseFilterControls } from "../core/filterControls";
 import type { CaseItem } from "../core/types";
 import type { TagMeta } from "../core/utils/tagUtils";
-import TagCapsule from "../components/TagCapsule";
+import SubTagCapsule from "../components/SubTagCapsule";
 import { getReadableTextColor } from "../core/utils/colorUtils";
-import type { CaseFilterControls } from "../core/filterControls";
 
-type CaseMasonryLayerProps = {
+type SubCaseMasonryLayerProps = {
   error: string | null;
   tagsError: string | null;
   caseTagsError: string | null;
@@ -20,7 +20,7 @@ type CaseMasonryLayerProps = {
   filters: CaseFilterControls;
 };
 
-const CaseMasonryLayer: React.FC<CaseMasonryLayerProps> = ({
+const SubCaseMasonryLayer: React.FC<SubCaseMasonryLayerProps> = ({
   error,
   tagsError,
   caseTagsError,
@@ -46,7 +46,7 @@ const CaseMasonryLayer: React.FC<CaseMasonryLayerProps> = ({
               const background = tag?.color ?? undefined;
               const color = getReadableTextColor(background, "#0f172a");
               return (
-                <TagCapsule
+                <SubTagCapsule
                   key={tagId}
                   label={label}
                   background={background}
@@ -86,7 +86,7 @@ const CaseMasonryLayer: React.FC<CaseMasonryLayerProps> = ({
           itemRender={({ data, index }) => {
             const tagIds = caseTagsByCaseId.get(data.caseId) ?? [];
             return (
-              <CaseCard
+              <SubCaseCard
                 caseItem={data}
                 index={index}
                 tagIds={tagIds}
@@ -101,4 +101,4 @@ const CaseMasonryLayer: React.FC<CaseMasonryLayerProps> = ({
   );
 };
 
-export default CaseMasonryLayer;
+export default SubCaseMasonryLayer;

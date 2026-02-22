@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 
-type UseAppRouteUiOptions = {
+type UseSubRouteUiOptions = {
   setSelectedAuthor: (value: string | null) => void;
   setSelectedTagIds: (value: string[]) => void;
   setNameQuery: (value: string) => void;
@@ -9,18 +9,20 @@ type UseAppRouteUiOptions = {
   setSortOrder: (value: string) => void;
 };
 
-export const useAppRouteUi = ({
+export const useSubRouteUi = ({
   setSelectedAuthor,
   setSelectedTagIds,
   setNameQuery,
   setSortOrder,
   setSelectedCourt,
-}: UseAppRouteUiOptions) => {
+}: UseSubRouteUiOptions) => {
   const location = useLocation();
   const navigate = useNavigate();
+  const casesPath = "/sub";
+  const casePrefix = "/sub/case/";
 
-  const isCaseView = location.pathname.startsWith("/case/");
-  const isCasesPage = location.pathname === "/";
+  const isCaseView = location.pathname.startsWith(casePrefix);
+  const isCasesPage = location.pathname === casesPath;
 
   useEffect(() => {
     if (!isCasesPage) return;
@@ -31,7 +33,7 @@ export const useAppRouteUi = ({
     setNameQuery("");
     setSelectedCourt(null);
     setSortOrder("date_desc");
-    navigate(".", { replace: true, state: null });
+    navigate(casesPath, { replace: true, state: null });
   }, [
     isCasesPage,
     location.state,

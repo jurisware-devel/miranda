@@ -1,4 +1,4 @@
-import type { CaseItem } from "./types";
+import type { CaseItem } from "../types";
 
 const OPINIONS_BUCKET = "opinions.jurisware.com";
 

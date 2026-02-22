@@ -1,4 +1,4 @@
-import type { CaseTagItem, TagItem } from "./types";
+import type { CaseTagItem, TagItem } from "../types";
 
 export type TagMeta = {
   label: string;
@@ -67,13 +67,9 @@ export const mapCaseTagsByCaseId = (
   }
   for (const [caseId, tagIds] of map.entries()) {
     const sorted = [...tagIds].sort((a, b) =>
-      (tagsById.get(a)?.label ?? "").localeCompare(
-        tagsById.get(b)?.label ?? "",
-        undefined,
-        {
-          sensitivity: "base",
-        },
-      ),
+      (tagsById.get(a)?.label ?? "").localeCompare(tagsById.get(b)?.label ?? "", undefined, {
+        sensitivity: "base",
+      }),
     );
     map.set(caseId, sorted);
   }

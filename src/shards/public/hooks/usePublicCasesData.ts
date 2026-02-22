@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import { client } from "../amplifyClient";
-import type { CaseItem } from "../types";
+import { client } from "../../../core/amplifyClient";
+import type { CaseItem } from "../../../core/types";
 
-export const useCasesData = (enabled = true) => {
+export const usePublicCasesData = (enabled = true) => {
   const [cases, setCases] = useState<CaseItem[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);

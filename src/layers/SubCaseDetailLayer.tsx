@@ -6,13 +6,13 @@ import { client } from "../core/amplifyClient";
 import type { CaseItem } from "../core/types";
 import { buildOpinionUrl } from "../core/utils/caseUtils";
 
-type CaseDetailLayerProps = {
+type SubCaseDetailLayerProps = {
   cases: CaseItem[];
   loading: boolean;
   error: string | null;
 };
 
-const CaseDetailLayer: React.FC<CaseDetailLayerProps> = ({ cases, loading, error }) => {
+const SubCaseDetailLayer: React.FC<SubCaseDetailLayerProps> = ({ cases, loading, error }) => {
   const { caseId } = useParams();
   const [caseItem, setCaseItem] = useState<CaseItem | null>(null);
   const [caseLoading, setCaseLoading] = useState(false);
@@ -182,4 +182,4 @@ const CaseDetailLayer: React.FC<CaseDetailLayerProps> = ({ cases, loading, error
   );
 };
 
-export default CaseDetailLayer;
+export default SubCaseDetailLayer;

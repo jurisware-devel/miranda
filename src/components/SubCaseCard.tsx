@@ -1,13 +1,13 @@
 import React from "react";
 import { Card } from "antd";
 import ReactMarkdown from "react-markdown";
-import TagCapsule from "./TagCapsule";
+import SubTagCapsule from "./SubTagCapsule";
 import type { CaseItem } from "../core/types";
 import type { TagMeta } from "../core/utils/tagUtils";
 import { formatCaseCitationLine, getCourtBadgeLabel, getCourtCode } from "../core/utils/caseUtils";
 import { getReadableTextColor } from "../core/utils/colorUtils";
 
-type CaseCardProps = {
+type SubCaseCardProps = {
   caseItem: CaseItem;
   index: number;
   tagIds: string[];
@@ -15,7 +15,7 @@ type CaseCardProps = {
   onOpenCase: (caseId: string) => void;
 };
 
-const CaseCard: React.FC<CaseCardProps> = ({
+const SubCaseCard: React.FC<SubCaseCardProps> = ({
   caseItem,
   index,
   tagIds,
@@ -46,7 +46,7 @@ const CaseCard: React.FC<CaseCardProps> = ({
       <div className="grid-card__tags">
         {tagIds.length
           ? tagIds.map((tagId) => (
-              <TagCapsule
+              <SubTagCapsule
                 key={tagId}
                 label={tagsById.get(tagId)?.label ?? "Untitled"}
                 background={tagsById.get(tagId)?.color ?? undefined}
@@ -66,4 +66,4 @@ const CaseCard: React.FC<CaseCardProps> = ({
   );
 };
 
-export default CaseCard;
+export default SubCaseCard;

@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import { client } from "../amplifyClient";
-import type { CaseTagItem, TagItem } from "../types";
+import { client } from "../../../core/amplifyClient";
+import type { CaseTagItem, TagItem } from "../../../core/types";
 
-export const useTagsData = (enabled = true) => {
+export const useSubTagsData = (enabled = true) => {
   const [tags, setTags] = useState<TagItem[]>([]);
   const [caseTags, setCaseTags] = useState<CaseTagItem[]>([]);
   const [tagsError, setTagsError] = useState<string | null>(null);
@@ -17,9 +17,9 @@ export const useTagsData = (enabled = true) => {
       try {
         const [{ data: tagData, errors: tagErrors }, { data: linkData, errors: linkErrors }] =
           await Promise.all([
-          client.models.Tag.list({ limit: 5000, authMode: "iam" }),
-          client.models.CaseTag.list({ limit: 5000, authMode: "iam" }),
-        ]);
+            client.models.Tag.list({ limit: 5000, authMode: "iam" }),
+            client.models.CaseTag.list({ limit: 5000, authMode: "iam" }),
+          ]);
         const allErrors = [...(tagErrors ?? []), ...(linkErrors ?? [])];
         if (allErrors.length) {
           throw new Error(

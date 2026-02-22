@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
-import type { CaseItem, CaseTagItem, TagItem } from "../types";
-import { buildTagOptions } from "../tagUtils";
-import { getCourtCode } from "../caseUtils";
+import type { CaseItem, CaseTagItem, TagItem } from "../../../core/types";
+import { getCourtCode } from "../../../core/utils/caseUtils";
+import { buildTagOptions } from "../../../core/utils/tagUtils";
 
 const COURT_FILTER_OPTIONS = [
   { value: "scotus", label: "SCOTUS" },
@@ -10,7 +10,7 @@ const COURT_FILTER_OPTIONS = [
   { value: "albany", label: "Albany County" },
 ];
 
-export const useCaseFilters = (
+export const usePublicCaseFilters = (
   cases: CaseItem[],
   tags: TagItem[],
   caseTags: CaseTagItem[],
@@ -60,9 +60,7 @@ export const useCaseFilters = (
       ? Array.from(courtToJudges.get(selectedCourt) ?? [])
       : Array.from(judgeToCourts.keys());
 
-    const options = candidates
-      .sort()
-      .map((value) => ({ value, label: value }));
+    const options = candidates.sort().map((value) => ({ value, label: value }));
 
     const perCuriamIndex = options.findIndex((option) => option.value === "Per Curiam");
     if (perCuriamIndex > 0) {
@@ -101,16 +99,13 @@ export const useCaseFilters = (
     return () => clearTimeout(handle);
   }, [nameQuery]);
 
-
   const sortedCases = useMemo(() => {
     const sorted = [...cases];
     sorted.sort((a, b) => {
       if (sortOrder.startsWith("name")) {
         const aName = (a.caseName ?? "").toLowerCase();
         const bName = (b.caseName ?? "").toLowerCase();
-        return sortOrder === "name_asc"
-          ? aName.localeCompare(bName)
-          : bName.localeCompare(aName);
+        return sortOrder === "name_asc" ? aName.localeCompare(bName) : bName.localeCompare(aName);
       }
       const aDate = a.decisionDate ? Date.parse(a.decisionDate) : 0;
       const bDate = b.decisionDate ? Date.parse(b.decisionDate) : 0;

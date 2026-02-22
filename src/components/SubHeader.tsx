@@ -1,14 +1,14 @@
 import React from "react";
 import { Button, Layout } from "antd";
 import { useNavigate } from "react-router-dom";
-import CaseFilters from "./CaseFilters";
-import ProfileMenu from "./ProfileMenu";
+import SubCaseFilters from "./SubCaseFilters";
+import SubProfileMenu from "./SubProfileMenu";
 import type { CaseFilterControls } from "../core/filterControls";
 import type { MenuProps } from "antd";
 
 const { Header } = Layout;
 
-type AppHeaderProps = {
+type SubHeaderProps = {
   showFilters: boolean;
   lockFilters?: boolean;
   isXlUp: boolean;
@@ -20,7 +20,7 @@ type AppHeaderProps = {
   onProfileClick: NonNullable<MenuProps["onClick"]>;
 };
 
-const AppHeader: React.FC<AppHeaderProps> = ({
+const SubHeader: React.FC<SubHeaderProps> = ({
   showFilters,
   lockFilters = false,
   isXlUp,
@@ -39,7 +39,7 @@ const AppHeader: React.FC<AppHeaderProps> = ({
           type="button"
           className="app-header-logo-button"
           aria-label="Go to cases"
-          onClick={() => navigate("/")}
+          onClick={() => navigate("/sub")}
         >
           <img className="app-header-logo" src="/miranda-logotype.svg" alt="Miranda" />
         </button>
@@ -65,7 +65,7 @@ const AppHeader: React.FC<AppHeaderProps> = ({
                     className="app-header-mobile-filter-panel"
                     onClick={(event) => event.stopPropagation()}
                   >
-                    <CaseFilters
+                    <SubCaseFilters
                       compact
                       authorOptions={filters.authorOptions}
                       tagOptions={filters.tagOptions}
@@ -88,7 +88,7 @@ const AppHeader: React.FC<AppHeaderProps> = ({
           )
         ) : lockFilters && !isXlUp ? null : (
           <div className="app-header-filters">
-            <CaseFilters
+            <SubCaseFilters
               authorOptions={filters.authorOptions}
               tagOptions={filters.tagOptions}
               courtOptions={filters.courtOptions}
@@ -108,7 +108,7 @@ const AppHeader: React.FC<AppHeaderProps> = ({
           </div>
         )}
         <div className="app-header-profile">
-          <ProfileMenu
+          <SubProfileMenu
             items={profileItems}
             onClick={onProfileClick}
             label="Open account menu"
@@ -119,4 +119,4 @@ const AppHeader: React.FC<AppHeaderProps> = ({
   );
 };
 
-export default AppHeader;
+export default SubHeader;

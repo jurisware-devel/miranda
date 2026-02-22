@@ -3,7 +3,7 @@ import { Alert, Card, Masonry, Spin } from "antd";
 import { generateClient } from "aws-amplify/data";
 import type { Schema } from "../../amplify/data/resource";
 import { useNavigate } from "react-router-dom";
-import { darkenHex, getReadableTextColor } from "../logic/colorUtils";
+import { darkenHex, getReadableTextColor } from "../core/utils/colorUtils";
 import TagCapsule from "../components/TagCapsule";
 
 const client = generateClient<Schema>();

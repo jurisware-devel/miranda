@@ -1,157 +1,58 @@
-import React, { useMemo, useState } from "react";
-import { Grid, Layout } from "antd";
+import React, { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import AppFooter from "./components/AppFooter";
-import AppHeader from "./components/AppHeader";
-import AppContentRoutes from "./components/AppContentRoutes";
-import CaseDetailNav from "./components/CaseDetailNav";
-import { useCaseFilters } from "./logic/hooks/useCaseFilters";
-import { useCasesData } from "./logic/hooks/useCasesData";
-import { useTagsData } from "./logic/hooks/useTagsData";
-import { useAppRouteUi } from "./logic/hooks/useAppRouteUi";
-import { useCapabilities } from "./logic/hooks/useCapabilities";
-import { mapCaseTagsByCaseId, mapTagsById } from "./logic/tagUtils";
-import type { CaseFilterControls } from "./logic/filterControls";
+import { useCapabilities } from "./core/auth/useCapabilities";
+import AdminApp from "./shards/admin/AdminApp";
+import PublicApp from "./shards/public/PublicApp";
+import SubApp from "./shards/sub/SubApp";
 
-const { Content } = Layout;
 const App: React.FC = () => {
-  const { cases, loading, error } = useCasesData(true);
-  const { tags, caseTags, tagsError, caseTagsError } = useTagsData(true);
-  const {
-    authorOptions,
-    tagOptions,
-    selectedAuthor,
-    setSelectedAuthor,
-    selectedTagIds,
-    setSelectedTagIds,
-    courtOptions,
-    selectedCourt,
-    setSelectedCourt,
-    nameQuery,
-    setNameQuery,
-    sortOrder,
-    setSortOrder,
-    currentPage,
-    setCurrentPage,
-    pageSize,
-    filteredCases,
-    pagedCases,
-  } = useCaseFilters(cases, tags, caseTags);
-
-  const [filtersOpen, setFiltersOpen] = useState(false);
-  const screens = Grid.useBreakpoint();
   const location = useLocation();
   const navigate = useNavigate();
-  const isXlUp = Boolean(screens.xl);
   const capabilities = useCapabilities();
-  const { showFilters, lockFilters, showPagination } = useAppRouteUi({
-    setSelectedAuthor,
-    setSelectedTagIds,
-    setNameQuery,
-    setSortOrder,
-    setSelectedCourt,
-  });
+  const isAdminPath = location.pathname.startsWith("/admin");
+  const isSubPath = location.pathname.startsWith("/sub");
+  const isPublicPath = !isAdminPath && !isSubPath;
+  const canLoadSubData =
+    capabilities.isResolved && capabilities.isAuthenticated && !capabilities.isAdmin;
 
-  const tagsById = useMemo(() => mapTagsById(tags), [tags]);
-  const caseTagsByCaseId = useMemo(
-    () => mapCaseTagsByCaseId(caseTags, tagsById),
-    [caseTags, tagsById],
-  );
-  const filters = useMemo<CaseFilterControls>(
-    () => ({
-      authorOptions,
-      tagOptions,
-      courtOptions,
-      selectedAuthor,
-      onAuthorChange: setSelectedAuthor,
-      selectedTagIds,
-      onTagChange: setSelectedTagIds,
-      selectedCourt,
-      onCourtChange: setSelectedCourt,
-      nameQuery,
-      onNameQueryChange: setNameQuery,
-      sortOrder,
-      onSortOrderChange: setSortOrder,
-    }),
-    [
-      authorOptions,
-      tagOptions,
-      courtOptions,
-      selectedAuthor,
-      setSelectedAuthor,
-      selectedTagIds,
-      setSelectedTagIds,
-      selectedCourt,
-      setSelectedCourt,
-      nameQuery,
-      setNameQuery,
-      sortOrder,
-      setSortOrder,
-    ],
-  );
+  useEffect(() => {
+    if (!capabilities.isResolved) return;
+    if (isPublicPath && capabilities.isAuthenticated) {
+      navigate(capabilities.isAdmin ? "/admin" : "/sub", { replace: true });
+      return;
+    }
+    if (isSubPath && !capabilities.isAuthenticated) {
+      navigate("/", { replace: true });
+      return;
+    }
+    if (isSubPath && capabilities.isAdmin) {
+      navigate("/admin", { replace: true });
+      return;
+    }
+    if (isAdminPath && !capabilities.isAuthenticated) {
+      navigate("/", { replace: true });
+      return;
+    }
+    if (isAdminPath && capabilities.isAuthenticated && !capabilities.isAdmin) {
+      navigate("/sub", { replace: true });
+    }
+  }, [
+    capabilities.isAdmin,
+    capabilities.isAuthenticated,
+    capabilities.isResolved,
+    isAdminPath,
+    isPublicPath,
+    isSubPath,
+    navigate,
+  ]);
 
-  const activeCaseId = useMemo(() => {
-    if (!location.pathname.startsWith("/case/")) return null;
-    return decodeURIComponent(location.pathname.slice("/case/".length));
-  }, [location.pathname]);
-
-  const filteredIndex = useMemo(() => {
-    if (!activeCaseId) return -1;
-    return filteredCases.findIndex((item) => item.caseId === activeCaseId);
-  }, [activeCaseId, filteredCases]);
-
-  const prevCase = filteredIndex > 0 ? filteredCases[filteredIndex - 1] : null;
-  const nextCase =
-    filteredIndex >= 0 && filteredIndex < filteredCases.length - 1
-      ? filteredCases[filteredIndex + 1]
-      : null;
-
-  const footerAction = lockFilters ? (
-    <CaseDetailNav
-      className="case-detail__bar--footer"
-      hasPrevious={Boolean(prevCase)}
-      hasNext={Boolean(nextCase)}
-      onBack={() => navigate("/")}
-      onPrevious={() => prevCase && navigate(`/case/${prevCase.caseId}`)}
-      onNext={() => nextCase && navigate(`/case/${nextCase.caseId}`)}
-    />
-  ) : null;
-
-  return (
-    <Layout className="app-shell" style={{ background: "transparent" }}>
-      <AppHeader
-        showFilters={showFilters}
-        lockFilters={lockFilters}
-        isXlUp={isXlUp}
-        filtersOpen={filtersOpen}
-        onToggleFilters={() => setFiltersOpen((open) => !open)}
-        onCloseFilters={() => setFiltersOpen(false)}
-        filters={filters}
-      />
-      <Content className="app-content">
-        <AppContentRoutes
-          error={error}
-          tagsError={tagsError}
-          caseTagsError={caseTagsError}
-          loading={loading}
-          cases={cases}
-          pagedCases={pagedCases}
-          tagsById={tagsById}
-          caseTagsByCaseId={caseTagsByCaseId}
-          filters={filters}
-          capabilities={capabilities}
-        />
-      </Content>
-      <AppFooter
-        showPagination={showPagination}
-        currentPage={currentPage}
-        pageSize={pageSize}
-        total={filteredCases.length}
-        onPageChange={setCurrentPage}
-        footerAction={footerAction}
-      />
-    </Layout>
-  );
+  if (isAdminPath) {
+    return <AdminApp capabilities={capabilities} />;
+  }
+  if (isSubPath) {
+    return <SubApp enableData={canLoadSubData} />;
+  }
+  return <PublicApp />;
 };
 
 export default App;

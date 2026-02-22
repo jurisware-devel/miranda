@@ -8,6 +8,7 @@ export type AppRole = "guest" | "user" | "admin";
 
 export type AppCapabilities = {
   role: AppRole;
+  isResolved: boolean;
   isAuthenticated: boolean;
   isAdmin: boolean;
   canAccessAdminRoutes: boolean;

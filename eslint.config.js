@@ -48,6 +48,84 @@ export default defineConfig([{
         }],
     },
 }, {
+    files: [
+        "src/shards/public/**/*.{ts,tsx}",
+        "src/components/App*.tsx",
+        "src/components/Public*.tsx",
+        "src/components/Case*.tsx",
+        "src/components/TagCapsule.tsx",
+        "src/components/ProfileMenu.tsx",
+        "src/layers/Case*.tsx",
+    ],
+    rules: {
+        "no-restricted-imports": ["error", {
+            patterns: [
+                "**/shards/sub/**",
+                "**/shards/admin/**",
+                "**/logic/**",
+                "**/components/Sub*",
+                "**/components/Admin*",
+                "**/layers/Sub*",
+                "**/layers/Admin*",
+            ],
+        }],
+    },
+}, {
+    files: [
+        "src/shards/sub/**/*.{ts,tsx}",
+        "src/components/Sub*.tsx",
+        "src/layers/Sub*.tsx",
+    ],
+    rules: {
+        "no-restricted-imports": ["error", {
+            patterns: [
+                "**/shards/public/**",
+                "**/shards/admin/**",
+                "**/logic/**",
+                "**/components/App*",
+                "**/components/Public*",
+                "**/components/Case*",
+                "**/components/TagCapsule",
+                "**/components/ProfileMenu",
+                "**/components/Admin*",
+                "**/layers/Case*",
+                "**/layers/Admin*",
+            ],
+        }],
+    },
+}, {
+    files: [
+        "src/shards/admin/**/*.{ts,tsx}",
+        "src/components/Admin*.tsx",
+    ],
+    rules: {
+        "no-restricted-imports": ["error", {
+            patterns: [
+                "**/shards/public/**",
+                "**/shards/sub/**",
+                "**/logic/**",
+                "**/components/Sub*",
+                "**/components/App*",
+                "**/components/Public*",
+                "**/layers/Sub*",
+                "**/layers/Case*",
+            ],
+        }],
+    },
+}, {
+    files: ["src/core/**/*.{ts,tsx}"],
+    rules: {
+        "no-restricted-imports": ["error", {
+            patterns: [
+                "**/shards/**",
+                "**/components/**",
+                "**/layers/**",
+                "**/pages/**",
+                "**/logic/hooks/**",
+            ],
+        }],
+    },
+}, {
     files: ["scripts/**/*.mjs"],
     languageOptions: {
         globals: {
