@@ -1,8 +1,6 @@
 import React, { useMemo, useState } from "react";
 import { Grid, Layout } from "antd";
 import type { MenuProps } from "antd";
-import { message } from "antd";
-import { signInWithRedirect } from "aws-amplify/auth";
 import { useLocation, useNavigate } from "react-router-dom";
 import AppFooter from "../../components/AppFooter";
 import AppHeader from "../../components/AppHeader";
@@ -122,15 +120,7 @@ const PublicApp: React.FC = () => {
 
   const handlePublicProfileClick: NonNullable<MenuProps["onClick"]> = ({ key }) => {
     if (String(key) !== "login") return;
-    void (async () => {
-      try {
-        await signInWithRedirect();
-      } catch (error) {
-        const detail = error instanceof Error ? error.message : "Unknown error";
-        message.error("Unable to start login. Auth Hosted UI is not configured correctly.");
-        console.error("signInWithRedirect failed:", detail);
-      }
-    })();
+    navigate("/pub/login");
   };
 
   const publicProfileItems: MenuProps["items"] = [{ key: "login", label: "Login" }];

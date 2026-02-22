@@ -32,6 +32,16 @@ const App: React.FC = () => {
       return;
     }
     if (isPubPath && capabilities.isAuthenticated) {
+      if (location.pathname === "/pub/login") {
+        const nextRaw = new URLSearchParams(location.search).get("next");
+        if (nextRaw) {
+          const nextDecoded = decodeURIComponent(nextRaw);
+          if (nextDecoded.startsWith("/sub") || nextDecoded.startsWith("/admin")) {
+            navigate(nextDecoded, { replace: true });
+            return;
+          }
+        }
+      }
       navigate(capabilities.isAdmin ? "/admin" : "/sub", { replace: true });
       return;
     }

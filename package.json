@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@ant-design/icons": "^6.1.0",
+    "@aws-amplify/ui-react": "^6.15.0",
     "@aws-sdk/client-s3": "^3.879.0",
     "antd": "^6.2.3",
     "aws-amplify": "~6.15.10",
