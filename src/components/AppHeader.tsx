@@ -39,7 +39,7 @@ const AppHeader: React.FC<AppHeaderProps> = ({
           type="button"
           className="app-header-logo-button"
           aria-label="Go to cases"
-          onClick={() => navigate("/")}
+          onClick={() => navigate("/pub")}
         >
           <img className="app-header-logo" src="/miranda-logotype.svg" alt="Miranda" />
         </button>

@@ -28,7 +28,7 @@ const AdminCaseToolsPage: React.FC<AdminCaseToolsPageProps> = ({
         <Link to={`/admin/cases/${encodedCaseId}/metadata`}>Edit metadata</Link>
       </div>
       <div className="admin-placeholder__actions">
-        <Link to={`/case/${encodedCaseId}`}>View public case page</Link>
+        <Link to={`/pub/case/${encodedCaseId}`}>View public case page</Link>
       </div>
     </div>
   );

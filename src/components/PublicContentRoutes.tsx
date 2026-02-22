@@ -2,6 +2,7 @@ import React from "react";
 import { Navigate, Route, Routes, useNavigate } from "react-router-dom";
 import CaseDetailLayer from "../layers/CaseDetailLayer";
 import CaseMasonryLayer from "../layers/CaseMasonryLayer";
+import PublicLoginPage from "./PublicLoginPage";
 import type { CaseItem } from "../core/types";
 import type { TagMeta } from "../core/utils/tagUtils";
 import type { CaseFilterControls } from "../core/filterControls";
@@ -34,7 +35,7 @@ const PublicContentRoutes: React.FC<PublicContentRoutesProps> = ({
   return (
     <Routes>
       <Route
-        path="/"
+        path="/pub"
         element={
           <CaseMasonryLayer
             error={error}
@@ -44,17 +45,18 @@ const PublicContentRoutes: React.FC<PublicContentRoutesProps> = ({
             cases={pagedCases}
             tagsById={tagsById}
             caseTagsByCaseId={caseTagsByCaseId}
-            onOpenCase={(caseId) => navigate(`/case/${caseId}`)}
+            onOpenCase={(caseId) => navigate(`/pub/case/${caseId}`)}
             filters={filters}
           />
         }
       />
       <Route
-        path="/case/:caseId"
+        path="/pub/case/:caseId"
         element={<CaseDetailLayer cases={cases} loading={loading} error={error} />}
       />
-      <Route path="/tags" element={<Navigate to="/" replace />} />
-      <Route path="*" element={<Navigate to="/" replace />} />
+      <Route path="/pub/login" element={<PublicLoginPage />} />
+      <Route path="/pub/tags" element={<Navigate to="/pub" replace />} />
+      <Route path="*" element={<Navigate to="/pub" replace />} />
     </Routes>
   );
 };

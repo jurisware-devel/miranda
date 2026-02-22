@@ -158,7 +158,7 @@ export default function TagsPage() {
                       label={formatTagLabel(tag)}
                       background={parentBg}
                       color={parentText}
-                      onClick={() => navigate("/", { state: { tagId: tag.tagId } })}
+                      onClick={() => navigate("/pub", { state: { tagId: tag.tagId } })}
                       className="tag-card__title"
                       ariaLabel={`Filter by ${tag.label ?? "tag"}`}
                     />
@@ -170,7 +170,7 @@ export default function TagsPage() {
                             label={formatTagLabel(child)}
                             background={color.bg}
                             color={childText}
-                            onClick={() => navigate("/", { state: { tagId: child.tagId } })}
+                            onClick={() => navigate("/pub", { state: { tagId: child.tagId } })}
                             className="tag-card__child"
                             ariaLabel={`Filter by ${child.label ?? "tag"}`}
                           />

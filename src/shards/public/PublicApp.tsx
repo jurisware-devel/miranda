@@ -94,8 +94,8 @@ const PublicApp: React.FC = () => {
   );
 
   const activeCaseId = useMemo(() => {
-    if (!location.pathname.startsWith("/case/")) return null;
-    return decodeURIComponent(location.pathname.slice("/case/".length));
+    if (!location.pathname.startsWith("/pub/case/")) return null;
+    return decodeURIComponent(location.pathname.slice("/pub/case/".length));
   }, [location.pathname]);
 
   const filteredIndex = useMemo(() => {
@@ -114,9 +114,9 @@ const PublicApp: React.FC = () => {
       className="case-detail__bar--footer"
       hasPrevious={Boolean(prevCase)}
       hasNext={Boolean(nextCase)}
-      onBack={() => navigate("/")}
-      onPrevious={() => prevCase && navigate(`/case/${prevCase.caseId}`)}
-      onNext={() => nextCase && navigate(`/case/${nextCase.caseId}`)}
+      onBack={() => navigate("/pub")}
+      onPrevious={() => prevCase && navigate(`/pub/case/${prevCase.caseId}`)}
+      onNext={() => nextCase && navigate(`/pub/case/${nextCase.caseId}`)}
     />
   ) : null;
 

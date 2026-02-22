@@ -11,26 +11,39 @@ const App: React.FC = () => {
   const capabilities = useCapabilities();
   const isAdminPath = location.pathname.startsWith("/admin");
   const isSubPath = location.pathname.startsWith("/sub");
-  const isPublicPath = !isAdminPath && !isSubPath;
+  const isPubPath = location.pathname.startsWith("/pub");
+  const isRootPath = location.pathname === "/";
+  const isKnownPath = isAdminPath || isSubPath || isPubPath || isRootPath;
   const canLoadSubData =
     capabilities.isResolved && capabilities.isAuthenticated && !capabilities.isAdmin;
 
   useEffect(() => {
     if (!capabilities.isResolved) return;
-    if (isPublicPath && capabilities.isAuthenticated) {
+    if (isRootPath) {
+      navigate(capabilities.isAuthenticated ? (capabilities.isAdmin ? "/admin" : "/sub") : "/pub", {
+        replace: true,
+      });
+      return;
+    }
+    if (!isKnownPath) {
+      navigate(capabilities.isAuthenticated ? (capabilities.isAdmin ? "/admin" : "/sub") : "/pub", {
+        replace: true,
+      });
+      return;
+    }
+    if (isPubPath && capabilities.isAuthenticated) {
       navigate(capabilities.isAdmin ? "/admin" : "/sub", { replace: true });
       return;
     }
-    if (isSubPath && !capabilities.isAuthenticated) {
-      navigate("/", { replace: true });
+    if ((isSubPath || isAdminPath) && !capabilities.isAuthenticated) {
+      const next = encodeURIComponent(
+        `${location.pathname}${location.search}${location.hash}`,
+      );
+      navigate(`/pub/login?next=${next}`, { replace: true });
       return;
     }
     if (isSubPath && capabilities.isAdmin) {
       navigate("/admin", { replace: true });
-      return;
-    }
-    if (isAdminPath && !capabilities.isAuthenticated) {
-      navigate("/", { replace: true });
       return;
     }
     if (isAdminPath && capabilities.isAuthenticated && !capabilities.isAdmin) {
@@ -41,8 +54,13 @@ const App: React.FC = () => {
     capabilities.isAuthenticated,
     capabilities.isResolved,
     isAdminPath,
-    isPublicPath,
+    isKnownPath,
+    isPubPath,
+    isRootPath,
     isSubPath,
+    location.hash,
+    location.pathname,
+    location.search,
     navigate,
   ]);
 

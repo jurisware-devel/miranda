@@ -7,7 +7,7 @@ const { Footer } = Layout;
 const AdminFooter: React.FC = () => {
   return (
     <Footer className="admin-footer">
-      <Link to="/">Return to public site</Link>
+      <Link to="/pub">Return to public site</Link>
     </Footer>
   );
 };

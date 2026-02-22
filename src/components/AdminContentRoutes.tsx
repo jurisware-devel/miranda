@@ -13,8 +13,11 @@ const AdminRoute: React.FC<{
   capabilities: AppCapabilities;
   children: React.ReactNode;
 }> = ({ capabilities, children }) => {
+  if (!capabilities.isAuthenticated) {
+    return <Navigate to="/pub/login" replace />;
+  }
   if (!capabilities.canAccessAdminRoutes) {
-    return <Navigate to="/" replace />;
+    return <Navigate to="/sub" replace />;
   }
   return <>{children}</>;
 };

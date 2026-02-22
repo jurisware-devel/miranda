@@ -18,8 +18,8 @@ export const usePublicRouteUi = ({
 }: UsePublicRouteUiOptions) => {
   const location = useLocation();
   const navigate = useNavigate();
-  const casesPath = "/";
-  const casePrefix = "/case/";
+  const casesPath = "/pub";
+  const casePrefix = "/pub/case/";
 
   const isCaseView = location.pathname.startsWith(casePrefix);
   const isCasesPage = location.pathname === casesPath;
