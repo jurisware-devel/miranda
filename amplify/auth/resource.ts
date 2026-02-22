@@ -4,7 +4,6 @@ export const auth = defineAuth({
   loginWith: {
     email: true,
     externalProviders: {
-      domainPrefix: 'miranda-jurisware-auth',
       scopes: ['OPENID', 'EMAIL', 'PROFILE'],
       callbackUrls: [
         'http://localhost:5173/',
