@@ -29,7 +29,9 @@ const schema = a.schema({
     })
     .identifier(["caseId"])
     .authorization((allow) => [
-      allow.guest().to(["create", "read", "update", "delete"]),
+      allow.guest().to(["read"]),
+      allow.authenticated().to(["read"]),
+      allow.group("Admin").to(["create", "update", "delete"]),
     ]),
 
   Tag: a
@@ -41,7 +43,9 @@ const schema = a.schema({
     })
     .identifier(["tagId"])
     .authorization((allow) => [
-      allow.guest().to(["create", "read", "update", "delete"]),
+      allow.guest().to(["read"]),
+      allow.authenticated().to(["read"]),
+      allow.group("Admin").to(["create", "update", "delete"]),
     ]),
 
   CaseTag: a
@@ -52,7 +56,9 @@ const schema = a.schema({
     .identifier(["caseId", "tagId"])
     .secondaryIndexes((index) => [index("tagId").sortKeys(["caseId"])])
     .authorization((allow) => [
-      allow.guest().to(["create", "read", "delete"]),
+      allow.guest().to(["read"]),
+      allow.authenticated().to(["read"]),
+      allow.group("Admin").to(["create", "delete"]),
     ]),
 
   saveOpinionText: a
@@ -62,7 +68,7 @@ const schema = a.schema({
       markdown: a.string().required(),
     })
     .returns(a.string())
-    .authorization((allow) => [allow.guest()])
+    .authorization((allow) => [allow.group("Admin")])
     .handler(a.handler.function(saveOpinion)),
 
   UserProfile: a
@@ -74,7 +80,8 @@ const schema = a.schema({
     })
     .identifier(["userId"])
     .authorization((allow) => [
-      allow.guest().to(["create", "read", "update", "delete"]),
+      allow.authenticated().to(["create", "read", "update"]),
+      allow.group("Admin").to(["read", "delete"]),
     ]),
 });
 
