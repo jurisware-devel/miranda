@@ -127,7 +127,7 @@ const PublicApp: React.FC = () => {
         await signInWithRedirect();
       } catch (error) {
         const detail = error instanceof Error ? error.message : "Unknown error";
-        message.error("Unable to start login. Check local auth redirect configuration.");
+        message.error("Unable to start login. Auth Hosted UI is not configured correctly.");
         console.error("signInWithRedirect failed:", detail);
       }
     })();
