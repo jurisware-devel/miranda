@@ -17,7 +17,7 @@ export const useSubCasesData = (enabled = true) => {
       try {
         const { data, errors } = await client.models.Case.list({
           limit: 5000,
-          authMode: "iam",
+          authMode: "userPool",
         });
         if (errors?.length) {
           throw new Error(

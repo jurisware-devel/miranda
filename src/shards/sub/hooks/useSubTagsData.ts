@@ -17,8 +17,8 @@ export const useSubTagsData = (enabled = true) => {
       try {
         const [{ data: tagData, errors: tagErrors }, { data: linkData, errors: linkErrors }] =
           await Promise.all([
-            client.models.Tag.list({ limit: 5000, authMode: "iam" }),
-            client.models.CaseTag.list({ limit: 5000, authMode: "iam" }),
+            client.models.Tag.list({ limit: 5000, authMode: "userPool" }),
+            client.models.CaseTag.list({ limit: 5000, authMode: "userPool" }),
           ]);
         const allErrors = [...(tagErrors ?? []), ...(linkErrors ?? [])];
         if (allErrors.length) {
