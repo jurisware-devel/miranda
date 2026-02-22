@@ -50,57 +50,6 @@ const CaseFilters: React.FC<CaseFiltersProps> = ({
 
   const items = [
     {
-      key: "author",
-      node: (
-        <Dropdown
-          trigger={["click"]}
-          open={authorOpen}
-          onOpenChange={setAuthorOpen}
-          menu={{
-            style: dropdownMenuStyle,
-            items: [
-              ...(selectedAuthor
-                ? [{ key: "__clear__", label: "All Authors" }]
-                : []),
-              ...authorOptions.map((option) => ({
-                key: option.value,
-                label: option.label,
-              })),
-            ],
-            selectable: true,
-            multiple: false,
-            selectedKeys: selectedAuthor ? [selectedAuthor] : [],
-            onSelect: (info) => {
-              if (info.key === "__clear__") {
-                onAuthorChange(null);
-              } else {
-                onAuthorChange(info.key as string);
-              }
-              setAuthorOpen(false);
-            },
-          }}
-          disabled={disabled}
-        >
-          <Button className="case-tags-trigger" style={selectStyle}>
-            {selectedAuthor ?? "All Authors"}
-            {selectedAuthor ? (
-              <button
-                type="button"
-                className="case-filter-clear"
-                onClick={(event) => {
-                  event.stopPropagation();
-                  onAuthorChange(null);
-                }}
-                aria-label="Clear author filter"
-              >
-                <CloseCircleOutlined />
-              </button>
-            ) : null}
-          </Button>
-        </Dropdown>
-      ),
-    },
-    {
       key: "court",
       node: (
         <Dropdown
@@ -143,6 +92,57 @@ const CaseFilters: React.FC<CaseFiltersProps> = ({
                   onCourtChange(null);
                 }}
                 aria-label="Clear court filter"
+              >
+                <CloseCircleOutlined />
+              </button>
+            ) : null}
+          </Button>
+        </Dropdown>
+      ),
+    },
+    {
+      key: "author",
+      node: (
+        <Dropdown
+          trigger={["click"]}
+          open={authorOpen}
+          onOpenChange={setAuthorOpen}
+          menu={{
+            style: dropdownMenuStyle,
+            items: [
+              ...(selectedAuthor
+                ? [{ key: "__clear__", label: "All Authors" }]
+                : []),
+              ...authorOptions.map((option) => ({
+                key: option.value,
+                label: option.label,
+              })),
+            ],
+            selectable: true,
+            multiple: false,
+            selectedKeys: selectedAuthor ? [selectedAuthor] : [],
+            onSelect: (info) => {
+              if (info.key === "__clear__") {
+                onAuthorChange(null);
+              } else {
+                onAuthorChange(info.key as string);
+              }
+              setAuthorOpen(false);
+            },
+          }}
+          disabled={disabled}
+        >
+          <Button className="case-tags-trigger" style={selectStyle}>
+            {selectedAuthor ?? "All Authors"}
+            {selectedAuthor ? (
+              <button
+                type="button"
+                className="case-filter-clear"
+                onClick={(event) => {
+                  event.stopPropagation();
+                  onAuthorChange(null);
+                }}
+                aria-label="Clear author filter"
               >
                 <CloseCircleOutlined />
               </button>
