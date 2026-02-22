@@ -18,6 +18,21 @@ const App: React.FC = () => {
     capabilities.isResolved && capabilities.isAuthenticated && !capabilities.isAdmin;
 
   useEffect(() => {
+    const routeClasses = ["route-theme-sub", "route-theme-admin", "route-theme-pub"];
+    document.body.classList.remove(...routeClasses);
+    if (isSubPath) {
+      document.body.classList.add("route-theme-sub");
+    } else if (isAdminPath) {
+      document.body.classList.add("route-theme-admin");
+    } else {
+      document.body.classList.add("route-theme-pub");
+    }
+    return () => {
+      document.body.classList.remove(...routeClasses);
+    };
+  }, [isAdminPath, isSubPath]);
+
+  useEffect(() => {
     if (!capabilities.isResolved) return;
     if (isRootPath) {
       navigate(capabilities.isAuthenticated ? (capabilities.isAdmin ? "/admin" : "/sub") : "/pub", {

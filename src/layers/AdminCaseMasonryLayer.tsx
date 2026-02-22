@@ -1,0 +1,104 @@
+import React from "react";
+import { Alert, Masonry, Spin } from "antd";
+import { CloseCircleOutlined } from "@ant-design/icons";
+import AdminCaseCard from "../components/AdminCaseCard";
+import type { CaseFilterControls } from "../core/filterControls";
+import type { CaseItem } from "../core/types";
+import type { TagMeta } from "../core/utils/tagUtils";
+import AdminTagCapsule from "../components/AdminTagCapsule";
+import { getReadableTextColor } from "../core/utils/colorUtils";
+
+type AdminCaseMasonryLayerProps = {
+  error: string | null;
+  tagsError: string | null;
+  caseTagsError: string | null;
+  loading: boolean;
+  cases: CaseItem[];
+  tagsById: Map<string, TagMeta>;
+  caseTagsByCaseId: Map<string, string[]>;
+  onOpenCase: (caseId: string) => void;
+  filters: CaseFilterControls;
+};
+
+const AdminCaseMasonryLayer: React.FC<AdminCaseMasonryLayerProps> = ({
+  error,
+  tagsError,
+  caseTagsError,
+  loading,
+  cases,
+  tagsById,
+  caseTagsByCaseId,
+  onOpenCase,
+  filters,
+}) => {
+  const masonryItems = cases.map((item) => ({ key: item.caseId, data: item }));
+  const activeTags = filters.selectedTagIds;
+  const showActiveTags = activeTags.length > 0;
+
+  return (
+    <div className="masonry-wrap">
+      <div className="case-filter-bar">
+        {showActiveTags ? (
+          <div className="case-active-tags">
+            {activeTags.map((tagId) => {
+              const tag = tagsById.get(tagId);
+              const label = tag?.label ?? "Untitled";
+              const background = tag?.color ?? undefined;
+              const color = getReadableTextColor(background, "#0f172a");
+              return (
+                <AdminTagCapsule
+                  key={tagId}
+                  label={label}
+                  background={background}
+                  color={color}
+                  size="md"
+                  rightSlot={
+                    <button
+                      type="button"
+                      className="case-active-tags__remove"
+                      aria-label={`Remove ${label}`}
+                      onClick={() => {
+                        const next = activeTags.filter((value) => value !== tagId);
+                        filters.onTagChange(next);
+                      }}
+                    >
+                      <CloseCircleOutlined />
+                    </button>
+                  }
+                />
+              );
+            })}
+          </div>
+        ) : null}
+      </div>
+      {error ? <Alert type="error" message={error} showIcon /> : null}
+      {tagsError ? <Alert type="error" message={tagsError} showIcon /> : null}
+      {caseTagsError ? <Alert type="error" message={caseTagsError} showIcon /> : null}
+      {loading ? (
+        <div className="card-grid__loading">
+          <Spin />
+        </div>
+      ) : (
+        <Masonry
+          columns={{ xs: 1, sm: 2, md: 3, lg: 4 }}
+          gutter={{ xs: 8, sm: 12, md: 16 }}
+          items={masonryItems}
+          itemRender={({ data, index }) => {
+            const tagIds = caseTagsByCaseId.get(data.caseId) ?? [];
+            return (
+              <AdminCaseCard
+                caseItem={data}
+                index={index}
+                tagIds={tagIds}
+                tagsById={tagsById}
+                onOpenCase={onOpenCase}
+              />
+            );
+          }}
+        />
+      )}
+    </div>
+  );
+};
+
+export default AdminCaseMasonryLayer;

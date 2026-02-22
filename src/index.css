@@ -8,8 +8,8 @@ body,
   overflow-x: hidden;
 }
 
-body {
-  background: linear-gradient(
+:root {
+  --route-gradient-pub: linear-gradient(
     180deg,
     #4096ff 0%,
     #1f5fbf 25%,
@@ -17,7 +17,25 @@ body {
     #1f5fbf 75%,
     #4096ff 100%
   );
+  --route-gradient-sub: linear-gradient(180deg, #6b1022 0%, #9f6270 50%, #6b1022 100%);
+  --route-gradient-admin: linear-gradient(180deg, #0f3d2e 0%, #4f9f7d 50%, #0f3d2e 100%);
+}
+
+body {
+  background: var(--route-gradient-pub);
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+body.route-theme-sub {
+  background: var(--route-gradient-sub);
+}
+
+body.route-theme-admin {
+  background: var(--route-gradient-admin);
+}
+
+body.route-theme-pub {
+  background: var(--route-gradient-pub);
 }
 
 .app-shell {
@@ -25,7 +43,7 @@ body {
   max-width: 100%;
   height: 100dvh;
   margin: 0;
-  background: linear-gradient(180deg, #4096ff 0%, #1f5fbf 25%, #0958d9 50%, #1f5fbf 75%, #4096ff 100%);
+  background: var(--route-gradient-pub);
   padding: 0;
   box-sizing: border-box;
   min-width: 0;
@@ -103,10 +121,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.app-shell--admin {
-  background: linear-gradient(180deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
 }
 
 .admin-header {
@@ -779,6 +793,75 @@ body {
   overscroll-behavior-x: none;
   text-align: left;
   min-width: 0;
+}
+
+.case-detail__layout {
+  width: 100%;
+  min-height: 0;
+  flex: 1 1 auto;
+  display: flex;
+}
+
+.case-detail__layout--wide {
+  gap: 12px;
+  align-items: stretch;
+}
+
+.case-detail__layout--wide .case-detail__panel {
+  flex: 4 1 0;
+}
+
+.case-metadata-panel {
+  flex: 1 1 0;
+  align-self: stretch;
+  min-width: 280px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 14px;
+  color: #111;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+}
+
+.case-metadata-panel__header h2 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.case-metadata-panel__fields {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+  min-height: 0;
+  padding-right: 2px;
+}
+
+.case-metadata-panel__field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.case-metadata-panel__field label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.case-metadata-panel__actions {
+  margin-top: auto;
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.case-metadata-panel__actions--editing {
+  justify-content: space-between;
 }
 
 @media (max-width: 600px) {

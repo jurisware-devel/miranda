@@ -1,14 +1,14 @@
 import React from "react";
 import { Button, Layout } from "antd";
 import { useNavigate } from "react-router-dom";
-import SubCaseFilters from "./SubCaseFilters";
-import SubProfileMenu from "./SubProfileMenu";
+import AdminCaseFilters from "./AdminCaseFilters";
+import AdminProfileMenu from "./AdminProfileMenu";
 import type { CaseFilterControls } from "../core/filterControls";
 import type { MenuProps } from "antd";
 
 const { Header } = Layout;
 
-type SubHeaderProps = {
+type AdminShellHeaderProps = {
   showFilters: boolean;
   lockFilters?: boolean;
   isXlUp: boolean;
@@ -21,7 +21,7 @@ type SubHeaderProps = {
   homePath?: string;
 };
 
-const SubHeader: React.FC<SubHeaderProps> = ({
+const AdminShellHeader: React.FC<AdminShellHeaderProps> = ({
   showFilters,
   lockFilters = false,
   isXlUp,
@@ -31,7 +31,7 @@ const SubHeader: React.FC<SubHeaderProps> = ({
   filters,
   profileItems,
   onProfileClick,
-  homePath = "/sub",
+  homePath = "/admin",
 }) => {
   const navigate = useNavigate();
   return (
@@ -67,7 +67,7 @@ const SubHeader: React.FC<SubHeaderProps> = ({
                     className="app-header-mobile-filter-panel"
                     onClick={(event) => event.stopPropagation()}
                   >
-                    <SubCaseFilters
+                    <AdminCaseFilters
                       compact
                       authorOptions={filters.authorOptions}
                       tagOptions={filters.tagOptions}
@@ -90,7 +90,7 @@ const SubHeader: React.FC<SubHeaderProps> = ({
           )
         ) : lockFilters && !isXlUp ? null : (
           <div className="app-header-filters">
-            <SubCaseFilters
+            <AdminCaseFilters
               authorOptions={filters.authorOptions}
               tagOptions={filters.tagOptions}
               courtOptions={filters.courtOptions}
@@ -110,7 +110,7 @@ const SubHeader: React.FC<SubHeaderProps> = ({
           </div>
         )}
         <div className="app-header-profile">
-          <SubProfileMenu
+          <AdminProfileMenu
             items={profileItems}
             onClick={onProfileClick}
             label="Open account menu"
@@ -121,4 +121,4 @@ const SubHeader: React.FC<SubHeaderProps> = ({
   );
 };
 
-export default SubHeader;
+export default AdminShellHeader;

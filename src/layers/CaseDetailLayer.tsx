@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Alert, Spin } from "antd";
 import { useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
@@ -14,6 +14,7 @@ type CaseDetailLayerProps = {
 
 const CaseDetailLayer: React.FC<CaseDetailLayerProps> = ({ cases, loading, error }) => {
   const { caseId } = useParams();
+  const panelRef = useRef<HTMLDivElement | null>(null);
   const [caseItem, setCaseItem] = useState<CaseItem | null>(null);
   const [caseLoading, setCaseLoading] = useState(false);
   const [caseError, setCaseError] = useState<string | null>(null);
@@ -21,6 +22,16 @@ const CaseDetailLayer: React.FC<CaseDetailLayerProps> = ({ cases, loading, error
   const [opinionPdfUrl, setOpinionPdfUrl] = useState<string>("");
   const [opinionLoading, setOpinionLoading] = useState(false);
   const [opinionError, setOpinionError] = useState<string | null>(null);
+
+  useEffect(() => {
+    panelRef.current?.scrollTo({ top: 0, behavior: "auto" });
+    const contentContainer = panelRef.current?.closest(".app-content");
+    if (contentContainer instanceof HTMLElement) {
+      contentContainer.scrollTo({ top: 0, behavior: "auto" });
+    } else {
+      window.scrollTo({ top: 0, behavior: "auto" });
+    }
+  }, [caseId]);
 
   useEffect(() => {
     let active = true;
@@ -123,7 +134,7 @@ const CaseDetailLayer: React.FC<CaseDetailLayerProps> = ({ cases, loading, error
           <Spin />
         </div>
       ) : caseItem ? (
-        <div className="case-detail__panel">
+        <div ref={panelRef} className="case-detail__panel">
           {opinionError ? (
             <Alert type="error" message={opinionError} showIcon />
           ) : opinionLoading ? (

@@ -1,12 +1,25 @@
 import React from "react";
-import { Navigate, Route, Routes } from "react-router-dom";
-import AdminCaseToolsPage from "./AdminCaseToolsPage";
+import { Navigate, Route, Routes, useNavigate, useParams } from "react-router-dom";
 import AdminPlaceholderPage from "./AdminPlaceholderPage";
+import AdminCaseDetailLayer from "../layers/AdminCaseDetailLayer";
+import AdminCaseMasonryLayer from "../layers/AdminCaseMasonryLayer";
+import type { CaseFilterControls } from "../core/filterControls";
 import type { AppCapabilities } from "../core/types";
+import type { CaseItem } from "../core/types";
+import type { TagMeta } from "../core/utils/tagUtils";
 
 type AdminContentRoutesProps = {
   capabilities: AppCapabilities;
   isXlUp: boolean;
+  error: string | null;
+  tagsError: string | null;
+  caseTagsError: string | null;
+  loading: boolean;
+  cases: CaseItem[];
+  pagedCases: CaseItem[];
+  tagsById: Map<string, TagMeta>;
+  caseTagsByCaseId: Map<string, string[]>;
+  filters: CaseFilterControls;
 };
 
 const AdminRoute: React.FC<{
@@ -22,64 +35,75 @@ const AdminRoute: React.FC<{
   return <>{children}</>;
 };
 
-const AdminContentRoutes: React.FC<AdminContentRoutesProps> = ({ capabilities, isXlUp }) => {
+const AdminLegacyCaseRedirect: React.FC = () => {
+  const { caseId } = useParams();
+  if (!caseId) return <Navigate to="/admin" replace />;
+  return <Navigate to={`/admin/case/${encodeURIComponent(caseId)}`} replace />;
+};
+
+const AdminContentRoutes: React.FC<AdminContentRoutesProps> = ({
+  capabilities,
+  isXlUp,
+  error,
+  tagsError,
+  caseTagsError,
+  loading,
+  cases,
+  pagedCases,
+  tagsById,
+  caseTagsByCaseId,
+  filters,
+}) => {
+  const navigate = useNavigate();
+
   return (
     <Routes>
       <Route
         path="/admin"
         element={
           <AdminRoute capabilities={capabilities}>
-            <AdminPlaceholderPage
-              title="Admin tools"
-              description="Admin tools are not enabled yet."
-              isCondensedLayout={!isXlUp}
+            <AdminCaseMasonryLayer
+              error={error}
+              tagsError={tagsError}
+              caseTagsError={caseTagsError}
+              loading={loading}
+              cases={pagedCases}
+              tagsById={tagsById}
+              caseTagsByCaseId={caseTagsByCaseId}
+              onOpenCase={(caseId) => navigate(`/admin/case/${caseId}`)}
+              filters={filters}
+            />
+          </AdminRoute>
+        }
+      />
+      <Route
+        path="/admin/case/:caseId"
+        element={
+          <AdminRoute capabilities={capabilities}>
+            <AdminCaseDetailLayer
+              cases={cases}
+              loading={loading}
+              error={error}
+              isWideLayout={isXlUp}
             />
           </AdminRoute>
         }
       />
       <Route
         path="/admin/cases/:caseId"
-        element={
-          <AdminRoute capabilities={capabilities}>
-            <AdminCaseToolsPage isCondensedLayout={!isXlUp} />
-          </AdminRoute>
-        }
+        element={<AdminLegacyCaseRedirect />}
       />
       <Route
         path="/admin/cases/:caseId/tags"
-        element={
-          <AdminRoute capabilities={capabilities}>
-            <AdminPlaceholderPage
-              title="Admin case tags"
-              description="Admin case tag editor is not enabled yet."
-              isCondensedLayout={!isXlUp}
-            />
-          </AdminRoute>
-        }
+        element={<AdminLegacyCaseRedirect />}
       />
       <Route
         path="/admin/cases/:caseId/opinion"
-        element={
-          <AdminRoute capabilities={capabilities}>
-            <AdminPlaceholderPage
-              title="Admin opinion editor"
-              description="Admin opinion editor is not enabled yet."
-              isCondensedLayout={!isXlUp}
-            />
-          </AdminRoute>
-        }
+        element={<AdminLegacyCaseRedirect />}
       />
       <Route
         path="/admin/cases/:caseId/metadata"
-        element={
-          <AdminRoute capabilities={capabilities}>
-            <AdminPlaceholderPage
-              title="Admin metadata editor"
-              description="Admin metadata editor is not enabled yet."
-              isCondensedLayout={!isXlUp}
-            />
-          </AdminRoute>
-        }
+        element={<AdminLegacyCaseRedirect />}
       />
       <Route
         path="/admin/settings"
@@ -93,6 +117,7 @@ const AdminContentRoutes: React.FC<AdminContentRoutesProps> = ({ capabilities, i
           </AdminRoute>
         }
       />
+      <Route path="/admin/tags" element={<Navigate to="/admin" replace />} />
       <Route path="*" element={<Navigate to="/admin" replace />} />
     </Routes>
   );

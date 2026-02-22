@@ -23,7 +23,7 @@ const CaseDetailNav: React.FC<CaseDetailNavProps> = ({
   return (
     <div className={navClassName}>
       <Button icon={<ArrowLeftOutlined />} type="text" onClick={onBack}>
-        Back
+        Home
       </Button>
       <Button
         type="text"

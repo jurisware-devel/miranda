@@ -2,7 +2,7 @@ import React from "react";
 import { ArrowLeftOutlined } from "@ant-design/icons";
 import { Button } from "antd";
 
-type SubCaseDetailNavProps = {
+type AdminCaseDetailNavProps = {
   hasPrevious: boolean;
   hasNext: boolean;
   onBack: () => void;
@@ -11,7 +11,7 @@ type SubCaseDetailNavProps = {
   className?: string;
 };
 
-const SubCaseDetailNav: React.FC<SubCaseDetailNavProps> = ({
+const AdminCaseDetailNav: React.FC<AdminCaseDetailNavProps> = ({
   hasPrevious,
   hasNext,
   onBack,
@@ -45,4 +45,4 @@ const SubCaseDetailNav: React.FC<SubCaseDetailNavProps> = ({
   );
 };
 
-export default SubCaseDetailNav;
+export default AdminCaseDetailNav;
