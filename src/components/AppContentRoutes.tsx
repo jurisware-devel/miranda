@@ -2,7 +2,7 @@ import React from "react";
 import { Navigate, Route, Routes, useNavigate } from "react-router-dom";
 import CaseDetailLayer from "../layers/CaseDetailLayer";
 import CaseMasonryLayer from "../layers/CaseMasonryLayer";
-import type { CaseItem } from "../logic/types";
+import type { AppCapabilities, CaseItem } from "../logic/types";
 import type { TagMeta } from "../logic/tagUtils";
 import type { CaseFilterControls } from "../logic/filterControls";
 
@@ -16,6 +16,7 @@ type AppContentRoutesProps = {
   tagsById: Map<string, TagMeta>;
   caseTagsByCaseId: Map<string, string[]>;
   filters: CaseFilterControls;
+  capabilities: AppCapabilities;
 };
 
 const AppContentRoutes: React.FC<AppContentRoutesProps> = ({
@@ -28,6 +29,7 @@ const AppContentRoutes: React.FC<AppContentRoutesProps> = ({
   tagsById,
   caseTagsByCaseId,
   filters,
+  capabilities,
 }) => {
   const navigate = useNavigate();
 
@@ -57,6 +59,16 @@ const AppContentRoutes: React.FC<AppContentRoutesProps> = ({
             loading={loading}
             error={error}
           />
+        }
+      />
+      <Route
+        path="/admin"
+        element={
+          capabilities.canAccessAdminRoutes ? (
+            <div style={{ padding: 24 }}>Admin tools are not enabled yet.</div>
+          ) : (
+            <Navigate to="/" replace />
+          )
         }
       />
       <Route path="/tags" element={<Navigate to="/" replace />} />

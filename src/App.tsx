@@ -9,6 +9,7 @@ import { useCaseFilters } from "./logic/hooks/useCaseFilters";
 import { useCasesData } from "./logic/hooks/useCasesData";
 import { useTagsData } from "./logic/hooks/useTagsData";
 import { useAppRouteUi } from "./logic/hooks/useAppRouteUi";
+import { useCapabilities } from "./logic/hooks/useCapabilities";
 import { mapCaseTagsByCaseId, mapTagsById } from "./logic/tagUtils";
 import type { CaseFilterControls } from "./logic/filterControls";
 
@@ -42,6 +43,7 @@ const App: React.FC = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const isXlUp = Boolean(screens.xl);
+  const capabilities = useCapabilities();
   const { showFilters, lockFilters, showPagination } = useAppRouteUi({
     setSelectedAuthor,
     setSelectedTagIds,
@@ -137,6 +139,7 @@ const App: React.FC = () => {
           tagsById={tagsById}
           caseTagsByCaseId={caseTagsByCaseId}
           filters={filters}
+          capabilities={capabilities}
         />
       </Content>
       <AppFooter
