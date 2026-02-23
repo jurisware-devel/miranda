@@ -13,16 +13,12 @@ type IdentityClaims = {
 const s3 = new S3Client({});
 
 const bucket = process.env.OPINIONS_BUCKET;
-const prefix = process.env.OPINIONS_PREFIX ?? '';
 
 const normalizeKey = (value: string) => {
   let key = value.trim().replace(/^\//, '');
   if (!key) throw new Error('Missing opinion key');
   if (key.includes('..') || key.includes('\\')) {
     throw new Error('Invalid opinion key');
-  }
-  if (!key.startsWith(prefix)) {
-    key = `${prefix}${key}`;
   }
   key = key.replace(/\.txt/gi, '');
   if (!/\.md$/i.test(key)) {

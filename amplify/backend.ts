@@ -16,6 +16,6 @@ const backend = defineBackend({
 backend.saveOpinion.resources.lambda.addToRolePolicy(
   new PolicyStatement({
     actions: ['s3:PutObject'],
-    resources: ['arn:aws:s3:::opinions.jurisware.com/texts/*'],
+    resources: ['arn:aws:s3:::opinions.jurisware.com/*'],
   }),
 );
