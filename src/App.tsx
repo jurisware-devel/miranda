@@ -1,9 +1,14 @@
 import React, { useEffect } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { Navigate, matchPath, useLocation, useNavigate } from "react-router-dom";
 import { useCapabilities } from "./core/auth/useCapabilities";
 import AdminApp from "./shards/admin/AdminApp";
 import PublicApp from "./shards/public/PublicApp";
 import SubApp from "./shards/sub/SubApp";
+import type { AppRole } from "./core/types";
+import {
+  isValidCanonicalCaseId,
+  resolveCanonicalCaseRedirect,
+} from "./core/routing/canonicalCaseRouting";
 
 const App: React.FC = () => {
   const location = useLocation();
@@ -12,10 +17,18 @@ const App: React.FC = () => {
   const isAdminPath = location.pathname.startsWith("/admin");
   const isSubPath = location.pathname.startsWith("/sub");
   const isPubPath = location.pathname.startsWith("/pub");
+  const canonicalCaseMatch = matchPath("/case/:caseId", location.pathname);
+  const canonicalCaseId = canonicalCaseMatch?.params.caseId ?? null;
+  const isCanonicalCasePath = canonicalCaseId !== null;
   const isRootPath = location.pathname === "/";
-  const isKnownPath = isAdminPath || isSubPath || isPubPath || isRootPath;
+  const isKnownPath = isAdminPath || isSubPath || isPubPath || isRootPath || isCanonicalCasePath;
   const canLoadSubData =
     capabilities.isResolved && capabilities.isAuthenticated && !capabilities.isAdmin;
+  const resolvedRole: AppRole = capabilities.isAdmin
+    ? "admin"
+    : capabilities.isAuthenticated
+      ? "user"
+      : "guest";
 
   useEffect(() => {
     const routeClasses = ["route-theme-sub", "route-theme-admin", "route-theme-pub"];
@@ -33,6 +46,7 @@ const App: React.FC = () => {
   }, [isAdminPath, isSubPath]);
 
   useEffect(() => {
+    if (isCanonicalCasePath) return;
     if (!capabilities.isResolved) return;
     if (isRootPath) {
       navigate(capabilities.isAuthenticated ? (capabilities.isAdmin ? "/admin" : "/sub") : "/pub", {
@@ -83,6 +97,7 @@ const App: React.FC = () => {
     isPubPath,
     isRootPath,
     isSubPath,
+    isCanonicalCasePath,
     location.hash,
     location.pathname,
     location.search,
@@ -94,6 +109,21 @@ const App: React.FC = () => {
   }
   if (isSubPath) {
     return <SubApp enableData={canLoadSubData} />;
+  }
+  if (isCanonicalCasePath) {
+    if (!canonicalCaseId || !isValidCanonicalCaseId(canonicalCaseId)) {
+      return <Navigate to="/pub" replace />;
+    }
+    if (!capabilities.isResolved) return null;
+    const target = resolveCanonicalCaseRedirect({
+      caseId: canonicalCaseId,
+      role: resolvedRole,
+      pathname: location.pathname,
+      search: location.search,
+      hash: location.hash,
+    });
+    if (!target) return <Navigate to="/pub" replace />;
+    return <Navigate to={target} replace />;
   }
   return <PublicApp />;
 };
