@@ -17,8 +17,8 @@ body,
     #1f5fbf 75%,
     #4096ff 100%
   );
-  --route-gradient-sub: linear-gradient(180deg, #6b1022 0%, #9f6270 50%, #6b1022 100%);
-  --route-gradient-admin: linear-gradient(180deg, #0f3d2e 0%, #4f9f7d 50%, #0f3d2e 100%);
+  --route-gradient-sub: linear-gradient(180deg, #0f3d2e 0%, #4f9f7d 50%, #0f3d2e 100%);
+  --route-gradient-admin: linear-gradient(180deg, #6b1022 0%, #9f6270 50%, #6b1022 100%);
 }
 
 body {
@@ -957,6 +957,57 @@ body.route-theme-pub {
   font-size: 14px;
   line-height: 1.5;
   color: #111;
+}
+
+.case-detail__editor-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.case-detail__editor-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+}
+
+.case-detail__editor-actions-left {
+  display: flex;
+  gap: 8px;
+}
+
+.case-detail__editor-actions-bold {
+  margin-left: auto;
+}
+
+.case-detail__editor-actions-italics {
+  margin-left: 0;
+}
+
+.case-detail__editor-status {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.case-detail__editor {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.case-detail__opinion-preview {
+  border-top: 1px solid #e2e8f0;
+  padding-top: 12px;
+}
+
+.case-detail__opinion-preview h3 {
+  margin: 0 0 8px;
+  font-size: 14px;
+  color: #0f172a;
 }
 
 .admin-placeholder {

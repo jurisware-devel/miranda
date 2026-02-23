@@ -4,7 +4,8 @@ import { useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import { client } from "../core/amplifyClient";
 import type { CaseItem } from "../core/types";
-import { buildOpinionUrl } from "../core/utils/caseUtils";
+import { buildOpinionCandidateUrls } from "../core/utils/caseUtils";
+import { preserveNumericReferencePrefixes } from "../core/utils/opinionMarkdown";
 
 type SubCaseDetailLayerProps = {
   cases: CaseItem[];
@@ -22,6 +23,7 @@ const SubCaseDetailLayer: React.FC<SubCaseDetailLayerProps> = ({ cases, loading,
   const [opinionPdfUrl, setOpinionPdfUrl] = useState<string>("");
   const [opinionLoading, setOpinionLoading] = useState(false);
   const [opinionError, setOpinionError] = useState<string | null>(null);
+  const renderedOpinionText = preserveNumericReferencePrefixes(opinionText);
 
   useEffect(() => {
     panelRef.current?.scrollTo({ top: 0, behavior: "auto" });
@@ -71,15 +73,12 @@ const SubCaseDetailLayer: React.FC<SubCaseDetailLayerProps> = ({ cases, loading,
 
   useEffect(() => {
     let active = true;
-    const url = buildOpinionUrl(caseItem?.opinionUrl, caseItem);
-    if (!url) {
+    const candidateUrls = buildOpinionCandidateUrls(caseItem?.opinionUrl, caseItem);
+    if (!candidateUrls.length) {
       setOpinionText("");
       setOpinionPdfUrl("");
       return;
     }
-
-    const hasKnownExtension = /\.(md|pdf)$/i.test(url);
-    const candidateUrls = hasKnownExtension ? [url] : [`${url}.md`, `${url}.pdf`, url];
 
     async function loadOpinion() {
       try {
@@ -143,7 +142,7 @@ const SubCaseDetailLayer: React.FC<SubCaseDetailLayerProps> = ({ cases, loading,
             </div>
           ) : opinionText ? (
             <div className="case-detail__opinion-content">
-              <ReactMarkdown>{opinionText}</ReactMarkdown>
+              <ReactMarkdown>{renderedOpinionText}</ReactMarkdown>
             </div>
           ) : opinionPdfUrl ? (
             <div className="case-detail__opinion-content">

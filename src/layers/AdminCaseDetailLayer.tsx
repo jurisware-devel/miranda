@@ -4,7 +4,12 @@ import { useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import { client } from "../core/amplifyClient";
 import type { CaseItem } from "../core/types";
-import { buildOpinionUrl } from "../core/utils/caseUtils";
+import {
+  buildOpinionCandidateUrls,
+  buildOpinionStorageKey,
+  extractOpinionStorageKeyFromUrl,
+} from "../core/utils/caseUtils";
+import { preserveNumericReferencePrefixes } from "../core/utils/opinionMarkdown";
 
 type AdminCaseDetailLayerProps = {
   cases: CaseItem[];
@@ -88,6 +93,7 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
 }) => {
   const { caseId } = useParams();
   const panelRef = useRef<HTMLDivElement | null>(null);
+  const opinionEditorRef = useRef<HTMLTextAreaElement | null>(null);
   const [caseItem, setCaseItem] = useState<CaseItem | null>(null);
   const [caseLoading, setCaseLoading] = useState(false);
   const [caseError, setCaseError] = useState<string | null>(null);
@@ -95,9 +101,17 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
   const [opinionPdfUrl, setOpinionPdfUrl] = useState<string>("");
   const [opinionLoading, setOpinionLoading] = useState(false);
   const [opinionError, setOpinionError] = useState<string | null>(null);
+  const [isEditingOpinion, setIsEditingOpinion] = useState(false);
+  const [isSavingOpinion, setIsSavingOpinion] = useState(false);
+  const [opinionDraft, setOpinionDraft] = useState<string>("");
+  const [opinionSavedAt, setOpinionSavedAt] = useState<string | null>(null);
+  const [opinionSelection, setOpinionSelection] = useState({ start: 0, end: 0 });
+  const [loadedOpinionKey, setLoadedOpinionKey] = useState<string>("");
   const [isEditingMetadata, setIsEditingMetadata] = useState(false);
   const [isSavingMetadata, setIsSavingMetadata] = useState(false);
   const [metadataDraft, setMetadataDraft] = useState<CaseMetadataDraft>(EMPTY_METADATA_DRAFT);
+  const renderedOpinionText = preserveNumericReferencePrefixes(opinionText);
+  const renderedOpinionDraft = preserveNumericReferencePrefixes(opinionDraft);
 
   useEffect(() => {
     panelRef.current?.scrollTo({ top: 0, behavior: "auto" });
@@ -147,15 +161,12 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
 
   useEffect(() => {
     let active = true;
-    const url = buildOpinionUrl(caseItem?.opinionUrl, caseItem);
-    if (!url) {
+    const candidateUrls = buildOpinionCandidateUrls(caseItem?.opinionUrl, caseItem);
+    if (!candidateUrls.length) {
       setOpinionText("");
       setOpinionPdfUrl("");
       return;
     }
-
-    const hasKnownExtension = /\.(md|pdf)$/i.test(url);
-    const candidateUrls = hasKnownExtension ? [url] : [`${url}.md`, `${url}.pdf`, url];
 
     async function loadOpinion() {
       try {
@@ -163,6 +174,7 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
         setOpinionError(null);
         setOpinionText("");
         setOpinionPdfUrl("");
+        setLoadedOpinionKey("");
 
         let lastStatus = "";
         for (const candidate of candidateUrls) {
@@ -177,12 +189,17 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
           if (!active) return;
           if (isPdf) {
             setOpinionPdfUrl(candidate);
+            setLoadedOpinionKey(extractOpinionStorageKeyFromUrl(candidate));
             return;
           }
 
           const text = await response.text();
           if (!active) return;
           setOpinionText(text);
+          setLoadedOpinionKey(extractOpinionStorageKeyFromUrl(candidate));
+          setOpinionDraft(text);
+          setIsEditingOpinion(false);
+          setOpinionSavedAt(null);
           return;
         }
 
@@ -206,6 +223,13 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
     setIsEditingMetadata(false);
   }, [caseItem]);
 
+  useEffect(() => {
+    if (!isWideLayout && isEditingOpinion) {
+      setIsEditingOpinion(false);
+      setOpinionDraft(opinionText);
+    }
+  }, [isWideLayout, isEditingOpinion, opinionText]);
+
   const handleMetadataFieldChange = (field: keyof CaseMetadataDraft, value: string) => {
     setMetadataDraft((current) => ({ ...current, [field]: value }));
   };
@@ -218,6 +242,78 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
   const handleCancelEditMetadata = () => {
     setMetadataDraft(toDraft(caseItem));
     setIsEditingMetadata(false);
+  };
+
+  const handleEditOpinion = () => {
+    setOpinionDraft(opinionText);
+    setIsEditingOpinion(true);
+  };
+
+  const handleCancelEditOpinion = () => {
+    setOpinionDraft(opinionText);
+    setIsEditingOpinion(false);
+  };
+
+  const handleSaveOpinion = async () => {
+    if (!caseItem) return;
+    const key = loadedOpinionKey || buildOpinionStorageKey(caseItem.opinionUrl, caseItem);
+    if (!key) {
+      message.error("Opinion file key is missing.");
+      return;
+    }
+
+    try {
+      setIsSavingOpinion(true);
+      const result = await client.mutations.saveOpinionText(
+        {
+          key,
+          markdown: opinionDraft,
+        },
+        { authMode: "userPool" },
+      );
+      if (result.errors?.length) {
+        throw new Error(result.errors[0]?.message ?? "Failed to save opinion text");
+      }
+      setOpinionText(opinionDraft);
+      setIsEditingOpinion(false);
+      setOpinionSavedAt(new Date().toLocaleTimeString());
+      message.success("Opinion text saved.");
+    } catch (err) {
+      message.error(err instanceof Error ? err.message : "Failed to save opinion text");
+    } finally {
+      setIsSavingOpinion(false);
+    }
+  };
+
+  const handleOpinionSelectionChange = (event: React.SyntheticEvent<HTMLTextAreaElement>) => {
+    const target = event.currentTarget;
+    opinionEditorRef.current = target;
+    setOpinionSelection({
+      start: target.selectionStart ?? 0,
+      end: target.selectionEnd ?? 0,
+    });
+  };
+
+  const wrapOpinionSelection = (marker: string) => {
+    const editor = opinionEditorRef.current;
+    const length = opinionDraft.length;
+    const start = Math.max(0, Math.min(opinionSelection.start, length));
+    const end = Math.max(0, Math.min(opinionSelection.end, length));
+    const left = opinionDraft.slice(0, start);
+    const middle = opinionDraft.slice(start, end);
+    const right = opinionDraft.slice(end);
+    const wrapped = `${left}${marker}${middle}${marker}${right}`;
+    const nextStart = start + marker.length;
+    const nextEnd = end + marker.length;
+
+    setOpinionDraft(wrapped);
+    setOpinionSelection({ start: nextStart, end: nextEnd });
+
+    window.requestAnimationFrame(() => {
+      if (!editor) return;
+      editor.focus();
+      editor.setSelectionRange(nextStart, nextEnd);
+    });
   };
 
   const handleSaveMetadata = async () => {
@@ -293,9 +389,80 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
                 <Spin />
               </div>
             ) : opinionText ? (
-              <div className="case-detail__opinion-content">
-                <ReactMarkdown>{opinionText}</ReactMarkdown>
-              </div>
+              <>
+                {isWideLayout ? (
+                  <div className="case-detail__editor-bar">
+                    {isEditingOpinion ? (
+                      <div className="case-detail__editor-actions">
+                        <div className="case-detail__editor-actions-left">
+                          <Button onClick={handleCancelEditOpinion} disabled={isSavingOpinion}>
+                            Cancel
+                          </Button>
+                          <Button
+                            type="primary"
+                            onClick={handleSaveOpinion}
+                            loading={isSavingOpinion}
+                          >
+                            Save Opinion
+                          </Button>
+                        </div>
+                        <Button
+                          onClick={() => wrapOpinionSelection("**")}
+                          disabled={isSavingOpinion}
+                          className="case-detail__editor-actions-bold"
+                        >
+                          Bold
+                        </Button>
+                        <Button
+                          onClick={() => wrapOpinionSelection("*")}
+                          disabled={isSavingOpinion}
+                          className="case-detail__editor-actions-italics"
+                        >
+                          Italics
+                        </Button>
+                        <Button
+                          onClick={() => wrapOpinionSelection("***")}
+                          disabled={isSavingOpinion}
+                          className="case-detail__editor-actions-both"
+                        >
+                          Both
+                        </Button>
+                      </div>
+                    ) : (
+                      <div className="case-detail__editor-actions">
+                        <Button type="primary" onClick={handleEditOpinion}>
+                          Edit Opinion
+                        </Button>
+                      </div>
+                    )}
+                    {opinionSavedAt ? (
+                      <span className="case-detail__editor-status">Saved at {opinionSavedAt}</span>
+                    ) : null}
+                  </div>
+                ) : null}
+                {isEditingOpinion && isWideLayout ? (
+                  <div className="case-detail__editor">
+                    <Input.TextArea
+                      value={opinionDraft}
+                      onChange={(event) => setOpinionDraft(event.target.value)}
+                      onSelect={handleOpinionSelectionChange}
+                      onClick={handleOpinionSelectionChange}
+                      onKeyUp={handleOpinionSelectionChange}
+                      autoSize={{ minRows: 14, maxRows: 30 }}
+                    />
+                    <div className="case-detail__opinion-preview">
+                      <h3>Preview</h3>
+                      <div className="case-detail__opinion-content">
+                        <ReactMarkdown>{renderedOpinionDraft}</ReactMarkdown>
+                      </div>
+                    </div>
+                  </div>
+                ) : (
+                  <div className="case-detail__opinion-content">
+                    <ReactMarkdown>{renderedOpinionText}</ReactMarkdown>
+                  </div>
+                )}
+              </>
             ) : opinionPdfUrl ? (
               <div className="case-detail__opinion-content">
                 <iframe

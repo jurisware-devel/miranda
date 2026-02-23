@@ -5,6 +5,5 @@ export const saveOpinion = defineFunction({
   entry: './handler.ts',
   environment: {
     OPINIONS_BUCKET: 'opinions.jurisware.com',
-    OPINIONS_PREFIX: 'texts/',
   },
 });
