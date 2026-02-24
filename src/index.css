@@ -886,6 +886,12 @@ body.route-theme-pub {
   margin: 0 0 12px;
 }
 
+.case-detail__opinion-content blockquote {
+  padding-left: 14px;
+  border-left: 3px solid #d1d5db;
+  color: #374151;
+}
+
 .case-detail__opinion-content :is(ul, ol) {
   padding-left: 20px;
 }
