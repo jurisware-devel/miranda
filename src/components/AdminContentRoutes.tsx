@@ -5,7 +5,7 @@ import AdminCaseDetailLayer from "../layers/AdminCaseDetailLayer";
 import AdminCaseMasonryLayer from "../layers/AdminCaseMasonryLayer";
 import type { CaseFilterControls } from "../core/filterControls";
 import type { AppCapabilities } from "../core/types";
-import type { CaseItem } from "../core/types";
+import type { CaseItem, CaseTagItem, TagItem } from "../core/types";
 import type { TagMeta } from "../core/utils/tagUtils";
 
 type AdminContentRoutesProps = {
@@ -16,6 +16,9 @@ type AdminContentRoutesProps = {
   caseTagsError: string | null;
   loading: boolean;
   cases: CaseItem[];
+  tags: TagItem[];
+  caseTags: CaseTagItem[];
+  setCaseTags: React.Dispatch<React.SetStateAction<CaseTagItem[]>>;
   pagedCases: CaseItem[];
   tagsById: Map<string, TagMeta>;
   caseTagsByCaseId: Map<string, string[]>;
@@ -49,6 +52,9 @@ const AdminContentRoutes: React.FC<AdminContentRoutesProps> = ({
   caseTagsError,
   loading,
   cases,
+  tags,
+  caseTags,
+  setCaseTags,
   pagedCases,
   tagsById,
   caseTagsByCaseId,
@@ -82,6 +88,10 @@ const AdminContentRoutes: React.FC<AdminContentRoutesProps> = ({
           <AdminRoute capabilities={capabilities}>
             <AdminCaseDetailLayer
               cases={cases}
+              tags={tags}
+              caseTags={caseTags}
+              setCaseTags={setCaseTags}
+              canEditCaseTags={capabilities.canEditCaseTags}
               loading={loading}
               error={error}
               isWideLayout={isXlUp}
