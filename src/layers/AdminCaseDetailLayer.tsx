@@ -1,18 +1,26 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
+import { CloseCircleOutlined } from "@ant-design/icons";
 import { Alert, Button, Input, Select, Spin, message } from "antd";
 import { useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import { client } from "../core/amplifyClient";
-import type { CaseItem } from "../core/types";
+import type { CaseItem, CaseTagItem, TagItem } from "../core/types";
 import {
   buildOpinionCandidateUrls,
   buildOpinionStorageKey,
   extractOpinionStorageKeyFromUrl,
 } from "../core/utils/caseUtils";
+import { getReadableTextColor } from "../core/utils/colorUtils";
 import { preserveNumericReferencePrefixes } from "../core/utils/opinionMarkdown";
+import { buildTagOptions, mapTagsById } from "../core/utils/tagUtils";
+import AdminTagCapsule from "../components/AdminTagCapsule";
 
 type AdminCaseDetailLayerProps = {
   cases: CaseItem[];
+  tags: TagItem[];
+  caseTags: CaseTagItem[];
+  setCaseTags: React.Dispatch<React.SetStateAction<CaseTagItem[]>>;
+  canEditCaseTags: boolean;
   loading: boolean;
   error: string | null;
   isWideLayout: boolean;
@@ -87,6 +95,10 @@ const toDraft = (value: CaseItem | null): CaseMetadataDraft => {
 
 const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
   cases,
+  tags,
+  caseTags,
+  setCaseTags,
+  canEditCaseTags,
   loading,
   error,
   isWideLayout,
@@ -110,8 +122,25 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
   const [isEditingMetadata, setIsEditingMetadata] = useState(false);
   const [isSavingMetadata, setIsSavingMetadata] = useState(false);
   const [metadataDraft, setMetadataDraft] = useState<CaseMetadataDraft>(EMPTY_METADATA_DRAFT);
+  const [isEditingTags, setIsEditingTags] = useState(false);
+  const [isSavingTags, setIsSavingTags] = useState(false);
+  const [tagDraftIds, setTagDraftIds] = useState<string[]>([]);
+  const [initialTagIds, setInitialTagIds] = useState<string[]>([]);
   const renderedOpinionText = preserveNumericReferencePrefixes(opinionText);
   const renderedOpinionDraft = preserveNumericReferencePrefixes(opinionDraft);
+  const tagsById = useMemo(() => mapTagsById(tags), [tags]);
+  const sortedTagOptions = useMemo(() => buildTagOptions(tags), [tags]);
+  const caseTagIds = useMemo(
+    () =>
+      caseItem
+        ? [
+            ...new Set(
+              caseTags.filter((item) => item.caseId === caseItem.caseId).map((item) => item.tagId),
+            ),
+          ]
+        : [],
+    [caseItem, caseTags],
+  );
 
   useEffect(() => {
     panelRef.current?.scrollTo({ top: 0, behavior: "auto" });
@@ -224,6 +253,17 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
   }, [caseItem]);
 
   useEffect(() => {
+    const sorted = [...caseTagIds].sort((a, b) =>
+      (tagsById.get(a)?.label ?? "").localeCompare(tagsById.get(b)?.label ?? "", undefined, {
+        sensitivity: "base",
+      }),
+    );
+    setInitialTagIds(sorted);
+    setTagDraftIds(sorted);
+    setIsEditingTags(false);
+  }, [caseItem?.caseId, caseTagIds, tagsById]);
+
+  useEffect(() => {
     if (!isWideLayout && isEditingOpinion) {
       setIsEditingOpinion(false);
       setOpinionDraft(opinionText);
@@ -242,6 +282,76 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
   const handleCancelEditMetadata = () => {
     setMetadataDraft(toDraft(caseItem));
     setIsEditingMetadata(false);
+  };
+
+  const handleEditTags = () => {
+    setTagDraftIds(initialTagIds);
+    setIsEditingTags(true);
+  };
+
+  const handleCancelEditTags = () => {
+    setTagDraftIds(initialTagIds);
+    setIsEditingTags(false);
+  };
+
+  const handleSaveTags = async () => {
+    if (!caseItem) return;
+
+    const initial = new Set(initialTagIds);
+    const draft = new Set(tagDraftIds);
+    const createIds = [...draft].filter((tagId) => !initial.has(tagId));
+    const deleteIds = [...initial].filter((tagId) => !draft.has(tagId));
+
+    if (!createIds.length && !deleteIds.length) {
+      setIsEditingTags(false);
+      return;
+    }
+
+    try {
+      setIsSavingTags(true);
+      for (const tagId of createIds) {
+        const result = await client.models.CaseTag.create(
+          { caseId: caseItem.caseId, tagId },
+          { authMode: "userPool" },
+        );
+        if (result.errors?.length) {
+          throw new Error(result.errors[0]?.message ?? "Failed to create case tag");
+        }
+      }
+
+      for (const tagId of deleteIds) {
+        const result = await client.models.CaseTag.delete(
+          { caseId: caseItem.caseId, tagId },
+          { authMode: "userPool" },
+        );
+        if (result.errors?.length) {
+          throw new Error(result.errors[0]?.message ?? "Failed to delete case tag");
+        }
+      }
+
+      setCaseTags((current) => {
+        const withoutDeleted = current.filter(
+          (item) => !(item.caseId === caseItem.caseId && deleteIds.includes(item.tagId)),
+        );
+        const existing = new Set(
+          withoutDeleted
+            .filter((item) => item.caseId === caseItem.caseId)
+            .map((item) => item.tagId),
+        );
+        const appended = createIds
+          .filter((tagId) => !existing.has(tagId))
+          .map((tagId) => ({ caseId: caseItem.caseId, tagId }) as CaseTagItem);
+        return [...withoutDeleted, ...appended];
+      });
+
+      setInitialTagIds([...draft]);
+      setIsEditingTags(false);
+      message.success("Case tags saved.");
+    } catch (err) {
+      message.error(err instanceof Error ? err.message : "Failed to save case tags");
+    } finally {
+      setIsSavingTags(false);
+    }
   };
 
   const handleEditOpinion = () => {
@@ -369,6 +479,87 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
     } finally {
       setIsSavingMetadata(false);
     }
+  };
+
+  const renderTagSection = () => {
+    const tagIds = isEditingTags ? tagDraftIds : initialTagIds;
+    return (
+      <section className="case-metadata-panel__section" aria-label="Case tags panel">
+        <div className="case-metadata-panel__subheader">
+          <h3>Case Tags</h3>
+        </div>
+        {isEditingTags ? (
+          <div className="case-metadata-panel__field">
+            <label htmlFor="case-tags-select">Add or remove tags</label>
+            <Select
+              id="case-tags-select"
+              mode="multiple"
+              allowClear
+              showSearch
+              optionFilterProp="label"
+              value={tagDraftIds}
+              onChange={(values) => setTagDraftIds(values)}
+              options={sortedTagOptions}
+              placeholder="Search and select tags"
+              disabled={isSavingTags}
+            />
+          </div>
+        ) : null}
+        <div className="case-tags-panel__chips">
+          {tagIds.length ? (
+            tagIds.map((tagId) => {
+              const tag = tagsById.get(tagId);
+              const label = tag?.label ?? "Untitled";
+              const background = tag?.color ?? undefined;
+              return (
+                <AdminTagCapsule
+                  key={tagId}
+                  label={label}
+                  background={background}
+                  color={getReadableTextColor(background)}
+                  rightSlot={
+                    isEditingTags ? (
+                      <button
+                        type="button"
+                        className="case-active-tags__remove"
+                        aria-label={`Remove ${label}`}
+                        onClick={() =>
+                          setTagDraftIds((current) => current.filter((value) => value !== tagId))
+                        }
+                      >
+                        <CloseCircleOutlined />
+                      </button>
+                    ) : undefined
+                  }
+                />
+              );
+            })
+          ) : (
+            <span className="case-tags-panel__empty">No tags assigned.</span>
+          )}
+        </div>
+        <div
+          className={`case-metadata-panel__actions${
+            isEditingTags ? " case-metadata-panel__actions--editing" : ""
+          }`}
+        >
+          {isEditingTags ? (
+            <>
+              <Button onClick={handleCancelEditTags} disabled={isSavingTags}>
+                Cancel
+              </Button>
+              <Button type="primary" onClick={handleSaveTags} loading={isSavingTags}>
+                Save Tags
+              </Button>
+            </>
+          ) : (
+            <Button type="primary" onClick={handleEditTags} disabled={!canEditCaseTags}>
+              Edit Tags
+            </Button>
+          )}
+        </div>
+      </section>
+    );
   };
 
   return (
@@ -690,6 +881,7 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
                     }
                   />
                 </div>
+                {isWideLayout ? renderTagSection() : null}
               </div>
               <div
                 className={`case-metadata-panel__actions${
@@ -715,6 +907,11 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
                   </Button>
                 )}
               </div>
+            </aside>
+          ) : null}
+          {!isWideLayout ? (
+            <aside className="case-metadata-panel case-metadata-panel--mobile" aria-label="Case tags panel">
+              {renderTagSection()}
             </aside>
           ) : null}
         </div>

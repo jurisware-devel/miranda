@@ -23,7 +23,9 @@ type AdminAppProps = {
 
 const AdminApp: React.FC<AdminAppProps> = ({ capabilities }) => {
   const { cases, loading, error } = useAdminCasesData(capabilities.isResolved);
-  const { tags, caseTags, tagsError, caseTagsError } = useAdminTagsData(capabilities.isResolved);
+  const { tags, caseTags, setCaseTags, tagsError, caseTagsError } = useAdminTagsData(
+    capabilities.isResolved,
+  );
   const {
     authorOptions,
     tagOptions,
@@ -160,6 +162,9 @@ const AdminApp: React.FC<AdminAppProps> = ({ capabilities }) => {
           caseTagsError={caseTagsError}
           loading={loading}
           cases={cases}
+          tags={tags}
+          caseTags={caseTags}
+          setCaseTags={setCaseTags}
           pagedCases={pagedCases}
           tagsById={tagsById}
           caseTagsByCaseId={caseTagsByCaseId}
