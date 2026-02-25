@@ -127,7 +127,6 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
   const [tagDraftIds, setTagDraftIds] = useState<string[]>([]);
   const [initialTagIds, setInitialTagIds] = useState<string[]>([]);
   const renderedOpinionText = preserveNumericReferencePrefixes(opinionText);
-  const renderedOpinionDraft = preserveNumericReferencePrefixes(opinionDraft);
   const tagsById = useMemo(() => mapTagsById(tags), [tags]);
   const sortedTagOptions = useMemo(() => buildTagOptions(tags), [tags]);
   const caseTagIds = useMemo(
@@ -641,12 +640,6 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
                       onKeyUp={handleOpinionSelectionChange}
                       autoSize={{ minRows: 14, maxRows: 30 }}
                     />
-                    <div className="case-detail__opinion-preview">
-                      <h3>Preview</h3>
-                      <div className="case-detail__opinion-content">
-                        <ReactMarkdown>{renderedOpinionDraft}</ReactMarkdown>
-                      </div>
-                    </div>
                   </div>
                 ) : (
                   <div className="case-detail__opinion-content">
