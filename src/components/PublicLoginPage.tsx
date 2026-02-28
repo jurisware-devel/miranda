@@ -6,7 +6,7 @@ const PublicLoginPage: React.FC = () => {
   return (
     <div className="public-login-page">
       <Card className="public-login-card" title="Sign in required">
-        <Authenticator hideSignUp />
+        <Authenticator />
       </Card>
     </div>
   );
