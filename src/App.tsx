@@ -4,6 +4,7 @@ import { useCapabilities } from "./core/auth/useCapabilities";
 import AdminApp from "./shards/admin/AdminApp";
 import PublicApp from "./shards/public/PublicApp";
 import SubApp from "./shards/sub/SubApp";
+import LandingPage from "./components/LandingPage";
 import type { AppRole } from "./core/types";
 import {
   isValidCanonicalCaseId,
@@ -17,6 +18,7 @@ const App: React.FC = () => {
   const isAdminPath = location.pathname.startsWith("/admin");
   const isSubPath = location.pathname.startsWith("/sub");
   const isPubPath = location.pathname.startsWith("/pub");
+  const isPubLoginPath = location.pathname === "/pub/login";
   const canonicalCaseMatch = matchPath("/case/:caseId", location.pathname);
   const canonicalCaseId = canonicalCaseMatch?.params.caseId ?? null;
   const isCanonicalCasePath = canonicalCaseId !== null;
@@ -49,13 +51,15 @@ const App: React.FC = () => {
     if (isCanonicalCasePath) return;
     if (!capabilities.isResolved) return;
     if (isRootPath) {
-      navigate(capabilities.isAuthenticated ? (capabilities.isAdmin ? "/admin" : "/sub") : "/pub", {
-        replace: true,
-      });
+      if (capabilities.isAuthenticated) {
+        navigate(capabilities.isAdmin ? "/admin" : "/sub", {
+          replace: true,
+        });
+      }
       return;
     }
     if (!isKnownPath) {
-      navigate(capabilities.isAuthenticated ? (capabilities.isAdmin ? "/admin" : "/sub") : "/pub", {
+      navigate(capabilities.isAuthenticated ? (capabilities.isAdmin ? "/admin" : "/sub") : "/", {
         replace: true,
       });
       return;
@@ -109,6 +113,18 @@ const App: React.FC = () => {
   }
   if (isSubPath) {
     return <SubApp enableData={canLoadSubData} />;
+  }
+  if (isPubPath && capabilities.isResolved && capabilities.isAuthenticated) {
+    return null;
+  }
+  if (isPubLoginPath && !capabilities.isResolved) {
+    return null;
+  }
+  if (isRootPath && !capabilities.isResolved) {
+    return null;
+  }
+  if (isRootPath && capabilities.isResolved && !capabilities.isAuthenticated) {
+    return <LandingPage />;
   }
   if (isCanonicalCasePath) {
     if (!canonicalCaseId || !isValidCanonicalCaseId(canonicalCaseId)) {

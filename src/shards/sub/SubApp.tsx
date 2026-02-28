@@ -129,7 +129,9 @@ const SubApp: React.FC<SubAppProps> = ({ enableData }) => {
       return;
     }
     if (key === "signout") {
-      void signOut();
+      void signOut().finally(() => {
+        navigate("/", { replace: true });
+      });
     }
   };
 

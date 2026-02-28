@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="104" viewBox="0 0 760 104" role="img" aria-labelledby="title desc">
+  <title id="title">Project Miranda</title>
+  <desc id="desc">Project Miranda logo wordmark with small-caps style lettering.</desc>
+  <text
+    x="380"
+    y="66"
+    text-anchor="middle"
+    fill="#1f5fa8"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="54"
+    font-variant="small-caps"
+    font-weight="700"
+    letter-spacing="2.4"
+  >
+    Project: Miranda
+  </text>
+</svg>

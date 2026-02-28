@@ -1,5 +1,4 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
-import { CloseCircleOutlined } from "@ant-design/icons";
 import { Alert, Button, Input, Select, Spin, message } from "antd";
 import { useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
@@ -122,8 +121,6 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
   const [isEditingMetadata, setIsEditingMetadata] = useState(false);
   const [isSavingMetadata, setIsSavingMetadata] = useState(false);
   const [metadataDraft, setMetadataDraft] = useState<CaseMetadataDraft>(EMPTY_METADATA_DRAFT);
-  const [isEditingTags, setIsEditingTags] = useState(false);
-  const [isSavingTags, setIsSavingTags] = useState(false);
   const [tagDraftIds, setTagDraftIds] = useState<string[]>([]);
   const [initialTagIds, setInitialTagIds] = useState<string[]>([]);
   const renderedOpinionText = preserveNumericReferencePrefixes(opinionText);
@@ -259,7 +256,6 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
     );
     setInitialTagIds(sorted);
     setTagDraftIds(sorted);
-    setIsEditingTags(false);
   }, [caseItem?.caseId, caseTagIds, tagsById]);
 
   useEffect(() => {
@@ -283,112 +279,108 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
     setIsEditingMetadata(false);
   };
 
-  const handleEditTags = () => {
-    setTagDraftIds(initialTagIds);
-    setIsEditingTags(true);
-  };
-
-  const handleCancelEditTags = () => {
-    setTagDraftIds(initialTagIds);
-    setIsEditingTags(false);
-  };
-
-  const handleSaveTags = async () => {
-    if (!caseItem) return;
-
+  const saveCaseTags = async (caseIdValue: string) => {
     const initial = new Set(initialTagIds);
     const draft = new Set(tagDraftIds);
     const createIds = [...draft].filter((tagId) => !initial.has(tagId));
     const deleteIds = [...initial].filter((tagId) => !draft.has(tagId));
 
     if (!createIds.length && !deleteIds.length) {
-      setIsEditingTags(false);
-      return;
+      return false;
     }
 
-    try {
-      setIsSavingTags(true);
-      for (const tagId of createIds) {
-        const result = await client.models.CaseTag.create(
-          { caseId: caseItem.caseId, tagId },
-          { authMode: "userPool" },
-        );
-        if (result.errors?.length) {
-          throw new Error(result.errors[0]?.message ?? "Failed to create case tag");
-        }
+    for (const tagId of createIds) {
+      const result = await client.models.CaseTag.create(
+        { caseId: caseIdValue, tagId },
+        { authMode: "userPool" },
+      );
+      if (result.errors?.length) {
+        throw new Error(result.errors[0]?.message ?? "Failed to create case tag");
       }
-
-      for (const tagId of deleteIds) {
-        const result = await client.models.CaseTag.delete(
-          { caseId: caseItem.caseId, tagId },
-          { authMode: "userPool" },
-        );
-        if (result.errors?.length) {
-          throw new Error(result.errors[0]?.message ?? "Failed to delete case tag");
-        }
-      }
-
-      setCaseTags((current) => {
-        const withoutDeleted = current.filter(
-          (item) => !(item.caseId === caseItem.caseId && deleteIds.includes(item.tagId)),
-        );
-        const existing = new Set(
-          withoutDeleted
-            .filter((item) => item.caseId === caseItem.caseId)
-            .map((item) => item.tagId),
-        );
-        const appended = createIds
-          .filter((tagId) => !existing.has(tagId))
-          .map((tagId) => ({ caseId: caseItem.caseId, tagId }) as CaseTagItem);
-        return [...withoutDeleted, ...appended];
-      });
-
-      setInitialTagIds([...draft]);
-      setIsEditingTags(false);
-      message.success("Case tags saved.");
-    } catch (err) {
-      message.error(err instanceof Error ? err.message : "Failed to save case tags");
-    } finally {
-      setIsSavingTags(false);
     }
+
+    for (const tagId of deleteIds) {
+      const result = await client.models.CaseTag.delete(
+        { caseId: caseIdValue, tagId },
+        { authMode: "userPool" },
+      );
+      if (result.errors?.length) {
+        throw new Error(result.errors[0]?.message ?? "Failed to delete case tag");
+      }
+    }
+
+    setCaseTags((current) => {
+      const withoutDeleted = current.filter(
+        (item) => !(item.caseId === caseIdValue && deleteIds.includes(item.tagId)),
+      );
+      const existing = new Set(
+        withoutDeleted.filter((item) => item.caseId === caseIdValue).map((item) => item.tagId),
+      );
+      const appended = createIds
+        .filter((tagId) => !existing.has(tagId))
+        .map((tagId) => ({ caseId: caseIdValue, tagId }) as CaseTagItem);
+      return [...withoutDeleted, ...appended];
+    });
+
+    setInitialTagIds([...draft]);
+    return true;
   };
 
   const handleEditOpinion = () => {
     setOpinionDraft(opinionText);
+    setTagDraftIds(initialTagIds);
     setIsEditingOpinion(true);
   };
 
   const handleCancelEditOpinion = () => {
     setOpinionDraft(opinionText);
+    setTagDraftIds(initialTagIds);
     setIsEditingOpinion(false);
   };
 
   const handleSaveOpinion = async () => {
     if (!caseItem) return;
-    const key = loadedOpinionKey || buildOpinionStorageKey(caseItem.opinionUrl, caseItem);
-    if (!key) {
-      message.error("Opinion file key is missing.");
+    const opinionChanged = opinionDraft !== opinionText;
+    const tagsChanged =
+      canEditCaseTags &&
+      (tagDraftIds.length !== initialTagIds.length ||
+        tagDraftIds.some((tagId) => !initialTagIds.includes(tagId)));
+
+    if (!opinionChanged && !tagsChanged) {
+      setIsEditingOpinion(false);
       return;
     }
 
     try {
       setIsSavingOpinion(true);
-      const result = await client.mutations.saveOpinionText(
-        {
-          key,
-          markdown: opinionDraft,
-        },
-        { authMode: "userPool" },
-      );
-      if (result.errors?.length) {
-        throw new Error(result.errors[0]?.message ?? "Failed to save opinion text");
+      if (opinionChanged) {
+        const key = loadedOpinionKey || buildOpinionStorageKey(caseItem.opinionUrl, caseItem);
+        if (!key) {
+          message.error("Opinion file key is missing.");
+          return;
+        }
+        const result = await client.mutations.saveOpinionText(
+          {
+            key,
+            markdown: opinionDraft,
+          },
+          { authMode: "userPool" },
+        );
+        if (result.errors?.length) {
+          throw new Error(result.errors[0]?.message ?? "Failed to save opinion text");
+        }
+        setOpinionText(opinionDraft);
+        setOpinionSavedAt(new Date().toLocaleTimeString());
       }
-      setOpinionText(opinionDraft);
+
+      if (tagsChanged) {
+        await saveCaseTags(caseItem.caseId);
+      }
+
       setIsEditingOpinion(false);
-      setOpinionSavedAt(new Date().toLocaleTimeString());
-      message.success("Opinion text saved.");
+      message.success("Saved.");
     } catch (err) {
-      message.error(err instanceof Error ? err.message : "Failed to save opinion text");
+      message.error(err instanceof Error ? err.message : "Failed to save changes");
     } finally {
       setIsSavingOpinion(false);
     }
@@ -480,87 +472,6 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
     }
   };
 
-  const renderTagSection = () => {
-    const tagIds = isEditingTags ? tagDraftIds : initialTagIds;
-    return (
-      <section className="case-metadata-panel__section" aria-label="Case tags panel">
-        <div className="case-metadata-panel__subheader">
-          <h3>Case Tags</h3>
-        </div>
-        {isEditingTags ? (
-          <div className="case-metadata-panel__field">
-            <label htmlFor="case-tags-select">Add or remove tags</label>
-            <Select
-              id="case-tags-select"
-              mode="multiple"
-              allowClear
-              showSearch
-              optionFilterProp="label"
-              value={tagDraftIds}
-              onChange={(values) => setTagDraftIds(values)}
-              options={sortedTagOptions}
-              placeholder="Search and select tags"
-              disabled={isSavingTags}
-            />
-          </div>
-        ) : null}
-        <div className="case-tags-panel__chips">
-          {tagIds.length ? (
-            tagIds.map((tagId) => {
-              const tag = tagsById.get(tagId);
-              const label = tag?.label ?? "Untitled";
-              const background = tag?.color ?? undefined;
-              return (
-                <AdminTagCapsule
-                  key={tagId}
-                  label={label}
-                  background={background}
-                  color={getReadableTextColor(background)}
-                  rightSlot={
-                    isEditingTags ? (
-                      <button
-                        type="button"
-                        className="case-active-tags__remove"
-                        aria-label={`Remove ${label}`}
-                        onClick={() =>
-                          setTagDraftIds((current) => current.filter((value) => value !== tagId))
-                        }
-                      >
-                        <CloseCircleOutlined />
-                      </button>
-                    ) : undefined
-                  }
-                />
-              );
-            })
-          ) : (
-            <span className="case-tags-panel__empty">No tags assigned.</span>
-          )}
-        </div>
-        <div
-          className={`case-metadata-panel__actions${
-            isEditingTags ? " case-metadata-panel__actions--editing" : ""
-          }`}
-        >
-          {isEditingTags ? (
-            <>
-              <Button onClick={handleCancelEditTags} disabled={isSavingTags}>
-                Cancel
-              </Button>
-              <Button type="primary" onClick={handleSaveTags} loading={isSavingTags}>
-                Save Tags
-              </Button>
-            </>
-          ) : (
-            <Button type="primary" onClick={handleEditTags} disabled={!canEditCaseTags}>
-              Edit Tags
-            </Button>
-          )}
-        </div>
-      </section>
-    );
-  };
-
   return (
     <div className="case-detail">
       {error ? <Alert type="error" message={error} showIcon /> : null}
@@ -593,9 +504,23 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
                             onClick={handleSaveOpinion}
                             loading={isSavingOpinion}
                           >
-                            Save Opinion
+                            Save
                           </Button>
                         </div>
+                        {canEditCaseTags ? (
+                          <Select
+                            mode="multiple"
+                            allowClear
+                            showSearch
+                            optionFilterProp="label"
+                            value={tagDraftIds}
+                            onChange={(values) => setTagDraftIds(values)}
+                            options={sortedTagOptions}
+                            placeholder="Select case tags"
+                            disabled={isSavingOpinion}
+                            className="case-detail__editor-tags-select"
+                          />
+                        ) : null}
                         <Button
                           onClick={() => wrapOpinionSelection("**")}
                           disabled={isSavingOpinion}
@@ -623,6 +548,21 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
                         <Button type="primary" onClick={handleEditOpinion}>
                           Edit Opinion
                         </Button>
+                        <div className="case-detail__editor-tags-chips">
+                          {initialTagIds.map((tagId) => {
+                            const tag = tagsById.get(tagId);
+                            const label = tag?.label ?? "Untitled";
+                            const background = tag?.color ?? undefined;
+                            return (
+                              <AdminTagCapsule
+                                key={tagId}
+                                label={label}
+                                background={background}
+                                color={getReadableTextColor(background)}
+                              />
+                            );
+                          })}
+                        </div>
                       </div>
                     )}
                     {opinionSavedAt ? (
@@ -874,7 +814,6 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
                     }
                   />
                 </div>
-                {isWideLayout ? renderTagSection() : null}
               </div>
               <div
                 className={`case-metadata-panel__actions${
@@ -900,11 +839,6 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
                   </Button>
                 )}
               </div>
-            </aside>
-          ) : null}
-          {!isWideLayout ? (
-            <aside className="case-metadata-panel case-metadata-panel--mobile" aria-label="Case tags panel">
-              {renderTagSection()}
             </aside>
           ) : null}
         </div>

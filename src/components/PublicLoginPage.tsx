@@ -1,13 +1,18 @@
 import React from "react";
-import { Card } from "antd";
 import { Authenticator } from "@aws-amplify/ui-react";
+import { useCapabilities } from "../core/auth/useCapabilities";
 
 const PublicLoginPage: React.FC = () => {
+  const capabilities = useCapabilities();
+
+  // Hide only when already authenticated; App-level routing handles redirect.
+  if (capabilities.isAuthenticated) {
+    return null;
+  }
+
   return (
     <div className="public-login-page">
-      <Card className="public-login-card" title="Sign in required">
-        <Authenticator />
-      </Card>
+      <Authenticator />
     </div>
   );
 };

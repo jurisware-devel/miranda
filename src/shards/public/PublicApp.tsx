@@ -123,7 +123,7 @@ const PublicApp: React.FC = () => {
     navigate("/pub/login");
   };
 
-  const publicProfileItems: MenuProps["items"] = [{ key: "login", label: "Login" }];
+  const publicProfileItems: MenuProps["items"] = [{ key: "login", label: "Sign In" }];
 
   return (
     <Layout className="app-shell" style={{ background: "transparent" }}>

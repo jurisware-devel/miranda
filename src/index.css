@@ -1017,6 +1017,20 @@ body.route-theme-pub {
   gap: 8px;
 }
 
+.case-detail__editor-tags-chips {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.case-detail__editor-tags-select {
+  min-width: 260px;
+  max-width: 360px;
+}
+
 .case-detail__editor-actions-bold {
   margin-left: auto;
 }
