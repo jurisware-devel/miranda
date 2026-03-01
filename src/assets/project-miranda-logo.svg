@@ -5,11 +5,11 @@
     x="380"
     y="66"
     text-anchor="middle"
-    fill="#1f5fa8"
-    font-family="Georgia, 'Times New Roman', serif"
+    fill="#000000"
+    font-family="Inter, system-ui, Avenir, Helvetica, Arial, sans-serif"
     font-size="54"
     font-variant="small-caps"
-    font-weight="700"
+    font-weight="900"
     letter-spacing="2.4"
   >
     Project: Miranda
