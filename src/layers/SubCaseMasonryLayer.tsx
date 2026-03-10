@@ -3,7 +3,7 @@ import { Alert, Masonry, Spin } from "antd";
 import { CloseCircleOutlined } from "@ant-design/icons";
 import SubCaseCard from "../components/SubCaseCard";
 import type { CaseFilterControls } from "../core/filterControls";
-import type { CaseItem, PhaseItem } from "../core/types";
+import type { CaseItem, PhaseId } from "../core/types";
 import type { TagMeta } from "../core/utils/tagUtils";
 import SubTagCapsule from "../components/SubTagCapsule";
 import { getReadableTextColor } from "../core/utils/colorUtils";
@@ -17,7 +17,7 @@ type SubCaseMasonryLayerProps = {
   cases: CaseItem[];
   tagsById: Map<string, TagMeta>;
   caseTagsByCaseId: Map<string, string[]>;
-  casePhasesByCaseId: Map<string, PhaseItem[]>;
+  casePhasesByCaseId: Map<string, PhaseId[]>;
   onOpenCase: (caseId: string) => void;
   filters: CaseFilterControls;
 };

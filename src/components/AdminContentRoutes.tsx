@@ -5,7 +5,7 @@ import AdminCaseDetailLayer from "../layers/AdminCaseDetailLayer";
 import AdminCaseMasonryLayer from "../layers/AdminCaseMasonryLayer";
 import type { CaseFilterControls } from "../core/filterControls";
 import type { AppCapabilities } from "../core/types";
-import type { CaseItem, CaseTagItem, PhaseItem, TagItem } from "../core/types";
+import type { CaseItem, CaseTagItem, PhaseId, TagItem } from "../core/types";
 import type { TagMeta } from "../core/utils/tagUtils";
 
 type AdminContentRoutesProps = {
@@ -23,7 +23,7 @@ type AdminContentRoutesProps = {
   pagedCases: CaseItem[];
   tagsById: Map<string, TagMeta>;
   caseTagsByCaseId: Map<string, string[]>;
-  casePhasesByCaseId: Map<string, PhaseItem[]>;
+  casePhasesByCaseId: Map<string, PhaseId[]>;
   filters: CaseFilterControls;
 };
 

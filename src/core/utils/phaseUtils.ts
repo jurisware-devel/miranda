@@ -1,6 +1,6 @@
-import type { CasePhaseItem, PhaseItem } from "../types";
+import type { CasePhaseItem, PhaseId, PhaseItem } from "../types";
 
-const PHASE_ORDER: PhaseItem[] = [
+const PHASE_ORDER: PhaseId[] = [
   "ARRAIGN_LCC",
   "PRELIM_HRG",
   "LOCAL_CRIMINAL_COURT",
@@ -16,7 +16,7 @@ const PHASE_ORDER: PhaseItem[] = [
 ];
 
 const PHASE_ORDER_INDEX = new Map(PHASE_ORDER.map((phase, index) => [phase, index]));
-const PHASE_LABELS: Record<PhaseItem, string> = {
+const DEFAULT_PHASE_LABELS: Record<PhaseId, string> = {
   ARRAIGN_LCC: "Arraign (LCC)",
   PRELIM_HRG: "Prelim. Hrg.",
   LOCAL_CRIMINAL_COURT: "Local Criminal Court",
@@ -31,10 +31,14 @@ const PHASE_LABELS: Record<PhaseItem, string> = {
   SENTENCE: "Sentence",
 };
 
-export const getPhaseLabel = (phase: PhaseItem) => PHASE_LABELS[phase] ?? phase;
+export const mapPhasesById = (phases: PhaseItem[]) =>
+  new Map(phases.map((phase) => [phase.phaseId, phase.label]));
+
+export const getPhaseLabel = (phaseId: PhaseId, phasesById?: Map<string, string>) =>
+  phasesById?.get(phaseId) ?? DEFAULT_PHASE_LABELS[phaseId] ?? phaseId;
 
 export const mapCasePhasesByCaseId = (casePhases: CasePhaseItem[]) => {
-  const byCase = new Map<string, PhaseItem[]>();
+  const byCase = new Map<string, PhaseId[]>();
 
   for (const item of casePhases) {
     if (!byCase.has(item.caseId)) {
@@ -42,8 +46,8 @@ export const mapCasePhasesByCaseId = (casePhases: CasePhaseItem[]) => {
     }
     const phases = byCase.get(item.caseId);
     if (!phases) continue;
-    if (!phases.includes(item.phase)) {
-      phases.push(item.phase);
+    if (!phases.includes(item.phaseId)) {
+      phases.push(item.phaseId);
     }
   }
 

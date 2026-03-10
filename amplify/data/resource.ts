@@ -7,20 +7,6 @@ Case IDs use the existing unique prefix (e.g. "2025_00904").
 =========================================================================*/
 const schema = a.schema({
   Court: a.enum(['scotus', 'coa', 'ad3', 'albany']),
-  Phase: a.enum([
-    'ARRAIGN_LCC',
-    'PRELIM_HRG',
-    'LOCAL_CRIMINAL_COURT',
-    'GRAND_JURY',
-    'SUPERIOR_CRIMINAL_COURT',
-    'ARRAIGN_SCC',
-    'DISCOVERY',
-    'MOTIONS',
-    'PRETRIAL_HEARINGS',
-    'PLEA',
-    'TRIAL',
-    'SENTENCE',
-  ]),
 
   Case: a
     .model({
@@ -62,6 +48,18 @@ const schema = a.schema({
       allow.group("Admin").to(["create", "update", "delete"]),
     ]),
 
+  Phase: a
+    .model({
+      phaseId: a.string().required(),
+      label: a.string().required(),
+    })
+    .identifier(["phaseId"])
+    .authorization((allow) => [
+      allow.guest().to(["read"]),
+      allow.authenticated().to(["read"]),
+      allow.group("Admin").to(["create", "update", "delete"]),
+    ]),
+
   CaseTag: a
     .model({
       caseId: a.string().required(),
@@ -78,10 +76,12 @@ const schema = a.schema({
   CasePhase: a
     .model({
       caseId: a.string().required(),
-      phase: a.ref('Phase').required(),
+      phaseId: a.string().required(),
     })
-    .identifier(["caseId", "phase"])
-    .secondaryIndexes((index) => [index("phase").sortKeys(["caseId"])])
+    .identifier(["caseId", "phaseId"])
+    .secondaryIndexes((index) => [
+      index("phaseId").sortKeys(["caseId"]),
+    ])
     .authorization((allow) => [
       allow.guest().to(["read"]),
       allow.authenticated().to(["read"]),

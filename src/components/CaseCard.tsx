@@ -2,7 +2,7 @@ import React from "react";
 import { Card } from "antd";
 import ReactMarkdown from "react-markdown";
 import TagCapsule from "./TagCapsule";
-import type { CaseItem, PhaseItem } from "../core/types";
+import type { CaseItem, PhaseId } from "../core/types";
 import { getPhaseLabel } from "../core/utils/phaseUtils";
 import type { TagMeta } from "../core/utils/tagUtils";
 import { formatCaseCitationLine, getCourtBadgeLabel, getCourtCode } from "../core/utils/caseUtils";
@@ -11,7 +11,7 @@ import { getReadableTextColor } from "../core/utils/colorUtils";
 type CaseCardProps = {
   caseItem: CaseItem;
   index: number;
-  phases: PhaseItem[];
+  phases: PhaseId[];
   tagIds: string[];
   tagsById: Map<string, TagMeta>;
   onOpenCase: (caseId: string) => void;

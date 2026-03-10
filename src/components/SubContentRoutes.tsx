@@ -4,7 +4,7 @@ import SubPlaceholderPage from "./SubPlaceholderPage";
 import SubCaseDetailLayer from "../layers/SubCaseDetailLayer";
 import SubCaseMasonryLayer from "../layers/SubCaseMasonryLayer";
 import type { CaseFilterControls } from "../core/filterControls";
-import type { CaseItem, PhaseItem } from "../core/types";
+import type { CaseItem, PhaseId } from "../core/types";
 import type { TagMeta } from "../core/utils/tagUtils";
 
 type SubContentRoutesProps = {
@@ -17,7 +17,7 @@ type SubContentRoutesProps = {
   pagedCases: CaseItem[];
   tagsById: Map<string, TagMeta>;
   caseTagsByCaseId: Map<string, string[]>;
-  casePhasesByCaseId: Map<string, PhaseItem[]>;
+  casePhasesByCaseId: Map<string, PhaseId[]>;
   filters: CaseFilterControls;
   isXlUp: boolean;
 };

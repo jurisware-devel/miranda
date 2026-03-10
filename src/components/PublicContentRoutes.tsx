@@ -3,7 +3,7 @@ import { Navigate, Route, Routes, useNavigate } from "react-router-dom";
 import CaseDetailLayer from "../layers/CaseDetailLayer";
 import CaseMasonryLayer from "../layers/CaseMasonryLayer";
 import PublicLoginPage from "./PublicLoginPage";
-import type { CaseItem, PhaseItem } from "../core/types";
+import type { CaseItem, PhaseId } from "../core/types";
 import type { TagMeta } from "../core/utils/tagUtils";
 import type { CaseFilterControls } from "../core/filterControls";
 
@@ -17,7 +17,7 @@ type PublicContentRoutesProps = {
   pagedCases: CaseItem[];
   tagsById: Map<string, TagMeta>;
   caseTagsByCaseId: Map<string, string[]>;
-  casePhasesByCaseId: Map<string, PhaseItem[]>;
+  casePhasesByCaseId: Map<string, PhaseId[]>;
   filters: CaseFilterControls;
 };
 
