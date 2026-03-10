@@ -1,21 +1,37 @@
 import type { CasePhaseItem, PhaseItem } from "../types";
 
 const PHASE_ORDER: PhaseItem[] = [
-  "Arraign (LCC)",
-  "Prelim. Hrg.",
-  "Local Criminal Court",
-  "Grand Jury",
-  "Superior Criminal Court",
-  "Arraign (SCC)",
-  "Discovery",
-  "Motions",
-  "Pretrial Hearings",
-  "Plea",
-  "Trial",
-  "Sentence",
+  "ARRAIGN_LCC",
+  "PRELIM_HRG",
+  "LOCAL_CRIMINAL_COURT",
+  "GRAND_JURY",
+  "SUPERIOR_CRIMINAL_COURT",
+  "ARRAIGN_SCC",
+  "DISCOVERY",
+  "MOTIONS",
+  "PRETRIAL_HEARINGS",
+  "PLEA",
+  "TRIAL",
+  "SENTENCE",
 ];
 
 const PHASE_ORDER_INDEX = new Map(PHASE_ORDER.map((phase, index) => [phase, index]));
+const PHASE_LABELS: Record<PhaseItem, string> = {
+  ARRAIGN_LCC: "Arraign (LCC)",
+  PRELIM_HRG: "Prelim. Hrg.",
+  LOCAL_CRIMINAL_COURT: "Local Criminal Court",
+  GRAND_JURY: "Grand Jury",
+  SUPERIOR_CRIMINAL_COURT: "Superior Criminal Court",
+  ARRAIGN_SCC: "Arraign (SCC)",
+  DISCOVERY: "Discovery",
+  MOTIONS: "Motions",
+  PRETRIAL_HEARINGS: "Pretrial Hearings",
+  PLEA: "Plea",
+  TRIAL: "Trial",
+  SENTENCE: "Sentence",
+};
+
+export const getPhaseLabel = (phase: PhaseItem) => PHASE_LABELS[phase] ?? phase;
 
 export const mapCasePhasesByCaseId = (casePhases: CasePhaseItem[]) => {
   const byCase = new Map<string, PhaseItem[]>();

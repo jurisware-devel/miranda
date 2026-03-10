@@ -3,6 +3,7 @@ import { Card } from "antd";
 import ReactMarkdown from "react-markdown";
 import TagCapsule from "./TagCapsule";
 import type { CaseItem, PhaseItem } from "../core/types";
+import { getPhaseLabel } from "../core/utils/phaseUtils";
 import type { TagMeta } from "../core/utils/tagUtils";
 import { formatCaseCitationLine, getCourtBadgeLabel, getCourtCode } from "../core/utils/caseUtils";
 import { getReadableTextColor } from "../core/utils/colorUtils";
@@ -52,7 +53,7 @@ const CaseCard: React.FC<CaseCardProps> = ({
         >
           {phases.map((phase) => (
             <span key={phase} className="grid-card__phase-capsule">
-              {phase}
+              {getPhaseLabel(phase)}
             </span>
           ))}
         </div>
