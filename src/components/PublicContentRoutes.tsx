@@ -3,7 +3,7 @@ import { Navigate, Route, Routes, useNavigate } from "react-router-dom";
 import CaseDetailLayer from "../layers/CaseDetailLayer";
 import CaseMasonryLayer from "../layers/CaseMasonryLayer";
 import PublicLoginPage from "./PublicLoginPage";
-import type { CaseItem } from "../core/types";
+import type { CaseItem, PhaseItem } from "../core/types";
 import type { TagMeta } from "../core/utils/tagUtils";
 import type { CaseFilterControls } from "../core/filterControls";
 
@@ -11,11 +11,13 @@ type PublicContentRoutesProps = {
   error: string | null;
   tagsError: string | null;
   caseTagsError: string | null;
+  casePhasesError: string | null;
   loading: boolean;
   cases: CaseItem[];
   pagedCases: CaseItem[];
   tagsById: Map<string, TagMeta>;
   caseTagsByCaseId: Map<string, string[]>;
+  casePhasesByCaseId: Map<string, PhaseItem[]>;
   filters: CaseFilterControls;
 };
 
@@ -23,11 +25,13 @@ const PublicContentRoutes: React.FC<PublicContentRoutesProps> = ({
   error,
   tagsError,
   caseTagsError,
+  casePhasesError,
   loading,
   cases,
   pagedCases,
   tagsById,
   caseTagsByCaseId,
+  casePhasesByCaseId,
   filters,
 }) => {
   const navigate = useNavigate();
@@ -41,10 +45,12 @@ const PublicContentRoutes: React.FC<PublicContentRoutesProps> = ({
             error={error}
             tagsError={tagsError}
             caseTagsError={caseTagsError}
+            casePhasesError={casePhasesError}
             loading={loading}
             cases={pagedCases}
             tagsById={tagsById}
             caseTagsByCaseId={caseTagsByCaseId}
+            casePhasesByCaseId={casePhasesByCaseId}
             onOpenCase={(caseId) => navigate(`/pub/case/${caseId}`)}
             filters={filters}
           />

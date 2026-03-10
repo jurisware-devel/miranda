@@ -2,7 +2,7 @@ import React from "react";
 import { Alert, Masonry, Spin } from "antd";
 import { CloseCircleOutlined } from "@ant-design/icons";
 import CaseCard from "../components/CaseCard";
-import type { CaseItem } from "../core/types";
+import type { CaseItem, PhaseItem } from "../core/types";
 import type { TagMeta } from "../core/utils/tagUtils";
 import TagCapsule from "../components/TagCapsule";
 import { getReadableTextColor } from "../core/utils/colorUtils";
@@ -12,10 +12,12 @@ type CaseMasonryLayerProps = {
   error: string | null;
   tagsError: string | null;
   caseTagsError: string | null;
+  casePhasesError: string | null;
   loading: boolean;
   cases: CaseItem[];
   tagsById: Map<string, TagMeta>;
   caseTagsByCaseId: Map<string, string[]>;
+  casePhasesByCaseId: Map<string, PhaseItem[]>;
   onOpenCase: (caseId: string) => void;
   filters: CaseFilterControls;
 };
@@ -24,10 +26,12 @@ const CaseMasonryLayer: React.FC<CaseMasonryLayerProps> = ({
   error,
   tagsError,
   caseTagsError,
+  casePhasesError,
   loading,
   cases,
   tagsById,
   caseTagsByCaseId,
+  casePhasesByCaseId,
   onOpenCase,
   filters,
 }) => {
@@ -74,6 +78,7 @@ const CaseMasonryLayer: React.FC<CaseMasonryLayerProps> = ({
       {error ? <Alert type="error" message={error} showIcon /> : null}
       {tagsError ? <Alert type="error" message={tagsError} showIcon /> : null}
       {caseTagsError ? <Alert type="error" message={caseTagsError} showIcon /> : null}
+      {casePhasesError ? <Alert type="error" message={casePhasesError} showIcon /> : null}
       {loading ? (
         <div className="card-grid__loading">
           <Spin />
@@ -85,10 +90,12 @@ const CaseMasonryLayer: React.FC<CaseMasonryLayerProps> = ({
           items={masonryItems}
           itemRender={({ data, index }) => {
             const tagIds = caseTagsByCaseId.get(data.caseId) ?? [];
+            const phases = casePhasesByCaseId.get(data.caseId) ?? [];
             return (
               <CaseCard
                 caseItem={data}
                 index={index}
+                phases={phases}
                 tagIds={tagIds}
                 tagsById={tagsById}
                 onOpenCase={onOpenCase}

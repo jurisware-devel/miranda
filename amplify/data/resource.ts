@@ -7,6 +7,20 @@ Case IDs use the existing unique prefix (e.g. "2025_00904").
 =========================================================================*/
 const schema = a.schema({
   Court: a.enum(['scotus', 'coa', 'ad3', 'albany']),
+  Phase: a.enum([
+    'Arraign (LCC)',
+    'Prelim. Hrg.',
+    'Local Criminal Court',
+    'Grand Jury',
+    'Superior Criminal Court',
+    'Arraign (SCC)',
+    'Discovery',
+    'Motions',
+    'Pretrial Hearings',
+    'Plea',
+    'Trial',
+    'Sentence',
+  ]),
 
   Case: a
     .model({
@@ -55,6 +69,19 @@ const schema = a.schema({
     })
     .identifier(["caseId", "tagId"])
     .secondaryIndexes((index) => [index("tagId").sortKeys(["caseId"])])
+    .authorization((allow) => [
+      allow.guest().to(["read"]),
+      allow.authenticated().to(["read"]),
+      allow.group("Admin").to(["create", "delete"]),
+    ]),
+
+  CasePhase: a
+    .model({
+      caseId: a.string().required(),
+      phase: a.ref('Phase').required(),
+    })
+    .identifier(["caseId", "phase"])
+    .secondaryIndexes((index) => [index("phase").sortKeys(["caseId"])])
     .authorization((allow) => [
       allow.guest().to(["read"]),
       allow.authenticated().to(["read"]),

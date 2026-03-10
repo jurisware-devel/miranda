@@ -5,7 +5,7 @@ import AdminCaseDetailLayer from "../layers/AdminCaseDetailLayer";
 import AdminCaseMasonryLayer from "../layers/AdminCaseMasonryLayer";
 import type { CaseFilterControls } from "../core/filterControls";
 import type { AppCapabilities } from "../core/types";
-import type { CaseItem, CaseTagItem, TagItem } from "../core/types";
+import type { CaseItem, CaseTagItem, PhaseItem, TagItem } from "../core/types";
 import type { TagMeta } from "../core/utils/tagUtils";
 
 type AdminContentRoutesProps = {
@@ -14,6 +14,7 @@ type AdminContentRoutesProps = {
   error: string | null;
   tagsError: string | null;
   caseTagsError: string | null;
+  casePhasesError: string | null;
   loading: boolean;
   cases: CaseItem[];
   tags: TagItem[];
@@ -22,6 +23,7 @@ type AdminContentRoutesProps = {
   pagedCases: CaseItem[];
   tagsById: Map<string, TagMeta>;
   caseTagsByCaseId: Map<string, string[]>;
+  casePhasesByCaseId: Map<string, PhaseItem[]>;
   filters: CaseFilterControls;
 };
 
@@ -50,6 +52,7 @@ const AdminContentRoutes: React.FC<AdminContentRoutesProps> = ({
   error,
   tagsError,
   caseTagsError,
+  casePhasesError,
   loading,
   cases,
   tags,
@@ -58,6 +61,7 @@ const AdminContentRoutes: React.FC<AdminContentRoutesProps> = ({
   pagedCases,
   tagsById,
   caseTagsByCaseId,
+  casePhasesByCaseId,
   filters,
 }) => {
   const navigate = useNavigate();
@@ -72,10 +76,12 @@ const AdminContentRoutes: React.FC<AdminContentRoutesProps> = ({
               error={error}
               tagsError={tagsError}
               caseTagsError={caseTagsError}
+              casePhasesError={casePhasesError}
               loading={loading}
               cases={pagedCases}
               tagsById={tagsById}
               caseTagsByCaseId={caseTagsByCaseId}
+              casePhasesByCaseId={casePhasesByCaseId}
               onOpenCase={(caseId) => navigate(`/admin/case/${caseId}`)}
               filters={filters}
             />

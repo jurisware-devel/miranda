@@ -3,6 +3,8 @@ import type { Schema } from "../../amplify/data/resource";
 export type CaseItem = Schema["Case"]["type"];
 export type TagItem = Schema["Tag"]["type"];
 export type CaseTagItem = Schema["CaseTag"]["type"];
+export type PhaseItem = Schema["Phase"]["type"];
+export type CasePhaseItem = Schema["CasePhase"]["type"];
 
 export type AppRole = "guest" | "user" | "admin";
 

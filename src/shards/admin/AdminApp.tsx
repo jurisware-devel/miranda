@@ -9,6 +9,7 @@ import AdminShellFooter from "../../components/AdminShellFooter";
 import AdminShellHeader from "../../components/AdminShellHeader";
 import type { CaseFilterControls } from "../../core/filterControls";
 import type { AppCapabilities } from "../../core/types";
+import { mapCasePhasesByCaseId } from "../../core/utils/phaseUtils";
 import { mapCaseTagsByCaseId, mapTagsById } from "../../core/utils/tagUtils";
 import { useAdminCaseFilters } from "./hooks/useAdminCaseFilters";
 import { useAdminCasesData } from "./hooks/useAdminCasesData";
@@ -23,9 +24,15 @@ type AdminAppProps = {
 
 const AdminApp: React.FC<AdminAppProps> = ({ capabilities }) => {
   const { cases, loading, error } = useAdminCasesData(capabilities.isResolved);
-  const { tags, caseTags, setCaseTags, tagsError, caseTagsError } = useAdminTagsData(
-    capabilities.isResolved,
-  );
+  const {
+    tags,
+    caseTags,
+    setCaseTags,
+    casePhases,
+    tagsError,
+    caseTagsError,
+    casePhasesError,
+  } = useAdminTagsData(capabilities.isResolved);
   const {
     authorOptions,
     tagOptions,
@@ -65,6 +72,7 @@ const AdminApp: React.FC<AdminAppProps> = ({ capabilities }) => {
     () => mapCaseTagsByCaseId(caseTags, tagsById),
     [caseTags, tagsById],
   );
+  const casePhasesByCaseId = useMemo(() => mapCasePhasesByCaseId(casePhases), [casePhases]);
   const filters = useMemo<CaseFilterControls>(
     () => ({
       authorOptions,
@@ -162,6 +170,7 @@ const AdminApp: React.FC<AdminAppProps> = ({ capabilities }) => {
           error={error}
           tagsError={tagsError}
           caseTagsError={caseTagsError}
+          casePhasesError={casePhasesError}
           loading={loading}
           cases={cases}
           tags={tags}
@@ -170,6 +179,7 @@ const AdminApp: React.FC<AdminAppProps> = ({ capabilities }) => {
           pagedCases={pagedCases}
           tagsById={tagsById}
           caseTagsByCaseId={caseTagsByCaseId}
+          casePhasesByCaseId={casePhasesByCaseId}
           filters={filters}
         />
       </Content>

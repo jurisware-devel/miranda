@@ -3,7 +3,7 @@ import { Alert, Masonry, Spin } from "antd";
 import { CloseCircleOutlined } from "@ant-design/icons";
 import AdminCaseCard from "../components/AdminCaseCard";
 import type { CaseFilterControls } from "../core/filterControls";
-import type { CaseItem } from "../core/types";
+import type { CaseItem, PhaseItem } from "../core/types";
 import type { TagMeta } from "../core/utils/tagUtils";
 import AdminTagCapsule from "../components/AdminTagCapsule";
 import { getReadableTextColor } from "../core/utils/colorUtils";
@@ -12,10 +12,12 @@ type AdminCaseMasonryLayerProps = {
   error: string | null;
   tagsError: string | null;
   caseTagsError: string | null;
+  casePhasesError: string | null;
   loading: boolean;
   cases: CaseItem[];
   tagsById: Map<string, TagMeta>;
   caseTagsByCaseId: Map<string, string[]>;
+  casePhasesByCaseId: Map<string, PhaseItem[]>;
   onOpenCase: (caseId: string) => void;
   filters: CaseFilterControls;
 };
@@ -24,10 +26,12 @@ const AdminCaseMasonryLayer: React.FC<AdminCaseMasonryLayerProps> = ({
   error,
   tagsError,
   caseTagsError,
+  casePhasesError,
   loading,
   cases,
   tagsById,
   caseTagsByCaseId,
+  casePhasesByCaseId,
   onOpenCase,
   filters,
 }) => {
@@ -74,6 +78,7 @@ const AdminCaseMasonryLayer: React.FC<AdminCaseMasonryLayerProps> = ({
       {error ? <Alert type="error" message={error} showIcon /> : null}
       {tagsError ? <Alert type="error" message={tagsError} showIcon /> : null}
       {caseTagsError ? <Alert type="error" message={caseTagsError} showIcon /> : null}
+      {casePhasesError ? <Alert type="error" message={casePhasesError} showIcon /> : null}
       {loading ? (
         <div className="card-grid__loading">
           <Spin />
@@ -85,10 +90,12 @@ const AdminCaseMasonryLayer: React.FC<AdminCaseMasonryLayerProps> = ({
           items={masonryItems}
           itemRender={({ data, index }) => {
             const tagIds = caseTagsByCaseId.get(data.caseId) ?? [];
+            const phases = casePhasesByCaseId.get(data.caseId) ?? [];
             return (
               <AdminCaseCard
                 caseItem={data}
                 index={index}
+                phases={phases}
                 tagIds={tagIds}
                 tagsById={tagsById}
                 onOpenCase={onOpenCase}

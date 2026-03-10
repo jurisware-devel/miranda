@@ -2,7 +2,7 @@ import React from "react";
 import { Card } from "antd";
 import ReactMarkdown from "react-markdown";
 import TagCapsule from "./TagCapsule";
-import type { CaseItem } from "../core/types";
+import type { CaseItem, PhaseItem } from "../core/types";
 import type { TagMeta } from "../core/utils/tagUtils";
 import { formatCaseCitationLine, getCourtBadgeLabel, getCourtCode } from "../core/utils/caseUtils";
 import { getReadableTextColor } from "../core/utils/colorUtils";
@@ -10,6 +10,7 @@ import { getReadableTextColor } from "../core/utils/colorUtils";
 type CaseCardProps = {
   caseItem: CaseItem;
   index: number;
+  phases: PhaseItem[];
   tagIds: string[];
   tagsById: Map<string, TagMeta>;
   onOpenCase: (caseId: string) => void;
@@ -18,6 +19,7 @@ type CaseCardProps = {
 const CaseCard: React.FC<CaseCardProps> = ({
   caseItem,
   index,
+  phases,
   tagIds,
   tagsById,
   onOpenCase,
@@ -43,6 +45,18 @@ const CaseCard: React.FC<CaseCardProps> = ({
       </div>
       <div className="grid-card__meta">{citeLine}</div>
       <div className="grid-card__author">{caseItem.authoringJudge || "Memorandum"}</div>
+      {phases.length ? (
+        <div
+          className="grid-card__phases"
+          style={{ gridTemplateColumns: `repeat(${phases.length}, minmax(0, 1fr))` }}
+        >
+          {phases.map((phase) => (
+            <span key={phase} className="grid-card__phase-capsule">
+              {phase}
+            </span>
+          ))}
+        </div>
+      ) : null}
       <div className="grid-card__tags">
         {tagIds.length
           ? tagIds.map((tagId) => (

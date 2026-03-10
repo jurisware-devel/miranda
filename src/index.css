@@ -496,6 +496,30 @@ body.route-theme-pub {
   margin-top: 8px;
 }
 
+.grid-card__phases {
+  display: grid;
+  gap: 6px;
+  margin-top: 8px;
+  width: 100%;
+}
+
+.grid-card__phase-capsule {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid #bfdbfe;
+  background: #eff6ff;
+  color: #1e3a8a;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+}
+
 .tag-capsule {
   display: inline-flex;
   align-items: center;
