@@ -52,6 +52,7 @@ const schema = a.schema({
     .model({
       phaseId: a.string().required(),
       label: a.string().required(),
+      sort_order: a.integer(),
     })
     .identifier(["phaseId"])
     .authorization((allow) => [

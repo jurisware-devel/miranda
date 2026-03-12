@@ -1,22 +1,30 @@
 import type { CasePhaseItem, PhaseId, PhaseItem } from "../types";
 
 const PHASE_ORDER: PhaseId[] = [
+  "INVEST_ARREST",
+  "YOUTH_PART",
+  "REMOVAL_YOUTH_PART",
+  "LOCAL_CRIMINAL_COURT",
   "ARRAIGN_LCC",
   "PRELIM_HRG",
-  "LOCAL_CRIMINAL_COURT",
   "GRAND_JURY",
   "SUPERIOR_CRIMINAL_COURT",
   "ARRAIGN_SCC",
   "DISCOVERY",
   "MOTIONS",
   "PRETRIAL_HEARINGS",
+  "SUPP_HEARING",
   "PLEA",
   "TRIAL",
   "SENTENCE",
+  "APPEAL",
 ];
 
 const PHASE_ORDER_INDEX = new Map(PHASE_ORDER.map((phase, index) => [phase, index]));
 const DEFAULT_PHASE_LABELS: Record<PhaseId, string> = {
+  INVEST_ARREST: "Invest/Arrest",
+  YOUTH_PART: "Youth Part",
+  REMOVAL_YOUTH_PART: "Removal (Youth Part)",
   ARRAIGN_LCC: "Arraign (LCC)",
   PRELIM_HRG: "Prelim. Hrg.",
   LOCAL_CRIMINAL_COURT: "Local Criminal Court",
@@ -26,9 +34,11 @@ const DEFAULT_PHASE_LABELS: Record<PhaseId, string> = {
   DISCOVERY: "Discovery",
   MOTIONS: "Motions",
   PRETRIAL_HEARINGS: "Pretrial Hearings",
+  SUPP_HEARING: "Supp. Hearing",
   PLEA: "Plea",
   TRIAL: "Trial",
   SENTENCE: "Sentence",
+  APPEAL: "Appeal",
 };
 
 export const mapPhasesById = (phases: PhaseItem[]) =>

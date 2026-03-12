@@ -7,18 +7,23 @@ import { generateClient } from "aws-amplify/data";
 import { signIn } from "aws-amplify/auth";
 
 const PHASES = [
-  { phaseId: "ARRAIGN_LCC", label: "Arraign (LCC)" },
-  { phaseId: "PRELIM_HRG", label: "Prelim. Hrg." },
-  { phaseId: "LOCAL_CRIMINAL_COURT", label: "Local Criminal Court" },
-  { phaseId: "GRAND_JURY", label: "Grand Jury" },
-  { phaseId: "SUPERIOR_CRIMINAL_COURT", label: "Superior Criminal Court" },
-  { phaseId: "ARRAIGN_SCC", label: "Arraign (SCC)" },
-  { phaseId: "DISCOVERY", label: "Discovery" },
-  { phaseId: "MOTIONS", label: "Motions" },
-  { phaseId: "PRETRIAL_HEARINGS", label: "Pretrial Hearings" },
-  { phaseId: "PLEA", label: "Plea" },
-  { phaseId: "TRIAL", label: "Trial" },
-  { phaseId: "SENTENCE", label: "Sentence" },
+  { phaseId: "INVEST_ARREST", label: "Invest/Arrest", sort_order: 10 },
+  { phaseId: "YOUTH_PART", label: "Youth Part", sort_order: 20 },
+  { phaseId: "REMOVAL_YOUTH_PART", label: "Removal (Youth Part)", sort_order: 30 },
+  { phaseId: "LOCAL_CRIMINAL_COURT", label: "Local Criminal Court", sort_order: 40 },
+  { phaseId: "ARRAIGN_LCC", label: "Arraign (LCC)", sort_order: 50 },
+  { phaseId: "PRELIM_HRG", label: "Prelim. Hrg.", sort_order: 60 },
+  { phaseId: "GRAND_JURY", label: "Grand Jury", sort_order: 70 },
+  { phaseId: "SUPERIOR_CRIMINAL_COURT", label: "Superior Criminal Court", sort_order: 80 },
+  { phaseId: "ARRAIGN_SCC", label: "Arraign (SCC)", sort_order: 90 },
+  { phaseId: "DISCOVERY", label: "Discovery", sort_order: 100 },
+  { phaseId: "MOTIONS", label: "Motions", sort_order: 110 },
+  { phaseId: "PRETRIAL_HEARINGS", label: "Pretrial Hearings", sort_order: 120 },
+  { phaseId: "SUPP_HEARING", label: "Supp. Hearing", sort_order: 130 },
+  { phaseId: "PLEA", label: "Plea", sort_order: 140 },
+  { phaseId: "TRIAL", label: "Trial", sort_order: 150 },
+  { phaseId: "SENTENCE", label: "Sentence", sort_order: 160 },
+  { phaseId: "APPEAL", label: "Appeal", sort_order: 170 },
 ];
 
 const __filename = fileURLToPath(import.meta.url);
@@ -58,16 +63,34 @@ if (listResult.errors?.length) {
 }
 
 const existing = new Map((listResult.data ?? []).map((item) => [item.phaseId, item]));
+const knownById = new Map(PHASES.map((phase) => [phase.phaseId, phase]));
 const missing = PHASES.filter((phase) => !existing.has(phase.phaseId));
-const relabel = PHASES.filter((phase) => {
+const knownReorder = PHASES.filter((phase) => {
   const current = existing.get(phase.phaseId);
-  return current && current.label !== phase.label;
+  return current && current.sort_order !== phase.sort_order;
 });
+const unknownExisting = [...existing.values()]
+  .filter((phase) => !knownById.has(phase.phaseId))
+  .sort((a, b) =>
+    (a.label ?? a.phaseId).localeCompare(b.label ?? b.phaseId, undefined, { sensitivity: "base" }),
+  );
+const nextSortBase = PHASES.reduce((max, phase) => Math.max(max, phase.sort_order), 0);
+const unknownAssignments = unknownExisting.map((phase, index) => ({
+  phaseId: phase.phaseId,
+  label: phase.label,
+  sort_order: nextSortBase + (index + 1) * 10,
+}));
+const unknownReorder = unknownAssignments.filter((phase) => {
+  const current = existing.get(phase.phaseId);
+  return current && current.sort_order !== phase.sort_order;
+});
+const reorder = [...knownReorder, ...unknownReorder];
 
 console.log(`Known phases: ${PHASES.length}`);
 console.log(`Existing phases: ${existing.size}`);
 console.log(`Missing phases: ${missing.length}`);
-console.log(`Relabel needed: ${relabel.length}`);
+console.log(`Unknown existing phases: ${unknownExisting.length}`);
+console.log(`Reorder needed: ${reorder.length} (${knownReorder.length} known, ${unknownReorder.length} unknown)`);
 
 if (dryRun) {
   if (missing.length) {
@@ -76,11 +99,13 @@ if (dryRun) {
       console.log(`  - ${phase.phaseId}: ${phase.label}`);
     }
   }
-  if (relabel.length) {
-    console.log("Would relabel:");
-    for (const phase of relabel) {
+  if (reorder.length) {
+    console.log("Would reorder:");
+    for (const phase of reorder) {
       const current = existing.get(phase.phaseId);
-      console.log(`  - ${phase.phaseId}: "${current?.label ?? ""}" -> "${phase.label}"`);
+      console.log(
+        `  - ${phase.phaseId}: ${String(current?.sort_order ?? "null")} -> ${phase.sort_order}`,
+      );
     }
   }
   process.exit(0);
@@ -106,7 +131,7 @@ for (const phase of missing) {
   }
 }
 
-for (const phase of relabel) {
+for (const phase of reorder) {
   try {
     const result = await client.models.Phase.update(phase, { authMode });
     if (result.errors?.length) {
@@ -126,4 +151,3 @@ console.log(`Created: ${created}`);
 console.log(`Updated: ${updated}`);
 console.log(`Failed: ${failed}`);
 process.exit(failed > 0 ? 1 : 0);
-

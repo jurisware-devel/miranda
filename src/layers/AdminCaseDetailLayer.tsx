@@ -140,6 +140,7 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
     () =>
       [...phases]
         .sort((a, b) =>
+          (a.sort_order ?? Number.MAX_SAFE_INTEGER) - (b.sort_order ?? Number.MAX_SAFE_INTEGER) ||
           (a.label ?? "").localeCompare(b.label ?? "", undefined, { sensitivity: "base" }),
         )
         .map((phase) => ({ value: phase.phaseId, label: phase.label ?? phase.phaseId })),
@@ -292,10 +293,10 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
 
   useEffect(() => {
     const labelById = new Map(phases.map((phase) => [phase.phaseId, phase.label ?? phase.phaseId]));
+    const orderById = new Map(phases.map((phase) => [phase.phaseId, phase.sort_order ?? Number.MAX_SAFE_INTEGER]));
     const sorted = [...casePhaseIds].sort((a, b) =>
-      (labelById.get(a) ?? "").localeCompare(labelById.get(b) ?? "", undefined, {
-        sensitivity: "base",
-      }),
+      (orderById.get(a) ?? Number.MAX_SAFE_INTEGER) - (orderById.get(b) ?? Number.MAX_SAFE_INTEGER) ||
+      (labelById.get(a) ?? "").localeCompare(labelById.get(b) ?? "", undefined, { sensitivity: "base" }),
     );
     setInitialPhaseIds(sorted);
     setPhaseDraftIds(sorted);
