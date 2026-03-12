@@ -7,7 +7,7 @@ import AppHeader from "../../components/AppHeader";
 import CaseDetailNav from "../../components/CaseDetailNav";
 import PublicContentRoutes from "../../components/PublicContentRoutes";
 import type { CaseFilterControls } from "../../core/filterControls";
-import { mapCasePhasesByCaseId } from "../../core/utils/phaseUtils";
+import { mapCasePhasesByCaseId, mapPhasesById } from "../../core/utils/phaseUtils";
 import { mapCaseTagsByCaseId, mapTagsById } from "../../core/utils/tagUtils";
 import { usePublicCaseFilters } from "./hooks/usePublicCaseFilters";
 import { usePublicCasesData } from "./hooks/usePublicCasesData";
@@ -18,7 +18,7 @@ const { Content } = Layout;
 
 const PublicApp: React.FC = () => {
   const { cases, loading, error } = usePublicCasesData(true);
-  const { tags, caseTags, casePhases, tagsError, caseTagsError, casePhasesError } =
+  const { tags, phases, caseTags, casePhases, tagsError, phasesError, caseTagsError, casePhasesError } =
     usePublicTagsData(true);
   const {
     authorOptions,
@@ -61,6 +61,7 @@ const PublicApp: React.FC = () => {
     [caseTags, tagsById],
   );
   const casePhasesByCaseId = useMemo(() => mapCasePhasesByCaseId(casePhases), [casePhases]);
+  const phasesById = useMemo(() => mapPhasesById(phases), [phases]);
   const filters = useMemo<CaseFilterControls>(
     () => ({
       authorOptions,
@@ -145,6 +146,7 @@ const PublicApp: React.FC = () => {
         <PublicContentRoutes
           error={error}
           tagsError={tagsError}
+          phasesError={phasesError}
           caseTagsError={caseTagsError}
           casePhasesError={casePhasesError}
           loading={loading}
@@ -153,6 +155,7 @@ const PublicApp: React.FC = () => {
           tagsById={tagsById}
           caseTagsByCaseId={caseTagsByCaseId}
           casePhasesByCaseId={casePhasesByCaseId}
+          phasesById={phasesById}
           filters={filters}
         />
       </Content>

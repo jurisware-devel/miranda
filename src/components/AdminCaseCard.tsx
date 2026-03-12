@@ -12,6 +12,7 @@ type AdminCaseCardProps = {
   caseItem: CaseItem;
   index: number;
   phases: PhaseId[];
+  phasesById: Map<string, string>;
   tagIds: string[];
   tagsById: Map<string, TagMeta>;
   onOpenCase: (caseId: string) => void;
@@ -21,6 +22,7 @@ const AdminCaseCard: React.FC<AdminCaseCardProps> = ({
   caseItem,
   index,
   phases,
+  phasesById,
   tagIds,
   tagsById,
   onOpenCase,
@@ -53,7 +55,7 @@ const AdminCaseCard: React.FC<AdminCaseCardProps> = ({
         >
           {phases.map((phase) => (
             <span key={phase} className="grid-card__phase-capsule">
-              {getPhaseLabel(phase)}
+              {getPhaseLabel(phase, phasesById)}
             </span>
           ))}
         </div>

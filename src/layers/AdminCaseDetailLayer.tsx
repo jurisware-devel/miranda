@@ -3,7 +3,7 @@ import { Alert, Button, Input, Select, Spin, message } from "antd";
 import { useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import { client } from "../core/amplifyClient";
-import type { CaseItem, CaseTagItem, TagItem } from "../core/types";
+import type { CaseItem, CasePhaseItem, CaseTagItem, PhaseItem, TagItem } from "../core/types";
 import {
   buildOpinionCandidateUrls,
   buildOpinionStorageKey,
@@ -17,11 +17,15 @@ import AdminTagCapsule from "../components/AdminTagCapsule";
 type AdminCaseDetailLayerProps = {
   cases: CaseItem[];
   tags: TagItem[];
+  phases: PhaseItem[];
   caseTags: CaseTagItem[];
   setCaseTags: React.Dispatch<React.SetStateAction<CaseTagItem[]>>;
+  casePhases: CasePhaseItem[];
+  setCasePhases: React.Dispatch<React.SetStateAction<CasePhaseItem[]>>;
   canEditCaseTags: boolean;
   loading: boolean;
   error: string | null;
+  phasesError: string | null;
   isWideLayout: boolean;
 };
 
@@ -95,11 +99,15 @@ const toDraft = (value: CaseItem | null): CaseMetadataDraft => {
 const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
   cases,
   tags,
+  phases,
   caseTags,
   setCaseTags,
+  casePhases,
+  setCasePhases,
   canEditCaseTags,
   loading,
   error,
+  phasesError,
   isWideLayout,
 }) => {
   const { caseId } = useParams();
@@ -123,9 +131,20 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
   const [metadataDraft, setMetadataDraft] = useState<CaseMetadataDraft>(EMPTY_METADATA_DRAFT);
   const [tagDraftIds, setTagDraftIds] = useState<string[]>([]);
   const [initialTagIds, setInitialTagIds] = useState<string[]>([]);
+  const [phaseDraftIds, setPhaseDraftIds] = useState<string[]>([]);
+  const [initialPhaseIds, setInitialPhaseIds] = useState<string[]>([]);
   const renderedOpinionText = preserveNumericReferencePrefixes(opinionText);
   const tagsById = useMemo(() => mapTagsById(tags), [tags]);
   const sortedTagOptions = useMemo(() => buildTagOptions(tags), [tags]);
+  const sortedPhaseOptions = useMemo(
+    () =>
+      [...phases]
+        .sort((a, b) =>
+          (a.label ?? "").localeCompare(b.label ?? "", undefined, { sensitivity: "base" }),
+        )
+        .map((phase) => ({ value: phase.phaseId, label: phase.label ?? phase.phaseId })),
+    [phases],
+  );
   const caseTagIds = useMemo(
     () =>
       caseItem
@@ -136,6 +155,19 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
           ]
         : [],
     [caseItem, caseTags],
+  );
+  const casePhaseIds = useMemo(
+    () =>
+      caseItem
+        ? [
+            ...new Set(
+              casePhases
+                .filter((item) => item.caseId === caseItem.caseId)
+                .map((item) => item.phaseId),
+            ),
+          ]
+        : [],
+    [caseItem, casePhases],
   );
 
   useEffect(() => {
@@ -259,6 +291,17 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
   }, [caseItem?.caseId, caseTagIds, tagsById]);
 
   useEffect(() => {
+    const labelById = new Map(phases.map((phase) => [phase.phaseId, phase.label ?? phase.phaseId]));
+    const sorted = [...casePhaseIds].sort((a, b) =>
+      (labelById.get(a) ?? "").localeCompare(labelById.get(b) ?? "", undefined, {
+        sensitivity: "base",
+      }),
+    );
+    setInitialPhaseIds(sorted);
+    setPhaseDraftIds(sorted);
+  }, [caseItem?.caseId, casePhaseIds, phases]);
+
+  useEffect(() => {
     if (!isWideLayout && isEditingOpinion) {
       setIsEditingOpinion(false);
       setOpinionDraft(opinionText);
@@ -271,11 +314,13 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
 
   const handleEditMetadata = () => {
     setMetadataDraft(toDraft(caseItem));
+    setPhaseDraftIds(initialPhaseIds);
     setIsEditingMetadata(true);
   };
 
   const handleCancelEditMetadata = () => {
     setMetadataDraft(toDraft(caseItem));
+    setPhaseDraftIds(initialPhaseIds);
     setIsEditingMetadata(false);
   };
 
@@ -323,6 +368,55 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
     });
 
     setInitialTagIds([...draft]);
+    return true;
+  };
+
+  const saveCasePhases = async (caseIdValue: string) => {
+    const initial = new Set(initialPhaseIds);
+    const draft = new Set(phaseDraftIds);
+    const createIds = [...draft].filter((phaseId) => !initial.has(phaseId));
+    const deleteIds = [...initial].filter((phaseId) => !draft.has(phaseId));
+
+    if (!createIds.length && !deleteIds.length) {
+      return false;
+    }
+
+    for (const phaseId of createIds) {
+      const result = await client.models.CasePhase.create(
+        { caseId: caseIdValue, phaseId },
+        { authMode: "userPool" },
+      );
+      if (result.errors?.length) {
+        throw new Error(result.errors[0]?.message ?? "Failed to create case phase");
+      }
+    }
+
+    for (const phaseId of deleteIds) {
+      const result = await client.models.CasePhase.delete(
+        { caseId: caseIdValue, phaseId },
+        { authMode: "userPool" },
+      );
+      if (result.errors?.length) {
+        throw new Error(result.errors[0]?.message ?? "Failed to delete case phase");
+      }
+    }
+
+    setCasePhases((current) => {
+      const withoutDeleted = current.filter(
+        (item) => !(item.caseId === caseIdValue && deleteIds.includes(item.phaseId)),
+      );
+      const existing = new Set(
+        withoutDeleted
+          .filter((item) => item.caseId === caseIdValue)
+          .map((item) => item.phaseId),
+      );
+      const appended = createIds
+        .filter((phaseId) => !existing.has(phaseId))
+        .map((phaseId) => ({ caseId: caseIdValue, phaseId }) as CasePhaseItem);
+      return [...withoutDeleted, ...appended];
+    });
+
+    setInitialPhaseIds([...draft]);
     return true;
   };
 
@@ -463,6 +557,7 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
         setCaseItem(updatedCase);
         setMetadataDraft(toDraft(updatedCase));
       }
+      await saveCasePhases(caseItem.caseId);
       setIsEditingMetadata(false);
       message.success("Case metadata saved.");
     } catch (err) {
@@ -476,6 +571,7 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
     <div className="case-detail">
       {error ? <Alert type="error" message={error} showIcon /> : null}
       {caseError ? <Alert type="error" message={caseError} showIcon /> : null}
+      {phasesError ? <Alert type="error" message={phasesError} showIcon /> : null}
       {loading || caseLoading ? (
         <div className="card-grid__loading">
           <Spin />
@@ -812,6 +908,21 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
                     onChange={(event) =>
                       handleMetadataFieldChange("summary", event.target.value)
                     }
+                  />
+                </div>
+                <div className="case-metadata-panel__field">
+                  <label htmlFor="case-meta-phases">Case Phases</label>
+                  <Select
+                    id="case-meta-phases"
+                    mode="multiple"
+                    allowClear
+                    showSearch
+                    optionFilterProp="label"
+                    value={phaseDraftIds}
+                    disabled={!isEditingMetadata || isSavingMetadata}
+                    onChange={(values) => setPhaseDraftIds(values)}
+                    options={sortedPhaseOptions}
+                    placeholder="Select case phases"
                   />
                 </div>
               </div>

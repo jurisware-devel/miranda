@@ -10,6 +10,7 @@ import type { TagMeta } from "../core/utils/tagUtils";
 type SubContentRoutesProps = {
   error: string | null;
   tagsError: string | null;
+  phasesError: string | null;
   caseTagsError: string | null;
   casePhasesError: string | null;
   loading: boolean;
@@ -18,6 +19,7 @@ type SubContentRoutesProps = {
   tagsById: Map<string, TagMeta>;
   caseTagsByCaseId: Map<string, string[]>;
   casePhasesByCaseId: Map<string, PhaseId[]>;
+  phasesById: Map<string, string>;
   filters: CaseFilterControls;
   isXlUp: boolean;
 };
@@ -25,6 +27,7 @@ type SubContentRoutesProps = {
 const SubContentRoutes: React.FC<SubContentRoutesProps> = ({
   error,
   tagsError,
+  phasesError,
   caseTagsError,
   casePhasesError,
   loading,
@@ -33,6 +36,7 @@ const SubContentRoutes: React.FC<SubContentRoutesProps> = ({
   tagsById,
   caseTagsByCaseId,
   casePhasesByCaseId,
+  phasesById,
   filters,
   isXlUp,
 }) => {
@@ -46,6 +50,7 @@ const SubContentRoutes: React.FC<SubContentRoutesProps> = ({
           <SubCaseMasonryLayer
             error={error}
             tagsError={tagsError}
+            phasesError={phasesError}
             caseTagsError={caseTagsError}
             casePhasesError={casePhasesError}
             loading={loading}
@@ -53,6 +58,7 @@ const SubContentRoutes: React.FC<SubContentRoutesProps> = ({
             tagsById={tagsById}
             caseTagsByCaseId={caseTagsByCaseId}
             casePhasesByCaseId={casePhasesByCaseId}
+            phasesById={phasesById}
             onOpenCase={(caseId) => navigate(`/sub/case/${caseId}`)}
             filters={filters}
           />

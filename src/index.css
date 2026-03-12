@@ -511,11 +511,11 @@ body.route-theme-pub {
   box-sizing: border-box;
   padding: 6px 10px;
   border-radius: 999px;
-  border: 1px solid #bfdbfe;
-  background: #eff6ff;
-  color: #1e3a8a;
+  border: 1px solid #2563eb;
+  background: #2563eb;
+  color: #ffffff;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.2;
   text-align: center;
 }

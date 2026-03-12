@@ -9,7 +9,7 @@ import AdminShellFooter from "../../components/AdminShellFooter";
 import AdminShellHeader from "../../components/AdminShellHeader";
 import type { CaseFilterControls } from "../../core/filterControls";
 import type { AppCapabilities } from "../../core/types";
-import { mapCasePhasesByCaseId } from "../../core/utils/phaseUtils";
+import { mapCasePhasesByCaseId, mapPhasesById } from "../../core/utils/phaseUtils";
 import { mapCaseTagsByCaseId, mapTagsById } from "../../core/utils/tagUtils";
 import { useAdminCaseFilters } from "./hooks/useAdminCaseFilters";
 import { useAdminCasesData } from "./hooks/useAdminCasesData";
@@ -26,10 +26,13 @@ const AdminApp: React.FC<AdminAppProps> = ({ capabilities }) => {
   const { cases, loading, error } = useAdminCasesData(capabilities.isResolved);
   const {
     tags,
+    phases,
     caseTags,
     setCaseTags,
     casePhases,
+    setCasePhases,
     tagsError,
+    phasesError,
     caseTagsError,
     casePhasesError,
   } = useAdminTagsData(capabilities.isResolved);
@@ -73,6 +76,7 @@ const AdminApp: React.FC<AdminAppProps> = ({ capabilities }) => {
     [caseTags, tagsById],
   );
   const casePhasesByCaseId = useMemo(() => mapCasePhasesByCaseId(casePhases), [casePhases]);
+  const phasesById = useMemo(() => mapPhasesById(phases), [phases]);
   const filters = useMemo<CaseFilterControls>(
     () => ({
       authorOptions,
@@ -169,17 +173,22 @@ const AdminApp: React.FC<AdminAppProps> = ({ capabilities }) => {
           isXlUp={isXlUp}
           error={error}
           tagsError={tagsError}
+          phasesError={phasesError}
           caseTagsError={caseTagsError}
           casePhasesError={casePhasesError}
           loading={loading}
           cases={cases}
           tags={tags}
+          phases={phases}
           caseTags={caseTags}
           setCaseTags={setCaseTags}
+          casePhases={casePhases}
+          setCasePhases={setCasePhases}
           pagedCases={pagedCases}
           tagsById={tagsById}
           caseTagsByCaseId={caseTagsByCaseId}
           casePhasesByCaseId={casePhasesByCaseId}
+          phasesById={phasesById}
           filters={filters}
         />
       </Content>

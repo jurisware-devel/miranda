@@ -11,11 +11,13 @@ import type { CaseFilterControls } from "../core/filterControls";
 type CaseMasonryLayerProps = {
   error: string | null;
   tagsError: string | null;
+  phasesError: string | null;
   caseTagsError: string | null;
   casePhasesError: string | null;
   loading: boolean;
   cases: CaseItem[];
   tagsById: Map<string, TagMeta>;
+  phasesById: Map<string, string>;
   caseTagsByCaseId: Map<string, string[]>;
   casePhasesByCaseId: Map<string, PhaseId[]>;
   onOpenCase: (caseId: string) => void;
@@ -25,11 +27,13 @@ type CaseMasonryLayerProps = {
 const CaseMasonryLayer: React.FC<CaseMasonryLayerProps> = ({
   error,
   tagsError,
+  phasesError,
   caseTagsError,
   casePhasesError,
   loading,
   cases,
   tagsById,
+  phasesById,
   caseTagsByCaseId,
   casePhasesByCaseId,
   onOpenCase,
@@ -77,6 +81,7 @@ const CaseMasonryLayer: React.FC<CaseMasonryLayerProps> = ({
       </div>
       {error ? <Alert type="error" message={error} showIcon /> : null}
       {tagsError ? <Alert type="error" message={tagsError} showIcon /> : null}
+      {phasesError ? <Alert type="error" message={phasesError} showIcon /> : null}
       {caseTagsError ? <Alert type="error" message={caseTagsError} showIcon /> : null}
       {casePhasesError ? <Alert type="error" message={casePhasesError} showIcon /> : null}
       {loading ? (
@@ -96,6 +101,7 @@ const CaseMasonryLayer: React.FC<CaseMasonryLayerProps> = ({
                 caseItem={data}
                 index={index}
                 phases={phases}
+                phasesById={phasesById}
                 tagIds={tagIds}
                 tagsById={tagsById}
                 onOpenCase={onOpenCase}

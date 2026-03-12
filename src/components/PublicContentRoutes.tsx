@@ -10,6 +10,7 @@ import type { CaseFilterControls } from "../core/filterControls";
 type PublicContentRoutesProps = {
   error: string | null;
   tagsError: string | null;
+  phasesError: string | null;
   caseTagsError: string | null;
   casePhasesError: string | null;
   loading: boolean;
@@ -18,12 +19,14 @@ type PublicContentRoutesProps = {
   tagsById: Map<string, TagMeta>;
   caseTagsByCaseId: Map<string, string[]>;
   casePhasesByCaseId: Map<string, PhaseId[]>;
+  phasesById: Map<string, string>;
   filters: CaseFilterControls;
 };
 
 const PublicContentRoutes: React.FC<PublicContentRoutesProps> = ({
   error,
   tagsError,
+  phasesError,
   caseTagsError,
   casePhasesError,
   loading,
@@ -32,6 +35,7 @@ const PublicContentRoutes: React.FC<PublicContentRoutesProps> = ({
   tagsById,
   caseTagsByCaseId,
   casePhasesByCaseId,
+  phasesById,
   filters,
 }) => {
   const navigate = useNavigate();
@@ -44,6 +48,7 @@ const PublicContentRoutes: React.FC<PublicContentRoutesProps> = ({
           <CaseMasonryLayer
             error={error}
             tagsError={tagsError}
+            phasesError={phasesError}
             caseTagsError={caseTagsError}
             casePhasesError={casePhasesError}
             loading={loading}
@@ -51,6 +56,7 @@ const PublicContentRoutes: React.FC<PublicContentRoutesProps> = ({
             tagsById={tagsById}
             caseTagsByCaseId={caseTagsByCaseId}
             casePhasesByCaseId={casePhasesByCaseId}
+            phasesById={phasesById}
             onOpenCase={(caseId) => navigate(`/pub/case/${caseId}`)}
             filters={filters}
           />

@@ -5,7 +5,7 @@ import AdminCaseDetailLayer from "../layers/AdminCaseDetailLayer";
 import AdminCaseMasonryLayer from "../layers/AdminCaseMasonryLayer";
 import type { CaseFilterControls } from "../core/filterControls";
 import type { AppCapabilities } from "../core/types";
-import type { CaseItem, CaseTagItem, PhaseId, TagItem } from "../core/types";
+import type { CaseItem, CasePhaseItem, CaseTagItem, PhaseId, PhaseItem, TagItem } from "../core/types";
 import type { TagMeta } from "../core/utils/tagUtils";
 
 type AdminContentRoutesProps = {
@@ -13,17 +13,22 @@ type AdminContentRoutesProps = {
   isXlUp: boolean;
   error: string | null;
   tagsError: string | null;
+  phasesError: string | null;
   caseTagsError: string | null;
   casePhasesError: string | null;
   loading: boolean;
   cases: CaseItem[];
   tags: TagItem[];
+  phases: PhaseItem[];
   caseTags: CaseTagItem[];
   setCaseTags: React.Dispatch<React.SetStateAction<CaseTagItem[]>>;
+  casePhases: CasePhaseItem[];
+  setCasePhases: React.Dispatch<React.SetStateAction<CasePhaseItem[]>>;
   pagedCases: CaseItem[];
   tagsById: Map<string, TagMeta>;
   caseTagsByCaseId: Map<string, string[]>;
   casePhasesByCaseId: Map<string, PhaseId[]>;
+  phasesById: Map<string, string>;
   filters: CaseFilterControls;
 };
 
@@ -51,17 +56,22 @@ const AdminContentRoutes: React.FC<AdminContentRoutesProps> = ({
   isXlUp,
   error,
   tagsError,
+  phasesError,
   caseTagsError,
   casePhasesError,
   loading,
   cases,
   tags,
+  phases,
   caseTags,
   setCaseTags,
+  casePhases,
+  setCasePhases,
   pagedCases,
   tagsById,
   caseTagsByCaseId,
   casePhasesByCaseId,
+  phasesById,
   filters,
 }) => {
   const navigate = useNavigate();
@@ -75,6 +85,7 @@ const AdminContentRoutes: React.FC<AdminContentRoutesProps> = ({
             <AdminCaseMasonryLayer
               error={error}
               tagsError={tagsError}
+              phasesError={phasesError}
               caseTagsError={caseTagsError}
               casePhasesError={casePhasesError}
               loading={loading}
@@ -82,6 +93,7 @@ const AdminContentRoutes: React.FC<AdminContentRoutesProps> = ({
               tagsById={tagsById}
               caseTagsByCaseId={caseTagsByCaseId}
               casePhasesByCaseId={casePhasesByCaseId}
+              phasesById={phasesById}
               onOpenCase={(caseId) => navigate(`/admin/case/${caseId}`)}
               filters={filters}
             />
@@ -95,11 +107,15 @@ const AdminContentRoutes: React.FC<AdminContentRoutesProps> = ({
             <AdminCaseDetailLayer
               cases={cases}
               tags={tags}
+              phases={phases}
               caseTags={caseTags}
               setCaseTags={setCaseTags}
+              casePhases={casePhases}
+              setCasePhases={setCasePhases}
               canEditCaseTags={capabilities.canEditCaseTags}
               loading={loading}
               error={error}
+              phasesError={phasesError}
               isWideLayout={isXlUp}
             />
           </AdminRoute>

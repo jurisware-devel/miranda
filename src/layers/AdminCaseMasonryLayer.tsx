@@ -11,11 +11,13 @@ import { getReadableTextColor } from "../core/utils/colorUtils";
 type AdminCaseMasonryLayerProps = {
   error: string | null;
   tagsError: string | null;
+  phasesError: string | null;
   caseTagsError: string | null;
   casePhasesError: string | null;
   loading: boolean;
   cases: CaseItem[];
   tagsById: Map<string, TagMeta>;
+  phasesById: Map<string, string>;
   caseTagsByCaseId: Map<string, string[]>;
   casePhasesByCaseId: Map<string, PhaseId[]>;
   onOpenCase: (caseId: string) => void;
@@ -25,11 +27,13 @@ type AdminCaseMasonryLayerProps = {
 const AdminCaseMasonryLayer: React.FC<AdminCaseMasonryLayerProps> = ({
   error,
   tagsError,
+  phasesError,
   caseTagsError,
   casePhasesError,
   loading,
   cases,
   tagsById,
+  phasesById,
   caseTagsByCaseId,
   casePhasesByCaseId,
   onOpenCase,
@@ -77,6 +81,7 @@ const AdminCaseMasonryLayer: React.FC<AdminCaseMasonryLayerProps> = ({
       </div>
       {error ? <Alert type="error" message={error} showIcon /> : null}
       {tagsError ? <Alert type="error" message={tagsError} showIcon /> : null}
+      {phasesError ? <Alert type="error" message={phasesError} showIcon /> : null}
       {caseTagsError ? <Alert type="error" message={caseTagsError} showIcon /> : null}
       {casePhasesError ? <Alert type="error" message={casePhasesError} showIcon /> : null}
       {loading ? (
@@ -96,6 +101,7 @@ const AdminCaseMasonryLayer: React.FC<AdminCaseMasonryLayerProps> = ({
                 caseItem={data}
                 index={index}
                 phases={phases}
+                phasesById={phasesById}
                 tagIds={tagIds}
                 tagsById={tagsById}
                 onOpenCase={onOpenCase}

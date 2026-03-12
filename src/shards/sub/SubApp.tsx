@@ -8,7 +8,7 @@ import SubContentRoutes from "../../components/SubContentRoutes";
 import SubFooter from "../../components/SubFooter";
 import SubHeader from "../../components/SubHeader";
 import type { CaseFilterControls } from "../../core/filterControls";
-import { mapCasePhasesByCaseId } from "../../core/utils/phaseUtils";
+import { mapCasePhasesByCaseId, mapPhasesById } from "../../core/utils/phaseUtils";
 import { mapCaseTagsByCaseId, mapTagsById } from "../../core/utils/tagUtils";
 import { useSubCaseFilters } from "./hooks/useSubCaseFilters";
 import { useSubCasesData } from "./hooks/useSubCasesData";
@@ -23,7 +23,7 @@ type SubAppProps = {
 
 const SubApp: React.FC<SubAppProps> = ({ enableData }) => {
   const { cases, loading, error } = useSubCasesData(enableData);
-  const { tags, caseTags, casePhases, tagsError, caseTagsError, casePhasesError } =
+  const { tags, phases, caseTags, casePhases, tagsError, phasesError, caseTagsError, casePhasesError } =
     useSubTagsData(enableData);
   const {
     authorOptions,
@@ -66,6 +66,7 @@ const SubApp: React.FC<SubAppProps> = ({ enableData }) => {
     [caseTags, tagsById],
   );
   const casePhasesByCaseId = useMemo(() => mapCasePhasesByCaseId(casePhases), [casePhases]);
+  const phasesById = useMemo(() => mapPhasesById(phases), [phases]);
   const filters = useMemo<CaseFilterControls>(
     () => ({
       authorOptions,
@@ -160,6 +161,7 @@ const SubApp: React.FC<SubAppProps> = ({ enableData }) => {
         <SubContentRoutes
           error={error}
           tagsError={tagsError}
+          phasesError={phasesError}
           caseTagsError={caseTagsError}
           casePhasesError={casePhasesError}
           loading={loading}
@@ -168,6 +170,7 @@ const SubApp: React.FC<SubAppProps> = ({ enableData }) => {
           tagsById={tagsById}
           caseTagsByCaseId={caseTagsByCaseId}
           casePhasesByCaseId={casePhasesByCaseId}
+          phasesById={phasesById}
           filters={filters}
           isXlUp={isXlUp}
         />
