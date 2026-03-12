@@ -69,13 +69,10 @@ const SubHeader: React.FC<SubHeaderProps> = ({
                   >
                     <SubCaseFilters
                       compact
-                      authorOptions={filters.authorOptions}
-                      tagOptions={filters.tagOptions}
+                      phaseOptions={filters.phaseOptions}
                       courtOptions={filters.courtOptions}
-                      selectedAuthor={filters.selectedAuthor}
-                      onAuthorChange={filters.onAuthorChange}
-                      selectedTagIds={filters.selectedTagIds}
-                      onTagChange={filters.onTagChange}
+                      selectedPhase={filters.selectedPhase}
+                      onPhaseChange={filters.onPhaseChange}
                       selectedCourt={filters.selectedCourt}
                       onCourtChange={filters.onCourtChange}
                       nameQuery={filters.nameQuery}
@@ -91,13 +88,10 @@ const SubHeader: React.FC<SubHeaderProps> = ({
         ) : lockFilters && !isXlUp ? null : (
           <div className="app-header-filters">
             <SubCaseFilters
-              authorOptions={filters.authorOptions}
-              tagOptions={filters.tagOptions}
+              phaseOptions={filters.phaseOptions}
               courtOptions={filters.courtOptions}
-              selectedAuthor={filters.selectedAuthor}
-              onAuthorChange={filters.onAuthorChange}
-              selectedTagIds={filters.selectedTagIds}
-              onTagChange={filters.onTagChange}
+              selectedPhase={filters.selectedPhase}
+              onPhaseChange={filters.onPhaseChange}
               selectedCourt={filters.selectedCourt}
               onCourtChange={filters.onCourtChange}
               nameQuery={filters.nameQuery}

@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 
 type UsePublicRouteUiOptions = {
-  setSelectedAuthor: (value: string | null) => void;
+  setSelectedPhase: (value: string | null) => void;
   setSelectedTagIds: (value: string[]) => void;
   setNameQuery: (value: string) => void;
   setSelectedCourt: (value: string | null) => void;
@@ -10,7 +10,7 @@ type UsePublicRouteUiOptions = {
 };
 
 export const usePublicRouteUi = ({
-  setSelectedAuthor,
+  setSelectedPhase,
   setSelectedTagIds,
   setNameQuery,
   setSortOrder,
@@ -28,7 +28,7 @@ export const usePublicRouteUi = ({
     if (!isCasesPage) return;
     const state = (location.state as { tagId?: string } | null) ?? null;
     if (!state?.tagId) return;
-    setSelectedAuthor(null);
+    setSelectedPhase(null);
     setSelectedTagIds([state.tagId]);
     setNameQuery("");
     setSelectedCourt(null);
@@ -39,7 +39,7 @@ export const usePublicRouteUi = ({
     location.state,
     navigate,
     setNameQuery,
-    setSelectedAuthor,
+    setSelectedPhase,
     setSelectedTagIds,
     setSortOrder,
     setSelectedCourt,
