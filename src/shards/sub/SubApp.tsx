@@ -65,7 +65,7 @@ const SubApp: React.FC<SubAppProps> = ({ enableData }) => {
     () => mapCaseTagsByCaseId(caseTags, tagsById),
     [caseTags, tagsById],
   );
-  const casePhasesByCaseId = useMemo(() => mapCasePhasesByCaseId(casePhases), [casePhases]);
+  const casePhasesByCaseId = useMemo(() => mapCasePhasesByCaseId(casePhases, phases), [casePhases, phases]);
   const phasesById = useMemo(() => mapPhasesById(phases), [phases]);
   const filters = useMemo<CaseFilterControls>(
     () => ({

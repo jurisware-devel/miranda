@@ -47,8 +47,11 @@ export const mapPhasesById = (phases: PhaseItem[]) =>
 export const getPhaseLabel = (phaseId: PhaseId, phasesById?: Map<string, string>) =>
   phasesById?.get(phaseId) ?? DEFAULT_PHASE_LABELS[phaseId] ?? phaseId;
 
-export const mapCasePhasesByCaseId = (casePhases: CasePhaseItem[]) => {
+export const mapCasePhasesByCaseId = (casePhases: CasePhaseItem[], phases: PhaseItem[] = []) => {
   const byCase = new Map<string, PhaseId[]>();
+  const sortOrderById = new Map(
+    phases.map((phase) => [phase.phaseId, phase.sort_order ?? Number.MAX_SAFE_INTEGER]),
+  );
 
   for (const item of casePhases) {
     if (!byCase.has(item.caseId)) {
@@ -62,8 +65,11 @@ export const mapCasePhasesByCaseId = (casePhases: CasePhaseItem[]) => {
   }
 
   for (const [caseId, phases] of byCase.entries()) {
-    const sorted = [...phases].sort(
-      (a, b) => (PHASE_ORDER_INDEX.get(a) ?? Number.MAX_SAFE_INTEGER) - (PHASE_ORDER_INDEX.get(b) ?? Number.MAX_SAFE_INTEGER),
+    const sorted = [...phases].sort((a, b) =>
+      (sortOrderById.get(a) ?? Number.MAX_SAFE_INTEGER) -
+        (sortOrderById.get(b) ?? Number.MAX_SAFE_INTEGER) ||
+      (PHASE_ORDER_INDEX.get(a) ?? Number.MAX_SAFE_INTEGER) -
+        (PHASE_ORDER_INDEX.get(b) ?? Number.MAX_SAFE_INTEGER),
     );
     byCase.set(caseId, sorted);
   }
