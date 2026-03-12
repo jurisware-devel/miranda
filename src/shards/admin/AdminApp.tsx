@@ -37,10 +37,9 @@ const AdminApp: React.FC<AdminAppProps> = ({ capabilities }) => {
     casePhasesError,
   } = useAdminTagsData(capabilities.isResolved);
   const {
-    authorOptions,
-    tagOptions,
-    selectedAuthor,
-    setSelectedAuthor,
+    phaseOptions,
+    selectedPhase,
+    setSelectedPhase,
     selectedTagIds,
     setSelectedTagIds,
     courtOptions,
@@ -55,7 +54,7 @@ const AdminApp: React.FC<AdminAppProps> = ({ capabilities }) => {
     pageSize,
     filteredCases,
     pagedCases,
-  } = useAdminCaseFilters(cases, tags, caseTags);
+  } = useAdminCaseFilters(cases, phases, casePhases, caseTags);
   const [filtersOpen, setFiltersOpen] = useState(false);
   const screens = Grid.useBreakpoint();
   const isXlUp = Boolean(screens.xl);
@@ -63,7 +62,7 @@ const AdminApp: React.FC<AdminAppProps> = ({ capabilities }) => {
   const navigate = useNavigate();
 
   const { showFilters, lockFilters, showPagination } = useAdminRouteUi({
-    setSelectedAuthor,
+    setSelectedPhase,
     setSelectedTagIds,
     setNameQuery,
     setSortOrder,
@@ -79,11 +78,10 @@ const AdminApp: React.FC<AdminAppProps> = ({ capabilities }) => {
   const phasesById = useMemo(() => mapPhasesById(phases), [phases]);
   const filters = useMemo<CaseFilterControls>(
     () => ({
-      authorOptions,
-      tagOptions,
-      courtOptions,
-      selectedAuthor,
-      onAuthorChange: setSelectedAuthor,
+      phaseOptions,
+            courtOptions,
+      selectedPhase,
+      onPhaseChange: setSelectedPhase,
       selectedTagIds,
       onTagChange: setSelectedTagIds,
       selectedCourt,
@@ -94,11 +92,10 @@ const AdminApp: React.FC<AdminAppProps> = ({ capabilities }) => {
       onSortOrderChange: setSortOrder,
     }),
     [
-      authorOptions,
-      tagOptions,
-      courtOptions,
-      selectedAuthor,
-      setSelectedAuthor,
+      phaseOptions,
+            courtOptions,
+      selectedPhase,
+      setSelectedPhase,
       selectedTagIds,
       setSelectedTagIds,
       selectedCourt,

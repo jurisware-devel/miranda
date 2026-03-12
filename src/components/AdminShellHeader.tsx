@@ -69,13 +69,10 @@ const AdminShellHeader: React.FC<AdminShellHeaderProps> = ({
                   >
                     <AdminCaseFilters
                       compact
-                      authorOptions={filters.authorOptions}
-                      tagOptions={filters.tagOptions}
+                      phaseOptions={filters.phaseOptions}
                       courtOptions={filters.courtOptions}
-                      selectedAuthor={filters.selectedAuthor}
-                      onAuthorChange={filters.onAuthorChange}
-                      selectedTagIds={filters.selectedTagIds}
-                      onTagChange={filters.onTagChange}
+                      selectedPhase={filters.selectedPhase}
+                      onPhaseChange={filters.onPhaseChange}
                       selectedCourt={filters.selectedCourt}
                       onCourtChange={filters.onCourtChange}
                       nameQuery={filters.nameQuery}
@@ -91,13 +88,10 @@ const AdminShellHeader: React.FC<AdminShellHeaderProps> = ({
         ) : lockFilters && !isXlUp ? null : (
           <div className="app-header-filters">
             <AdminCaseFilters
-              authorOptions={filters.authorOptions}
-              tagOptions={filters.tagOptions}
+              phaseOptions={filters.phaseOptions}
               courtOptions={filters.courtOptions}
-              selectedAuthor={filters.selectedAuthor}
-              onAuthorChange={filters.onAuthorChange}
-              selectedTagIds={filters.selectedTagIds}
-              onTagChange={filters.onTagChange}
+              selectedPhase={filters.selectedPhase}
+              onPhaseChange={filters.onPhaseChange}
               selectedCourt={filters.selectedCourt}
               onCourtChange={filters.onCourtChange}
               nameQuery={filters.nameQuery}

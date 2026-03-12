@@ -67,13 +67,10 @@ const AppHeader: React.FC<AppHeaderProps> = ({
                   >
                     <CaseFilters
                       compact
-                      authorOptions={filters.authorOptions}
-                      tagOptions={filters.tagOptions}
+                      phaseOptions={filters.phaseOptions}
                       courtOptions={filters.courtOptions}
-                      selectedAuthor={filters.selectedAuthor}
-                      onAuthorChange={filters.onAuthorChange}
-                      selectedTagIds={filters.selectedTagIds}
-                      onTagChange={filters.onTagChange}
+                      selectedPhase={filters.selectedPhase}
+                      onPhaseChange={filters.onPhaseChange}
                       selectedCourt={filters.selectedCourt}
                       onCourtChange={filters.onCourtChange}
                       nameQuery={filters.nameQuery}
@@ -89,13 +86,10 @@ const AppHeader: React.FC<AppHeaderProps> = ({
         ) : lockFilters && !isXlUp ? null : (
           <div className="app-header-filters">
             <CaseFilters
-              authorOptions={filters.authorOptions}
-              tagOptions={filters.tagOptions}
+              phaseOptions={filters.phaseOptions}
               courtOptions={filters.courtOptions}
-              selectedAuthor={filters.selectedAuthor}
-              onAuthorChange={filters.onAuthorChange}
-              selectedTagIds={filters.selectedTagIds}
-              onTagChange={filters.onTagChange}
+              selectedPhase={filters.selectedPhase}
+              onPhaseChange={filters.onPhaseChange}
               selectedCourt={filters.selectedCourt}
               onCourtChange={filters.onCourtChange}
               nameQuery={filters.nameQuery}

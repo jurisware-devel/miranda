@@ -21,10 +21,9 @@ const PublicApp: React.FC = () => {
   const { tags, phases, caseTags, casePhases, tagsError, phasesError, caseTagsError, casePhasesError } =
     usePublicTagsData(true);
   const {
-    authorOptions,
-    tagOptions,
-    selectedAuthor,
-    setSelectedAuthor,
+    phaseOptions,
+    selectedPhase,
+    setSelectedPhase,
     selectedTagIds,
     setSelectedTagIds,
     courtOptions,
@@ -39,7 +38,7 @@ const PublicApp: React.FC = () => {
     pageSize,
     filteredCases,
     pagedCases,
-  } = usePublicCaseFilters(cases, tags, caseTags);
+  } = usePublicCaseFilters(cases, phases, casePhases, caseTags);
 
   const [filtersOpen, setFiltersOpen] = useState(false);
   const screens = Grid.useBreakpoint();
@@ -48,7 +47,7 @@ const PublicApp: React.FC = () => {
   const navigate = useNavigate();
 
   const { showFilters, lockFilters, showPagination } = usePublicRouteUi({
-    setSelectedAuthor,
+    setSelectedPhase,
     setSelectedTagIds,
     setNameQuery,
     setSortOrder,
@@ -64,11 +63,10 @@ const PublicApp: React.FC = () => {
   const phasesById = useMemo(() => mapPhasesById(phases), [phases]);
   const filters = useMemo<CaseFilterControls>(
     () => ({
-      authorOptions,
-      tagOptions,
-      courtOptions,
-      selectedAuthor,
-      onAuthorChange: setSelectedAuthor,
+      phaseOptions,
+            courtOptions,
+      selectedPhase,
+      onPhaseChange: setSelectedPhase,
       selectedTagIds,
       onTagChange: setSelectedTagIds,
       selectedCourt,
@@ -79,11 +77,10 @@ const PublicApp: React.FC = () => {
       onSortOrderChange: setSortOrder,
     }),
     [
-      authorOptions,
-      tagOptions,
-      courtOptions,
-      selectedAuthor,
-      setSelectedAuthor,
+      phaseOptions,
+            courtOptions,
+      selectedPhase,
+      setSelectedPhase,
       selectedTagIds,
       setSelectedTagIds,
       selectedCourt,

@@ -26,10 +26,9 @@ const SubApp: React.FC<SubAppProps> = ({ enableData }) => {
   const { tags, phases, caseTags, casePhases, tagsError, phasesError, caseTagsError, casePhasesError } =
     useSubTagsData(enableData);
   const {
-    authorOptions,
-    tagOptions,
-    selectedAuthor,
-    setSelectedAuthor,
+    phaseOptions,
+    selectedPhase,
+    setSelectedPhase,
     selectedTagIds,
     setSelectedTagIds,
     courtOptions,
@@ -44,7 +43,7 @@ const SubApp: React.FC<SubAppProps> = ({ enableData }) => {
     pageSize,
     filteredCases,
     pagedCases,
-  } = useSubCaseFilters(cases, tags, caseTags);
+  } = useSubCaseFilters(cases, phases, casePhases, caseTags);
 
   const [filtersOpen, setFiltersOpen] = useState(false);
   const screens = Grid.useBreakpoint();
@@ -53,7 +52,7 @@ const SubApp: React.FC<SubAppProps> = ({ enableData }) => {
   const navigate = useNavigate();
 
   const { showFilters, lockFilters, showPagination } = useSubRouteUi({
-    setSelectedAuthor,
+    setSelectedPhase,
     setSelectedTagIds,
     setNameQuery,
     setSortOrder,
@@ -69,11 +68,10 @@ const SubApp: React.FC<SubAppProps> = ({ enableData }) => {
   const phasesById = useMemo(() => mapPhasesById(phases), [phases]);
   const filters = useMemo<CaseFilterControls>(
     () => ({
-      authorOptions,
-      tagOptions,
-      courtOptions,
-      selectedAuthor,
-      onAuthorChange: setSelectedAuthor,
+      phaseOptions,
+            courtOptions,
+      selectedPhase,
+      onPhaseChange: setSelectedPhase,
       selectedTagIds,
       onTagChange: setSelectedTagIds,
       selectedCourt,
@@ -84,11 +82,10 @@ const SubApp: React.FC<SubAppProps> = ({ enableData }) => {
       onSortOrderChange: setSortOrder,
     }),
     [
-      authorOptions,
-      tagOptions,
-      courtOptions,
-      selectedAuthor,
-      setSelectedAuthor,
+      phaseOptions,
+            courtOptions,
+      selectedPhase,
+      setSelectedPhase,
       selectedTagIds,
       setSelectedTagIds,
       selectedCourt,

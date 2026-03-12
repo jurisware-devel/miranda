@@ -1,11 +1,10 @@
 export type FilterOption = { value: string; label: string };
 
 export type CaseFilterControls = {
-  authorOptions: FilterOption[];
-  tagOptions: FilterOption[];
+  phaseOptions: FilterOption[];
   courtOptions: FilterOption[];
-  selectedAuthor: string | null;
-  onAuthorChange: (value: string | null) => void;
+  selectedPhase: string | null;
+  onPhaseChange: (value: string | null) => void;
   selectedTagIds: string[];
   onTagChange: (value: string[]) => void;
   selectedCourt: string | null;

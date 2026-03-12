@@ -1,7 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
-import type { CaseItem, CaseTagItem, TagItem } from "../../../core/types";
+import type { CaseItem, CasePhaseItem, CaseTagItem, PhaseItem } from "../../../core/types";
 import { getCourtCode } from "../../../core/utils/caseUtils";
-import { buildTagOptions } from "../../../core/utils/tagUtils";
 
 const COURT_FILTER_OPTIONS = [
   { value: "scotus", label: "SCOTUS" },
@@ -12,10 +11,11 @@ const COURT_FILTER_OPTIONS = [
 
 export const useAdminCaseFilters = (
   cases: CaseItem[],
-  tags: TagItem[],
+  phases: PhaseItem[],
+  casePhases: CasePhaseItem[],
   caseTags: CaseTagItem[],
 ) => {
-  const [selectedAuthor, setSelectedAuthorInternal] = useState<string | null>(null);
+  const [selectedPhase, setSelectedPhaseInternal] = useState<string | null>(null);
   const [selectedTagIds, setSelectedTagIdsInternal] = useState<string[]>([]);
   const [selectedCourt, setSelectedCourtInternal] = useState<string | null>(null);
   const [nameQuery, setNameQuery] = useState("");
@@ -24,62 +24,27 @@ export const useAdminCaseFilters = (
   const [currentPage, setCurrentPage] = useState(1);
   const pageSize = 100;
 
-  const judgeToCourts = useMemo(() => {
+  const phaseOptions = useMemo(
+    () =>
+      phases
+        .slice()
+        .sort((a, b) => (a.sort_order ?? Number.MAX_SAFE_INTEGER) - (b.sort_order ?? Number.MAX_SAFE_INTEGER))
+        .map((phase) => ({ value: phase.phaseId, label: phase.label })),
+    [phases],
+  );
+
+  const courtOptions = useMemo(() => COURT_FILTER_OPTIONS, []);
+
+  const casePhaseIdsByCaseId = useMemo(() => {
     const map = new Map<string, Set<string>>();
-    for (const item of cases) {
-      const judge = item.authoringJudge;
-      if (!judge || judge === "Memorandum") {
-        continue;
+    for (const item of casePhases) {
+      if (!map.has(item.caseId)) {
+        map.set(item.caseId, new Set());
       }
-      if (!map.has(judge)) {
-        map.set(judge, new Set());
-      }
-      map.get(judge)?.add(getCourtCode(item.court));
+      map.get(item.caseId)?.add(item.phaseId);
     }
     return map;
-  }, [cases]);
-
-  const courtToJudges = useMemo(() => {
-    const map = new Map<string, Set<string>>();
-    for (const item of cases) {
-      const judge = item.authoringJudge;
-      if (!judge || judge === "Memorandum") {
-        continue;
-      }
-      const courtCode = getCourtCode(item.court);
-      if (!map.has(courtCode)) {
-        map.set(courtCode, new Set());
-      }
-      map.get(courtCode)?.add(judge);
-    }
-    return map;
-  }, [cases]);
-
-  const authorOptions = useMemo(() => {
-    const candidates = selectedCourt
-      ? Array.from(courtToJudges.get(selectedCourt) ?? [])
-      : Array.from(judgeToCourts.keys());
-
-    const options = candidates.sort().map((value) => ({ value, label: value }));
-
-    const perCuriamIndex = options.findIndex((option) => option.value === "Per Curiam");
-    if (perCuriamIndex > 0) {
-      const [perCuriam] = options.splice(perCuriamIndex, 1);
-      options.unshift(perCuriam);
-    }
-    return options;
-  }, [selectedCourt, courtToJudges, judgeToCourts]);
-
-  const tagOptions = useMemo(() => {
-    return buildTagOptions(tags);
-  }, [tags]);
-
-  const courtOptions = useMemo(() => {
-    if (!selectedAuthor) return COURT_FILTER_OPTIONS;
-
-    const authorCourts = judgeToCourts.get(selectedAuthor) ?? new Set<string>();
-    return COURT_FILTER_OPTIONS.filter((option) => authorCourts.has(option.value));
-  }, [selectedAuthor, judgeToCourts]);
+  }, [casePhases]);
 
   const caseTagIdsByCaseId = useMemo(() => {
     const map = new Map<string, Set<string>>();
@@ -117,16 +82,16 @@ export const useAdminCaseFilters = (
   const filteredCases = useMemo(() => {
     const query = debouncedNameQuery.trim().toLowerCase();
     return sortedCases.filter((item) => {
-      if (selectedAuthor && item.authoringJudge !== selectedAuthor) {
-        return false;
+      if (selectedPhase) {
+        if (casePhaseIdsByCaseId.size === 0) return false;
+        const phaseIds = casePhaseIdsByCaseId.get(item.caseId);
+        if (!phaseIds || !phaseIds.has(selectedPhase)) return false;
       }
       if (selectedCourt && getCourtCode(item.court) !== selectedCourt) {
         return false;
       }
       if (selectedTagIds.length) {
-        if (caseTagIdsByCaseId.size === 0) {
-          return false;
-        }
+        if (caseTagIdsByCaseId.size === 0) return false;
         const tagIds = caseTagIdsByCaseId.get(item.caseId);
         if (!tagIds) return false;
         const matchesAll = selectedTagIds.every((tagId) => tagIds.has(tagId));
@@ -135,10 +100,10 @@ export const useAdminCaseFilters = (
       if (!query) return true;
       return (item.caseName ?? "").toLowerCase().includes(query);
     });
-  }, [sortedCases, selectedAuthor, selectedCourt, selectedTagIds, debouncedNameQuery, caseTagIdsByCaseId]);
+  }, [sortedCases, selectedPhase, selectedCourt, selectedTagIds, debouncedNameQuery, casePhaseIdsByCaseId, caseTagIdsByCaseId]);
 
-  const setSelectedAuthor = (value: string | null) => {
-    setSelectedAuthorInternal(value);
+  const setSelectedPhase = (value: string | null) => {
+    setSelectedPhaseInternal(value);
     setCurrentPage(1);
   };
 
@@ -168,11 +133,10 @@ export const useAdminCaseFilters = (
   }, [filteredCases, currentPage, pageSize]);
 
   return {
-    authorOptions,
-    tagOptions,
+    phaseOptions,
     courtOptions,
-    selectedAuthor,
-    setSelectedAuthor,
+    selectedPhase,
+    setSelectedPhase,
     selectedTagIds,
     setSelectedTagIds,
     selectedCourt,
