@@ -145,12 +145,26 @@ const CaseDetailLayer: React.FC<CaseDetailLayerProps> = ({ cases, loading, error
               <ReactMarkdown>{renderedOpinionText}</ReactMarkdown>
             </div>
           ) : opinionPdfUrl ? (
-            <div className="case-detail__opinion-content">
-              <iframe
-                title="Opinion PDF"
-                src={opinionPdfUrl}
-                style={{ width: "100%", minHeight: "80vh", border: 0 }}
-              />
+            <div className="case-detail__pdf-viewer">
+              <div className="case-detail__pdf-actions">
+                <a
+                  className="case-detail__pdf-link"
+                  href={opinionPdfUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Open PDF
+                </a>
+                <a className="case-detail__pdf-link" href={opinionPdfUrl} download>
+                  Download PDF
+                </a>
+              </div>
+              <p className="case-detail__pdf-mobile-note">
+                Open the PDF in a new tab on mobile for full-page navigation.
+              </p>
+              <div className="case-detail__pdf-frame-wrap">
+                <iframe title="Opinion PDF" src={opinionPdfUrl} className="case-detail__pdf-frame" />
+              </div>
             </div>
           ) : (
             <>

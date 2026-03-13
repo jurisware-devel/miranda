@@ -937,6 +937,63 @@ body.route-theme-pub {
   overflow-x: hidden;
 }
 
+.case-detail__pdf-viewer {
+  width: 100%;
+  min-width: 0;
+}
+
+.case-detail__pdf-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin: 0 0 12px;
+}
+
+.case-detail__pdf-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 36px;
+  padding: 0 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 999px;
+  background: #f8fafc;
+  color: #0f172a;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.case-detail__pdf-link:hover,
+.case-detail__pdf-link:focus {
+  background: #eef2f7;
+  color: #0f172a;
+}
+
+.case-detail__pdf-mobile-note {
+  display: none;
+  margin: 0 0 12px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #475569;
+}
+
+.case-detail__pdf-frame-wrap {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+}
+
+.case-detail__pdf-frame {
+  display: block;
+  width: 100%;
+  min-height: 80vh;
+  border: 0;
+}
+
 .case-detail__opinion-content :is(p, ul, ol, blockquote) {
   margin: 0 0 12px;
 }
@@ -964,6 +1021,14 @@ body.route-theme-pub {
   .case-detail__opinion-content {
     font-size: 16px;
     line-height: 1.7;
+  }
+
+  .case-detail__pdf-mobile-note {
+    display: block;
+  }
+
+  .case-detail__pdf-frame-wrap {
+    display: none;
   }
 }
 
