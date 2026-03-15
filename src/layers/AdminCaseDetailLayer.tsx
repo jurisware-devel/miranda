@@ -8,6 +8,8 @@ import {
   buildOpinionCandidateUrls,
   buildOpinionStorageKey,
   extractOpinionStorageKeyFromUrl,
+  formatCaseCitationLine,
+  getCourtBadgeLabel,
 } from "../core/utils/caseUtils";
 import { getReadableTextColor } from "../core/utils/colorUtils";
 import { preserveNumericReferencePrefixes } from "../core/utils/opinionMarkdown";
@@ -686,6 +688,13 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
               </>
             ) : opinionPdfUrl ? (
               <div className="case-detail__pdf-viewer">
+                <div className="case-detail__pdf-header">
+                  <h1 className="case-detail__pdf-title">
+                    {caseItem?.caseName?.trim() || "Untitled Case"}
+                  </h1>
+                  <p className="case-detail__pdf-meta">{formatCaseCitationLine(caseItem)}</p>
+                  <p className="case-detail__pdf-court">{getCourtBadgeLabel(caseItem?.court)}</p>
+                </div>
                 <div className="case-detail__pdf-actions">
                   <a
                     className="case-detail__pdf-link"
@@ -695,13 +704,7 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
                   >
                     Open PDF
                   </a>
-                  <a className="case-detail__pdf-link" href={opinionPdfUrl} download>
-                    Download PDF
-                  </a>
                 </div>
-                <p className="case-detail__pdf-mobile-note">
-                  Open the PDF in a new tab on mobile for full-page navigation.
-                </p>
                 <div className="case-detail__pdf-frame-wrap">
                   <iframe
                     title="Opinion PDF"
