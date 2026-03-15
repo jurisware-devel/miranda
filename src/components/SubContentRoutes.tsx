@@ -4,7 +4,7 @@ import SubPlaceholderPage from "./SubPlaceholderPage";
 import SubCaseDetailLayer from "../layers/SubCaseDetailLayer";
 import SubCaseMasonryLayer from "../layers/SubCaseMasonryLayer";
 import type { CaseFilterControls } from "../core/filterControls";
-import type { CaseItem, PhaseId } from "../core/types";
+import type { CaseItem, CourtItem, PhaseId } from "../core/types";
 import type { TagMeta } from "../core/utils/tagUtils";
 
 type SubContentRoutesProps = {
@@ -15,6 +15,7 @@ type SubContentRoutesProps = {
   casePhasesError: string | null;
   loading: boolean;
   cases: CaseItem[];
+  courtsById: Map<string, CourtItem>;
   pagedCases: CaseItem[];
   tagsById: Map<string, TagMeta>;
   caseTagsByCaseId: Map<string, string[]>;
@@ -32,6 +33,7 @@ const SubContentRoutes: React.FC<SubContentRoutesProps> = ({
   casePhasesError,
   loading,
   cases,
+  courtsById,
   pagedCases,
   tagsById,
   caseTagsByCaseId,
@@ -55,6 +57,7 @@ const SubContentRoutes: React.FC<SubContentRoutesProps> = ({
             casePhasesError={casePhasesError}
             loading={loading}
             cases={pagedCases}
+            courtsById={courtsById}
             tagsById={tagsById}
             caseTagsByCaseId={caseTagsByCaseId}
             casePhasesByCaseId={casePhasesByCaseId}
@@ -66,7 +69,14 @@ const SubContentRoutes: React.FC<SubContentRoutesProps> = ({
       />
       <Route
         path="/sub/case/:caseId"
-        element={<SubCaseDetailLayer cases={cases} loading={loading} error={error} />}
+        element={
+          <SubCaseDetailLayer
+            cases={cases}
+            courtsById={courtsById}
+            loading={loading}
+            error={error}
+          />
+        }
       />
       <Route
         path="/sub/settings"

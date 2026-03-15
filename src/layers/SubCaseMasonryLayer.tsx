@@ -3,7 +3,7 @@ import { Alert, Masonry, Spin } from "antd";
 import { CloseCircleOutlined } from "@ant-design/icons";
 import SubCaseCard from "../components/SubCaseCard";
 import type { CaseFilterControls } from "../core/filterControls";
-import type { CaseItem, PhaseId } from "../core/types";
+import type { CaseItem, CourtItem, PhaseId } from "../core/types";
 import type { TagMeta } from "../core/utils/tagUtils";
 import SubTagCapsule from "../components/SubTagCapsule";
 import { getReadableTextColor } from "../core/utils/colorUtils";
@@ -16,6 +16,7 @@ type SubCaseMasonryLayerProps = {
   casePhasesError: string | null;
   loading: boolean;
   cases: CaseItem[];
+  courtsById: Map<string, CourtItem>;
   tagsById: Map<string, TagMeta>;
   phasesById: Map<string, string>;
   caseTagsByCaseId: Map<string, string[]>;
@@ -32,6 +33,7 @@ const SubCaseMasonryLayer: React.FC<SubCaseMasonryLayerProps> = ({
   casePhasesError,
   loading,
   cases,
+  courtsById,
   tagsById,
   phasesById,
   caseTagsByCaseId,
@@ -99,6 +101,7 @@ const SubCaseMasonryLayer: React.FC<SubCaseMasonryLayerProps> = ({
             return (
               <SubCaseCard
                 caseItem={data}
+                courtsById={courtsById}
                 index={index}
                 phases={phases}
                 phasesById={phasesById}

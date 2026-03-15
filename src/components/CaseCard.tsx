@@ -2,7 +2,7 @@ import React from "react";
 import { Card } from "antd";
 import ReactMarkdown from "react-markdown";
 import TagCapsule from "./TagCapsule";
-import type { CaseItem, PhaseId } from "../core/types";
+import type { CaseItem, CourtItem, PhaseId } from "../core/types";
 import { getPhaseLabel } from "../core/utils/phaseUtils";
 import type { TagMeta } from "../core/utils/tagUtils";
 import { formatCaseCitationLine, getCourtBadgeLabel, getCourtCode } from "../core/utils/caseUtils";
@@ -10,6 +10,7 @@ import { getReadableTextColor } from "../core/utils/colorUtils";
 
 type CaseCardProps = {
   caseItem: CaseItem;
+  courtsById: Map<string, CourtItem>;
   index: number;
   phases: PhaseId[];
   phasesById: Map<string, string>;
@@ -20,6 +21,7 @@ type CaseCardProps = {
 
 const CaseCard: React.FC<CaseCardProps> = ({
   caseItem,
+  courtsById,
   index,
   phases,
   phasesById,
@@ -35,7 +37,9 @@ const CaseCard: React.FC<CaseCardProps> = ({
   return (
     <Card key={caseItem.caseId ?? index} className="grid-card" size="small">
       <div className="grid-card__badge">
-        <span className={`badge badge--court badge--court-${getCourtCode(caseItem.court)}`}>{getCourtBadgeLabel(caseItem.court)}</span>
+        <span className={`badge badge--court badge--court-${getCourtCode(caseItem.court)}`}>
+          {getCourtBadgeLabel(caseItem.court, courtsById)}
+        </span>
       </div>
       <div className="grid-card__title">
         <button

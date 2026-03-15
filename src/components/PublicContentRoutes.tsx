@@ -3,7 +3,7 @@ import { Navigate, Route, Routes, useNavigate } from "react-router-dom";
 import CaseDetailLayer from "../layers/CaseDetailLayer";
 import CaseMasonryLayer from "../layers/CaseMasonryLayer";
 import PublicLoginPage from "./PublicLoginPage";
-import type { CaseItem, PhaseId } from "../core/types";
+import type { CaseItem, CourtItem, PhaseId } from "../core/types";
 import type { TagMeta } from "../core/utils/tagUtils";
 import type { CaseFilterControls } from "../core/filterControls";
 
@@ -15,6 +15,7 @@ type PublicContentRoutesProps = {
   casePhasesError: string | null;
   loading: boolean;
   cases: CaseItem[];
+  courtsById: Map<string, CourtItem>;
   pagedCases: CaseItem[];
   tagsById: Map<string, TagMeta>;
   caseTagsByCaseId: Map<string, string[]>;
@@ -31,6 +32,7 @@ const PublicContentRoutes: React.FC<PublicContentRoutesProps> = ({
   casePhasesError,
   loading,
   cases,
+  courtsById,
   pagedCases,
   tagsById,
   caseTagsByCaseId,
@@ -53,6 +55,7 @@ const PublicContentRoutes: React.FC<PublicContentRoutesProps> = ({
             casePhasesError={casePhasesError}
             loading={loading}
             cases={pagedCases}
+            courtsById={courtsById}
             tagsById={tagsById}
             caseTagsByCaseId={caseTagsByCaseId}
             casePhasesByCaseId={casePhasesByCaseId}
@@ -64,7 +67,14 @@ const PublicContentRoutes: React.FC<PublicContentRoutesProps> = ({
       />
       <Route
         path="/pub/case/:caseId"
-        element={<CaseDetailLayer cases={cases} loading={loading} error={error} />}
+        element={
+          <CaseDetailLayer
+            cases={cases}
+            courtsById={courtsById}
+            loading={loading}
+            error={error}
+          />
+        }
       />
       <Route path="/pub/login" element={<PublicLoginPage />} />
       <Route path="/pub/tags" element={<Navigate to="/pub" replace />} />

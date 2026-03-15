@@ -1,16 +1,10 @@
 import { useEffect, useMemo, useState } from "react";
-import type { CaseItem, CasePhaseItem, CaseTagItem, PhaseItem } from "../../../core/types";
-import { getCourtCode } from "../../../core/utils/caseUtils";
-
-const COURT_FILTER_OPTIONS = [
-  { value: "scotus", label: "SCOTUS" },
-  { value: "coa", label: "Ct. of Appeals" },
-  { value: "ad3", label: "3d Dept" },
-  { value: "albany", label: "Albany County" },
-];
+import type { CaseItem, CasePhaseItem, CaseTagItem, CourtItem, PhaseItem } from "../../../core/types";
+import { getCourtBadgeLabel, getCourtCode, mapCourtsById } from "../../../core/utils/caseUtils";
 
 export const usePublicCaseFilters = (
   cases: CaseItem[],
+  courts: CourtItem[],
   phases: PhaseItem[],
   casePhases: CasePhaseItem[],
   caseTags: CaseTagItem[],
@@ -24,6 +18,7 @@ export const usePublicCaseFilters = (
   const [currentPage, setCurrentPage] = useState(1);
   const pageSize = 100;
 
+  const courtsById = useMemo(() => mapCourtsById(courts), [courts]);
   const phaseOptions = useMemo(
     () =>
       phases
@@ -33,7 +28,21 @@ export const usePublicCaseFilters = (
     [phases],
   );
 
-  const courtOptions = useMemo(() => COURT_FILTER_OPTIONS, []);
+  const courtOptions = useMemo(() => {
+    const seen = new Set<string>();
+    return cases
+      .map((item) => getCourtCode(item.court))
+      .filter((courtId) => {
+        if (!courtId || seen.has(courtId)) return false;
+        seen.add(courtId);
+        return true;
+      })
+      .sort()
+      .map((courtId) => ({
+        value: courtId,
+        label: getCourtBadgeLabel(courtId, courtsById),
+      }));
+  }, [cases, courtsById]);
 
   const casePhaseIdsByCaseId = useMemo(() => {
     const map = new Map<string, Set<string>>();

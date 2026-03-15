@@ -3,7 +3,7 @@ import { Alert, Spin } from "antd";
 import { useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import { client } from "../core/amplifyClient";
-import type { CaseItem } from "../core/types";
+import type { CaseItem, CourtItem } from "../core/types";
 import {
   buildOpinionCandidateUrls,
   formatCaseCitationLine,
@@ -13,11 +13,12 @@ import { preserveNumericReferencePrefixes } from "../core/utils/opinionMarkdown"
 
 type CaseDetailLayerProps = {
   cases: CaseItem[];
+  courtsById: Map<string, CourtItem>;
   loading: boolean;
   error: string | null;
 };
 
-const CaseDetailLayer: React.FC<CaseDetailLayerProps> = ({ cases, loading, error }) => {
+const CaseDetailLayer: React.FC<CaseDetailLayerProps> = ({ cases, courtsById, loading, error }) => {
   const { caseId } = useParams();
   const panelRef = useRef<HTMLDivElement | null>(null);
   const [caseItem, setCaseItem] = useState<CaseItem | null>(null);
@@ -155,7 +156,9 @@ const CaseDetailLayer: React.FC<CaseDetailLayerProps> = ({ cases, loading, error
                 <p className="case-detail__pdf-meta">
                   {formatCaseCitationLine(caseItem)}
                 </p>
-                <p className="case-detail__pdf-court">{getCourtBadgeLabel(caseItem?.court)}</p>
+                <p className="case-detail__pdf-court">
+                  {getCourtBadgeLabel(caseItem?.court, courtsById)}
+                </p>
               </div>
               <div className="case-detail__pdf-actions">
                 <a

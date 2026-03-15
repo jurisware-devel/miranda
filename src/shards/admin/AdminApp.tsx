@@ -7,8 +7,10 @@ import AdminContentRoutes from "../../components/AdminContentRoutes";
 import AdminCaseDetailNav from "../../components/AdminCaseDetailNav";
 import AdminShellFooter from "../../components/AdminShellFooter";
 import AdminShellHeader from "../../components/AdminShellHeader";
+import { useCourtsData } from "../../core/hooks/useCourtsData";
 import type { CaseFilterControls } from "../../core/filterControls";
 import type { AppCapabilities } from "../../core/types";
+import { mapCourtsById } from "../../core/utils/caseUtils";
 import { mapCasePhasesByCaseId, mapPhasesById } from "../../core/utils/phaseUtils";
 import { mapCaseTagsByCaseId, mapTagsById } from "../../core/utils/tagUtils";
 import { useAdminCaseFilters } from "./hooks/useAdminCaseFilters";
@@ -24,6 +26,10 @@ type AdminAppProps = {
 
 const AdminApp: React.FC<AdminAppProps> = ({ capabilities }) => {
   const { cases, loading, error } = useAdminCasesData(capabilities.isResolved);
+  const { courts, loading: courtsLoading, error: courtsError } = useCourtsData({
+    enabled: capabilities.isResolved,
+    authMode: "userPool",
+  });
   const {
     tags,
     phases,
@@ -54,7 +60,7 @@ const AdminApp: React.FC<AdminAppProps> = ({ capabilities }) => {
     pageSize,
     filteredCases,
     pagedCases,
-  } = useAdminCaseFilters(cases, phases, casePhases, caseTags);
+  } = useAdminCaseFilters(cases, courts, phases, casePhases, caseTags);
   const [filtersOpen, setFiltersOpen] = useState(false);
   const screens = Grid.useBreakpoint();
   const isXlUp = Boolean(screens.xl);
@@ -70,6 +76,7 @@ const AdminApp: React.FC<AdminAppProps> = ({ capabilities }) => {
   });
 
   const tagsById = useMemo(() => mapTagsById(tags), [tags]);
+  const courtsById = useMemo(() => mapCourtsById(courts), [courts]);
   const caseTagsByCaseId = useMemo(
     () => mapCaseTagsByCaseId(caseTags, tagsById),
     [caseTags, tagsById],
@@ -168,13 +175,15 @@ const AdminApp: React.FC<AdminAppProps> = ({ capabilities }) => {
         <AdminContentRoutes
           capabilities={capabilities}
           isXlUp={isXlUp}
-          error={error}
+          error={error ?? courtsError}
           tagsError={tagsError}
           phasesError={phasesError}
           caseTagsError={caseTagsError}
           casePhasesError={casePhasesError}
-          loading={loading}
+          loading={loading || courtsLoading}
           cases={cases}
+          courts={courts}
+          courtsById={courtsById}
           tags={tags}
           phases={phases}
           caseTags={caseTags}

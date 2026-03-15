@@ -6,7 +6,19 @@ The section below defines the core models for cases and tagging.
 Case IDs use the existing unique prefix (e.g. "2025_00904").
 =========================================================================*/
 const schema = a.schema({
-  Court: a.enum(['scotus', 'coa', 'ad3', 'albany']),
+  Court: a
+    .model({
+      id: a.string().required(),
+      label_short: a.string().required(),
+      label_long: a.string().required(),
+      cases: a.hasMany('Case', 'court'),
+    })
+    .identifier(["id"])
+    .authorization((allow) => [
+      allow.guest().to(["read"]),
+      allow.authenticated().to(["read"]),
+      allow.group("Admin").to(["create", "update", "delete"]),
+    ]),
 
   Case: a
     .model({
@@ -15,7 +27,8 @@ const schema = a.schema({
       slipOp: a.string(),
       ny3dCite: a.string(),
       opinionUrl: a.string().required(),
-      court: a.ref('Court'),
+      court: a.string(),
+      courtRecord: a.belongsTo('Court', 'court'),
       decisionDate: a.date(),
       arguedDate: a.date(),
       correctedDate: a.date(),

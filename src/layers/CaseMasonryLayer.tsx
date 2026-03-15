@@ -2,7 +2,7 @@ import React from "react";
 import { Alert, Masonry, Spin } from "antd";
 import { CloseCircleOutlined } from "@ant-design/icons";
 import CaseCard from "../components/CaseCard";
-import type { CaseItem, PhaseId } from "../core/types";
+import type { CaseItem, CourtItem, PhaseId } from "../core/types";
 import type { TagMeta } from "../core/utils/tagUtils";
 import TagCapsule from "../components/TagCapsule";
 import { getReadableTextColor } from "../core/utils/colorUtils";
@@ -16,6 +16,7 @@ type CaseMasonryLayerProps = {
   casePhasesError: string | null;
   loading: boolean;
   cases: CaseItem[];
+  courtsById: Map<string, CourtItem>;
   tagsById: Map<string, TagMeta>;
   phasesById: Map<string, string>;
   caseTagsByCaseId: Map<string, string[]>;
@@ -32,6 +33,7 @@ const CaseMasonryLayer: React.FC<CaseMasonryLayerProps> = ({
   casePhasesError,
   loading,
   cases,
+  courtsById,
   tagsById,
   phasesById,
   caseTagsByCaseId,
@@ -99,6 +101,7 @@ const CaseMasonryLayer: React.FC<CaseMasonryLayerProps> = ({
             return (
               <CaseCard
                 caseItem={data}
+                courtsById={courtsById}
                 index={index}
                 phases={phases}
                 phasesById={phasesById}

@@ -7,7 +7,9 @@ import SubCaseDetailNav from "../../components/SubCaseDetailNav";
 import SubContentRoutes from "../../components/SubContentRoutes";
 import SubFooter from "../../components/SubFooter";
 import SubHeader from "../../components/SubHeader";
+import { useCourtsData } from "../../core/hooks/useCourtsData";
 import type { CaseFilterControls } from "../../core/filterControls";
+import { mapCourtsById } from "../../core/utils/caseUtils";
 import { mapCasePhasesByCaseId, mapPhasesById } from "../../core/utils/phaseUtils";
 import { mapCaseTagsByCaseId, mapTagsById } from "../../core/utils/tagUtils";
 import { useSubCaseFilters } from "./hooks/useSubCaseFilters";
@@ -23,6 +25,10 @@ type SubAppProps = {
 
 const SubApp: React.FC<SubAppProps> = ({ enableData }) => {
   const { cases, loading, error } = useSubCasesData(enableData);
+  const { courts, loading: courtsLoading, error: courtsError } = useCourtsData({
+    enabled: enableData,
+    authMode: "userPool",
+  });
   const { tags, phases, caseTags, casePhases, tagsError, phasesError, caseTagsError, casePhasesError } =
     useSubTagsData(enableData);
   const {
@@ -43,7 +49,7 @@ const SubApp: React.FC<SubAppProps> = ({ enableData }) => {
     pageSize,
     filteredCases,
     pagedCases,
-  } = useSubCaseFilters(cases, phases, casePhases, caseTags);
+  } = useSubCaseFilters(cases, courts, phases, casePhases, caseTags);
 
   const [filtersOpen, setFiltersOpen] = useState(false);
   const screens = Grid.useBreakpoint();
@@ -60,6 +66,7 @@ const SubApp: React.FC<SubAppProps> = ({ enableData }) => {
   });
 
   const tagsById = useMemo(() => mapTagsById(tags), [tags]);
+  const courtsById = useMemo(() => mapCourtsById(courts), [courts]);
   const caseTagsByCaseId = useMemo(
     () => mapCaseTagsByCaseId(caseTags, tagsById),
     [caseTags, tagsById],
@@ -156,13 +163,14 @@ const SubApp: React.FC<SubAppProps> = ({ enableData }) => {
       />
       <Content className="app-content">
         <SubContentRoutes
-          error={error}
+          error={error ?? courtsError}
           tagsError={tagsError}
           phasesError={phasesError}
           caseTagsError={caseTagsError}
           casePhasesError={casePhasesError}
-          loading={loading}
+          loading={loading || courtsLoading}
           cases={cases}
+          courtsById={courtsById}
           pagedCases={pagedCases}
           tagsById={tagsById}
           caseTagsByCaseId={caseTagsByCaseId}

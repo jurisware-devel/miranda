@@ -1,6 +1,13 @@
-import type { CaseItem } from "../types";
+import type { CaseItem, CourtItem } from "../types";
 
 const OPINIONS_BUCKET = "opinions.jurisware.com";
+
+const FALLBACK_COURT_LABELS: Record<string, { short: string; long: string }> = {
+  coa: { short: "CoA", long: "NY Court of Appeals" },
+  scotus: { short: "SCOTUS", long: "Supreme Court of the United States" },
+  ad3: { short: "AD3", long: "Appellate Division, Third Department" },
+  albany: { short: "Albany", long: "Albany County" },
+};
 
 const normalizeCourtCode = (value?: string | null) => {
   return (value ?? "coa").trim().toLowerCase() || "coa";
@@ -153,15 +160,28 @@ export const extractOpinionStorageKeyFromUrl = (url: string) => {
 
 export const getCourtCode = (court?: string | null) => normalizeCourtCode(court);
 
-export const getCourtBadgeLabel = (court?: string | null) => {
+export const mapCourtsById = (courts: CourtItem[]) => {
+  return new Map(courts.map((court) => [normalizeCourtCode(court.id), court]));
+};
+
+export const getCourtBadgeLabel = (
+  court?: string | null,
+  courtsById?: Map<string, CourtItem>,
+) => {
   const code = normalizeCourtCode(court);
-  const known: Record<string, string> = {
-    coa: "CoA",
-    scotus: "SCOTUS",
-    ad3d: "AD3d",
-    albany: "Albany",
-  };
-  return known[code] ?? code.toUpperCase();
+  const record = courtsById?.get(code);
+  if (record?.label_short?.trim()) return record.label_short.trim();
+  return FALLBACK_COURT_LABELS[code]?.short ?? code.toUpperCase();
+};
+
+export const getCourtLongLabel = (
+  court?: string | null,
+  courtsById?: Map<string, CourtItem>,
+) => {
+  const code = normalizeCourtCode(court);
+  const record = courtsById?.get(code);
+  if (record?.label_long?.trim()) return record.label_long.trim();
+  return FALLBACK_COURT_LABELS[code]?.long ?? code.toUpperCase();
 };
 
 export const formatCaseDateLabel = (

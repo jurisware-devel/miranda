@@ -5,7 +5,15 @@ import AdminCaseDetailLayer from "../layers/AdminCaseDetailLayer";
 import AdminCaseMasonryLayer from "../layers/AdminCaseMasonryLayer";
 import type { CaseFilterControls } from "../core/filterControls";
 import type { AppCapabilities } from "../core/types";
-import type { CaseItem, CasePhaseItem, CaseTagItem, PhaseId, PhaseItem, TagItem } from "../core/types";
+import type {
+  CaseItem,
+  CasePhaseItem,
+  CaseTagItem,
+  CourtItem,
+  PhaseId,
+  PhaseItem,
+  TagItem,
+} from "../core/types";
 import type { TagMeta } from "../core/utils/tagUtils";
 
 type AdminContentRoutesProps = {
@@ -18,6 +26,8 @@ type AdminContentRoutesProps = {
   casePhasesError: string | null;
   loading: boolean;
   cases: CaseItem[];
+  courts: CourtItem[];
+  courtsById: Map<string, CourtItem>;
   tags: TagItem[];
   phases: PhaseItem[];
   caseTags: CaseTagItem[];
@@ -61,6 +71,8 @@ const AdminContentRoutes: React.FC<AdminContentRoutesProps> = ({
   casePhasesError,
   loading,
   cases,
+  courts,
+  courtsById,
   tags,
   phases,
   caseTags,
@@ -90,6 +102,7 @@ const AdminContentRoutes: React.FC<AdminContentRoutesProps> = ({
               casePhasesError={casePhasesError}
               loading={loading}
               cases={pagedCases}
+              courtsById={courtsById}
               tagsById={tagsById}
               caseTagsByCaseId={caseTagsByCaseId}
               casePhasesByCaseId={casePhasesByCaseId}
@@ -106,6 +119,8 @@ const AdminContentRoutes: React.FC<AdminContentRoutesProps> = ({
           <AdminRoute capabilities={capabilities}>
             <AdminCaseDetailLayer
               cases={cases}
+              courts={courts}
+              courtsById={courtsById}
               tags={tags}
               phases={phases}
               caseTags={caseTags}

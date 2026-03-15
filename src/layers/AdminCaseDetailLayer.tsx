@@ -3,7 +3,14 @@ import { Alert, Button, Input, Select, Spin, message } from "antd";
 import { useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import { client } from "../core/amplifyClient";
-import type { CaseItem, CasePhaseItem, CaseTagItem, PhaseItem, TagItem } from "../core/types";
+import type {
+  CaseItem,
+  CasePhaseItem,
+  CaseTagItem,
+  CourtItem,
+  PhaseItem,
+  TagItem,
+} from "../core/types";
 import {
   buildOpinionCandidateUrls,
   buildOpinionStorageKey,
@@ -18,6 +25,8 @@ import AdminTagCapsule from "../components/AdminTagCapsule";
 
 type AdminCaseDetailLayerProps = {
   cases: CaseItem[];
+  courts: CourtItem[];
+  courtsById: Map<string, CourtItem>;
   tags: TagItem[];
   phases: PhaseItem[];
   caseTags: CaseTagItem[];
@@ -100,6 +109,8 @@ const toDraft = (value: CaseItem | null): CaseMetadataDraft => {
 
 const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
   cases,
+  courts,
+  courtsById,
   tags,
   phases,
   caseTags,
@@ -693,7 +704,9 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
                     {caseItem?.caseName?.trim() || "Untitled Case"}
                   </h1>
                   <p className="case-detail__pdf-meta">{formatCaseCitationLine(caseItem)}</p>
-                  <p className="case-detail__pdf-court">{getCourtBadgeLabel(caseItem?.court)}</p>
+                  <p className="case-detail__pdf-court">
+                    {getCourtBadgeLabel(caseItem?.court, courtsById)}
+                  </p>
                 </div>
                 <div className="case-detail__pdf-actions">
                   <a
@@ -775,12 +788,10 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
                     disabled={!isEditingMetadata}
                     allowClear
                     onChange={(value) => handleMetadataFieldChange("court", value ?? "")}
-                    options={[
-                      { value: "scotus", label: "SCOTUS" },
-                      { value: "coa", label: "COA" },
-                      { value: "ad3", label: "AD3" },
-                      { value: "albany", label: "Albany" },
-                    ]}
+                    options={courts.map((court) => ({
+                      value: court.id,
+                      label: court.label_short,
+                    }))}
                   />
                 </div>
                 <div className="case-metadata-panel__field">
