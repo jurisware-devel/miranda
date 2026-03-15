@@ -965,7 +965,7 @@ body.route-theme-pub {
 }
 
 .case-detail__pdf-actions {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   margin: 14px 0 16px;
@@ -1034,6 +1034,10 @@ body.route-theme-pub {
   .case-detail__opinion-content {
     font-size: 16px;
     line-height: 1.7;
+  }
+
+  .case-detail__pdf-actions {
+    display: flex;
   }
 
   .case-detail__pdf-frame-wrap {

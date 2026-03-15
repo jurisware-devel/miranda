@@ -7,7 +7,7 @@ import type { CaseItem, CourtItem } from "../core/types";
 import {
   buildOpinionCandidateUrls,
   formatCaseCitationLine,
-  getCourtBadgeLabel,
+  getCourtLongLabel,
 } from "../core/utils/caseUtils";
 import { preserveNumericReferencePrefixes } from "../core/utils/opinionMarkdown";
 
@@ -157,7 +157,7 @@ const CaseDetailLayer: React.FC<CaseDetailLayerProps> = ({ cases, courtsById, lo
                   {formatCaseCitationLine(caseItem)}
                 </p>
                 <p className="case-detail__pdf-court">
-                  {getCourtBadgeLabel(caseItem?.court, courtsById)}
+                  {getCourtLongLabel(caseItem?.court, courtsById)}
                 </p>
               </div>
               <div className="case-detail__pdf-actions">
@@ -167,7 +167,7 @@ const CaseDetailLayer: React.FC<CaseDetailLayerProps> = ({ cases, courtsById, lo
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Open PDF
+                  View PDF
                 </a>
               </div>
               <div className="case-detail__pdf-frame-wrap">

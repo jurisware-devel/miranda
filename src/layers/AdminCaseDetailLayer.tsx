@@ -16,7 +16,7 @@ import {
   buildOpinionStorageKey,
   extractOpinionStorageKeyFromUrl,
   formatCaseCitationLine,
-  getCourtBadgeLabel,
+  getCourtLongLabel,
 } from "../core/utils/caseUtils";
 import { getReadableTextColor } from "../core/utils/colorUtils";
 import { preserveNumericReferencePrefixes } from "../core/utils/opinionMarkdown";
@@ -705,7 +705,7 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
                   </h1>
                   <p className="case-detail__pdf-meta">{formatCaseCitationLine(caseItem)}</p>
                   <p className="case-detail__pdf-court">
-                    {getCourtBadgeLabel(caseItem?.court, courtsById)}
+                    {getCourtLongLabel(caseItem?.court, courtsById)}
                   </p>
                 </div>
                 <div className="case-detail__pdf-actions">
@@ -715,7 +715,7 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Open PDF
+                    View PDF
                   </a>
                 </div>
                 <div className="case-detail__pdf-frame-wrap">
