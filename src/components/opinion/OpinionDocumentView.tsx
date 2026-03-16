@@ -25,7 +25,7 @@ const OpinionDocumentView: React.FC<OpinionDocumentViewProps> = ({
   fallbackCourt,
   fallbackDecisionDate,
 }) => {
-  const [showAppearances, setShowAppearances] = useState(true);
+  const [showAppearances, setShowAppearances] = useState(false);
   const [showFootnotes, setShowFootnotes] = useState(true);
   const [showPageMarkers, setShowPageMarkers] = useState(true);
   const writings = document.opinions?.filter(Boolean) ?? [];
