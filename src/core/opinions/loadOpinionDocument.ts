@@ -1,5 +1,8 @@
 import type { CaseItem } from "../types";
-import { buildOpinionDocumentCandidateUrls } from "../utils/caseUtils";
+import {
+  buildLocalOpinionDocumentCandidatePaths,
+  buildOpinionDocumentCandidateUrls,
+} from "../utils/caseUtils";
 import type { OpinionDocument } from "./types";
 
 type OpinionDocumentResult =
@@ -22,6 +25,7 @@ const SAMPLE_DOCUMENT_URLS: Record<string, string> = {
   "2026_00963": new URL("../../../samples/2026_00963.json", import.meta.url).href,
   "2008_09854": new URL("../../../samples/2008_09854.json", import.meta.url).href,
 };
+const LOCAL_OPINIONS_ROOT_PATH = new URL("../../../opinions/", import.meta.url).pathname;
 
 const isOpinionDocument = (value: unknown): value is OpinionDocument => {
   return Boolean(value && typeof value === "object" && !Array.isArray(value));
@@ -69,10 +73,38 @@ const loadLocalSampleDocument = async (caseId?: string | null): Promise<OpinionD
   }
 };
 
+const buildLocalCorpusUrl = (relativePath: string) => {
+  const normalizedRoot = LOCAL_OPINIONS_ROOT_PATH.endsWith("/")
+    ? LOCAL_OPINIONS_ROOT_PATH
+    : `${LOCAL_OPINIONS_ROOT_PATH}/`;
+  return `/@fs${normalizedRoot}${relativePath.replace(/^\/+/, "")}`;
+};
+
+const loadLocalCorpusDocument = async (
+  opinionUrl?: string | null,
+  caseItem?: CaseItem | null,
+): Promise<OpinionDocumentResult | null> => {
+  if (!import.meta.env.DEV) return null;
+
+  const candidatePaths = buildLocalOpinionDocumentCandidatePaths(opinionUrl, caseItem);
+  for (const candidatePath of candidatePaths) {
+    try {
+      return await fetchOpinionDocumentFromUrl(buildLocalCorpusUrl(candidatePath));
+    } catch {
+      continue;
+    }
+  }
+
+  return null;
+};
+
 export const loadOpinionDocument = async (
   caseId: string,
   caseItem?: CaseItem | null,
 ): Promise<OpinionDocumentResult> => {
+  const localCorpusResult = await loadLocalCorpusDocument(caseItem?.opinionUrl, caseItem);
+  if (localCorpusResult) return localCorpusResult;
+
   const candidateUrls = buildOpinionDocumentCandidateUrls(caseItem?.opinionUrl, caseItem);
   let lastError = "";
 

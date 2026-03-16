@@ -39,4 +39,67 @@ test("OpinionDocumentView renders footnote references and the footnotes panel fr
 
   assert.match(html, /href="#opinion-footnote-1"/);
   assert.match(html, /Show footnotes \(5\)/);
+  assert.doesNotMatch(html, />majority</);
+});
+
+test("OpinionDocumentView does not repeat a writing title already present in the first block", () => {
+  const sample: OpinionDocument = {
+    header: { title: "Example Case" },
+    opinions: [
+      {
+        label: "OPINION OF THE COURT",
+        blocks: [
+          {
+            type: "paragraph",
+            inlines: [{ type: "text", text: "OPINION OF THE COURT" }],
+          },
+          {
+            type: "paragraph",
+            inlines: [{ type: "text", text: "Body text." }],
+          },
+        ],
+      },
+    ],
+  };
+
+  const html = renderToStaticMarkup(<OpinionDocumentView document={sample} />);
+
+  const matches = html.match(/OPINION OF THE COURT/g) ?? [];
+  assert.equal(matches.length, 1);
+});
+
+test("OpinionDocumentView falls back to case metadata when the JSON header title is missing", () => {
+  const sample: OpinionDocument = {
+    header: {
+      title: null,
+      slipOpinion: null,
+      officialCitation: null,
+      court: null,
+      decisionDate: null,
+    },
+    opinions: [
+      {
+        blocks: [
+          {
+            type: "paragraph",
+            inlines: [{ type: "text", text: "Body text." }],
+          },
+        ],
+      },
+    ],
+  };
+
+  const html = renderToStaticMarkup(
+    <OpinionDocumentView
+      document={sample}
+      fallbackTitle="People v Example"
+      fallbackSlipOpinion="2025 NY Slip Op 05785"
+      fallbackCourt="Court of Appeals"
+      fallbackDecisionDate="2025-10-09"
+    />,
+  );
+
+  assert.match(html, /People v Example/);
+  assert.match(html, /2025 NY Slip Op 05785/);
+  assert.match(html, /Court of Appeals/);
 });

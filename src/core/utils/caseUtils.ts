@@ -53,13 +53,23 @@ const buildOpinionCandidateUrlsForExtensions = (
   caseItem?: CaseItem | null,
   extensions?: string[],
 ) => {
+  const paths = buildOpinionCandidatePathsForExtensions(opinionUrl, caseItem, extensions);
+  if (!paths.length) return [];
   const base =
     typeof import.meta !== "undefined" && import.meta.env?.VITE_OPINIONS_BASE_URL
       ? String(import.meta.env.VITE_OPINIONS_BASE_URL).replace(/\/$/, "")
       : `https://${OPINIONS_BUCKET}`;
+  return paths.map((path) => `${base}/${path}`);
+};
+
+const buildOpinionCandidatePathsForExtensions = (
+  opinionUrl?: string | null,
+  caseItem?: CaseItem | null,
+  extensions?: string[],
+) => {
   const path = buildCanonicalOpinionObjectPath(opinionUrl, caseItem);
   if (!path || !extensions?.length) return [];
-  return extensions.map((extension) => `${base}/${path}.${extension}`);
+  return extensions.map((extension) => `${path}.${extension}`);
 };
 
 export const buildOpinionUrl = (opinionUrl?: string | null, caseItem?: CaseItem | null) => {
@@ -84,6 +94,13 @@ export const buildOpinionDocumentCandidateUrls = (
   caseItem?: CaseItem | null,
 ) => {
   return buildOpinionCandidateUrlsForExtensions(opinionUrl, caseItem, ["json", "md", "pdf"]);
+};
+
+export const buildLocalOpinionDocumentCandidatePaths = (
+  opinionUrl?: string | null,
+  caseItem?: CaseItem | null,
+) => {
+  return buildOpinionCandidatePathsForExtensions(opinionUrl, caseItem, ["json", "md", "pdf"]);
 };
 
 export const extractOpinionStorageKeyFromUrl = (url: string) => {

@@ -9,9 +9,22 @@ import OpinionWriting from "./OpinionWriting";
 type OpinionDocumentViewProps = {
   document: OpinionDocument;
   opinionSourceUrl?: string;
+  fallbackTitle?: string | null;
+  fallbackSlipOpinion?: string | null;
+  fallbackOfficialCitation?: string | null;
+  fallbackCourt?: string | null;
+  fallbackDecisionDate?: string | null;
 };
 
-const OpinionDocumentView: React.FC<OpinionDocumentViewProps> = ({ document, opinionSourceUrl }) => {
+const OpinionDocumentView: React.FC<OpinionDocumentViewProps> = ({
+  document,
+  opinionSourceUrl,
+  fallbackTitle,
+  fallbackSlipOpinion,
+  fallbackOfficialCitation,
+  fallbackCourt,
+  fallbackDecisionDate,
+}) => {
   const [showAppearances, setShowAppearances] = useState(true);
   const [showFootnotes, setShowFootnotes] = useState(true);
   const [showPageMarkers, setShowPageMarkers] = useState(true);
@@ -20,7 +33,14 @@ const OpinionDocumentView: React.FC<OpinionDocumentViewProps> = ({ document, opi
 
   return (
     <div className="case-detail__opinion-content opinion-document">
-      <OpinionHeader document={document} />
+      <OpinionHeader
+        document={document}
+        fallbackTitle={fallbackTitle}
+        fallbackSlipOpinion={fallbackSlipOpinion}
+        fallbackOfficialCitation={fallbackOfficialCitation}
+        fallbackCourt={fallbackCourt}
+        fallbackDecisionDate={fallbackDecisionDate}
+      />
       <div className="opinion-preferences" role="group" aria-label="Opinion display preferences">
         <Checkbox checked={showAppearances} onChange={(event) => setShowAppearances(event.target.checked)}>
           Appearances

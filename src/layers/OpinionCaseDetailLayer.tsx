@@ -146,7 +146,15 @@ const OpinionCaseDetailLayer: React.FC<OpinionCaseDetailLayerProps> = ({
               <Spin />
             </div>
           ) : opinionDocument ? (
-            <OpinionDocumentView document={opinionDocument} opinionSourceUrl={opinionSourceUrl} />
+            <OpinionDocumentView
+              document={opinionDocument}
+              opinionSourceUrl={opinionSourceUrl}
+              fallbackTitle={caseItem.caseName}
+              fallbackSlipOpinion={caseItem.slipOp}
+              fallbackOfficialCitation={caseItem.ny3dCite ?? caseItem.citation}
+              fallbackCourt={getCourtLongLabel(caseItem.court, courtsById)}
+              fallbackDecisionDate={caseItem.decisionDate}
+            />
           ) : opinionMarkdown ? (
             <div className="case-detail__opinion-content">
               <ReactMarkdown>{renderedOpinionMarkdown}</ReactMarkdown>

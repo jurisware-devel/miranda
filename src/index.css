@@ -1286,6 +1286,53 @@ body.route-theme-pub {
   color: #0f172a;
 }
 
+.case-detail__json-inspector {
+  margin-top: 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: #f8fafc;
+  overflow: hidden;
+}
+
+.case-detail__json-inspector-header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px 14px;
+  border-bottom: 1px solid #e2e8f0;
+  background: #f1f5f9;
+}
+
+.case-detail__json-inspector-title {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.3;
+  color: #0f172a;
+}
+
+.case-detail__json-inspector-source {
+  font-family: "SF Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #475569;
+  word-break: break-all;
+}
+
+.case-detail__json-inspector-pre {
+  margin: 0;
+  padding: 14px;
+  max-height: 420px;
+  overflow: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-family: "SF Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #0f172a;
+}
+
 .admin-placeholder {
   background: #ffffff;
   border-radius: 12px;

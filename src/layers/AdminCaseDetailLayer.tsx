@@ -13,6 +13,7 @@ import type {
 } from "../core/types";
 import {
   buildOpinionCandidateUrls,
+  buildOpinionDocumentCandidateUrls,
   buildOpinionStorageKey,
   extractOpinionStorageKeyFromUrl,
   formatCaseCitationLine,
@@ -131,8 +132,11 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
   const [caseError, setCaseError] = useState<string | null>(null);
   const [opinionText, setOpinionText] = useState<string>("");
   const [opinionPdfUrl, setOpinionPdfUrl] = useState<string>("");
+  const [opinionJsonText, setOpinionJsonText] = useState<string>("");
+  const [opinionJsonSourceUrl, setOpinionJsonSourceUrl] = useState<string>("");
   const [opinionLoading, setOpinionLoading] = useState(false);
   const [opinionError, setOpinionError] = useState<string | null>(null);
+  const [showJsonInspector, setShowJsonInspector] = useState(false);
   const [isEditingOpinion, setIsEditingOpinion] = useState(false);
   const [isSavingOpinion, setIsSavingOpinion] = useState(false);
   const [opinionDraft, setOpinionDraft] = useState<string>("");
@@ -233,9 +237,15 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
   useEffect(() => {
     let active = true;
     const candidateUrls = buildOpinionCandidateUrls(caseItem?.opinionUrl, caseItem);
+    const jsonCandidateUrls = buildOpinionDocumentCandidateUrls(caseItem?.opinionUrl, caseItem).filter(
+      (candidateUrl) => /\.json($|\?)/i.test(candidateUrl),
+    );
     if (!candidateUrls.length) {
       setOpinionText("");
       setOpinionPdfUrl("");
+      setOpinionJsonText("");
+      setOpinionJsonSourceUrl("");
+      setShowJsonInspector(false);
       return;
     }
 
@@ -245,7 +255,23 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
         setOpinionError(null);
         setOpinionText("");
         setOpinionPdfUrl("");
+        setOpinionJsonText("");
+        setOpinionJsonSourceUrl("");
+        setShowJsonInspector(false);
         setLoadedOpinionKey("");
+
+        for (const candidate of jsonCandidateUrls) {
+          const response = await fetch(candidate);
+          if (!response.ok) continue;
+          const contentType = response.headers.get("content-type")?.toLowerCase() ?? "";
+          const isJson = /\.json($|\?)/i.test(candidate) || contentType.includes("application/json");
+          if (!isJson) continue;
+          const rawJson = await response.text();
+          if (!active) return;
+          setOpinionJsonText(rawJson);
+          setOpinionJsonSourceUrl(candidate);
+          break;
+        }
 
         let lastStatus = "";
         for (const candidate of candidateUrls) {
@@ -658,6 +684,11 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
                         <Button type="primary" onClick={handleEditOpinion}>
                           Edit Opinion
                         </Button>
+                        {opinionJsonText ? (
+                          <Button onClick={() => setShowJsonInspector((current) => !current)}>
+                            {showJsonInspector ? "Hide JSON" : "Inspect JSON"}
+                          </Button>
+                        ) : null}
                         <div className="case-detail__editor-tags-chips">
                           {initialTagIds.map((tagId) => {
                             const tag = tagsById.get(tagId);
@@ -692,9 +723,26 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
                     />
                   </div>
                 ) : (
-                  <div className="case-detail__opinion-content">
-                    <ReactMarkdown>{renderedOpinionText}</ReactMarkdown>
-                  </div>
+                  <>
+                    <div className="case-detail__opinion-content">
+                      <ReactMarkdown>{renderedOpinionText}</ReactMarkdown>
+                    </div>
+                    {showJsonInspector && opinionJsonText ? (
+                      <section className="case-detail__json-inspector">
+                        <div className="case-detail__json-inspector-header">
+                          <h3 className="case-detail__json-inspector-title">Stanbook JSON</h3>
+                          {opinionJsonSourceUrl ? (
+                            <span className="case-detail__json-inspector-source">
+                              {opinionJsonSourceUrl}
+                            </span>
+                          ) : null}
+                        </div>
+                        <pre className="case-detail__json-inspector-pre">
+                          <code>{opinionJsonText}</code>
+                        </pre>
+                      </section>
+                    ) : null}
+                  </>
                 )}
               </>
             ) : opinionPdfUrl ? (

@@ -23,6 +23,13 @@ Miranda delivers a focused experience for reviewing cases and managing metadata,
 - Case ID validation is format-agnostic across courts (for example `2026_00963` and `24A102`) and blocks invalid/path-traversal-like values.
 - Authorization remains enforced by scoped routes and data auth policy; canonical routing is only a URL resolver.
 
+## Opinions
+
+- The opinions corpus now lives in this repo under [`opinions/`](/Users/jonathan/Projects/miranda/opinions).
+- Court opinion assets live in paths like [`opinions/coa/2026/2026_00963.json`](/Users/jonathan/Projects/miranda/opinions/coa/2026/2026_00963.json), alongside the corresponding `.htm`, `.md`, and `.pdf` files when available.
+- Supporting opinion materials now live alongside the opinions data in paths such as [`opinions/scripts/`](/Users/jonathan/Projects/miranda/opinions/scripts) and [`opinions/coa/url/`](/Users/jonathan/Projects/miranda/opinions/coa/url).
+- In local Vite development, the opinion loader first checks the merged `opinions/` tree via the repo filesystem and then falls back to the hosted opinions bucket. Production still uses the hosted bucket URLs.
+
 ## Deploying to AWS
 
 For detailed instructions on deploying your application, refer to the [Amplify deployment documentation](https://docs.amplify.aws/).

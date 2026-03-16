@@ -3,23 +3,41 @@ import type { OpinionDocument } from "../../core/opinions/types";
 
 type OpinionHeaderProps = {
   document: OpinionDocument;
+  fallbackTitle?: string | null;
+  fallbackSlipOpinion?: string | null;
+  fallbackOfficialCitation?: string | null;
+  fallbackCourt?: string | null;
+  fallbackDecisionDate?: string | null;
 };
 
-const OpinionHeader: React.FC<OpinionHeaderProps> = ({ document }) => {
+const OpinionHeader: React.FC<OpinionHeaderProps> = ({
+  document,
+  fallbackTitle,
+  fallbackSlipOpinion,
+  fallbackOfficialCitation,
+  fallbackCourt,
+  fallbackDecisionDate,
+}) => {
   const header = document.header;
-  if (!header) return null;
+  const title = header?.title ?? fallbackTitle ?? "";
+  const slipOpinion = header?.slipOpinion ?? fallbackSlipOpinion ?? "";
+  const officialCitation = header?.officialCitation ?? fallbackOfficialCitation ?? "";
+  const court = header?.court ?? fallbackCourt ?? "";
+  const decisionDate = header?.decisionDate ?? fallbackDecisionDate ?? "";
+
+  if (!title && !slipOpinion && !officialCitation && !court && !decisionDate) return null;
 
   return (
     <header className="opinion-header">
-      {header.title ? <h1 className="case-detail__pdf-title">{header.title}</h1> : null}
-      {header.slipOpinion || header.officialCitation ? (
+      {title ? <h1 className="case-detail__pdf-title">{title}</h1> : null}
+      {slipOpinion || officialCitation ? (
         <p className="case-detail__pdf-meta">
-          {[header.slipOpinion, header.officialCitation].filter(Boolean).join(" • ")}
+          {[slipOpinion, officialCitation].filter(Boolean).join(" • ")}
         </p>
       ) : null}
-      {header.court || header.decisionDate ? (
+      {court || decisionDate ? (
         <p className="case-detail__pdf-court">
-          {[header.court, header.decisionDate].filter(Boolean).join(" • ")}
+          {[court, decisionDate].filter(Boolean).join(" • ")}
         </p>
       ) : null}
     </header>
