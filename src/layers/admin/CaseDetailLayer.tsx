@@ -3,38 +3,30 @@ import { Alert, Button, Input, Select, Spin, message } from "antd";
 import { useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import { client } from "../../core/amplifyClient";
+import { loadOpinionDocument } from "../../core/opinions/loadOpinionDocument";
+import type { OpinionDocument } from "../../core/opinions/types";
+import OpinionDocumentView from "../../components/shared/opinion/OpinionDocumentView";
 import type {
   CaseItem,
   CasePhaseItem,
-  CaseTagItem,
   CourtItem,
   PhaseItem,
-  TagItem,
 } from "../../core/types";
 import {
-  buildOpinionCandidateUrls,
-  buildOpinionDocumentCandidateUrls,
   buildOpinionStorageKey,
   extractOpinionStorageKeyFromUrl,
   formatCaseCitationLine,
   getCourtLongLabel,
 } from "../../core/utils/caseUtils";
-import { getReadableTextColor } from "../../core/utils/colorUtils";
 import { preserveNumericReferencePrefixes } from "../../core/utils/opinionMarkdown";
-import { buildTagOptions, mapTagsById } from "../../core/utils/tagUtils";
-import AdminTagCapsule from "../../components/admin/TagCapsule";
 
 type AdminCaseDetailLayerProps = {
   cases: CaseItem[];
   courts: CourtItem[];
   courtsById: Map<string, CourtItem>;
-  tags: TagItem[];
   phases: PhaseItem[];
-  caseTags: CaseTagItem[];
-  setCaseTags: React.Dispatch<React.SetStateAction<CaseTagItem[]>>;
   casePhases: CasePhaseItem[];
   setCasePhases: React.Dispatch<React.SetStateAction<CasePhaseItem[]>>;
-  canEditCaseTags: boolean;
   loading: boolean;
   error: string | null;
   phasesError: string | null;
@@ -112,13 +104,9 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
   cases,
   courts,
   courtsById,
-  tags,
   phases,
-  caseTags,
-  setCaseTags,
   casePhases,
   setCasePhases,
-  canEditCaseTags,
   loading,
   error,
   phasesError,
@@ -130,10 +118,11 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
   const [caseItem, setCaseItem] = useState<CaseItem | null>(null);
   const [caseLoading, setCaseLoading] = useState(false);
   const [caseError, setCaseError] = useState<string | null>(null);
+  const [opinionDocument, setOpinionDocument] = useState<OpinionDocument | null>(null);
+  const [opinionMarkdown, setOpinionMarkdown] = useState<string>("");
   const [opinionText, setOpinionText] = useState<string>("");
+  const [opinionSourceUrl, setOpinionSourceUrl] = useState<string>("");
   const [opinionPdfUrl, setOpinionPdfUrl] = useState<string>("");
-  const [opinionJsonText, setOpinionJsonText] = useState<string>("");
-  const [opinionJsonSourceUrl, setOpinionJsonSourceUrl] = useState<string>("");
   const [opinionLoading, setOpinionLoading] = useState(false);
   const [opinionError, setOpinionError] = useState<string | null>(null);
   const [showJsonInspector, setShowJsonInspector] = useState(false);
@@ -146,13 +135,13 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
   const [isEditingMetadata, setIsEditingMetadata] = useState(false);
   const [isSavingMetadata, setIsSavingMetadata] = useState(false);
   const [metadataDraft, setMetadataDraft] = useState<CaseMetadataDraft>(EMPTY_METADATA_DRAFT);
-  const [tagDraftIds, setTagDraftIds] = useState<string[]>([]);
-  const [initialTagIds, setInitialTagIds] = useState<string[]>([]);
   const [phaseDraftIds, setPhaseDraftIds] = useState<string[]>([]);
   const [initialPhaseIds, setInitialPhaseIds] = useState<string[]>([]);
-  const renderedOpinionText = preserveNumericReferencePrefixes(opinionText);
-  const tagsById = useMemo(() => mapTagsById(tags), [tags]);
-  const sortedTagOptions = useMemo(() => buildTagOptions(tags), [tags]);
+  const renderedOpinionMarkdown = preserveNumericReferencePrefixes(opinionMarkdown);
+  const prettyOpinionJson = useMemo(() => {
+    if (!opinionDocument) return "";
+    return JSON.stringify(opinionDocument, null, 2);
+  }, [opinionDocument]);
   const sortedPhaseOptions = useMemo(
     () =>
       [...phases]
@@ -162,17 +151,6 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
         )
         .map((phase) => ({ value: phase.phaseId, label: phase.label ?? phase.phaseId })),
     [phases],
-  );
-  const caseTagIds = useMemo(
-    () =>
-      caseItem
-        ? [
-            ...new Set(
-              caseTags.filter((item) => item.caseId === caseItem.caseId).map((item) => item.tagId),
-            ),
-          ]
-        : [],
-    [caseItem, caseTags],
   );
   const casePhaseIds = useMemo(
     () =>
@@ -236,74 +214,63 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
 
   useEffect(() => {
     let active = true;
-    const candidateUrls = buildOpinionCandidateUrls(caseItem?.opinionUrl, caseItem);
-    const jsonCandidateUrls = buildOpinionDocumentCandidateUrls(caseItem?.opinionUrl, caseItem).filter(
-      (candidateUrl) => /\.json($|\?)/i.test(candidateUrl),
-    );
-    if (!candidateUrls.length) {
+    if (!caseItem?.caseId) {
+      setOpinionDocument(null);
+      setOpinionMarkdown("");
       setOpinionText("");
+      setOpinionSourceUrl("");
       setOpinionPdfUrl("");
-      setOpinionJsonText("");
-      setOpinionJsonSourceUrl("");
       setShowJsonInspector(false);
+      setIsEditingOpinion(false);
+      setOpinionDraft("");
+      setOpinionSavedAt(null);
+      setLoadedOpinionKey("");
       return;
     }
+    const currentCase = caseItem;
 
     async function loadOpinion() {
       try {
         setOpinionLoading(true);
         setOpinionError(null);
+        setOpinionDocument(null);
+        setOpinionMarkdown("");
         setOpinionText("");
+        setOpinionSourceUrl("");
         setOpinionPdfUrl("");
-        setOpinionJsonText("");
-        setOpinionJsonSourceUrl("");
         setShowJsonInspector(false);
+        setIsEditingOpinion(false);
+        setOpinionDraft("");
+        setOpinionSavedAt(null);
         setLoadedOpinionKey("");
 
-        for (const candidate of jsonCandidateUrls) {
-          const response = await fetch(candidate);
-          if (!response.ok) continue;
-          const contentType = response.headers.get("content-type")?.toLowerCase() ?? "";
-          const isJson = /\.json($|\?)/i.test(candidate) || contentType.includes("application/json");
-          if (!isJson) continue;
-          const rawJson = await response.text();
-          if (!active) return;
-          setOpinionJsonText(rawJson);
-          setOpinionJsonSourceUrl(candidate);
-          break;
-        }
+        const result = await loadOpinionDocument(currentCase.caseId, currentCase);
+        if (!active) return;
 
-        let lastStatus = "";
-        for (const candidate of candidateUrls) {
-          const response = await fetch(candidate);
-          if (!response.ok) {
-            lastStatus = String(response.status);
-            continue;
-          }
-
-          const contentType = response.headers.get("content-type")?.toLowerCase() ?? "";
-          const isPdf = /\.pdf($|\?)/i.test(candidate) || contentType.includes("application/pdf");
-          if (!active) return;
-          if (isPdf) {
-            setOpinionPdfUrl(candidate);
-            setLoadedOpinionKey(extractOpinionStorageKeyFromUrl(candidate));
-            return;
-          }
-
-          const text = await response.text();
-          if (!active) return;
-          setOpinionText(text);
-          setLoadedOpinionKey(extractOpinionStorageKeyFromUrl(candidate));
-          setOpinionDraft(text);
-          setIsEditingOpinion(false);
-          setOpinionSavedAt(null);
+        if (result.kind === "pdf") {
+          setOpinionPdfUrl(result.pdfUrl);
           return;
         }
 
-        throw new Error(`Failed to load opinion${lastStatus ? ` (${lastStatus})` : ""}`);
+        if (result.kind === "markdown") {
+          setOpinionMarkdown(result.markdown);
+          setOpinionSourceUrl(result.sourceUrl);
+          setOpinionDraft(result.markdown);
+          setLoadedOpinionKey(extractOpinionStorageKeyFromUrl(result.sourceUrl));
+          return;
+        }
+
+        if (result.kind === "text") {
+          setOpinionText(result.text);
+          setOpinionSourceUrl(result.sourceUrl);
+          return;
+        }
+
+        setOpinionDocument(result.document);
+        setOpinionSourceUrl(result.sourceUrl);
       } catch (err) {
         if (!active) return;
-        setOpinionError(err instanceof Error ? err.message : "Failed to load opinion text");
+        setOpinionError(err instanceof Error ? err.message : "Failed to load opinion document");
       } finally {
         if (active) setOpinionLoading(false);
       }
@@ -321,16 +288,6 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
   }, [caseItem]);
 
   useEffect(() => {
-    const sorted = [...caseTagIds].sort((a, b) =>
-      (tagsById.get(a)?.label ?? "").localeCompare(tagsById.get(b)?.label ?? "", undefined, {
-        sensitivity: "base",
-      }),
-    );
-    setInitialTagIds(sorted);
-    setTagDraftIds(sorted);
-  }, [caseItem?.caseId, caseTagIds, tagsById]);
-
-  useEffect(() => {
     const labelById = new Map(phases.map((phase) => [phase.phaseId, phase.label ?? phase.phaseId]));
     const orderById = new Map(phases.map((phase) => [phase.phaseId, phase.sort_order ?? Number.MAX_SAFE_INTEGER]));
     const sorted = [...casePhaseIds].sort((a, b) =>
@@ -344,9 +301,9 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
   useEffect(() => {
     if (!isWideLayout && isEditingOpinion) {
       setIsEditingOpinion(false);
-      setOpinionDraft(opinionText);
+      setOpinionDraft(opinionMarkdown);
     }
-  }, [isWideLayout, isEditingOpinion, opinionText]);
+  }, [isWideLayout, isEditingOpinion, opinionMarkdown]);
 
   const handleMetadataFieldChange = (field: keyof CaseMetadataDraft, value: string) => {
     setMetadataDraft((current) => ({ ...current, [field]: value }));
@@ -362,53 +319,6 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
     setMetadataDraft(toDraft(caseItem));
     setPhaseDraftIds(initialPhaseIds);
     setIsEditingMetadata(false);
-  };
-
-  const saveCaseTags = async (caseIdValue: string) => {
-    const initial = new Set(initialTagIds);
-    const draft = new Set(tagDraftIds);
-    const createIds = [...draft].filter((tagId) => !initial.has(tagId));
-    const deleteIds = [...initial].filter((tagId) => !draft.has(tagId));
-
-    if (!createIds.length && !deleteIds.length) {
-      return false;
-    }
-
-    for (const tagId of createIds) {
-      const result = await client.models.CaseTag.create(
-        { caseId: caseIdValue, tagId },
-        { authMode: "userPool" },
-      );
-      if (result.errors?.length) {
-        throw new Error(result.errors[0]?.message ?? "Failed to create case tag");
-      }
-    }
-
-    for (const tagId of deleteIds) {
-      const result = await client.models.CaseTag.delete(
-        { caseId: caseIdValue, tagId },
-        { authMode: "userPool" },
-      );
-      if (result.errors?.length) {
-        throw new Error(result.errors[0]?.message ?? "Failed to delete case tag");
-      }
-    }
-
-    setCaseTags((current) => {
-      const withoutDeleted = current.filter(
-        (item) => !(item.caseId === caseIdValue && deleteIds.includes(item.tagId)),
-      );
-      const existing = new Set(
-        withoutDeleted.filter((item) => item.caseId === caseIdValue).map((item) => item.tagId),
-      );
-      const appended = createIds
-        .filter((tagId) => !existing.has(tagId))
-        .map((tagId) => ({ caseId: caseIdValue, tagId }) as CaseTagItem);
-      return [...withoutDeleted, ...appended];
-    });
-
-    setInitialTagIds([...draft]);
-    return true;
   };
 
   const saveCasePhases = async (caseIdValue: string) => {
@@ -461,60 +371,45 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
   };
 
   const handleEditOpinion = () => {
-    setOpinionDraft(opinionText);
-    setTagDraftIds(initialTagIds);
+    setOpinionDraft(opinionMarkdown);
     setIsEditingOpinion(true);
   };
 
   const handleCancelEditOpinion = () => {
-    setOpinionDraft(opinionText);
-    setTagDraftIds(initialTagIds);
+    setOpinionDraft(opinionMarkdown);
     setIsEditingOpinion(false);
   };
 
   const handleSaveOpinion = async () => {
     if (!caseItem) return;
-    const opinionChanged = opinionDraft !== opinionText;
-    const tagsChanged =
-      canEditCaseTags &&
-      (tagDraftIds.length !== initialTagIds.length ||
-        tagDraftIds.some((tagId) => !initialTagIds.includes(tagId)));
-
-    if (!opinionChanged && !tagsChanged) {
+    if (opinionDraft === opinionMarkdown) {
       setIsEditingOpinion(false);
       return;
     }
 
     try {
       setIsSavingOpinion(true);
-      if (opinionChanged) {
-        const key = loadedOpinionKey || buildOpinionStorageKey(caseItem.opinionUrl, caseItem);
-        if (!key) {
-          message.error("Opinion file key is missing.");
-          return;
-        }
-        const result = await client.mutations.saveOpinionText(
-          {
-            key,
-            markdown: opinionDraft,
-          },
-          { authMode: "userPool" },
-        );
-        if (result.errors?.length) {
-          throw new Error(result.errors[0]?.message ?? "Failed to save opinion text");
-        }
-        setOpinionText(opinionDraft);
-        setOpinionSavedAt(new Date().toLocaleTimeString());
+      const key = loadedOpinionKey || buildOpinionStorageKey(caseItem.opinionUrl, caseItem);
+      if (!key) {
+        message.error("Opinion file key is missing.");
+        return;
       }
-
-      if (tagsChanged) {
-        await saveCaseTags(caseItem.caseId);
+      const result = await client.mutations.saveOpinionText(
+        {
+          key,
+          markdown: opinionDraft,
+        },
+        { authMode: "userPool" },
+      );
+      if (result.errors?.length) {
+        throw new Error(result.errors[0]?.message ?? "Failed to save opinion text");
       }
-
+      setOpinionMarkdown(opinionDraft);
+      setOpinionSavedAt(new Date().toLocaleTimeString());
       setIsEditingOpinion(false);
       message.success("Saved.");
     } catch (err) {
-      message.error(err instanceof Error ? err.message : "Failed to save changes");
+      message.error(err instanceof Error ? err.message : "Failed to save opinion text");
     } finally {
       setIsSavingOpinion(false);
     }
@@ -625,7 +520,42 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
               <div className="card-grid__loading">
                 <Spin />
               </div>
-            ) : opinionText ? (
+            ) : opinionDocument ? (
+              <>
+                <div className="case-detail__editor-bar">
+                  <div className="case-detail__editor-actions">
+                    <Button onClick={() => setShowJsonInspector((current) => !current)}>
+                      {showJsonInspector ? "Show Rendered" : "Show Raw JSON"}
+                    </Button>
+                  </div>
+                </div>
+                {showJsonInspector ? (
+                  <section className="case-detail__json-inspector">
+                    <div className="case-detail__json-inspector-header">
+                      <h3 className="case-detail__json-inspector-title">Stanbook JSON</h3>
+                      {opinionSourceUrl ? (
+                        <span className="case-detail__json-inspector-source">
+                          {opinionSourceUrl}
+                        </span>
+                      ) : null}
+                    </div>
+                    <pre className="case-detail__json-inspector-pre">
+                      <code>{prettyOpinionJson}</code>
+                    </pre>
+                  </section>
+                ) : (
+                  <OpinionDocumentView
+                    document={opinionDocument}
+                    opinionSourceUrl={opinionSourceUrl}
+                    fallbackTitle={caseItem.caseName}
+                    fallbackSlipOpinion={caseItem.slipOp}
+                    fallbackOfficialCitation={caseItem.ny3dCite ?? caseItem.citation}
+                    fallbackCourt={getCourtLongLabel(caseItem.court, courtsById)}
+                    fallbackDecisionDate={caseItem.decisionDate}
+                  />
+                )}
+              </>
+            ) : opinionMarkdown ? (
               <>
                 {isWideLayout ? (
                   <div className="case-detail__editor-bar">
@@ -643,20 +573,6 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
                             Save
                           </Button>
                         </div>
-                        {canEditCaseTags ? (
-                          <Select
-                            mode="multiple"
-                            allowClear
-                            showSearch
-                            optionFilterProp="label"
-                            value={tagDraftIds}
-                            onChange={(values) => setTagDraftIds(values)}
-                            options={sortedTagOptions}
-                            placeholder="Select case tags"
-                            disabled={isSavingOpinion}
-                            className="case-detail__editor-tags-select"
-                          />
-                        ) : null}
                         <Button
                           onClick={() => wrapOpinionSelection("**")}
                           disabled={isSavingOpinion}
@@ -684,26 +600,11 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
                         <Button type="primary" onClick={handleEditOpinion}>
                           Edit Opinion
                         </Button>
-                        {opinionJsonText ? (
-                          <Button onClick={() => setShowJsonInspector((current) => !current)}>
-                            {showJsonInspector ? "Hide JSON" : "Inspect JSON"}
-                          </Button>
+                        {opinionSourceUrl ? (
+                          <span className="case-detail__json-inspector-source">
+                            {opinionSourceUrl}
+                          </span>
                         ) : null}
-                        <div className="case-detail__editor-tags-chips">
-                          {initialTagIds.map((tagId) => {
-                            const tag = tagsById.get(tagId);
-                            const label = tag?.label ?? "Untitled";
-                            const background = tag?.color ?? undefined;
-                            return (
-                              <AdminTagCapsule
-                                key={tagId}
-                                label={label}
-                                background={background}
-                                color={getReadableTextColor(background)}
-                              />
-                            );
-                          })}
-                        </div>
                       </div>
                     )}
                     {opinionSavedAt ? (
@@ -723,28 +624,25 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
                     />
                   </div>
                 ) : (
-                  <>
-                    <div className="case-detail__opinion-content">
-                      <ReactMarkdown>{renderedOpinionText}</ReactMarkdown>
-                    </div>
-                    {showJsonInspector && opinionJsonText ? (
-                      <section className="case-detail__json-inspector">
-                        <div className="case-detail__json-inspector-header">
-                          <h3 className="case-detail__json-inspector-title">Stanbook JSON</h3>
-                          {opinionJsonSourceUrl ? (
-                            <span className="case-detail__json-inspector-source">
-                              {opinionJsonSourceUrl}
-                            </span>
-                          ) : null}
-                        </div>
-                        <pre className="case-detail__json-inspector-pre">
-                          <code>{opinionJsonText}</code>
-                        </pre>
-                      </section>
-                    ) : null}
-                  </>
+                  <div className="case-detail__opinion-content">
+                    <ReactMarkdown>{renderedOpinionMarkdown}</ReactMarkdown>
+                  </div>
                 )}
               </>
+            ) : opinionText ? (
+              <section className="case-detail__json-inspector">
+                <div className="case-detail__json-inspector-header">
+                  <h3 className="case-detail__json-inspector-title">Plain Text Opinion</h3>
+                  {opinionSourceUrl ? (
+                    <span className="case-detail__json-inspector-source">
+                      {opinionSourceUrl}
+                    </span>
+                  ) : null}
+                </div>
+                <pre className="case-detail__json-inspector-pre">
+                  <code>{opinionText}</code>
+                </pre>
+              </section>
             ) : opinionPdfUrl ? (
               <div className="case-detail__pdf-viewer">
                 <div className="case-detail__pdf-header">

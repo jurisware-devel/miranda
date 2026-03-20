@@ -134,6 +134,11 @@ Suggested fields:
 ```json
 {
   "title": "People v Rios",
+  "caption": [
+    "The People of the State of New York, Respondent,",
+    "v",
+    "John Doe, Appellant."
+  ],
   "slipOpinion": "2026 NY Slip Op 00963",
   "officialCitation": null,
   "court": "Court of Appeals",
@@ -147,6 +152,8 @@ Possible later additions:
 - `correctedDate`
 - `docketNumber`
 - `panel`
+
+`caption` is optional and preserves caption-party lines that appear separately from the canonical short title.
 
 ### Appearances
 

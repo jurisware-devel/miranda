@@ -84,4 +84,95 @@ class RealSampleJsonRegressionTest {
         assertThat(json).contains("\"code\":\"missing_case_title\"");
         assertThat(json).contains("\"code\":\"case_title_extraction_failed\"");
     }
+
+    @Test
+    void html_sample_output_keeps_paulino_body_and_deduplicates_opinion_banner() {
+        var source = new SourceDocumentReader().read(Path.of("samples/2025_05012.htm"));
+
+        String json = StanbookPipeline.createDefault().render(source);
+
+        assertThat(json).contains("\"officialCitation\":\"44 NY3d 1039\"");
+        assertThat(json).contains("Defendant was convicted of attempted murder in the second degree");
+        assertThat(json).contains("\"text\":\"The order of the Appellate Division should be affirmed.\"");
+        assertThat(json).contains("\"kind\":\"majority\"");
+        assertThat(json).contains("\"text\":\"Memorandum.\"");
+        assertThat(json).contains("\"text\":\"Defendant was convicted of attempted murder in the second degree");
+        assertThat(json).doesNotContain("\"lineNumber\":9,\"text\":\"{**44 NY3d at 1039} OPINION OF THE COURT\"");
+    }
+
+    @Test
+    void html_repo_sample_merges_opinion_of_the_court_prelude_into_authored_majority() {
+        var source = new SourceDocumentReader().read(Path.of("../../opinions/coa/2004/2004_04439.htm"));
+
+        String json = StanbookPipeline.createDefault().render(source);
+
+        assertThat(json).contains("\"officialCitation\":\"3 NY3d 80\"");
+        assertThat(json).contains("\"author\":\"Ciparick\"");
+        assertThat(json).contains("\"label\":\"Ciparick, J.\"");
+        assertThat(json).contains("\"text\":\"{**3 NY3d at 81}\"");
+        assertThat(json).contains("\"text\":\" OPINION OF THE COURT\"");
+        assertThat(json).doesNotContain("\"author\":null,\"label\":null,\"joiners\":[],\"blocks\":[{\"type\":\"paragraph\"");
+    }
+
+    @Test
+    void html_repo_sample_keeps_mateo_separate_opinions_and_split_summary() {
+        var source = new SourceDocumentReader().read(Path.of("../../opinions/coa/2004/2004_01143.htm"));
+
+        String json = StanbookPipeline.createDefault().render(source);
+
+        assertThat(json).contains("\"officialCitation\":\"2 NY3d 383\"");
+        assertThat(json).contains("\"author\":\"Kaye\"");
+        assertThat(json).contains("\"label\":\"Chief Judge Kaye.\"");
+        assertThat(json).contains("\"kind\":\"dissent\"");
+        assertThat(json).contains("\"author\":\"G.B. Smith\"");
+        assertThat(json).contains("\"label\":\"G.B. Smith, J. (dissenting).\"");
+        assertThat(json).contains("\"label\":\"Rosenblatt, J. (dissenting).\"");
+        assertThat(json).contains("\"hasSeparateOpinions\":true");
+        assertThat(json).contains("Judges Ciparick, Graffeo, Read and R.S. Smith concur with Chief Judge Kaye;");
+        assertThat(json).contains("Judge G.B. Smith dissents and votes to reverse and order a new trial in a separate opinion;");
+        assertThat(json).contains("Judge Rosenblatt dissents and votes to reverse and order a new trial in another opinion.");
+        assertThat(json).contains("\"parts\":[{\"type\":\"summary\",\"text\":\"Judges Ciparick, Graffeo, Read and R.S. Smith concur with Chief Judge Kaye; Judge G.B. Smith dissents and votes to reverse and order a new trial in a separate opinion; Judge Rosenblatt dissents and votes to reverse and order a new trial in another opinion.\"},{\"type\":\"action\",\"text\":\"Judgment modified by vacating defendant's sentence and remitting to County Court, Monroe County, for resentencing in accordance with the opinion herein and, as so modified, affirmed. Appeal from County Court order dated March 11, 1999 dismissed.\"}]");
+    }
+
+    @Test
+    void html_repo_sample_does_not_infer_empty_writing_from_wrapped_panel_line() {
+        var source = new SourceDocumentReader().read(Path.of("../../opinions/coa/2004/2004_01056.htm"));
+
+        String json = StanbookPipeline.createDefault().render(source);
+
+        assertThat(json).contains("\"officialCitation\":\"1 NY3d 614\"");
+        assertThat(json).contains("\"opinions\":[{\"kind\":\"opinion_of_the_court\"");
+        assertThat(json).doesNotContain("\"author\":\"Kaye And Judges G.B\"");
+        assertThat(json).doesNotContain("\"label\":\"Chief Judge Kaye and Judges G.B.\"");
+        assertThat(json).contains("Chief Judge Kaye and Judges G.B. Smith, Ciparick, Rosenblatt, Graffeo, Read and R.S. Smith concur.");
+        assertThat(json).contains("On review of submissions pursuant to section 500.4 of the Rules of the Court of Appeals (22 NYCRR 500.4), order affirmed in a memorandum.");
+        assertThat(json).contains("\"parts\":[{\"type\":\"summary\",\"text\":\"Chief Judge Kaye and Judges G.B. Smith, Ciparick, Rosenblatt, Graffeo, Read and R.S. Smith concur.\"},{\"type\":\"action\",\"text\":\"On review of submissions pursuant to section 500.4 of the Rules of the Court of Appeals (22 NYCRR 500.4), order affirmed in a memorandum.\"}]");
+        assertThat(json).contains("\"hasSeparateOpinions\":false");
+    }
+
+    @Test
+    void html_repo_sample_does_not_create_nested_document_panel_from_small_caps_citation() {
+        var source = new SourceDocumentReader().read(Path.of("../../opinions/coa/2026/2026_01588.htm"));
+
+        String json = StanbookPipeline.createDefault().render(source);
+
+        assertThat(json).contains("\"caseId\":\"2026_01588\"");
+        assertThat(json).contains("\"label\":\"WILSON, Chief Judge (dissenting):\"");
+        assertThat(json).doesNotContain("\"kind\":\"mixed\"");
+        assertThat(json).doesNotContain("\"author\":\"Univ Of Chicago L Rev 263\"");
+    }
+
+    @Test
+    void html_repo_sample_emits_structured_memorandum_for_colon_style_banner() {
+        var source = new SourceDocumentReader().read(Path.of("../../opinions/coa/2026/2026_01445.htm"));
+
+        String json = StanbookPipeline.createDefault().render(source);
+
+        assertThat(json).contains("\"caseId\":\"2026_01445\"");
+        assertThat(json).contains("\"opinions\":[{\"kind\":\"memorandum\"");
+        assertThat(json).contains("\"text\":\"MEMORANDUM:\"");
+        assertThat(json).contains("\"text\":\"The order of the Appellate Division should be affirmed.\"");
+        assertThat(json).contains("\"opinions\":\"high_confidence\"");
+        assertThat(json).doesNotContain("\"opinionFallbackReasons\":[\"no_structured_opinion_blocks_detected\"");
+    }
 }

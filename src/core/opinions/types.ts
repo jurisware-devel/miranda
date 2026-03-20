@@ -3,6 +3,7 @@ export type OpinionInlineNode =
   | OpinionEmphasisNode
   | OpinionLinkNode
   | OpinionFootnoteReferenceNode
+  | OpinionPageMarkerNode
   | OpinionUnknownInlineNode;
 
 export type OpinionBlockNode =
@@ -35,6 +36,12 @@ export type OpinionFootnoteReferenceNode = {
   children?: OpinionInlineNode[] | null;
 };
 
+export type OpinionPageMarkerNode = {
+  type: "page_marker";
+  text?: string | null;
+  citation?: string | null;
+};
+
 export type OpinionUnknownInlineNode = {
   type: string;
   text?: string | null;
@@ -42,6 +49,7 @@ export type OpinionUnknownInlineNode = {
   href?: string | null;
   label?: string | null;
   target?: string | null;
+  citation?: string | null;
   [key: string]: unknown;
 };
 
@@ -123,6 +131,7 @@ export type OpinionDocument = {
   } | null;
   header?: {
     title?: string | null;
+    caption?: string[] | null;
     slipOpinion?: string | null;
     officialCitation?: string | null;
     court?: string | null;

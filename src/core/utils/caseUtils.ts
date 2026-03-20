@@ -23,7 +23,8 @@ const resolveOpinionObjectPath = (opinionUrl?: string | null) => {
         .replace(/^\/+/, "")
         .replace(/\.json$/i, "")
         .replace(/\.md$/i, "")
-        .replace(/\.pdf$/i, "");
+        .replace(/\.pdf$/i, "")
+        .replace(/\.txt$/i, "");
     } catch {
       return "";
     }
@@ -34,12 +35,13 @@ const resolveOpinionObjectPath = (opinionUrl?: string | null) => {
     .replace(/^\//, "")
     .replace(/\.json$/i, "")
     .replace(/\.md$/i, "")
-    .replace(/\.pdf$/i, "");
+    .replace(/\.pdf$/i, "")
+    .replace(/\.txt$/i, "");
 };
 
 const buildCanonicalOpinionObjectPath = (opinionUrl?: string | null, caseItem?: CaseItem | null) => {
   const normalized = resolveOpinionObjectPath(opinionUrl)
-    .replace(/\.(json|md|pdf)$/i, "")
+    .replace(/\.(json|md|pdf|txt)$/i, "")
     .replace(/^\/+/, "");
   if (!normalized) return "";
 
@@ -93,14 +95,14 @@ export const buildOpinionDocumentCandidateUrls = (
   opinionUrl?: string | null,
   caseItem?: CaseItem | null,
 ) => {
-  return buildOpinionCandidateUrlsForExtensions(opinionUrl, caseItem, ["json", "md", "pdf"]);
+  return buildOpinionCandidateUrlsForExtensions(opinionUrl, caseItem, ["json", "md", "pdf", "txt"]);
 };
 
 export const buildLocalOpinionDocumentCandidatePaths = (
   opinionUrl?: string | null,
   caseItem?: CaseItem | null,
 ) => {
-  return buildOpinionCandidatePathsForExtensions(opinionUrl, caseItem, ["json", "md", "pdf"]);
+  return buildOpinionCandidatePathsForExtensions(opinionUrl, caseItem, ["json", "md", "pdf", "txt"]);
 };
 
 export const extractOpinionStorageKeyFromUrl = (url: string) => {

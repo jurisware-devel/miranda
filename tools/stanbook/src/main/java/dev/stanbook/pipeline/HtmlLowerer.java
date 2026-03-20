@@ -118,7 +118,7 @@ public final class HtmlLowerer {
             }
 
             if (current == null) {
-                current = defaultMajorityBuilder();
+                current = defaultBuilderFor(block);
             }
             current.lines.add(sourceLine(source, block.lineNumber()));
             current.finishParagraph(source);
@@ -154,20 +154,23 @@ public final class HtmlLowerer {
 
     private HtmlComponentBuilder createComponentBuilder(HtmlOpinionBlock authorBlock) {
         String normalized = authorBlock.text().trim();
+        if (normalized.regionMatches(true, 0, "Chief Judge ", 0, "Chief Judge ".length())) {
+            return componentBuilderForRole(authorFromChiefJudgeLine(normalized), roleAnnotation(normalized));
+        }
+
         int commaIndex = normalized.indexOf(',');
         if (commaIndex < 0) {
             return new HtmlComponentBuilder(OpinionComponentType.MAJORITY, OpinionRole.MAJORITY, null, false);
         }
 
         String author = toTitleCase(normalized.substring(0, commaIndex).trim());
-        String roleText = normalized.substring(commaIndex + 1);
-        int openParen = roleText.indexOf('(');
-        int closeParen = roleText.indexOf(')', openParen + 1);
-        if (openParen < 0 || closeParen < 0) {
+        return componentBuilderForRole(author, roleAnnotation(normalized.substring(commaIndex + 1)));
+    }
+
+    private HtmlComponentBuilder componentBuilderForRole(String author, String normalizedRole) {
+        if (normalizedRole == null || normalizedRole.isBlank()) {
             return new HtmlComponentBuilder(OpinionComponentType.MAJORITY, OpinionRole.MAJORITY, author, false);
         }
-
-        String normalizedRole = roleText.substring(openParen + 1, closeParen).toLowerCase(Locale.ROOT);
         if (normalizedRole.contains("dissent")) {
             return new HtmlComponentBuilder(OpinionComponentType.DISSENT, OpinionRole.DISSENT, author, false);
         }
@@ -177,8 +180,52 @@ public final class HtmlLowerer {
         return new HtmlComponentBuilder(OpinionComponentType.MIXED, OpinionRole.MIXED_CASE_SPECIFIC, author, false);
     }
 
+    private String authorFromChiefJudgeLine(String normalized) {
+        String remainder = normalized.substring("Chief Judge ".length()).trim();
+        int openParen = remainder.indexOf('(');
+        if (openParen >= 0) {
+            remainder = remainder.substring(0, openParen).trim();
+        }
+        remainder = remainder.replaceFirst("[.:]+$", "").trim();
+        return toTitleCase(remainder);
+    }
+
+    private String roleAnnotation(String text) {
+        int openParen = text.indexOf('(');
+        int closeParen = text.indexOf(')', openParen + 1);
+        if (openParen < 0 || closeParen < 0) {
+            return null;
+        }
+        return text.substring(openParen + 1, closeParen).toLowerCase(Locale.ROOT);
+    }
+
     private HtmlComponentBuilder defaultMajorityBuilder() {
         return new HtmlComponentBuilder(OpinionComponentType.MAJORITY, OpinionRole.MAJORITY, null, false);
+    }
+
+    private HtmlComponentBuilder defaultBuilderFor(HtmlOpinionBlock block) {
+        String normalized = block.text().trim().replaceFirst("[.:]+$", "").toLowerCase(Locale.ROOT);
+        return switch (normalized) {
+            case "memorandum" -> new HtmlComponentBuilder(
+                OpinionComponentType.MAJORITY,
+                OpinionRole.MEMORANDUM,
+                null,
+                false
+            );
+            case "per curiam" -> new HtmlComponentBuilder(
+                OpinionComponentType.MAJORITY,
+                OpinionRole.PER_CURIAM,
+                null,
+                true
+            );
+            case "opinion of the court" -> new HtmlComponentBuilder(
+                OpinionComponentType.MAJORITY,
+                OpinionRole.OPINION_OF_THE_COURT,
+                null,
+                false
+            );
+            default -> defaultMajorityBuilder();
+        };
     }
 
     private DocumentSection sectionFromRange(SourceDocument source, SectionType type, int startLine, int endLine) {
@@ -195,15 +242,29 @@ public final class HtmlLowerer {
     }
 
     private String toTitleCase(String name) {
-        String[] parts = name.toLowerCase(Locale.ROOT).split("\\s+");
+        String[] parts = name.split("\\s+");
         List<String> titled = new ArrayList<>();
         for (String part : parts) {
             if (part.isEmpty()) {
                 continue;
             }
-            titled.add(Character.toUpperCase(part.charAt(0)) + part.substring(1));
+            titled.add(titleCaseToken(part));
         }
         return String.join(" ", titled);
+    }
+
+    private String titleCaseToken(String token) {
+        if (token.matches("(?i)[a-z](?:\\.[a-z])+(?:\\.)?")) {
+            return token.toUpperCase(Locale.ROOT);
+        }
+        if (token.chars().anyMatch(Character::isLetter)
+            && token.equals(token.toUpperCase(Locale.ROOT))
+            && token.indexOf('.') >= 0) {
+            return token;
+        }
+
+        String lower = token.toLowerCase(Locale.ROOT);
+        return Character.toUpperCase(lower.charAt(0)) + lower.substring(1);
     }
 
     private List<SourceLine> trimTrailingBlanks(List<SourceLine> sourceLines) {

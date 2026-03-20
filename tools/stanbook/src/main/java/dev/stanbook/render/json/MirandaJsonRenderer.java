@@ -51,10 +51,11 @@ public final class MirandaJsonRenderer {
     private static final DateTimeFormatter LONG_MONTH_DATE =
         DateTimeFormatter.ofPattern("MMMM d, uuuu", Locale.US);
     private static final Pattern DISPOSITION_ACTION_PATTERN = Pattern.compile(
-        "(?i)\\b(order|judgment|appeal|motion|petition)\\b.*\\b(affirmed|reversed|modified|dismissed|vacated|remitted|adjudged|granted|denied)\\b"
+        "^(?:Accordingly,\\s+)?(?:The\\s+)?(?:order|judgment|appeal|motion|petition)\\b.*\\b(affirmed|reversed|modified|dismissed|vacated|remitted|adjudged|granted|denied)\\b.*$",
+        Pattern.CASE_INSENSITIVE
     );
     private static final Pattern DISPOSITION_LEAD_PATTERN = Pattern.compile(
-        "^(?:Accordingly,|On review of submissions|Order\\b|Judgment\\b|Appeal\\b|Motion\\b|Petition\\b).+",
+        "^(?:Accordingly,|On review of submissions|The\\s+(?:order|judgment|appeal|motion|petition)\\b|Order\\b|Judgment\\b|Appeal\\b|Motion\\b|Petition\\b).+",
         Pattern.CASE_INSENSITIVE
     );
     private static final Pattern DISPOSITION_JUDGE_LINE_PATTERN = Pattern.compile(
@@ -65,6 +66,10 @@ public final class MirandaJsonRenderer {
     );
     private static final Pattern DISPOSITION_OPINION_BY_SPLIT_PATTERN = Pattern.compile(
         "(?=\\bOpinion by\\b)",
+        Pattern.CASE_INSENSITIVE
+    );
+    private static final Pattern DISPOSITION_ACTION_START_PATTERN = Pattern.compile(
+        "(?:^|\\.\\s+)(?<action>(?:On review of submissions\\b|Accordingly,\\s+|(?:The\\s+)?(?:order|judgment|appeal|motion|petition)\\b).*)$",
         Pattern.CASE_INSENSITIVE
     );
     private static final Pattern MAJORITY_JOINERS_PATTERN = Pattern.compile(
@@ -116,11 +121,26 @@ public final class MirandaJsonRenderer {
         CitationParts citationParts = extractCitationParts(firstHeaderValue(document, HeaderItemType.CITATION));
         Map<String, Object> header = new LinkedHashMap<>();
         header.put("title", firstHeaderValue(document, HeaderItemType.CASE_NAME));
+        header.put("caption", extractCaptionLines(document));
         header.put("slipOpinion", citationParts.slipOpinion());
         header.put("officialCitation", citationParts.officialCitation());
         header.put("court", firstHeaderValue(document, HeaderItemType.COURT));
         header.put("decisionDate", extractDecisionDate(document));
         return header;
+    }
+
+    private List<String> extractCaptionLines(ReflowedDocument document) {
+        List<String> captionLines = new ArrayList<>();
+        for (var item : document.lowered().header().items()) {
+            if (item.type() != HeaderItemType.CAPTION_PARTY && item.type() != HeaderItemType.CAPTION_V) {
+                continue;
+            }
+            String text = item.line().text().trim();
+            if (!text.isEmpty()) {
+                captionLines.add(text);
+            }
+        }
+        return captionLines;
     }
 
     private List<Map<String, Object>> buildAppearances(ReflowedDocument document) {
@@ -478,8 +498,17 @@ public final class MirandaJsonRenderer {
             }
 
             if (current == null || !sameWriting(current, component)) {
-                current = new WritingAccumulator(kindFor(component), component.author(), pendingLabel);
-                accumulators.add(current);
+                if (shouldMergeAnonymousMajorityPrelude(current, component)) {
+                    WritingAccumulator merged = new WritingAccumulator(kindFor(component), component.author(), pendingLabel);
+                    merged.blocks.addAll(current.blocks);
+                    merged.startLine = current.startLine;
+                    merged.endLine = current.endLine;
+                    accumulators.set(accumulators.size() - 1, merged);
+                    current = merged;
+                } else {
+                    current = new WritingAccumulator(kindFor(component), component.author(), pendingLabel);
+                    accumulators.add(current);
+                }
             } else if (current.label == null && pendingLabel != null) {
                 current.label = pendingLabel;
             }
@@ -526,6 +555,22 @@ public final class MirandaJsonRenderer {
     private boolean sameWriting(WritingAccumulator current, OpinionComponent component) {
         return current.kind.equals(kindFor(component))
             && java.util.Objects.equals(current.author, component.author());
+    }
+
+    private boolean shouldMergeAnonymousMajorityPrelude(WritingAccumulator current, OpinionComponent component) {
+        if (current == null || !"majority".equals(current.kind) || current.author != null) {
+            return false;
+        }
+        if (!"majority".equals(kindFor(component)) || component.author() == null) {
+            return false;
+        }
+        return !current.blocks.isEmpty() && current.blocks.stream().allMatch(this::isOpinionOfTheCourtPreludeBlock);
+    }
+
+    private boolean isOpinionOfTheCourtPreludeBlock(ReflowedBlock block) {
+        String normalized = OFFICIAL_PAGE_MARKER_PATTERN.matcher(block.text()).replaceAll("");
+        normalized = normalized.replaceAll("\\s+", " ").trim();
+        return normalized.equalsIgnoreCase("OPINION OF THE COURT");
     }
 
     private List<ReflowedBlock> blocksForComponent(ReflowedDocument document, OpinionComponent component) {
@@ -671,19 +716,25 @@ public final class MirandaJsonRenderer {
     }
 
     private DispositionInfo buildDisposition(ReflowedDocument document, TerminalSummary terminalSummary) {
-        Optional<DispositionInfo> headerAction = document.lowered().header().items().stream()
-            .filter(item -> item.type() == HeaderItemType.ACTION)
-            .findFirst()
-            .map(item -> dispositionInfo(item.line().text(), item.line().lineNumber(), item.line().lineNumber()));
-        if (headerAction.isPresent()) {
-            return headerAction.get();
+        DispositionInfo terminalDisposition = dispositionFromTerminalSummary(terminalSummary);
+        if (terminalDisposition != null) {
+            return terminalDisposition;
         }
 
+        return document.lowered().header().items().stream()
+            .filter(item -> item.type() == HeaderItemType.ACTION)
+            .findFirst()
+            .map(item -> dispositionInfo(item.line().text(), item.line().lineNumber(), item.line().lineNumber()))
+            .orElse(null);
+    }
+
+    private DispositionInfo dispositionFromTerminalSummary(TerminalSummary terminalSummary) {
         if (terminalSummary == null || terminalSummary.paragraphs().isEmpty()) {
             return null;
         }
 
         List<String> dispositionParagraphs = new ArrayList<>();
+        boolean sawDispositionAction = false;
         for (String paragraph : terminalSummary.paragraphs()) {
             String stripped = paragraph.trim();
             if (stripped.isEmpty()) {
@@ -693,19 +744,25 @@ public final class MirandaJsonRenderer {
                 continue;
             }
             if (dispositionParagraphs.isEmpty()) {
-                if (isDispositionActionLine(stripped)) {
+                if (isDispositionActionLine(stripped) || DISPOSITION_JUDGE_LINE_PATTERN.matcher(stripped).matches()) {
                     dispositionParagraphs.add(stripped);
+                    sawDispositionAction = sawDispositionAction || isDispositionActionLine(stripped);
                 }
                 continue;
             }
-            if (isDispositionTextContinuation(stripped)) {
+            if (!sawDispositionAction && DISPOSITION_JUDGE_LINE_PATTERN.matcher(stripped).matches()) {
                 dispositionParagraphs.add(stripped);
+                continue;
+            }
+            if (isDispositionActionLine(stripped) || isDispositionTextContinuation(stripped)) {
+                dispositionParagraphs.add(stripped);
+                sawDispositionAction = sawDispositionAction || isDispositionActionLine(stripped);
                 continue;
             }
             break;
         }
 
-        if (dispositionParagraphs.isEmpty()) {
+        if (dispositionParagraphs.isEmpty() || !sawDispositionAction) {
             return null;
         }
 
@@ -728,7 +785,7 @@ public final class MirandaJsonRenderer {
 
     private boolean isDispositionActionLine(String text) {
         return DISPOSITION_LEAD_PATTERN.matcher(text).matches()
-            || DISPOSITION_ACTION_PATTERN.matcher(text).find();
+            || DISPOSITION_ACTION_PATTERN.matcher(text).matches();
     }
 
     private boolean isDispositionTextContinuation(String text) {
@@ -957,21 +1014,33 @@ public final class MirandaJsonRenderer {
 
         String trimmed = text.trim();
         Matcher matcher = DISPOSITION_OPINION_BY_SPLIT_PATTERN.matcher(trimmed);
-        if (!matcher.find()) {
-            return List.of(dispositionPart("action", trimmed));
+        if (matcher.find()) {
+            int splitIndex = matcher.start();
+            String actionText = trimmed.substring(0, splitIndex).trim();
+            String summaryText = trimmed.substring(splitIndex).trim();
+            List<Map<String, Object>> parts = new ArrayList<>();
+            if (!actionText.isEmpty()) {
+                parts.add(dispositionPart("action", actionText));
+            }
+            if (!summaryText.isEmpty()) {
+                parts.add(dispositionPart("summary", summaryText));
+            }
+            return List.copyOf(parts);
         }
 
-        int splitIndex = matcher.start();
-        String actionText = trimmed.substring(0, splitIndex).trim();
-        String summaryText = trimmed.substring(splitIndex).trim();
-        List<Map<String, Object>> parts = new ArrayList<>();
-        if (!actionText.isEmpty()) {
-            parts.add(dispositionPart("action", actionText));
+        Matcher actionMatcher = DISPOSITION_ACTION_START_PATTERN.matcher(trimmed);
+        if (actionMatcher.find() && actionMatcher.start("action") > 0) {
+            String summaryText = trimmed.substring(0, actionMatcher.start("action")).trim();
+            String actionText = trimmed.substring(actionMatcher.start("action")).trim();
+            if (DISPOSITION_JUDGE_LINE_PATTERN.matcher(summaryText).matches() && !actionText.isEmpty()) {
+                return List.of(
+                    dispositionPart("summary", summaryText),
+                    dispositionPart("action", actionText)
+                );
+            }
         }
-        if (!summaryText.isEmpty()) {
-            parts.add(dispositionPart("summary", summaryText));
-        }
-        return List.copyOf(parts);
+
+        return List.of(dispositionPart("action", trimmed));
     }
 
     private Map<String, Object> dispositionPart(String type, String text) {

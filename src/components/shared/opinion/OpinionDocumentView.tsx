@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import { Empty } from "antd";
-import type { OpinionDocument } from "../../../core/opinions/types";
+import type { OpinionDocument, OpinionWriting as OpinionWritingType } from "../../../core/opinions/types";
 import FootnotesPanel from "./FootnotesPanel";
 import OpinionAppearances from "./OpinionAppearances";
 import OpinionHeader from "./OpinionHeader";
@@ -16,6 +16,61 @@ type OpinionDocumentViewProps = {
   fallbackDecisionDate?: string | null;
 };
 
+type FallbackOpinionLine = {
+  lineNumber?: number | null;
+  text?: string | null;
+};
+
+const normalizeWritings = (writings: OpinionWritingType[]) => {
+  return writings.reduce<OpinionWritingType[]>((accumulator, writing) => {
+    const kind = writing.kind?.trim().toLowerCase() ?? "";
+    const previous = accumulator[accumulator.length - 1];
+
+    // Stanbook occasionally emits a trailing "mixed" writing that is really a continuation
+    // of the preceding opinion body. Fold it back in so it does not surface as a bogus panel.
+    if (kind === "mixed" && previous) {
+      accumulator[accumulator.length - 1] = {
+        ...previous,
+        blocks: [...(previous.blocks ?? []), ...(writing.blocks ?? [])],
+      };
+      return accumulator;
+    }
+
+    accumulator.push(writing);
+    return accumulator;
+  }, []);
+};
+
+const fallbackWritingsFromSource = (document: OpinionDocument): OpinionWritingType[] => {
+  const rawLines = ((document.source as { fallback?: { opinionLines?: FallbackOpinionLine[] | null } | null } | null)
+    ?.fallback?.opinionLines ?? [])
+    .map((line) => line?.text?.trim() ?? "")
+    .filter(Boolean);
+  if (!rawLines.length) return [];
+
+  const labelIndex = rawLines.findIndex((line) => /^(?:MEMORANDUM|[A-Z .,'()-]+J\.)[:.]?$/i.test(line));
+  if (labelIndex < 0) return [];
+
+  const label = rawLines[labelIndex];
+  const bodyLines = rawLines.slice(labelIndex + 1).filter((line) => {
+    if (/^Decided\b/i.test(line)) return false;
+    if (/^Order .*concur\./i.test(line)) return false;
+    return true;
+  });
+  if (!bodyLines.length) return [];
+
+  return [
+    {
+      kind: "majority",
+      label,
+      blocks: bodyLines.map((line) => ({
+        type: "paragraph" as const,
+        inlines: [{ type: "text" as const, text: line }],
+      })),
+    },
+  ];
+};
+
 const OpinionDocumentView: React.FC<OpinionDocumentViewProps> = ({
   document,
   opinionSourceUrl,
@@ -28,8 +83,15 @@ const OpinionDocumentView: React.FC<OpinionDocumentViewProps> = ({
   const [showHeader, setShowHeader] = useState(false);
   const [showFootnotes, setShowFootnotes] = useState(false);
   const bodyScrollRef = useRef<HTMLDivElement | null>(null);
-  const writings = document.opinions?.filter(Boolean) ?? [];
-  const hasPageMarkers = Boolean(document.renderingHints?.hasOfficialPageMarkers);
+  const writings = useMemo(
+    () => {
+      const normalized = normalizeWritings(document.opinions?.filter(Boolean) ?? []);
+      return normalized.length ? normalized : fallbackWritingsFromSource(document);
+    },
+    [document],
+  );
+  const hasSeparateOpinions = writings.length > 1;
+  const shouldInlineSingleWriting = writings.length === 1 && !hasSeparateOpinions;
   const hasFootnotes = Boolean(document.footnotes?.length);
   const hasAppearances = Boolean(document.appearances?.some((appearance) => appearance?.text?.trim()));
   const title = document.header?.title ?? fallbackTitle ?? "";
@@ -110,13 +172,17 @@ const OpinionDocumentView: React.FC<OpinionDocumentViewProps> = ({
                   writing={writing}
                   index={index}
                   opinionSourceUrl={opinionSourceUrl}
+                  collapsible={!shouldInlineSingleWriting}
                 />
               ))
             ) : (
               <Empty description="Opinion content is not available." />
             )}
             {dispositionParts.length > 0 ? (
-              <section className="opinion-document__disposition" aria-label="Disposition">
+              <section
+                className={`opinion-document__disposition${shouldInlineSingleWriting ? " opinion-document__disposition--after-inline-writing" : ""}`}
+                aria-label="Disposition"
+              >
                 {dispositionParts.map((part, index) => (
                   <p
                     key={`${part.type || "part"}-${index}`}
@@ -127,14 +193,12 @@ const OpinionDocumentView: React.FC<OpinionDocumentViewProps> = ({
                 ))}
               </section>
             ) : dispositionText ? (
-              <section className="opinion-document__disposition" aria-label="Disposition">
+              <section
+                className={`opinion-document__disposition${shouldInlineSingleWriting ? " opinion-document__disposition--after-inline-writing" : ""}`}
+                aria-label="Disposition"
+              >
                 <p className="opinion-document__disposition-text">{dispositionText}</p>
               </section>
-            ) : null}
-            {hasPageMarkers ? (
-              <p className="opinion-page-markers__placeholder">
-                Official page markers are indicated in the source data, but page-marker nodes are not yet rendered.
-              </p>
             ) : null}
           </div>
         </section>

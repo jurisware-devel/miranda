@@ -17,6 +17,11 @@ type OpinionDocumentResult =
       sourceUrl: string;
     }
   | {
+      kind: "text";
+      text: string;
+      sourceUrl: string;
+    }
+  | {
       kind: "pdf";
       pdfUrl: string;
     };
@@ -39,12 +44,20 @@ const fetchOpinionDocumentFromUrl = async (url: string): Promise<OpinionDocument
     return { kind: "pdf", pdfUrl: url };
   }
 
-  const isMarkdown =
-    /\.md($|\?)/i.test(url) || contentType.includes("text/markdown") || contentType.includes("text/plain");
+  const isMarkdown = /\.md($|\?)/i.test(url) || contentType.includes("text/markdown");
   if (isMarkdown) {
     return {
       kind: "markdown",
       markdown: await response.text(),
+      sourceUrl: url,
+    };
+  }
+
+  const isText = /\.txt($|\?)/i.test(url) || contentType.includes("text/plain");
+  if (isText) {
+    return {
+      kind: "text",
+      text: await response.text(),
       sourceUrl: url,
     };
   }

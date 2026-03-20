@@ -33,13 +33,17 @@ public final class HtmlSourceLoader {
     );
     private static final Pattern FOOTNOTE_CASE_NAME_PATTERN = Pattern.compile("(?i)\\d+CASE");
     private static final Pattern AUTHOR_MARKER_PATTERN = Pattern.compile(
-        "^(?:[A-Z][A-Za-z.' -]+|[A-Z][A-Z.' -]+),\\s+(?:J\\.|Chief Judge)(?:\\s*\\([^)]*\\))?:?$"
+        "^(?:Chief Judge\\s+[A-Z][A-Za-z.' -]+|(?:[A-Z][A-Za-z.' -]+|[A-Z][A-Z.' -]+),\\s+(?:J\\.|Chief Judge))(?:\\s*\\([^)]*\\))?[.:]?$"
+    );
+    private static final Pattern PANEL_SUMMARY_LINE_PATTERN = Pattern.compile(
+        "^(?:Chief Judge\\b|Judge\\b|Judges\\b).*(?:\\band\\s+Judges\\b|\\bconcur\\b|\\bconcurs\\b|\\bdissent\\b|\\bdissents\\b|\\bvotes\\s+to\\b).*$",
+        Pattern.CASE_INSENSITIVE
     );
     private static final Pattern SUBHEADER_PATTERN = Pattern.compile(
         "^(?:[IVXLC]+\\.|[A-Z]\\.|\\d+\\.)$"
     );
     private static final Pattern OPINION_START_PATTERN = Pattern.compile(
-        "^(?:OPINION OF THE COURT|Memorandum\\.?|Per Curiam\\.?)$",
+        "^(?:OPINION OF THE COURT|Memorandum[.:]?|Per Curiam\\.?)$",
         Pattern.CASE_INSENSITIVE
     );
     private static final Pattern OFFICIAL_PAGE_MARKER_PATTERN = Pattern.compile(
@@ -72,15 +76,8 @@ public final class HtmlSourceLoader {
 
     private List<HtmlHeaderLine> extractHeaderLines(Document document, LineAccumulator accumulator) {
         List<HtmlHeaderLine> headerLines = new ArrayList<>();
-        Element table = document.selectFirst("table");
-        if (table != null) {
-            for (Element row : table.select("tr")) {
-                Element cell = row.selectFirst("td");
-                if (cell != null) {
-                    addHeaderLine(headerLines, accumulator, renderInline(cell));
-                }
-            }
-        }
+        Element primaryHeaderTable = document.selectFirst("table");
+        addHeaderLinesFromTable(headerLines, accumulator, primaryHeaderTable);
 
         Element dateline = document.selectFirst("dateline");
         if (dateline != null) {
@@ -92,12 +89,12 @@ public final class HtmlSourceLoader {
             return List.copyOf(headerLines);
         }
 
-        int authorIndex = findTopLevelAuthorIndex(body);
-        if (authorIndex < 0) {
+        int opinionStartIndex = findTopLevelOpinionStartIndex(body);
+        if (opinionStartIndex < 0) {
             return List.copyOf(headerLines);
         }
 
-        for (int index = 0; index < authorIndex; index++) {
+        for (int index = 0; index < opinionStartIndex; index++) {
             Node node = body.childNode(index);
             if (node instanceof TextNode textNode) {
                 addHeaderLine(headerLines, accumulator, textNode.text());
@@ -107,12 +104,30 @@ public final class HtmlSourceLoader {
                 continue;
             }
             String tag = element.tagName();
+            if ("table".equalsIgnoreCase(tag)) {
+                if (element != primaryHeaderTable) {
+                    addHeaderLinesFromTable(headerLines, accumulator, element);
+                }
+                continue;
+            }
             if ("div".equalsIgnoreCase(tag) || "p".equalsIgnoreCase(tag)) {
                 addHeaderLine(headerLines, accumulator, renderInline(element));
             }
         }
 
         return List.copyOf(headerLines);
+    }
+
+    private void addHeaderLinesFromTable(List<HtmlHeaderLine> headerLines, LineAccumulator accumulator, Element table) {
+        if (table == null) {
+            return;
+        }
+        for (Element row : table.select("tr")) {
+            Element cell = row.selectFirst("td");
+            if (cell != null) {
+                addHeaderLine(headerLines, accumulator, renderInline(cell));
+            }
+        }
     }
 
     private List<HtmlOpinionBlock> extractOpinionBlocks(Document document, LineAccumulator accumulator) {
@@ -125,6 +140,10 @@ public final class HtmlSourceLoader {
         Elements contentNodes = body.select("sc, p, blockquote, div[align=center]");
         boolean inOpinion = false;
         for (Element element : contentNodes) {
+            String tag = element.tagName();
+            if ("sc".equalsIgnoreCase(tag) && !isStructuralAuthorMarkerNode(element)) {
+                continue;
+            }
             if (!inOpinion) {
                 if (isOpinionStartNode(element)) {
                     inOpinion = true;
@@ -136,13 +155,16 @@ public final class HtmlSourceLoader {
                 break;
             }
 
-            String tag = element.tagName();
             if ("p".equalsIgnoreCase(tag) || "blockquote".equalsIgnoreCase(tag)) {
+                String rendered = renderInline(element);
+                if (splitLeadingAuthorMarker(blocks, accumulator, rendered)) {
+                    continue;
+                }
                 addOpinionBlock(
                     blocks,
                     accumulator,
-                    classifyOpinionBlockType(element, renderInline(element)),
-                    renderInline(element),
+                    classifyOpinionBlockType(element, rendered),
+                    rendered,
                     extractInlineNodes(element)
                 );
                 continue;
@@ -150,6 +172,9 @@ public final class HtmlSourceLoader {
             if ("div".equalsIgnoreCase(tag)) {
                 String rendered = renderInline(element);
                 if (rendered.isBlank()) {
+                    continue;
+                }
+                if (splitLeadingAuthorMarker(blocks, accumulator, rendered)) {
                     continue;
                 }
                 addOpinionBlock(blocks, accumulator, classifyOpinionBlockType(element, rendered), rendered, extractInlineNodes(element));
@@ -162,6 +187,15 @@ public final class HtmlSourceLoader {
 
         accumulator.trimTrailingBlankLine();
         return List.copyOf(blocks);
+    }
+
+    private boolean isStructuralAuthorMarkerNode(Element element) {
+        Element parent = element.parent();
+        if (parent == null) {
+            return false;
+        }
+        String parentTag = parent.tagName();
+        return "body".equalsIgnoreCase(parentTag) || "opinion".equalsIgnoreCase(parentTag);
     }
 
     private FootnoteExtraction extractFootnoteLines(Document document, String rawHtml, LineAccumulator accumulator) {
@@ -237,10 +271,12 @@ public final class HtmlSourceLoader {
         return List.copyOf(lineNumbers);
     }
 
-    private int findTopLevelAuthorIndex(Element body) {
+    private int findTopLevelOpinionStartIndex(Element body) {
         for (int index = 0; index < body.childNodeSize(); index++) {
-            Node node = body.childNode(index);
-            if (node instanceof Element element && "sc".equalsIgnoreCase(element.tagName())) {
+            if (!(body.childNode(index) instanceof Element element)) {
+                continue;
+            }
+            if (isOpinionStartNode(element)) {
                 return index;
             }
         }
@@ -261,7 +297,59 @@ public final class HtmlSourceLoader {
         String normalized = normalizeText(renderInline(element));
         String withoutLeadingMarker = normalized.replaceFirst("^\\{\\*\\*[^}]+\\}\\s*", "");
         return OPINION_START_PATTERN.matcher(withoutLeadingMarker).matches()
-            || AUTHOR_MARKER_PATTERN.matcher(withoutLeadingMarker).matches();
+            || isStandaloneAuthorMarker(withoutLeadingMarker);
+    }
+
+    private boolean splitLeadingAuthorMarker(
+        List<HtmlOpinionBlock> blocks,
+        LineAccumulator accumulator,
+        String rendered
+    ) {
+        List<String> normalizedLines = normalizeIntoLines(rendered);
+        if (normalizedLines.size() != 1) {
+            return false;
+        }
+
+        String line = normalizedLines.getFirst();
+        int splitIndex = leadingAuthorMarkerEnd(line);
+        if (splitIndex < 0 || splitIndex >= line.length()) {
+            return false;
+        }
+
+        String authorLine = line.substring(0, splitIndex).trim();
+        String remainder = line.substring(splitIndex).trim();
+        if (!isStandaloneAuthorMarker(authorLine) || remainder.isEmpty()) {
+            return false;
+        }
+
+        addOpinionBlock(blocks, accumulator, HtmlOpinionBlockType.AUTHOR_MARKER, authorLine, null);
+        addOpinionBlock(blocks, accumulator, HtmlOpinionBlockType.PARAGRAPH, remainder, null);
+        return true;
+    }
+
+    private int leadingAuthorMarkerEnd(String line) {
+        int searchFromExclusive = line.length();
+        while (searchFromExclusive > 0) {
+            int candidate = previousSentenceBoundary(line, searchFromExclusive);
+            if (candidate < 0) {
+                return -1;
+            }
+            if (isStandaloneAuthorMarker(line.substring(0, candidate).trim())) {
+                return candidate;
+            }
+            searchFromExclusive = candidate - 1;
+        }
+        return -1;
+    }
+
+    private int previousSentenceBoundary(String line, int fromIndexExclusive) {
+        for (int index = fromIndexExclusive - 1; index >= 0; index--) {
+            char c = line.charAt(index);
+            if ((c == '.' || c == ':') && index + 1 < line.length() && Character.isWhitespace(line.charAt(index + 1))) {
+                return index + 1;
+            }
+        }
+        return -1;
     }
 
     private String renderAuthorLine(Element scElement) {
@@ -304,6 +392,12 @@ public final class HtmlSourceLoader {
         }
         for (int index = 0; index < normalizedLines.size(); index++) {
             String normalized = normalizedLines.get(index);
+            if (!blocks.isEmpty()) {
+                HtmlOpinionBlock previous = blocks.getLast();
+                if (previous.type() == type && previous.text().equals(normalized)) {
+                    continue;
+                }
+            }
             List<InlineNode> lineInlines = index == 0 ? normalizeInlineNodes(inlines) : null;
             blocks.add(new HtmlOpinionBlock(type, accumulator.addLine(normalized, lineInlines), normalized));
         }
@@ -328,13 +422,19 @@ public final class HtmlSourceLoader {
         if ("blockquote".equalsIgnoreCase(element.tagName())) {
             return HtmlOpinionBlockType.BLOCK_QUOTE;
         }
-        if (AUTHOR_MARKER_PATTERN.matcher(normalized).matches()) {
+        if (isStandaloneAuthorMarker(normalized)) {
             return HtmlOpinionBlockType.AUTHOR_MARKER;
         }
         if (SUBHEADER_PATTERN.matcher(normalized).matches()) {
             return HtmlOpinionBlockType.SUBHEADER;
         }
         return HtmlOpinionBlockType.PARAGRAPH;
+    }
+
+    private boolean isStandaloneAuthorMarker(String text) {
+        String normalized = normalizeText(text);
+        return AUTHOR_MARKER_PATTERN.matcher(normalized).matches()
+            && !PANEL_SUMMARY_LINE_PATTERN.matcher(normalized).matches();
     }
 
     private List<String> normalizeIntoLines(String rendered) {

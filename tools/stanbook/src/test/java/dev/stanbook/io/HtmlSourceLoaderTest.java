@@ -56,4 +56,63 @@ class HtmlSourceLoaderTest {
         assertThat(document.lines()).anyMatch(line -> line.text().equals("Example footnote text."));
         assertThat(document.lines()).noneMatch(line -> line.text().contains("Footnote 1: Example footnote text."));
     }
+
+    @Test
+    void recognizes_chief_judge_and_inline_dissent_author_markers() {
+        String html = """
+            <html><body>
+            <table>
+              <tr><td>People v Example</td></tr>
+              <tr><td>2026 NY Slip Op 00004</td></tr>
+              <tr><td>Court of Appeals</td></tr>
+            </table>
+            <div align="center">OPINION OF THE COURT</div>
+            <p>Chief Judge Kaye.</p>
+            <p>Majority text.</p>
+            <p>G.B. Smith, J. (dissenting). Dissent text.</p>
+            <div align="center"><b>Footnotes</b></div>
+            </body></html>
+            """;
+
+        var document = new HtmlSourceLoader().load(Path.of("example.htm"), html);
+
+        assertThat(document.htmlDocument().opinionBlocks()).extracting(block -> block.type())
+            .containsSequence(
+                HtmlOpinionBlockType.PARAGRAPH,
+                HtmlOpinionBlockType.AUTHOR_MARKER,
+                HtmlOpinionBlockType.PARAGRAPH,
+                HtmlOpinionBlockType.AUTHOR_MARKER,
+                HtmlOpinionBlockType.PARAGRAPH
+            );
+        assertThat(document.htmlDocument().opinionBlocks()).extracting(block -> block.text())
+            .contains("Chief Judge Kaye.", "G.B. Smith, J. (dissenting).", "Dissent text.");
+    }
+
+    @Test
+    void does_not_treat_wrapped_panel_summary_line_as_author_marker() {
+        String html = """
+            <html><body>
+            <table>
+              <tr><td>People v Example</td></tr>
+              <tr><td>2026 NY Slip Op 00005</td></tr>
+              <tr><td>Court of Appeals</td></tr>
+            </table>
+            <div align="center">OPINION OF THE COURT</div>
+            <p>Memorandum.</p>
+            <p>Chief Judge Kaye and Judges G.B.
+            Smith, Ciparick, Rosenblatt, Graffeo, Read and R.S. Smith concur.</p>
+            </body></html>
+            """;
+
+        var document = new HtmlSourceLoader().load(Path.of("example.htm"), html);
+
+        assertThat(document.htmlDocument().opinionBlocks()).extracting(block -> block.type())
+            .containsExactly(
+                HtmlOpinionBlockType.PARAGRAPH,
+                HtmlOpinionBlockType.PARAGRAPH,
+                HtmlOpinionBlockType.PARAGRAPH
+            );
+        assertThat(document.htmlDocument().opinionBlocks()).extracting(block -> block.text())
+            .contains("Chief Judge Kaye and Judges G.B. Smith, Ciparick, Rosenblatt, Graffeo, Read and R.S. Smith concur.");
+    }
 }

@@ -73,10 +73,7 @@ const AdminContentRoutes: React.FC<AdminContentRoutesProps> = ({
   cases,
   courts,
   courtsById,
-  tags,
   phases,
-  caseTags,
-  setCaseTags,
   casePhases,
   setCasePhases,
   pagedCases,
@@ -121,13 +118,9 @@ const AdminContentRoutes: React.FC<AdminContentRoutesProps> = ({
               cases={cases}
               courts={courts}
               courtsById={courtsById}
-              tags={tags}
               phases={phases}
-              caseTags={caseTags}
-              setCaseTags={setCaseTags}
               casePhases={casePhases}
               setCasePhases={setCasePhases}
-              canEditCaseTags={capabilities.canEditCaseTags}
               loading={loading}
               error={error}
               phasesError={phasesError}

@@ -103,4 +103,82 @@ class MirandaJsonRendererTest {
         assertThat(json).contains("Judge Rivera concurs in result in an opinion.");
         assertThat(json).contains("\"kind\":\"concurrence\"");
     }
+
+    @Test
+    void render_json_preserves_caption_party_lines_in_header() {
+        String html = """
+            <html><body>
+            <table>
+              <tr><td>People v Example</td></tr>
+              <tr><td>2026 NY Slip Op 00003</td></tr>
+              <tr><td>March 20, 2026</td></tr>
+              <tr><td>Court of Appeals</td></tr>
+            </table>
+            <table>
+              <tr><td>The People of the State of New York, Respondent,</td></tr>
+              <tr><td>v</td></tr>
+              <tr><td>John Doe, Appellant.</td></tr>
+            </table>
+            <p>Memorandum.</p>
+            <p>Order affirmed.</p>
+            </body></html>
+            """;
+
+        String json = StanbookPipeline.createDefault()
+            .render(new dev.stanbook.io.HtmlSourceLoader().load(Path.of("example.htm"), html));
+
+        assertThat(json).contains("\"caption\":[\"The People of the State of New York, Respondent,\",\"v\",\"John Doe, Appellant.\"]");
+    }
+
+    @Test
+    void render_json_preserves_caption_party_lines_from_single_table_cell_with_breaks() {
+        String html = """
+            <html><body>
+            <table>
+              <tr><td>People v Example</td></tr>
+              <tr><td>2026 NY Slip Op 00003</td></tr>
+              <tr><td>March 20, 2026</td></tr>
+              <tr><td>Court of Appeals</td></tr>
+            </table>
+            <table>
+              <tr><td><b>The People of the State of New York, Respondent,<br>v<br>John Doe, Appellant.</b></td></tr>
+            </table>
+            <p>Memorandum.</p>
+            <p>Order affirmed.</p>
+            </body></html>
+            """;
+
+        String json = StanbookPipeline.createDefault()
+            .render(new dev.stanbook.io.HtmlSourceLoader().load(Path.of("example.htm"), html));
+
+        assertThat(json).contains("\"caption\":[\"The People of the State of New York, Respondent,\",\"v\",\"John Doe, Appellant.\"]");
+    }
+
+    @Test
+    void render_json_does_not_turn_nested_small_caps_citations_into_separate_writings() {
+        String html = """
+            <html><body>
+            <table>
+              <tr><td>People v Example</td></tr>
+              <tr><td>2026 NY Slip Op 00004</td></tr>
+              <tr><td>Decided on March 20, 2026</td></tr>
+              <tr><td>Court of Appeals</td></tr>
+            </table>
+            <p>Majority opening.</p>
+            <Opinion category="dissenting">
+            <br>
+            <sc>WILSON</sc>, Chief Judge (dissenting):
+            <p>This paragraph cites 45 <sc>Univ of Chicago L</sc> Rev 263, 282, 307-308 [1978] and should remain in the dissent body.</p>
+            <p>Order affirmed. Opinion by Judge Example. Chief Judge Wilson dissents in an opinion.</p>
+            <p>Decided March 20, 2026</p>
+            </body></html>
+            """;
+
+        String json = StanbookPipeline.createDefault()
+            .render(new dev.stanbook.io.HtmlSourceLoader().load(Path.of("example.htm"), html));
+
+        assertThat(json).contains("\"kind\":\"dissent\"");
+        assertThat(json).contains("Univ of Chicago L");
+        assertThat(json).doesNotContain("\"kind\":\"mixed\"");
+    }
 }

@@ -30,6 +30,7 @@ const OpinionCaseDetailLayer: React.FC<OpinionCaseDetailLayerProps> = ({
   const [caseError, setCaseError] = useState<string | null>(null);
   const [opinionDocument, setOpinionDocument] = useState<OpinionDocument | null>(null);
   const [opinionMarkdown, setOpinionMarkdown] = useState("");
+  const [opinionText, setOpinionText] = useState("");
   const [opinionSourceUrl, setOpinionSourceUrl] = useState<string>("");
   const [opinionPdfUrl, setOpinionPdfUrl] = useState<string>("");
   const [opinionLoading, setOpinionLoading] = useState(false);
@@ -84,6 +85,7 @@ const OpinionCaseDetailLayer: React.FC<OpinionCaseDetailLayerProps> = ({
     if (!caseItem?.caseId) {
       setOpinionDocument(null);
       setOpinionMarkdown("");
+      setOpinionText("");
       setOpinionSourceUrl("");
       setOpinionPdfUrl("");
       return;
@@ -96,6 +98,7 @@ const OpinionCaseDetailLayer: React.FC<OpinionCaseDetailLayerProps> = ({
         setOpinionError(null);
         setOpinionDocument(null);
         setOpinionMarkdown("");
+        setOpinionText("");
         setOpinionSourceUrl("");
         setOpinionPdfUrl("");
 
@@ -109,6 +112,12 @@ const OpinionCaseDetailLayer: React.FC<OpinionCaseDetailLayerProps> = ({
 
         if (result.kind === "markdown") {
           setOpinionMarkdown(result.markdown);
+          setOpinionSourceUrl(result.sourceUrl);
+          return;
+        }
+
+        if (result.kind === "text") {
+          setOpinionText(result.text);
           setOpinionSourceUrl(result.sourceUrl);
           return;
         }
@@ -159,6 +168,18 @@ const OpinionCaseDetailLayer: React.FC<OpinionCaseDetailLayerProps> = ({
             <div className="case-detail__opinion-content">
               <ReactMarkdown>{renderedOpinionMarkdown}</ReactMarkdown>
             </div>
+          ) : opinionText ? (
+            <section className="case-detail__json-inspector">
+              <div className="case-detail__json-inspector-header">
+                <h3 className="case-detail__json-inspector-title">Plain Text Opinion</h3>
+                {opinionSourceUrl ? (
+                  <span className="case-detail__json-inspector-source">{opinionSourceUrl}</span>
+                ) : null}
+              </div>
+              <pre className="case-detail__json-inspector-pre">
+                <code>{opinionText}</code>
+              </pre>
+            </section>
           ) : opinionPdfUrl ? (
             <div className="case-detail__pdf-viewer">
               <div className="case-detail__pdf-header">
