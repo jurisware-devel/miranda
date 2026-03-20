@@ -5,6 +5,7 @@ public enum OpinionComponentType {
     CONCURRENCE,
     DISSENT,
     MIXED,
+    BLOCK_QUOTE,
     SUBHEADER,
     METADATA
 }

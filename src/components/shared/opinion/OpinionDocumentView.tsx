@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useRef, useState } from "react";
 import { Empty } from "antd";
 import type { OpinionDocument, OpinionWriting as OpinionWritingType } from "../../../core/opinions/types";
 import FootnotesPanel from "./FootnotesPanel";
+import InlineMarkdown from "./InlineMarkdown";
 import OpinionAppearances from "./OpinionAppearances";
 import OpinionHeader from "./OpinionHeader";
 import OpinionWriting from "./OpinionWriting";
@@ -188,7 +189,7 @@ const OpinionDocumentView: React.FC<OpinionDocumentViewProps> = ({
                     key={`${part.type || "part"}-${index}`}
                     className="opinion-document__disposition-text"
                   >
-                    {part.text}
+                    <InlineMarkdown>{part.text}</InlineMarkdown>
                   </p>
                 ))}
               </section>
@@ -197,7 +198,9 @@ const OpinionDocumentView: React.FC<OpinionDocumentViewProps> = ({
                 className={`opinion-document__disposition${shouldInlineSingleWriting ? " opinion-document__disposition--after-inline-writing" : ""}`}
                 aria-label="Disposition"
               >
-                <p className="opinion-document__disposition-text">{dispositionText}</p>
+                <p className="opinion-document__disposition-text">
+                  <InlineMarkdown>{dispositionText}</InlineMarkdown>
+                </p>
               </section>
             ) : null}
           </div>

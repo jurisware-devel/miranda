@@ -14,7 +14,18 @@ import java.util.List;
 public final class OpinionReflower {
     public ReflowedOpinion reflow(OpinionBody opinionBody) {
         List<ReflowedBlock> blocks = new ArrayList<>();
-        for (OpinionComponent component : opinionBody.components()) {
+        for (int index = 0; index < opinionBody.components().size(); index++) {
+            OpinionComponent component = opinionBody.components().get(index);
+            if (component.type() == OpinionComponentType.BLOCK_QUOTE) {
+                List<OpinionComponent> quoteComponents = new ArrayList<>();
+                quoteComponents.add(component);
+                while (index + 1 < opinionBody.components().size()
+                    && opinionBody.components().get(index + 1).type() == OpinionComponentType.BLOCK_QUOTE) {
+                    quoteComponents.add(opinionBody.components().get(++index));
+                }
+                blocks.add(reflowQuoteComponents(quoteComponents));
+                continue;
+            }
             blocks.addAll(reflowComponent(component));
         }
         return new ReflowedOpinion(List.copyOf(blocks));
@@ -70,6 +81,27 @@ public final class OpinionReflower {
         }
 
         return List.copyOf(paragraphs);
+    }
+
+    private ReflowedBlock reflowQuoteComponents(List<OpinionComponent> components) {
+        List<Integer> sourceLines = new ArrayList<>();
+        List<ReflowedBlock> childBlocks = new ArrayList<>();
+
+        for (OpinionComponent component : components) {
+            List<ReflowedBlock> paragraphs = reflowComponent(component);
+            childBlocks.addAll(paragraphs);
+            component.lines().stream()
+                .map(line -> line.lineNumber())
+                .forEach(sourceLines::add);
+        }
+
+        return new ReflowedBlock(
+            BlockType.QUOTE,
+            null,
+            List.copyOf(sourceLines),
+            null,
+            List.copyOf(childBlocks)
+        );
     }
 
     String leftAlignText(String text) {

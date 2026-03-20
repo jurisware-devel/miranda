@@ -158,6 +158,44 @@ test("OpinionDocumentView trims a trailing colon from collapsible writing labels
   assert.doesNotMatch(html, />SINGAS, J\. \(dissenting\):<\/span>/);
 });
 
+test("OpinionDocumentView renders markdown italics in writing labels and disposition text", () => {
+  const sample: OpinionDocument = {
+    header: { title: "Example Case" },
+    opinions: [
+      {
+        kind: "majority",
+        blocks: [
+          {
+            type: "paragraph",
+            inlines: [{ type: "text", text: "Majority text." }],
+          },
+        ],
+      },
+      {
+        kind: "dissent",
+        label: "*People v Suarez*, Read, J. (dissenting):",
+        blocks: [
+          {
+            type: "paragraph",
+            inlines: [{ type: "text", text: "Dissent text." }],
+          },
+        ],
+      },
+    ],
+    disposition: {
+      text: "*People v Suarez*, 13 AD3d 320, reversed.",
+      parts: [{ type: "action", text: "*People v Suarez*, 13 AD3d 320, reversed." }],
+    },
+  };
+
+  const html = renderToStaticMarkup(<OpinionDocumentView document={sample} />);
+
+  assert.match(html, /<em>People v Suarez<\/em>, Read, J\. \(dissenting\)<\/span>/);
+  assert.match(html, /<em>People v Suarez<\/em>, 13 AD3d 320, reversed\./);
+  assert.doesNotMatch(html, /\*People v Suarez\*/);
+  assert.doesNotMatch(html, /<em>People v Suarez<\/em>, Read, J\. \(dissenting\):<\/span>/);
+});
+
 test("OpinionDocumentView folds malformed mixed continuations into the preceding opinion", () => {
   const sample = loadSample("2026_01588.json");
   const html = renderToStaticMarkup(<OpinionDocumentView document={sample} />);
@@ -221,7 +259,7 @@ test("OpinionDocumentView renders a lone structured memorandum without a collaps
   assert.match(html, /opinion-writing__content opinion-writing__content--inline/);
 });
 
-test("OpinionDocumentView does not render the old page-marker placeholder", () => {
+test("OpinionDocumentView renders page markers as page badges with original marker tooltip", () => {
   const sample: OpinionDocument = {
     header: { title: "Example Case" },
     opinions: [
@@ -232,7 +270,7 @@ test("OpinionDocumentView does not render the old page-marker placeholder", () =
             type: "paragraph",
             inlines: [
               { type: "text", text: "Body text with marker " },
-              { type: "page_marker", text: "{**1 NY3d at 2}" },
+              { type: "page_marker", text: "{**1 NY3d at 2}", citation: "1 NY3d at 2" },
             ],
           },
         ],
@@ -245,7 +283,10 @@ test("OpinionDocumentView does not render the old page-marker placeholder", () =
 
   const html = renderToStaticMarkup(<OpinionDocumentView document={sample} />);
 
-  assert.match(html, /\{\*\*1 NY3d at 2\}/);
+  assert.match(html, /class="opinion-inline__page-marker"/);
+  assert.match(html, /title="\{\*\*1 NY3d at 2\}"/);
+  assert.match(html, /aria-label="\{\*\*1 NY3d at 2\}"/);
+  assert.match(html, />2<\/span>/);
   assert.doesNotMatch(html, /page-marker nodes are not yet rendered/);
 });
 

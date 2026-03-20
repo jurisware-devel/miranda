@@ -3,6 +3,7 @@ package dev.stanbook.io;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import dev.stanbook.ir.html.HtmlOpinionBlockType;
+import dev.stanbook.ir.inline.EmphasisInline;
 import java.nio.file.Path;
 import org.junit.jupiter.api.Test;
 
@@ -89,6 +90,35 @@ class HtmlSourceLoaderTest {
     }
 
     @Test
+    void recognizes_multi_judge_inline_concurrence_author_markers() {
+        String html = """
+            <html><body>
+            <table>
+              <tr><td>People v Example</td></tr>
+              <tr><td>2026 NY Slip Op 00007</td></tr>
+              <tr><td>Court of Appeals</td></tr>
+            </table>
+            <div align="center">Per Curiam.</div>
+            <p>Majority text.</p>
+            <p>G.B. Smith, Rosenblatt and R.S. Smith, JJ. (concurring). Concurrence text.</p>
+            <div align="center"><b>Footnotes</b></div>
+            </body></html>
+            """;
+
+        var document = new HtmlSourceLoader().load(Path.of("example.htm"), html);
+
+        assertThat(document.htmlDocument().opinionBlocks()).extracting(block -> block.type())
+            .containsSequence(
+                HtmlOpinionBlockType.PARAGRAPH,
+                HtmlOpinionBlockType.PARAGRAPH,
+                HtmlOpinionBlockType.AUTHOR_MARKER,
+                HtmlOpinionBlockType.PARAGRAPH
+            );
+        assertThat(document.htmlDocument().opinionBlocks()).extracting(block -> block.text())
+            .contains("G.B. Smith, Rosenblatt and R.S. Smith, JJ. (concurring).", "Concurrence text.");
+    }
+
+    @Test
     void does_not_treat_wrapped_panel_summary_line_as_author_marker() {
         String html = """
             <html><body>
@@ -114,5 +144,77 @@ class HtmlSourceLoaderTest {
             );
         assertThat(document.htmlDocument().opinionBlocks()).extracting(block -> block.text())
             .contains("Chief Judge Kaye and Judges G.B. Smith, Ciparick, Rosenblatt, Graffeo, Read and R.S. Smith concur.");
+    }
+
+    @Test
+    void preserves_inline_semantics_after_splitting_leading_author_marker() {
+        String html = """
+            <html><body>
+            <table>
+              <tr><td>People v Example</td></tr>
+              <tr><td>2026 NY Slip Op 00006</td></tr>
+              <tr><td>Court of Appeals</td></tr>
+            </table>
+            <p>Memorandum.</p>
+            <Opinion category="dissenting">
+            <p><sc>RIVERA</sc>, J. (dissenting): Applying the relevant factors (<i>see People v Taranovich</i>, 37 NY2d 442 [1975]).</p>
+            </Opinion>
+            </body></html>
+            """;
+
+        var document = new HtmlSourceLoader().load(Path.of("example.htm"), html);
+        var paragraphLine = document.lines().stream()
+            .filter(line -> line.text().contains("Applying the relevant factors"))
+            .findFirst()
+            .orElseThrow();
+
+        assertThat(paragraphLine.text()).isEqualTo("Applying the relevant factors (*see People v Taranovich*, 37 NY2d 442 [1975]).");
+        assertThat(paragraphLine.inlines()).isNotNull();
+        assertThat(paragraphLine.inlines()).anyMatch(node -> node instanceof EmphasisInline);
+    }
+
+    @Test
+    void preserves_leading_text_after_inline_author_marker_with_emphasis() {
+        String html = """
+            <html><body>
+            <table>
+              <tr><td>People v Example</td></tr>
+              <tr><td>2026 NY Slip Op 00009</td></tr>
+              <tr><td>Court of Appeals</td></tr>
+            </table>
+            <p>Per Curiam.</p>
+            <p>Graffeo, J. (concurring in <i>McPherson</i> and dissenting in <i>Suarez</i>). The majority concludes that this text should keep its leading article.</p>
+            </body></html>
+            """;
+
+        var document = new HtmlSourceLoader().load(Path.of("example.htm"), html);
+        var paragraphLine = document.lines().stream()
+            .filter(line -> line.text().contains("The majority concludes"))
+            .findFirst()
+            .orElseThrow();
+
+        assertThat(paragraphLine.text()).isEqualTo("The majority concludes that this text should keep its leading article.");
+    }
+
+    @Test
+    void preserves_spaces_around_emphasized_header_appearance_text() {
+        String html = """
+            <html><body>
+            <table>
+              <tr><td>People v Example</td></tr>
+              <tr><td>2026 NY Slip Op 00011</td></tr>
+              <tr><td>Court of Appeals</td></tr>
+            </table>
+            <p><i>Kuby & Perez LLP, </i>New York City (<i>Ronald L. Kuby </i>of counsel), for appellant.</p>
+            <p>Per Curiam.</p>
+            <p>Body text.</p>
+            </body></html>
+            """;
+
+        var document = new HtmlSourceLoader().load(Path.of("example.htm"), html);
+
+        assertThat(document.lines()).anyMatch(line ->
+            line.text().equals("*Kuby & Perez LLP,* New York City (*Ronald L. Kuby* of counsel), for appellant.")
+        );
     }
 }

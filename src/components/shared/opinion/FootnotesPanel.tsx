@@ -27,8 +27,8 @@ const FootnotesPanel: React.FC<FootnotesPanelProps> = ({
         </h2>
       ) : null}
       <div className="opinion-footnotes__list">
-        {footnotes.map((footnote, index) => {
-          const label = footnote.label?.trim() || String(index + 1);
+        {footnotes.map((footnote) => {
+          const label = footnote.label?.trim() || "?";
           return (
             <section
               key={label}

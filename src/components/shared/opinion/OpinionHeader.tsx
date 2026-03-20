@@ -1,5 +1,6 @@
 import React from "react";
 import type { OpinionDocument } from "../../../core/opinions/types";
+import InlineMarkdown from "./InlineMarkdown";
 
 type OpinionHeaderVariant = "title" | "details";
 
@@ -149,7 +150,9 @@ const OpinionHeader: React.FC<OpinionHeaderProps> = ({
       return (
         <div className="opinion-header__multiline">
           {entry.lines.map((line, index) => (
-            <div key={`${entry.key}-${index}`}>{line}</div>
+            <div key={`${entry.key}-${index}`}>
+              <InlineMarkdown>{line}</InlineMarkdown>
+            </div>
           ))}
         </div>
       );
@@ -160,11 +163,11 @@ const OpinionHeader: React.FC<OpinionHeaderProps> = ({
     ) {
       return (
         <a href={lawReportingBureauUrl} target="_blank" rel="noreferrer">
-          {entry.value}
+          <InlineMarkdown>{entry.value}</InlineMarkdown>
         </a>
       );
     }
-    return entry.value;
+    return <InlineMarkdown>{entry.value}</InlineMarkdown>;
   };
 
   return (

@@ -1,5 +1,6 @@
 import React from "react";
 import type { OpinionAppearance } from "../../../core/opinions/types";
+import InlineMarkdown from "./InlineMarkdown";
 
 type OpinionAppearancesProps = {
   appearances?: OpinionAppearance[] | null;
@@ -26,7 +27,9 @@ const OpinionAppearances: React.FC<OpinionAppearancesProps> = ({
       <div className="opinion-appearances__list">
         {appearances.map((appearance, index) =>
           appearance?.text ? (
-            <p key={`${appearance.side ?? "appearance"}-${index}`}>{appearance.text}</p>
+            <p key={`${appearance.side ?? "appearance"}-${index}`}>
+              <InlineMarkdown>{appearance.text}</InlineMarkdown>
+            </p>
           ) : null,
         )}
       </div>

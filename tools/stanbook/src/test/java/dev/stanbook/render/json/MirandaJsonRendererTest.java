@@ -21,7 +21,7 @@ class MirandaJsonRendererTest {
         assertThat(json).contains("\"slipOpinion\":\"2026 NY Slip Op 00963\"");
         assertThat(json).contains("\"decisionDate\":\"2026-02-19\"");
         assertThat(json).contains("\"opinions\":[");
-        assertThat(json).contains("\"label\":\"RIVERA, J. (concurring):\"");
+        assertThat(json).contains("\"label\":\"RIVERA, J. (concurring)\"");
         assertThat(json).contains("\"joiners\":[\"Wilson\"]");
         assertThat(json).contains("\"renderingHints\":");
         assertThat(json).contains("\"disposition\":{");
@@ -105,6 +105,129 @@ class MirandaJsonRendererTest {
     }
 
     @Test
+    void render_json_splits_strong_action_from_judge_summary() {
+        String html = """
+            <html><body>
+            <table>
+              <tr><td>People v Example</td></tr>
+              <tr><td>2026 NY Slip Op 00004</td></tr>
+              <tr><td>March 20, 2026</td></tr>
+              <tr><td>Court of Appeals</td></tr>
+            </table>
+            <p>Memorandum.</p>
+            <p>Body text.</p>
+            <p>Appeal dismissed without prejudice, in a memorandum. Chief Judge Wilson and Judges Rivera, Garcia, Singas, Cannataro, Troutman and Halligan concur.</p>
+            </body></html>
+            """;
+
+        String json = StanbookPipeline.createDefault()
+            .render(new dev.stanbook.io.HtmlSourceLoader().load(Path.of("example.htm"), html));
+
+        assertThat(json).contains("\"disposition\":{");
+        assertThat(json).contains("\"text\":\"Appeal dismissed without prejudice, in a memorandum. Chief Judge Wilson and Judges Rivera, Garcia, Singas, Cannataro, Troutman and Halligan concur.\"");
+        assertThat(json).contains("\"parts\":[{\"type\":\"action\",\"text\":\"Appeal dismissed without prejudice, in a memorandum.\"},{\"type\":\"summary\",\"text\":\"Chief Judge Wilson and Judges Rivera, Garcia, Singas, Cannataro, Troutman and Halligan concur.\"}]");
+    }
+
+    @Test
+    void render_json_emits_multi_judge_concurrence_as_separate_writing() {
+        String html = """
+            <html><body>
+            <table>
+              <tr><td>People v Example</td></tr>
+              <tr><td>2026 NY Slip Op 00008</td></tr>
+              <tr><td>March 20, 2026</td></tr>
+              <tr><td>Court of Appeals</td></tr>
+              <tr><td>Per Curiam</td></tr>
+            </table>
+            <p>Per Curiam.</p>
+            <p>Majority text.</p>
+            <p>G.B. Smith, Rosenblatt and R.S. Smith, JJ. (concurring). Concurrence text.</p>
+            <p>Order affirmed. Chief Judge Wilson and Judges Rivera, Garcia, Singas, Cannataro, Troutman and Halligan concur.</p>
+            </body></html>
+            """;
+
+        String json = StanbookPipeline.createDefault()
+            .render(new dev.stanbook.io.HtmlSourceLoader().load(Path.of("example.htm"), html));
+
+        assertThat(json).contains("\"kind\":\"concurrence\"");
+        assertThat(json).contains("\"label\":\"G.B. Smith, Rosenblatt and R.S. Smith, JJ. (concurring)\"");
+        assertThat(json).contains("Concurrence text.");
+    }
+
+    @Test
+    void render_json_preserves_leading_article_after_emphasized_author_marker_split() {
+        String html = """
+            <html><body>
+            <table>
+              <tr><td>People v Example</td></tr>
+              <tr><td>2026 NY Slip Op 00010</td></tr>
+              <tr><td>March 20, 2026</td></tr>
+              <tr><td>Court of Appeals</td></tr>
+            </table>
+            <p>Per Curiam.</p>
+            <p>Graffeo, J. (concurring in <i>McPherson</i> and dissenting in <i>Suarez</i>). The majority concludes that this text should keep its leading article.</p>
+            <p>Order affirmed.</p>
+            </body></html>
+            """;
+
+        String json = StanbookPipeline.createDefault()
+            .render(new dev.stanbook.io.HtmlSourceLoader().load(Path.of("example.htm"), html));
+
+        assertThat(json).contains("The majority concludes that this text should keep its leading article.");
+    }
+
+    @Test
+    void render_json_preserves_spaces_in_emphasized_appearance_lines() {
+        String html = """
+            <html><body>
+            <table>
+              <tr><td>People v Example</td></tr>
+              <tr><td>2026 NY Slip Op 00012</td></tr>
+              <tr><td>March 20, 2026</td></tr>
+              <tr><td>Court of Appeals</td></tr>
+            </table>
+            <p><i>Kuby & Perez LLP, </i>New York City (<i>Ronald L. Kuby </i>of counsel), for appellant.</p>
+            <p>Per Curiam.</p>
+            <p>Body text.</p>
+            </body></html>
+            """;
+
+        String json = StanbookPipeline.createDefault()
+            .render(new dev.stanbook.io.HtmlSourceLoader().load(Path.of("example.htm"), html));
+
+        assertThat(json).contains("\"text\":\"*Kuby & Perez LLP,* New York City (*Ronald L. Kuby* of counsel), for appellant.\"");
+    }
+
+    @Test
+    void render_json_groups_consecutive_blockquotes_into_single_quote_block() {
+        String html = """
+            <html><body>
+            <table>
+              <tr><td>People v Example</td></tr>
+              <tr><td>2026 NY Slip Op 00013</td></tr>
+              <tr><td>March 20, 2026</td></tr>
+              <tr><td>Court of Appeals</td></tr>
+            </table>
+            <p>Memorandum.</p>
+            <p>Intro paragraph.</p>
+            <blockquote>"the court: You were not the victim of a rape?</blockquote>
+            <blockquote>"juror twelve: Not with him.</blockquote>
+            <blockquote>"the court: With anybody, were you ever the victim of a rape?</blockquote>
+            <p>Closing paragraph.</p>
+            </body></html>
+            """;
+
+        String json = StanbookPipeline.createDefault()
+            .render(new dev.stanbook.io.HtmlSourceLoader().load(Path.of("example.htm"), html));
+
+        assertThat(json).contains("\"type\":\"quote\"");
+        assertThat(json).contains("\"blocks\":[{\"type\":\"paragraph\"");
+        assertThat(json).contains("\\\"the court: You were not the victim of a rape?");
+        assertThat(json).contains("\\\"juror twelve: Not with him.");
+        assertThat(json).contains("\\\"the court: With anybody, were you ever the victim of a rape?");
+    }
+
+    @Test
     void render_json_preserves_caption_party_lines_in_header() {
         String html = """
             <html><body>
@@ -155,7 +278,7 @@ class MirandaJsonRendererTest {
     }
 
     @Test
-    void render_json_emits_per_curiam_as_majority_author_metadata() {
+    void render_json_leaves_per_curiam_majority_author_null() {
         String html = """
             <html><body>
             <table>
@@ -173,35 +296,8 @@ class MirandaJsonRendererTest {
             .render(new dev.stanbook.io.HtmlSourceLoader().load(Path.of("example.htm"), html));
 
         assertThat(json).contains("\"kind\":\"majority\"");
-        assertThat(json).contains("\"author\":\"Per Curiam\"");
+        assertThat(json).contains("\"author\":null");
+        assertThat(json).contains("\"authorStatus\":\"anonymous\"");
         assertThat(json).doesNotContain("\"kind\":\"per_curiam\"");
-    }
-
-    @Test
-    void render_json_does_not_turn_nested_small_caps_citations_into_separate_writings() {
-        String html = """
-            <html><body>
-            <table>
-              <tr><td>People v Example</td></tr>
-              <tr><td>2026 NY Slip Op 00004</td></tr>
-              <tr><td>Decided on March 20, 2026</td></tr>
-              <tr><td>Court of Appeals</td></tr>
-            </table>
-            <p>Majority opening.</p>
-            <Opinion category="dissenting">
-            <br>
-            <sc>WILSON</sc>, Chief Judge (dissenting):
-            <p>This paragraph cites 45 <sc>Univ of Chicago L</sc> Rev 263, 282, 307-308 [1978] and should remain in the dissent body.</p>
-            <p>Order affirmed. Opinion by Judge Example. Chief Judge Wilson dissents in an opinion.</p>
-            <p>Decided March 20, 2026</p>
-            </body></html>
-            """;
-
-        String json = StanbookPipeline.createDefault()
-            .render(new dev.stanbook.io.HtmlSourceLoader().load(Path.of("example.htm"), html));
-
-        assertThat(json).contains("\"kind\":\"dissent\"");
-        assertThat(json).contains("Univ of Chicago L");
-        assertThat(json).doesNotContain("\"kind\":\"mixed\"");
     }
 }

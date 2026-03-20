@@ -36,6 +36,18 @@ const hasInlineText = (node: OpinionInlineNode): node is Extract<OpinionInlineNo
   return "text" in node;
 };
 
+const pageMarkerPageText = (node: Extract<OpinionInlineNode, { type: "page_marker" }>) => {
+  const citation = node.citation?.trim();
+  const citationMatch = citation?.match(/\bat\s+(\d+)\s*$/i);
+  if (citationMatch) return citationMatch[1];
+
+  const rawText = node.text?.trim();
+  const rawMatch = rawText?.match(/\bat\s+(\d+)\s*\}$/i);
+  if (rawMatch) return rawMatch[1];
+
+  return rawText ?? citation ?? "";
+};
+
 const InlineContent: React.FC<InlineContentProps> = ({ nodes, opinionSourceUrl }) => {
   if (!nodes?.length) return null;
 
@@ -70,12 +82,27 @@ const InlineContent: React.FC<InlineContentProps> = ({ nodes, opinionSourceUrl }
             );
           }
           case "footnote_reference": {
-            const label = node.label?.trim() || String(index + 1);
+            const label = node.label?.trim() || "?";
             const targetId = node.target?.trim() || `opinion-footnote-${label}`;
             return (
               <sup key={key} className="opinion-inline__footnote-ref">
                 <a href={`#${targetId}`}>{renderFootnoteLabel(node)}</a>
               </sup>
+            );
+          }
+          case "page_marker": {
+            const pageMarkerNode = node as Extract<OpinionInlineNode, { type: "page_marker" }>;
+            const markerText = pageMarkerNode.text?.trim() || pageMarkerNode.citation?.trim() || "";
+            const pageText = pageMarkerPageText(pageMarkerNode);
+            return (
+              <span
+                key={key}
+                className="opinion-inline__page-marker"
+                title={markerText}
+                aria-label={markerText}
+              >
+                {pageText}
+              </span>
             );
           }
           default:

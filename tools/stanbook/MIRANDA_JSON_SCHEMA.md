@@ -185,6 +185,7 @@ Possible later additions:
   {
     "kind": "majority",
     "author": "Troutman",
+    "authorStatus": "named",
     "label": "TROUTMAN, J.",
     "joiners": ["Garcia", "Singas", "Cannataro", "Halligan"],
     "blocks": []
@@ -192,6 +193,7 @@ Possible later additions:
   {
     "kind": "concurrence",
     "author": "Rivera",
+    "authorStatus": "named",
     "label": "RIVERA, J. (concurring):",
     "joiners": ["Wilson"],
     "blocks": []
@@ -203,6 +205,7 @@ Recommended fields:
 
 - `kind`
 - `author`
+- `authorStatus`
 - `label`
 - `joiners`
 - `blocks`
@@ -216,7 +219,13 @@ Possible `kind` values:
 - `dissent`
 - `mixed`
 
-`author` may be `"Per Curiam"` for unattributed per curiam majorities.
+`author` should contain only a named author when one is confidently identified. Otherwise it should be `null`.
+
+`authorStatus` distinguishes:
+
+- `named`: the writing has a confidently identified named author
+- `anonymous`: the writing is affirmatively anonymous, such as an explicit per curiam majority
+- `unknown`: stanbook could not confidently determine whether the writing was authored or anonymous
 
 `label` is especially important for authored separate writings because it preserves reader-facing text exactly as displayed in the source opinion.
 
@@ -399,6 +408,7 @@ Below is a plausible partial payload for `2026_00963`.
     {
       "kind": "majority",
       "author": "Troutman",
+      "authorStatus": "named",
       "label": "TROUTMAN, J.",
       "joiners": ["Garcia", "Singas", "Cannataro", "Halligan"],
       "blocks": [
@@ -421,6 +431,7 @@ Below is a plausible partial payload for `2026_00963`.
     {
       "kind": "concurrence",
       "author": "Rivera",
+      "authorStatus": "named",
       "label": "RIVERA, J. (concurring):",
       "joiners": ["Wilson"],
       "blocks": [

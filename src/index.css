@@ -1028,7 +1028,11 @@ body.route-theme-pub {
   max-height: none;
   overflow: visible;
   padding-top: 0;
-  margin-bottom: 18px;
+  margin-bottom: 0;
+}
+
+.opinion-document__header-body--inline + .opinion-writing--collapsible {
+  margin-top: 8px;
 }
 
 .opinion-document__body-shell {
@@ -1149,7 +1153,8 @@ body.route-theme-pub {
   gap: 2px;
 }
 
-.opinion-section__title {
+.opinion-section__title,
+.opinion-writing__summary-text {
   margin: 0 0 10px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 14px;
@@ -1209,10 +1214,7 @@ body.route-theme-pub {
 
 .opinion-writing__summary-text {
   min-width: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 0.02em;
+  margin: 0;
   color: #0f172a;
 }
 
@@ -1332,6 +1334,23 @@ body.route-theme-pub {
 .opinion-inline__footnote-ref a:hover,
 .opinion-inline__footnote-ref a:focus {
   text-decoration: underline;
+}
+
+.opinion-inline__page-marker {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.8em;
+  margin: 0 0.18em;
+  padding: 0.08em 0.52em;
+  border-radius: 999px;
+  background: #fee2e2;
+  color: #991b1b;
+  font-size: 0.78em;
+  font-weight: 700;
+  line-height: 1.2;
+  vertical-align: baseline;
+  white-space: nowrap;
 }
 
 .opinion-footnotes__collapse {

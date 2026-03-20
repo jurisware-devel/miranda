@@ -117,6 +117,26 @@ public final class HtmlLowerer {
                 continue;
             }
 
+            if (block.type() == HtmlOpinionBlockType.BLOCK_QUOTE) {
+                if (current == null) {
+                    current = defaultMajorityBuilder();
+                }
+                if (!current.lines.isEmpty()) {
+                    components.add(current.build());
+                    current = current.continuation();
+                }
+                components.add(new OpinionComponent(
+                    OpinionComponentType.BLOCK_QUOTE,
+                    current.role,
+                    current.author,
+                    current.perCuriam,
+                    List.of(sourceLine(source, block.lineNumber())),
+                    block.lineNumber(),
+                    block.lineNumber()
+                ));
+                continue;
+            }
+
             if (current == null) {
                 current = defaultBuilderFor(block);
             }

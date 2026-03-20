@@ -1,14 +1,26 @@
 import React, { useState } from "react";
 import type { OpinionWriting as OpinionWritingType } from "../../../core/opinions/types";
+import InlineMarkdown from "./InlineMarkdown";
 import OpinionBlock from "./OpinionBlock";
 
-const trimDisplayLabel = (value: string) => value.replace(/:\s*$/, "");
 const normalizeBannerText = (value: string) => value.replace(/[.:\s]+$/g, "").replace(/\s+/g, " ").trim();
+const normalizePanelTitle = (value: string) => value.replace(/:\s*$/g, "").trim();
 const defaultDisplayTitle = (kind: string) => {
   if (kind === "memorandum") return "MEMORANDUM";
   if (kind === "opinion_of_the_court") return "OPINION OF THE COURT";
   if (kind === "per_curiam") return "Per Curiam";
   return "";
+};
+const synthesizedDisplayTitle = (writing: OpinionWritingType, kind: string) => {
+  if (writing.label?.trim()) return normalizePanelTitle(writing.label.trim());
+  if (writing.author?.trim()) return writing.author.trim();
+  if (
+    writing.authorStatus === "anonymous" &&
+    (kind === "majority" || kind === "opinion_of_the_court")
+  ) {
+    return "Per Curiam";
+  }
+  return defaultDisplayTitle(kind);
 };
 const getLeadingBannerTitle = (writing: OpinionWritingType) => {
   const firstBlock = writing.blocks?.[0];
@@ -78,13 +90,10 @@ const OpinionWriting: React.FC<OpinionWritingProps> = ({
   const leadingBannerTitle = getLeadingBannerTitle(writing);
   const [isExpanded, setIsExpanded] = useState(!collapsible || kind === "majority");
   const title =
-    writing.label?.trim() ||
-    writing.author?.trim() ||
-    defaultDisplayTitle(kind) ||
+    synthesizedDisplayTitle(writing, kind) ||
     leadingBannerTitle ||
-    writing.kind?.trim() ||
-    "Opinion";
-  const panelTitle = trimDisplayLabel(title);
+    (collapsible ? "Opinion" : "");
+  const panelTitle = title;
   const panelToneClassName = getPanelToneClassName(kind);
   const labelToneClassName = getLabelToneClassName(kind);
   const skipsLeadingBannerBlock = panelTitle.length > 0 && firstBlockRepeatsTitle(writing, panelTitle);
@@ -102,7 +111,7 @@ const OpinionWriting: React.FC<OpinionWritingProps> = ({
                   labelToneClassName ? ` ${labelToneClassName}` : ""
                 }`}
               >
-                {panelTitle}
+                <InlineMarkdown>{panelTitle}</InlineMarkdown>
               </span>
             </div>
           ) : null}
@@ -137,7 +146,7 @@ const OpinionWriting: React.FC<OpinionWritingProps> = ({
             labelToneClassName ? ` ${labelToneClassName}` : ""
           }`}
         >
-          {panelTitle}
+          <InlineMarkdown>{panelTitle}</InlineMarkdown>
         </span>
         <span className="opinion-writing__summary-toggle">{isExpanded ? "Hide" : "Show"}</span>
       </button>
