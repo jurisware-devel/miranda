@@ -52,6 +52,9 @@ public final class HtmlSourceLoader {
 
         List<HtmlHeaderLine> headerLines = extractHeaderLines(document, accumulator);
         List<HtmlOpinionBlock> opinionBlocks = extractOpinionBlocks(document, accumulator);
+        List<Integer> fallbackOpinionLineNumbers = opinionBlocks.isEmpty()
+            ? extractFallbackOpinionLines(document, accumulator)
+            : List.of();
         FootnoteExtraction footnotes = extractFootnoteLines(document, rawHtml, accumulator);
 
         return new SourceDocument(
@@ -60,6 +63,7 @@ public final class HtmlSourceLoader {
             new HtmlNormalizedDocument(
                 List.copyOf(headerLines),
                 List.copyOf(opinionBlocks),
+                List.copyOf(fallbackOpinionLineNumbers),
                 footnotes.headingLine(),
                 List.copyOf(footnotes.footnotes())
             )
@@ -200,6 +204,39 @@ public final class HtmlSourceLoader {
         return new FootnoteExtraction(headingLine, List.copyOf(footnotes));
     }
 
+    private List<Integer> extractFallbackOpinionLines(Document document, LineAccumulator accumulator) {
+        Element body = document.body();
+        if (body == null) {
+            return List.of();
+        }
+
+        int startIndex = 0;
+        for (int index = 0; index < body.childNodeSize(); index++) {
+            Node node = body.childNode(index);
+            if (node instanceof Element element && "table".equalsIgnoreCase(element.tagName())) {
+                startIndex = index + 1;
+            }
+        }
+
+        List<Integer> lineNumbers = new ArrayList<>();
+        for (int index = startIndex; index < body.childNodeSize(); index++) {
+            Node node = body.childNode(index);
+            if (isFootnotesHeading(node)) {
+                break;
+            }
+            if (node instanceof Element element) {
+                String tag = element.tagName();
+                if ("form".equalsIgnoreCase(tag) || "script".equalsIgnoreCase(tag) || "style".equalsIgnoreCase(tag)) {
+                    break;
+                }
+            }
+            addFallbackLines(lineNumbers, accumulator, renderInline(node));
+        }
+
+        accumulator.trimTrailingBlankLine();
+        return List.copyOf(lineNumbers);
+    }
+
     private int findTopLevelAuthorIndex(Element body) {
         for (int index = 0; index < body.childNodeSize(); index++) {
             Node node = body.childNode(index);
@@ -273,6 +310,17 @@ public final class HtmlSourceLoader {
         if (type == HtmlOpinionBlockType.PARAGRAPH || type == HtmlOpinionBlockType.BLOCK_QUOTE) {
             accumulator.addBlankLine();
         }
+    }
+
+    private void addFallbackLines(List<Integer> lineNumbers, LineAccumulator accumulator, String rendered) {
+        List<String> normalizedLines = normalizeIntoLines(rendered);
+        if (normalizedLines.isEmpty()) {
+            return;
+        }
+        for (String normalized : normalizedLines) {
+            lineNumbers.add(accumulator.addLine(normalized));
+        }
+        accumulator.addBlankLine();
     }
 
     private HtmlOpinionBlockType classifyOpinionBlockType(Element element, String rendered) {

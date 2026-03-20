@@ -33,6 +33,10 @@ class RealSampleJsonRegressionTest {
         assertThat(json).contains("\"decisionDate\":\"2004-01-12\"");
         assertThat(json).contains("\"opinions\":[]");
         assertThat(json).contains("\"disposition\":null");
+        assertThat(json).contains("\"opinions\":\"fallback_only\"");
+        assertThat(json).contains("\"opinionFallbackReasons\":[\"no_structured_opinion_blocks_detected\"");
+        assertThat(json).contains("\"opinionLines\":[");
+        assertThat(json).contains("On review of submissions pursuant to section 500.4 of the Rules");
         assertThat(json).doesNotContain("Return to Decision List");
     }
 
@@ -49,6 +53,7 @@ class RealSampleJsonRegressionTest {
         assertThat(json).contains("\"joiners\":[\"Wilson\"]");
         assertThat(json).contains("I join in the result and would affirm defendant's conviction");
         assertThat(json).contains("\"hasSeparateOpinions\":true");
+        assertThat(json).contains("\"structuredExtraction\":{\"opinions\":\"high_confidence\"");
     }
 
     @Test

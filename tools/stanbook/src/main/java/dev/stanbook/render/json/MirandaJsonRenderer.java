@@ -29,6 +29,7 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.Objects;
 import java.util.Optional;
+import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -84,26 +85,30 @@ public final class MirandaJsonRenderer {
         List<Writing> trimmedWritings = trimTerminalSummary(writings, terminalSummary);
         DispositionInfo disposition = buildDisposition(document, terminalSummary);
         List<Writing> writingsWithJoiners = attachJoiners(trimmedWritings, terminalSummary);
+        List<Diagnostic> diagnostics = buildDiagnostics(source, document, writingsWithJoiners, disposition);
+        ExtractionAssessment extraction = assessExtraction(source, document, writingsWithJoiners, diagnostics);
         Map<String, Object> root = new LinkedHashMap<>();
         root.put("version", "0.1");
         root.put("documentType", "opinion");
-        root.put("source", buildSource(source, document));
+        root.put("source", buildSource(source, document, extraction));
         root.put("header", buildHeader(document));
         root.put("appearances", buildAppearances(document));
-        root.put("opinions", buildOpinions(writingsWithJoiners));
-        root.put("footnotes", buildFootnotes(document));
+        root.put("opinions", extraction.structuredOpinionsHighConfidence() ? buildOpinions(writingsWithJoiners) : List.of());
+        root.put("footnotes", extraction.structuredFootnotesHighConfidence() ? buildFootnotes(document) : List.of());
         root.put("disposition", disposition == null ? null : disposition.json());
-        root.put("renderingHints", buildRenderingHints(document, writingsWithJoiners));
-        root.put("debug", buildDebug(source, document, writingsWithJoiners, disposition));
+        root.put("renderingHints", buildRenderingHints(document, writingsWithJoiners, extraction));
+        root.put("debug", buildDebug(diagnostics, extraction));
         return renderValue(root);
     }
 
-    private Map<String, Object> buildSource(SourceDocument source, ReflowedDocument document) {
+    private Map<String, Object> buildSource(SourceDocument source, ReflowedDocument document, ExtractionAssessment extraction) {
         Map<String, Object> sourceJson = new LinkedHashMap<>();
         sourceJson.put("kind", "lrb_html");
         sourceJson.put("caseId", caseIdFromPath(source));
         sourceJson.put("path", source.path().toString());
         sourceJson.put("publicationStatus", document.lowered().publicationStatus().name().toLowerCase(Locale.ROOT));
+        sourceJson.put("structuredExtraction", extraction.json());
+        sourceJson.put("fallback", buildFallbackSource(source, document));
         return sourceJson;
     }
 
@@ -159,26 +164,42 @@ public final class MirandaJsonRenderer {
         return footnotes;
     }
 
-    private Map<String, Object> buildRenderingHints(ReflowedDocument document, List<Writing> writings) {
+    private Map<String, Object> buildRenderingHints(
+        ReflowedDocument document,
+        List<Writing> writings,
+        ExtractionAssessment extraction
+    ) {
         Map<String, Object> hints = new LinkedHashMap<>();
         hints.put("hasOfficialPageMarkers", document.lowered().publicationStatus().name().equals("PUBLISHED"));
         hints.put("hasAppearances", !buildAppearances(document).isEmpty());
-        hints.put("hasFootnotes", !document.lowered().footnotes().footnotes().isEmpty());
-        hints.put("hasSeparateOpinions", writings.size() > 1);
+        hints.put("hasFootnotes", extraction.structuredFootnotesHighConfidence() && !document.lowered().footnotes().footnotes().isEmpty());
+        hints.put("hasSeparateOpinions", extraction.structuredOpinionsHighConfidence() && writings.size() > 1);
+        hints.put("usesOpinionSourceFallback", !extraction.structuredOpinionsHighConfidence());
+        hints.put("usesFootnoteSourceFallback", !extraction.structuredFootnotesHighConfidence());
         return hints;
     }
 
-    private Map<String, Object> buildDebug(SourceDocument source, ReflowedDocument document, List<Writing> writings, DispositionInfo disposition) {
+    private Map<String, Object> buildDebug(List<Diagnostic> diagnosticsList, ExtractionAssessment extraction) {
         Map<String, Object> debug = new LinkedHashMap<>();
         List<Map<String, Object>> diagnostics = new ArrayList<>();
-        for (Diagnostic diagnostic : document.lowered().diagnostics()) {
-            diagnostics.add(diagnosticJson(diagnostic));
-        }
-        for (Diagnostic diagnostic : qaDiagnostics(source, document, writings, disposition)) {
+        for (Diagnostic diagnostic : diagnosticsList) {
             diagnostics.add(diagnosticJson(diagnostic));
         }
         debug.put("diagnostics", diagnostics);
+        debug.put("structuredExtraction", extraction.json());
         return debug;
+    }
+
+    private List<Diagnostic> buildDiagnostics(
+        SourceDocument source,
+        ReflowedDocument document,
+        List<Writing> writings,
+        DispositionInfo disposition
+    ) {
+        List<Diagnostic> diagnostics = new ArrayList<>();
+        diagnostics.addAll(document.lowered().diagnostics());
+        diagnostics.addAll(qaDiagnostics(source, document, writings, disposition));
+        return List.copyOf(diagnostics);
     }
 
     private Map<String, Object> diagnosticJson(Diagnostic diagnostic) {
@@ -267,6 +288,144 @@ public final class MirandaJsonRenderer {
         }
 
         return List.copyOf(diagnostics);
+    }
+
+    private ExtractionAssessment assessExtraction(
+        SourceDocument source,
+        ReflowedDocument document,
+        List<Writing> writings,
+        List<Diagnostic> diagnostics
+    ) {
+        List<String> opinionReasons = new ArrayList<>();
+        Set<Integer> structuredOpinionLines = structuredOpinionLines(document, writings);
+        Set<Integer> sourceOpinionLines = new LinkedHashSet<>();
+        source.htmlDocument().opinionBlocks().stream()
+            .map(block -> block.lineNumber())
+            .forEach(sourceOpinionLines::add);
+        source.htmlDocument().fallbackOpinionLineNumbers().forEach(sourceOpinionLines::add);
+        if (sourceOpinionLines.isEmpty()) {
+            opinionReasons.add("no_opinion_source_lines_detected");
+        }
+        if (source.htmlDocument().opinionBlocks().isEmpty() && !source.htmlDocument().fallbackOpinionLineNumbers().isEmpty()) {
+            opinionReasons.add("no_structured_opinion_blocks_detected");
+        }
+        if (!source.htmlDocument().opinionBlocks().isEmpty() && writings.isEmpty()) {
+            opinionReasons.add("opinion_writings_not_emitted");
+        }
+        double opinionCoverage = coverageRatio(sourceOpinionLines, structuredOpinionLines);
+        if (!sourceOpinionLines.isEmpty() && opinionCoverage < 1.0d) {
+            opinionReasons.add("opinion_line_coverage_incomplete");
+        }
+
+        List<String> footnoteReasons = new ArrayList<>();
+        Set<Integer> sourceFootnoteLines = new LinkedHashSet<>();
+        source.htmlDocument().footnotes().forEach(footnote -> sourceFootnoteLines.addAll(footnote.lineNumbers()));
+        Set<Integer> structuredFootnoteLines = structuredFootnoteLines(document);
+        if (sourceFootnoteLines.isEmpty()) {
+            footnoteReasons.add("no_footnote_source_lines_detected");
+        }
+        double footnoteCoverage = coverageRatio(sourceFootnoteLines, structuredFootnoteLines);
+        if (!sourceFootnoteLines.isEmpty() && footnoteCoverage < 1.0d) {
+            footnoteReasons.add("footnote_line_coverage_incomplete");
+        }
+
+        boolean hasErrorDiagnostic = diagnostics.stream()
+            .anyMatch(diagnostic -> diagnostic.severity() == dev.stanbook.diagnostics.Severity.ERROR);
+        if (hasErrorDiagnostic) {
+            opinionReasons.add("error_diagnostics_present");
+            if (!sourceFootnoteLines.isEmpty()) {
+                footnoteReasons.add("error_diagnostics_present");
+            }
+        }
+
+        boolean structuredOpinionsHighConfidence =
+            !sourceOpinionLines.isEmpty()
+                && source.htmlDocument().fallbackOpinionLineNumbers().isEmpty()
+                && !writings.isEmpty()
+                && opinionCoverage == 1.0d
+                && !hasErrorDiagnostic;
+        boolean structuredFootnotesHighConfidence =
+            sourceFootnoteLines.isEmpty() || (footnoteCoverage == 1.0d && !hasErrorDiagnostic);
+
+        return new ExtractionAssessment(
+            structuredOpinionsHighConfidence,
+            structuredFootnotesHighConfidence,
+            opinionCoverage,
+            footnoteCoverage,
+            List.copyOf(opinionReasons),
+            List.copyOf(footnoteReasons)
+        );
+    }
+
+    private Set<Integer> structuredOpinionLines(ReflowedDocument document, List<Writing> writings) {
+        Set<Integer> lines = new LinkedHashSet<>();
+        document.lowered().opinionBody().components().forEach(component -> {
+            for (int line = component.startLine(); line <= component.endLine(); line++) {
+                lines.add(line);
+            }
+        });
+        if (!writings.isEmpty()) {
+            writings.stream()
+                .flatMap(writing -> writing.blocks().stream())
+                .flatMap(block -> block.sourceLines().stream())
+                .forEach(lines::add);
+        }
+        return lines;
+    }
+
+    private Set<Integer> structuredFootnoteLines(ReflowedDocument document) {
+        Set<Integer> lines = new LinkedHashSet<>();
+        document.footnotes().blocksByStartLine().values().forEach(blocks ->
+            blocks.forEach(block -> lines.addAll(block.sourceLines()))
+        );
+        return lines;
+    }
+
+    private double coverageRatio(Set<Integer> sourceLines, Set<Integer> coveredLines) {
+        if (sourceLines.isEmpty()) {
+            return 1.0d;
+        }
+        long coveredCount = sourceLines.stream().filter(coveredLines::contains).count();
+        return (double) coveredCount / (double) sourceLines.size();
+    }
+
+    private Map<String, Object> buildFallbackSource(SourceDocument source, ReflowedDocument document) {
+        Map<String, Object> fallback = new LinkedHashMap<>();
+        fallback.put("headerLines", linesJson(source, source.htmlDocument().headerLines().stream()
+            .map(dev.stanbook.ir.html.HtmlHeaderLine::lineNumber)
+            .toList()));
+        fallback.put("opinionLines", linesJson(source, opinionFallbackLineNumbers(source, document)));
+        fallback.put("footnoteLines", linesJson(source, source.htmlDocument().footnotes().stream()
+            .flatMap(footnote -> footnote.lineNumbers().stream())
+            .toList()));
+        return fallback;
+    }
+
+    private List<Integer> opinionFallbackLineNumbers(SourceDocument source, ReflowedDocument document) {
+        if (!source.htmlDocument().fallbackOpinionLineNumbers().isEmpty()) {
+            return source.htmlDocument().fallbackOpinionLineNumbers();
+        }
+        return document.lowered().sectioned().section(dev.stanbook.ir.section.SectionType.OPINION_TEXT)
+            .map(section -> section.lines().stream().map(SourceLine::lineNumber).toList())
+            .orElse(List.of());
+    }
+
+    private List<Map<String, Object>> linesJson(SourceDocument source, List<Integer> lineNumbers) {
+        List<Map<String, Object>> lines = new ArrayList<>();
+        for (Integer lineNumber : new LinkedHashSet<>(lineNumbers)) {
+            if (lineNumber == null || lineNumber < 1 || lineNumber > source.lines().size()) {
+                continue;
+            }
+            SourceLine line = source.lines().get(lineNumber - 1);
+            if (line.text().isBlank()) {
+                continue;
+            }
+            Map<String, Object> json = new LinkedHashMap<>();
+            json.put("lineNumber", line.lineNumber());
+            json.put("text", line.text());
+            lines.add(json);
+        }
+        return lines;
     }
 
     private boolean hasLikelyDispositionSourceLine(SourceDocument source) {
@@ -1004,6 +1163,26 @@ public final class MirandaJsonRenderer {
         int endLine,
         String text
     ) {}
+
+    private record ExtractionAssessment(
+        boolean structuredOpinionsHighConfidence,
+        boolean structuredFootnotesHighConfidence,
+        double opinionLineCoverage,
+        double footnoteLineCoverage,
+        List<String> opinionFallbackReasons,
+        List<String> footnoteFallbackReasons
+    ) {
+        private Map<String, Object> json() {
+            Map<String, Object> json = new LinkedHashMap<>();
+            json.put("opinions", structuredOpinionsHighConfidence ? "high_confidence" : "fallback_only");
+            json.put("footnotes", structuredFootnotesHighConfidence ? "high_confidence" : "fallback_only");
+            json.put("opinionLineCoverage", opinionLineCoverage);
+            json.put("footnoteLineCoverage", footnoteLineCoverage);
+            json.put("opinionFallbackReasons", opinionFallbackReasons);
+            json.put("footnoteFallbackReasons", footnoteFallbackReasons);
+            return json;
+        }
+    }
 
     private static final class WritingAccumulator {
         private final String kind;

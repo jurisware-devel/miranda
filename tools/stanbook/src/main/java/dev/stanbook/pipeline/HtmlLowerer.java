@@ -46,6 +46,10 @@ public final class HtmlLowerer {
             sections.add(sectionFromRange(source, SectionType.OPINION_TEXT,
                 html.opinionBlocks().getFirst().lineNumber(),
                 html.opinionBlocks().getLast().lineNumber()));
+        } else if (!html.fallbackOpinionLineNumbers().isEmpty()) {
+            sections.add(sectionFromRange(source, SectionType.OPINION_TEXT,
+                html.fallbackOpinionLineNumbers().getFirst(),
+                html.fallbackOpinionLineNumbers().getLast()));
         }
         if (html.footnotesHeadingLine() != null && !html.footnotes().isEmpty()) {
             int endLine = html.footnotes().getLast().lineNumbers().getLast();

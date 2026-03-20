@@ -30,6 +30,9 @@ class HtmlSourceLoaderTest {
 
         assertThat(document.htmlDocument()).isNotNull();
         assertThat(document.htmlDocument().opinionBlocks()).isEmpty();
+        assertThat(document.htmlDocument().fallbackOpinionLineNumbers()).isNotEmpty();
+        assertThat(document.lines()).anyMatch(line -> line.text().contains("On review of submissions pursuant to section 500.4 of the Rules"));
+        assertThat(document.lines()).noneMatch(line -> line.text().contains("Return to Decision List"));
     }
 
     @Test

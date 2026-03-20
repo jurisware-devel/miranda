@@ -11,11 +11,44 @@ public final class SourceDocumentReader {
     private final HtmlSourceLoader htmlSourceLoader = new HtmlSourceLoader();
 
     public SourceDocument read(Path path) {
-        String lowerName = path.getFileName().toString().toLowerCase();
+        Path resolvedPath = resolveExistingPath(path);
+        String lowerName = resolvedPath.getFileName().toString().toLowerCase();
         if (!lowerName.endsWith(".htm") && !lowerName.endsWith(".html")) {
-            throw new IllegalArgumentException("Expected an .htm or .html file: " + path);
+            throw new IllegalArgumentException("Expected an .htm or .html file: " + resolvedPath);
         }
-        return htmlSourceLoader.load(path, readWithFallback(path));
+        return htmlSourceLoader.load(resolvedPath, readWithFallback(resolvedPath));
+    }
+
+    private Path resolveExistingPath(Path path) {
+        if (Files.exists(path)) {
+            return path;
+        }
+        if (path.getNameCount() >= 2 && "samples".equals(path.getName(0).toString())) {
+            for (int up = 0; up <= 3; up++) {
+                Path base = Path.of("");
+                for (int index = 0; index < up; index++) {
+                    base = base.resolve("..");
+                }
+                Path candidate = base.resolve(Path.of(
+                    "opinions",
+                    "coa",
+                    opinionYear(path.getFileName().toString()),
+                    path.getFileName().toString()
+                )).normalize();
+                if (Files.exists(candidate)) {
+                    return candidate;
+                }
+            }
+        }
+        return path;
+    }
+
+    private String opinionYear(String fileName) {
+        int underscore = fileName.indexOf('_');
+        if (underscore > 0) {
+            return fileName.substring(0, underscore);
+        }
+        return "";
     }
 
     private String readWithFallback(Path path) {

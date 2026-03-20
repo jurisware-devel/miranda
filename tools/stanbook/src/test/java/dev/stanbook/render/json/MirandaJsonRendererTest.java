@@ -99,7 +99,8 @@ class MirandaJsonRendererTest {
         assertThat(json).contains("\"text\":\"Judgment reversed, without costs, and matter remitted to the Appellate Division for further proceedings in accordance with the opinion herein. Opinion by Judge Halligan. Chief Judge Wilson and Judges Garcia and Singas concur.\"");
         assertThat(json).contains("\"parts\":[{\"type\":\"action\",\"text\":\"Judgment reversed, without costs, and matter remitted to the Appellate Division for further proceedings in accordance with the opinion herein.\"},{\"type\":\"summary\",\"text\":\"Opinion by Judge Halligan. Chief Judge Wilson and Judges Garcia and Singas concur.\"}]");
         assertThat(json).contains("Concurrence text.");
-        assertThat(json).doesNotContain("Judge Rivera concurs in result in an opinion.");
+        assertThat(json).contains("\"opinionLines\":[");
+        assertThat(json).contains("Judge Rivera concurs in result in an opinion.");
         assertThat(json).contains("\"kind\":\"concurrence\"");
     }
 }
