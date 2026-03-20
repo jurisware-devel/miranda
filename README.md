@@ -32,7 +32,7 @@ Miranda delivers a focused experience for reviewing cases and managing metadata,
 
 ## Stanbook
 
-- The `stanbook` opinion-ingest and Miranda JSON rendering tool now lives in this repo under [`stanbook/`](/Users/jonathan/Projects/miranda/stanbook).
+- The `stanbook` opinion-ingest and Miranda JSON rendering tool now lives in this repo under [`tools/stanbook/`](/Users/jonathan/Projects/miranda/tools/stanbook).
 - Its Java entrypoint, sample corpus, and project docs ship with the repo so parser work can happen alongside the Miranda frontend and opinion assets.
 
 ## Deploying to AWS
