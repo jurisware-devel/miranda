@@ -4,7 +4,7 @@ import { useCapabilities } from "./core/auth/useCapabilities";
 import AdminApp from "./shards/admin/AdminApp";
 import PublicApp from "./shards/public/PublicApp";
 import SubApp from "./shards/sub/SubApp";
-import LandingPage from "./components/LandingPage";
+import LandingPage from "./components/shared/LandingPage";
 import type { AppRole } from "./core/types";
 import {
   isValidCanonicalCaseId,

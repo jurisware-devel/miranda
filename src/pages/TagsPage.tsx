@@ -4,7 +4,7 @@ import { generateClient } from "aws-amplify/data";
 import type { Schema } from "../../amplify/data/resource";
 import { useNavigate } from "react-router-dom";
 import { darkenHex, getReadableTextColor } from "../core/utils/colorUtils";
-import TagCapsule from "../components/TagCapsule";
+import TagCapsule from "../components/public/TagCapsule";
 
 const client = generateClient<Schema>();
 
