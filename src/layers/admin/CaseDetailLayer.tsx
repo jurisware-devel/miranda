@@ -134,6 +134,8 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
   const [loadedOpinionKey, setLoadedOpinionKey] = useState<string>("");
   const [isEditingMetadata, setIsEditingMetadata] = useState(false);
   const [isSavingMetadata, setIsSavingMetadata] = useState(false);
+  const [isEditingPhaseTags, setIsEditingPhaseTags] = useState(false);
+  const [isSavingPhaseTags, setIsSavingPhaseTags] = useState(false);
   const [metadataDraft, setMetadataDraft] = useState<CaseMetadataDraft>(EMPTY_METADATA_DRAFT);
   const [phaseDraftIds, setPhaseDraftIds] = useState<string[]>([]);
   const [initialPhaseIds, setInitialPhaseIds] = useState<string[]>([]);
@@ -285,6 +287,7 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
   useEffect(() => {
     setMetadataDraft(toDraft(caseItem));
     setIsEditingMetadata(false);
+    setIsEditingPhaseTags(false);
   }, [caseItem]);
 
   useEffect(() => {
@@ -305,6 +308,12 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
     }
   }, [isWideLayout, isEditingOpinion, opinionMarkdown]);
 
+  useEffect(() => {
+    if (isWideLayout && isEditingPhaseTags) {
+      setIsEditingPhaseTags(false);
+    }
+  }, [isWideLayout, isEditingPhaseTags]);
+
   const handleMetadataFieldChange = (field: keyof CaseMetadataDraft, value: string) => {
     setMetadataDraft((current) => ({ ...current, [field]: value }));
   };
@@ -319,6 +328,16 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
     setMetadataDraft(toDraft(caseItem));
     setPhaseDraftIds(initialPhaseIds);
     setIsEditingMetadata(false);
+  };
+
+  const handleEditPhaseTags = () => {
+    setPhaseDraftIds(initialPhaseIds);
+    setIsEditingPhaseTags(true);
+  };
+
+  const handleCancelEditPhaseTags = () => {
+    setPhaseDraftIds(initialPhaseIds);
+    setIsEditingPhaseTags(false);
   };
 
   const saveCasePhases = async (caseIdValue: string) => {
@@ -502,6 +521,21 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
     }
   };
 
+  const handleSavePhaseTags = async () => {
+    if (!caseItem) return;
+
+    try {
+      setIsSavingPhaseTags(true);
+      const changed = await saveCasePhases(caseItem.caseId);
+      setIsEditingPhaseTags(false);
+      message.success(changed ? "Case phases saved." : "No phase changes to save.");
+    } catch (err) {
+      message.error(err instanceof Error ? err.message : "Failed to save case phases");
+    } finally {
+      setIsSavingPhaseTags(false);
+    }
+  };
+
   return (
     <div className="case-detail">
       {error ? <Alert type="error" message={error} showIcon /> : null}
@@ -524,7 +558,10 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
               <>
                 <div className="case-detail__editor-bar">
                   <div className="case-detail__editor-actions">
-                    <Button onClick={() => setShowJsonInspector((current) => !current)}>
+                    <Button
+                      className="case-detail__json-toggle"
+                      onClick={() => setShowJsonInspector((current) => !current)}
+                    >
                       {showJsonInspector ? "Show Rendered" : "Show Raw JSON"}
                     </Button>
                   </div>
@@ -930,7 +967,53 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
                 )}
               </div>
             </aside>
-          ) : null}
+          ) : (
+            <section className="case-metadata-panel case-metadata-panel--mobile" aria-label="Case phases panel">
+              <div className="case-metadata-panel__header">
+                <h2>Phases</h2>
+              </div>
+              <div className="case-metadata-panel__fields">
+                <div className="case-metadata-panel__field">
+                  <Select
+                    id="case-meta-mobile-phases"
+                    mode="multiple"
+                    allowClear
+                    showSearch
+                    optionFilterProp="label"
+                    value={phaseDraftIds}
+                    disabled={!isEditingPhaseTags || isSavingPhaseTags}
+                    onChange={(values) => setPhaseDraftIds(values)}
+                    options={sortedPhaseOptions}
+                    placeholder="Select case phases"
+                  />
+                </div>
+              </div>
+              <div
+                className={`case-metadata-panel__actions${
+                  isEditingPhaseTags ? " case-metadata-panel__actions--editing" : ""
+                }`}
+              >
+                {isEditingPhaseTags ? (
+                  <>
+                    <Button onClick={handleCancelEditPhaseTags} disabled={isSavingPhaseTags}>
+                      Cancel
+                    </Button>
+                    <Button
+                      type="primary"
+                      onClick={handleSavePhaseTags}
+                      loading={isSavingPhaseTags}
+                    >
+                      Save
+                    </Button>
+                  </>
+                ) : (
+                  <Button type="primary" onClick={handleEditPhaseTags}>
+                    Edit
+                  </Button>
+                )}
+              </div>
+            </section>
+          )}
         </div>
       ) : (
         <Alert type="warning" message="Case not found" showIcon />
