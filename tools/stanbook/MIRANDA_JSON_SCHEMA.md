@@ -210,15 +210,15 @@ Recommended fields:
 Possible `kind` values:
 
 - `majority`
-- `per_curiam`
-- `memorandum`
 - `opinion_of_the_court`
 - `concurrence`
 - `concurrence_in_result`
 - `dissent`
 - `mixed`
 
-`label` is especially important because it preserves reader-facing text exactly as displayed in the source opinion.
+`author` may be `"Per Curiam"` for unattributed per curiam majorities.
+
+`label` is especially important for authored separate writings because it preserves reader-facing text exactly as displayed in the source opinion.
 
 ### Blocks
 

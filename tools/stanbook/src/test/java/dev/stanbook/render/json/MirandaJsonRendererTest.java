@@ -155,6 +155,29 @@ class MirandaJsonRendererTest {
     }
 
     @Test
+    void render_json_emits_per_curiam_as_majority_author_metadata() {
+        String html = """
+            <html><body>
+            <table>
+              <tr><td>People v Example</td></tr>
+              <tr><td>2026 NY Slip Op 00006</td></tr>
+              <tr><td>March 20, 2026</td></tr>
+              <tr><td>Court of Appeals</td></tr>
+            </table>
+            <p>Per Curiam.</p>
+            <p>Body text.</p>
+            </body></html>
+            """;
+
+        String json = StanbookPipeline.createDefault()
+            .render(new dev.stanbook.io.HtmlSourceLoader().load(Path.of("example.htm"), html));
+
+        assertThat(json).contains("\"kind\":\"majority\"");
+        assertThat(json).contains("\"author\":\"Per Curiam\"");
+        assertThat(json).doesNotContain("\"kind\":\"per_curiam\"");
+    }
+
+    @Test
     void render_json_does_not_turn_nested_small_caps_citations_into_separate_writings() {
         String html = """
             <html><body>

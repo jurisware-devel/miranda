@@ -51,7 +51,7 @@ const CaseCard: React.FC<CaseCardProps> = ({
         </button>
       </div>
       <div className="grid-card__meta">{citeLine}</div>
-      <div className="grid-card__author">{caseItem.authoringJudge || "Memorandum"}</div>
+      <div className="grid-card__author">{caseItem.authoringJudge || "—"}</div>
       {phases.length ? (
         <div
           className="grid-card__phases"

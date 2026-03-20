@@ -71,12 +71,13 @@ test("OpinionDocumentView does not repeat a writing title already present in the
   assert.match(html, /OPINION OF THE COURT/);
 });
 
-test("OpinionDocumentView labels an anonymous majority writing as Per Curiam", () => {
+test("OpinionDocumentView labels a per curiam majority from author metadata", () => {
   const sample: OpinionDocument = {
     header: { title: "Example Case" },
     opinions: [
       {
         kind: "majority",
+        author: "Per Curiam",
         blocks: [
           {
             type: "paragraph",
@@ -101,6 +102,28 @@ test("OpinionDocumentView labels an anonymous majority writing as Per Curiam", (
 
   assert.match(html, />Per Curiam</);
   assert.doesNotMatch(html, />majority</);
+});
+
+test("OpinionDocumentView does not label a generic anonymous majority as Per Curiam", () => {
+  const sample: OpinionDocument = {
+    header: { title: "Example Case" },
+    opinions: [
+      {
+        kind: "majority",
+        blocks: [
+          {
+            type: "paragraph",
+            inlines: [{ type: "text", text: "Body text." }],
+          },
+        ],
+      },
+    ],
+  };
+
+  const html = renderToStaticMarkup(<OpinionDocumentView document={sample} />);
+
+  assert.doesNotMatch(html, />Per Curiam</);
+  assert.match(html, /Body text\./);
 });
 
 test("OpinionDocumentView trims a trailing colon from collapsible writing labels", () => {
@@ -148,6 +171,7 @@ test("OpinionDocumentView renders fallback memorandum body when no structured op
   const html = renderToStaticMarkup(<OpinionDocumentView document={sample} />);
 
   assert.match(html, />MEMORANDUM<\/span>/);
+  assert.doesNotMatch(html, />MEMORANDUM:<\/p>/);
   assert.match(html, /Defendant has not demonstrated a lack of strategic or other legitimate explanation/);
   assert.doesNotMatch(html, /Opinion content is not available\./);
   assert.doesNotMatch(html, /class="opinion-writing__summary"/);
@@ -192,6 +216,7 @@ test("OpinionDocumentView renders a lone structured memorandum without a collaps
   const html = renderToStaticMarkup(<OpinionDocumentView document={sample} />);
 
   assert.match(html, />MEMORANDUM<\/span>/);
+  assert.doesNotMatch(html, />MEMORANDUM:<\/p>/);
   assert.doesNotMatch(html, /class="opinion-writing__summary"/);
   assert.match(html, /opinion-writing__content opinion-writing__content--inline/);
 });

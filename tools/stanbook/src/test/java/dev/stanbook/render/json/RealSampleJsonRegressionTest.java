@@ -169,10 +169,22 @@ class RealSampleJsonRegressionTest {
         String json = StanbookPipeline.createDefault().render(source);
 
         assertThat(json).contains("\"caseId\":\"2026_01445\"");
-        assertThat(json).contains("\"opinions\":[{\"kind\":\"memorandum\"");
+        assertThat(json).contains("\"opinions\":[{\"kind\":\"majority\"");
         assertThat(json).contains("\"text\":\"MEMORANDUM:\"");
         assertThat(json).contains("\"text\":\"The order of the Appellate Division should be affirmed.\"");
         assertThat(json).contains("\"opinions\":\"high_confidence\"");
         assertThat(json).doesNotContain("\"opinionFallbackReasons\":[\"no_structured_opinion_blocks_detected\"");
     }
+
+    @Test
+    void html_repo_sample_uses_header_author_for_per_curiam_majority() {
+        var source = new SourceDocumentReader().read(Path.of("../../opinions/coa/2005/2005_09811.htm"));
+
+        String json = StanbookPipeline.createDefault().render(source);
+
+        assertThat(json).contains("\"caseId\":\"2005_09811\"");
+        assertThat(json).contains("\"author\":\"Per Curiam\"");
+        assertThat(json).doesNotContain("\"kind\":\"per_curiam\"");
+    }
+
 }

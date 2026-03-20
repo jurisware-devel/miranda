@@ -3,12 +3,35 @@ import type { OpinionWriting as OpinionWritingType } from "../../../core/opinion
 import OpinionBlock from "./OpinionBlock";
 
 const trimDisplayLabel = (value: string) => value.replace(/:\s*$/, "");
-const defaultDisplayTitle = (kind: string, hasNamedAuthor: boolean) => {
-  if (kind === "majority" && !hasNamedAuthor) return "Per Curiam";
+const normalizeBannerText = (value: string) => value.replace(/[.:\s]+$/g, "").replace(/\s+/g, " ").trim();
+const defaultDisplayTitle = (kind: string) => {
   if (kind === "memorandum") return "MEMORANDUM";
   if (kind === "opinion_of_the_court") return "OPINION OF THE COURT";
   if (kind === "per_curiam") return "Per Curiam";
   return "";
+};
+const getLeadingBannerTitle = (writing: OpinionWritingType) => {
+  const firstBlock = writing.blocks?.[0];
+  if (!firstBlock || firstBlock.type !== "paragraph" || !firstBlock.inlines?.length) {
+    return null;
+  }
+  const firstText = firstBlock.inlines
+    .map((node) => ("text" in node && typeof node.text === "string" ? node.text : ""))
+    .join("")
+    .replace(/\s+/g, " ")
+    .trim();
+  const normalized = normalizeBannerText(firstText);
+  if (!normalized) return null;
+  if (normalized.localeCompare("MEMORANDUM", undefined, { sensitivity: "base" }) === 0) {
+    return "MEMORANDUM";
+  }
+  if (normalized.localeCompare("OPINION OF THE COURT", undefined, { sensitivity: "base" }) === 0) {
+    return "OPINION OF THE COURT";
+  }
+  if (normalized.localeCompare("Per Curiam", undefined, { sensitivity: "base" }) === 0) {
+    return "Per Curiam";
+  }
+  return null;
 };
 const firstBlockRepeatsTitle = (writing: OpinionWritingType, panelTitle: string) => {
   const firstBlock = writing.blocks?.[0];
@@ -18,9 +41,8 @@ const firstBlockRepeatsTitle = (writing: OpinionWritingType, panelTitle: string)
   const firstText = firstBlock.inlines
     .map((node) => ("text" in node && typeof node.text === "string" ? node.text : ""))
     .join("")
-    .replace(/\s+/g, " ")
-    .trim();
-  return firstText.localeCompare(panelTitle.trim(), undefined, { sensitivity: "base" }) === 0;
+    .replace(/\s+/g, " ");
+  return normalizeBannerText(firstText).localeCompare(normalizeBannerText(panelTitle), undefined, { sensitivity: "base" }) === 0;
 };
 const getPanelToneClassName = (kind: string) => {
   if (kind === "majority") return "opinion-writing--majority";
@@ -53,18 +75,21 @@ const OpinionWriting: React.FC<OpinionWritingProps> = ({
   collapsible = true,
 }) => {
   const kind = writing.kind?.trim().toLowerCase() ?? "";
-  const hasNamedAuthor = Boolean(writing.author?.trim());
+  const leadingBannerTitle = getLeadingBannerTitle(writing);
   const [isExpanded, setIsExpanded] = useState(!collapsible || kind === "majority");
   const title =
     writing.label?.trim() ||
     writing.author?.trim() ||
-    defaultDisplayTitle(kind, hasNamedAuthor) ||
+    defaultDisplayTitle(kind) ||
+    leadingBannerTitle ||
     writing.kind?.trim() ||
     "Opinion";
   const panelTitle = trimDisplayLabel(title);
   const panelToneClassName = getPanelToneClassName(kind);
   const labelToneClassName = getLabelToneClassName(kind);
-  const shouldRenderInlineLabel = panelTitle.length > 0 && !firstBlockRepeatsTitle(writing, panelTitle);
+  const skipsLeadingBannerBlock = panelTitle.length > 0 && firstBlockRepeatsTitle(writing, panelTitle);
+  const visibleBlocks = skipsLeadingBannerBlock ? (writing.blocks?.slice(1) ?? []) : (writing.blocks ?? []);
+  const shouldRenderInlineLabel = panelTitle.length > 0 && (!firstBlockRepeatsTitle(writing, panelTitle) || skipsLeadingBannerBlock);
 
   if (!collapsible) {
     return (
@@ -81,7 +106,7 @@ const OpinionWriting: React.FC<OpinionWritingProps> = ({
               </span>
             </div>
           ) : null}
-          {writing.blocks?.map((block, blockIndex) => (
+          {visibleBlocks.map((block, blockIndex) => (
             <OpinionBlock
               key={`${block.type}-${blockIndex}`}
               block={block}
@@ -118,7 +143,7 @@ const OpinionWriting: React.FC<OpinionWritingProps> = ({
       </button>
       {isExpanded ? (
         <div className="opinion-writing__content">
-          {writing.blocks?.map((block, blockIndex) => (
+          {visibleBlocks.map((block, blockIndex) => (
             <OpinionBlock
               key={`${block.type}-${blockIndex}`}
               block={block}

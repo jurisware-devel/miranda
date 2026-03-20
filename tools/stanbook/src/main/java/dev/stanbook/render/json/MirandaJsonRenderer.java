@@ -484,6 +484,7 @@ public final class MirandaJsonRenderer {
         String pendingLabel = null;
 
         for (OpinionComponent component : document.lowered().opinionBody().components()) {
+            String author = authorFor(component);
             if (component.type() == OpinionComponentType.METADATA) {
                 if (component.role() != OpinionRole.OPINION_BY) {
                     pendingLabel = joinComponentText(component);
@@ -497,16 +498,16 @@ public final class MirandaJsonRenderer {
                 continue;
             }
 
-            if (current == null || !sameWriting(current, component)) {
-                if (shouldMergeAnonymousMajorityPrelude(current, component)) {
-                    WritingAccumulator merged = new WritingAccumulator(kindFor(component), component.author(), pendingLabel);
+            if (current == null || !sameWriting(current, component, author)) {
+                if (shouldMergeAnonymousMajorityPrelude(current, component, author)) {
+                    WritingAccumulator merged = new WritingAccumulator(kindFor(component), author, pendingLabel);
                     merged.blocks.addAll(current.blocks);
                     merged.startLine = current.startLine;
                     merged.endLine = current.endLine;
                     accumulators.set(accumulators.size() - 1, merged);
                     current = merged;
                 } else {
-                    current = new WritingAccumulator(kindFor(component), component.author(), pendingLabel);
+                    current = new WritingAccumulator(kindFor(component), author, pendingLabel);
                     accumulators.add(current);
                 }
             } else if (current.label == null && pendingLabel != null) {
@@ -517,13 +518,13 @@ public final class MirandaJsonRenderer {
             current.endLine = current.endLine == null ? component.endLine() : Math.max(current.endLine, component.endLine());
             current.blocks.addAll(blocksForComponent(document, component));
 
-            if (current.label == null && component.author() != null && component.type() != OpinionComponentType.MAJORITY) {
+            if (current.label == null && author != null && component.type() != OpinionComponentType.MAJORITY) {
                 current.label = defaultLabel(component);
             }
             pendingLabel = null;
         }
 
-        return accumulators.stream()
+        List<Writing> writings = accumulators.stream()
             .map(acc -> new Writing(
                 acc.kind,
                 acc.author,
@@ -532,6 +533,28 @@ public final class MirandaJsonRenderer {
                 trimTerminalSummaryBlocks(acc.blocks, terminalSummary)
             ))
             .toList();
+        return applyHeaderAuthorInferences(document, writings);
+    }
+
+    private List<Writing> applyHeaderAuthorInferences(ReflowedDocument document, List<Writing> writings) {
+        String headerAuthor = firstHeaderValue(document, HeaderItemType.AUTHOR);
+        if (!"Per Curiam".equalsIgnoreCase(headerAuthor == null ? "" : headerAuthor.trim())) {
+            return writings;
+        }
+
+        List<Writing> updated = new ArrayList<>();
+        boolean applied = false;
+        for (Writing writing : writings) {
+            if (!applied
+                && writing.author() == null
+                && ("majority".equals(writing.kind()) || "opinion_of_the_court".equals(writing.kind()))) {
+                updated.add(new Writing(writing.kind(), "Per Curiam", writing.label(), writing.joiners(), writing.blocks()));
+                applied = true;
+                continue;
+            }
+            updated.add(writing);
+        }
+        return List.copyOf(updated);
     }
 
     private List<Writing> attachJoiners(
@@ -552,16 +575,16 @@ public final class MirandaJsonRenderer {
         return terminalSummary == null ? "" : terminalSummary.text();
     }
 
-    private boolean sameWriting(WritingAccumulator current, OpinionComponent component) {
+    private boolean sameWriting(WritingAccumulator current, OpinionComponent component, String author) {
         return current.kind.equals(kindFor(component))
-            && java.util.Objects.equals(current.author, component.author());
+            && java.util.Objects.equals(current.author, author);
     }
 
-    private boolean shouldMergeAnonymousMajorityPrelude(WritingAccumulator current, OpinionComponent component) {
+    private boolean shouldMergeAnonymousMajorityPrelude(WritingAccumulator current, OpinionComponent component, String author) {
         if (current == null || !"majority".equals(current.kind) || current.author != null) {
             return false;
         }
-        if (!"majority".equals(kindFor(component)) || component.author() == null) {
+        if (!"majority".equals(kindFor(component)) || author == null) {
             return false;
         }
         return !current.blocks.isEmpty() && current.blocks.stream().allMatch(this::isOpinionOfTheCourtPreludeBlock);
@@ -1143,8 +1166,7 @@ public final class MirandaJsonRenderer {
 
     private String kindFor(OpinionComponent component) {
         return switch (component.role()) {
-            case PER_CURIAM -> "per_curiam";
-            case MEMORANDUM -> "memorandum";
+            case PER_CURIAM, MEMORANDUM -> "majority";
             case OPINION_OF_THE_COURT -> "opinion_of_the_court";
             case CONCURRENCE, CONCURRENCE_IN_PART -> "concurrence";
             case CONCURRENCE_IN_RESULT -> "concurrence_in_result";
@@ -1159,11 +1181,19 @@ public final class MirandaJsonRenderer {
         };
     }
 
+    private String authorFor(OpinionComponent component) {
+        if (component.role() == OpinionRole.PER_CURIAM || component.perCuriam()) {
+            return "Per Curiam";
+        }
+        return component.author();
+    }
+
     private String defaultLabel(OpinionComponent component) {
-        if (component.author() == null) {
+        String author = authorFor(component);
+        if (author == null || "Per Curiam".equals(author)) {
             return null;
         }
-        return component.author() + ", J.";
+        return author + ", J.";
     }
 
     private String joinComponentText(OpinionComponent component) {
