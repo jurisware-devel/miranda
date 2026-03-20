@@ -1,0 +1,20 @@
+#!/bin/zsh
+
+set -euo pipefail
+
+if [[ $# -ne 1 ]]; then
+  echo "Usage: stanbook-dir <directory>" >&2
+  exit 2
+fi
+
+root="$1"
+
+if [[ ! -d "$root" ]]; then
+  echo "Not a directory: $root" >&2
+  exit 2
+fi
+
+script_dir="${0:A:h}"
+
+cd "$script_dir"
+exec mvn -q exec:java -Dexec.args="$root"

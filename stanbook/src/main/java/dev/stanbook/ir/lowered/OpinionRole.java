@@ -1,0 +1,17 @@
+package dev.stanbook.ir.lowered;
+
+public enum OpinionRole {
+    MAJORITY,
+    PER_CURIAM,
+    MEMORANDUM,
+    OPINION_OF_THE_COURT,
+    CONCURRENCE,
+    CONCURRENCE_IN_PART,
+    CONCURRENCE_IN_RESULT,
+    DISSENT,
+    DISSENT_IN_PART,
+    CONCURRENCE_AND_DISSENT,
+    MIXED_CASE_SPECIFIC,
+    OPINION_BY,
+    SUBHEADER
+}

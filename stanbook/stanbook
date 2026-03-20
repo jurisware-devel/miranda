@@ -1,0 +1,13 @@
+#!/bin/zsh
+
+set -euo pipefail
+
+if [[ $# -ne 1 ]]; then
+  echo "Usage: stanbook <path>" >&2
+  exit 2
+fi
+
+script_dir="${0:A:h}"
+
+cd "$script_dir"
+exec mvn -q exec:java -Dexec.args="$1"

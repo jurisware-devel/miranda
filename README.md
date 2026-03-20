@@ -30,6 +30,11 @@ Miranda delivers a focused experience for reviewing cases and managing metadata,
 - Supporting opinion materials now live alongside the opinions data in paths such as [`opinions/scripts/`](/Users/jonathan/Projects/miranda/opinions/scripts) and [`opinions/coa/url/`](/Users/jonathan/Projects/miranda/opinions/coa/url).
 - In local Vite development, the opinion loader first checks the merged `opinions/` tree via the repo filesystem and then falls back to the hosted opinions bucket. Production still uses the hosted bucket URLs.
 
+## Stanbook
+
+- The `stanbook` opinion-ingest and Miranda JSON rendering tool now lives in this repo under [`stanbook/`](/Users/jonathan/Projects/miranda/stanbook).
+- Its Java entrypoint, sample corpus, and project docs ship with the repo so parser work can happen alongside the Miranda frontend and opinion assets.
+
 ## Deploying to AWS
 
 For detailed instructions on deploying your application, refer to the [Amplify deployment documentation](https://docs.amplify.aws/).
