@@ -3,16 +3,26 @@ import type { OpinionAppearance } from "../../../core/opinions/types";
 
 type OpinionAppearancesProps = {
   appearances?: OpinionAppearance[] | null;
+  showTitle?: boolean;
 };
 
-const OpinionAppearances: React.FC<OpinionAppearancesProps> = ({ appearances }) => {
+const OpinionAppearances: React.FC<OpinionAppearancesProps> = ({
+  appearances,
+  showTitle = true,
+}) => {
   if (!appearances?.length) return null;
 
   return (
-    <section className="opinion-appearances" aria-labelledby="opinion-appearances-heading">
-      <h2 id="opinion-appearances-heading" className="opinion-section__title">
-        Appearances
-      </h2>
+    <section
+      className="opinion-appearances"
+      aria-labelledby={showTitle ? "opinion-appearances-heading" : undefined}
+      aria-label={showTitle ? undefined : "Appearances of Counsel"}
+    >
+      {showTitle ? (
+        <h2 id="opinion-appearances-heading" className="opinion-section__title">
+          Appearances of Counsel
+        </h2>
+      ) : null}
       <div className="opinion-appearances__list">
         {appearances.map((appearance, index) =>
           appearance?.text ? (

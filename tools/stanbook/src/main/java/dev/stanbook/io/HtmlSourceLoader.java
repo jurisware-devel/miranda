@@ -182,18 +182,15 @@ public final class HtmlSourceLoader {
             String label = matcher.group("label").trim();
             Document fragment = Jsoup.parseBodyFragment(matcher.group("body"));
             List<Integer> lineNumbers = new ArrayList<>();
-            boolean firstParagraph = true;
             for (Node child : fragment.body().childNodes()) {
                 String rendered = renderInline(child);
                 String normalized = normalizeText(rendered);
                 if (normalized.isEmpty()) {
                     continue;
                 }
-                String prefix = firstParagraph ? "Footnote " + label + ": " : "";
-                List<InlineNode> inlines = prependText(firstParagraph ? "Footnote " + label + ": " : "", extractInlineNodes(child));
-                lineNumbers.add(accumulator.addLine(prefix + normalized, inlines));
+                List<InlineNode> inlines = extractInlineNodes(child);
+                lineNumbers.add(accumulator.addLine(normalized, inlines));
                 accumulator.addBlankLine();
-                firstParagraph = false;
             }
             if (!lineNumbers.isEmpty()) {
                 footnotes.add(new HtmlFootnote(label, List.copyOf(lineNumbers)));

@@ -31,4 +31,26 @@ class HtmlSourceLoaderTest {
         assertThat(document.htmlDocument()).isNotNull();
         assertThat(document.htmlDocument().opinionBlocks()).isEmpty();
     }
+
+    @Test
+    void extracts_footnote_body_without_repeating_footnote_prefix() {
+        String html = """
+            <html><body>
+            <table>
+              <tr><td>People v Example</td></tr>
+              <tr><td>2026 NY Slip Op 00003</td></tr>
+            </table>
+            <p>Opinion text.<sup><a href="#1FN" name="1CASE"><b>[FN1]</b></a></sup></p>
+            <div align="center"><b>Footnotes</b></div>
+            <a name="1FN" href="#1CASE"><b>Footnote 1:</b></a> Example footnote text.
+            </body></html>
+            """;
+
+        var document = new HtmlSourceLoader().load(Path.of("example.htm"), html);
+
+        assertThat(document.htmlDocument().footnotes()).hasSize(1);
+        assertThat(document.htmlDocument().footnotes().getFirst().label()).isEqualTo("1");
+        assertThat(document.lines()).anyMatch(line -> line.text().equals("Example footnote text."));
+        assertThat(document.lines()).noneMatch(line -> line.text().contains("Footnote 1: Example footnote text."));
+    }
 }

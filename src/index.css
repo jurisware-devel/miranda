@@ -749,6 +749,18 @@ body.route-theme-pub {
   opacity: 0.7;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .case-detail {
   height: 100%;
   display: flex;
@@ -940,25 +952,172 @@ body.route-theme-pub {
 .opinion-document {
   display: flex;
   flex-direction: column;
-  gap: 22px;
+  gap: 0;
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
 }
 
+.opinion-document__title-shell,
+.opinion-document__footnotes-shell {
+  flex: 0 0 auto;
+  min-width: 0;
+  background: #ffffff;
+}
+
+.opinion-document__title-shell {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.opinion-document__title-bar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.opinion-document__title-actions {
+  flex: 0 0 auto;
+}
+
+.opinion-document__main {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.opinion-document__header-body {
+  display: flex;
+  flex-direction: column;
+  max-height: 25%;
+  gap: 16px;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.opinion-document__header-body--inline {
+  max-height: none;
+  overflow: visible;
+  padding-top: 0;
+  margin-bottom: 18px;
+}
+
+.opinion-document__body-shell {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  padding-top: 12px;
+}
+
+.opinion-document__body-scroll {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-top: 10px;
+  padding-right: 2px;
+}
+
+.opinion-document__footnotes-shell {
+  position: sticky;
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  padding-top: 12px;
+  border-top: 1px solid #e2e8f0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), #ffffff 24px);
+}
+
+.opinion-document__footnotes-shell:has(.opinion-footnotes) {
+  max-height: 25%;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.opinion-document__section-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.opinion-document__section-heading {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #64748b;
+}
+
+.opinion-document__toggle {
+  border: 1px solid #cbd5e1;
+  border-radius: 999px;
+  background: #f8fafc;
+  color: #0f172a;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.opinion-document__toggle:hover,
+.opinion-document__toggle:focus {
+  background: #eef2f7;
+}
+
+.opinion-title-section,
 .opinion-header {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 0;
 }
 
-.opinion-preferences {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px 20px;
-  padding: 12px 14px;
-  border: 1px solid #e2e8f0;
-  border-radius: 12px;
-  background: #f8fafc;
+.opinion-header__details {
+  margin: 0;
+  display: grid;
+  grid-template-columns: minmax(132px, 180px) minmax(0, 1fr);
+  gap: 8px 16px;
+}
+
+.opinion-header__row {
+  display: contents;
+}
+
+.opinion-header__row--value-only .opinion-header__value {
+  grid-column: 1 / -1;
+}
+
+.opinion-header__label,
+.opinion-header__value {
+  margin: 0;
+}
+
+.opinion-header__label {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 14px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #475569;
+}
+
+.opinion-header__value {
+  min-width: 0;
+  word-break: break-word;
+  color: #0f172a;
 }
 
 .opinion-section__title {
@@ -977,10 +1136,83 @@ body.route-theme-pub {
   min-width: 0;
 }
 
+.opinion-writing--collapsible {
+  border: 1px solid #dbe4ee;
+  border-radius: 12px;
+  background: #fbfdff;
+  overflow: hidden;
+}
+
+.opinion-writing__summary {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  border: 0;
+  background: transparent;
+  padding: 12px 14px;
+  color: #0f172a;
+  text-align: left;
+  cursor: pointer;
+}
+
+.opinion-writing__summary:hover,
+.opinion-writing__summary:focus {
+  background: #f3f7fb;
+}
+
+.opinion-writing__summary-text {
+  min-width: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.opinion-writing__summary-toggle {
+  flex: 0 0 auto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #475569;
+  text-transform: uppercase;
+}
+
+.opinion-writing__content {
+  padding: 0 14px 14px;
+}
+
+.opinion-document__disposition {
+  margin-top: 16px;
+  padding-top: 4px;
+}
+
+.opinion-document__disposition > * + * {
+  margin-top: 1.5rem;
+}
+
+.opinion-document__disposition-text {
+  margin: 0;
+  color: #0f172a;
+  line-height: 1.5;
+}
+
+.opinion-footnotes {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: hidden;
+}
+
 .opinion-appearances__list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0;
+}
+
+.opinion-appearances__list p {
+  margin: 0;
+  line-height: 1.35;
 }
 
 .opinion-block {
@@ -1034,7 +1266,12 @@ body.route-theme-pub {
 .opinion-footnotes__list {
   display: flex;
   flex-direction: column;
+  flex: 1 1 auto;
   gap: 18px;
+  min-height: 0;
+  max-height: 100%;
+  overflow-y: auto;
+  padding-right: 4px;
 }
 
 .opinion-footnote__label {
@@ -1045,7 +1282,7 @@ body.route-theme-pub {
 }
 
 .opinion-page-markers__placeholder {
-  margin: 0;
+  margin: 18px 0 0;
   padding: 12px 14px;
   border-radius: 10px;
   background: #fff7ed;
@@ -1154,9 +1391,9 @@ body.route-theme-pub {
     line-height: 1.7;
   }
 
-  .opinion-preferences {
-    gap: 10px 14px;
-    padding: 10px 12px;
+  .opinion-header__details {
+    grid-template-columns: 1fr;
+    gap: 4px 0;
   }
 
   .case-detail__pdf-actions {

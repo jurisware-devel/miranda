@@ -106,6 +106,11 @@ export type OpinionFootnote = {
   blocks?: OpinionBlockNode[] | null;
 };
 
+export type OpinionDispositionPart = {
+  type?: string | null;
+  text?: string | null;
+};
+
 export type OpinionDocument = {
   version?: string | null;
   documentType?: string | null;
@@ -127,7 +132,15 @@ export type OpinionDocument = {
   appearances?: OpinionAppearance[] | null;
   opinions?: OpinionWriting[] | null;
   footnotes?: OpinionFootnote[] | null;
-  disposition?: string | null;
+  disposition?:
+    | string
+    | {
+        text?: string | null;
+        parts?: OpinionDispositionPart[] | null;
+        provenance?: OpinionProvenance | null;
+        [key: string]: unknown;
+      }
+    | null;
   renderingHints?: {
     hasOfficialPageMarkers?: boolean | null;
     hasAppearances?: boolean | null;

@@ -428,6 +428,16 @@ Below is a plausible partial payload for `2026_00963`.
   "footnotes": [],
   "disposition": {
     "text": "Order affirmed. Opinion by Judge Troutman. Judges Garcia, Singas, Cannataro and Halligan concur. Judge Rivera concurs in result in an opinion, in which Chief Judge Wilson concurs.",
+    "parts": [
+      {
+        "type": "action",
+        "text": "Order affirmed."
+      },
+      {
+        "type": "summary",
+        "text": "Opinion by Judge Troutman. Judges Garcia, Singas, Cannataro and Halligan concur. Judge Rivera concurs in result in an opinion, in which Chief Judge Wilson concurs."
+      }
+    ],
     "provenance": { "startLine": 131, "endLine": 131 }
   },
   "renderingHints": {

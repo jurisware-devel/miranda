@@ -62,6 +62,10 @@ public final class MirandaJsonRenderer {
     private static final Pattern DECIDED_LINE_PATTERN = Pattern.compile(
         "^(?:Decided(?: on)?\\s+)?(?<date>[A-Z][a-z]+\\s+\\d{1,2},\\s+\\d{4})$"
     );
+    private static final Pattern DISPOSITION_OPINION_BY_SPLIT_PATTERN = Pattern.compile(
+        "(?=\\bOpinion by\\b)",
+        Pattern.CASE_INSENSITIVE
+    );
     private static final Pattern MAJORITY_JOINERS_PATTERN = Pattern.compile(
         "(?:(?<chief>Chief Judge\\s+[^;,.]+)\\s+and\\s+)?Judges\\s+(?<judges>.+?)\\s+concur(?:\\s+with\\s+Judge\\s+(?<withJudge>[^;,.]+))?",
         Pattern.CASE_INSENSITIVE
@@ -72,9 +76,14 @@ public final class MirandaJsonRenderer {
     );
 
     public String render(SourceDocument source, ReflowedDocument document) {
-        List<Writing> writings = buildWritings(document);
-        DispositionInfo disposition = buildDisposition(source, document);
-        List<Writing> writingsWithJoiners = attachJoiners(writings, source, document, disposition);
+        List<Writing> writings = buildWritings(document, null);
+        TerminalSummary terminalSummary = extractTerminalSummary(source, document);
+        if (terminalSummary == null) {
+            terminalSummary = extractTerminalSummary(writings);
+        }
+        List<Writing> trimmedWritings = trimTerminalSummary(writings, terminalSummary);
+        DispositionInfo disposition = buildDisposition(document, terminalSummary);
+        List<Writing> writingsWithJoiners = attachJoiners(trimmedWritings, terminalSummary);
         Map<String, Object> root = new LinkedHashMap<>();
         root.put("version", "0.1");
         root.put("documentType", "opinion");
@@ -290,7 +299,7 @@ public final class MirandaJsonRenderer {
             .orElse(null);
     }
 
-    private List<Writing> buildWritings(ReflowedDocument document) {
+    private List<Writing> buildWritings(ReflowedDocument document, TerminalSummary terminalSummary) {
         List<WritingAccumulator> accumulators = new ArrayList<>();
         WritingAccumulator current = null;
         String pendingLabel = null;
@@ -327,17 +336,21 @@ public final class MirandaJsonRenderer {
         }
 
         return accumulators.stream()
-            .map(acc -> new Writing(acc.kind, acc.author, acc.label, List.of(), List.copyOf(acc.blocks)))
+            .map(acc -> new Writing(
+                acc.kind,
+                acc.author,
+                acc.label,
+                List.of(),
+                trimTerminalSummaryBlocks(acc.blocks, terminalSummary)
+            ))
             .toList();
     }
 
     private List<Writing> attachJoiners(
         List<Writing> writings,
-        SourceDocument source,
-        ReflowedDocument document,
-        DispositionInfo disposition
+        TerminalSummary terminalSummary
     ) {
-        String joinerContext = joinerContext(source, document, disposition);
+        String joinerContext = joinerContext(terminalSummary);
 
         List<Writing> updated = new ArrayList<>();
         for (Writing writing : writings) {
@@ -347,22 +360,8 @@ public final class MirandaJsonRenderer {
         return List.copyOf(updated);
     }
 
-    private String joinerContext(SourceDocument source, ReflowedDocument document, DispositionInfo disposition) {
-        List<SourceLine> lines = source.lines();
-        int upperBoundExclusive = document.lowered().sectioned().section(dev.stanbook.ir.section.SectionType.FOOTNOTES)
-            .map(section -> section.startLine() - 1)
-            .orElse(lines.size());
-        int startIndex = Math.max(0, upperBoundExclusive - 12);
-        String tail = lines.subList(startIndex, upperBoundExclusive).stream()
-            .map(SourceLine::text)
-            .map(String::trim)
-            .filter(text -> !text.isEmpty())
-            .reduce((left, right) -> left + " " + right)
-            .orElse("");
-        if (disposition == null) {
-            return tail;
-        }
-        return disposition.text() + " " + tail;
+    private String joinerContext(TerminalSummary terminalSummary) {
+        return terminalSummary == null ? "" : terminalSummary.text();
     }
 
     private boolean sameWriting(WritingAccumulator current, OpinionComponent component) {
@@ -512,7 +511,7 @@ public final class MirandaJsonRenderer {
         }
     }
 
-    private DispositionInfo buildDisposition(SourceDocument source, ReflowedDocument document) {
+    private DispositionInfo buildDisposition(ReflowedDocument document, TerminalSummary terminalSummary) {
         Optional<DispositionInfo> headerAction = document.lowered().header().items().stream()
             .filter(item -> item.type() == HeaderItemType.ACTION)
             .findFirst()
@@ -521,45 +520,44 @@ public final class MirandaJsonRenderer {
             return headerAction.get();
         }
 
-        List<SourceLine> lines = source.lines();
-        int upperBoundExclusive = document.lowered().sectioned().section(dev.stanbook.ir.section.SectionType.FOOTNOTES)
-            .map(section -> section.startLine() - 1)
-            .orElse(lines.size());
+        if (terminalSummary == null || terminalSummary.paragraphs().isEmpty()) {
+            return null;
+        }
 
-        List<SourceLine> collected = new ArrayList<>();
-        for (int index = upperBoundExclusive - 1; index >= 0; index--) {
-            SourceLine line = lines.get(index);
-            String stripped = line.text().trim();
+        List<String> dispositionParagraphs = new ArrayList<>();
+        for (String paragraph : terminalSummary.paragraphs()) {
+            String stripped = paragraph.trim();
             if (stripped.isEmpty()) {
-                if (!collected.isEmpty()) {
+                if (!dispositionParagraphs.isEmpty()) {
                     break;
                 }
                 continue;
             }
-            if (isDispositionLine(stripped) || (!collected.isEmpty() && isDispositionContinuation(stripped))) {
-                collected.addFirst(line);
+            if (dispositionParagraphs.isEmpty()) {
+                if (isDispositionActionLine(stripped)) {
+                    dispositionParagraphs.add(stripped);
+                }
                 continue;
             }
-            if (!collected.isEmpty()) {
-                break;
+            if (isDispositionTextContinuation(stripped)) {
+                dispositionParagraphs.add(stripped);
+                continue;
             }
+            break;
         }
 
-        if (collected.isEmpty()) {
+        if (dispositionParagraphs.isEmpty()) {
             return null;
         }
-        String text = collected.stream()
-            .map(SourceLine::text)
-            .map(String::trim)
+
+        String text = dispositionParagraphs.stream()
             .reduce((left, right) -> left + " " + right)
             .orElse(null);
-        return dispositionInfo(text, collected.getFirst().lineNumber(), collected.getLast().lineNumber());
+        return dispositionInfo(text, terminalSummary.startLine(), terminalSummary.endLine());
     }
 
     private boolean isDispositionLine(String text) {
-        return DISPOSITION_LEAD_PATTERN.matcher(text).matches()
-            || DISPOSITION_ACTION_PATTERN.matcher(text).find()
-            || DISPOSITION_JUDGE_LINE_PATTERN.matcher(text).matches();
+        return isDispositionActionLine(text) || DISPOSITION_JUDGE_LINE_PATTERN.matcher(text).matches();
     }
 
     private boolean isDispositionContinuation(String text) {
@@ -569,11 +567,259 @@ public final class MirandaJsonRenderer {
             || DISPOSITION_JUDGE_LINE_PATTERN.matcher(text).matches();
     }
 
+    private boolean isDispositionActionLine(String text) {
+        return DISPOSITION_LEAD_PATTERN.matcher(text).matches()
+            || DISPOSITION_ACTION_PATTERN.matcher(text).find();
+    }
+
+    private boolean isDispositionTextContinuation(String text) {
+        return Character.isLowerCase(text.charAt(0))
+            || text.startsWith("\"")
+            || text.startsWith("(");
+    }
+
+    private TerminalSummary extractTerminalSummary(SourceDocument source, ReflowedDocument document) {
+        List<SourceLine> lines = source.lines();
+        int upperBoundExclusive = document.lowered().sectioned().section(dev.stanbook.ir.section.SectionType.FOOTNOTES)
+            .map(section -> section.startLine() - 1)
+            .orElse(lines.size());
+
+        List<SourceLine> collected = new ArrayList<>();
+        int index = upperBoundExclusive - 1;
+        while (index >= 0) {
+            while (index >= 0 && lines.get(index).text().trim().isEmpty()) {
+                index--;
+            }
+            if (index < 0) {
+                break;
+            }
+
+            int paragraphEnd = index;
+            while (index >= 0 && !lines.get(index).text().trim().isEmpty()) {
+                index--;
+            }
+            int paragraphStart = index + 1;
+            List<SourceLine> paragraph = lines.subList(paragraphStart, paragraphEnd + 1);
+            if (!isTerminalSummaryParagraph(paragraph)) {
+                break;
+            }
+            collected.addAll(0, paragraph);
+        }
+
+        if (collected.isEmpty()) {
+            return null;
+        }
+
+        String text = collected.stream()
+            .map(SourceLine::text)
+            .map(String::trim)
+            .reduce((left, right) -> left + " " + right)
+            .orElse("");
+        return new TerminalSummary(
+            collected.stream()
+                .map(SourceLine::text)
+                .map(String::trim)
+                .filter(line -> !line.isEmpty())
+                .toList(),
+            collected.getFirst().lineNumber(),
+            collected.getLast().lineNumber(),
+            text
+        );
+    }
+
+    private boolean isTerminalSummaryLine(String text) {
+        return isDispositionActionLine(text)
+            || DISPOSITION_JUDGE_LINE_PATTERN.matcher(text).matches()
+            || DECIDED_LINE_PATTERN.matcher(text).matches();
+    }
+
+    private boolean isTerminalSummaryContinuation(String text) {
+        return isDispositionTextContinuation(text)
+            || DISPOSITION_JUDGE_LINE_PATTERN.matcher(text).matches()
+            || DECIDED_LINE_PATTERN.matcher(text).matches();
+    }
+
+    private boolean isTerminalSummaryParagraph(List<SourceLine> paragraph) {
+        String text = paragraph.stream()
+            .map(SourceLine::text)
+            .map(String::trim)
+            .filter(line -> !line.isEmpty())
+            .reduce((left, right) -> left + " " + right)
+            .orElse("");
+        return !text.isEmpty() && isTerminalSummaryLine(text);
+    }
+
+    private List<ReflowedBlock> trimTerminalSummaryBlocks(List<ReflowedBlock> blocks, TerminalSummary terminalSummary) {
+        if (terminalSummary == null) {
+            return List.copyOf(blocks);
+        }
+        return blocks.stream()
+            .filter(block -> !withinTerminalSummary(block, terminalSummary))
+            .toList();
+    }
+
+    private boolean withinTerminalSummary(ReflowedBlock block, TerminalSummary terminalSummary) {
+        if (block.sourceLines().isEmpty()) {
+            return false;
+        }
+        int start = block.sourceLines().getFirst();
+        int end = block.sourceLines().getLast();
+        return start >= terminalSummary.startLine() && end <= terminalSummary.endLine();
+    }
+
+    private TerminalSummary extractTerminalSummary(List<Writing> writings) {
+        if (writings.isEmpty()) {
+            return null;
+        }
+        List<ReflowedBlock> blocks = writings.getLast().blocks();
+        if (blocks.isEmpty()) {
+            return null;
+        }
+
+        List<ReflowedBlock> collected = new ArrayList<>();
+        for (int index = blocks.size() - 1; index >= 0; index--) {
+            ReflowedBlock block = blocks.get(index);
+            String text = blockText(block).trim();
+            if (text.isEmpty()) {
+                if (!collected.isEmpty()) {
+                    break;
+                }
+                continue;
+            }
+            if (!isTerminalSummaryLine(text)) {
+                break;
+            }
+            collected.addFirst(block);
+        }
+
+        if (collected.isEmpty()) {
+            return null;
+        }
+
+        List<String> paragraphs = collected.stream()
+            .map(this::blockText)
+            .map(String::trim)
+            .filter(text -> !text.isEmpty())
+            .toList();
+        String text = paragraphs.stream()
+            .reduce((left, right) -> left + " " + right)
+            .orElse("");
+        return new TerminalSummary(
+            paragraphs,
+            collected.getFirst().sourceLines().getFirst(),
+            collected.getLast().sourceLines().getLast(),
+            text
+        );
+    }
+
+    private List<Writing> trimTerminalSummary(List<Writing> writings, TerminalSummary terminalSummary) {
+        if (terminalSummary == null || writings.isEmpty()) {
+            return writings;
+        }
+
+        List<Writing> updated = new ArrayList<>(writings);
+        Writing last = updated.getLast();
+        updated.set(
+            updated.size() - 1,
+            new Writing(
+                last.kind(),
+                last.author(),
+                last.label(),
+                last.joiners(),
+                trimTerminalSummaryBlocks(last.blocks(), terminalSummary)
+            )
+        );
+        return List.copyOf(updated);
+    }
+
+    private String blockText(ReflowedBlock block) {
+        return blockInlines(block).stream()
+            .map(node -> {
+                if (node instanceof TextInline textInline) {
+                    return textInline.text();
+                }
+                if (node instanceof EmphasisInline emphasisInline) {
+                    return emphasisInline.children().stream()
+                        .filter(TextInline.class::isInstance)
+                        .map(TextInline.class::cast)
+                        .map(TextInline::text)
+                        .reduce((left, right) -> left + right)
+                        .orElse("");
+                }
+                if (node instanceof LinkInline linkInline) {
+                    return linkInline.children().stream()
+                        .map(this::inlineJsonText)
+                        .reduce((left, right) -> left + right)
+                        .orElse("");
+                }
+                if (node instanceof FootnoteReferenceInline footnoteReferenceInline) {
+                    return footnoteReferenceInline.label();
+                }
+                if (node instanceof PageMarkerInline pageMarkerInline) {
+                    return pageMarkerInline.text();
+                }
+                return "";
+            })
+            .reduce((left, right) -> left + right)
+            .orElse("");
+    }
+
+    private String inlineJsonText(InlineNode node) {
+        if (node instanceof TextInline textInline) {
+            return textInline.text();
+        }
+        if (node instanceof EmphasisInline emphasisInline) {
+            return emphasisInline.children().stream()
+                .map(this::inlineJsonText)
+                .reduce((left, right) -> left + right)
+                .orElse("");
+        }
+        if (node instanceof LinkInline linkInline) {
+            return linkInline.children().stream()
+                .map(this::inlineJsonText)
+                .reduce((left, right) -> left + right)
+                .orElse("");
+        }
+        return "";
+    }
+
     private DispositionInfo dispositionInfo(String text, int startLine, int endLine) {
         Map<String, Object> json = new LinkedHashMap<>();
         json.put("text", text);
+        json.put("parts", dispositionParts(text));
         json.put("provenance", provenance(startLine, endLine));
         return new DispositionInfo(text, json);
+    }
+
+    private List<Map<String, Object>> dispositionParts(String text) {
+        if (text == null || text.isBlank()) {
+            return List.of();
+        }
+
+        String trimmed = text.trim();
+        Matcher matcher = DISPOSITION_OPINION_BY_SPLIT_PATTERN.matcher(trimmed);
+        if (!matcher.find()) {
+            return List.of(dispositionPart("action", trimmed));
+        }
+
+        int splitIndex = matcher.start();
+        String actionText = trimmed.substring(0, splitIndex).trim();
+        String summaryText = trimmed.substring(splitIndex).trim();
+        List<Map<String, Object>> parts = new ArrayList<>();
+        if (!actionText.isEmpty()) {
+            parts.add(dispositionPart("action", actionText));
+        }
+        if (!summaryText.isEmpty()) {
+            parts.add(dispositionPart("summary", summaryText));
+        }
+        return List.copyOf(parts);
+    }
+
+    private Map<String, Object> dispositionPart(String type, String text) {
+        Map<String, Object> json = new LinkedHashMap<>();
+        json.put("type", type);
+        json.put("text", text);
+        return json;
     }
 
     private List<String> joinersForWriting(Writing writing, String dispositionText) {
@@ -751,6 +997,13 @@ public final class MirandaJsonRenderer {
     private record CitationParts(String slipOpinion, String officialCitation) {}
 
     private record DispositionInfo(String text, Map<String, Object> json) {}
+
+    private record TerminalSummary(
+        List<String> paragraphs,
+        int startLine,
+        int endLine,
+        String text
+    ) {}
 
     private static final class WritingAccumulator {
         private final String kind;
