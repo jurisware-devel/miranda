@@ -199,6 +199,35 @@ class MirandaJsonRendererTest {
     }
 
     @Test
+    void render_json_preserves_unclassified_opinion_blocks_as_unknown_writing() {
+        String html = """
+            <html><body>
+            <table>
+              <tr><td>People v Example</td></tr>
+              <tr><td>2026 NY Slip Op 00014</td></tr>
+              <tr><td>March 20, 2026</td></tr>
+              <tr><td>Court of Appeals</td></tr>
+            </table>
+            <p>Memorandum.</p>
+            <p>Body text.</p>
+            <p>Garcia, J. (dissenting).</p>
+            <p>Order affirmed.</p>
+            </body></html>
+            """;
+
+        String json = StanbookPipeline.createDefault()
+            .render(new dev.stanbook.io.HtmlSourceLoader().load(Path.of("example.htm"), html));
+
+        assertThat(json).contains("\"kind\":\"unknown\"");
+        assertThat(json).contains("\"label\":\"Unrecognized text\"");
+        assertThat(json).contains("\"provenance\":{\"startLine\":9,\"endLine\":9}");
+        assertThat(json).contains("\"author\":\"Garcia\"");
+        assertThat(json).contains("\"text\":\" (dissenting).\"");
+        assertThat(json).contains("\"kind\":\"majority\"");
+        assertThat(json).contains("Body text.");
+    }
+
+    @Test
     void render_json_groups_consecutive_blockquotes_into_single_quote_block() {
         String html = """
             <html><body>

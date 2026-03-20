@@ -98,7 +98,8 @@ public final class MirandaJsonRenderer {
         }
         List<Writing> trimmedWritings = trimTerminalSummary(writings, terminalSummary);
         DispositionInfo disposition = buildDisposition(document, terminalSummary);
-        List<Writing> writingsWithJoiners = attachJoiners(trimmedWritings, terminalSummary);
+        List<Writing> preservedWritings = preserveUnclassifiedBlocks(document, trimmedWritings, disposition);
+        List<Writing> writingsWithJoiners = attachJoiners(preservedWritings, terminalSummary);
         List<Diagnostic> diagnostics = buildDiagnostics(source, document, writingsWithJoiners, disposition);
         ExtractionAssessment extraction = assessExtraction(source, document, writingsWithJoiners, diagnostics);
         Map<String, Object> root = new LinkedHashMap<>();
@@ -620,6 +621,84 @@ public final class MirandaJsonRenderer {
         return List.copyOf(updated);
     }
 
+    private List<Writing> preserveUnclassifiedBlocks(
+        ReflowedDocument document,
+        List<Writing> writings,
+        DispositionInfo disposition
+    ) {
+        if (document.opinion().blocks().isEmpty()) {
+            return writings;
+        }
+
+        List<Writing> ordered = new ArrayList<>();
+        List<ReflowedBlock> fallbackBlocks = new ArrayList<>();
+        boolean[] emitted = new boolean[writings.size()];
+
+        for (ReflowedBlock block : document.opinion().blocks()) {
+            if (isRepresentedByDisposition(block, disposition)) {
+                flushFallbackWriting(ordered, fallbackBlocks);
+                continue;
+            }
+
+            int ownerIndex = ownerIndexForBlock(block, writings);
+            if (ownerIndex >= 0) {
+                flushFallbackWriting(ordered, fallbackBlocks);
+                if (!emitted[ownerIndex]) {
+                    ordered.add(writings.get(ownerIndex));
+                    emitted[ownerIndex] = true;
+                }
+                continue;
+            }
+
+            fallbackBlocks.add(block);
+        }
+
+        flushFallbackWriting(ordered, fallbackBlocks);
+        for (int index = 0; index < writings.size(); index++) {
+            if (!emitted[index]) {
+                ordered.add(writings.get(index));
+            }
+        }
+        return List.copyOf(ordered);
+    }
+
+    private int ownerIndexForBlock(ReflowedBlock block, List<Writing> writings) {
+        for (int index = 0; index < writings.size(); index++) {
+            Writing writing = writings.get(index);
+            boolean ownsBlock = writing.blocks().stream().anyMatch(candidate -> sameBlock(candidate, block));
+            if (ownsBlock) {
+                return index;
+            }
+        }
+        return -1;
+    }
+
+    private boolean isRepresentedByDisposition(ReflowedBlock block, DispositionInfo disposition) {
+        if (disposition == null || block.sourceLines().isEmpty()) {
+            return false;
+        }
+        int dispositionStart = disposition.startLine();
+        int dispositionEnd = disposition.endLine();
+        int blockStart = block.sourceLines().getFirst();
+        int blockEnd = block.sourceLines().getLast();
+        return blockStart >= dispositionStart && blockEnd <= dispositionEnd;
+    }
+
+    private void flushFallbackWriting(List<Writing> ordered, List<ReflowedBlock> fallbackBlocks) {
+        if (fallbackBlocks.isEmpty()) {
+            return;
+        }
+        ordered.add(new Writing(
+            "unknown",
+            null,
+            "unknown",
+            "Unrecognized text",
+            List.of(),
+            List.copyOf(fallbackBlocks)
+        ));
+        fallbackBlocks.clear();
+    }
+
     private String joinerContext(TerminalSummary terminalSummary) {
         return terminalSummary == null ? "" : terminalSummary.text();
     }
@@ -1106,7 +1185,7 @@ public final class MirandaJsonRenderer {
         json.put("text", text);
         json.put("parts", dispositionParts(text));
         json.put("provenance", provenance(startLine, endLine));
-        return new DispositionInfo(text, json);
+        return new DispositionInfo(text, startLine, endLine, json);
     }
 
     private List<Map<String, Object>> dispositionParts(String text) {
@@ -1385,7 +1464,7 @@ public final class MirandaJsonRenderer {
 
     private record CitationParts(String slipOpinion, String officialCitation) {}
 
-    private record DispositionInfo(String text, Map<String, Object> json) {}
+    private record DispositionInfo(String text, int startLine, int endLine, Map<String, Object> json) {}
 
     private record TerminalSummary(
         List<String> paragraphs,
