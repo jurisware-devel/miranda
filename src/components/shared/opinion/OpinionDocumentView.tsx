@@ -1,6 +1,10 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import { Empty } from "antd";
-import type { OpinionDocument, OpinionWriting as OpinionWritingType } from "../../../core/opinions/types";
+import type {
+  OpinionBlockNode,
+  OpinionDocument,
+  OpinionWriting as OpinionWritingType,
+} from "../../../core/opinions/types";
 import FootnotesPanel from "./FootnotesPanel";
 import InlineMarkdown from "./InlineMarkdown";
 import OpinionAppearances from "./OpinionAppearances";
@@ -40,6 +44,80 @@ const normalizeWritings = (writings: OpinionWritingType[]) => {
     accumulator.push(writing);
     return accumulator;
   }, []);
+};
+
+const normalizeText = (value?: string | null) => {
+  return (value ?? "").replace(/\s+/g, " ").trim().toLowerCase();
+};
+
+const inlineText = (nodes?: { text?: string | null; children?: unknown }[] | null): string => {
+  if (!nodes?.length) return "";
+
+  return nodes
+    .map((node) => {
+      const text = typeof node?.text === "string" ? node.text : "";
+      const children = Array.isArray(node?.children)
+        ? inlineText(node.children as { text?: string | null; children?: unknown }[])
+        : "";
+      return `${text}${children}`;
+    })
+    .join("");
+};
+
+const blockText = (block: OpinionBlockNode): string => {
+  if (!block) return "";
+  const inlineValue = "inlines" in block ? inlineText(block.inlines as { text?: string | null; children?: unknown }[] | null) : "";
+  const value = "value" in block && typeof block.value === "string" ? block.value : "";
+  const label = "label" in block && typeof block.label === "string" ? block.label : "";
+  const childBlocks: string = "blocks" in block && Array.isArray(block.blocks)
+    ? block.blocks.map((child): string => blockText(child)).join(" ")
+    : "";
+  return [label, value, inlineValue, childBlocks].filter(Boolean).join(" ");
+};
+
+const candidateWritingTitles = (writing?: OpinionWritingType) => {
+  if (!writing) return new Set<string>();
+
+  const kind = writing.kind?.trim().toLowerCase() ?? "";
+  const candidates = [
+    writing.label,
+    writing.author,
+    kind === "memorandum" ? "MEMORANDUM" : null,
+    kind === "opinion_of_the_court" ? "OPINION OF THE COURT" : null,
+    writing.authorStatus === "anonymous" &&
+    (kind === "majority" || kind === "opinion_of_the_court")
+      ? "Per Curiam"
+      : null,
+  ];
+
+  return new Set(candidates.map((value) => normalizeText(value)).filter(Boolean));
+};
+
+const isIgnorableUnknownWriting = (
+  writing: OpinionWritingType,
+  previous?: OpinionWritingType,
+  next?: OpinionWritingType,
+) => {
+  const kind = writing.kind?.trim().toLowerCase() ?? "";
+  if (kind !== "unknown") return false;
+
+  const normalizedBlocks = (writing.blocks ?? [])
+    .map((block) => normalizeText(blockText(block)))
+    .filter(Boolean);
+  if (!normalizedBlocks.length) return true;
+
+  const neighboringTitles = new Set([
+    ...candidateWritingTitles(previous),
+    ...candidateWritingTitles(next),
+  ]);
+
+  return normalizedBlocks.every((text) => neighboringTitles.has(text));
+};
+
+const filterIgnorableUnknownWritings = (writings: OpinionWritingType[]) => {
+  return writings.filter((writing, index) => {
+    return !isIgnorableUnknownWriting(writing, writings[index - 1], writings[index + 1]);
+  });
 };
 
 const fallbackWritingsFromSource = (document: OpinionDocument): OpinionWritingType[] => {
@@ -86,7 +164,9 @@ const OpinionDocumentView: React.FC<OpinionDocumentViewProps> = ({
   const bodyScrollRef = useRef<HTMLDivElement | null>(null);
   const writings = useMemo(
     () => {
-      const normalized = normalizeWritings(document.opinions?.filter(Boolean) ?? []);
+      const normalized = filterIgnorableUnknownWritings(
+        normalizeWritings(document.opinions?.filter(Boolean) ?? []),
+      );
       return normalized.length ? normalized : fallbackWritingsFromSource(document);
     },
     [document],

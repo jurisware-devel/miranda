@@ -26,7 +26,10 @@ type OpinionDocumentResult =
       pdfUrl: string;
     };
 
-const LOCAL_OPINIONS_ROOT_PATH = new URL("../../../opinions/", import.meta.url).pathname;
+const LOCAL_OPINIONS_ROOT_PATH = new URL(
+  /* @vite-ignore */ "../../../opinions/",
+  import.meta.url,
+).pathname;
 
 const isOpinionDocument = (value: unknown): value is OpinionDocument => {
   return Boolean(value && typeof value === "object" && !Array.isArray(value));
