@@ -216,6 +216,41 @@ test("OpinionDocumentView renders fallback memorandum body when no structured op
   assert.match(html, /opinion-writing__content opinion-writing__content--inline/);
 });
 
+test("OpinionHeader does not render header.appearances as a generic header detail row", () => {
+  const sample: OpinionDocument = {
+    header: {
+      title: "Example Case",
+      slipOpinion: "2026 NY Slip Op 00015",
+      court: "Court of Appeals",
+      decisionDate: "2026-03-20",
+      appearances: [{ side: "appellant", text: "Jane Doe, for appellant." }],
+    },
+  };
+
+  const html = renderToStaticMarkup(<OpinionHeader document={sample} variant="details" />);
+
+  assert.doesNotMatch(html, /Jane Doe, for appellant\./);
+  assert.match(html, /Court of Appeals/);
+});
+
+test("OpinionDocumentView reads fallback writings from top-level fallback.opinionLines", () => {
+  const sample: OpinionDocument = {
+    header: { title: "Example Case" },
+    fallback: {
+      opinionLines: [
+        { lineNumber: 1, text: "MEMORANDUM" },
+        { lineNumber: 2, text: "Body text from fallback." },
+      ],
+    },
+  };
+
+  const html = renderToStaticMarkup(<OpinionDocumentView document={sample} />);
+
+  assert.match(html, />MEMORANDUM<\/span>/);
+  assert.match(html, /Body text from fallback\./);
+  assert.doesNotMatch(html, /Opinion content is not available\./);
+});
+
 test("OpinionDocumentView renders a lone majority opinion without a collapsible panel", () => {
   const sample: OpinionDocument = {
     header: { title: "Example Case" },
@@ -324,6 +359,63 @@ test("OpinionDocumentView falls back to case metadata when the JSON header title
   assert.match(html, /People v Example/);
   assert.doesNotMatch(html, /2025 NY Slip Op 05785/);
   assert.doesNotMatch(html, /Court of Appeals/);
+});
+
+test("OpinionDocumentView renders a published citation subtitle beneath the title", () => {
+  const sample: OpinionDocument = {
+    source: {
+      publicationStatus: "published",
+    },
+    header: {
+      title: "People v Example",
+      officialCitation: "35 NY3d 123",
+      decisionDate: "2026-03-20",
+    },
+    opinions: [
+      {
+        blocks: [
+          {
+            type: "paragraph",
+            inlines: [{ type: "text", text: "Body text." }],
+          },
+        ],
+      },
+    ],
+  };
+
+  const html = renderToStaticMarkup(<OpinionDocumentView document={sample} />);
+
+  assert.match(html, /People v Example/);
+  assert.match(html, />35 NY3d 123 \(2026\)<\/p>/);
+});
+
+test("OpinionDocumentView renders a slip opinion subtitle for non-published opinions", () => {
+  const sample: OpinionDocument = {
+    source: {
+      publicationStatus: "slip_op_only",
+    },
+    header: {
+      title: "People v Example",
+      slipOpinion: "2026 NY Slip Op 01590",
+      officialCitation: "35 NY3d 123",
+      decisionDate: "2026-03-20",
+    },
+    opinions: [
+      {
+        blocks: [
+          {
+            type: "paragraph",
+            inlines: [{ type: "text", text: "Body text." }],
+          },
+        ],
+      },
+    ],
+  };
+
+  const html = renderToStaticMarkup(<OpinionDocumentView document={sample} />);
+
+  assert.match(html, />2026 NY Slip Op 01590<\/p>/);
+  assert.doesNotMatch(html, />35 NY3d 123 \(2026\)<\/p>/);
 });
 
 test("OpinionHeader links Court of Appeals header citations to the Law Reporting Bureau html page", () => {

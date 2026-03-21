@@ -1,7 +1,9 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import {
+  buildLocalOpinionHtmlCandidatePaths,
   buildLocalOpinionDocumentCandidatePaths,
+  buildOpinionHtmlCandidateUrls,
   buildOpinionDocumentCandidateUrls,
 } from "../../src/core/utils/caseUtils";
 import type { CaseItem } from "../../src/core/types";
@@ -20,6 +22,7 @@ test("buildOpinionDocumentCandidateUrls prefers Stanbook JSON in the existing op
     "https://opinions.jurisware.com/coa/2012/2012_07858.json",
     "https://opinions.jurisware.com/coa/2012/2012_07858.md",
     "https://opinions.jurisware.com/coa/2012/2012_07858.pdf",
+    "https://opinions.jurisware.com/coa/2012/2012_07858.txt",
   ]);
 });
 
@@ -37,6 +40,7 @@ test("buildOpinionDocumentCandidateUrls avoids duplicating the court prefix when
     "https://opinions.jurisware.com/coa/2026/2026_00963.json",
     "https://opinions.jurisware.com/coa/2026/2026_00963.md",
     "https://opinions.jurisware.com/coa/2026/2026_00963.pdf",
+    "https://opinions.jurisware.com/coa/2026/2026_00963.txt",
   ]);
 });
 
@@ -54,5 +58,36 @@ test("buildLocalOpinionDocumentCandidatePaths matches the merged opinions layout
     "coa/2026/2026_00963.json",
     "coa/2026/2026_00963.md",
     "coa/2026/2026_00963.pdf",
+    "coa/2026/2026_00963.txt",
+  ]);
+});
+
+test("buildOpinionHtmlCandidateUrls points at sibling Stanbook source HTML", () => {
+  const caseItem = {
+    caseId: "2026_00963",
+    court: "coa",
+    decisionDate: "2026-02-25",
+    opinionUrl: "2026/2026_00963",
+  } as CaseItem;
+
+  const urls = buildOpinionHtmlCandidateUrls(caseItem.opinionUrl, caseItem);
+
+  assert.deepEqual(urls, [
+    "https://opinions.jurisware.com/coa/2026/2026_00963.htm",
+  ]);
+});
+
+test("buildLocalOpinionHtmlCandidatePaths points at sibling source HTML in the merged corpus", () => {
+  const caseItem = {
+    caseId: "2026_00963",
+    court: "coa",
+    decisionDate: "2026-02-25",
+    opinionUrl: "2026/2026_00963",
+  } as CaseItem;
+
+  const paths = buildLocalOpinionHtmlCandidatePaths(caseItem.opinionUrl, caseItem);
+
+  assert.deepEqual(paths, [
+    "coa/2026/2026_00963.htm",
   ]);
 });

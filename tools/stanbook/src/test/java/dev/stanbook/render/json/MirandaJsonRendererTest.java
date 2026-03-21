@@ -199,6 +199,44 @@ class MirandaJsonRendererTest {
     }
 
     @Test
+    void render_json_nests_appearances_in_header_and_places_disposition_before_footnotes() {
+        String html = """
+            <html><body>
+            <table>
+              <tr><td>People v Example</td></tr>
+              <tr><td>2026 NY Slip Op 00015</td></tr>
+              <tr><td>March 20, 2026</td></tr>
+              <tr><td>Court of Appeals</td></tr>
+            </table>
+            <p>Jane Doe, for appellant.</p>
+            <p>Memorandum.</p>
+            <p>Body text.<sup><a href="#1FN" name="1CASE"><b>[FN1]</b></a></sup></p>
+            <p>Order affirmed.</p>
+            <div align="center"><b>Footnotes</b></div>
+            <a name="1FN" href="#1CASE"><b>Footnote 1:</b></a> Example footnote.
+            </body></html>
+            """;
+
+        String json = StanbookPipeline.createDefault()
+            .render(new dev.stanbook.io.HtmlSourceLoader().load(Path.of("example.htm"), html));
+
+        assertThat(json).contains("\"header\":{");
+        assertThat(json).contains("\"appearances\":[{\"side\":\"appellant\",\"text\":\"Jane Doe, for appellant.\"");
+        assertThat(json).doesNotContain("\"header\":{},\"appearances\":");
+        assertThat(json).contains("\"source\":{\"kind\":\"lrb_html\"");
+        assertThat(json).contains("\"opinions\":[");
+        assertThat(json).contains("\"disposition\":{\"text\":\"Order affirmed.\"");
+        assertThat(json).contains("\"disposition\":{\"text\":\"Order affirmed.\",\"parts\":[{\"type\":\"action\",\"text\":\"Order affirmed.\"}],\"provenance\":");
+        assertThat(json).contains("\"footnotes\":[{\"label\":\"1\"");
+        assertThat(json).contains("\"debug\":{\"diagnostics\":");
+        assertThat(json).contains("\"fallback\":{\"headerLines\":[");
+        assertThat(json).contains("\"opinions\":[");
+        assertThat(json.indexOf("\"opinions\":[")).isLessThan(json.indexOf("\"disposition\":{\"text\":\"Order affirmed.\""));
+        assertThat(json.indexOf("\"disposition\":{\"text\":\"Order affirmed.\"")).isLessThan(json.indexOf("\"footnotes\":[{\"label\":\"1\""));
+        assertThat(json.indexOf("\"debug\":{\"diagnostics\":")).isLessThan(json.indexOf("\"fallback\":{\"headerLines\":["));
+    }
+
+    @Test
     void render_json_preserves_unclassified_opinion_blocks_as_unknown_writing() {
         String html = """
             <html><body>

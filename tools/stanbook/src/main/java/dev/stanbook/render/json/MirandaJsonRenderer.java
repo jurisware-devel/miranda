@@ -102,17 +102,18 @@ public final class MirandaJsonRenderer {
         List<Writing> writingsWithJoiners = attachJoiners(preservedWritings, terminalSummary);
         List<Diagnostic> diagnostics = buildDiagnostics(source, document, writingsWithJoiners, disposition);
         ExtractionAssessment extraction = assessExtraction(source, document, writingsWithJoiners, diagnostics);
+        List<Map<String, Object>> appearances = buildAppearances(document);
         Map<String, Object> root = new LinkedHashMap<>();
         root.put("version", "0.1");
         root.put("documentType", "opinion");
         root.put("source", buildSource(source, document, extraction));
-        root.put("header", buildHeader(document));
-        root.put("appearances", buildAppearances(document));
+        root.put("header", buildHeader(document, appearances));
         root.put("opinions", extraction.structuredOpinionsHighConfidence() ? buildOpinions(writingsWithJoiners) : List.of());
-        root.put("footnotes", extraction.structuredFootnotesHighConfidence() ? buildFootnotes(document) : List.of());
         root.put("disposition", disposition == null ? null : disposition.json());
+        root.put("footnotes", extraction.structuredFootnotesHighConfidence() ? buildFootnotes(document) : List.of());
         root.put("renderingHints", buildRenderingHints(document, writingsWithJoiners, extraction));
         root.put("debug", buildDebug(diagnostics, extraction));
+        root.put("fallback", buildFallbackSource(source, document));
         return renderValue(root);
     }
 
@@ -123,11 +124,10 @@ public final class MirandaJsonRenderer {
         sourceJson.put("path", normalizedSourcePath(source));
         sourceJson.put("publicationStatus", document.lowered().publicationStatus().name().toLowerCase(Locale.ROOT));
         sourceJson.put("structuredExtraction", extraction.json());
-        sourceJson.put("fallback", buildFallbackSource(source, document));
         return sourceJson;
     }
 
-    private Map<String, Object> buildHeader(ReflowedDocument document) {
+    private Map<String, Object> buildHeader(ReflowedDocument document, List<Map<String, Object>> appearances) {
         CitationParts citationParts = extractCitationParts(firstHeaderValue(document, HeaderItemType.CITATION));
         Map<String, Object> header = new LinkedHashMap<>();
         header.put("title", firstHeaderValue(document, HeaderItemType.CASE_NAME));
@@ -136,6 +136,7 @@ public final class MirandaJsonRenderer {
         header.put("officialCitation", citationParts.officialCitation());
         header.put("court", firstHeaderValue(document, HeaderItemType.COURT));
         header.put("decisionDate", extractDecisionDate(document));
+        header.put("appearances", appearances);
         return header;
     }
 

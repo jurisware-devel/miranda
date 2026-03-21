@@ -137,6 +137,7 @@ export type OpinionDocument = {
     officialCitation?: string | null;
     court?: string | null;
     decisionDate?: string | null;
+    appearances?: OpinionAppearance[] | null;
     [key: string]: unknown;
   } | null;
   appearances?: OpinionAppearance[] | null;
@@ -160,6 +161,12 @@ export type OpinionDocument = {
   } | null;
   debug?: {
     diagnostics?: unknown[] | null;
+    [key: string]: unknown;
+  } | null;
+  fallback?: {
+    headerLines?: unknown[] | null;
+    opinionLines?: { lineNumber?: number | null; text?: string | null }[] | null;
+    footnoteLines?: unknown[] | null;
     [key: string]: unknown;
   } | null;
   [key: string]: unknown;

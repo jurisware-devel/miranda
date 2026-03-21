@@ -58,12 +58,12 @@ The JSON document should likely look like this:
   "documentType": "opinion",
   "source": {},
   "header": {},
-  "appearances": [],
   "opinions": [],
-  "footnotes": [],
   "disposition": null,
+  "footnotes": [],
   "renderingHints": {},
-  "debug": {}
+  "debug": {},
+  "fallback": {}
 }
 ```
 
@@ -86,12 +86,12 @@ The JSON document should likely look like this:
     "slipOpinion": "2026 NY Slip Op 00963",
     "officialCitation": null,
     "court": "Court of Appeals",
-    "decisionDate": "2026-02-19"
+    "decisionDate": "2026-02-19",
+    "appearances": []
   },
-  "appearances": [],
   "opinions": [],
-  "footnotes": [],
   "disposition": null,
+  "footnotes": [],
   "renderingHints": {
     "hasOfficialPageMarkers": false,
     "hasAppearances": true,
@@ -100,6 +100,11 @@ The JSON document should likely look like this:
   },
   "debug": {
     "diagnostics": []
+  },
+  "fallback": {
+    "headerLines": [],
+    "opinionLines": [],
+    "footnoteLines": []
   }
 }
 ```
@@ -127,6 +132,18 @@ Suggested fields:
 - optional `sourceUrl`
 - optional `sha256`
 
+### Fallback
+
+`fallback` collects source-line fallback material used for provenance and diagnostics. It is not reader-facing, and it now lives at the top level near `debug`.
+
+```json
+{
+  "headerLines": [],
+  "opinionLines": [],
+  "footnoteLines": []
+}
+```
+
 ### Header
 
 `header` contains canonical opinion metadata for display and indexing.
@@ -142,7 +159,8 @@ Suggested fields:
   "slipOpinion": "2026 NY Slip Op 00963",
   "officialCitation": null,
   "court": "Court of Appeals",
-  "decisionDate": "2026-02-19"
+  "decisionDate": "2026-02-19",
+  "appearances": []
 }
 ```
 
@@ -155,23 +173,23 @@ Possible later additions:
 
 `caption` is optional and preserves caption-party lines that appear separately from the canonical short title.
 
-### Appearances
-
 `appearances` holds counsel and appearance lines as visible text that may be hidden in the UI.
 
 ```json
-[
-  {
-    "side": "appellant",
-    "text": "Kathleen P. Reardon, for appellant.",
-    "provenance": { "startLine": 31, "endLine": 31 }
-  },
-  {
-    "side": "respondent",
-    "text": "William G. Gabor, for respondent.",
-    "provenance": { "startLine": 32, "endLine": 32 }
-  }
-]
+{
+  "appearances": [
+    {
+      "side": "appellant",
+      "text": "Kathleen P. Reardon, for appellant.",
+      "provenance": { "startLine": 31, "endLine": 31 }
+    },
+    {
+      "side": "respondent",
+      "text": "William G. Gabor, for respondent.",
+      "provenance": { "startLine": 32, "endLine": 32 }
+    }
+  ]
+}
 ```
 
 `side` should remain nullable because the source will not always identify it reliably.
@@ -395,15 +413,15 @@ Below is a plausible partial payload for `2026_00963`.
     "slipOpinion": "2026 NY Slip Op 00963",
     "officialCitation": null,
     "court": "Court of Appeals",
-    "decisionDate": "2026-02-19"
+    "decisionDate": "2026-02-19",
+    "appearances": [
+      {
+        "side": "appellant",
+        "text": "Kathleen P. Reardon, for appellant.",
+        "provenance": { "startLine": 31, "endLine": 31 }
+      }
+    ]
   },
-  "appearances": [
-    {
-      "side": "appellant",
-      "text": "Kathleen P. Reardon, for appellant.",
-      "provenance": { "startLine": 31, "endLine": 31 }
-    }
-  ],
   "opinions": [
     {
       "kind": "majority",

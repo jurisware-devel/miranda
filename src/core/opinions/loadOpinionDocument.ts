@@ -35,6 +35,23 @@ const isOpinionDocument = (value: unknown): value is OpinionDocument => {
   return Boolean(value && typeof value === "object" && !Array.isArray(value));
 };
 
+const normalizeOpinionDocument = (document: OpinionDocument): OpinionDocument => {
+  const headerAppearances = document.header?.appearances;
+  const topLevelAppearances = document.appearances;
+  const topLevelFallback = document.fallback;
+  const legacySourceFallback =
+    (document.source as { fallback?: OpinionDocument["fallback"] } | null | undefined)?.fallback ?? null;
+
+  return {
+    ...document,
+    header: {
+      ...(document.header ?? {}),
+      appearances: Array.isArray(headerAppearances) ? headerAppearances : topLevelAppearances ?? null,
+    },
+    fallback: topLevelFallback ?? legacySourceFallback ?? null,
+  };
+};
+
 const fetchOpinionDocumentFromUrl = async (url: string): Promise<OpinionDocumentResult> => {
   const response = await fetch(url);
   if (!response.ok) {
@@ -70,7 +87,7 @@ const fetchOpinionDocumentFromUrl = async (url: string): Promise<OpinionDocument
     throw new Error("invalid-json");
   }
 
-  return { kind: "document", document: payload, sourceUrl: url };
+  return { kind: "document", document: normalizeOpinionDocument(payload), sourceUrl: url };
 };
 
 const buildLocalCorpusUrl = (relativePath: string) => {

@@ -9,10 +9,17 @@ export const isValidCanonicalCaseId = (caseId: string) => {
   return CASE_ID_SAFE_PATTERN.test(caseId);
 };
 
-const scopeFromRole = (role: AppRole) => {
+export const scopeFromRole = (role: AppRole) => {
   if (role === "admin") return "admin";
   if (role === "user") return "sub";
   return "pub";
+};
+
+export const roleFromPathname = (pathname?: string | null): AppRole => {
+  const normalized = (pathname ?? "").trim().toLowerCase();
+  if (normalized === "/admin" || normalized.startsWith("/admin/")) return "admin";
+  if (normalized === "/sub" || normalized.startsWith("/sub/")) return "user";
+  return "guest";
 };
 
 export const buildScopedCasePath = (role: AppRole, caseId: string) => {

@@ -5,6 +5,7 @@ import type {
   OpinionDocument,
   OpinionWriting as OpinionWritingType,
 } from "../../../core/opinions/types";
+import { formatOpinionSubtitle } from "../../../core/utils/caseUtils";
 import FootnotesPanel from "./FootnotesPanel";
 import InlineMarkdown from "./InlineMarkdown";
 import OpinionAppearances from "./OpinionAppearances";
@@ -120,9 +121,14 @@ const filterIgnorableUnknownWritings = (writings: OpinionWritingType[]) => {
   });
 };
 
+const opinionAppearances = (document: OpinionDocument) => {
+  return document.header?.appearances ?? document.appearances ?? [];
+};
+
 const fallbackWritingsFromSource = (document: OpinionDocument): OpinionWritingType[] => {
-  const rawLines = ((document.source as { fallback?: { opinionLines?: FallbackOpinionLine[] | null } | null } | null)
-    ?.fallback?.opinionLines ?? [])
+  const rawLines = (document.fallback?.opinionLines ??
+    ((document.source as { fallback?: { opinionLines?: FallbackOpinionLine[] | null } | null } | null)
+      ?.fallback?.opinionLines ?? []))
     .map((line) => line?.text?.trim() ?? "")
     .filter(Boolean);
   if (!rawLines.length) return [];
@@ -174,8 +180,15 @@ const OpinionDocumentView: React.FC<OpinionDocumentViewProps> = ({
   const hasSeparateOpinions = writings.length > 1;
   const shouldInlineSingleWriting = writings.length === 1 && !hasSeparateOpinions;
   const hasFootnotes = Boolean(document.footnotes?.length);
-  const hasAppearances = Boolean(document.appearances?.some((appearance) => appearance?.text?.trim()));
+  const appearances = opinionAppearances(document);
+  const hasAppearances = Boolean(appearances.some((appearance) => appearance?.text?.trim()));
   const title = document.header?.title ?? fallbackTitle ?? "";
+  const publishedSubtitle = formatOpinionSubtitle({
+    publicationStatus: document.source?.publicationStatus,
+    officialCitation: document.header?.officialCitation ?? fallbackOfficialCitation,
+    slipOpinion: document.header?.slipOpinion ?? fallbackSlipOpinion,
+    decisionDate: document.header?.decisionDate ?? fallbackDecisionDate,
+  });
   const dispositionParts =
     typeof document.disposition === "string"
       ? [{ type: "action", text: document.disposition.trim() }]
@@ -222,6 +235,13 @@ const OpinionDocumentView: React.FC<OpinionDocumentViewProps> = ({
             </button>
           </div>
         </div>
+        {publishedSubtitle ? (
+          <div className="opinion-document__subtitle-row">
+            <div className="opinion-document__subtitle-content">
+              <p className="case-detail__pdf-subtitle">{publishedSubtitle}</p>
+            </div>
+          </div>
+        ) : null}
       </section>
 
       <div className="opinion-document__main">
@@ -242,7 +262,7 @@ const OpinionDocumentView: React.FC<OpinionDocumentViewProps> = ({
                   fallbackDecisionDate={fallbackDecisionDate}
                 />
                 {hasAppearances ? (
-                  <OpinionAppearances appearances={document.appearances} />
+                  <OpinionAppearances appearances={appearances} />
                 ) : null}
               </div>
             ) : null}

@@ -1,8 +1,10 @@
 import test from "node:test";
 import assert from "node:assert/strict";
+import { resolveOpinionHref } from "../../src/components/shared/opinion/InlineContent";
 import {
   buildScopedCasePath,
   isValidCanonicalCaseId,
+  roleFromPathname,
   resolveCanonicalCaseRedirect,
 } from "../../src/core/routing/canonicalCaseRouting";
 
@@ -63,4 +65,31 @@ test("loop prevention: no redirect when already at scoped target", () => {
     pathname: "/admin/case/24A102",
   });
   assert.equal(target, null);
+});
+
+test("maps scoped pathnames back to app roles", () => {
+  assert.equal(roleFromPathname("/admin/case/2017_03560"), "admin");
+  assert.equal(roleFromPathname("/sub/case/2017_03560"), "user");
+  assert.equal(roleFromPathname("/pub/case/2017_03560"), "guest");
+});
+
+test("rewrites opinion-internal case html links to scoped Miranda case routes", () => {
+  const target = resolveOpinionHref(
+    "../2007/2007_09814.htm",
+    "http://localhost:5173/@fs/Users/jonathan/Projects/miranda/opinions/coa/2017/2017_03560.json",
+    "/admin/case/2017_03560",
+  );
+  assert.equal(target, "/admin/case/2007_09814");
+});
+
+test("preserves non-case relative opinion links as resolved asset urls", () => {
+  const target = resolveOpinionHref(
+    "../pdfs/appendix.pdf",
+    "http://localhost:5173/@fs/Users/jonathan/Projects/miranda/opinions/coa/2017/2017_03560.json",
+    "/admin/case/2017_03560",
+  );
+  assert.equal(
+    target,
+    "http://localhost:5173/@fs/Users/jonathan/Projects/miranda/opinions/coa/pdfs/appendix.pdf",
+  );
 });

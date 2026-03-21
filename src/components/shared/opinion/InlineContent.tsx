@@ -1,4 +1,5 @@
 import React from "react";
+import { buildScopedCasePath, isValidCanonicalCaseId, roleFromPathname } from "../../../core/routing/canonicalCaseRouting";
 import type { OpinionInlineNode } from "../../../core/opinions/types";
 
 type InlineContentProps = {
@@ -6,13 +7,36 @@ type InlineContentProps = {
   opinionSourceUrl?: string;
 };
 
-const resolveOpinionHref = (href?: string | null, opinionSourceUrl?: string) => {
+export const extractCaseIdFromOpinionHref = (href: string) => {
+  const trimmed = href.trim();
+  if (!trimmed) return "";
+
+  const withoutQueryOrHash = trimmed.replace(/[?#].*$/, "");
+  const basename = withoutQueryOrHash.split("/").pop() ?? "";
+  if (!/\.html?$/i.test(basename)) return "";
+  const caseId = basename.replace(/\.html?$/i, "");
+  return isValidCanonicalCaseId(caseId) ? caseId : "";
+};
+
+export const resolveOpinionHref = (href?: string | null, opinionSourceUrl?: string, pathname?: string) => {
   if (!href) return "";
   if (/^(#|https?:\/\/|mailto:)/i.test(href)) return href;
+
+  const role = roleFromPathname(pathname);
+  const directCaseId = extractCaseIdFromOpinionHref(href);
+  if (directCaseId) {
+    return buildScopedCasePath(role, directCaseId);
+  }
+
   if (!opinionSourceUrl) return href;
 
   try {
-    return new URL(href, opinionSourceUrl).toString();
+    const resolvedUrl = new URL(href, opinionSourceUrl);
+    const resolvedCaseId = extractCaseIdFromOpinionHref(resolvedUrl.pathname);
+    if (resolvedCaseId) {
+      return buildScopedCasePath(role, resolvedCaseId);
+    }
+    return resolvedUrl.toString();
   } catch {
     return href;
   }
@@ -50,6 +74,8 @@ const pageMarkerPageText = (node: Extract<OpinionInlineNode, { type: "page_marke
 
 const InlineContent: React.FC<InlineContentProps> = ({ nodes, opinionSourceUrl }) => {
   if (!nodes?.length) return null;
+  const currentPathname =
+    typeof window !== "undefined" && window.location?.pathname ? window.location.pathname : "/";
 
   return (
     <>
@@ -66,7 +92,7 @@ const InlineContent: React.FC<InlineContentProps> = ({ nodes, opinionSourceUrl }
               </em>
             );
           case "link": {
-            const href = resolveOpinionHref(node.href, opinionSourceUrl);
+            const href = resolveOpinionHref(node.href, opinionSourceUrl, currentPathname);
             if (!href) {
               return (
                 <React.Fragment key={key}>

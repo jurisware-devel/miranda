@@ -93,7 +93,9 @@ const OpinionHeader: React.FC<OpinionHeaderProps> = ({
 
   const detailEntries = Object.entries(mergedHeader).reduce<OpinionHeaderEntry[]>(
     (accumulator, [key, rawValue]) => {
-      if (key === "title" || key === "court" || key === "decisionDate") return accumulator;
+      if (key === "title" || key === "court" || key === "decisionDate" || key === "appearances") {
+        return accumulator;
+      }
       if (key === "caption") {
         const lines = Array.isArray(rawValue)
           ? rawValue

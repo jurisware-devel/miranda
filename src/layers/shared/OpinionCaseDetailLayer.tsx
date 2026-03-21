@@ -6,7 +6,11 @@ import { client } from "../../core/amplifyClient";
 import { loadOpinionDocument } from "../../core/opinions/loadOpinionDocument";
 import type { OpinionDocument } from "../../core/opinions/types";
 import type { CaseItem, CourtItem } from "../../core/types";
-import { formatCaseCitationLine, getCourtLongLabel } from "../../core/utils/caseUtils";
+import {
+  formatCaseCitationLine,
+  formatOpinionSubtitle,
+  getCourtLongLabel,
+} from "../../core/utils/caseUtils";
 import { preserveNumericReferencePrefixes } from "../../core/utils/opinionMarkdown";
 import OpinionDocumentView from "../../components/shared/opinion/OpinionDocumentView";
 
@@ -36,6 +40,12 @@ const OpinionCaseDetailLayer: React.FC<OpinionCaseDetailLayerProps> = ({
   const [opinionLoading, setOpinionLoading] = useState(false);
   const [opinionError, setOpinionError] = useState<string | null>(null);
   const renderedOpinionMarkdown = preserveNumericReferencePrefixes(opinionMarkdown);
+  const pdfPublishedSubtitle = formatOpinionSubtitle({
+    publicationStatus: opinionDocument?.source?.publicationStatus,
+    officialCitation: opinionDocument?.header?.officialCitation ?? caseItem?.ny3dCite ?? caseItem?.citation,
+    slipOpinion: opinionDocument?.header?.slipOpinion ?? caseItem?.slipOp,
+    decisionDate: opinionDocument?.header?.decisionDate ?? caseItem?.decisionDate,
+  });
 
   useEffect(() => {
     panelRef.current?.scrollTo({ top: 0, behavior: "auto" });
@@ -181,14 +191,17 @@ const OpinionCaseDetailLayer: React.FC<OpinionCaseDetailLayerProps> = ({
               </pre>
             </section>
           ) : opinionPdfUrl ? (
-            <div className="case-detail__pdf-viewer">
-              <div className="case-detail__pdf-header">
-                <h1 className="case-detail__pdf-title">{caseItem.caseName?.trim() || "Untitled Case"}</h1>
-                <p className="case-detail__pdf-meta">{formatCaseCitationLine(caseItem)}</p>
-                <p className="case-detail__pdf-court">
-                  {getCourtLongLabel(caseItem.court, courtsById)}
-                </p>
-              </div>
+              <div className="case-detail__pdf-viewer">
+                <div className="case-detail__pdf-header">
+                  <h1 className="case-detail__pdf-title">{caseItem.caseName?.trim() || "Untitled Case"}</h1>
+                  {pdfPublishedSubtitle ? (
+                    <p className="case-detail__pdf-subtitle">{pdfPublishedSubtitle}</p>
+                  ) : null}
+                  <p className="case-detail__pdf-meta">{formatCaseCitationLine(caseItem)}</p>
+                  <p className="case-detail__pdf-court">
+                    {getCourtLongLabel(caseItem.court, courtsById)}
+                  </p>
+                </div>
               <div className="case-detail__pdf-actions">
                 <a className="case-detail__pdf-link" href={opinionPdfUrl} target="_blank" rel="noreferrer">
                   View PDF

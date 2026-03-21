@@ -105,6 +105,20 @@ export const buildLocalOpinionDocumentCandidatePaths = (
   return buildOpinionCandidatePathsForExtensions(opinionUrl, caseItem, ["json", "md", "pdf", "txt"]);
 };
 
+export const buildOpinionHtmlCandidateUrls = (
+  opinionUrl?: string | null,
+  caseItem?: CaseItem | null,
+) => {
+  return buildOpinionCandidateUrlsForExtensions(opinionUrl, caseItem, ["htm"]);
+};
+
+export const buildLocalOpinionHtmlCandidatePaths = (
+  opinionUrl?: string | null,
+  caseItem?: CaseItem | null,
+) => {
+  return buildOpinionCandidatePathsForExtensions(opinionUrl, caseItem, ["htm"]);
+};
+
 export const extractOpinionStorageKeyFromUrl = (url: string) => {
   try {
     const parsed = new URL(url);
@@ -168,4 +182,32 @@ export const formatCaseCitationLine = (item: CaseItem, now?: Date) => {
   if (citation) return citation;
   if (dateLabel) return `(${dateLabel})`;
   return "";
+};
+
+export const formatOpinionSubtitle = ({
+  publicationStatus,
+  officialCitation,
+  slipOpinion,
+  decisionDate,
+}: {
+  publicationStatus?: string | null;
+  officialCitation?: string | null;
+  slipOpinion?: string | null;
+  decisionDate?: string | null;
+}) => {
+  const normalizedPublicationStatus = (publicationStatus ?? "").trim().toLowerCase();
+  if (!normalizedPublicationStatus) return "";
+
+  if (normalizedPublicationStatus !== "published") {
+    return slipOpinion?.trim() ?? "";
+  }
+
+  const citation = officialCitation?.trim() ?? "";
+  if (!citation) return "";
+
+  if (!decisionDate) return "";
+  const parsed = new Date(decisionDate);
+  if (Number.isNaN(parsed.valueOf())) return "";
+
+  return `${citation} (${parsed.getFullYear()})`;
 };

@@ -1,9 +1,10 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
-import { Alert, Button, Input, Select, Spin, message } from "antd";
+import { Alert, Button, Input, Select, Spin, Tabs, message } from "antd";
 import { useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import { client } from "../../core/amplifyClient";
 import { loadOpinionDocument } from "../../core/opinions/loadOpinionDocument";
+import { loadOpinionHtmlSource } from "../../core/opinions/loadOpinionHtmlSource";
 import type { OpinionDocument } from "../../core/opinions/types";
 import OpinionDocumentView from "../../components/shared/opinion/OpinionDocumentView";
 import type {
@@ -16,6 +17,7 @@ import {
   buildOpinionStorageKey,
   extractOpinionStorageKeyFromUrl,
   formatCaseCitationLine,
+  formatOpinionSubtitle,
   getCourtLongLabel,
 } from "../../core/utils/caseUtils";
 import { preserveNumericReferencePrefixes } from "../../core/utils/opinionMarkdown";
@@ -79,6 +81,10 @@ const toNullableDate = (value: string): string | null => {
   return trimmed ? trimmed : null;
 };
 
+const formatInspectorSourcePath = (value: string): string => {
+  return value.replace(/^\/@fs\/opinions(?=\/)/, "");
+};
+
 const toDraft = (value: CaseItem | null): CaseMetadataDraft => {
   if (!value) return EMPTY_METADATA_DRAFT;
   return {
@@ -123,9 +129,10 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
   const [opinionText, setOpinionText] = useState<string>("");
   const [opinionSourceUrl, setOpinionSourceUrl] = useState<string>("");
   const [opinionPdfUrl, setOpinionPdfUrl] = useState<string>("");
+  const [opinionHtml, setOpinionHtml] = useState<string>("");
+  const [opinionHtmlSourceUrl, setOpinionHtmlSourceUrl] = useState<string>("");
   const [opinionLoading, setOpinionLoading] = useState(false);
   const [opinionError, setOpinionError] = useState<string | null>(null);
-  const [showJsonInspector, setShowJsonInspector] = useState(false);
   const [isEditingOpinion, setIsEditingOpinion] = useState(false);
   const [isSavingOpinion, setIsSavingOpinion] = useState(false);
   const [opinionDraft, setOpinionDraft] = useState<string>("");
@@ -140,6 +147,12 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
   const [phaseDraftIds, setPhaseDraftIds] = useState<string[]>([]);
   const [initialPhaseIds, setInitialPhaseIds] = useState<string[]>([]);
   const renderedOpinionMarkdown = preserveNumericReferencePrefixes(opinionMarkdown);
+  const pdfPublishedSubtitle = formatOpinionSubtitle({
+    publicationStatus: opinionDocument?.source?.publicationStatus,
+    officialCitation: opinionDocument?.header?.officialCitation ?? caseItem?.ny3dCite ?? caseItem?.citation,
+    slipOpinion: opinionDocument?.header?.slipOpinion ?? caseItem?.slipOp,
+    decisionDate: opinionDocument?.header?.decisionDate ?? caseItem?.decisionDate,
+  });
   const prettyOpinionJson = useMemo(() => {
     if (!opinionDocument) return "";
     return JSON.stringify(opinionDocument, null, 2);
@@ -222,7 +235,8 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
       setOpinionText("");
       setOpinionSourceUrl("");
       setOpinionPdfUrl("");
-      setShowJsonInspector(false);
+      setOpinionHtml("");
+      setOpinionHtmlSourceUrl("");
       setIsEditingOpinion(false);
       setOpinionDraft("");
       setOpinionSavedAt(null);
@@ -240,14 +254,23 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
         setOpinionText("");
         setOpinionSourceUrl("");
         setOpinionPdfUrl("");
-        setShowJsonInspector(false);
+        setOpinionHtml("");
+        setOpinionHtmlSourceUrl("");
         setIsEditingOpinion(false);
         setOpinionDraft("");
         setOpinionSavedAt(null);
         setLoadedOpinionKey("");
 
-        const result = await loadOpinionDocument(currentCase.caseId, currentCase);
+        const [result, htmlResult] = await Promise.all([
+          loadOpinionDocument(currentCase.caseId, currentCase),
+          loadOpinionHtmlSource(currentCase).catch(() => null),
+        ]);
         if (!active) return;
+
+        if (htmlResult) {
+          setOpinionHtml(htmlResult.html);
+          setOpinionHtmlSourceUrl(htmlResult.sourceUrl);
+        }
 
         if (result.kind === "pdf") {
           setOpinionPdfUrl(result.pdfUrl);
@@ -555,43 +578,73 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
                 <Spin />
               </div>
             ) : opinionDocument ? (
-              <>
-                <div className="case-detail__editor-bar">
-                  <div className="case-detail__editor-actions">
-                    <Button
-                      className="case-detail__json-toggle"
-                      onClick={() => setShowJsonInspector((current) => !current)}
-                    >
-                      {showJsonInspector ? "Show Rendered" : "Show Raw JSON"}
-                    </Button>
-                  </div>
-                </div>
-                {showJsonInspector ? (
-                  <section className="case-detail__json-inspector">
-                    <div className="case-detail__json-inspector-header">
-                      <h3 className="case-detail__json-inspector-title">Stanbook JSON</h3>
-                      {opinionSourceUrl ? (
-                        <span className="case-detail__json-inspector-source">
-                          {opinionSourceUrl}
-                        </span>
-                      ) : null}
-                    </div>
-                    <pre className="case-detail__json-inspector-pre">
-                      <code>{prettyOpinionJson}</code>
-                    </pre>
-                  </section>
-                ) : (
-                  <OpinionDocumentView
-                    document={opinionDocument}
-                    opinionSourceUrl={opinionSourceUrl}
-                    fallbackTitle={caseItem.caseName}
-                    fallbackSlipOpinion={caseItem.slipOp}
-                    fallbackOfficialCitation={caseItem.ny3dCite ?? caseItem.citation}
-                    fallbackCourt={getCourtLongLabel(caseItem.court, courtsById)}
-                    fallbackDecisionDate={caseItem.decisionDate}
-                  />
-                )}
-              </>
+              <Tabs
+                className="case-detail__opinion-tabs"
+                defaultActiveKey="miranda"
+                items={[
+                  {
+                    key: "miranda",
+                    label: "Miranda",
+                    children: (
+                      <div className="case-detail__opinion-tab-panel case-detail__opinion-tab-panel--miranda">
+                        <OpinionDocumentView
+                          document={opinionDocument}
+                          opinionSourceUrl={opinionSourceUrl}
+                          fallbackTitle={caseItem.caseName}
+                          fallbackSlipOpinion={caseItem.slipOp}
+                          fallbackOfficialCitation={caseItem.ny3dCite ?? caseItem.citation}
+                          fallbackCourt={getCourtLongLabel(caseItem.court, courtsById)}
+                          fallbackDecisionDate={caseItem.decisionDate}
+                        />
+                      </div>
+                    ),
+                  },
+                  {
+                    key: "json",
+                    label: "JSON",
+                    children: (
+                      <section className="case-detail__json-inspector case-detail__json-inspector--tabbed">
+                        <div className="case-detail__json-inspector-header">
+                          <h3 className="case-detail__json-inspector-title">Stanbook JSON</h3>
+                          {opinionSourceUrl ? (
+                            <span className="case-detail__json-inspector-source">
+                              {formatInspectorSourcePath(opinionSourceUrl)}
+                            </span>
+                          ) : null}
+                        </div>
+                        <pre className="case-detail__json-inspector-pre">
+                          <code>{prettyOpinionJson}</code>
+                        </pre>
+                      </section>
+                    ),
+                  },
+                  {
+                    key: "html",
+                    label: "HTML",
+                    children: opinionHtml ? (
+                      <section className="case-detail__json-inspector case-detail__json-inspector--tabbed">
+                        <div className="case-detail__json-inspector-header">
+                          <h3 className="case-detail__json-inspector-title">Stanbook Source HTML</h3>
+                          {opinionHtmlSourceUrl ? (
+                            <span className="case-detail__json-inspector-source">
+                              {formatInspectorSourcePath(opinionHtmlSourceUrl)}
+                            </span>
+                          ) : null}
+                        </div>
+                        <pre className="case-detail__json-inspector-pre case-detail__source-html-pre">
+                          <code>{opinionHtml}</code>
+                        </pre>
+                      </section>
+                    ) : (
+                      <Alert
+                        type="info"
+                        showIcon
+                        message="The source HTML is not available for this opinion."
+                      />
+                    ),
+                  },
+                ]}
+              />
             ) : opinionMarkdown ? (
               <>
                 {isWideLayout ? (
@@ -686,6 +739,9 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
                   <h1 className="case-detail__pdf-title">
                     {caseItem?.caseName?.trim() || "Untitled Case"}
                   </h1>
+                  {pdfPublishedSubtitle ? (
+                    <p className="case-detail__pdf-subtitle">{pdfPublishedSubtitle}</p>
+                  ) : null}
                   <p className="case-detail__pdf-meta">{formatCaseCitationLine(caseItem)}</p>
                   <p className="case-detail__pdf-court">
                     {getCourtLongLabel(caseItem?.court, courtsById)}
