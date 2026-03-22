@@ -1485,14 +1485,6 @@ body.route-theme-pub {
     grid-template-columns: 1fr;
     gap: 4px 0;
   }
-
-  .case-detail__pdf-actions {
-    display: flex;
-  }
-
-  .case-detail__pdf-frame-wrap {
-    display: none;
-  }
 }
 
 .case-detail__placeholder-line {

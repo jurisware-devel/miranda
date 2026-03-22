@@ -219,6 +219,39 @@ def bbox_layout(pdf_path: Path) -> tuple[float, float, list[dict[str, object]]]:
     return width, height, lines
 
 
+def bbox_page_bounds(pdf_path: Path) -> list[dict[str, float]]:
+    xml = subprocess.run(
+        ["pdftotext", "-bbox-layout", str(pdf_path), "-"],
+        check=True,
+        capture_output=True,
+        text=True,
+    ).stdout
+    xml = re.sub(r"<!DOCTYPE[^>]*>", "", xml, count=1)
+    root = ElementTree.fromstring(xml)
+
+    page_bounds: list[dict[str, float]] = []
+    for element in root.iter():
+        if not element.tag.endswith("page"):
+            continue
+        x_mins: list[float] = []
+        x_maxs: list[float] = []
+        for line in element.iter():
+            if not line.tag.endswith("line"):
+                continue
+            words = [child.text or "" for child in line if child.tag.endswith("word")]
+            if not words:
+                continue
+            x_mins.append(float(line.attrib["xMin"]))
+            x_maxs.append(float(line.attrib["xMax"]))
+        if x_mins and x_maxs:
+            page_bounds.append({"xMin": min(x_mins), "xMax": max(x_maxs)})
+
+    if not page_bounds:
+        raise ValueError("Could not parse page text bounds from pdftotext bbox output.")
+
+    return page_bounds
+
+
 def opinion_crop_top(pdf_path: Path, top_padding: float) -> tuple[float, float, float]:
     width, height, lines = bbox_layout(pdf_path)
     target = "".join(normalize_token(token) for token in OPINION_TOKENS)
@@ -231,6 +264,13 @@ def opinion_crop_top(pdf_path: Path, top_padding: float) -> tuple[float, float, 
             return width, height, crop_top
 
     raise ValueError("Could not locate 'OPINION OF THE COURT' in bbox output.")
+
+
+def flatten_crop(source_pdf_path: Path, output_pdf_path: Path) -> None:
+    subprocess.run(
+        ["gs", "-q", "-o", str(output_pdf_path), "-sDEVICE=pdfwrite", "-dUseCropBox", str(source_pdf_path)],
+        check=True,
+    )
 
 
 def crop_and_flatten_first_page(trimmed_pdf_path: Path, output_pdf_path: Path, top_padding: float) -> float:
@@ -256,14 +296,54 @@ def crop_and_flatten_first_page(trimmed_pdf_path: Path, output_pdf_path: Path, t
         writer.write(fh)
 
     try:
-        subprocess.run(
-            ["gs", "-q", "-o", str(output_pdf_path), "-sDEVICE=pdfwrite", "-dUseCropBox", str(cropped_temp_path)],
-            check=True,
-        )
+        flatten_crop(cropped_temp_path, output_pdf_path)
     finally:
         cropped_temp_path.unlink(missing_ok=True)
 
     return crop_top
+
+
+def side_crop_bounds(pdf_path: Path, side_padding: float) -> tuple[float, float]:
+    bounds = bbox_page_bounds(pdf_path)
+    reader = PdfReader(str(pdf_path), strict=False)
+    page_width = max(float(page.mediabox.right) - float(page.mediabox.left) for page in reader.pages)
+    crop_left = max(0.0, min(item["xMin"] for item in bounds) - side_padding)
+    crop_right = min(page_width, max(item["xMax"] for item in bounds) + side_padding)
+    if crop_right <= crop_left:
+        raise ValueError("Side crop would remove all page width.")
+    return crop_left, crop_right
+
+
+def crop_and_flatten_side_margins(pdf_path: Path, side_padding: float) -> tuple[float, float]:
+    crop_left, crop_right = side_crop_bounds(pdf_path, side_padding)
+    reader = PdfReader(str(pdf_path), strict=False)
+    writer = PdfWriter()
+
+    with tempfile.TemporaryDirectory(dir=pdf_path.parent) as temp_dir:
+        temp_path = Path(temp_dir) / f"{pdf_path.stem}.sidecrop.tmp.pdf"
+        for page in reader.pages:
+            current_left = float(page.mediabox.left)
+            current_bottom = float(page.mediabox.bottom)
+            current_right = float(page.mediabox.right)
+            current_top = float(page.mediabox.top)
+
+            new_left = max(current_left, crop_left)
+            new_right = min(current_right, crop_right)
+            if new_right <= new_left:
+                raise ValueError(f"Side crop would remove all page width in {pdf_path.name}.")
+
+            page.mediabox.lower_left = (new_left, current_bottom)
+            page.mediabox.upper_right = (new_right, current_top)
+            page.cropbox.lower_left = (new_left, current_bottom)
+            page.cropbox.upper_right = (new_right, current_top)
+            writer.add_page(page)
+
+        with temp_path.open("wb") as fh:
+            writer.write(fh)
+
+        flatten_crop(temp_path, pdf_path)
+
+    return crop_left, crop_right
 
 
 def extract_cases(
@@ -271,6 +351,7 @@ def extract_cases(
     output_dir_name: str,
     manifest_name: str,
     top_padding: float,
+    side_padding: float,
     clean_output_dir: bool,
 ) -> Path:
     volume_dir, vol_info_path = resolve_volume_paths(target)
@@ -344,6 +425,7 @@ def extract_cases(
             write_page_range(decisions_reader, raw_pdf_path, pdf_start, pdf_end)
             opinion_page, trimmed_leading_pages = trim_leading_pages(raw_pdf_path, trimmed_pdf_path)
             crop_top = crop_and_flatten_first_page(trimmed_pdf_path, output_path, top_padding)
+            crop_left, crop_right = crop_and_flatten_side_margins(output_path, side_padding)
 
         final_reader = PdfReader(str(output_path), strict=False)
         manifest.append(
@@ -357,6 +439,9 @@ def extract_cases(
                 "trimmedLeadingPages": trimmed_leading_pages,
                 "firstOpinionPageInRawRange": opinion_page,
                 "cropTopPoints": round(crop_top, 2),
+                "cropLeftPoints": round(crop_left, 2),
+                "cropRightPoints": round(crop_right, 2),
+                "sidePaddingPoints": round(side_padding, 2),
                 "pageCount": len(final_reader.pages),
                 "outputFile": output_path.name,
                 "status": "written",
@@ -388,6 +473,12 @@ def main() -> None:
         help="Whitespace to preserve above 'OPINION OF THE COURT' on the cropped first page, in points",
     )
     parser.add_argument(
+        "--side-padding",
+        type=float,
+        default=18.0,
+        help="Whitespace to preserve on each side of the text block, in points. 18 = 1/4 inch.",
+    )
+    parser.add_argument(
         "--no-clean-output-dir",
         action="store_true",
         help="Do not remove previously generated XNY3dY PDFs in the output directory before writing new ones",
@@ -399,6 +490,7 @@ def main() -> None:
         output_dir_name=args.output_dir_name,
         manifest_name=args.manifest_name,
         top_padding=args.top_padding,
+        side_padding=args.side_padding,
         clean_output_dir=not args.no_clean_output_dir,
     )
     print(manifest_path)

@@ -149,7 +149,7 @@ const OpinionCaseDetailLayer: React.FC<OpinionCaseDetailLayerProps> = ({
               items={[
                 {
                   key: "miranda",
-                  label: "Miranda",
+                  label: "Opinion",
                   children: opinionDocument ? (
                     <div className="case-detail__opinion-tab-panel case-detail__opinion-tab-panel--miranda">
                       <OpinionDocumentView
