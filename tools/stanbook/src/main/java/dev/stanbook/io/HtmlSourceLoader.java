@@ -1,7 +1,9 @@
 package dev.stanbook.io;
 
 import dev.stanbook.ir.html.HtmlFootnote;
+import dev.stanbook.ir.html.HtmlHeadnote;
 import dev.stanbook.ir.html.HtmlHeaderLine;
+import dev.stanbook.ir.html.HtmlLabeledBlock;
 import dev.stanbook.ir.html.HtmlNormalizedDocument;
 import dev.stanbook.ir.html.HtmlOpinionBlock;
 import dev.stanbook.ir.html.HtmlOpinionBlockType;
@@ -17,6 +19,7 @@ import dev.stanbook.ir.source.SourceLine;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -65,6 +68,9 @@ public final class HtmlSourceLoader {
         LineAccumulator accumulator = new LineAccumulator();
 
         List<HtmlHeaderLine> headerLines = extractHeaderLines(document, accumulator);
+        List<HtmlLabeledBlock> summarySections = extractSummarySections(document, accumulator);
+        List<HtmlHeadnote> headnotes = extractHeadnotes(document, accumulator);
+        List<HtmlLabeledBlock> pointsOfCounsel = extractPointsOfCounsel(document, accumulator);
         List<HtmlOpinionBlock> opinionBlocks = extractOpinionBlocks(document, accumulator);
         List<Integer> fallbackOpinionLineNumbers = opinionBlocks.isEmpty()
             ? extractFallbackOpinionLines(document, accumulator)
@@ -76,6 +82,9 @@ public final class HtmlSourceLoader {
             List.copyOf(accumulator.lines()),
             new HtmlNormalizedDocument(
                 List.copyOf(headerLines),
+                List.copyOf(summarySections),
+                List.copyOf(headnotes),
+                List.copyOf(pointsOfCounsel),
                 List.copyOf(opinionBlocks),
                 List.copyOf(fallbackOpinionLineNumbers),
                 footnotes.headingLine(),
@@ -128,6 +137,98 @@ public final class HtmlSourceLoader {
         return List.copyOf(headerLines);
     }
 
+    private List<HtmlLabeledBlock> extractSummarySections(Document document, LineAccumulator accumulator) {
+        Element summary = document.selectFirst("summary");
+        if (summary == null) {
+            return List.of();
+        }
+
+        List<HtmlLabeledBlock> sections = new ArrayList<>();
+        String currentLabel = null;
+        for (Node child : summary.childNodes()) {
+            if (child instanceof Element element && "stmcs".equalsIgnoreCase(element.tagName())) {
+                String label = normalizeText(renderInline(element));
+                currentLabel = label.isEmpty() ? null : label;
+                continue;
+            }
+
+            HtmlLabeledBlock block = labeledBlockFromNode(accumulator, currentLabel, child, "summary");
+            if (block != null) {
+                sections.add(block);
+            }
+        }
+
+        return List.copyOf(sections);
+    }
+
+    private List<HtmlHeadnote> extractHeadnotes(Document document, LineAccumulator accumulator) {
+        Elements headnoteElements = document.select("headnote");
+        if (headnoteElements.isEmpty()) {
+            return List.of();
+        }
+
+        List<HtmlHeadnote> headnotes = new ArrayList<>();
+        for (Element headnote : headnoteElements) {
+            List<String> classifications = headnote.select("classification").stream()
+                .map(this::renderInline)
+                .map(this::normalizeText)
+                .filter(text -> !text.isEmpty())
+                .toList();
+
+            for (Node child : headnote.childNodes()) {
+                if (!(child instanceof Element element)) {
+                    continue;
+                }
+                if ("classification".equalsIgnoreCase(element.tagName())) {
+                    continue;
+                }
+
+                StructuredText structuredText = appendStructuredText(accumulator, renderInline(child));
+                if (structuredText == null) {
+                    continue;
+                }
+
+                headnotes.add(new HtmlHeadnote(
+                    List.copyOf(classifications),
+                    structuredText.text(),
+                    structuredText.startLine(),
+                    structuredText.endLine()
+                ));
+            }
+        }
+
+        return List.copyOf(headnotes);
+    }
+
+    private List<HtmlLabeledBlock> extractPointsOfCounsel(Document document, LineAccumulator accumulator) {
+        Elements counselBlocks = document.select("counselblock");
+        if (counselBlocks.isEmpty()) {
+            return List.of();
+        }
+
+        List<HtmlLabeledBlock> points = new ArrayList<>();
+        for (Element counselBlock : counselBlocks) {
+            String label = counselBlock.children().stream()
+                .filter(child -> "div".equalsIgnoreCase(child.tagName()))
+                .map(this::renderInline)
+                .map(this::normalizeText)
+                .filter(text -> !text.isEmpty())
+                .findFirst()
+                .orElseGet(() -> {
+                    String fallback = normalizeText(counselBlock.attr("type")).replace('_', ' ');
+                    return fallback.isEmpty() ? "Counsel" : toTitleLabel(fallback);
+                });
+            for (Node child : counselBlock.childNodes()) {
+                HtmlLabeledBlock block = labeledBlockFromNode(accumulator, label, child, "points of counsel");
+                if (block != null) {
+                    points.add(block);
+                }
+            }
+        }
+
+        return List.copyOf(points);
+    }
+
     private void addHeaderLinesFromTable(List<HtmlHeaderLine> headerLines, LineAccumulator accumulator, Element table) {
         if (table == null) {
             return;
@@ -147,7 +248,7 @@ public final class HtmlSourceLoader {
             return List.of();
         }
 
-        Elements contentNodes = body.select("sc, p, blockquote, div[align=center], conopnjd, disopjd");
+        Elements contentNodes = body.select("sc, p, para, blockquote, div[align=center], conopnjd, disopjd");
         boolean inOpinion = false;
         for (Element element : contentNodes) {
             String tag = element.tagName();
@@ -168,15 +269,23 @@ public final class HtmlSourceLoader {
             if (isStructuralOpinionHeadingNode(element)) {
                 String authorMarker = structuralOpinionHeadingToAuthorMarker(element);
                 if (authorMarker != null) {
-                    addOpinionBlock(blocks, accumulator, HtmlOpinionBlockType.AUTHOR_MARKER, authorMarker, null);
+                    addOpinionBlock(
+                        blocks,
+                        accumulator,
+                        HtmlOpinionBlockType.AUTHOR_MARKER,
+                        authorMarker,
+                        null,
+                        sourceTagFor(element),
+                        opinionCategoryFor(element)
+                    );
                 }
                 continue;
             }
 
-            if ("p".equalsIgnoreCase(tag) || "blockquote".equalsIgnoreCase(tag)) {
+            if ("p".equalsIgnoreCase(tag) || "para".equalsIgnoreCase(tag) || "blockquote".equalsIgnoreCase(tag)) {
                 String rendered = renderInline(element);
                 List<InlineNode> inlines = extractInlineNodes(element);
-                if (splitLeadingAuthorMarker(blocks, accumulator, rendered, inlines)) {
+                if (splitLeadingAuthorMarker(blocks, accumulator, rendered, inlines, element)) {
                     continue;
                 }
                 addOpinionBlock(
@@ -184,7 +293,9 @@ public final class HtmlSourceLoader {
                     accumulator,
                     classifyOpinionBlockType(element, rendered),
                     rendered,
-                    inlines
+                    inlines,
+                    sourceTagFor(element),
+                    opinionCategoryFor(element)
                 );
                 continue;
             }
@@ -194,14 +305,30 @@ public final class HtmlSourceLoader {
                     continue;
                 }
                 List<InlineNode> inlines = extractInlineNodes(element);
-                if (splitLeadingAuthorMarker(blocks, accumulator, rendered, inlines)) {
+                if (splitLeadingAuthorMarker(blocks, accumulator, rendered, inlines, element)) {
                     continue;
                 }
-                addOpinionBlock(blocks, accumulator, classifyOpinionBlockType(element, rendered), rendered, inlines);
+                addOpinionBlock(
+                    blocks,
+                    accumulator,
+                    classifyOpinionBlockType(element, rendered),
+                    rendered,
+                    inlines,
+                    sourceTagFor(element),
+                    opinionCategoryFor(element)
+                );
                 continue;
             }
             if ("sc".equalsIgnoreCase(tag)) {
-                addOpinionBlock(blocks, accumulator, HtmlOpinionBlockType.AUTHOR_MARKER, renderAuthorLine(element), null);
+                addOpinionBlock(
+                    blocks,
+                    accumulator,
+                    HtmlOpinionBlockType.AUTHOR_MARKER,
+                    renderAuthorLine(element),
+                    null,
+                    sourceTagFor(element),
+                    opinionCategoryFor(element)
+                );
             }
         }
 
@@ -351,7 +478,8 @@ public final class HtmlSourceLoader {
         List<HtmlOpinionBlock> blocks,
         LineAccumulator accumulator,
         String rendered,
-        List<InlineNode> inlines
+        List<InlineNode> inlines,
+        Element sourceElement
     ) {
         List<String> normalizedLines = normalizeIntoLines(rendered);
         if (normalizedLines.size() != 1) {
@@ -364,7 +492,8 @@ public final class HtmlSourceLoader {
             return false;
         }
 
-        String authorLine = line.substring(0, splitIndex).trim();
+        String rawAuthorLine = line.substring(0, splitIndex).trim();
+        String authorLine = rawAuthorLine;
         String remainder = line.substring(splitIndex).trim();
         if (!isStandaloneAuthorMarker(authorLine) || remainder.isEmpty()) {
             return false;
@@ -376,14 +505,29 @@ public final class HtmlSourceLoader {
             remainder = roleAnnotationMatcher.group("rest").trim();
         }
 
-        addOpinionBlock(blocks, accumulator, HtmlOpinionBlockType.AUTHOR_MARKER, authorLine, null);
+        String opinionCategory = opinionCategoryFor(sourceElement);
+        if (opinionCategory != null && !authorLine.contains("(")) {
+            authorLine = appendRoleAnnotation(authorLine, opinionCategory);
+        }
+
+        addOpinionBlock(
+            blocks,
+            accumulator,
+            HtmlOpinionBlockType.AUTHOR_MARKER,
+            authorLine,
+            null,
+            sourceTagFor(sourceElement),
+            opinionCategory
+        );
         if (!remainder.isEmpty()) {
             addOpinionBlock(
                 blocks,
                 accumulator,
                 HtmlOpinionBlockType.PARAGRAPH,
                 remainder,
-                trimLeadingInlineText(inlines, inlineTrimLength(authorLine))
+                trimLeadingInlineText(inlines, inlineTrimLength(rawAuthorLine)),
+                sourceTagFor(sourceElement),
+                opinionCategory
             );
         }
         return true;
@@ -440,7 +584,12 @@ public final class HtmlSourceLoader {
                 line.append(renderInline(element));
             }
         }
-        return line.toString();
+        String authorLine = line.toString();
+        String opinionCategory = opinionCategoryFor(scElement);
+        if (opinionCategory != null && !authorLine.contains("(")) {
+            return appendRoleAnnotation(authorLine, opinionCategory);
+        }
+        return authorLine;
     }
 
     private String structuralOpinionHeadingToAuthorMarker(Element element) {
@@ -468,12 +617,59 @@ public final class HtmlSourceLoader {
         }
     }
 
+    private HtmlLabeledBlock labeledBlockFromNode(
+        LineAccumulator accumulator,
+        String label,
+        Node node,
+        String containerName
+    ) {
+        if (!(node instanceof Element element)) {
+            return null;
+        }
+
+        String tag = element.tagName().toLowerCase(Locale.ROOT);
+        if ("div".equals(tag)) {
+            String normalized = normalizeText(renderInline(element));
+            if (normalized.equalsIgnoreCase(containerName.toUpperCase(Locale.ROOT))
+                || normalized.equalsIgnoreCase(containerName)) {
+                return null;
+            }
+        }
+
+        StructuredText structuredText = appendStructuredText(accumulator, renderInline(element));
+        if (structuredText == null) {
+            return null;
+        }
+
+        return new HtmlLabeledBlock(label, structuredText.text(), structuredText.startLine(), structuredText.endLine());
+    }
+
+    private StructuredText appendStructuredText(LineAccumulator accumulator, String rendered) {
+        List<String> normalizedLines = normalizeIntoLines(rendered);
+        if (normalizedLines.isEmpty()) {
+            return null;
+        }
+
+        Integer startLine = null;
+        int endLine = -1;
+        for (String normalized : normalizedLines) {
+            int lineNumber = accumulator.addLine(normalized);
+            if (startLine == null) {
+                startLine = lineNumber;
+            }
+            endLine = lineNumber;
+        }
+        return new StructuredText(String.join(" ", normalizedLines), startLine, endLine);
+    }
+
     private void addOpinionBlock(
         List<HtmlOpinionBlock> blocks,
         LineAccumulator accumulator,
         HtmlOpinionBlockType type,
         String rendered,
-        List<InlineNode> inlines
+        List<InlineNode> inlines,
+        String sourceTag,
+        String opinionCategory
     ) {
         List<String> normalizedLines = normalizeIntoLines(rendered);
         if (normalizedLines.isEmpty()) {
@@ -483,12 +679,15 @@ public final class HtmlSourceLoader {
             String normalized = normalizedLines.get(index);
             if (!blocks.isEmpty()) {
                 HtmlOpinionBlock previous = blocks.getLast();
-                if (previous.type() == type && previous.text().equals(normalized)) {
+                if (previous.type() == type
+                    && previous.text().equals(normalized)
+                    && java.util.Objects.equals(previous.sourceTag(), sourceTag)
+                    && java.util.Objects.equals(previous.opinionCategory(), opinionCategory)) {
                     continue;
                 }
             }
             List<InlineNode> lineInlines = index == 0 ? normalizeInlineNodes(inlines) : null;
-            blocks.add(new HtmlOpinionBlock(type, accumulator.addLine(normalized, lineInlines), normalized));
+            blocks.add(new HtmlOpinionBlock(type, accumulator.addLine(normalized, lineInlines), normalized, sourceTag, opinionCategory));
         }
         if (type == HtmlOpinionBlockType.PARAGRAPH || type == HtmlOpinionBlockType.BLOCK_QUOTE) {
             accumulator.addBlankLine();
@@ -508,16 +707,74 @@ public final class HtmlSourceLoader {
 
     private HtmlOpinionBlockType classifyOpinionBlockType(Element element, String rendered) {
         String normalized = normalizeText(rendered);
-        if ("blockquote".equalsIgnoreCase(element.tagName())) {
+        String sourceTag = sourceTagFor(element);
+        if ("blockquote".equalsIgnoreCase(element.tagName())
+            || ("para".equalsIgnoreCase(element.tagName()) && "blocked".equalsIgnoreCase(element.attr("type")))) {
             return HtmlOpinionBlockType.BLOCK_QUOTE;
+        }
+        if (("conopnjd".equals(sourceTag) || "disopjd".equals(sourceTag))
+            && isStandaloneAuthorMarker(normalized)) {
+            return HtmlOpinionBlockType.PARAGRAPH;
         }
         if (isStandaloneAuthorMarker(normalized)) {
             return HtmlOpinionBlockType.AUTHOR_MARKER;
         }
-        if (SUBHEADER_PATTERN.matcher(normalized).matches()) {
+        if ("centerhd".equalsIgnoreCase(sourceTag) || SUBHEADER_PATTERN.matcher(normalized).matches()) {
             return HtmlOpinionBlockType.SUBHEADER;
         }
         return HtmlOpinionBlockType.PARAGRAPH;
+    }
+
+    private String sourceTagFor(Element element) {
+        if (element == null) {
+            return null;
+        }
+        Element current = element;
+        while (current != null && !"body".equalsIgnoreCase(current.tagName())) {
+            String tag = current.tagName().toLowerCase(Locale.ROOT);
+            if (isCustomStructureTag(tag)) {
+                return tag;
+            }
+            current = current.parent();
+        }
+        return null;
+    }
+
+    private String opinionCategoryFor(Element element) {
+        if (element == null) {
+            return null;
+        }
+        Element opinion = element.closest("opinion");
+        if (opinion == null) {
+            return null;
+        }
+        String category = normalizeText(opinion.attr("category")).toLowerCase(Locale.ROOT);
+        return category.isEmpty() ? null : category;
+    }
+
+    private boolean isCustomStructureTag(String tag) {
+        return "para".equals(tag)
+            || "centerhd".equals(tag)
+            || "conopn".equals(tag)
+            || "conopnjd".equals(tag)
+            || "disop".equals(tag)
+            || "disopjd".equals(tag)
+            || "disconop".equals(tag)
+            || "opinion".equals(tag);
+    }
+
+    private String appendRoleAnnotation(String authorLine, String opinionCategory) {
+        String trimmed = authorLine == null ? "" : authorLine.trim();
+        if (trimmed.isEmpty()) {
+            return trimmed;
+        }
+        if (trimmed.endsWith(":")) {
+            return trimmed.substring(0, trimmed.length() - 1) + " (" + opinionCategory + "):";
+        }
+        if (trimmed.endsWith(".")) {
+            return trimmed.substring(0, trimmed.length() - 1) + " (" + opinionCategory + ").";
+        }
+        return trimmed + " (" + opinionCategory + ").";
     }
 
     private boolean isStandaloneAuthorMarker(String text) {
@@ -1078,9 +1335,28 @@ public final class HtmlSourceLoader {
         return normalized;
     }
 
+    private String toTitleLabel(String text) {
+        if (text == null || text.isBlank()) {
+            return null;
+        }
+        String[] parts = text.trim().split("\\s+");
+        List<String> titled = new ArrayList<>();
+        for (String part : parts) {
+            String lower = part.toLowerCase(Locale.ROOT);
+            titled.add(Character.toUpperCase(lower.charAt(0)) + lower.substring(1));
+        }
+        return String.join(" ", titled);
+    }
+
     private record FootnoteExtraction(
         Integer headingLine,
         List<HtmlFootnote> footnotes
+    ) {}
+
+    private record StructuredText(
+        String text,
+        int startLine,
+        int endLine
     ) {}
 
     private record TrimResult(

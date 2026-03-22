@@ -458,4 +458,72 @@ class MirandaJsonRendererTest {
         assertThat(json).contains("\"author\":null");
         assertThat(json).doesNotContain("\"kind\":\"per_curiam\"");
     }
+
+    @Test
+    void render_json_emits_custom_summary_headnotes_and_points_of_counsel() {
+        String html = """
+            <html><body>
+            <table>
+              <tr><td>People v Example</td></tr>
+              <tr><td>2026 NY Slip Op 00019</td></tr>
+              <tr><td>March 20, 2026</td></tr>
+              <tr><td>Court of Appeals</td></tr>
+            </table>
+            <Summary>
+              <div align="center">SUMMARY</div>
+              <stmcs>Statement of Case</stmcs>
+              <p>Appeal from an order of the Appellate Division.</p>
+            </Summary>
+            <HeadnoteBlock>
+              <Headnote>
+                <Classification level="1">Crimes</Classification>
+                <Classification level="2">Evidence</Classification>
+                <p>Headnote text.</p>
+              </Headnote>
+            </HeadnoteBlock>
+            <CounselBlock type="points_of">
+              <div align="center">POINTS OF COUNSEL</div>
+              <p>Appellant point.</p>
+            </CounselBlock>
+            <p>Memorandum.</p>
+            <p>Order affirmed.</p>
+            </body></html>
+            """;
+
+        String json = StanbookPipeline.createDefault()
+            .render(new dev.stanbook.io.HtmlSourceLoader().load(Path.of("example.htm"), html));
+
+        assertThat(json).contains("\"summarySections\":[{\"label\":\"Statement of Case\",\"text\":\"Appeal from an order of the Appellate Division.\"");
+        assertThat(json).contains("\"headnotes\":[{\"classification\":[\"Crimes\",\"Evidence\"],\"text\":\"Headnote text.\"");
+        assertThat(json).contains("\"pointsOfCounsel\":[{\"label\":\"POINTS OF COUNSEL\",\"text\":\"Appellant point.\"");
+    }
+
+    @Test
+    void render_json_emits_body_custom_tag_metadata_for_blocks() {
+        String html = """
+            <html><body>
+            <table>
+              <tr><td>People v Example</td></tr>
+              <tr><td>2026 NY Slip Op 00020</td></tr>
+              <tr><td>March 20, 2026</td></tr>
+              <tr><td>Court of Appeals</td></tr>
+            </table>
+            <p>Memorandum.</p>
+            <Opinion category="dissenting">
+              <p><sc>WILSON</sc>, Chief Judge: Dissent opening.</p>
+              <Para type="blocked">Quoted material.</Para>
+            </Opinion>
+            <p>Order affirmed.</p>
+            </body></html>
+            """;
+
+        String json = StanbookPipeline.createDefault()
+            .render(new dev.stanbook.io.HtmlSourceLoader().load(Path.of("example.htm"), html));
+
+        assertThat(json).contains("\"sourceTags\":[\"opinion\",\"para\"]");
+        assertThat(json).contains("\"sourceCategories\":[\"dissenting\"]");
+        assertThat(json).contains("\"type\":\"quote\",\"sourceTag\":\"para\",\"opinionCategory\":\"dissenting\"");
+        assertThat(json).contains("\"sourceTag\":\"para\"");
+        assertThat(json).contains("\"opinionCategory\":\"dissenting\"");
+    }
 }

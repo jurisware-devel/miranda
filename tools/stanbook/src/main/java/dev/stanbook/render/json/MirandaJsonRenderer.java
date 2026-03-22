@@ -1,6 +1,8 @@
 package dev.stanbook.render.json;
 
 import dev.stanbook.diagnostics.Diagnostic;
+import dev.stanbook.ir.html.HtmlHeadnote;
+import dev.stanbook.ir.html.HtmlLabeledBlock;
 import dev.stanbook.ir.inline.EmphasisInline;
 import dev.stanbook.ir.inline.FootnoteReferenceInline;
 import dev.stanbook.ir.inline.InlineNode;
@@ -130,6 +132,9 @@ public final class MirandaJsonRenderer {
         header.put("court", firstHeaderValue(document, HeaderItemType.COURT));
         header.put("decisionDate", extractDecisionDate(document));
         header.put("appearances", appearances);
+        header.put("summarySections", buildLabeledBlocks(document.lowered().sectioned().source(), document.lowered().sectioned().source().htmlDocument().summarySections()));
+        header.put("headnotes", buildHeadnotes(document.lowered().sectioned().source(), document.lowered().sectioned().source().htmlDocument().headnotes()));
+        header.put("pointsOfCounsel", buildLabeledBlocks(document.lowered().sectioned().source(), document.lowered().sectioned().source().htmlDocument().pointsOfCounsel()));
         return header;
     }
 
@@ -162,13 +167,57 @@ public final class MirandaJsonRenderer {
         return appearances;
     }
 
+    private List<Map<String, Object>> buildHeadnotes(SourceDocument source, List<HtmlHeadnote> headnotes) {
+        List<Map<String, Object>> items = new ArrayList<>();
+        for (HtmlHeadnote headnote : headnotes) {
+            Map<String, Object> item = new LinkedHashMap<>();
+            item.put("classification", headnote.classifications());
+            item.put("text", headnote.text());
+            item.put("provenance", provenance(headnote.startLine(), headnote.endLine()));
+            items.add(item);
+        }
+        return items;
+    }
+
+    private List<Map<String, Object>> buildLabeledBlocks(SourceDocument source, List<HtmlLabeledBlock> blocks) {
+        List<Map<String, Object>> items = new ArrayList<>();
+        for (HtmlLabeledBlock block : blocks) {
+            Map<String, Object> item = new LinkedHashMap<>();
+            item.put("label", block.label());
+            item.put("text", block.text());
+            item.put("provenance", provenance(block.startLine(), block.endLine()));
+            items.add(item);
+        }
+        return items;
+    }
+
     private List<Map<String, Object>> buildOpinions(List<Writing> writings) {
         List<Map<String, Object>> opinions = new ArrayList<>();
         for (Writing writing : writings) {
             Map<String, Object> opinion = new LinkedHashMap<>();
             opinion.put("kind", writing.kind());
             opinion.put("author", writing.author());
-            opinion.put("blocks", writing.blocks().stream().map(this::blockJson).toList());
+            opinion.put("blocks", writing.blocks().stream().map(block -> blockJson(writing.source(), block)).toList());
+            List<String> sourceTags = writing.blocks().stream()
+                .map(block -> opinionBlockMetadata(writing.source(), block))
+                .filter(Objects::nonNull)
+                .map(BlockMetadata::sourceTag)
+                .filter(Objects::nonNull)
+                .distinct()
+                .toList();
+            if (!sourceTags.isEmpty()) {
+                opinion.put("sourceTags", sourceTags);
+            }
+            List<String> opinionCategories = writing.blocks().stream()
+                .map(block -> opinionBlockMetadata(writing.source(), block))
+                .filter(Objects::nonNull)
+                .map(BlockMetadata::opinionCategory)
+                .filter(Objects::nonNull)
+                .distinct()
+                .toList();
+            if (!opinionCategories.isEmpty()) {
+                opinion.put("sourceCategories", opinionCategories);
+            }
             opinions.add(opinion);
         }
         return opinions;
@@ -180,7 +229,7 @@ public final class MirandaJsonRenderer {
             Map<String, Object> footnoteJson = new LinkedHashMap<>();
             footnoteJson.put("label", footnote.label());
             List<ReflowedBlock> blocks = document.footnotes().blocksByStartLine().getOrDefault(footnote.startLine(), List.of());
-            footnoteJson.put("blocks", blocks.stream().map(this::blockJson).toList());
+            footnoteJson.put("blocks", blocks.stream().map(block -> blockJson(document.lowered().sectioned().source(), block)).toList());
             footnotes.add(footnoteJson);
         }
         return footnotes;
@@ -487,12 +536,29 @@ public final class MirandaJsonRenderer {
 
         List<Writing> writings = accumulators.stream()
             .map(acc -> new Writing(
+                document.lowered().sectioned().source(),
                 acc.kind,
                 acc.author,
-                trimTerminalSummaryBlocks(acc.blocks, terminalSummary)
+                pruneLeadingRoleOnlyBlocks(trimTerminalSummaryBlocks(acc.blocks, terminalSummary))
             ))
             .toList();
         return applyHeaderAuthorInferences(document, writings);
+    }
+
+    private List<ReflowedBlock> pruneLeadingRoleOnlyBlocks(List<ReflowedBlock> blocks) {
+        if (blocks.isEmpty()) {
+            return blocks;
+        }
+        List<ReflowedBlock> pruned = new ArrayList<>(blocks);
+        while (!pruned.isEmpty() && isRoleOnlyBlock(pruned.getFirst())) {
+            pruned.removeFirst();
+        }
+        return List.copyOf(pruned);
+    }
+
+    private boolean isRoleOnlyBlock(ReflowedBlock block) {
+        String text = blockText(block).trim();
+        return text.matches("^\\((?:concurring|dissenting|concurring in part|dissenting in part)\\)\\.?$");
     }
 
     private List<Writing> applyHeaderAuthorInferences(ReflowedDocument document, List<Writing> writings) {
@@ -509,6 +575,7 @@ public final class MirandaJsonRenderer {
                 && writing.author() == null
                 && isEffectiveWritingKind(writing.kind())) {
                 updated.add(new Writing(
+                    writing.source(),
                     writing.kind(),
                     "Per Curiam".equalsIgnoreCase(headerAuthor == null ? "" : headerAuthor.trim()) ? null : inferredAuthor,
                     writing.blocks()
@@ -531,6 +598,7 @@ public final class MirandaJsonRenderer {
         for (Writing writing : writings) {
             if (!classified && isEffectiveWritingKind(writing.kind())) {
                 updated.add(new Writing(
+                    writing.source(),
                     inferredEffectiveWritingKind(writing, disposition),
                     writing.author(),
                     writing.blocks()
@@ -586,13 +654,17 @@ public final class MirandaJsonRenderer {
 
         for (ReflowedBlock block : document.opinion().blocks()) {
             if (isRepresentedByDisposition(block, disposition)) {
-                flushFallbackWriting(ordered, fallbackBlocks);
+                flushFallbackWriting(document.lowered().sectioned().source(), ordered, fallbackBlocks);
+                continue;
+            }
+            if (isRepresentedByMetadata(block, document)) {
+                flushFallbackWriting(document.lowered().sectioned().source(), ordered, fallbackBlocks);
                 continue;
             }
 
             int ownerIndex = ownerIndexForBlock(block, writings);
             if (ownerIndex >= 0) {
-                flushFallbackWriting(ordered, fallbackBlocks);
+                flushFallbackWriting(document.lowered().sectioned().source(), ordered, fallbackBlocks);
                 if (!emitted[ownerIndex]) {
                     ordered.add(writings.get(ownerIndex));
                     emitted[ownerIndex] = true;
@@ -603,7 +675,7 @@ public final class MirandaJsonRenderer {
             fallbackBlocks.add(block);
         }
 
-        flushFallbackWriting(ordered, fallbackBlocks);
+        flushFallbackWriting(document.lowered().sectioned().source(), ordered, fallbackBlocks);
         for (int index = 0; index < writings.size(); index++) {
             if (!emitted[index]) {
                 ordered.add(writings.get(index));
@@ -634,11 +706,27 @@ public final class MirandaJsonRenderer {
         return blockStart >= dispositionStart && blockEnd <= dispositionEnd;
     }
 
-    private void flushFallbackWriting(List<Writing> ordered, List<ReflowedBlock> fallbackBlocks) {
+    private boolean isRepresentedByMetadata(ReflowedBlock block, ReflowedDocument document) {
+        if (block.sourceLines().isEmpty()) {
+            return false;
+        }
+        BlockMetadata metadata = opinionBlockMetadata(document.lowered().sectioned().source(), block);
+        if (metadata == null || (!"conopnjd".equals(metadata.sourceTag()) && !"disopjd".equals(metadata.sourceTag()))) {
+            return false;
+        }
+        int blockStart = block.sourceLines().getFirst();
+        int blockEnd = block.sourceLines().getLast();
+        return document.lowered().opinionBody().components().stream()
+            .filter(component -> component.type() == OpinionComponentType.METADATA)
+            .anyMatch(component -> !(blockEnd < component.startLine() || blockStart > component.endLine()));
+    }
+
+    private void flushFallbackWriting(SourceDocument source, List<Writing> ordered, List<ReflowedBlock> fallbackBlocks) {
         if (fallbackBlocks.isEmpty()) {
             return;
         }
         ordered.add(new Writing(
+            source,
             "unknown",
             null,
             List.copyOf(fallbackBlocks)
@@ -703,7 +791,7 @@ public final class MirandaJsonRenderer {
         return !(end < component.startLine() || start > component.endLine());
     }
 
-    private Map<String, Object> blockJson(ReflowedBlock block) {
+    private Map<String, Object> blockJson(SourceDocument source, ReflowedBlock block) {
         Map<String, Object> json = new LinkedHashMap<>();
         json.put("type", switch (block.type()) {
             case PARAGRAPH -> "paragraph";
@@ -711,16 +799,37 @@ public final class MirandaJsonRenderer {
             case SUBHEADER -> "subheader";
             case FOOTNOTE_PARAGRAPH -> "paragraph";
         });
+        BlockMetadata metadata = opinionBlockMetadata(source, block);
+        if (metadata != null) {
+            if (metadata.sourceTag() != null) {
+                json.put("sourceTag", metadata.sourceTag());
+            }
+            if (metadata.opinionCategory() != null) {
+                json.put("opinionCategory", metadata.opinionCategory());
+            }
+        }
         if (block.inlines() != null && !block.inlines().isEmpty()) {
             json.put("inlines", blockInlines(block).stream().map(this::inlineJson).toList());
         }
         if (block.blocks() != null && !block.blocks().isEmpty()) {
-            json.put("blocks", block.blocks().stream().map(this::blockJson).toList());
+            json.put("blocks", block.blocks().stream().map(child -> blockJson(source, child)).toList());
         }
         if (!block.sourceLines().isEmpty()) {
             json.put("provenance", provenance(block.sourceLines().getFirst(), block.sourceLines().getLast()));
         }
         return json;
+    }
+
+    private BlockMetadata opinionBlockMetadata(SourceDocument source, ReflowedBlock block) {
+        if (source == null || source.htmlDocument() == null || block.sourceLines().isEmpty()) {
+            return null;
+        }
+        int startLine = block.sourceLines().getFirst();
+        return source.htmlDocument().opinionBlocks().stream()
+            .filter(candidate -> candidate.lineNumber() == startLine)
+            .findFirst()
+            .map(candidate -> new BlockMetadata(candidate.sourceTag(), candidate.opinionCategory()))
+            .orElse(null);
     }
 
     private List<InlineNode> blockInlines(ReflowedBlock block) {
@@ -1208,6 +1317,7 @@ public final class MirandaJsonRenderer {
         updated.set(
             updated.size() - 1,
             new Writing(
+                last.source(),
                 last.kind(),
                 last.author(),
                 trimTerminalSummaryBlocks(last.blocks(), terminalSummary)
@@ -1423,9 +1533,15 @@ public final class MirandaJsonRenderer {
     }
 
     private record Writing(
+        SourceDocument source,
         String kind,
         String author,
         List<ReflowedBlock> blocks
+    ) {}
+
+    private record BlockMetadata(
+        String sourceTag,
+        String opinionCategory
     ) {}
 
     private record CitationParts(String slipOpinion, String officialCitation) {}

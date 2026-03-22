@@ -244,4 +244,85 @@ class HtmlSourceLoaderTest {
         );
     }
 
+    @Test
+    void extracts_summary_headnotes_and_points_of_counsel_from_custom_tags() {
+        String html = """
+            <html><body>
+            <table>
+              <tr><td>People v Example</td></tr>
+              <tr><td>2026 NY Slip Op 00012</td></tr>
+              <tr><td>Court of Appeals</td></tr>
+            </table>
+            <Summary>
+              <div align="center">SUMMARY</div>
+              <stmcs>Statement of Case</stmcs>
+              <p>Appeal from an order of the Appellate Division.</p>
+            </Summary>
+            <HeadnoteBlock>
+              <Headnote>
+                <Classification level="1">Crimes</Classification>
+                <Classification level="2">Evidence</Classification>
+                <p>Headnote text.</p>
+              </Headnote>
+            </HeadnoteBlock>
+            <CounselBlock type="points_of">
+              <div align="center">POINTS OF COUNSEL</div>
+              <p>Appellant point.</p>
+            </CounselBlock>
+            <Opinion category="per_curiam">
+              <p>Memorandum.</p>
+              <p>Body text.</p>
+            </Opinion>
+            </body></html>
+            """;
+
+        var document = new HtmlSourceLoader().load(Path.of("example.htm"), html);
+
+        assertThat(document.htmlDocument().summarySections()).singleElement()
+            .satisfies(section -> {
+                assertThat(section.label()).isEqualTo("Statement of Case");
+                assertThat(section.text()).isEqualTo("Appeal from an order of the Appellate Division.");
+            });
+        assertThat(document.htmlDocument().headnotes()).singleElement()
+            .satisfies(headnote -> {
+                assertThat(headnote.classifications()).containsExactly("Crimes", "Evidence");
+                assertThat(headnote.text()).isEqualTo("Headnote text.");
+            });
+        assertThat(document.htmlDocument().pointsOfCounsel()).singleElement()
+            .satisfies(point -> {
+                assertThat(point.label()).isEqualTo("POINTS OF COUNSEL");
+                assertThat(point.text()).isEqualTo("Appellant point.");
+            });
+    }
+
+    @Test
+    void extracts_para_blocked_as_block_quote_and_inherits_opinion_category_for_author_marker() {
+        String html = """
+            <html><body>
+            <table>
+              <tr><td>People v Example</td></tr>
+              <tr><td>2026 NY Slip Op 00013</td></tr>
+              <tr><td>Court of Appeals</td></tr>
+            </table>
+            <p>Memorandum.</p>
+            <Opinion category="dissenting">
+              <p><sc>WILSON</sc>, Chief Judge: Dissent opening.</p>
+              <Para type="blocked">Quoted material.</Para>
+            </Opinion>
+            </body></html>
+            """;
+
+        var document = new HtmlSourceLoader().load(Path.of("example.htm"), html);
+
+        assertThat(document.htmlDocument().opinionBlocks()).extracting(block -> block.text())
+            .contains("WILSON, Chief Judge (dissenting):", "Dissent opening.", "Quoted material.");
+        assertThat(document.htmlDocument().opinionBlocks()).filteredOn(block -> block.text().equals("Quoted material."))
+            .singleElement()
+            .satisfies(block -> {
+                assertThat(block.type()).isEqualTo(HtmlOpinionBlockType.BLOCK_QUOTE);
+                assertThat(block.sourceTag()).isEqualTo("para");
+                assertThat(block.opinionCategory()).isEqualTo("dissenting");
+            });
+    }
+
 }
