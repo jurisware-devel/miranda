@@ -1180,7 +1180,8 @@ body.route-theme-pub {
 }
 
 .opinion-section__title,
-.opinion-writing__summary-text {
+.opinion-writing__summary-text,
+.opinion-block--qualifier {
   margin: 0 0 10px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 14px;
@@ -1188,6 +1189,10 @@ body.route-theme-pub {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #475569;
+}
+
+.opinion-block--qualifier {
+  line-height: 1.35;
 }
 
 .opinion-appearances,

@@ -92,15 +92,16 @@ public final class MirandaJsonRenderer {
         List<Writing> trimmedWritings = trimTerminalSummary(writings, terminalSummary);
         DispositionInfo disposition = buildDisposition(document, terminalSummary);
         List<Writing> preservedWritings = preserveUnclassifiedBlocks(document, trimmedWritings, disposition);
-        List<Diagnostic> diagnostics = buildDiagnostics(source, document, preservedWritings, disposition);
-        ExtractionAssessment extraction = assessExtraction(source, document, preservedWritings, diagnostics);
+        List<Writing> normalizedWritings = classifyEffectiveWritings(preservedWritings, disposition);
+        List<Diagnostic> diagnostics = buildDiagnostics(source, document, normalizedWritings, disposition);
+        ExtractionAssessment extraction = assessExtraction(source, document, normalizedWritings, diagnostics);
         List<Map<String, Object>> appearances = buildAppearances(document);
         Map<String, Object> root = new LinkedHashMap<>();
         root.put("version", "0.1");
         root.put("documentType", "opinion");
         root.put("source", buildSource(source, document, extraction));
         root.put("header", buildHeader(document, appearances));
-        root.put("opinions", extraction.structuredOpinionsHighConfidence() ? buildOpinions(preservedWritings) : List.of());
+        root.put("opinions", extraction.structuredOpinionsHighConfidence() ? buildOpinions(normalizedWritings) : List.of());
         root.put("disposition", disposition == null ? null : disposition.json());
         root.put("footnotes", extraction.structuredFootnotesHighConfidence() ? buildFootnotes(document) : List.of());
         root.put("renderingHints", buildRenderingHints(document, extraction));
@@ -506,7 +507,7 @@ public final class MirandaJsonRenderer {
         for (Writing writing : writings) {
             if (!applied
                 && writing.author() == null
-                && ("majority".equals(writing.kind()) || "opinion_of_the_court".equals(writing.kind()))) {
+                && isEffectiveWritingKind(writing.kind())) {
                 updated.add(new Writing(
                     writing.kind(),
                     "Per Curiam".equalsIgnoreCase(headerAuthor == null ? "" : headerAuthor.trim()) ? null : inferredAuthor,
@@ -518,6 +519,36 @@ public final class MirandaJsonRenderer {
             updated.add(writing);
         }
         return List.copyOf(updated);
+    }
+
+    private List<Writing> classifyEffectiveWritings(List<Writing> writings, DispositionInfo disposition) {
+        if (writings.isEmpty()) {
+            return writings;
+        }
+
+        List<Writing> updated = new ArrayList<>(writings.size());
+        boolean classified = false;
+        for (Writing writing : writings) {
+            if (!classified && isEffectiveWritingKind(writing.kind())) {
+                updated.add(new Writing(
+                    inferredEffectiveWritingKind(writing, disposition),
+                    writing.author(),
+                    writing.blocks()
+                ));
+                classified = true;
+                continue;
+            }
+            updated.add(writing);
+        }
+        return List.copyOf(updated);
+    }
+
+    private boolean isEffectiveWritingKind(String kind) {
+        return "majority".equals(kind) || "opinion_of_the_court".equals(kind) || "plurality".equals(kind);
+    }
+
+    private String inferredEffectiveWritingKind(Writing writing, DispositionInfo disposition) {
+        return "opinion_of_the_court";
     }
 
     private String inferredAuthorFromHeader(String headerAuthor) {
@@ -621,10 +652,10 @@ public final class MirandaJsonRenderer {
     }
 
     private boolean shouldMergeAnonymousMajorityPrelude(WritingAccumulator current, OpinionComponent component, String author) {
-        if (current == null || !"majority".equals(current.kind) || current.author != null) {
+        if (current == null || !"opinion_of_the_court".equals(current.kind) || current.author != null) {
             return false;
         }
-        if (!"majority".equals(kindFor(component)) || author == null) {
+        if (!"opinion_of_the_court".equals(kindFor(component)) || author == null) {
             return false;
         }
         return !current.blocks.isEmpty() && current.blocks.stream().allMatch(this::isOpinionOfTheCourtPreludeBlock);
@@ -1313,8 +1344,7 @@ public final class MirandaJsonRenderer {
 
     private String kindFor(OpinionComponent component) {
         return switch (component.role()) {
-            case PER_CURIAM, MEMORANDUM -> "majority";
-            case OPINION_OF_THE_COURT -> "opinion_of_the_court";
+            case PER_CURIAM, MEMORANDUM, OPINION_OF_THE_COURT -> "opinion_of_the_court";
             case CONCURRENCE, CONCURRENCE_IN_PART -> "concurrence";
             case CONCURRENCE_IN_RESULT -> "concurrence_in_result";
             case DISSENT, DISSENT_IN_PART -> "dissent";
@@ -1323,7 +1353,7 @@ public final class MirandaJsonRenderer {
                 case CONCURRENCE -> "concurrence";
                 case DISSENT -> "dissent";
                 case MIXED -> "mixed";
-                default -> "majority";
+                default -> "opinion_of_the_court";
             };
         };
     }

@@ -5,25 +5,27 @@ import InlineContent from "./InlineContent";
 type OpinionBlockProps = {
   block: OpinionBlockNode;
   opinionSourceUrl?: string;
+  className?: string;
 };
 
-const OpinionBlock: React.FC<OpinionBlockProps> = ({ block, opinionSourceUrl }) => {
+const OpinionBlock: React.FC<OpinionBlockProps> = ({ block, opinionSourceUrl, className }) => {
+  const blockClassName = ["opinion-block", className].filter(Boolean).join(" ");
   switch (block.type) {
     case "paragraph":
       return (
-        <p className="opinion-block opinion-block--paragraph">
+        <p className={`${blockClassName} opinion-block--paragraph`}>
           <InlineContent nodes={block.inlines} opinionSourceUrl={opinionSourceUrl} />
         </p>
       );
     case "subheader":
       return (
-        <h3 className="opinion-block opinion-block--subheader">
+        <h3 className={`${blockClassName} opinion-block--subheader`}>
           <InlineContent nodes={block.inlines} opinionSourceUrl={opinionSourceUrl} />
         </h3>
       );
     case "metadata":
       return (
-        <p className="opinion-block opinion-block--metadata">
+        <p className={`${blockClassName} opinion-block--metadata`}>
           {block.label ? <span className="opinion-block__metadata-label">{block.label}</span> : null}
           {block.value ? <span>{block.value}</span> : null}
           {!block.value ? (
@@ -33,7 +35,7 @@ const OpinionBlock: React.FC<OpinionBlockProps> = ({ block, opinionSourceUrl }) 
       );
     case "quote":
       return (
-        <blockquote className="opinion-block opinion-block--quote">
+        <blockquote className={`${blockClassName} opinion-block--quote`}>
           {block.inlines?.length ? (
             <p>
               <InlineContent nodes={block.inlines} opinionSourceUrl={opinionSourceUrl} />
@@ -51,7 +53,7 @@ const OpinionBlock: React.FC<OpinionBlockProps> = ({ block, opinionSourceUrl }) 
     default: {
       const unknownBlock = block as OpinionUnknownBlock;
       return (
-        <div className="opinion-block opinion-block--unknown" data-block-type={unknownBlock.type}>
+        <div className={`${blockClassName} opinion-block--unknown`} data-block-type={unknownBlock.type}>
           {unknownBlock.label ? <p className="opinion-block__unknown-label">{unknownBlock.label}</p> : null}
           {unknownBlock.inlines?.length ? (
             <p>

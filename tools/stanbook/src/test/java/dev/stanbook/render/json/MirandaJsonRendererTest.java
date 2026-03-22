@@ -220,6 +220,32 @@ class MirandaJsonRendererTest {
     }
 
     @Test
+    void render_json_normalizes_effective_writing_to_opinion_of_the_court() {
+        String html = """
+            <html><body>
+            <table>
+              <tr><td>People v Example</td></tr>
+              <tr><td>2026 NY Slip Op 00018</td></tr>
+              <tr><td>March 20, 2026</td></tr>
+              <tr><td>Court of Appeals</td></tr>
+              <tr><td>Per Curiam</td></tr>
+            </table>
+            <p>Per Curiam.</p>
+            <p>Memorandum (concurring).</p>
+            <p>Plurality text.</p>
+            <p>Chief Judge Wilson and Judges Rivera and Garcia concur, Judges Rivera and Garcia in a concurring memorandum.</p>
+            </body></html>
+            """;
+
+        String json = StanbookPipeline.createDefault()
+            .render(new dev.stanbook.io.HtmlSourceLoader().load(Path.of("example.htm"), html));
+
+        assertThat(json).contains("\"kind\":\"opinion_of_the_court\"");
+        assertThat(json).contains("\"author\":null");
+        assertThat(json).contains("Plurality text.");
+    }
+
+    @Test
     void render_json_preserves_spaces_in_emphasized_appearance_lines() {
         String html = """
             <html><body>
@@ -302,8 +328,8 @@ class MirandaJsonRendererTest {
         assertThat(json).contains("\"kind\":\"unknown\"");
         assertThat(json).contains("\"provenance\":{\"startLine\":9,\"endLine\":9}");
         assertThat(json).contains("\"author\":\"Garcia\"");
-        assertThat(json).contains("\"text\":\" (dissenting).\"");
-        assertThat(json).contains("\"kind\":\"majority\"");
+        assertThat(json).doesNotContain("\"text\":\" (dissenting).\"");
+        assertThat(json).contains("\"kind\":\"opinion_of_the_court\"");
         assertThat(json).contains("Body text.");
     }
 
@@ -428,7 +454,7 @@ class MirandaJsonRendererTest {
         String json = StanbookPipeline.createDefault()
             .render(new dev.stanbook.io.HtmlSourceLoader().load(Path.of("example.htm"), html));
 
-        assertThat(json).contains("\"kind\":\"majority\"");
+        assertThat(json).contains("\"kind\":\"opinion_of_the_court\"");
         assertThat(json).contains("\"author\":null");
         assertThat(json).doesNotContain("\"kind\":\"per_curiam\"");
     }

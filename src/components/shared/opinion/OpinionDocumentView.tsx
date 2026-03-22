@@ -70,7 +70,7 @@ const fallbackWritingsFromSource = (document: OpinionDocument): OpinionWritingTy
 
   return [
     {
-      kind: "majority",
+      kind: "opinion_of_the_court",
       blocks: bodyLines.map((line) => ({
         type: "paragraph" as const,
         inlines: [{ type: "text" as const, text: line }],

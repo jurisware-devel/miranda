@@ -74,7 +74,7 @@ test("OpinionDocumentView does not synthesize a per curiam heading from author m
     header: { title: "Example Case" },
     opinions: [
       {
-        kind: "majority",
+        kind: "opinion_of_the_court",
         author: "Per Curiam",
         blocks: [
           {
@@ -98,7 +98,7 @@ test("OpinionDocumentView does not synthesize a per curiam heading from author m
 
   const html = renderToStaticMarkup(<OpinionDocumentView document={sample} />);
 
-  assert.doesNotMatch(html, />Per Curiam</);
+  assert.match(html, />Opinion of the Court</);
   assert.match(html, /Body text\./);
   assert.doesNotMatch(html, />majority</);
 });
@@ -138,6 +138,29 @@ test("OpinionDocumentView synthesizes authored headings for separate concurrence
   assert.match(html, /Dissent text\./);
 });
 
+test("OpinionDocumentView synthesizes authored Opinion of the Court headings", () => {
+  const sample: OpinionDocument = {
+    header: { title: "Example Case" },
+    opinions: [
+      {
+        kind: "opinion_of_the_court",
+        author: "Halligan",
+        blocks: [
+          {
+            type: "paragraph",
+            inlines: [{ type: "text", text: "Plurality text." }],
+          },
+        ],
+      },
+    ],
+  };
+
+  const html = renderToStaticMarkup(<OpinionDocumentView document={sample} />);
+
+  assert.match(html, /Opinion of the Court by Halligan, J\./);
+  assert.match(html, /Plurality text\./);
+});
+
 test("OpinionDocumentView does not duplicate a separate-writing heading already present in the first block", () => {
   const sample: OpinionDocument = {
     header: { title: "Example Case" },
@@ -165,12 +188,12 @@ test("OpinionDocumentView does not duplicate a separate-writing heading already 
   assert.equal(matches.length, 1);
 });
 
-test("OpinionDocumentView does not synthesize headings for anonymous majorities", () => {
+test("OpinionDocumentView synthesizes an Opinion of the Court heading for anonymous effective writings", () => {
   const sample: OpinionDocument = {
     header: { title: "Example Case" },
     opinions: [
       {
-        kind: "majority",
+        kind: "opinion_of_the_court",
         blocks: [
           {
             type: "paragraph",
@@ -183,8 +206,70 @@ test("OpinionDocumentView does not synthesize headings for anonymous majorities"
 
   const html = renderToStaticMarkup(<OpinionDocumentView document={sample} />);
 
-  assert.doesNotMatch(html, />Per Curiam</);
+  assert.match(html, />Opinion of the Court</);
   assert.match(html, /Body text\./);
+});
+
+test("OpinionDocumentView does not duplicate a literal Opinion of the Court heading already present in the first block", () => {
+  const sample: OpinionDocument = {
+    header: { title: "Example Case" },
+    opinions: [
+      {
+        kind: "opinion_of_the_court",
+        blocks: [
+          {
+            type: "paragraph",
+            inlines: [{ type: "text", text: "Opinion of the Court" }],
+          },
+          {
+            type: "paragraph",
+            inlines: [{ type: "text", text: "Body text." }],
+          },
+        ],
+      },
+    ],
+  };
+
+  const html = renderToStaticMarkup(<OpinionDocumentView document={sample} />);
+  const matches = html.match(/Opinion of the Court/g) ?? [];
+
+  assert.equal(matches.length, 1);
+});
+
+test("OpinionDocumentView styles recognized writing qualifiers like Appearances of Counsel headings", () => {
+  const sample: OpinionDocument = {
+    header: { title: "Example Case" },
+    opinions: [
+      {
+        kind: "opinion_of_the_court",
+        blocks: [
+          {
+            type: "paragraph",
+            inlines: [{ type: "text", text: "Per Curiam." }],
+          },
+          {
+            type: "paragraph",
+            inlines: [{ type: "text", text: "Body text." }],
+          },
+        ],
+      },
+      {
+        kind: "dissent",
+        author: "Rivera",
+        blocks: [
+          {
+            type: "paragraph",
+            inlines: [{ type: "text", text: "Rivera, J. (dissenting)." }],
+          },
+        ],
+      },
+    ],
+  };
+
+  const html = renderToStaticMarkup(<OpinionDocumentView document={sample} />);
+
+  assert.match(html, /class="opinion-block opinion-block--qualifier opinion-block--paragraph">Per Curiam\.<\/p>/);
+  assert.match(html, /class="opinion-block opinion-block--qualifier opinion-block--paragraph">Rivera, J\. \(dissenting\)\.<\/p>/);
 });
 
 test("OpinionDocumentView renders markdown italics in disposition text", () => {
@@ -192,7 +277,7 @@ test("OpinionDocumentView renders markdown italics in disposition text", () => {
     header: { title: "Example Case" },
     opinions: [
       {
-        kind: "majority",
+        kind: "opinion_of_the_court",
         blocks: [
           {
             type: "paragraph",
@@ -275,12 +360,12 @@ test("OpinionDocumentView reads fallback writings from top-level fallback.opinio
   assert.doesNotMatch(html, /Opinion content is not available\./);
 });
 
-test("OpinionDocumentView renders a lone majority opinion as flowing body text", () => {
+test("OpinionDocumentView renders a lone Opinion of the Court as flowing body text", () => {
   const sample: OpinionDocument = {
     header: { title: "Example Case" },
     opinions: [
       {
-        kind: "majority",
+        kind: "opinion_of_the_court",
         author: "Jones",
         blocks: [
           {
@@ -318,7 +403,7 @@ test("OpinionDocumentView renders page markers as page badges with original mark
     header: { title: "Example Case" },
     opinions: [
       {
-        kind: "majority",
+        kind: "opinion_of_the_court",
         blocks: [
           {
             type: "paragraph",

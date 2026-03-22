@@ -90,7 +90,7 @@ class RealSampleJsonRegressionTest {
         assertThat(json).contains("\"officialCitation\":\"44 NY3d 1039\"");
         assertThat(json).contains("Defendant was convicted of attempted murder in the second degree");
         assertThat(json).contains("\"text\":\"The order of the Appellate Division should be affirmed.\"");
-        assertThat(json).contains("\"kind\":\"majority\"");
+        assertThat(json).contains("\"kind\":\"opinion_of_the_court\"");
         assertThat(json).contains("\"text\":\"Memorandum.\"");
         assertThat(json).contains("\"text\":\"Defendant was convicted of attempted murder in the second degree");
         assertThat(json).doesNotContain("\"lineNumber\":9,\"text\":\"{**44 NY3d at 1039} OPINION OF THE COURT\"");
@@ -170,7 +170,7 @@ class RealSampleJsonRegressionTest {
         String json = StanbookPipeline.createDefault().render(source);
 
         assertThat(json).contains("\"caseId\":\"2026_01445\"");
-        assertThat(json).contains("\"opinions\":[{\"kind\":\"majority\"");
+        assertThat(json).contains("\"opinions\":[{\"kind\":\"opinion_of_the_court\"");
         assertThat(json).contains("\"text\":\"MEMORANDUM:\"");
         assertThat(json).contains("\"text\":\"The order of the Appellate Division should be affirmed.\"");
         assertThat(json).contains("\"opinions\":\"high_confidence\"");
@@ -204,6 +204,9 @@ class RealSampleJsonRegressionTest {
 
         String json = StanbookPipeline.createDefault().render(source);
 
+        assertThat(json).contains("\"kind\":\"opinion_of_the_court\",\"author\":null");
+        assertThat(json).doesNotContain("\"kind\":\"majority\"");
+        assertThat(json).doesNotContain("\"kind\":\"plurality\"");
         assertThat(json).contains("\"kind\":\"concurrence\",\"author\":\"Feinman\"");
         assertThat(json).contains("\"text\":\"Feinman, J. (concurring).\"");
         assertThat(json).doesNotContain("\"text\":\" (concurring).\"");

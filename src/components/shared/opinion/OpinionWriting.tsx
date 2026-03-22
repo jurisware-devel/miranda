@@ -33,6 +33,44 @@ const blockText = (block?: OpinionBlockNode | null): string => {
   return "";
 };
 
+const normalizeHeadingText = (text?: string | null): string => {
+  return (text ?? "")
+    .replace(/\s+/g, " ")
+    .trim()
+    .replace(/\.+$/, "")
+    .toLowerCase();
+};
+
+const isRecognizedWritingQualifier = (text?: string | null): boolean => {
+  const normalized = normalizeHeadingText(text);
+  if (!normalized) return false;
+  if (
+    normalized === "opinion of the court" ||
+    normalized.startsWith("opinion of the court by ") ||
+    normalized === "per curiam" ||
+    normalized === "memorandum" ||
+    normalized === "concurring" ||
+    normalized === "dissenting"
+  ) {
+    return true;
+  }
+  if (/^memorandum \((?:concurring|dissenting)(?: in part| in result)?\)$/.test(normalized)) {
+    return true;
+  }
+  return /^(?:chief judge .+|.+, j)\. \((?:concurring|dissenting)(?: in part| in result| in .+)?\)$/.test(normalized);
+};
+
+const isEffectiveWritingKind = (kind?: string | null): boolean => {
+  switch (kind?.trim().toLowerCase()) {
+    case "majority":
+    case "plurality":
+    case "opinion_of_the_court":
+      return true;
+    default:
+      return false;
+  }
+};
+
 const headingSuffixForKind = (kind?: string | null): string | null => {
   switch (kind?.trim().toLowerCase()) {
     case "concurrence":
@@ -45,6 +83,8 @@ const headingSuffixForKind = (kind?: string | null): string | null => {
       return "dissenting";
     case "dissent_in_part":
       return "dissenting in part";
+    case "plurality":
+      return "plurality";
     case "mixed":
       return null;
     default:
@@ -54,6 +94,12 @@ const headingSuffixForKind = (kind?: string | null): string | null => {
 
 const synthesizedHeading = (writing: OpinionWritingType): string | null => {
   const author = writing.author?.trim();
+  if (isEffectiveWritingKind(writing.kind)) {
+    if (!author || author.toLowerCase() === "per curiam") {
+      return "Opinion of the Court";
+    }
+    return `Opinion of the Court by ${author}, J.`;
+  }
   const suffix = headingSuffixForKind(writing.kind);
   if (!author || !suffix) {
     return null;
@@ -77,13 +123,22 @@ const OpinionWriting: React.FC<OpinionWritingProps> = ({
     <section className="opinion-writing">
       <div className="opinion-writing__content opinion-writing__content--inline">
         {showHeading ? (
-          <p className="opinion-block opinion-block--paragraph">{heading}</p>
+          <p
+            className={[
+              "opinion-block",
+              "opinion-block--paragraph",
+              isRecognizedWritingQualifier(heading) ? "opinion-block--qualifier" : "",
+            ].filter(Boolean).join(" ")}
+          >
+            {heading}
+          </p>
         ) : null}
         {(writing.blocks ?? []).map((block, blockIndex) => (
           <OpinionBlock
             key={`${block.type}-${blockIndex}`}
             block={block}
             opinionSourceUrl={opinionSourceUrl}
+            className={isRecognizedWritingQualifier(blockText(block)) ? "opinion-block--qualifier" : undefined}
           />
         ))}
       </div>
