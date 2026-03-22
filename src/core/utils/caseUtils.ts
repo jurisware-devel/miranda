@@ -13,6 +13,24 @@ const normalizeCourtCode = (value?: string | null) => {
   return (value ?? "coa").trim().toLowerCase() || "coa";
 };
 
+const parseNy3dCitation = (value?: string | null) => {
+  const match = (value ?? "").trim().match(/^(\d+)\s+NY3d\s+(\d+)$/i);
+  if (!match) return null;
+
+  const volume = Number(match[1]);
+  const page = Number(match[2]);
+  if (!Number.isInteger(volume) || volume <= 0 || !Number.isInteger(page) || page <= 0) {
+    return null;
+  }
+
+  return {
+    volume,
+    page,
+    volumeDir: `${String(volume).padStart(2, "0")}NY3d`,
+    filePrefix: `${volume}NY3d${page}`,
+  };
+};
+
 const resolveOpinionObjectPath = (opinionUrl?: string | null) => {
   const source = (opinionUrl ?? "").trim();
   if (!source) return "";
@@ -103,6 +121,52 @@ export const buildLocalOpinionDocumentCandidatePaths = (
   caseItem?: CaseItem | null,
 ) => {
   return buildOpinionCandidatePathsForExtensions(opinionUrl, caseItem, ["json", "md", "pdf", "txt"]);
+};
+
+export const buildOpinionJsonCandidateUrls = (
+  opinionUrl?: string | null,
+  caseItem?: CaseItem | null,
+) => {
+  return buildOpinionCandidateUrlsForExtensions(opinionUrl, caseItem, ["json"]);
+};
+
+export const buildLocalOpinionJsonCandidatePaths = (
+  opinionUrl?: string | null,
+  caseItem?: CaseItem | null,
+) => {
+  return buildOpinionCandidatePathsForExtensions(opinionUrl, caseItem, ["json"]);
+};
+
+export const buildOpinionPdfCandidateUrls = (
+  opinionUrl?: string | null,
+  caseItem?: CaseItem | null,
+) => {
+  const base =
+    typeof import.meta !== "undefined" && import.meta.env?.VITE_OPINIONS_BASE_URL
+      ? String(import.meta.env.VITE_OPINIONS_BASE_URL).replace(/\/$/, "")
+      : `https://${OPINIONS_BUCKET}`;
+
+  return buildOpinionPdfCandidatePaths(opinionUrl, caseItem).map((path) => `${base}/${path}`);
+};
+
+export const buildLocalOpinionPdfCandidatePaths = (
+  opinionUrl?: string | null,
+  caseItem?: CaseItem | null,
+) => {
+  return buildOpinionPdfCandidatePaths(opinionUrl, caseItem);
+};
+
+const buildOpinionPdfCandidatePaths = (
+  _opinionUrl?: string | null,
+  caseItem?: CaseItem | null,
+) => {
+  const court = normalizeCourtCode(caseItem?.court);
+  const citationInfo = court === "coa" ? parseNy3dCitation(caseItem?.ny3dCite ?? caseItem?.citation) : null;
+  if (citationInfo) {
+    return [`coa/ny3d/${citationInfo.volumeDir}/${citationInfo.filePrefix}.pdf`];
+  }
+
+  return [];
 };
 
 export const buildOpinionHtmlCandidateUrls = (

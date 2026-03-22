@@ -1,0 +1,721 @@
+[
+  {
+    "volume": "1NY3d",
+    "sourcePdf": "1NY3d.pdf",
+    "totalPages": 705,
+    "decisions": {
+      "startPage": 53,
+      "endPage": 548,
+      "pageCount": 496,
+      "outputFile": "1NY3d_Decisions.pdf"
+    },
+    "memoranda": {
+      "startPage": 559,
+      "endPage": 572,
+      "pageCount": 14,
+      "outputFile": "1NY3d_Memoranda.pdf"
+    }
+  },
+  {
+    "volume": "2NY3d",
+    "sourcePdf": "2NY3d.pdf",
+    "totalPages": 862,
+    "decisions": {
+      "startPage": 47,
+      "endPage": 718,
+      "pageCount": 672,
+      "outputFile": "2NY3d_Decisions.pdf"
+    },
+    "memoranda": {
+      "startPage": 727,
+      "endPage": 862,
+      "pageCount": 136,
+      "outputFile": "2NY3d_Memoranda.pdf"
+    }
+  },
+  {
+    "volume": "3NY3d",
+    "sourcePdf": "3NY3d.pdf",
+    "totalPages": 856,
+    "decisions": {
+      "startPage": 67,
+      "endPage": 664,
+      "pageCount": 598,
+      "outputFile": "3NY3d_Decisions.pdf"
+    },
+    "memoranda": {
+      "startPage": 677,
+      "endPage": 707,
+      "pageCount": 31,
+      "outputFile": "3NY3d_Memoranda.pdf"
+    }
+  },
+  {
+    "volume": "4NY3d",
+    "sourcePdf": "4NY3d.pdf",
+    "totalPages": 980,
+    "decisions": {
+      "startPage": 65,
+      "endPage": 754,
+      "pageCount": 690,
+      "outputFile": "4NY3d_Decisions.pdf"
+    },
+    "memoranda": {
+      "startPage": 767,
+      "endPage": 781,
+      "pageCount": 15,
+      "outputFile": "4NY3d_Memoranda.pdf"
+    }
+  },
+  {
+    "volume": "5NY3d",
+    "sourcePdf": "5NY3d.pdf",
+    "totalPages": 900,
+    "decisions": {
+      "startPage": 81,
+      "endPage": 678,
+      "pageCount": 598,
+      "outputFile": "5NY3d_Decisions.pdf"
+    },
+    "memoranda": {
+      "startPage": 697,
+      "endPage": 717,
+      "pageCount": 21,
+      "outputFile": "5NY3d_Memoranda.pdf"
+    }
+  },
+  {
+    "volume": "6NY3d",
+    "sourcePdf": "6NY3d.pdf",
+    "totalPages": 1006,
+    "decisions": {
+      "startPage": 77,
+      "endPage": 770,
+      "pageCount": 694,
+      "outputFile": "6NY3d_Decisions.pdf"
+    },
+    "memoranda": {
+      "startPage": 787,
+      "endPage": 833,
+      "pageCount": 47,
+      "outputFile": "6NY3d_Memoranda.pdf"
+    }
+  },
+  {
+    "volume": "7NY3d",
+    "sourcePdf": "7NY3d.pdf",
+    "totalPages": 1050,
+    "decisions": {
+      "startPage": 105,
+      "endPage": 774,
+      "pageCount": 670,
+      "outputFile": "7NY3d_Decisions.pdf"
+    },
+    "memoranda": {
+      "startPage": 793,
+      "endPage": 808,
+      "pageCount": 16,
+      "outputFile": "7NY3d_Memoranda.pdf"
+    }
+  },
+  {
+    "volume": "8NY3d",
+    "sourcePdf": "8NY3d.pdf",
+    "totalPages": 1108,
+    "decisions": {
+      "startPage": 79,
+      "endPage": 842,
+      "pageCount": 764,
+      "outputFile": "8NY3d_Decisions.pdf"
+    },
+    "memoranda": {
+      "startPage": 859,
+      "endPage": 1108,
+      "pageCount": 250,
+      "outputFile": "8NY3d_Memoranda.pdf"
+    }
+  },
+  {
+    "volume": "9NY3d",
+    "sourcePdf": "9NY3d.pdf",
+    "totalPages": 896,
+    "decisions": {
+      "startPage": 95,
+      "endPage": 622,
+      "pageCount": 528,
+      "outputFile": "9NY3d_Decisions.pdf"
+    },
+    "memoranda": {
+      "startPage": 643,
+      "endPage": 776,
+      "pageCount": 134,
+      "outputFile": "9NY3d_Memoranda.pdf"
+    }
+  },
+  {
+    "volume": "10NY3d",
+    "sourcePdf": "10NY3d.pdf",
+    "totalPages": 1081,
+    "decisions": {
+      "startPage": 89,
+      "endPage": 768,
+      "pageCount": 680,
+      "outputFile": "10NY3d_Decisions.pdf"
+    },
+    "memoranda": {
+      "startPage": 787,
+      "endPage": 899,
+      "pageCount": 113,
+      "outputFile": "10NY3d_Memoranda.pdf"
+    }
+  },
+  {
+    "volume": "11NY3d",
+    "sourcePdf": "11NY3d.pdf",
+    "totalPages": 949,
+    "decisions": {
+      "startPage": 79,
+      "endPage": 676,
+      "pageCount": 598,
+      "outputFile": "11NY3d_Decisions.pdf"
+    },
+    "memoranda": {
+      "startPage": 693,
+      "endPage": 941,
+      "pageCount": 249,
+      "outputFile": "11NY3d_Memoranda.pdf"
+    }
+  },
+  {
+    "volume": "12NY3d",
+    "sourcePdf": "12NY3d.pdf",
+    "totalPages": 1037,
+    "decisions": {
+      "startPage": 93,
+      "endPage": 760,
+      "pageCount": 668,
+      "outputFile": "12NY3d_Decisions.pdf"
+    },
+    "memoranda": {
+      "startPage": 777,
+      "endPage": 831,
+      "pageCount": 55,
+      "outputFile": "12NY3d_Memoranda.pdf"
+    }
+  },
+  {
+    "volume": "13NY3d",
+    "sourcePdf": "13NY3d.pdf",
+    "totalPages": 967,
+    "decisions": {
+      "startPage": 71,
+      "endPage": 676,
+      "pageCount": 606,
+      "outputFile": "13NY3d_Decisions.pdf"
+    },
+    "memoranda": {
+      "startPage": 695,
+      "endPage": 736,
+      "pageCount": 42,
+      "outputFile": "13NY3d_Memoranda.pdf"
+    }
+  },
+  {
+    "volume": "14NY3d",
+    "sourcePdf": "14NY3d.pdf",
+    "totalPages": 1005,
+    "decisions": {
+      "startPage": 61,
+      "endPage": 716,
+      "pageCount": 656,
+      "outputFile": "14NY3d_Decisions.pdf"
+    },
+    "memoranda": {
+      "startPage": 731,
+      "endPage": 1005,
+      "pageCount": 275,
+      "outputFile": "14NY3d_Memoranda.pdf"
+    }
+  },
+  {
+    "volume": "15NY3d",
+    "sourcePdf": "15NY3d.pdf",
+    "totalPages": 1071,
+    "decisions": {
+      "startPage": 77,
+      "endPage": 760,
+      "pageCount": 684,
+      "outputFile": "15NY3d_Decisions.pdf"
+    },
+    "memoranda": {
+      "startPage": 777,
+      "endPage": 969,
+      "pageCount": 193,
+      "outputFile": "15NY3d_Memoranda.pdf"
+    }
+  },
+  {
+    "volume": "16NY3d",
+    "sourcePdf": "16NY3d.pdf",
+    "totalPages": 975,
+    "decisions": {
+      "startPage": 61,
+      "endPage": 728,
+      "pageCount": 668,
+      "outputFile": "16NY3d_Decisions.pdf"
+    },
+    "memoranda": {
+      "startPage": 743,
+      "endPage": 975,
+      "pageCount": 233,
+      "outputFile": "16NY3d_Memoranda.pdf"
+    }
+  },
+  {
+    "volume": "17NY3d",
+    "sourcePdf": "17NY3d.pdf",
+    "totalPages": 1071,
+    "decisions": {
+      "startPage": 73,
+      "endPage": 758,
+      "pageCount": 686,
+      "outputFile": "17NY3d_Decisions.pdf"
+    },
+    "memoranda": {
+      "startPage": 777,
+      "endPage": 855,
+      "pageCount": 79,
+      "outputFile": "17NY3d_Memoranda.pdf"
+    }
+  },
+  {
+    "volume": "18NY3d",
+    "sourcePdf": "18NY3d.pdf",
+    "totalPages": 1113,
+    "decisions": {
+      "startPage": 65,
+      "endPage": 858,
+      "pageCount": 794,
+      "outputFile": "18NY3d_Decisions.pdf"
+    },
+    "memoranda": {
+      "startPage": 871,
+      "endPage": 1113,
+      "pageCount": 243,
+      "outputFile": "18NY3d_Memoranda.pdf"
+    }
+  },
+  {
+    "volume": "19NY3d",
+    "sourcePdf": "19NY3d.pdf",
+    "totalPages": 1193,
+    "decisions": {
+      "startPage": 79,
+      "endPage": 826,
+      "pageCount": 748,
+      "outputFile": "19NY3d_Decisions.pdf"
+    },
+    "memoranda": {
+      "startPage": 843,
+      "endPage": 987,
+      "pageCount": 145,
+      "outputFile": "19NY3d_Memoranda.pdf"
+    }
+  },
+  {
+    "volume": "20NY3d",
+    "sourcePdf": "20NY3d.pdf",
+    "totalPages": 1075,
+    "decisions": {
+      "startPage": 77,
+      "endPage": 758,
+      "pageCount": 682,
+      "outputFile": "20NY3d_Decisions.pdf"
+    },
+    "memoranda": {
+      "startPage": 773,
+      "endPage": 992,
+      "pageCount": 220,
+      "outputFile": "20NY3d_Memoranda.pdf"
+    }
+  },
+  {
+    "volume": "21NY3d",
+    "sourcePdf": "21NY3d.pdf",
+    "totalPages": 1125,
+    "decisions": {
+      "startPage": 87,
+      "endPage": 838,
+      "pageCount": 752,
+      "outputFile": "21NY3d_Decisions.pdf"
+    },
+    "memoranda": {
+      "startPage": 855,
+      "endPage": 1125,
+      "pageCount": 271,
+      "outputFile": "21NY3d_Memoranda.pdf"
+    }
+  },
+  {
+    "volume": "22NY3d",
+    "sourcePdf": "22NY3d.pdf",
+    "totalPages": 1337,
+    "decisions": {
+      "startPage": 73,
+      "endPage": 918,
+      "pageCount": 846,
+      "outputFile": "22NY3d_Decisions.pdf"
+    },
+    "memoranda": {
+      "startPage": 935,
+      "endPage": 1097,
+      "pageCount": 163,
+      "outputFile": "22NY3d_Memoranda.pdf"
+    }
+  },
+  {
+    "volume": "23NY3d",
+    "sourcePdf": "23NY3d.pdf",
+    "totalPages": 1183,
+    "decisions": {
+      "startPage": 59,
+      "endPage": 958,
+      "pageCount": 900,
+      "outputFile": "23NY3d_Decisions.pdf"
+    },
+    "memoranda": {
+      "startPage": 969,
+      "endPage": 1183,
+      "pageCount": 215,
+      "outputFile": "23NY3d_Memoranda.pdf"
+    }
+  },
+  {
+    "volume": "24NY3d",
+    "sourcePdf": "24NY3d.pdf",
+    "totalPages": 1193,
+    "decisions": {
+      "startPage": 67,
+      "endPage": 818,
+      "pageCount": 752,
+      "outputFile": "24NY3d_Decisions.pdf"
+    },
+    "memoranda": {
+      "startPage": 837,
+      "endPage": 953,
+      "pageCount": 117,
+      "outputFile": "24NY3d_Memoranda.pdf"
+    }
+  },
+  {
+    "volume": "25NY3d",
+    "sourcePdf": "25NY3d.pdf",
+    "totalPages": 1288,
+    "decisions": {
+      "startPage": 93,
+      "endPage": 914,
+      "pageCount": 822,
+      "outputFile": "25NY3d_Decisions.pdf"
+    },
+    "memoranda": {
+      "startPage": 931,
+      "endPage": 1288,
+      "pageCount": 358,
+      "outputFile": "25NY3d_Memoranda.pdf"
+    }
+  },
+  {
+    "volume": "26NY3d",
+    "sourcePdf": "26NY3d.pdf",
+    "totalPages": 1256,
+    "decisions": {
+      "startPage": 103,
+      "endPage": 936,
+      "pageCount": 834,
+      "outputFile": "26NY3d_Decisions.pdf"
+    },
+    "memoranda": {
+      "startPage": 957,
+      "endPage": 1256,
+      "pageCount": 300,
+      "outputFile": "26NY3d_Memoranda.pdf"
+    }
+  },
+  {
+    "volume": "27NY3d",
+    "sourcePdf": "27NY3d.pdf",
+    "totalPages": 1290,
+    "decisions": {
+      "startPage": 105,
+      "endPage": 944,
+      "pageCount": 840,
+      "outputFile": "27NY3d_Decisions.pdf"
+    },
+    "memoranda": {
+      "startPage": 959,
+      "endPage": 1160,
+      "pageCount": 202,
+      "outputFile": "27NY3d_Memoranda.pdf"
+    }
+  },
+  {
+    "volume": "28NY3d",
+    "sourcePdf": "28NY3d.pdf",
+    "totalPages": 1184,
+    "decisions": {
+      "startPage": 81,
+      "endPage": 838,
+      "pageCount": 758,
+      "outputFile": "28NY3d_Decisions.pdf"
+    },
+    "memoranda": {
+      "startPage": 855,
+      "endPage": 1184,
+      "pageCount": 330,
+      "outputFile": "28NY3d_Memoranda.pdf"
+    }
+  },
+  {
+    "volume": "29NY3d",
+    "sourcePdf": "29NY3d.pdf",
+    "error": "Stream has ended unexpectedly"
+  },
+  {
+    "volume": "30NY3d",
+    "sourcePdf": "30NY3d.pdf",
+    "totalPages": 1091,
+    "decisions": {
+      "startPage": 69,
+      "endPage": 830,
+      "pageCount": 762,
+      "outputFile": "30NY3d_Decisions.pdf"
+    },
+    "memoranda": {
+      "startPage": 845,
+      "endPage": 1091,
+      "pageCount": 247,
+      "outputFile": "30NY3d_Memoranda.pdf"
+    }
+  },
+  {
+    "volume": "31NY3d",
+    "sourcePdf": "31NY3d.pdf",
+    "totalPages": 1115,
+    "decisions": {
+      "startPage": 71,
+      "endPage": 766,
+      "pageCount": 696,
+      "outputFile": "31NY3d_Decisions.pdf"
+    },
+    "memoranda": {
+      "startPage": 781,
+      "endPage": 866,
+      "pageCount": 86,
+      "outputFile": "31NY3d_Memoranda.pdf"
+    }
+  },
+  {
+    "volume": "32NY3d",
+    "sourcePdf": "32NY3d.pdf",
+    "totalPages": 1141,
+    "decisions": {
+      "startPage": 103,
+      "endPage": 782,
+      "pageCount": 680,
+      "outputFile": "32NY3d_Decisions.pdf"
+    },
+    "memoranda": {
+      "startPage": 803,
+      "endPage": 1078,
+      "pageCount": 276,
+      "outputFile": "32NY3d_Memoranda.pdf"
+    }
+  },
+  {
+    "volume": "33NY3d",
+    "sourcePdf": "33NY3d.pdf",
+    "totalPages": 967,
+    "decisions": {
+      "startPage": 79,
+      "endPage": 700,
+      "pageCount": 622,
+      "outputFile": "33NY3d_Decisions.pdf"
+    },
+    "memoranda": {
+      "startPage": 715,
+      "endPage": 967,
+      "pageCount": 253,
+      "outputFile": "33NY3d_Memoranda.pdf"
+    }
+  },
+  {
+    "volume": "34NY3d",
+    "sourcePdf": "34NY3d.pdf",
+    "totalPages": 1071,
+    "decisions": {
+      "startPage": 73,
+      "endPage": 736,
+      "pageCount": 664,
+      "outputFile": "34NY3d_Decisions.pdf"
+    },
+    "memoranda": {
+      "startPage": 751,
+      "endPage": 752,
+      "pageCount": 2,
+      "outputFile": "34NY3d_Memoranda.pdf"
+    }
+  },
+  {
+    "volume": "35NY3d",
+    "sourcePdf": "35NY3d.pdf",
+    "totalPages": 949,
+    "decisions": {
+      "startPage": 75,
+      "endPage": 696,
+      "pageCount": 622,
+      "outputFile": "35NY3d_Decisions.pdf"
+    },
+    "memoranda": {
+      "startPage": 717,
+      "endPage": 949,
+      "pageCount": 233,
+      "outputFile": "35NY3d_Memoranda.pdf"
+    }
+  },
+  {
+    "volume": "36NY3d",
+    "sourcePdf": "36NY3d.pdf",
+    "totalPages": 927,
+    "decisions": {
+      "startPage": 71,
+      "endPage": 682,
+      "pageCount": 612,
+      "outputFile": "36NY3d_Decisions.pdf"
+    },
+    "memoranda": {
+      "startPage": 697,
+      "endPage": 927,
+      "pageCount": 231,
+      "outputFile": "36NY3d_Memoranda.pdf"
+    }
+  },
+  {
+    "volume": "37NY3d",
+    "sourcePdf": "37NY3d.pdf",
+    "totalPages": 1089,
+    "decisions": {
+      "startPage": 103,
+      "endPage": 724,
+      "pageCount": 622,
+      "outputFile": "37NY3d_Decisions.pdf"
+    },
+    "memoranda": {
+      "startPage": 745,
+      "endPage": 809,
+      "pageCount": 65,
+      "outputFile": "37NY3d_Memoranda.pdf"
+    }
+  },
+  {
+    "volume": "38NY3d",
+    "sourcePdf": "38NY3d.pdf",
+    "totalPages": 1054,
+    "decisions": {
+      "startPage": 77,
+      "endPage": 740,
+      "pageCount": 664,
+      "outputFile": "38NY3d_Decisions.pdf"
+    },
+    "memoranda": {
+      "startPage": 755,
+      "endPage": 777,
+      "pageCount": 23,
+      "outputFile": "38NY3d_Memoranda.pdf"
+    }
+  },
+  {
+    "volume": "39NY3d",
+    "sourcePdf": "39NY3d.pdf",
+    "totalPages": 886,
+    "decisions": {
+      "startPage": 61,
+      "endPage": 578,
+      "pageCount": 518,
+      "outputFile": "39NY3d_Decisions.pdf"
+    },
+    "memoranda": {
+      "startPage": 595,
+      "endPage": 886,
+      "pageCount": 292,
+      "outputFile": "39NY3d_Memoranda.pdf"
+    }
+  },
+  {
+    "volume": "40NY3d",
+    "sourcePdf": "40NY3d.pdf",
+    "totalPages": 844,
+    "decisions": {
+      "startPage": 69,
+      "endPage": 624,
+      "pageCount": 556,
+      "outputFile": "40NY3d_Decisions.pdf"
+    },
+    "memoranda": {
+      "startPage": 635,
+      "endPage": 658,
+      "pageCount": 24,
+      "outputFile": "40NY3d_Memoranda.pdf"
+    }
+  },
+  {
+    "volume": "41NY3d",
+    "sourcePdf": "41NY3d.pdf",
+    "totalPages": 854,
+    "decisions": {
+      "startPage": 41,
+      "endPage": 700,
+      "pageCount": 660,
+      "outputFile": "41NY3d_Decisions.pdf"
+    },
+    "memoranda": {
+      "startPage": 713,
+      "endPage": 854,
+      "pageCount": 142,
+      "outputFile": "41NY3d_Memoranda.pdf"
+    }
+  },
+  {
+    "volume": "42NY3d",
+    "sourcePdf": "42NY3d.pdf",
+    "totalPages": 1038,
+    "decisions": {
+      "startPage": 51,
+      "endPage": 814,
+      "pageCount": 764,
+      "outputFile": "42NY3d_Decisions.pdf"
+    },
+    "memoranda": {
+      "startPage": 829,
+      "endPage": 1038,
+      "pageCount": 210,
+      "outputFile": "42NY3d_Memoranda.pdf"
+    }
+  },
+  {
+    "volume": "43NY3d",
+    "sourcePdf": "43NY3d.pdf",
+    "totalPages": 830,
+    "decisions": {
+      "startPage": 45,
+      "endPage": 654,
+      "pageCount": 610,
+      "outputFile": "43NY3d_Decisions.pdf"
+    },
+    "memoranda": {
+      "startPage": 663,
+      "endPage": 680,
+      "pageCount": 18,
+      "outputFile": "43NY3d_Memoranda.pdf"
+    }
+  }
+]

@@ -1,6 +1,10 @@
 import type { CaseItem } from "../types";
 import {
+  buildLocalOpinionJsonCandidatePaths,
+  buildLocalOpinionPdfCandidatePaths,
   buildLocalOpinionDocumentCandidatePaths,
+  buildOpinionJsonCandidateUrls,
+  buildOpinionPdfCandidateUrls,
   buildOpinionDocumentCandidateUrls,
 } from "../utils/caseUtils";
 import type { OpinionDocument } from "./types";
@@ -90,6 +94,30 @@ const fetchOpinionDocumentFromUrl = async (url: string): Promise<OpinionDocument
   return { kind: "document", document: normalizeOpinionDocument(payload), sourceUrl: url };
 };
 
+const fetchOpinionJsonFromUrl = async (
+  url: string,
+): Promise<{ document: OpinionDocument; sourceUrl: string }> => {
+  const response = await fetch(url);
+  if (!response.ok) {
+    throw new Error(String(response.status));
+  }
+
+  const payload = (await response.json()) as unknown;
+  if (!isOpinionDocument(payload)) {
+    throw new Error("invalid-json");
+  }
+
+  return { document: normalizeOpinionDocument(payload), sourceUrl: url };
+};
+
+const fetchOpinionPdfFromUrl = async (url: string): Promise<string> => {
+  const response = await fetch(url, { method: "HEAD" });
+  if (!response.ok) {
+    throw new Error(String(response.status));
+  }
+  return url;
+};
+
 const buildLocalCorpusUrl = (relativePath: string) => {
   const normalizedRoot = LOCAL_OPINIONS_ROOT_PATH.endsWith("/")
     ? LOCAL_OPINIONS_ROOT_PATH
@@ -113,6 +141,88 @@ const loadLocalCorpusDocument = async (
   }
 
   return null;
+};
+
+const loadLocalCorpusJsonDocument = async (
+  opinionUrl?: string | null,
+  caseItem?: CaseItem | null,
+): Promise<{ document: OpinionDocument; sourceUrl: string } | null> => {
+  if (!import.meta.env.DEV) return null;
+
+  const candidatePaths = buildLocalOpinionJsonCandidatePaths(opinionUrl, caseItem);
+  for (const candidatePath of candidatePaths) {
+    try {
+      return await fetchOpinionJsonFromUrl(buildLocalCorpusUrl(candidatePath));
+    } catch {
+      continue;
+    }
+  }
+
+  return null;
+};
+
+const loadLocalCorpusPdfUrl = async (
+  opinionUrl?: string | null,
+  caseItem?: CaseItem | null,
+): Promise<string | null> => {
+  if (!import.meta.env.DEV) return null;
+
+  const candidatePaths = buildLocalOpinionPdfCandidatePaths(opinionUrl, caseItem);
+  for (const candidatePath of candidatePaths) {
+    try {
+      return await fetchOpinionPdfFromUrl(buildLocalCorpusUrl(candidatePath));
+    } catch {
+      continue;
+    }
+  }
+
+  return null;
+};
+
+export const loadOpinionJsonDocument = async (
+  caseItem?: CaseItem | null,
+): Promise<{ document: OpinionDocument; sourceUrl: string }> => {
+  const localCorpusResult = await loadLocalCorpusJsonDocument(caseItem?.opinionUrl, caseItem);
+  if (localCorpusResult) return localCorpusResult;
+
+  const candidateUrls = buildOpinionJsonCandidateUrls(caseItem?.opinionUrl, caseItem);
+  let lastError = "";
+
+  for (const candidateUrl of candidateUrls) {
+    try {
+      return await fetchOpinionJsonFromUrl(candidateUrl);
+    } catch (error) {
+      lastError = error instanceof Error ? error.message : String(error);
+    }
+  }
+
+  if (!candidateUrls.length) {
+    throw new Error("No Miranda JSON URL is available for this case.");
+  }
+
+  throw new Error(`Failed to load Miranda JSON${lastError ? ` (${lastError})` : ""}`);
+};
+
+export const loadOpinionPdfUrl = async (caseItem?: CaseItem | null): Promise<string> => {
+  const localCorpusResult = await loadLocalCorpusPdfUrl(caseItem?.opinionUrl, caseItem);
+  if (localCorpusResult) return localCorpusResult;
+
+  const candidateUrls = buildOpinionPdfCandidateUrls(caseItem?.opinionUrl, caseItem);
+  let lastError = "";
+
+  for (const candidateUrl of candidateUrls) {
+    try {
+      return await fetchOpinionPdfFromUrl(candidateUrl);
+    } catch (error) {
+      lastError = error instanceof Error ? error.message : String(error);
+    }
+  }
+
+  if (!candidateUrls.length) {
+    throw new Error("No opinion PDF URL is available for this case.");
+  }
+
+  throw new Error(`Failed to load opinion PDF${lastError ? ` (${lastError})` : ""}`);
 };
 
 export const loadOpinionDocument = async (

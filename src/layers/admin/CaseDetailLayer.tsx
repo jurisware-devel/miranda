@@ -3,10 +3,14 @@ import { Alert, Button, Input, Select, Spin, Tabs, message } from "antd";
 import { useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import { client } from "../../core/amplifyClient";
-import { loadOpinionDocument } from "../../core/opinions/loadOpinionDocument";
+import {
+  loadOpinionDocument,
+  loadOpinionPdfUrl,
+} from "../../core/opinions/loadOpinionDocument";
 import { loadOpinionHtmlSource } from "../../core/opinions/loadOpinionHtmlSource";
 import type { OpinionDocument } from "../../core/opinions/types";
 import OpinionDocumentView from "../../components/shared/opinion/OpinionDocumentView";
+import OpinionPdfView from "../../components/shared/opinion/OpinionPdfView";
 import type {
   CaseItem,
   CasePhaseItem,
@@ -16,8 +20,6 @@ import type {
 import {
   buildOpinionStorageKey,
   extractOpinionStorageKeyFromUrl,
-  formatCaseCitationLine,
-  formatOpinionSubtitle,
   getCourtLongLabel,
 } from "../../core/utils/caseUtils";
 import { preserveNumericReferencePrefixes } from "../../core/utils/opinionMarkdown";
@@ -147,12 +149,6 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
   const [phaseDraftIds, setPhaseDraftIds] = useState<string[]>([]);
   const [initialPhaseIds, setInitialPhaseIds] = useState<string[]>([]);
   const renderedOpinionMarkdown = preserveNumericReferencePrefixes(opinionMarkdown);
-  const pdfPublishedSubtitle = formatOpinionSubtitle({
-    publicationStatus: opinionDocument?.source?.publicationStatus,
-    officialCitation: opinionDocument?.header?.officialCitation ?? caseItem?.ny3dCite ?? caseItem?.citation,
-    slipOpinion: opinionDocument?.header?.slipOpinion ?? caseItem?.slipOp,
-    decisionDate: opinionDocument?.header?.decisionDate ?? caseItem?.decisionDate,
-  });
   const prettyOpinionJson = useMemo(() => {
     if (!opinionDocument) return "";
     return JSON.stringify(opinionDocument, null, 2);
@@ -261,15 +257,20 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
         setOpinionSavedAt(null);
         setLoadedOpinionKey("");
 
-        const [result, htmlResult] = await Promise.all([
+        const [result, htmlResult, pdfResult] = await Promise.all([
           loadOpinionDocument(currentCase.caseId, currentCase),
           loadOpinionHtmlSource(currentCase).catch(() => null),
+          loadOpinionPdfUrl(currentCase).catch(() => null),
         ]);
         if (!active) return;
 
         if (htmlResult) {
           setOpinionHtml(htmlResult.html);
           setOpinionHtmlSourceUrl(htmlResult.sourceUrl);
+        }
+
+        if (pdfResult) {
+          setOpinionPdfUrl(pdfResult);
         }
 
         if (result.kind === "pdf") {
@@ -619,6 +620,26 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
                     ),
                   },
                   {
+                    key: "pdf",
+                    label: "PDF",
+                    children: opinionPdfUrl ? (
+                      <div className="case-detail__opinion-tab-panel">
+                        <OpinionPdfView
+                          caseItem={caseItem}
+                          courtsById={courtsById}
+                          opinionPdfUrl={opinionPdfUrl}
+                          opinionDocument={opinionDocument}
+                        />
+                      </div>
+                    ) : (
+                      <Alert
+                        type="info"
+                        showIcon
+                        message="A PDF version is not available for this opinion."
+                      />
+                    ),
+                  },
+                  {
                     key: "html",
                     label: "HTML",
                     children: opinionHtml ? (
@@ -734,37 +755,12 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
                 </pre>
               </section>
             ) : opinionPdfUrl ? (
-              <div className="case-detail__pdf-viewer">
-                <div className="case-detail__pdf-header">
-                  <h1 className="case-detail__pdf-title">
-                    {caseItem?.caseName?.trim() || "Untitled Case"}
-                  </h1>
-                  {pdfPublishedSubtitle ? (
-                    <p className="case-detail__pdf-subtitle">{pdfPublishedSubtitle}</p>
-                  ) : null}
-                  <p className="case-detail__pdf-meta">{formatCaseCitationLine(caseItem)}</p>
-                  <p className="case-detail__pdf-court">
-                    {getCourtLongLabel(caseItem?.court, courtsById)}
-                  </p>
-                </div>
-                <div className="case-detail__pdf-actions">
-                  <a
-                    className="case-detail__pdf-link"
-                    href={opinionPdfUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    View PDF
-                  </a>
-                </div>
-                <div className="case-detail__pdf-frame-wrap">
-                  <iframe
-                    title="Opinion PDF"
-                    src={opinionPdfUrl}
-                    className="case-detail__pdf-frame"
-                  />
-                </div>
-              </div>
+              <OpinionPdfView
+                caseItem={caseItem}
+                courtsById={courtsById}
+                opinionPdfUrl={opinionPdfUrl}
+                opinionDocument={opinionDocument}
+              />
             ) : (
               <>
                 <div

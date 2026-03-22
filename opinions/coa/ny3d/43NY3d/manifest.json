@@ -1,0 +1,172 @@
+[
+  {
+    "caseId": "2024_05178",
+    "caseName": "People ex rel. Neville v Toulon",
+    "citation": "43 NY3d 1",
+    "status": "skipped",
+    "reason": "No PDF page matched the reporter start page."
+  },
+  {
+    "caseId": "2024_05244",
+    "caseName": "People v Baque",
+    "citation": "43 NY3d 26",
+    "reporterStartPage": 26,
+    "reporterEndPage": 42,
+    "pdfStartPage": 70,
+    "pdfEndPage": 86,
+    "pageCount": 17,
+    "outputFile": "43NY3d26.pdf",
+    "status": "written"
+  },
+  {
+    "caseId": "2024_05873",
+    "caseName": "People v Shader",
+    "citation": "43 NY3d 129",
+    "reporterStartPage": 129,
+    "reporterEndPage": 151,
+    "pdfStartPage": 173,
+    "pdfEndPage": 195,
+    "pageCount": 23,
+    "outputFile": "43NY3d129.pdf",
+    "status": "written"
+  },
+  {
+    "caseId": "2024_05874",
+    "caseName": "People v Vaughn",
+    "citation": "43 NY3d 190",
+    "reporterStartPage": 190,
+    "reporterEndPage": 227,
+    "pdfStartPage": 234,
+    "pdfEndPage": 271,
+    "pageCount": 38,
+    "outputFile": "43NY3d190.pdf",
+    "status": "written"
+  },
+  {
+    "caseId": "2024_06384",
+    "caseName": "People v Rufus",
+    "citation": "43 NY3d 268",
+    "reporterStartPage": 268,
+    "reporterEndPage": 274,
+    "pdfStartPage": 312,
+    "pdfEndPage": 318,
+    "pageCount": 7,
+    "outputFile": "43NY3d268.pdf",
+    "status": "written"
+  },
+  {
+    "caseId": "2025_00123",
+    "caseName": "People v Brisman",
+    "citation": "43 NY3d 322",
+    "reporterStartPage": 322,
+    "reporterEndPage": 336,
+    "pdfStartPage": 366,
+    "pdfEndPage": 380,
+    "pageCount": 15,
+    "outputFile": "43NY3d322.pdf",
+    "status": "written"
+  },
+  {
+    "caseId": "2025_01011",
+    "caseName": "People v Fredericks",
+    "citation": "43 NY3d 551",
+    "reporterStartPage": 551,
+    "reporterEndPage": 566,
+    "pdfStartPage": 595,
+    "pdfEndPage": 610,
+    "pageCount": 16,
+    "outputFile": "43NY3d551.pdf",
+    "status": "written"
+  },
+  {
+    "caseId": "2025_01673",
+    "caseName": "People v Moss",
+    "citation": "43 NY3d 584",
+    "reporterStartPage": 584,
+    "reporterEndPage": 590,
+    "pdfStartPage": 628,
+    "pdfEndPage": 634,
+    "pageCount": 7,
+    "outputFile": "43NY3d584.pdf",
+    "status": "written"
+  },
+  {
+    "caseId": "2025_00904",
+    "caseName": "People v Hernandez",
+    "citation": "43 NY3d 591",
+    "status": "skipped",
+    "reason": "No PDF page matched the next reporter start page 901."
+  },
+  {
+    "caseId": "2024_06238",
+    "caseName": "People v Lawson",
+    "citation": "43 NY3d 939",
+    "reporterStartPage": 939,
+    "reporterEndPage": 942,
+    "pdfStartPage": 677,
+    "pdfEndPage": 680,
+    "pageCount": 4,
+    "outputFile": "43NY3d939.pdf",
+    "status": "written"
+  },
+  {
+    "caseId": "2025_00184",
+    "caseName": "People v Howard",
+    "citation": "43 NY3d 967",
+    "reporterStartPage": 967,
+    "reporterEndPage": 974,
+    "pdfStartPage": 705,
+    "pdfEndPage": 712,
+    "pageCount": 8,
+    "outputFile": "43NY3d967.pdf",
+    "status": "written"
+  },
+  {
+    "caseId": "2025_00804",
+    "caseName": "People v Howard",
+    "citation": "43 NY3d 1028",
+    "reporterStartPage": 1028,
+    "reporterEndPage": 1029,
+    "pdfStartPage": 766,
+    "pdfEndPage": 767,
+    "pageCount": 2,
+    "outputFile": "43NY3d1028.pdf",
+    "status": "written"
+  },
+  {
+    "caseId": "2025_00901",
+    "caseName": "People v Williams",
+    "citation": "43 NY3d 1030",
+    "reporterStartPage": 1030,
+    "reporterEndPage": 1043,
+    "pdfStartPage": 768,
+    "pdfEndPage": 781,
+    "pageCount": 14,
+    "outputFile": "43NY3d1030.pdf",
+    "status": "written"
+  },
+  {
+    "caseId": "2025_01563",
+    "caseName": "People v Padilla-Zuniga",
+    "citation": "43 NY3d 1049",
+    "reporterStartPage": 1049,
+    "reporterEndPage": 1051,
+    "pdfStartPage": 787,
+    "pdfEndPage": 789,
+    "pageCount": 3,
+    "outputFile": "43NY3d1049.pdf",
+    "status": "written"
+  },
+  {
+    "caseId": "2025_02102",
+    "caseName": "People v Clark",
+    "citation": "43 NY3d 1052",
+    "reporterStartPage": 1052,
+    "reporterEndPage": 1052,
+    "pdfStartPage": 790,
+    "pdfEndPage": 790,
+    "pageCount": 1,
+    "outputFile": "43NY3d1052.pdf",
+    "status": "written"
+  }
+]

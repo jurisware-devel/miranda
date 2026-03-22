@@ -3,8 +3,12 @@ import assert from "node:assert/strict";
 import {
   buildLocalOpinionHtmlCandidatePaths,
   buildLocalOpinionDocumentCandidatePaths,
+  buildLocalOpinionJsonCandidatePaths,
+  buildLocalOpinionPdfCandidatePaths,
   buildOpinionHtmlCandidateUrls,
   buildOpinionDocumentCandidateUrls,
+  buildOpinionJsonCandidateUrls,
+  buildOpinionPdfCandidateUrls,
 } from "../../src/core/utils/caseUtils";
 import type { CaseItem } from "../../src/core/types";
 
@@ -60,6 +64,82 @@ test("buildLocalOpinionDocumentCandidatePaths matches the merged opinions layout
     "coa/2026/2026_00963.pdf",
     "coa/2026/2026_00963.txt",
   ]);
+});
+
+test("buildOpinionJsonCandidateUrls targets the Miranda JSON artifact only", () => {
+  const caseItem = {
+    caseId: "2026_00963",
+    court: "coa",
+    decisionDate: "2026-02-25",
+    opinionUrl: "2026/2026_00963",
+  } as CaseItem;
+
+  const urls = buildOpinionJsonCandidateUrls(caseItem.opinionUrl, caseItem);
+
+  assert.deepEqual(urls, [
+    "https://opinions.jurisware.com/coa/2026/2026_00963.json",
+  ]);
+});
+
+test("buildLocalOpinionJsonCandidatePaths targets the local Miranda JSON artifact only", () => {
+  const caseItem = {
+    caseId: "2026_00963",
+    court: "coa",
+    decisionDate: "2026-02-25",
+    opinionUrl: "2026/2026_00963",
+  } as CaseItem;
+
+  const paths = buildLocalOpinionJsonCandidatePaths(caseItem.opinionUrl, caseItem);
+
+  assert.deepEqual(paths, [
+    "coa/2026/2026_00963.json",
+  ]);
+});
+
+test("buildOpinionPdfCandidateUrls targets published CoA PDFs by compact NY3d citation filename", () => {
+  const caseItem = {
+    caseId: "2026_00963",
+    court: "coa",
+    decisionDate: "2026-02-25",
+    ny3dCite: "42 NY3d 973",
+    opinionUrl: "2026/2026_00963",
+  } as CaseItem;
+
+  const urls = buildOpinionPdfCandidateUrls(caseItem.opinionUrl, caseItem);
+
+  assert.deepEqual(urls, [
+    "https://opinions.jurisware.com/coa/ny3d/42NY3d/42NY3d973.pdf",
+  ]);
+});
+
+test("buildLocalOpinionPdfCandidatePaths targets published CoA PDFs by compact NY3d citation filename", () => {
+  const caseItem = {
+    caseId: "2026_00963",
+    court: "coa",
+    decisionDate: "2026-02-25",
+    ny3dCite: "42 NY3d 973",
+    opinionUrl: "2026/2026_00963",
+  } as CaseItem;
+
+  const paths = buildLocalOpinionPdfCandidatePaths(caseItem.opinionUrl, caseItem);
+
+  assert.deepEqual(paths, [
+    "coa/ny3d/42NY3d/42NY3d973.pdf",
+  ]);
+});
+
+test("buildOpinionPdfCandidateUrls returns no candidates when there is no NY3d citation", () => {
+  const caseItem = {
+    caseId: "2026_00963",
+    court: "coa",
+    caseName: "People v. Dufresne",
+    decisionDate: "2026-02-25",
+    opinionUrl: "2026/2026_00963",
+  } as CaseItem;
+
+  const urls = buildOpinionPdfCandidateUrls(caseItem.opinionUrl, caseItem);
+
+  assert.deepEqual(urls, []);
 });
 
 test("buildOpinionHtmlCandidateUrls points at sibling Stanbook source HTML", () => {
