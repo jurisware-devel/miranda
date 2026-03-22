@@ -49,6 +49,16 @@ public final class HtmlSourceLoader {
     private static final Pattern OFFICIAL_PAGE_MARKER_PATTERN = Pattern.compile(
         "\\{\\*\\*(?<citation>\\d+\\s+(?:NY2d|NY3d|AD2d|AD3d|Misc(?:\\s+2d|\\s+3d)?)\\s+at\\s+\\d+)\\}"
     );
+    private static final Pattern AVAILABLE_AT_URL_PATTERN = Pattern.compile(
+        "(?i)(?<prefix>\\bavailable\\s+at\\s+)(?<url>https?://\\S+)"
+    );
+    private static final Pattern STRUCTURAL_OPINION_HEADING_PATTERN = Pattern.compile(
+        "^(?<role>.+?)\\s+opinion\\s+by\\s+(?<author>.+?)\\.?$",
+        Pattern.CASE_INSENSITIVE
+    );
+    private static final Pattern LEADING_ROLE_ANNOTATION_PATTERN = Pattern.compile(
+        "^\\((?<role>[^)]+)\\)\\.(?<rest>\\s*.*)$"
+    );
 
     public SourceDocument load(Path path, String rawHtml) {
         Document document = Jsoup.parse(rawHtml);
@@ -137,7 +147,7 @@ public final class HtmlSourceLoader {
             return List.of();
         }
 
-        Elements contentNodes = body.select("sc, p, blockquote, div[align=center]");
+        Elements contentNodes = body.select("sc, p, blockquote, div[align=center], conopnjd, disopjd");
         boolean inOpinion = false;
         for (Element element : contentNodes) {
             String tag = element.tagName();
@@ -153,6 +163,14 @@ public final class HtmlSourceLoader {
             }
             if (isFootnotesHeading(element)) {
                 break;
+            }
+
+            if (isStructuralOpinionHeadingNode(element)) {
+                String authorMarker = structuralOpinionHeadingToAuthorMarker(element);
+                if (authorMarker != null) {
+                    addOpinionBlock(blocks, accumulator, HtmlOpinionBlockType.AUTHOR_MARKER, authorMarker, null);
+                }
+                continue;
             }
 
             if ("p".equalsIgnoreCase(tag) || "blockquote".equalsIgnoreCase(tag)) {
@@ -314,6 +332,11 @@ public final class HtmlSourceLoader {
         return normalizeText(renderInline(element)).equals("Footnotes");
     }
 
+    private boolean isStructuralOpinionHeadingNode(Element element) {
+        String tag = element.tagName();
+        return "conopnjd".equalsIgnoreCase(tag) || "disopjd".equalsIgnoreCase(tag);
+    }
+
     private boolean isOpinionStartNode(Element element) {
         if ("sc".equalsIgnoreCase(element.tagName())) {
             return true;
@@ -347,14 +370,22 @@ public final class HtmlSourceLoader {
             return false;
         }
 
+        Matcher roleAnnotationMatcher = LEADING_ROLE_ANNOTATION_PATTERN.matcher(remainder);
+        if (roleAnnotationMatcher.matches() && !authorLine.contains("(")) {
+            authorLine = authorLine + " (" + roleAnnotationMatcher.group("role").trim() + ").";
+            remainder = roleAnnotationMatcher.group("rest").trim();
+        }
+
         addOpinionBlock(blocks, accumulator, HtmlOpinionBlockType.AUTHOR_MARKER, authorLine, null);
-        addOpinionBlock(
-            blocks,
-            accumulator,
-            HtmlOpinionBlockType.PARAGRAPH,
-            remainder,
-            trimLeadingInlineText(inlines, inlineTrimLength(authorLine))
-        );
+        if (!remainder.isEmpty()) {
+            addOpinionBlock(
+                blocks,
+                accumulator,
+                HtmlOpinionBlockType.PARAGRAPH,
+                remainder,
+                trimLeadingInlineText(inlines, inlineTrimLength(authorLine))
+            );
+        }
         return true;
     }
 
@@ -410,6 +441,25 @@ public final class HtmlSourceLoader {
             }
         }
         return line.toString();
+    }
+
+    private String structuralOpinionHeadingToAuthorMarker(Element element) {
+        String normalized = normalizeText(renderInline(element));
+        if (normalized.isEmpty()) {
+            return null;
+        }
+
+        Matcher matcher = STRUCTURAL_OPINION_HEADING_PATTERN.matcher(normalized);
+        if (!matcher.matches()) {
+            return null;
+        }
+
+        String role = matcher.group("role").trim().toLowerCase();
+        String author = matcher.group("author").trim().replaceFirst("\\.$", "");
+        if (author.isEmpty()) {
+            return null;
+        }
+        return author + " (" + role + ").";
     }
 
     private void addHeaderLine(List<HtmlHeaderLine> headerLines, LineAccumulator accumulator, String rendered) {
@@ -569,6 +619,7 @@ public final class HtmlSourceLoader {
         List<InlineNode> children = element.childNodes().stream()
             .flatMap(child -> extractInlineNodes(child).stream())
             .toList();
+        children = linkifyAvailableAtUrls(children);
         if (children.isEmpty()) {
             return List.of();
         }
@@ -607,6 +658,150 @@ public final class HtmlSourceLoader {
             }
         }
         return nodes.isEmpty() ? List.of() : List.copyOf(nodes);
+    }
+
+    private List<InlineNode> linkifyAvailableAtUrls(List<InlineNode> sourceNodes) {
+        if (sourceNodes.isEmpty()) {
+            return List.of();
+        }
+
+        List<InlineNode> nodes = new ArrayList<>();
+        int index = 0;
+        String overrideText = null;
+
+        while (index < sourceNodes.size()) {
+            InlineNode node = sourceNodes.get(index);
+            if (!(node instanceof TextInline) && overrideText == null) {
+                nodes.add(node);
+                index++;
+                continue;
+            }
+
+            String text = overrideText != null ? overrideText : ((TextInline) node).text();
+            Matcher matcher = AVAILABLE_AT_URL_PATTERN.matcher(text);
+            if (!matcher.find()) {
+                if (!text.isEmpty()) {
+                    nodes.add(new TextInline(text));
+                }
+                overrideText = null;
+                index++;
+                continue;
+            }
+
+            if (matcher.start() > 0) {
+                nodes.add(new TextInline(text.substring(0, matcher.start())));
+            }
+
+            nodes.add(new TextInline(matcher.group("prefix")));
+            UrlCollection collection = collectAvailableAtUrl(sourceNodes, index, text, matcher.start("url"));
+            if (!collection.href().isEmpty() && !collection.children().isEmpty()) {
+                nodes.add(new LinkInline(collection.href(), collection.children()));
+            } else {
+                nodes.add(new TextInline(text.substring(matcher.start("url"), matcher.end())));
+            }
+
+            overrideText = collection.trailingText();
+            index = collection.resumeIndex();
+        }
+
+        return nodes.isEmpty() ? List.of() : List.copyOf(nodes);
+    }
+
+    private UrlCollection collectAvailableAtUrl(List<InlineNode> sourceNodes, int startIndex, String startText, int startOffset) {
+        List<InlineNode> children = new ArrayList<>();
+        StringBuilder href = new StringBuilder();
+        int index = startIndex;
+        String currentText = startText;
+        int offset = startOffset;
+
+        while (true) {
+            String remaining = currentText.substring(offset);
+            int whitespaceIndex = firstWhitespaceIndex(remaining);
+            String consumed = whitespaceIndex >= 0 ? remaining.substring(0, whitespaceIndex) : remaining;
+            if (!consumed.isEmpty()) {
+                children.add(new TextInline(consumed));
+                href.append(consumed);
+            }
+            if (whitespaceIndex >= 0) {
+                return trimCollectedUrl(children, href, index, remaining.substring(whitespaceIndex));
+            }
+
+            while (true) {
+                index++;
+                if (index >= sourceNodes.size()) {
+                    return trimCollectedUrl(children, href, index, "");
+                }
+
+                InlineNode next = sourceNodes.get(index);
+                if (next instanceof PageMarkerInline pageMarkerInline) {
+                    children.add(pageMarkerInline);
+                    continue;
+                }
+                if (next instanceof TextInline nextTextInline) {
+                    currentText = nextTextInline.text();
+                    offset = 0;
+                    break;
+                }
+                return trimCollectedUrl(children, href, index, "");
+            }
+        }
+    }
+
+    private UrlCollection trimCollectedUrl(
+        List<InlineNode> children,
+        StringBuilder href,
+        int resumeIndex,
+        String trailingText
+    ) {
+        String trailing = trailingText;
+
+        while (!children.isEmpty()) {
+            InlineNode last = children.getLast();
+            if (!(last instanceof TextInline textInline) || textInline.text().isEmpty()) {
+                break;
+            }
+
+            String text = textInline.text();
+            char lastChar = text.charAt(text.length() - 1);
+            if (!isTrailingUrlPunctuation(lastChar)) {
+                break;
+            }
+
+            trailing = lastChar + trailing;
+            href.setLength(Math.max(0, href.length() - 1));
+            String shortened = text.substring(0, text.length() - 1);
+            if (shortened.isEmpty()) {
+                children.removeLast();
+            } else {
+                children.set(children.size() - 1, new TextInline(shortened));
+            }
+        }
+
+        return new UrlCollection(
+            children.isEmpty() ? List.of() : List.copyOf(children),
+            href.toString(),
+            resumeIndex,
+            trailing
+        );
+    }
+
+    private int firstWhitespaceIndex(String text) {
+        for (int index = 0; index < text.length(); index++) {
+            if (Character.isWhitespace(text.charAt(index))) {
+                return index;
+            }
+        }
+        return -1;
+    }
+
+    private boolean isTrailingUrlPunctuation(char c) {
+        return c == '.'
+            || c == ','
+            || c == ';'
+            || c == ':'
+            || c == ')'
+            || c == ']'
+            || c == '>';
     }
 
     private List<InlineNode> prependText(String prefix, List<InlineNode> inlines) {
@@ -901,6 +1096,13 @@ public final class HtmlSourceLoader {
             return new TrimResult(node == null ? null : List.of(node), remainingToTrim, trimLeadingWhitespace);
         }
     }
+
+    private record UrlCollection(
+        List<InlineNode> children,
+        String href,
+        int resumeIndex,
+        String trailingText
+    ) {}
 
     private static final class LineAccumulator {
         private final List<SourceLine> lines = new ArrayList<>();

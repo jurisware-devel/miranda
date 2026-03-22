@@ -26,8 +26,7 @@ test("OpinionDocumentView renders structured opinion content from sample JSON", 
   assert.match(html, /People v Rios/);
   assert.doesNotMatch(html, /Kathleen P\. Reardon, for appellant\./);
   assert.match(html, /<em>People v Lopez<\/em>/);
-  assert.match(html, /href="https:\/\/opinions\.jurisware\.com\/coa\/2013\/2013_07651\.htm"/);
-  assert.match(html, /TROUTMAN, J\./);
+  assert.match(html, /href="\/pub\/case\/2013_07651"/);
 });
 
 test("OpinionDocumentView renders footnote references and the footnotes panel from sample JSON", () => {
@@ -50,7 +49,6 @@ test("OpinionDocumentView does not repeat a writing title already present in the
     header: { title: "Example Case" },
     opinions: [
       {
-        label: "OPINION OF THE COURT",
         blocks: [
           {
             type: "paragraph",
@@ -67,11 +65,11 @@ test("OpinionDocumentView does not repeat a writing title already present in the
 
   const html = renderToStaticMarkup(<OpinionDocumentView document={sample} />);
 
-  assert.doesNotMatch(html, /class="opinion-writing__summary"/);
   assert.match(html, /OPINION OF THE COURT/);
+  assert.match(html, /Body text\./);
 });
 
-test("OpinionDocumentView labels a per curiam majority from author metadata", () => {
+test("OpinionDocumentView does not synthesize a per curiam heading from author metadata", () => {
   const sample: OpinionDocument = {
     header: { title: "Example Case" },
     opinions: [
@@ -100,11 +98,74 @@ test("OpinionDocumentView labels a per curiam majority from author metadata", ()
 
   const html = renderToStaticMarkup(<OpinionDocumentView document={sample} />);
 
-  assert.match(html, />Per Curiam</);
+  assert.doesNotMatch(html, />Per Curiam</);
+  assert.match(html, /Body text\./);
   assert.doesNotMatch(html, />majority</);
 });
 
-test("OpinionDocumentView does not label a generic anonymous majority as Per Curiam", () => {
+test("OpinionDocumentView synthesizes authored headings for separate concurrences and dissents", () => {
+  const sample: OpinionDocument = {
+    header: { title: "Example Case" },
+    opinions: [
+      {
+        kind: "concurrence",
+        author: "Feinman",
+        blocks: [
+          {
+            type: "paragraph",
+            inlines: [{ type: "text", text: "Concurrence text." }],
+          },
+        ],
+      },
+      {
+        kind: "dissent",
+        author: "Wilson",
+        blocks: [
+          {
+            type: "paragraph",
+            inlines: [{ type: "text", text: "Dissent text." }],
+          },
+        ],
+      },
+    ],
+  };
+
+  const html = renderToStaticMarkup(<OpinionDocumentView document={sample} />);
+
+  assert.match(html, /Feinman, J\. \(concurring\)\./);
+  assert.match(html, /Wilson, J\. \(dissenting\)\./);
+  assert.match(html, /Concurrence text\./);
+  assert.match(html, /Dissent text\./);
+});
+
+test("OpinionDocumentView does not duplicate a separate-writing heading already present in the first block", () => {
+  const sample: OpinionDocument = {
+    header: { title: "Example Case" },
+    opinions: [
+      {
+        kind: "dissent",
+        author: "Rivera",
+        blocks: [
+          {
+            type: "paragraph",
+            inlines: [{ type: "text", text: "Rivera, J. (dissenting)." }],
+          },
+          {
+            type: "paragraph",
+            inlines: [{ type: "text", text: "Body text." }],
+          },
+        ],
+      },
+    ],
+  };
+
+  const html = renderToStaticMarkup(<OpinionDocumentView document={sample} />);
+  const matches = html.match(/Rivera, J\. \(dissenting\)\./g) ?? [];
+
+  assert.equal(matches.length, 1);
+});
+
+test("OpinionDocumentView does not synthesize headings for anonymous majorities", () => {
   const sample: OpinionDocument = {
     header: { title: "Example Case" },
     opinions: [
@@ -126,7 +187,7 @@ test("OpinionDocumentView does not label a generic anonymous majority as Per Cur
   assert.match(html, /Body text\./);
 });
 
-test("OpinionDocumentView trims a trailing colon from collapsible writing labels", () => {
+test("OpinionDocumentView renders markdown italics in disposition text", () => {
   const sample: OpinionDocument = {
     header: { title: "Example Case" },
     opinions: [
@@ -141,39 +202,6 @@ test("OpinionDocumentView trims a trailing colon from collapsible writing labels
       },
       {
         kind: "dissent",
-        label: "SINGAS, J. (dissenting):",
-        blocks: [
-          {
-            type: "paragraph",
-            inlines: [{ type: "text", text: "Dissent text." }],
-          },
-        ],
-      },
-    ],
-  };
-
-  const html = renderToStaticMarkup(<OpinionDocumentView document={sample} />);
-
-  assert.match(html, />SINGAS, J\. \(dissenting\)<\/span>/);
-  assert.doesNotMatch(html, />SINGAS, J\. \(dissenting\):<\/span>/);
-});
-
-test("OpinionDocumentView renders markdown italics in writing labels and disposition text", () => {
-  const sample: OpinionDocument = {
-    header: { title: "Example Case" },
-    opinions: [
-      {
-        kind: "majority",
-        blocks: [
-          {
-            type: "paragraph",
-            inlines: [{ type: "text", text: "Majority text." }],
-          },
-        ],
-      },
-      {
-        kind: "dissent",
-        label: "*People v Suarez*, Read, J. (dissenting):",
         blocks: [
           {
             type: "paragraph",
@@ -190,17 +218,15 @@ test("OpinionDocumentView renders markdown italics in writing labels and disposi
 
   const html = renderToStaticMarkup(<OpinionDocumentView document={sample} />);
 
-  assert.match(html, /<em>People v Suarez<\/em>, Read, J\. \(dissenting\)<\/span>/);
   assert.match(html, /<em>People v Suarez<\/em>, 13 AD3d 320, reversed\./);
   assert.doesNotMatch(html, /\*People v Suarez\*/);
-  assert.doesNotMatch(html, /<em>People v Suarez<\/em>, Read, J\. \(dissenting\):<\/span>/);
 });
 
 test("OpinionDocumentView folds malformed mixed continuations into the preceding opinion", () => {
   const sample = loadSample("2026_01588.json");
   const html = renderToStaticMarkup(<OpinionDocumentView document={sample} />);
 
-  assert.match(html, />WILSON, Chief Judge \(dissenting\)</);
+  assert.match(html, /waived the right to the effective assistance of counsel/);
   assert.doesNotMatch(html, />Univ of Chicago L Rev 263/);
 });
 
@@ -208,11 +234,9 @@ test("OpinionDocumentView renders fallback memorandum body when no structured op
   const sample = loadSample("2026_01445.json");
   const html = renderToStaticMarkup(<OpinionDocumentView document={sample} />);
 
-  assert.match(html, />MEMORANDUM<\/span>/);
-  assert.doesNotMatch(html, />MEMORANDUM:<\/p>/);
+  assert.match(html, />MEMORANDUM:?<\/p>/);
   assert.match(html, /Defendant has not demonstrated a lack of strategic or other legitimate explanation/);
   assert.doesNotMatch(html, /Opinion content is not available\./);
-  assert.doesNotMatch(html, /class="opinion-writing__summary"/);
   assert.match(html, /opinion-writing__content opinion-writing__content--inline/);
 });
 
@@ -246,19 +270,18 @@ test("OpinionDocumentView reads fallback writings from top-level fallback.opinio
 
   const html = renderToStaticMarkup(<OpinionDocumentView document={sample} />);
 
-  assert.match(html, />MEMORANDUM<\/span>/);
+  assert.match(html, />MEMORANDUM<\/p>/);
   assert.match(html, /Body text from fallback\./);
   assert.doesNotMatch(html, /Opinion content is not available\./);
 });
 
-test("OpinionDocumentView renders a lone majority opinion without a collapsible panel", () => {
+test("OpinionDocumentView renders a lone majority opinion as flowing body text", () => {
   const sample: OpinionDocument = {
     header: { title: "Example Case" },
     opinions: [
       {
         kind: "majority",
         author: "Jones",
-        label: "JONES, J.:",
         blocks: [
           {
             type: "paragraph",
@@ -275,22 +298,18 @@ test("OpinionDocumentView renders a lone majority opinion without a collapsible 
 
   const html = renderToStaticMarkup(<OpinionDocumentView document={sample} />);
 
-  assert.match(html, />JONES, J\.<\/span>/);
   assert.match(html, /Body text\./);
   assert.match(html, /Order affirmed\./);
-  assert.doesNotMatch(html, /class="opinion-writing__summary"/);
   assert.match(html, /opinion-writing__content opinion-writing__content--inline/);
-  assert.match(html, /opinion-document__disposition opinion-document__disposition--after-inline-writing/);
+  assert.match(html, /class="opinion-document__disposition"/);
   assert.ok(html.indexOf("Body text.") < html.indexOf("Order affirmed."));
 });
 
-test("OpinionDocumentView renders a lone structured memorandum without a collapsible panel", () => {
+test("OpinionDocumentView renders a lone structured memorandum as flowing body text", () => {
   const sample = loadSample("2026_01445.json");
   const html = renderToStaticMarkup(<OpinionDocumentView document={sample} />);
 
-  assert.match(html, />MEMORANDUM<\/span>/);
-  assert.doesNotMatch(html, />MEMORANDUM:<\/p>/);
-  assert.doesNotMatch(html, /class="opinion-writing__summary"/);
+  assert.match(html, />MEMORANDUM:?<\/p>/);
   assert.match(html, /opinion-writing__content opinion-writing__content--inline/);
 });
 
@@ -509,4 +528,31 @@ test("OpinionHeader renders caption party lines as multiline header material", (
   assert.match(html, />v</);
   assert.match(html, /John Doe, Appellant\./);
   assert.doesNotMatch(html, /The People of the State of New York, Respondent,\s*,\s*v/);
+});
+
+test("OpinionHeader repairs a caption that ends at a bare v using the fallback title", () => {
+  const sample: OpinionDocument = {
+    header: {
+      title: null,
+      caption: [
+        "The People of the State of New York ex rel. Chance McCurdy, Appellant,",
+        "v",
+      ],
+      slipOpinion: "2020 NY Slip Op 06933",
+      court: "Court of Appeals",
+      decisionDate: "2020-11-23",
+    },
+  };
+
+  const html = renderToStaticMarkup(
+    <OpinionHeader
+      document={sample}
+      variant="details"
+      fallbackTitle="People ex rel. McCurdy v Warden, Westchester County Corr. Facility"
+    />,
+  );
+
+  assert.match(html, /The People of the State of New York ex rel\. Chance McCurdy, Appellant,/);
+  assert.match(html, />v</);
+  assert.match(html, /Warden, Westchester County Corr\. Facility/);
 });

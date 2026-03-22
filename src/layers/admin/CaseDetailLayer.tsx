@@ -624,7 +624,7 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
                     children: opinionHtml ? (
                       <section className="case-detail__json-inspector case-detail__json-inspector--tabbed">
                         <div className="case-detail__json-inspector-header">
-                          <h3 className="case-detail__json-inspector-title">Stanbook Source HTML</h3>
+                          <h3 className="case-detail__json-inspector-title">Source HTML</h3>
                           {opinionHtmlSourceUrl ? (
                             <span className="case-detail__json-inspector-source">
                               {formatInspectorSourcePath(opinionHtmlSourceUrl)}

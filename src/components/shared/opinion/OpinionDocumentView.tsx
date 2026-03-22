@@ -1,7 +1,6 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import { Empty } from "antd";
 import type {
-  OpinionBlockNode,
   OpinionDocument,
   OpinionWriting as OpinionWritingType,
 } from "../../../core/opinions/types";
@@ -33,7 +32,7 @@ const normalizeWritings = (writings: OpinionWritingType[]) => {
     const previous = accumulator[accumulator.length - 1];
 
     // Stanbook occasionally emits a trailing "mixed" writing that is really a continuation
-    // of the preceding opinion body. Fold it back in so it does not surface as a bogus panel.
+    // of the preceding opinion body. Fold it back in so the body stays contiguous.
     if (kind === "mixed" && previous) {
       accumulator[accumulator.length - 1] = {
         ...previous,
@@ -45,80 +44,6 @@ const normalizeWritings = (writings: OpinionWritingType[]) => {
     accumulator.push(writing);
     return accumulator;
   }, []);
-};
-
-const normalizeText = (value?: string | null) => {
-  return (value ?? "").replace(/\s+/g, " ").trim().toLowerCase();
-};
-
-const inlineText = (nodes?: { text?: string | null; children?: unknown }[] | null): string => {
-  if (!nodes?.length) return "";
-
-  return nodes
-    .map((node) => {
-      const text = typeof node?.text === "string" ? node.text : "";
-      const children = Array.isArray(node?.children)
-        ? inlineText(node.children as { text?: string | null; children?: unknown }[])
-        : "";
-      return `${text}${children}`;
-    })
-    .join("");
-};
-
-const blockText = (block: OpinionBlockNode): string => {
-  if (!block) return "";
-  const inlineValue = "inlines" in block ? inlineText(block.inlines as { text?: string | null; children?: unknown }[] | null) : "";
-  const value = "value" in block && typeof block.value === "string" ? block.value : "";
-  const label = "label" in block && typeof block.label === "string" ? block.label : "";
-  const childBlocks: string = "blocks" in block && Array.isArray(block.blocks)
-    ? block.blocks.map((child): string => blockText(child)).join(" ")
-    : "";
-  return [label, value, inlineValue, childBlocks].filter(Boolean).join(" ");
-};
-
-const candidateWritingTitles = (writing?: OpinionWritingType) => {
-  if (!writing) return new Set<string>();
-
-  const kind = writing.kind?.trim().toLowerCase() ?? "";
-  const candidates = [
-    writing.label,
-    writing.author,
-    kind === "memorandum" ? "MEMORANDUM" : null,
-    kind === "opinion_of_the_court" ? "OPINION OF THE COURT" : null,
-    writing.authorStatus === "anonymous" &&
-    (kind === "majority" || kind === "opinion_of_the_court")
-      ? "Per Curiam"
-      : null,
-  ];
-
-  return new Set(candidates.map((value) => normalizeText(value)).filter(Boolean));
-};
-
-const isIgnorableUnknownWriting = (
-  writing: OpinionWritingType,
-  previous?: OpinionWritingType,
-  next?: OpinionWritingType,
-) => {
-  const kind = writing.kind?.trim().toLowerCase() ?? "";
-  if (kind !== "unknown") return false;
-
-  const normalizedBlocks = (writing.blocks ?? [])
-    .map((block) => normalizeText(blockText(block)))
-    .filter(Boolean);
-  if (!normalizedBlocks.length) return true;
-
-  const neighboringTitles = new Set([
-    ...candidateWritingTitles(previous),
-    ...candidateWritingTitles(next),
-  ]);
-
-  return normalizedBlocks.every((text) => neighboringTitles.has(text));
-};
-
-const filterIgnorableUnknownWritings = (writings: OpinionWritingType[]) => {
-  return writings.filter((writing, index) => {
-    return !isIgnorableUnknownWriting(writing, writings[index - 1], writings[index + 1]);
-  });
 };
 
 const opinionAppearances = (document: OpinionDocument) => {
@@ -136,8 +61,7 @@ const fallbackWritingsFromSource = (document: OpinionDocument): OpinionWritingTy
   const labelIndex = rawLines.findIndex((line) => /^(?:MEMORANDUM|[A-Z .,'()-]+J\.)[:.]?$/i.test(line));
   if (labelIndex < 0) return [];
 
-  const label = rawLines[labelIndex];
-  const bodyLines = rawLines.slice(labelIndex + 1).filter((line) => {
+  const bodyLines = rawLines.slice(labelIndex).filter((line) => {
     if (/^Decided\b/i.test(line)) return false;
     if (/^Order .*concur\./i.test(line)) return false;
     return true;
@@ -147,7 +71,6 @@ const fallbackWritingsFromSource = (document: OpinionDocument): OpinionWritingTy
   return [
     {
       kind: "majority",
-      label,
       blocks: bodyLines.map((line) => ({
         type: "paragraph" as const,
         inlines: [{ type: "text" as const, text: line }],
@@ -170,15 +93,11 @@ const OpinionDocumentView: React.FC<OpinionDocumentViewProps> = ({
   const bodyScrollRef = useRef<HTMLDivElement | null>(null);
   const writings = useMemo(
     () => {
-      const normalized = filterIgnorableUnknownWritings(
-        normalizeWritings(document.opinions?.filter(Boolean) ?? []),
-      );
+      const normalized = normalizeWritings(document.opinions?.filter(Boolean) ?? []);
       return normalized.length ? normalized : fallbackWritingsFromSource(document);
     },
     [document],
   );
-  const hasSeparateOpinions = writings.length > 1;
-  const shouldInlineSingleWriting = writings.length === 1 && !hasSeparateOpinions;
   const hasFootnotes = Boolean(document.footnotes?.length);
   const appearances = opinionAppearances(document);
   const hasAppearances = Boolean(appearances.some((appearance) => appearance?.text?.trim()));
@@ -269,11 +188,9 @@ const OpinionDocumentView: React.FC<OpinionDocumentViewProps> = ({
             {writings.length ? (
               writings.map((writing, index) => (
                 <OpinionWriting
-                  key={`${writing.label ?? writing.author ?? writing.kind ?? "writing"}-${index}`}
+                  key={`${writing.author ?? writing.kind ?? "writing"}-${index}`}
                   writing={writing}
-                  index={index}
                   opinionSourceUrl={opinionSourceUrl}
-                  collapsible={!shouldInlineSingleWriting}
                 />
               ))
             ) : (
@@ -281,7 +198,7 @@ const OpinionDocumentView: React.FC<OpinionDocumentViewProps> = ({
             )}
             {dispositionParts.length > 0 ? (
               <section
-                className={`opinion-document__disposition${shouldInlineSingleWriting ? " opinion-document__disposition--after-inline-writing" : ""}`}
+                className="opinion-document__disposition"
                 aria-label="Disposition"
               >
                 {dispositionParts.map((part, index) => (
@@ -295,7 +212,7 @@ const OpinionDocumentView: React.FC<OpinionDocumentViewProps> = ({
               </section>
             ) : dispositionText ? (
               <section
-                className={`opinion-document__disposition${shouldInlineSingleWriting ? " opinion-document__disposition--after-inline-writing" : ""}`}
+                className="opinion-document__disposition"
                 aria-label="Disposition"
               >
                 <p className="opinion-document__disposition-text">

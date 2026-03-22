@@ -39,7 +39,7 @@ public final class HeaderParser {
     private static final Pattern HEADER_DOCKET_PATTERN = Pattern.compile("^(?:No\\.\\s+\\d+)$");
     private static final Pattern HEADER_CAPTION_V_PATTERN = Pattern.compile("^v$");
     private static final Pattern HEADER_CAPTION_PARTY_PATTERN = Pattern.compile(
-        "^(?:\\[\\*\\d+\\])?.+,\\s+(?:Respondent|Appellant|Petitioner|Defendant|Claimant),?\\.?$"
+        "^(?:\\[\\*\\d+\\])?.+,\\s+(?:Respondent(?:s)?|Appellant(?:s)?|Petitioner(?:s)?|Defendant(?:s)?|Claimant(?:s)?),?\\.?$"
     );
     private static final Pattern HEADER_BOILERPLATE_PATTERN = Pattern.compile(
         "^(?:Published by .*New York State Law Reporting Bureau.*|Judiciary Law .*431\\.|"

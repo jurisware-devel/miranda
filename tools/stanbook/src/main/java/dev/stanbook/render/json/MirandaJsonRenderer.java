@@ -21,7 +21,6 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.LinkedHashSet;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -43,6 +42,9 @@ public final class MirandaJsonRenderer {
     );
     private static final Pattern OFFICIAL_PAGE_MARKER_PATTERN = Pattern.compile(
         "\\{\\*\\*(?<citation>\\d+\\s+(?:NY2d|NY3d|AD2d|AD3d|Misc(?:\\s+2d|\\s+3d)?)\\s+at\\s+\\d+)\\}"
+    );
+    private static final Pattern AVAILABLE_AT_URL_PATTERN = Pattern.compile(
+        "(?i)(?<prefix>\\bavailable\\s+at\\s+)(?<url>https?://\\S+)"
     );
     private static final Pattern RECOGNIZED_CASE_TITLE_PATTERN = Pattern.compile(
         "^(?:Matter of\\s+.+\\s+v\\s+.+|People(?:\\s+ex\\s+rel\\.\\s+.+)?\\s+v\\s+.+|.+\\s+v\\s+.+)$",
@@ -81,15 +83,6 @@ public final class MirandaJsonRenderer {
         "(?:^|\\.\\s+)(?<action>(?:On review of submissions\\b|Accordingly,\\s+|(?:The\\s+)?(?:order|judgment|appeal|motion|petition)\\b).*)$",
         Pattern.CASE_INSENSITIVE
     );
-    private static final Pattern MAJORITY_JOINERS_PATTERN = Pattern.compile(
-        "(?:(?<chief>Chief Judge\\s+[^;,.]+)\\s+and\\s+)?Judges\\s+(?<judges>.+?)\\s+concur(?:\\s+with\\s+Judge\\s+(?<withJudge>[^;,.]+))?",
-        Pattern.CASE_INSENSITIVE
-    );
-    private static final Pattern SINGLE_JUDGE_JOINER_PATTERN = Pattern.compile(
-        "Judge\\s+(?<judge>[^;,.]+)\\s+concurs(?:\\s+in\\s+result)?(?:\\s+in\\s+an\\s+opinion)?(?:,\\s+in\\s+which\\s+(?<others>.+?)\\s+concur[s]?)?",
-        Pattern.CASE_INSENSITIVE
-    );
-
     public String render(SourceDocument source, ReflowedDocument document) {
         List<Writing> writings = buildWritings(document, null);
         TerminalSummary terminalSummary = extractTerminalSummary(source, document);
@@ -99,19 +92,18 @@ public final class MirandaJsonRenderer {
         List<Writing> trimmedWritings = trimTerminalSummary(writings, terminalSummary);
         DispositionInfo disposition = buildDisposition(document, terminalSummary);
         List<Writing> preservedWritings = preserveUnclassifiedBlocks(document, trimmedWritings, disposition);
-        List<Writing> writingsWithJoiners = attachJoiners(preservedWritings, terminalSummary);
-        List<Diagnostic> diagnostics = buildDiagnostics(source, document, writingsWithJoiners, disposition);
-        ExtractionAssessment extraction = assessExtraction(source, document, writingsWithJoiners, diagnostics);
+        List<Diagnostic> diagnostics = buildDiagnostics(source, document, preservedWritings, disposition);
+        ExtractionAssessment extraction = assessExtraction(source, document, preservedWritings, diagnostics);
         List<Map<String, Object>> appearances = buildAppearances(document);
         Map<String, Object> root = new LinkedHashMap<>();
         root.put("version", "0.1");
         root.put("documentType", "opinion");
         root.put("source", buildSource(source, document, extraction));
         root.put("header", buildHeader(document, appearances));
-        root.put("opinions", extraction.structuredOpinionsHighConfidence() ? buildOpinions(writingsWithJoiners) : List.of());
+        root.put("opinions", extraction.structuredOpinionsHighConfidence() ? buildOpinions(preservedWritings) : List.of());
         root.put("disposition", disposition == null ? null : disposition.json());
         root.put("footnotes", extraction.structuredFootnotesHighConfidence() ? buildFootnotes(document) : List.of());
-        root.put("renderingHints", buildRenderingHints(document, writingsWithJoiners, extraction));
+        root.put("renderingHints", buildRenderingHints(document, extraction));
         root.put("debug", buildDebug(diagnostics, extraction));
         root.put("fallback", buildFallbackSource(source, document));
         return renderValue(root);
@@ -175,9 +167,6 @@ public final class MirandaJsonRenderer {
             Map<String, Object> opinion = new LinkedHashMap<>();
             opinion.put("kind", writing.kind());
             opinion.put("author", writing.author());
-            opinion.put("authorStatus", writing.authorStatus());
-            opinion.put("label", writing.label());
-            opinion.put("joiners", writing.joiners());
             opinion.put("blocks", writing.blocks().stream().map(this::blockJson).toList());
             opinions.add(opinion);
         }
@@ -196,16 +185,11 @@ public final class MirandaJsonRenderer {
         return footnotes;
     }
 
-    private Map<String, Object> buildRenderingHints(
-        ReflowedDocument document,
-        List<Writing> writings,
-        ExtractionAssessment extraction
-    ) {
+    private Map<String, Object> buildRenderingHints(ReflowedDocument document, ExtractionAssessment extraction) {
         Map<String, Object> hints = new LinkedHashMap<>();
         hints.put("hasOfficialPageMarkers", document.lowered().publicationStatus().name().equals("PUBLISHED"));
         hints.put("hasAppearances", !buildAppearances(document).isEmpty());
         hints.put("hasFootnotes", extraction.structuredFootnotesHighConfidence() && !document.lowered().footnotes().footnotes().isEmpty());
-        hints.put("hasSeparateOpinions", extraction.structuredOpinionsHighConfidence() && writings.size() > 1);
         hints.put("usesOpinionSourceFallback", !extraction.structuredOpinionsHighConfidence());
         hints.put("usesFootnoteSourceFallback", !extraction.structuredFootnotesHighConfidence());
         return hints;
@@ -306,16 +290,6 @@ public final class MirandaJsonRenderer {
                 dev.stanbook.diagnostics.Severity.WARNING,
                 "Disposition is missing from emitted JSON despite likely disposition text in the source.",
                 likelyDispositionLineNumber(source)
-            ));
-        }
-
-        if (writings.stream().anyMatch(writing -> writing.author() != null && writing.joiners().isEmpty())
-            && hasLikelyJoinerSourceLine(source)) {
-            diagnostics.add(new Diagnostic(
-                "missing_joiners",
-                dev.stanbook.diagnostics.Severity.INFO,
-                "One or more opinions may be missing joiner information.",
-                likelyJoinerLineNumber(source)
             ));
         }
 
@@ -475,33 +449,13 @@ public final class MirandaJsonRenderer {
             .orElse(null);
     }
 
-    private boolean hasLikelyJoinerSourceLine(SourceDocument source) {
-        return source.lines().stream()
-            .map(SourceLine::text)
-            .map(String::trim)
-            .anyMatch(text -> DISPOSITION_JUDGE_LINE_PATTERN.matcher(text).matches());
-    }
-
-    private Integer likelyJoinerLineNumber(SourceDocument source) {
-        return source.lines().stream()
-            .filter(line -> DISPOSITION_JUDGE_LINE_PATTERN.matcher(line.text().trim()).matches())
-            .map(SourceLine::lineNumber)
-            .findFirst()
-            .orElse(null);
-    }
-
     private List<Writing> buildWritings(ReflowedDocument document, TerminalSummary terminalSummary) {
         List<WritingAccumulator> accumulators = new ArrayList<>();
         WritingAccumulator current = null;
-        String pendingLabel = null;
 
         for (OpinionComponent component : document.lowered().opinionBody().components()) {
             String author = authorFor(component);
-            String authorStatus = authorStatusFor(component);
             if (component.type() == OpinionComponentType.METADATA) {
-                if (component.role() != OpinionRole.OPINION_BY) {
-                    pendingLabel = joinComponentText(component);
-                }
                 continue;
             }
             if (component.type() == OpinionComponentType.SUBHEADER) {
@@ -513,40 +467,27 @@ public final class MirandaJsonRenderer {
 
             if (current == null || !sameWriting(current, component, author)) {
                 if (shouldMergeAnonymousMajorityPrelude(current, component, author)) {
-                    WritingAccumulator merged = new WritingAccumulator(kindFor(component), author, authorStatus, pendingLabel);
+                    WritingAccumulator merged = new WritingAccumulator(kindFor(component), author);
                     merged.blocks.addAll(current.blocks);
                     merged.startLine = current.startLine;
                     merged.endLine = current.endLine;
                     accumulators.set(accumulators.size() - 1, merged);
                     current = merged;
                 } else {
-                    current = new WritingAccumulator(kindFor(component), author, authorStatus, pendingLabel);
+                    current = new WritingAccumulator(kindFor(component), author);
                     accumulators.add(current);
                 }
-            } else if (current.label == null && pendingLabel != null) {
-                current.label = pendingLabel;
             }
 
             current.startLine = current.startLine == null ? component.startLine() : Math.min(current.startLine, component.startLine());
             current.endLine = current.endLine == null ? component.endLine() : Math.max(current.endLine, component.endLine());
             appendDistinctBlocks(current.blocks, blocksForComponent(document, component));
-
-            if (current.label == null
-                && author != null
-                && component.type() != OpinionComponentType.MAJORITY
-                && component.type() != OpinionComponentType.BLOCK_QUOTE) {
-                current.label = defaultLabel(component);
-            }
-            pendingLabel = null;
         }
 
         List<Writing> writings = accumulators.stream()
             .map(acc -> new Writing(
                 acc.kind,
                 acc.author,
-                acc.authorStatus,
-                normalizeWritingLabel(acc.label),
-                List.of(),
                 trimTerminalSummaryBlocks(acc.blocks, terminalSummary)
             ))
             .toList();
@@ -566,18 +507,9 @@ public final class MirandaJsonRenderer {
             if (!applied
                 && writing.author() == null
                 && ("majority".equals(writing.kind()) || "opinion_of_the_court".equals(writing.kind()))) {
-                String inferredLabel = writing.label() == null && !"Per Curiam".equals(inferredAuthor)
-                    ? normalizeWritingLabel(inferredAuthor + ", J.")
-                    : writing.label();
-                String inferredStatus = "Per Curiam".equalsIgnoreCase(headerAuthor == null ? "" : headerAuthor.trim())
-                    ? "anonymous"
-                    : "named";
                 updated.add(new Writing(
                     writing.kind(),
-                    "named".equals(inferredStatus) ? inferredAuthor : null,
-                    inferredStatus,
-                    inferredLabel,
-                    writing.joiners(),
+                    "Per Curiam".equalsIgnoreCase(headerAuthor == null ? "" : headerAuthor.trim()) ? null : inferredAuthor,
                     writing.blocks()
                 ));
                 applied = true;
@@ -606,20 +538,6 @@ public final class MirandaJsonRenderer {
             }
         }
         return null;
-    }
-
-    private List<Writing> attachJoiners(
-        List<Writing> writings,
-        TerminalSummary terminalSummary
-    ) {
-        String joinerContext = joinerContext(terminalSummary);
-
-        List<Writing> updated = new ArrayList<>();
-        for (Writing writing : writings) {
-            List<String> joiners = joinersForWriting(writing, joinerContext);
-            updated.add(new Writing(writing.kind(), writing.author(), writing.authorStatus(), writing.label(), joiners, writing.blocks()));
-        }
-        return List.copyOf(updated);
     }
 
     private List<Writing> preserveUnclassifiedBlocks(
@@ -692,16 +610,9 @@ public final class MirandaJsonRenderer {
         ordered.add(new Writing(
             "unknown",
             null,
-            "unknown",
-            "Unrecognized text",
-            List.of(),
             List.copyOf(fallbackBlocks)
         ));
         fallbackBlocks.clear();
-    }
-
-    private String joinerContext(TerminalSummary terminalSummary) {
-        return terminalSummary == null ? "" : terminalSummary.text();
     }
 
     private boolean sameWriting(WritingAccumulator current, OpinionComponent component, String author) {
@@ -829,7 +740,154 @@ public final class MirandaJsonRenderer {
         if (index < text.length()) {
             nodes.add(new TextInline(text.substring(index)));
         }
-        return nodes.isEmpty() ? List.of(new TextInline(text)) : List.copyOf(nodes);
+        if (nodes.isEmpty()) {
+            return List.of(new TextInline(text));
+        }
+        return List.copyOf(linkifyAvailableAtUrls(nodes));
+    }
+
+    private List<InlineNode> linkifyAvailableAtUrls(List<InlineNode> sourceNodes) {
+        if (sourceNodes.isEmpty()) {
+            return List.of();
+        }
+
+        List<InlineNode> nodes = new ArrayList<>();
+        int index = 0;
+        String overrideText = null;
+
+        while (index < sourceNodes.size()) {
+            InlineNode node = sourceNodes.get(index);
+            if (!(node instanceof TextInline) && overrideText == null) {
+                nodes.add(node);
+                index++;
+                continue;
+            }
+
+            String text = overrideText != null ? overrideText : ((TextInline) node).text();
+            Matcher matcher = AVAILABLE_AT_URL_PATTERN.matcher(text);
+            if (!matcher.find()) {
+                if (!text.isEmpty()) {
+                    nodes.add(new TextInline(text));
+                }
+                overrideText = null;
+                index++;
+                continue;
+            }
+
+            if (matcher.start() > 0) {
+                nodes.add(new TextInline(text.substring(0, matcher.start())));
+            }
+
+            nodes.add(new TextInline(matcher.group("prefix")));
+            UrlCollection collection = collectAvailableAtUrl(sourceNodes, index, text, matcher.start("url"));
+            if (!collection.href().isEmpty() && !collection.children().isEmpty()) {
+                nodes.add(new LinkInline(collection.href(), collection.children()));
+            } else {
+                nodes.add(new TextInline(text.substring(matcher.start("url"), matcher.end())));
+            }
+
+            overrideText = collection.trailingText();
+            index = collection.resumeIndex();
+        }
+
+        return nodes.isEmpty() ? List.of() : List.copyOf(nodes);
+    }
+
+    private UrlCollection collectAvailableAtUrl(List<InlineNode> sourceNodes, int startIndex, String startText, int startOffset) {
+        List<InlineNode> children = new ArrayList<>();
+        StringBuilder href = new StringBuilder();
+        int index = startIndex;
+        String currentText = startText;
+        int offset = startOffset;
+
+        while (true) {
+            String remaining = currentText.substring(offset);
+            int whitespaceIndex = firstWhitespaceIndex(remaining);
+            String consumed = whitespaceIndex >= 0 ? remaining.substring(0, whitespaceIndex) : remaining;
+            if (!consumed.isEmpty()) {
+                children.add(new TextInline(consumed));
+                href.append(consumed);
+            }
+            if (whitespaceIndex >= 0) {
+                return trimCollectedUrl(children, href, index, remaining.substring(whitespaceIndex));
+            }
+
+            while (true) {
+                index++;
+                if (index >= sourceNodes.size()) {
+                    return trimCollectedUrl(children, href, index, "");
+                }
+
+                InlineNode next = sourceNodes.get(index);
+                if (next instanceof PageMarkerInline pageMarkerInline) {
+                    children.add(pageMarkerInline);
+                    continue;
+                }
+                if (next instanceof TextInline nextTextInline) {
+                    currentText = nextTextInline.text();
+                    offset = 0;
+                    break;
+                }
+                return trimCollectedUrl(children, href, index, "");
+            }
+        }
+    }
+
+    private UrlCollection trimCollectedUrl(
+        List<InlineNode> children,
+        StringBuilder href,
+        int resumeIndex,
+        String trailingText
+    ) {
+        String trailing = trailingText;
+
+        while (!children.isEmpty()) {
+            InlineNode last = children.getLast();
+            if (!(last instanceof TextInline textInline) || textInline.text().isEmpty()) {
+                break;
+            }
+
+            String text = textInline.text();
+            char lastChar = text.charAt(text.length() - 1);
+            if (!isTrailingUrlPunctuation(lastChar)) {
+                break;
+            }
+
+            trailing = lastChar + trailing;
+            href.setLength(Math.max(0, href.length() - 1));
+            String shortened = text.substring(0, text.length() - 1);
+            if (shortened.isEmpty()) {
+                children.removeLast();
+            } else {
+                children.set(children.size() - 1, new TextInline(shortened));
+            }
+        }
+
+        return new UrlCollection(
+            children.isEmpty() ? List.of() : List.copyOf(children),
+            href.toString(),
+            resumeIndex,
+            trailing
+        );
+    }
+
+    private int firstWhitespaceIndex(String text) {
+        for (int index = 0; index < text.length(); index++) {
+            if (Character.isWhitespace(text.charAt(index))) {
+                return index;
+            }
+        }
+        return -1;
+    }
+
+    private boolean isTrailingUrlPunctuation(char c) {
+        return c == '.'
+            || c == ','
+            || c == ';'
+            || c == ':'
+            || c == ')'
+            || c == ']'
+            || c == '>';
     }
 
     private Map<String, Object> provenance(int startLine, int endLine) {
@@ -1121,9 +1179,6 @@ public final class MirandaJsonRenderer {
             new Writing(
                 last.kind(),
                 last.author(),
-                last.authorStatus(),
-                last.label(),
-                last.joiners(),
                 trimTerminalSummaryBlocks(last.blocks(), terminalSummary)
             )
         );
@@ -1245,86 +1300,6 @@ public final class MirandaJsonRenderer {
         return json;
     }
 
-    private List<String> joinersForWriting(Writing writing, String dispositionText) {
-        if (dispositionText == null || dispositionText.isBlank()) {
-            return List.of();
-        }
-
-        if ("majority".equals(writing.kind()) && writing.author() != null) {
-            Matcher matcher = MAJORITY_JOINERS_PATTERN.matcher(dispositionText);
-            while (matcher.find()) {
-                String withJudge = matcher.group("withJudge");
-                if (withJudge == null || normalizeJudgeName(withJudge).equals(normalizeJudgeName(writing.author()))) {
-                    LinkedHashSet<String> joiners = new LinkedHashSet<>();
-                    if (matcher.group("chief") != null) {
-                        joiners.add(normalizeJudgePhrase(matcher.group("chief")));
-                    }
-                    joiners.addAll(parseJudgeList(matcher.group("judges")));
-                    return List.copyOf(joiners);
-                }
-            }
-        }
-
-        if (writing.author() != null && ("concurrence".equals(writing.kind()) || "concurrence_in_result".equals(writing.kind()))) {
-            Matcher matcher = SINGLE_JUDGE_JOINER_PATTERN.matcher(dispositionText);
-            while (matcher.find()) {
-                String judge = normalizeJudgeName(matcher.group("judge"));
-                if (!judge.equals(normalizeJudgeName(writing.author()))) {
-                    continue;
-                }
-                String others = matcher.group("others");
-                if (others == null) {
-                    return List.of();
-                }
-                return List.copyOf(parseJudgeList(others));
-            }
-        }
-
-        return List.of();
-    }
-
-    private List<String> parseJudgeList(String text) {
-        if (text == null || text.isBlank()) {
-            return List.of();
-        }
-        String normalized = text
-            .replace(" and ", ", ")
-            .replace(";", ",");
-        List<String> judges = new ArrayList<>();
-        for (String part : normalized.split(",")) {
-            String trimmed = part.trim();
-            if (trimmed.isEmpty()) {
-                continue;
-            }
-            judges.add(normalizeJudgePhrase(trimmed));
-        }
-        return judges;
-    }
-
-    private String normalizeJudgePhrase(String text) {
-        String trimmed = text.trim();
-        if (trimmed.regionMatches(true, 0, "Chief Judge ", 0, "Chief Judge ".length())) {
-            return normalizeJudgeName(trimmed.substring("Chief Judge ".length()));
-        }
-        if (trimmed.regionMatches(true, 0, "Judge ", 0, "Judge ".length())) {
-            return normalizeJudgeName(trimmed.substring("Judge ".length()));
-        }
-        return normalizeJudgeName(trimmed);
-    }
-
-    private String normalizeJudgeName(String text) {
-        return Arrays.stream(text.trim().split("\\s+"))
-            .filter(part -> !part.isBlank())
-            .map(part -> {
-                if (part.equals(part.toUpperCase(Locale.ROOT))) {
-                    return Character.toUpperCase(part.charAt(0)) + part.substring(1).toLowerCase(Locale.ROOT);
-                }
-                return part;
-            })
-            .reduce((left, right) -> left + " " + right)
-            .orElse(text.trim());
-    }
-
     private String inferAppearanceSide(String text) {
         String lower = text.toLowerCase(Locale.ROOT);
         if (lower.contains("for appellant")) {
@@ -1355,43 +1330,6 @@ public final class MirandaJsonRenderer {
 
     private String authorFor(OpinionComponent component) {
         return component.author();
-    }
-
-    private String authorStatusFor(OpinionComponent component) {
-        if (component.author() != null) {
-            return "named";
-        }
-        if (component.role() == OpinionRole.PER_CURIAM || component.perCuriam()) {
-            return "anonymous";
-        }
-        return "unknown";
-    }
-
-    private String defaultLabel(OpinionComponent component) {
-        String author = authorFor(component);
-        if (author == null || "Per Curiam".equals(author)) {
-            return null;
-        }
-        return normalizeWritingLabel(author + ", J.");
-    }
-
-    private String normalizeWritingLabel(String label) {
-        if (label == null) {
-            return null;
-        }
-
-        String withoutColon = label.replaceFirst(":\\s*$", "").stripTrailing();
-        if (withoutColon.matches(".*J\\.\\s*$")) {
-            return withoutColon;
-        }
-        return withoutColon.replaceFirst("\\.\\s*$", "");
-    }
-
-    private String joinComponentText(OpinionComponent component) {
-        return component.lines().stream()
-            .map(line -> line.text())
-            .reduce((left, right) -> left + " " + right)
-            .orElse(null);
     }
 
     private String caseIdFromPath(SourceDocument source) {
@@ -1457,9 +1395,6 @@ public final class MirandaJsonRenderer {
     private record Writing(
         String kind,
         String author,
-        String authorStatus,
-        String label,
-        List<String> joiners,
         List<ReflowedBlock> blocks
     ) {}
 
@@ -1494,20 +1429,23 @@ public final class MirandaJsonRenderer {
         }
     }
 
+    private record UrlCollection(
+        List<InlineNode> children,
+        String href,
+        int resumeIndex,
+        String trailingText
+    ) {}
+
     private static final class WritingAccumulator {
         private final String kind;
         private final String author;
-        private final String authorStatus;
-        private String label;
         private final List<ReflowedBlock> blocks = new ArrayList<>();
         private Integer startLine;
         private Integer endLine;
 
-        private WritingAccumulator(String kind, String author, String authorStatus, String label) {
+        private WritingAccumulator(String kind, String author) {
             this.kind = kind;
             this.author = author;
-            this.authorStatus = authorStatus;
-            this.label = label;
         }
     }
 }

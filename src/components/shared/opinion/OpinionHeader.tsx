@@ -54,6 +54,25 @@ const OpinionHeader: React.FC<OpinionHeaderProps> = ({
     if (typeof value === "number" || typeof value === "boolean") return String(value);
     return "";
   };
+
+  const repairCaptionLines = (lines: string[], titleValue: string): string[] => {
+    if (!lines.length) return lines;
+
+    const lastLine = lines[lines.length - 1]?.trim().toLowerCase();
+    if (lastLine !== "v" && lastLine !== "v.") return lines;
+
+    const titleText = normalizeDisplayValue(titleValue);
+    if (!titleText) return lines;
+
+    const titleParts = titleText.split(/\sv\.?\s/i);
+    if (titleParts.length < 2) return lines;
+
+    const respondent = titleParts.slice(1).join(" v ").trim();
+    if (!respondent) return lines;
+
+    return [...lines, respondent];
+  };
+
   const normalizedCourt = normalizeDisplayValue(court).toLowerCase();
   const normalizedSlipOpinion = normalizeDisplayValue(slipOpinion);
   const normalizedOfficialCitation = normalizeDisplayValue(officialCitation);
@@ -102,11 +121,12 @@ const OpinionHeader: React.FC<OpinionHeaderProps> = ({
               .map((entry) => normalizeDisplayValue(entry))
               .filter(Boolean)
           : [];
-        if (!lines.length) return accumulator;
+        const repairedLines = repairCaptionLines(lines, title);
+        if (!repairedLines.length) return accumulator;
         accumulator.push({
           key,
           label: formatHeaderLabel(key),
-          lines,
+          lines: repairedLines,
         });
         return accumulator;
       }

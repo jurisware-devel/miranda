@@ -104,9 +104,6 @@ export type OpinionAppearance = {
 export type OpinionWriting = {
   kind?: string | null;
   author?: string | null;
-  authorStatus?: "named" | "anonymous" | "unknown" | null;
-  label?: string | null;
-  joiners?: string[] | null;
   blocks?: OpinionBlockNode[] | null;
 };
 
@@ -156,7 +153,6 @@ export type OpinionDocument = {
     hasOfficialPageMarkers?: boolean | null;
     hasAppearances?: boolean | null;
     hasFootnotes?: boolean | null;
-    hasSeparateOpinions?: boolean | null;
     [key: string]: unknown;
   } | null;
   debug?: {

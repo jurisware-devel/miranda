@@ -21,8 +21,8 @@ class MirandaJsonRendererTest {
         assertThat(json).contains("\"slipOpinion\":\"2026 NY Slip Op 00963\"");
         assertThat(json).contains("\"decisionDate\":\"2026-02-19\"");
         assertThat(json).contains("\"opinions\":[");
-        assertThat(json).contains("\"label\":\"RIVERA, J. (concurring)\"");
-        assertThat(json).contains("\"joiners\":[\"Wilson\"]");
+        assertThat(json).contains("\"kind\":\"concurrence\"");
+        assertThat(json).contains("\"author\":\"Rivera\"");
         assertThat(json).contains("\"renderingHints\":");
         assertThat(json).contains("\"disposition\":{");
         assertThat(json).contains("\"parts\":[");
@@ -55,6 +55,50 @@ class MirandaJsonRendererTest {
         assertThat(json).contains("\"label\":\"1\"");
         assertThat(json).doesNotContain("\"text\":\"See [*People v Example*]");
         assertThat(json).doesNotContain("\"type\":\"paragraph\",\"text\":");
+    }
+
+    @Test
+    void render_json_linkifies_available_at_urls_in_plain_text_blocks() {
+        String html = """
+            <html><body>
+            <table>
+              <tr><td>People v Example</td></tr>
+              <tr><td>2026 NY Slip Op 00016</td></tr>
+              <tr><td>Court of Appeals</td></tr>
+            </table>
+            <p>Memorandum.</p>
+            <p>See report, available at https://example.com/report.pdf [last accessed Jan. 1, 2026].</p>
+            </body></html>
+            """;
+
+        String json = StanbookPipeline.createDefault()
+            .render(new dev.stanbook.io.HtmlSourceLoader().load(Path.of("example.htm"), html));
+
+        assertThat(json).contains("\"type\":\"link\"");
+        assertThat(json).contains("\"href\":\"https://example.com/report.pdf\"");
+        assertThat(json).contains("\"text\":\"See report, available at https://example.com/report.pdf [last accessed Jan. 1, 2026].\"");
+    }
+
+    @Test
+    void render_json_linkifies_available_at_urls_split_by_page_markers() {
+        String html = """
+            <html><body>
+            <table>
+              <tr><td>People v Example</td></tr>
+              <tr><td>2026 NY Slip Op 00017</td></tr>
+              <tr><td>Court of Appeals</td></tr>
+            </table>
+            <p>Memorandum.</p>
+            <p>Source, available at https://example.com/a-dis<font color="FF0000">{**1 NY3d at 2}</font>proportionate.pdf; discussed here.</p>
+            </body></html>
+            """;
+
+        String json = StanbookPipeline.createDefault()
+            .render(new dev.stanbook.io.HtmlSourceLoader().load(Path.of("example.htm"), html));
+
+        assertThat(json).contains("\"href\":\"https://example.com/a-disproportionate.pdf\"");
+        assertThat(json).contains("\"type\":\"page_marker\"");
+        assertThat(json).doesNotContain("\"href\":\"https://example.com/a-dis\"");
     }
 
     @Test
@@ -150,7 +194,6 @@ class MirandaJsonRendererTest {
             .render(new dev.stanbook.io.HtmlSourceLoader().load(Path.of("example.htm"), html));
 
         assertThat(json).contains("\"kind\":\"concurrence\"");
-        assertThat(json).contains("\"label\":\"G.B. Smith, Rosenblatt and R.S. Smith, JJ. (concurring)\"");
         assertThat(json).contains("Concurrence text.");
     }
 
@@ -257,7 +300,6 @@ class MirandaJsonRendererTest {
             .render(new dev.stanbook.io.HtmlSourceLoader().load(Path.of("example.htm"), html));
 
         assertThat(json).contains("\"kind\":\"unknown\"");
-        assertThat(json).contains("\"label\":\"Unrecognized text\"");
         assertThat(json).contains("\"provenance\":{\"startLine\":9,\"endLine\":9}");
         assertThat(json).contains("\"author\":\"Garcia\"");
         assertThat(json).contains("\"text\":\" (dissenting).\"");
@@ -345,6 +387,30 @@ class MirandaJsonRendererTest {
     }
 
     @Test
+    void render_json_preserves_caption_party_lines_with_plural_role_suffixes() {
+        String html = """
+            <html><body>
+            <table>
+              <tr><td>People ex rel. McCurdy v Warden, Westchester County Corr. Facility</td></tr>
+              <tr><td>2020 NY Slip Op 06933 [36 NY3d 251]</td></tr>
+              <tr><td>November 23, 2020</td></tr>
+              <tr><td>Court of Appeals</td></tr>
+            </table>
+            <table>
+              <tr><td><b>The People of the State of New York ex rel. Chance McCurdy, Appellant,<br>v<br>Warden, Westchester County Correctional Facility, et al., Respondents.</b></td></tr>
+            </table>
+            <p>Memorandum.</p>
+            <p>Order affirmed.</p>
+            </body></html>
+            """;
+
+        String json = StanbookPipeline.createDefault()
+            .render(new dev.stanbook.io.HtmlSourceLoader().load(Path.of("example.htm"), html));
+
+        assertThat(json).contains("\"caption\":[\"The People of the State of New York ex rel. Chance McCurdy, Appellant,\",\"v\",\"Warden, Westchester County Correctional Facility, et al., Respondents.\"]");
+    }
+
+    @Test
     void render_json_leaves_per_curiam_majority_author_null() {
         String html = """
             <html><body>
@@ -364,7 +430,6 @@ class MirandaJsonRendererTest {
 
         assertThat(json).contains("\"kind\":\"majority\"");
         assertThat(json).contains("\"author\":null");
-        assertThat(json).contains("\"authorStatus\":\"anonymous\"");
         assertThat(json).doesNotContain("\"kind\":\"per_curiam\"");
     }
 }

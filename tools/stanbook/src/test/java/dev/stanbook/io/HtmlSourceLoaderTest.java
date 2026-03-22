@@ -197,6 +197,32 @@ class HtmlSourceLoaderTest {
     }
 
     @Test
+    void normalizes_structural_opinion_heading_tags_into_author_markers() {
+        String html = """
+            <html><body>
+            <table>
+              <tr><td>People v Example</td></tr>
+              <tr><td>2026 NY Slip Op 00010</td></tr>
+              <tr><td>Court of Appeals</td></tr>
+            </table>
+            <div align="center">OPINION OF THE COURT</div>
+            <p>Majority text.</p>
+            <conopnjd>Concurring opinion by Feinman, J.</conopnjd>
+            <p>Feinman, J. (concurring). Concurrence text.</p>
+            <disopjd>Dissenting opinion by Chief Judge Wilson.</disopjd>
+            <p>Chief Judge Wilson (dissenting). Dissent text.</p>
+            </body></html>
+            """;
+
+        var document = new HtmlSourceLoader().load(Path.of("example.htm"), html);
+
+        assertThat(document.htmlDocument().opinionBlocks()).extracting(block -> block.text())
+            .contains("Feinman, J. (concurring).", "Chief Judge Wilson (dissenting).");
+        assertThat(document.lines()).noneMatch(line -> line.text().equals("Concurring opinion by Feinman, J."));
+        assertThat(document.lines()).noneMatch(line -> line.text().equals("Dissenting opinion by Chief Judge Wilson."));
+    }
+
+    @Test
     void preserves_spaces_around_emphasized_header_appearance_text() {
         String html = """
             <html><body>
@@ -217,4 +243,5 @@ class HtmlSourceLoaderTest {
             line.text().equals("*Kuby & Perez LLP,* New York City (*Ronald L. Kuby* of counsel), for appellant.")
         );
     }
+
 }

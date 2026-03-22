@@ -41,18 +41,15 @@ class RealSampleJsonRegressionTest {
     }
 
     @Test
-    void html_sample_output_preserves_separate_opinion_labels() {
+    void html_sample_output_preserves_separate_opinion_structure() {
         var source = new SourceDocumentReader().read(Path.of("samples/2026_00963.htm"));
 
         String json = StanbookPipeline.createDefault().render(source);
 
         assertThat(json).contains("\"decisionDate\":\"2026-02-19\"");
         assertThat(json).contains("\"author\":\"Troutman\"");
-        assertThat(json).contains("\"joiners\":[\"Garcia\",\"Singas\",\"Cannataro\",\"Halligan\"]");
-        assertThat(json).contains("\"label\":\"RIVERA, J. (concurring)\"");
-        assertThat(json).contains("\"joiners\":[\"Wilson\"]");
+        assertThat(json).contains("\"author\":\"Rivera\"");
         assertThat(json).contains("I join in the result and would affirm defendant's conviction");
-        assertThat(json).contains("\"hasSeparateOpinions\":true");
         assertThat(json).contains("\"structuredExtraction\":{\"opinions\":\"high_confidence\"");
     }
 
@@ -68,7 +65,6 @@ class RealSampleJsonRegressionTest {
         assertThat(json).contains("\"type\":\"page_marker\"");
         assertThat(json).contains("\"text\":\" OPINION OF THE COURT\"");
         assertThat(json).contains("Graffeo, J.");
-        assertThat(json).contains("\"joiners\":[\"Kaye\",\"Ciparick\",\"Rosenblatt\",\"Read\"]");
         assertThat(json).contains("\"disposition\":{");
         assertThat(json).contains("\"text\":\"Chief Judge Kaye and Judges Ciparick, Rosenblatt and Read concur with Judge Graffeo;");
         assertThat(json).contains("G.B. Smith, J. (dissenting).");
@@ -108,10 +104,8 @@ class RealSampleJsonRegressionTest {
 
         assertThat(json).contains("\"officialCitation\":\"3 NY3d 80\"");
         assertThat(json).contains("\"author\":\"Ciparick\"");
-        assertThat(json).contains("\"label\":\"Ciparick, J.\"");
         assertThat(json).contains("\"text\":\"{**3 NY3d at 81}\"");
         assertThat(json).contains("\"text\":\" OPINION OF THE COURT\"");
-        assertThat(json).doesNotContain("\"author\":null,\"label\":null,\"joiners\":[],\"blocks\":[{\"type\":\"paragraph\"");
     }
 
     @Test
@@ -122,12 +116,9 @@ class RealSampleJsonRegressionTest {
 
         assertThat(json).contains("\"officialCitation\":\"2 NY3d 383\"");
         assertThat(json).contains("\"author\":\"Kaye\"");
-        assertThat(json).contains("\"label\":\"Chief Judge Kaye\"");
         assertThat(json).contains("\"kind\":\"dissent\"");
         assertThat(json).contains("\"author\":\"G.B. Smith\"");
-        assertThat(json).contains("\"label\":\"G.B. Smith, J. (dissenting)\"");
-        assertThat(json).contains("\"label\":\"Rosenblatt, J. (dissenting)\"");
-        assertThat(json).contains("\"hasSeparateOpinions\":true");
+        assertThat(json).contains("\"author\":\"Rosenblatt\"");
         assertThat(json).contains("Judges Ciparick, Graffeo, Read and R.S. Smith concur with Chief Judge Kaye;");
         assertThat(json).contains("Judge G.B. Smith dissents and votes to reverse and order a new trial in a separate opinion;");
         assertThat(json).contains("Judge Rosenblatt dissents and votes to reverse and order a new trial in another opinion.");
@@ -155,11 +146,9 @@ class RealSampleJsonRegressionTest {
         assertThat(json).contains("\"officialCitation\":\"1 NY3d 614\"");
         assertThat(json).contains("\"opinions\":[{\"kind\":\"opinion_of_the_court\"");
         assertThat(json).doesNotContain("\"author\":\"Kaye And Judges G.B\"");
-        assertThat(json).doesNotContain("\"label\":\"Chief Judge Kaye and Judges G.B.\"");
         assertThat(json).contains("Chief Judge Kaye and Judges G.B. Smith, Ciparick, Rosenblatt, Graffeo, Read and R.S. Smith concur.");
         assertThat(json).contains("On review of submissions pursuant to section 500.4 of the Rules of the Court of Appeals (22 NYCRR 500.4), order affirmed in a memorandum.");
         assertThat(json).contains("\"parts\":[{\"type\":\"summary\",\"text\":\"Chief Judge Kaye and Judges G.B. Smith, Ciparick, Rosenblatt, Graffeo, Read and R.S. Smith concur.\"},{\"type\":\"action\",\"text\":\"On review of submissions pursuant to section 500.4 of the Rules of the Court of Appeals (22 NYCRR 500.4), order affirmed in a memorandum.\"}]");
-        assertThat(json).contains("\"hasSeparateOpinions\":false");
     }
 
     @Test
@@ -169,7 +158,7 @@ class RealSampleJsonRegressionTest {
         String json = StanbookPipeline.createDefault().render(source);
 
         assertThat(json).contains("\"caseId\":\"2026_01588\"");
-        assertThat(json).contains("\"label\":\"WILSON, Chief Judge (dissenting)\"");
+        assertThat(json).contains("\"author\":\"Wilson\"");
         assertThat(json).doesNotContain("\"kind\":\"mixed\"");
         assertThat(json).doesNotContain("\"author\":\"Univ Of Chicago L Rev 263\"");
     }
@@ -196,7 +185,6 @@ class RealSampleJsonRegressionTest {
 
         assertThat(json).contains("\"caseId\":\"2005_09811\"");
         assertThat(json).contains("\"author\":null");
-        assertThat(json).contains("\"authorStatus\":\"anonymous\"");
         assertThat(json).doesNotContain("\"kind\":\"per_curiam\"");
     }
 
@@ -208,8 +196,23 @@ class RealSampleJsonRegressionTest {
 
         assertThat(json).contains("\"caseId\":\"2018_03306\"");
         assertThat(json).contains("\"author\":\"Wilson\"");
-        assertThat(json).contains("\"authorStatus\":\"named\"");
-        assertThat(json).contains("\"label\":\"Wilson, J.\"");
+    }
+
+    @Test
+    void html_repo_sample_linkifies_available_at_urls() {
+        var source = new SourceDocumentReader().read(Path.of("../../opinions/coa/2020/2020_06836.htm"));
+
+        String json = StanbookPipeline.createDefault().render(source);
+
+        assertThat(json).contains("\"kind\":\"concurrence\",\"author\":\"Feinman\"");
+        assertThat(json).contains("\"text\":\"Feinman, J. (concurring).\"");
+        assertThat(json).doesNotContain("\"text\":\" (concurring).\"");
+        assertThat(json).contains("\"kind\":\"dissent\",\"author\":\"Rivera\"");
+        assertThat(json).contains("\"text\":\"Rivera, J. (dissenting).\"");
+        assertThat(json).contains("\"href\":\"https://www.washingtonpost.com/national/a-disproportionate-number-of-black-victims-in-fatal-traffic-stops/2015/12/24/c29717e2-a344-11e5-9c4e-be37f66848bb_story.html\"");
+        assertThat(json).contains("\"href\":\"https://www.washingtonpost.com/news/morning-mix/wp/2015/07/21/much-too-early-to-call-jail-cell-hanging-death-of-sandra-bland-suicide-da-says/\"");
+        assertThat(json).contains("\"href\":\"https://www.bjs.gov/content/pub/pdf/pbtss11.pdf\"");
+        assertThat(json).contains("\"text\":\"available at \"");
     }
 
     @Test
@@ -220,7 +223,6 @@ class RealSampleJsonRegressionTest {
 
         assertThat(json).contains("\"caseId\":\"2011_01362\"");
         assertThat(json).contains("\"author\":null");
-        assertThat(json).contains("\"authorStatus\":\"unknown\"");
         assertThat(json).contains("\"text\":\" OPINION OF THE COURT\"");
         assertThat(json).contains("\"text\":\"Memorandum. \"");
     }
