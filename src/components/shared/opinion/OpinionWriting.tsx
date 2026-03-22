@@ -60,86 +60,46 @@ const isRecognizedWritingQualifier = (text?: string | null): boolean => {
   return /^(?:chief judge .+|.+, j)\. \((?:concurring|dissenting)(?: in part| in result| in .+)?\)$/.test(normalized);
 };
 
-const isEffectiveWritingKind = (kind?: string | null): boolean => {
-  switch (kind?.trim().toLowerCase()) {
-    case "majority":
-    case "plurality":
-    case "opinion_of_the_court":
-      return true;
-    default:
-      return false;
-  }
-};
-
-const headingSuffixForKind = (kind?: string | null): string | null => {
-  switch (kind?.trim().toLowerCase()) {
-    case "concurrence":
-      return "concurring";
-    case "concurrence_in_part":
-      return "concurring in part";
-    case "concurrence_in_result":
-      return "concurring in result";
-    case "dissent":
-      return "dissenting";
-    case "dissent_in_part":
-      return "dissenting in part";
-    case "plurality":
-      return "plurality";
-    case "mixed":
-      return null;
-    default:
-      return null;
-  }
-};
-
-const synthesizedHeading = (writing: OpinionWritingType): string | null => {
-  const author = writing.author?.trim();
-  if (isEffectiveWritingKind(writing.kind)) {
-    if (!author || author.toLowerCase() === "per curiam") {
-      return "Opinion of the Court";
-    }
-    return `Opinion of the Court by ${author}, J.`;
-  }
-  const suffix = headingSuffixForKind(writing.kind);
-  if (!author || !suffix) {
-    return null;
-  }
-  return `${author}, J. (${suffix}).`;
+const formatAuthorLine = (author?: string | null): string => {
+  const normalized = (author ?? "").trim();
+  if (!normalized || normalized.toLowerCase() === "per curiam") return "";
+  if (/,/.test(normalized)) return normalized;
+  return `${normalized}, J.`;
 };
 
 const OpinionWriting: React.FC<OpinionWritingProps> = ({
   writing,
   opinionSourceUrl,
 }) => {
-  const heading = synthesizedHeading(writing);
-  const firstBlock = writing.blocks?.[0];
+  const blocks = writing.blocks ?? [];
+  const firstBlock = blocks[0];
+  const secondBlock = blocks[1];
   const firstBlockText = blockText(firstBlock);
-  const showHeading = Boolean(
-    heading &&
-      (!firstBlockText || !firstBlockText.toLowerCase().startsWith(heading.toLowerCase())),
+  const secondBlockText = blockText(secondBlock);
+  const authorLine = formatAuthorLine(writing.author);
+  const showInlineAuthorLine = Boolean(
+    authorLine &&
+      isRecognizedWritingQualifier(firstBlockText) &&
+      !normalizeHeadingText(firstBlockText).includes(normalizeHeadingText(authorLine)) &&
+      !normalizeHeadingText(secondBlockText).startsWith(normalizeHeadingText(authorLine)),
   );
 
   return (
     <section className="opinion-writing">
       <div className="opinion-writing__content opinion-writing__content--inline">
-        {showHeading ? (
-          <p
-            className={[
-              "opinion-block",
-              "opinion-block--paragraph",
-              isRecognizedWritingQualifier(heading) ? "opinion-block--qualifier" : "",
-            ].filter(Boolean).join(" ")}
-          >
-            {heading}
-          </p>
-        ) : null}
-        {(writing.blocks ?? []).map((block, blockIndex) => (
-          <OpinionBlock
-            key={`${block.type}-${blockIndex}`}
-            block={block}
-            opinionSourceUrl={opinionSourceUrl}
-            className={isRecognizedWritingQualifier(blockText(block)) ? "opinion-block--qualifier" : undefined}
-          />
+        {blocks.map((block, blockIndex) => (
+          <React.Fragment key={`${block.type}-${blockIndex}`}>
+            <OpinionBlock
+              block={block}
+              opinionSourceUrl={opinionSourceUrl}
+              className={isRecognizedWritingQualifier(blockText(block)) ? "opinion-block--qualifier" : undefined}
+            />
+            {blockIndex === 0 && showInlineAuthorLine ? (
+              <p className="opinion-block opinion-block--paragraph opinion-block--qualifier">
+                {authorLine}
+              </p>
+            ) : null}
+          </React.Fragment>
         ))}
       </div>
     </section>

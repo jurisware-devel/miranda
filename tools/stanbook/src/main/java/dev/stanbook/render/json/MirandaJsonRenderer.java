@@ -28,6 +28,7 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
+import java.util.regex.MatchResult;
 import java.util.Objects;
 import java.util.Optional;
 import java.util.Set;
@@ -39,6 +40,7 @@ public final class MirandaJsonRenderer {
         "(?i)\\b\\d{4}\\s+NY\\s+Slip\\s+Op\\s+\\d+(?:\\(U\\))?\\b"
     );
     private static final Pattern OFFICIAL_CITATION_IN_BRACKETS_PATTERN = Pattern.compile("\\[(?<citation>[^\\]]+)\\]");
+    private static final Pattern OFFICIAL_CITATION_IN_PARENTHESES_PATTERN = Pattern.compile("\\((?<citation>[^\\)]+)\\)");
     private static final Pattern OFFICIAL_REPORTER_PATTERN = Pattern.compile(
         "\\b\\d+\\s+(?:NY2d|NY3d|AD2d|AD3d|Misc(?:\\s+2d|\\s+3d)?)\\s+\\d+\\b"
     );
@@ -84,6 +86,9 @@ public final class MirandaJsonRenderer {
     private static final Pattern DISPOSITION_ACTION_START_PATTERN = Pattern.compile(
         "(?:^|\\.\\s+)(?<action>(?:On review of submissions\\b|Accordingly,\\s+|(?:The\\s+)?(?:order|judgment|appeal|motion|petition)\\b).*)$",
         Pattern.CASE_INSENSITIVE
+    );
+    private static final Pattern POINTS_OF_COUNSEL_ARGUMENT_PATTERN = Pattern.compile(
+        "\\s+(?:[IVX]+|\\d+)\\.\\s+"
     );
     public String render(SourceDocument source, ReflowedDocument document) {
         List<Writing> writings = buildWritings(document, null);
@@ -158,13 +163,48 @@ public final class MirandaJsonRenderer {
             if (item.type() != HeaderItemType.COUNSEL) {
                 continue;
             }
+            String appearanceText = trimPointsOfCounselArguments(item.line().text());
+            if (appearanceText.isEmpty()) {
+                continue;
+            }
             Map<String, Object> appearance = new LinkedHashMap<>();
-            appearance.put("side", inferAppearanceSide(item.line().text()));
-            appearance.put("text", item.line().text());
+            appearance.put("side", inferAppearanceSide(appearanceText));
+            appearance.put("text", appearanceText);
             appearance.put("provenance", provenance(item.line().lineNumber(), item.line().lineNumber()));
             appearances.add(appearance);
         }
+        if (!appearances.isEmpty()) {
+            return appearances;
+        }
+
+        for (HtmlLabeledBlock block : document.lowered().sectioned().source().htmlDocument().pointsOfCounsel()) {
+            String appearanceText = trimPointsOfCounselArguments(block.text());
+            if (appearanceText.isEmpty()) {
+                continue;
+            }
+            Map<String, Object> appearance = new LinkedHashMap<>();
+            appearance.put("side", inferAppearanceSide(appearanceText));
+            appearance.put("text", appearanceText);
+            appearance.put("provenance", provenance(block.startLine(), block.endLine()));
+            appearances.add(appearance);
+        }
         return appearances;
+    }
+
+    private String trimPointsOfCounselArguments(String text) {
+        if (text == null) {
+            return "";
+        }
+        String trimmed = text.trim();
+        if (trimmed.isEmpty()) {
+            return "";
+        }
+
+        Matcher matcher = POINTS_OF_COUNSEL_ARGUMENT_PATTERN.matcher(trimmed);
+        if (matcher.find()) {
+            return trimmed.substring(0, matcher.start()).trim();
+        }
+        return trimmed;
     }
 
     private List<Map<String, Object>> buildHeadnotes(SourceDocument source, List<HtmlHeadnote> headnotes) {
@@ -1062,8 +1102,22 @@ public final class MirandaJsonRenderer {
                 break;
             }
         }
+        if (officialCitation == null) {
+            Matcher parentheticalMatch = OFFICIAL_CITATION_IN_PARENTHESES_PATTERN.matcher(citationText);
+            while (parentheticalMatch.find()) {
+                String candidate = parentheticalMatch.group("citation").trim();
+                Matcher officialReporterMatch = OFFICIAL_REPORTER_PATTERN.matcher(candidate);
+                if (officialReporterMatch.find()) {
+                    officialCitation = officialReporterMatch.group().trim();
+                    break;
+                }
+            }
+        }
         if (officialCitation == null && OFFICIAL_REPORTER_PATTERN.matcher(citationText).find()) {
-            officialCitation = citationText.trim();
+            officialCitation = OFFICIAL_REPORTER_PATTERN.matcher(citationText).results()
+                .map(MatchResult::group)
+                .findFirst()
+                .orElse(citationText.trim());
         }
 
         return new CitationParts(slipOpinion, officialCitation);

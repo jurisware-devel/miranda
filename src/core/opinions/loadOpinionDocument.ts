@@ -115,6 +115,10 @@ const fetchOpinionPdfFromUrl = async (url: string): Promise<string> => {
   if (!response.ok) {
     throw new Error(String(response.status));
   }
+  const contentType = response.headers.get("content-type")?.toLowerCase() ?? "";
+  if (contentType && !contentType.includes("application/pdf")) {
+    throw new Error("not-pdf");
+  }
   return url;
 };
 

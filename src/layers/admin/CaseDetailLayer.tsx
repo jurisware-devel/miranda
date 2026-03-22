@@ -19,6 +19,7 @@ import type {
 } from "../../core/types";
 import {
   buildOpinionStorageKey,
+  extractOfficialReporterCitation,
   extractOpinionStorageKeyFromUrl,
   getCourtLongLabel,
 } from "../../core/utils/caseUtils";
@@ -87,6 +88,20 @@ const formatInspectorSourcePath = (value: string): string => {
   return value.replace(/^\/@fs\/opinions(?=\/)/, "");
 };
 
+const buildPdfLookupCase = (
+  caseItem: CaseItem,
+  opinionDocument?: OpinionDocument | null,
+): CaseItem => {
+  const officialCitation = extractOfficialReporterCitation(opinionDocument?.header?.officialCitation);
+  if (!officialCitation) return caseItem;
+
+  return {
+    ...caseItem,
+    ny3dCite: officialCitation,
+    citation: officialCitation,
+  };
+};
+
 const toDraft = (value: CaseItem | null): CaseMetadataDraft => {
   if (!value) return EMPTY_METADATA_DRAFT;
   return {
@@ -153,6 +168,101 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
     if (!opinionDocument) return "";
     return JSON.stringify(opinionDocument, null, 2);
   }, [opinionDocument]);
+  const opinionTabs = useMemo(() => {
+    if (!caseItem || !opinionDocument) return [];
+
+    const tabs = [
+      {
+        key: "miranda",
+        label: "Miranda",
+        children: (
+          <div className="case-detail__opinion-tab-panel case-detail__opinion-tab-panel--miranda">
+            <OpinionDocumentView
+              document={opinionDocument}
+              opinionSourceUrl={opinionSourceUrl}
+              fallbackTitle={caseItem.caseName}
+              fallbackSlipOpinion={caseItem.slipOp}
+              fallbackOfficialCitation={caseItem.ny3dCite ?? caseItem.citation}
+              fallbackCourt={getCourtLongLabel(caseItem.court, courtsById)}
+              fallbackDecisionDate={caseItem.decisionDate}
+            />
+          </div>
+        ),
+      },
+      {
+        key: "json",
+        label: "JSON",
+        children: (
+          <section className="case-detail__json-inspector case-detail__json-inspector--tabbed">
+            <div className="case-detail__json-inspector-header">
+              <h3 className="case-detail__json-inspector-title">Stanbook JSON</h3>
+              {opinionSourceUrl ? (
+                <span className="case-detail__json-inspector-source">
+                  {formatInspectorSourcePath(opinionSourceUrl)}
+                </span>
+              ) : null}
+            </div>
+            <pre className="case-detail__json-inspector-pre">
+              <code>{prettyOpinionJson}</code>
+            </pre>
+          </section>
+        ),
+      },
+      {
+        key: "html",
+        label: "HTML",
+        children: opinionHtml ? (
+          <section className="case-detail__json-inspector case-detail__json-inspector--tabbed">
+            <div className="case-detail__json-inspector-header">
+              <h3 className="case-detail__json-inspector-title">Source HTML</h3>
+              {opinionHtmlSourceUrl ? (
+                <span className="case-detail__json-inspector-source">
+                  {formatInspectorSourcePath(opinionHtmlSourceUrl)}
+                </span>
+              ) : null}
+            </div>
+            <pre className="case-detail__json-inspector-pre case-detail__source-html-pre">
+              <code>{opinionHtml}</code>
+            </pre>
+          </section>
+        ) : (
+          <Alert
+            type="info"
+            showIcon
+            message="The source HTML is not available for this opinion."
+          />
+        ),
+      },
+    ];
+
+    if (opinionPdfUrl) {
+      tabs.splice(2, 0, {
+        key: "pdf",
+        label: "PDF",
+        children: (
+          <div className="case-detail__opinion-tab-panel">
+            <OpinionPdfView
+              caseItem={caseItem}
+              courtsById={courtsById}
+              opinionPdfUrl={opinionPdfUrl}
+              opinionDocument={opinionDocument}
+            />
+          </div>
+        ),
+      });
+    }
+
+    return tabs;
+  }, [
+    caseItem,
+    courtsById,
+    opinionDocument,
+    opinionHtml,
+    opinionHtmlSourceUrl,
+    opinionPdfUrl,
+    opinionSourceUrl,
+    prettyOpinionJson,
+  ]);
   const sortedPhaseOptions = useMemo(
     () =>
       [...phases]
@@ -257,20 +367,15 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
         setOpinionSavedAt(null);
         setLoadedOpinionKey("");
 
-        const [result, htmlResult, pdfResult] = await Promise.all([
+        const [result, htmlResult] = await Promise.all([
           loadOpinionDocument(currentCase.caseId, currentCase),
           loadOpinionHtmlSource(currentCase).catch(() => null),
-          loadOpinionPdfUrl(currentCase).catch(() => null),
         ]);
         if (!active) return;
 
         if (htmlResult) {
           setOpinionHtml(htmlResult.html);
           setOpinionHtmlSourceUrl(htmlResult.sourceUrl);
-        }
-
-        if (pdfResult) {
-          setOpinionPdfUrl(pdfResult);
         }
 
         if (result.kind === "pdf") {
@@ -294,6 +399,10 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
 
         setOpinionDocument(result.document);
         setOpinionSourceUrl(result.sourceUrl);
+        const pdfUrl = await loadOpinionPdfUrl(buildPdfLookupCase(currentCase, result.document))
+          .catch(() => "");
+        if (!active) return;
+        setOpinionPdfUrl(pdfUrl);
       } catch (err) {
         if (!active) return;
         setOpinionError(err instanceof Error ? err.message : "Failed to load opinion document");
@@ -582,89 +691,7 @@ const AdminCaseDetailLayer: React.FC<AdminCaseDetailLayerProps> = ({
               <Tabs
                 className="case-detail__opinion-tabs"
                 defaultActiveKey="miranda"
-                items={[
-                  {
-                    key: "miranda",
-                    label: "Miranda",
-                    children: (
-                      <div className="case-detail__opinion-tab-panel case-detail__opinion-tab-panel--miranda">
-                        <OpinionDocumentView
-                          document={opinionDocument}
-                          opinionSourceUrl={opinionSourceUrl}
-                          fallbackTitle={caseItem.caseName}
-                          fallbackSlipOpinion={caseItem.slipOp}
-                          fallbackOfficialCitation={caseItem.ny3dCite ?? caseItem.citation}
-                          fallbackCourt={getCourtLongLabel(caseItem.court, courtsById)}
-                          fallbackDecisionDate={caseItem.decisionDate}
-                        />
-                      </div>
-                    ),
-                  },
-                  {
-                    key: "json",
-                    label: "JSON",
-                    children: (
-                      <section className="case-detail__json-inspector case-detail__json-inspector--tabbed">
-                        <div className="case-detail__json-inspector-header">
-                          <h3 className="case-detail__json-inspector-title">Stanbook JSON</h3>
-                          {opinionSourceUrl ? (
-                            <span className="case-detail__json-inspector-source">
-                              {formatInspectorSourcePath(opinionSourceUrl)}
-                            </span>
-                          ) : null}
-                        </div>
-                        <pre className="case-detail__json-inspector-pre">
-                          <code>{prettyOpinionJson}</code>
-                        </pre>
-                      </section>
-                    ),
-                  },
-                  {
-                    key: "pdf",
-                    label: "PDF",
-                    children: opinionPdfUrl ? (
-                      <div className="case-detail__opinion-tab-panel">
-                        <OpinionPdfView
-                          caseItem={caseItem}
-                          courtsById={courtsById}
-                          opinionPdfUrl={opinionPdfUrl}
-                          opinionDocument={opinionDocument}
-                        />
-                      </div>
-                    ) : (
-                      <Alert
-                        type="info"
-                        showIcon
-                        message="A PDF version is not available for this opinion."
-                      />
-                    ),
-                  },
-                  {
-                    key: "html",
-                    label: "HTML",
-                    children: opinionHtml ? (
-                      <section className="case-detail__json-inspector case-detail__json-inspector--tabbed">
-                        <div className="case-detail__json-inspector-header">
-                          <h3 className="case-detail__json-inspector-title">Source HTML</h3>
-                          {opinionHtmlSourceUrl ? (
-                            <span className="case-detail__json-inspector-source">
-                              {formatInspectorSourcePath(opinionHtmlSourceUrl)}
-                            </span>
-                          ) : null}
-                        </div>
-                        <pre className="case-detail__json-inspector-pre case-detail__source-html-pre">
-                          <code>{opinionHtml}</code>
-                        </pre>
-                      </section>
-                    ) : (
-                      <Alert
-                        type="info"
-                        showIcon
-                        message="The source HTML is not available for this opinion."
-                      />
-                    ),
-                  },
-                ]}
+                items={opinionTabs}
               />
             ) : opinionMarkdown ? (
               <>

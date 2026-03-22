@@ -102,6 +102,60 @@ class MirandaJsonRendererTest {
     }
 
     @Test
+    void render_json_extracts_official_citation_from_parenthetical_slip_op_line() {
+        String html = """
+            <html><body>
+            <table>
+              <tr><td>People v Example</td></tr>
+              <tr><td>2025 NY Slip Op 02100 (44 NY3d 1)</td></tr>
+              <tr><td>April 10, 2025</td></tr>
+              <tr><td>Court of Appeals</td></tr>
+            </table>
+            <p>Memorandum.</p>
+            <p>Body text.</p>
+            </body></html>
+            """;
+
+        String json = StanbookPipeline.createDefault()
+            .render(new dev.stanbook.io.HtmlSourceLoader().load(Path.of("example.htm"), html));
+
+        assertThat(json).contains("\"slipOpinion\":\"2025 NY Slip Op 02100\"");
+        assertThat(json).contains("\"officialCitation\":\"44 NY3d 1\"");
+        assertThat(json).doesNotContain("\"officialCitation\":\"2025 NY Slip Op 02100 (44 NY3d 1)\"");
+    }
+
+    @Test
+    void render_json_keeps_points_of_counsel_out_of_appearances() {
+        String html = """
+            <html><body>
+            <table>
+              <tr><td>People v Example</td></tr>
+              <tr><td>2025 NY Slip Op 02100 (44 NY3d 1)</td></tr>
+              <tr><td>April 10, 2025</td></tr>
+              <tr><td>Court of Appeals</td></tr>
+            </table>
+            <CounselBlock type="points_of">
+              <div align="center"><b>POINTS OF COUNSEL</b></div>
+              <p><i>Mitchell H. Spinac</i>, Kingston, for appellant. I. First argument. II. Second argument.</p>
+              <p><i>Emmanuel C. Nneji, District Attorney</i>, Kingston, for respondent. I. Response argument.</p>
+            </CounselBlock>
+            <p>OPINION OF THE COURT</p>
+            <p>Body text.</p>
+            </body></html>
+            """;
+
+        String json = StanbookPipeline.createDefault()
+            .render(new dev.stanbook.io.HtmlSourceLoader().load(Path.of("example.htm"), html));
+
+        assertThat(json).contains("\"appearances\":[");
+        assertThat(json).contains("\"text\":\"*Mitchell H. Spinac*, Kingston, for appellant.\"");
+        assertThat(json).contains("\"text\":\"*Emmanuel C. Nneji, District Attorney*, Kingston, for respondent.\"");
+        assertThat(json).contains("\"pointsOfCounsel\":[");
+        assertThat(json).contains("First argument.");
+        assertThat(json).contains("\"appearances\":[{\"side\":\"appellant\",\"text\":\"*Mitchell H. Spinac*, Kingston, for appellant.\"");
+    }
+
+    @Test
     void render_json_emits_official_page_markers_as_inline_nodes() {
         var source = new SourceDocumentReader().read(Path.of("samples/2003_17888.htm"));
 

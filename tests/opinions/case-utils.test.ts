@@ -9,6 +9,7 @@ import {
   buildOpinionDocumentCandidateUrls,
   buildOpinionJsonCandidateUrls,
   buildOpinionPdfCandidateUrls,
+  extractOfficialReporterCitation,
 } from "../../src/core/utils/caseUtils";
 import type { CaseItem } from "../../src/core/types";
 
@@ -140,6 +141,13 @@ test("buildOpinionPdfCandidateUrls returns no candidates when there is no NY3d c
   const urls = buildOpinionPdfCandidateUrls(caseItem.opinionUrl, caseItem);
 
   assert.deepEqual(urls, []);
+});
+
+test("extractOfficialReporterCitation isolates the official cite from mixed slip-op text", () => {
+  assert.equal(
+    extractOfficialReporterCitation("2025 NY Slip Op 02100 (44 NY3d 1)"),
+    "44 NY3d 1",
+  );
 });
 
 test("buildOpinionHtmlCandidateUrls points at sibling Stanbook source HTML", () => {

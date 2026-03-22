@@ -8,7 +8,7 @@ import {
 } from "../../core/opinions/loadOpinionDocument";
 import type { OpinionDocument } from "../../core/opinions/types";
 import type { CaseItem, CourtItem } from "../../core/types";
-import { getCourtLongLabel } from "../../core/utils/caseUtils";
+import { extractOfficialReporterCitation, getCourtLongLabel } from "../../core/utils/caseUtils";
 import OpinionDocumentView from "../../components/shared/opinion/OpinionDocumentView";
 import OpinionPdfView from "../../components/shared/opinion/OpinionPdfView";
 
@@ -17,6 +17,20 @@ type OpinionCaseDetailLayerProps = {
   courtsById: Map<string, CourtItem>;
   loading: boolean;
   error: string | null;
+};
+
+const buildPdfLookupCase = (
+  caseItem: CaseItem,
+  opinionDocument?: OpinionDocument | null,
+): CaseItem => {
+  const officialCitation = extractOfficialReporterCitation(opinionDocument?.header?.officialCitation);
+  if (!officialCitation) return caseItem;
+
+  return {
+    ...caseItem,
+    ny3dCite: officialCitation,
+    citation: officialCitation,
+  };
 };
 
 const OpinionCaseDetailLayer: React.FC<OpinionCaseDetailLayerProps> = ({
@@ -97,21 +111,15 @@ const OpinionCaseDetailLayer: React.FC<OpinionCaseDetailLayerProps> = ({
         setOpinionSourceUrl("");
         setOpinionPdfUrl("");
 
-        const [jsonResult, pdfResult] = await Promise.allSettled([
-          loadOpinionJsonDocument(currentCase),
-          loadOpinionPdfUrl(currentCase),
-        ]);
+        const jsonResult = await loadOpinionJsonDocument(currentCase);
         if (!active) return;
 
-        if (jsonResult.status === "fulfilled") {
-          setOpinionDocument(jsonResult.value.document);
-          setOpinionSourceUrl(jsonResult.value.sourceUrl);
-        }
-
-        if (pdfResult.status === "fulfilled") {
-          setOpinionPdfUrl(pdfResult.value);
-        }
-
+        setOpinionDocument(jsonResult.document);
+        setOpinionSourceUrl(jsonResult.sourceUrl);
+        const pdfUrl = await loadOpinionPdfUrl(buildPdfLookupCase(currentCase, jsonResult.document))
+          .catch(() => "");
+        if (!active) return;
+        setOpinionPdfUrl(pdfUrl);
       } catch (err) {
         if (!active) return;
         setOpinionError(err instanceof Error ? err.message : "Failed to load opinion document");
@@ -125,6 +133,26 @@ const OpinionCaseDetailLayer: React.FC<OpinionCaseDetailLayerProps> = ({
       active = false;
     };
   }, [caseItem]);
+
+  const opinionPanel = opinionDocument ? (
+    <div className="case-detail__opinion-tab-panel case-detail__opinion-tab-panel--miranda">
+      <OpinionDocumentView
+        document={opinionDocument}
+        opinionSourceUrl={opinionSourceUrl}
+        fallbackTitle={caseItem?.caseName}
+        fallbackSlipOpinion={caseItem?.slipOp}
+        fallbackOfficialCitation={caseItem?.ny3dCite ?? caseItem?.citation}
+        fallbackCourt={getCourtLongLabel(caseItem?.court, courtsById)}
+        fallbackDecisionDate={caseItem?.decisionDate}
+      />
+    </div>
+  ) : (
+    <Alert
+      type="info"
+      message="A Miranda-rendered opinion is not available for this case."
+      showIcon
+    />
+  );
 
   return (
     <div className="case-detail">
@@ -142,6 +170,8 @@ const OpinionCaseDetailLayer: React.FC<OpinionCaseDetailLayerProps> = ({
             <div className="card-grid__loading">
               <Spin />
             </div>
+          ) : !opinionPdfUrl ? (
+            opinionPanel
           ) : (
             <Tabs
               className="case-detail__opinion-tabs"
@@ -150,30 +180,12 @@ const OpinionCaseDetailLayer: React.FC<OpinionCaseDetailLayerProps> = ({
                 {
                   key: "miranda",
                   label: "Opinion",
-                  children: opinionDocument ? (
-                    <div className="case-detail__opinion-tab-panel case-detail__opinion-tab-panel--miranda">
-                      <OpinionDocumentView
-                        document={opinionDocument}
-                        opinionSourceUrl={opinionSourceUrl}
-                        fallbackTitle={caseItem.caseName}
-                        fallbackSlipOpinion={caseItem.slipOp}
-                        fallbackOfficialCitation={caseItem.ny3dCite ?? caseItem.citation}
-                        fallbackCourt={getCourtLongLabel(caseItem.court, courtsById)}
-                        fallbackDecisionDate={caseItem.decisionDate}
-                      />
-                    </div>
-                  ) : (
-                    <Alert
-                      type="info"
-                      message="A Miranda-rendered opinion is not available for this case."
-                      showIcon
-                    />
-                  ),
+                  children: opinionPanel,
                 },
                 {
                   key: "pdf",
                   label: "PDF",
-                  children: opinionPdfUrl ? (
+                  children: (
                     <div className="case-detail__opinion-tab-panel">
                       <OpinionPdfView
                         caseItem={caseItem}
@@ -182,12 +194,6 @@ const OpinionCaseDetailLayer: React.FC<OpinionCaseDetailLayerProps> = ({
                         opinionDocument={opinionDocument}
                       />
                     </div>
-                  ) : (
-                    <Alert
-                      type="info"
-                      message="A PDF version is not available for this case."
-                      showIcon
-                    />
                   ),
                 },
               ]}

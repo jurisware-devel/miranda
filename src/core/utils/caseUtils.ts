@@ -31,6 +31,16 @@ const parseNy3dCitation = (value?: string | null) => {
   };
 };
 
+const OFFICIAL_REPORTER_CITATION_PATTERN =
+  /\b\d+\s+(?:NY2d|NY3d|AD2d|AD3d|Misc(?:\s+2d|\s+3d)?)\s+\d+\b/i;
+
+export const extractOfficialReporterCitation = (value?: string | null): string => {
+  const source = (value ?? "").trim();
+  if (!source) return "";
+  const match = source.match(OFFICIAL_REPORTER_CITATION_PATTERN);
+  return match?.[0]?.trim() ?? source;
+};
+
 const resolveOpinionObjectPath = (opinionUrl?: string | null) => {
   const source = (opinionUrl ?? "").trim();
   if (!source) return "";
@@ -266,7 +276,7 @@ export const formatOpinionSubtitle = ({
     return slipOpinion?.trim() ?? "";
   }
 
-  const citation = officialCitation?.trim() ?? "";
+  const citation = extractOfficialReporterCitation(officialCitation);
   if (!citation) return "";
 
   if (!decisionDate) return "";
