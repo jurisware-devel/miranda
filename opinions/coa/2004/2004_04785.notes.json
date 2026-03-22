@@ -2,7 +2,7 @@
   "caseId": "2004_04785",
   "sourcePath": "coa/2004/2004_04785.htm",
   "notesPath": "coa/2004/2004_04785.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.242Z",
+  "generatedAt": "2026-03-22T19:47:12.483Z",
   "source": {
     "title": "People v Reynoso (2004 NY Slip Op 04785)",
     "publicationStatus": "published"
@@ -78,6 +78,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Richard A. Brown, District Attorney , Kew Gardens ( Traci R. Wilkerson of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Lynn W.L. Fahey*, New York City, and *Steven R. Bernhard* for appellant.",
+        "normalized": "lynn w.l. fahey, new york city, and steven r. bernhard for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Richard A. Brown, District Attorney*, Kew Gardens (*Traci R. Wilkerson* of counsel), for respondent.",
+        "normalized": "richard a. brown, district attorney, kew gardens (traci r. wilkerson of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

@@ -2,7 +2,7 @@
   "caseId": "2017_02588",
   "sourcePath": "coa/2017/2017_02588.htm",
   "notesPath": "coa/2017/2017_02588.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.947Z",
+  "generatedAt": "2026-03-22T19:47:12.985Z",
   "source": {
     "title": "People v Williams (2017 NY Slip Op 02588)",
     "publicationStatus": "published"
@@ -56,7 +56,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

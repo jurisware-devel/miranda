@@ -2,7 +2,7 @@
   "caseId": "2005_04617",
   "sourcePath": "coa/2005/2005_04617.htm",
   "notesPath": "coa/2005/2005_04617.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.280Z",
+  "generatedAt": "2026-03-22T19:47:12.513Z",
   "source": {
     "title": "People v Williams (2005 NY Slip Op 04617)",
     "publicationStatus": "published"
@@ -79,6 +79,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Center for Appellate Litigation , New York City ( Robert S. Dean of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Robert M. Morgenthau*, *District Attorney*, New York City (*Madeleine Guilmain* and *Mark Dwyer* of counsel), for appellant.",
+        "normalized": "robert m. morgenthau, district attorney, new york city (madeleine guilmain and mark dwyer of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Center for Appellate Litigation*, New York City (*Robert S. Dean* of counsel), for respondent.",
+        "normalized": "center for appellate litigation, new york city (robert s. dean of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

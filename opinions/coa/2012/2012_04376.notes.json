@@ -2,7 +2,7 @@
   "caseId": "2012_04376",
   "sourcePath": "coa/2012/2012_04376.htm",
   "notesPath": "coa/2012/2012_04376.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.615Z",
+  "generatedAt": "2026-03-22T19:47:12.750Z",
   "source": {
     "title": "People v Haffiz (2012 NY Slip Op 04376)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Thomas J. Spota, District Attorney , Riverhead ( Michael Blakey of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Quadrino & Schwartz, P.C.*, Garden City (*Bruce A. Barket* of counsel), for appellant.",
+        "normalized": "quadrino & schwartz, p.c., garden city (bruce a. barket of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Thomas J. Spota, District Attorney*, Riverhead (*Michael Blakey* of counsel), for respondent.",
+        "normalized": "thomas j. spota, district attorney, riverhead (michael blakey of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

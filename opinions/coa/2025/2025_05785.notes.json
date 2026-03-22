@@ -2,7 +2,7 @@
   "caseId": "2025_05785",
   "sourcePath": "coa/2025/2025_05785.htm",
   "notesPath": "coa/2025/2025_05785.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.339Z",
+  "generatedAt": "2026-03-22T19:47:13.279Z",
   "source": {
     "title": "People ex rel. Kon v Lynelle Maginley-Liddie (2025 NY Slip Op 05785)",
     "publicationStatus": "slip_op_only"
@@ -98,6 +98,20 @@
         "sentenceText": "Nancy Fitzpatrick Talcott, for respondent.",
         "possiblyTruncated": false
       }
+    ],
+    "companionAppearances": [
+      {
+        "text": "Hannah Kon, for appellant.",
+        "normalized": "hannah kon, for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Nancy Fitzpatrick Talcott, for respondent.",
+        "normalized": "nancy fitzpatrick talcott, for respondent.",
+        "side": "respondent",
+        "possiblyTruncated": false
+      }
     ]
   },
   "sections": {
@@ -157,6 +171,11 @@
       "code": "APPEARANCE_LINE_WITH_ARGUMENT_TAIL",
       "severity": "info",
       "detail": "Appearance-like line continues into argument text after \"for respondent.\"."
+    },
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 3 appearance line(s), but companion JSON has 2."
     },
     {
       "code": "MULTIPLE_WRITINGS",

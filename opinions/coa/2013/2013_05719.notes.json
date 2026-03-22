@@ -2,7 +2,7 @@
   "caseId": "2013_05719",
   "sourcePath": "coa/2013/2013_05719.htm",
   "notesPath": "coa/2013/2013_05719.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.681Z",
+  "generatedAt": "2026-03-22T19:47:12.795Z",
   "source": {
     "title": "People v Rodriguez (2013 NY Slip Op 05719)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Cyrus R. Vance, Jr., District Attorney , New York City ( Patricia Curran of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Robert S. Dean, Center for Appellate Litigation*, New York City (*Lisa A. Packard* of counsel), for appellant.",
+        "normalized": "robert s. dean, center for appellate litigation, new york city (lisa a. packard of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Cyrus R. Vance, Jr., District Attorney*, New York City (*Patricia Curran* of counsel), for respondent.",
+        "normalized": "cyrus r. vance, jr., district attorney, new york city (patricia curran of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

@@ -2,7 +2,7 @@
   "caseId": "2025_07082",
   "sourcePath": "coa/2025/2025_07082.htm",
   "notesPath": "coa/2025/2025_07082.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.368Z",
+  "generatedAt": "2026-03-22T19:47:13.299Z",
   "source": {
     "title": "People v Smith (2025 NY Slip Op 07082)",
     "publicationStatus": "slip_op_only"
@@ -97,6 +97,20 @@
         "sentenceText": "Amy N. Walendziak, for respondent.",
         "possiblyTruncated": false
       }
+    ],
+    "companionAppearances": [
+      {
+        "text": "Stephanie M. Stare, for appellant.",
+        "normalized": "stephanie m. stare, for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Amy N. Walendziak, for respondent.",
+        "normalized": "amy n. walendziak, for respondent.",
+        "side": "respondent",
+        "possiblyTruncated": false
+      }
     ]
   },
   "sections": {
@@ -166,6 +180,11 @@
       "code": "APPEARANCE_LINE_WITH_ARGUMENT_TAIL",
       "severity": "info",
       "detail": "Appearance-like line continues into argument text after \"for respondent.\"."
+    },
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 3 appearance line(s), but companion JSON has 2."
     },
     {
       "code": "MULTIPLE_WRITINGS",

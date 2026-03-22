@@ -2,7 +2,7 @@
   "caseId": "2003_19689",
   "sourcePath": "coa/2003/2003_19689.htm",
   "notesPath": "coa/2003/2003_19689.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.219Z",
+  "generatedAt": "2026-03-22T19:47:12.467Z",
   "source": {
     "title": "People v Taylor (2003 NY Slip Op 19689)",
     "publicationStatus": "published"
@@ -57,7 +57,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

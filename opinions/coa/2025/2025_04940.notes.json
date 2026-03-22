@@ -2,7 +2,7 @@
   "caseId": "2025_04940",
   "sourcePath": "coa/2025/2025_04940.htm",
   "notesPath": "coa/2025/2025_04940.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.334Z",
+  "generatedAt": "2026-03-22T19:47:13.276Z",
   "source": {
     "title": "People v Tapia (2025 NY Slip Op 04940)",
     "publicationStatus": "published"
@@ -79,6 +79,14 @@
         "sentenceText": "Alvin L. Bragg, Jr. , District Attorney , New York City ( Jacob C. Marcus , Stephen C. Wu and Amanda Katherine Regan of counsel), for respondent.",
         "possiblyTruncated": false
       }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Twyla Carter*, *The Legal Aid Society*, New York City (*Harold",
+        "normalized": "twyla carter, the legal aid society, new york city (harold",
+        "side": null,
+        "possiblyTruncated": true
+      }
     ]
   },
   "sections": {
@@ -121,6 +129,31 @@
       "code": "STRAY_CLOSING_TAG",
       "severity": "warning",
       "detail": "Closing tag </b> appears more times than opening tag <b>."
+    },
+    {
+      "code": "JSON_APPEARANCE_TRUNCATED",
+      "severity": "warning",
+      "detail": "Companion JSON appearance looks truncated: *Twyla Carter*, *The Legal Aid Society*, New York City (*Harold"
+    },
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 1."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Twyla Carter , The Legal Aid Society , New York City ( Harold V. Ferguson, Jr. of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Alvin L. Bragg, Jr. , District Attorney , New York City ( Jacob C. Marcus , Stephen C. Wu and Amanda Katherine Regan of counsel), for respondent."
+    },
+    {
+      "code": "JSON_APPEARANCE_UNMATCHED",
+      "severity": "info",
+      "detail": "Companion JSON appearance does not directly match any raw appearance sentence: *Twyla Carter*, *The Legal Aid Society*, New York City (*Harold"
     },
     {
       "code": "MULTIPLE_HEADER_TABLES",

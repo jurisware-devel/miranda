@@ -2,7 +2,7 @@
   "caseId": "2009_01157",
   "sourcePath": "coa/2009/2009_01157.htm",
   "notesPath": "coa/2009/2009_01157.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.420Z",
+  "generatedAt": "2026-03-22T19:47:12.614Z",
   "source": {
     "title": "People v Middleton (2009 NY Slip Op 01157)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Charles J. Hynes, District Attorney , Brooklyn ( Maria Park of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Legal Aid Society, Criminal Appeals Bureau*, New York City (*Steven J. Miraglia* and *Steven Banks* of counsel), for appellant.",
+        "normalized": "legal aid society, criminal appeals bureau, new york city (steven j. miraglia and steven banks of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Charles J. Hynes, District Attorney*, Brooklyn (*Maria Park* of counsel), for respondent.",
+        "normalized": "charles j. hynes, district attorney, brooklyn (maria park of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

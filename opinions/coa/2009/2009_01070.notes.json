@@ -2,7 +2,7 @@
   "caseId": "2009_01070",
   "sourcePath": "coa/2009/2009_01070.htm",
   "notesPath": "coa/2009/2009_01070.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.419Z",
+  "generatedAt": "2026-03-22T19:47:12.612Z",
   "source": {
     "title": "People v Maye (2009 NY Slip Op 01070)",
     "publicationStatus": "published"
@@ -64,6 +64,14 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Matthew C. Hug , North Greenbush, for appellant.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Matthew C. Hug*, North Greenbush, for appellant.",
+        "normalized": "matthew c. hug, north greenbush, for appellant.",
+        "side": "appellant",
         "possiblyTruncated": false
       }
     ]

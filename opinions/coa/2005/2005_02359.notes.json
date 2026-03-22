@@ -2,7 +2,7 @@
   "caseId": "2005_02359",
   "sourcePath": "coa/2005/2005_02359.htm",
   "notesPath": "coa/2005/2005_02359.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.269Z",
+  "generatedAt": "2026-03-22T19:47:12.504Z",
   "source": {
     "title": "People v Smith (2005 NY Slip Op 02359)",
     "publicationStatus": "published"
@@ -78,6 +78,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Michael C. Green, District Attorney , Rochester ( Michael J. Nolan of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Edward J. Nowak, Public Defender*, Rochester (*Timothy P. Donaher* of counsel), for appellant.",
+        "normalized": "edward j. nowak, public defender, rochester (timothy p. donaher of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Michael C. Green, District Attorney*, Rochester (*Michael J. Nolan* of counsel), for respondent.",
+        "normalized": "michael c. green, district attorney, rochester (michael j. nolan of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

@@ -2,7 +2,7 @@
   "caseId": "2009_08670",
   "sourcePath": "coa/2009/2009_08670.htm",
   "notesPath": "coa/2009/2009_08670.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.449Z",
+  "generatedAt": "2026-03-22T19:47:12.634Z",
   "source": {
     "title": "People v Henderson (2009 NY Slip Op 08670)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Robert T. Johnson, District Attorney , Bronx ( Rither Alabre, Joseph N. Ferdenzi and Karen Swiger of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Office of the Appellate Defender*, New York City (*Richard M. Greenberg* and *Eunice C. Lee* of counsel), and *Simpson Thacher & Bartlett LLP* (*Marsha W. Yee* of counsel) for appellant.",
+        "normalized": "office of the appellate defender, new york city (richard m. greenberg and eunice c. lee of counsel), and simpson thacher & bartlett llp (marsha w. yee of counsel) for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Robert T. Johnson, District Attorney*, Bronx (*Rither Alabre, Joseph N. Ferdenzi* and *Karen Swiger* of counsel), for respondent.",
+        "normalized": "robert t. johnson, district attorney, bronx (rither alabre, joseph n. ferdenzi and karen swiger of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

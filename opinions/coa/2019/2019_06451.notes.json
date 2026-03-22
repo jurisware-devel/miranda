@@ -2,7 +2,7 @@
   "caseId": "2019_06451",
   "sourcePath": "coa/2019/2019_06451.htm",
   "notesPath": "coa/2019/2019_06451.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.065Z",
+  "generatedAt": "2026-03-22T19:47:13.068Z",
   "source": {
     "title": "People v Monforte (2019 NY Slip Op 06451)",
     "publicationStatus": "published"
@@ -73,7 +73,8 @@
         "sentenceText": "Robert M. Carney , District Attorney , Schenectady ( Peter H. Willis of counsel), for respondent.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -111,6 +112,21 @@
     "hasFootnotesHeading": false
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Law Office of Craig Meyerson , Peru ( Craig Meyerson of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Robert M. Carney , District Attorney , Schenectady ( Peter H. Willis of counsel), for respondent."
+    },
     {
       "code": "MULTIPLE_HEADER_TABLES",
       "severity": "info",

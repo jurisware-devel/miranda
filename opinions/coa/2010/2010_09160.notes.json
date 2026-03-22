@@ -2,7 +2,7 @@
   "caseId": "2010_09160",
   "sourcePath": "coa/2010/2010_09160.htm",
   "notesPath": "coa/2010/2010_09160.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.509Z",
+  "generatedAt": "2026-03-22T19:47:12.675Z",
   "source": {
     "title": "People v Battles (2010 NY Slip Op 09160)",
     "publicationStatus": "published"
@@ -65,7 +65,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

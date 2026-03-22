@@ -2,7 +2,7 @@
   "caseId": "2021_01934",
   "sourcePath": "coa/2021/2021_01934.htm",
   "notesPath": "coa/2021/2021_01934.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.138Z",
+  "generatedAt": "2026-03-22T19:47:13.124Z",
   "source": {
     "title": "People v Viviani (2021 NY Slip Op 01934)",
     "publicationStatus": "published"
@@ -63,7 +63,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

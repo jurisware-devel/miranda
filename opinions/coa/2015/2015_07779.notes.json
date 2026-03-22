@@ -2,7 +2,7 @@
   "caseId": "2015_07779",
   "sourcePath": "coa/2015/2015_07779.htm",
   "notesPath": "coa/2015/2015_07779.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.824Z",
+  "generatedAt": "2026-03-22T19:47:12.898Z",
   "source": {
     "title": "People v Denson (2015 NY Slip Op 07779)",
     "publicationStatus": "published"
@@ -59,7 +59,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

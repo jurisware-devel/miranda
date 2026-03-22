@@ -2,7 +2,7 @@
   "caseId": "2007_05582",
   "sourcePath": "coa/2007/2007_05582.htm",
   "notesPath": "coa/2007/2007_05582.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.365Z",
+  "generatedAt": "2026-03-22T19:47:12.574Z",
   "source": {
     "title": "People v Litto (2007 NY Slip Op 05582)",
     "publicationStatus": "published"
@@ -60,7 +60,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

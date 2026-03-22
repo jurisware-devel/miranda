@@ -2,7 +2,7 @@
   "caseId": "2005_01143",
   "sourcePath": "coa/2005/2005_01143.htm",
   "notesPath": "coa/2005/2005_01143.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.265Z",
+  "generatedAt": "2026-03-22T19:47:12.502Z",
   "source": {
     "title": "People v Thomas (2005 NY Slip Op 01143)",
     "publicationStatus": "published"
@@ -58,7 +58,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

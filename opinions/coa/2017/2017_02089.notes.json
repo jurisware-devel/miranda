@@ -2,7 +2,7 @@
   "caseId": "2017_02089",
   "sourcePath": "coa/2017/2017_02089.htm",
   "notesPath": "coa/2017/2017_02089.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.937Z",
+  "generatedAt": "2026-03-22T19:47:12.979Z",
   "source": {
     "title": "People v Slocum (2017 NY Slip Op 02089)",
     "publicationStatus": "published"
@@ -81,7 +81,8 @@
         "sentenceText": "Debevoise & Plimpton LLP , New York City ( Matthew L. Biben and Susan Gittes of counsel), and The Bronx Defenders , Bronx ( Justine J. Olderman , V. Marika Meis and Saul Zipkin of counsel), for The Bronx Defenders and others, amici curiae.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -118,6 +119,26 @@
     "hasFootnotesHeading": false
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 3 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: New York Prosecutors Training Institute, Inc. , Albany ( Jason P. Weinstein and Wendy Evans Lehmann of counsel), and P. David Soares, Special District Attorney , Albany, for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Michael J. Mercure, Public Defender , Fort Edward ( Robert M. Winn of counsel), for respondent."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Debevoise & Plimpton LLP , New York City ( Matthew L. Biben and Susan Gittes of counsel), and The Bronx Defenders , Bronx ( Justine J. Olderman , V. Marika Meis and Saul Zipkin of counsel), for The Bronx Defenders and others, amici curiae."
+    },
     {
       "code": "MULTIPLE_HEADER_TABLES",
       "severity": "info",

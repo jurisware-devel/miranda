@@ -2,7 +2,7 @@
   "caseId": "2006_04339",
   "sourcePath": "coa/2006/2006_04339.htm",
   "notesPath": "coa/2006/2006_04339.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.324Z",
+  "generatedAt": "2026-03-22T19:47:12.546Z",
   "source": {
     "title": "People v Redzeposki (2006 NY Slip Op 04339)",
     "publicationStatus": "published"
@@ -78,6 +78,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Legal Aid Society , New York City ( Ellen Dille, Steven Banks and Laura R. Johnson of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Robert T. Johnson, District Attorney*, Bronx (*Jillian E. Wieder, Joseph N. Ferdenzi* and *Allen H. Saperstein* of counsel), for appellant.",
+        "normalized": "robert t. johnson, district attorney, bronx (jillian e. wieder, joseph n. ferdenzi and allen h. saperstein of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Legal Aid Society*, New York City (*Ellen Dille, Steven Banks* and *Laura R. Johnson* of counsel), for respondent.",
+        "normalized": "legal aid society, new york city (ellen dille, steven banks and laura r. johnson of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

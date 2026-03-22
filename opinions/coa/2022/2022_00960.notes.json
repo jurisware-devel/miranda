@@ -2,7 +2,7 @@
   "caseId": "2022_00960",
   "sourcePath": "coa/2022/2022_00960.htm",
   "notesPath": "coa/2022/2022_00960.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.173Z",
+  "generatedAt": "2026-03-22T19:47:13.150Z",
   "source": {
     "title": "People v Duarte (2022 NY Slip Op 00960)",
     "publicationStatus": "published"
@@ -74,7 +74,8 @@
         "sentenceText": "Alvin L. Bragg, Jr., District Attorney , New York City ( R. Jeannie Campbell-Urban and Hilary Hassler of counsel), for respondent.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -121,6 +122,21 @@
     "hasFootnotesHeading": true
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Robert S. Dean, Center for Appellate Litigation , New York City ( Molly Schindler of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Alvin L. Bragg, Jr., District Attorney , New York City ( R. Jeannie Campbell-Urban and Hilary Hassler of counsel), for respondent."
+    },
     {
       "code": "MULTIPLE_WRITINGS",
       "severity": "info",

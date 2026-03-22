@@ -2,7 +2,7 @@
   "caseId": "2015_08368",
   "sourcePath": "coa/2015/2015_08368.htm",
   "notesPath": "coa/2015/2015_08368.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.829Z",
+  "generatedAt": "2026-03-22T19:47:12.901Z",
   "source": {
     "title": "People v Gary (2015 NY Slip Op 08368)",
     "publicationStatus": "published"
@@ -72,7 +72,8 @@
         "sentenceText": "Madeline Singas, Acting District Attorney , Mineola ( Jason R. Richards and Tammy J. Smiley of counsel), for respondent.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -109,6 +110,21 @@
     "hasFootnotesHeading": false
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Fahringer & Dubno , New York City ( Erica T. Dubno, Herald Price Fahringer and Nicole Neckles of counsel), and Law Offices of Thomas F. Liotti , Garden City ( Thomas F. Liotti of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Madeline Singas, Acting District Attorney , Mineola ( Jason R. Richards and Tammy J. Smiley of counsel), for respondent."
+    },
     {
       "code": "MULTIPLE_HEADER_TABLES",
       "severity": "info",

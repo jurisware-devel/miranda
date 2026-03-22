@@ -2,7 +2,7 @@
   "caseId": "2010_00192",
   "sourcePath": "coa/2010/2010_00192.htm",
   "notesPath": "coa/2010/2010_00192.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.457Z",
+  "generatedAt": "2026-03-22T19:47:12.640Z",
   "source": {
     "title": "People v Ramos (2010 NY Slip Op 00192)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Richard A. Brown , District Attorney, Kew Gardens ( Daniel Bresnahan of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Legal Aid Society*, New York City (*Jonathan Garelick* and *Steven Banks* of counsel), for appellant.",
+        "normalized": "legal aid society, new york city (jonathan garelick and steven banks of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Richard A. Brown*, *District Attorney,* Kew Gardens (*Daniel Bresnahan* of counsel), for respondent.",
+        "normalized": "richard a. brown, district attorney, kew gardens (daniel bresnahan of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

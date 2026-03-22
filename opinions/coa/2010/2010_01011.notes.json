@@ -2,7 +2,7 @@
   "caseId": "2010_01011",
   "sourcePath": "coa/2010/2010_01011.htm",
   "notesPath": "coa/2010/2010_01011.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.458Z",
+  "generatedAt": "2026-03-22T19:47:12.641Z",
   "source": {
     "title": "People v Taylor (2010 NY Slip Op 01011)",
     "publicationStatus": "published"
@@ -76,6 +76,14 @@
         "sentenceText": "Anderson, Moschetti & Taffany, PLLC , Latham ( Peter J. Moschetti, Jr. , of counsel), for respondents.",
         "possiblyTruncated": false
       }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Andrew M. Cuomo*, *Attorney General*, New York City (*Monica Wagner*, *Barbara D. Underwood* and *Roseann MacKechnie* of counsel), for appellant.",
+        "normalized": "andrew m. cuomo, attorney general, new york city (monica wagner, barbara d. underwood and roseann mackechnie of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      }
     ]
   },
   "sections": {
@@ -116,6 +124,16 @@
     "hasFootnotesHeading": true
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 1."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Anderson, Moschetti & Taffany, PLLC , Latham ( Peter J. Moschetti, Jr. , of counsel), for respondents."
+    },
     {
       "code": "MULTIPLE_HEADER_TABLES",
       "severity": "info",

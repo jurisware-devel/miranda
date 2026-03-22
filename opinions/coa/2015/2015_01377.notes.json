@@ -2,7 +2,7 @@
   "caseId": "2015_01377",
   "sourcePath": "coa/2015/2015_01377.htm",
   "notesPath": "coa/2015/2015_01377.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.784Z",
+  "generatedAt": "2026-03-22T19:47:12.871Z",
   "source": {
     "title": "People v Brumfield (2015 NY Slip Op 01377)",
     "publicationStatus": "published"
@@ -73,7 +73,8 @@
         "sentenceText": "Timothy P. Donaher, Public Defender , Rochester ( David R. Juergens of counsel), for respondent.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -110,6 +111,21 @@
     "hasFootnotesHeading": false
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Sandra Doorley, District Attorney , Rochester ( Kelly Christine Wolford of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Timothy P. Donaher, Public Defender , Rochester ( David R. Juergens of counsel), for respondent."
+    },
     {
       "code": "MULTIPLE_HEADER_TABLES",
       "severity": "info",

@@ -2,7 +2,7 @@
   "caseId": "2023_05348",
   "sourcePath": "coa/2023/2023_05348.htm",
   "notesPath": "coa/2023/2023_05348.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.220Z",
+  "generatedAt": "2026-03-22T19:47:13.184Z",
   "source": {
     "title": "People v Lovett (2023 NY Slip Op 05348)",
     "publicationStatus": "published"
@@ -63,7 +63,8 @@
         "sentenceText": "J. Anthony Jordan, District Attorney , Fort Edward ( Taylor Fitzsimmons of counsel), for appellant.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -106,6 +107,16 @@
     "hasFootnotesHeading": false
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 1 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: J. Anthony Jordan, District Attorney , Fort Edward ( Taylor Fitzsimmons of counsel), for appellant."
+    },
     {
       "code": "MULTIPLE_WRITINGS",
       "severity": "info",

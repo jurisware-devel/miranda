@@ -2,7 +2,7 @@
   "caseId": "2003_18777",
   "sourcePath": "coa/2003/2003_18777.htm",
   "notesPath": "coa/2003/2003_18777.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.202Z",
+  "generatedAt": "2026-03-22T19:47:12.453Z",
   "source": {
     "title": "People v McDonald (2003 NY Slip Op 18777)",
     "publicationStatus": "published"
@@ -58,7 +58,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

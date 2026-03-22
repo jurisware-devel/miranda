@@ -2,7 +2,7 @@
   "caseId": "2024_05132",
   "sourcePath": "coa/2024/2024_05132.htm",
   "notesPath": "coa/2024/2024_05132.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.285Z",
+  "generatedAt": "2026-03-22T19:47:13.235Z",
   "source": {
     "title": "People v Sharp (2024 NY Slip Op 05132)",
     "publicationStatus": "published"
@@ -58,7 +58,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

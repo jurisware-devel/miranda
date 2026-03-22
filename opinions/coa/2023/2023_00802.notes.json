@@ -2,7 +2,7 @@
   "caseId": "2023_00802",
   "sourcePath": "coa/2023/2023_00802.htm",
   "notesPath": "coa/2023/2023_00802.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.199Z",
+  "generatedAt": "2026-03-22T19:47:13.168Z",
   "source": {
     "title": "People v Rivera (2023 NY Slip Op 00802)",
     "publicationStatus": "published"
@@ -72,7 +72,8 @@
         "sentenceText": "Gary M. Pasqua, District Attorney , Canton ( Matthew L. Peabody of counsel), for respondent.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -109,6 +110,21 @@
     "hasFootnotesHeading": false
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Rural Law Center of New York, Inc. , Castleton ( Kristin A. Bluvas of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Gary M. Pasqua, District Attorney , Canton ( Matthew L. Peabody of counsel), for respondent."
+    },
     {
       "code": "MULTIPLE_HEADER_TABLES",
       "severity": "info",

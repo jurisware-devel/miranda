@@ -2,7 +2,7 @@
   "caseId": "2004_08981",
   "sourcePath": "coa/2004/2004_08981.htm",
   "notesPath": "coa/2004/2004_08981.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.258Z",
+  "generatedAt": "2026-03-22T19:47:12.496Z",
   "source": {
     "title": "People v Duggins (2004 NY Slip Op 08981)",
     "publicationStatus": "published"
@@ -59,7 +59,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

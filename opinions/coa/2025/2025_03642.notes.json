@@ -2,7 +2,7 @@
   "caseId": "2025_03642",
   "sourcePath": "coa/2025/2025_03642.htm",
   "notesPath": "coa/2025/2025_03642.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.325Z",
+  "generatedAt": "2026-03-22T19:47:13.268Z",
   "source": {
     "title": "People v T.P. (2025 NY Slip Op 03642)",
     "publicationStatus": "slip_op_only"
@@ -116,6 +116,20 @@
         "sentenceText": "Daniel J. Mattle, for respondent.",
         "possiblyTruncated": false
       }
+    ],
+    "companionAppearances": [
+      {
+        "text": "Corey M. Meyer, for appellant.",
+        "normalized": "corey m. meyer, for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Daniel J. Mattle, for respondent.",
+        "normalized": "daniel j. mattle, for respondent.",
+        "side": "respondent",
+        "possiblyTruncated": false
+      }
     ]
   },
   "sections": {
@@ -180,6 +194,11 @@
       "code": "APPEARANCE_LINE_WITH_ARGUMENT_TAIL",
       "severity": "info",
       "detail": "Appearance-like line continues into argument text after \"for respondent.\"."
+    },
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 3 appearance line(s), but companion JSON has 2."
     },
     {
       "code": "MULTIPLE_WRITINGS",

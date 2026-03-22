@@ -2,7 +2,7 @@
   "caseId": "2017_02359",
   "sourcePath": "coa/2017/2017_02359.htm",
   "notesPath": "coa/2017/2017_02359.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.939Z",
+  "generatedAt": "2026-03-22T19:47:12.980Z",
   "source": {
     "title": "People v Leonard (2017 NY Slip Op 02359)",
     "publicationStatus": "published"
@@ -57,7 +57,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

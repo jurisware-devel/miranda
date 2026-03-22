@@ -2,7 +2,7 @@
   "caseId": "2006_09323",
   "sourcePath": "coa/2006/2006_09323.htm",
   "notesPath": "coa/2006/2006_09323.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.342Z",
+  "generatedAt": "2026-03-22T19:47:12.558Z",
   "source": {
     "title": "People v Ross (2006 NY Slip Op 09323)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Frank J. Clark, District Attorney, Buffalo ( Tina Marie Stanford, Shawn P. Hennessy and J. Michael Marion of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Legal Aid Bureau of Buffalo, Inc.,* Buffalo (*Timothy P. Murphy, David C. Schopp* and *Barbara J. Davies* of counsel), for appellant.",
+        "normalized": "legal aid bureau of buffalo, inc., buffalo (timothy p. murphy, david c. schopp and barbara j. davies of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Frank J. Clark, District Attorney,* Buffalo (*Tina Marie Stanford, Shawn P. Hennessy* and *J. Michael Marion* of counsel), for respondent.",
+        "normalized": "frank j. clark, district attorney, buffalo (tina marie stanford, shawn p. hennessy and j. michael marion of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

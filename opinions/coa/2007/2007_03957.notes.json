@@ -2,7 +2,7 @@
   "caseId": "2007_03957",
   "sourcePath": "coa/2007/2007_03957.htm",
   "notesPath": "coa/2007/2007_03957.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.359Z",
+  "generatedAt": "2026-03-22T19:47:12.570Z",
   "source": {
     "title": "People v Rosas (2007 NY Slip Op 03957)",
     "publicationStatus": "published"
@@ -59,7 +59,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

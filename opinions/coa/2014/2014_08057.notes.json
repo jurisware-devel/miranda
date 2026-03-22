@@ -2,7 +2,7 @@
   "caseId": "2014_08057",
   "sourcePath": "coa/2014/2014_08057.htm",
   "notesPath": "coa/2014/2014_08057.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.770Z",
+  "generatedAt": "2026-03-22T19:47:12.860Z",
   "source": {
     "title": "People v Davis (2014 NY Slip Op 08057)",
     "publicationStatus": "published"
@@ -57,7 +57,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

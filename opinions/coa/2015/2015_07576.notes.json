@@ -2,7 +2,7 @@
   "caseId": "2015_07576",
   "sourcePath": "coa/2015/2015_07576.htm",
   "notesPath": "coa/2015/2015_07576.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.820Z",
+  "generatedAt": "2026-03-22T19:47:12.895Z",
   "source": {
     "title": "People v Izzo (2015 NY Slip Op 07576)",
     "publicationStatus": "published"
@@ -73,7 +73,8 @@
         "sentenceText": "Weeden A. Wetmore , District Attorney , Elmira ( Damian M. Sonsire of counsel), for respondent.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -113,6 +114,21 @@
     "hasFootnotesHeading": false
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Adam J. Bevelacqua , New York City, for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Weeden A. Wetmore , District Attorney , Elmira ( Damian M. Sonsire of counsel), for respondent."
+    },
     {
       "code": "MULTIPLE_HEADER_TABLES",
       "severity": "info",

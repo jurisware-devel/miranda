@@ -2,7 +2,7 @@
   "caseId": "2005_05752",
   "sourcePath": "coa/2005/2005_05752.htm",
   "notesPath": "coa/2005/2005_05752.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.289Z",
+  "generatedAt": "2026-03-22T19:47:12.518Z",
   "source": {
     "title": "People v Hill (2005 NY Slip Op 05752)",
     "publicationStatus": "published"
@@ -79,6 +79,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Thomas W. Ryan , Syracuse, for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*William J. Fitzpatrick*, *District Attorney*, Syracuse (*James P. Maxwell* and *Victoria M. White* of counsel), for appellant.",
+        "normalized": "william j. fitzpatrick, district attorney, syracuse (james p. maxwell and victoria m. white of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Thomas W. Ryan*, Syracuse, for respondent.",
+        "normalized": "thomas w. ryan, syracuse, for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

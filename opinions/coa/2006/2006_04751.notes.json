@@ -2,7 +2,7 @@
   "caseId": "2006_04751",
   "sourcePath": "coa/2006/2006_04751.htm",
   "notesPath": "coa/2006/2006_04751.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.327Z",
+  "generatedAt": "2026-03-22T19:47:12.548Z",
   "source": {
     "title": "People v Ramos (2006 NY Slip Op 04751)",
     "publicationStatus": "published"
@@ -78,6 +78,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Charles J. Hynes , District Attorney , Brooklyn ( Joyce Slevin of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Appellate Advocates*, New York City (*Lynn W.L. Fahey* of counsel), for appellant.",
+        "normalized": "appellate advocates, new york city (lynn w.l. fahey of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Charles J. Hynes*, *District Attorney*, Brooklyn (*Joyce Slevin* of counsel), for respondent.",
+        "normalized": "charles j. hynes, district attorney, brooklyn (joyce slevin of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

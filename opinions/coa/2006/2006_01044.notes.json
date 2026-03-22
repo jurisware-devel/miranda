@@ -2,7 +2,7 @@
   "caseId": "2006_01044",
   "sourcePath": "coa/2006/2006_01044.htm",
   "notesPath": "coa/2006/2006_01044.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.307Z",
+  "generatedAt": "2026-03-22T19:47:12.532Z",
   "source": {
     "title": "People v Bongarzone-Suarrcy (2006 NY Slip Op 01044)",
     "publicationStatus": "published"
@@ -78,6 +78,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Charles J. Hynes , District Attorney , Brooklyn ( Leonard Joblove and Linda Breen of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Appellate Advocates*, New York City (*Steven R. Bernhard* and *Lynn W.L. Fahey* of counsel), for appellant.",
+        "normalized": "appellate advocates, new york city (steven r. bernhard and lynn w.l. fahey of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Charles J. Hynes*, *District Attorney*, Brooklyn (*Leonard Joblove* and *Linda Breen* of counsel), for respondent.",
+        "normalized": "charles j. hynes, district attorney, brooklyn (leonard joblove and linda breen of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

@@ -2,7 +2,7 @@
   "caseId": "2024_00792",
   "sourcePath": "coa/2024/2024_00792.htm",
   "notesPath": "coa/2024/2024_00792.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.246Z",
+  "generatedAt": "2026-03-22T19:47:13.204Z",
   "source": {
     "title": "People v Novas (2024 NY Slip Op 00792)",
     "publicationStatus": "published"
@@ -72,7 +72,8 @@
         "sentenceText": "Alvin L. Bragg, Jr. , District Attorney , New York City ( Rachel Bond , Steven C. Wu and Beth Fisch Cohen of counsel), for respondent.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -108,6 +109,21 @@
     "hasFootnotesHeading": false
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Debevoise & Plimpton LLP , New York City ( Andrew Stambouldis and Chana Zuckier of counsel), and Caprice R. Jenerson , Office of the Appellate Defender , New York City ( Rosemary Herbert of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Alvin L. Bragg, Jr. , District Attorney , New York City ( Rachel Bond , Steven C. Wu and Beth Fisch Cohen of counsel), for respondent."
+    },
     {
       "code": "MULTIPLE_HEADER_TABLES",
       "severity": "info",

@@ -2,7 +2,7 @@
   "caseId": "2012_04666",
   "sourcePath": "coa/2012/2012_04666.htm",
   "notesPath": "coa/2012/2012_04666.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.618Z",
+  "generatedAt": "2026-03-22T19:47:12.751Z",
   "source": {
     "title": "People v William (2012 NY Slip Op 04666)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Cyrus R. Vance, Jr., District Attorney , New York City ( Andrew E. Seewald and Vincent Rivellese of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Davis Polk & Wardwell LLP*, New York City (*Jonathan K. Chang, Edmond Polubinski, III,* and *Jonathan Stroble* of counsel), and *Office of the Appellate Defender* (*Richard M. Greenberg* and *Rosemary Herbert* of counsel) for appellant.",
+        "normalized": "davis polk & wardwell llp, new york city (jonathan k. chang, edmond polubinski, iii, and jonathan stroble of counsel), and office of the appellate defender (richard m. greenberg and rosemary herbert of counsel) for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Cyrus R. Vance, Jr., District Attorney*, New York City (*Andrew E. Seewald* and *Vincent Rivellese* of counsel), for respondent.",
+        "normalized": "cyrus r. vance, jr., district attorney, new york city (andrew e. seewald and vincent rivellese of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

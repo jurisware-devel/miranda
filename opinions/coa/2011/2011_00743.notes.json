@@ -2,7 +2,7 @@
   "caseId": "2011_00743",
   "sourcePath": "coa/2011/2011_00743.htm",
   "notesPath": "coa/2011/2011_00743.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.514Z",
+  "generatedAt": "2026-03-22T19:47:12.679Z",
   "source": {
     "title": "People v Liggins (2011 NY Slip Op 00743)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Bond, Schoeneck & King, PLLC , Syracuse ( Robert H. Kirchner and Stephanie M. Campbell of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Scott D. McNamara, District Attorney*, Utica (*Steven G. Cox* of counsel), for appellant.",
+        "normalized": "scott d. mcnamara, district attorney, utica (steven g. cox of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Bond, Schoeneck & King, PLLC*, Syracuse (*Robert H. Kirchner* and *Stephanie M. Campbell* of counsel), for respondent.",
+        "normalized": "bond, schoeneck & king, pllc, syracuse (robert h. kirchner and stephanie m. campbell of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

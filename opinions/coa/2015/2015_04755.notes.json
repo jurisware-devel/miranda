@@ -2,7 +2,7 @@
   "caseId": "2015_04755",
   "sourcePath": "coa/2015/2015_04755.htm",
   "notesPath": "coa/2015/2015_04755.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.806Z",
+  "generatedAt": "2026-03-22T19:47:12.885Z",
   "source": {
     "title": "People v Sanders (2015 NY Slip Op 04755)",
     "publicationStatus": "published"
@@ -62,7 +62,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

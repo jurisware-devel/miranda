@@ -2,7 +2,7 @@
   "caseId": "2019_03529",
   "sourcePath": "coa/2019/2019_03529.htm",
   "notesPath": "coa/2019/2019_03529.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.053Z",
+  "generatedAt": "2026-03-22T19:47:13.060Z",
   "source": {
     "title": "People v Brown (2019 NY Slip Op 03529)",
     "publicationStatus": "published"
@@ -60,7 +60,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

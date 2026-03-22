@@ -2,7 +2,7 @@
   "caseId": "2007_08780",
   "sourcePath": "coa/2007/2007_08780.htm",
   "notesPath": "coa/2007/2007_08780.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.373Z",
+  "generatedAt": "2026-03-22T19:47:12.580Z",
   "source": {
     "title": "People v Porter (2007 NY Slip Op 08780)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Matthew J. Murphy, III, District Attorney , Lockport ( Thomas H. Brandt of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Timothy Patrick Murphy*, Lockport, for appellant.",
+        "normalized": "timothy patrick murphy, lockport, for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Matthew J. Murphy, III, District Attorney*, Lockport (*Thomas H. Brandt* of counsel), for respondent.",
+        "normalized": "matthew j. murphy, iii, district attorney, lockport (thomas h. brandt of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

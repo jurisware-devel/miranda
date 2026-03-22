@@ -2,7 +2,7 @@
   "caseId": "2019_04759",
   "sourcePath": "coa/2019/2019_04759.htm",
   "notesPath": "coa/2019/2019_04759.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.060Z",
+  "generatedAt": "2026-03-22T19:47:13.065Z",
   "source": {
     "title": "People v Lopez-Mendoza (2019 NY Slip Op 04759)",
     "publicationStatus": "published"
@@ -60,7 +60,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

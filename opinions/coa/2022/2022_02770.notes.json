@@ -2,7 +2,7 @@
   "caseId": "2022_02770",
   "sourcePath": "coa/2022/2022_02770.htm",
   "notesPath": "coa/2022/2022_02770.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.177Z",
+  "generatedAt": "2026-03-22T19:47:13.153Z",
   "source": {
     "title": "People v Easley (2022 NY Slip Op 02770)",
     "publicationStatus": "published"
@@ -92,7 +92,8 @@
         "sentenceText": "Electronic Frontier Foundation , San Francisco, California ( Hannah Zhao of counsel), for Electronic Frontier Foundation, amicus curiae.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -141,6 +142,31 @@
     "hasFootnotesHeading": true
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 4 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Paul Skip Laisure, Appellate Advocates , New York City ( David Fitzmaurice and Jonathan Schoepp-Wong of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Melinda Katz, District Attorney , Kew Gardens ( William H. Branigan and John M. Castellano of counsel), for respondent."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: The Legal Aid Society , New York City ( Terri S. Rosenblatt and J. David Pollack of counsel), for The Legal Aid Society, amicus curiae."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Electronic Frontier Foundation , San Francisco, California ( Hannah Zhao of counsel), for Electronic Frontier Foundation, amicus curiae."
+    },
     {
       "code": "MULTIPLE_WRITINGS",
       "severity": "info",

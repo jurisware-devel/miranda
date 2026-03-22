@@ -2,7 +2,7 @@
   "caseId": "2016_01207",
   "sourcePath": "coa/2016/2016_01207.htm",
   "notesPath": "coa/2016/2016_01207.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.856Z",
+  "generatedAt": "2026-03-22T19:47:12.921Z",
   "source": {
     "title": "People v Hogan (2016 NY Slip Op 01207)",
     "publicationStatus": "published"
@@ -60,7 +60,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

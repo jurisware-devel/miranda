@@ -2,7 +2,7 @@
   "caseId": "2011_08999",
   "sourcePath": "coa/2011/2011_08999.htm",
   "notesPath": "coa/2011/2011_08999.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.582Z",
+  "generatedAt": "2026-03-22T19:47:12.726Z",
   "source": {
     "title": "People v Stewart (2011 NY Slip Op 08999)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "John H. Crandall, District Attorney , Herkimer ( Jeffrey S. Carpenter and Jacquelyn M. Asnoe of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Anthony J. LaFache*, Utica, for appellant.",
+        "normalized": "anthony j. lafache, utica, for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*John H. Crandall, District Attorney*, Herkimer (*Jeffrey S. Carpenter* and *Jacquelyn M. Asnoe* of counsel), for respondent.",
+        "normalized": "john h. crandall, district attorney, herkimer (jeffrey s. carpenter and jacquelyn m. asnoe of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

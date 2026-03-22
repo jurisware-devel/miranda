@@ -2,7 +2,7 @@
   "caseId": "2006_08641",
   "sourcePath": "coa/2006/2006_08641.htm",
   "notesPath": "coa/2006/2006_08641.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.340Z",
+  "generatedAt": "2026-03-22T19:47:12.557Z",
   "source": {
     "title": "People v Lane (2006 NY Slip Op 08641)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Robert M. Morgenthau, District Attorney , New York City ( Tracy L. Conn and Susan Gliner of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Office of the Appellate Defender*, New York City (*Richard M. Greenberg* of counsel), and *Sullivan & Worcester LLP* (*Mary Cecilia Sweeney* of counsel) for appellant.",
+        "normalized": "office of the appellate defender, new york city (richard m. greenberg of counsel), and sullivan & worcester llp (mary cecilia sweeney of counsel) for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Robert M. Morgenthau, District Attorney*, New York City (*Tracy L. Conn* and *Susan Gliner* of counsel), for respondent.",
+        "normalized": "robert m. morgenthau, district attorney, new york city (tracy l. conn and susan gliner of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

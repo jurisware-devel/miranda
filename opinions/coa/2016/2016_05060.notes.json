@@ -2,7 +2,7 @@
   "caseId": "2016_05060",
   "sourcePath": "coa/2016/2016_05060.htm",
   "notesPath": "coa/2016/2016_05060.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.894Z",
+  "generatedAt": "2026-03-22T19:47:12.947Z",
   "source": {
     "title": "People v McCullough (2016 NY Slip Op 05060)",
     "publicationStatus": "published"
@@ -83,7 +83,8 @@
         "sentenceText": "Kramer Levin Naftalis & Frankel LLP , New York City ( David S. Frankel, Lynda M. Tricarico and Kaavya Viswanathan of counsel), and The Innocence Project, Inc. , New York City ( Barry C. Scheck and Karen A. Newirth of counsel), for The Innocence Project, Inc., amicus curiae.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -132,6 +133,26 @@
     "hasFootnotesHeading": true
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 3 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Sandra Doorley, District Attorney , Rochester ( Scott Myles and Geoffrey Kaeuper of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Easton Thompson Kasperek Shiffrin LLP , Rochester ( Brian Shiffrin of counsel), and Timothy P. Donaher, Public Defender , for respondent."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Kramer Levin Naftalis & Frankel LLP , New York City ( David S. Frankel, Lynda M. Tricarico and Kaavya Viswanathan of counsel), and The Innocence Project, Inc. , New York City ( Barry C. Scheck and Karen A. Newirth of counsel), for The Innocence Project, Inc., amicus curiae."
+    },
     {
       "code": "MULTIPLE_WRITINGS",
       "severity": "info",

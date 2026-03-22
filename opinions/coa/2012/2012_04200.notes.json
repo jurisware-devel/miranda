@@ -2,7 +2,7 @@
   "caseId": "2012_04200",
   "sourcePath": "coa/2012/2012_04200.htm",
   "notesPath": "coa/2012/2012_04200.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.609Z",
+  "generatedAt": "2026-03-22T19:47:12.745Z",
   "source": {
     "title": "People v Yusuf (2012 NY Slip Op 04200)",
     "publicationStatus": "published"
@@ -59,7 +59,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

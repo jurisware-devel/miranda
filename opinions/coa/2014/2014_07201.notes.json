@@ -2,7 +2,7 @@
   "caseId": "2014_07201",
   "sourcePath": "coa/2014/2014_07201.htm",
   "notesPath": "coa/2014/2014_07201.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.765Z",
+  "generatedAt": "2026-03-22T19:47:12.857Z",
   "source": {
     "title": "People v Ludwig (2014 NY Slip Op 07201)",
     "publicationStatus": "published"
@@ -60,7 +60,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

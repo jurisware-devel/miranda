@@ -2,7 +2,7 @@
   "caseId": "2023_02734",
   "sourcePath": "coa/2023/2023_02734.htm",
   "notesPath": "coa/2023/2023_02734.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.206Z",
+  "generatedAt": "2026-03-22T19:47:13.174Z",
   "source": {
     "title": "People v Johnson (2023 NY Slip Op 02734)",
     "publicationStatus": "published"
@@ -60,7 +60,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

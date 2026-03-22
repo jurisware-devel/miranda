@@ -2,7 +2,7 @@
   "caseId": "2016_07818",
   "sourcePath": "coa/2016/2016_07818.htm",
   "notesPath": "coa/2016/2016_07818.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.914Z",
+  "generatedAt": "2026-03-22T19:47:12.962Z",
   "source": {
     "title": "People v Davis (2016 NY Slip Op 07818)",
     "publicationStatus": "published"
@@ -58,7 +58,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

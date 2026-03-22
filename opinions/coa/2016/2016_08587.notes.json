@@ -2,7 +2,7 @@
   "caseId": "2016_08587",
   "sourcePath": "coa/2016/2016_08587.htm",
   "notesPath": "coa/2016/2016_08587.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.930Z",
+  "generatedAt": "2026-03-22T19:47:12.974Z",
   "source": {
     "title": "People v Miller (2016 NY Slip Op 08587)",
     "publicationStatus": "published"
@@ -59,7 +59,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

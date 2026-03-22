@@ -2,7 +2,7 @@
   "caseId": "2006_09504",
   "sourcePath": "coa/2006/2006_09504.htm",
   "notesPath": "coa/2006/2006_09504.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.345Z",
+  "generatedAt": "2026-03-22T19:47:12.560Z",
   "source": {
     "title": "People v Romero (2006 NY Slip Op 09504)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Robert M. Morgenthau, District Attorney, New York City ( Susan Gliner and Mark Dwyer of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Weiss & Associates, P.C.,* New York City (*Matthew J. Weiss* of counsel), for appellant.",
+        "normalized": "weiss & associates, p.c., new york city (matthew j. weiss of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Robert M. Morgenthau, District Attorney,* New York City (*Susan Gliner* and *Mark Dwyer* of counsel), for respondent.",
+        "normalized": "robert m. morgenthau, district attorney, new york city (susan gliner and mark dwyer of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

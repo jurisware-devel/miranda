@@ -2,7 +2,7 @@
   "caseId": "2015_09230",
   "sourcePath": "coa/2015/2015_09230.htm",
   "notesPath": "coa/2015/2015_09230.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.843Z",
+  "generatedAt": "2026-03-22T19:47:12.911Z",
   "source": {
     "title": "People v Rosario (2015 NY Slip Op 09230)",
     "publicationStatus": "published"
@@ -60,7 +60,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

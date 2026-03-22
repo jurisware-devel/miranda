@@ -2,7 +2,7 @@
   "caseId": "2013_07764",
   "sourcePath": "coa/2013/2013_07764.htm",
   "notesPath": "coa/2013/2013_07764.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.702Z",
+  "generatedAt": "2026-03-22T19:47:12.811Z",
   "source": {
     "title": "People v Feliciano (2013 NY Slip Op 07764)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Cyrus R. Vance, Jr., District Attorney , New York City ( Martin J. Foncello and Richard Nahas of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Steven Banks, The Legal Aid Society*, New York City (*Laura Boyd* of counsel), for appellant.",
+        "normalized": "steven banks, the legal aid society, new york city (laura boyd of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Cyrus R. Vance, Jr., District Attorney*, New York City (*Martin J. Foncello* and *Richard Nahas* of counsel), for respondent.",
+        "normalized": "cyrus r. vance, jr., district attorney, new york city (martin j. foncello and richard nahas of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

@@ -2,7 +2,7 @@
   "caseId": "2011_02717",
   "sourcePath": "coa/2011/2011_02717.htm",
   "notesPath": "coa/2011/2011_02717.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.534Z",
+  "generatedAt": "2026-03-22T19:47:12.692Z",
   "source": {
     "title": "People v Jordan (2011 NY Slip Op 02717)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Cyrus R. Vance, Jr., District Attorney , New York City ( Vincent Rivellese and Susan Axelrod of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Legal Aid Society*, New York City (*Elon D. Harpaz, Kristina Schwarz* and *Steven Banks* of counsel), for appellant.",
+        "normalized": "legal aid society, new york city (elon d. harpaz, kristina schwarz and steven banks of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Cyrus R. Vance, Jr., District Attorney*, New York City (*Vincent Rivellese* and *Susan Axelrod* of counsel), for respondent.",
+        "normalized": "cyrus r. vance, jr., district attorney, new york city (vincent rivellese and susan axelrod of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

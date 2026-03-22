@@ -2,7 +2,7 @@
   "caseId": "2012_07852",
   "sourcePath": "coa/2012/2012_07852.htm",
   "notesPath": "coa/2012/2012_07852.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.633Z",
+  "generatedAt": "2026-03-22T19:47:12.762Z",
   "source": {
     "title": "People v Boyland (2012 NY Slip Op 07852)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Frank A. Sedita, III, District Attorney , Buffalo ( Donna A. Milling of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*David J. Seeger*, Buffalo, and *Leigh E. Anderson*, for appellant.",
+        "normalized": "david j. seeger, buffalo, and leigh e. anderson, for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Frank A. Sedita, III, District Attorney*, Buffalo (*Donna A. Milling* of counsel), for respondent.",
+        "normalized": "frank a. sedita, iii, district attorney, buffalo (donna a. milling of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

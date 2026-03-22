@@ -2,7 +2,7 @@
   "caseId": "2024_06384",
   "sourcePath": "coa/2024/2024_06384.htm",
   "notesPath": "coa/2024/2024_06384.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.301Z",
+  "generatedAt": "2026-03-22T19:47:13.246Z",
   "source": {
     "title": "People v Rufus (2024 NY Slip Op 06384)",
     "publicationStatus": "published"
@@ -80,6 +80,20 @@
         "hasArgumentTail": true,
         "argumentTailPreview": "I. The New York State Troopers had probable cause to stop defendant's vehicle. ( People v Vandover , 20 NY3d 235 ; People v Brown , 25 NY3d 973 ; People v Estre",
         "sentenceText": "Sandra Doorley, District Attorney , Rochester ( Amy N. Walendziak of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Fiandach & Fiandach*, Rochester (*Edward L. Fiandach* of counsel), for appellant.",
+        "normalized": "fiandach & fiandach, rochester (edward l. fiandach of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Sandra Doorley, District Attorney*, Rochester (*Amy N. Walendziak* of counsel), for respondent.",
+        "normalized": "sandra doorley, district attorney, rochester (amy n. walendziak of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

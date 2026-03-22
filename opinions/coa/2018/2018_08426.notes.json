@@ -2,7 +2,7 @@
   "caseId": "2018_08426",
   "sourcePath": "coa/2018/2018_08426.htm",
   "notesPath": "coa/2018/2018_08426.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.036Z",
+  "generatedAt": "2026-03-22T19:47:13.048Z",
   "source": {
     "title": "People ex rel. Allen v Yelich (2018 NY Slip Op 08426)",
     "publicationStatus": "published"
@@ -72,7 +72,8 @@
         "sentenceText": "Barbara D. Underwood , Attorney General , Albany ( Brian D. Ginsberg , Andrea Oser and Victor Paladino of counsel), for respondent.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -109,6 +110,21 @@
     "hasFootnotesHeading": false
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Karen L. Murtagh , Prisoners' Legal Services of New York , Plattsburgh ( Michael E. Cassidy of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Barbara D. Underwood , Attorney General , Albany ( Brian D. Ginsberg , Andrea Oser and Victor Paladino of counsel), for respondent."
+    },
     {
       "code": "MULTIPLE_HEADER_TABLES",
       "severity": "info",

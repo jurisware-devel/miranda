@@ -2,7 +2,7 @@
   "caseId": "2005_09577",
   "sourcePath": "coa/2005/2005_09577.htm",
   "notesPath": "coa/2005/2005_09577.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.301Z",
+  "generatedAt": "2026-03-22T19:47:12.527Z",
   "source": {
     "title": "People v Vogel (2005 NY Slip Op 09577)",
     "publicationStatus": "published"
@@ -78,6 +78,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Anna M. Zephro Jost , Tonawanda, for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Gerald L. Stout*, *District Attorney*, Warsaw (*Vincent A. Hemming* and *Donald G. O'Geen* of counsel), for appellant.",
+        "normalized": "gerald l. stout, district attorney, warsaw (vincent a. hemming and donald g. o'geen of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Anna M. Zephro Jost*, Tonawanda, for respondent.",
+        "normalized": "anna m. zephro jost, tonawanda, for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

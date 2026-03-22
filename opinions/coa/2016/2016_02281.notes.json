@@ -2,7 +2,7 @@
   "caseId": "2016_02281",
   "sourcePath": "coa/2016/2016_02281.htm",
   "notesPath": "coa/2016/2016_02281.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.862Z",
+  "generatedAt": "2026-03-22T19:47:12.925Z",
   "source": {
     "title": "People v Cedeno (2016 NY Slip Op 02281)",
     "publicationStatus": "published"
@@ -65,7 +65,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

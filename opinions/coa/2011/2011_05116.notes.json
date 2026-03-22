@@ -2,7 +2,7 @@
   "caseId": "2011_05116",
   "sourcePath": "coa/2011/2011_05116.htm",
   "notesPath": "coa/2011/2011_05116.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.555Z",
+  "generatedAt": "2026-03-22T19:47:12.706Z",
   "source": {
     "title": "People v Joseph R. (2011 NY Slip Op 05116)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Thomas J. Spota, District Attorney , Riverhead ( Thomas Constant of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*O'Sullivan & Zacchea, PLLC*, Kew Gardens (*Daniel R. DeMarco* of counsel), for appellant.",
+        "normalized": "o'sullivan & zacchea, pllc, kew gardens (daniel r. demarco of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Thomas J. Spota, District Attorney*, Riverhead (*Thomas Constant* of counsel), for respondent.",
+        "normalized": "thomas j. spota, district attorney, riverhead (thomas constant of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

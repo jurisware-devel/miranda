@@ -2,7 +2,7 @@
   "caseId": "2020_04816",
   "sourcePath": "coa/2020/2020_04816.htm",
   "notesPath": "coa/2020/2020_04816.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.106Z",
+  "generatedAt": "2026-03-22T19:47:13.099Z",
   "source": {
     "title": "People v Hinshaw (2020 NY Slip Op 04816)",
     "publicationStatus": "published"
@@ -60,7 +60,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

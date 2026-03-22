@@ -2,7 +2,7 @@
   "caseId": "2010_09163",
   "sourcePath": "coa/2010/2010_09163.htm",
   "notesPath": "coa/2010/2010_09163.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.511Z",
+  "generatedAt": "2026-03-22T19:47:12.677Z",
   "source": {
     "title": "People v Sweeper (2010 NY Slip Op 09163)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Cyrus R. Vance, Jr., District Attorney , New York City ( Patricia Curran of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Center for Appellate Litigation*, New York City (*Susan H. Salomon* and *Robert S. Dean* of counsel), for appellant.",
+        "normalized": "center for appellate litigation, new york city (susan h. salomon and robert s. dean of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Cyrus R. Vance, Jr., District Attorney*, New York City (*Patricia Curran* of counsel), for respondent.",
+        "normalized": "cyrus r. vance, jr., district attorney, new york city (patricia curran of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

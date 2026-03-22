@@ -2,7 +2,7 @@
   "caseId": "2014_02097",
   "sourcePath": "coa/2014/2014_02097.htm",
   "notesPath": "coa/2014/2014_02097.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.726Z",
+  "generatedAt": "2026-03-22T19:47:12.828Z",
   "source": {
     "title": "People v Zeh (2014 NY Slip Op 02097)",
     "publicationStatus": "published"
@@ -76,6 +76,20 @@
         "sentenceText": "Jacqueline L. Spratt, New York Prosecutors Training Institute, Inc ., Albany, and William V. Grady, District Attorney , Poughkeepsie, for respondent.",
         "possiblyTruncated": false
       }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Norman P. Effman*, Warsaw, for appellant.",
+        "normalized": "norman p. effman, warsaw, for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Jacqueline L. Spratt, New York Prosecutors Training Institute, Inc*., Albany, and *William",
+        "normalized": "jacqueline l. spratt, new york prosecutors training institute, inc., albany, and william",
+        "side": null,
+        "possiblyTruncated": true
+      }
     ]
   },
   "sections": {
@@ -116,6 +130,21 @@
     "hasFootnotesHeading": true
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_TRUNCATED",
+      "severity": "warning",
+      "detail": "Companion JSON appearance looks truncated: *Jacqueline L. Spratt, New York Prosecutors Training Institute, Inc*., Albany, and *William"
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Jacqueline L. Spratt, New York Prosecutors Training Institute, Inc ., Albany, and William V. Grady, District Attorney , Poughkeepsie, for respondent."
+    },
+    {
+      "code": "JSON_APPEARANCE_UNMATCHED",
+      "severity": "info",
+      "detail": "Companion JSON appearance does not directly match any raw appearance sentence: *Jacqueline L. Spratt, New York Prosecutors Training Institute, Inc*., Albany, and *William"
+    },
     {
       "code": "MULTIPLE_HEADER_TABLES",
       "severity": "info",

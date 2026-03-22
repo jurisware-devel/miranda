@@ -2,7 +2,7 @@
   "caseId": "2006_05233",
   "sourcePath": "coa/2006/2006_05233.htm",
   "notesPath": "coa/2006/2006_05233.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.330Z",
+  "generatedAt": "2026-03-22T19:47:12.550Z",
   "source": {
     "title": "People v Feingold (2006 NY Slip Op 05233)",
     "publicationStatus": "published"
@@ -65,7 +65,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

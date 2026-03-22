@@ -2,7 +2,7 @@
   "caseId": "2012_02416",
   "sourcePath": "coa/2012/2012_02416.htm",
   "notesPath": "coa/2012/2012_02416.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.599Z",
+  "generatedAt": "2026-03-22T19:47:12.738Z",
   "source": {
     "title": "People v Fisher (2012 NY Slip Op 02416)",
     "publicationStatus": "published"
@@ -75,6 +75,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Michael C. Green, District Attorney , Rochester ( Kelly C. Wolford of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Timothy P. Donaher, Public Defender*, Rochester (*Janet C. Somes* of counsel), for appellant.",
+        "normalized": "timothy p. donaher, public defender, rochester (janet c. somes of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Michael C. Green, District Attorney*, Rochester (*Kelly C. Wolford* of counsel), for respondent.",
+        "normalized": "michael c. green, district attorney, rochester (kelly c. wolford of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

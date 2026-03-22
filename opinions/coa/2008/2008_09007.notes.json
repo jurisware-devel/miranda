@@ -2,7 +2,7 @@
   "caseId": "2008_09007",
   "sourcePath": "coa/2008/2008_09007.htm",
   "notesPath": "coa/2008/2008_09007.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.404Z",
+  "generatedAt": "2026-03-22T19:47:12.603Z",
   "source": {
     "title": "People v Ennis (2008 NY Slip Op 09007)",
     "publicationStatus": "published"
@@ -59,7 +59,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

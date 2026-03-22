@@ -2,7 +2,7 @@
   "caseId": "2003_18508",
   "sourcePath": "coa/2003/2003_18508.htm",
   "notesPath": "coa/2003/2003_18508.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.200Z",
+  "generatedAt": "2026-03-22T19:47:12.452Z",
   "source": {
     "title": "People v Stiggins (2003 NY Slip Op 18508)",
     "publicationStatus": "published"
@@ -78,6 +78,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Eliot Spitzer, Attorney General , New York City ( Alyson J. Gill, Michelle Aronowitz and Robin A. Forshaw of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Redmond & Parrinello, LLP*, Rochester (*Bruce F. Freeman* of counsel), for appellant.",
+        "normalized": "redmond & parrinello, llp, rochester (bruce f. freeman of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Eliot Spitzer, Attorney General*, New York City (*Alyson J. Gill, Michelle Aronowitz* and *Robin A. Forshaw* of counsel), for respondent.",
+        "normalized": "eliot spitzer, attorney general, new york city (alyson j. gill, michelle aronowitz and robin a. forshaw of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

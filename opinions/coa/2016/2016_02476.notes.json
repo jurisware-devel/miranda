@@ -2,7 +2,7 @@
   "caseId": "2016_02476",
   "sourcePath": "coa/2016/2016_02476.htm",
   "notesPath": "coa/2016/2016_02476.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.866Z",
+  "generatedAt": "2026-03-22T19:47:12.928Z",
   "source": {
     "title": "People v Gray (2016 NY Slip Op 02476)",
     "publicationStatus": "published"
@@ -60,7 +60,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

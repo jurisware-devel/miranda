@@ -2,7 +2,7 @@
   "caseId": "2010_03800",
   "sourcePath": "coa/2010/2010_03800.htm",
   "notesPath": "coa/2010/2010_03800.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.479Z",
+  "generatedAt": "2026-03-22T19:47:12.655Z",
   "source": {
     "title": "People v Rivera (2010 NY Slip Op 03800)",
     "publicationStatus": "published"
@@ -58,7 +58,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

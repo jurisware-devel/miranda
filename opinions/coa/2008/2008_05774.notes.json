@@ -2,7 +2,7 @@
   "caseId": "2008_05774",
   "sourcePath": "coa/2008/2008_05774.htm",
   "notesPath": "coa/2008/2008_05774.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.396Z",
+  "generatedAt": "2026-03-22T19:47:12.596Z",
   "source": {
     "title": "People v Packer (2008 NY Slip Op 05774)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Legal Aid Society, New York City ( Ellen Dille of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Robert M. Morgenthau, District Attorney,* New York City (*Eric Rosen* and *Sheryl Feldman* of counsel), for appellant.",
+        "normalized": "robert m. morgenthau, district attorney, new york city (eric rosen and sheryl feldman of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Legal Aid Society,* New York City (*Ellen Dille* of counsel), for respondent.",
+        "normalized": "legal aid society, new york city (ellen dille of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

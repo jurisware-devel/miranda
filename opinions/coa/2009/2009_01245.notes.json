@@ -2,7 +2,7 @@
   "caseId": "2009_01245",
   "sourcePath": "coa/2009/2009_01245.htm",
   "notesPath": "coa/2009/2009_01245.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.421Z",
+  "generatedAt": "2026-03-22T19:47:12.614Z",
   "source": {
     "title": "People v Moye (2009 NY Slip Op 01245)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Anthony L. Ricco , New York City, and Steven Z. Legon for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Robert M. Morgenthau, District Attorney*, New York City (*Mark Dwyer* of counsel), for appellant.",
+        "normalized": "robert m. morgenthau, district attorney, new york city (mark dwyer of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Anthony L. Ricco*, New York City, and *Steven Z. Legon* for respondent.",
+        "normalized": "anthony l. ricco, new york city, and steven z. legon for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

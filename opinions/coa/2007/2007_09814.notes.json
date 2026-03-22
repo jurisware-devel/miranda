@@ -2,7 +2,7 @@
   "caseId": "2007_09814",
   "sourcePath": "coa/2007/2007_09814.htm",
   "notesPath": "coa/2007/2007_09814.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.376Z",
+  "generatedAt": "2026-03-22T19:47:12.582Z",
   "source": {
     "title": "People v Danielson (2007 NY Slip Op 09814)",
     "publicationStatus": "published"
@@ -59,7 +59,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

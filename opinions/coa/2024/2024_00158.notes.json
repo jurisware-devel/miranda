@@ -2,7 +2,7 @@
   "caseId": "2024_00158",
   "sourcePath": "coa/2024/2024_00158.htm",
   "notesPath": "coa/2024/2024_00158.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.246Z",
+  "generatedAt": "2026-03-22T19:47:13.204Z",
   "source": {
     "title": "People v Appiah (2024 NY Slip Op 00158)",
     "publicationStatus": "published"
@@ -72,7 +72,8 @@
         "sentenceText": "Robert M. Carney, District Attorney , Schenectady ( Peter H. Willis of counsel), for respondent.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -110,6 +111,21 @@
     "hasFootnotesHeading": false
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Steven M. Sharp , Albany, for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Robert M. Carney, District Attorney , Schenectady ( Peter H. Willis of counsel), for respondent."
+    },
     {
       "code": "MULTIPLE_HEADER_TABLES",
       "severity": "info",

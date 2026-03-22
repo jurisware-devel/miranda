@@ -2,7 +2,7 @@
   "caseId": "2024_06385",
   "sourcePath": "coa/2024/2024_06385.htm",
   "notesPath": "coa/2024/2024_06385.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.303Z",
+  "generatedAt": "2026-03-22T19:47:13.248Z",
   "source": {
     "title": "People v Mero (2024 NY Slip Op 06385)",
     "publicationStatus": "published"
@@ -86,6 +86,20 @@
         "hasArgumentTail": true,
         "argumentTailPreview": "I. There was no actual or potential conflict of interest. ( People v Ortiz , 76 NY2d 652; Wood v Georgia , 450 US 261; People v Solomon , 20 NY3d 91 ; People v ",
         "sentenceText": "P. David Soares, District Attorney , Albany ( Emily Schultz of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Hug Law, PLLC*, Albany (*Matthew C. Hug* of counsel), for appellant.",
+        "normalized": "hug law, pllc, albany (matthew c. hug of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*P. David Soares, District Attorney*, Albany (*Emily Schultz* of counsel), for respondent.",
+        "normalized": "p. david soares, district attorney, albany (emily schultz of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

@@ -2,7 +2,7 @@
   "caseId": "2008_09856",
   "sourcePath": "coa/2008/2008_09856.htm",
   "notesPath": "coa/2008/2008_09856.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.412Z",
+  "generatedAt": "2026-03-22T19:47:12.608Z",
   "source": {
     "title": "People v Ford (2008 NY Slip Op 09856)",
     "publicationStatus": "published"
@@ -56,7 +56,21 @@
     "authorLine": null,
     "appearanceSectionType": "appearances_only",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": [
+      {
+        "text": "*Robert M. Morgenthau, District Attorney*, New York City (*Patrick J. Hynes* and *Hilary Hassler* of counsel), for appellant-respondent.",
+        "normalized": "robert m. morgenthau, district attorney, new york city (patrick j. hynes and hilary hassler of counsel), for appellant-respondent.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Legal Aid Society Criminal Appeals Bureau,* New York City (*Steven Banks, Andrew Fine* and *John Schoeffel* of counsel), and *Kaye Scholer LLP* (*Max R. Schwartz, Michael A. Rogoff, Paula R. Ramer* and *John S. Cahalan* of counsel), for respondent-appellant.",
+        "normalized": "legal aid society criminal appeals bureau, new york city (steven banks, andrew fine and john schoeffel of counsel), and kaye scholer llp (max r. schwartz, michael a. rogoff, paula r. ramer and john s. cahalan of counsel), for respondent-appellant.",
+        "side": "respondent",
+        "possiblyTruncated": false
+      }
+    ]
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -101,6 +115,21 @@
     "hasFootnotesHeading": true
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 0 appearance line(s), but companion JSON has 2."
+    },
+    {
+      "code": "JSON_APPEARANCE_UNMATCHED",
+      "severity": "info",
+      "detail": "Companion JSON appearance does not directly match any raw appearance sentence: *Robert M. Morgenthau, District Attorney*, New York City (*Patrick J. Hynes* and *Hilary Hassler* of counsel), for appellant-respondent."
+    },
+    {
+      "code": "JSON_APPEARANCE_UNMATCHED",
+      "severity": "info",
+      "detail": "Companion JSON appearance does not directly match any raw appearance sentence: *Legal Aid Society Criminal Appeals Bureau,* New York City (*Steven Banks, Andrew Fine* and *John Schoeffel* of counsel), and *Kaye Scholer LLP* (*Max R. Schwartz, Michael A. Rogoff, Paula R. Ramer* and *John S. Cahalan* of counsel), for respondent-appellant."
+    },
     {
       "code": "MULTIPLE_WRITINGS",
       "severity": "info",

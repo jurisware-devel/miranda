@@ -2,7 +2,7 @@
   "caseId": "2019_09061",
   "sourcePath": "coa/2019/2019_09061.htm",
   "notesPath": "coa/2019/2019_09061.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.086Z",
+  "generatedAt": "2026-03-22T19:47:13.084Z",
   "source": {
     "title": "People v Ellis (2019 NY Slip Op 09061)",
     "publicationStatus": "published"
@@ -72,7 +72,8 @@
         "sentenceText": "John M. Ryan , Acting District Attorney , Kew Gardens ( Nancy Fitzpatrick Talcott of counsel), for respondent.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -109,6 +110,21 @@
     "hasFootnotesHeading": false
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Paul Skip Laisure , Appellate Advocates , New York City ( William G. Kastin of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: John M. Ryan , Acting District Attorney , Kew Gardens ( Nancy Fitzpatrick Talcott of counsel), for respondent."
+    },
     {
       "code": "MULTIPLE_HEADER_TABLES",
       "severity": "info",

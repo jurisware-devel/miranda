@@ -2,7 +2,7 @@
   "caseId": "2009_00092",
   "sourcePath": "coa/2009/2009_00092.htm",
   "notesPath": "coa/2009/2009_00092.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.414Z",
+  "generatedAt": "2026-03-22T19:47:12.609Z",
   "source": {
     "title": "People v Silvestry (2009 NY Slip Op 00092)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Sally Butler , Bayside, for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Richard A. Brown, District Attorney*, Kew Gardens (*Edward D. Saslaw* of counsel), for appellant.",
+        "normalized": "richard a. brown, district attorney, kew gardens (edward d. saslaw of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Sally Butler*, Bayside, for respondent.",
+        "normalized": "sally butler, bayside, for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

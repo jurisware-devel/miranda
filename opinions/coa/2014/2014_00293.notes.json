@@ -2,7 +2,7 @@
   "caseId": "2014_00293",
   "sourcePath": "coa/2014/2014_00293.htm",
   "notesPath": "coa/2014/2014_00293.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.713Z",
+  "generatedAt": "2026-03-22T19:47:12.818Z",
   "source": {
     "title": "People v Cortez (2014 NY Slip Op 00293)",
     "publicationStatus": "published"
@@ -90,6 +90,20 @@
         "sentenceText": "Levitt & Kaizer, New York City ( Richard Ware Levitt and Dean M. Solomon of counsel), Joel B. Rudin, National Association of Criminal Defense Lawyers , and Richard Willstatter, New York State Association of Criminal Defense Lawyers , White Plains, for National Association of Criminal Defense Lawyers and another, amici curiae.",
         "possiblyTruncated": false
       }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Law Office of Marc Fernich*, New York City (*Marc Fernich* of counsel), for appellant.",
+        "normalized": "law office of marc fernich, new york city (marc fernich of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Cyrus R. Vance, Jr., District Attorney*, New York City (*David M. Cohn* and *Hilary Hassler* of counsel), for respondent.",
+        "normalized": "cyrus r. vance, jr., district attorney, new york city (david m. cohn and hilary hassler of counsel), for respondent.",
+        "side": "respondent",
+        "possiblyTruncated": false
+      }
     ]
   },
   "sections": {
@@ -155,6 +169,16 @@
       "code": "UNKNOWN_TAG",
       "severity": "info",
       "detail": "Encountered unknown tag <conopn> in source HTML."
+    },
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 3 appearance line(s), but companion JSON has 2."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Levitt & Kaizer, New York City ( Richard Ware Levitt and Dean M. Solomon of counsel), Joel B. Rudin, National Association of Criminal Defense Lawyers , and Richard Willstatter, New York State Association of Criminal Defense Lawyers , White Plains, for National Association of Criminal Defense Lawyers and another, amici curiae."
     },
     {
       "code": "MULTIPLE_WRITINGS",

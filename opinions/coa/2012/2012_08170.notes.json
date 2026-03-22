@@ -2,7 +2,7 @@
   "caseId": "2012_08170",
   "sourcePath": "coa/2012/2012_08170.htm",
   "notesPath": "coa/2012/2012_08170.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.638Z",
+  "generatedAt": "2026-03-22T19:47:12.766Z",
   "source": {
     "title": "People v Vandover (2012 NY Slip Op 08170)",
     "publicationStatus": "published"
@@ -57,7 +57,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

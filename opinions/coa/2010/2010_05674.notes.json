@@ -2,7 +2,7 @@
   "caseId": "2010_05674",
   "sourcePath": "coa/2010/2010_05674.htm",
   "notesPath": "coa/2010/2010_05674.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.493Z",
+  "generatedAt": "2026-03-22T19:47:12.665Z",
   "source": {
     "title": "People v King (2010 NY Slip Op 05674)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Lawrence Friedman, District Attorney , Batavia ( William G. Zickl of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Michael M. Mohun*, Cowlesville, for appellant.",
+        "normalized": "michael m. mohun, cowlesville, for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Lawrence Friedman, District Attorney*, Batavia (*William G. Zickl* of counsel), for respondent.",
+        "normalized": "lawrence friedman, district attorney, batavia (william g. zickl of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

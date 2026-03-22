@@ -2,7 +2,7 @@
   "caseId": "2005_02417",
   "sourcePath": "coa/2005/2005_02417.htm",
   "notesPath": "coa/2005/2005_02417.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.271Z",
+  "generatedAt": "2026-03-22T19:47:12.505Z",
   "source": {
     "title": "People v Yavru-Sakuk (2005 NY Slip Op 02417)",
     "publicationStatus": "published"
@@ -79,6 +79,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Richard Brown, District Attorney , Kew Gardens ( Vered Adoni and John M. Castellano of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Law Offices of Sarita Kedia*, New York City (*Sarita Kedia* and *Shannon Michaels* of counsel), for appellant.",
+        "normalized": "law offices of sarita kedia, new york city (sarita kedia and shannon michaels of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Richard Brown, District Attorney*, Kew Gardens (*Vered Adoni* and *John M. Castellano* of counsel), for respondent.",
+        "normalized": "richard brown, district attorney, kew gardens (vered adoni and john m. castellano of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

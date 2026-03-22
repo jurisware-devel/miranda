@@ -2,7 +2,7 @@
   "caseId": "2016_01204",
   "sourcePath": "coa/2016/2016_01204.htm",
   "notesPath": "coa/2016/2016_01204.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.852Z",
+  "generatedAt": "2026-03-22T19:47:12.918Z",
   "source": {
     "title": "People v Gross (2016 NY Slip Op 01204)",
     "publicationStatus": "published"
@@ -61,7 +61,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

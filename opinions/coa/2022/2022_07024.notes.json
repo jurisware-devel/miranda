@@ -2,7 +2,7 @@
   "caseId": "2022_07024",
   "sourcePath": "coa/2022/2022_07024.htm",
   "notesPath": "coa/2022/2022_07024.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.195Z",
+  "generatedAt": "2026-03-22T19:47:13.165Z",
   "source": {
     "title": "People v Heiserman (2022 NY Slip Op 07024)",
     "publicationStatus": "published"
@@ -72,7 +72,8 @@
         "sentenceText": "G. Scott Walling , Slingerlands, for respondent.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -111,6 +112,21 @@
     "hasFootnotesHeading": false
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Jonathan J. Miller, Acting District Attorney , Malone ( Jennifer M. Hollis of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: G. Scott Walling , Slingerlands, for respondent."
+    },
     {
       "code": "MULTIPLE_HEADER_TABLES",
       "severity": "info",

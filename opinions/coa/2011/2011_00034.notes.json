@@ -2,7 +2,7 @@
   "caseId": "2011_00034",
   "sourcePath": "coa/2011/2011_00034.htm",
   "notesPath": "coa/2011/2011_00034.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.513Z",
+  "generatedAt": "2026-03-22T19:47:12.678Z",
   "source": {
     "title": "People v Ashley (2011 NY Slip Op 00034)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Derek P. Champagne, District Attorney , Malone ( Jennifer M. Hollis of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*D.J. & J.A. Cirando*, Syracuse (*John A. Cirando* of counsel), for appellant.",
+        "normalized": "d.j. & j.a. cirando, syracuse (john a. cirando of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Derek P. Champagne, District Attorney*, Malone (*Jennifer M. Hollis* of counsel), for respondent.",
+        "normalized": "derek p. champagne, district attorney, malone (jennifer m. hollis of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

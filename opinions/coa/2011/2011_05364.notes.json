@@ -2,7 +2,7 @@
   "caseId": "2011_05364",
   "sourcePath": "coa/2011/2011_05364.htm",
   "notesPath": "coa/2011/2011_05364.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.555Z",
+  "generatedAt": "2026-03-22T19:47:12.707Z",
   "source": {
     "title": "People v DiGuglielmo (2011 NY Slip Op 05364)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Janet DiFiore, District Attorney , White Plains ( Raffaelina Gianfrancesco, Richard Longworth Hecht and Maryanne Luciano of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Mayer Brown LLP*, New York City (*Andrew H. Schapiro, Scott A. Chesin, Allison M. Stowell* and *Ames C. Grawert* of counsel), for appellant.",
+        "normalized": "mayer brown llp, new york city (andrew h. schapiro, scott a. chesin, allison m. stowell and ames c. grawert of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Janet DiFiore, District Attorney*, White Plains (*Raffaelina Gianfrancesco, Richard Longworth Hecht* and *Maryanne Luciano* of counsel), for respondent.",
+        "normalized": "janet difiore, district attorney, white plains (raffaelina gianfrancesco, richard longworth hecht and maryanne luciano of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

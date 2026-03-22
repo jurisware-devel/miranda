@@ -2,7 +2,7 @@
   "caseId": "2010_07380",
   "sourcePath": "coa/2010/2010_07380.htm",
   "notesPath": "coa/2010/2010_07380.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.500Z",
+  "generatedAt": "2026-03-22T19:47:12.669Z",
   "source": {
     "title": "People v Reyes (2010 NY Slip Op 07380)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Office of the Appellate Defender , New York City ( Richard M. Greenberg, Heather L. Holloway and Rosemary Herbert of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Cyrus R. Vance, Jr., District Attorney*, New York City (*Susan Axelrod* and *Alan Gadlin* of counsel), for appellant.",
+        "normalized": "cyrus r. vance, jr., district attorney, new york city (susan axelrod and alan gadlin of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Office of the Appellate Defender*, New York City (*Richard M. Greenberg, Heather L. Holloway* and *Rosemary Herbert* of counsel), for respondent.",
+        "normalized": "office of the appellate defender, new york city (richard m. greenberg, heather l. holloway and rosemary herbert of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

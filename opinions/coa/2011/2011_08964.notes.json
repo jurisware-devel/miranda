@@ -2,7 +2,7 @@
   "caseId": "2011_08964",
   "sourcePath": "coa/2011/2011_08964.htm",
   "notesPath": "coa/2011/2011_08964.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.582Z",
+  "generatedAt": "2026-03-22T19:47:12.726Z",
   "source": {
     "title": "People v Omowale (2011 NY Slip Op 08964)",
     "publicationStatus": "published"
@@ -54,7 +54,21 @@
     "authorLine": null,
     "appearanceSectionType": "appearances_only",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": [
+      {
+        "text": "*Office of the Appellate Defender*, New York City (*Rosemary Herbert* and *Richard M. Greenberg* of counsel), for appellant-respondent.",
+        "normalized": "office of the appellate defender, new york city (rosemary herbert and richard m. greenberg of counsel), for appellant-respondent.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Cyrus R. Vance, Jr., District Attorney*, New York City (*Andrew E. Seewald* of counsel), for respondent-appellant.",
+        "normalized": "cyrus r. vance, jr., district attorney, new york city (andrew e. seewald of counsel), for respondent-appellant.",
+        "side": "respondent",
+        "possiblyTruncated": false
+      }
+    ]
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -91,6 +105,21 @@
     "hasFootnotesHeading": false
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 0 appearance line(s), but companion JSON has 2."
+    },
+    {
+      "code": "JSON_APPEARANCE_UNMATCHED",
+      "severity": "info",
+      "detail": "Companion JSON appearance does not directly match any raw appearance sentence: *Office of the Appellate Defender*, New York City (*Rosemary Herbert* and *Richard M. Greenberg* of counsel), for appellant-respondent."
+    },
+    {
+      "code": "JSON_APPEARANCE_UNMATCHED",
+      "severity": "info",
+      "detail": "Companion JSON appearance does not directly match any raw appearance sentence: *Cyrus R. Vance, Jr., District Attorney*, New York City (*Andrew E. Seewald* of counsel), for respondent-appellant."
+    },
     {
       "code": "MULTIPLE_HEADER_TABLES",
       "severity": "info",

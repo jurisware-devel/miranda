@@ -2,7 +2,7 @@
   "caseId": "2016_02278",
   "sourcePath": "coa/2016/2016_02278.htm",
   "notesPath": "coa/2016/2016_02278.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.860Z",
+  "generatedAt": "2026-03-22T19:47:12.923Z",
   "source": {
     "title": "People v King (2016 NY Slip Op 02278)",
     "publicationStatus": "published"
@@ -60,7 +60,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

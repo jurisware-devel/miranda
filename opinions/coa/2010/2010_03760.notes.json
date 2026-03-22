@@ -2,7 +2,7 @@
   "caseId": "2010_03760",
   "sourcePath": "coa/2010/2010_03760.htm",
   "notesPath": "coa/2010/2010_03760.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.478Z",
+  "generatedAt": "2026-03-22T19:47:12.654Z",
   "source": {
     "title": "People v Alford (2010 NY Slip Op 03760)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "P. David Soares, District Attorney , Albany ( Steven M. Sharp of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Paul J. Connolly*, Delmar, for appellant.",
+        "normalized": "paul j. connolly, delmar, for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*P. David Soares, District Attorney*, Albany (*Steven M. Sharp* of counsel), for respondent.",
+        "normalized": "p. david soares, district attorney, albany (steven m. sharp of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

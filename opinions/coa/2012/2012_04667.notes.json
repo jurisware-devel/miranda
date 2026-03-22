@@ -2,7 +2,7 @@
   "caseId": "2012_04667",
   "sourcePath": "coa/2012/2012_04667.htm",
   "notesPath": "coa/2012/2012_04667.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.618Z",
+  "generatedAt": "2026-03-22T19:47:12.752Z",
   "source": {
     "title": "People v Gammon (2012 NY Slip Op 04667)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Thomas J. Spota, District Attorney , Riverhead ( Michael J. Miller and Thomas Constant of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*O'Brien & O'Brien, LLP*, Nesconset (*Stephen L. O'Brien* of counsel), for appellant.",
+        "normalized": "o'brien & o'brien, llp, nesconset (stephen l. o'brien of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Thomas J. Spota, District Attorney*, Riverhead (*Michael J. Miller* and *Thomas Constant* of counsel), for respondent.",
+        "normalized": "thomas j. spota, district attorney, riverhead (michael j. miller and thomas constant of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

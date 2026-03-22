@@ -2,7 +2,7 @@
   "caseId": "2009_06376",
   "sourcePath": "coa/2009/2009_06376.htm",
   "notesPath": "coa/2009/2009_06376.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.442Z",
+  "generatedAt": "2026-03-22T19:47:12.629Z",
   "source": {
     "title": "People v Maliszewski (2009 NY Slip Op 06376)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Donald H. Dodd, District Attorney , Oswego ( Michael G. Cianfarano of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Davison Law Office*, Canandaigua (*Mary P. Davison* of counsel), for appellant.",
+        "normalized": "davison law office, canandaigua (mary p. davison of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Donald H. Dodd, District Attorney*, Oswego (*Michael G. Cianfarano* of counsel), for respondent.",
+        "normalized": "donald h. dodd, district attorney, oswego (michael g. cianfarano of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

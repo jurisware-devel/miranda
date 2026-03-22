@@ -2,7 +2,7 @@
   "caseId": "2017_01142",
   "sourcePath": "coa/2017/2017_01142.htm",
   "notesPath": "coa/2017/2017_01142.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.933Z",
+  "generatedAt": "2026-03-22T19:47:12.976Z",
   "source": {
     "title": "People v Pena (2017 NY Slip Op 01142)",
     "publicationStatus": "published"
@@ -58,7 +58,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

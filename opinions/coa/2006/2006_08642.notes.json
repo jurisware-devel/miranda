@@ -2,7 +2,7 @@
   "caseId": "2006_08642",
   "sourcePath": "coa/2006/2006_08642.htm",
   "notesPath": "coa/2006/2006_08642.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.341Z",
+  "generatedAt": "2026-03-22T19:47:12.557Z",
   "source": {
     "title": "People v Vega (2006 NY Slip Op 08642)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Robert M. Morgenthau, District Attorney , New York City ( Susan Gliner of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Center for Appellate Litigation*, New York City (*Robert S. Dean* of counsel), for appellant.",
+        "normalized": "center for appellate litigation, new york city (robert s. dean of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Robert M. Morgenthau, District Attorney*, New York City (*Susan Gliner* of counsel), for respondent.",
+        "normalized": "robert m. morgenthau, district attorney, new york city (susan gliner of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

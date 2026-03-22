@@ -2,7 +2,7 @@
   "caseId": "2014_08058",
   "sourcePath": "coa/2014/2014_08058.htm",
   "notesPath": "coa/2014/2014_08058.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.771Z",
+  "generatedAt": "2026-03-22T19:47:12.860Z",
   "source": {
     "title": "People v Caza (2014 NYSlipOp 08058)",
     "publicationStatus": "unknown"
@@ -63,7 +63,8 @@
         "sentenceText": "Martin J. McGuinness , Queensbury, for appellant.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -100,6 +101,16 @@
     "hasFootnotesHeading": false
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 1 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Martin J. McGuinness , Queensbury, for appellant."
+    },
     {
       "code": "MULTIPLE_HEADER_TABLES",
       "severity": "info",

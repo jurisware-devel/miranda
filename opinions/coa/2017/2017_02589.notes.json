@@ -2,7 +2,7 @@
   "caseId": "2017_02589",
   "sourcePath": "coa/2017/2017_02589.htm",
   "notesPath": "coa/2017/2017_02589.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.948Z",
+  "generatedAt": "2026-03-22T19:47:12.986Z",
   "source": {
     "title": "People v Anderson (2017 NY Slip Op 02589)",
     "publicationStatus": "published"
@@ -60,7 +60,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

@@ -2,7 +2,7 @@
   "caseId": "2016_03415",
   "sourcePath": "coa/2016/2016_03415.htm",
   "notesPath": "coa/2016/2016_03415.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.877Z",
+  "generatedAt": "2026-03-22T19:47:12.937Z",
   "source": {
     "title": "People v Howard (2016 NY Slip Op 03415)",
     "publicationStatus": "published"
@@ -62,7 +62,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

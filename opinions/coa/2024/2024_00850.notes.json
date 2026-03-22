@@ -2,7 +2,7 @@
   "caseId": "2024_00850",
   "sourcePath": "coa/2024/2024_00850.htm",
   "notesPath": "coa/2024/2024_00850.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.248Z",
+  "generatedAt": "2026-03-22T19:47:13.206Z",
   "source": {
     "title": "People ex rel. Rankin v Brann (2024 NY Slip Op 00850)",
     "publicationStatus": "published"
@@ -59,7 +59,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

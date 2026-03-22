@@ -2,7 +2,7 @@
   "caseId": "2026_00967",
   "sourcePath": "coa/2026/2026_00967.htm",
   "notesPath": "coa/2026/2026_00967.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.390Z",
+  "generatedAt": "2026-03-22T19:47:13.316Z",
   "source": {
     "title": "People v Anderson (2026 NY Slip Op 00967)",
     "publicationStatus": "slip_op_only"
@@ -92,6 +92,20 @@
         "sentenceText": "Todd J. Casella, for respondent.",
         "possiblyTruncated": false
       }
+    ],
+    "companionAppearances": [
+      {
+        "text": "Melissa K. Swartz, for appellant.",
+        "normalized": "melissa k. swartz, for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Todd J. Casella, for respondent.",
+        "normalized": "todd j. casella, for respondent.",
+        "side": "respondent",
+        "possiblyTruncated": false
+      }
     ]
   },
   "sections": {
@@ -143,6 +157,11 @@
       "code": "APPEARANCE_LINE_WITH_ARGUMENT_TAIL",
       "severity": "info",
       "detail": "Appearance-like line continues into argument text after \"for respondent.\"."
+    },
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 3 appearance line(s), but companion JSON has 2."
     },
     {
       "code": "MULTIPLE_WRITINGS",

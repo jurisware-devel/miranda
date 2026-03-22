@@ -2,7 +2,7 @@
   "caseId": "2026_00638",
   "sourcePath": "coa/2026/2026_00638.htm",
   "notesPath": "coa/2026/2026_00638.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.372Z",
+  "generatedAt": "2026-03-22T19:47:13.301Z",
   "source": {
     "title": "People v Alba (2026 NY Slip Op 00638)",
     "publicationStatus": "slip_op_only"
@@ -77,6 +77,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "David Gagne, for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "Mark W. Zeno, for appellant.",
+        "normalized": "mark w. zeno, for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "David Gagne, for respondent.",
+        "normalized": "david gagne, for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

@@ -2,7 +2,7 @@
   "caseId": "2024_01499",
   "sourcePath": "coa/2024/2024_01499.htm",
   "notesPath": "coa/2024/2024_01499.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.254Z",
+  "generatedAt": "2026-03-22T19:47:13.211Z",
   "source": {
     "title": "People v Estrella (2024 NY Slip Op 01499)",
     "publicationStatus": "published"
@@ -62,7 +62,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

@@ -2,7 +2,7 @@
   "caseId": "2017_01144",
   "sourcePath": "coa/2017/2017_01144.htm",
   "notesPath": "coa/2017/2017_01144.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.934Z",
+  "generatedAt": "2026-03-22T19:47:12.977Z",
   "source": {
     "title": "People v Vining (2017 NY Slip Op 01144)",
     "publicationStatus": "published"
@@ -59,7 +59,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

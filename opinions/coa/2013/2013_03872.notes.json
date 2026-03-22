@@ -2,7 +2,7 @@
   "caseId": "2013_03872",
   "sourcePath": "coa/2013/2013_03872.htm",
   "notesPath": "coa/2013/2013_03872.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.666Z",
+  "generatedAt": "2026-03-22T19:47:12.785Z",
   "source": {
     "title": "People v Diggins (2013 NY Slip Op 03872)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Cyrus R. Vance, Jr., District Attorney , New York City ( Sheryl Feldman and Alan Gadlin of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Simpson Thacher & Bartlett LLP*, New York City (*Roy L. Reardon* of counsel), and *Office of the Appellate Defender* (*Richard M. Greenberg* and *Rosemary Herbert* of counsel) for appellant.",
+        "normalized": "simpson thacher & bartlett llp, new york city (roy l. reardon of counsel), and office of the appellate defender (richard m. greenberg and rosemary herbert of counsel) for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Cyrus R. Vance, Jr., District Attorney*, New York City (*Sheryl Feldman* and *Alan Gadlin* of counsel), for respondent.",
+        "normalized": "cyrus r. vance, jr., district attorney, new york city (sheryl feldman and alan gadlin of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

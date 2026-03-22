@@ -2,7 +2,7 @@
   "caseId": "2024_02222",
   "sourcePath": "coa/2024/2024_02222.htm",
   "notesPath": "coa/2024/2024_02222.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.265Z",
+  "generatedAt": "2026-03-22T19:47:13.219Z",
   "source": {
     "title": "People v Weinstein (2024 NY Slip Op 02222)",
     "publicationStatus": "published"
@@ -64,7 +64,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

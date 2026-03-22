@@ -2,7 +2,7 @@
   "caseId": "2007_05777",
   "sourcePath": "coa/2007/2007_05777.htm",
   "notesPath": "coa/2007/2007_05777.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.367Z",
+  "generatedAt": "2026-03-22T19:47:12.575Z",
   "source": {
     "title": "People v LaPetina (2007 NY Slip Op 05777)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Richard A. Brown, District Attorney , Kew Gardens ( Linda Cantoni and John M. Castellano of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*White & White*, New York City (*Brendan White* and *Diarmuid White* of counsel), for appellant.",
+        "normalized": "white & white, new york city (brendan white and diarmuid white of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Richard A. Brown, District Attorney*, Kew Gardens (*Linda Cantoni* and *John M. Castellano* of counsel), for respondent.",
+        "normalized": "richard a. brown, district attorney, kew gardens (linda cantoni and john m. castellano of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

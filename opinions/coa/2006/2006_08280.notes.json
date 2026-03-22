@@ -2,7 +2,7 @@
   "caseId": "2006_08280",
   "sourcePath": "coa/2006/2006_08280.htm",
   "notesPath": "coa/2006/2006_08280.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.336Z",
+  "generatedAt": "2026-03-22T19:47:12.554Z",
   "source": {
     "title": "People v Bolling (2006 NY Slip Op 08280)",
     "publicationStatus": "published"
@@ -78,6 +78,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Michael C. Green, District Attorney , Rochester ( Kelly C. Wolford of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Edward J. Nowak, Public Defender*, Rochester (*Eric M. Dolan* of counsel), for appellant.",
+        "normalized": "edward j. nowak, public defender, rochester (eric m. dolan of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Michael C. Green, District Attorney*, Rochester (*Kelly C. Wolford* of counsel), for respondent.",
+        "normalized": "michael c. green, district attorney, rochester (kelly c. wolford of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

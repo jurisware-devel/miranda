@@ -2,7 +2,7 @@
   "caseId": "2010_01018",
   "sourcePath": "coa/2010/2010_01018.htm",
   "notesPath": "coa/2010/2010_01018.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.461Z",
+  "generatedAt": "2026-03-22T19:47:12.642Z",
   "source": {
     "title": "People v Cozzani (2010 NY Slip Op 01018)",
     "publicationStatus": "published"
@@ -71,6 +71,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Aaron M. Wallenstein , New York City, for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Thomas J. Spota III, District Attorney*, Riverhead (*Thomas C. Costello* of counsel), for appellant.",
+        "normalized": "thomas j. spota iii, district attorney, riverhead (thomas c. costello of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Aaron M. Wallenstein*, New York City, for respondent.",
+        "normalized": "aaron m. wallenstein, new york city, for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

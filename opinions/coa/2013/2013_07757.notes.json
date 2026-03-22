@@ -2,7 +2,7 @@
   "caseId": "2013_07757",
   "sourcePath": "coa/2013/2013_07757.htm",
   "notesPath": "coa/2013/2013_07757.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.699Z",
+  "generatedAt": "2026-03-22T19:47:12.808Z",
   "source": {
     "title": "People v Heidgen (2013 NY Slip Op 07757)",
     "publicationStatus": "published"
@@ -67,7 +67,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

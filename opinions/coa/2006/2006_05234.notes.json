@@ -2,7 +2,7 @@
   "caseId": "2006_05234",
   "sourcePath": "coa/2006/2006_05234.htm",
   "notesPath": "coa/2006/2006_05234.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.331Z",
+  "generatedAt": "2026-03-22T19:47:12.550Z",
   "source": {
     "title": "People v Atkinson (2006 NY Slip Op 05234)",
     "publicationStatus": "published"
@@ -78,6 +78,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Richard A. Brown, District Attorney , Kew Gardens ( John M. Castellano and Roni Piplani of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Lynn W.L. Fahey*, New York City, and *Melissa S. Horlick*, for appellant.",
+        "normalized": "lynn w.l. fahey, new york city, and melissa s. horlick, for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Richard A. Brown, District Attorney*, Kew Gardens (*John M. Castellano* and *Roni Piplani* of counsel), for respondent.",
+        "normalized": "richard a. brown, district attorney, kew gardens (john m. castellano and roni piplani of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

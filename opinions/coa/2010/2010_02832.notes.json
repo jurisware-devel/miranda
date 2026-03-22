@@ -2,7 +2,7 @@
   "caseId": "2010_02832",
   "sourcePath": "coa/2010/2010_02832.htm",
   "notesPath": "coa/2010/2010_02832.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.474Z",
+  "generatedAt": "2026-03-22T19:47:12.652Z",
   "source": {
     "title": "People v Cruz (2010 NY Slip Op 02832)",
     "publicationStatus": "published"
@@ -76,6 +76,20 @@
         "sentenceText": "Michael C. Green, District Attorney , Rochester ( Stephen X. O'Brien of counsel), for respondent.",
         "possiblyTruncated": false
       }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Timothy P. Donaher, Public Defender*, Rochester (*James Eckert* of counsel), for appellant.",
+        "normalized": "timothy p. donaher, public defender, rochester (james eckert of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Michael C. Green, District Attorney*, Rochester (*Stephen",
+        "normalized": "michael c. green, district attorney, rochester (stephen",
+        "side": null,
+        "possiblyTruncated": true
+      }
     ]
   },
   "sections": {
@@ -120,6 +134,21 @@
     "hasFootnotesHeading": true
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_TRUNCATED",
+      "severity": "warning",
+      "detail": "Companion JSON appearance looks truncated: *Michael C. Green, District Attorney*, Rochester (*Stephen"
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Michael C. Green, District Attorney , Rochester ( Stephen X. O'Brien of counsel), for respondent."
+    },
+    {
+      "code": "JSON_APPEARANCE_UNMATCHED",
+      "severity": "info",
+      "detail": "Companion JSON appearance does not directly match any raw appearance sentence: *Michael C. Green, District Attorney*, Rochester (*Stephen"
+    },
     {
       "code": "MULTIPLE_WRITINGS",
       "severity": "info",

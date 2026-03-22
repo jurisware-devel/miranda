@@ -2,7 +2,7 @@
   "caseId": "2010_03754",
   "sourcePath": "coa/2010/2010_03754.htm",
   "notesPath": "coa/2010/2010_03754.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.477Z",
+  "generatedAt": "2026-03-22T19:47:12.653Z",
   "source": {
     "title": "People v Daly (2010 NY Slip Op 03754)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Kathleen M. Rice, District Attorney , Mineola ( Andrea M. DiGregorio and Tammy J. Smiley of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Law Offices of Thomas F. Liotti*, Garden City (*Thomas F. Liotti* and *Drummond C. Smith* of counsel), for appellant.",
+        "normalized": "law offices of thomas f. liotti, garden city (thomas f. liotti and drummond c. smith of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Kathleen M. Rice, District Attorney*, Mineola (*Andrea M. DiGregorio* and *Tammy J. Smiley* of counsel), for respondent.",
+        "normalized": "kathleen m. rice, district attorney, mineola (andrea m. digregorio and tammy j. smiley of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

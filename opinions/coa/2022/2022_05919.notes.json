@@ -2,7 +2,7 @@
   "caseId": "2022_05919",
   "sourcePath": "coa/2022/2022_05919.htm",
   "notesPath": "coa/2022/2022_05919.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.191Z",
+  "generatedAt": "2026-03-22T19:47:13.163Z",
   "source": {
     "title": "People v Baines (2022 NY Slip Op 05919)",
     "publicationStatus": "published"
@@ -60,7 +60,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

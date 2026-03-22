@@ -2,7 +2,7 @@
   "caseId": "2021_05617",
   "sourcePath": "coa/2021/2021_05617.htm",
   "notesPath": "coa/2021/2021_05617.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.155Z",
+  "generatedAt": "2026-03-22T19:47:13.136Z",
   "source": {
     "title": "People v Ibarguen (2021 NY Slip Op 05617)",
     "publicationStatus": "published"
@@ -86,7 +86,8 @@
         "sentenceText": "New York Civil Liberties Union Foundation , New York City ( Daniel R. Lambright , Christopher T. Dunn and Molly K. Biklen of counsel), for New York Civil Liberties Union, amicus curiae.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -144,6 +145,26 @@
       "code": "STRAY_CLOSING_TAG",
       "severity": "warning",
       "detail": "Closing tag </blockquote> appears more times than opening tag <blockquote>."
+    },
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 3 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Patricia Pazner, Appellate Advocates , New York City ( Benjamin Welikson of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Melinda Katz, District Attorney , Kew Gardens ( John M. Castellano and Joseph N. Ferdenzi of counsel), for respondent."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: New York Civil Liberties Union Foundation , New York City ( Daniel R. Lambright , Christopher T. Dunn and Molly K. Biklen of counsel), for New York Civil Liberties Union, amicus curiae."
     },
     {
       "code": "MULTIPLE_WRITINGS",

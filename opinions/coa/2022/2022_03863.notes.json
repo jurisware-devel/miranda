@@ -2,7 +2,7 @@
   "caseId": "2022_03863",
   "sourcePath": "coa/2022/2022_03863.htm",
   "notesPath": "coa/2022/2022_03863.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.187Z",
+  "generatedAt": "2026-03-22T19:47:13.160Z",
   "source": {
     "title": "People v Laboriel (2022 NY Slip Op 03863)",
     "publicationStatus": "published"
@@ -74,7 +74,8 @@
         "sentenceText": "Melinda Katz , District Attorney , Queens ( Eric C. Washer of counsel), for respondent.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -128,6 +129,21 @@
     "hasFootnotesHeading": true
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Patricia Pazner , Appellate Advocates , New York City ( Lisa Napoli of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Melinda Katz , District Attorney , Queens ( Eric C. Washer of counsel), for respondent."
+    },
     {
       "code": "MULTIPLE_WRITINGS",
       "severity": "info",

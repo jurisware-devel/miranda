@@ -2,7 +2,7 @@
   "caseId": "2016_06945",
   "sourcePath": "coa/2016/2016_06945.htm",
   "notesPath": "coa/2016/2016_06945.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.904Z",
+  "generatedAt": "2026-03-22T19:47:12.954Z",
   "source": {
     "title": "People v Joseph (2016 NY Slip Op 06945)",
     "publicationStatus": "published"
@@ -74,7 +74,8 @@
         "sentenceText": "Cyrus R. Vance, Jr., District Attorney , New York City ( Diane N. Princ and Christopher P. Marinelli of counsel), for respondent.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -118,6 +119,21 @@
     "hasFootnotesHeading": true
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Richard M. Greenberg, Office of the Appellate Defender , New York City ( Eunice C. Lee of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Cyrus R. Vance, Jr., District Attorney , New York City ( Diane N. Princ and Christopher P. Marinelli of counsel), for respondent."
+    },
     {
       "code": "MULTIPLE_WRITINGS",
       "severity": "info",

@@ -2,7 +2,7 @@
   "caseId": "2015_03764",
   "sourcePath": "coa/2015/2015_03764.htm",
   "notesPath": "coa/2015/2015_03764.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.800Z",
+  "generatedAt": "2026-03-22T19:47:12.881Z",
   "source": {
     "title": "People v Rivera (2015 NY Slip Op 03764)",
     "publicationStatus": "published"
@@ -59,7 +59,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

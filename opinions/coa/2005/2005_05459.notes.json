@@ -2,7 +2,7 @@
   "caseId": "2005_05459",
   "sourcePath": "coa/2005/2005_05459.htm",
   "notesPath": "coa/2005/2005_05459.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.288Z",
+  "generatedAt": "2026-03-22T19:47:12.518Z",
   "source": {
     "title": "People v Hunter (2005 NY Slip Op 05459)",
     "publicationStatus": "published"
@@ -78,6 +78,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Robert M. Morgenthau , District Attorney , New York City ( Alice Wiseman and Mary C. Farrington of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*J. Scott Porter,* Seneca Falls, for appellant.",
+        "normalized": "j. scott porter, seneca falls, for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Robert M. Morgenthau*, *District Attorney*, New York City (*Alice Wiseman* and *Mary C. Farrington* of counsel), for respondent.",
+        "normalized": "robert m. morgenthau, district attorney, new york city (alice wiseman and mary c. farrington of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

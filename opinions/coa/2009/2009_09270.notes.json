@@ -2,7 +2,7 @@
   "caseId": "2009_09270",
   "sourcePath": "coa/2009/2009_09270.htm",
   "notesPath": "coa/2009/2009_09270.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.455Z",
+  "generatedAt": "2026-03-22T19:47:12.639Z",
   "source": {
     "title": "People v Ramos (2009 NY Slip Op 09270)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Richard A. Brown, District Attorney , Kew Gardens ( Rebecca Height of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Legal Aid Society, Criminal Appeals Bureau*, New York City (*William B. Carney* and *Steven Banks* of counsel), for appellant.",
+        "normalized": "legal aid society, criminal appeals bureau, new york city (william b. carney and steven banks of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Richard A. Brown, District Attorney*, Kew Gardens (*Rebecca Height* of counsel), for respondent.",
+        "normalized": "richard a. brown, district attorney, kew gardens (rebecca height of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

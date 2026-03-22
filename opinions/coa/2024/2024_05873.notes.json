@@ -2,7 +2,7 @@
   "caseId": "2024_05873",
   "sourcePath": "coa/2024/2024_05873.htm",
   "notesPath": "coa/2024/2024_05873.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.296Z",
+  "generatedAt": "2026-03-22T19:47:13.242Z",
   "source": {
     "title": "People v Shader (2024 NY Slip Op 05873)",
     "publicationStatus": "published"
@@ -62,7 +62,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

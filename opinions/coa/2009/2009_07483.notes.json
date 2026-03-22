@@ -2,7 +2,7 @@
   "caseId": "2009_07483",
   "sourcePath": "coa/2009/2009_07483.htm",
   "notesPath": "coa/2009/2009_07483.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.445Z",
+  "generatedAt": "2026-03-22T19:47:12.631Z",
   "source": {
     "title": "People v McNair (2009 NY Slip Op 07483)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Robert M. Morgenthau, District Attorney , New York City ( Marc Krupnick and Frank Glaser of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Legal Aid Society*, New York City (*Paul Wiener* and *Steven Banks* of counsel), for appellant.",
+        "normalized": "legal aid society, new york city (paul wiener and steven banks of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Robert M. Morgenthau, District Attorney*, New York City (*Marc Krupnick* and *Frank Glaser* of counsel), for respondent.",
+        "normalized": "robert m. morgenthau, district attorney, new york city (marc krupnick and frank glaser of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

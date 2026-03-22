@@ -2,7 +2,7 @@
   "caseId": "2025_01562",
   "sourcePath": "coa/2025/2025_01562.htm",
   "notesPath": "coa/2025/2025_01562.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.314Z",
+  "generatedAt": "2026-03-22T19:47:13.258Z",
   "source": {
     "title": "People v Scott (2025 NY Slip Op 01562)",
     "publicationStatus": "published"
@@ -85,6 +85,20 @@
         "hasArgumentTail": true,
         "argumentTailPreview": "I. Defendant's plea was not involuntary as a matter of law. ( People v Louree , 8 NY3d 541 ; People v Lopez , 71 NY2d 662; People v Joseph , 191 AD3d 148 , 36 N",
         "sentenceText": "Michael J. Keane, District Attorney , Buffalo ( Michael J. Hillery and Paul J. Williams, III of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*David C. Schopp, The Legal Aid Bureau of Buffalo, Inc.*, Buffalo (*Nicholas P. DiFonzo* and *Erin A. Tresmond* of counsel), for appellant.",
+        "normalized": "david c. schopp, the legal aid bureau of buffalo, inc., buffalo (nicholas p. difonzo and erin a. tresmond of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Michael J. Keane, District Attorney*, Buffalo (*Michael J. Hillery* and *Paul J. Williams, III* of counsel), for respondent.",
+        "normalized": "michael j. keane, district attorney, buffalo (michael j. hillery and paul j. williams, iii of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

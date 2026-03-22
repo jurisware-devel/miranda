@@ -2,7 +2,7 @@
   "caseId": "2018_01957",
   "sourcePath": "coa/2018/2018_01957.htm",
   "notesPath": "coa/2018/2018_01957.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.987Z",
+  "generatedAt": "2026-03-22T19:47:13.012Z",
   "source": {
     "title": "People v Sanchez (2018 NY Slip Op 01957)",
     "publicationStatus": "published"
@@ -73,7 +73,8 @@
         "sentenceText": "Greenwald Law, P.C. , Chester ( David L. Gove and David A. Brodsky of counsel), for respondent.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -114,6 +115,21 @@
     "hasFootnotesHeading": false
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: William V. Grady, District Attorney , Poughkeepsie ( Kirsten A. Rappleyea of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Greenwald Law, P.C. , Chester ( David L. Gove and David A. Brodsky of counsel), for respondent."
+    },
     {
       "code": "MULTIPLE_WRITINGS",
       "severity": "info",

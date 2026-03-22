@@ -2,7 +2,7 @@
   "caseId": "2025_03644",
   "sourcePath": "coa/2025/2025_03644.htm",
   "notesPath": "coa/2025/2025_03644.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.329Z",
+  "generatedAt": "2026-03-22T19:47:13.271Z",
   "source": {
     "title": "People v Angela VV. (2025 NY Slip Op 03644)",
     "publicationStatus": "slip_op_only"
@@ -77,6 +77,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Alyxandra Stanczak, for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "Mitch Kessler, for appellant.",
+        "normalized": "mitch kessler, for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Alyxandra Stanczak, for respondent.",
+        "normalized": "alyxandra stanczak, for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

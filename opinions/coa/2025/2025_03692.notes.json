@@ -2,7 +2,7 @@
   "caseId": "2025_03692",
   "sourcePath": "coa/2025/2025_03692.htm",
   "notesPath": "coa/2025/2025_03692.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.334Z",
+  "generatedAt": "2026-03-22T19:47:13.275Z",
   "source": {
     "title": "People v Bacon (2025 NY Slip Op 03692)",
     "publicationStatus": "slip_op_only"
@@ -81,6 +81,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Julia Gorski, for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "Samir Deger-Sen, for appellant.",
+        "normalized": "samir deger-sen, for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Julia Gorski, for respondent.",
+        "normalized": "julia gorski, for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

@@ -2,7 +2,7 @@
   "caseId": "2021_00899",
   "sourcePath": "coa/2021/2021_00899.htm",
   "notesPath": "coa/2021/2021_00899.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.133Z",
+  "generatedAt": "2026-03-22T19:47:13.120Z",
   "source": {
     "title": "People v Allen (2021 NY Slip Op 00899)",
     "publicationStatus": "published"
@@ -72,7 +72,8 @@
         "sentenceText": "Gregory J. McCaffrey , District Attorney , Geneseo ( Joshua J. Tonra of counsel), for respondent.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -109,6 +110,21 @@
     "hasFootnotesHeading": false
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Myers Buth Law Group PLLC , Orchard Park ( Cheryl Myers Bluth of counsel), and Joel L. Daniels , Buffalo, for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Gregory J. McCaffrey , District Attorney , Geneseo ( Joshua J. Tonra of counsel), for respondent."
+    },
     {
       "code": "MULTIPLE_HEADER_TABLES",
       "severity": "info",

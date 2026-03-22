@@ -2,7 +2,7 @@
   "caseId": "2007_05779",
   "sourcePath": "coa/2007/2007_05779.htm",
   "notesPath": "coa/2007/2007_05779.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.367Z",
+  "generatedAt": "2026-03-22T19:47:12.576Z",
   "source": {
     "title": "People v Liner (2007 NY Slip Op 05779)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Robert M. Morgenthau, District Attorney , New York City ( Gary S. Snitow and David M. Cohn of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Legal Aid Society*, New York City (*Natalie Rea* and *Steven Banks* of counsel), for appellant.",
+        "normalized": "legal aid society, new york city (natalie rea and steven banks of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Robert M. Morgenthau, District Attorney*, New York City (*Gary S. Snitow* and *David M. Cohn* of counsel), for respondent.",
+        "normalized": "robert m. morgenthau, district attorney, new york city (gary s. snitow and david m. cohn of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

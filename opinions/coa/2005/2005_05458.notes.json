@@ -2,7 +2,7 @@
   "caseId": "2005_05458",
   "sourcePath": "coa/2005/2005_05458.htm",
   "notesPath": "coa/2005/2005_05458.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.287Z",
+  "generatedAt": "2026-03-22T19:47:12.517Z",
   "source": {
     "title": "People v Johnson (2005 NY Slip Op 05458)",
     "publicationStatus": "published"
@@ -78,6 +78,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Robert T. Johnson , District Attorney , Bronx ( William K. Clark and Joseph N. Ferdenzi of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Laura R. Johnson*, New York City (*Martin M. Lucente* of counsel), for appellant.",
+        "normalized": "laura r. johnson, new york city (martin m. lucente of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Robert T. Johnson*, *District Attorney*, Bronx (*William K. Clark* and *Joseph N. Ferdenzi* of counsel), for respondent.",
+        "normalized": "robert t. johnson, district attorney, bronx (william k. clark and joseph n. ferdenzi of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

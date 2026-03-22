@@ -2,7 +2,7 @@
   "caseId": "2006_03470",
   "sourcePath": "coa/2006/2006_03470.htm",
   "notesPath": "coa/2006/2006_03470.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.320Z",
+  "generatedAt": "2026-03-22T19:47:12.542Z",
   "source": {
     "title": "People v Conway (2006 NY Slip Op 03470)",
     "publicationStatus": "published"
@@ -79,6 +79,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Mischel & Horn, P.C. , New York City ( Richard E. Mischel of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Robert T. Johnson, District Attorney*, Bronx (*Christopher J. Blira-Koessler* and *Joseph N. Ferdenzi* of counsel), for appellant.",
+        "normalized": "robert t. johnson, district attorney, bronx (christopher j. blira-koessler and joseph n. ferdenzi of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Mischel & Horn, P.C.*, New York City (*Richard E. Mischel* of counsel), for respondent.",
+        "normalized": "mischel & horn, p.c., new york city (richard e. mischel of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

@@ -2,7 +2,7 @@
   "caseId": "2015_05623",
   "sourcePath": "coa/2015/2015_05623.htm",
   "notesPath": "coa/2015/2015_05623.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.816Z",
+  "generatedAt": "2026-03-22T19:47:12.892Z",
   "source": {
     "title": "People v Basile (2015 NY Slip Op 05623)",
     "publicationStatus": "published"
@@ -100,7 +100,8 @@
         "sentenceText": "Virginia F. Coleman, Cambridge, Massachusetts, for Animal Legal Defense Fund and another, amici curiae.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -139,6 +140,36 @@
     "hasFootnotesHeading": true
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 5 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Cahill Gordon & Reindel LLP , New York City ( Ben A. Schatz , Kerry Burns and Danielle Chattin of counsel), and Seymour W. James, Jr. , The Legal Aid Society , New York City ( Scott A. Rosenberg , Andrew C. Fine and David Crow of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Richard A. Brown , District Attorney , Kew Gardens ( Nicoletta J. Caferri and John M. Castellano of counsel), for respondent."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Alston & Bird LLP , New York City ( Daniella P. Main of counsel), for Civil Rights Research Center, amicus curiae."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Proskauer Rose LLP , New York City ( Mark D. Harris , Chantel L. Febus , Matthew V. Rotbart and Edward J. Canter of counsel), Green & Willstatter , White Plains ( Richard D. Willstatter of counsel), and White & White , New York City ( Brendan White of counsel), for National Association of Criminal Defense Lawyers and another, amici curiae."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Virginia F. Coleman, Cambridge, Massachusetts, for Animal Legal Defense Fund and another, amici curiae."
+    },
     {
       "code": "MULTIPLE_HEADER_TABLES",
       "severity": "info",

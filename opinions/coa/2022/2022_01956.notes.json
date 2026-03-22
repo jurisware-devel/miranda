@@ -2,7 +2,7 @@
   "caseId": "2022_01956",
   "sourcePath": "coa/2022/2022_01956.htm",
   "notesPath": "coa/2022/2022_01956.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.176Z",
+  "generatedAt": "2026-03-22T19:47:13.152Z",
   "source": {
     "title": "People v Bush (2022 NY Slip Op 01956)",
     "publicationStatus": "published"
@@ -59,7 +59,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

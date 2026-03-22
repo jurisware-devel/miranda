@@ -2,7 +2,7 @@
   "caseId": "2022_03308",
   "sourcePath": "coa/2022/2022_03308.htm",
   "notesPath": "coa/2022/2022_03308.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.181Z",
+  "generatedAt": "2026-03-22T19:47:13.156Z",
   "source": {
     "title": "People v McKenzie-Smith (2022 NY Slip Op 03308)",
     "publicationStatus": "published"
@@ -72,7 +72,8 @@
         "sentenceText": "The Abbatoy Law Firm, PLLC , Rochester ( David M. Abbatoy, Jr. of counsel), for respondent.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -109,6 +110,21 @@
     "hasFootnotesHeading": false
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Sandra Doorley, District Attorney , Rochester ( Scott Myles of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: The Abbatoy Law Firm, PLLC , Rochester ( David M. Abbatoy, Jr. of counsel), for respondent."
+    },
     {
       "code": "MULTIPLE_HEADER_TABLES",
       "severity": "info",

@@ -2,7 +2,7 @@
   "caseId": "2011_07255",
   "sourcePath": "coa/2011/2011_07255.htm",
   "notesPath": "coa/2011/2011_07255.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.563Z",
+  "generatedAt": "2026-03-22T19:47:12.712Z",
   "source": {
     "title": "People v Porco (2011 NY Slip Op 07255)",
     "publicationStatus": "published"
@@ -85,6 +85,20 @@
         "sentenceText": "Janet DiFiore, District Attorney , New York City ( Susan Axelrod and Morrie I. Kleinbart of counsel), for District Attorneys Association of the State of New York, amicus curiae.",
         "possiblyTruncated": false
       }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Kindlon Shanks and Associates,* Albany (*Terence L. Kindlon* and *Kathy Manley* of counsel), for appellant.",
+        "normalized": "kindlon shanks and associates, albany (terence l. kindlon and kathy manley of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*P. David Soares, District Attorney*, Albany (*Christopher D. Horn* and *Steven M. Sharp* of counsel), for respondent.",
+        "normalized": "p. david soares, district attorney, albany (christopher d. horn and steven m. sharp of counsel), for respondent.",
+        "side": "respondent",
+        "possiblyTruncated": false
+      }
     ]
   },
   "sections": {
@@ -124,6 +138,16 @@
     "hasFootnotesHeading": true
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 3 appearance line(s), but companion JSON has 2."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Janet DiFiore, District Attorney , New York City ( Susan Axelrod and Morrie I. Kleinbart of counsel), for District Attorneys Association of the State of New York, amicus curiae."
+    },
     {
       "code": "MULTIPLE_HEADER_TABLES",
       "severity": "info",

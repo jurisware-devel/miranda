@@ -2,7 +2,7 @@
   "caseId": "2016_05181",
   "sourcePath": "coa/2016/2016_05181.htm",
   "notesPath": "coa/2016/2016_05181.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.897Z",
+  "generatedAt": "2026-03-22T19:47:12.949Z",
   "source": {
     "title": "People v Panton (2016 NY Slip Op 05181)",
     "publicationStatus": "published"
@@ -72,7 +72,8 @@
         "sentenceText": "Cyrus R. Vance, Jr., District Attorney , New York City ( David P. Stromes of counsel), and Robert T. Johnson, District Attorney , Bronx ( Joseph N. Ferdenzi, Peter D. Coddington and T. Charles Won of counsel), for respondent.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -109,6 +110,21 @@
     "hasFootnotesHeading": false
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Robert S. Dean, Center for Appellate Litigation , New York City ( Robin Nichinsky of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Cyrus R. Vance, Jr., District Attorney , New York City ( David P. Stromes of counsel), and Robert T. Johnson, District Attorney , Bronx ( Joseph N. Ferdenzi, Peter D. Coddington and T. Charles Won of counsel), for respondent."
+    },
     {
       "code": "MULTIPLE_HEADER_TABLES",
       "severity": "info",

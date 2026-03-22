@@ -2,7 +2,7 @@
   "caseId": "2010_05245",
   "sourcePath": "coa/2010/2010_05245.htm",
   "notesPath": "coa/2010/2010_05245.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.488Z",
+  "generatedAt": "2026-03-22T19:47:12.661Z",
   "source": {
     "title": "People v Mitchell (2010 NY Slip Op 05245)",
     "publicationStatus": "published"
@@ -59,7 +59,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

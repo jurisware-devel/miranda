@@ -2,7 +2,7 @@
   "caseId": "2017_07297",
   "sourcePath": "coa/2017/2017_07297.htm",
   "notesPath": "coa/2017/2017_07297.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.965Z",
+  "generatedAt": "2026-03-22T19:47:12.997Z",
   "source": {
     "title": "People v Bautista (2017 NY Slip Op 07297)",
     "publicationStatus": "published"
@@ -72,7 +72,8 @@
         "sentenceText": "Cyrus R. Vance, Jr. , District Attorney , New York City ( Garrett A. Lynch , Allen J. Vickey and Vincent Rivellese of counsel), for respondent.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -109,6 +110,21 @@
     "hasFootnotesHeading": false
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Nathan Z. Dershowitz, LLC , New York City ( Nathan Z. Dershowitz and Amy Adelson of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Cyrus R. Vance, Jr. , District Attorney , New York City ( Garrett A. Lynch , Allen J. Vickey and Vincent Rivellese of counsel), for respondent."
+    },
     {
       "code": "MULTIPLE_HEADER_TABLES",
       "severity": "info",

@@ -2,7 +2,7 @@
   "caseId": "2007_05577",
   "sourcePath": "coa/2007/2007_05577.htm",
   "notesPath": "coa/2007/2007_05577.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.364Z",
+  "generatedAt": "2026-03-22T19:47:12.573Z",
   "source": {
     "title": "People v Charache (2007 NY Slip Op 05577)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Lawrence Friedman, District Attorney , Batavia ( William G. Zickl of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Gary A. Horton, Public Defender*, Batavia (*Bridget L. Field* of counsel), for appellant.",
+        "normalized": "gary a. horton, public defender, batavia (bridget l. field of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Lawrence Friedman, District Attorney*, Batavia (*William G. Zickl* of counsel), for respondent.",
+        "normalized": "lawrence friedman, district attorney, batavia (william g. zickl of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

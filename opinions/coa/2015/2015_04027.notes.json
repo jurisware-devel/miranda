@@ -2,7 +2,7 @@
   "caseId": "2015_04027",
   "sourcePath": "coa/2015/2015_04027.htm",
   "notesPath": "coa/2015/2015_04027.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.803Z",
+  "generatedAt": "2026-03-22T19:47:12.882Z",
   "source": {
     "title": "People v Pacherille (2015 NY Slip Op 04027)",
     "publicationStatus": "published"
@@ -74,7 +74,8 @@
         "sentenceText": "John M. Muehl, District Attorney , Cooperstown, for respondent.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -125,6 +126,21 @@
     "hasFootnotesHeading": true
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Frank Policelli , Utica, for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: John M. Muehl, District Attorney , Cooperstown, for respondent."
+    },
     {
       "code": "MULTIPLE_WRITINGS",
       "severity": "info",

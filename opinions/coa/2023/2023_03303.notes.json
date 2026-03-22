@@ -2,7 +2,7 @@
   "caseId": "2023_03303",
   "sourcePath": "coa/2023/2023_03303.htm",
   "notesPath": "coa/2023/2023_03303.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.218Z",
+  "generatedAt": "2026-03-22T19:47:13.183Z",
   "source": {
     "title": "People v Anthony (2023 NY Slip Op 03303)",
     "publicationStatus": "published"
@@ -75,7 +75,8 @@
         "sentenceText": "Melinda Katz , District Attorney , Kew Gardens ( Rebecca Nealon of counsel), for respondent.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -124,6 +125,21 @@
     "hasFootnotesHeading": true
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: The Legal Aid Society , New York City ( Nancy E. Little of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Melinda Katz , District Attorney , Kew Gardens ( Rebecca Nealon of counsel), for respondent."
+    },
     {
       "code": "MULTIPLE_WRITINGS",
       "severity": "info",

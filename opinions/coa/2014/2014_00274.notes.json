@@ -2,7 +2,7 @@
   "caseId": "2014_00274",
   "sourcePath": "coa/2014/2014_00274.htm",
   "notesPath": "coa/2014/2014_00274.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.712Z",
+  "generatedAt": "2026-03-22T19:47:12.817Z",
   "source": {
     "title": "People v Russell (2014 NY Slip Op 00274)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Pollard & Koenig , New York City ( James Layton Koenig of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Robert T. Johnson, District Attorney*, Bronx (*Peter D. Coddington* of counsel), for appellant.",
+        "normalized": "robert t. johnson, district attorney, bronx (peter d. coddington of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Pollard & Koenig*, New York City (*James Layton Koenig* of counsel), for respondent.",
+        "normalized": "pollard & koenig, new york city (james layton koenig of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

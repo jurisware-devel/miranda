@@ -2,7 +2,7 @@
   "caseId": "2025_03645",
   "sourcePath": "coa/2025/2025_03645.htm",
   "notesPath": "coa/2025/2025_03645.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.330Z",
+  "generatedAt": "2026-03-22T19:47:13.271Z",
   "source": {
     "title": "People ex rel. Welch v Maginley-Liddie (2025 NY Slip Op 03645)",
     "publicationStatus": "published"
@@ -81,6 +81,20 @@
         "hasArgumentTail": true,
         "argumentTailPreview": "I. CPL 510.10 (4) (t) permitted the court to set bail in defendant's case. ( Matter of Albany Law School v New York State Off. of Mental Retardation & Dev. Disa",
         "sentenceText": "Melinda Katz, District Attorney , Kew Gardens ( William H. Branigan and John M. Castellano of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Twyla Carter, The Legal Aid Society*, Kew Gardens (*Danielle Welch* of counsel), for appellant.",
+        "normalized": "twyla carter, the legal aid society, kew gardens (danielle welch of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Melinda Katz, District Attorney*, Kew Gardens (*William H. Branigan* and *John M. Castellano* of counsel), for respondent.",
+        "normalized": "melinda katz, district attorney, kew gardens (william h. branigan and john m. castellano of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

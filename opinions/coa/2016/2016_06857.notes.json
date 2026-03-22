@@ -2,7 +2,7 @@
   "caseId": "2016_06857",
   "sourcePath": "coa/2016/2016_06857.htm",
   "notesPath": "coa/2016/2016_06857.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.900Z",
+  "generatedAt": "2026-03-22T19:47:12.952Z",
   "source": {
     "title": "People v Kangas (2016 NY Slip Op 06857)",
     "publicationStatus": "published"
@@ -73,7 +73,8 @@
         "sentenceText": "Scott D. McNamara, District Attorney , Utica ( Steven G. Cox of counsel), for respondent.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -111,6 +112,21 @@
     "hasFootnotesHeading": false
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Leonard & Curley, PLLC , Rome ( Mark C. Curley of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Scott D. McNamara, District Attorney , Utica ( Steven G. Cox of counsel), for respondent."
+    },
     {
       "code": "MULTIPLE_HEADER_TABLES",
       "severity": "info",

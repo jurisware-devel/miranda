@@ -2,7 +2,7 @@
   "caseId": "2023_03301",
   "sourcePath": "coa/2023/2023_03301.htm",
   "notesPath": "coa/2023/2023_03301.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.216Z",
+  "generatedAt": "2026-03-22T19:47:13.182Z",
   "source": {
     "title": "People v Weber (2023 NY Slip Op 03301)",
     "publicationStatus": "published"
@@ -59,7 +59,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

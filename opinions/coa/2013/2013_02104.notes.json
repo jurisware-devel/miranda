@@ -2,7 +2,7 @@
   "caseId": "2013_02104",
   "sourcePath": "coa/2013/2013_02104.htm",
   "notesPath": "coa/2013/2013_02104.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.655Z",
+  "generatedAt": "2026-03-22T19:47:12.777Z",
   "source": {
     "title": "People v Cornelius (2013 NY Slip Op 02104)",
     "publicationStatus": "published"
@@ -74,6 +74,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Cyrus R. Vance, Jr., District Attorney , New York City ( Allen J. Vickey and David M. Cohn of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Office of the Appellate Defender*, New York City (*Margaret E. Knight, Anna Roberts* and *Richard M. Greenberg* of counsel), for appellant.",
+        "normalized": "office of the appellate defender, new york city (margaret e. knight, anna roberts and richard m. greenberg of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Cyrus R. Vance, Jr., District Attorney*, New York City (*Allen J. Vickey* and *David M. Cohn* of counsel), for respondent.",
+        "normalized": "cyrus r. vance, jr., district attorney, new york city (allen j. vickey and david m. cohn of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

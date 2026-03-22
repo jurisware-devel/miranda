@@ -2,7 +2,7 @@
   "caseId": "2018_08058",
   "sourcePath": "coa/2018/2018_08058.htm",
   "notesPath": "coa/2018/2018_08058.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.034Z",
+  "generatedAt": "2026-03-22T19:47:13.047Z",
   "source": {
     "title": "People v Jones (2018 NY Slip Op 08058)",
     "publicationStatus": "published"
@@ -84,7 +84,8 @@
         "sentenceText": "White & Case LLP , Washington, D.C. ( Dana Foster of counsel), Robert S. Dean , Center for Appellate Litigation , New York City, New York State Association of Criminal Defense Attorneys , White Plains ( Richard D. Willstatter of counsel), and Chief Defenders Association of New York , Bronx ( Leanne G. Lapp of counsel), for Center for Appellate Litigation and others, amici curiae.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -137,6 +138,26 @@
     "hasFootnotesHeading": true
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 3 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Holwell Shuster & Goldberg LLP , New York City ( Scott M. Danner of counsel), and Office of the Appellate Defender , New York City ( Christina A. Swarns and Rosemary Herbert of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Cyrus R. Vance, Jr. , District Attorney , New York City ( Ross D. Mazer and David M. Cohn of counsel), for respondent."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: White & Case LLP , Washington, D.C. ( Dana Foster of counsel), Robert S. Dean , Center for Appellate Litigation , New York City, New York State Association of Criminal Defense Attorneys , White Plains ( Richard D. Willstatter of counsel), and Chief Defenders Association of New York , Bronx ( Leanne G. Lapp of counsel), for Center for Appellate Litigation and others, amici curiae."
+    },
     {
       "code": "MULTIPLE_WRITINGS",
       "severity": "info",

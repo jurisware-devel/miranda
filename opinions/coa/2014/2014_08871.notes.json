@@ -2,7 +2,7 @@
   "caseId": "2014_08871",
   "sourcePath": "coa/2014/2014_08871.htm",
   "notesPath": "coa/2014/2014_08871.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.782Z",
+  "generatedAt": "2026-03-22T19:47:12.869Z",
   "source": {
     "title": "People v Giles (2014 NY Slip Op 08871)",
     "publicationStatus": "published"
@@ -56,7 +56,8 @@
     "authorLine": null,
     "appearanceSectionType": "appearances_only",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

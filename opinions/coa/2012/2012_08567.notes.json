@@ -2,7 +2,7 @@
   "caseId": "2012_08567",
   "sourcePath": "coa/2012/2012_08567.htm",
   "notesPath": "coa/2012/2012_08567.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.641Z",
+  "generatedAt": "2026-03-22T19:47:12.768Z",
   "source": {
     "title": "People v Spencer (2012 NY Slip Op 08567)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Richard A. Brown, District Attorney , Kew Gardens ( Sharon Y. Brodt and John M. Castellano of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Law Offices of Randall D. Unger*, Bayside (*Randall D. Unger* of counsel), for appellant.",
+        "normalized": "law offices of randall d. unger, bayside (randall d. unger of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Richard A. Brown, District Attorney*, Kew Gardens (*Sharon Y. Brodt* and *John M. Castellano* of counsel), for respondent.",
+        "normalized": "richard a. brown, district attorney, kew gardens (sharon y. brodt and john m. castellano of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

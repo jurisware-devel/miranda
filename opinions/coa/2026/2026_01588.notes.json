@@ -2,7 +2,7 @@
   "caseId": "2026_01588",
   "sourcePath": "coa/2026/2026_01588.htm",
   "notesPath": "coa/2026/2026_01588.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.401Z",
+  "generatedAt": "2026-03-22T19:47:13.325Z",
   "source": {
     "title": "People v Lewis (2026 NY Slip Op 01588)",
     "publicationStatus": "slip_op_only"
@@ -112,6 +112,20 @@
         "sentenceText": "Amy N. Walendziak, for respondent.",
         "possiblyTruncated": false
       }
+    ],
+    "companionAppearances": [
+      {
+        "text": "Zoë Root, for appellant.",
+        "normalized": "zoë root, for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Amy N. Walendziak, for respondent.",
+        "normalized": "amy n. walendziak, for respondent.",
+        "side": "respondent",
+        "possiblyTruncated": false
+      }
     ]
   },
   "sections": {
@@ -191,6 +205,21 @@
       "code": "APPEARANCE_LINE_WITH_ARGUMENT_TAIL",
       "severity": "info",
       "detail": "Appearance-like line continues into argument text after \"for respondent.\"."
+    },
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 3 appearance line(s), but companion JSON has 2."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Zo&#235; Root, for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_UNMATCHED",
+      "severity": "info",
+      "detail": "Companion JSON appearance does not directly match any raw appearance sentence: Zoë Root, for appellant."
     },
     {
       "code": "MULTIPLE_WRITINGS",

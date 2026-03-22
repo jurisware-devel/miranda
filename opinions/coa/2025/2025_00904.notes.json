@@ -2,7 +2,7 @@
   "caseId": "2025_00904",
   "sourcePath": "coa/2025/2025_00904.htm",
   "notesPath": "coa/2025/2025_00904.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.309Z",
+  "generatedAt": "2026-03-22T19:47:13.253Z",
   "source": {
     "title": "People v Hernandez (2025 NY Slip Op 00904)",
     "publicationStatus": "published"
@@ -119,6 +119,56 @@
         "sentenceText": "District Attorneys Association of the State of New York , Albany ( David M. Cohn, Darcel D. Clark, Michael E. McMahon and Gina Mignola of counsel), for District Attorneys Association of the State of New York, amicus curiae.",
         "possiblyTruncated": false
       }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Kaplan Hecker & Fink LLP*, New York City (*Amit Jain* and *David Patton* of counsel) and Washington, D.C. (*Raymond P. Tolentino* of counsel), and *Caprice R. Jenerson*, *Office of the Appellate Defender*, New York City (*Victorien Wu* of counsel), for appellant. The trial court improperly sentenced Mitchell Hernandez as a mandatory persistent violent felony offender, despite the fact that he had spent 10 years at liberty after his 1991 sentencing. (*People v Schneider*, 37 NY3d 187; *People v Dozier*, 78 NY2d 242; *People v Meckwood*, 20 NY3d 69; *People v Thompson*, 26 NY3d 678; *People v Kaval*, 39 NY3d 1081.) *Alvin L. Bragg, Jr., District Attorney*, New York City (*Steven C. Wu*, *Christian Rose* and *Christopher P. Marinelli* of counsel), for respondent. The sentencing court correctly applied the plain language of the statute to adjudicate defendant a persistent violent felony offender. (*People v Talluto*, 39 NY3d 306; *Matter of M.B.*, 6 NY3d 437; *Matter of Mestecky v City of New York*, 30 NY3d 239; *Leader v Maroney, Ponzini & Spencer*, 97 NY2d 95; *Matter of Tall Trees Constr. Corp. v Zoning Bd. of Appeals of Town of Huntington*, 97 NY2d 86.) *Letitia James, Attorney General*, New York City (*Barbara D. Underwood, Ira M. Feinberg, Sheila L. Bautista* and *Robert C. McIver* of counsel), in her statutory capacity under Executive Law § 71.",
+        "normalized": "kaplan hecker & fink llp, new york city (amit jain and david patton of counsel) and washington, d.c. (raymond p. tolentino of counsel), and caprice r. jenerson, office of the appellate defender, new york city (victorien wu of counsel), for appellant. the trial court improperly sentenced mitchell hernandez as a mandatory persistent violent felony offender, despite the fact that he had spent 10 years at liberty after his 1991 sentencing. (people v schneider, 37 ny3d 187; people v dozier, 78 ny2d 242; people v meckwood, 20 ny3d 69; people v thompson, 26 ny3d 678; people v kaval, 39 ny3d 1081.) alvin l. bragg, jr., district attorney, new york city (steven c. wu, christian rose and christopher p. marinelli of counsel), for respondent. the sentencing court correctly applied the plain language of the statute to adjudicate defendant a persistent violent felony offender. (people v talluto, 39 ny3d 306; matter of m.b., 6 ny3d 437; matter of mestecky v city of new york, 30 ny3d 239; leader v maroney, ponzini & spencer, 97 ny2d 95; matter of tall trees constr. corp. v zoning bd. of appeals of town of huntington, 97 ny2d 86.) letitia james, attorney general, new york city (barbara d. underwood, ira m. feinberg, sheila l. bautista and robert c. mciver of counsel), in her statutory capacity under executive law § 71.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Kaplan Hecker & Fink LLP*, New York City (*Amit Jain* and *David Patton* of counsel) and Washington, D.C. (*Raymond P. Tolentino* of counsel), and *Caprice R. Jenerson*, *Office of the Appellate Defender*, New York City (*Victorien Wu* of counsel), for appellant.",
+        "normalized": "kaplan hecker & fink llp, new york city (amit jain and david patton of counsel) and washington, d.c. (raymond p. tolentino of counsel), and caprice r. jenerson, office of the appellate defender, new york city (victorien wu of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Alvin L. Bragg, Jr., District Attorney*, New York City (*Steven C. Wu*, *Christian Rose* and *Christopher P. Marinelli* of counsel), for respondent.",
+        "normalized": "alvin l. bragg, jr., district attorney, new york city (steven c. wu, christian rose and christopher p. marinelli of counsel), for respondent.",
+        "side": "respondent",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Letitia James, Attorney General*, New York City (*Barbara D. Underwood, Ira M. Feinberg, Sheila L. Bautista* and *Robert C. McIver* of counsel), in her statutory capacity under Executive Law § 71.",
+        "normalized": "letitia james, attorney general, new york city (barbara d. underwood, ira m. feinberg, sheila l. bautista and robert c. mciver of counsel), in her statutory capacity under executive law § 71.",
+        "side": null,
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Wilmer Cutler Pickering Hale and Dorr LLP*, New York City (*Alan Schoenfeld, Thomas K. Bredar* and *Thais R. Ridgeway* of counsel), and *The Bronx Defenders*, New York City (*Ilona Coleman, Elli Marcus* and *Samantha Reiser* of counsel), and *Wilmer Cutler Pickering Hale and Dorr LLP*, New York City (*Alan Schoenfeld, Thomas K. Bredar* and *Thais R. Ridgeway* of counsel), for The Bronx Defenders and others, amici curiae.",
+        "normalized": "wilmer cutler pickering hale and dorr llp, new york city (alan schoenfeld, thomas k. bredar and thais r. ridgeway of counsel), and the bronx defenders, new york city (ilona coleman, elli marcus and samantha reiser of counsel), and wilmer cutler pickering hale and dorr llp, new york city (alan schoenfeld, thomas k. bredar and thais r. ridgeway of counsel), for the bronx defenders and others, amici curiae.",
+        "side": null,
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Lincoln Square Legal Services, Inc.*, New York City (*Michael Martin* and *Ian Weinstein* of counsel), for Ethan J. Leib, amicus curiae.",
+        "normalized": "lincoln square legal services, inc., new york city (michael martin and ian weinstein of counsel), for ethan j. leib, amicus curiae.",
+        "side": null,
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Karen Murtagh, Prisoners' Legal Services of New York*, Albany (*David Bentivegna* of counsel), *New York Civil Liberties Union Foundation*, New York City (*Daniel Lambright, Terry Ding, Christopher T. Dunn* and *Ifeyinwa Chikezie* of counsel), and *Center for Community Alternatives, Inc.*, Brooklyn (*David Condliffe* of counsel), for Prisoners' Legal Services of New York and others, amici curiae.",
+        "normalized": "karen murtagh, prisoners' legal services of new york, albany (david bentivegna of counsel), new york civil liberties union foundation, new york city (daniel lambright, terry ding, christopher t. dunn and ifeyinwa chikezie of counsel), and center for community alternatives, inc., brooklyn (david condliffe of counsel), for prisoners' legal services of new york and others, amici curiae.",
+        "side": null,
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*District Attorneys Association of the State of New York*, Albany (*David M. Cohn, Darcel D. Clark, Michael E. McMahon* and *Gina Mignola* of counsel), for District Attorneys Association of the State of New York, amicus curiae.",
+        "normalized": "district attorneys association of the state of new york, albany (david m. cohn, darcel d. clark, michael e. mcmahon and gina mignola of counsel), for district attorneys association of the state of new york, amicus curiae.",
+        "side": null,
+        "possiblyTruncated": false
+      }
     ]
   },
   "sections": {
@@ -204,6 +254,26 @@
       "code": "APPEARANCE_LINE_WITH_ARGUMENT_TAIL",
       "severity": "info",
       "detail": "Appearance-like line continues into argument text after \"amicus curiae.\"."
+    },
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 6 appearance line(s), but companion JSON has 8."
+    },
+    {
+      "code": "JSON_APPEARANCE_UNMATCHED",
+      "severity": "info",
+      "detail": "Companion JSON appearance does not directly match any raw appearance sentence: *Kaplan Hecker & Fink LLP*, New York City (*Amit Jain* and *David Patton* of counsel) and Washington, D.C. (*Raymond P. Tolentino* of counsel), and *Caprice R. Jenerson*, *Office of the Appellate Defender*, New York City (*Victorien Wu* of counsel), for appellant. The trial court improperly sentenced Mitchell Hernandez as a mandatory persistent violent felony offender, despite the fact that he had spent 10 years at liberty after his 1991 sentencing. (*People v Schneider*, 37 NY3d 187; *People v Dozier*, 78 NY2d 242; *People v Meckwood*, 20 NY3d 69; *People v Thompson*, 26 NY3d 678; *People v Kaval*, 39 NY3d 1081.) *Alvin L. Bragg, Jr., District Attorney*, New York City (*Steven C. Wu*, *Christian Rose* and *Christopher P. Marinelli* of counsel), for respondent. The sentencing court correctly applied the plain language of the statute to adjudicate defendant a persistent violent felony offender. (*People v Talluto*, 39 NY3d 306; *Matter of M.B.*, 6 NY3d 437; *Matter of Mestecky v City of New York*, 30 NY3d 239; *Leader v Maroney, Ponzini & Spencer*, 97 NY2d 95; *Matter of Tall Trees Constr. Corp. v Zoning Bd. of Appeals of Town of Huntington*, 97 NY2d 86.) *Letitia James, Attorney General*, New York City (*Barbara D. Underwood, Ira M. Feinberg, Sheila L. Bautista* and *Robert C. McIver* of counsel), in her statutory capacity under Executive Law § 71."
+    },
+    {
+      "code": "JSON_APPEARANCE_UNMATCHED",
+      "severity": "info",
+      "detail": "Companion JSON appearance does not directly match any raw appearance sentence: *Letitia James, Attorney General*, New York City (*Barbara D. Underwood, Ira M. Feinberg, Sheila L. Bautista* and *Robert C. McIver* of counsel), in her statutory capacity under Executive Law § 71."
+    },
+    {
+      "code": "JSON_APPEARANCE_MULTI_SIDE_MERGE",
+      "severity": "warning",
+      "detail": "Companion JSON appearance appears to merge multiple sides into one entry: *Kaplan Hecker & Fink LLP*, New York City (*Amit Jain* and *David Patton* of counsel) and Washington, D.C. (*Raymond P. Tolentino* of counsel), and *Caprice R. Jenerson*, *Office of the Appellate Defender*, New York City (*Victorien Wu* of counsel), for appellant. The trial court improperly sentenced Mitchell Hernandez as a mandatory persistent violent felony offender, despite the fact that he had spent 10 years at liberty after his 1991 sentencing. (*People v Schneider*, 37 NY3d 187; *People v Dozier*, 78 NY2d 242; *People v Meckwood*, 20 NY3d 69; *People v Thompson*, 26 NY3d 678; *People v Kaval*, 39 NY3d 1081.) *Alvin L. Bragg, Jr., District Attorney*, New York City (*Steven C. Wu*, *Christian Rose* and *Christopher P. Marinelli* of counsel), for respondent. The sentencing court correctly applied the plain language of the statute to adjudicate defendant a persistent violent felony offender. (*People v Talluto*, 39 NY3d 306; *Matter of M.B.*, 6 NY3d 437; *Matter of Mestecky v City of New York*, 30 NY3d 239; *Leader v Maroney, Ponzini & Spencer*, 97 NY2d 95; *Matter of Tall Trees Constr. Corp. v Zoning Bd. of Appeals of Town of Huntington*, 97 NY2d 86.) *Letitia James, Attorney General*, New York City (*Barbara D. Underwood, Ira M. Feinberg, Sheila L. Bautista* and *Robert C. McIver* of counsel), in her statutory capacity under Executive Law § 71."
     },
     {
       "code": "POINTS_OF_COUNSEL_ONLY",

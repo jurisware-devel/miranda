@@ -2,7 +2,7 @@
   "caseId": "2016_04326",
   "sourcePath": "coa/2016/2016_04326.htm",
   "notesPath": "coa/2016/2016_04326.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.886Z",
+  "generatedAt": "2026-03-22T19:47:12.942Z",
   "source": {
     "title": "People v Davidson (2016 NY Slip Op 04326)",
     "publicationStatus": "published"
@@ -84,7 +84,8 @@
         "sentenceText": "Eric T. Schneiderman, Attorney General , New York City ( Barbara D. Underwood, Anisha S. Dasgupta and Andrew W. Amend of counsel), for Attorney General of the State of New York, amicus curiae.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -136,6 +137,26 @@
     "hasFootnotesHeading": true
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 3 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Robert R. LaLonde , Ithaca, for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Patricia Gunning, Special Prosecutor and Inspector General , Delmar ( Robin A. Forshaw of counsel), for respondent."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Eric T. Schneiderman, Attorney General , New York City ( Barbara D. Underwood, Anisha S. Dasgupta and Andrew W. Amend of counsel), for Attorney General of the State of New York, amicus curiae."
+    },
     {
       "code": "MULTIPLE_WRITINGS",
       "severity": "info",

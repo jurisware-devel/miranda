@@ -2,7 +2,7 @@
   "caseId": "2004_08984",
   "sourcePath": "coa/2004/2004_08984.htm",
   "notesPath": "coa/2004/2004_08984.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.259Z",
+  "generatedAt": "2026-03-22T19:47:12.497Z",
   "source": {
     "title": "People v Fabricio (2004 NY Slip Op 08984)",
     "publicationStatus": "published"
@@ -59,7 +59,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

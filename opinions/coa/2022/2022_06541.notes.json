@@ -2,7 +2,7 @@
   "caseId": "2022_06541",
   "sourcePath": "coa/2022/2022_06541.htm",
   "notesPath": "coa/2022/2022_06541.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.192Z",
+  "generatedAt": "2026-03-22T19:47:13.164Z",
   "source": {
     "title": "People v Jimenez (2022 NY Slip Op 06541)",
     "publicationStatus": "published"
@@ -59,7 +59,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

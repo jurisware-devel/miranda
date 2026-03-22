@@ -2,7 +2,7 @@
   "caseId": "2009_05208",
   "sourcePath": "coa/2009/2009_05208.htm",
   "notesPath": "coa/2009/2009_05208.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.439Z",
+  "generatedAt": "2026-03-22T19:47:12.628Z",
   "source": {
     "title": "People v McGrantham (2009 NY Slip Op 05208)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Charles J. Hynes, District Attorney , Brooklyn ( Rhea A. Grob of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Frankie & Gentile, P.C.*, Mineola (*Joseph A. Gentile* of counsel), for appellant.",
+        "normalized": "frankie & gentile, p.c., mineola (joseph a. gentile of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Charles J. Hynes, District Attorney*, Brooklyn (*Rhea A. Grob* of counsel), for respondent.",
+        "normalized": "charles j. hynes, district attorney, brooklyn (rhea a. grob of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

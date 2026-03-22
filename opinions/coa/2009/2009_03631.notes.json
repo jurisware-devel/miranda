@@ -2,7 +2,7 @@
   "caseId": "2009_03631",
   "sourcePath": "coa/2009/2009_03631.htm",
   "notesPath": "coa/2009/2009_03631.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.432Z",
+  "generatedAt": "2026-03-22T19:47:12.622Z",
   "source": {
     "title": "People v Sevencan (2009 NY Slip Op 03631)",
     "publicationStatus": "published"
@@ -77,6 +77,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Charles J. Hynes, District Attorney, New York City ( Caroline R. Donhauser of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Appellate Advocates,* New York City (*Lisa Napoli* of counsel), for appellant.",
+        "normalized": "appellate advocates, new york city (lisa napoli of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Charles J. Hynes, District Attorney,* New York City (*Caroline R. Donhauser* of counsel), for respondent.",
+        "normalized": "charles j. hynes, district attorney, new york city (caroline r. donhauser of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

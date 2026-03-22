@@ -2,7 +2,7 @@
   "caseId": "2021_01834",
   "sourcePath": "coa/2021/2021_01834.htm",
   "notesPath": "coa/2021/2021_01834.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.135Z",
+  "generatedAt": "2026-03-22T19:47:13.122Z",
   "source": {
     "title": "Matter of People Care Inc. v City of N.Y. Human Resources Admin. (2021 NY Slip Op 01834)",
     "publicationStatus": "published"
@@ -81,7 +81,8 @@
         "sentenceText": "Lettitia James, Attorney General , New York City ( Matthew W. Grieco, Barbara D. Underwood, and Steven C. Wu of counsel), for New York State Department of Health, amicus curiae.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -119,6 +120,26 @@
     "hasFootnotesHeading": false
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 3 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: James E. Johnson, Corporation Counsel , New York City ( Eric Lee, Devin Slack and Scott Shorr of counsel), for appellants."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Olshan Frome Wolosky LLP , New York City ( Thomas J. Fleming and Kerrin T. Klein of counsel), and Todd V. Lamb , New York City, for respondent."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Lettitia James, Attorney General , New York City ( Matthew W. Grieco, Barbara D. Underwood, and Steven C. Wu of counsel), for New York State Department of Health, amicus curiae."
+    },
     {
       "code": "MULTIPLE_HEADER_TABLES",
       "severity": "info",

@@ -2,7 +2,7 @@
   "caseId": "2007_01424",
   "sourcePath": "coa/2007/2007_01424.htm",
   "notesPath": "coa/2007/2007_01424.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.348Z",
+  "generatedAt": "2026-03-22T19:47:12.563Z",
   "source": {
     "title": "People v Jackson (2007 NY Slip Op 01424)",
     "publicationStatus": "published"
@@ -75,6 +75,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Robert T. Johnson, District Attorney , Bronx ( Dimitri Maisonet, Joseph N. Ferdenzi and Allen H. Saperstein of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Legal Aid Society*, New York City (*William Carney* and *Steven Banks* of counsel), for appellant.",
+        "normalized": "legal aid society, new york city (william carney and steven banks of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Robert T. Johnson, District Attorney*, Bronx (*Dimitri Maisonet, Joseph N. Ferdenzi* and *Allen H. Saperstein* of counsel), for respondent.",
+        "normalized": "robert t. johnson, district attorney, bronx (dimitri maisonet, joseph n. ferdenzi and allen h. saperstein of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

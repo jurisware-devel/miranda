@@ -2,7 +2,7 @@
   "caseId": "2011_06407",
   "sourcePath": "coa/2011/2011_06407.htm",
   "notesPath": "coa/2011/2011_06407.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.558Z",
+  "generatedAt": "2026-03-22T19:47:12.708Z",
   "source": {
     "title": "People v Holmes (2011 NY Slip Op 06407)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Michael C. Green, District Attorney , Rochester ( Geoffrey Kaeuper of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Timothy P. Donaher, Public Defender*, Rochester (*Janet C. Somes* of counsel), for appellant.",
+        "normalized": "timothy p. donaher, public defender, rochester (janet c. somes of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Michael C. Green, District Attorney*, Rochester (*Geoffrey Kaeuper* of counsel), for respondent.",
+        "normalized": "michael c. green, district attorney, rochester (geoffrey kaeuper of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

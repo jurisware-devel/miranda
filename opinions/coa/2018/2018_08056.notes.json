@@ -2,7 +2,7 @@
   "caseId": "2018_08056",
   "sourcePath": "coa/2018/2018_08056.htm",
   "notesPath": "coa/2018/2018_08056.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.032Z",
+  "generatedAt": "2026-03-22T19:47:13.046Z",
   "source": {
     "title": "People v Suazo (2018 NY Slip Op 08056)",
     "publicationStatus": "published"
@@ -60,7 +60,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

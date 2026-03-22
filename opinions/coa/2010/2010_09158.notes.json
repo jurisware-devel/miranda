@@ -2,7 +2,7 @@
   "caseId": "2010_09158",
   "sourcePath": "coa/2010/2010_09158.htm",
   "notesPath": "coa/2010/2010_09158.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.507Z",
+  "generatedAt": "2026-03-22T19:47:12.674Z",
   "source": {
     "title": "People v Bell (2010 NY Slip Op 09158)",
     "publicationStatus": "published"
@@ -64,6 +64,14 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Cyrus R. Vance, Jr., District Attorney , New York City ( Sheryl Feldman and Mary C. Farrington of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Cyrus R. Vance, Jr., District Attorney*, New York City (*Sheryl Feldman* and *Mary C. Farrington* of counsel), for respondent.",
+        "normalized": "cyrus r. vance, jr., district attorney, new york city (sheryl feldman and mary c. farrington of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

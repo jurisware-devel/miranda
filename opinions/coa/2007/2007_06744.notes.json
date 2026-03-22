@@ -2,7 +2,7 @@
   "caseId": "2007_06744",
   "sourcePath": "coa/2007/2007_06744.htm",
   "notesPath": "coa/2007/2007_06744.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.368Z",
+  "generatedAt": "2026-03-22T19:47:12.576Z",
   "source": {
     "title": "People v Collier (2007 NY Slip Op 06744)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Patricia A. DeAngelis, District Attorney , Troy ( Anne L. Von Fricken Coonrad of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Eugene P. Grimmick*, Troy, for appellant.",
+        "normalized": "eugene p. grimmick, troy, for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Patricia A. DeAngelis, District Attorney*, Troy (*Anne L. Von Fricken Coonrad* of counsel), for respondent.",
+        "normalized": "patricia a. deangelis, district attorney, troy (anne l. von fricken coonrad of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

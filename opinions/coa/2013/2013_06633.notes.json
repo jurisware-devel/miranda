@@ -2,7 +2,7 @@
   "caseId": "2013_06633",
   "sourcePath": "coa/2013/2013_06633.htm",
   "notesPath": "coa/2013/2013_06633.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.684Z",
+  "generatedAt": "2026-03-22T19:47:12.797Z",
   "source": {
     "title": "People v Morris (2013 NY Slip Op 06633)",
     "publicationStatus": "published"
@@ -65,7 +65,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

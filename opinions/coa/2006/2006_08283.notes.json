@@ -2,7 +2,7 @@
   "caseId": "2006_08283",
   "sourcePath": "coa/2006/2006_08283.htm",
   "notesPath": "coa/2006/2006_08283.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.337Z",
+  "generatedAt": "2026-03-22T19:47:12.554Z",
   "source": {
     "title": "People v Carter (2006 NY Slip Op 08283)",
     "publicationStatus": "published"
@@ -78,6 +78,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "James B. Vargason, District Attorney , Auburn ( Christopher T. Valdina of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*David P. Elkovitch*, Auburn, for appellant.",
+        "normalized": "david p. elkovitch, auburn, for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*James B. Vargason, District Attorney*, Auburn (*Christopher T. Valdina* of counsel), for respondent.",
+        "normalized": "james b. vargason, district attorney, auburn (christopher t. valdina of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

@@ -2,7 +2,7 @@
   "caseId": "2010_01351",
   "sourcePath": "coa/2010/2010_01351.htm",
   "notesPath": "coa/2010/2010_01351.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.464Z",
+  "generatedAt": "2026-03-22T19:47:12.645Z",
   "source": {
     "title": "People v Edwards (2010 NY Slip Op 01351)",
     "publicationStatus": "published"
@@ -75,6 +75,20 @@
         "sentenceText": "Law Office of Susan V. Tipograph , New York City ( Susan V. Tipograph of counsel), for respondent.",
         "possiblyTruncated": false
       }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Frank A. Sedita, III, District Attorney,* Buffalo (*Michael J. Hillery* of counsel), for appellant.",
+        "normalized": "frank a. sedita, iii, district attorney, buffalo (michael j. hillery of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Law Office of Susan",
+        "normalized": "law office of susan",
+        "side": null,
+        "possiblyTruncated": true
+      }
     ]
   },
   "sections": {
@@ -112,6 +126,21 @@
     "hasFootnotesHeading": false
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_TRUNCATED",
+      "severity": "warning",
+      "detail": "Companion JSON appearance looks truncated: *Law Office of Susan"
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Law Office of Susan V. Tipograph , New York City ( Susan V. Tipograph of counsel), for respondent."
+    },
+    {
+      "code": "JSON_APPEARANCE_UNMATCHED",
+      "severity": "info",
+      "detail": "Companion JSON appearance does not directly match any raw appearance sentence: *Law Office of Susan"
+    },
     {
       "code": "MULTIPLE_HEADER_TABLES",
       "severity": "info",

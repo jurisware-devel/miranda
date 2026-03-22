@@ -2,7 +2,7 @@
   "caseId": "2007_02787",
   "sourcePath": "coa/2007/2007_02787.htm",
   "notesPath": "coa/2007/2007_02787.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.354Z",
+  "generatedAt": "2026-03-22T19:47:12.566Z",
   "source": {
     "title": "People v Havrish (2007 NY Slip Op 02787)",
     "publicationStatus": "published"
@@ -59,7 +59,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

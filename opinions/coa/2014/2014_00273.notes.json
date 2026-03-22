@@ -2,7 +2,7 @@
   "caseId": "2014_00273",
   "sourcePath": "coa/2014/2014_00273.htm",
   "notesPath": "coa/2014/2014_00273.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.712Z",
+  "generatedAt": "2026-03-22T19:47:12.817Z",
   "source": {
     "title": "People v Beaty (2014 NY Slip Op 00273)",
     "publicationStatus": "published"
@@ -57,7 +57,8 @@
     "authorLine": "Per Curiam",
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

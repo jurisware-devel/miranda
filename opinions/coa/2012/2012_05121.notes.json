@@ -2,7 +2,7 @@
   "caseId": "2012_05121",
   "sourcePath": "coa/2012/2012_05121.htm",
   "notesPath": "coa/2012/2012_05121.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.621Z",
+  "generatedAt": "2026-03-22T19:47:12.753Z",
   "source": {
     "title": "People v Maracle (2012 NY Slip Op 05121)",
     "publicationStatus": "published"
@@ -60,7 +60,21 @@
     "authorLine": null,
     "appearanceSectionType": "appearances_only",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": [
+      {
+        "text": "*Lipsitz Green Scime Cambria, LLP*, Buffalo (*Timothy P. Murphy* of counsel), for appellant in the first and second above-entitled actions.",
+        "normalized": "lipsitz green scime cambria, llp, buffalo (timothy p. murphy of counsel), for appellant in the first and second above-entitled actions.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Frank A. Sedita, III, District Attorney*, Buffalo (*Matthew B. Powers* and *Donna A. Milling* of counsel), for respondent in the first and second above-entitled actions.",
+        "normalized": "frank a. sedita, iii, district attorney, buffalo (matthew b. powers and donna a. milling of counsel), for respondent in the first and second above-entitled actions.",
+        "side": "respondent",
+        "possiblyTruncated": false
+      }
+    ]
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -111,6 +125,21 @@
       "code": "UNKNOWN_TAG",
       "severity": "info",
       "detail": "Encountered unknown tag <span> in source HTML."
+    },
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 0 appearance line(s), but companion JSON has 2."
+    },
+    {
+      "code": "JSON_APPEARANCE_UNMATCHED",
+      "severity": "info",
+      "detail": "Companion JSON appearance does not directly match any raw appearance sentence: *Lipsitz Green Scime Cambria, LLP*, Buffalo (*Timothy P. Murphy* of counsel), for appellant in the first and second above-entitled actions."
+    },
+    {
+      "code": "JSON_APPEARANCE_UNMATCHED",
+      "severity": "info",
+      "detail": "Companion JSON appearance does not directly match any raw appearance sentence: *Frank A. Sedita, III, District Attorney*, Buffalo (*Matthew B. Powers* and *Donna A. Milling* of counsel), for respondent in the first and second above-entitled actions."
     },
     {
       "code": "MULTIPLE_WRITINGS",

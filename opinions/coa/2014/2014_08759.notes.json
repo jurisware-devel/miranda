@@ -2,7 +2,7 @@
   "caseId": "2014_08759",
   "sourcePath": "coa/2014/2014_08759.htm",
   "notesPath": "coa/2014/2014_08759.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.778Z",
+  "generatedAt": "2026-03-22T19:47:12.866Z",
   "source": {
     "title": "People v Reid (2014 NY Slip Op 08759)",
     "publicationStatus": "published"
@@ -59,7 +59,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

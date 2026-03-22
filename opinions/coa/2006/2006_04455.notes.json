@@ -2,7 +2,7 @@
   "caseId": "2006_04455",
   "sourcePath": "coa/2006/2006_04455.htm",
   "notesPath": "coa/2006/2006_04455.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.326Z",
+  "generatedAt": "2026-03-22T19:47:12.547Z",
   "source": {
     "title": "People v Leon (2006 NY Slip Op 04455)",
     "publicationStatus": "published"
@@ -59,7 +59,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

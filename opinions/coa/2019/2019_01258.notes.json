@@ -2,7 +2,7 @@
   "caseId": "2019_01258",
   "sourcePath": "coa/2019/2019_01258.htm",
   "notesPath": "coa/2019/2019_01258.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.041Z",
+  "generatedAt": "2026-03-22T19:47:13.052Z",
   "source": {
     "title": "People v Cisse (2019 NY Slip Op 01258)",
     "publicationStatus": "published"
@@ -90,7 +90,8 @@
         "sentenceText": "Holwell, Shuster & Goldberg LLP , New York City ( Scott M. Danner , Daniel M. Horowitz , Evan H. Stein and Meredith J. Nelson of counsel), The Brennan Center for Justice at NYU School of Law , New York City ( Priya Raghavan , Ames Grawert and Bryan Furst of counsel), and Cato Institute , Washington, D.C. ( Ilya Shapiro of counsel), for The Brennan Center for Justice at NYU School of Law and another, amici curiae.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -127,6 +128,31 @@
     "hasFootnotesHeading": false
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 4 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Robert S. Dean , Center for Appellate Litigation , New York City ( Matthew Bova of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Cyrus R. Vance, Jr. , District Attorney , New York City ( Susan Axelrod and Alan Gadlin of counsel), for respondent."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Brooklyn Defender Services , Brooklyn ( Lisa Schreibersdorf and Susannah Karlsson of counsel), and Fried, Frank, Harris, Shriver & Jacobson LLP , New York City ( Aleksandr B. Livshits and Arielle F. Evans of counsel), for Brooklyn Defender Services and others, amici curiae."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Holwell, Shuster & Goldberg LLP , New York City ( Scott M. Danner , Daniel M. Horowitz , Evan H. Stein and Meredith J. Nelson of counsel), The Brennan Center for Justice at NYU School of Law , New York City ( Priya Raghavan , Ames Grawert and Bryan Furst of counsel), and Cato Institute , Washington, D.C. ( Ilya Shapiro of counsel), for The Brennan Center for Justice at NYU School of Law and another, amici curiae."
+    },
     {
       "code": "MULTIPLE_HEADER_TABLES",
       "severity": "info",

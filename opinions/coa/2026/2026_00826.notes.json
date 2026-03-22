@@ -2,7 +2,7 @@
   "caseId": "2026_00826",
   "sourcePath": "coa/2026/2026_00826.htm",
   "notesPath": "coa/2026/2026_00826.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.380Z",
+  "generatedAt": "2026-03-22T19:47:13.307Z",
   "source": {
     "title": "People v Guerrero (2026 NY Slip Op 00826)",
     "publicationStatus": "slip_op_only"
@@ -90,6 +90,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Elisabeth A. Dannan, for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "Bradley E. Keem, for appellant.",
+        "normalized": "bradley e. keem, for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Elisabeth A. Dannan, for respondent.",
+        "normalized": "elisabeth a. dannan, for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

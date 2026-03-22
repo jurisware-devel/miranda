@@ -2,7 +2,7 @@
   "caseId": "2011_01364",
   "sourcePath": "coa/2011/2011_01364.htm",
   "notesPath": "coa/2011/2011_01364.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.524Z",
+  "generatedAt": "2026-03-22T19:47:12.685Z",
   "source": {
     "title": "People v Smith (2011 NY Slip Op 01364)",
     "publicationStatus": "published"
@@ -75,6 +75,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Cyrus R. Vance, Jr., District Attorney , New York City ( Vincent Rivellese and Hilary Hassler of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Levitt & Kaizer*, New York City (*Richard Ware Levitt* and *Yvonne Shivers* of counsel), and *The Murphy Firm*, Baltimore, Maryland (*William H. Murphy, Jr.*, of counsel), for appellant.",
+        "normalized": "levitt & kaizer, new york city (richard ware levitt and yvonne shivers of counsel), and the murphy firm, baltimore, maryland (william h. murphy, jr., of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Cyrus R. Vance, Jr., District Attorney*, New York City (*Vincent Rivellese* and *Hilary Hassler* of counsel), for respondent.",
+        "normalized": "cyrus r. vance, jr., district attorney, new york city (vincent rivellese and hilary hassler of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

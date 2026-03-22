@@ -2,7 +2,7 @@
   "caseId": "2018_04383",
   "sourcePath": "coa/2018/2018_04383.htm",
   "notesPath": "coa/2018/2018_04383.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.015Z",
+  "generatedAt": "2026-03-22T19:47:13.033Z",
   "source": {
     "title": "People v Bailey (2018 NY Slip Op 04383)",
     "publicationStatus": "published"
@@ -60,7 +60,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

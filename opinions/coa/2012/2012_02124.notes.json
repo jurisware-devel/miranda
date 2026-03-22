@@ -2,7 +2,7 @@
   "caseId": "2012_02124",
   "sourcePath": "coa/2012/2012_02124.htm",
   "notesPath": "coa/2012/2012_02124.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.593Z",
+  "generatedAt": "2026-03-22T19:47:12.734Z",
   "source": {
     "title": "People v Mack (2012 NY Slip Op 02124)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Dratel & Mysliwiec, P.C. , New York City ( Alice L. Fontier of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Cyrus R. Vance, Jr., District Attorney*, New York City (*Vincent W. Rivellese* and *Hilary Hassler* of counsel), for appellant.",
+        "normalized": "cyrus r. vance, jr., district attorney, new york city (vincent w. rivellese and hilary hassler of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Dratel & Mysliwiec, P.C.*, New York City (*Alice L. Fontier* of counsel), for respondent.",
+        "normalized": "dratel & mysliwiec, p.c., new york city (alice l. fontier of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

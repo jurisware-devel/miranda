@@ -2,7 +2,7 @@
   "caseId": "2009_06369",
   "sourcePath": "coa/2009/2009_06369.htm",
   "notesPath": "coa/2009/2009_06369.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.441Z",
+  "generatedAt": "2026-03-22T19:47:12.629Z",
   "source": {
     "title": "People v McDaniel (2009 NY Slip Op 06369)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Robert T. Johnson, District Attorney , Bronx ( Kayonia L. Whetstone of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Legal Aid Society, Criminal Appeals Bureau*, New York City (*Arthur H. Hopkirk* and *Steven Banks* of counsel), for appellant.",
+        "normalized": "legal aid society, criminal appeals bureau, new york city (arthur h. hopkirk and steven banks of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Robert T. Johnson, District Attorney*, Bronx (*Kayonia L. Whetstone* of counsel), for respondent.",
+        "normalized": "robert t. johnson, district attorney, bronx (kayonia l. whetstone of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

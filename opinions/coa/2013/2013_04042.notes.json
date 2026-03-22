@@ -2,7 +2,7 @@
   "caseId": "2013_04042",
   "sourcePath": "coa/2013/2013_04042.htm",
   "notesPath": "coa/2013/2013_04042.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.671Z",
+  "generatedAt": "2026-03-22T19:47:12.789Z",
   "source": {
     "title": "People v Padilla (2013 NY Slip Op 04042)",
     "publicationStatus": "published"
@@ -58,7 +58,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

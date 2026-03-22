@@ -2,7 +2,7 @@
   "caseId": "2023_01468",
   "sourcePath": "coa/2023/2023_01468.htm",
   "notesPath": "coa/2023/2023_01468.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.203Z",
+  "generatedAt": "2026-03-22T19:47:13.171Z",
   "source": {
     "title": "People v Ba (2023 NY Slip Op 01468)",
     "publicationStatus": "published"
@@ -74,7 +74,8 @@
         "sentenceText": "Alvin L. Bragg, Jr., District Attorney , New York City ( Meghan McLoughlin , Steven C. Wu and Samuel Z. Goldfine of counsel), for respondent.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -123,6 +124,21 @@
     "hasFootnotesHeading": true
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Twyla Carter, The Legal Aid Society , New York City ( Lauren E. Jones of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Alvin L. Bragg, Jr., District Attorney , New York City ( Meghan McLoughlin , Steven C. Wu and Samuel Z. Goldfine of counsel), for respondent."
+    },
     {
       "code": "MULTIPLE_WRITINGS",
       "severity": "info",

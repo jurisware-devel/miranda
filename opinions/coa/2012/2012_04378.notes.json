@@ -2,7 +2,7 @@
   "caseId": "2012_04378",
   "sourcePath": "coa/2012/2012_04378.htm",
   "notesPath": "coa/2012/2012_04378.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.616Z",
+  "generatedAt": "2026-03-22T19:47:12.750Z",
   "source": {
     "title": "People v Plunkett (2012 NY Slip Op 04378)",
     "publicationStatus": "published"
@@ -59,7 +59,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

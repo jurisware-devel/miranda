@@ -2,7 +2,7 @@
   "caseId": "2006_06504",
   "sourcePath": "coa/2006/2006_06504.htm",
   "notesPath": "coa/2006/2006_06504.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.333Z",
+  "generatedAt": "2026-03-22T19:47:12.552Z",
   "source": {
     "title": "People v Diaz (2006 NY Slip Op 06504)",
     "publicationStatus": "published"
@@ -79,6 +79,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Robert M. Morgenthau, District Attorney , New York City ( Hilary Hassler of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Legal Aid Society*, New York City (*Cheryl P. Williams* and *Steven Banks* of counsel), for appellant.",
+        "normalized": "legal aid society, new york city (cheryl p. williams and steven banks of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Robert M. Morgenthau, District Attorney*, New York City (*Hilary Hassler* of counsel), for respondent.",
+        "normalized": "robert m. morgenthau, district attorney, new york city (hilary hassler of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

@@ -2,7 +2,7 @@
   "caseId": "2025_02100",
   "sourcePath": "coa/2025/2025_02100.htm",
   "notesPath": "coa/2025/2025_02100.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.317Z",
+  "generatedAt": "2026-03-22T19:47:13.260Z",
   "source": {
     "title": "People v Farrell (2025 NYSlipOp 02100)",
     "publicationStatus": "published"
@@ -90,6 +90,26 @@
         "hasArgumentTail": true,
         "argumentTailPreview": "I. The meaning of the word \"sustenance\" in Agriculture and Markets Law § 353 includes medical/veterinary care for an animal. ( Colon v Martin , 35 NY3d 75 .) II",
         "sentenceText": "Legal Action Network for Animals , Great Neck ( Nora Constance Marino of counsel), for Legal Action Network for Animals, amicus curiae.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Mitchell H. Spinac*, Kingston, for appellant.",
+        "normalized": "mitchell h. spinac, kingston, for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Emmanuel C. Nneji, District Attorney*, Kingston (*Sohil Sharedalal*, *Joan Gudesblatt Lamb* and *Felicia Raphael* of counsel), for respondent.",
+        "normalized": "emmanuel c. nneji, district attorney, kingston (sohil sharedalal, joan gudesblatt lamb and felicia raphael of counsel), for respondent.",
+        "side": "respondent",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Legal Action Network for Animals*, Great Neck (*Nora Constance Marino* of counsel), for Legal Action Network for Animals, amicus curiae.",
+        "normalized": "legal action network for animals, great neck (nora constance marino of counsel), for legal action network for animals, amicus curiae.",
+        "side": null,
         "possiblyTruncated": false
       }
     ]

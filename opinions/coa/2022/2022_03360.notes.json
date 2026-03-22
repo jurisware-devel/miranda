@@ -2,7 +2,7 @@
   "caseId": "2022_03360",
   "sourcePath": "coa/2022/2022_03360.htm",
   "notesPath": "coa/2022/2022_03360.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.184Z",
+  "generatedAt": "2026-03-22T19:47:13.158Z",
   "source": {
     "title": "People v Mitchell (2022 NY Slip Op 03360)",
     "publicationStatus": "published"
@@ -60,7 +60,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

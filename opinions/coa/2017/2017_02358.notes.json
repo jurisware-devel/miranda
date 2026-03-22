@@ -2,7 +2,7 @@
   "caseId": "2017_02358",
   "sourcePath": "coa/2017/2017_02358.htm",
   "notesPath": "coa/2017/2017_02358.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.938Z",
+  "generatedAt": "2026-03-22T19:47:12.980Z",
   "source": {
     "title": "People v Whitehead (2017 NY Slip Op 02358)",
     "publicationStatus": "published"
@@ -72,7 +72,8 @@
         "sentenceText": "Eric T. Schneiderman , Attorney General , New York City ( Lisa E. Fleischmann , Barbara D. Underwood and Nikki Kowalski of counsel), for respondent.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -109,6 +110,21 @@
     "hasFootnotesHeading": false
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Hug Law, PLLC , Albany ( Matthew C. Hug of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Eric T. Schneiderman , Attorney General , New York City ( Lisa E. Fleischmann , Barbara D. Underwood and Nikki Kowalski of counsel), for respondent."
+    },
     {
       "code": "MULTIPLE_HEADER_TABLES",
       "severity": "info",

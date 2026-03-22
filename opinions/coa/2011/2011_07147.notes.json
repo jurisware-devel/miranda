@@ -2,7 +2,7 @@
   "caseId": "2011_07147",
   "sourcePath": "coa/2011/2011_07147.htm",
   "notesPath": "coa/2011/2011_07147.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.560Z",
+  "generatedAt": "2026-03-22T19:47:12.709Z",
   "source": {
     "title": "People v Robinson (2011 NY Slip Op 07147)",
     "publicationStatus": "published"
@@ -71,6 +71,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Beth G. Cozzolino, District Attorney , Hudson ( David Costanzo and Henry Neal Conolly of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Bruce Evans Knoll*, Albany, for appellant.",
+        "normalized": "bruce evans knoll, albany, for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Beth G. Cozzolino, District Attorney*, Hudson (*David Costanzo* and *Henry Neal Conolly* of counsel), for respondent.",
+        "normalized": "beth g. cozzolino, district attorney, hudson (david costanzo and henry neal conolly of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

@@ -2,7 +2,7 @@
   "caseId": "2007_08779",
   "sourcePath": "coa/2007/2007_08779.htm",
   "notesPath": "coa/2007/2007_08779.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.372Z",
+  "generatedAt": "2026-03-22T19:47:12.580Z",
   "source": {
     "title": "People v Olson (2007 NY Slip Op 08779)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Kathleen M. Rice, District Attorney , Mineola ( Lauren Del Giorno and Peter A. Weinstein of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Peter Panaro*, Massapequa, for appellant.",
+        "normalized": "peter panaro, massapequa, for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Kathleen M. Rice, District Attorney*, Mineola (*Lauren Del Giorno* and *Peter A. Weinstein* of counsel), for respondent.",
+        "normalized": "kathleen m. rice, district attorney, mineola (lauren del giorno and peter a. weinstein of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

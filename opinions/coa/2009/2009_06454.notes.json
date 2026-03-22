@@ -2,7 +2,7 @@
   "caseId": "2009_06454",
   "sourcePath": "coa/2009/2009_06454.htm",
   "notesPath": "coa/2009/2009_06454.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.442Z",
+  "generatedAt": "2026-03-22T19:47:12.630Z",
   "source": {
     "title": "People v Mayo (2009 NY Slip Op 06454)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Robert M. Morgenthau , District Attorney , New York City ( Justin K. Wechsler of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Center for Appellate Litigation*, New York City (*Robert S. Dean* of counsel), for appellant.",
+        "normalized": "center for appellate litigation, new york city (robert s. dean of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Robert M. Morgenthau*, *District Attorney*, New York City (*Justin K. Wechsler* of counsel), for respondent.",
+        "normalized": "robert m. morgenthau, district attorney, new york city (justin k. wechsler of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

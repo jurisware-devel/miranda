@@ -2,7 +2,7 @@
   "caseId": "2017_07159",
   "sourcePath": "coa/2017/2017_07159.htm",
   "notesPath": "coa/2017/2017_07159.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.964Z",
+  "generatedAt": "2026-03-22T19:47:12.997Z",
   "source": {
     "title": "People v Wright (2017 NY Slip Op 07159)",
     "publicationStatus": "published"
@@ -81,7 +81,8 @@
         "sentenceText": "Wilmer Cutler Pickering Hale and Door LLP , New York City ( Tiffany E. Payne and Mark G. Matuschak of counsel), Lindsay A. Lewis , Committee of the National Association of Criminal Defense Lawyers , New York City, and Richard D. Willstatter, Committee of the New York State Association of Criminal Defense Lawyers , White Plains, for National Association of Criminal Defense Lawyers and another, amici curiae.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -118,6 +119,26 @@
     "hasFootnotesHeading": false
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 3 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Lynn W.L. Fahey, Appellate Advocates , New York City ( Mark W. Vorkink of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Eric Gonzalez, Acting District Attorney , Brooklyn ( Jean M. Joyce and Leonard Joblove of counsel), for respondent."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Wilmer Cutler Pickering Hale and Door LLP , New York City ( Tiffany E. Payne and Mark G. Matuschak of counsel), Lindsay A. Lewis , Committee of the National Association of Criminal Defense Lawyers , New York City, and Richard D. Willstatter, Committee of the New York State Association of Criminal Defense Lawyers , White Plains, for National Association of Criminal Defense Lawyers and another, amici curiae."
+    },
     {
       "code": "MULTIPLE_HEADER_TABLES",
       "severity": "info",

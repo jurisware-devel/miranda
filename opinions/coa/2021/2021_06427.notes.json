@@ -2,7 +2,7 @@
   "caseId": "2021_06427",
   "sourcePath": "coa/2021/2021_06427.htm",
   "notesPath": "coa/2021/2021_06427.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.161Z",
+  "generatedAt": "2026-03-22T19:47:13.141Z",
   "source": {
     "title": "People v Hargrove (2021 NY Slip Op 06427)",
     "publicationStatus": "published"
@@ -74,7 +74,8 @@
         "sentenceText": "Eric Gonzalez, District Attorney , Brooklyn ( Jordan Cerutti of counsel), for respondent.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -114,6 +115,21 @@
     "hasFootnotesHeading": true
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Patricia Pazner, Appellate Advocates , New York City ( Hannah Kon of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Eric Gonzalez, District Attorney , Brooklyn ( Jordan Cerutti of counsel), for respondent."
+    },
     {
       "code": "MULTIPLE_HEADER_TABLES",
       "severity": "info",

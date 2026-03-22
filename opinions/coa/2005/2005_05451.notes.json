@@ -2,7 +2,7 @@
   "caseId": "2005_05451",
   "sourcePath": "coa/2005/2005_05451.htm",
   "notesPath": "coa/2005/2005_05451.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.285Z",
+  "generatedAt": "2026-03-22T19:47:12.516Z",
   "source": {
     "title": "People v Kelly (2005 NY Slip Op 05451)",
     "publicationStatus": "published"
@@ -59,7 +59,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

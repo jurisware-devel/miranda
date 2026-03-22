@@ -2,7 +2,7 @@
   "caseId": "2015_09233",
   "sourcePath": "coa/2015/2015_09233.htm",
   "notesPath": "coa/2015/2015_09233.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.844Z",
+  "generatedAt": "2026-03-22T19:47:12.911Z",
   "source": {
     "title": "People v Ortiz (2015 NY Slip Op 09233)",
     "publicationStatus": "published"
@@ -59,7 +59,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

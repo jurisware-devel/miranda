@@ -2,7 +2,7 @@
   "caseId": "2009_08856",
   "sourcePath": "coa/2009/2009_08856.htm",
   "notesPath": "coa/2009/2009_08856.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.454Z",
+  "generatedAt": "2026-03-22T19:47:12.638Z",
   "source": {
     "title": "People v Riback (2009 NY Slip Op 08856)",
     "publicationStatus": "published"
@@ -61,7 +61,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

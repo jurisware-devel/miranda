@@ -2,7 +2,7 @@
   "caseId": "2008_05960",
   "sourcePath": "coa/2008/2008_05960.htm",
   "notesPath": "coa/2008/2008_05960.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.399Z",
+  "generatedAt": "2026-03-22T19:47:12.599Z",
   "source": {
     "title": "People v Simmons (2008 NY Slip Op 05960)",
     "publicationStatus": "published"
@@ -74,6 +74,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Robert M. Morgenthau, District Attorney , New York City ( Ellen Stanfield Friedman and Eleanor J. Ostrow of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Office of the Appellate Defender*, New York City (*Risa Gerson* and *Richard M. Greenberg* of counsel), for appellant.",
+        "normalized": "office of the appellate defender, new york city (risa gerson and richard m. greenberg of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Robert M. Morgenthau, District Attorney*, New York City (*Ellen Stanfield Friedman* and *Eleanor J. Ostrow* of counsel), for respondent.",
+        "normalized": "robert m. morgenthau, district attorney, new york city (ellen stanfield friedman and eleanor j. ostrow of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

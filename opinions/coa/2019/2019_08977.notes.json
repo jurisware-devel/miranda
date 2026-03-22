@@ -2,7 +2,7 @@
   "caseId": "2019_08977",
   "sourcePath": "coa/2019/2019_08977.htm",
   "notesPath": "coa/2019/2019_08977.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.079Z",
+  "generatedAt": "2026-03-22T19:47:13.078Z",
   "source": {
     "title": "People v McCullum (2019 NY Slip Op 08977)",
     "publicationStatus": "published"
@@ -81,7 +81,8 @@
         "sentenceText": "Patterson Belknap Webb & Tyler LLP , New York City ( Elizabeth Riordan Hurley , Gregory Diskant and Joshua Kipnees of counsel), for The Community Development Project of the Urban Justice Center and others, amici curiae.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -118,6 +119,26 @@
     "hasFootnotesHeading": false
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 3 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Paul Skip Laisure , Appellate Advocates , New York City ( Benjamin S. Litman of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Eric Gonzalez , District Attorney , Brooklyn ( Solomon Neubort and Leonard Joblove of counsel), for respondent."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Patterson Belknap Webb & Tyler LLP , New York City ( Elizabeth Riordan Hurley , Gregory Diskant and Joshua Kipnees of counsel), for The Community Development Project of the Urban Justice Center and others, amici curiae."
+    },
     {
       "code": "MULTIPLE_HEADER_TABLES",
       "severity": "info",

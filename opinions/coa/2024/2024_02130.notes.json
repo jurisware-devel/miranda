@@ -2,7 +2,7 @@
   "caseId": "2024_02130",
   "sourcePath": "coa/2024/2024_02130.htm",
   "notesPath": "coa/2024/2024_02130.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.262Z",
+  "generatedAt": "2026-03-22T19:47:13.217Z",
   "source": {
     "title": "People v Dunton (2024 NY Slip Op 02130)",
     "publicationStatus": "published"
@@ -60,7 +60,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

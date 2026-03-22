@@ -2,7 +2,7 @@
   "caseId": "2009_04744",
   "sourcePath": "coa/2009/2009_04744.htm",
   "notesPath": "coa/2009/2009_04744.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.438Z",
+  "generatedAt": "2026-03-22T19:47:12.627Z",
   "source": {
     "title": "People v Cano (2009 NY Slip Op 04744)",
     "publicationStatus": "published"
@@ -75,6 +75,20 @@
         "sentenceText": "Francis D. Phillips, II, District Attorney , Middletown ( Andrew R. Kass of counsel), for respondent.",
         "possiblyTruncated": false
       }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Larkin, Axelrod, Ingrassia & Tetenbaum, LLP,* Newburgh (*Kathleen",
+        "normalized": "larkin, axelrod, ingrassia & tetenbaum, llp, newburgh (kathleen",
+        "side": null,
+        "possiblyTruncated": true
+      },
+      {
+        "text": "*Francis D. Phillips, II, District Attorney*, Middletown (*Andrew R. Kass* of counsel), for respondent.",
+        "normalized": "francis d. phillips, ii, district attorney, middletown (andrew r. kass of counsel), for respondent.",
+        "side": "respondent",
+        "possiblyTruncated": false
+      }
     ]
   },
   "sections": {
@@ -112,6 +126,21 @@
     "hasFootnotesHeading": false
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_TRUNCATED",
+      "severity": "warning",
+      "detail": "Companion JSON appearance looks truncated: *Larkin, Axelrod, Ingrassia & Tetenbaum, LLP,* Newburgh (*Kathleen"
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Larkin, Axelrod, Ingrassia & Tetenbaum, LLP, Newburgh ( Kathleen V. Wells of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_UNMATCHED",
+      "severity": "info",
+      "detail": "Companion JSON appearance does not directly match any raw appearance sentence: *Larkin, Axelrod, Ingrassia & Tetenbaum, LLP,* Newburgh (*Kathleen"
+    },
     {
       "code": "MULTIPLE_HEADER_TABLES",
       "severity": "info",

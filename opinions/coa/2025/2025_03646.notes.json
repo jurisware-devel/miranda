@@ -2,7 +2,7 @@
   "caseId": "2025_03646",
   "sourcePath": "coa/2025/2025_03646.htm",
   "notesPath": "coa/2025/2025_03646.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.332Z",
+  "generatedAt": "2026-03-22T19:47:13.274Z",
   "source": {
     "title": "People ex rel. Ellis v Imperati (2025 NY Slip Op 03646)",
     "publicationStatus": "slip_op_only"
@@ -119,6 +119,20 @@
         "sentenceText": "Grace X. Zhou, for amicus curiae Attorney General.",
         "possiblyTruncated": true
       }
+    ],
+    "companionAppearances": [
+      {
+        "text": "Anna K. Diehn, for appellant.",
+        "normalized": "anna k. diehn, for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Andrew D. Ellis, for respondent.",
+        "normalized": "andrew d. ellis, for respondent.",
+        "side": "respondent",
+        "possiblyTruncated": false
+      }
     ]
   },
   "sections": {
@@ -206,6 +220,21 @@
       "code": "TRUNCATED_APPEARANCE_LINE",
       "severity": "warning",
       "detail": "Appearance-like line may be truncated: Grace X. Zhou, for amicus curiae Attorney General."
+    },
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 4 appearance line(s), but companion JSON has 2."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Grace X. Zhou, for amicus curiae Attorney General. HALLIGAN , J.:"
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Grace X. Zhou, for amicus curiae Attorney General."
     },
     {
       "code": "MULTIPLE_WRITINGS",

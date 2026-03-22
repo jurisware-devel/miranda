@@ -2,7 +2,7 @@
   "caseId": "2017_04320",
   "sourcePath": "coa/2017/2017_04320.htm",
   "notesPath": "coa/2017/2017_04320.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.952Z",
+  "generatedAt": "2026-03-22T19:47:12.988Z",
   "source": {
     "title": "People v Sivertson (2017 NY Slip Op 04320)",
     "publicationStatus": "published"
@@ -75,7 +75,8 @@
         "sentenceText": "Michael J. Flaherty, Jr., Acting District Attorney , Buffalo ( Ashley R. Lowry and Michael J. Hillery of counsel), for respondent.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -124,6 +125,21 @@
     "hasFootnotesHeading": true
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: David C. Schopp, The Legal Aid Bureau of Buffalo, Inc. , Buffalo ( Timothy P. Murphy and Barbara J. Davies of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Michael J. Flaherty, Jr., Acting District Attorney , Buffalo ( Ashley R. Lowry and Michael J. Hillery of counsel), for respondent."
+    },
     {
       "code": "MULTIPLE_WRITINGS",
       "severity": "info",

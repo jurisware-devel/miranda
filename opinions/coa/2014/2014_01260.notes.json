@@ -2,7 +2,7 @@
   "caseId": "2014_01260",
   "sourcePath": "coa/2014/2014_01260.htm",
   "notesPath": "coa/2014/2014_01260.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.723Z",
+  "generatedAt": "2026-03-22T19:47:12.825Z",
   "source": {
     "title": "People v Flinn (2014 NY Slip Op 01260)",
     "publicationStatus": "published"
@@ -58,7 +58,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

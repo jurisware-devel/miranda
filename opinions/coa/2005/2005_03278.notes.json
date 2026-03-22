@@ -2,7 +2,7 @@
   "caseId": "2005_03278",
   "sourcePath": "coa/2005/2005_03278.htm",
   "notesPath": "coa/2005/2005_03278.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.273Z",
+  "generatedAt": "2026-03-22T19:47:12.507Z",
   "source": {
     "title": "People v Loren (2005 NY Slip Op 03278)",
     "publicationStatus": "published"
@@ -59,7 +59,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

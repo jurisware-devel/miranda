@@ -2,7 +2,7 @@
   "caseId": "2022_03862",
   "sourcePath": "coa/2022/2022_03862.htm",
   "notesPath": "coa/2022/2022_03862.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.186Z",
+  "generatedAt": "2026-03-22T19:47:13.159Z",
   "source": {
     "title": "People v Stroud (2022 NY Slip Op 03862)",
     "publicationStatus": "published"
@@ -72,7 +72,8 @@
         "sentenceText": "John J. Flynn , District Attorney , Buffalo ( Matthew B. Powers of counsel), for respondent.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -109,6 +110,21 @@
     "hasFootnotesHeading": false
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Connors LLP , Buffalo ( Terrence M. Connors , Rebecca F. Izzo and Kelly E. Riley of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: John J. Flynn , District Attorney , Buffalo ( Matthew B. Powers of counsel), for respondent."
+    },
     {
       "code": "MULTIPLE_HEADER_TABLES",
       "severity": "info",

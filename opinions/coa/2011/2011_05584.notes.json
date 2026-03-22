@@ -2,7 +2,7 @@
   "caseId": "2011_05584",
   "sourcePath": "coa/2011/2011_05584.htm",
   "notesPath": "coa/2011/2011_05584.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.558Z",
+  "generatedAt": "2026-03-22T19:47:12.708Z",
   "source": {
     "title": "People v Mungro (2011 NY Slip Op 05584)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Frank A. Sedita, III, District Attorney , Buffalo ( Michael J. Hillery of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Charles J. Greenberg*, Tonawanda, for appellant.",
+        "normalized": "charles j. greenberg, tonawanda, for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Frank A. Sedita, III, District Attorney*, Buffalo (*Michael J. Hillery* of counsel), for respondent.",
+        "normalized": "frank a. sedita, iii, district attorney, buffalo (michael j. hillery of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

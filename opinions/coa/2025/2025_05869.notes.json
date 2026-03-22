@@ -2,7 +2,7 @@
   "caseId": "2025_05869",
   "sourcePath": "coa/2025/2025_05869.htm",
   "notesPath": "coa/2025/2025_05869.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.341Z",
+  "generatedAt": "2026-03-22T19:47:13.281Z",
   "source": {
     "title": "People v Wright (2025 NY Slip Op 05869)",
     "publicationStatus": "slip_op_only"
@@ -103,6 +103,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Elizabeth T. Schmidt, for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "Matthew Bova, for appellant.",
+        "normalized": "matthew bova, for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Elizabeth T. Schmidt, for respondent.",
+        "normalized": "elizabeth t. schmidt, for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

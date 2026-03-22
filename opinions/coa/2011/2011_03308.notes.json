@@ -2,7 +2,7 @@
   "caseId": "2011_03308",
   "sourcePath": "coa/2011/2011_03308.htm",
   "notesPath": "coa/2011/2011_03308.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.536Z",
+  "generatedAt": "2026-03-22T19:47:12.694Z",
   "source": {
     "title": "People v Lingle (2011 NY Slip Op 03308)",
     "publicationStatus": "published"
@@ -64,7 +64,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

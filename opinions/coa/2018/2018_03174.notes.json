@@ -2,7 +2,7 @@
   "caseId": "2018_03174",
   "sourcePath": "coa/2018/2018_03174.htm",
   "notesPath": "coa/2018/2018_03174.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.000Z",
+  "generatedAt": "2026-03-22T19:47:13.022Z",
   "source": {
     "title": "People v Aleynikov (2018 NY Slip Op 03174)",
     "publicationStatus": "published"
@@ -60,7 +60,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

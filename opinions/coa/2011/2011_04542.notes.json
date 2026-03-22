@@ -2,7 +2,7 @@
   "caseId": "2011_04542",
   "sourcePath": "coa/2011/2011_04542.htm",
   "notesPath": "coa/2011/2011_04542.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.547Z",
+  "generatedAt": "2026-03-22T19:47:12.701Z",
   "source": {
     "title": "People v Hunter (2011 NY Slip Op 04542)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Michael C. Green, District Attorney , Rochester ( Joseph D. Waldorf of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Timothy P. Donaher, Public Defender*, Rochester (*Matthew J. Clark* of counsel), for appellant.",
+        "normalized": "timothy p. donaher, public defender, rochester (matthew j. clark of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Michael C. Green, District Attorney*, Rochester (*Joseph D. Waldorf* of counsel), for respondent.",
+        "normalized": "michael c. green, district attorney, rochester (joseph d. waldorf of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

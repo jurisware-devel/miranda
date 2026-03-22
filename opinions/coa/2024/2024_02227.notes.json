@@ -2,7 +2,7 @@
   "caseId": "2024_02227",
   "sourcePath": "coa/2024/2024_02227.htm",
   "notesPath": "coa/2024/2024_02227.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.268Z",
+  "generatedAt": "2026-03-22T19:47:13.222Z",
   "source": {
     "title": "People v Franklin (2024 NY Slip Op 02227)",
     "publicationStatus": "published"
@@ -59,7 +59,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 123,

@@ -2,7 +2,7 @@
   "caseId": "2024_00848",
   "sourcePath": "coa/2024/2024_00848.htm",
   "notesPath": "coa/2024/2024_00848.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.247Z",
+  "generatedAt": "2026-03-22T19:47:13.205Z",
   "source": {
     "title": "People v Ramirez (2024 NY Slip Op 00848)",
     "publicationStatus": "published"
@@ -59,7 +59,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

@@ -2,7 +2,7 @@
   "caseId": "2004_00097",
   "sourcePath": "coa/2004/2004_00097.htm",
   "notesPath": "coa/2004/2004_00097.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.219Z",
+  "generatedAt": "2026-03-22T19:47:12.467Z",
   "source": {
     "title": "People v Celaj (2004 NY Slip Op 00097)",
     "publicationStatus": "published"
@@ -80,6 +80,20 @@
         "sentenceText": "Robert T. Johnson, District Attorney , Bronx ( Yael V. Levy of counsel), for respondent.",
         "possiblyTruncated": false
       }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Steven R. Kartagener*, New York City, for appellant.",
+        "normalized": "steven r. kartagener, new york city, for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Robert T. Johnson, District Attorney*, Bronx (*Yael",
+        "normalized": "robert t. johnson, district attorney, bronx (yael",
+        "side": null,
+        "possiblyTruncated": true
+      }
     ]
   },
   "sections": {
@@ -126,6 +140,26 @@
       "code": "STRAY_CLOSING_TAG",
       "severity": "warning",
       "detail": "Closing tag </appcouns> appears more times than opening tag <appcouns>."
+    },
+    {
+      "code": "JSON_APPEARANCE_TRUNCATED",
+      "severity": "warning",
+      "detail": "Companion JSON appearance looks truncated: *Robert T. Johnson, District Attorney*, Bronx (*Yael"
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Robert T. Johnson, District Attorney , Bronx ( Yael V. Levy of counsel), for respondent."
+    },
+    {
+      "code": "JSON_APPEARANCE_UNMATCHED",
+      "severity": "info",
+      "detail": "Companion JSON appearance does not directly match any raw appearance sentence: *Robert T. Johnson, District Attorney*, Bronx (*Yael"
+    },
+    {
+      "code": "MALFORMED_APPEARANCES_CONTAINER",
+      "severity": "warning",
+      "detail": "Malformed appearances container markup likely interferes with structured counsel extraction. Raw source still contains recoverable appearance sentences."
     },
     {
       "code": "MULTIPLE_HEADER_TABLES",

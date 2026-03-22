@@ -2,7 +2,7 @@
   "caseId": "2009_08679",
   "sourcePath": "coa/2009/2009_08679.htm",
   "notesPath": "coa/2009/2009_08679.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.451Z",
+  "generatedAt": "2026-03-22T19:47:12.636Z",
   "source": {
     "title": "People v Tabb (2009 NY Slip Op 08679)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Frank A. Sedita, III, District Attorney, Buffalo ( Raymond C. Herman of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Legal Aid Bureau of Buffalo, Inc.,* Buffalo (*Robert B. Hallborg, Jr., David C. Schopp* and *Barbara J. Davies* of counsel), for appellant.",
+        "normalized": "legal aid bureau of buffalo, inc., buffalo (robert b. hallborg, jr., david c. schopp and barbara j. davies of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Frank A. Sedita, III, District Attorney,* Buffalo (*Raymond C. Herman* of counsel), for respondent.",
+        "normalized": "frank a. sedita, iii, district attorney, buffalo (raymond c. herman of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

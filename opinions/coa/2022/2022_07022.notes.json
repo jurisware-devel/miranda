@@ -2,7 +2,7 @@
   "caseId": "2022_07022",
   "sourcePath": "coa/2022/2022_07022.htm",
   "notesPath": "coa/2022/2022_07022.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.194Z",
+  "generatedAt": "2026-03-22T19:47:13.164Z",
   "source": {
     "title": "People v Kaval (2022 NY Slip Op 07022)",
     "publicationStatus": "published"
@@ -74,7 +74,8 @@
         "sentenceText": "Twyla Carter, The Legal Aid Society , New York City ( Simon Greenberg of counsel), for respondent.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -125,6 +126,21 @@
     "hasFootnotesHeading": true
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Melinda Katz, District Attorney , Kew Gardens ( Christopher J. Blira-Koessler , John M. Castellano and Johnnette Traill of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Twyla Carter, The Legal Aid Society , New York City ( Simon Greenberg of counsel), for respondent."
+    },
     {
       "code": "MULTIPLE_WRITINGS",
       "severity": "info",

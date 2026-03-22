@@ -2,7 +2,7 @@
   "caseId": "2025_05871",
   "sourcePath": "coa/2025/2025_05871.htm",
   "notesPath": "coa/2025/2025_05871.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.342Z",
+  "generatedAt": "2026-03-22T19:47:13.282Z",
   "source": {
     "title": "People v Robinson (2025 NY Slip Op 05871)",
     "publicationStatus": "slip_op_only"
@@ -85,6 +85,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Peter Rienzi, for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "Carola M. Beeney, for appellant.",
+        "normalized": "carola m. beeney, for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Peter Rienzi, for respondent.",
+        "normalized": "peter rienzi, for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

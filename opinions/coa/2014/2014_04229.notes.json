@@ -2,7 +2,7 @@
   "caseId": "2014_04229",
   "sourcePath": "coa/2014/2014_04229.htm",
   "notesPath": "coa/2014/2014_04229.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.747Z",
+  "generatedAt": "2026-03-22T19:47:12.843Z",
   "source": {
     "title": "People v Walston (2014 NY Slip Op 04229)",
     "publicationStatus": "published"
@@ -60,7 +60,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

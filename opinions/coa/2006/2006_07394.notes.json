@@ -2,7 +2,7 @@
   "caseId": "2006_07394",
   "sourcePath": "coa/2006/2006_07394.htm",
   "notesPath": "coa/2006/2006_07394.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.335Z",
+  "generatedAt": "2026-03-22T19:47:12.553Z",
   "source": {
     "title": "People v Grant (2006 NY Slip Op 07394)",
     "publicationStatus": "published"
@@ -58,7 +58,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

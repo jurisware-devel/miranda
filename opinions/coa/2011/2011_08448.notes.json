@@ -2,7 +2,7 @@
   "caseId": "2011_08448",
   "sourcePath": "coa/2011/2011_08448.htm",
   "notesPath": "coa/2011/2011_08448.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.575Z",
+  "generatedAt": "2026-03-22T19:47:12.721Z",
   "source": {
     "title": "People v Thomas (2011 NY Slip Op 08448)",
     "publicationStatus": "published"
@@ -74,6 +74,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Cyrus R. Vance, Jr., District Attorney , New York City ( Jared S. Wolkowitz and Richard Nahas of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Simpson Thacher & Bartlett LLP*, New York City (*Ian R. Dattner* of counsel), and *Office of the Appellate Defender* (*Joseph M. Nursey* and *Richard M. Greenberg* of counsel) for appellant.",
+        "normalized": "simpson thacher & bartlett llp, new york city (ian r. dattner of counsel), and office of the appellate defender (joseph m. nursey and richard m. greenberg of counsel) for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Cyrus R. Vance, Jr., District Attorney*, New York City (*Jared S. Wolkowitz* and *Richard Nahas* of counsel), for respondent.",
+        "normalized": "cyrus r. vance, jr., district attorney, new york city (jared s. wolkowitz and richard nahas of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

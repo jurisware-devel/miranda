@@ -2,7 +2,7 @@
   "caseId": "2005_04988",
   "sourcePath": "coa/2005/2005_04988.htm",
   "notesPath": "coa/2005/2005_04988.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.282Z",
+  "generatedAt": "2026-03-22T19:47:12.514Z",
   "source": {
     "title": "People v Caban (2005 NY Slip Op 04988)",
     "publicationStatus": "published"
@@ -60,7 +60,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

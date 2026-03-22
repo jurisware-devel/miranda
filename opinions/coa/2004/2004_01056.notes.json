@@ -2,7 +2,7 @@
   "caseId": "2004_01056",
   "sourcePath": "coa/2004/2004_01056.htm",
   "notesPath": "coa/2004/2004_01056.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.222Z",
+  "generatedAt": "2026-03-22T19:47:12.469Z",
   "source": {
     "title": "People v Shelton (2004 NY Slip Op 01056)",
     "publicationStatus": "published"
@@ -78,6 +78,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Richard A. Brown , District Attorney , Kew Gardens ( Jennifer Hagan of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*William G. Kastin*, New York City, and *Lynn W.L. Fahey*, for appellant.",
+        "normalized": "william g. kastin, new york city, and lynn w.l. fahey, for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Richard A. Brown*, *District Attorney*, Kew Gardens (*Jennifer Hagan* of counsel), for respondent.",
+        "normalized": "richard a. brown, district attorney, kew gardens (jennifer hagan of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

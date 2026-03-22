@@ -2,7 +2,7 @@
   "caseId": "2024_02129",
   "sourcePath": "coa/2024/2024_02129.htm",
   "notesPath": "coa/2024/2024_02129.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.261Z",
+  "generatedAt": "2026-03-22T19:47:13.216Z",
   "source": {
     "title": "People v Fisher (2024 NY Slip Op 02129)",
     "publicationStatus": "published"
@@ -60,7 +60,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

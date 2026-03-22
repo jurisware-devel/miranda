@@ -2,7 +2,7 @@
   "caseId": "2017_01254",
   "sourcePath": "coa/2017/2017_01254.htm",
   "notesPath": "coa/2017/2017_01254.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.936Z",
+  "generatedAt": "2026-03-22T19:47:12.978Z",
   "source": {
     "title": "People v Maldonado (2017 NY Slip Op 01254)",
     "publicationStatus": "published"
@@ -72,7 +72,8 @@
         "sentenceText": "Eric Gonzalez, Acting District Attorney , Brooklyn ( Solomon Neubort, Leonard Joblove and Victor P. Barall of counsel), for respondent.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -109,6 +110,21 @@
     "hasFootnotesHeading": false
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: White & Case LLP , New York City ( Louis O'Neill, Isaac Glassman, Eric Majchrzak and Romain Zamour of counsel), and Seymour W. James, Jr., The Legal Aid Society , New York City ( David Crow and Andrew Fine of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Eric Gonzalez, Acting District Attorney , Brooklyn ( Solomon Neubort, Leonard Joblove and Victor P. Barall of counsel), for respondent."
+    },
     {
       "code": "MULTIPLE_HEADER_TABLES",
       "severity": "info",

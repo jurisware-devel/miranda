@@ -2,7 +2,7 @@
   "caseId": "2008_04902",
   "sourcePath": "coa/2008/2008_04902.htm",
   "notesPath": "coa/2008/2008_04902.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.391Z",
+  "generatedAt": "2026-03-22T19:47:12.593Z",
   "source": {
     "title": "People v Johnson (2008 NY Slip Op 04902)",
     "publicationStatus": "published"
@@ -93,6 +93,20 @@
         "sentenceText": "Lorca Morello , New York City, Steven Banks, Richard Willstatter , White Plains, and Alfred O'Connor , Albany, for Legal Aid Society and others, amici curiae.",
         "possiblyTruncated": false
       }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Center for Appellate Litigation*, New York City (*Laura Burde* and *Robert S. Dean* of counsel), for appellant.",
+        "normalized": "center for appellate litigation, new york city (laura burde and robert s. dean of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Robert M. Morgenthau, District Attorney*, New York City (*Susan Gliner* and *Mark Dwyer* of counsel), for respondent.",
+        "normalized": "robert m. morgenthau, district attorney, new york city (susan gliner and mark dwyer of counsel), for respondent.",
+        "side": "respondent",
+        "possiblyTruncated": false
+      }
     ]
   },
   "sections": {
@@ -134,6 +148,21 @@
     "hasFootnotesHeading": false
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 4 appearance line(s), but companion JSON has 2."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Mayer Brown, LLP , New York City ( Andrew H. Schapiro of counsel), Barry C. Scheck, Peter J. Neufeld, David Loftis and Ezekiel R. Edwards for Innocence Project, amicus curiae."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Lorca Morello , New York City, Steven Banks, Richard Willstatter , White Plains, and Alfred O'Connor , Albany, for Legal Aid Society and others, amici curiae."
+    },
     {
       "code": "MULTIPLE_HEADER_TABLES",
       "severity": "info",

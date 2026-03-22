@@ -2,7 +2,7 @@
   "caseId": "2009_01246",
   "sourcePath": "coa/2009/2009_01246.htm",
   "notesPath": "coa/2009/2009_01246.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.422Z",
+  "generatedAt": "2026-03-22T19:47:12.614Z",
   "source": {
     "title": "People v Washington (2009 NY Slip Op 01246)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Robert M. Morgenthau, District Attorney , New York City ( Richard Nahas of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Center for Appellate Litigation*, New York City (*William A. Loeb* of counsel), for appellant.",
+        "normalized": "center for appellate litigation, new york city (william a. loeb of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Robert M. Morgenthau, District Attorney*, New York City (*Richard Nahas* of counsel), for respondent.",
+        "normalized": "robert m. morgenthau, district attorney, new york city (richard nahas of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

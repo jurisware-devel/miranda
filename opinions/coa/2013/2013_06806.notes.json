@@ -2,7 +2,7 @@
   "caseId": "2013_06806",
   "sourcePath": "coa/2013/2013_06806.htm",
   "notesPath": "coa/2013/2013_06806.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.690Z",
+  "generatedAt": "2026-03-22T19:47:12.801Z",
   "source": {
     "title": "People v Clermont (2013 NY Slip Op 06806)",
     "publicationStatus": "published"
@@ -75,6 +75,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Richard A. Brown, District Attorney , Kew Gardens ( Suzanne H. Sullivan and John M. Castellano of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Lynn W.L. Fahey, Appellate Advocates*, New York City (*Allegra Glashausser* of counsel), for appellant.",
+        "normalized": "lynn w.l. fahey, appellate advocates, new york city (allegra glashausser of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Richard A. Brown, District Attorney*, Kew Gardens (*Suzanne H. Sullivan* and *John M. Castellano* of counsel), for respondent.",
+        "normalized": "richard a. brown, district attorney, kew gardens (suzanne h. sullivan and john m. castellano of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

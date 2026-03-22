@@ -2,7 +2,7 @@
   "caseId": "2011_01363",
   "sourcePath": "coa/2011/2011_01363.htm",
   "notesPath": "coa/2011/2011_01363.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.523Z",
+  "generatedAt": "2026-03-22T19:47:12.685Z",
   "source": {
     "title": "People v Alonzo (2011 NY Slip Op 01363)",
     "publicationStatus": "published"
@@ -57,7 +57,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

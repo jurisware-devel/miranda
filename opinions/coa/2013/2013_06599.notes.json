@@ -2,7 +2,7 @@
   "caseId": "2013_06599",
   "sourcePath": "coa/2013/2013_06599.htm",
   "notesPath": "coa/2013/2013_06599.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.682Z",
+  "generatedAt": "2026-03-22T19:47:12.796Z",
   "source": {
     "title": "People v Thompson (2013 NY Slip Op 06599)",
     "publicationStatus": "published"
@@ -57,7 +57,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

@@ -2,7 +2,7 @@
   "caseId": "2010_01013",
   "sourcePath": "coa/2010/2010_01013.htm",
   "notesPath": "coa/2010/2010_01013.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.459Z",
+  "generatedAt": "2026-03-22T19:47:12.641Z",
   "source": {
     "title": "People v Price (2010 NY Slip Op 01013)",
     "publicationStatus": "published"
@@ -59,7 +59,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

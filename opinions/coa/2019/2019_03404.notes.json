@@ -2,7 +2,7 @@
   "caseId": "2019_03404",
   "sourcePath": "coa/2019/2019_03404.htm",
   "notesPath": "coa/2019/2019_03404.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.050Z",
+  "generatedAt": "2026-03-22T19:47:13.058Z",
   "source": {
     "title": "People v Brown (2019 NY Slip Op 03404)",
     "publicationStatus": "published"
@@ -72,7 +72,8 @@
         "sentenceText": "Cyrus R. Vance, Jr. , District Attorney , New York City ( Sylvia Wertheimer and Alan Gadlin of counsel), for respondent.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -120,6 +121,21 @@
     "hasFootnotesHeading": false
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Robert S. Dean , Center for Appellate Litigation , New York City ( David J. Klem of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Cyrus R. Vance, Jr. , District Attorney , New York City ( Sylvia Wertheimer and Alan Gadlin of counsel), for respondent."
+    },
     {
       "code": "MULTIPLE_WRITINGS",
       "severity": "info",

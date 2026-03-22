@@ -2,7 +2,7 @@
   "caseId": "2024_02843",
   "sourcePath": "coa/2024/2024_02843.htm",
   "notesPath": "coa/2024/2024_02843.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.275Z",
+  "generatedAt": "2026-03-22T19:47:13.227Z",
   "source": {
     "title": "People v Lucas (2024 NY Slip Op 02843)",
     "publicationStatus": "published"
@@ -79,7 +79,8 @@
         "sentenceText": "Michael E. McMahon, District Attorney , Staten Island ( Timothy Pezzoli, Thomas B. Litsky, James Joseph Gandia and Rhys Johnson of counsel), for respondent.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -126,6 +127,21 @@
       "code": "UNKNOWN_TAG",
       "severity": "info",
       "detail": "Encountered unknown tag <headnoteblock> in source HTML."
+    },
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Patricia Pazner, Appellate Advocates , New York City ( Anders Nelson of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Michael E. McMahon, District Attorney , Staten Island ( Timothy Pezzoli, Thomas B. Litsky, James Joseph Gandia and Rhys Johnson of counsel), for respondent."
     },
     {
       "code": "MULTIPLE_WRITINGS",

@@ -2,7 +2,7 @@
   "caseId": "2014_07202",
   "sourcePath": "coa/2014/2014_07202.htm",
   "notesPath": "coa/2014/2014_07202.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.766Z",
+  "generatedAt": "2026-03-22T19:47:12.857Z",
   "source": {
     "title": "People v Cullen (2014 NY Slip Op 07202)",
     "publicationStatus": "published"
@@ -74,6 +74,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "William J. Fitzpatrick, District Attorney, Syracuse (James P. Maxwell and Maria Maldonado of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "Hiscock Legal Aid Society, Syracuse (Kristen N. McDermott of counsel), for appellant.",
+        "normalized": "hiscock legal aid society, syracuse (kristen n. mcdermott of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "William J. Fitzpatrick, District Attorney, Syracuse (James P. Maxwell and Maria Maldonado of counsel), for respondent.",
+        "normalized": "william j. fitzpatrick, district attorney, syracuse (james p. maxwell and maria maldonado of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

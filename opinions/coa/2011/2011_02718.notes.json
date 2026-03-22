@@ -2,7 +2,7 @@
   "caseId": "2011_02718",
   "sourcePath": "coa/2011/2011_02718.htm",
   "notesPath": "coa/2011/2011_02718.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.535Z",
+  "generatedAt": "2026-03-22T19:47:12.692Z",
   "source": {
     "title": "People v Stewart (2011 NY Slip Op 02718)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Cyrus R. Vance, Jr., District Attorney , New York City ( Susan Axelrod and Vincent Rivellese of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Legal Aid Society*, New York City (*Alan S. Axelrod* and *Steven Banks* of counsel), for appellant.",
+        "normalized": "legal aid society, new york city (alan s. axelrod and steven banks of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Cyrus R. Vance, Jr., District Attorney*, New York City (*Susan Axelrod* and *Vincent Rivellese* of counsel), for respondent.",
+        "normalized": "cyrus r. vance, jr., district attorney, new york city (susan axelrod and vincent rivellese of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

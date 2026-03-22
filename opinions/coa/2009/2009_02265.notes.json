@@ -2,7 +2,7 @@
   "caseId": "2009_02265",
   "sourcePath": "coa/2009/2009_02265.htm",
   "notesPath": "coa/2009/2009_02265.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.425Z",
+  "generatedAt": "2026-03-22T19:47:12.617Z",
   "source": {
     "title": "People v Bauman (2009 NY Slip Op 02265)",
     "publicationStatus": "published"
@@ -58,7 +58,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

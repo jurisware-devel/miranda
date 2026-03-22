@@ -2,7 +2,7 @@
   "caseId": "2025_05736",
   "sourcePath": "coa/2025/2025_05736.htm",
   "notesPath": "coa/2025/2025_05736.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.335Z",
+  "generatedAt": "2026-03-22T19:47:13.276Z",
   "source": {
     "title": "People ex rel. Barta v Molina (2025 NY Slip Op 05736)",
     "publicationStatus": "published"
@@ -88,6 +88,14 @@
         "sentenceText": "The Legal Aid Society , New York City ( Arielle Reid and Philip Desgranges of counsel), for The Legal Aid Society, amicus curiae.",
         "possiblyTruncated": false
       }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Queens Defenders*, Forest Hills (*Peter A. Barta* of counsel), for appellant.",
+        "normalized": "queens defenders, forest hills (peter a. barta of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      }
     ]
   },
   "sections": {
@@ -129,6 +137,21 @@
       "code": "STRAY_CLOSING_TAG",
       "severity": "warning",
       "detail": "Closing tag </b> appears more times than opening tag <b>."
+    },
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 3 appearance line(s), but companion JSON has 1."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Melinda Katz , District Attorney , Kew Gardens ( Amanda Iannuzzi and John M. Castellano of counsel), for respondent."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: The Legal Aid Society , New York City ( Arielle Reid and Philip Desgranges of counsel), for The Legal Aid Society, amicus curiae."
     },
     {
       "code": "MULTIPLE_HEADER_TABLES",

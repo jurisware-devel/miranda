@@ -88,6 +88,7 @@ async function main() {
     filesWithPointsOfCounsel: [],
     filesWithPluralAmiciCuriae: [],
     filesWithMultipleWritings: [],
+    filesWithAppearanceJsonMismatch: [],
   };
 
   for (const htmlPath of htmlPaths) {
@@ -120,6 +121,9 @@ async function main() {
     if ((notes.opinionStructure.totalWritings ?? 0) > 1) {
       summary.filesWithMultipleWritings.push(notes.caseId);
     }
+    if (notes.anomalies.some((anomaly) => anomaly.code.startsWith("JSON_APPEARANCE_") || anomaly.code === "MALFORMED_APPEARANCES_CONTAINER")) {
+      summary.filesWithAppearanceJsonMismatch.push(notes.caseId);
+    }
   }
 
   const summaryPath = path.join(root, SUMMARY_FILENAME);
@@ -149,6 +153,9 @@ async function analyzeFile(htmlPath, root) {
   const lines = extractPreOpinionLines(preOpinionHtml);
   const headerTableTexts = extractTableTexts(bodyHtml);
   const tagStats = collectTagStats(rawHtml);
+  const companionAppearances = (companionJson?.header?.appearances ?? [])
+    .map((appearance) => analyzeCompanionAppearance(appearance))
+    .filter(Boolean);
 
   const appearanceLikeLines = lines
     .filter((line) => isAppearanceLikeLine(line))
@@ -158,6 +165,7 @@ async function analyzeFile(htmlPath, root) {
   const anomalies = buildAnomalies({
     tagStats,
     appearanceLikeLines,
+    companionAppearances,
     headerTableTexts,
     companionJson,
     rawHtml,
@@ -190,6 +198,7 @@ async function analyzeFile(htmlPath, root) {
       appearanceSectionType: determineAppearanceSectionType(rawHtml),
       pointsOfCounselCount,
       appearanceLikeLines,
+      companionAppearances,
     },
     sections: {
       summarySectionsCount: companionJson?.header?.summarySections?.length ?? countOccurrences(rawHtml, /<summary\b/gi),
@@ -383,6 +392,23 @@ function analyzeAppearanceLine(line) {
   };
 }
 
+function analyzeCompanionAppearance(appearance) {
+  if (!appearance?.text) {
+    return null;
+  }
+  const text = normalizeText(String(appearance.text));
+  const normalized = normalizeAppearanceCompare(text);
+  return {
+    text,
+    normalized,
+    side: appearance.side ?? null,
+    possiblyTruncated:
+      hasOddDelimiterCount(text, "*")
+      || hasMoreOpenParensThanClose(text)
+      || !/[.?!]$/.test(text),
+  };
+}
+
 function determineAppearanceSectionType(rawHtml) {
   const hasAppearances = /APPEARANCES OF COUNSEL/i.test(rawHtml);
   const hasPoints = /POINTS OF COUNSEL/i.test(rawHtml) || /<counselblock\b[^>]*type\s*=\s*["']?\s*points_of\b/i.test(rawHtml);
@@ -471,7 +497,7 @@ function inlineText(block) {
   return "";
 }
 
-function buildAnomalies({ tagStats, appearanceLikeLines, headerTableTexts, companionJson, rawHtml }) {
+function buildAnomalies({ tagStats, appearanceLikeLines, companionAppearances, headerTableTexts, companionJson, rawHtml }) {
   const anomalies = [];
 
   for (const tag of tagStats.unknownTags) {
@@ -506,6 +532,73 @@ function buildAnomalies({ tagStats, appearanceLikeLines, headerTableTexts, compa
     });
   }
 
+  const rawAppearanceSentences = appearanceLikeLines.map((line) => ({
+    text: line.sentenceText,
+    normalized: normalizeAppearanceCompare(line.sentenceText),
+    sideGuess: line.sideGuess,
+  }));
+  const rawNormalizedSet = new Set(rawAppearanceSentences.map((line) => line.normalized));
+  const companionNormalizedSet = new Set(companionAppearances.map((line) => line.normalized));
+
+  for (const appearance of companionAppearances.filter((item) => item.possiblyTruncated)) {
+    anomalies.push({
+      code: "JSON_APPEARANCE_TRUNCATED",
+      severity: "warning",
+      detail: `Companion JSON appearance looks truncated: ${appearance.text}`,
+    });
+  }
+
+  if (rawAppearanceSentences.length !== companionAppearances.length) {
+    anomalies.push({
+      code: "JSON_APPEARANCE_COUNT_MISMATCH",
+      severity: "warning",
+      detail: `Raw source suggests ${rawAppearanceSentences.length} appearance line(s), but companion JSON has ${companionAppearances.length}.`,
+    });
+  }
+
+  for (const rawAppearance of rawAppearanceSentences) {
+    if (!companionNormalizedSet.has(rawAppearance.normalized)) {
+      anomalies.push({
+        code: "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+        severity: "warning",
+        detail: `Raw appearance sentence is not reproduced in companion JSON: ${rawAppearance.text}`,
+      });
+    }
+  }
+
+  for (const companionAppearance of companionAppearances) {
+    if (!rawNormalizedSet.has(companionAppearance.normalized)) {
+      anomalies.push({
+        code: "JSON_APPEARANCE_UNMATCHED",
+        severity: "info",
+        detail: `Companion JSON appearance does not directly match any raw appearance sentence: ${companionAppearance.text}`,
+      });
+    }
+  }
+
+  const hasAppearanceContainerMalformation =
+    (tagStats.unknownTags.includes("appcouns") || tagStats.strayClosingTags.includes("appcouns"))
+    && rawAppearanceSentences.length > 0
+    && companionAppearances.some((appearance) => appearance.possiblyTruncated || !rawNormalizedSet.has(appearance.normalized));
+  if (hasAppearanceContainerMalformation) {
+    anomalies.push({
+      code: "MALFORMED_APPEARANCES_CONTAINER",
+      severity: "warning",
+      detail: "Malformed appearances container markup likely interferes with structured counsel extraction. Raw source still contains recoverable appearance sentences.",
+    });
+  }
+
+  const mergedCompanionAppearance = companionAppearances.find((appearance) =>
+    countDistinctSides(appearance.text) > 1,
+  );
+  if (mergedCompanionAppearance) {
+    anomalies.push({
+      code: "JSON_APPEARANCE_MULTI_SIDE_MERGE",
+      severity: "warning",
+      detail: `Companion JSON appearance appears to merge multiple sides into one entry: ${mergedCompanionAppearance.text}`,
+    });
+  }
+
   if (/POINTS OF COUNSEL/i.test(rawHtml) && !/APPEARANCES OF COUNSEL/i.test(rawHtml)) {
     anomalies.push({
       code: "POINTS_OF_COUNSEL_ONLY",
@@ -531,6 +624,44 @@ function buildAnomalies({ tagStats, appearanceLikeLines, headerTableTexts, compa
   }
 
   return anomalies;
+}
+
+function normalizeAppearanceCompare(text) {
+  return normalizeText(text)
+    .toLowerCase()
+    .replace(/\*/g, "")
+    .replace(/\s+([,.;:)])/g, "$1")
+    .replace(/([(])\s+/g, "$1");
+}
+
+function countDistinctSides(text) {
+  const sides = new Set();
+  const lower = text.toLowerCase();
+  for (const token of [
+    "for appellant",
+    "for appellants",
+    "for respondent",
+    "for respondents",
+    "for petitioner",
+    "for petitioners",
+    "amicus curiae",
+    "amici curiae",
+  ]) {
+    if (lower.includes(token)) {
+      sides.add(token);
+    }
+  }
+  return sides.size;
+}
+
+function hasOddDelimiterCount(text, delimiter) {
+  return text.split(delimiter).length % 2 === 0;
+}
+
+function hasMoreOpenParensThanClose(text) {
+  const openCount = [...text].filter((char) => char === "(").length;
+  const closeCount = [...text].filter((char) => char === ")").length;
+  return openCount > closeCount;
 }
 
 function increment(target, key) {

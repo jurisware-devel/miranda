@@ -2,7 +2,7 @@
   "caseId": "2005_02567",
   "sourcePath": "coa/2005/2005_02567.htm",
   "notesPath": "coa/2005/2005_02567.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.272Z",
+  "generatedAt": "2026-03-22T19:47:12.506Z",
   "source": {
     "title": "People v McClemore (2005 NY Slip Op 02567)",
     "publicationStatus": "published"
@@ -79,6 +79,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Lawrence Friedman, District Attorney , Batavia ( William G. Zickl of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Gary A. Horton, Public Defender*, Batavia (*Bridget L. Field* of counsel), for appellant.",
+        "normalized": "gary a. horton, public defender, batavia (bridget l. field of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Lawrence Friedman, District Attorney*, Batavia (*William G. Zickl* of counsel), for respondent.",
+        "normalized": "lawrence friedman, district attorney, batavia (william g. zickl of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

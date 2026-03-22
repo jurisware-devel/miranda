@@ -2,7 +2,7 @@
   "caseId": "2026_00964",
   "sourcePath": "coa/2026/2026_00964.htm",
   "notesPath": "coa/2026/2026_00964.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.388Z",
+  "generatedAt": "2026-03-22T19:47:13.314Z",
   "source": {
     "title": "People v Zubidi (2026 NY Slip Op 00964)",
     "publicationStatus": "slip_op_only"
@@ -103,6 +103,20 @@
         "sentenceText": "Franklin R. Guenthner, for respondent.",
         "possiblyTruncated": false
       }
+    ],
+    "companionAppearances": [
+      {
+        "text": "Barbara Zolot, for appellant.",
+        "normalized": "barbara zolot, for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Franklin R. Guenthner, for respondent.",
+        "normalized": "franklin r. guenthner, for respondent.",
+        "side": "respondent",
+        "possiblyTruncated": false
+      }
     ]
   },
   "sections": {
@@ -164,6 +178,11 @@
       "code": "APPEARANCE_LINE_WITH_ARGUMENT_TAIL",
       "severity": "info",
       "detail": "Appearance-like line continues into argument text after \"for respondent.\"."
+    },
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 3 appearance line(s), but companion JSON has 2."
     },
     {
       "code": "MULTIPLE_WRITINGS",

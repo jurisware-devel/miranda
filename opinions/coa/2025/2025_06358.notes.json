@@ -2,7 +2,7 @@
   "caseId": "2025_06358",
   "sourcePath": "coa/2025/2025_06358.htm",
   "notesPath": "coa/2025/2025_06358.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.347Z",
+  "generatedAt": "2026-03-22T19:47:13.285Z",
   "source": {
     "title": "People v Berry (2025 NY Slip Op 06358)",
     "publicationStatus": "slip_op_only"
@@ -81,7 +81,8 @@
         "sentenceText": "Submitted by Aeron Schwallie, for respondent.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -126,6 +127,21 @@
       "code": "UNKNOWN_TAG",
       "severity": "info",
       "detail": "Encountered unknown tag <input> in source HTML."
+    },
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Submitted by Alexander Prieto, for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Submitted by Aeron Schwallie, for respondent."
     }
   ]
 }

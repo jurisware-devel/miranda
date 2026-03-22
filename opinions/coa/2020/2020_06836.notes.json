@@ -2,7 +2,7 @@
   "caseId": "2020_06836",
   "sourcePath": "coa/2020/2020_06836.htm",
   "notesPath": "coa/2020/2020_06836.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.114Z",
+  "generatedAt": "2026-03-22T19:47:13.105Z",
   "source": {
     "title": "People v Pena (2020 NY Slip Op 06836)",
     "publicationStatus": "published"
@@ -79,7 +79,8 @@
         "sentenceText": "The Bronx Defenders , Bronx ( Morgan Everhart, Ilona Coleman and Ruth Hamilton of counsel), for respondent.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -158,6 +159,21 @@
       "code": "UNKNOWN_TAG",
       "severity": "info",
       "detail": "Encountered unknown tag <disopjd> in source HTML."
+    },
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Darcel D. Clark, District Attorney , Bronx ( Paul A. Andersen, Nancy D. Killian and Peter D. Coddington of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: The Bronx Defenders , Bronx ( Morgan Everhart, Ilona Coleman and Ruth Hamilton of counsel), for respondent."
     },
     {
       "code": "MULTIPLE_WRITINGS",

@@ -2,7 +2,7 @@
   "caseId": "2011_03650",
   "sourcePath": "coa/2011/2011_03650.htm",
   "notesPath": "coa/2011/2011_03650.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.539Z",
+  "generatedAt": "2026-03-22T19:47:12.696Z",
   "source": {
     "title": "People v Melendez (2011 NY Slip Op 03650)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Robert T. Johnson, District Attorney , Bronx ( Rafael Curbelo , Jennifer Marinaccio and Joseph N. Ferdenzi of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Office of the Appellate Defender*, New York City (*Lisa A. Packard* and *Richard M. Greenberg* of counsel), for appellant.",
+        "normalized": "office of the appellate defender, new york city (lisa a. packard and richard m. greenberg of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Robert T. Johnson, District Attorney*, Bronx (*Rafael Curbelo*, *Jennifer Marinaccio* and *Joseph N. Ferdenzi* of counsel), for respondent.",
+        "normalized": "robert t. johnson, district attorney, bronx (rafael curbelo, jennifer marinaccio and joseph n. ferdenzi of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

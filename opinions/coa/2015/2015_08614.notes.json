@@ -2,7 +2,7 @@
   "caseId": "2015_08614",
   "sourcePath": "coa/2015/2015_08614.htm",
   "notesPath": "coa/2015/2015_08614.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.839Z",
+  "generatedAt": "2026-03-22T19:47:12.908Z",
   "source": {
     "title": "People v Caldavado (2015 NY Slip Op 08614)",
     "publicationStatus": "published"
@@ -102,7 +102,8 @@
         "sentenceText": "Gerald F. Mollen , Benjamin E. Rosenberg and Jamie Masten for District Attorneys Association of the State of New York, amicus curiae.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -144,6 +145,36 @@
       "code": "UNKNOWN_TAG",
       "severity": "info",
       "detail": "Encountered unknown tag <frac> in source HTML."
+    },
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 5 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Mark M. Baker , New York City, for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Richard A. Brown , District Attorney , Kew Gardens ( John M. Castellano , Robert J. Masters , Nicoletta J. Caferri and William H. Branigan of counsel), for respondent."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Fried, Frank, Harris, Shriver & Jacobson LLP , New York City ( David B. Hennes , Nathan M. Erickson and Michael P. Sternheim of counsel), Seth Miller , Innocence Network , Tallahassee, Florida ( Katherine Judson of counsel), and Dana M. Delger and M. Chris Fabricant , New York City, for Innocence Network, amicus curiae."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Thomas R. Villecco , Jericho, Mark Fernich , New York State Association of Criminal Defense Lawyers , New York City, and Richard Willstatter , National Association of Criminal Defense Lawyers , White Plains, for National Association of Criminal Defense Lawyers and another, amici curiae."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Gerald F. Mollen , Benjamin E. Rosenberg and Jamie Masten for District Attorneys Association of the State of New York, amicus curiae."
     },
     {
       "code": "MULTIPLE_HEADER_TABLES",

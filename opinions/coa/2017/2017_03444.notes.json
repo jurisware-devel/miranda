@@ -2,7 +2,7 @@
   "caseId": "2017_03444",
   "sourcePath": "coa/2017/2017_03444.htm",
   "notesPath": "coa/2017/2017_03444.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.949Z",
+  "generatedAt": "2026-03-22T19:47:12.987Z",
   "source": {
     "title": "People v Valentin (2017 NY Slip Op 03444)",
     "publicationStatus": "published"
@@ -59,7 +59,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

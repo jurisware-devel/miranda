@@ -2,7 +2,7 @@
   "caseId": "2010_03757",
   "sourcePath": "coa/2010/2010_03757.htm",
   "notesPath": "coa/2010/2010_03757.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.477Z",
+  "generatedAt": "2026-03-22T19:47:12.654Z",
   "source": {
     "title": "People v Johnson (2010 NY Slip Op 03757)",
     "publicationStatus": "published"
@@ -58,7 +58,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

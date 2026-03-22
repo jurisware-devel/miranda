@@ -2,7 +2,7 @@
   "caseId": "2018_08540",
   "sourcePath": "coa/2018/2018_08540.htm",
   "notesPath": "coa/2018/2018_08540.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.039Z",
+  "generatedAt": "2026-03-22T19:47:13.051Z",
   "source": {
     "title": "People v Flores (2018 NY Slip Op 08540)",
     "publicationStatus": "published"
@@ -72,7 +72,8 @@
         "sentenceText": "Leonard J. Levenson , New York City, for respondents.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -109,6 +110,21 @@
     "hasFootnotesHeading": false
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: David M. Hoovler , District Attorney , Goshen ( Robert H. Middlemiss and Andrew R. Kass of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Leonard J. Levenson , New York City, for respondents."
+    },
     {
       "code": "MULTIPLE_HEADER_TABLES",
       "severity": "info",

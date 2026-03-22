@@ -2,7 +2,7 @@
   "caseId": "2009_05368",
   "sourcePath": "coa/2009/2009_05368.htm",
   "notesPath": "coa/2009/2009_05368.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.440Z",
+  "generatedAt": "2026-03-22T19:47:12.628Z",
   "source": {
     "title": "People v Coventry First LLC (2009 NY Slip Op 05368)",
     "publicationStatus": "published"
@@ -58,7 +58,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

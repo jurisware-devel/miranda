@@ -2,7 +2,7 @@
   "caseId": "2013_06734",
   "sourcePath": "coa/2013/2013_06734.htm",
   "notesPath": "coa/2013/2013_06734.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.688Z",
+  "generatedAt": "2026-03-22T19:47:12.800Z",
   "source": {
     "title": "People v Kordish (2013 NY Slip Op 06734)",
     "publicationStatus": "published"
@@ -75,6 +75,20 @@
         "sentenceText": "Richard A. Brown, District Attorney, Kew Gardens ( John M. Castellano of counsel), for respondent.",
         "possiblyTruncated": false
       }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Schlather, Stumbar, Parks & Salk, LLP*, Ithaca (*Diane",
+        "normalized": "schlather, stumbar, parks & salk, llp, ithaca (diane",
+        "side": null,
+        "possiblyTruncated": true
+      },
+      {
+        "text": "*Richard A. Brown, District Attorney,* Kew Gardens (*John M. Castellano* of counsel), for respondent.",
+        "normalized": "richard a. brown, district attorney, kew gardens (john m. castellano of counsel), for respondent.",
+        "side": "respondent",
+        "possiblyTruncated": false
+      }
     ]
   },
   "sections": {
@@ -113,6 +127,21 @@
     "hasFootnotesHeading": false
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_TRUNCATED",
+      "severity": "warning",
+      "detail": "Companion JSON appearance looks truncated: *Schlather, Stumbar, Parks & Salk, LLP*, Ithaca (*Diane"
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Schlather, Stumbar, Parks & Salk, LLP , Ithaca ( Diane V. Bruns of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_UNMATCHED",
+      "severity": "info",
+      "detail": "Companion JSON appearance does not directly match any raw appearance sentence: *Schlather, Stumbar, Parks & Salk, LLP*, Ithaca (*Diane"
+    },
     {
       "code": "MULTIPLE_HEADER_TABLES",
       "severity": "info",

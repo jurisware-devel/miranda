@@ -2,7 +2,7 @@
   "caseId": "2006_01048",
   "sourcePath": "coa/2006/2006_01048.htm",
   "notesPath": "coa/2006/2006_01048.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.308Z",
+  "generatedAt": "2026-03-22T19:47:12.533Z",
   "source": {
     "title": "People v Divine (2006 NY Slip Op 01048)",
     "publicationStatus": "published"
@@ -78,6 +78,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Robert T. Johnson , District Attorney , Bronx ( Jennifer Marinaccio of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Dewey Ballantine LLP*, New York City (*Molly Lehr* and *Kathryn C. Ellsworth* of counsel), and *Office of the Appellate Defender* (*Richard M. Greenberg* and *Risa Gerson* of counsel) for appellant.",
+        "normalized": "dewey ballantine llp, new york city (molly lehr and kathryn c. ellsworth of counsel), and office of the appellate defender (richard m. greenberg and risa gerson of counsel) for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Robert T. Johnson*, *District Attorney*, Bronx (*Jennifer Marinaccio* of counsel), for respondent.",
+        "normalized": "robert t. johnson, district attorney, bronx (jennifer marinaccio of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

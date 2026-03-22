@@ -2,7 +2,7 @@
   "caseId": "2014_02377",
   "sourcePath": "coa/2014/2014_02377.htm",
   "notesPath": "coa/2014/2014_02377.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.731Z",
+  "generatedAt": "2026-03-22T19:47:12.831Z",
   "source": {
     "title": "People v Sibblies (2014 NY Slip Op 02377)",
     "publicationStatus": "published"
@@ -79,6 +79,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Robert T. Johnson, District Attorney , Bronx ( Kayonia L. Whetstone and Joseph N. Ferdenzi of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Steven Banks, The Legal Aid Society, Criminal Appeals Bureau*, New York City (*Jonathan Garelick* of counsel), for appellant.",
+        "normalized": "steven banks, the legal aid society, criminal appeals bureau, new york city (jonathan garelick of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Robert T. Johnson, District Attorney*, Bronx (*Kayonia L. Whetstone* and *Joseph N. Ferdenzi* of counsel), for respondent.",
+        "normalized": "robert t. johnson, district attorney, bronx (kayonia l. whetstone and joseph n. ferdenzi of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

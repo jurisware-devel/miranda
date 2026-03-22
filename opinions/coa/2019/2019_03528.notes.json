@@ -2,7 +2,7 @@
   "caseId": "2019_03528",
   "sourcePath": "coa/2019/2019_03528.htm",
   "notesPath": "coa/2019/2019_03528.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.052Z",
+  "generatedAt": "2026-03-22T19:47:13.060Z",
   "source": {
     "title": "People v Rkein (2019 NY Slip Op 03528)",
     "publicationStatus": "published"
@@ -72,7 +72,8 @@
         "sentenceText": "Cyrus R. Vance, Jr. , District Attorney , New York City ( Jared Wolkowitz and Karen Schlossberg of counsel), for respondent.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -109,6 +110,21 @@
     "hasFootnotesHeading": false
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Christina A. Swarns , Office of the Appellate Defender , New York City ( Mandy E. Jaramillo and Eunice C. Lee of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Cyrus R. Vance, Jr. , District Attorney , New York City ( Jared Wolkowitz and Karen Schlossberg of counsel), for respondent."
+    },
     {
       "code": "MULTIPLE_HEADER_TABLES",
       "severity": "info",

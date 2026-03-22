@@ -2,7 +2,7 @@
   "caseId": "2005_08851",
   "sourcePath": "coa/2005/2005_08851.htm",
   "notesPath": "coa/2005/2005_08851.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.298Z",
+  "generatedAt": "2026-03-22T19:47:12.524Z",
   "source": {
     "title": "People v Robbins (2005 NY Slip Op 08851)",
     "publicationStatus": "published"
@@ -58,7 +58,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

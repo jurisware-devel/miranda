@@ -2,7 +2,7 @@
   "caseId": "2006_03639",
   "sourcePath": "coa/2006/2006_03639.htm",
   "notesPath": "coa/2006/2006_03639.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.324Z",
+  "generatedAt": "2026-03-22T19:47:12.545Z",
   "source": {
     "title": "People v Wells (2006 NY Slip Op 03639)",
     "publicationStatus": "published"
@@ -59,7 +59,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

@@ -2,7 +2,7 @@
   "caseId": "2026_01445",
   "sourcePath": "coa/2026/2026_01445.htm",
   "notesPath": "coa/2026/2026_01445.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.392Z",
+  "generatedAt": "2026-03-22T19:47:13.317Z",
   "source": {
     "title": "People v Gaffney (2026 NY Slip Op 01445)",
     "publicationStatus": "slip_op_only"
@@ -78,6 +78,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Christopher T. Valdina, for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "Melissa K. Swartz, for appellant.",
+        "normalized": "melissa k. swartz, for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Christopher T. Valdina, for respondent.",
+        "normalized": "christopher t. valdina, for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

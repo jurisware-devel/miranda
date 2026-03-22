@@ -2,7 +2,7 @@
   "caseId": "2013_00955",
   "sourcePath": "coa/2013/2013_00955.htm",
   "notesPath": "coa/2013/2013_00955.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.648Z",
+  "generatedAt": "2026-03-22T19:47:12.773Z",
   "source": {
     "title": "People v Abreu (2013 NY Slip Op 00955)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Cyrus R. Vance, Jr., District Attorney , New York City ( Timothy C. Stone of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Robert S. Dean, Center for Appellate Litigation*, New York City (*David J. Klem* of counsel), for appellant.",
+        "normalized": "robert s. dean, center for appellate litigation, new york city (david j. klem of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Cyrus R. Vance, Jr., District Attorney*, New York City (*Timothy C. Stone* of counsel), for respondent.",
+        "normalized": "cyrus r. vance, jr., district attorney, new york city (timothy c. stone of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

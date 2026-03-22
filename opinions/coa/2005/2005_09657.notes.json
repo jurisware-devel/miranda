@@ -2,7 +2,7 @@
   "caseId": "2005_09657",
   "sourcePath": "coa/2005/2005_09657.htm",
   "notesPath": "coa/2005/2005_09657.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.303Z",
+  "generatedAt": "2026-03-22T19:47:12.529Z",
   "source": {
     "title": "People v Hicks (2005 NY Slip Op 09657)",
     "publicationStatus": "published"
@@ -79,6 +79,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Robert T. Johnson , District Attorney , Bronx ( Jacob Kaplan , Joseph N. Ferdenzi and Stanley R. Kaplan of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Kuby & Perez LLP,* New York City (*Ronald L. Kuby* of counsel), for appellant.",
+        "normalized": "kuby & perez llp, new york city (ronald l. kuby of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Robert T. Johnson*, *District Attorney*, Bronx (*Jacob Kaplan*, *Joseph N. Ferdenzi* and *Stanley R. Kaplan* of counsel), for respondent.",
+        "normalized": "robert t. johnson, district attorney, bronx (jacob kaplan, joseph n. ferdenzi and stanley r. kaplan of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

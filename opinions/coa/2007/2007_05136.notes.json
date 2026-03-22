@@ -2,7 +2,7 @@
   "caseId": "2007_05136",
   "sourcePath": "coa/2007/2007_05136.htm",
   "notesPath": "coa/2007/2007_05136.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.364Z",
+  "generatedAt": "2026-03-22T19:47:12.573Z",
   "source": {
     "title": "People v Long (2007 NY Slip Op 05136)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Robert M. Morgenthau, District Attorney , New York City ( Tracy L. Conn and Mark Dwyer of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Center for Appellate Litigation*, New York City (*Robert S. Dean* of counsel), for appellant.",
+        "normalized": "center for appellate litigation, new york city (robert s. dean of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Robert M. Morgenthau, District Attorney*, New York City (*Tracy L. Conn* and *Mark Dwyer* of counsel), for respondent.",
+        "normalized": "robert m. morgenthau, district attorney, new york city (tracy l. conn and mark dwyer of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

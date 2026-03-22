@@ -2,7 +2,7 @@
   "caseId": "2025_06361",
   "sourcePath": "coa/2025/2025_06361.htm",
   "notesPath": "coa/2025/2025_06361.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.348Z",
+  "generatedAt": "2026-03-22T19:47:13.287Z",
   "source": {
     "title": "People v Sargeant (2025 NY Slip Op 06361)",
     "publicationStatus": "slip_op_only"
@@ -99,6 +99,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Danielle O'Boyle, for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "Sarah B. Cohen, for appellant.",
+        "normalized": "sarah b. cohen, for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Danielle O'Boyle, for respondent.",
+        "normalized": "danielle o'boyle, for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

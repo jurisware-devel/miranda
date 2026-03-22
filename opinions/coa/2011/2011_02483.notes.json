@@ -2,7 +2,7 @@
   "caseId": "2011_02483",
   "sourcePath": "coa/2011/2011_02483.htm",
   "notesPath": "coa/2011/2011_02483.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.532Z",
+  "generatedAt": "2026-03-22T19:47:12.690Z",
   "source": {
     "title": "People v Brunner (2011 NY Slip Op 02483)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Cyrus R. Vance, Jr., District Attorney , New York City ( Jared Wolkowitz and Mary C. Farrington of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Office of the Appellate Defender*, New York City (*Eunice C. Lee* and *Richard M. Greenberg* of counsel), for appellant.",
+        "normalized": "office of the appellate defender, new york city (eunice c. lee and richard m. greenberg of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Cyrus R. Vance, Jr., District Attorney*, New York City (*Jared Wolkowitz* and *Mary C. Farrington* of counsel), for respondent.",
+        "normalized": "cyrus r. vance, jr., district attorney, new york city (jared wolkowitz and mary c. farrington of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

@@ -2,7 +2,7 @@
   "caseId": "2003_18985",
   "sourcePath": "coa/2003/2003_18985.htm",
   "notesPath": "coa/2003/2003_18985.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.214Z",
+  "generatedAt": "2026-03-22T19:47:12.464Z",
   "source": {
     "title": "People v Pichardo (2003 NY Slip Op 18985)",
     "publicationStatus": "published"
@@ -65,7 +65,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

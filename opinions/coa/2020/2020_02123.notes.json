@@ -2,7 +2,7 @@
   "caseId": "2020_02123",
   "sourcePath": "coa/2020/2020_02123.htm",
   "notesPath": "coa/2020/2020_02123.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.096Z",
+  "generatedAt": "2026-03-22T19:47:13.091Z",
   "source": {
     "title": "People v Williams (2020 NYSlipOp 02123)",
     "publicationStatus": "unknown"
@@ -59,7 +59,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

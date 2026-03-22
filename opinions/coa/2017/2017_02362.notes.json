@@ -2,7 +2,7 @@
   "caseId": "2017_02362",
   "sourcePath": "coa/2017/2017_02362.htm",
   "notesPath": "coa/2017/2017_02362.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.941Z",
+  "generatedAt": "2026-03-22T19:47:12.981Z",
   "source": {
     "title": "People v Smith (2017 NY Slip Op 02362)",
     "publicationStatus": "published"
@@ -60,7 +60,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

@@ -2,7 +2,7 @@
   "caseId": "2004_04439",
   "sourcePath": "coa/2004/2004_04439.htm",
   "notesPath": "coa/2004/2004_04439.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.241Z",
+  "generatedAt": "2026-03-22T19:47:12.483Z",
   "source": {
     "title": "People v Calabria (2004 NY Slip Op 04439)",
     "publicationStatus": "published"
@@ -58,7 +58,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

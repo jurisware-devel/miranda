@@ -2,7 +2,7 @@
   "caseId": "2020_00998",
   "sourcePath": "coa/2020/2020_00998.htm",
   "notesPath": "coa/2020/2020_00998.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.088Z",
+  "generatedAt": "2026-03-22T19:47:13.085Z",
   "source": {
     "title": "People v Wheeler (2020 NY Slip Op 00998)",
     "publicationStatus": "published"
@@ -72,7 +72,8 @@
         "sentenceText": "David M. Hoovler , District Attorney , Goshen ( Andrew R. Kass of counsel), for respondent.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -109,6 +110,21 @@
     "hasFootnotesHeading": false
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Richard L. Herzfeld, P.C. , New York City ( Richard L. Herzfeld of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: David M. Hoovler , District Attorney , Goshen ( Andrew R. Kass of counsel), for respondent."
+    },
     {
       "code": "MULTIPLE_HEADER_TABLES",
       "severity": "info",

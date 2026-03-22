@@ -2,7 +2,7 @@
   "caseId": "2010_05284",
   "sourcePath": "coa/2010/2010_05284.htm",
   "notesPath": "coa/2010/2010_05284.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.490Z",
+  "generatedAt": "2026-03-22T19:47:12.663Z",
   "source": {
     "title": "People v Valencia (2010 NY Slip Op 05284)",
     "publicationStatus": "published"
@@ -86,6 +86,20 @@
         "sentenceText": "Richard D. Willstatter , New York City, Richard J. Barbuto and Stefani Goldin for New York State Association of Criminal Defense Lawyers and another, amici curiae.",
         "possiblyTruncated": false
       }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Kathleen M. Rice, District Attorney*, Mineola (*Judith R. Sternberg*, *Peter A. Weinstein* and *Tammy J. Smiley* of counsel), for appellant.",
+        "normalized": "kathleen m. rice, district attorney, mineola (judith r. sternberg, peter a. weinstein and tammy j. smiley of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Marianne Karas*, Armonk, for respondent.",
+        "normalized": "marianne karas, armonk, for respondent.",
+        "side": "respondent",
+        "possiblyTruncated": false
+      }
     ]
   },
   "sections": {
@@ -136,6 +150,16 @@
     "hasFootnotesHeading": true
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 3 appearance line(s), but companion JSON has 2."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Richard D. Willstatter , New York City, Richard J. Barbuto and Stefani Goldin for New York State Association of Criminal Defense Lawyers and another, amici curiae."
+    },
     {
       "code": "MULTIPLE_WRITINGS",
       "severity": "info",

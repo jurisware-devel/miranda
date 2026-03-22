@@ -2,7 +2,7 @@
   "caseId": "2016_01206",
   "sourcePath": "coa/2016/2016_01206.htm",
   "notesPath": "coa/2016/2016_01206.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.855Z",
+  "generatedAt": "2026-03-22T19:47:12.920Z",
   "source": {
     "title": "People v Nicholson (2016 NY Slip Op 01206)",
     "publicationStatus": "published"
@@ -60,7 +60,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

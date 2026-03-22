@@ -2,7 +2,7 @@
   "caseId": "2020_05803",
   "sourcePath": "coa/2020/2020_05803.htm",
   "notesPath": "coa/2020/2020_05803.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.108Z",
+  "generatedAt": "2026-03-22T19:47:13.101Z",
   "source": {
     "title": "People v Hardy (2020 NY Slip Op 05803)",
     "publicationStatus": "published"
@@ -66,7 +66,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

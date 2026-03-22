@@ -2,7 +2,7 @@
   "caseId": "2003_19672",
   "sourcePath": "coa/2003/2003_19672.htm",
   "notesPath": "coa/2003/2003_19672.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.215Z",
+  "generatedAt": "2026-03-22T19:47:12.464Z",
   "source": {
     "title": "People v Santos (2003 NY Slip Op 19672)",
     "publicationStatus": "published"
@@ -78,6 +78,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "The Legal Aid Society , Brooklyn ( Kevin F. Casey of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Robert M. Morgenthau, District Attorney*, New York City (*Mary C. Farrington* of counsel), for appellant.",
+        "normalized": "robert m. morgenthau, district attorney, new york city (mary c. farrington of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*The Legal Aid Society*, Brooklyn (*Kevin F. Casey* of counsel), for respondent.",
+        "normalized": "the legal aid society, brooklyn (kevin f. casey of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

@@ -2,7 +2,7 @@
   "caseId": "2005_09811",
   "sourcePath": "coa/2005/2005_09811.htm",
   "notesPath": "coa/2005/2005_09811.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.306Z",
+  "generatedAt": "2026-03-22T19:47:12.531Z",
   "source": {
     "title": "People v Suarez (2005 NY Slip Op 09811)",
     "publicationStatus": "published"
@@ -65,7 +65,8 @@
     "authorLine": "Per Curiam",
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

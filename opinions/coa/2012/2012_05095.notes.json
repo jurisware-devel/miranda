@@ -2,7 +2,7 @@
   "caseId": "2012_05095",
   "sourcePath": "coa/2012/2012_05095.htm",
   "notesPath": "coa/2012/2012_05095.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.620Z",
+  "generatedAt": "2026-03-22T19:47:12.753Z",
   "source": {
     "title": "People v Miranda (2012 NY Slip Op 05095)",
     "publicationStatus": "published"
@@ -74,6 +74,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Robert T. Johnson, District Attorney , Bronx ( Stanley R. Kaplan of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Bronx Defenders*, Bronx (*Kathryn E. Miller* of counsel), for appellant.",
+        "normalized": "bronx defenders, bronx (kathryn e. miller of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Robert T. Johnson, District Attorney*, Bronx (*Stanley R. Kaplan* of counsel), for respondent.",
+        "normalized": "robert t. johnson, district attorney, bronx (stanley r. kaplan of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

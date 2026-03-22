@@ -2,7 +2,7 @@
   "caseId": "2013_06635",
   "sourcePath": "coa/2013/2013_06635.htm",
   "notesPath": "coa/2013/2013_06635.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.685Z",
+  "generatedAt": "2026-03-22T19:47:12.798Z",
   "source": {
     "title": "People v Santiago (2013 NY Slip Op 06635)",
     "publicationStatus": "published"
@@ -74,6 +74,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Sandra Doorley, District Attorney , Rochester ( Geoffrey Kaeuper of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Timothy P. Donaher, Public Defender*, Rochester (*Drew R. DuBrin* of counsel), for appellant.",
+        "normalized": "timothy p. donaher, public defender, rochester (drew r. dubrin of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Sandra Doorley, District Attorney*, Rochester (*Geoffrey Kaeuper* of counsel), for respondent.",
+        "normalized": "sandra doorley, district attorney, rochester (geoffrey kaeuper of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

@@ -2,7 +2,7 @@
   "caseId": "2007_02590",
   "sourcePath": "coa/2007/2007_02590.htm",
   "notesPath": "coa/2007/2007_02590.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.351Z",
+  "generatedAt": "2026-03-22T19:47:12.565Z",
   "source": {
     "title": "People v Gomcin (2007 NY Slip Op 02590)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Green & Willstatter , White Plains ( Theodore S. Green and Richard D. Willstatter of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Richard A. Brown, District Attorney*, Kew Gardens (*John M. Castellano, Gary Fidel* and *Sharon Y. Brodt* of counsel), for appellant.",
+        "normalized": "richard a. brown, district attorney, kew gardens (john m. castellano, gary fidel and sharon y. brodt of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Green & Willstatter*, White Plains (*Theodore S. Green* and *Richard D. Willstatter* of counsel), for respondent.",
+        "normalized": "green & willstatter, white plains (theodore s. green and richard d. willstatter of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

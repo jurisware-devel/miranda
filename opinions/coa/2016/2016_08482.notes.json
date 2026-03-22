@@ -2,7 +2,7 @@
   "caseId": "2016_08482",
   "sourcePath": "coa/2016/2016_08482.htm",
   "notesPath": "coa/2016/2016_08482.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.922Z",
+  "generatedAt": "2026-03-22T19:47:12.968Z",
   "source": {
     "title": "People v Brown (2016 NY Slip Op 08482)",
     "publicationStatus": "published"
@@ -66,7 +66,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

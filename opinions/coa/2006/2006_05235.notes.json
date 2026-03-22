@@ -2,7 +2,7 @@
   "caseId": "2006_05235",
   "sourcePath": "coa/2006/2006_05235.htm",
   "notesPath": "coa/2006/2006_05235.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.332Z",
+  "generatedAt": "2026-03-22T19:47:12.551Z",
   "source": {
     "title": "People v Mancini (2006 NY Slip Op 05235)",
     "publicationStatus": "published"
@@ -79,6 +79,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Frank J. Clark, District Attorney , Buffalo ( Michael L. McCabe and J. Michael Marion of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Legal Aid Bureau of Buffalo, Inc.*, Buffalo (*Robert L. Kemp, David C. Shopp* and *Barbara J. Davies* of counsel), for appellant.",
+        "normalized": "legal aid bureau of buffalo, inc., buffalo (robert l. kemp, david c. shopp and barbara j. davies of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Frank J. Clark, District Attorney*, Buffalo (*Michael L. McCabe* and *J. Michael Marion* of counsel), for respondent.",
+        "normalized": "frank j. clark, district attorney, buffalo (michael l. mccabe and j. michael marion of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

@@ -2,7 +2,7 @@
   "caseId": "2004_09323",
   "sourcePath": "coa/2004/2004_09323.htm",
   "notesPath": "coa/2004/2004_09323.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.261Z",
+  "generatedAt": "2026-03-22T19:47:12.499Z",
   "source": {
     "title": "People v Jones (2004 NY Slip Op 09323)",
     "publicationStatus": "published"
@@ -58,7 +58,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

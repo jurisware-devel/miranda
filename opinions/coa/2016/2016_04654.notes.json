@@ -2,7 +2,7 @@
   "caseId": "2016_04654",
   "sourcePath": "coa/2016/2016_04654.htm",
   "notesPath": "coa/2016/2016_04654.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.889Z",
+  "generatedAt": "2026-03-22T19:47:12.944Z",
   "source": {
     "title": "People v Parson (2016 NY Slip Op 04654)",
     "publicationStatus": "published"
@@ -72,7 +72,8 @@
         "sentenceText": "Frank A. Sedita, III , District Attorney , Buffalo ( Ashley R. Lowry and Donna A. Milling of counsel), for respondent.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -109,6 +110,21 @@
     "hasFootnotesHeading": false
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: David C. Schopp , The Legal Aid Bureau of Buffalo, Inc. , Buffalo ( Deborah K. Jessey and Timothy P. Murphy of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Frank A. Sedita, III , District Attorney , Buffalo ( Ashley R. Lowry and Donna A. Milling of counsel), for respondent."
+    },
     {
       "code": "MULTIPLE_HEADER_TABLES",
       "severity": "info",

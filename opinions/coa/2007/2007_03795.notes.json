@@ -2,7 +2,7 @@
   "caseId": "2007_03795",
   "sourcePath": "coa/2007/2007_03795.htm",
   "notesPath": "coa/2007/2007_03795.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.358Z",
+  "generatedAt": "2026-03-22T19:47:12.569Z",
   "source": {
     "title": "People v Castillo (2007 NY Slip Op 03795)",
     "publicationStatus": "published"
@@ -75,6 +75,20 @@
         "sentenceText": "Office of the Appellate Defender , New York City ( Jonathan Marvinny, Richard M. Greenberg and Sara Gurwitch of counsel), for respondent.",
         "possiblyTruncated": false
       }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Robert M. Morgenthau, District Attorney*, New York City (*Michael S. Morgan* and *Morrie",
+        "normalized": "robert m. morgenthau, district attorney, new york city (michael s. morgan and morrie",
+        "side": null,
+        "possiblyTruncated": true
+      },
+      {
+        "text": "*Office of the Appellate Defender*, New York City (*Jonathan Marvinny, Richard M. Greenberg* and *Sara Gurwitch* of counsel), for respondent.",
+        "normalized": "office of the appellate defender, new york city (jonathan marvinny, richard m. greenberg and sara gurwitch of counsel), for respondent.",
+        "side": "respondent",
+        "possiblyTruncated": false
+      }
     ]
   },
   "sections": {
@@ -112,6 +126,21 @@
     "hasFootnotesHeading": false
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_TRUNCATED",
+      "severity": "warning",
+      "detail": "Companion JSON appearance looks truncated: *Robert M. Morgenthau, District Attorney*, New York City (*Michael S. Morgan* and *Morrie"
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Robert M. Morgenthau, District Attorney , New York City ( Michael S. Morgan and Morrie I. Kleinbart of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_UNMATCHED",
+      "severity": "info",
+      "detail": "Companion JSON appearance does not directly match any raw appearance sentence: *Robert M. Morgenthau, District Attorney*, New York City (*Michael S. Morgan* and *Morrie"
+    },
     {
       "code": "MULTIPLE_HEADER_TABLES",
       "severity": "info",

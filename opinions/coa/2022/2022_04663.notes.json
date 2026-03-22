@@ -2,7 +2,7 @@
   "caseId": "2022_04663",
   "sourcePath": "coa/2022/2022_04663.htm",
   "notesPath": "coa/2022/2022_04663.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.190Z",
+  "generatedAt": "2026-03-22T19:47:13.162Z",
   "source": {
     "title": "People v Hemphill (2022 NY Slip Op 04663)",
     "publicationStatus": "published"
@@ -73,7 +73,8 @@
         "sentenceText": "Darcel D. Clark , District Attorney , Bronx ( Paul A. Andersen of counsel), for respondent.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -112,6 +113,21 @@
     "hasFootnotesHeading": true
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Robert S. Dean, Center for Appellate Litigation , New York City ( Claudia Trupp of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Darcel D. Clark , District Attorney , Bronx ( Paul A. Andersen of counsel), for respondent."
+    },
     {
       "code": "MULTIPLE_HEADER_TABLES",
       "severity": "info",

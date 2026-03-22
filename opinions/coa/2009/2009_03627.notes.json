@@ -2,7 +2,7 @@
   "caseId": "2009_03627",
   "sourcePath": "coa/2009/2009_03627.htm",
   "notesPath": "coa/2009/2009_03627.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.432Z",
+  "generatedAt": "2026-03-22T19:47:12.622Z",
   "source": {
     "title": "People v Boyd (2009 NY Slip Op 03627)",
     "publicationStatus": "published"
@@ -64,7 +64,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

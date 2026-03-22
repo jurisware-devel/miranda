@@ -2,7 +2,7 @@
   "caseId": "2008_05962",
   "sourcePath": "coa/2008/2008_05962.htm",
   "notesPath": "coa/2008/2008_05962.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.399Z",
+  "generatedAt": "2026-03-22T19:47:12.599Z",
   "source": {
     "title": "People v Estrella (2008 NY Slip Op 05962)",
     "publicationStatus": "published"
@@ -64,6 +64,14 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Phillips Lytle LLP , Rochester ( Chad W. Flansburg of counsel), for appellant.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Phillips Lytle LLP*, Rochester (*Chad W. Flansburg* of counsel), for appellant.",
+        "normalized": "phillips lytle llp, rochester (chad w. flansburg of counsel), for appellant.",
+        "side": "appellant",
         "possiblyTruncated": false
       }
     ]

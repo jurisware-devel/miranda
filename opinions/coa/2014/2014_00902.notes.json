@@ -2,7 +2,7 @@
   "caseId": "2014_00902",
   "sourcePath": "coa/2014/2014_00902.htm",
   "notesPath": "coa/2014/2014_00902.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.717Z",
+  "generatedAt": "2026-03-22T19:47:12.821Z",
   "source": {
     "title": "People v Smith (2014 NY Slip Op 00902)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Cyrus R. Vance, Jr., District Attorney, New York City ( Caitlin J. Halligan and Hilary Hassler of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Leonard J. Levenson*, New York City, for appellant.",
+        "normalized": "leonard j. levenson, new york city, for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Cyrus R. Vance, Jr., District Attorney,* New York City (*Caitlin J. Halligan* and *Hilary Hassler* of counsel), for respondent.",
+        "normalized": "cyrus r. vance, jr., district attorney, new york city (caitlin j. halligan and hilary hassler of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

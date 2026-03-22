@@ -2,7 +2,7 @@
   "caseId": "2011_01318",
   "sourcePath": "coa/2011/2011_01318.htm",
   "notesPath": "coa/2011/2011_01318.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.521Z",
+  "generatedAt": "2026-03-22T19:47:12.684Z",
   "source": {
     "title": "People v Farkas (2011 NY Slip Op 01318)",
     "publicationStatus": "published"
@@ -59,7 +59,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

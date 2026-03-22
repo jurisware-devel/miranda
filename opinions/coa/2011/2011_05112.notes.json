@@ -2,7 +2,7 @@
   "caseId": "2011_05112",
   "sourcePath": "coa/2011/2011_05112.htm",
   "notesPath": "coa/2011/2011_05112.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.554Z",
+  "generatedAt": "2026-03-22T19:47:12.706Z",
   "source": {
     "title": "People v Abrams (2011 NY Slip Op 05112)",
     "publicationStatus": "published"
@@ -64,6 +64,14 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Anna E. Remet, Special Prosecutor , Kingston, for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Anna E. Remet, Special Prosecutor*, Kingston, for respondent.",
+        "normalized": "anna e. remet, special prosecutor, kingston, for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

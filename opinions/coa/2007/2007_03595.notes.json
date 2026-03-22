@@ -2,7 +2,7 @@
   "caseId": "2007_03595",
   "sourcePath": "coa/2007/2007_03595.htm",
   "notesPath": "coa/2007/2007_03595.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.356Z",
+  "generatedAt": "2026-03-22T19:47:12.567Z",
   "source": {
     "title": "People v Miller (2007 NY Slip Op 03595)",
     "publicationStatus": "published"
@@ -75,6 +75,20 @@
         "sentenceText": "Michael C. Green, District Attorney, Rochester ( Stephen X. O'Brien of counsel), for respondent.",
         "possiblyTruncated": false
       }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Edward J. Nowak, Public Defender*, Rochester (*David M. Abbatoy, Jr.,* of counsel), for appellant.",
+        "normalized": "edward j. nowak, public defender, rochester (david m. abbatoy, jr., of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Michael C. Green, District Attorney,* Rochester (*Stephen",
+        "normalized": "michael c. green, district attorney, rochester (stephen",
+        "side": null,
+        "possiblyTruncated": true
+      }
     ]
   },
   "sections": {
@@ -112,6 +126,21 @@
     "hasFootnotesHeading": false
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_TRUNCATED",
+      "severity": "warning",
+      "detail": "Companion JSON appearance looks truncated: *Michael C. Green, District Attorney,* Rochester (*Stephen"
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Michael C. Green, District Attorney, Rochester ( Stephen X. O'Brien of counsel), for respondent."
+    },
+    {
+      "code": "JSON_APPEARANCE_UNMATCHED",
+      "severity": "info",
+      "detail": "Companion JSON appearance does not directly match any raw appearance sentence: *Michael C. Green, District Attorney,* Rochester (*Stephen"
+    },
     {
       "code": "MULTIPLE_HEADER_TABLES",
       "severity": "info",

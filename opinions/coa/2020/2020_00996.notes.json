@@ -2,7 +2,7 @@
   "caseId": "2020_00996",
   "sourcePath": "coa/2020/2020_00996.htm",
   "notesPath": "coa/2020/2020_00996.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.087Z",
+  "generatedAt": "2026-03-22T19:47:13.084Z",
   "source": {
     "title": "People v Francis (2020 NY Slip Op 00996)",
     "publicationStatus": "published"
@@ -59,7 +59,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

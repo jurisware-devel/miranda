@@ -2,7 +2,7 @@
   "caseId": "2008_09249",
   "sourcePath": "coa/2008/2008_09249.htm",
   "notesPath": "coa/2008/2008_09249.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.406Z",
+  "generatedAt": "2026-03-22T19:47:12.604Z",
   "source": {
     "title": "People v Naradzay (2008 NY Slip Op 09249)",
     "publicationStatus": "published"
@@ -58,7 +58,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

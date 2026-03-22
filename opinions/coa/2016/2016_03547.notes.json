@@ -2,7 +2,7 @@
   "caseId": "2016_03547",
   "sourcePath": "coa/2016/2016_03547.htm",
   "notesPath": "coa/2016/2016_03547.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.880Z",
+  "generatedAt": "2026-03-22T19:47:12.938Z",
   "source": {
     "title": "People v Harrison (2016 NY Slip Op 03547)",
     "publicationStatus": "published"
@@ -60,7 +60,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

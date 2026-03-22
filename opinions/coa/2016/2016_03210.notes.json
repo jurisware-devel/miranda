@@ -2,7 +2,7 @@
   "caseId": "2016_03210",
   "sourcePath": "coa/2016/2016_03210.htm",
   "notesPath": "coa/2016/2016_03210.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.876Z",
+  "generatedAt": "2026-03-22T19:47:12.935Z",
   "source": {
     "title": "People v Wallace (2016 NY Slip Op 03210)",
     "publicationStatus": "published"
@@ -72,7 +72,8 @@
         "sentenceText": "Cyrus R. Vance, Jr., District Attorney , New York City ( Ellen Stanfield Friedman and Sylvia Wertheimer of counsel), for respondent.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -109,6 +110,21 @@
     "hasFootnotesHeading": false
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Paul, Weiss, Rifkind, Wharton & Garrison LLP , New York City ( Katherine Kelly Fell and Kyle Adam Wirshba of counsel), and Seymour W. James, Jr., The Legal Aid Society , New York City ( Lawrence T. Hausman of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Cyrus R. Vance, Jr., District Attorney , New York City ( Ellen Stanfield Friedman and Sylvia Wertheimer of counsel), for respondent."
+    },
     {
       "code": "MULTIPLE_HEADER_TABLES",
       "severity": "info",

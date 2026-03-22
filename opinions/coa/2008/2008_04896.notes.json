@@ -2,7 +2,7 @@
   "caseId": "2008_04896",
   "sourcePath": "coa/2008/2008_04896.htm",
   "notesPath": "coa/2008/2008_04896.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.390Z",
+  "generatedAt": "2026-03-22T19:47:12.592Z",
   "source": {
     "title": "People v Azaz (2008 NY Slip Op 04896)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Charles J. Hynes, District Attorney , Brooklyn ( Ruth E. Ross and Leonard Joblove of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Lynn W.L. Fahey*, New York City (*Warren S. Landau* of counsel), for appellant.",
+        "normalized": "lynn w.l. fahey, new york city (warren s. landau of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Charles J. Hynes, District Attorney*, Brooklyn (*Ruth E. Ross* and *Leonard Joblove* of counsel), for respondent.",
+        "normalized": "charles j. hynes, district attorney, brooklyn (ruth e. ross and leonard joblove of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

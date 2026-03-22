@@ -2,7 +2,7 @@
   "caseId": "2009_08676",
   "sourcePath": "coa/2009/2009_08676.htm",
   "notesPath": "coa/2009/2009_08676.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.451Z",
+  "generatedAt": "2026-03-22T19:47:12.636Z",
   "source": {
     "title": "People v Davis (2009 NY Slip Op 08676)",
     "publicationStatus": "published"
@@ -58,7 +58,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

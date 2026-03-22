@@ -2,7 +2,7 @@
   "caseId": "2011_09001",
   "sourcePath": "coa/2011/2011_09001.htm",
   "notesPath": "coa/2011/2011_09001.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.583Z",
+  "generatedAt": "2026-03-22T19:47:12.727Z",
   "source": {
     "title": "People v Dickinson (2011 NY Slip Op 09001)",
     "publicationStatus": "published"
@@ -84,6 +84,20 @@
         "sentenceText": "New York State Defenders Association , Albany ( Alfred O'Connor of counsel), for New York State Defenders Association, amicus curiae.",
         "possiblyTruncated": false
       }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Robert M. Winn*, Granville, for appellant.",
+        "normalized": "robert m. winn, granville, for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Kevin C. Kortright, District Attorney*, Fort Edward (*Katherine G. Henley* of counsel), for respondent.",
+        "normalized": "kevin c. kortright, district attorney, fort edward (katherine g. henley of counsel), for respondent.",
+        "side": "respondent",
+        "possiblyTruncated": false
+      }
     ]
   },
   "sections": {
@@ -121,6 +135,16 @@
     "hasFootnotesHeading": false
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 3 appearance line(s), but companion JSON has 2."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: New York State Defenders Association , Albany ( Alfred O'Connor of counsel), for New York State Defenders Association, amicus curiae."
+    },
     {
       "code": "MULTIPLE_HEADER_TABLES",
       "severity": "info",

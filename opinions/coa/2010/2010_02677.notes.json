@@ -2,7 +2,7 @@
   "caseId": "2010_02677",
   "sourcePath": "coa/2010/2010_02677.htm",
   "notesPath": "coa/2010/2010_02677.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.473Z",
+  "generatedAt": "2026-03-22T19:47:12.651Z",
   "source": {
     "title": "People v Carr (2010 NY Slip Op 02677)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Frank A. Sedita, III, District Attorney , Buffalo ( Donna A. Milling of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Legal Aid Bureau of Buffalo, Inc.*, Buffalo (*Nicholas T. Texido*, *David C. Schopp* and *Barbara J. Davies* of counsel), for appellant.",
+        "normalized": "legal aid bureau of buffalo, inc., buffalo (nicholas t. texido, david c. schopp and barbara j. davies of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Frank A. Sedita, III, District Attorney*, Buffalo (*Donna A. Milling* of counsel), for respondent.",
+        "normalized": "frank a. sedita, iii, district attorney, buffalo (donna a. milling of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

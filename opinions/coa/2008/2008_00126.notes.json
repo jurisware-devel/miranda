@@ -2,7 +2,7 @@
   "caseId": "2008_00126",
   "sourcePath": "coa/2008/2008_00126.htm",
   "notesPath": "coa/2008/2008_00126.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.379Z",
+  "generatedAt": "2026-03-22T19:47:12.584Z",
   "source": {
     "title": "People v Allen (2008 NY Slip Op 00126)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Robert M. Morgenthau, District Attorney , New York City ( Gary S. Snitow of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Office of the Appellate Defender*, New York City (*Ana Vuk-Pavlovic, Richard M. Greenberg* and *Sara Gurwitch* of counsel), for appellant.",
+        "normalized": "office of the appellate defender, new york city (ana vuk-pavlovic, richard m. greenberg and sara gurwitch of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Robert M. Morgenthau, District Attorney*, New York City (*Gary S. Snitow* of counsel), for respondent.",
+        "normalized": "robert m. morgenthau, district attorney, new york city (gary s. snitow of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

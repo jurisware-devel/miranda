@@ -2,7 +2,7 @@
   "caseId": "2004_02428",
   "sourcePath": "coa/2004/2004_02428.htm",
   "notesPath": "coa/2004/2004_02428.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.229Z",
+  "generatedAt": "2026-03-22T19:47:12.474Z",
   "source": {
     "title": "People v Hicks (2004 NY Slip Op 02428)",
     "publicationStatus": "published"
@@ -78,6 +78,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Richard A. Brown, District Attorney , Kew Gardens ( James A. Dolan and John M. Castellano of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Lynn W.L. Fahey*, New York City (*Jay L. Weiner* of counsel), for appellant.",
+        "normalized": "lynn w.l. fahey, new york city (jay l. weiner of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Richard A. Brown, District Attorney*, Kew Gardens (*James A. Dolan* and *John M. Castellano* of counsel), for respondent.",
+        "normalized": "richard a. brown, district attorney, kew gardens (james a. dolan and john m. castellano of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

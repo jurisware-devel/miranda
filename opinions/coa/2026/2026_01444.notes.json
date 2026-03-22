@@ -2,7 +2,7 @@
   "caseId": "2026_01444",
   "sourcePath": "coa/2026/2026_01444.htm",
   "notesPath": "coa/2026/2026_01444.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.392Z",
+  "generatedAt": "2026-03-22T19:47:13.317Z",
   "source": {
     "title": "People v Bender (2026 NY Slip Op 01444)",
     "publicationStatus": "slip_op_only"
@@ -96,6 +96,20 @@
         "sentenceText": "Daniel J. Young, for respondent.",
         "possiblyTruncated": false
       }
+    ],
+    "companionAppearances": [
+      {
+        "text": "Michael J. Hutter, for appellant.",
+        "normalized": "michael j. hutter, for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Daniel J. Young, for respondent.",
+        "normalized": "daniel j. young, for respondent.",
+        "side": "respondent",
+        "possiblyTruncated": false
+      }
     ]
   },
   "sections": {
@@ -147,6 +161,11 @@
       "code": "APPEARANCE_LINE_WITH_ARGUMENT_TAIL",
       "severity": "info",
       "detail": "Appearance-like line continues into argument text after \"for respondent.\"."
+    },
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 3 appearance line(s), but companion JSON has 2."
     },
     {
       "code": "MULTIPLE_WRITINGS",

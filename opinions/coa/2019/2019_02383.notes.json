@@ -2,7 +2,7 @@
   "caseId": "2019_02383",
   "sourcePath": "coa/2019/2019_02383.htm",
   "notesPath": "coa/2019/2019_02383.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.046Z",
+  "generatedAt": "2026-03-22T19:47:13.055Z",
   "source": {
     "title": "People v Alvarez (2019 NY Slip Op 02383)",
     "publicationStatus": "published"
@@ -63,7 +63,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

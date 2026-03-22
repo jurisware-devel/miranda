@@ -2,7 +2,7 @@
   "caseId": "2010_06602",
   "sourcePath": "coa/2010/2010_06602.htm",
   "notesPath": "coa/2010/2010_06602.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.496Z",
+  "generatedAt": "2026-03-22T19:47:12.667Z",
   "source": {
     "title": "People v Mack (2010 NY Slip Op 06602)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Richard A. Brown, District Attorney , Kew Gardens ( Merri Turk Lasky of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Muldoon & Getz*, Rochester (*Gary Muldoon* of counsel), for appellant.",
+        "normalized": "muldoon & getz, rochester (gary muldoon of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Richard A. Brown, District Attorney*, Kew Gardens (*Merri Turk Lasky* of counsel), for respondent.",
+        "normalized": "richard a. brown, district attorney, kew gardens (merri turk lasky of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

@@ -2,7 +2,7 @@
   "caseId": "2010_05600",
   "sourcePath": "coa/2010/2010_05600.htm",
   "notesPath": "coa/2010/2010_05600.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.492Z",
+  "generatedAt": "2026-03-22T19:47:12.664Z",
   "source": {
     "title": "People v Murray (2010 NY Slip Op 05600)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Charles J. Hynes, District Attorney , Brooklyn ( Solomon Neubort and Leonard Joblove of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Mark Diamond*, New York City, for appellant.",
+        "normalized": "mark diamond, new york city, for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Charles J. Hynes, District Attorney*, Brooklyn (*Solomon Neubort* and *Leonard Joblove* of counsel), for respondent.",
+        "normalized": "charles j. hynes, district attorney, brooklyn (solomon neubort and leonard joblove of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

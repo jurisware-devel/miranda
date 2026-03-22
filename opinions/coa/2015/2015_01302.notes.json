@@ -2,7 +2,7 @@
   "caseId": "2015_01302",
   "sourcePath": "coa/2015/2015_01302.htm",
   "notesPath": "coa/2015/2015_01302.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.782Z",
+  "generatedAt": "2026-03-22T19:47:12.869Z",
   "source": {
     "title": "People v Diaz (2015 NY Slip Op 01302)",
     "publicationStatus": "published"
@@ -73,7 +73,8 @@
         "sentenceText": "Cyrus R. Vance, Jr. , District Attorney , New York City ( Karen Schlossberg and Vincent Rivellese of counsel), for respondent.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -110,6 +111,21 @@
     "hasFootnotesHeading": false
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Robert S. Dean , Center for Appellate Litigation , New York City ( Katharine Skolnick of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Cyrus R. Vance, Jr. , District Attorney , New York City ( Karen Schlossberg and Vincent Rivellese of counsel), for respondent."
+    },
     {
       "code": "MULTIPLE_HEADER_TABLES",
       "severity": "info",

@@ -2,7 +2,7 @@
   "caseId": "2010_04874",
   "sourcePath": "coa/2010/2010_04874.htm",
   "notesPath": "coa/2010/2010_04874.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.486Z",
+  "generatedAt": "2026-03-22T19:47:12.660Z",
   "source": {
     "title": "People v Frederick (2010 NY Slip Op 04874)",
     "publicationStatus": "published"
@@ -75,6 +75,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Cyrus R. Vance, Jr., District Attorney , New York City ( Sylvia Wertheimer and Mary C. Farrington of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Center for Appellate Litigation*, New York City (*David J. Klem* and *Robert S. Dean* of counsel), for appellant.",
+        "normalized": "center for appellate litigation, new york city (david j. klem and robert s. dean of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Cyrus R. Vance, Jr., District Attorney*, New York City (*Sylvia Wertheimer* and *Mary C. Farrington* of counsel), for respondent.",
+        "normalized": "cyrus r. vance, jr., district attorney, new york city (sylvia wertheimer and mary c. farrington of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

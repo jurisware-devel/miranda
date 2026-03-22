@@ -2,7 +2,7 @@
   "caseId": "2015_07699",
   "sourcePath": "coa/2015/2015_07699.htm",
   "notesPath": "coa/2015/2015_07699.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.824Z",
+  "generatedAt": "2026-03-22T19:47:12.897Z",
   "source": {
     "title": "People v Jorgensen (2015 NY Slip Op 07699)",
     "publicationStatus": "published"
@@ -62,7 +62,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

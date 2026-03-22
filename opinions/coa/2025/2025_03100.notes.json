@@ -2,7 +2,7 @@
   "caseId": "2025_03100",
   "sourcePath": "coa/2025/2025_03100.htm",
   "notesPath": "coa/2025/2025_03100.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.321Z",
+  "generatedAt": "2026-03-22T19:47:13.265Z",
   "source": {
     "title": "People v Hu Sin (2025 NY Slip Op 03100)",
     "publicationStatus": "published"
@@ -81,6 +81,20 @@
         "hasArgumentTail": true,
         "argumentTailPreview": "The trial court properly admitted evidence of prior bad acts for nonpropensity purposes and any prejudice was mitigated by appropriate limiting instructions. ( ",
         "sentenceText": "Michael J. Keane, District Attorney , Buffalo ( Michael J. Hillery , Daniel J. Punch and Paul J. Williams, III of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Thomas J. Eoannou*, Buffalo, for appellant.",
+        "normalized": "thomas j. eoannou, buffalo, for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Michael J. Keane, District Attorney*, Buffalo (*Michael J. Hillery*, *Daniel J. Punch* and *Paul J. Williams, III* of counsel), for respondent.",
+        "normalized": "michael j. keane, district attorney, buffalo (michael j. hillery, daniel j. punch and paul j. williams, iii of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

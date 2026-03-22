@@ -2,7 +2,7 @@
   "caseId": "2010_04875",
   "sourcePath": "coa/2010/2010_04875.htm",
   "notesPath": "coa/2010/2010_04875.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.487Z",
+  "generatedAt": "2026-03-22T19:47:12.661Z",
   "source": {
     "title": "People v Johnson (2010 NY Slip Op 04875)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Cyrus R. Vance, Jr., District Attorney , New York City ( Susan Gliner of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Center for Appellate Litigation*, New York City (*Abigail Everett* and *Robert S. Dean* of counsel), for appellant.",
+        "normalized": "center for appellate litigation, new york city (abigail everett and robert s. dean of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Cyrus R. Vance, Jr., District Attorney*, New York City (*Susan Gliner* of counsel), for respondent.",
+        "normalized": "cyrus r. vance, jr., district attorney, new york city (susan gliner of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

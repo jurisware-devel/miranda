@@ -2,7 +2,7 @@
   "caseId": "2020_07484",
   "sourcePath": "coa/2020/2020_07484.htm",
   "notesPath": "coa/2020/2020_07484.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.126Z",
+  "generatedAt": "2026-03-22T19:47:13.115Z",
   "source": {
     "title": "People v Bisono (2020 NY Slip Op 07484)",
     "publicationStatus": "published"
@@ -79,7 +79,8 @@
         "sentenceText": "The Abbatoy Law Firm, PLLC , Rochester ( David M. Abbatoy, Jr. of counsel), for New York State Association of Criminal Defense Lawyers and others, amici curiae in the tenth above-entitled action.",
         "possiblyTruncated": true
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 24,
@@ -163,6 +164,21 @@
       "code": "TRUNCATED_APPEARANCE_LINE",
       "severity": "warning",
       "detail": "Appearance-like line may be truncated: The Abbatoy Law Firm, PLLC , Rochester ( David M. Abbatoy, Jr. of counsel), for New York State Association of Criminal Defense Lawyers and others, amici curiae in the tenth above-entitled action."
+    },
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: The Abbatoy Law Firm, PLLC , Rochester ( David M. Abbatoy, Jr. of counsel), for New York State Association of Criminal Defense Lawyers and others, amici curiae in the seventh above-entitled action."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: The Abbatoy Law Firm, PLLC , Rochester ( David M. Abbatoy, Jr. of counsel), for New York State Association of Criminal Defense Lawyers and others, amici curiae in the tenth above-entitled action."
     },
     {
       "code": "MULTIPLE_WRITINGS",

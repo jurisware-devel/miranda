@@ -2,7 +2,7 @@
   "caseId": "2008_05301",
   "sourcePath": "coa/2008/2008_05301.htm",
   "notesPath": "coa/2008/2008_05301.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.392Z",
+  "generatedAt": "2026-03-22T19:47:12.593Z",
   "source": {
     "title": "People v Finley (2008 NY Slip Op 05301)",
     "publicationStatus": "published"
@@ -60,7 +60,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

@@ -2,7 +2,7 @@
   "caseId": "2007_02628",
   "sourcePath": "coa/2007/2007_02628.htm",
   "notesPath": "coa/2007/2007_02628.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.352Z",
+  "generatedAt": "2026-03-22T19:47:12.565Z",
   "source": {
     "title": "People v Ramchair (2007 NY Slip Op 02628)",
     "publicationStatus": "published"
@@ -58,7 +58,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

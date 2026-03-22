@@ -2,7 +2,7 @@
   "caseId": "2011_03885",
   "sourcePath": "coa/2011/2011_03885.htm",
   "notesPath": "coa/2011/2011_03885.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.543Z",
+  "generatedAt": "2026-03-22T19:47:12.698Z",
   "source": {
     "title": "People v Martin (2011 NY Slip Op 03885)",
     "publicationStatus": "published"
@@ -61,7 +61,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

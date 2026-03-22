@@ -2,7 +2,7 @@
   "caseId": "2007_02438",
   "sourcePath": "coa/2007/2007_02438.htm",
   "notesPath": "coa/2007/2007_02438.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.349Z",
+  "generatedAt": "2026-03-22T19:47:12.564Z",
   "source": {
     "title": "People v Melendez (2007 NY Slip Op 02438)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Michael C. Green, District Attorney , Rochester ( Arthur G. Weinstein of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Edward J. Nowak, Public Defender*, Rochester (*Brian Shiffrin* of counsel), for appellant.",
+        "normalized": "edward j. nowak, public defender, rochester (brian shiffrin of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Michael C. Green, District Attorney*, Rochester (*Arthur G. Weinstein* of counsel), for respondent.",
+        "normalized": "michael c. green, district attorney, rochester (arthur g. weinstein of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

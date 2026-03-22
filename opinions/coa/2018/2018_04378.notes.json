@@ -2,7 +2,7 @@
   "caseId": "2018_04378",
   "sourcePath": "coa/2018/2018_04378.htm",
   "notesPath": "coa/2018/2018_04378.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.013Z",
+  "generatedAt": "2026-03-22T19:47:13.031Z",
   "source": {
     "title": "People v Thibodeau (2018 NY Slip Op 04378)",
     "publicationStatus": "published"
@@ -76,7 +76,8 @@
         "sentenceText": "Gregory S. Oakes , District Attorney , Oswego, for respondent.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -139,6 +140,21 @@
     "hasFootnotesHeading": true
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Lisa A. Peebles , Federal Public Defender , Syracuse ( James P. Egan and Mellisa A. Tuohey of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Gregory S. Oakes , District Attorney , Oswego, for respondent."
+    },
     {
       "code": "MULTIPLE_WRITINGS",
       "severity": "info",

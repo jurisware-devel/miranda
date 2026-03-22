@@ -2,7 +2,7 @@
   "caseId": "2025_01563",
   "sourcePath": "coa/2025/2025_01563.htm",
   "notesPath": "coa/2025/2025_01563.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.315Z",
+  "generatedAt": "2026-03-22T19:47:13.259Z",
   "source": {
     "title": "People v Padilla-Zuniga (2025 NY Slip Op 01563)",
     "publicationStatus": "published"
@@ -80,6 +80,14 @@
         "sentenceText": "Anne T. Donnelly , District Attorney , Mineola ( Kevin C. King , Tammy J. Smiley and Daniel Bresnahan of counsel), for respondent.",
         "possiblyTruncated": false
       }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*N. Scott Banks*, *Legal Aid Society of Nassau County*, Hempstead (*Argun M. Ulgen* and *Tammy Feman* of counsel), for appellant.",
+        "normalized": "n. scott banks, legal aid society of nassau county, hempstead (argun m. ulgen and tammy feman of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      }
     ]
   },
   "sections": {
@@ -124,6 +132,16 @@
       "code": "STRAY_CLOSING_TAG",
       "severity": "warning",
       "detail": "Closing tag </b> appears more times than opening tag <b>."
+    },
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 1."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Anne T. Donnelly , District Attorney , Mineola ( Kevin C. King , Tammy J. Smiley and Daniel Bresnahan of counsel), for respondent."
     },
     {
       "code": "MULTIPLE_HEADER_TABLES",

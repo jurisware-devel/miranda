@@ -2,7 +2,7 @@
   "caseId": "2020_06935",
   "sourcePath": "coa/2020/2020_06935.htm",
   "notesPath": "coa/2020/2020_06935.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.121Z",
+  "generatedAt": "2026-03-22T19:47:13.112Z",
   "source": {
     "title": "People ex rel. Negron v Superintendent, Woodbourne Corr. Facility (2020 NY Slip Op 06935)",
     "publicationStatus": "published"
@@ -59,7 +59,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

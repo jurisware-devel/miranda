@@ -2,7 +2,7 @@
   "caseId": "2016_04321",
   "sourcePath": "coa/2016/2016_04321.htm",
   "notesPath": "coa/2016/2016_04321.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.884Z",
+  "generatedAt": "2026-03-22T19:47:12.941Z",
   "source": {
     "title": "People v Mack (2016 NY Slip Op 04321)",
     "publicationStatus": "published"
@@ -60,7 +60,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

@@ -2,7 +2,7 @@
   "caseId": "2010_09162",
   "sourcePath": "coa/2010/2010_09162.htm",
   "notesPath": "coa/2010/2010_09162.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.510Z",
+  "generatedAt": "2026-03-22T19:47:12.677Z",
   "source": {
     "title": "People v Wells (2010 NY Slip Op 09162)",
     "publicationStatus": "published"
@@ -75,6 +75,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Richard A. Brown, District Attorney , Kew Gardens ( Donna Aldea and Gary Fidel of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Peter Wells*, pro se, and *Appellate Advocates,* New York City (*Kendra L. Hutchinson* and *Lynn W.L. Fahey* of counsel), for appellant.",
+        "normalized": "peter wells, pro se, and appellate advocates, new york city (kendra l. hutchinson and lynn w.l. fahey of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Richard A. Brown, District Attorney*, Kew Gardens (*Donna Aldea* and *Gary Fidel* of counsel), for respondent.",
+        "normalized": "richard a. brown, district attorney, kew gardens (donna aldea and gary fidel of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

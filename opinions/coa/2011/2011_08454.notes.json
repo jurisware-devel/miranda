@@ -2,7 +2,7 @@
   "caseId": "2011_08454",
   "sourcePath": "coa/2011/2011_08454.htm",
   "notesPath": "coa/2011/2011_08454.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.578Z",
+  "generatedAt": "2026-03-22T19:47:12.723Z",
   "source": {
     "title": "People v Cruz (2011 NY Slip Op 08454)",
     "publicationStatus": "published"
@@ -75,6 +75,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Thomas J. Spota, District Attorney , Riverhead ( Glenn D. Green and Michael Brennan of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Legal Aid Society, Appeals Bureau*, Riverhead (*Kirk R. Brandt* and *Robert C. Mitchell* of counsel), for appellant.",
+        "normalized": "legal aid society, appeals bureau, riverhead (kirk r. brandt and robert c. mitchell of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Thomas J. Spota, District Attorney*, Riverhead (*Glenn D. Green* and *Michael Brennan* of counsel), for respondent.",
+        "normalized": "thomas j. spota, district attorney, riverhead (glenn d. green and michael brennan of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

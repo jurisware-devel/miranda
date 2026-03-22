@@ -2,7 +2,7 @@
   "caseId": "2005_03895",
   "sourcePath": "coa/2005/2005_03895.htm",
   "notesPath": "coa/2005/2005_03895.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.277Z",
+  "generatedAt": "2026-03-22T19:47:12.509Z",
   "source": {
     "title": "People v Williams (2005 NY Slip Op 03895)",
     "publicationStatus": "published"
@@ -57,7 +57,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

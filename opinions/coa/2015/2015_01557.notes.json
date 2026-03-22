@@ -2,7 +2,7 @@
   "caseId": "2015_01557",
   "sourcePath": "coa/2015/2015_01557.htm",
   "notesPath": "coa/2015/2015_01557.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.787Z",
+  "generatedAt": "2026-03-22T19:47:12.872Z",
   "source": {
     "title": "People v Cooke (2015 NY Slip Op 01557)",
     "publicationStatus": "published"
@@ -72,7 +72,8 @@
         "sentenceText": "Brooks T. Baker, District Attorney , Bath ( John C. Tunney of counsel), for respondent.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -109,6 +110,21 @@
     "hasFootnotesHeading": false
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Davison Law Office, PLLC , Canandaigua ( Mary P. Davison of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Brooks T. Baker, District Attorney , Bath ( John C. Tunney of counsel), for respondent."
+    },
     {
       "code": "MULTIPLE_HEADER_TABLES",
       "severity": "info",

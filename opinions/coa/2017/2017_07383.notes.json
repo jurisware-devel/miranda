@@ -2,7 +2,7 @@
   "caseId": "2017_07383",
   "sourcePath": "coa/2017/2017_07383.htm",
   "notesPath": "coa/2017/2017_07383.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.970Z",
+  "generatedAt": "2026-03-22T19:47:13.001Z",
   "source": {
     "title": "People v Andujar (2017 NY Slip Op 07383)",
     "publicationStatus": "published"
@@ -59,7 +59,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

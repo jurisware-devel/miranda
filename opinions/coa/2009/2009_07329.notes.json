@@ -2,7 +2,7 @@
   "caseId": "2009_07329",
   "sourcePath": "coa/2009/2009_07329.htm",
   "notesPath": "coa/2009/2009_07329.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.443Z",
+  "generatedAt": "2026-03-22T19:47:12.630Z",
   "source": {
     "title": "People v Hardy (2009 NY Slip Op 07329)",
     "publicationStatus": "published"
@@ -77,6 +77,20 @@
         "sentenceText": "Joseph V. Cardone, District Attorney , Albion ( Katherine Bogan of counsel), for respondent.",
         "possiblyTruncated": false
       }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*James S. Hinman*, Rochester, for appellant.",
+        "normalized": "james s. hinman, rochester, for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Joseph",
+        "normalized": "joseph",
+        "side": null,
+        "possiblyTruncated": true
+      }
     ]
   },
   "sections": {
@@ -116,6 +130,21 @@
     "hasFootnotesHeading": true
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_TRUNCATED",
+      "severity": "warning",
+      "detail": "Companion JSON appearance looks truncated: *Joseph"
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Joseph V. Cardone, District Attorney , Albion ( Katherine Bogan of counsel), for respondent."
+    },
+    {
+      "code": "JSON_APPEARANCE_UNMATCHED",
+      "severity": "info",
+      "detail": "Companion JSON appearance does not directly match any raw appearance sentence: *Joseph"
+    },
     {
       "code": "MULTIPLE_HEADER_TABLES",
       "severity": "info",

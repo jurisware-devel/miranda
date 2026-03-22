@@ -2,7 +2,7 @@
   "caseId": "2025_06528",
   "sourcePath": "coa/2025/2025_06528.htm",
   "notesPath": "coa/2025/2025_06528.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.351Z",
+  "generatedAt": "2026-03-22T19:47:13.289Z",
   "source": {
     "title": "People v Johnson (2025 NY Slip Op 06528)",
     "publicationStatus": "slip_op_only"
@@ -96,6 +96,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Emily A. Aldridge, for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "Benjamin Rutkin-Becker, for appellant.",
+        "normalized": "benjamin rutkin-becker, for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Emily A. Aldridge, for respondent.",
+        "normalized": "emily a. aldridge, for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

@@ -2,7 +2,7 @@
   "caseId": "2011_08456",
   "sourcePath": "coa/2011/2011_08456.htm",
   "notesPath": "coa/2011/2011_08456.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.579Z",
+  "generatedAt": "2026-03-22T19:47:12.724Z",
   "source": {
     "title": "People v McAlpin (2011 NY Slip Op 08456)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Legal Aid Society, Criminal Appeals Bureau , New York City ( Andrew C. Fine , Eve Kessler and Steven Banks of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Cyrus R. Vance, Jr., District Attorney*, New York City (*Grace Vee* and *David M. Cohn* of counsel), for appellant.",
+        "normalized": "cyrus r. vance, jr., district attorney, new york city (grace vee and david m. cohn of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Legal Aid Society, Criminal Appeals Bureau*, New York City (*Andrew C. Fine*, *Eve Kessler* and *Steven Banks* of counsel), for respondent.",
+        "normalized": "legal aid society, criminal appeals bureau, new york city (andrew c. fine, eve kessler and steven banks of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

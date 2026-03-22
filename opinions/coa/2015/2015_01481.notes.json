@@ -2,7 +2,7 @@
   "caseId": "2015_01481",
   "sourcePath": "coa/2015/2015_01481.htm",
   "notesPath": "coa/2015/2015_01481.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.785Z",
+  "generatedAt": "2026-03-22T19:47:12.872Z",
   "source": {
     "title": "People v Crowder (2015 NY Slip Op 01481)",
     "publicationStatus": "published"
@@ -75,7 +75,8 @@
         "sentenceText": "Robert M. Carney, District Attorney , Schenectady ( Gerald A. Dwyer of counsel), for respondent.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -120,6 +121,21 @@
       "code": "UNKNOWN_TAG",
       "severity": "info",
       "detail": "Encountered unknown tag <frac> in source HTML."
+    },
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Kindlon Shanks & Associates , Albany ( Lee C. Kindlon of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Robert M. Carney, District Attorney , Schenectady ( Gerald A. Dwyer of counsel), for respondent."
     },
     {
       "code": "MULTIPLE_WRITINGS",

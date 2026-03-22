@@ -2,7 +2,7 @@
   "caseId": "2006_08637",
   "sourcePath": "coa/2006/2006_08637.htm",
   "notesPath": "coa/2006/2006_08637.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.339Z",
+  "generatedAt": "2026-03-22T19:47:12.556Z",
   "source": {
     "title": "People v Harper (2006 NY Slip Op 08637)",
     "publicationStatus": "published"
@@ -78,6 +78,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Charles J. Hynes, District Attorney , Brooklyn ( Thomas S. Burka of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Appellate Advocates*, New York City (*Lynn W.L. Fahey* and *De Nice Powell* of counsel), for appellant.",
+        "normalized": "appellate advocates, new york city (lynn w.l. fahey and de nice powell of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Charles J. Hynes, District Attorney*, Brooklyn (*Thomas S. Burka* of counsel), for respondent.",
+        "normalized": "charles j. hynes, district attorney, brooklyn (thomas s. burka of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

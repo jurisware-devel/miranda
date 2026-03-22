@@ -2,7 +2,7 @@
   "caseId": "2009_01322",
   "sourcePath": "coa/2009/2009_01322.htm",
   "notesPath": "coa/2009/2009_01322.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.424Z",
+  "generatedAt": "2026-03-22T19:47:12.616Z",
   "source": {
     "title": "People v Passino (2009 NYSlipOp 01322)",
     "publicationStatus": "unknown"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Kevin C. Kortright, District Attorney , Fort Edward ( Michael R. Stern of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Jones Ferradino*, Saratoga Springs (*M. Elizabeth Coreno* of counsel), and *Alfred O'Connor*, Albany, for appellant.",
+        "normalized": "jones ferradino, saratoga springs (m. elizabeth coreno of counsel), and alfred o'connor, albany, for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Kevin C. Kortright, District Attorney*, Fort Edward (*Michael R. Stern* of counsel), for respondent.",
+        "normalized": "kevin c. kortright, district attorney, fort edward (michael r. stern of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

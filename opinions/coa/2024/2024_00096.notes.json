@@ -2,7 +2,7 @@
   "caseId": "2024_00096",
   "sourcePath": "coa/2024/2024_00096.htm",
   "notesPath": "coa/2024/2024_00096.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.244Z",
+  "generatedAt": "2026-03-22T19:47:13.203Z",
   "source": {
     "title": "People v Greene (2024 NY Slip Op 00096)",
     "publicationStatus": "published"
@@ -74,7 +74,8 @@
         "sentenceText": "Alvin L. Bragg, Jr., District Attorney , New York City ( Philip V. Tisne of counsel), for respondent.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -121,6 +122,21 @@
     "hasFootnotesHeading": true
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Caprice R. Jenerson, Office of the Appellate Defender , New York City ( Margaret E. Knight of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Alvin L. Bragg, Jr., District Attorney , New York City ( Philip V. Tisne of counsel), for respondent."
+    },
     {
       "code": "MULTIPLE_WRITINGS",
       "severity": "info",

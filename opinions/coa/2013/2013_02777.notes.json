@@ -2,7 +2,7 @@
   "caseId": "2013_02777",
   "sourcePath": "coa/2013/2013_02777.htm",
   "notesPath": "coa/2013/2013_02777.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.659Z",
+  "generatedAt": "2026-03-22T19:47:12.780Z",
   "source": {
     "title": "People v Byer (2013 NY Slip Op 02777)",
     "publicationStatus": "published"
@@ -74,6 +74,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Robert T. Johnson, District Attorney , Bronx ( Justin J. Braun , Joseph N. Ferdenzi and Nancy D. Killian of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Robert S. Dean*, *Center for Appellate Litigation*, New York City (*Bruce D. Austern* of counsel), for appellant.",
+        "normalized": "robert s. dean, center for appellate litigation, new york city (bruce d. austern of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Robert T. Johnson, District Attorney*, Bronx (*Justin J. Braun*, *Joseph N. Ferdenzi* and *Nancy D. Killian* of counsel), for respondent.",
+        "normalized": "robert t. johnson, district attorney, bronx (justin j. braun, joseph n. ferdenzi and nancy d. killian of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

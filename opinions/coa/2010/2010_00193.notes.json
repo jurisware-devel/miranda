@@ -2,7 +2,7 @@
   "caseId": "2010_00193",
   "sourcePath": "coa/2010/2010_00193.htm",
   "notesPath": "coa/2010/2010_00193.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.457Z",
+  "generatedAt": "2026-03-22T19:47:12.640Z",
   "source": {
     "title": "People ex rel. Blake v Pataki (2010 NY Slip Op 00193)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Thomas J. Spota, District Attorney , Riverhead ( Michael Blakey of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Harry H. Kuttner, Jr.*, Mineola, for appellant.",
+        "normalized": "harry h. kuttner, jr., mineola, for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Thomas J. Spota, District Attorney*, Riverhead (*Michael Blakey* of counsel), for respondent.",
+        "normalized": "thomas j. spota, district attorney, riverhead (michael blakey of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

@@ -2,7 +2,7 @@
   "caseId": "2020_06941",
   "sourcePath": "coa/2020/2020_06941.htm",
   "notesPath": "coa/2020/2020_06941.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.124Z",
+  "generatedAt": "2026-03-22T19:47:13.114Z",
   "source": {
     "title": "People v Edwards (2020 NY Slip Op 06941)",
     "publicationStatus": "published"
@@ -73,7 +73,8 @@
         "sentenceText": "Robert M. Carney, District Attorney , Schenectady ( Peter H. Willis of counsel), for respondent.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -114,6 +115,21 @@
     "hasFootnotesHeading": false
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Law Offices of Danielle Neroni , Albany ( Angela Kelley of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Robert M. Carney, District Attorney , Schenectady ( Peter H. Willis of counsel), for respondent."
+    },
     {
       "code": "MULTIPLE_HEADER_TABLES",
       "severity": "info",

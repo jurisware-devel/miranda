@@ -2,7 +2,7 @@
   "caseId": "2012_02123",
   "sourcePath": "coa/2012/2012_02123.htm",
   "notesPath": "coa/2012/2012_02123.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.593Z",
+  "generatedAt": "2026-03-22T19:47:12.734Z",
   "source": {
     "title": "People v Keating (2012 NY Slip Op 02123)",
     "publicationStatus": "published"
@@ -76,6 +76,20 @@
         "sentenceText": "Daniel M. Donovan, Jr., District Attorney , Staten Island ( Anne Grady and Morrie I. Kleinbart of counsel), for respondent.",
         "possiblyTruncated": false
       }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Lauren G. Klein*, Nantucket, Massachusetts, for appellant.",
+        "normalized": "lauren g. klein, nantucket, massachusetts, for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Daniel M. Donovan, Jr., District Attorney*, Staten Island (*Anne Grady* and *Morrie",
+        "normalized": "daniel m. donovan, jr., district attorney, staten island (anne grady and morrie",
+        "side": null,
+        "possiblyTruncated": true
+      }
     ]
   },
   "sections": {
@@ -115,6 +129,21 @@
     "hasFootnotesHeading": true
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_TRUNCATED",
+      "severity": "warning",
+      "detail": "Companion JSON appearance looks truncated: *Daniel M. Donovan, Jr., District Attorney*, Staten Island (*Anne Grady* and *Morrie"
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Daniel M. Donovan, Jr., District Attorney , Staten Island ( Anne Grady and Morrie I. Kleinbart of counsel), for respondent."
+    },
+    {
+      "code": "JSON_APPEARANCE_UNMATCHED",
+      "severity": "info",
+      "detail": "Companion JSON appearance does not directly match any raw appearance sentence: *Daniel M. Donovan, Jr., District Attorney*, Staten Island (*Anne Grady* and *Morrie"
+    },
     {
       "code": "MULTIPLE_HEADER_TABLES",
       "severity": "info",

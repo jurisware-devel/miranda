@@ -2,7 +2,7 @@
   "caseId": "2010_05709",
   "sourcePath": "coa/2010/2010_05709.htm",
   "notesPath": "coa/2010/2010_05709.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.495Z",
+  "generatedAt": "2026-03-22T19:47:12.666Z",
   "source": {
     "title": "People v Diaz (2010 NY Slip Op 05709)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Cyrus R. Vance, Jr., District Attorney , New York City ( Malancha Chanda and Eleanor Ostrow of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*David Segal*, New York City, for appellant.",
+        "normalized": "david segal, new york city, for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Cyrus R. Vance, Jr., District Attorney*, New York City (*Malancha Chanda* and *Eleanor Ostrow* of counsel), for respondent.",
+        "normalized": "cyrus r. vance, jr., district attorney, new york city (malancha chanda and eleanor ostrow of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

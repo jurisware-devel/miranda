@@ -2,7 +2,7 @@
   "caseId": "2004_05487",
   "sourcePath": "coa/2004/2004_05487.htm",
   "notesPath": "coa/2004/2004_05487.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.248Z",
+  "generatedAt": "2026-03-22T19:47:12.488Z",
   "source": {
     "title": "People v Yates (2004 NY Slip Op 05487)",
     "publicationStatus": "published"
@@ -78,6 +78,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Paul A. Clyne, District Attorney , Albany ( Christopher D. Horn of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Proskauer Rose LLP*, New York City (*Jeremy R. Feinberg* of counsel), for appellant.",
+        "normalized": "proskauer rose llp, new york city (jeremy r. feinberg of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Paul A. Clyne, District Attorney*, Albany (*Christopher D. Horn* of counsel), for respondent.",
+        "normalized": "paul a. clyne, district attorney, albany (christopher d. horn of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

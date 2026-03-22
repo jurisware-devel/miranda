@@ -2,7 +2,7 @@
   "caseId": "2020_07690",
   "sourcePath": "coa/2020/2020_07690.htm",
   "notesPath": "coa/2020/2020_07690.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.130Z",
+  "generatedAt": "2026-03-22T19:47:13.118Z",
   "source": {
     "title": "People v Robinson (2020 NY Slip Op 07690)",
     "publicationStatus": "published"
@@ -72,7 +72,8 @@
         "sentenceText": "Melinda Katz, District Attorney , Kew Gardens ( Danielle S. Fenn of counsel), for respondent.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -109,6 +110,21 @@
     "hasFootnotesHeading": false
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Paul Skip Laisure, Appellate Advocates , New York City ( Samuel R. Feldman of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Melinda Katz, District Attorney , Kew Gardens ( Danielle S. Fenn of counsel), for respondent."
+    },
     {
       "code": "MULTIPLE_HEADER_TABLES",
       "severity": "info",

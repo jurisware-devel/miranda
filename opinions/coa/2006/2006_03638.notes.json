@@ -2,7 +2,7 @@
   "caseId": "2006_03638",
   "sourcePath": "coa/2006/2006_03638.htm",
   "notesPath": "coa/2006/2006_03638.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.323Z",
+  "generatedAt": "2026-03-22T19:47:12.544Z",
   "source": {
     "title": "People v Williams (2006 NY Slip Op 03638)",
     "publicationStatus": "published"
@@ -59,7 +59,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

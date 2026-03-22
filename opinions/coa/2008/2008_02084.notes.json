@@ -2,7 +2,7 @@
   "caseId": "2008_02084",
   "sourcePath": "coa/2008/2008_02084.htm",
   "notesPath": "coa/2008/2008_02084.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.382Z",
+  "generatedAt": "2026-03-22T19:47:12.586Z",
   "source": {
     "title": "People v Urbaez (2008 NY Slip Op 02084)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Robert T. Johnson, District Attorney , Bronx ( Noah Chamoy, Allen Saperstein and Joseph N. Ferdenzi of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Legal Aid Society*, New York City (*Laura Lieberman Cohen* of counsel), for appellant.",
+        "normalized": "legal aid society, new york city (laura lieberman cohen of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Robert T. Johnson, District Attorney*, Bronx (*Noah Chamoy, Allen Saperstein* and *Joseph N. Ferdenzi* of counsel), for respondent.",
+        "normalized": "robert t. johnson, district attorney, bronx (noah chamoy, allen saperstein and joseph n. ferdenzi of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

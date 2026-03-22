@@ -2,7 +2,7 @@
   "caseId": "2016_05884",
   "sourcePath": "coa/2016/2016_05884.htm",
   "notesPath": "coa/2016/2016_05884.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.897Z",
+  "generatedAt": "2026-03-22T19:47:12.950Z",
   "source": {
     "title": "People ex rel. Baez v Superintendent, Queensboro Corr. Facility (2016 NY Slip Op 05884)",
     "publicationStatus": "published"
@@ -72,7 +72,8 @@
         "sentenceText": "Eric T. Schneiderman, Attorney General , New York City ( Bethany A. Davis Noll of counsel), for respondents.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -109,6 +110,21 @@
     "hasFootnotesHeading": false
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Seymour W. James, Jr., The Legal Aid Society , New York City ( Robert C. Newman of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Eric T. Schneiderman, Attorney General , New York City ( Bethany A. Davis Noll of counsel), for respondents."
+    },
     {
       "code": "MULTIPLE_HEADER_TABLES",
       "severity": "info",

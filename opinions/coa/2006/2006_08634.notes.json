@@ -2,7 +2,7 @@
   "caseId": "2006_08634",
   "sourcePath": "coa/2006/2006_08634.htm",
   "notesPath": "coa/2006/2006_08634.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.338Z",
+  "generatedAt": "2026-03-22T19:47:12.555Z",
   "source": {
     "title": "People v Brown (2006 NY Slip Op 08634)",
     "publicationStatus": "published"
@@ -78,6 +78,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Robert M. Morgenthau, District Attorney , New York City ( Richard L. Sullivan and Sandra E. Cavazos of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Legal Aid Society*, New York City (*Lorca Morello* and *Steven Banks* of counsel), for appellant.",
+        "normalized": "legal aid society, new york city (lorca morello and steven banks of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Robert M. Morgenthau, District Attorney*, New York City (*Richard L. Sullivan* and *Sandra E. Cavazos* of counsel), for respondent.",
+        "normalized": "robert m. morgenthau, district attorney, new york city (richard l. sullivan and sandra e. cavazos of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

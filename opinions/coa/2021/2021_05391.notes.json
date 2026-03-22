@@ -2,7 +2,7 @@
   "caseId": "2021_05391",
   "sourcePath": "coa/2021/2021_05391.htm",
   "notesPath": "coa/2021/2021_05391.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.150Z",
+  "generatedAt": "2026-03-22T19:47:13.134Z",
   "source": {
     "title": "People v Timko (2021 NY Slip Op 05391)",
     "publicationStatus": "published"
@@ -72,7 +72,8 @@
         "sentenceText": "Miriam E. Rocah, District Attorney , White Plains ( Brian R. Pouliot, William C. Milaccio and Steven A. Bender of counsel), for respondent.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -109,6 +110,21 @@
     "hasFootnotesHeading": false
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Law Offices of Michael Pollok, PLLC , Red Hook ( Michael S. Pollok of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Miriam E. Rocah, District Attorney , White Plains ( Brian R. Pouliot, William C. Milaccio and Steven A. Bender of counsel), for respondent."
+    },
     {
       "code": "MULTIPLE_HEADER_TABLES",
       "severity": "info",

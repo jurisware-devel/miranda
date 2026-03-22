@@ -2,7 +2,7 @@
   "caseId": "2005_07729",
   "sourcePath": "coa/2005/2005_07729.htm",
   "notesPath": "coa/2005/2005_07729.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.290Z",
+  "generatedAt": "2026-03-22T19:47:12.519Z",
   "source": {
     "title": "People v Dunbar (2005 NY Slip Op 07729)",
     "publicationStatus": "published"
@@ -78,6 +78,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Lawrence A. Wangerman , Syracuse, for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*William J. Fitzpatrick*, *District Attorney*, Syracuse (*Audra Albright* and *James P. Maxwell* of counsel), for appellant.",
+        "normalized": "william j. fitzpatrick, district attorney, syracuse (audra albright and james p. maxwell of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Lawrence A. Wangerman*, Syracuse, for respondent.",
+        "normalized": "lawrence a. wangerman, syracuse, for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

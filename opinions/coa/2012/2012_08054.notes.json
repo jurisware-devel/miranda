@@ -2,7 +2,7 @@
   "caseId": "2012_08054",
   "sourcePath": "coa/2012/2012_08054.htm",
   "notesPath": "coa/2012/2012_08054.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.636Z",
+  "generatedAt": "2026-03-22T19:47:12.764Z",
   "source": {
     "title": "People v Gavazzi (2012 NY Slip Op 08054)",
     "publicationStatus": "published"
@@ -74,6 +74,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "John D. Cameron, Public Defender , Norwich, for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Joseph A. McBride, District Attorney*, Norwich (*Michael J. Genute* of counsel), for appellant.",
+        "normalized": "joseph a. mcbride, district attorney, norwich (michael j. genute of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*John D. Cameron, Public Defender*, Norwich, for respondent.",
+        "normalized": "john d. cameron, public defender, norwich, for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

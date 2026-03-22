@@ -2,7 +2,7 @@
   "caseId": "2018_07926",
   "sourcePath": "coa/2018/2018_07926.htm",
   "notesPath": "coa/2018/2018_07926.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.030Z",
+  "generatedAt": "2026-03-22T19:47:13.044Z",
   "source": {
     "title": "People v Watts (2018 NY Slip Op 07926)",
     "publicationStatus": "published"
@@ -57,7 +57,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

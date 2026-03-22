@@ -2,7 +2,7 @@
   "caseId": "2024_05874",
   "sourcePath": "coa/2024/2024_05874.htm",
   "notesPath": "coa/2024/2024_05874.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.299Z",
+  "generatedAt": "2026-03-22T19:47:13.244Z",
   "source": {
     "title": "People v Vaughn (2024 NY Slip Op 05874)",
     "publicationStatus": "published"
@@ -64,7 +64,39 @@
     "authorLine": null,
     "appearanceSectionType": "points_of_counsel_only",
     "pointsOfCounselCount": 1,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": [
+      {
+        "text": "*Patricia Pazner, Appellate Advocates*, New York City (*Sam Feldman* of counsel), for appellant. When appellant's trial turned on identifications by two eyewitnesses that were allegedly corroborated only by low-quality surveillance video and a nondescript brown sweatshirt, the court erred in excluding expert testimony on relevant factors affecting the reliability of eyewitness identifications. (*Holmes v South Carolina*, 547 US 319; *People v Cerda*, 40 NY3d 369; *People v McCullough*, 27 NY3d 1158; *People v LeGrand*, 8 NY3d 449; *People v Boone*, 30 NY3d 521.) *Eric Gonzalez, District Attorney*, Brooklyn (*Melissa Owen* and *Leonard Joblove* of counsel), for respondent. The trial court properly exercised its discretion by limiting the scope of expert testimony regarding the reliability of eyewitness identification evidence. (*People v Powell*, 37 NY3d 476; *People v Young*, 7 NY3d 40; *People v McCullough*, 27 NY3d 1158; *People v LeGrand*, 8 NY3d 449; *People v Perdue*, 41 NY3d 245.) *Proskauer Rose LLP*, New York City (*Russell L. Hirschhorn, Portia S. Proctor* and *Dakshïna H. Chetti* of counsel), and *The Innocence Project, Inc.*, New York City (*Matthew A. Wasserman* and *Lauren Gottesman* of counsel), for The Innocence Project, Inc., amicus curiae.",
+        "normalized": "patricia pazner, appellate advocates, new york city (sam feldman of counsel), for appellant. when appellant's trial turned on identifications by two eyewitnesses that were allegedly corroborated only by low-quality surveillance video and a nondescript brown sweatshirt, the court erred in excluding expert testimony on relevant factors affecting the reliability of eyewitness identifications. (holmes v south carolina, 547 us 319; people v cerda, 40 ny3d 369; people v mccullough, 27 ny3d 1158; people v legrand, 8 ny3d 449; people v boone, 30 ny3d 521.) eric gonzalez, district attorney, brooklyn (melissa owen and leonard joblove of counsel), for respondent. the trial court properly exercised its discretion by limiting the scope of expert testimony regarding the reliability of eyewitness identification evidence. (people v powell, 37 ny3d 476; people v young, 7 ny3d 40; people v mccullough, 27 ny3d 1158; people v legrand, 8 ny3d 449; people v perdue, 41 ny3d 245.) proskauer rose llp, new york city (russell l. hirschhorn, portia s. proctor and dakshïna h. chetti of counsel), and the innocence project, inc., new york city (matthew a. wasserman and lauren gottesman of counsel), for the innocence project, inc., amicus curiae.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Patricia Pazner, Appellate Advocates*, New York City (*Sam Feldman* of counsel), for appellant.",
+        "normalized": "patricia pazner, appellate advocates, new york city (sam feldman of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Eric Gonzalez, District Attorney*, Brooklyn (*Melissa Owen* and *Leonard Joblove* of counsel), for respondent.",
+        "normalized": "eric gonzalez, district attorney, brooklyn (melissa owen and leonard joblove of counsel), for respondent.",
+        "side": "respondent",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Proskauer Rose LLP*, New York City (*Russell L. Hirschhorn, Portia S. Proctor* and *Dakshïna H. Chetti* of counsel), and *The Innocence Project, Inc.*, New York City (*Matthew A. Wasserman* and *Lauren Gottesman* of counsel), for The Innocence Project, Inc., amicus curiae.",
+        "normalized": "proskauer rose llp, new york city (russell l. hirschhorn, portia s. proctor and dakshïna h. chetti of counsel), and the innocence project, inc., new york city (matthew a. wasserman and lauren gottesman of counsel), for the innocence project, inc., amicus curiae.",
+        "side": null,
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*The Legal Aid Society*, New York City (*Philip Desgranges* and *Shona Hemmady* of counsel), for The Legal Aid Society, amicus curiae.",
+        "normalized": "the legal aid society, new york city (philip desgranges and shona hemmady of counsel), for the legal aid society, amicus curiae.",
+        "side": null,
+        "possiblyTruncated": false
+      }
+    ]
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -135,6 +167,41 @@
       "code": "STRAY_CLOSING_TAG",
       "severity": "warning",
       "detail": "Closing tag </b> appears more times than opening tag <b>."
+    },
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 0 appearance line(s), but companion JSON has 5."
+    },
+    {
+      "code": "JSON_APPEARANCE_UNMATCHED",
+      "severity": "info",
+      "detail": "Companion JSON appearance does not directly match any raw appearance sentence: *Patricia Pazner, Appellate Advocates*, New York City (*Sam Feldman* of counsel), for appellant. When appellant's trial turned on identifications by two eyewitnesses that were allegedly corroborated only by low-quality surveillance video and a nondescript brown sweatshirt, the court erred in excluding expert testimony on relevant factors affecting the reliability of eyewitness identifications. (*Holmes v South Carolina*, 547 US 319; *People v Cerda*, 40 NY3d 369; *People v McCullough*, 27 NY3d 1158; *People v LeGrand*, 8 NY3d 449; *People v Boone*, 30 NY3d 521.) *Eric Gonzalez, District Attorney*, Brooklyn (*Melissa Owen* and *Leonard Joblove* of counsel), for respondent. The trial court properly exercised its discretion by limiting the scope of expert testimony regarding the reliability of eyewitness identification evidence. (*People v Powell*, 37 NY3d 476; *People v Young*, 7 NY3d 40; *People v McCullough*, 27 NY3d 1158; *People v LeGrand*, 8 NY3d 449; *People v Perdue*, 41 NY3d 245.) *Proskauer Rose LLP*, New York City (*Russell L. Hirschhorn, Portia S. Proctor* and *Dakshïna H. Chetti* of counsel), and *The Innocence Project, Inc.*, New York City (*Matthew A. Wasserman* and *Lauren Gottesman* of counsel), for The Innocence Project, Inc., amicus curiae."
+    },
+    {
+      "code": "JSON_APPEARANCE_UNMATCHED",
+      "severity": "info",
+      "detail": "Companion JSON appearance does not directly match any raw appearance sentence: *Patricia Pazner, Appellate Advocates*, New York City (*Sam Feldman* of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_UNMATCHED",
+      "severity": "info",
+      "detail": "Companion JSON appearance does not directly match any raw appearance sentence: *Eric Gonzalez, District Attorney*, Brooklyn (*Melissa Owen* and *Leonard Joblove* of counsel), for respondent."
+    },
+    {
+      "code": "JSON_APPEARANCE_UNMATCHED",
+      "severity": "info",
+      "detail": "Companion JSON appearance does not directly match any raw appearance sentence: *Proskauer Rose LLP*, New York City (*Russell L. Hirschhorn, Portia S. Proctor* and *Dakshïna H. Chetti* of counsel), and *The Innocence Project, Inc.*, New York City (*Matthew A. Wasserman* and *Lauren Gottesman* of counsel), for The Innocence Project, Inc., amicus curiae."
+    },
+    {
+      "code": "JSON_APPEARANCE_UNMATCHED",
+      "severity": "info",
+      "detail": "Companion JSON appearance does not directly match any raw appearance sentence: *The Legal Aid Society*, New York City (*Philip Desgranges* and *Shona Hemmady* of counsel), for The Legal Aid Society, amicus curiae."
+    },
+    {
+      "code": "JSON_APPEARANCE_MULTI_SIDE_MERGE",
+      "severity": "warning",
+      "detail": "Companion JSON appearance appears to merge multiple sides into one entry: *Patricia Pazner, Appellate Advocates*, New York City (*Sam Feldman* of counsel), for appellant. When appellant's trial turned on identifications by two eyewitnesses that were allegedly corroborated only by low-quality surveillance video and a nondescript brown sweatshirt, the court erred in excluding expert testimony on relevant factors affecting the reliability of eyewitness identifications. (*Holmes v South Carolina*, 547 US 319; *People v Cerda*, 40 NY3d 369; *People v McCullough*, 27 NY3d 1158; *People v LeGrand*, 8 NY3d 449; *People v Boone*, 30 NY3d 521.) *Eric Gonzalez, District Attorney*, Brooklyn (*Melissa Owen* and *Leonard Joblove* of counsel), for respondent. The trial court properly exercised its discretion by limiting the scope of expert testimony regarding the reliability of eyewitness identification evidence. (*People v Powell*, 37 NY3d 476; *People v Young*, 7 NY3d 40; *People v McCullough*, 27 NY3d 1158; *People v LeGrand*, 8 NY3d 449; *People v Perdue*, 41 NY3d 245.) *Proskauer Rose LLP*, New York City (*Russell L. Hirschhorn, Portia S. Proctor* and *Dakshïna H. Chetti* of counsel), and *The Innocence Project, Inc.*, New York City (*Matthew A. Wasserman* and *Lauren Gottesman* of counsel), for The Innocence Project, Inc., amicus curiae."
     },
     {
       "code": "POINTS_OF_COUNSEL_ONLY",

@@ -2,7 +2,7 @@
   "caseId": "2016_01253",
   "sourcePath": "coa/2016/2016_01253.htm",
   "notesPath": "coa/2016/2016_01253.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.857Z",
+  "generatedAt": "2026-03-22T19:47:12.922Z",
   "source": {
     "title": "People v Leach (2016 NY Slip Op 01253)",
     "publicationStatus": "published"
@@ -72,7 +72,8 @@
         "sentenceText": "David M. Hoovler , District Attorney , Middletown ( Elizabeth L. Schulz and Andrew R. Kass of counsel), for respondent.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -114,6 +115,21 @@
     "hasFootnotesHeading": false
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Feldman and Feldman , Uniondale ( Steven A. Feldman of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: David M. Hoovler , District Attorney , Middletown ( Elizabeth L. Schulz and Andrew R. Kass of counsel), for respondent."
+    },
     {
       "code": "MULTIPLE_WRITINGS",
       "severity": "info",

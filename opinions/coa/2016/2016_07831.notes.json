@@ -2,7 +2,7 @@
   "caseId": "2016_07831",
   "sourcePath": "coa/2016/2016_07831.htm",
   "notesPath": "coa/2016/2016_07831.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.917Z",
+  "generatedAt": "2026-03-22T19:47:12.965Z",
   "source": {
     "title": "People v Couser (2016 NY Slip Op 07831)",
     "publicationStatus": "published"
@@ -59,7 +59,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

@@ -2,7 +2,7 @@
   "caseId": "2009_07482",
   "sourcePath": "coa/2009/2009_07482.htm",
   "notesPath": "coa/2009/2009_07482.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.444Z",
+  "generatedAt": "2026-03-22T19:47:12.631Z",
   "source": {
     "title": "People v Arafet (2009 NY Slip Op 07482)",
     "publicationStatus": "published"
@@ -59,7 +59,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

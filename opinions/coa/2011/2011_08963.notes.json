@@ -2,7 +2,7 @@
   "caseId": "2011_08963",
   "sourcePath": "coa/2011/2011_08963.htm",
   "notesPath": "coa/2011/2011_08963.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.581Z",
+  "generatedAt": "2026-03-22T19:47:12.725Z",
   "source": {
     "title": "People v Bradshaw (2011 NY Slip Op 08963)",
     "publicationStatus": "published"
@@ -60,7 +60,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

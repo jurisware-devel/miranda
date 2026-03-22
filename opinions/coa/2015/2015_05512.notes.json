@@ -2,7 +2,7 @@
   "caseId": "2015_05512",
   "sourcePath": "coa/2015/2015_05512.htm",
   "notesPath": "coa/2015/2015_05512.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.810Z",
+  "generatedAt": "2026-03-22T19:47:12.888Z",
   "source": {
     "title": "People v Lovett (2015 NY Slip Op 05512)",
     "publicationStatus": "published"
@@ -75,7 +75,8 @@
         "sentenceText": "Cyrus R. Vance, Jr., District Attorney , New York City ( Nicole Coviello and Eleanor J. Ostrow of counsel), for respondent.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -119,6 +120,21 @@
       "code": "UNKNOWN_TAG",
       "severity": "info",
       "detail": "Encountered unknown tag <frac> in source HTML."
+    },
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Richard M. Greenberg, Office of the Appellate Defender , New York City ( Margaret E. Knight of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Cyrus R. Vance, Jr., District Attorney , New York City ( Nicole Coviello and Eleanor J. Ostrow of counsel), for respondent."
     },
     {
       "code": "MULTIPLE_HEADER_TABLES",

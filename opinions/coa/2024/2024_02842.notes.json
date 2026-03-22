@@ -2,7 +2,7 @@
   "caseId": "2024_02842",
   "sourcePath": "coa/2024/2024_02842.htm",
   "notesPath": "coa/2024/2024_02842.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.274Z",
+  "generatedAt": "2026-03-22T19:47:13.226Z",
   "source": {
     "title": "People v Watkins (2024 NY Slip Op 02842)",
     "publicationStatus": "published"
@@ -64,7 +64,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

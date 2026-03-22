@@ -2,7 +2,7 @@
   "caseId": "2024_05871",
   "sourcePath": "coa/2024/2024_05871.htm",
   "notesPath": "coa/2024/2024_05871.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.295Z",
+  "generatedAt": "2026-03-22T19:47:13.241Z",
   "source": {
     "title": "People v Peters (2024 NY Slip Op 05871)",
     "publicationStatus": "published"
@@ -70,7 +70,8 @@
         "sentenceText": "Eric Gonzalez , District Attorney , Brooklyn ( Solomon Neubort and Leonard Joblove of counsel), for respondent.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -107,6 +108,21 @@
     "hasFootnotesHeading": false
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Eric Nelson , Staten Island, for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Eric Gonzalez , District Attorney , Brooklyn ( Solomon Neubort and Leonard Joblove of counsel), for respondent."
+    },
     {
       "code": "MULTIPLE_HEADER_TABLES",
       "severity": "info",

@@ -2,7 +2,7 @@
   "caseId": "2026_00824",
   "sourcePath": "coa/2026/2026_00824.htm",
   "notesPath": "coa/2026/2026_00824.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.377Z",
+  "generatedAt": "2026-03-22T19:47:13.305Z",
   "source": {
     "title": "People v Ambrosio (2026 NY Slip Op 00824)",
     "publicationStatus": "slip_op_only"
@@ -87,6 +87,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Jaime A. Douthat, for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "Matthew C. Hug, for appellant.",
+        "normalized": "matthew c. hug, for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Jaime A. Douthat, for respondent.",
+        "normalized": "jaime a. douthat, for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

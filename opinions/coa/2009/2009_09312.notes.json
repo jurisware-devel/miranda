@@ -2,7 +2,7 @@
   "caseId": "2009_09312",
   "sourcePath": "coa/2009/2009_09312.htm",
   "notesPath": "coa/2009/2009_09312.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.457Z",
+  "generatedAt": "2026-03-22T19:47:12.640Z",
   "source": {
     "title": "People v Hilts (2009 NY Slip Op 09312)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Robert M. Carney, District Attorney, Schenectady ( Gerald A. Dwyer of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Lazer, Aptheker, Rosella & Yedid, P.C.*, Melville (*David Lazer* of counsel), for appellant.",
+        "normalized": "lazer, aptheker, rosella & yedid, p.c., melville (david lazer of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Robert M. Carney, District Attorney,* Schenectady (*Gerald A. Dwyer* of counsel), for respondent.",
+        "normalized": "robert m. carney, district attorney, schenectady (gerald a. dwyer of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

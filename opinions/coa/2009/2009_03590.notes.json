@@ -2,7 +2,7 @@
   "caseId": "2009_03590",
   "sourcePath": "coa/2009/2009_03590.htm",
   "notesPath": "coa/2009/2009_03590.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.431Z",
+  "generatedAt": "2026-03-22T19:47:12.621Z",
   "source": {
     "title": "People v Leeson (2009 NY Slip Op 03590)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "R. Michael Tantillo, District Attorney , Canandaigua ( Jeffrey L. Taylor of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*John E. Tyo*, Shortsville, for appellant.",
+        "normalized": "john e. tyo, shortsville, for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*R. Michael Tantillo, District Attorney*, Canandaigua (*Jeffrey L. Taylor* of counsel), for respondent.",
+        "normalized": "r. michael tantillo, district attorney, canandaigua (jeffrey l. taylor of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

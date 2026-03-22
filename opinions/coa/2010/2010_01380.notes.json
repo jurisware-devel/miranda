@@ -2,7 +2,7 @@
   "caseId": "2010_01380",
   "sourcePath": "coa/2010/2010_01380.htm",
   "notesPath": "coa/2010/2010_01380.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.465Z",
+  "generatedAt": "2026-03-22T19:47:12.646Z",
   "source": {
     "title": "People v Rivera (2010 NY Slip Op 01380)",
     "publicationStatus": "published"
@@ -75,6 +75,14 @@
         "sentenceText": "Flemming Zulack Williamson Zauderer LLP , New York City ( Megan P. Davis of counsel), for Appellate Courts Committee of the New York County Lawyers' Association, amicus curiae.",
         "possiblyTruncated": false
       }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Cyrus R. Vance, Jr., District Attorney*, New York City (*Timothy C. Stone* of counsel), for respondent.",
+        "normalized": "cyrus r. vance, jr., district attorney, new york city (timothy c. stone of counsel), for respondent.",
+        "side": "respondent",
+        "possiblyTruncated": false
+      }
     ]
   },
   "sections": {
@@ -112,6 +120,16 @@
     "hasFootnotesHeading": false
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 1."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Flemming Zulack Williamson Zauderer LLP , New York City ( Megan P. Davis of counsel), for Appellate Courts Committee of the New York County Lawyers' Association, amicus curiae."
+    },
     {
       "code": "MULTIPLE_HEADER_TABLES",
       "severity": "info",

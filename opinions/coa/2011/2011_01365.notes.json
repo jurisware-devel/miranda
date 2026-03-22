@@ -2,7 +2,7 @@
   "caseId": "2011_01365",
   "sourcePath": "coa/2011/2011_01365.htm",
   "notesPath": "coa/2011/2011_01365.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.524Z",
+  "generatedAt": "2026-03-22T19:47:12.686Z",
   "source": {
     "title": "People v Boothe (2011 NY Slip Op 01365)",
     "publicationStatus": "published"
@@ -58,7 +58,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

@@ -2,7 +2,7 @@
   "caseId": "2007_01338",
   "sourcePath": "coa/2007/2007_01338.htm",
   "notesPath": "coa/2007/2007_01338.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.347Z",
+  "generatedAt": "2026-03-22T19:47:12.562Z",
   "source": {
     "title": "People v Williams (2007 NY Slip Op 01338)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Frank J. Clark, District Attorney , Buffalo ( Susan C. Ministero and J. Michael Marion of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Legal Aid Bureau of Buffalo, Inc.*, Buffalo (*Karen C. Russo-McLaughlin, David C. Schopp* and *Barbara J. Davies* of counsel), for appellant.",
+        "normalized": "legal aid bureau of buffalo, inc., buffalo (karen c. russo-mclaughlin, david c. schopp and barbara j. davies of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Frank J. Clark, District Attorney*, Buffalo (*Susan C. Ministero* and *J. Michael Marion* of counsel), for respondent.",
+        "normalized": "frank j. clark, district attorney, buffalo (susan c. ministero and j. michael marion of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

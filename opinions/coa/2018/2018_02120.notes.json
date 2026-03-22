@@ -2,7 +2,7 @@
   "caseId": "2018_02120",
   "sourcePath": "coa/2018/2018_02120.htm",
   "notesPath": "coa/2018/2018_02120.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.989Z",
+  "generatedAt": "2026-03-22T19:47:13.014Z",
   "source": {
     "title": "People v Boyd (2018 NY Slip Op 02120)",
     "publicationStatus": "published"
@@ -75,7 +75,8 @@
         "sentenceText": "Darcel D. Clark , District Attorney , Bronx ( Emily Anne Aldridge of counsel), for respondent.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -123,6 +124,21 @@
     "hasFootnotesHeading": true
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Marianne Karas , Thornwood, for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Darcel D. Clark , District Attorney , Bronx ( Emily Anne Aldridge of counsel), for respondent."
+    },
     {
       "code": "MULTIPLE_WRITINGS",
       "severity": "info",

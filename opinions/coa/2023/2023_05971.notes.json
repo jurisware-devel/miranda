@@ -2,7 +2,7 @@
   "caseId": "2023_05971",
   "sourcePath": "coa/2023/2023_05971.htm",
   "notesPath": "coa/2023/2023_05971.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.233Z",
+  "generatedAt": "2026-03-22T19:47:13.195Z",
   "source": {
     "title": "People v Espinosa (2023 NY Slip Op 05971)",
     "publicationStatus": "published"
@@ -83,7 +83,8 @@
         "sentenceText": "The Legal Aid Society , New York City ( David Loftis , Jenny S. Cheung , Jessica Goldthwaite and J. David Pollock of counsel), for The Legal Aid Society, amicus curiae.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -135,6 +136,26 @@
     "hasFootnotesHeading": true
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 3 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Patricia Pazner, Appellate Advocates , New York City ( Sam Feldman of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Melinda Katz, District Attorney , Kew Gardens ( Amanda Iannuzzi and John M. Castellano of counsel), for respondent."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: The Legal Aid Society , New York City ( David Loftis , Jenny S. Cheung , Jessica Goldthwaite and J. David Pollock of counsel), for The Legal Aid Society, amicus curiae."
+    },
     {
       "code": "MULTIPLE_WRITINGS",
       "severity": "info",

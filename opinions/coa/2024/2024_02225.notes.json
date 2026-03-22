@@ -2,7 +2,7 @@
   "caseId": "2024_02225",
   "sourcePath": "coa/2024/2024_02225.htm",
   "notesPath": "coa/2024/2024_02225.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.267Z",
+  "generatedAt": "2026-03-22T19:47:13.221Z",
   "source": {
     "title": "People v Baez (2024 NY Slip Op 02225)",
     "publicationStatus": "published"
@@ -59,7 +59,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

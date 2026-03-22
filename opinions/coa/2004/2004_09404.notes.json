@@ -2,7 +2,7 @@
   "caseId": "2004_09404",
   "sourcePath": "coa/2004/2004_09404.htm",
   "notesPath": "coa/2004/2004_09404.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.262Z",
+  "generatedAt": "2026-03-22T19:47:12.500Z",
   "source": {
     "title": "People v Marquez (2004 NY Slip Op 09404)",
     "publicationStatus": "published"
@@ -78,6 +78,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Robert Morgenthau, District Attorney , New York City ( Heather Pearson of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Center for Appellate Litigation*, New York City (*William A. Loeb* and *Robert S. Dean* of counsel), for appellant.",
+        "normalized": "center for appellate litigation, new york city (william a. loeb and robert s. dean of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Robert Morgenthau, District Attorney*, New York City (*Heather Pearson* of counsel), for respondent.",
+        "normalized": "robert morgenthau, district attorney, new york city (heather pearson of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

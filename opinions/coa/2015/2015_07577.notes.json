@@ -2,7 +2,7 @@
   "caseId": "2015_07577",
   "sourcePath": "coa/2015/2015_07577.htm",
   "notesPath": "coa/2015/2015_07577.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.821Z",
+  "generatedAt": "2026-03-22T19:47:12.895Z",
   "source": {
     "title": "People v Barnes (2015 NY Slip Op 07577)",
     "publicationStatus": "published"
@@ -72,7 +72,8 @@
         "sentenceText": "Cyrus R. Vance, Jr. , District Attorney , New York City ( Sheila O'Shea and Sylvia Wertheimer of counsel), for respondent.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -109,6 +110,21 @@
     "hasFootnotesHeading": false
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Seymour W. James, Jr. , The Legal Aid Society , New York City ( Laura Boyd of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Cyrus R. Vance, Jr. , District Attorney , New York City ( Sheila O'Shea and Sylvia Wertheimer of counsel), for respondent."
+    },
     {
       "code": "MULTIPLE_HEADER_TABLES",
       "severity": "info",

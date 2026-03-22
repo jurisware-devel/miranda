@@ -2,7 +2,7 @@
   "caseId": "2003_18879",
   "sourcePath": "coa/2003/2003_18879.htm",
   "notesPath": "coa/2003/2003_18879.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.202Z",
+  "generatedAt": "2026-03-22T19:47:12.454Z",
   "source": {
     "title": "People v Berrus (2003 NY Slip Op 18879)",
     "publicationStatus": "published"
@@ -78,6 +78,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Costello, Cooney & Fearson, LLP , Syracuse ( Samuel C. Young of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Michael F. Young, District Attorney*, Syracuse and *D.J. & J.A. Cirando* (*John A. Cirando, Lisa M. Cirando, Susan R. Rider* and *Mickelle A. Olawoye* of counsel), for appellant.",
+        "normalized": "michael f. young, district attorney, syracuse and d.j. & j.a. cirando (john a. cirando, lisa m. cirando, susan r. rider and mickelle a. olawoye of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Costello, Cooney & Fearson, LLP*, Syracuse (*Samuel C. Young* of counsel), for respondent.",
+        "normalized": "costello, cooney & fearson, llp, syracuse (samuel c. young of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

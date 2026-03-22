@@ -2,7 +2,7 @@
   "caseId": "2010_09196",
   "sourcePath": "coa/2010/2010_09196.htm",
   "notesPath": "coa/2010/2010_09196.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.511Z",
+  "generatedAt": "2026-03-22T19:47:12.677Z",
   "source": {
     "title": "People v Smith (2010 NY Slip Op 09196)",
     "publicationStatus": "published"
@@ -58,7 +58,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

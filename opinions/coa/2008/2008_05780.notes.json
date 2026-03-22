@@ -2,7 +2,7 @@
   "caseId": "2008_05780",
   "sourcePath": "coa/2008/2008_05780.htm",
   "notesPath": "coa/2008/2008_05780.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.398Z",
+  "generatedAt": "2026-03-22T19:47:12.598Z",
   "source": {
     "title": "Matter of People v Applied Card Sys., Inc. (2008 NY Slip Op 05780)",
     "publicationStatus": "published"
@@ -57,7 +57,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

@@ -2,7 +2,7 @@
   "caseId": "2014_07007",
   "sourcePath": "coa/2014/2014_07007.htm",
   "notesPath": "coa/2014/2014_07007.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.759Z",
+  "generatedAt": "2026-03-22T19:47:12.852Z",
   "source": {
     "title": "People v Jenkins (2014 NY Slip Op 07007)",
     "publicationStatus": "published"
@@ -58,7 +58,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

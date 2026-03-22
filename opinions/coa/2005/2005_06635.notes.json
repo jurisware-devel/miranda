@@ -2,7 +2,7 @@
   "caseId": "2005_06635",
   "sourcePath": "coa/2005/2005_06635.htm",
   "notesPath": "coa/2005/2005_06635.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.290Z",
+  "generatedAt": "2026-03-22T19:47:12.519Z",
   "source": {
     "title": "People v Fernandez (2005 NY Slip Op 06635)",
     "publicationStatus": "published"
@@ -78,6 +78,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Robert M. Morgenthau , District Attorney , New York City ( Sandra E. Cavazos of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Galgano & Associates*, White Plains (*George W. Galgano*, *Jr.*, of counsel), for appellant.",
+        "normalized": "galgano & associates, white plains (george w. galgano, jr., of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Robert M. Morgenthau*, *District Attorney*, New York City (*Sandra E. Cavazos* of counsel), for respondent.",
+        "normalized": "robert m. morgenthau, district attorney, new york city (sandra e. cavazos of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

@@ -2,7 +2,7 @@
   "caseId": "2010_01527",
   "sourcePath": "coa/2010/2010_01527.htm",
   "notesPath": "coa/2010/2010_01527.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.467Z",
+  "generatedAt": "2026-03-22T19:47:12.647Z",
   "source": {
     "title": "People v Williams (2010 NY Slip Op 01527)",
     "publicationStatus": "published"
@@ -70,7 +70,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

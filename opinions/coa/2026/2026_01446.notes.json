@@ -2,7 +2,7 @@
   "caseId": "2026_01446",
   "sourcePath": "coa/2026/2026_01446.htm",
   "notesPath": "coa/2026/2026_01446.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.394Z",
+  "generatedAt": "2026-03-22T19:47:13.319Z",
   "source": {
     "title": "People v Tyson (2026 NY Slip Op 01446)",
     "publicationStatus": "slip_op_only"
@@ -101,6 +101,20 @@
         "sentenceText": "Braedan M. Gillman, for respondent.",
         "possiblyTruncated": false
       }
+    ],
+    "companionAppearances": [
+      {
+        "text": "Michael J. Hillery, for appellant.",
+        "normalized": "michael j. hillery, for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Braedan M. Gillman, for respondent.",
+        "normalized": "braedan m. gillman, for respondent.",
+        "side": "respondent",
+        "possiblyTruncated": false
+      }
     ]
   },
   "sections": {
@@ -158,6 +172,11 @@
       "code": "APPEARANCE_LINE_WITH_ARGUMENT_TAIL",
       "severity": "info",
       "detail": "Appearance-like line continues into argument text after \"for respondent.\"."
+    },
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 3 appearance line(s), but companion JSON has 2."
     },
     {
       "code": "MULTIPLE_WRITINGS",

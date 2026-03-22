@@ -2,7 +2,7 @@
   "caseId": "2010_03472",
   "sourcePath": "coa/2010/2010_03472.htm",
   "notesPath": "coa/2010/2010_03472.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.475Z",
+  "generatedAt": "2026-03-22T19:47:12.652Z",
   "source": {
     "title": "People v Acevedo (2010 NY Slip Op 03472)",
     "publicationStatus": "published"
@@ -76,6 +76,20 @@
         "sentenceText": "William V. Grady, District Attorney , Poughkeepsie ( Bridget Rahilly Steller of counsel), for respondent.",
         "possiblyTruncated": false
       }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Law Offices of Mickey A. Steiman,* Hyde Park (*David L. Steinberg* of counsel), for appellant.",
+        "normalized": "law offices of mickey a. steiman, hyde park (david l. steinberg of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*William",
+        "normalized": "william",
+        "side": null,
+        "possiblyTruncated": true
+      }
     ]
   },
   "sections": {
@@ -119,6 +133,21 @@
     "hasFootnotesHeading": false
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_TRUNCATED",
+      "severity": "warning",
+      "detail": "Companion JSON appearance looks truncated: *William"
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: William V. Grady, District Attorney , Poughkeepsie ( Bridget Rahilly Steller of counsel), for respondent."
+    },
+    {
+      "code": "JSON_APPEARANCE_UNMATCHED",
+      "severity": "info",
+      "detail": "Companion JSON appearance does not directly match any raw appearance sentence: *William"
+    },
     {
       "code": "MULTIPLE_HEADER_TABLES",
       "severity": "info",

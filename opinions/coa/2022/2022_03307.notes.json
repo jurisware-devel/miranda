@@ -2,7 +2,7 @@
   "caseId": "2022_03307",
   "sourcePath": "coa/2022/2022_03307.htm",
   "notesPath": "coa/2022/2022_03307.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.181Z",
+  "generatedAt": "2026-03-22T19:47:13.156Z",
   "source": {
     "title": "People v Rodriguez (2022 NY Slip Op 03307)",
     "publicationStatus": "published"
@@ -57,7 +57,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

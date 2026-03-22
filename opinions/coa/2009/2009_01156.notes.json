@@ -2,7 +2,7 @@
   "caseId": "2009_01156",
   "sourcePath": "coa/2009/2009_01156.htm",
   "notesPath": "coa/2009/2009_01156.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.420Z",
+  "generatedAt": "2026-03-22T19:47:12.613Z",
   "source": {
     "title": "People v Knox (2009 NY Slip Op 01156)",
     "publicationStatus": "published"
@@ -60,7 +60,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

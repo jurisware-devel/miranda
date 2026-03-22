@@ -2,7 +2,7 @@
   "caseId": "2006_02408",
   "sourcePath": "coa/2006/2006_02408.htm",
   "notesPath": "coa/2006/2006_02408.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.316Z",
+  "generatedAt": "2026-03-22T19:47:12.538Z",
   "source": {
     "title": "People v Smith (2006 NY Slip Op 02408)",
     "publicationStatus": "published"
@@ -78,6 +78,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "David W. Foley, District Attorney , Mayville ( Tracey A. Brunecz of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Lipsitz, Green, Fahringer, Roll, Salisbury & Cambria LLP*, Buffalo (*Paul J. Cambria, Jr.*, and *Roger W. Wilcox, Jr.*, of counsel), for appellant.",
+        "normalized": "lipsitz, green, fahringer, roll, salisbury & cambria llp, buffalo (paul j. cambria, jr., and roger w. wilcox, jr., of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*David W. Foley, District Attorney*, Mayville (*Tracey A. Brunecz* of counsel), for respondent.",
+        "normalized": "david w. foley, district attorney, mayville (tracey a. brunecz of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

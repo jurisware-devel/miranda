@@ -2,7 +2,7 @@
   "caseId": "2005_05452",
   "sourcePath": "coa/2005/2005_05452.htm",
   "notesPath": "coa/2005/2005_05452.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.286Z",
+  "generatedAt": "2026-03-22T19:47:12.517Z",
   "source": {
     "title": "People v Paulman (2005 NY Slip Op 05452)",
     "publicationStatus": "published"
@@ -59,7 +59,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

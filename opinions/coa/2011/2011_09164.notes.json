@@ -2,7 +2,7 @@
   "caseId": "2011_09164",
   "sourcePath": "coa/2011/2011_09164.htm",
   "notesPath": "coa/2011/2011_09164.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.584Z",
+  "generatedAt": "2026-03-22T19:47:12.727Z",
   "source": {
     "title": "People v Holland (2011 NY Slip Op 09164)",
     "publicationStatus": "published"
@@ -75,6 +75,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Cyrus R. Vance, Jr., District Attorney , New York City ( William Mahoney, Alan Gadlin and Joseph Davis of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Legal Aid Society, Criminal Appeals Bureau*, New York City (*Arthur H. Hopkirk, Justin Diamant* and *Steven Banks* of counsel), for appellant.",
+        "normalized": "legal aid society, criminal appeals bureau, new york city (arthur h. hopkirk, justin diamant and steven banks of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Cyrus R. Vance, Jr., District Attorney*, New York City (*William Mahoney, Alan Gadlin* and *Joseph Davis* of counsel), for respondent.",
+        "normalized": "cyrus r. vance, jr., district attorney, new york city (william mahoney, alan gadlin and joseph davis of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

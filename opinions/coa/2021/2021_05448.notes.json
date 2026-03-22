@@ -2,7 +2,7 @@
   "caseId": "2021_05448",
   "sourcePath": "coa/2021/2021_05448.htm",
   "notesPath": "coa/2021/2021_05448.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.152Z",
+  "generatedAt": "2026-03-22T19:47:13.135Z",
   "source": {
     "title": "People v Torres (2021 NY Slip Op 05448)",
     "publicationStatus": "published"
@@ -61,7 +61,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

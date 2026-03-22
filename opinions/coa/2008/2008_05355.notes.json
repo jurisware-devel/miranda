@@ -2,7 +2,7 @@
   "caseId": "2008_05355",
   "sourcePath": "coa/2008/2008_05355.htm",
   "notesPath": "coa/2008/2008_05355.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.393Z",
+  "generatedAt": "2026-03-22T19:47:12.594Z",
   "source": {
     "title": "People v Malaussena (2008 NY Slip Op 05355)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Robert T. Johnson, District Attorney , Bronx ( Jacob Kaplan of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Office of the Appellate Defender*, New York City (*Joseph M. Nursey* and *Richard M. Greenberg* of counsel), for appellant.",
+        "normalized": "office of the appellate defender, new york city (joseph m. nursey and richard m. greenberg of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Robert T. Johnson, District Attorney*, Bronx (*Jacob Kaplan* of counsel), for respondent.",
+        "normalized": "robert t. johnson, district attorney, bronx (jacob kaplan of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

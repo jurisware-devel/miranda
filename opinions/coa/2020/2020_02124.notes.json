@@ -2,7 +2,7 @@
   "caseId": "2020_02124",
   "sourcePath": "coa/2020/2020_02124.htm",
   "notesPath": "coa/2020/2020_02124.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.097Z",
+  "generatedAt": "2026-03-22T19:47:13.092Z",
   "source": {
     "title": "People v Foster-Bey (2020 NYSlipOp 02124)",
     "publicationStatus": "unknown"
@@ -99,7 +99,8 @@
         "sentenceText": "The Legal Aid Society , New York City ( David Loftis, J. David Pollock and Terri S. Rosenblatt of counsel), and Hughes Hubbard & Reed LLP , New York City ( William Beausoleil, Marc Weinstein, Miles Orton and Sabrine Tribi&#233; of counsel), for The Legal Aid Society, amicus curiae.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -145,6 +146,36 @@
       "code": "TRUNCATED_APPEARANCE_LINE",
       "severity": "warning",
       "detail": "Appearance-like line may be truncated: Jones Day , New York City ( Meir Feder and Donald L.R. Goodson of counsel), for Office of the Appellate Defender, Inc., and others, amici curiae"
+    },
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 5 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Paul Skip Laisure, Appellate Advocates , New York City ( Dina Zloczower of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Eric Gonzalez, District Attorney , Brooklyn ( Seth M. Lieberman and Leonard Joblove of counsel), for respondent."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Weil, Gotshal & Manges LLP , New York City ( Konrad Cailteux and Carolyn R. Davis of counsel), and Innocence Project, Inc. , New York City ( M. Chris Fabricant of counsel), for The Innocence Project, amicus curiae."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Jones Day , New York City ( Meir Feder and Donald L.R. Goodson of counsel), for Office of the Appellate Defender, Inc., and others, amici curiae"
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: The Legal Aid Society , New York City ( David Loftis, J. David Pollock and Terri S. Rosenblatt of counsel), and Hughes Hubbard & Reed LLP , New York City ( William Beausoleil, Marc Weinstein, Miles Orton and Sabrine Tribi&#233; of counsel), for The Legal Aid Society, amicus curiae."
     },
     {
       "code": "MULTIPLE_WRITINGS",

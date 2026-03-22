@@ -2,7 +2,7 @@
   "caseId": "2011_07146",
   "sourcePath": "coa/2011/2011_07146.htm",
   "notesPath": "coa/2011/2011_07146.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.559Z",
+  "generatedAt": "2026-03-22T19:47:12.709Z",
   "source": {
     "title": "People v Brown (2011 NY Slip Op 07146)",
     "publicationStatus": "published"
@@ -75,6 +75,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Frank A. Sedita, III, District Attorney , Buffalo ( Matthew B. Powers and Donna A. Milling of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Legal Aid Bureau of Buffalo, Inc.*, Buffalo (*Susan C. Ministero*, *Barbara J. Davies* and *David C. Schopp* of counsel), for appellant.",
+        "normalized": "legal aid bureau of buffalo, inc., buffalo (susan c. ministero, barbara j. davies and david c. schopp of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Frank A. Sedita, III, District Attorney*, Buffalo (*Matthew B. Powers* and *Donna A. Milling* of counsel), for respondent.",
+        "normalized": "frank a. sedita, iii, district attorney, buffalo (matthew b. powers and donna a. milling of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

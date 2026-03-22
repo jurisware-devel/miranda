@@ -2,7 +2,7 @@
   "caseId": "2022_05916",
   "sourcePath": "coa/2022/2022_05916.htm",
   "notesPath": "coa/2022/2022_05916.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.190Z",
+  "generatedAt": "2026-03-22T19:47:13.162Z",
   "source": {
     "title": "People v Murray (2022 NY Slip Op 05916)",
     "publicationStatus": "published"
@@ -59,7 +59,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

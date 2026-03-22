@@ -2,7 +2,7 @@
   "caseId": "2026_00823",
   "sourcePath": "coa/2026/2026_00823.htm",
   "notesPath": "coa/2026/2026_00823.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.376Z",
+  "generatedAt": "2026-03-22T19:47:13.304Z",
   "source": {
     "title": "People v Dondorfer (2026 NY Slip Op 00823)",
     "publicationStatus": "slip_op_only"
@@ -82,6 +82,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Dana Poole, for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "Fares A. Rumi, for appellant.",
+        "normalized": "fares a. rumi, for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Dana Poole, for respondent.",
+        "normalized": "dana poole, for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

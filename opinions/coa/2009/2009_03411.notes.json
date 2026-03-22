@@ -2,7 +2,7 @@
   "caseId": "2009_03411",
   "sourcePath": "coa/2009/2009_03411.htm",
   "notesPath": "coa/2009/2009_03411.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.430Z",
+  "generatedAt": "2026-03-22T19:47:12.621Z",
   "source": {
     "title": "People v Aleman (2009 NY Slip Op 03411)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Robert M. Morgenthau, District Attorney , New York City ( Alice Wiseman and Hilary Hassler of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Office of the Appellate Defender*, New York City (*Richard M. Greenberg* and *Christina Graves* of counsel), for appellant.",
+        "normalized": "office of the appellate defender, new york city (richard m. greenberg and christina graves of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Robert M. Morgenthau, District Attorney*, New York City (*Alice Wiseman* and *Hilary Hassler* of counsel), for respondent.",
+        "normalized": "robert m. morgenthau, district attorney, new york city (alice wiseman and hilary hassler of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

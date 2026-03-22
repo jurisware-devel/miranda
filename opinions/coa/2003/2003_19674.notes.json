@@ -2,7 +2,7 @@
   "caseId": "2003_19674",
   "sourcePath": "coa/2003/2003_19674.htm",
   "notesPath": "coa/2003/2003_19674.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.216Z",
+  "generatedAt": "2026-03-22T19:47:12.465Z",
   "source": {
     "title": "People v Andrew (2003 NY Slip Op 19674)",
     "publicationStatus": "published"
@@ -78,6 +78,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Richard A. Brown , District Attorney , Kew Gardens ( Thomas S. Berkman and John M. Castellano of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*De Nice Powell*, New York City, and *Lynn W.L. Fahey* for appellant.",
+        "normalized": "de nice powell, new york city, and lynn w.l. fahey for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Richard A. Brown*, *District Attorney*, Kew Gardens (*Thomas S. Berkman* and *John M. Castellano* of counsel), for respondent.",
+        "normalized": "richard a. brown, district attorney, kew gardens (thomas s. berkman and john m. castellano of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

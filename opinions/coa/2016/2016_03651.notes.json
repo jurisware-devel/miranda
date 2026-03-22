@@ -2,7 +2,7 @@
   "caseId": "2016_03651",
   "sourcePath": "coa/2016/2016_03651.htm",
   "notesPath": "coa/2016/2016_03651.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.881Z",
+  "generatedAt": "2026-03-22T19:47:12.939Z",
   "source": {
     "title": "People v Connolly (2016 NY Slip Op 03651)",
     "publicationStatus": "published"
@@ -58,7 +58,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

@@ -2,7 +2,7 @@
   "caseId": "2021_07057",
   "sourcePath": "coa/2021/2021_07057.htm",
   "notesPath": "coa/2021/2021_07057.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.170Z",
+  "generatedAt": "2026-03-22T19:47:13.148Z",
   "source": {
     "title": "People v Lamb (2021 NY Slip Op 07057)",
     "publicationStatus": "published"
@@ -80,7 +80,8 @@
         "sentenceText": "Cyrus R. Vance, Jr., District Attorney , New York City ( John T. Hughes, Jonathan Krois and Patrick J. Hynes of counsel), for respondent.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -162,6 +163,21 @@
       "code": "STRAY_CLOSING_TAG",
       "severity": "warning",
       "detail": "Closing tag </font> appears more times than opening tag <font>."
+    },
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Robert S. Dean, Center for Appellate Litigation , New York City ( Mark W. Zeno of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Cyrus R. Vance, Jr., District Attorney , New York City ( John T. Hughes, Jonathan Krois and Patrick J. Hynes of counsel), for respondent."
     },
     {
       "code": "MULTIPLE_WRITINGS",

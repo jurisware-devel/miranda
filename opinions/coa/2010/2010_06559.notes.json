@@ -2,7 +2,7 @@
   "caseId": "2010_06559",
   "sourcePath": "coa/2010/2010_06559.htm",
   "notesPath": "coa/2010/2010_06559.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.496Z",
+  "generatedAt": "2026-03-22T19:47:12.667Z",
   "source": {
     "title": "People v Ramirez (2010 NY Slip Op 06559)",
     "publicationStatus": "published"
@@ -75,6 +75,20 @@
         "sentenceText": "Cyrus R. Vance, Jr., District Attorney , New York City ( Grace Vee of counsel), for respondent.",
         "possiblyTruncated": false
       }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Schlather, Stumbar, Parks & Salk, LLP*, Ithaca (*Diane",
+        "normalized": "schlather, stumbar, parks & salk, llp, ithaca (diane",
+        "side": null,
+        "possiblyTruncated": true
+      },
+      {
+        "text": "*Cyrus R. Vance, Jr., District Attorney*, New York City (*Grace Vee* of counsel), for respondent.",
+        "normalized": "cyrus r. vance, jr., district attorney, new york city (grace vee of counsel), for respondent.",
+        "side": "respondent",
+        "possiblyTruncated": false
+      }
     ]
   },
   "sections": {
@@ -112,6 +126,21 @@
     "hasFootnotesHeading": false
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_TRUNCATED",
+      "severity": "warning",
+      "detail": "Companion JSON appearance looks truncated: *Schlather, Stumbar, Parks & Salk, LLP*, Ithaca (*Diane"
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Schlather, Stumbar, Parks & Salk, LLP , Ithaca ( Diane V. Bruns of counsel), for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_UNMATCHED",
+      "severity": "info",
+      "detail": "Companion JSON appearance does not directly match any raw appearance sentence: *Schlather, Stumbar, Parks & Salk, LLP*, Ithaca (*Diane"
+    },
     {
       "code": "MULTIPLE_HEADER_TABLES",
       "severity": "info",

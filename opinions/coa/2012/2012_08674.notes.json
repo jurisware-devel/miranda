@@ -2,7 +2,7 @@
   "caseId": "2012_08674",
   "sourcePath": "coa/2012/2012_08674.htm",
   "notesPath": "coa/2012/2012_08674.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.643Z",
+  "generatedAt": "2026-03-22T19:47:12.769Z",
   "source": {
     "title": "People v Riley",
     "publicationStatus": "published"
@@ -58,7 +58,21 @@
     "authorLine": null,
     "appearanceSectionType": "appearances_only",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": [
+      {
+        "text": "Cyrus R. Vance, Jr., District Attorney, New York City (Andrew E. Seewald of counsel), for appellant-respondent.",
+        "normalized": "cyrus r. vance, jr., district attorney, new york city (andrew e. seewald of counsel), for appellant-respondent.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Robert S. Dean, Center for Appellate Litigation, New York City (Bruce D. Austern of counsel), for respondent-appellant.",
+        "normalized": "robert s. dean, center for appellate litigation, new york city (bruce d. austern of counsel), for respondent-appellant.",
+        "side": "respondent",
+        "possiblyTruncated": false
+      }
+    ]
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -104,6 +118,21 @@
       "code": "UNKNOWN_TAG",
       "severity": "info",
       "detail": "Encountered unknown tag <span> in source HTML."
+    },
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 0 appearance line(s), but companion JSON has 2."
+    },
+    {
+      "code": "JSON_APPEARANCE_UNMATCHED",
+      "severity": "info",
+      "detail": "Companion JSON appearance does not directly match any raw appearance sentence: Cyrus R. Vance, Jr., District Attorney, New York City (Andrew E. Seewald of counsel), for appellant-respondent."
+    },
+    {
+      "code": "JSON_APPEARANCE_UNMATCHED",
+      "severity": "info",
+      "detail": "Companion JSON appearance does not directly match any raw appearance sentence: Robert S. Dean, Center for Appellate Litigation, New York City (Bruce D. Austern of counsel), for respondent-appellant."
     },
     {
       "code": "MULTIPLE_WRITINGS",

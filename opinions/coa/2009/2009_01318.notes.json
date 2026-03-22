@@ -2,7 +2,7 @@
   "caseId": "2009_01318",
   "sourcePath": "coa/2009/2009_01318.htm",
   "notesPath": "coa/2009/2009_01318.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.424Z",
+  "generatedAt": "2026-03-22T19:47:12.616Z",
   "source": {
     "title": "People v Quinones (2009 NY Slip Op 01318)",
     "publicationStatus": "published"
@@ -60,7 +60,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

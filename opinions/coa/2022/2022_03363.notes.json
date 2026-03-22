@@ -2,7 +2,7 @@
   "caseId": "2022_03363",
   "sourcePath": "coa/2022/2022_03363.htm",
   "notesPath": "coa/2022/2022_03363.notes.json",
-  "generatedAt": "2026-03-22T19:41:27.185Z",
+  "generatedAt": "2026-03-22T19:47:13.159Z",
   "source": {
     "title": "People v Wideman (2022 NY Slip Op 03363)",
     "publicationStatus": "published"
@@ -73,7 +73,8 @@
         "sentenceText": "Andrew J. Wylie, District Attorney , Plattsburgh ( Jamie A. Douthat of counsel), for respondent.",
         "possiblyTruncated": false
       }
-    ]
+    ],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
@@ -112,6 +113,21 @@
     "hasFootnotesHeading": true
   },
   "anomalies": [
+    {
+      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
+      "severity": "warning",
+      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Mitch Kessler , Cohoes, for appellant."
+    },
+    {
+      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
+      "severity": "warning",
+      "detail": "Raw appearance sentence is not reproduced in companion JSON: Andrew J. Wylie, District Attorney , Plattsburgh ( Jamie A. Douthat of counsel), for respondent."
+    },
     {
       "code": "MULTIPLE_HEADER_TABLES",
       "severity": "info",

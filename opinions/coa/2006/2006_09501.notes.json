@@ -2,7 +2,7 @@
   "caseId": "2006_09501",
   "sourcePath": "coa/2006/2006_09501.htm",
   "notesPath": "coa/2006/2006_09501.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.344Z",
+  "generatedAt": "2026-03-22T19:47:12.560Z",
   "source": {
     "title": "People v Bradley (2006 NY Slip Op 09501)",
     "publicationStatus": "published"
@@ -59,7 +59,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

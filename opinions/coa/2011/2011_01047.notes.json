@@ -2,7 +2,7 @@
   "caseId": "2011_01047",
   "sourcePath": "coa/2011/2011_01047.htm",
   "notesPath": "coa/2011/2011_01047.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.516Z",
+  "generatedAt": "2026-03-22T19:47:12.680Z",
   "source": {
     "title": "People v Campbell (2011 NY Slip Op 01047)",
     "publicationStatus": "published"
@@ -73,6 +73,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Cyrus R. Vance, Jr., District Attorney , New York City ( Ellen Stanfield Friedman and Richard Nahas of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Davis Polk & Wardwell LLP*, New York City (*Katharine M. Atlas* of counsel), and *Office of the Appellate Defender* (*Daniel Warshawsky* and *Richard M. Greenberg* of counsel) for appellant.",
+        "normalized": "davis polk & wardwell llp, new york city (katharine m. atlas of counsel), and office of the appellate defender (daniel warshawsky and richard m. greenberg of counsel) for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Cyrus R. Vance, Jr., District Attorney*, New York City (*Ellen Stanfield Friedman* and *Richard Nahas* of counsel), for respondent.",
+        "normalized": "cyrus r. vance, jr., district attorney, new york city (ellen stanfield friedman and richard nahas of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

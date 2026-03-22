@@ -2,7 +2,7 @@
   "caseId": "2010_09378",
   "sourcePath": "coa/2010/2010_09378.htm",
   "notesPath": "coa/2010/2010_09378.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.513Z",
+  "generatedAt": "2026-03-22T19:47:12.678Z",
   "source": {
     "title": "People v Porto (2010 NY Slip Op 09378)",
     "publicationStatus": "published"
@@ -60,7 +60,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

@@ -2,7 +2,7 @@
   "caseId": "2005_03897",
   "sourcePath": "coa/2005/2005_03897.htm",
   "notesPath": "coa/2005/2005_03897.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.277Z",
+  "generatedAt": "2026-03-22T19:47:12.510Z",
   "source": {
     "title": "People v Hill (2005 NY Slip Op 03897)",
     "publicationStatus": "published"
@@ -78,6 +78,20 @@
         "hasArgumentTail": false,
         "argumentTailPreview": null,
         "sentenceText": "Robert T. Johnson , District Attorney , Bronx ( Allen H. Saperstein of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ],
+    "companionAppearances": [
+      {
+        "text": "*Center for Appellate Litigation*, New York City (*Jan Hoth* of counsel), for appellant.",
+        "normalized": "center for appellate litigation, new york city (jan hoth of counsel), for appellant.",
+        "side": "appellant",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "*Robert T. Johnson*, *District Attorney*, Bronx (*Allen H. Saperstein* of counsel), for respondent.",
+        "normalized": "robert t. johnson, district attorney, bronx (allen h. saperstein of counsel), for respondent.",
+        "side": "respondent",
         "possiblyTruncated": false
       }
     ]

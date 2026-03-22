@@ -2,7 +2,7 @@
   "caseId": "2012_06987",
   "sourcePath": "coa/2012/2012_06987.htm",
   "notesPath": "coa/2012/2012_06987.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.624Z",
+  "generatedAt": "2026-03-22T19:47:12.756Z",
   "source": {
     "title": "People v Western Express Intl., Inc. (2012 NY Slip Op 06987)",
     "publicationStatus": "published"
@@ -59,7 +59,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,

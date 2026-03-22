@@ -2,7 +2,7 @@
   "caseId": "2015_04875",
   "sourcePath": "coa/2015/2015_04875.htm",
   "notesPath": "coa/2015/2015_04875.notes.json",
-  "generatedAt": "2026-03-22T19:41:26.808Z",
+  "generatedAt": "2026-03-22T19:47:12.887Z",
   "source": {
     "title": "People v Middlebrooks (2015 NY Slip Op 04875)",
     "publicationStatus": "published"
@@ -64,7 +64,8 @@
     "authorLine": null,
     "appearanceSectionType": "none",
     "pointsOfCounselCount": 0,
-    "appearanceLikeLines": []
+    "appearanceLikeLines": [],
+    "companionAppearances": []
   },
   "sections": {
     "summarySectionsCount": 0,
