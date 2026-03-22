@@ -1,0 +1,127 @@
+{
+  "caseId": "2004_08783",
+  "sourcePath": "coa/2004/2004_08783.htm",
+  "notesPath": "coa/2004/2004_08783.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.256Z",
+  "source": {
+    "title": "People v Rodriguez (2004 NY Slip Op 08783)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 31266,
+    "lineCount": 164,
+    "tagCounts": {
+      "a": 50,
+      "b": 54,
+      "body": 2,
+      "br": 34,
+      "div": 8,
+      "font": 44,
+      "head": 2,
+      "html": 2,
+      "i": 74,
+      "p": 36,
+      "script": 4,
+      "style": 2,
+      "sup": 24,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Rodriguez",
+      "2004 NY Slip Op 08783 [3 NY3d 462]",
+      "November 30, 2004",
+      "Rosenblatt, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, January 26, 2005"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Franklin Rodriguez, Appellant."
+    ],
+    "citationLine": "2004 NY Slip Op 08783 3 NY3d 462",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued October 19, 2004; decided November 30, 2004",
+      "November 30, 2004",
+      "As corrected through Wednesday, January 26, 2005"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 34,
+    "footnotesCount": 12
+  },
+  "citations": {
+    "slipOpinion": "2004 NY Slip Op 08783",
+    "officialCitation": "3 NY3d 462",
+    "pageMarkerCount": 21
+  },
+  "opinionStructure": {
+    "totalWritings": 4,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "concurrence": 1
+    },
+    "authors": [
+      "Rosenblatt",
+      "Graffeo"
+    ],
+    "qualifierLines": [
+      "{**3 NY3d at 464} OPINION OF THE COURT",
+      "Three of our colleagues would hold that the trial court properly admitted the alibi notice as evidence. We disagree. The statute offers two remedies. In its discretion, the trial court may preclude the alibi testimony (in whole or part) or it may receive it, provided the court first gives the prosecution a chance—an adjournment of not more than three days—to investigate. {**3 NY3d at 469}What the statute does not permit is the sanction the court allowed here. Despite the suggestion in the concurrence, our holding does not chill defendant's constitutional right to present a defense. The trial court could have allowed the alibi defense following an adjournment. We conclude, however, that neither the statute nor the rules of evidence supported the court's ruling here. We find it odd of our concurring colleagues to justify their affirmance based on the absence of error and to then characterize such an affirmance as somehow more protective of defendant's constitutional rights. Indeed, an affirmance in which we condone the misuse of the alibi notice could carry its own constitutional objections. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 1,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 12,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 4 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

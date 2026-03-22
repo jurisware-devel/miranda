@@ -1,0 +1,107 @@
+{
+  "caseId": "2016_06853",
+  "sourcePath": "coa/2016/2016_06853.htm",
+  "notesPath": "coa/2016/2016_06853.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.899Z",
+  "source": {
+    "title": "People v Allard (2016 NY Slip Op 06853)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 13276,
+    "lineCount": 90,
+    "tagCounts": {
+      "a": 12,
+      "b": 10,
+      "body": 2,
+      "br": 10,
+      "div": 6,
+      "font": 14,
+      "head": 2,
+      "html": 2,
+      "i": 30,
+      "p": 32,
+      "script": 4,
+      "style": 2,
+      "sup": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Allard",
+      "2016 NY Slip Op 06853 [28 NY3d 41]",
+      "October 20, 2016",
+      "Garcia, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, December 7, 2016"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Appellant,",
+      "v",
+      "Dru Allard, Respondent."
+    ],
+    "citationLine": "2016 NY Slip Op 06853 28 NY3d 41",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued September 6, 2016; decided October 20, 2016",
+      "October 20, 2016",
+      "As corrected through Wednesday, December 7, 2016"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 14,
+    "footnotesCount": 1
+  },
+  "citations": {
+    "slipOpinion": "2016 NY Slip Op 06853",
+    "officialCitation": "28 NY3d 41",
+    "pageMarkerCount": 6
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [
+      "Garcia"
+    ],
+    "qualifierLines": [
+      "{**28 NY3d at 43} OPINION OF THE COURT"
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 1,
+    "labels": [
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

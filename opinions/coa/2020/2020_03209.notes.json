@@ -1,0 +1,119 @@
+{
+  "caseId": "2020_03209",
+  "sourcePath": "coa/2020/2020_03209.htm",
+  "notesPath": "coa/2020/2020_03209.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.102Z",
+  "source": {
+    "title": "People v Ball (2020 NY Slip Op 03209)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 3611,
+    "lineCount": 71,
+    "tagCounts": {
+      "a": 6,
+      "b": 4,
+      "body": 2,
+      "br": 6,
+      "div": 6,
+      "font": 6,
+      "head": 2,
+      "html": 2,
+      "i": 12,
+      "opinion": 1,
+      "p": 10,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Ball",
+      "2020 NY Slip Op 03209 [35 NY3d 1009]",
+      "June 9, 2020",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, July 29, 2020"
+    ],
+    "captionLines": [],
+    "citationLine": "2020 NY Slip Op 03209 35 NY3d 1009",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Decided June 9, 2020",
+      "June 9, 2020",
+      "As corrected through Wednesday, July 29, 2020"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "William J. Fitzpatrick, District Attorney , Syracuse ( Kenneth H. Tyler, Jr. , of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "William J. Fitzpatrick, District Attorney , Syracuse ( Kenneth H. Tyler, Jr. , of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "D.J. & J.A. Cirando, PLLC , Syracuse ( John A. Cirando of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "D.J. & J.A. Cirando, PLLC , Syracuse ( John A. Cirando of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 3,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2020 NY Slip Op 03209",
+    "officialCitation": "35 NY3d 1009",
+    "pageMarkerCount": 2
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**35 NY3d at 1009} OPINION OF THE COURT",
+      "On review of submissions pursuant to section 500.11 of the Rules of the Court of Appeals (22 NYCRR 500.11), order affirmed, for reasons stated in the memorandum at the Appellate Division (, 175 AD3d 987 [4th Dept 2019]).",
+      "Concur: Chief Judge DiFiore and Judges Rivera, Stein, Fahey, Garcia, Wilson and Feinman."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "caseId": "2022_07022",
+  "sourcePath": "coa/2022/2022_07022.htm",
+  "notesPath": "coa/2022/2022_07022.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.194Z",
+  "source": {
+    "title": "People v Kaval (2022 NY Slip Op 07022)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 24550,
+    "lineCount": 108,
+    "tagCounts": {
+      "a": 32,
+      "b": 14,
+      "body": 2,
+      "br": 16,
+      "div": 12,
+      "font": 32,
+      "head": 2,
+      "html": 2,
+      "i": 98,
+      "opinion": 1,
+      "p": 59,
+      "script": 4,
+      "style": 2,
+      "sup": 4,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14,
+      "u": 4
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Kaval",
+      "2022 NY Slip Op 07022 [39 NY3d 1081]",
+      "December 13, 2022",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, April 12, 2023"
+    ],
+    "captionLines": [],
+    "citationLine": "2022 NY Slip Op 07022 39 NY3d 1081",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued November 15, 2022; decided December 13, 2022",
+      "December 13, 2022",
+      "As corrected through Wednesday, April 12, 2023"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Melinda Katz, District Attorney , Kew Gardens ( Christopher J. Blira-Koessler , John M. Castellano and Johnnette Traill of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Melinda Katz, District Attorney , Kew Gardens ( Christopher J. Blira-Koessler , John M. Castellano and Johnnette Traill of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Twyla Carter, The Legal Aid Society , New York City ( Simon Greenberg of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Twyla Carter, The Legal Aid Society , New York City ( Simon Greenberg of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 28,
+    "footnotesCount": 2
+  },
+  "citations": {
+    "slipOpinion": "2022 NY Slip Op 07022",
+    "officialCitation": "39 NY3d 1081",
+    "pageMarkerCount": 15
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Wilson"
+    ],
+    "qualifierLines": [
+      "{**39 NY3d at 1082} OPINION OF THE COURT",
+      "Memorandum.",
+      "On remittal, Supreme Court resentenced defendant as a persistent violent felony offender, relying on supplemental evidence of defendant's prior incarceration brought to the court's{**39 NY3d at 1083} attention in connection with collateral motion practice. Defendant appealed, and the Appellate Division, with one Justice dissenting, vacated defendant's resentence and remitted for a second time. The Court declined to revisit its prior determination that defendant did not qualify as a persistent violent felony offender under the law of the case doctrine and directed Supreme Court to resentence defendant as a second violent felony offender (, 194 AD3d 746 [2d Dept 2021] [Kaval II]). The People now appeal by leave of the dissenting Justice.",
+      "Under the particular circumstances of this case, the Appellate Division should have affirmed defendant's resentencing as a persistent violent felony offender. At the time of resentencing, Supreme Court was on notice of the supplemental evidence of defendant's prior incarceration, which conclusively demonstrates that defendant is, in fact, a persistent violent felony offender. Further, the Appellate Division did not limit its remittal in Kaval I as it has in other cases (, 185 AD3d 958, 959 [2d Dept 2020], lv denied 35 NY2d 1112 [2020]; , 148 AD3d 1180, 1182 [2d Dept 2017], lv denied 29 NY3d 1079 [2017]; , 58 AD3d 646, 646 [2d Dept 2009], lv denied 12 NY3d 860 [2009]). On these facts, Supreme Court was not precluded from imposing the statutorily required sentence based on the evidence before it, particularly given that court's \"inherent authority to correct illegal sentences\" (, 14 NY3d 198, 217 [2010]; People v DeValle, 94 NY2d 870, 871-872 [2000]; , 173 AD3d 1617, 1621 [4th Dept 2019], lv denied 34 NY3d 954 [2019]), and the statutory sentencing procedures, which we have described as \"mandatory [in] nature\" (People v Scarbrough, 66 NY2d 673 [1985], revg for reasons stated in dissenting op 105 AD2d 1107, 1108-1109 [4th Dept 1984]). While providing safeguards like notice and an opportunity to be heard, the procedures also generally require that pertinent \"information available to the court or to the people\" be presented and used to determine a defendant's sentence (CPL 400.15 [2]; Penal Law § 70.08 [2] [when a court determines \"that a person is a persistent violent felony offender,\" it \"must impose an indeterminate sentence\" in compliance with the statute]).",
+      "Contrary to the dissent's suggestion, post-conviction motions based on actual innocence and CPL 440.20 and 440.40 motions to set aside sentences are subject to different statutory limitations{**39 NY3d at 1084} and implicate different interests. This is a direct appeal from a sentence which is yet to become final. Although we certainly do not condone the People's unexplained lack of diligence in presenting the supplemental evidence at the original sentencing hearing, on the record before us, that evidence demonstrates that Supreme Court correctly resentenced defendant as a persistent violent felony offender.",
+      "The majority's position, which flies in the face of the pervasive rule that litigants receive one full and fair opportunity to prove their case, rests on our summary reversal in People v Scarbrough (66 NY2d 673 [1985]), adopting Justice Boomer's dissent in the Appellate Division. The majority here reads his dissent as holding that, because PVFO determinations{**39 NY3d at 1088} are \"mandatory in nature,\" the People are entitled to repeated attempts to meet their burden.",
+      "Scarbrough did not involve the failure of the People to adduce sufficient proof. In that case, the People informed the court that they would file a predicate felony statement; the presentence report, available to the court at sentencing, showed that the defendant had a prior felony conviction; and the court advised the defendant of a sentence that could only have been imposed on a predicate felon. Scarbrough's reference to the \"mandatory nature\" is to the \"procedure that must be followed,\" specifically, that \"a statement must be filed by the prosecutor before sentence is imposed\" (105 AD2d at 1108 [Boomer, J., dissenting]).",
+      "The concern expressed in Justice Boomer's dissent, which we adopted, was that the Appellate Division majority's holding in that case would have allowed the predicate felony sentencing scheme \"to be circumvented by plea bargaining and by the acquiescence of a sentencing Judge whenever he is inclined to extend leniency in violation of the legislative mandate\" (105 AD2d at 1109). No such concern is present in cases such as this one, where the correct procedure is followed, and the People attempt but fail to meet their burden. I do not disagree that the procedure to designate someone a PVFO is mandatory. Penal Law § 70.08 (2) reads: \"[w]hen the court has found, pursuant to the provisions of the criminal procedure law, that a person is a persistent violent felony offender the court must impose an indeterminate sentence of imprisonment, the maximum term of which shall be life imprisonment\" (emphasis added). Neither the provisions of the Criminal Procedure Law, nor any other law, suggest that we should allow successive{**39 NY3d at 1089} bites at the apple to those given a full and fair chance to prove their case. The People can offer no support, and the majority cites none, suggesting that the People can keep introducing \"new\" evidence at successive resentencing hearings despite ample opportunity to do so previously and without some colorable excuse for their prior failure (cf. People v Havelka, 45 NY2d 636, 644 [1978]; , 19 NY3d 335, 344-345 [2012]).",
+      "Acting Chief Judge Cannataro and Judges Rivera, Garcia, Singas and Troutman concur; Judge Wilson dissents and votes to affirm in an opinion."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 2,
+    "labels": [
+      "1",
+      "2"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "caseId": "2021_03486",
+  "sourcePath": "coa/2021/2021_03486.htm",
+  "notesPath": "coa/2021/2021_03486.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.148Z",
+  "source": {
+    "title": "People v Schneider (2021 NY Slip Op 03486)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 101083,
+    "lineCount": 245,
+    "tagCounts": {
+      "a": 102,
+      "b": 70,
+      "blockquote": 26,
+      "body": 2,
+      "br": 40,
+      "div": 28,
+      "font": 112,
+      "head": 2,
+      "html": 2,
+      "i": 340,
+      "p": 142,
+      "script": 4,
+      "style": 2,
+      "sup": 32,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 22
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Schneider",
+      "2021 NY Slip Op 03486 [37 NY3d 187]",
+      "June 3, 2021",
+      "DiFiore, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, September 22, 2021"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Joseph Schneider, Appellant."
+    ],
+    "citationLine": "2021 NY Slip Op 03486 37 NY3d 187",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued May 5, 2021; decided June 3, 2021",
+      "June 3, 2021",
+      "As corrected through Wednesday, September 22, 2021"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 88,
+    "footnotesCount": 16
+  },
+  "citations": {
+    "slipOpinion": "2021 NY Slip Op 03486",
+    "officialCitation": "37 NY3d 187",
+    "pageMarkerCount": 55
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "DiFiore",
+      "Wilson"
+    ],
+    "qualifierLines": [
+      "{**37 NY3d at 189} OPINION OF THE COURT",
+      "Turning next to the operative statutory language governing the \"manner and time of execution,\" CPL 700.35 (1) provides that \"[a]n eavesdropping . . . warrant must be executed according to its terms by a law enforcement officer who is a member of the law enforcement agency authorized in the warrant to intercept the communications . . . .\" The law enforcement officers here were competent to execute the warrants because they were authorized to investigate and arrest defendant in the jurisdiction where the interception occurred (see CPL 700.05 [6]). Notwithstanding the dissent's suggestion that defendant had no connection to New York (dissenting op at 208), the investigation and prosecution of defendant and his accomplices based on their participation in the gambling enterprise that operated in Kings County are not challenged and were jurisdictionally sound (see People v Di Pasquale, 47 NY2d 764, 765 [1979]; CPL 20.40; , 6 NY3d 305, 312 [2005]).",
+      "\"Eavesdropping\" contemplates the performance of specific acts by government actors in three ways—wiretapping, mechanical overhearing of a conversation, or intercepting or accessing of an electronic communication (see CPL 700.05 [1]). The judicial warrants here authorized interception of both telephonic and electronic communications. Telephonic communications,{**37 NY3d at 197} when \"intentionally overheard or recorded . . . by means of any instrument, device or equipment,\" are \"[i]ntercepted communication[s]\"—as are electronic communications that are \"intentionally intercepted or accessed\" (CPL 700.05 [3]; Penal Law § 250.00 [6]). Given the inclusion of telephonic communications in the definition of \"intercepted communication,\" the dissent's view that the legislature inexplicably failed to authorize interception and \"wiretapping\" of telephonic communications occurring on cellular phones is meritless (see dissenting op at 209-210). Notably, under the dissent's rather absurd hypothesis, the government apparently could not eavesdrop on cellular communications even where a cell phone or call participant is located within New York's borders.",
+      "To be sure, the rerouting of cell phone communications by third-party service providers to the point of execution by authorized law enforcement officers enables \"interception\" as authorized by the warrant to occur, but is not itself the court-{**37 NY3d at 199}ordered interception. Federal and state statutes expressly recognize that telephonic communications are aural transfers, in part, and are controlled by service providers between two points (see e.g. Penal Law § 250.00 [3]). Anticipating the use of emerging technologies in the commission of crime, both federal and state statutes have recognized for decades the necessity of third-party communications carriers to facilitate court-ordered interception through switching technology that enables the rerouting of calls. To that end, in 1994, Congress enacted the Communications Assistance for Law Enforcement Act (CALEA) to preserve the government's ability, pursuant to court order, to intercept communications involving technologies such as digital and wireless transmission modes (see United States Telecom Assn. v Federal Communications Commn., 227 F3d 450, 454 [2000]). Most significantly, the act \"d[id] not alter the existing legal framework for obtaining wiretap . . . authorization,\" as CALEA was intended to \"preserve the status quo\" (id. at 455). Similarly, in New York, pursuant to CPL 700.30 (9), an eavesdropping order may direct communications service providers to \"furnish the applicant information, facilities, or technical assistance necessary to accomplish the interception unobtrusively and with a minimum of interference\" to the service customer. Contrary to the dissent's conclusion, private communication carriers do not \"execute\" the warrant (dissenting op at 214). Indeed, our state statute mandates that the court \"shall not direct the service providers to perform the intercept or use the premises of the service provider for such activity\" (CPL 700.30 [9] [emphasis added]). Plainly, under CALEA and CPL 700.30 (9), an order directing the telecommunications carrier, which alone controls the transfer of communications, to provide technical assistance to investigators is not the equivalent of an interception; rather, these statutes anticipate the rerouting of digital communications by third parties employing their up-to-date technology as a preparatory step to effectuate the execution of eavesdropping warrants by government agents.",
+      "This second paragraph was a direct response to Olmstead. In a message to the convention, Governor Lehman emphasized the need to protect scrupulously against wiretapping, citing to Justice Brandeis' dissent in Olmstead for the proposition that \"writs of assistance and general warrants are but puny instruments of tyranny oppression when compared with wire tapping\" (Message of Governor Lehman, 1 Rev Rec, 1938 NY Constitutional Convention at 339, quoting 277 US at 476 [Brandeis, J., dissenting]; see also Speech of Delegate Thomas B. Dyett, 1 Rev Rec, 1938 NY Constitutional Convention at 505, quoting 277 US at 474-475; Speech of Delegate Philip Halpern, 1 Rev Rec, 1938 NY Constitutional Convention at 550). Article I, § 12 of the New York Constitution does not \"authorize\" wiretapping: rather, it expresses our State's fundamental distrust of the use of wiretapping and intention strictly to limit its availability.",
+      "Furthermore, simply as a matter of common sense, when a signal is diverted to bring it into New York, it is done so by command of a warrant. If the warrant is never executed, the signal will not be diverted; if the signal is diverted, it is{**37 NY3d at 214} diverted solely by execution of the warrant. The fact that the telephone company, rather than the police, conduct the physical diversion is of no legal importance. Private actors working at the behest of law enforcement are treated as law enforcement (see People v Esposito, 37 NY2d 156, 160 [1975]). Where a telephone company acting pursuant to a warrant diverts an out-of-jurisdiction telephone call, it has executed the warrant at a point outside the judicial district in which the issuing court sits, which article 700 does not allow. The fact that it is later listened to within the judicial district of the issuing court does not erase the warrant's initial out-of-jurisdiction execution (cf. United States v Rodriguez, 968 F2d 130, 144 [2d Cir 1992, Meskill, J., concurring] [\"The contents of the Imperio Cafe communications were acquired by law enforcement officials when they were diverted in New Jersey. In Manhattan the previously acquired contents were transformed into sound, but, because they were already within the control of the law enforcement agents, they were not newly 'acquired.' I do not believe that the contents of a communication become acquired anew each time they are transformed into a different medium\"]).",
+      "The majority's reliance on United States v Rodriguez (968 F2d 130 [2d Cir 1992]) is misplaced, because it did not involve the wiretapping of purely extraterritorial phone calls nor the wiretapping of cellular phone calls. In Rodriguez, law enforcement in the Southern District of New York obtained the wiretap warrant in question in connection with an investigation of a crack organization based in the Hunts Point section of the Bronx (id. at 133). The organization's operations extended to a restaurant in New Jersey (id. at 133-134). In connection with the investigation, wiretaps were placed on four telephones at the New Jersey restaurant and the apartment of one of the conspirators in the Bronx (id. at 134). The calls were monitored at the Drug Enforcement Administration headquarters in the Southern District (id. at 135). The warrant application thus facially established that calls made from the New Jersey phone{**37 NY3d at 217} numbers were being made to a telephone in New York, and a telephone in New York was being used in furtherance of the crack operation. Those calls were between conventional landlines, carried by wire or cable, which necessarily physically traversed New York. Here, in contrast, the warrant application did not establish probable cause (or, indeed, any reason to believe) that Mr. Schneider's phone was making or receiving calls to or from New York, and the calls would not have entered New York but for their seizure pursuant to the warrant. It is also important to note that in Rodriguez, Judge Meskill separately concurred. He emphasized his disagreement \"with the majority's treatment of the wiretap issue, which effectively repeals 18 U.S.C. § 2518(3)'s requirement that a judge may only enter an order authorizing the interception of communications 'within the territorial jurisdiction of the court in which the judge is sitting' \" (id. at 143-144). As he explained:",
+      "More recently, the Fifth Circuit, in United States v North (728 F3d 429 [5th Cir 2013]) issued a decision holding that federal district courts may not divert cellular telephone calls into their jurisdictions and establish listening posts there, but then withdrew the decision and substituted it with a decision suppressing the wiretap on the ground of lack of minimization (735 F3d 212, 216 [5th Cir 2013]). However, the concurring opinion of Judge DeMoss sets out the rationale of the withdrawn opinion, which rejects the Seventh Circuit's construction of \"mobile communication device,\" concluding that it refers to interception devices that themselves are mobile—not the interception of mobile phone communications (id. at 217-218).",
+      "Yet one bit of truth in the majority's policy pronouncements is borne out by the facts: requiring New York law enforcement officials who desire to wiretap conversations not originating or terminating in New York, and not from or to a New York resident, to obtain authorization from either a federal court or the court of some other appropriate state may occasionally \"eliminate eavesdropping as an investigative tool\" (majority op at 202). In dissent in Olmstead, Justice Brandeis rejected the worth of that complaint in words of unequalled elegance:",
+      "Wiretapping is a crime under our Penal Law. Neither the text nor the legislative history of CPL article 700 suggests that the legislature authorized our courts to issue warrants commanding the diversion of purely out-of-state telephone calls between nonresidents so that they could be listened to by New York law enforcement agents. Firmly convinced thereof, I respectfully dissent.{**37 NY3d at 224}"
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 16,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

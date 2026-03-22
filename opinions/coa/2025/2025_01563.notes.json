@@ -1,0 +1,134 @@
+{
+  "caseId": "2025_01563",
+  "sourcePath": "coa/2025/2025_01563.htm",
+  "notesPath": "coa/2025/2025_01563.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.315Z",
+  "source": {
+    "title": "People v Padilla-Zuniga (2025 NY Slip Op 01563)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 8591,
+    "lineCount": 105,
+    "tagCounts": {
+      "a": 14,
+      "b": 32,
+      "body": 2,
+      "br": 25,
+      "div": 16,
+      "font": 10,
+      "head": 2,
+      "html": 2,
+      "i": 28,
+      "opinion": 1,
+      "p": 33,
+      "script": 4,
+      "style": 2,
+      "sup": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": [
+      "b"
+    ]
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Padilla-Zuniga",
+      "2025 NY Slip Op 01563 [43 NY3d 1049]",
+      "March 18, 2025",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, September 17, 2025"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Juan Padilla-Zuniga, Appellant."
+    ],
+    "citationLine": "2025 NY Slip Op 01563 43 NY3d 1049",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued February 11, 2025; decided March 18, 2025",
+      "Appeal, by permission of the Acting Chief Judge of the Court of Appeals, from an order of the Appellate Division of the Supreme Court in the Second Judicial Department, entered October 12, 2022. The Appellate Division affirmed a judgment of Supreme Court, Nassau County (Robert G. Bogle, J.), which had convicted defendant, upon a plea of guilty, of aggravated unlicensed operation of a motor vehicle in the first degree, aggravated driving while intoxicated, and leaving the scene of an accident without reporting.",
+      "March 18, 2025",
+      "As corrected through Wednesday, September 17, 2025"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "N. Scott Banks , Legal Aid Society of Nassau County , Hempstead ( Argun M. Ulgen and Tammy Feman of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "N. Scott Banks , Legal Aid Society of Nassau County , Hempstead ( Argun M. Ulgen and Tammy Feman of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Anne T. Donnelly , District Attorney , Mineola ( Kevin C. King , Tammy J. Smiley and Daniel Bresnahan of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Anne T. Donnelly , District Attorney , Mineola ( Kevin C. King , Tammy J. Smiley and Daniel Bresnahan of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 1,
+    "opinionBlocksCount": 8,
+    "footnotesCount": 1
+  },
+  "citations": {
+    "slipOpinion": "2025 NY Slip Op 01563",
+    "officialCitation": "43 NY3d 1049",
+    "pageMarkerCount": 4
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**43 NY3d at 1050} OPINION OF THE COURT",
+      "Memorandum.",
+      "The Appellate Division order should be reversed, and the case remitted to Supreme Court for further proceedings in accordance with this memorandum."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 1,
+    "labels": [
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "STRAY_CLOSING_TAG",
+      "severity": "warning",
+      "detail": "Closing tag </b> appears more times than opening tag <b>."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

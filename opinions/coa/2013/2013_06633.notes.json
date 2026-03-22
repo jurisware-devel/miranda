@@ -1,0 +1,141 @@
+{
+  "caseId": "2013_06633",
+  "sourcePath": "coa/2013/2013_06633.htm",
+  "notesPath": "coa/2013/2013_06633.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.684Z",
+  "source": {
+    "title": "People v Morris (2013 NY Slip Op 06633)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 47593,
+    "lineCount": 155,
+    "tagCounts": {
+      "a": 44,
+      "b": 26,
+      "blockquote": 2,
+      "body": 2,
+      "br": 20,
+      "disop": 2,
+      "disopjd": 2,
+      "div": 10,
+      "font": 64,
+      "head": 2,
+      "html": 2,
+      "i": 318,
+      "p": 53,
+      "script": 4,
+      "style": 2,
+      "sup": 10,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 6
+    },
+    "unknownTags": [
+      "disop",
+      "disopjd"
+    ],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Morris",
+      "2013 NY Slip Op 06633 [21 NY3d 588]",
+      "October 15, 2013",
+      "Abdus-Salaam, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, December 4, 2013"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Chadon Morris, Appellant."
+    ],
+    "citationLine": "2013 NY Slip Op 06633 21 NY3d 588",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued September 4, 2013; decided October 15, 2013",
+      "October 15, 2013",
+      "As corrected through Wednesday, December 4, 2013"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 53,
+    "footnotesCount": 5
+  },
+  "citations": {
+    "slipOpinion": "2013 NY Slip Op 06633",
+    "officialCitation": "21 NY3d 588",
+    "pageMarkerCount": 31
+  },
+  "opinionStructure": {
+    "totalWritings": 6,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 3,
+      "dissent": 2
+    },
+    "authors": [
+      "Abdus-salaam",
+      "Rivera",
+      "Smith"
+    ],
+    "qualifierLines": [
+      "{**21 NY3d at 590} OPINION OF THE COURT",
+      "Jurors are presumed to have followed a trial judge's limiting instructions (see e.g. People v Davis, 58 NY2d 1102, 1104 [1983]), and that presumption is appropriate here. The trial court explicitly instructed the jury, on four occasions, that the 911 evidence was not being admitted \"for the truth that a robbery in fact occurred or that defendant was in fact the one who did that robbery.\" Thus, the court did not \"emphasize[ ] the robbery\" (dissenting op at 604) so much as it emphasized the limited use of the 911 evidence. Defendant also took the stand to present his innocent possession defense, where he challenged the officers' version of the arrest and their credibility, without the risk{**21 NY3d at 599} of being cross-examined about the purported robbery. Although the jury ultimately rejected his defense, it rendered a \"discerning and discrete verdict\" (Till, 87 NY2d at 837), acquitting defendant of the weapon count charging possession with intent to use the gun unlawfully and the resisting arrest charge. ",
+      "Finally, Resek does not require, as defendant and the dissent suggest, that a trial court suppress uncharged crime evidence every time a defendant proposes some \"less prejudicial\" alternative to admission (3 NY3d at 390). While trial courts cannot \"automatically allow[ ] the prosecution to introduce evidence of uncharged crimes merely because the evidence is said to complete the narrative or furnish background information,\" they also need not exclude uncharged crime evidence simply because a defendant stipulates that \"the arrest was lawful\" and asks that the jury be instructed \"not to speculate as to its reasons\" (id.). A contrary rule would effectively nullify trial courts' discretion in these matters, and we would soon be called upon to parse which \"means\" are more or less prejudicial than others, when in fact trial courts are in a much better position to make these determinations. ",
+      " The majority's decision extends a limited exception for background and narrative evidence to the well established rule prohibiting admission of uncharged crimes. The majority upholds the admission of evidence of a 911 tape recording of unsubstantiated allegations of criminal activity, despite its lack of relevance to the charges against the defendant, and its prejudicial impact on the fairness of the trial. I dissent. ",
+      "Here, there was no need to admit the 911 evidence to assist the jury in gaining \"a thorough appreciation of the interwoven events leading to defendant's culminating criminal conduct and of the competing theories of what happened and why\" (Till, 87 NY2d at 837). As we stated in Resek, \"there was no ambiguity that could not have been easily dealt with by far less prejudicial{**21 NY3d at 605} means\" (3 NY3d at 390). There was no need to \"fill in gaps in 'interwoven events' \" to contextualize the case for the jury (id. at 389). The evidence was not relevant and it was error to admit it (see Cass, 18 NY3d at 560 n 3). Further, the purported probative value as background information did not outweigh its prejudicial effect, and the judge's assessment otherwise was an abuse of discretion (see id.). I dissent. Dissenting opinion by Smith, J. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 2,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 5,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <disop> in source HTML."
+    },
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <disopjd> in source HTML."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 6 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

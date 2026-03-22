@@ -1,0 +1,120 @@
+{
+  "caseId": "2013_06726",
+  "sourcePath": "coa/2013/2013_06726.htm",
+  "notesPath": "coa/2013/2013_06726.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.686Z",
+  "source": {
+    "title": "People v Doll (2013 NY Slip Op 06726)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 25793,
+    "lineCount": 119,
+    "tagCounts": {
+      "a": 22,
+      "b": 14,
+      "body": 2,
+      "br": 14,
+      "div": 10,
+      "font": 38,
+      "head": 2,
+      "html": 2,
+      "i": 120,
+      "p": 34,
+      "script": 4,
+      "style": 2,
+      "sup": 4,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 6
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Doll",
+      "2013 NY Slip Op 06726 [21 NY3d 665]",
+      "October 17, 2013",
+      "Graffeo, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, December 11, 2013"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Scott F. Doll, Appellant."
+    ],
+    "citationLine": "2013 NY Slip Op 06726 21 NY3d 665",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued September 3, 2013; decided October 17, 2013",
+      "October 17, 2013",
+      "As corrected through Wednesday, December 11, 2013"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 33,
+    "footnotesCount": 2
+  },
+  "citations": {
+    "slipOpinion": "2013 NY Slip Op 06726",
+    "officialCitation": "21 NY3d 665",
+    "pageMarkerCount": 18
+  },
+  "opinionStructure": {
+    "totalWritings": 4,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "concurrence": 1
+    },
+    "authors": [
+      "Graffeo",
+      "Rivera"
+    ],
+    "qualifierLines": [
+      "{**21 NY3d at 667} OPINION OF THE COURT",
+      "The Appellate Division affirmed (98 AD3d 356 [4th Dept 2012]), determining that the police actions were warranted{**21 NY3d at 670} because the authorities reasonably responded to an emergency situation. Two Justices dissented, believing that the emergency doctrine was unavailable since the police did not know whether an actual crime victim existed. A dissenter granted defendant leave to appeal (19 NY3d 1003 [2012]). We now affirm. ",
+      "Our concurring colleague believes that Mauro is distinguishable (see concurring op at 675 n), but the facts of Mauro belie this assertion. The police officer in Mauro acknowledged that he \" 'sent an officer in there to listen to that conversation' \" knowing \" 'that it was possible that [Mauro] might make incriminating statements' \" and that he \" 'wanted to record that conversation so as to have a record of those incriminating statements' \" (481 US at 524 n 2). More poignantly for purposes of this appeal, Mauro specifically explained that \"[o]fficers do not interrogate a suspect simply by hoping that he will incriminate himself\" (481 US at 529). Contrary to the concurrence's claim, the fact that the investigator listened to defendant's conversation in order to record any inculpatory statements is not{**21 NY3d at 673} determinative and there is no basis for suppressing the voluntary statements that defendant made to his acquaintance. ",
+      "Nevertheless, as made immensely clear by the record and the majority's discussion of the evidence, it cannot be said that the{**21 NY3d at 676} defendant's statements to his friend were of the type that creates \"a reasonable possibility that the [error] might have contributed to the conviction.\" (See People v Crimmins, 36 NY2d 230, 241 [1975].) Therefore, I concur. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 1,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 2,
+    "labels": [
+      "*",
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 4 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

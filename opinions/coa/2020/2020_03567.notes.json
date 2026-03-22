@@ -1,0 +1,129 @@
+{
+  "caseId": "2020_03567",
+  "sourcePath": "coa/2020/2020_03567.htm",
+  "notesPath": "coa/2020/2020_03567.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.104Z",
+  "source": {
+    "title": "People v Hemphill (2020 NY Slip Op 03567)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 14266,
+    "lineCount": 97,
+    "tagCounts": {
+      "a": 12,
+      "b": 8,
+      "body": 2,
+      "br": 10,
+      "div": 12,
+      "font": 18,
+      "head": 2,
+      "html": 2,
+      "i": 38,
+      "opinion": 1,
+      "p": 51,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14,
+      "u": 6
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Hemphill",
+      "2020 NY Slip Op 03567 [35 NY3d 1035]",
+      "June 25, 2020",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, August 19, 2020"
+    ],
+    "captionLines": [],
+    "citationLine": "2020 NY Slip Op 03567 35 NY3d 1035",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Decided June 25, 2020",
+      "June 25, 2020",
+      "As corrected through Wednesday, August 19, 2020"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Robert S. Dean, Center for Appellate Litigation , New York City ( Claudia Trupp of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Robert S. Dean, Center for Appellate Litigation , New York City ( Claudia Trupp of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Darcel D. Clark, District Attorney , Bronx ( Noah J. Chamoy of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Darcel D. Clark, District Attorney , Bronx ( Noah J. Chamoy of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 25,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2020 NY Slip Op 03567",
+    "officialCitation": "35 NY3d 1035",
+    "pageMarkerCount": 8
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Fahey"
+    ],
+    "qualifierLines": [
+      "{**35 NY3d at 1036} OPINION OF THE COURT",
+      "Memorandum.",
+      "For these reasons, I dissent."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

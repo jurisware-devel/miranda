@@ -1,0 +1,153 @@
+{
+  "caseId": "2016_03208",
+  "sourcePath": "coa/2016/2016_03208.htm",
+  "notesPath": "coa/2016/2016_03208.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.875Z",
+  "source": {
+    "title": "People v John (2016 NY Slip Op 03208)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 111622,
+    "lineCount": 282,
+    "tagCounts": {
+      "a": 100,
+      "b": 66,
+      "blockquote": 4,
+      "body": 2,
+      "br": 42,
+      "div": 34,
+      "doctype": 1,
+      "font": 84,
+      "head": 2,
+      "html": 2,
+      "i": 682,
+      "p": 217,
+      "script": 4,
+      "style": 2,
+      "sup": 30,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 28
+    },
+    "unknownTags": [
+      "doctype"
+    ],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v John",
+      "2016 NY Slip Op 03208 [27 NY3d 294]",
+      "April 28, 2016",
+      "DiFiore, Ch. J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, July 6, 2016"
+    ],
+    "captionLines": [],
+    "citationLine": "2016 NY Slip Op 03208 27 NY3d 294",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued February 10, 2016; decided April 28, 2016",
+      "April 28, 2016",
+      "As corrected through Wednesday, July 6, 2016"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 123,
+    "footnotesCount": 15
+  },
+  "citations": {
+    "slipOpinion": "2016 NY Slip Op 03208",
+    "officialCitation": "27 NY3d 294",
+    "pageMarkerCount": 41
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Garcia"
+    ],
+    "qualifierLines": [
+      "{**27 NY3d at 297} OPINION OF THE COURT",
+      "Defendant was convicted of criminal possession of a weapon in the second degree and menacing in the second degree. The Appellate Division affirmed, concluding that suppression was properly denied, with one Justice concurring in the result (120 AD3d 511 [2d Dept 2014]). A Justice of the Appellate Division granted defendant leave to appeal (24 NY3d 1005 [2014]). We now reverse.",
+      "Justice Thomas concurred in the result, but nonetheless agreed with the four dissenting Justices that the DNA reports in Williams were offered into evidence for their truth, and that the plurality's narrow primary purpose test, requiring that{**27 NY3d at 307} forensic testing involve a targeted individual in order to be testimonial, was not based on constitutional text. However, he found that the reports lacked the necessary \"formality and solemnity\" that would render them testimonial within the meaning of the Confrontation Clause (see 567 US at —, 132 S Ct at 2255). None of the other eight Justices agreed with the latter rigid interpretation of testimonial hearsay.",
+      "The remaining four Justices dissented, finding the case controlled by Bullcoming. The dissent would have found that the DNA reports were admitted into evidence for their truth, that the reports were testimonial and that the narrow primary purpose test used by the plurality was not grounded in the constitutional text. In short, an analyst who performed the DNA tests was required to testify (see 567 US at —, —, 132 S Ct at 2268, 2273). The dissent further observed that the Williams decision has left significant confusion in its wake.",
+      " In Brown, when we characterized the DNA evidence as \"machine-generated graphs,\" we referred to the electropherogram. The testifying witness, an OCME Level IV Criminalist who had supervised the generation of the DNA profile from the defendant's exemplar, had personally examined and independently interpreted the data (see 13 NY3d at 340; , 9 Misc 3d 420 [Sup Ct, Queens County 2005]). Determinatively, the expert testified that any conclusions or opinions she reached from the raw data supplied by the outside laboratory were her own and were not contained in any reports (see 13 NY3d at 337). By contrast, Huyck, who made no such claim and who was not an OCME supervisor, reviewed the reports of the other OCME analysts, including the numerical DNA profiles generated after an editing process, saw that the \"necessary people\" had signed off and agreed with their conclusions. This cursory testimony vitiated defendant's right to confront the analysts who actually generated the DNA profiles. Contrary to the dissent's position, we conclude that Huyck's exportation of the two identical numerical sequences into a chart so that the jury could easily see the numbers were identical is not the same as independently verifying the accuracy of testing conducted by the nontestifying analysts who produced those two DNA profiles. To this end, Huyck was acting purely as a surrogate witness as defined by Bullcoming in vouching for the accuracy of the DNA profiles. Her conclusory testimony in this regard was based solely on the reports of the nontestifying analysts that were admitted into evidence for their truth and{**27 NY3d at 311} not based on a separate, independent and unbiased analysis of the raw data.",
+      "We interpret our prior decisions in Brown and Meekins informed by the binding precedent of the Supreme Court in this Sixth Amendment context. The record in this particular case perforce informs the present decision as to the nature of the testimonial evidence of the DNA profiles. In contrast, the dissent, by apparently discounting the continued viability of the Bullcoming and Melendez-Diaz decisions, notwithstanding that the Williams plurality did not overrule its own precedent, unduly relies on core factors that informed the dissents in those cases in defining testimonial evidence when dealing with forensic reports. The multiple factors set forth in those dissents—especially laboratory workload, the professional detachment of laboratory analysts and the analysts' objective recording of facts pursuant to scientific protocols—are once again touted in the dissent in this case.",
+      "The People raise the same concern previously presented to the United States Supreme Court in its Crawford cases dealing with the admission into evidence of forensic science laboratory reports—given OCME's team and rotation procedures, practical difficulties will be presented if they are required to produce each analyst who was involved in the DNA testing. The Court has not accepted these concerns as a basis for categorically exempting forensic evidence as testimonial hearsay and dispensing with a defendant's constitutional right to confrontation (see Bullcoming, 564 US at 665; Melendez-Diaz, 557 US at 325-328). We hold, however, that an \"all analysts\" rule is not consistent with the decisional law. Clearly, not every person who comes in contact with the evidence—for instance, analysts who are performing duplicative work, such as reviewers, those involved in the testing of controls, or certain individuals who would only be relevant to issues as to the chain{**27 NY3d at 313} of custody—must be produced (see Melendez-Diaz, 557 US at 311 n 1). Here, the record is somewhat limited on this issue as neither the People nor defendant seriously attempted to demonstrate the importance of any one analyst or any one step in the actual DNA typing process. However, where the laboratory report is testimonial in nature—and the generation of the DNA profile in this pending criminal action was testimonial—at least one analyst with the requisite personal knowledge must testify (see Williams, 567 US at — n 4, 132 S Ct at 2273 n 4 [Kagan, J., dissenting] [stating that \"none of our cases . . . has presented the question of how many analysts must testify about a given report . . . The problem in the cases . . . is that no analyst came forward to testify\" and opining that the existence of that open question \"is no reason to wrongly decide the case before us—which, it bears repeating, involved the testimony of not twelve or six or three or one, but zero . . . analysts\"]).",
+      "Finally, the dissent's concern about the admissibility of redacted autopsy reports, specifically ones omitting the opinions as to the cause and manner of death, is misplaced. We are not retreating from our prior decisions holding that, given the primary purpose of a medical examiner in conducting autopsies, such redacted reports—\"a contemporaneous, objective account of observable facts that [do] not link the commission of the crime to a particular person\"—are not testimonial (Pealer, 20 NY3d at 454; , 11 NY3d 38, 42 [2008]; see also United States v James, 712 F3d 79, 99 [2d Cir 2013]).",
+      " We confront the abyss created by the prospect of applying the Supreme Court's line of Sixth Amendment cases in Crawford v Washington (541 US 36 [2004] [out-of-court statement to police by the defendant's spouse]); Melendez-Diaz v Massachusetts (557 US 305 [2009] [affidavits that substance seized from the defendant was in fact cocaine]); and Bullcoming v New Mexico (564 US 647 [2011] [laboratory report certifying that the defendant's blood-alcohol concentration{**27 NY3d at 316} was above the threshold for DWI]) so as to require the numerous analysts who typically handle the processing of DNA samples to appear in court. The Supreme Court declined to leap (see Williams v Illinois, 567 US —, 132 S Ct 2221 [2012]): the majority does. Because this result is not required by Supreme Court precedent, runs contrary to our own case law, and will cause unnecessary harm to the administration of the criminal justice system, I dissent.",
+      "In dissent, Justice Kennedy expressed alarm that \"[t]he persistent ambiguities in the Court's approach are symptomatic of a rule not amenable to sensible applications\" (Bullcoming, 564 US at 679 [Kennedy, J., dissenting]).",
+      "Williams, the third case, and the one most analogous to this one, resulted in a fractured decision in which five Justices concluded that the defendant's Sixth Amendment rights had not been violated. In the defendant's bench trial for rape, \"the prosecution called an expert who testified that a DNA profile{**27 NY3d at 321} produced by an outside laboratory, Cellmark, matched a profile produced by the state police lab using a sample of [the defendant's] blood\" (567 US at —, 132 S Ct at 2227). The process for developing the DNA profile was identical to that employed in the present case (see id. at Appendix to Breyer, J., concurring). The Cellmark report was not admitted into evidence or shown to the factfinder and the expert did not quote or read from the report. On cross-examination, the expert from the state lab confirmed that she did not conduct or observe any of the tests, but that she instead relied on the profile produced by Cellmark.",
+      "Justice Thomas concurred in the judgment \"because Cellmark's statements lacked the requisite 'formality and solemnity' to be considered 'testimonial' for purposes of the Confrontation Clause\" (567 US at —, 132 S Ct at 2255 [Thomas, J., {**27 NY3d at 322}concurring] [citation omitted]). Justice Kagan dissented, concluding, as the majority does here, that Bullcoming was controlling (see 567 US at —, 132 S Ct at 2267 [Kagan, J., dissenting] [\"Have we not already decided this case?\"]).",
+      "Williams, which as a practical matter did little more than affirm the defendant's conviction, resulted in a plurality opinion, two concurrences, and a dissent. Not surprisingly, this Court, post-Williams, has adhered to its well-established primary purpose test for determining whether the challenged evidence is \"testimonial.\"",
+      "The majority focuses primarily on three of the four Brown factors and concludes that those \"laboratory reports as to the DNA profile\" were prepared for the primary purpose of creating an out-of-court substitute for trial testimony (majority op at 307-308 [\"Swabs from the gun were then tested by an accredited public DNA crime laboratory with the primary (truly, the sole) purpose of proving a particular fact in a criminal proceeding—that defendant possessed the gun and committed the crime for which he was charged\"]). While purporting to apply our primary purpose test, the majority in fact opts for the reasoning set forth in the Williams dissent: informed by that analysis, the majority reaches the same result—at least one analyst must testify (see Williams, 567 US at — n 4, 132 S Ct at 2273 n 4 [Kagan, J., dissenting]). Echoing that dissent, the majority concludes that the Supreme Court has already decided this case—in Bullcoming (see majority op at 304 [\"The same scenario that occurred in Bullcoming occurred in this case\"]; see id. at 310 [\"Huyck was acting purely as a surrogate witness as defined by Bullcoming\"]). Applying this Court's traditional four-part test to the facts here, it is clear that this case is not Bullcoming but Brown. Accordingly, the DNA profiles are not testimonial and their admission did not violate defendant's Sixth Amendment rights.",
+      "There is no reason to conclude that the process for creating the DNA profile at issue in this case, and the materials generated as a result, was in any relevant way different than that considered by this Court in Brown and Meekins. It is identical to the process detailed in the appendix to Justice Breyer's concurrence in Williams. The same graphs and charts making up the DNA profiles at issue in those cases make up the OCME records here, namely objective facts in the form of a \"graphical DNA report that d[oes] not explicitly tie the accused to a crime\" (Pealer, 20 NY3d at 454).",
+      "In abandoning the reasoning of this Court's precedent, the majority now fashions a new rule: \"where the laboratory report {**27 NY3d at 333}is testimonial in nature . . . at least one analyst with the requisite personal knowledge must testify\" (majority op at 313, citing Williams, 567 US at — n 4, 132 S Ct at 2273 n 4 [Kagan, J., dissenting]). The majority notes, however, that \"an 'all analysts' rule is not consistent with the decisional law\" (id. at 312) and instead seeks to parse the scientific process that generated the profiles in search of what is most \"testimonial.\"",
+      "First, based upon the constitutional analysis performed by the majority, there is no basis to excuse analysts involved in \"preliminary testing stages\" from cross-examination at trial (id.). The majority has concluded the DNA profiles were testimonial. Analysts at each stage were involved in creating{**27 NY3d at 334} each offending DNA profile. Certainly, the amicus brief cited by the majority (see id. at 311-312 n 7) provides a corresponding constitutional violation for each stage of the process (see also Williams, 567 US at —, 132 S Ct at 2247 [Breyer, J., concurring] [\"amici argue that the technicians at each stage of the process should be subject to cross-examination\"], citing amicus brief of the Innocence Network).",
+      "Rather, the majority's artificial bright-line rule is the hedging on the extension into this area of the Supreme Court's Sixth Amendment cases anticipated and criticized by Justice Breyer in his concurring opinion in Williams (see 567 US at —, 132 S Ct at 2246 [Breyer, J., concurring] [noting that the dissent would have the prosecution produce \"one or more experts who wrote or otherwise produced the report\" and warning that \"(o)nce one abandons the traditional rule, there would seem often to be no logical stopping place between requiring the prosecution to call as a witness one of the laboratory experts who worked on the matter and requiring the prosecution to call all of the laboratory experts who did so\"]).",
+      "Instead of this analysis, we opt for the approach of Justice Kagan in the Williams dissent. If that position were to garner five votes in the Supreme Court of course we would be bound to follow. Until then, we are free to chart our own course based upon the Constitution, our case law, and common sense. At a time when the plurality in Williams signaled a desire to revisit Melendez-Diaz and Bullcoming (see Williams, 567 US at — n 13, 132 S Ct at 2242 n 13; see also 567 US at —, 132 S Ct at 2277 [Kagan, J., dissenting] [noting that \"(t)hose decisions apparently no longer mean all that they say\"]), we plunge ahead into greater confusion, creating a constitutional violation and recoiling from the consequences.",
+      "For the foregoing reasons, I dissent and would affirm the Appellate Division order."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 15,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <doctype> in source HTML."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

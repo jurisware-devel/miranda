@@ -1,0 +1,97 @@
+{
+  "caseId": "2012_07047",
+  "sourcePath": "coa/2012/2012_07047.htm",
+  "notesPath": "coa/2012/2012_07047.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.626Z",
+  "source": {
+    "title": "People v Colville (2012 NY Slip Op 07047)",
+    "publicationStatus": null
+  },
+  "fileInfo": {
+    "byteSize": 38841,
+    "lineCount": 140,
+    "tagCounts": {
+      "a": 22,
+      "b": 14,
+      "blockquote": 28,
+      "body": 2,
+      "br": 14,
+      "div": 8,
+      "font": 52,
+      "head": 2,
+      "html": 2,
+      "i": 80,
+      "p": 46,
+      "script": 4,
+      "style": 2,
+      "sup": 4,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 4
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Colville",
+      "2012 NY Slip Op 07047 [20 NY3d 20]",
+      "October 23, 2012",
+      "Read, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, January 2, 2013"
+    ],
+    "captionLines": [],
+    "citationLine": "People v Colville , 79 AD3d 189 , reversed.",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued September 6, 2012; decided October 23, 2012",
+      "October 23, 2012",
+      "As corrected through Wednesday, January 2, 2013"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 0,
+    "footnotesCount": 2
+  },
+  "citations": {
+    "slipOpinion": "2012 NY Slip Op 07047",
+    "officialCitation": "20 NY3d 20",
+    "pageMarkerCount": 25
+  },
+  "opinionStructure": {
+    "totalWritings": 0,
+    "byKind": {},
+    "authors": [],
+    "qualifierLines": [],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 2,
+    "labels": [],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

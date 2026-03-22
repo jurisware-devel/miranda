@@ -1,0 +1,129 @@
+{
+  "caseId": "2011_05110",
+  "sourcePath": "coa/2011/2011_05110.htm",
+  "notesPath": "coa/2011/2011_05110.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.553Z",
+  "source": {
+    "title": "People v Concepcion (2011 NY Slip Op 05110)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 40501,
+    "lineCount": 131,
+    "tagCounts": {
+      "a": 46,
+      "b": 10,
+      "blockquote": 4,
+      "body": 2,
+      "br": 12,
+      "div": 10,
+      "font": 54,
+      "head": 2,
+      "html": 2,
+      "i": 310,
+      "p": 49,
+      "script": 4,
+      "style": 2,
+      "sup": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 2
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Concepcion",
+      "2011 NY Slip Op 05110 [17 NY3d 192]",
+      "June 14, 2011",
+      "Read, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, August 24, 2011"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Reynaldo Concepcion, Appellant."
+    ],
+    "citationLine": "2011 NY Slip Op 05110 17 NY3d 192",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued April 28, 2011; decided June 14, 2011",
+      "June 14, 2011",
+      "As corrected through Wednesday, August 24, 2011"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 50,
+    "footnotesCount": 1
+  },
+  "citations": {
+    "slipOpinion": "2011 NY Slip Op 05110",
+    "officialCitation": "17 NY3d 192",
+    "pageMarkerCount": 26
+  },
+  "opinionStructure": {
+    "totalWritings": 4,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "dissent": 1
+    },
+    "authors": [
+      "Read",
+      "Smith"
+    ],
+    "qualifierLines": [
+      "{**17 NY3d at 194} OPINION OF THE COURT",
+      "On appeal, the Appellate Division, with two Justices dissenting, disagreed with Supreme Court's rationale for its suppression ruling, but upheld denial of suppression anyway, based on a ground explicitly rejected by the trial judge and therefore decided in LaFontaine's favor (235 AD2d 93 [1997]). In short, the Justices in the majority concluded that Supreme Court gave a wrong reason and spurned a right reason on the way to reaching the correct result—i.e., denial of suppression. The dissenting Justices did not believe that denial of suppression was justified by either the trial judge's rationale or the alternative basis{**17 NY3d at 195} endorsed by the majority. A dissenting Justice granted LaFontaine leave to appeal to us (91 NY2d 883 [1997]). ",
+      "Following a jury trial, defendant was acquitted of attempted murder and first- and second-degree assault. He was convicted{**17 NY3d at 196} of second-degree weapon possession, third-degree drug possession and third-degree assault, and Supreme Court sentenced him to concurrent prison terms of 10 years, six years and one year, respectively. Defendant appealed, bringing up for review the denial of his motion to suppress physical evidence. ",
+      "The Dissent",
+      "The dissent proclaims that our decision in LaFontaine was a \"mistake,\" which we have \"never followed\" (with the caveat that, in some cases, perhaps our laxity might be explained by counsel's neglect to mention the issue) (dissenting op at 201); and laments our unwillingness to overrule LaFontaine to correct the \"major problem\" caused by our folly (id. at 207). We address these assertions in turn. ",
+      "To support the proposition that we routinely pay no heed to LaFontaine, the dissent adduces several cases in the context of arguing that \"there is nothing particularly unusual in an appellate court's affirming a decision below on alternative grounds\" (dissenting op at 204). True—but merely affirming a case on alternative grounds does not ignore LaFontaine, which is only implicated when an appellate court affirms a case on a ground that was not decided adversely to the appealing party at the trial level. Or, as we also put it in LaFontaine, CPL 470.15 (1) is{**17 NY3d at 198} \"a legislative restriction on the Appellate Division's power to review issues either decided in an appellant's favor, or not ruled upon, by the trial court\" (92 NY2d at 474). The dissent elides this point. ",
+      " (4 NY3d 41 [2004]), another case cited by the dissent, seems particularly irrelevant. In Parris, we considered whether the defendant was entitled to a reconstruction hearing when minutes of court proceedings were lost, which related to the defendant's right to effective appellate review, a defect that affected the appellate proceedings. In short, there was no \"error or defect in the criminal court proceedings which may have adversely affected the appellant\" (CPL 470.15 [1]). While our rationale was not the same as the Appellate Division's (at issue was what a defendant needs to show to get a reconstruction hearing), CPL 470.15 (1) and/or LaFontaine were not involved. ",
+      "Our decision in  (5 NY3d 143 [2005]) concerning the admission of a coconspirator's statement does not reveal the basis for the trial court's determination to admit the testimony, and therefore does not suggest that we affirmed on a different ground. The mere fact that the Caban opinions do not expressly state that the trial court addressed the basis for the appellate decisions does not establish that the trial court did not so rule or that we often deliberately \"simply ignore LaFontaine's existence\" (dissenting op at 206). And in  (6 NY3d 305 [2005]), while we decided that territorial jurisdiction had been established for reasons different from those adduced by the Appellate Division (14 AD3d 165 [2005]), the question of the State's inherent authority to prosecute does not need to be raised or preserved at trial in order to be reviewed on appeal. As a result, no LaFontaine error was possible in Carvajal. ",
+      "The dissent's reliance on  (5 NY3d 546 [2005]) is also misplaced. In Lewis, we wrote that \"[u]nlawful entry cannot itself be used as the sole predicate crime in the 'intent to commit a crime therein' element of burglary\" as otherwise every violation of a do-not-enter provision of an order of protection would support a burglary conviction (id. at 551). This statement was in conflict with what the Appellate Division majority said in{**17 NY3d at 200} response to the opposing view expressed by the dissent (see 13 AD3d 208, 211 [1st Dept 2004]). But neither the majority's view of this particular issue, nor ours, formed the basis of either court's legal sufficiency determination. Rather, we concluded, as did the Appellate Division (and the trial court in rejecting the defendant's motion to dismiss), that the evidence was legally sufficient to prove that the defendant intended to commit a crime inside the apartment in a manner that went beyond trespass, based on evidence that the defendant had, among other things, thrown the victim's personal belongings out on the street (5 NY3d at 552; 13 AD3d at 209). Accordingly, we did not affirm the decision below on alternative grounds, but on the same grounds as the lower courts. ",
+      "Finally, the dissent expresses fear about the future, now that we have said that CPL 470.15 (1) still means what we said it meant in 1984 (Goodfriend) and 1998 (Romero and LaFontaine) (see dissenting op at 207). Whatever course litigation may take in the future, we find it telling that in the past, defense counsel—zealous advocates on their clients' behalf—did not spot the rampant LaFontaine error that the dissent now claims existed all along. ",
+      "The dissent and the People put forward what they consider to be a better interpretation of CPL 470.15 (1), which would{**17 NY3d at 201} \"permit[ ] what the Appellate Division did in this case\" (dissenting op at 203). But in LaFontaine we rejected just such a reading of the statute—one that would allow appellate review of any question of law (i.e., any preserved alternative ground for affirmance) so long as it related to the overarching error or defect (e.g., an erroneous suppression ruling). When the People moved in LaFontaine to reargue the meaning of CPL 470.15 (1) on just this basis, we denied the motion. And our decision in LaFontaine was not a complete surprise, like a bolt of lightning from a clear blue sky. As the dissent acknowledges, Romero and Goodfriend, which we relied on in LaFontaine, both \"say . . . that CPL 470.15 means what LaFontaine says it means\" (dissenting op at 203). ",
+      "We commented in LaFontaine that the statute, as we understood it, might cut against \"sensible management\" of litigation (92 NY2d at 475). We invited the Legislature to take a look at the matter, noting that \"[s]ince the anomaly rests on unavoidable statutory language, any modification would be for the Legislature to change, if it so wishes\" (id.). So far, the Legislature has not \"so wishe[d].\" Legislative inaction (which just may, after all, signal satisfaction with CPL 470.15 [1] as interpreted in LaFontaine) is not a license for us, in effect, now to tell the Legislature \"Never mind,\" and refashion the statute's settled meaning with the freedom we enjoy in matters of common law. This would be especially imprudent here, where the statute's subject is appellate jurisdiction, which \"can never be assumed, unless a statute can be found which expressly sanctions its exercise\" (People v Zerillo, 200 NY 443, 446 [1911] [emphasis added]). In short, this is not, as the dissent remarks, an \"excellent case . . . for making an exception\" to stare decisis (dissenting op at 204); rather, it is a particularly poor one. ",
+      "We may have thought, when we decided LaFontaine, that our prior cases had foreclosed the issue, but I believe we accepted that conclusion too readily. We relied on two earlier decisions, People v Romero (91 NY2d 750 [1998]) and People v Goodfriend (64 NY2d 695 [1984]), which do indeed say—also without doing any analysis to demonstrate the point—that CPL 470.15 means what LaFontaine says it means. Romero is distinguishable; the issue that we found unreviewable there had not been preserved in the trial court (see 91 NY2d at 753 [the alternative argument was raised \"for the first time\" in the Appellate Division]). Goodfriend may be distinguishable also. The appeal to the Appellate Division in that case was by the People, from an order vacating a verdict on grounds of repugnancy; it is not clear from our brief memorandum opinion whether the alternative grounds urged by the defendant would logically have supported the trial court's order. Our even briefer memorandum in People v Karp (76 NY2d 1006 [1990]) (not cited in the LaFontaine opinion) merely relies on Goodfriend. "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 1,
+    "labels": [
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 4 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

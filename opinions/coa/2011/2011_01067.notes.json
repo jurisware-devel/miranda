@@ -1,0 +1,121 @@
+{
+  "caseId": "2011_01067",
+  "sourcePath": "coa/2011/2011_01067.htm",
+  "notesPath": "coa/2011/2011_01067.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.519Z",
+  "source": {
+    "title": "People v Montes (2011 NY Slip Op 01067)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 16653,
+    "lineCount": 104,
+    "tagCounts": {
+      "a": 16,
+      "b": 18,
+      "blockquote": 2,
+      "body": 2,
+      "br": 14,
+      "div": 4,
+      "font": 26,
+      "head": 2,
+      "html": 2,
+      "i": 44,
+      "p": 25,
+      "script": 4,
+      "style": 2,
+      "sup": 6,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Montes",
+      "2011 NY Slip Op 01067 [16 NY3d 250]",
+      "February 17, 2011",
+      "Jones, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, April 20, 2011"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Omar Montes, Appellant."
+    ],
+    "citationLine": "2011 NY Slip Op 01067 16 NY3d 250",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued January 12, 2011; decided February 17, 2011",
+      "February 17, 2011",
+      "As corrected through Wednesday, April 20, 2011"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 21,
+    "footnotesCount": 3
+  },
+  "citations": {
+    "slipOpinion": "2011 NY Slip Op 01067",
+    "officialCitation": "16 NY3d 250",
+    "pageMarkerCount": 12
+  },
+  "opinionStructure": {
+    "totalWritings": 4,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "concurrence": 1
+    },
+    "authors": [
+      "Jones",
+      "Lippman"
+    ],
+    "qualifierLines": [
+      "{**16 NY3d at 251} OPINION OF THE COURT",
+      "The Appellate Division affirmed, with one Justice dissenting (67 AD3d 586 [2009]). We too affirm. The trial court did not abuse its discretion in denying defendant's motion for a mistrial or to strike Ceballo's testimony because the inability to recall Ceballo did not violate defendant's rights under the Confrontation Clause. ",
+      "Pursuant to both the Federal and State Constitutions, an accused has the right \"to be confronted with the witnesses against him\" at trial (US Const 6th Amend; NY Const, art I, § 6; see Pointer v Texas, 380 US 400 [1965]). The Confrontation Clause \"has been held to include the right to cross-examine those witnesses\" (Pointer, 380 US at 401). In Delaware v Fensterer (474 US 15 [1985]), the United States Supreme Court explained the two categories within which Confrontation Clause cases fall. Specifically, those \"cases involv[e] the admission of out-of-court statements and . . . restrictions imposed by law or by the trial court on the scope of cross-examination\" (Delaware v Fensterer, 474 US 15, 18 [1985]). We agree with the concurrence that the Fensterer categories do not encompass all possible Confrontation Clause violations. But no authority holds, and we see no reason to hold, that the right of confrontation includes a right to recall a witness and confront her about things she did or said after her cross-examination, conducted without any restriction of which defendant complains, was already completed. ",
+      "The dictum from the summary disposition per curiam in Delaware v Fensterer (474 US 15 [1985])—a decision addressing facts utterly dissimilar to those at bar— cannot be properly read to define and thus limit the universe of Confrontation Clause claims to those \"involving the admission of out-of-court statements and . . . restrictions imposed by law or by the trial court on the scope of cross-examination\" (id. at 18). The Supreme Court has repeatedly counseled that this language was not intended to be exclusive—that \"claims arising under the Confrontation Clause may not always fall neatly into one of these two categories\" (Kentucky v Stincer, 482 US 730, 739 [1987]; see also Coy v Iowa, 487 US 1012, 1016 [1988]). "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": true,
+    "concurrenceCount": 1,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 3,
+    "labels": [
+      "*",
+      "1",
+      "2"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 4 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

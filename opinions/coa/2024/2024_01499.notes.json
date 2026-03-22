@@ -1,0 +1,131 @@
+{
+  "caseId": "2024_01499",
+  "sourcePath": "coa/2024/2024_01499.htm",
+  "notesPath": "coa/2024/2024_01499.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.254Z",
+  "source": {
+    "title": "People v Estrella (2024 NY Slip Op 01499)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 40510,
+    "lineCount": 151,
+    "tagCounts": {
+      "a": 58,
+      "b": 34,
+      "blockquote": 6,
+      "body": 2,
+      "br": 26,
+      "conopnjd": 2,
+      "div": 24,
+      "font": 46,
+      "head": 2,
+      "html": 2,
+      "i": 132,
+      "opinion": 1,
+      "p": 82,
+      "script": 4,
+      "style": 2,
+      "sup": 12,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 18
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Estrella",
+      "2024 NY Slip Op 01499 [41 NY3d 514]",
+      "March 19, 2024",
+      "Troutman, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, July 31, 2024"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Appellant,",
+      "v",
+      "Jonaiki Martinez Estrella, Respondent."
+    ],
+    "citationLine": "2024 NY Slip Op 01499 41 NY3d 514",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued February 14, 2024; decided March 19, 2014",
+      "March 19, 2024",
+      "As corrected through Wednesday, July 31, 2024"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 51,
+    "footnotesCount": 6
+  },
+  "citations": {
+    "slipOpinion": "2024 NY Slip Op 01499",
+    "officialCitation": "41 NY3d 514",
+    "pageMarkerCount": 22
+  },
+  "opinionStructure": {
+    "totalWritings": 5,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "concurrence": 2
+    },
+    "authors": [
+      "Troutman",
+      "Wilson",
+      "Singas"
+    ],
+    "qualifierLines": [
+      "{**41 NY3d at 516} OPINION OF THE COURT",
+      "We therefore agree with the Chief Judge that the course of conduct must cause extreme physical pain, not solely the fatal blow that caused Junior's death (see Wilson, Ch. J., concurring op at 526-527). We disagree, however, to the extent that the Chief Judge suggests that we have rendered Penal Law § 125.26 (2) (a) \"entirely superfluous\" (see id. at 527). The legislative history for the 2009 amendment that added this subparagraph makes clear that in response to a specific crime of child abuse, the legislature intended to eliminate the \"relish\" {**41 NY3d at 520}or \"pleasure\" requirement where a defendant tortures a child less than 14 years old (see Assembly Mem in Support, Bill Jacket, L 2009, ch 482 at 6 [\"In view of the atrocious nature of such a crime, when it is alleged that a parent has killed a child in a tortuous manner, the prosecution, in order to seek a life-without-parole sentence, should not have to prove that the defendant relished or evidenced a sense of pleasure in inflicting extreme physical pain. This bill eliminates that element of proof in the case of an adult alleged to have killed a child, assuring that a sentence of life imprisonment without possibility of parole may be sought in such circumstances\"]). That is the key distinction between the two statutes, not the \"course of conduct\" requirement, which exists in both Penal Law §§ 125.27 (1) (a) (x) and 125.26 (2) (a).",
+      "We respectfully disagree with the Chief Judge that the statutory definition of \"serious physical injury\" is relevant to the meaning of \"extreme physical pain\" (see Wilson, Ch. J., concurring op at 525-526). The legislature could have chosen to define extreme physical pain, as it did with serious physical injury (see Penal Law § 10.00 [10]), or it could have chosen to equate torture with a level of injury rather than a level of pain, but it did not. In  (18 NY3d 831 [2011]), upon which the concurrence relies, the Court acknowledged that \"pain may itself be disabling,\" but the victim did not testify that his pain rose to that level (see id. at 832-833). Here, as the Chief Judge acknowledges, Junior was not alive to testify to the amount of pain he was in before his death. The jurors, who were presented with all the evidence regarding Junior's wounds, including graphic videotape evidence, were entitled to give the statutory words their ordinary meaning and rely upon their common sense and life experience to determine if Junior's physical pain would have been \"extreme\" (see generally People v Versaggi, 83 NY2d 123, 129-131 [1994]).",
+      "We further disagree that the legislature's use of the term \"course of conduct\" evinces a legislative intent to require a series of acts that are chargeable as separate crimes (see Wilson, Ch. J., concurring op at 528). The legislature could have required that multiple underlying crimes be committed for the element of torture to be satisfied. Indeed, the legislature has structured other crimes in precisely this manner by imposing both a durational element and requiring that multiple crimes be committed during that period (see e.g. Penal Law § 130.80). Inasmuch as our role in interpreting the statute is to effectuate the intent of the legislature (, 35 NY3d 55, 59 [2020]), we decline to add an element that the legislature did not see fit to impose. Ultimately, although this case may not fit the paradigm of torture murder that most would envision, \"all that was needed for the . . . charge to be sustained was for the People to satisfy its elements\" (Li, 34 NY3d at 363 [internal quotation marks omitted]).{**41 NY3d at 522}",
+      "Chief Judge Wilson (concurring).",
+      "I concur in the result but write separately because I disagree with the majority's conclusion that the evidence here would be legally sufficient to meet the statutory \"course of conduct\" requirement. More to the point, I disagree with some of the majority's characterization of the statute itself. My disagreement lies in three areas. First, absent record evidence to the contrary, \"superficial\" wounds—defined as cuts to the uppermost layer of skin only—cannot cause \"extreme physical pain.\" Second, the continuous attack here should not be considered a \"course of conduct\" within the meaning of the statute; some cessation and resumption that would allow assaults to be charged separately should be required to meet the statutory definition of \"course of conduct\" in Penal Law § 125.27 (1) (a) (x). Third, the result here leaves us either with no definition of the elements required to satisfy the torture murder provision or provides one that would allow a huge variety of ordinary homicides to be transmuted into A-I felonies, a result that does not fit the overall scheme of the Penal Law with regard to homicide.",
+      "I concur in the result and with Chief Judge Wilson's opinion, except insofar as it concludes that the evidence that defendant \"relished\" or \"evidenced a sense of pleasure\" in \"the infliction of extreme physical pain\" was legally insufficient (Penal Law § 125.27 [1] [a] [x]). Based on defendant's own statements delighting in the vulnerable location of the fatal wound and the fact that the victim was not going to{**41 NY3d at 530} be able to eat \"for a good long time,\" I believe a jury could have rationally concluded that this element was satisfied."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 2,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 6,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "1",
+      "2",
+      "3"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 5 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

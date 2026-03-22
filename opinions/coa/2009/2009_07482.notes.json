@@ -1,0 +1,121 @@
+{
+  "caseId": "2009_07482",
+  "sourcePath": "coa/2009/2009_07482.htm",
+  "notesPath": "coa/2009/2009_07482.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.444Z",
+  "source": {
+    "title": "People v Arafet (2009 NY Slip Op 07482)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 34058,
+    "lineCount": 134,
+    "tagCounts": {
+      "a": 20,
+      "b": 14,
+      "blockquote": 6,
+      "body": 2,
+      "br": 14,
+      "div": 10,
+      "font": 46,
+      "head": 2,
+      "html": 2,
+      "i": 120,
+      "p": 46,
+      "script": 4,
+      "style": 2,
+      "sup": 4,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Arafet",
+      "2009 NY Slip Op 07482 [13 NY3d 460]",
+      "October 22, 2009",
+      "Smith, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, February 10, 2010"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Nasin Arafet, Appellant."
+    ],
+    "citationLine": "2009 NY Slip Op 07482 13 NY3d 460",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued September 17, 2009; decided October 22, 2009",
+      "October 22, 2009",
+      "As corrected through Wednesday, February 10, 2010"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 47,
+    "footnotesCount": 2
+  },
+  "citations": {
+    "slipOpinion": "2009 NY Slip Op 07482",
+    "officialCitation": "13 NY3d 460",
+    "pageMarkerCount": 22
+  },
+  "opinionStructure": {
+    "totalWritings": 4,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "dissent": 1
+    },
+    "authors": [
+      "Smith",
+      "Ciparick"
+    ],
+    "qualifierLines": [
+      "{**13 NY3d at 463} OPINION OF THE COURT",
+      "Evidence of all four incidents was admitted over defendant's objection under Molineux. A jury convicted defendant of grand larceny and criminal possession of stolen property, and the Appellate Division affirmed, with two Justices dissenting (54 AD3d 517 [2008]). An Appellate Division Justice granted leave to appeal, and we now affirm. ",
+      "Though the dissent suggests otherwise (dissenting op at 473), we find the proof that the fingerprint was indeed defendant's to be extremely clear. A qualified expert testified without contradiction that he had found \"at least fifteen obvious points of identification in common\" between the fingerprint on the toll card and one known to come from defendant's left index finger. It is of no significance that defendant shares one characteristic—a \"loop\" rather than a\"whorl\" or \"arch\" demarcation—with most of the population; the 15 points of identification prove the fingerprints match. Much of defense counsel's cross-examination of the expert was devoted to demonstrating that fingerprint analysis is not absolutely infallible; i.e., that mistakes in fingerprint identification are not unknown to history. Nothing in the record gives any ground for serious doubt about the accuracy of this particular identification. ",
+      " Because the majority resorts to an improper application of the harmless error doctrine where County Court committed a flagrant Molineux violation in allowing highly prejudicial evidence as to defendant's prior federal felony conviction and a multitude of other collateral evidence concerning prior criminality, I respectfully dissent. The glaring error of permitting an FBI special agent to testify at length as{**13 NY3d at 469} to defendant's prior cargo theft in April 2000—a crime of the very same nature as the charges in this case—most certainly impacted the jury to defendant's detriment. In addition, as this prosecution rested entirely on circumstantial evidence of less than compelling force, invocation of harmless error is not appropriate to avoid the conclusion that defendant was deprived of a fair trial. ",
+      "I agree with the majority's holding that County Court erred in allowing evidence of defendant's prior federal conviction, but this error cannot be characterized as harmless. As the majority notes, the requirements for the Molineux identity exception were not established as to this past crime. Defendant's prior conviction for a cargo theft was not so unique or peculiar that it{**13 NY3d at 471} involved a signature offense. As a prosecution witness explained at the trial, the theft of a tractor-trailer is a relatively common type of crime in this general region. Further, no witness at this trial could testify as to how defendant may have stolen this vehicle, much less that he did so in a peculiar and distinctive manner, thereby identifying himself as the culprit. Nor was the collateral evidence probative of a common scheme or plan because that crime and the charges here do not strike \" 'such a concurrence of common features that the various acts are naturally to be explained as caused by a general plan of which they are the individual manifestations' \" (People v Fiore, 34 NY2d 81, 85 [1974], quoting 2 Wigmore, Evidence § 304, at 202 [3d ed]). Moreover, even had the identity or common scheme or plan exceptions been established—which they were not—the probative value of this collateral evidence would have been outweighed by its potential for prejudice. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 2,
+    "labels": [
+      "*",
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 4 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

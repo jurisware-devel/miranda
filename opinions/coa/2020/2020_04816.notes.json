@@ -1,0 +1,149 @@
+{
+  "caseId": "2020_04816",
+  "sourcePath": "coa/2020/2020_04816.htm",
+  "notesPath": "coa/2020/2020_04816.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.106Z",
+  "source": {
+    "title": "People v Hinshaw (2020 NY Slip Op 04816)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 112603,
+    "lineCount": 206,
+    "tagCounts": {
+      "a": 158,
+      "b": 78,
+      "blockquote": 4,
+      "body": 2,
+      "br": 52,
+      "div": 28,
+      "font": 114,
+      "head": 2,
+      "html": 2,
+      "i": 1002,
+      "p": 160,
+      "script": 4,
+      "style": 2,
+      "sup": 36,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 22
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Hinshaw",
+      "2020 NY Slip Op 04816 [35 NY3d 427]",
+      "September 1, 2020",
+      "Wilson, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, November 18, 2020"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Robert Hinshaw, Appellant."
+    ],
+    "citationLine": "2020 NY Slip Op 04816 35 NY3d 427",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Submitted April 20, 2020; decided September 1, 2020",
+      "September 1, 2020",
+      "As corrected through Wednesday, November 18, 2020"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 92,
+    "footnotesCount": 18
+  },
+  "citations": {
+    "slipOpinion": "2020 NY Slip Op 04816",
+    "officialCitation": "35 NY3d 427",
+    "pageMarkerCount": 56
+  },
+  "opinionStructure": {
+    "totalWritings": 5,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "concurrence": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Wilson",
+      "Stein",
+      "Garcia"
+    ],
+    "qualifierLines": [
+      "{**35 NY3d at 429} OPINION OF THE COURT",
+      "By indictment, Mr. Hinshaw was charged with second-degree criminal possession of a weapon (Penal Law § 265.03 [3]) and unlawful possession of less than an ounce of marijuana (Penal Law § 221.05). He moved to suppress the marijuana, the gun, and his statements. At the suppression hearing, the Trooper testified that he did not attempt to confirm the information with the originator; he treated the notice as indicating the car may have been stolen; and he had stopped the car based solely on the results of the license plate check. County Court denied suppression of the physical evidence but granted suppression of Mr. Hinshaw's inculpatory statements that preceded a Miranda warning. Thereafter, Mr. Hinshaw pleaded guilty to the entire indictment. The Appellate Division affirmed, concluding that the \"impoundment report, coupled with the Trooper's explanation of its import, provided reasonable suspicion to stop the vehicle\" (, 170 AD3d 1680, 1681 [4th Dept 2019]). Two Justices dissented, contending that it was not objectively reasonable to believe that any crime had been committed on the basis of the license plate inquiry result (id. at 1682-1683 [Whalen, P.J., and Centra, J., dissenting]).",
+      "In contrast to the Fourth Amendment, which \"permits brief investigative stops . . . when a law enforcement officer has 'a particularized and objective basis for suspecting the particular person stopped of criminal activity' \" (Prado Navarette v California, 572 US 393, 396 [2014]; see also Terry v Ohio, 392 US 1 [1968]), this Court has adopted greater protections than Terry and its federal progeny for pedestrian stops by the police (see People v De Bour, 40 NY2d 210, 223 [1976] [creating a four-tiered framework for evaluating police-civilian encounters]). Our De Bour test, in which \"constitutional law and common law both played a part\" (People v Hollman, 79 NY2d 181, 195 [1992]), is more protective of the rights of individuals \"to be free from aggressive governmental interference\" (De Bour, 40 NY2d at 216; , 31 NY3d 1028, 1030-1031 [2018, Garcia, J., dissenting] [\"The De Bour method differs significantly from the federal approach . . . The hyper-stringent rule of De Bour also serves as a barrier to legitimate, effective, and minimally-intrusive law enforcement practices\" (internal quotation marks omitted)]). Thus, \"[t]he continued vitality of De Bour . . . is not contingent upon the interpretation that the Supreme Court gives the Fourth Amendment, because De Bour is largely based upon considerations of reasonableness{**35 NY3d at 432} and sound State policy\" (Hollman, 79 NY2d at 195). As relevant here, to curb potential discriminatory practices, New York also provides greater protections than does federal law for traffic infraction vehicle stops, as evidenced by our decision in Robinson (see Robinson, 97 NY2d at 353). There, we emphasized that \"[d]iscriminatory law enforcement has no place in our law\" (id.). Correspondingly, suspicionless traffic stops—such as sobriety checkpoints—are allowed in New York only when conducted in a \"uniform and nondiscriminatory manner\" (Matter of Muhammad F., 94 NY2d 136, 145-146 [1999]).",
+      "We do little more today than clarify the law of New York as it is presently understood by all four Appellate Division departments. Our statement in Robinson that \"[t]his Court has always evaluated the validity of a traffic stop based on probable{**35 NY3d at 434} cause that a driver has committed a traffic violation\" has been understood and repeated by all four Appellate Division departments to mean that an officer must have probable cause to stop a vehicle for a traffic infraction (, 40 AD3d 535, 536 [1st Dept 2007] [\"(a) vehicular stop requires probable cause to believe the driver has committed a traffic violation\" (emphasis added)]; , 15 AD3d 421, 423 [2d Dept 2005] [applying probable cause to a Vehicle and Traffic Law violation rather than reasonable suspicion as the court below had]; , 145 AD3d 1349, 1349 [3d Dept 2016] [\"(i)n order for a traffic stop to pass constitutional muster, before making the stop, 'a police officer (must have) probable cause to believe that the driver of an automobile has committed a traffic violation' \"]; People v Washburn, 309 AD2d 1270, 1271 [4th Dept 2003] [stating the three-part standard as written here]; , 46 Misc 3d 1207[A], 2015 NY Slip Op 50009[U], *2 [Ithaca City Ct 2015] [after \"engag(ing) in a thorough review of the case law of the Four Appellate Divisions\" on this question, finding that since 2012 \"the Appellate Courts are now unanimous in employing the elevated Robinson . . . standard of 'probable cause' required for an officer to validly stop a vehicle for a Vehicle and Traffic violation\"]). Thus, the dissent's position—that police officers lacking probable cause may seize the occupants in vehicles for traffic violations—has not prevailed in the courts of New York, even if it remains the standard in federal courts.",
+      "In addition to its misplaced reliance on federal precedent, the dissent's disagreement with the standard for automobile stops in New York rests on dicta in People v Ingle (36 NY2d 413 [1975]) that we have since rejected (dissenting op at &mdash). The question in Ingle was whether the police could stop a vehicle to check its registration when there was neither probable cause nor reasonable suspicion to do so (Ingle, 36 NY2d at 420). We held that such a stop was unlawful. Precision as to which standard to apply to the stop was not at issue, and{**35 NY3d at 436} indeed the Ingle Court intermittently used both \"probable cause\" and \"reasonable suspicion\" where neither was involved. Unsurprisingly, then, Robinson had no reason to mention Ingle. Our recognition that probable cause is necessary, rather than just sufficient, for a stop based on a traffic infraction therefore does not amount to a \"sea change\" or \"[s]hifting course\" (dissenting op at &mdash, &mdash). We merely recognize what Robinson did impliedly and the Appellate Division departments, as a consequence, have done expressly: erased any dicta in Ingle that have sometimes been read to permit stops for traffic infractions based on less than probable cause. To the extent there exists any inconsistency between Robinson and Ingle, any uncertainty by commentators, or any \"confusion among courts\" {**35 NY3d at 437}(dissenting op at &mdash), stopping a vehicle for a traffic infraction requires probable cause; stopping a vehicle for suspicion of criminal activity requires less: \"reasonable suspicion that the driver or occupants of the vehicle have committed, are committing, or are about to commit a crime\" (Spencer, 84 NY2d at 753).",
+      "The result of the license plate check provided neither probable cause to conclude a traffic infraction had occurred nor any basis for an objectively reasonable belief that criminal behavior had occurred or was afoot. Although the People and our dissenting colleague argue that the Trooper understood the \"generic\" impound notification to require further investigation as to its cause, the Trooper's speculation that the car could have been impounded for \"registration . . . problems,\" the \"plates could have been suspended,\" \"insurance could have been suspended,\" or the vehicle could have been stolen was just that—pure speculation. Indeed, the absence of any underlying Vehicle and Traffic Law violation from the database inquiry result undermined those unsupported hypotheses. The Trooper's general knowledge, training, and experience (dissenting op at &mdash) is completely untethered from the question at hand: the objective reasonableness of his conclusion that the response to the license plate inquiry meant a traffic law had been violated or a crime had been, or was about to be, committed. In fact, the Trooper testified that he had minimal prior experience with{**35 NY3d at 438} such impound notifications, thus undercutting the proposition that he could objectively conclude from such a notice that a violation or crime had occurred or was imminent. The Trooper's subjective belief that the impound was based on some violation or illegality, honestly held, is insufficient unless it rests on some objective basis (, 14 NY3d 741, 742 [2010]). The Trooper provided no such basis, and indeed never testified that any one of the hypothesized offenses pertained to Mr. Hinshaw.",
+      "I concur with my colleagues in the majority to the extent they conclude that, under the circumstances here, the Trooper lacked reasonable suspicion to justify the stop of defendant's vehicle insofar as the impound notification failed to supply an objectively reasonable basis for the Trooper to believe that either the apparent impounding of the vehicle or its subsequent release from the impound lot was indicative of criminality. However, because my colleagues inordinately focus on a legal question that the parties have not asked us to resolve and regarding which there is no present need for us to opine, I concur in result, only.",
+      "In short, the only question presented here is whether the Trooper's stop of defendant's vehicle was supported by reasonable suspicion of a crime. While I agree with the majority's determination of that issue, the majority's purported resolution of the additional question of whether New York law requires a higher level of justification for a vehicle stop based on a traffic infraction is beyond the scope of this appeal and unnecessary to its holding that the Trooper lacked even reasonable suspicion to support the stop. I, therefore, concur in result, only.{**35 NY3d at 441}",
+      "But the majority does not stop there. Announcing a sea change in New York constitutional law, the majority elevates the degree of suspicion required to conduct an arbitrary subset of traffic stops. The majority cannot identify the source, purpose, or value of its novel, bifurcated standard, nor does it engage in the disciplined, in-depth analysis that typically accompanies a significant pronouncement of state constitutional law. To make matters worse, its new paradigm is unnecessary to the resolution of this case; neither party advocates for a dual standard, and the majority need not apply one. The majority's dismissive treatment and gratuitous holding inflict damage not only on New York law, but on this Court's historic process for constitutional decision-making. I dissent.",
+      "Lacking any legal foundation, the majority manufactures a policy justification for its dual standard: the Robinson Court provided \"greater protections\" for \"traffic infraction vehicle stops\" in order to \"curb potential discriminatory practices\" (majority op at &mdash). As an initial matter, the Robinson Court did the exact opposite. The defendants in Robinson asked the Court to adopt a heightened standard (a \"motivation\"-based test) that would invalidate pretextual stops, and the Court rejected it in favor of the less-protective Whren approach (Robinson, 97 NY2d at 349). Indeed, the dissenters in that case lamented that Robinson \"inadequately protect[ed] a core value of both the Fourth Amendment and this State's counterpart\" by \"permitting arbitrary exercises of discretion on the part of police officers to conduct investigative stops of vehicles on the pretext of pursuing violations of the Vehicle and Traffic Law\" (id. at 360 [Levine, J., dissenting] [dissenting on the ground that \"Whren should not be followed as a matter of State constitutional law\"]). The Robinson dissent then proceeded to engage in a comprehensive state constitutional analysis—sidestepped by the majority here—and concluded that \"various factors strongly weigh against adopting Whren and in favor of imposing a stricter standard as a matter of State constitutional law in cases involving pretextual traffic stops\" (id. at 367).",
+      "{**35 NY3d at 455}In any event, a bifurcated standard does nothing to curb discriminatory practices. As the Robinson dissenters noted, the vast majority of infraction-based traffic stops—even pretextual stops—are already supported by probable cause, leaving the police with \"wide discretion to engage in investigative seizures\" (see id. at 363-364 [\"the existence of probable cause that the infraction was committed is manifestly insufficient to protect against arbitrary police conduct\"]). Presumably, that is why no one in Robinson asked for a bifurcated standard, and why courts across the country have rejected it. To be sure, there are legitimate and effective ways in which this Court might curb discriminatory practices; a bifurcated standard is simply not one of them.",
+      "Nor does a bifurcated standard derive from De Bour—a case cited heavily by majority (majority op at &mdash) that goes conspicuously unmentioned by defendant, the People, the suppression court, and the Appellate Division. As an initial matter, De Bour did not even involve a traffic stop. Both the police officer and the defendant were on foot, and the Court's decision pertained to \"the narrower area of investigative street encounters\" (De Bour, 40 NY2d at 228 [Fuchsberg, J., dissenting in People v De Bour and concurring in People v La Pene]).",
+      "The majority also fails to address the broader inconsistencies generated by its new standard. According to the majority's theory, the requisite level of suspicion for a traffic stop hinges on \"the gravity of the crime involved\" (majority op at — {**35 NY3d at 457}[emphasis omitted]; , 34 NY3d 607, 627 [2019, Wilson, J., dissenting]). Why, then, does the majority only differentiate traffic infractions? Why not distinguish between misdemeanors and felonies? Or between classes of misdemeanors and classes of felonies? Moreover, if the \"same basic balancing is mandated\" for both pedestrian and vehicle stops (majority op at &mdash), must we elevate the degree of suspicion required for street encounters that are based on suspected violations (rather than suspected misdemeanors or felonies)? Under the majority's rule, De Bour \"level four\" suspicion (probable cause) is apparently required to initiate a De Bour \"level three\" encounter (a Terry stop) that is based on a suspected violation, rather than a suspected crime. In other words, as of today, \"De Bour level three does not exist\" with respect to \"offenses that are not felonies or misdemeanors\" (Britt, 34 NY3d at 628 [Wilson, J., dissenting]).",
+      "The majority claims that \"we are required to consider both prongs of th[e] bifurcated standard\" because \"the Trooper justified the stop on the basis of traffic infractions as well as crimes\" (majority op at — n 6). That is wrong. An accurate recitation{**35 NY3d at 458} of the record makes clear that the Trooper did not stop the car \"to investigate whether the vehicle had registration problems, the license plates or insurance were suspended, or if the vehicle was, in fact, stolen\" (majority op at — n 6). Rather, the Trooper testified that possible \"reasons\" the vehicle could have \"be[en] impounded\" in the first place included problems with the vehicle's registration, suspended plates or insurance, or a stolen vehicle report. But the reason for the traffic stop, the Trooper repeatedly testified, was to investigate why, despite triggering an impound notice, the vehicle was not \"in an impound lot.\" Indeed, at the Appellate Division, there was \"no dispute that the State Trooper here did not observe defendant committing any traffic infraction,\" and therefore the \"only issue\" was whether the Trooper \"had reasonable suspicion that defendant had committed a crime\" (170 AD3d at 1682 [Whalen, P.J., and Centra, J., dissenting]). Even the majority concedes that the Trooper \"stopped the car based solely on the results of the license plate check,\" which \"indicat[ed] the car may have been stolen\" (majority op at — [emphasis added], — [noting that the Trooper \"did not observe any violations of the Vehicle and Traffic Law\"]). In other words, even under a dual standard, probable cause does not apply."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 1,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 18,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 5 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "caseId": "2023_05970",
+  "sourcePath": "coa/2023/2023_05970.htm",
+  "notesPath": "coa/2023/2023_05970.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.232Z",
+  "source": {
+    "title": "People v David (2023 NY Slip Op 05970)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 39009,
+    "lineCount": 141,
+    "tagCounts": {
+      "a": 50,
+      "b": 30,
+      "blockquote": 6,
+      "body": 2,
+      "br": 20,
+      "div": 20,
+      "em": 4,
+      "font": 46,
+      "head": 2,
+      "html": 2,
+      "i": 230,
+      "p": 76,
+      "script": 4,
+      "style": 2,
+      "sup": 12,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v David",
+      "2023 NY Slip Op 05970 [41 NY3d 90]",
+      "November 21, 2023",
+      "Halligan, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, April 24, 2024"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Carlos L. David, Appellant."
+    ],
+    "citationLine": "2023 NY Slip Op 05970 41 NY3d 90",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued September 13, 2023; decided November 21, 2023",
+      "November 21, 2023",
+      "As corrected through Wednesday, April 24, 2024"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 46,
+    "footnotesCount": 6
+  },
+  "citations": {
+    "slipOpinion": "2023 NY Slip Op 05970",
+    "officialCitation": "41 NY3d 90",
+    "pageMarkerCount": 22
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Halligan",
+      "Rivera"
+    ],
+    "qualifierLines": [
+      "{**41 NY3d at 93} OPINION OF THE COURT",
+      "David also raises an additional claim: that his convictions violate due process by treating presumptively innocent conduct as unlawful and shifting the burden of production to David to show otherwise. As an initial matter, we read the statutory scheme differently than the dissent does. Because the licensure exemption is not found within the text of the relevant Penal Law provision criminalizing possession of a weapon, it presumptively operates as a \"proviso that need not be pleaded but may be raised by the accused as a bar to prosecution or a defense at trial\" (, 7 NY3d 234, 236 [2006]; see also id. at 236-237 [\"(E)ssential allegations are generally determined by the statute defining the crime\"]; , 13 NY3d 17, 31 [2009]). In contrast to the \"home or place of business\" exception previously found within the text of Penal Law § 265.02 (former [4]), which we have construed as an element of the relevant offense (see People v Rodriguez, 68 NY2d 674, 675 [1986], revg on dissenting op of Lazer, J., 113 AD2d 337, 343-348 [2d Dept 1985]), the licensure exemption is not found within the text of Penal Law § 265.03 (3). Rather, the Legislature placed it within Penal Law § 265.20, alongside myriad other exemptions—including possession by a state prison warden in pursuit of official duty (Penal Law § 265.20 [a] [2]), persons employed in fulfilling defense contracts with the federal government (Penal Law § 265.20 [a] [1] [e]), and a person voluntarily surrendering a weapon (Penal Law § 265.20 [a] [1] [f])—that would not reasonably be viewed as elements of the various offenses criminalizing possession of a weapon. \"[C]ommon sense and reasonable pleading\" suggest the {**41 NY3d at 97}Legislature did not intend that the People plead and prove every one of these exemptions (Davis, 13 NY3d at 31), and no party has pointed us to any sign of legislative intent to treat the licensure exemption alone as the sole element among that list.",
+      "For the reasons I discuss in People v Garcia (41 NY3d 62 [2023, Rivera, J., dissenting]), decided today, defendant's Second Amendment challenges are preserved. I now turn to the merits of those claims.",
+      "Second, the majority misunderstands Santana and how we distinguish elements from defenses. Santana involved a jurisdictional deficiency challenge to the prosecutor's information on the ground that the second-degree criminal contempt charge under Penal Law § 215.50 (3) failed to state that the crime did not arise out of a labor dispute, an exception found in the Judiciary Law and cross-referenced in Penal Law § 215.50 (3). The Court stated that \"[l]egislative intent to create an exception has generally been found when the language of exclusion is contained entirely within a Penal Law provision\" (Santana at 237). But that is the case here; the licensure exclusion is set forth in the Penal Law. It is not found in a completely different statute, as was the case in Santana. The fact that the licensure exclusion is located in a different section of the Penal Law is irrelevant to the analysis as further is supported{**41 NY3d at 105} by Santana's citation to the 1986 decision in People v Rodriguez (id. at 237, citing 68 NY2d 674, 675 [1986]). The Rodriguez Court adopted the dissenting opinion in the Appellate Division, which observed that a defendant may be required to carry the burden of proof in asserting a legislatively defined affirmative defense or negating a rebuttable presumption (People v Rodriguez, 113 AD2d 337, 343 [2d Dept 1985, Lazer, J., dissenting]). The dissent explained that absent such legislative guidance courts considered whether the information was \"uniquely in the possession of the defendant\" but after the adoption of the revised Penal Law in 1965, this approach was limited to \"offenses defined outside the Penal Law\" (id. at 345, citing e.g. People v D'Amato, 12 AD2d 439 [1st Dept 1961] [General Business Law § 343]; People v Baur, 102 Misc 2d 971 [Nassau Dist Ct 1980] [Vehicle and Traffic Law §§ 1180 (b); 1104 (a); 1110 (a)]). And in Rodriguez, because the offense was \"found within the Penal Law\"—like \"any true statutory exception setting forth a material element of a crime found in the Penal Law\"—\"the People must bear the burden of introduction unless it has been classified as a defense by the Legislature\" (id. at 345)."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 6,
+    "labels": [
+      "1",
+      "2",
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

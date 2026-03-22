@@ -1,0 +1,130 @@
+{
+  "caseId": "2025_02965",
+  "sourcePath": "coa/2025/2025_02965.htm",
+  "notesPath": "coa/2025/2025_02965.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.318Z",
+  "source": {
+    "title": "People v Hemingway (2025 NY Slip Op 02965)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 9196,
+    "lineCount": 92,
+    "tagCounts": {
+      "a": 4,
+      "b": 17,
+      "body": 2,
+      "br": 21,
+      "div": 14,
+      "font": 10,
+      "head": 2,
+      "html": 2,
+      "i": 20,
+      "opinion": 1,
+      "p": 26,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": [
+      "b"
+    ]
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Hemingway",
+      "2025 NY Slip Op 02965 [44 NY3d 939]",
+      "May 15, 2025",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, October 8, 2025"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Carissa Hemingway, Appellant."
+    ],
+    "citationLine": "2025 NY Slip Op 02965 44 NY3d 939",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued April 8, 2025; decided May 15, 2025",
+      "Appeal, by permission of an Associate Judge of the Court of Appeals, from an order of the Appellate Division of the Supreme Court in the Third Judicial Department, entered February 29, 2024. The Appellate Division affirmed a judgment of the Clinton County Court (William A. Favreau, J.), which had convicted defendant, upon a jury verdict, of aggravated driving while intoxicated with a child passenger, driving while ability impaired by drugs, criminal possession of a controlled substance in the seventh degree (two counts), and use of mobile telephones.",
+      "May 15, 2025",
+      "As corrected through Wednesday, October 8, 2025"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Mark Schneider , Plattsburgh, for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Mark Schneider , Plattsburgh, for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Andrew J. Wylie, District Attorney , Plattsburgh ( Jaime A. Douthat of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Andrew J. Wylie, District Attorney , Plattsburgh ( Jaime A. Douthat of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 1,
+    "opinionBlocksCount": 6,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2025 NY Slip Op 02965",
+    "officialCitation": "44 NY3d 939",
+    "pageMarkerCount": 4
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**44 NY3d at 940} OPINION OF THE COURT",
+      "Memorandum."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "STRAY_CLOSING_TAG",
+      "severity": "warning",
+      "detail": "Closing tag </b> appears more times than opening tag <b>."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "caseId": "2016_08398",
+  "sourcePath": "coa/2016/2016_08398.htm",
+  "notesPath": "coa/2016/2016_08398.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.920Z",
+  "source": {
+    "title": "People v Stewart (2016 NY Slip Op 08398)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 5055,
+    "lineCount": 74,
+    "tagCounts": {
+      "a": 6,
+      "b": 4,
+      "body": 2,
+      "br": 6,
+      "div": 6,
+      "font": 10,
+      "head": 2,
+      "html": 2,
+      "i": 24,
+      "opinion": 1,
+      "p": 16,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Stewart",
+      "2016 NY Slip Op 08398 [28 NY3d 1091]",
+      "December 15, 2016",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, February 1, 2017"
+    ],
+    "captionLines": [],
+    "citationLine": "2016 NY Slip Op 08398 28 NY3d 1091",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Decided December 15, 2016",
+      "December 15, 2016",
+      "As corrected through Wednesday, February 1, 2017"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Seymour W. James, Jr. , The Legal Aid Society , New York City ( Ellen Dille of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Seymour W. James, Jr. , The Legal Aid Society , New York City ( Ellen Dille of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Darcel D. Clark , District Attorney , Bronx ( Lori Ann Farrington of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Darcel D. Clark , District Attorney , Bronx ( Lori Ann Farrington of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 4,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2016 NY Slip Op 08398",
+    "officialCitation": "28 NY3d 1091",
+    "pageMarkerCount": 4
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**28 NY3d at 1092} OPINION OF THE COURT",
+      "Memorandum."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

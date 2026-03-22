@@ -1,0 +1,118 @@
+{
+  "caseId": "2023_00802",
+  "sourcePath": "coa/2023/2023_00802.htm",
+  "notesPath": "coa/2023/2023_00802.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.199Z",
+  "source": {
+    "title": "People v Rivera (2023 NY Slip Op 00802)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 4095,
+    "lineCount": 71,
+    "tagCounts": {
+      "a": 8,
+      "b": 4,
+      "body": 2,
+      "br": 6,
+      "div": 6,
+      "font": 8,
+      "head": 2,
+      "html": 2,
+      "i": 14,
+      "opinion": 1,
+      "p": 10,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Rivera",
+      "2023 NY Slip Op 00802 [39 NY3d 1062]",
+      "February 14, 2023",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, March 8, 2023"
+    ],
+    "captionLines": [],
+    "citationLine": "2023 NY Slip Op 00802 39 NY3d 1062",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Decided February 14, 2023",
+      "February 14, 2023",
+      "As corrected through Wednesday, March 8, 2023"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Rural Law Center of New York, Inc. , Castleton ( Kristin A. Bluvas of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Rural Law Center of New York, Inc. , Castleton ( Kristin A. Bluvas of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Gary M. Pasqua, District Attorney , Canton ( Matthew L. Peabody of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Gary M. Pasqua, District Attorney , Canton ( Matthew L. Peabody of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 3,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2023 NY Slip Op 00802",
+    "officialCitation": "39 NY3d 1062",
+    "pageMarkerCount": 3
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**39 NY3d at 1062} OPINION OF THE COURT",
+      "Concur: Acting Chief Judge Cannataro and Judges Rivera, Garcia, Wilson, Singas and Troutman."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

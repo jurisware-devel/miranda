@@ -1,0 +1,120 @@
+{
+  "caseId": "2015_02798",
+  "sourcePath": "coa/2015/2015_02798.htm",
+  "notesPath": "coa/2015/2015_02798.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.794Z",
+  "source": {
+    "title": "People v Carr (2015 NY Slip Op 02798)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 28152,
+    "lineCount": 126,
+    "tagCounts": {
+      "a": 20,
+      "b": 12,
+      "blockquote": 28,
+      "body": 2,
+      "br": 14,
+      "div": 6,
+      "font": 38,
+      "head": 2,
+      "html": 2,
+      "i": 136,
+      "p": 55,
+      "script": 4,
+      "style": 2,
+      "sup": 2,
+      "table": 6,
+      "td": 18,
+      "title": 2,
+      "tr": 18
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Carr",
+      "2015 NY Slip Op 02798 [25 NY3d 105]",
+      "April 2, 2015",
+      "Lippman, Ch. J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, May 27, 2015"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Lee Carr, Appellant.",
+      "The People of the State of New York, Respondent, v Walter Cates, Sr., Appellant."
+    ],
+    "citationLine": "2015 NY Slip Op 02798 25 NY3d 105",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued February 10, 2015; decided April 2, 2015",
+      "April 2, 2015",
+      "As corrected through Wednesday, May 27, 2015"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 31,
+    "footnotesCount": 1
+  },
+  "citations": {
+    "slipOpinion": "2015 NY Slip Op 02798",
+    "officialCitation": "25 NY3d 105",
+    "pageMarkerCount": 18
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Fahey"
+    ],
+    "qualifierLines": [
+      "{**25 NY3d at 107} OPINION OF THE COURT",
+      "Here, the in camera proceeding clearly involved substantive issues as opposed to ministerial matters and there was no justification for excluding defense counsel. Because the discussion involved important issues for trial that might have affected a \"substantial right\" of a party, defense counsels' presence was required (see Rules Governing Judicial Conduct [22 NYCRR] § 100.3 [B] [6] [a]; Contreras, 12 NY3d at 273; Goggins, 34 NY2d at 173). Mr. Rose was the People's star witness. When he failed to appear the first time, the People dispatched investigators to look for him. He then appeared, two hours late, after which the trial judge interviewed him in camera without counsel present, describing his appearance later as \"tired,\" \"disheveled,\" and \"hyper.\" When the trial judge conveyed the content of his conversation to the defense attorneys, they all requested to be present if and when the court interviewed the witness again regarding his potential future absences. Indeed, they had a very good reason to suspect that the witness's absences were caused by his use of crack cocaine and methadone, which could potentially constitute impeachment material critical to defendants' ability to defend. That request was denied. When the witness failed to appear on the next court date, the judge again interviewed him in camera and observed that he was in no condition to testify. The record belies the People's contention that the second proceeding was a simple meeting to discuss scheduling. By the second interview, it was no longer a mere scheduling matter. The proceeding involved what caused Mr. Rose to be in such \"bad shape\" that he failed to testify twice. Unlike a \"purely administrative, ministerial question\" (see dissenting op at 116), the court's discussion with Mr. Rose concerned potentially significant evidence that defense counsel may have found useful during cross-examination at trial. The trial court should have been alerted to this possibility based on Mr. Rose's suspicious and questionable{**25 NY3d at 114} appearance and demeanor, of which the court took note, when he arrived several hours late on the first day that he was scheduled to testify. Indeed, the court knew that there was serious reason to doubt the veracity of Mr. Rose's migraine explanation because the court asked him whether he was \"on drugs,\" \"suffering from any alcohol problem,\" or was \"on crack.\"",
+      "As this Court held in Contreras and Goggins, courts should rarely exclude defense counsel from a proceeding with a witness where the court has reason to believe that the matter falls outside of the permissible ex parte communications for scheduling and administrative purposes, as it did here (see 12 NY3d at 273; 34 NY2d at 173). If the dissent's characterization of the in camera discussion were correct—had the discussion been merely about scheduling—the Rules Governing Judicial Conduct authorizing ex parte communications for scheduling or administrative matters would apply, and the trial court would have been acting within its discretion to manage its docket. As the in camera discussion concerned a witness's health (both mental and physical) and credibility, issues the court knew defense counsel would address during cross-examination of the witness at trial, it was much more than a scheduling matter, and it violated defendants' right to counsel for Supreme Court to deny defense counsel physical access to the proceeding and to refuse to create a record of the proceeding for use in cross-examination (see Contreras, 12 NY3d at 273; Goggins, 34 NY2d at 173; Frost, 100 NY2d at 134; Ortega, 78 NY2d at 1102; Stincer, 482 US at 745).",
+      " The trial court conducted an in camera interview with a prosecution witness to ascertain whether his migraine was too debilitating for him to testify that day. The court granted an adjournment, for a second time, and the witness testified the next day. Now, the majority, holding that this was reversible error, grants defendants a new trial, because the interview \"concerned potentially significant evidence that defense counsel may have found useful during cross-examination at trial\" (majority op at 113). In my view, the in camera inquiry here was permissible because it was merely ministerial. Accordingly, I dissent. ",
+      "Judges Read, Rivera, Abdus-Salaam and Stein concur; Judge Fahey dissents in an opinion in which Judge Pigott concurs."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 1,
+    "labels": [
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 3 table elements before or within the header region."
+    }
+  ]
+}

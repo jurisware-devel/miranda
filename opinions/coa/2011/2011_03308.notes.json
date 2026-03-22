@@ -1,0 +1,132 @@
+{
+  "caseId": "2011_03308",
+  "sourcePath": "coa/2011/2011_03308.htm",
+  "notesPath": "coa/2011/2011_03308.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.536Z",
+  "source": {
+    "title": "People v Lingle (2011 NY Slip Op 03308)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 40586,
+    "lineCount": 166,
+    "tagCounts": {
+      "a": 54,
+      "b": 32,
+      "body": 2,
+      "br": 18,
+      "div": 20,
+      "font": 52,
+      "head": 2,
+      "html": 2,
+      "i": 328,
+      "p": 61,
+      "script": 4,
+      "style": 2,
+      "sup": 8,
+      "table": 14,
+      "td": 26,
+      "title": 2,
+      "tr": 26,
+      "u": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Lingle",
+      "2011 NY Slip Op 03308 [16 NY3d 621]",
+      "April 28, 2011",
+      "Read, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, June 29, 2011"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "John Lingle, Appellant.",
+      "The People of the State of New York, Respondent, v John Parisi, Appellant.",
+      "The People of the State of New York, Respondent, v Dominique Murrell, Appellant.",
+      "The People of the State of New York, Respondent, v John Prendergast, Appellant.",
+      "The People of the State of New York, Respondent, v Manuel Rodriguez, Appellant.",
+      "The People of the State of New York, Respondent, v Darryl Sharlow, Appellant."
+    ],
+    "citationLine": "2011 NY Slip Op 03308 16 NY3d 621",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued March 21, 2011; decided April 28, 2011",
+      "April 28, 2011",
+      "As corrected through Wednesday, June 29, 2011"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 56,
+    "footnotesCount": 4
+  },
+  "citations": {
+    "slipOpinion": "2011 NY Slip Op 03308",
+    "officialCitation": "16 NY3d 621",
+    "pageMarkerCount": 25
+  },
+  "opinionStructure": {
+    "totalWritings": 4,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "dissent": 1
+    },
+    "authors": [
+      "Read",
+      "Ciparick"
+    ],
+    "qualifierLines": [
+      "{**16 NY3d at 629} OPINION OF THE COURT",
+      "Our decision in  (14 NY3d 198 [2010], cert denied 562 US —, 131 S Ct 125 [2010]) defeats defendants' double jeopardy argument. We pointed out in Williams that defendants are \"presumed to be aware that a determinate prison sentence without a term of PRS is illegal\" and subject to correction, and therefore \"cannot claim a legitimate expectation that the originally-imposed, improper sentence is final for all purposes\" (id. at 217). Nonetheless, \"there must be a temporal limitation on a court's ability to resentence a defendant . . . since criminal courts do not have perpetual jurisdiction over all persons who were once sentenced for criminal acts\" (id.). Citing federal precedent that we found to be persuasive, we held in Williams that an expectation of finality arises for purposes of double jeopardy when a defendant completes the lawful portion of an illegal sentence and exhausts any appeal taken (id.[\"(T)here is a legitimate expectation of finality once the initial sentence has been served and the direct appeal has been completed (or the time to appeal has expired)\"]; see also id. at 227 [Pigott, J., dissenting] [characterizing majority's \"holding\" as requiring two conditions for a legitimate expectation of finality to \"attach\": \"the completion of the initial sentence and the completion of the direct appeal or time to appeal\" (internal quotation marks omitted)]). The defendants in Williams and the cases decided along with it had all completed their sentences (including any discharge on conditional release) before being resentenced. By contrast, the six defendants in these cases{**16 NY3d at 631} had not yet completed their originally-imposed sentences of imprisonment when they were resentenced to add PRS. ",
+      "To counter Williams, defendants highlight the Second Circuit's decision in Stewart v Scully (925 F2d 58 [2d Cir 1991]). Focusing on the \"substantial portion\" of the originally-imposed indeterminate sentence already served, the court in Stewart decided that the petitioner possessed a \"legitimate expectation in the finality of his sentence, thus violating the protection against multiple punishments guaranteed by the double jeopardy clause\" (id. at 58). But Stewart pleaded guilty in exchange for a maximum sentencing exposure of 20 years. Upon subsequently learning that the minimum sentence had to be one third (as opposed to one half) the maximum, the sentencing court increased Stewart's maximum sentence to 24 years. By contrast, these defendants were not caught unaware when a sentencing agreement was changed: defendants Lingle, Parisi, Murrell, Prendergast and Rodriguez were sentenced after trials; defendant Sharlow was sentenced, \"as promised, to seven years\" (dissenting op at 636 [emphasis added]). ",
+      " I join the majority opinion in only four of these cases, dissenting in People v Sharlow and People v Rodriguez. ",
+      "Citing our holding in  (14 NY3d 198 [2010]), the Appellate Division reversed and vacated the term of PRS. The court concluded that Sharlow's \"release from prison erected a bar under the Double Jeopardy Clause of the United States Constitution . . . to the addition thereafter of a period of PRS\" (, 75 AD3d 568, 569 [2d Dept 2010]). A Judge of this Court granted the People leave to appeal (15 NY3d 924 [2010]). The majority now reverses the order of the Appellate Division and I respectfully dissent. ",
+      "The People moved for reargument at the Appellate Division. While that application remained pending, a Judge of this Court granted both Rodriguez and the People leave to appeal (15 NY3d 855 [2010]). Subsequently, on March 3, 2011, the Appellate Division granted the People's reargument motion and recalled its May 18, 2010 decision. (, 82 AD3d 418 [1st Dept 2011].) Although the court adhered to its prior conclusion that a Sparber resentencing is not a plenary proceeding that gives \"occasion to revisit the original prison sentence\" (id. at 418), the court now held that it was \"without authority\" to{**16 NY3d at 640} reduce Rodriguez's term of imprisonment \"as a matter of discretion in the interest of justice\" (id. at 419). In light of the Appellate Division's holding, the People's appeal to this Court became moot. However, a Judge of this Court once again granted Rodriguez leave to appeal (16 NY3d 836 [2011]). The majority now affirms the order of the Appellate Division and I respectfully dissent. ",
+      "Chief Judge Lippman and Judges Ciparick, Graffeo, Smith, Pigott and Jones concur. ",
+      "Judges Graffeo, Smith and Pigott concur with Judge Read; Judge Ciparick dissents and votes to reverse in a separate opinion in which Chief Judge Lippman and Judge Jones concur. ",
+      "Judges Graffeo, Smith and Pigott concur with Judge Read; Judge Ciparick dissents and votes to affirm in another opinion in which Chief Judge Lippman and Judge Jones concur. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 4,
+    "labels": [
+      "1",
+      "2",
+      "1",
+      "2"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 4 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 7 table elements before or within the header region."
+    }
+  ]
+}

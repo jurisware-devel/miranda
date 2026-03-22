@@ -1,0 +1,134 @@
+{
+  "caseId": "2005_09574",
+  "sourcePath": "coa/2005/2005_09574.htm",
+  "notesPath": "coa/2005/2005_09574.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.299Z",
+  "source": {
+    "title": "People v Jacobs (2005 NY Slip Op 09574)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 36216,
+    "lineCount": 171,
+    "tagCounts": {
+      "a": 62,
+      "b": 66,
+      "blockquote": 12,
+      "body": 2,
+      "br": 40,
+      "div": 4,
+      "font": 50,
+      "head": 2,
+      "html": 2,
+      "i": 128,
+      "p": 39,
+      "script": 4,
+      "style": 2,
+      "sup": 30,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 10
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Jacobs",
+      "2005 NY Slip Op 09574 [6 NY3d 188]",
+      "December 15, 2005",
+      "Kaye, Ch.J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, April 05, 2006"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "James Jacobs, Appellant."
+    ],
+    "citationLine": "2005 NY Slip Op 09574 6 NY3d 188",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued November 16, 2005; decided December 15, 2005",
+      "December 15, 2005",
+      "As corrected through Wednesday, April 05, 2006"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 41,
+    "footnotesCount": 15
+  },
+  "citations": {
+    "slipOpinion": "2005 NY Slip Op 09574",
+    "officialCitation": "6 NY3d 188",
+    "pageMarkerCount": 24
+  },
+  "opinionStructure": {
+    "totalWritings": 4,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "dissent": 1
+    },
+    "authors": [
+      "Kaye",
+      "G.B. Smith"
+    ],
+    "qualifierLines": [
+      "{**6 NY3d at 189} OPINION OF THE COURT",
+      "In this case, the Appellate Division's findings that Cartier-Giroux acted as lead counsel throughout defendant's trial and that Shamis's trial participation was minimal have support in the record. As the dissent points out, Cartier-Giroux filed and subscribed all pretrial defense motions and discovery demands; argued against the People's applications made pursuant to{**6 NY3d at 191} People v Molineux (168 NY 264 [1901]), People v Ventimiglia (52 NY2d 350 [1981]) and People v Sandoval (34 NY2d 371 [1974]), and in support of defendant's application under People v Betts (70 NY2d 289 [1987]); argued against recusal of the Justice originally assigned to preside over the trial; signed the waiver of defendant's right to a jury trial; cross-examined the prosecution's witness; negotiated the stipulation by which all defense exhibits were introduced into evidence; argued in support of defendant's request for an adverse inference; made most of the objections and legal arguments at trial; delivered defendant's closing argument; made a bail application on defendant's behalf after the guilty verdict; moved to set aside the verdict; and represented defendant at sentencing. ",
+      " If a defendant in a criminal proceeding is unwittingly represented at a bench trial by a law school graduate who has passed the bar but is masquerading as a duly licensed attorney, as well as duly licensed counsel, has he or she been deprived of the constitutional right to counsel? The answer to that question arguably depends in part on the level of participation of the nonlawyer. Where, as here, the person posing as an attorney and the licensed counsel were cocounsel who divided up various duties pertaining to the defendant's defense, and two of the nonlawyer's duties were to make the opening statement and present the defendant's case to the factfinder,{**6 NY3d at 192} and the licensed attorney was not the nonlawyer's supervisor, the nonlawyer's participation in the defendant's defense is significant. In light of the significant role played by the nonlawyer and given the fundamental principle that the right to counsel means the right of a defendant to be represented by an admitted attorney during all phases of the criminal proceeding, defendant has been deprived of the right to counsel under the Federal and New York constitutions. Accordingly, I dissent and would vote to reverse defendant's conviction and remand for a new trial. ",
+      "Accordingly, I dissent. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 15,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 4 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

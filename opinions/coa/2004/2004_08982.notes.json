@@ -1,0 +1,136 @@
+{
+  "caseId": "2004_08982",
+  "sourcePath": "coa/2004/2004_08982.htm",
+  "notesPath": "coa/2004/2004_08982.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.259Z",
+  "source": {
+    "title": "People v Marrero (2004 NY Slip Op 08982)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 3892,
+    "lineCount": 66,
+    "tagCounts": {
+      "a": 2,
+      "appcouns": 1,
+      "b": 4,
+      "body": 2,
+      "br": 4,
+      "div": 2,
+      "font": 4,
+      "head": 2,
+      "html": 2,
+      "i": 16,
+      "p": 12,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [
+      "appcouns"
+    ],
+    "strayClosingTags": [
+      "appcouns"
+    ]
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Marrero",
+      "2004 NY Slip Op 08982 [3 NY3d 762]",
+      "December 2, 2004",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, February 02, 2005"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Appellant,",
+      "v",
+      "Jose Marrero, Respondent."
+    ],
+    "citationLine": "2004 NY Slip Op 08982 3 NY3d 762",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Decided December 2, 2004",
+      "December 2, 2004",
+      "As corrected through Wednesday, February 02, 2005"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Robert T. Johnson, District Attorney , Bronx ( Christopher J. Blira-Koessler and Joseph N. Ferdenzi of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Robert T. Johnson, District Attorney , Bronx ( Christopher J. Blira-Koessler and Joseph N. Ferdenzi of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Legal Aid Society , New York City ( Richard Joselson and Laura R. Johnson of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Legal Aid Society , New York City ( Richard Joselson and Laura R. Johnson of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 4,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2004 NY Slip Op 08982",
+    "officialCitation": "3 NY3d 762",
+    "pageMarkerCount": 1
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "OPINION OF THE COURT",
+      "Memorandum. "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <appcouns> in source HTML."
+    },
+    {
+      "code": "STRAY_CLOSING_TAG",
+      "severity": "warning",
+      "detail": "Closing tag </appcouns> appears more times than opening tag <appcouns>."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "caseId": "2025_05873",
+  "sourcePath": "coa/2025/2025_05873.htm",
+  "notesPath": "coa/2025/2025_05873.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.345Z",
+  "source": {
+    "title": "People v Licius (2025 NY Slip Op 05873)",
+    "publicationStatus": "slip_op_only"
+  },
+  "fileInfo": {
+    "byteSize": 9744,
+    "lineCount": 79,
+    "tagCounts": {
+      "a": 2,
+      "b": 4,
+      "body": 2,
+      "br": 18,
+      "dateline": 2,
+      "div": 12,
+      "font": 8,
+      "form": 2,
+      "head": 2,
+      "html": 2,
+      "i": 12,
+      "input": 1,
+      "p": 26,
+      "sc": 2,
+      "script": 4,
+      "style": 2,
+      "table": 2,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [
+      "form",
+      "input"
+    ],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Licius",
+      "2025 NY Slip Op 05873",
+      "Decided on October 23, 2025",
+      "Court of Appeals",
+      "Wilson, Ch. J.",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "This opinion is uncorrected and subject to revision before publication in the Official Reports."
+    ],
+    "captionLines": [
+      "The People & c., Respondent,",
+      "v",
+      "Richecarde Licius, Appellant."
+    ],
+    "citationLine": "2025 NY Slip Op 05873",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "On May 3, 2022, Mr. Licius was arraigned in Criminal Court on a misdemeanor complaint. There is no dispute that August 1, 2022, was the date by which the People were required to announce their readiness to comply with the CPL 30.30 (1) speedy trial deadline. On that date, at 5:03 p.m., the People submitted a certificate of compliance, statement of readiness (SOR), and other documents to the court through the court's Electronic Document Delivery System (EDDS). The People also served the documents on defense counsel that day.",
+      "The clerk's office was closed at the time the People filed the SOR and other documents through EDDS. The following morning, on August 2, 2022, at 9:56 a.m., the clerk's office marked the SOR as filed as of August 1, 2022, and notified the People. Mr. Licius's counsel moved to dismiss the accusatory instrument pursuant to CPL 30.30, arguing both that CPL 30.30 does not permit the prosecution to state it is ready for trial after the court's close of business on the final day of the statutory speedy trial period, and also that the SOR was not filed until the clerk's office reviewed and accepted it on August 2, 2022, after the speedy trial period had elapsed.",
+      "Criminal Court granted Mr. Licius's motion to dismiss, holding that the People's 5:03 p.m. filing was invalid because \"the People [must] be capable of actually beginning a trial when they announce readiness.\" The Appellate Term reversed, holding that the People's readiness \"and the court's ability to commence a trial are separate issues\" and that \"since the implementation of EDDS, documents can now be submitted throughout the day and later be 'deemed filed' by the clerk\" (82 Misc 3d 18, 21 [App Term, 2d Dept, 2d, 11th & 13th Jud Dists 2023]). A Judge of this Court granted Mr. Licius leave to appeal ( see 41 NY3d 984 [2024]). We affirm.",
+      "Mr. Licius further contends that even if the People had until midnight on August 1 to submit their SOR, because the People used the EDDS to submit it, and because the clerk's office did not review and accept it until the morning of August 2, it is nevertheless untimely. He relies on 22 NYCRR 202.5-c (c) (3), which states that documents sent through EDDS \"shall not be deemed filed until the clerk of such court or his or her designee shall have reviewed the documents and determined . . . that all other filing requirements have been satisfied.\" Mr. Licius argues this language requires the court to declare the People's SOR \"deemed filed\" within the CPL 30.30 90-day deadline. We reject his interpretation, because CPL 30.30 regulates only the People's SOR submission, not the clerk's review of the SOR submission. The validity of an SOR does not turn on the speed with which the clerk's office reviews and accepts filings. The purpose of the SOR is to require the People to \"state[] or otherwise provide[] notice that the [P]eople are ready for trial\" (CPL 30.30 [5]). In submitting the SOR through EDDS at 5:03 p.m. on August 1, 2022, that purpose was fully served. Both the court and Mr. Licius were put on notice of the People's readiness.",
+      "Decided on October 23, 2025"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Simon Greenberg, for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Simon Greenberg, for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Julian Joiris, for respondent. WILSON , Chief Judge:",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": true,
+        "argumentTailPreview": "WILSON , Chief Judge:",
+        "sentenceText": "Julian Joiris, for respondent.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Julian Joiris, for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Julian Joiris, for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 13,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2025 NY Slip Op 05873",
+    "officialCitation": "82 Misc 3d 18",
+    "pageMarkerCount": 1
+  },
+  "opinionStructure": {
+    "totalWritings": 2,
+    "byKind": {
+      "unknown": 1,
+      "opinion_of_the_court": 1
+    },
+    "authors": [
+      "Wilson"
+    ],
+    "qualifierLines": [],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <form> in source HTML."
+    },
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <input> in source HTML."
+    },
+    {
+      "code": "APPEARANCE_LINE_WITH_ARGUMENT_TAIL",
+      "severity": "info",
+      "detail": "Appearance-like line continues into argument text after \"for respondent.\"."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 2 writings."
+    }
+  ]
+}

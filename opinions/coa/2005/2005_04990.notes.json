@@ -1,0 +1,121 @@
+{
+  "caseId": "2005_04990",
+  "sourcePath": "coa/2005/2005_04990.htm",
+  "notesPath": "coa/2005/2005_04990.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.283Z",
+  "source": {
+    "title": "People v Patterson (2005 NY Slip Op 04990)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 18780,
+    "lineCount": 125,
+    "tagCounts": {
+      "a": 26,
+      "b": 30,
+      "blockquote": 4,
+      "body": 2,
+      "br": 18,
+      "div": 8,
+      "font": 30,
+      "head": 2,
+      "html": 2,
+      "i": 66,
+      "p": 25,
+      "script": 4,
+      "style": 2,
+      "sup": 12,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 4
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Patterson",
+      "2005 NY Slip Op 04990 [5 NY3d 91]",
+      "June 14, 2005",
+      "Rosenblatt, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, August 24, 2005"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Neil Patterson, Jr., Appellant."
+    ],
+    "citationLine": "2005 NY Slip Op 04990 5 NY3d 91",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued April 28, 2005; decided June 14, 2005",
+      "June 14, 2005",
+      "As corrected through Wednesday, August 24, 2005"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 24,
+    "footnotesCount": 6
+  },
+  "citations": {
+    "slipOpinion": "2005 NY Slip Op 04990",
+    "officialCitation": "5 NY3d 91",
+    "pageMarkerCount": 14
+  },
+  "opinionStructure": {
+    "totalWritings": 2,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1
+    },
+    "authors": [
+      "Rosenblatt"
+    ],
+    "qualifierLines": [
+      "{**5 NY3d at 93} OPINION OF THE COURT",
+      "We are mindful of the bedrock principle of Native American treaty interpretation that any possible ambiguities be resolved in favor of the Native American signatories (see Worcester v Georgia, 6 Pet [31 US] 515, 582 [1832] [M'Lean, J., concurring]; Jones v Meehan, 175 US 1, 11 [1899]). Further, we appreciate that, where the scope of a treaty right is unclear, we must look \"beyond the written words to the larger context that frames the [t]reaty, including 'the history of the treaty, the negotiations, and the practical construction adopted by the parties' \" (Mille Lacs, 526 US at 196). Articles III and IV, however, admit of no ambiguity. They clearly contemplate that the Seneca and the other Six Nations would have a right to free use and enjoyment{**5 NY3d at 98} of Seneca land until such time as the Seneca ceded it to \"the people of the United States.\" In short, the Tuscarora Nation's fishing rights on the land in question were wholly contingent on continued ownership of the land by the Seneca. When the Seneca divested themselves of their interest in the land by the Treaty of Big Tree of 1797, the Tuscarora right to free use and enjoyment ended. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 6,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 2 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

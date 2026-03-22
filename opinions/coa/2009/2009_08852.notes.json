@@ -1,0 +1,142 @@
+{
+  "caseId": "2009_08852",
+  "sourcePath": "coa/2009/2009_08852.htm",
+  "notesPath": "coa/2009/2009_08852.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.452Z",
+  "source": {
+    "title": "People v Simms (2009 NY Slip Op 08852)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 13616,
+    "lineCount": 95,
+    "tagCounts": {
+      "a": 4,
+      "b": 4,
+      "blockquote": 26,
+      "body": 2,
+      "br": 8,
+      "div": 2,
+      "font": 22,
+      "head": 2,
+      "html": 2,
+      "i": 20,
+      "p": 24,
+      "script": 4,
+      "span": 24,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [
+      "span"
+    ],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Simms",
+      "2009 NY Slip Op 08852 [13 NY3d 867]",
+      "December 1, 2009",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, February 17, 2010"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Appellant,",
+      "v",
+      "Everton D. Simms, Respondent."
+    ],
+    "citationLine": "2009 NY Slip Op 08852 13 NY3d 867",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued October 15, 2009; decided December 1, 2009",
+      "December 1, 2009",
+      "As corrected through Wednesday, February 17, 2010"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Charles J. Hynes, District Attorney , Brooklyn ( Lori Glickman and Leonard Joblove of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Charles J. Hynes, District Attorney , Brooklyn ( Lori Glickman and Leonard Joblove of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Warren S. Landau , New York City, and Lynn W.L. Fahey for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Warren S. Landau , New York City, and Lynn W.L. Fahey for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 18,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2009 NY Slip Op 08852",
+    "officialCitation": "13 NY3d 867",
+    "pageMarkerCount": 10
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "concurrence": 1
+    },
+    "authors": [
+      "Smith"
+    ],
+    "qualifierLines": [
+      "{**13 NY3d at 868} OPINION OF THE COURT",
+      "Memorandum. ",
+      "The trial judge denied the motion, determining that, pursuant to CPL 330.30 (1), he did not possess jurisdiction to set aside the verdict because defendant had not preserved his claim for appellate review (2006 NY Slip Op 30598[U]). The judge opined that, in any event, the claim lacked merit because he had followed the procedure set out in People v Pickett (61 NY2d 773 [1984]) for conducting an inquiry under the circumstances presented. The trial judge subsequently sentenced defendant to concurrent terms of imprisonment of nine years, plus five years of postrelease supervision. ",
+      "When defendant appealed his judgment of conviction and sentence, the Appellate Division, with one Justice dissenting,{**13 NY3d at 871} reversed on the law and ordered a new trial on the ground that the trial judge's inquiry did not establish that juror number 10 agreed with the verdict. A Judge of this Court subsequently granted the People leave to appeal. We now conclude that defendant's claim was preserved, and affirm the Appellate Division's order. ",
+      "Nevertheless, I concur in the result reached by the majority, because Supreme Court erred (as the People acknowledge) in forbidding attorney-client communications during a weekend break. I am satisfied that defendant adequately preserved this error. "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 1,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <span> in source HTML."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

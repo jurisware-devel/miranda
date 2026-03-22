@@ -1,0 +1,143 @@
+{
+  "caseId": "2017_08159",
+  "sourcePath": "coa/2017/2017_08159.htm",
+  "notesPath": "coa/2017/2017_08159.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.974Z",
+  "source": {
+    "title": "People v Arjune (2017 NY Slip Op 08159)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 77668,
+    "lineCount": 228,
+    "tagCounts": {
+      "a": 104,
+      "b": 78,
+      "blockquote": 22,
+      "body": 2,
+      "br": 46,
+      "div": 32,
+      "font": 108,
+      "head": 2,
+      "html": 2,
+      "i": 374,
+      "opinion": 1,
+      "p": 141,
+      "script": 4,
+      "style": 2,
+      "sup": 36,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 26
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Arjune",
+      "2017 NY Slip Op 08159 [30 NY3d 347]",
+      "November 20, 2017",
+      "Stein, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, February 7, 2018"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Mario Arjune, Appellant."
+    ],
+    "citationLine": "2017 NY Slip Op 08159 30 NY3d 347",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued October 12, 2017; decided November 20, 2017",
+      "November 20, 2017",
+      "As corrected through Wednesday, February 7, 2018"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 90,
+    "footnotesCount": 18
+  },
+  "citations": {
+    "slipOpinion": "2017 NY Slip Op 08159",
+    "officialCitation": "30 NY3d 347",
+    "pageMarkerCount": 53
+  },
+  "opinionStructure": {
+    "totalWritings": 5,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "dissent": 2
+    },
+    "authors": [
+      "Stein",
+      "Rivera",
+      "Wilson"
+    ],
+    "qualifierLines": [
+      "{**30 NY3d at 349} OPINION OF THE COURT",
+      "Despite trial counsel's having secured an acquittal on the charges of attempted murder and first-degree assault, as well as a sentence that resulted in defendant being released from prison four months after his trial ended, defendant now claims that counsel was ineffective. Defendant argues that, due to his purported cognitive limitations, he was ill-equipped to obtain poor person relief in connection with the process of appealing his conviction, to oppose the dismissal of his appeal or to perfect it without any guidance from an attorney. Defendant and Judge Rivera, in dissent, cite the rules of all four Appellate Division Departments, which were in effect at the time of his conviction, requiring trial counsel to inform his or her client, in writing, of the right to appeal and provide basic information necessary to pursue the appeal, including the right to seek poor person relief and how to do so if the client is indigent (see 22 NYCRR 606.5 [b]; 671.3 [a]; 821.2 [a]; former 1022.11 [a]). Defendant and Judge Rivera, in dissent, maintain that the existence of such directives—as well as bar association standards mandating that counsel assist in procuring poor person relief and take steps to ensure that an appeal is not unwittingly forfeited—establishes defendant's entitlement to a writ of error coram nobis based upon his unsupported claims that counsel failed to assist him in obtaining poor person relief or to respond{**30 NY3d at 353} to the People's motion to dismiss four years after the notice of appeal was filed.",
+      "Given this legal backdrop—i.e., the Court's holdings in West and Perez that a defendant is not constitutionally entitled to the assistance of counsel in seeking poor person relief as long as he or she is given written notice that is similar to the one defendant received here—defendant has a heavy burden to demonstrate entitlement to a writ of error coram nobis premised on ineffective assistance of counsel for failing to assist in procuring poor person relief. Although the dissenters{**30 NY3d at 354} fail to recognize the distinction, we emphasize that defendant does not challenge the dismissal of his appeal by the Appellate Division for failure to perfect, as in Perez and West; nor does this appeal involve the Appellate Division's resolution of a motion to extend the time to appeal under court rules (cf. People v Zanghi, 159 AD2d 1030 [1990]). Rather, this appeal is from the denial of a coram nobis motion. Therefore, defendant bore the burden of demonstrating that he was denied meaningful assistance—that counsel's actions in allegedly failing to assist defendant in obtaining poor person relief were not \"consistent with those of a reasonably competent . . . attorney\" (, 12 NY3d 365, 368 [2009]). He failed to meet that burden here, both in terms of his specific claim that counsel did not advise him of his right to seek poor person relief in connection with his appeal and the more general claim, advanced by both Judge Rivera and Judge Wilson in dissent, that counsel did not consult with him regarding an appeal.",
+      "With respect to the other prong of defendant's coram nobis motion (based on failure to respond to the dismissal motion four years after the notice of appeal was filed) defendant and Judge Rivera, in her dissent, essentially seek a rule that trial counsel has a constitutional responsibility in connection with an appeal for an indefinite period of time extending for years after the notice of appeal is filed. Neither defendant nor that dissent cite any legal support for the imposition of such a rule. Moreover, the cases that defendant cites concerning ineffectiveness of counsel and entitlement to coram nobis relief—including Syville—do not support imposing either such an open-ended obligation on behalf of trial counsel or a rule that counsel is ineffective for failing to assist a defendant in obtaining poor person relief.",
+      "The Court also determined in that case that the records, taken as a whole, demonstrated that the defendants were aware of their right to appeal, noting that \"[b]oth the oral and written waivers in these cases are contrary to defendants' claims that they were unaware of their right to appeal\" (id. at 604). In so determining, the Court rejected the position of the dissenters in Rosario, who would have reversed on the ground that a defendant is entitled to coram nobis relief under Roe when the record does not demonstrate that counsel consulted with defendant about the appeal, including giving the attorney's \"professional judgment on the merits of an appeal\" (id. at 605). Thus, the Rosario majority also implicitly rejected any notion that a defendant's unsupported affidavit is sufficient to establish entitlement to coram nobis relief whenever the record does not otherwise clearly demonstrate that trial counsel consulted with defendant on the merits of an appeal.",
+      "The facts of this case are stark. After completing the \"purely ministerial task\" (id. at 477) of filing a one-page notice of appeal on defendant's behalf, counsel had no contact with defendant or his family. Counsel failed to comply with the Appellate Division Department's own rules, which dictate that counsel must advise a defendant in writing of the right to apply for poor person relief if indigent and submit the application on defendant's behalf if defendant so requests. The record demonstrates that counsel's representation falls below applicable professional standards adopted by the American Bar Association, New York State Bar Association, and National Legal Aid and Defender Association. As a consequence of counsel's failures, the Appellate Division dismissed defendant's appeal for failure to timely perfect, and thereafter denied his motions to reinstate as well as the instant petition for a writ of error coram nobis. Notwithstanding these facts, the majority concludes that counsel was not ineffective and that defendant is to blame for his own dire situation. I cannot agree. As we have made clear, \"there is no justification for making the defendant suffer for his attorney's failing\" (People v Montgomery, 24 NY2d 130, 132 [1969]). Under well established statutory and case law, Appellate Division rules, and prevailing professional{**30 NY3d at 362} standards applicable then and now, counsel could not desert his client. Defendant's coram nobis petition should be granted and his appeal reinstated. Therefore, I dissent.",
+      "The Court rejected a bright-line rule that counsel must always consult with defendant regarding an appeal, instead holding that the Federal Constitution mandates counsel make objectively reasonable choices, which must be assessed on a case-by-case basis. Yet, as the Court unanimously held, only in rare cases would counsel be effective absent client consultation. According to the Roe majority, \"courts evaluating the reasonableness of counsel's performance . . . will find, in the vast majority of cases, that counsel had a duty to consult with the defendant about an appeal\" (id. at 481), and the four concurring justices stated counsel \"almost always\" has this duty (id. at 488 [Breyer, J., concurring]; id. at 488 [Souter, J., concurring in part and dissenting in part, joined by Ginsberg and Stevens, JJ.]).",
+      " I join Judge Rivera's dissent but write separately to emphasize that the majority's decision violates Roe v Flores-Ortega (528 US 470, 483 [2000]). As in that case, \"[t]oday's case is unusual in that counsel's alleged deficient performance arguably led not to a judicial proceeding of disputed reliability, but rather to the forfeiture of a proceeding itself\" (id. at 483)."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 2,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 18,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 5 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "caseId": "2022_03363",
+  "sourcePath": "coa/2022/2022_03363.htm",
+  "notesPath": "coa/2022/2022_03363.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.185Z",
+  "source": {
+    "title": "People v Wideman (2022 NY Slip Op 03363)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 4696,
+    "lineCount": 78,
+    "tagCounts": {
+      "a": 12,
+      "b": 10,
+      "body": 2,
+      "br": 10,
+      "div": 8,
+      "font": 8,
+      "head": 2,
+      "html": 2,
+      "i": 16,
+      "opinion": 1,
+      "p": 16,
+      "script": 4,
+      "style": 2,
+      "sup": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Wideman",
+      "2022 NY Slip Op 03363 [38 NY3d 1067]",
+      "May 24, 2022",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, August 10, 2022"
+    ],
+    "captionLines": [],
+    "citationLine": "2022 NY Slip Op 03363 38 NY3d 1067",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Decided May 24, 2022",
+      "May 24, 2022",
+      "As corrected through Wednesday, August 10, 2022"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Mitch Kessler , Cohoes, for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Mitch Kessler , Cohoes, for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Andrew J. Wylie, District Attorney , Plattsburgh ( Jamie A. Douthat of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Andrew J. Wylie, District Attorney , Plattsburgh ( Jamie A. Douthat of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 4,
+    "footnotesCount": 1
+  },
+  "citations": {
+    "slipOpinion": "2022 NY Slip Op 03363",
+    "officialCitation": "38 NY3d 1067",
+    "pageMarkerCount": 3
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**38 NY3d at 161} OPINION OF THE COURT",
+      "Memorandum."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 1,
+    "labels": [
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

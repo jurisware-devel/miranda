@@ -1,0 +1,132 @@
+{
+  "caseId": "2026_01445",
+  "sourcePath": "coa/2026/2026_01445.htm",
+  "notesPath": "coa/2026/2026_01445.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.392Z",
+  "source": {
+    "title": "People v Gaffney (2026 NY Slip Op 01445)",
+    "publicationStatus": "slip_op_only"
+  },
+  "fileInfo": {
+    "byteSize": 4271,
+    "lineCount": 71,
+    "tagCounts": {
+      "a": 8,
+      "b": 10,
+      "body": 2,
+      "br": 21,
+      "dateline": 2,
+      "div": 8,
+      "font": 8,
+      "form": 2,
+      "head": 2,
+      "html": 2,
+      "i": 10,
+      "input": 1,
+      "p": 16,
+      "script": 2,
+      "style": 2,
+      "sup": 2,
+      "table": 2,
+      "td": 12,
+      "title": 2,
+      "tr": 12
+    },
+    "unknownTags": [
+      "form",
+      "input"
+    ],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Gaffney",
+      "2026 NY Slip Op 01445",
+      "Decided on March 17, 2026",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "This opinion is uncorrected and subject to revision before publication in the Official Reports."
+    ],
+    "captionLines": [
+      "The People & c., Respondent,",
+      "v",
+      "Luke J. Gaffney, Appellant."
+    ],
+    "citationLine": "2026 NY Slip Op 01445",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Decided on March 17, 2026"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Melissa K. Swartz, for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Melissa K. Swartz, for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Christopher T. Valdina, for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Christopher T. Valdina, for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 3,
+    "footnotesCount": 1
+  },
+  "citations": {
+    "slipOpinion": "2026 NY Slip Op 01445",
+    "officialCitation": "91 NY2d 708",
+    "pageMarkerCount": 1
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "MEMORANDUM:"
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 1,
+    "labels": [
+      "1"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <form> in source HTML."
+    },
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <input> in source HTML."
+    }
+  ]
+}

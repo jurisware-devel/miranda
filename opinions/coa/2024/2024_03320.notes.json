@@ -1,0 +1,142 @@
+{
+  "caseId": "2024_03320",
+  "sourcePath": "coa/2024/2024_03320.htm",
+  "notesPath": "coa/2024/2024_03320.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.281Z",
+  "source": {
+    "title": "People v Wright (2024 NY Slip Op 03320)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 90921,
+    "lineCount": 246,
+    "tagCounts": {
+      "a": 96,
+      "b": 74,
+      "blockquote": 56,
+      "body": 2,
+      "br": 44,
+      "div": 30,
+      "font": 102,
+      "head": 2,
+      "html": 2,
+      "i": 452,
+      "p": 169,
+      "script": 4,
+      "style": 2,
+      "sup": 32,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 24
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Wright",
+      "2024 NY Slip Op 03320 [42 NY3d 708]",
+      "June 18, 2024",
+      "Cannataro, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, March 19, 2025"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Freddie T. Wright, Appellant."
+    ],
+    "citationLine": "2024 NY Slip Op 03320 42 NY3d 708",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued April 18, 2024; decided June 18, 2024",
+      "June 18, 2024",
+      "As corrected through Wednesday, March 19, 2025"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 107,
+    "footnotesCount": 16
+  },
+  "citations": {
+    "slipOpinion": "2024 NY Slip Op 03320",
+    "officialCitation": "42 NY3d 708",
+    "pageMarkerCount": 50
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Cannataro",
+      "Wilson"
+    ],
+    "qualifierLines": [
+      "{**42 NY3d at 711} OPINION OF THE COURT",
+      "Similarly, although the dissent is correct that disparate questioning \" 'can arm a prosecutor with seemingly race-neutral reasons to strike the prospective jurors of a particular race' while 'declin[ing] to seek what they do not want to find about white prospective jurors' \" (dissenting op at 733, quoting Flowers, 588 US at 310), this observation lends more towards a condemnation of the Batson process itself than it does the trial court's decision in this case. After all, Batson requires simply that the People provide a credible non-pretextual reason for striking a particular juror; it does not require a justification for why other jurors were not stricken, and the Supreme Court has never endorsed such an analysis. Moreover, the prosecutor here did question other jurors who related negative experiences with police. For instance K.L. revealed during voir dire{**42 NY3d at 717} that he had a \"bad experience[ ]\" with the police approximately 10 years earlier when they detained his mother while verifying that she had a vendor's license for her food truck. The prosecutor questioned K.L. about his lingering negative feelings toward police officers because of this encounter and, ultimately, challenged K.L. for cause.",
+      "Further, the People were not required to credit C.C.'s statement that his feelings regarding his cousin's arrest would not influence his ability to be fair and impartial if his other answers showed an inability to live up to that promise (see Hernandez, 75 NY2d at 356). The dissent's emphasis on C.C.'s self-proclaimed impartiality seems to ignore the purpose of peremptory challenges, which exist for precisely this kind of situation. Indeed, had C.C. answered the other way—that he would not be able to be fair and impartial—the People would have had a legitimate basis to challenge C.C. for cause (see CPL 270.20 [1]).",
+      "On this record, \"we cannot say as a matter of law that the [People's] proffered reason[s] [were] 'pretext for racial discrimination' \" (Malloy, 33 NY3d at 1079, quoting Hernandez v New York, 500 US 352, 363 [1991]). In so concluding, we do not supply our own non-pretextual reasons to justify the People's peremptory strike. We merely review the record before us—as is our obligation—and find ample support for the trial court's undisturbed factual finding that the People's treatment of C.C., to the extent it differed from that of other jurors who had relatives arrested, was not racially motivated (see Hecker, 15 NY3d at 656; , 20 NY3d 235, 239 [2012]). Unlike the dissent, we cannot engage in de novo fact-finding.{**42 NY3d at 718}",
+      "Finally, the only Batson issue before us on this appeal is whether the record supports the trial court's determination at step three that the People's stated justifications for striking C.C. and K.C. were non-pretextual. We note, however, that the trial court did articulate the wrong test at step one of defendant's Batson challenge relating to C.C., stating that the defendant had met his burden of showing that the People were excluding jurors solely on the basis of race. However, the dissent's attempt to arrogate this misstatement into reversible error—on an issue that was neither objected to below nor raised by defendant on appeal—is misplaced. The parties agree that the trial court properly concluded that defendant satisfied step one of the Batson analysis. There is no evidence that the court's misstatement at step one infected the court's step three analysis. The court applied the correct standard at step three in determining that the People's proffered reason was not pretextual, finding no \"basis for discrimination\" in the way the People exercised their strikes and that it \"believed the reasons given for these jurors given peremptory challenges were not pretextual and were the genuine reasons why [the prosecutor] challenged these jurors.\" The court's function at step three is distinct from its role at step one and, the dissent's transference theory notwithstanding, the trial court here did not reject defendant's Batson challenge on the ground that defendant had failed to demonstrate that racial discrimination was the sole basis for the strikes. Given the court applied the correct standard at step three, any mischaracterization of the standard at step one is not determinative.",
+      "Here, as the trial court found, the showups were conducted within a few blocks of the crime scene and took place immediately after the robbery and defendant's apprehension. That defendant was handcuffed and in the presence of police officers is not unusual for a crime-scene showup justified by exigency, particularly where a weapon may have been used in the crime (see e.g. Howard, 22 NY3d at 403; Gilford, 16 NY3d at 867). \"[G]iven that the police were looking for armed robbers, they logically would have wanted to move as quickly as possible to find out whether they had apprehended the . . . perpetrator[ ]\" and a \"showup is not improper merely because the police already have probable cause to detain a suspect\" (Howard, 22 NY3d at 403). That the police may have had cause to arrest defendant for trespass, as the dissent contends, does little to mitigate the concern that, if he was not identified by the victims as one of the robbers, the perpetrators of that crime might have remained at large in the community. Moreover, there are indicia of reasonableness in the procedures used; defendant{**42 NY3d at 721} was not shown handcuffed in the back of a police car (compare Duuvon, 77 NY2d at 545); he was not shown to the witnesses with any evidence of the stolen property (compare Riley, 70 NY2d at 530); and the showups were conducted separately—reducing any risk of the witnesses inadvertently influencing each other (compare People v Adams, 53 NY2d 241, 249 [1981]).",
+      "Chief Judge Wilson (dissenting).",
+      "The majority's struggle to interject its own state of mind into that of the prosecutor's illustrates why the Batson test itself is fraught with difficulty and should be abandoned in favor of an objective test. Because the Batson test \"leave[s] us with a subjective understanding of the concept of discriminatory intent in the peremptories context\" (Robin Charlow, Tolerating Deception and Discrimination after Batson, 50 Stan L Rev 9, 37 [1997]), it can provide cover for parties who intend to discriminate by allowing them to obscure their discriminatory intent behind plausible, facially neutral justifications (see e.g. People v Bolling, 79 NY2d 317, 330 [1992, Bellacosa, J., concurring][\"Unfortunately, the Batson procedural hurdles have become 'less obstacles to racial discrimination than they are road maps' to disguised discrimination\"], quoting Brian J. Serr & Mark Maney, Racism, Peremptory Challenges, and the Democratic Jury: The Jurisprudence of A Delicate Balance, 79 J Crim L & Criminology 1, 59 [1988]). Furthermore, because it focuses solely on the nonmoving party's subjective intent to discriminate, the Batson test is poorly calibrated to detect discrimination deriving from implicit bias, which is likely more common than intentional discrimination deriving from conscious racial animus.",
+      "{**42 NY3d at 739}Justice Marshall anticipated those concerns in his Batson concurrence:",
+      "\"[W]hen a defendant can establish a prima facie case, trial courts face the difficult burden of assessing prosecutors' motives. Any prosecutor can easily assert facially neutral reasons for striking a juror, and trial courts are ill equipped to second-guess those reasons. How is the court to treat a prosecutor's statement that he struck a juror because the juror had a son about the same age as defendant . . . ? If such easily generated explanations are sufficient to discharge the prosecutor's obligation to justify his strikes on nonracial grounds, then the protection erected by the Court today may be illusory. \"Nor is outright prevarication by prosecutors the only danger here. '[I]t is even possible that an attorney may lie to himself in an effort to convince himself that his motives are legal.' A prosecutor's own conscious or unconscious racism may lead him easily to the conclusion that a prospective black juror is 'sullen,' or 'distant,' a characterization that would not have come to his mind if a white juror has acted identically. A judge's own conscious or unconscious racism may lead him to accept such an explanation as well supported\" (Batson v Kentucky, 476 US 79, 105-106 [1986, Marshall, J., concurring] [citations omitted]).",
+      "Six years later, in People v Bolling, Judge Bellacosa noted that \"[t]ime and experience with many cases have proven the prescience of Justice Marshall's observations\" with respect to the shortcomings of the Batson remedy (79 NY2d at 327 [Bellacosa, J., concurring]), and proclaimed"
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 16,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

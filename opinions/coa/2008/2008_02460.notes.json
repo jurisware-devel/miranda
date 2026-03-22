@@ -1,0 +1,115 @@
+{
+  "caseId": "2008_02460",
+  "sourcePath": "coa/2008/2008_02460.htm",
+  "notesPath": "coa/2008/2008_02460.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.383Z",
+  "source": {
+    "title": "People v Taveras (2008 NY Slip Op 02460)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 13977,
+    "lineCount": 100,
+    "tagCounts": {
+      "a": 6,
+      "b": 6,
+      "body": 2,
+      "br": 4,
+      "div": 8,
+      "font": 20,
+      "head": 2,
+      "html": 2,
+      "i": 42,
+      "p": 27,
+      "script": 4,
+      "style": 2,
+      "table": 6,
+      "td": 18,
+      "title": 2,
+      "tr": 18,
+      "u": 6
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Taveras",
+      "2008 NY Slip Op 02460 [10 NY3d 227]",
+      "March 18, 2008",
+      "Pigott, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, April 30, 2008"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Jose Martin Taveras, Also Known as Jose Martin Tavares, Also Known as Jose Taveras, Appellant.",
+      "The People of the State of New York, Respondent, v Anthony Jones, Appellant."
+    ],
+    "citationLine": "2008 NY Slip Op 02460 10 NY3d 227",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued February 7, 2008; decided March 18, 2008",
+      "March 18, 2008",
+      "As corrected through Wednesday, April 30, 2008"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 25,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2008 NY Slip Op 02460",
+    "officialCitation": "10 NY3d 227",
+    "pageMarkerCount": 9
+  },
+  "opinionStructure": {
+    "totalWritings": 2,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1
+    },
+    "authors": [
+      "Pigott"
+    ],
+    "qualifierLines": [
+      "{**10 NY3d at 229} OPINION OF THE COURT",
+      "Defendant failed to appear for either his state trial or his federal sentencing. Supreme Court once again issued a bench warrant for defendant's arrest and conducted a hearing pursuant to People v Parker (57 NY2d 136, 142 [1982]), ultimately concluding that defendant would be tried in absentia. Defendant was convicted on several counts and sentence imposed. Defense counsel filed a timely notice of appeal in June 1988. Eight years later, defendant was apprehended in Florida and charged with bail jumping in relation to his federal convictions. The federal court in Florida imposed a determinate prison term of 121 months to run concurrently with his state sentence. Upon his return to New York in December 1997, defendant began his state sentence.{**10 NY3d at 231} ",
+      "Defendant, who remained at liberty up until his trial date, absconded during jury selection, notwithstanding the fact that Supreme Court had admonished defendant that he would be tried and sentenced in absentia in the event he did not appear for trial. Supreme Court issued a bench warrant and, after conducting a Parker hearing, allowed the trial to go forward without defendant. A jury found defendant guilty of, among other things, burglary in the second degree and robbery in the third degree, and he was sentenced in absentia to concurrent prison terms of 7 to 14 years on each count. Defense counsel filed a timely notice of appeal. ",
+      "Chief Judge Kaye and Judges Ciparick, Graffeo, Read, Smith and Jones concur. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 2 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 3 table elements before or within the header region."
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "caseId": "2012_02342",
+  "sourcePath": "coa/2012/2012_02342.htm",
+  "notesPath": "coa/2012/2012_02342.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.598Z",
+  "source": {
+    "title": "People v Bedessie (2012 NY Slip Op 02342)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 44152,
+    "lineCount": 143,
+    "tagCounts": {
+      "a": 20,
+      "b": 14,
+      "blockquote": 12,
+      "body": 2,
+      "br": 14,
+      "div": 8,
+      "font": 62,
+      "head": 2,
+      "html": 2,
+      "i": 76,
+      "p": 56,
+      "script": 4,
+      "style": 2,
+      "sup": 4,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 4
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Bedessie",
+      "2012 NY Slip Op 02342 [19 NY3d 147]",
+      "March 29, 2012",
+      "Read, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, June 20, 2012"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Khemwattie Bedessie, Appellant."
+    ],
+    "citationLine": "2012 NY Slip Op 02342 19 NY3d 147",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued February 9, 2012; decided March 29, 2012",
+      "March 29, 2012",
+      "As corrected through Wednesday, June 20, 2012"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 56,
+    "footnotesCount": 2
+  },
+  "citations": {
+    "slipOpinion": "2012 NY Slip Op 02342",
+    "officialCitation": "19 NY3d 147",
+    "pageMarkerCount": 30
+  },
+  "opinionStructure": {
+    "totalWritings": 4,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "dissent": 1
+    },
+    "authors": [
+      "Read",
+      "Jones"
+    ],
+    "qualifierLines": [
+      "{**19 NY3d at 149} OPINION OF THE COURT",
+      "Before beginning jury selection, Supreme Court denied defense counsel's application. The judge stated that he had read the cases and memorandum submitted by counsel, and that it appeared that all or most of the decisions considered expert testimony on eyewitness identification. He commented that he was \"not inclined to draw a parallel with respect to expert testimony of false confessions . . . [and] accuracy of identification testimony,\" stating as follows: ",
+      "The jury convicted defendant on all counts. On July 31, 2007, Supreme Court sentenced her to determinate prison terms of 20{**19 NY3d at 156} years plus five years of postrelease supervision on the first-degree rape conviction, to run concurrently with determinate prison terms of five years plus three years of post-release supervision on the sexual abuse convictions, and a definite term of one year on the child endangerment conviction. Defendant appealed. ",
+      " Mere acceptance that false confessions exist does not aid a jury in assessing the reliability of a thinly corroborated, recanted confession. Where, as here, there is little to no corroborating evidence connecting defendant to the commission of the crimes charged, a jury will benefit from the testimony of an expert explaining factors relevant to the reliability of a confession. Because I conclude, consistent with  (8 NY3d 449 [2007]), that the court abused its discretion by excluding defendant's expert testimony, I respectfully dissent. "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 2,
+    "labels": [
+      "1",
+      "2"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 4 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

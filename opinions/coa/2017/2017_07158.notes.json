@@ -1,0 +1,118 @@
+{
+  "caseId": "2017_07158",
+  "sourcePath": "coa/2017/2017_07158.htm",
+  "notesPath": "coa/2017/2017_07158.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.963Z",
+  "source": {
+    "title": "People v Campbell (2017 NY Slip Op 07158)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 4567,
+    "lineCount": 75,
+    "tagCounts": {
+      "a": 8,
+      "b": 4,
+      "body": 2,
+      "br": 6,
+      "div": 6,
+      "font": 10,
+      "head": 2,
+      "html": 2,
+      "i": 20,
+      "opinion": 1,
+      "p": 18,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Campbell",
+      "2017 NY Slip Op 07158 [30 NY3d 941]",
+      "October 12, 2017",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, November 29, 2017"
+    ],
+    "captionLines": [],
+    "citationLine": "2017 NY Slip Op 07158 30 NY3d 941",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued September 12, 2017; decided October 12, 2017",
+      "October 12, 2017",
+      "As corrected through Wednesday, November 29, 2017"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Robert S. Dean, Center for Appellate Litigation , New York City ( Abigail Everett of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Robert S. Dean, Center for Appellate Litigation , New York City ( Abigail Everett of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Darcel D. Clark, District Attorney , Bronx ( Ramandeep Singh, Nancy D. Killian and Peter D. Coddington of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Darcel D. Clark, District Attorney , Bronx ( Ramandeep Singh, Nancy D. Killian and Peter D. Coddington of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 5,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2017 NY Slip Op 07158",
+    "officialCitation": "30 NY3d 941",
+    "pageMarkerCount": 4
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**30 NY3d at 942} OPINION OF THE COURT",
+      "Memorandum."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

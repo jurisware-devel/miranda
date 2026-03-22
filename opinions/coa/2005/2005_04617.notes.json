@@ -1,0 +1,146 @@
+{
+  "caseId": "2005_04617",
+  "sourcePath": "coa/2005/2005_04617.htm",
+  "notesPath": "coa/2005/2005_04617.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.280Z",
+  "source": {
+    "title": "People v Williams (2005 NY Slip Op 04617)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 11866,
+    "lineCount": 85,
+    "tagCounts": {
+      "a": 2,
+      "appcouns": 1,
+      "b": 4,
+      "blockquote": 14,
+      "body": 2,
+      "br": 8,
+      "div": 2,
+      "font": 12,
+      "head": 2,
+      "html": 2,
+      "i": 42,
+      "p": 22,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [
+      "appcouns"
+    ],
+    "strayClosingTags": [
+      "appcouns"
+    ]
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Williams",
+      "2005 NY Slip Op 04617 [5 NY3d 732]",
+      "June 9, 2005",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, August 31, 2005"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Appellant,",
+      "v",
+      "Norris Williams, Respondent."
+    ],
+    "citationLine": "2005 NY Slip Op 04617 5 NY3d 732",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued April 28, 2005; decided June 9, 2005",
+      "June 9, 2005",
+      "As corrected through Wednesday, August 31, 2005"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Robert M. Morgenthau , District Attorney , New York City ( Madeleine Guilmain and Mark Dwyer of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Robert M. Morgenthau , District Attorney , New York City ( Madeleine Guilmain and Mark Dwyer of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Center for Appellate Litigation , New York City ( Robert S. Dean of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Center for Appellate Litigation , New York City ( Robert S. Dean of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 16,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2005 NY Slip Op 04617",
+    "officialCitation": "5 NY3d 732",
+    "pageMarkerCount": 5
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "concurrence": 1
+    },
+    "authors": [
+      "R.S. Smith"
+    ],
+    "qualifierLines": [
+      "OPINION OF THE COURT",
+      "Memorandum. "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 1,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <appcouns> in source HTML."
+    },
+    {
+      "code": "STRAY_CLOSING_TAG",
+      "severity": "warning",
+      "detail": "Closing tag </appcouns> appears more times than opening tag <appcouns>."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

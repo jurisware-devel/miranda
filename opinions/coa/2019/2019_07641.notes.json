@@ -1,0 +1,136 @@
+{
+  "caseId": "2019_07641",
+  "sourcePath": "coa/2019/2019_07641.htm",
+  "notesPath": "coa/2019/2019_07641.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.068Z",
+  "source": {
+    "title": "People v Cubero (2019 NY Slip Op 07641)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 5950,
+    "lineCount": 78,
+    "tagCounts": {
+      "a": 10,
+      "b": 8,
+      "body": 2,
+      "br": 6,
+      "div": 6,
+      "font": 6,
+      "head": 2,
+      "html": 2,
+      "i": 50,
+      "opinion": 1,
+      "p": 25,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Cubero",
+      "2019 NY Slip Op 07641 [34 NY3d 976]",
+      "October 24, 2019",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, December 25, 2019"
+    ],
+    "captionLines": [],
+    "citationLine": "2019 NY Slip Op 07641 34 NY3d 976",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued September 4, 2019; decided October 24, 2019",
+      "October 24, 2019",
+      "As corrected through Wednesday, December 25, 2019"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "George J. Hoffman, Jr. , East Greenbush, for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "George J. Hoffman, Jr. , East Greenbush, for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Rachel P. Dunn, Special Prosecutor and Inspector General , Delmar ( Caitlin J. Halligan and Jacqueline Kagan of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Rachel P. Dunn, Special Prosecutor and Inspector General , Delmar ( Caitlin J. Halligan and Jacqueline Kagan of counsel), for respondent.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Scott M. Danner , Matthew Bova and Edward E. Smith , New York City, Robert S. Dean , Center for Appellate Litigation , New York City, and Christina A. Swarns , Office of the Appellate Defender , New York City, for New York County Lawyers Association Committee on Appellate Courts and others, amici curiae.",
+        "sideGuess": null,
+        "terminalPhrase": "amici curiae.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Scott M. Danner , Matthew Bova and Edward E. Smith , New York City, Robert S. Dean , Center for Appellate Litigation , New York City, and Christina A. Swarns , Office of the Appellate Defender , New York City, for New York County Lawyers Association Committee on Appellate Courts and others, amici curiae.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 7,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2019 NY Slip Op 07641",
+    "officialCitation": "34 NY3d 976",
+    "pageMarkerCount": 2
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "concurrence": 1
+    },
+    "authors": [
+      "Rivera"
+    ],
+    "qualifierLines": [
+      "{**34 NY3d at 976} OPINION OF THE COURT",
+      "Memorandum."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 1,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

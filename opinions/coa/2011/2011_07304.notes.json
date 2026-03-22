@@ -1,0 +1,127 @@
+{
+  "caseId": "2011_07304",
+  "sourcePath": "coa/2011/2011_07304.htm",
+  "notesPath": "coa/2011/2011_07304.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.566Z",
+  "source": {
+    "title": "People v Grant (2011 NY Slip Op 07304)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 31470,
+    "lineCount": 145,
+    "tagCounts": {
+      "a": 52,
+      "b": 42,
+      "blockquote": 4,
+      "body": 2,
+      "br": 28,
+      "div": 4,
+      "font": 44,
+      "head": 2,
+      "html": 2,
+      "i": 186,
+      "p": 35,
+      "script": 4,
+      "style": 2,
+      "sup": 18,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Grant",
+      "2011 NY Slip Op 07304 [17 NY3d 613]",
+      "October 20, 2011",
+      "Ciparick, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, December 14, 2011"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Appellant,",
+      "v",
+      "John Grant, Respondent."
+    ],
+    "citationLine": "2011 NY Slip Op 07304 17 NY3d 613",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued September 14, 2011; decided October 20, 2011",
+      "October 20, 2011",
+      "As corrected through Wednesday, December 14, 2011"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 31,
+    "footnotesCount": 9
+  },
+  "citations": {
+    "slipOpinion": "2011 NY Slip Op 07304",
+    "officialCitation": "17 NY3d 613",
+    "pageMarkerCount": 21
+  },
+  "opinionStructure": {
+    "totalWritings": 4,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "dissent": 1
+    },
+    "authors": [
+      "Ciparick",
+      "Graffeo"
+    ],
+    "qualifierLines": [
+      "{**17 NY3d at 614} OPINION OF THE COURT",
+      "The Appellate Division, with one Justice dissenting, affirmed the order of Supreme Court. The court held that the People failed to establish that defendant was in \"actual possession\" of a dangerous instrument and that he was \"readily capable of causing death or other serious physical injury\" (, 70 AD3d 711, 712 [2d Dept 2010]).{**17 NY3d at 616} ",
+      "The dissenting Justice would have reversed the order of Supreme Court and reinstated the indictment for first-degree robbery. The Justice disagreed with the \"proposition that a defendant's own words in the course of a robbery can never establish his or her actual possession of an unseen dangerous instrument\" (id. at 715). The dissenting Justice granted the People's application for leave to appeal to our Court (14 NY3d 895 [2010]) and we now affirm. ",
+      " The issue in this case is whether the evidence before the grand jury was legally sufficient to establish the charge of first-degree robbery under Penal Law § 160.15 (3). The proof to support the element that defendant actually possessed a dangerous instrument consisted of his own statements made in the course of the bank robbery, when he indicated that he was armed with a gun and would shoot if his demand for money was not satisfied. Because I disagree with the majority's conclusion that this evidence of possession was legally insufficient, I respectfully dissent. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 9,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 4 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

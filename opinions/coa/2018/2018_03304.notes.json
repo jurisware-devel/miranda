@@ -1,0 +1,133 @@
+{
+  "caseId": "2018_03304",
+  "sourcePath": "coa/2018/2018_03304.htm",
+  "notesPath": "coa/2018/2018_03304.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.002Z",
+  "source": {
+    "title": "People v Kuzdzal (2018 NY Slip Op 03304)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 63372,
+    "lineCount": 178,
+    "tagCounts": {
+      "a": 52,
+      "b": 38,
+      "blockquote": 8,
+      "body": 2,
+      "br": 20,
+      "div": 24,
+      "font": 74,
+      "head": 2,
+      "html": 2,
+      "i": 252,
+      "p": 123,
+      "script": 4,
+      "style": 2,
+      "sup": 14,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 18
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Kuzdzal",
+      "2018 NY Slip Op 03304 [31 NY3d 478]",
+      "May 8, 2018",
+      "DiFiore, Ch. J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, August 29, 2018"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Appellant,",
+      "v",
+      "Matthew Kuzdzal, Respondent."
+    ],
+    "citationLine": "2018 NY Slip Op 03304 31 NY3d 478",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued March 28, 2018; decided May 8, 2018",
+      "May 8, 2018",
+      "As corrected through Wednesday, August 29, 2018"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 73,
+    "footnotesCount": 7
+  },
+  "citations": {
+    "slipOpinion": "2018 NY Slip Op 03304",
+    "officialCitation": "31 NY3d 478",
+    "pageMarkerCount": 36
+  },
+  "opinionStructure": {
+    "totalWritings": 5,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "concurrence": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Wilson",
+      "Rivera"
+    ],
+    "qualifierLines": [
+      "{**31 NY3d at 480} OPINION OF THE COURT",
+      "The Appellate Division opined that the trial court made no findings, express or implied, including as to the spectator's credibility. Describing the trial court's ruling as conclusory, it held the court failed to make \"an implied determination that the observer's testimony was incredible\" (144 AD3d 1618, 1621 [4th Dept 2016]). The Court nonetheless concluded that \"the jurors' alleged reference to defendant as a 'scumbag' indicated the possibility of juror bias, and thus . . . the court should have granted defendant's request to make an inquiry of the jurors\" (id.). In contrast, the dissent specifically concluded that the trial court \"determined that the spectator's testimony was not sufficiently credible\" to trigger a Buford inquiry \"by stating that it was basing its ruling on what it had heard\" (id. at 1624 [Smith, J.P., and Peradotto, J., dissenting]). The dissent continued, \"[h]ere, especially in light of the significant evidence in the record supporting the court's determination not to credit the testimony of the spectator, we see no reason to disturb that determination\" (id.). Accordingly, the dissent reasoned that because there was \"no credible evidence indicating that any juror engaged in misconduct, there was no need for a further inquiry of the individual jurors\" (id.). One of the dissenting Justices granted the People leave to appeal (28 NY3d 1190 [2017]).{**31 NY3d at 483}",
+      " Under our system of appellate review, every litigant is afforded at least one review of the facts (People v Bleakley, 69 NY2d 490, 494 [1987]). Since the Appellate Division did not consider the threshold issue—whether the trial judge was justified in finding the spectator incredible and therefore determining the Buford inquiry was not required—the case is remitted to that Court to consider and determine whether the trial court's credibility finding was supported by the weight of the{**31 NY3d at 487} evidence. If, on remittal, the Appellate Division finds, upon its own factual review, that the record supports the trial court's determination that the spectator lacked credibility, no further action was required. If the Appellate Division finds that the credibility determination was not supported, it must determine whether the trial court abused its discretion in not taking further action (see e.g. Buford, 69 NY2d at 299; Mejias, 21 NY3d at 79-80). Contrary to the dissent's assertion, our decision does not detour from the guidance we provided in Buford. To be sure, a credible allegation that a juror is grossly unqualified to serve or engaged in substantial misconduct within the meaning of CPL 270.35 cannot be ignored by the trial court, and failure to appropriately remedy the matter is reversible error.",
+      " I concur in the result, but believe that both the Appellate Division majority and dissent have evaluated this case under the wrong prong of CPL 270.35—\"grossly unqualified to serve\"—instead of the prong applicable here: \"engaged in substantial misconduct.\" I would therefore reverse and remit so the Appellate Division could evaluate Mr. Kuzdzal's appeal under the correct prong, which it never considered.",
+      "I therefore concur in the judgment.",
+      "I dissent because the majority's remittal to the Appellate Division is unnecessary, as there is no error by that Court within our authority to correct. Even if I agreed that some error taints the Appellate Division's decision, I could not join the majority, since its directive is inconsistent with the logic of its own opinion and of the holding below.",
+      "On appeal, the Appellate Division made two determinations relevant to the trial court's denial of defendant's motion to inquire. First, the Appellate Division found record support of possible juror bias (see 144 AD3d 1618, 1621 [4th Dept 2016] [\"We respectfully disagree with our dissenting colleagues that the court lacked sufficient credible information indicating the possibility of juror bias\"]). Second, the Appellate Division concluded that, based on the observer's testimony, the trial court should have inquired of the jurors to determine whether they were \"grossly unqualified\" and should have been discharged (see id. [\"Based on the record before us, we are compelled to conclude that the jurors' alleged reference to defendant as a 'scumbag' indicated the possibility of juror bias, and thus that the court should have granted defendant's request to make an inquiry of the jurors\"]).",
+      "Read in context, moreover, it is clear that the Appellate Division majority was responding to the dissent, which argued that \"[t]he record fully supports th[e trial court's] determination\" that the \"spectator's testimony was not sufficiently credible\" (144 AD3d at 1624 [Smith, J.P., and Peradotto, J., dissenting]). The Appellate Division majority considered this claim and rejected it, concluding that, contrary to the dissent's assertion, there was \"sufficient credible information [before the trial court] indicating the possibility of juror bias\" (144 AD3d at 1621). The only possible source in the record for that \"credible information\" was the testimony of the observer. The holding of the Appellate Division would be incomprehensible if that Court had not determined that the observer's allegations were credible enough to support an inquiry.",
+      "The majority also misconstrues the meaning of the Appellate Division's characterization of the trial court's ruling as \"conclusory\" (id.). This statement is a response to the dissent's contention that the trial court's reasoning is obvious from the record (see 144 AD3d at 1624 [Smith, J.P., and Peradotto, J., dissenting]). The Appellate Division majority was clarifying that, without an explanation—as required by Buford—the basis of the trial court's denial of defendant's motion remains unclear. That assessment is wholly correct. It could be the case that the trial court concluded that the observer was not believable, as the dissent argued, or that what the observer alleged, even if believable, simply did not raise the possibility that the jurors were \"grossly unqualified.\" However, since \"the court did not explain on the record its reasons for denying defendant's request,\" the Appellate Division could not conclude which logic path the trial court followed (144 AD3d at 1621). The trial court's ruling was thus \"conclusory and, contrary to the People's contention, did not constitute an implied determination that the observer's testimony was incredible\" (id.). In the context of the opinion, it is clear that the Appellate Division did not hold that \"the trial court made no findings . . . as to the spectator's credibility\" (majority op at 482). Rather, the Appellate Division held that it is not logically correct to claim, as the dissent asserted, that because the trial court rejected defendant's request for an inquiry of the jurors, it necessarily did so upon a finding that the observer was not believable.",
+      "Although a trial court may conduct an assessment of an observer's allegations before proceeding to the \"probing and tactful\" inquiry our case law requires, I do not think the majority's rule is well crafted, and do not think it has been properly applied to this case. The majority today remits on the basis of a misreading of the Appellate Division decision. The conclusion it asks that Court to draw on remand, it has, in fact, already reached. Accordingly, I dissent."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 1,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 7,
+    "labels": [
+      "*",
+      "1",
+      "2",
+      "3",
+      "4",
+      "1",
+      "2"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 5 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

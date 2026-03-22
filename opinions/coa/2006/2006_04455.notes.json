@@ -1,0 +1,116 @@
+{
+  "caseId": "2006_04455",
+  "sourcePath": "coa/2006/2006_04455.htm",
+  "notesPath": "coa/2006/2006_04455.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.326Z",
+  "source": {
+    "title": "People v Leon (2006 NY Slip Op 04455)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 12306,
+    "lineCount": 96,
+    "tagCounts": {
+      "a": 2,
+      "b": 4,
+      "blockquote": 4,
+      "body": 2,
+      "br": 4,
+      "div": 6,
+      "font": 18,
+      "head": 2,
+      "html": 2,
+      "i": 16,
+      "p": 24,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 4
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Leon",
+      "2006 NY Slip Op 04455 [7 NY3d 109]",
+      "June 8, 2006",
+      "R.S. Smith, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, July 19, 2006"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Rolando Leon, Appellant."
+    ],
+    "citationLine": "2006 NY Slip Op 04455 7 NY3d 109",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued May 4, 2006; decided June 8, 2006",
+      "June 8, 2006",
+      "As corrected through Wednesday, July 19, 2006"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 21,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2006 NY Slip Op 04455",
+    "officialCitation": "7 NY3d 109",
+    "pageMarkerCount": 8
+  },
+  "opinionStructure": {
+    "totalWritings": 2,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1
+    },
+    "authors": [
+      "R.S. Smith"
+    ],
+    "qualifierLines": [
+      "{**7 NY3d at 111} OPINION OF THE COURT",
+      "The problem in this case exists because criminal possession of a weapon in the third degree is not a \"lesser included offense\" of criminal possession of a weapon in the second degree. Rather, the two are \"non-inclusory concurrent counts\" (see CPL 300.30 [3], [4]); it is possible to commit the greater offense without committing the lesser one. Second-degree criminal possession, in the form of possession of a loaded firearm with intent to use it unlawfully against another, can be committed anywhere, but possession of a loaded firearm constitutes the third-degree crime charged here only when it does not occur in the defendant's home or place of business. Thus, for example, a defendant who had a loaded gun in his own apartment and intended to use it unlawfully against another would be committing the second-degree but not the third-degree crime. In this case, defendant took the gun outdoors, but whether a crime is a lesser included offense turns not on the facts of a particular case but on \"a comparative examination of the statutes defining the two crimes, in the abstract\" (People v Glover, 57 NY2d 61, 64 [1982]). ",
+      "If the crime defendant asked to have submitted to the jury had been a lesser included offense, the court would have been required to grant his request \"if there [was] a reasonable view of the evidence which would support a finding that the defendant{**7 NY3d at 113} committed such lesser offense but did not commit the greater\" (CPL 300.50 [1]; see CPL 300.50 [2]). But because the two offenses are noninclusory, the submission of the less serious count, even if there was evidence to support it, was not mandatory. Indeed, if the grand jury had not chosen to indict defendant for third-degree criminal possession, that charge could not have been submitted. But since the less serious charge was in the indictment, whether to submit it was a matter for the trial court's discretion under CPL 300.40 (3) and (4). \"With respect to non-inclusory concurrent counts, the court may in its discretion submit one or more or all thereof\" (CPL 300.40 [3] [a]). ",
+      "As we read section 300.40 (6), it applies to counts that other provisions of section 300.40 would require a court to submit. Several of those other provisions use the words \"the court must submit.\" For example, under CPL 300.40 (2), \"[i]f a multiple count indictment contains consecutive counts only, the court must submit every count thereof\"; under CPL 300.40 (3) (b), \"[w]ith respect to inclusory concurrent counts, the court must submit the greatest or inclusive count.\" The effect of CPL 300.40 (6) is to make these mandatory submissions discretionary. Thus, a trial court need not submit all consecutive counts, or the greatest of several inclusory concurrent counts, when the People consent to the nonsubmission. But the \"is not required\" language of CPL 300.40 (6) has no application to already discretionary rulings like the one at issue in this case. ",
+      "It is true that the trial court's explanation of its ruling is confusing. The court discussed whether there was a \"reasonable view of the evidence\" that would support the third-degree possession count. Those words state the test for submission of a lesser included offense, not a noninclusory concurrent count (see CPL 300.50 [1]; People v Green, 56 NY2d 427, 430 [1982]). But, though the trial court expressed itself imperfectly, it clearly decided that submitting the charge of criminal possession of a weapon in the third degree to the jury would be unwise. In making that decision it properly exercised its discretion under CPL 300.40 (3). "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 2 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

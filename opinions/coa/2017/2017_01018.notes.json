@@ -1,0 +1,116 @@
+{
+  "caseId": "2017_01018",
+  "sourcePath": "coa/2017/2017_01018.htm",
+  "notesPath": "coa/2017/2017_01018.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.931Z",
+  "source": {
+    "title": "People v Flanagan (2017 NY Slip Op 01018)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 48301,
+    "lineCount": 150,
+    "tagCounts": {
+      "a": 42,
+      "b": 42,
+      "blockquote": 6,
+      "body": 2,
+      "br": 26,
+      "div": 20,
+      "font": 40,
+      "head": 2,
+      "html": 2,
+      "i": 78,
+      "p": 100,
+      "script": 4,
+      "style": 2,
+      "sup": 18,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Flanagan",
+      "2017 NY Slip Op 01018 [28 NY3d 644]",
+      "February 9, 2017",
+      "DiFiore, Ch. J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, March 29, 2017"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "William Flanagan, Appellant."
+    ],
+    "citationLine": "2017 NY Slip Op 01018 28 NY3d 644",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued January 12, 2017; decided February 9, 2017",
+      "February 9, 2017",
+      "As corrected through Wednesday, March 29, 2017"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 57,
+    "footnotesCount": 9
+  },
+  "citations": {
+    "slipOpinion": "2017 NY Slip Op 01018",
+    "officialCitation": "28 NY3d 644",
+    "pageMarkerCount": 19
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**28 NY3d at 648} OPINION OF THE COURT",
+      "Prior to sentencing, defendant moved to set aside the verdict on the grounds that the People had not presented legally sufficient evidence and that defendant was denied his right to a fair trial. The trial court denied this motion, concluding that, viewing the evidence in the light most favorable to the People, legally sufficient evidence was presented and that the record as a whole did not establish that defendant was denied a fair trial. Defendant was sentenced to a 60-day prison term for conspiracy to be served concurrently with a five-month term for the two official misconduct convictions (three months of which could be satisfied with community service). He was also required to pay a $1,000 fine. The execution of judgment was stayed pending the resolution of defendant's appeal."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 9,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

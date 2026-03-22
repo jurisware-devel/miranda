@@ -1,0 +1,118 @@
+{
+  "caseId": "2021_00899",
+  "sourcePath": "coa/2021/2021_00899.htm",
+  "notesPath": "coa/2021/2021_00899.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.133Z",
+  "source": {
+    "title": "People v Allen (2021 NY Slip Op 00899)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 4991,
+    "lineCount": 72,
+    "tagCounts": {
+      "a": 8,
+      "b": 4,
+      "body": 2,
+      "br": 6,
+      "div": 6,
+      "font": 6,
+      "head": 2,
+      "html": 2,
+      "i": 22,
+      "opinion": 1,
+      "p": 14,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Allen",
+      "2021 NY Slip Op 00899 [36 NY3d 1033]",
+      "February 11, 2021",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, March 24, 2021"
+    ],
+    "captionLines": [],
+    "citationLine": "2021 NY Slip Op 00899 36 NY3d 1033",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Decided February 11, 2021",
+      "February 11, 2021",
+      "As corrected through Wednesday, March 24, 2021"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Myers Buth Law Group PLLC , Orchard Park ( Cheryl Myers Bluth of counsel), and Joel L. Daniels , Buffalo, for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Myers Buth Law Group PLLC , Orchard Park ( Cheryl Myers Bluth of counsel), and Joel L. Daniels , Buffalo, for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Gregory J. McCaffrey , District Attorney , Geneseo ( Joshua J. Tonra of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Gregory J. McCaffrey , District Attorney , Geneseo ( Joshua J. Tonra of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 2,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2021 NY Slip Op 00899",
+    "officialCitation": "36 NY3d 1033",
+    "pageMarkerCount": 2
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**36 NY3d at 1033} OPINION OF THE COURT",
+      "Memorandum."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "caseId": "2013_04726",
+  "sourcePath": "coa/2013/2013_04726.htm",
+  "notesPath": "coa/2013/2013_04726.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.677Z",
+  "source": {
+    "title": "People v Greenberg (2013 NY Slip Op 04726)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 9907,
+    "lineCount": 86,
+    "tagCounts": {
+      "a": 10,
+      "b": 10,
+      "body": 2,
+      "br": 8,
+      "div": 4,
+      "font": 12,
+      "head": 2,
+      "html": 2,
+      "i": 18,
+      "p": 18,
+      "script": 4,
+      "style": 2,
+      "sup": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Greenberg",
+      "2013 NY Slip Op 04726 [21 NY3d 439]",
+      "June 25, 2013",
+      "Smith, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, September 25, 2013"
+    ],
+    "captionLines": [
+      "The People of the State of New York, by Andrew M. Cuomo, Attorney General of the State of New York, Respondent,",
+      "v",
+      "Maurice R. Greenberg et al., Appellants."
+    ],
+    "citationLine": "2013 NY Slip Op 04726 21 NY3d 439",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued May 28, 2013; decided June 25, 2013",
+      "June 25, 2013",
+      "As corrected through Wednesday, September 25, 2013"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 12,
+    "footnotesCount": 1
+  },
+  "citations": {
+    "slipOpinion": "2013 NY Slip Op 04726",
+    "officialCitation": "21 NY3d 439",
+    "pageMarkerCount": 5
+  },
+  "opinionStructure": {
+    "totalWritings": 2,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1
+    },
+    "authors": [
+      "Smith"
+    ],
+    "qualifierLines": [
+      "{**21 NY3d at 446} OPINION OF THE COURT",
+      "The course of the litigation has been long, and some issues once important have fallen by the wayside. Most recently, as a result of the settlement of a federal class action (see In re American Intl. Group, Inc. Sec. Litig., 2013 WL 1499412, 2013 US Dist LEXIS 52624 [SD NY, Apr. 11, 2013, No. 04-Civ-8141{**21 NY3d at 447} (DAB)]), the Attorney General has withdrawn his claims for damages and now seeks only equitable relief. The parties agree that, because of this development, the issue of federal preemption, discussed in the majority and dissenting opinions at the Appellate Division (, 95 AD3d 474, 479-482, 489-492 [1st Dept 2012]), is out of the case. The Attorney General has not appealed from the Appellate Division order denying him summary judgment. And Greenberg and Smith do not challenge here the denial to them of summary judgment on a transaction not involving GenRe. ",
+      "We will answer the first question without a detailed discussion of the facts. Much of the relevant evidence is summarized in other decisions, including the opinion of the Court of Appeals for the Second Circuit in United States v Ferguson, which held, among other things, that there was sufficient evidence to support a jury finding—in a criminal case, beyond a reasonable doubt—that a fraudulent conspiracy had its inception in a telephone call from Greenberg to GenRe's chief executive officer (see 676 F3d 260, 289 [2011]). We have no difficulty in concluding that, in this civil case, there is evidence sufficient for trial that both Greenberg and Smith participated in a fraud. The credibility of their denials is for a fact finder to decide. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 1,
+    "labels": [
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 2 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

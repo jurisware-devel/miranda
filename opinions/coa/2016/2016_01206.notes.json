@@ -1,0 +1,110 @@
+{
+  "caseId": "2016_01206",
+  "sourcePath": "coa/2016/2016_01206.htm",
+  "notesPath": "coa/2016/2016_01206.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.855Z",
+  "source": {
+    "title": "People v Nicholson (2016 NY Slip Op 01206)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 42576,
+    "lineCount": 154,
+    "tagCounts": {
+      "a": 28,
+      "b": 10,
+      "blockquote": 52,
+      "body": 2,
+      "br": 10,
+      "div": 18,
+      "font": 38,
+      "head": 2,
+      "html": 2,
+      "i": 98,
+      "p": 96,
+      "script": 4,
+      "style": 2,
+      "sup": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 12
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Nicholson",
+      "2016 NY Slip Op 01206 [26 NY3d 813]",
+      "February 18, 2016",
+      "Rivera, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, April 27, 2016"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Christopher A. Nicholson, Also Known as John Doe, Appellant."
+    ],
+    "citationLine": "2016 NY Slip Op 01206 26 NY3d 813",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued January 13, 2016; decided February 18, 2016",
+      "February 18, 2016",
+      "As corrected through Wednesday, April 27, 2016"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 54,
+    "footnotesCount": 1
+  },
+  "citations": {
+    "slipOpinion": "2016 NY Slip Op 01206",
+    "officialCitation": "26 NY3d 813",
+    "pageMarkerCount": 18
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [
+      "Rivera"
+    ],
+    "qualifierLines": [
+      "{**26 NY3d at 817} OPINION OF THE COURT",
+      "The Appellate Division affirmed in a 3-2 decision (118 AD3d 1423 [4th Dept 2014]). The Court rejected defendant's claims that the trial court should have precluded evidence of prior bad acts, that testimony regarding CSAAS was irrelevant and unnecessary, and that his trial counsel was ineffective. A majority of the Court also concluded that the trial court properly granted the People's request to present evidence that the defense witness lied about her friendship with defendant because such proof was relevant to her bias or motive to fabricate. The dissenting Justices would have reversed and granted a new trial based on the trial court's error in allowing the People to call a witness to testify solely about collateral matters (id. at 1426-1427). A Justice of the Appellate Division granted defendant leave to appeal. We now affirm."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 1,
+    "labels": [
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "caseId": "2011_01364",
+  "sourcePath": "coa/2011/2011_01364.htm",
+  "notesPath": "coa/2011/2011_01364.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.524Z",
+  "source": {
+    "title": "People v Smith (2011 NY Slip Op 01364)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 22194,
+    "lineCount": 108,
+    "tagCounts": {
+      "a": 20,
+      "b": 22,
+      "blockquote": 2,
+      "body": 2,
+      "br": 18,
+      "div": 4,
+      "font": 34,
+      "head": 2,
+      "html": 2,
+      "i": 80,
+      "p": 32,
+      "script": 4,
+      "style": 2,
+      "sup": 8,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Smith",
+      "2011 NY Slip Op 01364 [16 NY3d 786]",
+      "February 24, 2011",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, April 20, 2011"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Remy Smith, Appellant."
+    ],
+    "citationLine": "2011 NY Slip Op 01364 16 NY3d 786",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued January 13, 2011; decided February 24, 2011",
+      "February 24, 2011",
+      "As corrected through Wednesday, April 20, 2011"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Levitt & Kaizer , New York City ( Richard Ware Levitt and Yvonne Shivers of counsel), and The Murphy Firm , Baltimore, Maryland ( William H. Murphy, Jr. , of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Levitt & Kaizer , New York City ( Richard Ware Levitt and Yvonne Shivers of counsel), and The Murphy Firm , Baltimore, Maryland ( William H. Murphy, Jr. , of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Cyrus R. Vance, Jr., District Attorney , New York City ( Vincent Rivellese and Hilary Hassler of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Cyrus R. Vance, Jr., District Attorney , New York City ( Vincent Rivellese and Hilary Hassler of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 24,
+    "footnotesCount": 4
+  },
+  "citations": {
+    "slipOpinion": "2011 NY Slip Op 01364",
+    "officialCitation": "16 NY3d 786",
+    "pageMarkerCount": 16
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Jones"
+    ],
+    "qualifierLines": [
+      "{**16 NY3d at 787} OPINION OF THE COURT",
+      "Memorandum. ",
+      " By limiting defendant's argument on summation, the trial court impermissibly infringed on defendant's constitutional right to present an argument to the jury which was reasonably supported by the evidence. Further, by misstating the appropriate standard of proof in a portion of the jury charge (see majority mem at 788), the trial court unwittingly fostered a guilty verdict in accordance with the victim's testimony. Because these errors, individually and cumulatively, deprived defendant of a fair trial, I respectfully dissent. "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 4,
+    "labels": [
+      "*",
+      "1",
+      "2",
+      "3"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

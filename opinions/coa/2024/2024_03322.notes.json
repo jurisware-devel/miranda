@@ -1,0 +1,130 @@
+{
+  "caseId": "2024_03322",
+  "sourcePath": "coa/2024/2024_03322.htm",
+  "notesPath": "coa/2024/2024_03322.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.283Z",
+  "source": {
+    "title": "People v King (2024 NY Slip Op 03322)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 36472,
+    "lineCount": 136,
+    "tagCounts": {
+      "a": 30,
+      "b": 18,
+      "blockquote": 6,
+      "body": 2,
+      "br": 22,
+      "div": 12,
+      "font": 40,
+      "head": 2,
+      "html": 2,
+      "i": 108,
+      "p": 74,
+      "script": 4,
+      "style": 2,
+      "sup": 6,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 6
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v King",
+      "2024 NY Slip Op 03322 [42 NY3d 424]",
+      "June 18, 2024",
+      "Singas, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, December 25, 2024"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Appellant,",
+      "v",
+      "Alvin King, Respondent."
+    ],
+    "citationLine": "2024 NY Slip Op 03322 42 NY3d 424",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued May 15, 2024; decided June 18, 2024",
+      "June 18, 2024",
+      "As corrected through Wednesday, December 25, 2024"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 41,
+    "footnotesCount": 3
+  },
+  "citations": {
+    "slipOpinion": "2024 NY Slip Op 03322",
+    "officialCitation": "42 NY3d 424",
+    "pageMarkerCount": 19
+  },
+  "opinionStructure": {
+    "totalWritings": 5,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "concurrence": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Singas",
+      "Wilson",
+      "Rivera"
+    ],
+    "qualifierLines": [
+      " {**42 NY3d at 426} OPINION OF THE COURT",
+      "As relevant here, the Appellate Division, with one Justice dissenting, reversed the judgment, granted defendant's CPL 30.30 motion, and dismissed the indictment (see 216 AD3d 1400 [4th Dept 2023]). The Court held that the People were placed in a state of unreadiness on January 1, 2020, and were required to file a COC to become ready thereafter (id. at 1405-1406). The majority relied on the general rule that newly enacted procedural statutes are applicable to future steps and{**42 NY3d at 427} stages of a litigation and concluded that its statutory interpretation did not give the amendments any retroactive effect (id. at 1406). Even assuming the People were entitled to certain exclusions of time, the Court determined that the People were chargeable with a total of 185 days—over the 181-day limit applicable to this case (id. at 1408). The dissent would have held that the majority's interpretation of the law gave it retroactive effect, and that the legislature did not intend the new discovery laws to be applied in a retroactive manner (id. at 1408-1409 [Ogden, J., dissenting]). The dissenting Justice granted the People leave to appeal.",
+      "Chief Judge Wilson (concurring in result). ",
+      "The key to answering the question posed by this case is set out in section I of Judge Rivera's dissent, with which I largely agree—in particular, the legislative history explaining that the new CPL 245 \"repeal[s] our current flawed discovery rules (Article 240 of the{**42 NY3d at 429} Criminal Procedure Laws) and offers a better, comprehensive statute; Article 245\" (Assembly Mem in Support of 2017 NY Assembly Bill A4360A [emphasis added]; see  dissenting op at 432-433 , 41 NY3d 200, 208 [2023] [\"(T)he legislature adopted significant reforms that repealed CPL article 240, enacted CPL article 245 in its place, and amended CPL 30.30, the speedy trial provision. . . . To incentivize the People's compliance with these procedures, the enactments tie their discovery obligations to trial readiness under CPL 30.30\" (emphasis added)]). Judge Rivera and I agree that the new discovery rules and the amendments to the speedy trial provision were part of a single, integrated \"comprehensive statute\" that repealed what came before. That shared conclusion, however, leads us to opposite results.",
+      "On the one hand, article 245 imposes continuing discovery requirements that, under the new scheme, would normally be applicable throughout the trial process (see CPL 245.60). But as the dissent emphasizes (dissenting op at 437-438), those discovery requirements are part of an integrated statutory scheme aimed at ensuring \"early and broader disclosure\" by \"tether[ing] the People's CPL article 245 discovery obligations to CPL 30.30's speedy trial requirements\" (Bay, 41 NY3d at 208, 209). Given the integrated and comprehensive nature of the new enactment, I, like Judge Rivera, do not believe that we may interpret the statute in a way which decouples one from the other—they are part of a single package to be implemented together.",
+      "The dissent's approach maintains the integrity of the statutory scheme, but it imposes burdens the majority's approach avoids. Under the dissent's construction, cases that had January trial dates would all be deemed unready unless the People filed a certification stating that they had complied in good faith with the new discovery requirements. Although district attorneys in those cases could have sought an extension to allow{**42 NY3d at 431} compliance with (and litigation over compliance with) the new regime, that would have required removing those cases from the calendar and bogging down the progress of cases that were ready for trial had the trial been scheduled a few days earlier, creating voids in the trial calendars of many courts. Nor do I agree that the nine-month lag between enactment and effective date supports the dissent's interpretation of article 245, because the legislature could have intended that delay to afford district attorneys and public defenders time to reorganize and restaff themselves on the assumption that article 245 would apply only to cases filed on or after January 1, 2020. Without a clear textual indication, I am hesitant to hold that the legislature intended to place previously ready cases into unreadiness by operation of law on January 1, 2020.",
+      "Instead, I conclude that the plainest interpretation is that the new integrated and interdependent system embodied in article 245 applies to cases commenced on or after the January 1, 2020 effective date. Because the statute creates an integrated scheme aimed at ensuring early discovery via compliance with speedy trial mechanisms, I doubt the legislature intended to apply discovery obligations to cases nearing trial under the old regime while dispensing with the requirement that the People certify good-faith compliance with those new discovery obligations. As we see here, doing so creates significant practical issues. The cleanest and most easily administrable solution is to apply the old scheme to cases filed before January 1, 2020, and the new one to cases filed thereafter. That also best fits with the legislature's expression that it \"repealed\" the old regime and \"replaced\" it with \"a better, comprehensive statute\" (Assembly Mem in Support of 2017 NY Assembly Bill A4360A). Thus, I concur in the majority result, but on the ground that article 245 does not apply at all to Mr. King's case, because it was commenced before January 1, 2020.",
+      "The discovery reforms were years in the making, hotly debated, and rewritten in response to concerns from prosecutors (see generally Assembly Mem in Support of 2019 NY Assembly Bill A1431; Assembly Mem in Support of 2017 NY Assembly Bill A4360A; NY Assembly Debate on 2019 NY Assembly Bill A2009C, Mar. 31, 2019; NY Senate Debate on 2019 NY Senate Bill S1509C, Mar. 31, 2019; L 2019, ch 59, § 1, part LLL, §§ 1, 2; L 2020, ch 56, § 1, part HHH; L 2022, ch 56, § 1, part UU, subpart D). According to the Assembly Memorandum in Support, the law is intended \"[t]o modernize and make New York State's criminal discovery rules fairer\" (Assembly Mem in Support of 2017 NY Assembly Bill A4360A). To that end, the law",
+      "Defendant was convicted on all counts except for attempted homicide, but the Appellate Division reversed, granted defendant's{**42 NY3d at 436} CPL 30.30 motion, and dismissed the indictment. The Court concluded that CPL article 245, as amended, applied to all actions pending as of January 1, 2020, and therefore the prosecution was subject to its discovery requirements within the applicable speedy trial period (see 216 AD3d 1400, 1403-1406). One Justice dissented (see id. at 1408-1409 [Ogden, J., dissenting]) and subsequently granted the prosecution leave to appeal. The prosecution argues that CPL article 245 and its CPL 30.30-based enforcement mechanism are not retroactive. This argument is both misplaced and meritless.",
+      "Effectively, the majority decouples the prosecution's discovery obligations from the consequences for noncompliance—a reading of the legislative scheme that finds no support in the plain{**42 NY3d at 438} text or history of the relevant statutory provisions, established canons of construction, our case law, or logic. This contrived dissection of the legislation's components meant to work in tandem with one another defeats its purpose of ensuring timely, complete, and open discovery by artificially severing the connection between automatic disclosure and prosecutorial readiness for speedy trial purposes that we recently acknowledged (see Bay, 41 NY3d at 208-209). Because the majority's atomized alternative to the scheme the legislature enacted is contrary to our law and undermines the salutary purpose of the discovery reforms, I dissent."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 1,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 3,
+    "labels": [
+      "1",
+      "2",
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 5 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

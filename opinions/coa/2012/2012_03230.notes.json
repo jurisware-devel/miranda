@@ -1,0 +1,123 @@
+{
+  "caseId": "2012_03230",
+  "sourcePath": "coa/2012/2012_03230.htm",
+  "notesPath": "coa/2012/2012_03230.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.601Z",
+  "source": {
+    "title": "People v Rodriguez (2012 NY Slip Op 03230)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 25010,
+    "lineCount": 108,
+    "tagCounts": {
+      "a": 9,
+      "b": 4,
+      "blockquote": 2,
+      "body": 2,
+      "br": 8,
+      "div": 2,
+      "font": 38,
+      "head": 2,
+      "html": 2,
+      "i": 112,
+      "p": 40,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": [
+      "a"
+    ]
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Rodriguez",
+      "2012 NY Slip Op 03230 [19 NY3d 166]",
+      "April 26, 2012",
+      "Pigott, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, June 20, 2012"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Rafael Rodriguez, Appellant."
+    ],
+    "citationLine": "2012 NY Slip Op 03230 19 NY3d 166",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued March 20, 2012; decided April 26, 2012",
+      "April 26, 2012",
+      "As corrected through Wednesday, June 20, 2012"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 37,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2012 NY Slip Op 03230",
+    "officialCitation": "19 NY3d 166",
+    "pageMarkerCount": 18
+  },
+  "opinionStructure": {
+    "totalWritings": 4,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "dissent": 1
+    },
+    "authors": [
+      "Pigott",
+      "Ciparick"
+    ],
+    "qualifierLines": [
+      "{**19 NY3d at 168} OPINION OF THE COURT",
+      "In October 2007, Cabrera entered into a cooperation agreement with the Office of the Special Narcotics Prosecutor. With respect to his August 1 arrest, Cabrera pleaded guilty to criminal sale of a controlled substance in the third degree. The prosecutor agreed to a reduced sentence of one year's imprisonment, to be served concurrently with Cabrera's federal sentence, if Cabrera testified truthfully at defendant's trial. ",
+      "The jury found defendant guilty as charged. At sentencing, the prosecutor argued that only a trusted member of a narcotics organization could have obtained such a large amount of cocaine and recommended a 15-year prison sentence on the sale count. Defense counsel sought an eight-year term for that count, noting that defendant's criminal record was far less extensive than Cabrera's and that defendant had been offered five years' imprisonment in exchange for a guilty plea. Supreme Court sentenced defendant to concurrent terms of 17 years' imprisonment on the sale count and 5 to 15 years' imprisonment on the conspiracy count. Subsequently, Supreme Court imposed five years' postrelease supervision on defendant, doing so in his absence. ",
+      " Finding no basis for the majority's holding that \"prejudice must be shown in order for a defendant to prevail on a suppression motion under CPL 700.50 (3)\" (majority op at 173), I respectfully dissent and would hold that failure to allege prejudice is not fatal to defendant's motion. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "STRAY_CLOSING_TAG",
+      "severity": "warning",
+      "detail": "Closing tag </a> appears more times than opening tag <a>."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 4 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

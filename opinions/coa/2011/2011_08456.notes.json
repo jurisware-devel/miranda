@@ -1,0 +1,133 @@
+{
+  "caseId": "2011_08456",
+  "sourcePath": "coa/2011/2011_08456.htm",
+  "notesPath": "coa/2011/2011_08456.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.579Z",
+  "source": {
+    "title": "People v McAlpin (2011 NY Slip Op 08456)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 13991,
+    "lineCount": 81,
+    "tagCounts": {
+      "a": 14,
+      "b": 4,
+      "body": 2,
+      "br": 8,
+      "div": 2,
+      "font": 22,
+      "head": 2,
+      "html": 2,
+      "i": 64,
+      "p": 26,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v McAlpin",
+      "2011 NY Slip Op 08456 [17 NY3d 936]",
+      "November 22, 2011",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, January 25, 2012"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Appellant,",
+      "v",
+      "Chris McAlpin, Respondent."
+    ],
+    "citationLine": "2011 NY Slip Op 08456 17 NY3d 936",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued October 20, 2011; decided November 22, 2011",
+      "November 22, 2011",
+      "As corrected through Wednesday, January 25, 2012"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Cyrus R. Vance, Jr., District Attorney , New York City ( Grace Vee and David M. Cohn of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Cyrus R. Vance, Jr., District Attorney , New York City ( Grace Vee and David M. Cohn of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Legal Aid Society, Criminal Appeals Bureau , New York City ( Andrew C. Fine , Eve Kessler and Steven Banks of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Legal Aid Society, Criminal Appeals Bureau , New York City ( Andrew C. Fine , Eve Kessler and Steven Banks of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 19,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2011 NY Slip Op 08456",
+    "officialCitation": "17 NY3d 936",
+    "pageMarkerCount": 10
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Pigott"
+    ],
+    "qualifierLines": [
+      "{**17 NY3d at 937} OPINION OF THE COURT",
+      "Memorandum. ",
+      "On appeal, defendant contended that reversal was required under  (4 NY3d 242 [2005]) because, in describing the alternate sentence that defendant might receive if he violated the conditions imposed for obtaining youthful offender status, the court failed to reference the potential imposition of postrelease supervision. The Appellate Division reversed defendant's conviction and vacated his plea in a divided decision (68 AD3d 431 [2009]) and one of the dissenting Justices granted defendant leave to appeal to this Court.{**17 NY3d at 938} ",
+      "Although the dissent concludes in reliance on  (15 NY3d 725 [2010]) that defendant is foreclosed from obtaining relief because he failed to object at sentencing when the court first referenced postrelease supervision, we find this case to be distinguishable. In Murray, defendant had been told at the plea proceeding that two years of postrelease supervision would be imposed but was informed at the commencement of sentencing that the court would instead impose a sentence of three years. Because defendant had ample opportunity to object after the initial statement was made and before sentence was formally imposed, we concluded that his failure to preserve the issue in the sentencing court precluded our review. Here, in contrast, the court first mentioned postrelease supervision only moments before imposing the sentence. ",
+      "However, on appeal, defendant, for the first time, argued that Supreme Court had failed to inform him at the plea proceeding of the PRS component of the potential enhanced sentence, thereby violating Catu. Defendant persuaded the Appellate Division, which reversed the judgment of conviction, vacated his plea, reinstated the indictment, and remanded the matter to Supreme Court for further proceedings thereunder (68 AD3d 431 [2009]). Two Justices forcefully dissented, and one granted the People leave to appeal to this Court. "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

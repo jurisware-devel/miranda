@@ -1,0 +1,170 @@
+{
+  "caseId": "2004_05484",
+  "sourcePath": "coa/2004/2004_05484.htm",
+  "notesPath": "coa/2004/2004_05484.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.246Z",
+  "source": {
+    "title": "People v LaValle (2004 NY Slip Op 05484)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 144493,
+    "lineCount": 418,
+    "tagCounts": {
+      "a": 126,
+      "b": 130,
+      "blockquote": 8,
+      "body": 2,
+      "br": 74,
+      "div": 20,
+      "font": 136,
+      "head": 2,
+      "html": 2,
+      "i": 634,
+      "p": 163,
+      "script": 4,
+      "span": 24,
+      "style": 2,
+      "sup": 62,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14,
+      "u": 6
+    },
+    "unknownTags": [
+      "span"
+    ],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v LaValle",
+      "2004 NY Slip Op 05484 [3 NY3d 88]",
+      "June 24, 2004",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, May 18, 2005"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Stephen S. LaValle, Appellant."
+    ],
+    "citationLine": "2004 NY Slip Op 05484 3 NY3d 88",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued April 26, 2004; decided June 24, 2004",
+      "June 24, 2004",
+      "As corrected through Wednesday, May 18, 2005"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 173,
+    "footnotesCount": 31
+  },
+  "citations": {
+    "slipOpinion": "2004 NY Slip Op 05484",
+    "officialCitation": "3 NY3d 88",
+    "pageMarkerCount": 67
+  },
+  "opinionStructure": {
+    "totalWritings": 6,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 3,
+      "concurrence": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "G.B. Smith",
+      "Rosenblatt",
+      "R.S. Smith"
+    ],
+    "qualifierLines": [
+      "{**3 NY3d at 99} OPINION OF THE COURT",
+      "In People v Carter (40 NY2d 933 [1976]), we relied on Sheldon and Faber in granting a new trial where the court had instructed the jurors that they would be held incommunicado until they reached a verdict, after the court had learned, during a polling, that a lone juror had voted not guilty. In Matter of Plummer v Rothwax (63 NY2d 243 [1984]), the judge declared a mistrial after jurors had declared further deliberations would be fruitless, and this Court found that \"it was reasonable for the trial court to avoid any coaxing, inducing or pressuring the jury to return for further deliberations. Such action could have proven coercive and prejudicial and might have resulted in the denial of a fair verdict to the defendant or the People, a verdict which the jury might not otherwise support\" (id. at 252-253; see also People v Dawkins, 82 NY2d 226 [1993]). In People v Antommarchi (80 NY2d 247, 252 [1992]), we held that an Allen{**3 NY3d at 126} charge violated the Federal and State Constitutions because it coerced dissenting jurors into articulating a basis for their doubts, and impermissibly shifted the burden of proof. Most recently, we held that a coercive jury instruction deprived defendant of a fair trial (People v Aponte, 2 NY3d 304 [2004]). ",
+      "The dissent asserts that a deadlocked jury amounts to a failure of the system. It would be a far greater failure of the system that, as a result of legislative coercion, an individual could be sentenced to die. If all 12 jurors cannot reach an uncoerced unanimous conclusion that the death penalty is the appropriate sanction, the defendant must not be sentenced to death. Thus, if there is one lone juror who truly believes that the death sentence is not warranted, then a non-death sentence must be imposed {**3 NY3d at 127}(see CPL 400.27 [11] [a] [the jury may not direct imposition of a sentence of death unless it unanimously finds beyond a reasonable doubt that the aggravating factor(s) substantially outweigh the mitigating factor(s) established, if any, and unanimously determines that the penalty of death should be applied]). ",
+      "The dissent contends that the majority is ignoring the will of the Legislature. The Court, however, plays a crucial and necessary function in our system of checks and balances. It is the responsibility of the judiciary to safeguard the rights afforded under our State Constitution. While the Legislature may vote to have a death penalty, it cannot create one that offends constitutional rights. Thus, it is necessarily our responsibility to strike down the deadlock instruction in CPL 400.27 (10) because it creates the substantial risk of coercing jurors into sentencing a defendant to death in violation of our Due Process Clause. The deadlock instruction is invalid under our own case law condemning coercive instructions, and the State Constitution's Due Process Clause, providing greater protection than its federal counterpart. Consequently, defendant's death sentence must be set aside. ",
+      "The Attorney General points out, and the dissent recognizes, that the Legislature sought to fulfill the twin aims of minimizing juror speculation by providing an instruction, and encouraging unanimity. Our conclusion today identifies the preeminence of reducing juror speculation. As the Attorney General acknowledges (while supporting the constitutionality of the existing instruction), \"[i]f no deadlock instruction is given, and jurors are kept in the dark as to what will happen in the event they cannot decide on sentence, speculation will flourish. As the research . . . demonstrates, this speculation is almost always to the defendant's detriment.\" (Attorney General's Brief at 41.) ",
+      " Declaring a statute unconstitutional is not a celebratory event, but from time to time a necessary part of the judicial function and a pillar of our system of checks and balances. With that in mind, I write separately to emphasize why I fully concur with the Court. ",
+      "While cogent, the dissent goes too far in asserting repeatedly that the Court is substituting its own preferences for the Legislature's. Many trial judges in the United States and in New York (myself included) have not shrunk from imposing death sentences on defendants even though, as judges, we might have qualms about it. The dissent makes this point, stating that it recognizes the Court's \"obvious discomfort with the death penalty—indeed we [the dissenters] may share that discomfort.\" (Dissenting op at 149.) I take this as my colleagues' reminder—an apt and timely one—that judges should subordinate their personal predilections to the legislative will. ",
+      "My assessment is that most often, and surely in the case before us, judges are ruled not by their stomachs but by their minds, their judicial experience, and their constitutional training and analysis. Without doubt, that is true of the Court's decision today. The same, I am prepared to say, is true of the dissent. Although I disagree with it, I ascribe to it no personal or ideological bias any more than I do to the Court's writing. The case before us involves a difference of opinion on a point of constitutional law, and I side firmly with the Court. ",
+      "The deadlock instruction is a critical part of the capital case machinery, and in holding it unconstitutional, the Court is not acting on some trifling or arcane technicality. The trial judge gives the jury the deadlock instruction at an exquisitely crucial time. It is a signpost at the very crossroads of life and death. If the directions are omitted or coercive, it could wrongfully mean someone's life. I stress this because no one should suppose that the Court is engaging in a didactic exercise involving angels dancing on the heads of pins. Contrary to the dissent's assertion, it is not part of a design to devise creative obstructions to the death penalty. Deadlock instruction jurisprudence is, literally, a matter of life and death, and the Court is right to declare that an execution based on an unreliable sentencing verdict is constitutionally unacceptable and cannot be justified in the name of deference to the Legislature. ",
+      "Finally, for the reasons convincingly expanded upon by the Court, I agree that leaving the statute with no deadlock instruction at all is constitutionally untenable and that, as the Court has explained, it would be impermissible for us to rewrite or restructure the law. The dissent asserts that the Court's result is astonishing. For my part, under constitutional analysis, the Court can come to no other result.  ",
+      " The Court today renders New York's death penalty statute unenforceable on the ground that the {**3 NY3d at 134}statute fails to afford death penalty defendants a newly discovered constitutional right: the right to a penalty phase trial before a jury that is told, in advance, that a hung jury guarantees the same sentence that would result from a verdict of life imprisonment. The existence of such a right finds no support in precedent, and none in logic except on the premise that death penalty defendants are constitutionally entitled to every procedural advantage the human mind can devise. We dissent, and would hold that the deadlock instruction required by Criminal Procedure Law (CPL) § 400.27 (10) is not unconstitutionally coercive; that the statutory language requiring that instruction, even if invalid, is severable from the other statutory provisions authorizing the death penalty; and that the statute without the instruction is enforceable. ",
+      "Our analysis of the case law confirms our view that the Legislature's chosen deadlock instruction is not unconstitutional. It is clear that, at least in noncapital cases, it is not forbidden to warn a jury that a deadlock may have adverse consequences. In United States v Smith (857 F2d 682 [10th Cir 1988]), for example, the court upheld an Allen charge stating: \"If you fail to reach a verdict, the parties will be put to the expense of another trial and will once again have to endure the mental and emotional strain of a trial\" (id. at 684). Instructions to this effect (usually not \"anticipatory,\" but given after a jury has indicated difficulty in reaching agreement) are not unusual (see e.g. Freeman v State, 115 SW3d 183, 186 [Tex App 2003]; State v Vega, 789 A2d 896, 898 [RI 2002]; Wright v State, 274 Ga 305, 306-307, 553 SE2d 787, 789 [2001]; People v Cowen, 249 AD2d 560 [2d Dept 1998], lv denied 92 NY2d 895 [1998]; State v Whitaker, 255 Kan 118, 125, 872 P2d 278, 285 [1994]; Wiggins v State, 429 So 2d 666, 669 [Ala Crim App 1983]; Griffin v State, 2 Ark App 145, 148-149, 617 SW2d 21, 23 [1981]; see also Annotation, Instructions Urging Dissenting Jurors in State Criminal Case to Give Due Consideration to Opinion of Majority [Allen Charge]—Modern Cases, 97 ALR3d 96, § 2 [a]; §§ 3, 14 [b]). ",
+      "Simmons itself makes clear that, where the possibility of parole really exists, making the jury aware of it violates no constitutional right. Justice Blackmun, speaking for four members of the Simmons court, said that \"nothing in the Constitution prohibits the prosecution from arguing any truthful information relating to parole or other forms of early release\" (512 US at 168). Justice O'Connor's concurring opinion for three Justices agreed (\"[i]n a State in which parole is available, the Constitution does not require [or preclude] jury consideration of that fact\" [id. at 176]), as did Justice Scalia's dissent for himself and Justice Thomas (\"the Court has noted that 'the wisdom of the decision to permit juror consideration of [postsentencing contingencies] is best left to the States' \" [id. at 183, quoting Ramos, 463 US at 1014]). Thus, in Simmons, all nine Justices recognized that, where a life sentence will make a defendant{**3 NY3d at 139} eligible for parole, a jury may constitutionally be told so. ",
+      "Jones was a 5-4 decision. The dissenters in Jones, however, did not say they disagreed with the majority on the issue that is relevant here—whether the Constitution requires an anticipatory deadlock instruction to the effect that a hung jury guarantees life without parole. The dissent expressly refrained from taking issue with the majority on the question: Justice Ginsburg said, \"I . . . see no cause to dispute that 'the Eighth Amendment does not require that the jury be instructed as to the consequences of their failure to agree' \" (527 US at 417 n 20). The Jones dissenters did not even express disagreement with {**3 NY3d at 147}the refusal of the Jones majority to require an anticipatory deadlock instruction as a matter of policy. (The basis for the dissent in Jones, insofar as it related to the deadlock issue, was that the instructions given in that case had misled the jury.) In short, the practice that the majority here finds to be mandatory under our State Constitution failed in Jones to gain the endorsement of any Justice. ",
+      "Accordingly, we dissent from the conclusions of the majority that the provision of CPL 400.27 (10) for an anticipatory deadlock instruction is unconstitutional and that New York's death penalty statute is unenforceable pending further legislative action. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 1,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 31,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <span> in source HTML."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 6 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

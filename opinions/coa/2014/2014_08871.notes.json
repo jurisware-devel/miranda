@@ -1,0 +1,132 @@
+{
+  "caseId": "2014_08871",
+  "sourcePath": "coa/2014/2014_08871.htm",
+  "notesPath": "coa/2014/2014_08871.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.782Z",
+  "source": {
+    "title": "People v Giles (2014 NY Slip Op 08871)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 34479,
+    "lineCount": 139,
+    "tagCounts": {
+      "a": 32,
+      "b": 12,
+      "blockquote": 10,
+      "body": 2,
+      "br": 22,
+      "div": 16,
+      "font": 46,
+      "head": 2,
+      "html": 2,
+      "i": 292,
+      "opinion": 1,
+      "p": 91,
+      "script": 4,
+      "style": 2,
+      "sup": 2,
+      "table": 6,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 8
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Giles",
+      "2014 NY Slip Op 08871 [24 NY3d 1066]",
+      "December 18, 2014",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, February 25, 2015"
+    ],
+    "captionLines": [],
+    "citationLine": "2014 NY Slip Op 08871 24 NY3d 1066",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued November 19, 2014; decided December 18, 2014",
+      "December 18, 2014",
+      "As corrected through Wednesday, February 25, 2015"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 53,
+    "footnotesCount": 1
+  },
+  "citations": {
+    "slipOpinion": "2014 NY Slip Op 08871",
+    "officialCitation": "24 NY3d 1066",
+    "pageMarkerCount": 22
+  },
+  "opinionStructure": {
+    "totalWritings": 7,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 3,
+      "concurrence": 1,
+      "dissent": 2
+    },
+    "authors": [
+      "Smith",
+      "Abdus-salaam",
+      "Pigott"
+    ],
+    "qualifierLines": [
+      "{**24 NY3d at 1068} OPINION OF THE COURT",
+      "Memorandum.",
+      " I join the majority memorandum, and add some comments on each case. ",
+      "The main purpose of this concurrence is to respond to Judge Abdus-Salaam's dissenting opinion in People v Giles.",
+      "It seems to me that the statute as we have interpreted it is unquestionably valid under Apprendi and Almendarez-Torres. Indeed, an en banc panel of the United States Court of Appeals for the Second Circuit has unanimously agreed that the statute is constitutional on its face (Portalatin v Graham, 624 F3d 69 [2d Cir 2010]; see id. at 100 [Winter, J., dissenting]). Whether we correctly interpreted the statute in Rosen and later cases is a different question. I admit that that question—one of New York, not federal, law—is fairly debatable, but I am somewhat puzzled that the debate continues after all these decisions and all these years.",
+      "The decision of the Second Circuit in Portalatin confirms that the constitutionality of the PFO statute as we have interpreted it is beyond fair doubt. In Portalatin, the en banc court, by a vote of 9-3, vacated the previous opinion of a three judge panel (Besser v Walsh, 601 F3d 163 [2d Cir 2010]) and denied the habeas corpus petitions of three New York prisoners who claimed that their sentences under the PFO statute violated Apprendi. For present purposes, what I find most significant in Portalatin is that all 12 judges agreed on the facial constitutionality of the statute. While Besser, the panel opinion, can be read as holding the PFO statute unconstitutional on its face, the Portalatin dissenters (including two of the three judges who decided Besser) conceded that any such holding would be incorrect. Judge Winter said: \"my colleagues have successfully defended the PFO statute against a facial attack by showing that the predicate felonies may alone justify a Class A-I sentence\" (624 F3d at 100 [dissenting op]).",
+      "The Portalatin dissenters disagreed with the majority only as to whether the statute had been unconstitutionally applied to the cases before them (see id. at 95).",
+      "It is possible, however, to argue that we went too far, and did not merely interpret the statute but rewrote it in order to save it (see Shechtman, Is Persistent Felony Offender Statute Constitutional?, NYLJ, Jan. 4, 2011). Essentially this argument has been ably made by three dissenting Judges in two of our prior cases (see Rivera, 5 NY3d at 71-76 [Kaye, Ch. J., dissenting]; id. at 76-83 [Ciparick, J., dissenting]; Battles, 16 NY3d at 59-68 [Lippman, Ch. J., dissenting]), and it is ably made again by Judge Abdus-Salaam today. But I respectfully suggest that, at this late date, the question should be considered settled.",
+      " As the Court correctly disposes of defendants' post-verdict motions in these cases, I concur with its memorandum decision in full in People v Hawkins and in part in People v Giles. In Giles, I dissent from the Court's decision to uphold defendant's sentence because the trial court made additional fact-findings essential to elevate defendant's punishment beyond the maximum authorized by the jury's verdict, in violation of the United States Supreme Court's Apprendi line of cases (see Apprendi v New Jersey, 530 US 466, 490 [2000]). ",
+      "I acknowledge that we have consistently rejected Apprendi challenges to the statutes at issue, basically reasoning that the statutes do not make a judicial fact-finding about the defendant's character and background a prerequisite for enhanced sentencing but rather entail a mere exercise of traditional judicial discretion to place the defendant within a single broad sentencing range authorized solely by his or her prior felonies (, 5 NY3d 61, 69 [2005]; People v Rosen, 96{**24 NY3d at 1075} NY2d 329, 334-336 [2001]). But as explained in detail by the partial dissent in  (16 NY3d 54 [2010]), that interpretation of the New York sentencing regime is no more able to shield it from constitutional challenge than was the California courts' dubious interpretation of the sentencing scheme invalidated by the Supreme Court in California v Cunningham (see Battles, 16 NY3d at 62-68 [Lippman, Ch. J., dissenting in part]).",
+      "Indeed, that is so because the rationale for our prior decisions in this area largely proceeds from a flawed assumption clearly rejected by the Supreme Court in Cunningham. Under that assumption, the sentencing court supposedly does not unlawfully increase the defendant's maximum punishment by selecting a heightened sentencing range based on facts other than the existence of the defendant's prior and current convictions instead of choosing a sentencing range based solely on the aforementioned convictions. In either case, the argument goes, the court is really just making a discretionary choice of where to sentence the defendant within a single expanded range encompassing both the range authorized by the convictions and the one authorized by the additional facts (see id.; see also Cunningham, 549 US at 289-293). As the Supreme Court and the Battles dissent observed, this theory does not withstand close scrutiny because the relevant statutory maximum authorized by the jury's verdict and the defendant's convictions remains distinct from the one authorized by the supposedly discretionary judicial fact-findings, and \"broad discretion to decide what facts may support an enhanced sentence, or to determine whether an enhanced sentence is warranted in any particular case, does not shield a sentencing system from the force of [the Supreme Court's] decisions\" (Cunningham, 549 US at 290; see Battles, 16 NY3d at 66-68).",
+      "The Appellate Term, with one Justice dissenting, reversed, on the law, and reinstated the verdict (36 Misc 3d 54 [App Term, 2d Dept, 2d, 11th & 13th Jud Dists 2012]). The court held that defendant's CPL 330.30 (1) motion should have been denied by Criminal Court because it \"was procedurally defective as it was based on a ground which did not appear in the record\" (id. at 55). The Appellate Term noted that Criminal Court \"did not treat the motion as a 'de facto CPL 440.10 motion' \" (id.). The court stated that defendant \"should have waited until after sentencing before making an appropriate CPL 440.10 motion, in which matters may be raised which do not appear in the record\" (id. at 56). The court continued: \"Even if the motion had been treated as a 'de facto CPL 440.10 motion' it is not properly before this court, since defendant did not seek leave to appeal from the denial of the motion\" (id.). Thus, the court did not reach the merits of defendant's motion (id.).",
+      "Justice Weston dissented. She agreed with the majority that, since defendant's motion was based on matters outside the record, it was not proper for the court to set aside the verdict pursuant to CPL 330.30 (1) (id.). Nevertheless, in the interest of judicial economy, she would have treated the motion as one to vacate the conviction pursuant to CPL 440.10 and granted leave to appeal from the order denying the motion (id.). I agree with Justice Weston.",
+      "For these reasons, I dissent.",
+      "Judges Read, Smith, Pigott and Rivera concur; Judge Smith in a separate concurring opinion in which Judges Read and Pigott concur; Judge Abdus-Salaam dissents in part in an opinion in which Chief Judge Lippman concurs.",
+      "In People v Giles: Order affirmed, in a memorandum.",
+      "Chief Judge Lippman and Judges Read, Smith, Rivera and Abdus-Salaam concur; Judge Smith concurring in a separate opinion; Judge Pigott dissents in an opinion.",
+      "In People v Hawkins: Order affirmed, in a memorandum."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 1,
+    "dissentCount": 2,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 1,
+    "labels": [
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 7 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 3 table elements before or within the header region."
+    }
+  ]
+}

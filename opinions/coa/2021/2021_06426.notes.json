@@ -1,0 +1,109 @@
+{
+  "caseId": "2021_06426",
+  "sourcePath": "coa/2021/2021_06426.htm",
+  "notesPath": "coa/2021/2021_06426.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.160Z",
+  "source": {
+    "title": "People v Williams (2021 NY Slip Op 06426)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 14021,
+    "lineCount": 96,
+    "tagCounts": {
+      "a": 24,
+      "b": 10,
+      "body": 2,
+      "br": 10,
+      "div": 10,
+      "font": 16,
+      "head": 2,
+      "html": 2,
+      "i": 36,
+      "p": 36,
+      "script": 4,
+      "style": 2,
+      "sup": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 4
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Williams",
+      "2021 NY Slip Op 06426 [37 NY3d 314]",
+      "November 18, 2021",
+      "Garcia, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, January 5, 2022"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Don Williams, Appellant."
+    ],
+    "citationLine": "2021 NY Slip Op 06426 37 NY3d 314",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued October 5, 2021; decided November 18, 2021",
+      "November 18, 2021",
+      "As corrected through Wednesday, January 5, 2022"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 17,
+    "footnotesCount": 1
+  },
+  "citations": {
+    "slipOpinion": "2021 NY Slip Op 06426",
+    "officialCitation": "37 NY3d 314",
+    "pageMarkerCount": 7
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [
+      "Garcia"
+    ],
+    "qualifierLines": [
+      "{**37 NY3d at 316} OPINION OF THE COURT",
+      "The context makes clear the plain meaning of the language of CPL 310.30, and the legislative history surrounding the law's enactment further supports the interpretation that use of the visualizer did not require consent of counsel in this case. A memorandum from the Office of Court Administration in support of the amendment adding the consent requirement noted that \"much time is spent by the court reading and rereading statutory material which could be supplied to the jury for easy reference and which would aid the jury in reaching a verdict\" {**37 NY3d at 319}(Mem of Off of Ct Admin, 1980 McKinney's Session Laws of NY at 1967). This description clearly contemplates a situation in which the jurors would have the text in the jury room for use as they deliberate. And if a goal in amending the statute was to save time by giving the jury copies of the text rather than reading and rereading the statute, that aim would certainly not be furthered by application of the consent rule here, where the court read the text as it was displayed in open court."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 1,
+    "labels": [
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

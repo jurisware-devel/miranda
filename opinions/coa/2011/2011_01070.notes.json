@@ -1,0 +1,111 @@
+{
+  "caseId": "2011_01070",
+  "sourcePath": "coa/2011/2011_01070.htm",
+  "notesPath": "coa/2011/2011_01070.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.519Z",
+  "source": {
+    "title": "People v Wells Fargo Ins. Servs., Inc. (2011 NY Slip Op 01070)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 11352,
+    "lineCount": 89,
+    "tagCounts": {
+      "a": 12,
+      "b": 4,
+      "blockquote": 2,
+      "body": 2,
+      "br": 4,
+      "div": 6,
+      "font": 16,
+      "head": 2,
+      "html": 2,
+      "i": 32,
+      "p": 20,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Wells Fargo Ins. Servs., Inc.",
+      "2011 NY Slip Op 01070 [16 NY3d 166]",
+      "February 17, 2011",
+      "Smith, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, March 30, 2011"
+    ],
+    "captionLines": [
+      "The People of the State of New York, by Andrew M. Cuomo, Attorney General of the State of New York, Appellant,",
+      "v",
+      "Wells Fargo Insurance Services, Inc., et al., Respondents."
+    ],
+    "citationLine": "2011 NY Slip Op 01070 16 NY3d 166",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued January 5, 2011; decided February 17, 2011",
+      "February 17, 2011",
+      "As corrected through Wednesday, March 30, 2011"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 17,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2011 NY Slip Op 01070",
+    "officialCitation": "16 NY3d 166",
+    "pageMarkerCount": 7
+  },
+  "opinionStructure": {
+    "totalWritings": 2,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1
+    },
+    "authors": [
+      "Smith"
+    ],
+    "qualifierLines": [
+      "{**16 NY3d at 169} OPINION OF THE COURT"
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 2 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

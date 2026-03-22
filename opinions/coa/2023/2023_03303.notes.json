@@ -1,0 +1,138 @@
+{
+  "caseId": "2023_03303",
+  "sourcePath": "coa/2023/2023_03303.htm",
+  "notesPath": "coa/2023/2023_03303.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.218Z",
+  "source": {
+    "title": "People v Anthony (2023 NY Slip Op 03303)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 55202,
+    "lineCount": 155,
+    "tagCounts": {
+      "a": 80,
+      "b": 34,
+      "blockquote": 2,
+      "body": 2,
+      "br": 26,
+      "div": 32,
+      "font": 64,
+      "head": 2,
+      "html": 2,
+      "i": 190,
+      "opinion": 1,
+      "p": 111,
+      "script": 4,
+      "style": 2,
+      "sup": 14,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14,
+      "u": 22
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Anthony",
+      "2023 NY Slip Op 03303 [40 NY3d 976]",
+      "June 15, 2023",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, October 25, 2023"
+    ],
+    "captionLines": [],
+    "citationLine": "2023 NY Slip Op 03303 40 NY3d 976",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Decided June 15, 2023",
+      "June 15, 2023",
+      "As corrected through Wednesday, October 25, 2023"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "The Legal Aid Society , New York City ( Nancy E. Little of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "The Legal Aid Society , New York City ( Nancy E. Little of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Melinda Katz , District Attorney , Kew Gardens ( Rebecca Nealon of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Melinda Katz , District Attorney , Kew Gardens ( Rebecca Nealon of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 64,
+    "footnotesCount": 7
+  },
+  "citations": {
+    "slipOpinion": "2023 NY Slip Op 03303",
+    "officialCitation": "40 NY3d 976",
+    "pageMarkerCount": 31
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Rivera"
+    ],
+    "qualifierLines": [
+      "{**40 NY3d at 977} OPINION OF THE COURT",
+      "Memorandum."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 7,
+    "labels": [
+      "*",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

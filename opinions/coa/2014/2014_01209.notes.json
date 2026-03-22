@@ -1,0 +1,145 @@
+{
+  "caseId": "2014_01209",
+  "sourcePath": "coa/2014/2014_01209.htm",
+  "notesPath": "coa/2014/2014_01209.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.722Z",
+  "source": {
+    "title": "People v Aveni (2014 NY Slip Op 01209)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 13492,
+    "lineCount": 92,
+    "tagCounts": {
+      "a": 16,
+      "b": 14,
+      "blockquote": 6,
+      "body": 2,
+      "br": 14,
+      "div": 4,
+      "font": 22,
+      "head": 2,
+      "html": 2,
+      "i": 42,
+      "p": 22,
+      "script": 4,
+      "style": 2,
+      "sup": 4,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Aveni",
+      "2014 NY Slip Op 01209 [22 NY3d 1114]",
+      "February 20, 2014",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, April 16, 2014"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Appellant,",
+      "v",
+      "Paul Aveni, Respondent."
+    ],
+    "citationLine": "2014 NY Slip Op 01209 22 NY3d 1114",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued January 14, 2014; decided February 20, 2014",
+      "February 20, 2014",
+      "As corrected through Wednesday, April 16, 2014"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Janet DiFiore, District Attorney , White Plains ( Raffaelina Gianfrancesco, Steven A. Bender and Richard Longworth Hecht of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Janet DiFiore, District Attorney , White Plains ( Raffaelina Gianfrancesco, Steven A. Bender and Richard Longworth Hecht of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "John F. Ryan, Legal Aid Society of Westchester County , White Plains ( David B. Weisfuse of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "John F. Ryan, Legal Aid Society of Westchester County , White Plains ( David B. Weisfuse of counsel), for respondent.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Kathleen M. Rice , Mineola, Vincent Rivellese , New York City, and Hilary Hassler , for District Attorneys Association of the State of New York, amicus curiae.",
+        "sideGuess": null,
+        "terminalPhrase": "amicus curiae.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Kathleen M. Rice , Mineola, Vincent Rivellese , New York City, and Hilary Hassler , for District Attorneys Association of the State of New York, amicus curiae.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 17,
+    "footnotesCount": 2
+  },
+  "citations": {
+    "slipOpinion": "2014 NY Slip Op 01209",
+    "officialCitation": "22 NY3d 1114",
+    "pageMarkerCount": 10
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Pigott"
+    ],
+    "qualifierLines": [
+      "{**22 NY3d at 1115} OPINION OF THE COURT",
+      "Memorandum. ",
+      " I dissent because, in my view, although the Appellate Division paid lip service to the totality of circumstances standard (100 AD3d 228, 237 [2d Dept 2012]), it failed to apply that standard in this case. As a result, the Appellate Division, and now the majority, deviate from a standard that has existed and been relied upon by law enforcement for over 35 years (see People v Anderson, 42 NY2d 35, 38 [1977]; , 21 NY3d 205, 206 [2013]). According to the Appellate Division's understanding of defendant's argument, defendant claims he was deceived when the police officer: "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 2,
+    "labels": [
+      "*",
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

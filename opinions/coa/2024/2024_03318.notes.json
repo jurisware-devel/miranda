@@ -1,0 +1,138 @@
+{
+  "caseId": "2024_03318",
+  "sourcePath": "coa/2024/2024_03318.htm",
+  "notesPath": "coa/2024/2024_03318.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.278Z",
+  "source": {
+    "title": "People v Sidbury (2024 NY Slip Op 03318)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 75237,
+    "lineCount": 212,
+    "tagCounts": {
+      "a": 102,
+      "b": 82,
+      "blockquote": 6,
+      "body": 2,
+      "br": 48,
+      "div": 28,
+      "font": 94,
+      "head": 2,
+      "html": 2,
+      "i": 310,
+      "p": 139,
+      "script": 4,
+      "style": 2,
+      "sup": 36,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 20
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Sidbury",
+      "2024 NY Slip Op 03318 [42 NY3d 497]",
+      "June 18, 2024",
+      "Wilson, Ch. J., J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, January 15, 2025"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Steven Sidbury, Appellant."
+    ],
+    "citationLine": "2024 NY Slip Op 03318 42 NY3d 497",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued May 16, 2024; decided June 18, 2024",
+      "June 18, 2024",
+      "As corrected through Wednesday, January 15, 2025"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 80,
+    "footnotesCount": 18
+  },
+  "citations": {
+    "slipOpinion": "2024 NY Slip Op 03318",
+    "officialCitation": "42 NY3d 497",
+    "pageMarkerCount": 46
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Singas"
+    ],
+    "qualifierLines": [
+      "{**42 NY3d at 500} OPINION OF THE COURT",
+      "Turning to the timeliness of the notice, the trial court's failure to balance prejudice to the People resulting from the delayed notice against Mr. Sidbury's constitutional right to present a defense was an error of law. Although the dissent alleges we \"misunderstand[ ] the CPL 250.10 and Sixth Amendment standards and mandate[ ] a showing of prejudice where none is required\" (dissenting op at 522), the \"consideration of whether excusing the procedural requirements would prejudice the prosecution\" (id. at 520) is embedded in New York State decisional law (see e.g. Almonor, 93 NY2d at 582; Diaz, 15 NY3d at 47; Berk, 88 NY2d at 266; Gonzalez, 22 NY3d at 548). Indeed, just as our dissenting colleagues note that CPL 250.10{**42 NY3d at 510} was enacted to \"eliminat[e] the element of surprise\" (dissenting op at 517-518, citing Almonor, 93 NY2d at 578), our case law carefully acknowledges that this very \"rule further protects the People from the prejudice caused by 'surprise' mental health evidence\" (Gonzalez, 22 NY3d at 548 [emphasis added]).",
+      "The court based its preclusion of the proffered expert testimony in part on its own diagnosis that Mr. Sidbury was competent and manipulating the system. It reached that conclusion in part by equating two distinct determinations that are not equivalent—whether Mr. Sidbury had the mental capacity to stand trial pursuant to a CPL 730.30 evaluation, and whether Mr. Sidbury had the requisite mens rea to commit the crimes charged pursuant to CPL 250.10. Our dissenting colleagues also erroneously equate the two disparate standards (see dissenting op at 523, 524). As the Supreme Court has noted, evaluating a defendant's competency is a present-tense determination, related to a defendant's capacity to understand legal proceedings (see Dusky v United States, 362 US 402, 402 [1960]). By contrast, the psychiatric evidence Mr. Sidbury intended to present focused on his capacity to form the requisite mens rea at the time of the crime.",
+      "While awaiting trial on murder charges, defendant set a fire in the port of his cell door. Nearly four years, three lawyers, and four CPL 730.30 examinations after he was arraigned on an arson charge, defendant for the first time filed a conclusory notice of intent to introduce psychiatric evidence in his defense. The majority holds that the trial court abused its discretion in excluding this evidence because it impeded the defendant's Sixth Amendment right to present a defense. This simply ignores controlling Supreme Court precedent holding otherwise. Because defendant patently failed to satisfy the substance or procedures necessary to introduce psychiatric evidence, and because the Supreme Court has consistently, and recently, held that the Federal Constitution does not require courts to weigh prejudice to the prosecution against the defendant's right to present a defense before precluding evidence pursuant to a valid state notice statute, I dissent.",
+      "Here, the trial court did not err in precluding defendant's psychiatric defense. Initially, CPL 250.10 clearly serves \"legitimate {**42 NY3d at 522}interests\" and is not \"arbitrary or disproportionate\" (Rock, 483 US at 55-56; see Ronson, 604 F2d at 178 [CPL 250.10 \"serves a legitimate purpose\"]; Silburn, 31 NY3d at 173 [Wilson, J., dissenting] [not disputing \"that CPL 250.10 furthers a 'compelling' purpose\"]). Among other things, the notice rule avoids \"psychiatric hide and seek\" (Almonor, 93 NY2d at 582) and enables examination in \"close temporal proximity to the offense\" (Berk, 88 NY2d at 265). These interests are analogous to the \"legitimate state interests support[ing] the notice-and-hearing requirement\" in the rape shield law challenged in Lucas, including \"protect[ing] against surprise to the prosecution\" and \"permit[ing] a prosecutor to . . . investigate whether such a prior relationship actually existed\" and consider its materiality and prejudicial nature (500 US at 149-150).",
+      "Defendant repeatedly acted out in an apparent attempt to derail the process. The trial judge endured years of defendant's abusive conduct and nevertheless was able to ensure he received a fair trial. Rather than acknowledge those efforts, the majority selectively quotes from particularly strained exchanges in the record to suggest that the judge was intemperate and failed to adequately protect defendant's rights (see majority op at 503-504). Not only is that an injustice here, but today's decision will serve as an incentive for others to employ this same successful trial strategy. As the trial court is in the best position to assess the case and prevent manipulation by a defendant engaging in dilatory conduct, we have repeatedly stated that the \"trial court is granted broad discretion in making evidentiary rulings in connection with the preclusion or admission of testimony and such rulings should not be disturbed absent an abuse of discretion\" (Almonor, 93 NY2d at 583). No such abuse of discretion is evident here. I dissent."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 18,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

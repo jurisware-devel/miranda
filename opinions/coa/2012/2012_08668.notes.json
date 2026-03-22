@@ -1,0 +1,144 @@
+{
+  "caseId": "2012_08668",
+  "sourcePath": "coa/2012/2012_08668.htm",
+  "notesPath": "coa/2012/2012_08668.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.641Z",
+  "source": {
+    "title": "People v Martinez (2012 NY Slip Op 08668)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 25701,
+    "lineCount": 115,
+    "tagCounts": {
+      "a": 36,
+      "b": 10,
+      "blockquote": 2,
+      "body": 2,
+      "br": 16,
+      "div": 12,
+      "font": 36,
+      "head": 2,
+      "html": 2,
+      "i": 244,
+      "p": 38,
+      "script": 4,
+      "style": 2,
+      "sup": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14,
+      "u": 8
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Martinez",
+      "2012 NY Slip Op 08668 [20 NY3d 971]",
+      "December 18, 2012",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, February 13, 2013"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Hector Martinez, Appellant."
+    ],
+    "citationLine": "2012 NY Slip Op 08668 20 NY3d 971",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued October 9, 2012; decided December 18, 2012",
+      "December 18, 2012",
+      "As corrected through Wednesday, February 13, 2013"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Stanley E. Neustadter , New York City, for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Stanley E. Neustadter , New York City, for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Cyrus R. Vance, Jr., District Attorney , New York City ( Martin J. Foncello and Vincent Rivellese of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Cyrus R. Vance, Jr., District Attorney , New York City ( Martin J. Foncello and Vincent Rivellese of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 37,
+    "footnotesCount": 1
+  },
+  "citations": {
+    "slipOpinion": "2012 NY Slip Op 08668",
+    "officialCitation": "20 NY3d 971",
+    "pageMarkerCount": 17
+  },
+  "opinionStructure": {
+    "totalWritings": 5,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "concurrence": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Smith",
+      "Pigott"
+    ],
+    "qualifierLines": [
+      "{**20 NY3d at 972} OPINION OF THE COURT",
+      "Memorandum. ",
+      " I join the majority memorandum, and will explain in this opinion my reasons for doing so. ",
+      "The jury acquitted defendant of intentional murder, but convicted him of depraved indifference murder, assault and criminal possession of a weapon. Defendant filed a timely notice of appeal but, for reasons the record does not illuminate, did not file a brief in the Appellate Division for 14 years—until 2009. The Appellate Division, with one Justice dissenting, affirmed, rejecting defendant's argument that the evidence, while it would support a finding that he killed Lee intentionally, was insufficient to establish depraved indifference murder (, 84 AD3d 550 [1st Dept 2011]). ",
+      "A dissenting Appellate Division Justice concluded \"that defendant fully preserved the issue of whether the evidence is sufficient to support conviction of depraved indifference murder\" (id. at 562). Analyzing the record in light of more recent cases, the dissenter found \"no reasonable view of the evidence that will support conviction for depraved indifference murder\" (id. at 564). The dissenting Justice granted defendant leave to appeal to this Court. ",
+      "Thus, under the Register regime, a conviction of depraved indifference murder could be upheld where a defendant had attacked and killed a single victim with a gun or knife, even where the evidence strongly pointed to intentional murder. As a result, it became commonplace in such cases for prosecutors to charge both intentional and depraved indifference murder in one indictment, leaving it to the jury to choose between them. Judge Rosenblatt, dissenting in Sanchez, observed that \"depraved indifference murder counts have become routine escorts to intentional murder counts\" (98 NY2d at 401 [Rosenblatt, J., dissenting]). He appended to his opinion a chart showing that, in 2001 and for several years previously, indictments joining intentional and depraved indifference murder had accounted for roughly half of all murder indictments in New York (id. at 416 [Appendix to op of Rosenblatt, J.]). ",
+      "\"Our interpretation of . . . 'under circumstances{**20 NY3d at 976} evincing a depraved indifference to human life' . . . gradually and perceptibly changed from an objectively determined degree-of-risk standard (the Register formulation) to a mens rea, beginning with our decision in Hafeez in 2003, continuing in our decisions in Gonzalez, Payne and Suarez in 2004 and 2005, and ending with our decision in Feingold in 2006. . . . As the many concurring decisions and dissents in these cases and the dissent in this case illustrate, individual judges hold differing views as to where along this trajectory a majority of the Court may have effectively passed the point of no return—the limit beyond which, hard as we may have tried, it was simply not possible to reconcile our developing case law with Register and Sanchez. There is no doubt, however, that a majority of the Court explicitly overruled Register and Sanchez in Feingold, holding that ' \"depraved indifference to human life\" is a culpable mental state' (7 NY3d at 296)\" (7 NY3d at 602-603).",
+      "Jean-Baptiste's qualifying language, \"in which the defendant has adequately challenged the sufficiency of the proof,\" is a critical part of our post-Sanchez jurisprudence. The general rule that we will review claims only where they have been properly preserved for review attains special importance in this context. The preservation rule, like our retroactivity holding in Policano, serves to prevent the unnecessary overturning of convictions of \"[d]efendants who committed vicious crimes but who may have been charged and convicted under the wrong section of the statute\" (Suarez, 6 NY3d at 217 [concurring op of G.B. Smith, Rosenblatt and R.S. Smith, JJ.], quoted in Policano, 7 NY3d at 604). ",
+      "On the contrary, this case bears a strong resemblance to Sanchez, Gonzalez, Payne and Suarez in that it might seem to many that the evidence showed defendant to be guilty of intentional murder. But it did not seem so to the jury here or in any of those other cases: in each of them, the defendant was acquitted of intentional murder. The law is now clear that depraved indifference murder cannot serve as a substitute for a rejected intentional murder charge, where there is no evidence to support a finding of depraved indifference. I therefore concur in holding that defendant's conviction of depraved indifference murder cannot stand.  "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 1,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 1,
+    "labels": [
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 5 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

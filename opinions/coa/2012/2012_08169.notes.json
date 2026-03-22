@@ -1,0 +1,123 @@
+{
+  "caseId": "2012_08169",
+  "sourcePath": "coa/2012/2012_08169.htm",
+  "notesPath": "coa/2012/2012_08169.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.638Z",
+  "source": {
+    "title": "People v Watson (2012 NY Slip Op 08169)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 28243,
+    "lineCount": 141,
+    "tagCounts": {
+      "a": 36,
+      "b": 30,
+      "blockquote": 4,
+      "body": 2,
+      "br": 22,
+      "div": 10,
+      "font": 42,
+      "head": 2,
+      "html": 2,
+      "i": 128,
+      "p": 35,
+      "script": 4,
+      "style": 2,
+      "sup": 12,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 6
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Watson",
+      "2012 NY Slip Op 08169 [20 NY3d 182]",
+      "November 29, 2012",
+      "Graffeo, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, January 23, 2013"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Tyrone Watson, Appellant."
+    ],
+    "citationLine": "2012 NY Slip Op 08169 20 NY3d 182",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued October 16, 2012; decided November 29, 2012",
+      "November 29, 2012",
+      "As corrected through Wednesday, January 23, 2013"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 36,
+    "footnotesCount": 6
+  },
+  "citations": {
+    "slipOpinion": "2012 NY Slip Op 08169",
+    "officialCitation": "20 NY3d 182",
+    "pageMarkerCount": 20
+  },
+  "opinionStructure": {
+    "totalWritings": 4,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "dissent": 1
+    },
+    "authors": [
+      "Graffeo",
+      "Lippman"
+    ],
+    "qualifierLines": [
+      "{**20 NY3d at 183} OPINION OF THE COURT",
+      "Consistent with our previously stated rationale for the agency defense, I would reverse defendant's conviction for criminal facilitation; therefore, I respectfully dissent.{**20 NY3d at 193} "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 6,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "1",
+      "2"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 4 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

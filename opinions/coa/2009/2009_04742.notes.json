@@ -1,0 +1,117 @@
+{
+  "caseId": "2009_04742",
+  "sourcePath": "coa/2009/2009_04742.htm",
+  "notesPath": "coa/2009/2009_04742.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.438Z",
+  "source": {
+    "title": "People v Bailey (2009 NY Slip Op 04742)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 17825,
+    "lineCount": 103,
+    "tagCounts": {
+      "a": 18,
+      "b": 14,
+      "body": 2,
+      "br": 14,
+      "div": 4,
+      "font": 26,
+      "head": 2,
+      "html": 2,
+      "i": 36,
+      "p": 30,
+      "script": 4,
+      "style": 2,
+      "sup": 4,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Bailey",
+      "2009 NY Slip Op 04742 [13 NY3d 67]",
+      "June 11, 2009",
+      "Jones, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, September 16, 2009"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Eric Bailey, Appellant."
+    ],
+    "citationLine": "2009 NY Slip Op 04742 13 NY3d 67",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued May 6, 2009; decided June 11, 2009",
+      "June 11, 2009",
+      "As corrected through Wednesday, September 16, 2009"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 22,
+    "footnotesCount": 2
+  },
+  "citations": {
+    "slipOpinion": "2009 NY Slip Op 04742",
+    "officialCitation": "13 NY3d 67",
+    "pageMarkerCount": 12
+  },
+  "opinionStructure": {
+    "totalWritings": 4,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "dissent": 1
+    },
+    "authors": [
+      "Jones",
+      "Pigott"
+    ],
+    "qualifierLines": [
+      "{**13 NY3d at 69} OPINION OF THE COURT",
+      " Although the majority has set forth the proper standard of review to be applied in this case, I nevertheless respectfully dissent because I believe both the trial court and the Appellate Division correctly applied that standard and reached the correct decision. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 2,
+    "labels": [
+      "1",
+      "2"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 4 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

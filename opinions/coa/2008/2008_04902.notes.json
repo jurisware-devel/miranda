@@ -1,0 +1,143 @@
+{
+  "caseId": "2008_04902",
+  "sourcePath": "coa/2008/2008_04902.htm",
+  "notesPath": "coa/2008/2008_04902.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.391Z",
+  "source": {
+    "title": "People v Johnson (2008 NY Slip Op 04902)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 9990,
+    "lineCount": 76,
+    "tagCounts": {
+      "a": 10,
+      "b": 4,
+      "body": 2,
+      "br": 4,
+      "div": 2,
+      "font": 14,
+      "head": 2,
+      "html": 2,
+      "i": 44,
+      "p": 22,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Johnson",
+      "2008 NY Slip Op 04902 [10 NY3d 875]",
+      "June 3, 2008",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, July 23, 2008"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Fatin Johnson, Appellant."
+    ],
+    "citationLine": "2008 NY Slip Op 04902 10 NY3d 875",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued April 24, 2008; decided June 3, 2008",
+      "June 3, 2008",
+      "As corrected through Wednesday, July 23, 2008"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Center for Appellate Litigation , New York City ( Laura Burde and Robert S. Dean of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Center for Appellate Litigation , New York City ( Laura Burde and Robert S. Dean of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Robert M. Morgenthau, District Attorney , New York City ( Susan Gliner and Mark Dwyer of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Robert M. Morgenthau, District Attorney , New York City ( Susan Gliner and Mark Dwyer of counsel), for respondent.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Mayer Brown, LLP , New York City ( Andrew H. Schapiro of counsel), Barry C. Scheck, Peter J. Neufeld, David Loftis and Ezekiel R. Edwards for Innocence Project, amicus curiae.",
+        "sideGuess": null,
+        "terminalPhrase": "amicus curiae.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Mayer Brown, LLP , New York City ( Andrew H. Schapiro of counsel), Barry C. Scheck, Peter J. Neufeld, David Loftis and Ezekiel R. Edwards for Innocence Project, amicus curiae.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Lorca Morello , New York City, Steven Banks, Richard Willstatter , White Plains, and Alfred O'Connor , Albany, for Legal Aid Society and others, amici curiae.",
+        "sideGuess": null,
+        "terminalPhrase": "amici curiae.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Lorca Morello , New York City, Steven Banks, Richard Willstatter , White Plains, and Alfred O'Connor , Albany, for Legal Aid Society and others, amici curiae.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 12,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2008 NY Slip Op 04902",
+    "officialCitation": "10 NY3d 875",
+    "pageMarkerCount": 6
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**10 NY3d at 876} OPINION OF THE COURT",
+      "Memorandum. ",
+      "The order of the Appellate Division should be reversed and the case remitted to that Court for further proceedings in accordance with this memorandum. ",
+      "On April 28, 2004, the jury acquitted defendant of intentional murder and second-degree criminal possession of a weapon, and convicted him of depraved indifference murder and third-degree criminal possession of a weapon. On May 18, 2004, the trial judge sentenced defendant to concurrent prison terms of 25 years to life and seven years respectively for the two crimes of which he was convicted. ",
+      "The Appellate Division affirmed, with two Justices dissenting. On appeal, defendant's \"principal claim\" was \"a two-fold challenge to the sufficiency and weight of the evidence supporting the verdict convicting him of depraved indifference murder,\" which the majority rejected (, 43 AD3d 288, 289 [1st Dept 2007]). The majority also rejected defendant's other contentions, specifically concluding that he was \"not entitled to suppression of identification evidence on the ground that the court denied his application for court-ordered lineups to be conducted in a sequential and double-blind fashion\" (id. at 293). ",
+      "The dissenters favored exercising interest of justice jurisdiction to find that the verdict in this case was not supported by{**10 NY3d at 878} legally sufficient evidence. They further concluded that the verdict was against the weight of the evidence. Accordingly, the dissenters would have reduced defendant's murder conviction to second-degree manslaughter. The dissenters agreed with the majority, however, that defendant's other contentions were \"unconvincing and would not merit a reversal\" (id. at 297). One of the dissenting Justices subsequently granted defendant leave to appeal to us. "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

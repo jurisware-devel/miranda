@@ -1,0 +1,117 @@
+{
+  "caseId": "2018_01018",
+  "sourcePath": "coa/2018/2018_01018.htm",
+  "notesPath": "coa/2018/2018_01018.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.982Z",
+  "source": {
+    "title": "People v McCain (2018 NY Slip Op 01018)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 6890,
+    "lineCount": 90,
+    "tagCounts": {
+      "a": 8,
+      "b": 6,
+      "body": 2,
+      "br": 14,
+      "div": 6,
+      "font": 12,
+      "head": 2,
+      "html": 2,
+      "i": 56,
+      "opinion": 1,
+      "p": 35,
+      "script": 4,
+      "style": 2,
+      "table": 6,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v McCain",
+      "2018 NY Slip Op 01018 [30 NY3d 1121]",
+      "February 13, 2018",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, April 11, 2018"
+    ],
+    "captionLines": [],
+    "citationLine": "2018 NY Slip Op 01018 30 NY3d 1121",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued January 4, 2018; decided February 13, 2018",
+      "February 13, 2018",
+      "As corrected through Wednesday, April 11, 2018"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 14,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2018 NY Slip Op 01018",
+    "officialCitation": "30 NY3d 1121",
+    "pageMarkerCount": 5
+  },
+  "opinionStructure": {
+    "totalWritings": 6,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 3,
+      "concurrence": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Stein",
+      "Wilson"
+    ],
+    "qualifierLines": [
+      "{**30 NY3d at 1123} OPINION OF THE COURT",
+      "Memorandum.",
+      "I concur on constraint of our prior precedent.",
+      " I concur in the result in People v McCain because the officer's sworn statement attached to the complaint specifies that the \"knife was activated by deponent to an open and locked position through the force of gravity,\" which meets the statutory definition of \"gravity knife\" in Penal Law § 265.00 (5), and therefore a fortiori is a \"dangerous knife\" under Penal Law § 265.01, when subdivisions (1) and (2) thereof are read together.",
+      "I dissent from the result in People v Edward for the reasons set out in Judge Simons' dissent in Matter of Jamie D. (59 NY2d 589 [1983]).",
+      "In People v McCain: Order affirmed, in a memorandum.",
+      "Chief Judge DiFiore and Judges Rivera, Stein, Fahey, Garcia and Feinman concur, Judge Stein in a concurring opinion. Judge Wilson concurs in result in a separate concurring opinion.{**30 NY3d at 1124}",
+      "In People v Edward: Order affirmed, in a memorandum.",
+      "Chief Judge DiFiore and Judges Rivera, Stein, Fahey, Garcia and Feinman concur, Judge Stein in a concurring opinion. Judge Wilson dissents in an opinion."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 1,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 6 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 3 table elements before or within the header region."
+    }
+  ]
+}

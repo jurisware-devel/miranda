@@ -1,0 +1,111 @@
+{
+  "caseId": "2010_02674",
+  "sourcePath": "coa/2010/2010_02674.htm",
+  "notesPath": "coa/2010/2010_02674.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.472Z",
+  "source": {
+    "title": "People v Caban (2010 NY Slip Op 02674)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 12813,
+    "lineCount": 98,
+    "tagCounts": {
+      "a": 12,
+      "b": 4,
+      "blockquote": 2,
+      "body": 2,
+      "br": 4,
+      "div": 10,
+      "font": 22,
+      "head": 2,
+      "html": 2,
+      "i": 20,
+      "p": 23,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Caban",
+      "2010 NY Slip Op 02674 [14 NY3d 369]",
+      "April 1, 2010",
+      "Smith, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Tuesday, June 8, 2010"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Appellant,",
+      "v",
+      "Lynette Caban, Respondent."
+    ],
+    "citationLine": "2010 NY Slip Op 02674 14 NY3d 369",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued February 16, 2010; decided April 1, 2010",
+      "April 1, 2010",
+      "As corrected through Tuesday, June 8, 2010"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 22,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2010 NY Slip Op 02674",
+    "officialCitation": "14 NY3d 369",
+    "pageMarkerCount": 10
+  },
+  "opinionStructure": {
+    "totalWritings": 2,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1
+    },
+    "authors": [
+      "Smith"
+    ],
+    "qualifierLines": [
+      "{**14 NY3d at 372} OPINION OF THE COURT"
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 2 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

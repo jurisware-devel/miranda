@@ -1,0 +1,137 @@
+{
+  "caseId": "2012_07140",
+  "sourcePath": "coa/2012/2012_07140.htm",
+  "notesPath": "coa/2012/2012_07140.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.628Z",
+  "source": {
+    "title": "People v Alfaro (2012 NY Slip Op 07140)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 21376,
+    "lineCount": 108,
+    "tagCounts": {
+      "a": 40,
+      "b": 22,
+      "blockquote": 6,
+      "body": 2,
+      "br": 18,
+      "div": 4,
+      "font": 32,
+      "head": 2,
+      "html": 2,
+      "i": 78,
+      "p": 27,
+      "script": 4,
+      "style": 2,
+      "sup": 8,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Alfaro",
+      "2012 NY Slip Op 07140 [19 NY3d 1075]",
+      "October 25, 2012",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, December 26, 2012"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Jose Alfaro, Appellant."
+    ],
+    "citationLine": "2012 NY Slip Op 07140 19 NY3d 1075",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued September 5, 2012; decided October 25, 2012",
+      "October 25, 2012",
+      "As corrected through Wednesday, December 26, 2012"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Office of the Appellate Defender , New York City ( Anastasia B. Heeger and Richard M. Greenberg of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Office of the Appellate Defender , New York City ( Anastasia B. Heeger and Richard M. Greenberg of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Cyrus R. Vance, Jr., District Attorney , New York City ( Sara M. Zausmer , David P. Stromes and Gina Mignola of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Cyrus R. Vance, Jr., District Attorney , New York City ( Sara M. Zausmer , David P. Stromes and Gina Mignola of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 21,
+    "footnotesCount": 4
+  },
+  "citations": {
+    "slipOpinion": "2012 NY Slip Op 07140",
+    "officialCitation": "19 NY3d 1075",
+    "pageMarkerCount": 15
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Lippman"
+    ],
+    "qualifierLines": [
+      "{**19 NY3d at 1075} OPINION OF THE COURT",
+      "Memorandum. "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 4,
+    "labels": [
+      "*",
+      "1",
+      "2",
+      "3"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

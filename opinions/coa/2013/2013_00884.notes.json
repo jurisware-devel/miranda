@@ -1,0 +1,123 @@
+{
+  "caseId": "2013_00884",
+  "sourcePath": "coa/2013/2013_00884.htm",
+  "notesPath": "coa/2013/2013_00884.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.648Z",
+  "source": {
+    "title": "People v Belliard (2013 NY Slip Op 00884)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 28716,
+    "lineCount": 117,
+    "tagCounts": {
+      "a": 34,
+      "b": 18,
+      "blockquote": 4,
+      "body": 2,
+      "br": 16,
+      "div": 4,
+      "font": 40,
+      "head": 2,
+      "html": 2,
+      "i": 146,
+      "p": 36,
+      "script": 4,
+      "style": 2,
+      "sup": 6,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Belliard",
+      "2013 NY Slip Op 00884 [20 NY3d 381]",
+      "February 12, 2013",
+      "Graffeo, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, April 3, 2013"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Rafael L. Belliard, Appellant."
+    ],
+    "citationLine": "2013 NY Slip Op 00884 20 NY3d 381",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued January 2, 2013; decided February 12, 2013",
+      "February 12, 2013",
+      "As corrected through Wednesday, April 3, 2013"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 30,
+    "footnotesCount": 3
+  },
+  "citations": {
+    "slipOpinion": "2013 NY Slip Op 00884",
+    "officialCitation": "20 NY3d 381",
+    "pageMarkerCount": 19
+  },
+  "opinionStructure": {
+    "totalWritings": 4,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "dissent": 1
+    },
+    "authors": [
+      "Graffeo",
+      "Lippman"
+    ],
+    "qualifierLines": [
+      "{**20 NY3d at 383} OPINION OF THE COURT",
+      "During the July 2007 plea colloquy, the trial court explained that, as a second felony drug offender, defendant would receive a prison sentence of 12 years, followed by five years of postrelease supervision (PRS). Defense counsel asked the court to delay sentencing until the federal court had resolved defendant's violations of his supervised release, thereby permitting the new state sentence to be served concurrently with the federal sentence. The court agreed. No mention was made by defense counsel or the court as to whether the negotiated 12-year prison term would run concurrently or consecutively with the prior undischarged state sentence arising from his previous state drug conviction. Defendant allocuted to the charges and the court accepted his plea and adjourned his sentencing. ",
+      "About two months later, defendant was sentenced to a determinate prison term of 12 years plus five years of PRS on{**20 NY3d at 384} the first-degree drug possession conviction, to be served concurrently with determinate terms of five years and five years of PRS on the third-degree drug possession and second-degree weapon possession convictions. The sentencing court further stated that the 12-year sentence would be concurrent to the federal sentence, as permitted by Penal Law § 70.25 (4). As a second felony drug offender, Penal Law § 70.25 (2-a) required that defendant's 12-year prison term run consecutively to his prior undischarged state sentence. The court, however, was silent on this subject. ",
+      "Defendant maintains—and the dissent agrees—that his plea must be vacated because the trial court neglected to inform him that the determinate term of 12 years imposed as a result of his plea bargain was to run consecutively to the undischarged portion of the sentence relating to the earlier state drug conviction. He seeks to analogize his situation to that in  (4 NY3d 242 [2005]), where we held that a mandatory PRS term is a direct consequence of a conviction and must be addressed by the court during a plea allocution. The People counter that the consecutive nature of defendant's sentence is a collateral{**20 NY3d at 385} consequence and the trial judge's failure to raise it does not undermine the validity of the plea. ",
+      "In reaching this conclusion, we explained that the analogy petitioner proposed between consecutive sentencing and PRS was \"flawed\" because the problem in Garner \"was that a part of the sentence—the PRS term—was never imposed\" (Gill, 12 NY3d at 5-6). By comparison, we held that the Gill court did impose the sentence (an indeterminate term of 2½ to 5 years); all that was omitted was the characterization of the sentence as concurrent or consecutive. In language that is particularly relevant here, we remarked: ",
+      "Furthermore, as we emphasized in Gill, nothing in the statutory scheme requires a trial court to characterize a term of imprisonment as \"consecutive,\" particularly since the judge may not even be aware that a defendant has time remaining on a previously-imposed sentence. Indeed, as in Gill, nothing in the record before us demonstrates that the trial judge knew defendant had a prior undischarged sentence. It also cannot be overlooked that defendant had no reasonable basis to believe that the 12-year term would run concurrently with his prior{**20 NY3d at 389} unrelated sentence, \"effectively nullif[ying]\" the new sentence (Gill, 12 NY3d at 6). Although the trial judge stated that the newly imposed sentence would be concurrent to the federal sentence—the sole issue of concern voiced by his counsel—no reference was made to the prior undischarged state sentence. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 3,
+    "labels": [
+      "1",
+      "2",
+      "3"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 4 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "caseId": "2016_01207",
+  "sourcePath": "coa/2016/2016_01207.htm",
+  "notesPath": "coa/2016/2016_01207.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.856Z",
+  "source": {
+    "title": "People v Hogan (2016 NY Slip Op 01207)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 32881,
+    "lineCount": 115,
+    "tagCounts": {
+      "a": 46,
+      "b": 14,
+      "blockquote": 6,
+      "body": 2,
+      "br": 16,
+      "div": 10,
+      "font": 46,
+      "head": 2,
+      "html": 2,
+      "i": 168,
+      "p": 61,
+      "script": 4,
+      "style": 2,
+      "sup": 4,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 4
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Hogan",
+      "2016 NY Slip Op 01207 [26 NY3d 779]",
+      "February 18, 2016",
+      "Stein, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, April 20, 2016"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Marcus D. Hogan, Appellant."
+    ],
+    "citationLine": "2016 NY Slip Op 01207 26 NY3d 779",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued January 13, 2016; decided February 18, 2016",
+      "February 18, 2016",
+      "As corrected through Wednesday, April 20, 2016"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 34,
+    "footnotesCount": 2
+  },
+  "citations": {
+    "slipOpinion": "2016 NY Slip Op 01207",
+    "officialCitation": "26 NY3d 779",
+    "pageMarkerCount": 22
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Stein",
+      "Rivera"
+    ],
+    "qualifierLines": [
+      "{**26 NY3d at 781} OPINION OF THE COURT",
+      "Given these considerations we should not follow cases that deviate from our constitutional standard. Stare decisis is not meant to fit the Court like a straightjacket and to prevent mistakes from being rectified. While \"a court should be slow to overrule its precedents, there is little reason to avoid doing so when persuaded by the 'lessons of experience and the force of better reasoning' \" (People v Bing, 76 NY2d 331, 338 [1990], quoting Burnet v Coronado Oil & Gas Co., 285 US 393, 407-408 [1932, Brandeis, J., dissenting]). A defendant's grand jury claim should be subject to the same standard as other ineffective assistance of counsel claims, such as those based on a lawyer's failure to investigate and adequately prepare a defense (, 21 NY3d 339, 348 [2013]), failure to object to prosecutorial misconduct and inflammatory summation remarks (, 25 NY3d 769 [2015]), failure to assert a statute of limitations defense to a charge (, 5 NY3d 476 [2005]), failure to consider proper criminal procedure and evidentiary law (, 21 NY3d 127 [2013]), or failure to ensure that in counsel's absence defendant had adequate, and non-conflicted, representation (People v Allah, 80 NY2d 396 [1992]).",
+      "For the reasons stated above, I dissent.",
+      "{**26 NY3d at 792}Judges Pigott, Abdus-Salaam and Fahey concur; Judge Rivera dissents in an opinion; Chief Judge DiFiore and Judge Garcia taking no part."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 2,
+    "labels": [
+      "1",
+      "2"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

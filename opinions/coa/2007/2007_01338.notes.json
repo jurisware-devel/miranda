@@ -1,0 +1,121 @@
+{
+  "caseId": "2007_01338",
+  "sourcePath": "coa/2007/2007_01338.htm",
+  "notesPath": "coa/2007/2007_01338.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.347Z",
+  "source": {
+    "title": "People v Williams (2007 NY Slip Op 01338)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 5592,
+    "lineCount": 68,
+    "tagCounts": {
+      "a": 2,
+      "b": 4,
+      "body": 2,
+      "br": 4,
+      "div": 2,
+      "font": 10,
+      "head": 2,
+      "html": 2,
+      "i": 14,
+      "p": 13,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Williams",
+      "2007 NY Slip Op 01338 [8 NY3d 854]",
+      "February 15, 2007",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, March 28, 2007"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Terrien Williams, Appellant."
+    ],
+    "citationLine": "2007 NY Slip Op 01338 8 NY3d 854",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued January 4, 2007; decided February 15, 2007",
+      "February 15, 2007",
+      "As corrected through Wednesday, March 28, 2007"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Legal Aid Bureau of Buffalo, Inc. , Buffalo ( Karen C. Russo-McLaughlin, David C. Schopp and Barbara J. Davies of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Legal Aid Bureau of Buffalo, Inc. , Buffalo ( Karen C. Russo-McLaughlin, David C. Schopp and Barbara J. Davies of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Frank J. Clark, District Attorney , Buffalo ( Susan C. Ministero and J. Michael Marion of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Frank J. Clark, District Attorney , Buffalo ( Susan C. Ministero and J. Michael Marion of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 5,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2007 NY Slip Op 01338",
+    "officialCitation": "8 NY3d 854",
+    "pageMarkerCount": 4
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**8 NY3d at 855}OPINION OF THE COURT",
+      "Memorandum. "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

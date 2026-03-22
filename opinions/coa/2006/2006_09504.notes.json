@@ -1,0 +1,121 @@
+{
+  "caseId": "2006_09504",
+  "sourcePath": "coa/2006/2006_09504.htm",
+  "notesPath": "coa/2006/2006_09504.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.345Z",
+  "source": {
+    "title": "People v Romero (2006 NY Slip Op 09504)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 4781,
+    "lineCount": 66,
+    "tagCounts": {
+      "a": 2,
+      "b": 4,
+      "body": 2,
+      "br": 4,
+      "div": 2,
+      "font": 10,
+      "head": 2,
+      "html": 2,
+      "i": 20,
+      "p": 12,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Romero",
+      "2006 NY Slip Op 09504 [7 NY3d 911]",
+      "December 19, 2006",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, February 7, 2007"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Robert Romero, Appellant."
+    ],
+    "citationLine": "2006 NY Slip Op 09504 7 NY3d 911",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Decided December 19, 2006",
+      "December 19, 2006",
+      "As corrected through Wednesday, February 7, 2007"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Weiss & Associates, P.C., New York City ( Matthew J. Weiss of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Weiss & Associates, P.C., New York City ( Matthew J. Weiss of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Robert M. Morgenthau, District Attorney, New York City ( Susan Gliner and Mark Dwyer of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Robert M. Morgenthau, District Attorney, New York City ( Susan Gliner and Mark Dwyer of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 4,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2006 NY Slip Op 09504",
+    "officialCitation": "7 NY3d 911",
+    "pageMarkerCount": 4
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**7 NY3d at 912} OPINION OF THE COURT",
+      "Memorandum. "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

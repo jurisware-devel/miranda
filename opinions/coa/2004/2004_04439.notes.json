@@ -1,0 +1,120 @@
+{
+  "caseId": "2004_04439",
+  "sourcePath": "coa/2004/2004_04439.htm",
+  "notesPath": "coa/2004/2004_04439.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.241Z",
+  "source": {
+    "title": "People v Calabria (2004 NY Slip Op 04439)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 17365,
+    "lineCount": 112,
+    "tagCounts": {
+      "a": 14,
+      "b": 18,
+      "blockquote": 2,
+      "body": 2,
+      "br": 20,
+      "div": 4,
+      "font": 22,
+      "head": 2,
+      "html": 2,
+      "i": 30,
+      "p": 29,
+      "script": 4,
+      "style": 2,
+      "sup": 6,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Calabria",
+      "2004 NY Slip Op 04439 [3 NY3d 80]",
+      "June 8, 2004",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, November 3, 2004"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Michael Calabria, Appellant."
+    ],
+    "citationLine": "2004 NY Slip Op 04439 3 NY3d 80",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued May 6, 2004; decided June 8, 2004",
+      "June 8, 2004",
+      "As corrected through Wednesday, November 3, 2004"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 27,
+    "footnotesCount": 3
+  },
+  "citations": {
+    "slipOpinion": "2004 NY Slip Op 04439",
+    "officialCitation": "3 NY3d 80",
+    "pageMarkerCount": 10
+  },
+  "opinionStructure": {
+    "totalWritings": 6,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 3,
+      "concurrence": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Ciparick",
+      "Rosenblatt",
+      "G.B. Smith"
+    ],
+    "qualifierLines": [
+      "{**3 NY3d at 81} OPINION OF THE COURT",
+      "Although the dissent purports to determine, as a matter of law, that the evidence was legally insufficient to support the verdict—an inquiry well within our province—it is apparent that the concerns of our dissenting colleagues in fact reflect their belief that the jury got it wrong. But we are a court of law, with no power of factual review. Although the Appellate Division is empowered to reverse a conviction because, in its view, the verdict is against the weight of the evidence (see CPL 470.15 [5]; People v Bleakley, 69 NY2d 490, 495-496 [1987]), we are not (see People v Leonti, 18 NY2d 384, 390 [1966]; People v Eisenberg, 22 NY2d 99, 101 [1968]; Karger, Powers of the New York Court of Appeals § 135, at 773 [3d ed]). Here, the eyewitness, a religious school teacher, testified under oath—without contradiction—that she was able to see the perpetrator's face, albeit briefly, and that she was certain that defendant was the man who had robbed her at gunpoint. Although the dissent doubts her credibility, 12 jurors did not. Since the jury's determination was rational, its verdict may not be disturbed. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 1,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 3,
+    "labels": [
+      "1",
+      "2",
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 6 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

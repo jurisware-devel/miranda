@@ -1,0 +1,137 @@
+{
+  "caseId": "2017_02362",
+  "sourcePath": "coa/2017/2017_02362.htm",
+  "notesPath": "coa/2017/2017_02362.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.941Z",
+  "source": {
+    "title": "People v Smith (2017 NY Slip Op 02362)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 59695,
+    "lineCount": 188,
+    "tagCounts": {
+      "a": 54,
+      "b": 50,
+      "blockquote": 10,
+      "body": 2,
+      "br": 40,
+      "div": 22,
+      "font": 80,
+      "head": 2,
+      "html": 2,
+      "i": 316,
+      "p": 131,
+      "script": 4,
+      "style": 2,
+      "sup": 22,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Smith",
+      "2017 NY Slip Op 02362 [29 NY3d 91]",
+      "March 28, 2017",
+      "Fahey, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, June 7, 2017"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Charles Smith, Appellant."
+    ],
+    "citationLine": "2017 NY Slip Op 02362 29 NY3d 91",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued February 9, 2017; decided March 28, 2017",
+      "March 28, 2017",
+      "As corrected through Wednesday, June 7, 2017"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 78,
+    "footnotesCount": 11
+  },
+  "citations": {
+    "slipOpinion": "2017 NY Slip Op 02362",
+    "officialCitation": "29 NY3d 91",
+    "pageMarkerCount": 39
+  },
+  "opinionStructure": {
+    "totalWritings": 5,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "concurrence": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Fahey",
+      "Abdus-salaam",
+      "Wilson"
+    ],
+    "qualifierLines": [
+      "{**29 NY3d at 93} OPINION OF THE COURT",
+      "Our decision in Lopez was not unanimous. The partial dissent would have reversed in Lopez as well as in Mendez, and wrote that \"the majority has replaced the requirement that there be an actual display of some physical object appearing to be a gun with the far less exacting requirement of some symbolic gesture, other than speech, conveying nothing more than an impression that the robber may have such a physical object\" (Lopez, 73 NY2d at 224-225 [Titone, J., dissenting] [citations omitted]). The dissenting Judges would have held \"that the 'display' element is not satisfied absent proof that 'something,' be it a real gun, a toy gun or even a toothbrush or hand concealed in a pocket, has been brandished, pointed or poked at the victim\" (id. at 226).",
+      "A related argument offered by defendant is that there was no testimony that he used his hand to carry out a movement or to create a bulge in his clothing to give the appearance that he was pointing a gun at the teller or brandishing a firearm. The contention, drawing on the Lopez dissent, is that a defendant must make a pointing or waving movement or create some effect with his hand, other than purposefully placing it inside his{**29 NY3d at 100} clothing, in order to display what appears to be a firearm. In other words, defendant appears to argue that, for a hand to be sufficient, the hand has to be used to simulate a gun, rather than to simulate a hand holding a gun.",
+      "Notably, defendant does not ask us to overrule Lopez. Nor would we. A rule such as the one outlined in the Lopez dissent would have inadequate grounding in policy: there is little reason to consider a robbery a graver crime if the victim formed the impression that the perpetrator was pointing a gun, as opposed to the impression that the perpetrator was reaching for a gun. To the extent a court might consider pretending to point a gun a more serious offense, such concerns are outweighed by the impractical nature of a law that would often require testimony as to the exact size, shape, and orientation of a bulge in a defendant's vest or shirt. By contrast, Lopez offers a clear rule that has been followed consistently by the courts of this state in numerous decisions for nearly 30 years (, 100 AD3d 1444, 1445 [4th Dept 2012], lv denied 20 NY3d 1015 [2013]; , 80 AD3d 456, 456-458 [1st Dept 2011], lv denied 16 NY3d 864 [2011]; , 59 AD3d 739, 740 [2d Dept 2009], lv denied 12 NY3d 918 [2009]; People v Middleton, 247 AD2d 713, 713 [3d Dept 1998], lv denied 92 NY2d 856 [1998]; People v Avilla, 234 AD2d 45, 45 [1st Dept 1996]; People v Haney, 162 AD2d 613, 613-614 [2d Dept 1990], lv denied 76 NY2d 940 [1990]).",
+      "The dissent argues that the legislature, in enacting the statute, was entirely concerned with \"the evidentiary difficulty of proving that an actual gun was loaded and operable\" (dissenting op at 106). Significantly, the dissent does not call for Lopez to be overruled. This is appropriate because Lopez interpreted a statute, and this Court rarely overrules its own interpretations of statutes, particularly where the defendant has not asked us to do so. However, the dissent's conclusion on legal sufficiency (see dissenting op at 111-112) would require this Court to overturn Lopez.",
+      "I concur in the result on constraint of People v Lopez (73 NY2d 214 [1989]). I note, as do the majority and the dissent, that defendant has not asked this Court to overrule Lopez.",
+      "The justification for the legislation, contained in the bill jacket, stated: \"The need for the presumption created by this bill is a practical one\"—to help solve the problem involving situations where \"proof that the object displayed was, in fact, a loaded weapon, is well-nigh impossible to obtain\" (Sponsor's Mem, Bill Jacket, L 1969, ch 1012 at 3, 1969 NY Legis Ann at 39-40). Likewise, the Governor's memorandum accompanying the legislation described the bill as one \"to increase the penalties for robbery . . . where firearms are displayed\" (Governor's Approval Mem, Bill Jacket, L 1969, ch 1012 at 17, 1969 NY Legis Ann at 567). Governor Rockefeller stated: \"Specifically, the bill provides that a firearm displayed during the commission of . . . a robbery is presumed to be loaded and would constitute . . . Robbery in the First Degree\" (id. [emphasis added]). He also noted that \"[d]efendants charged with such acts would be permitted to prove, as an affirmative defense, that the firearm exhibited was either unloaded or incapable of being fired,\" in which case the crime would be reduced to second-degree robbery (id. [emphasis added]). It is important to note, as I discuss later, that neither the legislature nor the Governor provided any indication that the enhancements provided by the legislation were out of any concern for heightened fear by the victim—that rationale was belatedly created by our and other courts.",
+      "In any event, the legislature clearly intended that neither of those would constitute first-degree robbery. Affirmance here is not compelled by stare decisis, and adherence to the clear intent of the legislature and Governor is more important than pursuing our mistaken course to its end. I therefore respectfully dissent.",
+      "{**29 NY3d at 113}Chief Judge DiFiore and Judges Rivera, Stein and Garcia concur; Judge Abdus-Salaam concurs in result in a separate concurring opinion; Judge Wilson dissents in an opinion."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 1,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 11,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 5 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

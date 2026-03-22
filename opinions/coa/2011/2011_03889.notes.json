@@ -1,0 +1,131 @@
+{
+  "caseId": "2011_03889",
+  "sourcePath": "coa/2011/2011_03889.htm",
+  "notesPath": "coa/2011/2011_03889.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.545Z",
+  "source": {
+    "title": "People v Franov (2011 NY Slip Op 03889)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 29549,
+    "lineCount": 155,
+    "tagCounts": {
+      "a": 52,
+      "b": 46,
+      "blockquote": 2,
+      "body": 2,
+      "br": 34,
+      "div": 4,
+      "font": 40,
+      "head": 2,
+      "html": 2,
+      "i": 132,
+      "p": 44,
+      "script": 4,
+      "style": 2,
+      "sup": 20,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Franov",
+      "2011 NY Slip Op 03889 [17 NY3d 58]",
+      "May 10, 2011",
+      "Graffeo, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, July 13, 2011"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Appellant,",
+      "v",
+      "Robert Franov, Respondent."
+    ],
+    "citationLine": "2011 NY Slip Op 03889 17 NY3d 58",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued March 24, 2011; decided May 10, 2011",
+      "May 10, 2011",
+      "As corrected through Wednesday, July 13, 2011"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 31,
+    "footnotesCount": 10
+  },
+  "citations": {
+    "slipOpinion": "2011 NY Slip Op 03889",
+    "officialCitation": "17 NY3d 58",
+    "pageMarkerCount": 19
+  },
+  "opinionStructure": {
+    "totalWritings": 6,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 3,
+      "concurrence": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Graffeo",
+      "Smith",
+      "Jones"
+    ],
+    "qualifierLines": [
+      "{**17 NY3d at 59} OPINION OF THE COURT",
+      "The People claim that the evidence was legally sufficient to establish that defendant committed second-degree unauthorized use of a vehicle because a rational jury could have found that defendant exercised control over or otherwise used the Town Car by breaking into it, damaging the interior and taking an automotive part. Defendant, and our dissenting colleagues, argue otherwise, contending that the Appellate Division properly vacated the unauthorized use conviction on legal sufficiency grounds as the crime should be limited to instances in which the person charged had the means and intent to operate the vehicle. ",
+      "Reading McCaleb and Roby together, it is evident that, unlike the narrower provision from which it was derived, Penal Law § 165.05 is not limited to joyriding or situations in which the vehicle is actually driven. Moreover, although the defendants in McCaleb and Roby each had the ability to operate the automobiles in question, thus evincing control, we did not hold—as the dissent now would—that operability was a sine qua non of the crime of unauthorized use of a vehicle. Indeed, in McCaleb we recognized that a person may exercise control over a vehicle by \"barring the owner or others from entry into the car\" or temporarily using it \"for a purpose accomplished while the vehicle remains . . . stationary\" (25 NY2d at 399). Notably, Penal Law § 165.05 itself contains no operability or movement prerequisite. We therefore cannot agree with defendant's contention, accepted by the dissent, that a person may not be convicted of{**17 NY3d at 64} unauthorized use of a vehicle unless the accused had the ability and intent to operate it. ",
+      "Under McCaleb and Roby, someone who enters and occupies someone else's vehicle \"uses\" that vehicle within the meaning of Penal Law § 165.05 (1), and if he does so \"[k]nowing that he does not have the consent of the owner\" he violates the statute. This is not the only possible interpretation of the word \"uses\"—it could, as the dissent argues, be read to require the \"ability\" or \"means\" to operate the vehicle (dissenting op at 66)—but it is the interpretation we chose several decades ago, and I see no reason to change our mind.{**17 NY3d at 66} ",
+      "Because I believe the majority reads the unauthorized use of a vehicle statute too broadly, and because I believe the statute in question is meant to prohibit a defendant's unauthorized \"use\" of the vehicle as a vehicle, I disagree with the majority's holding that there was legally sufficient evidence to support defendant's conviction for unauthorized use of a vehicle. Accordingly, I dissent and would affirm the order of the Appellate Division. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 1,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 10,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "1",
+      "2",
+      "3"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 6 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

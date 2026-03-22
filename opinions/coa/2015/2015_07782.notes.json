@@ -1,0 +1,119 @@
+{
+  "caseId": "2015_07782",
+  "sourcePath": "coa/2015/2015_07782.htm",
+  "notesPath": "coa/2015/2015_07782.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.827Z",
+  "source": {
+    "title": "People v Taylor (2015 NY Slip Op 07782)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 30939,
+    "lineCount": 113,
+    "tagCounts": {
+      "a": 26,
+      "b": 14,
+      "blockquote": 2,
+      "body": 2,
+      "br": 16,
+      "div": 12,
+      "font": 44,
+      "head": 2,
+      "html": 2,
+      "i": 70,
+      "p": 59,
+      "script": 4,
+      "style": 2,
+      "sup": 4,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 6
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Taylor",
+      "2015 NY Slip Op 07782 [26 NY3d 217]",
+      "October 27, 2015",
+      "Abdus-Salaam, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, January 13, 2016"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Rhian Taylor, Appellant."
+    ],
+    "citationLine": "2015 NY Slip Op 07782 26 NY3d 217",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued September 10, 2015; decided October 27, 2015",
+      "October 27, 2015",
+      "As corrected through Wednesday, January 13, 2016"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 32,
+    "footnotesCount": 2
+  },
+  "citations": {
+    "slipOpinion": "2015 NY Slip Op 07782",
+    "officialCitation": "26 NY3d 217",
+    "pageMarkerCount": 21
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "concurrence": 1
+    },
+    "authors": [
+      "Abdus-Salaam",
+      "Rivera"
+    ],
+    "qualifierLines": [
+      "{**26 NY3d at 219} OPINION OF THE COURT",
+      "I concur in the result only, and agree with the majority that defendant's convictions must be reversed, but on different grounds. Moreover, because I find the majority's analysis an unnecessary and overly broad reading of our case law on the proper handling of jury requests, I decline to join its interpretation of the legal requirements set by this Court in this area."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 1,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 2,
+    "labels": [
+      "*",
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

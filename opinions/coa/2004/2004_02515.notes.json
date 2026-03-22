@@ -1,0 +1,116 @@
+{
+  "caseId": "2004_02515",
+  "sourcePath": "coa/2004/2004_02515.htm",
+  "notesPath": "coa/2004/2004_02515.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.232Z",
+  "source": {
+    "title": "People v Massie (2004 NY Slip Op 02515)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 16388,
+    "lineCount": 113,
+    "tagCounts": {
+      "a": 18,
+      "b": 22,
+      "blockquote": 2,
+      "body": 2,
+      "br": 14,
+      "div": 8,
+      "font": 24,
+      "head": 2,
+      "html": 2,
+      "i": 60,
+      "p": 20,
+      "script": 4,
+      "style": 2,
+      "sup": 8,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Massie",
+      "2004 NY Slip Op 02515 [2 NY3d 179]",
+      "April 6, 2004",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, June 9, 2004"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Jamal Massie, Appellant."
+    ],
+    "citationLine": "2004 NY Slip Op 02515 2 NY3d 179",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued February 19, 2004; decided April 6, 2004",
+      "April 6, 2004",
+      "As corrected through Wednesday, June 9, 2004"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 17,
+    "footnotesCount": 4
+  },
+  "citations": {
+    "slipOpinion": "2004 NY Slip Op 02515",
+    "officialCitation": "2 NY3d 179",
+    "pageMarkerCount": 11
+  },
+  "opinionStructure": {
+    "totalWritings": 2,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1
+    },
+    "authors": [
+      "R.S. Smith"
+    ],
+    "qualifierLines": [
+      "{**2 NY3d at 180} OPINION OF THE COURT"
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 4,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 2 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "caseId": "2024_02843",
+  "sourcePath": "coa/2024/2024_02843.htm",
+  "notesPath": "coa/2024/2024_02843.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.275Z",
+  "source": {
+    "title": "People v Lucas (2024 NY Slip Op 02843)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 17181,
+    "lineCount": 115,
+    "tagCounts": {
+      "a": 14,
+      "b": 8,
+      "body": 2,
+      "br": 10,
+      "classification": 18,
+      "div": 8,
+      "font": 20,
+      "head": 2,
+      "headnote": 4,
+      "headnoteblock": 1,
+      "html": 2,
+      "i": 48,
+      "opinion": 1,
+      "p": 49,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [
+      "headnoteblock"
+    ],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Lucas",
+      "2024 NY Slip Op 02843 [42 NY3d 1055]",
+      "May 23, 2024",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, February 19, 2025"
+    ],
+    "captionLines": [],
+    "citationLine": "2024 NY Slip Op 02843 42 NY3d 1055",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued April 18, 2024; decided May 23, 2024",
+      "1. The record on direct appeal in defendant's robbery prosecution was inadequate to establish that defendant's trial counsel rendered ineffective assistance by failing to impeach a detective, who testified that the victim had identified defendant as the gunman in a lineup, with his suppression hearing testimony that the victim was unsure if defendant was the gunman. The contention that defense counsel unreasonably failed to impeach the detective with his own inconsistent testimony was not without some significance, but required consideration of matters outside the record to determine whether this was trial strategy. The possibility could not be ruled out that counsel may have [*2] elected to avoid calling the credibility of a sympathetic victim, a priest, into question during the cross-examination of the detective, and instead opted to focus the jury's attention on a different prior inconsistent statement, namely, the detective's sworn allegation in the felony complaint naming the codefendant as the gunman. Further, counsel may have concluded that raising the inconsistency risked reinforcing to the jury that the victim did, in fact, identify defendant as the gunman at the time of the lineup&mdash;even if he did so equivocally&mdash;which may have buttressed the detective's assertion that he merely made a clerical error in identifying the codefendant as the gunman in the complaint. Crimes Right to Counsel Effective Representation Failure to Request Cross-Racial Identification Instruction",
+      "May 23, 2024",
+      "As corrected through Wednesday, February 19, 2025",
+      "1. The record on direct appeal in defendant's robbery prosecution was inadequate to establish that defendant's trial counsel rendered ineffective assistance by failing to impeach a detective, who testified that the victim had identified defendant as the gunman in a lineup, with his suppression hearing testimony that the victim was unsure if defendant was the gunman. The contention that defense counsel unreasonably failed to impeach the detective with his own inconsistent testimony was not without some significance, but required consideration of matters outside the record to determine whether this was trial strategy. The possibility could not be ruled out that counsel may have [*2] elected to avoid calling the credibility of a sympathetic victim, a priest, into question during the cross-examination of the detective, and instead opted to focus the jury's attention on a different prior inconsistent statement, namely, the detective's sworn allegation in the felony complaint naming the codefendant as the gunman. Further, counsel may have concluded that raising the inconsistency risked reinforcing to the jury that the victim did, in fact, identify defendant as the gunman at the time of the lineup&mdash;even if he did so equivocally&mdash;which may have buttressed the detective's assertion that he merely made a clerical error in identifying the codefendant as the gunman in the complaint."
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Patricia Pazner, Appellate Advocates , New York City ( Anders Nelson of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Patricia Pazner, Appellate Advocates , New York City ( Anders Nelson of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Michael E. McMahon, District Attorney , Staten Island ( Timothy Pezzoli, Thomas B. Litsky, James Joseph Gandia and Rhys Johnson of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Michael E. McMahon, District Attorney , Staten Island ( Timothy Pezzoli, Thomas B. Litsky, James Joseph Gandia and Rhys Johnson of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 2,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 19,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2024 NY Slip Op 02843",
+    "officialCitation": "42 NY3d 1055",
+    "pageMarkerCount": 9
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "concurrence": 1
+    },
+    "authors": [
+      "Troutman"
+    ],
+    "qualifierLines": [
+      "{**42 NY3d at 1056} OPINION OF THE COURT",
+      "Memorandum.",
+      "I agree with the majority that, on this record, defendant \"has not established that his trial counsel failed to provide meaningful representation\" (majority mem at 1056). However, to the extent that the majority's reasoning conflicts with my dissent in People v Watkins (42 NY3d 635 [2024] [decided today]), I disagree.",
+      "Accordingly, I concur in the result insofar as it affirms the order of the Appellate Division."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 1,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <headnoteblock> in source HTML."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "caseId": "2017_04496",
+  "sourcePath": "coa/2017/2017_04496.htm",
+  "notesPath": "coa/2017/2017_04496.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.957Z",
+  "source": {
+    "title": "People v Honghirun (2017 NY Slip Op 04496)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 16945,
+    "lineCount": 100,
+    "tagCounts": {
+      "a": 24,
+      "b": 14,
+      "blockquote": 2,
+      "body": 2,
+      "br": 12,
+      "div": 10,
+      "font": 24,
+      "head": 2,
+      "html": 2,
+      "i": 42,
+      "p": 36,
+      "script": 4,
+      "style": 2,
+      "sup": 4,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 4
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Honghirun",
+      "2017 NY Slip Op 04496 [29 NY3d 284]",
+      "June 8, 2017",
+      "Stein, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, July 26, 2017"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Nirun Honghirun, Appellant."
+    ],
+    "citationLine": "2017 NY Slip Op 04496 29 NY3d 284",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued May 3, 2017; decided June 8, 2017",
+      "June 8, 2017",
+      "As corrected through Wednesday, July 26, 2017"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 19,
+    "footnotesCount": 2
+  },
+  "citations": {
+    "slipOpinion": "2017 NY Slip Op 04496",
+    "officialCitation": "29 NY3d 284",
+    "pageMarkerCount": 11
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [
+      "Stein"
+    ],
+    "qualifierLines": [
+      "{**29 NY3d at 286} OPINION OF THE COURT"
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 2,
+    "labels": [
+      "1",
+      "2"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

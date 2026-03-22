@@ -1,0 +1,108 @@
+{
+  "caseId": "2024_02767",
+  "sourcePath": "coa/2024/2024_02767.htm",
+  "notesPath": "coa/2024/2024_02767.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.272Z",
+  "source": {
+    "title": "People v Lively (2024 NY Slip Op 02767)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 11182,
+    "lineCount": 89,
+    "tagCounts": {
+      "a": 10,
+      "b": 10,
+      "body": 2,
+      "br": 10,
+      "div": 6,
+      "font": 16,
+      "head": 2,
+      "html": 2,
+      "i": 36,
+      "p": 30,
+      "script": 4,
+      "style": 2,
+      "sup": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Lively",
+      "2024 NY Slip Op 02767 [42 NY3d 178]",
+      "May 21, 2024",
+      "Troutman, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, October 9, 2024"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Eugene L. Lively, Appellant."
+    ],
+    "citationLine": "2024 NY Slip Op 02767 42 NY3d 178",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued April 17, 2024; decided May 21, 2024",
+      "May 21, 2024",
+      "As corrected through Wednesday, October 9, 2024"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 12,
+    "footnotesCount": 1
+  },
+  "citations": {
+    "slipOpinion": "2024 NY Slip Op 02767",
+    "officialCitation": "42 NY3d 178",
+    "pageMarkerCount": 7
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [
+      "Troutman"
+    ],
+    "qualifierLines": [
+      "{**42 NY3d at 180} OPINION OF THE COURT",
+      "On appeal, the Appellate Division affirmed the judgment in a split decision (218 AD3d 1312 [4th Dept 2023]). The majority held that the search of defendant was substantially related to the performance of the parole officers' duties and that the parole officers were not acting as agents of the police or searching for evidence as part of a separate criminal investigation (see id. at 1312-1313). Two dissenting Justices would have held that the search of defendant's pocket was unlawful because there was no evidence that the search was \"related to defendant's status as a parolee\" or that defendant had violated the conditions of his parole (see id. at 1314-1315 [Bannister & Montour, JJ., dissenting]). A dissenting Justice granted defendant leave to appeal to this Court. We now reverse."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 1,
+    "labels": [
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

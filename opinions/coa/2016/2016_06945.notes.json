@@ -1,0 +1,132 @@
+{
+  "caseId": "2016_06945",
+  "sourcePath": "coa/2016/2016_06945.htm",
+  "notesPath": "coa/2016/2016_06945.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.904Z",
+  "source": {
+    "title": "People v Joseph (2016 NY Slip Op 06945)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 28477,
+    "lineCount": 110,
+    "tagCounts": {
+      "a": 16,
+      "b": 10,
+      "blockquote": 6,
+      "body": 2,
+      "br": 14,
+      "div": 8,
+      "font": 40,
+      "head": 2,
+      "html": 2,
+      "i": 164,
+      "opinion": 1,
+      "p": 59,
+      "script": 4,
+      "style": 2,
+      "sup": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Joseph",
+      "2016 NY Slip Op 06945 [28 NY3d 1003]",
+      "October 25, 2016",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, December 14, 2016"
+    ],
+    "captionLines": [],
+    "citationLine": "2016 NY Slip Op 06945 28 NY3d 1003",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued September 14, 2016; decided October 25, 2016",
+      "October 25, 2016",
+      "As corrected through Wednesday, December 14, 2016"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Richard M. Greenberg, Office of the Appellate Defender , New York City ( Eunice C. Lee of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Richard M. Greenberg, Office of the Appellate Defender , New York City ( Eunice C. Lee of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Cyrus R. Vance, Jr., District Attorney , New York City ( Diane N. Princ and Christopher P. Marinelli of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Cyrus R. Vance, Jr., District Attorney , New York City ( Diane N. Princ and Christopher P. Marinelli of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 29,
+    "footnotesCount": 1
+  },
+  "citations": {
+    "slipOpinion": "2016 NY Slip Op 06945",
+    "officialCitation": "28 NY3d 1003",
+    "pageMarkerCount": 19
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Stein"
+    ],
+    "qualifierLines": [
+      "{**28 NY3d at 1004} OPINION OF THE COURT",
+      "Memorandum.",
+      "The majority rejected defendant's argument that the exception to the general rule applied, reasoning that although the inaccessibility requirement appeared to have been met, the exception was inapplicable because the building was not large. The dissent concluded that the exception applied and that there had not been a burglary of a dwelling because the basement was \"entirely sealed off and inaccessible from the residences above\" (124 AD3d at 440-441). The dissent disagreed with the majority that the exception recognized in McCray only applied to \"large\" buildings, and instead, concluded that, \"[w]hile a building's size may inform the determination as to whether the residential elements were accessible, size per se is not a dispositive factor\" (id. at 441)."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 1,
+    "labels": [
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

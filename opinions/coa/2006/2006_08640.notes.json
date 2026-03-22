@@ -1,0 +1,115 @@
+{
+  "caseId": "2006_08640",
+  "sourcePath": "coa/2006/2006_08640.htm",
+  "notesPath": "coa/2006/2006_08640.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.340Z",
+  "source": {
+    "title": "People v Romero (2006 NY Slip Op 08640)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 35086,
+    "lineCount": 132,
+    "tagCounts": {
+      "a": 10,
+      "b": 14,
+      "blockquote": 20,
+      "body": 2,
+      "br": 10,
+      "div": 10,
+      "font": 54,
+      "head": 2,
+      "html": 2,
+      "i": 262,
+      "p": 40,
+      "script": 4,
+      "style": 2,
+      "sup": 4,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Romero",
+      "2006 NY Slip Op 08640 [7 NY3d 633]",
+      "November 21, 2006",
+      "Graffeo, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, January 10, 2007"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Ubaldo Romero, Appellant."
+    ],
+    "citationLine": "2006 NY Slip Op 08640 7 NY3d 633",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued October 18, 2006; decided November 21, 2006",
+      "November 21, 2006",
+      "As corrected through Wednesday, January 10, 2007"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 46,
+    "footnotesCount": 2
+  },
+  "citations": {
+    "slipOpinion": "2006 NY Slip Op 08640",
+    "officialCitation": "7 NY3d 633",
+    "pageMarkerCount": 26
+  },
+  "opinionStructure": {
+    "totalWritings": 2,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1
+    },
+    "authors": [
+      "Graffeo"
+    ],
+    "qualifierLines": [
+      "{**7 NY3d at 634} OPINION OF THE COURT"
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 2,
+    "labels": [
+      "1",
+      "2"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 2 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "caseId": "2015_09313",
+  "sourcePath": "coa/2015/2015_09313.htm",
+  "notesPath": "coa/2015/2015_09313.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.847Z",
+  "source": {
+    "title": "People v Marshall (2015 NY Slip Op 09313)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 47244,
+    "lineCount": 639,
+    "tagCounts": {
+      "a": 48,
+      "b": 30,
+      "blockquote": 18,
+      "body": 2,
+      "br": 24,
+      "div": 12,
+      "font": 60,
+      "head": 2,
+      "html": 2,
+      "i": 244,
+      "p": 93,
+      "script": 4,
+      "style": 2,
+      "sup": 12,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 6
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Marshall",
+      "2015 NY Slip Op 09313 [26 NY3d 495]",
+      "December 17, 2015",
+      "Rivera, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting",
+      "Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, March 2, 2016"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Kaity Marshall, Appellant."
+    ],
+    "citationLine": "2015 NY Slip Op 09313 26 NY3d 495",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued November 17, 2015; decided December 17, 2015",
+      "December 17, 2015",
+      "As corrected through Wednesday, March 2, 2016"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 49,
+    "footnotesCount": 6
+  },
+  "citations": {
+    "slipOpinion": "2015 NY Slip Op 09313",
+    "officialCitation": "26 NY3d 495",
+    "pageMarkerCount": 29
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Rivera",
+      "Lippman"
+    ],
+    "qualifierLines": [
+      "{**26 NY3d at 498} OPINION OF THE COURT",
+      "Here, rather than focus the hearing directly on whether the photograph display was unduly suggestive, the court proceeded to consider whether, as the People argued, the display was trial preparation and thus fell outside the ambit of CPL 710.30, or, as the defendant maintained, the display constituted an identification procedure and thus a proper subject of a Wade hearing. The court, defendant and the People interpreted this Court's memorandum decision in Herner as approving what is essentially a pre-Wade hearing designed to assess the need for a judicial determination on suggestiveness.",
+      "Furthermore, defendant cannot argue that she was unaware of the proposed alternative ground for the in-court identification, or, as the dissent suggests, that the People limited their argument to whether the display was trial preparation or an identification procedure. The People consistently took the position in their opposition papers to defendant's request for a hearing and in their post-hearing memorandum that the prior hospital identification was an independent source. Indeed, in anticipation of the People's argument on this ground, defendant asserted in her post-hearing submission that whether prior viewings of defendant provided the basis for an independent in-court identification should be resolved in a Wade hearing or in an independent source hearing. Moreover, defendant's request for another hearing, even though record evidence of an independent source exists, encourages the unnecessary expenditure of judicial resources and is at odds with the procedure sanctioned in People v Burts (78 NY2d at 24-25) and People v Wilson (5 NY3d at 780). In those cases, this Court recommended that the People present evidence of the independent source at the pretrial hearing, so as to avoid the need for renewed hearings should the trial court's non-suggestiveness determination be reversed on appeal.{**26 NY3d at 510}",
+      "Chief Judge Lippman (dissenting)."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 6,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "1",
+      "2"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

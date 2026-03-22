@@ -1,0 +1,161 @@
+{
+  "caseId": "2024_02222",
+  "sourcePath": "coa/2024/2024_02222.htm",
+  "notesPath": "coa/2024/2024_02222.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.265Z",
+  "source": {
+    "title": "People v Weinstein (2024 NY Slip Op 02222)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 151749,
+    "lineCount": 317,
+    "tagCounts": {
+      "a": 176,
+      "b": 122,
+      "blockquote": 26,
+      "body": 2,
+      "br": 68,
+      "disopjd": 2,
+      "div": 46,
+      "font": 166,
+      "head": 2,
+      "html": 2,
+      "i": 806,
+      "opinion": 1,
+      "p": 246,
+      "script": 4,
+      "style": 2,
+      "sup": 54,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 40
+    },
+    "unknownTags": [
+      "disopjd"
+    ],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Weinstein",
+      "2024 NY Slip Op 02222 [42 NY3d 439]",
+      "April 25, 2024",
+      "Rivera, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, January 15, 2025"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Harvey Weinstein, Appellant."
+    ],
+    "citationLine": "2024 NY Slip Op 02222 42 NY3d 439",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued February 14, 2024; decided April 25, 2024",
+      "April 25, 2024",
+      "As corrected through Wednesday, January 15, 2025"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 155,
+    "footnotesCount": 26
+  },
+  "citations": {
+    "slipOpinion": "2024 NY Slip Op 02222",
+    "officialCitation": "42 NY3d 439",
+    "pageMarkerCount": 82
+  },
+  "opinionStructure": {
+    "totalWritings": 5,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "dissent": 2
+    },
+    "authors": [
+      "Rivera",
+      "Singas",
+      "Cannataro"
+    ],
+    "qualifierLines": [
+      "{**42 NY3d at 443} OPINION OF THE COURT",
+      "Defendant argues that admission of the Molineux witnesses' testimonies detailing sexual assaults he allegedly committed against them before and after the alleged offense conduct ran{**42 NY3d at 455} afoul of Molineux and its progeny. We agree that this challenge has merit. Indeed, we reject the prosecution's theory, accepted by the Appellate Division and the dissenters here, that this testimony showed defendant's state of mind to use forcible compulsion against complainants and his understanding of their lack of consent. That analysis, if adopted, would eviscerate the time-tested rule against propensity evidence, which, in criminal cases, serves as a judicial bulwark against a guilty verdict based on supposition rather than proof, on \"collateral matters or . . . because of [a defendant's] past\" or on the defendant's \"bad character\" alone (People v Alvino, 71 NY2d 233, 241 [1987]).",
+      "In reaching this legal conclusion, we take no \"step backwards from recent advances in our understanding of how sex crimes are perpetrated and why victims sometimes respond in seemingly counterintuitive ways\" (Cannataro, J., dissenting op at 488) and we do not \"shut[ ] [our] eyes to the enduring effect of rape culture on notions of consent, and intent\" (Singas, J., dissenting op at 477-478), as the respective dissents assert. On the contrary, consistent with our judicial role, our analysis is {**42 NY3d at 461}grounded on bedrock principles of evidence and the defendant's constitutional right to the presumption of innocence and a fair trial. Judge Singas would ignore these principles because, in her view, they fail to account for how rape myths distort jurors' perceptions of victims, and corrupt the deliberative process (see id. at 477-484). But justice for sexual assault victims is not incompatible with well-established rules of evidence designed to ensure that criminal convictions result only from the illegal conduct charged. Indeed, just as rape myths may impact the trier of fact's deliberative process, propensity evidence has a bias-inducing effect on jurors and tends to undermine the truth-seeking function of trials. Thus, \"[w]hen we limit Molineux or other propensity evidence, we do so for policy reasons, due to fear of the jury's 'human tendency' to more readily 'believe in the guilt of an accused person when it is known or suspected that [they have] previously committed a similar crime' \" (, 28 NY3d 271, 276 [2016], quoting{**42 NY3d at 462} People v Ventimiglia, 52 NY2d 350, 359 [1981], citing Molineux, 168 NY at 313).",
+      "And while the Molineux rule addresses jurors' reliance on propensity evidence, contrary to the dissenters' suggestion, we have a means to address jurors' possible disinclination to believe sexual assault victims who act in ways that appear contrary to the jurors' experiences or views (see Cannataro, J., dissenting op at 491-493; Singas, J., dissenting op at 485-486). The proper method for dispelling rape myths in \"nuanced and complex\" cases (Singas, J., dissenting op at 488) is the one deployed by the prosecution here: educating jurors about rape myths and social misperceptions about sexual assault with expert testimony explaining rape trauma and survivor responses (see Taylor, 75 NY2d at 288-289). Specifically, testimony from the prosecution's expert provided non-propensity evidence that addressed what some jurors might have seen as counterintuitive acts by complainants when they continued to interact with defendant, and contextualized conduct associated with rape trauma. As the expert explained to the jury, her professional work with sexual assault victims led her to conclude that many victims often maintain contact with their attackers out of fear the attacker will retaliate. That testimony was particularly crucial here.",
+      "Judge Singas asserts that this Court's decision will have adverse effects on other prosecutions. She claims, for example, that \"instances in which a trafficker repeatedly leverages workers' undocumented status to coerce them into sex, or a restaurant manager withholds tips from his employees unless they perform sexual acts\" will become \"a series of individual 'credibility contests' and unrelated 'misunderstandings' \" (Singas, J., dissenting op at 487). However, cases involving such \"repeated\" conduct likely would feature—much like this case did—direct evidence in the form of testimony from multiple complainants. Judge Singas assumes, with no empirical data, that few such cases involve evidence aside from victim{**42 NY3d at 463} testimony. In fact, many trafficking cases feature much more than that (, 37 NY3d 1174, 1175-1177, 1187-1188 [2021, Singas, J., concurring] [summarizing sex trafficking case featuring evidence of online advertisements, phone records, emails, and photographs of unconscious victims, in addition to victim testimony]). The Molineux rule has not and will not, based on its application to this appeal, present an obstacle to prosecution of such cases, notwithstanding Judge Singas' exaggerated claims to the contrary.",
+      "Judge Singas attempts to distinguish Vargas because that case involved a \"stranger rape\" and chides us for not doing the same (Singas, J., dissenting op at 475-476, 481-482). Here, of course, we engage in a straightforward analysis that applies Vargas's animating legal principles. Thus, it is Judge Singas—not this Court—who \"misses\" the relevant point (id. at 481) that here,{**42 NY3d at 466} as in Vargas, defendant's intent was \"easily inferred from the commission of the act[s] [themselves]\" as recounted by complainants in a case that boiled down to a credibility contest for the jury to evaluate (88 NY2d at 858).",
+      "Judge Cannataro attempts to cast our correction of this piece of the Sandoval ruling as a byproduct of a general \" 'disagreement with the ultimate outcome of the trial court's discretionary balancing determination' \" (Cannataro, J., dissenting op at 495, quoting Walker, 83 NY2d at 459). The nuance of our holding, which actually leaves much of the trial court's Sandoval determination intact, is more than enough to show that he is mistaken. This is not a case where \"the trial court might have been more discriminating\" but was nonetheless within its discretion (Walker, 83 NY2d at 458). Rather, the trial court here abused its discretion as a matter of law when it ruled that the prosecution could cross-examine defendant on a broad{**42 NY3d at 469} swath of uncharged misconduct that did not bear on his credibility. Far from \"invert[ing] Sandoval,\" as Judge Cannataro charges (Cannataro, J., dissenting op at 496), we heed it in its original form and apply it straightforwardly to rectify a branch of a ruling that necessarily \"undesirably deter[red] the defendant from taking the stand\" and thereby \"den[ied] the jury . . . significant material evidence\" (Sandoval, 34 NY2d at 376).",
+      "Fundamental misunderstandings of sexual violence perpetrated by men known to, and with significant power over, the women they victimize are on full display in the majority's opinion. By whitewashing the facts to conform to a he-said/she-said narrative, by ignoring evidence of defendant's manipulation and premeditation, which clouded issues of intent, and by failing to recognize that the jury was entitled to consider {**42 NY3d at 472}defendant's previous assaults, this Court has continued a disturbing trend of overturning juries' guilty verdicts in cases involving sexual violence. The Molineux rule—created by this Court—has never been static. Instead, its use has evolved over time to meet the challenges of complex criminal prosecutions. Unfortunately, in the context of sexual assault, that evolution lapses today with a decision that has all but ended the use of Molineux evidence in such cases. I fully join Judge Cannataro's dissent but write separately to highlight how the majority's determination perpetuates outdated notions of sexual violence and allows predators to escape accountability.",
+      "While the majority's holding may, at first glance, appear to endorse a utopic vision of sexual assault prosecution in which a victim's word is paramount, the reality is far bleaker. Critically missing from the majority's analysis is any awareness that sexual assault cases are not monolithic and that the issue of consent has historically been a complicated one, subject to vigorous debate, study, and ever-evolving legal standards (, 39 NY3d 459, 475-482 [2023, Singas, J., dissenting]). By ignoring the legal and practical realities of proving a lack of consent, the majority has crafted a naïve narrative: that within the most fraught and intimate settings, intent is {**42 NY3d at 473}readily apparent, and issues of consent easily ascertained. This conclusion deprives juries of the context necessary to do their work, forecloses the prosecution from using an essential tool to prove intent, ignores the nuances of how sexual violence is perpetrated and perceived, and demonstrates the majority's utter lack of understanding of the dynamics of sexual assault. Because New York's women deserve better, I dissent.",
+      "The adjudication of sex crimes occupies a challenging space in the evolution of American criminal law. Rooted in centuries of deeply patriarchal and misogynistic legal tradition, progress toward a more enlightened and evidence-based approach to the prosecution of rape and related crimes perpetrated predominantly against women has been both challenging and sporadic, with most meaningful progress achieved only over the past 50 years (see People v Regan, 39 NY3d 459, 475-482 [2023, Singas, J. dissenting]). Today's majority decision represents an unfortunate step backwards from recent advances in our understanding of how sex crimes are perpetrated and why victims sometimes respond in seemingly counterintuitive ways, endangering decades of progress in this incredibly complex and nuanced area of law. I must therefore dissent."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 2,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 26,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "1",
+      "2",
+      "3",
+      "4",
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <disopjd> in source HTML."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 5 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

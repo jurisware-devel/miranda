@@ -1,0 +1,134 @@
+{
+  "caseId": "2011_08448",
+  "sourcePath": "coa/2011/2011_08448.htm",
+  "notesPath": "coa/2011/2011_08448.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.575Z",
+  "source": {
+    "title": "People v Thomas (2011 NY Slip Op 08448)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 19475,
+    "lineCount": 94,
+    "tagCounts": {
+      "a": 6,
+      "b": 4,
+      "blockquote": 2,
+      "body": 2,
+      "br": 8,
+      "div": 2,
+      "font": 28,
+      "head": 2,
+      "html": 2,
+      "i": 66,
+      "p": 38,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Thomas",
+      "2011 NY Slip Op 08448 [17 NY3d 923]",
+      "November 21, 2011",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, December 28, 2011"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Daniel Thomas, Appellant."
+    ],
+    "citationLine": "2011 NY Slip Op 08448 17 NY3d 923",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued October 20, 2011; decided November 21, 2011",
+      "November 21, 2011",
+      "As corrected through Wednesday, December 28, 2011"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Simpson Thacher & Bartlett LLP , New York City ( Ian R. Dattner of counsel), and Office of the Appellate Defender ( Joseph M. Nursey and Richard M. Greenberg of counsel) for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Simpson Thacher & Bartlett LLP , New York City ( Ian R. Dattner of counsel), and Office of the Appellate Defender ( Joseph M. Nursey and Richard M. Greenberg of counsel) for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Cyrus R. Vance, Jr., District Attorney , New York City ( Jared S. Wolkowitz and Richard Nahas of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Cyrus R. Vance, Jr., District Attorney , New York City ( Jared S. Wolkowitz and Richard Nahas of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 32,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2011 NY Slip Op 08448",
+    "officialCitation": "17 NY3d 923",
+    "pageMarkerCount": 13
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Ciparick"
+    ],
+    "qualifierLines": [
+      "{**17 NY3d at 924} OPINION OF THE COURT",
+      "Memorandum. ",
+      "The jury found Thomas guilty of robbery in the second degree. Appealing the judgment of conviction, Thomas argued, among other things, that the evidence of the showup identification of Cruz was inadmissible. The Appellate Division ruled that any error was harmless, and affirmed Supreme Court's judgment (68 AD3d 685 [2009]). One Justice dissented, and granted Thomas leave to appeal to this Court. We now affirm, although our reasoning differs somewhat from that of the Appellate Division. ",
+      "\"improperly influence the jury's belief in the reliability of the identification. . . . The testimony of the third party is not probative of whether the defendant was the person who committed the crime, but it could at best establish that the eyewitness, prior to trial, identified the defendant in the presence of others\" (People v Bolden, 58 NY2d 741, 743 [1982, Gabrielli, J., concurring]).",
+      " Because I believe Supreme Court abused its discretion in allowing the jury to consider identification evidence concerning complainant's prior out-of-court identification of defendant's alleged accomplice, I respectfully dissent. "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

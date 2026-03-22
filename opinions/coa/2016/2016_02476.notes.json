@@ -1,0 +1,121 @@
+{
+  "caseId": "2016_02476",
+  "sourcePath": "coa/2016/2016_02476.htm",
+  "notesPath": "coa/2016/2016_02476.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.866Z",
+  "source": {
+    "title": "People v Gray (2016 NY Slip Op 02476)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 34573,
+    "lineCount": 118,
+    "tagCounts": {
+      "a": 40,
+      "b": 14,
+      "blockquote": 2,
+      "body": 2,
+      "br": 16,
+      "div": 10,
+      "font": 28,
+      "head": 2,
+      "html": 2,
+      "i": 166,
+      "p": 65,
+      "script": 4,
+      "style": 2,
+      "sup": 4,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 4
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Gray",
+      "2016 NY Slip Op 02476 [27 NY3d 78]",
+      "March 31, 2016",
+      "Abdus-Salaam, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, May 25, 2016"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Roy Gray, Appellant."
+    ],
+    "citationLine": "2016 NY Slip Op 02476 27 NY3d 78",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued February 11, 2016; decided March 31, 2016",
+      "March 31, 2016",
+      "As corrected through Wednesday, May 25, 2016"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 35,
+    "footnotesCount": 2
+  },
+  "citations": {
+    "slipOpinion": "2016 NY Slip Op 02476",
+    "officialCitation": "27 NY3d 78",
+    "pageMarkerCount": 13
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Abdus-Salaam",
+      "Stein"
+    ],
+    "qualifierLines": [
+      "{**27 NY3d at 80} OPINION OF THE COURT",
+      "Contrary to defendant's and the dissent's position (see dissenting op at 87-91), counsel properly recognized the highly remote possibility that the defense would have succeeded in convincing the court to reopen the suppression hearing and suppress the second, post-break statement. As a threshold matter, notwithstanding the dissent's protestation (see dissenting op at 88), it is not entirely clear that the court would have exercised its discretion to reopen the hearing (see CPL 710.40 [4]; see People v Clark, 88 NY2d 552, 555-556 [1996]). In that regard,{**27 NY3d at 83} CPL 710.40 (4) grants a trial court discretion to permit a defendant to renew a motion to suppress evidence provided that the defendant shows \"that additional pertinent facts have been discovered by the defendant which he could not have discovered with reasonable diligence before the determination of the motion.\" Here, when counsel told the trial court that \"we,\" presumably referring to the defense, already \"knew that [the detective] spoke at some length to [defendant]\" before any proper Miranda warnings were given, counsel suggested that he was aware of the full extent of defendant's comments prior to the issuance of the North Carolina Miranda warnings, and therefore the detective's trial testimony about the entire conversation between him and defendant prior to those warnings may not have disclosed previously undiscovered or undiscoverable facts warranting a reopened hearing.",
+      "Moreover, at a reopened hearing, it was highly unlikely that the court would have suppressed the statement made by defendant following the issuance of the New York Miranda warnings. Significantly, the totality of the circumstances of the interrogation described by the detective at trial, including the detective's administration of some form of Miranda warnings at the start of the interrogation, the 45-minute break between defendant's two statements, the issuance of written Miranda warnings before and after the break, defendant's prior experience speaking to the police during his eight previous arrests and the mixed inculpatory and exculpatory nature of his statements, plainly showed that the post-break statement was voluntary and attenuated from the pre-break statement (, 5 NY3d 122, 130-131 [2005]; People v Chapple, 38 NY2d 112, 115 [1975]; cf. Missouri v Seibert, 542 US 600, 611 [2004 plurality, Souter, J.]; id. at 620-622 [Kennedy, J., concurring]). In light of the weakness of defense counsel's potential bid for suppression at a reopened hearing, counsel pursued a legitimate strategy in forgoing an unavailing motion to reopen the hearing and attempting to use the exculpatory part of defendant's pre-break statement to discredit the post-break statement in the eyes of the jury.{**27 NY3d at 84} Notably, too, had counsel sought a reopened hearing, the detective would have had the opportunity to strengthen his account of the interrogation and the voluntariness of defendant's statements, potentially placing the People in a better position to undermine counsel's efforts to attack the credibility of the post-break statement at trial. Thus, counsel had a reasonable trial strategy, and defendant's current disagreement with it does not entitle him to relief on his ineffective assistance claim (see People v Benevento, 91 NY2d 708, 712 [1998]; , 26 NY3d 779, 785 [2016]; , 16 NY3d 571, 576 [2011]; , 22 NY3d 931, 933-934 [2013]). Finally, we have considered and rejected defendant's remaining claim. Accordingly, the order of the Appellate Division should be affirmed.",
+      " Contrary to the majority's determination, I believe that the detective's trial testimony substantially undermined the prior suppression determination and that, under the facts of this case, defense counsel's failure to move to reopen the suppression hearing deprived defendant of the effective assistance of counsel. Therefore, I respectfully dissent."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 2,
+    "labels": [
+      "*",
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

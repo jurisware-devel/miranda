@@ -1,0 +1,150 @@
+{
+  "caseId": "2015_01485",
+  "sourcePath": "coa/2015/2015_01485.htm",
+  "notesPath": "coa/2015/2015_01485.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.786Z",
+  "source": {
+    "title": "People v Williams (2015 NY Slip Op 01485)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 16158,
+    "lineCount": 97,
+    "tagCounts": {
+      "a": 20,
+      "b": 14,
+      "body": 2,
+      "br": 16,
+      "div": 8,
+      "font": 20,
+      "head": 2,
+      "html": 2,
+      "i": 60,
+      "opinion": 1,
+      "p": 41,
+      "script": 4,
+      "style": 2,
+      "sup": 4,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Williams",
+      "2015 NY Slip Op 01485 [24 NY3d 1129]",
+      "February 19, 2015",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, March 25, 2015"
+    ],
+    "captionLines": [],
+    "citationLine": "2015 NY Slip Op 01485 24 NY3d 1129",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued January 5, 2015; decided February 19, 2015",
+      "February 19, 2015",
+      "As corrected through Wednesday, March 25, 2015"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "William J. Fitzpatrick, District Attorney , Syracuse ( James P. Maxwell of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "William J. Fitzpatrick, District Attorney , Syracuse ( James P. Maxwell of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Hiscock Legal Aid Society , Syracuse ( Kristen N. McDermott of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Hiscock Legal Aid Society , Syracuse ( Kristen N. McDermott of counsel), for respondent.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "The Center for HIV Law and Policy , New York City ( Iv&#225;n Espinoza-Madrigal of counsel), Winston & Strawn LLP , New York City ( Thomas Patrick Lane and Dorian Slater Thomas of counsel), and Winston & Strawn LLP , Los Angeles, California ( Peter Perkowski of counsel), for The Center for HIV Law and Policy and others, amici curiae.",
+        "sideGuess": null,
+        "terminalPhrase": "amici curiae.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "The Center for HIV Law and Policy , New York City ( Iv&#225;n Espinoza-Madrigal of counsel), Winston & Strawn LLP , New York City ( Thomas Patrick Lane and Dorian Slater Thomas of counsel), and Winston & Strawn LLP , Los Angeles, California ( Peter Perkowski of counsel), for The Center for HIV Law and Policy and others, amici curiae.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "New York Civil Liberties Union Foundation , New York City ( Robert Hodgson, Mariko Hirose and Arthur Eisenberg of counsel), and American Civil Liberties Union Foundation , New York City ( Rose A. Saxe and James D. Esseks of counsel), for New York Civil Liberties Union and another, amici curiae.",
+        "sideGuess": null,
+        "terminalPhrase": "amici curiae.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "New York Civil Liberties Union Foundation , New York City ( Robert Hodgson, Mariko Hirose and Arthur Eisenberg of counsel), and American Civil Liberties Union Foundation , New York City ( Rose A. Saxe and James D. Esseks of counsel), for New York Civil Liberties Union and another, amici curiae.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 16,
+    "footnotesCount": 2
+  },
+  "citations": {
+    "slipOpinion": "2015 NY Slip Op 01485",
+    "officialCitation": "24 NY3d 1129",
+    "pageMarkerCount": 9
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Pigott"
+    ],
+    "qualifierLines": [
+      "{**24 NY3d at 1130} OPINION OF THE COURT",
+      "Memorandum.",
+      " A grand jury may indict a person for an offense \"when (a) the evidence before it is legally sufficient to establish that such person committed [that] offense . . . , and (b) competent and admissible evidence before it provides reasonable cause to believe that such person committed [that] offense\" (CPL 190.65 [1] [a], [b]). The first prong requires the People to present a prima facie case, which \"is properly determined by inquiring whether the evidence viewed in the{**24 NY3d at 1133} light most favorable to the People, if unexplained and uncontradicted, would warrant conviction by a petit jury\" (People v Jennings, 69 NY2d 103, 114 [1986], citing People v Pelchat, 62 NY2d 97, 105 [1984]). \"In the context of a Grand Jury proceeding, legal sufficiency means prima facie proof of the crimes charged, not proof beyond a reasonable doubt\" (People v Bello, 92 NY2d 523, 526 [1998], citing People v Mayo, 36 NY2d 1002 [1975]). Because, in my view, the People presented a legally sufficient case as to the elements of depraved indifference and grave risk of harm, I respectfully dissent and would reinstate the count of reckless endangerment in the first degree. "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 2,
+    "labels": [
+      "*",
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

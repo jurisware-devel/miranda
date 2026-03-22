@@ -1,0 +1,144 @@
+{
+  "caseId": "2024_00928",
+  "sourcePath": "coa/2024/2024_00928.htm",
+  "notesPath": "coa/2024/2024_00928.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.252Z",
+  "source": {
+    "title": "People v Boone (2024 NY Slip Op 00928)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 89767,
+    "lineCount": 233,
+    "tagCounts": {
+      "a": 120,
+      "b": 84,
+      "blockquote": 8,
+      "body": 2,
+      "br": 46,
+      "div": 32,
+      "font": 96,
+      "head": 2,
+      "html": 2,
+      "i": 324,
+      "p": 170,
+      "script": 4,
+      "style": 2,
+      "sup": 36,
+      "table": 6,
+      "td": 18,
+      "title": 2,
+      "tr": 18,
+      "u": 30
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Boone",
+      "2024 NY Slip Op 00928 [41 NY3d 573]",
+      "February 22, 2024",
+      "Curran, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, August 21, 2024"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Nathaniel Boone, Appellant.",
+      "The People of the State of New York, Respondent, v Albert Cotto, Appellant."
+    ],
+    "citationLine": "2024 NY Slip Op 00928 41 NY3d 573",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued January 10, 2024; decided February 22, 2024",
+      "February 22, 2024",
+      "As corrected through Wednesday, August 21, 2024"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 99,
+    "footnotesCount": 18
+  },
+  "citations": {
+    "slipOpinion": "2024 NY Slip Op 00928",
+    "officialCitation": "41 NY3d 573",
+    "pageMarkerCount": 47
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Curran",
+      "Wilson"
+    ],
+    "qualifierLines": [
+      "{**41 NY3d at 577} OPINION OF THE COURT",
+      "In March 2011, defendant Boone pleaded guilty to three counts of course of sexual conduct against a child in the first degree (Penal Law § 130.75 [1] [a]) and one count of course of sexual conduct against a child in the second degree (§ 130.80 [1] [a]). As their babysitter, Boone repeatedly raped and sexually abused four children under the age of 10, one of whom was{**41 NY3d at 578} his godchild. He was previously twice convicted of sexual abuse, including an attempted rape of a six-year-old child, and was previously adjudicated a level two offender under SORA. Boone was sentenced to concurrent 12-year prison terms, with 20 years' postrelease supervision. DOCCS received Boone into custody in April 2011, and had his conditional release date scheduled for September 10, 2019.",
+      "{**41 NY3d at 584}SORA plainly envisions a singular process, one that is triggered 120 days prior to an offender's release from confinement by DOCCS (see § 168-m), continuing through a classification hearing held 30 days prior to release (§ 168-n [2]), and concluding with the offender's registration 10 days prior to release (§ 168-f [1] [a]). There is no indication that the legislature intended for the term \"release\" to have different meanings at different stages in the SORA process, and the artificial distinction the dissent draws between \"release\" for registration/classification purposes and risk level determination purposes is wholly unsupportable (see dissenting op at 599-602).",
+      "In addition to SORA's text and structure, we also reject defendants' preferred construction of the term \"release\" because it would be contrary to the legislature's intent when it enacted SORA and would render the act practically unworkable. The legislature's paramount concern when it enacted SORA was \"to protect the public from the danger of recidivism posed by sex offenders, to assist the criminal justice system to identify, investigate, apprehend and prosecute sex offenders, and to comply with the Federal Crime Control Act\" (Stevens, 91 NY2d at 275 [internal quotation marks omitted]; see also Doe v Pataki, 120 F3d 1263, 1266 [2d Cir 1997] [indicating that the twin purposes served by SORA are \"(1) protecting members of the community, particularly their children, by notifying them of the presence of individuals in their midst who may present a danger, and (2) enhancing law enforcement authorities' ability to investigate and prosecute future sex crimes\"]). To effectuate that purpose, SORA establishes registration and notification{**41 NY3d at 585} requirements for sex offenders and creates a three-tier classification system based on their risk of reoffending, with level one being the lowest risk and level three being the highest risk (see Correction Law § 168-l [6]; , 24 NY3d 674, 680 [2015]). The dissent's construction of \"release\" under SORA undermines this goal by exposing the public to the risk the statute was enacted to protect against (L 1995, ch 192, § 1).",
+      "Nor do we find persuasive the dissent's arguments in support of defendants' interpretation of the term \"release.\" The dissent construes the term \"release\" as meaning an offender's release from incarceration by DOCCS unless the offender may be transferred to another type of State custody. It generally supports that interpretation through a narrow focus on one isolated SORA provision, a resort to dictionary definitions, and a refusal to acknowledge the serious public safety risks inherent in its approach.",
+      "The dissent, with the benefit of hindsight, says that of course no \"release\" has occurred here because defendants have remained confined by the State at all relevant times (see dissenting op at 590-591). However, at the time Supreme Court made the determinations challenged on appeal, it did not have the luxury of knowing that defendants would remain in State confinement, and was faced with the possibility that, in delaying the SORA hearing until after their time of DOCCS confinement had ended, defendants could be released into the community without a risk level classification. The dissent's approach does not grapple with the situation that Supreme Court faced when it was called upon to make the challenged SORA determinations. These cases show precisely why the only workable, consistent, and predictable approach is to conclude that \"release\" occurs for SORA purposes when the offender's confinement by DOCCS will cease.",
+      "Moreover, the risks labeled by the dissent as \"mundane operational concerns\" (dissenting op at 602) are precisely the risks to the community that the legislature sought to address through enactment of SORA. Here, those concerns relate to the classification of \"the most dangerous recidivist sex offenders\" (id. [internal quotation marks omitted]), including those who, like defendants, have repeatedly sexually victimized young children. The risk here is not simply that agencies and courts will find it confusing or challenging to comply with the SORA process, but that vulnerable members of the community will lack the safeguards provided by SORA when offenders are released without proper classification and oversight. The idea that the legislature left it up to the assortment of officials{**41 NY3d at 588} involved in the administration of SORA and SOMTA to cooperate on an ad hoc basis to develop procedures for handling the classification of SOMTA offenders is entirely inconsistent with SORA's goal of protecting the community.",
+      "Chief Judge Wilson (dissenting).",
+      "These appeals are conceptually quite simple. The idea behind SORA's risk-level determination is to make an accurate one shortly before a sex offender is to be released, as a way of protecting the public. A goal of SOMTA is to treat dangerous sex offenders and, for those for whom treatment works, to release them to the community, supervised. Making a risk-level determination after a decade of incarceration and before a decade of treatment serves neither purpose of those statutes. Nothing in the statutory language compels the majority's result, which is at odds with the plain language and clear statutory purposes. For that reason, I respectfully dissent.",
+      " Judges Garcia, Singas, Cannataro and Troutman concur. Chief Judge Wilson dissents in an opinion, in which Judge Rivera concurs. Judge Halligan took no part."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 18,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 3 table elements before or within the header region."
+    }
+  ]
+}

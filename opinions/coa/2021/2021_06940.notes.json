@@ -1,0 +1,128 @@
+{
+  "caseId": "2021_06940",
+  "sourcePath": "coa/2021/2021_06940.htm",
+  "notesPath": "coa/2021/2021_06940.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.168Z",
+  "source": {
+    "title": "People v Pietrocarlo (2021 NY Slip Op 06940)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 6300,
+    "lineCount": 76,
+    "tagCounts": {
+      "a": 6,
+      "b": 4,
+      "body": 2,
+      "br": 6,
+      "div": 6,
+      "font": 8,
+      "head": 2,
+      "html": 2,
+      "i": 22,
+      "opinion": 1,
+      "p": 18,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Pietrocarlo",
+      "2021 NY Slip Op 06940 [37 NY3d 1142]",
+      "December 14, 2021",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, February 16, 2022"
+    ],
+    "captionLines": [],
+    "citationLine": "2021 NY Slip Op 06940 37 NY3d 1142",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Decided December 14, 2021",
+      "December 14, 2021",
+      "As corrected through Wednesday, February 16, 2022"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Michael J. Stachowski, P.C. , Buffalo ( Michael J. Stachowski of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Michael J. Stachowski, P.C. , Buffalo ( Michael J. Stachowski of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "John J. Flynn, District Attorney , Buffalo ( Daniel J. Punch of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "John J. Flynn, District Attorney , Buffalo ( Daniel J. Punch of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 6,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2021 NY Slip Op 06940",
+    "officialCitation": "37 NY3d 1142",
+    "pageMarkerCount": 3
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Wilson"
+    ],
+    "qualifierLines": [
+      "{**37 NY3d at 1142} OPINION OF THE COURT",
+      "Memorandum.",
+      " No evidence in the record supports the proposition that Grace Pietrocarlo could be found liable for second-degree assault as an accessory. The People offered no evidence specific as to Grace's actions during the charged incident and did not establish that Grace even took part in the assault on her father; when asked if he could tell which of his four family members who were present during the assault kicked him, Mr. Pietrocarlo testified that he \"couldn't tell who was doing it.\" The People's circumstantial evidence from days after the offense are \"equivocal\" as to Grace's intent (People v Yarrell, 146 AD2d 819, 822 [2d Dept 1989] [Brown, J., dissenting], revd for reasons stated in dissenting mem 75 NY2d 828 [1990]), and our case law does not establish that the People may prove that a defendant shared the intent required for accomplice liability based on a series of events that are remote from the offense itself. The sum total of the People's evidence against Grace is that she was present in her own home and observed the assault, which is insufficient to demonstrate that she \"shared a community of purpose\" with her other family members to assault her father (People v Allah, 71 NY2d 830, 831 [1988]). I would therefore reverse Grace's conviction."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

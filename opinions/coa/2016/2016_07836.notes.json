@@ -1,0 +1,133 @@
+{
+  "caseId": "2016_07836",
+  "sourcePath": "coa/2016/2016_07836.htm",
+  "notesPath": "coa/2016/2016_07836.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.918Z",
+  "source": {
+    "title": "People v Aviles (2016 NY Slip Op 07836)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 45632,
+    "lineCount": 168,
+    "tagCounts": {
+      "a": 72,
+      "b": 60,
+      "body": 2,
+      "br": 38,
+      "div": 26,
+      "font": 62,
+      "head": 2,
+      "html": 2,
+      "i": 92,
+      "p": 86,
+      "script": 4,
+      "style": 2,
+      "sup": 26,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 20
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Aviles",
+      "2016 NY Slip Op 07836 [28 NY3d 497]",
+      "November 22, 2016",
+      "Garcia, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, February 22, 2017"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Jose Aviles, Appellant."
+    ],
+    "citationLine": "2016 NY Slip Op 07836 28 NY3d 497",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued October 18, 2016; decided November 22, 2016",
+      "November 22, 2016",
+      "As corrected through Wednesday, February 22, 2017"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 52,
+    "footnotesCount": 13
+  },
+  "citations": {
+    "slipOpinion": "2016 NY Slip Op 07836",
+    "officialCitation": "28 NY3d 497",
+    "pageMarkerCount": 30
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Garcia",
+      "Rivera"
+    ],
+    "qualifierLines": [
+      "{**28 NY3d at 500} OPINION OF THE COURT",
+      "The dissent contends that, where language \"serve[s] as a proxy for national origin, ethnicity, and race,\" a defendant could establish intentional discrimination against a suspect class sufficient to invoke strict scrutiny (dissenting op at 509-511). We agree. To be sure, upholding the facial validity of the NYPD policy does not preclude all challenges to the policy as applied to a particular defendant where, for instance, the defendant was denied a coordination test on the basis of his ethnicity, as opposed to any language barrier. But that is not the case before us. The instant case presents no evidence of such intentional discrimination or other similarly compelling circumstances. Nor is there any indication that defendant's language was \"treated as a surrogate\" for his ethnicity or was a mere \"pretext for racial discrimination\" (Hernandez v New York, 500 US 352, 371-372 [1991]). Rather, defendant has consistently maintained that, as a non-English speaker, he \"was summarily denied this opportunity because of the language he speaks\" (emphasis added). The record supports the notion that the decision not to administer a coordination test was a purely language-based determination—not a determination based on race, ethnicity, or national origin. Accordingly, rational basis review, rather than strict scrutiny, applies to defendant's equal protection claim.",
+      "In addition, the NYPD undoubtedly has a substantial interest in avoiding the heavy financial and administrative burdens of employing translation services or multilingual officers qualified to administer coordination tests in the myriad languages spoken in this state. According to the record, New York State residents speak 168 distinct languages and countless dialects. Requiring the administration of translated instructions to all intoxicated driving suspects statewide would impose an exorbitant cost that would have a \"crippling impact\" on the State, as detailed in the record. The dissent's contention that \"the NYPD has language access protocols in place and resources available to address the needs of New York City's linguistically diverse communities\" (dissenting op at 507) is unsupported by the record and ignores the realities of physical coordination tests, which require precise instructions and{**28 NY3d at 505} prompt administration. Nor does the dissent identify which particular languages are \"most often in demand\" such that translation services should be required (dissenting op at 513).",
+      "Each of the rationales established by the purportedly \"thin\" record (dissenting op at 512 n 5) independently supplies a legitimate government interest that is furthered by the NYPD policy. Of course, \"New York City's commitment to access to justice regardless of language status\" is a laudable and worthy goal (dissenting op at 507). And the City's \"recognition of the needs of its diverse communities\" is undoubtedly embodied in the various executive branch letters, reports, and policies cited by the dissent (dissenting op at 510-512). But we do not measure constitutional violations against these policies, nor do they somehow give rise to an equal protection violation. Under our established constitutional analysis, we conclude that the challenged NYPD policy is rationally related to a number of legitimate governmental purposes.",
+      " Defendant Jose Aviles claims the New York Police Department (NYPD) violated his federal and state equal protection and due process rights when it denied him a physical coordination test based solely on his language skills. The People defend the NYPD policy of offering the coordination test to everyone except those persons who are{**28 NY3d at 507} perceived to be non-proficient in English on the grounds that it ensures the reliability of the test and to do otherwise is administratively impracticable and burdensome. These representations are inadequate to overcome a policy that potentially places certain individuals in a better position than others to defend against criminal charges, especially when the NYPD has language access protocols in place and resources available to address the needs of New York City's linguistically diverse communities. Given New York City's commitment to access to justice regardless of language status, the NYPD's refusal to administer a coordination test equally to all violates defendant's federal and state equal protection rights. For these reasons, I dissent.",
+      "For the reasons I have explained, I would reverse the Appellate Term and dismiss the accusatory instrument. Therefore, I dissent."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 13,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

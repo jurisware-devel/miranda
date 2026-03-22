@@ -1,0 +1,108 @@
+{
+  "caseId": "2019_05183",
+  "sourcePath": "coa/2019/2019_05183.htm",
+  "notesPath": "coa/2019/2019_05183.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.062Z",
+  "source": {
+    "title": "People v Ellis (2019 NY Slip Op 05183)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 11652,
+    "lineCount": 89,
+    "tagCounts": {
+      "a": 8,
+      "b": 10,
+      "body": 2,
+      "br": 10,
+      "div": 6,
+      "font": 16,
+      "head": 2,
+      "html": 2,
+      "i": 24,
+      "p": 24,
+      "script": 4,
+      "style": 2,
+      "sup": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Ellis",
+      "2019 NY Slip Op 05183 [33 NY3d 582]",
+      "June 27, 2019",
+      "Fahey, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, September 27, 2019"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Appellant,",
+      "v",
+      "Arthur W. Ellis Jr., Respondent."
+    ],
+    "citationLine": "2019 NY Slip Op 05183 33 NY3d 582",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued June 5, 2019; decided June 27, 2019",
+      "June 27, 2019",
+      "As corrected through Wednesday, September 27, 2019"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 9,
+    "footnotesCount": 1
+  },
+  "citations": {
+    "slipOpinion": "2019 NY Slip Op 05183",
+    "officialCitation": "33 NY3d 582",
+    "pageMarkerCount": 7
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [
+      "Fahey"
+    ],
+    "qualifierLines": [
+      " {**33 NY3d at 583} OPINION OF THE COURT",
+      "The People's contention that defendant was required to disclose the existence of his Facebook account to DCJS, in addition to any email addresses and designations associated with that account, cannot be reconciled with the relevant statutes, which aim to provide Facebook and similar Internet services with access to information sufficient to allow them to detect and curtail the inappropriate use of social networking by sex offenders. The term \"Internet identifier\" was added to the statutory scheme in 2008 with the enactment of the \"Electronic Security and Targeting of Online Predators Act,\" or \"e-STOP\" (L 2008, ch 67). The legislative purpose and findings of the law demonstrate that the legislature was concerned that \"[b]ehind a computer screen, convicted sex offenders are able to hide their identity while attempting to engage children in illicit activity\" and that the Internet contained a \"promise of anonymity\" (L 2008, ch 67, § 1 [emphasis added]). The Senate Introducer's Memorandum in Support of e-STOP further confirms that the legislature was concerned with the ability of sex offenders to interact anonymously with others, including children, on the Internet (see Senate Introducer's Mem in Support, Bill Jacket, L 2008, ch 67 at 6-7, 2008 McKinney's Session Laws of NY at 1740)."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 1,
+    "labels": [
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

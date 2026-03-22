@@ -1,0 +1,178 @@
+{
+  "caseId": "2020_07484",
+  "sourcePath": "coa/2020/2020_07484.htm",
+  "notesPath": "coa/2020/2020_07484.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.126Z",
+  "source": {
+    "title": "People v Bisono (2020 NY Slip Op 07484)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 56529,
+    "lineCount": 274,
+    "tagCounts": {
+      "a": 272,
+      "b": 44,
+      "blockquote": 10,
+      "body": 2,
+      "br": 42,
+      "disopjd": 2,
+      "div": 20,
+      "font": 56,
+      "head": 2,
+      "html": 2,
+      "i": 662,
+      "opinion": 2,
+      "p": 331,
+      "script": 4,
+      "style": 2,
+      "summary": 1,
+      "sup": 10,
+      "table": 22,
+      "td": 32,
+      "title": 2,
+      "tr": 32,
+      "u": 12
+    },
+    "unknownTags": [
+      "disopjd"
+    ],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Bisono",
+      "2020 NY Slip Op 07484 [36 NY3d 1013]",
+      "December 15, 2020",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, March 24, 2021"
+    ],
+    "captionLines": [],
+    "citationLine": "2020 NY Slip Op 07484 36 NY3d 1013",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Decided December 15, 2020",
+      "December 15, 2020",
+      "As corrected through Wednesday, March 24, 2021"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "The Abbatoy Law Firm, PLLC , Rochester ( David M. Abbatoy, Jr. of counsel), for New York State Association of Criminal Defense Lawyers and others, amici curiae in the seventh above-entitled action.",
+        "sideGuess": null,
+        "terminalPhrase": null,
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "The Abbatoy Law Firm, PLLC , Rochester ( David M. Abbatoy, Jr. of counsel), for New York State Association of Criminal Defense Lawyers and others, amici curiae in the seventh above-entitled action.",
+        "possiblyTruncated": true
+      },
+      {
+        "text": "The Abbatoy Law Firm, PLLC , Rochester ( David M. Abbatoy, Jr. of counsel), for New York State Association of Criminal Defense Lawyers and others, amici curiae in the tenth above-entitled action.",
+        "sideGuess": null,
+        "terminalPhrase": null,
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "The Abbatoy Law Firm, PLLC , Rochester ( David M. Abbatoy, Jr. of counsel), for New York State Association of Criminal Defense Lawyers and others, amici curiae in the tenth above-entitled action.",
+        "possiblyTruncated": true
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 24,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 149,
+    "footnotesCount": 5
+  },
+  "citations": {
+    "slipOpinion": "2020 NY Slip Op 07484",
+    "officialCitation": "36 NY3d 1013",
+    "pageMarkerCount": 27
+  },
+  "opinionStructure": {
+    "totalWritings": 6,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 3,
+      "dissent": 2
+    },
+    "authors": [
+      "Garcia",
+      "Stein"
+    ],
+    "qualifierLines": [
+      "{**36 NY3d at 1017} OPINION OF THE COURT",
+      "Memorandum.",
+      "In each appeal, the order of the Appellate Division should be reversed and the case remitted to that Court for further proceedings in accordance with this memorandum.",
+      "In each of the 10 cases under review here, the Appellate Division upheld the validity of the defendant's waiver of the right to appeal. Today, we reverse all 10 of those decisions. The rules changed. As the majority decision makes clear, the waivers in these cases are now \"invalid and unenforceable pursuant to our analysis in  (34{**36 NY3d at 1019} NY3d 545 [2019])\" (majority mem at 1017). Thomas did indeed drastically change New York's approach to appeal waivers, for the most part making any individual assessment of the voluntariness of each defendant's waiver irrelevant. While I continue to disagree with the majority's reasoning in Thomas, I agree that it controls here in nine of the cases and, in those nine, I concur in result. In the tenth case, People v Daniels, the majority goes beyond what even Thomas requires, essentially closing off one of the few remaining avenues for appellate courts to uphold voluntary waivers of the right to appeal. In Daniels, therefore, I dissent.",
+      "In People v Thomas, this Court wrote reassuringly that \"[o]ur primary task is to determine whether, under the circumstances of each case, the mischaracterizations impacted the knowing and voluntary nature of the three appeal waivers\" at issue (34 NY3d at 552). We maintained that we were simply \"[a]dhering to our well-established precedent in reviewing the validity of appeal waivers\" in upholding the waiver in one case and holding the waivers invalid in the other two (id.). In dissent, I expressed concern that we were abandoning our \"sensible standard\" for evaluating appeal waivers and substituting an approach that \"examines whether the trial court's description of the waiver was 'improper' or somehow 'irredeemable under the circumstances' \" (id. at 573 [Garcia, J., dissenting]). I anticipated that \"[a]ny waiver resembling those in Green and Lang [would be] prone to attack\" (id. at 585; see majority mem at 1018 [waivers rejected in the 10 cases here \"contain( ) language similar to the waivers invalidated in the Thomas companion cases, People v Lang and People v Green\"]). This, in turn, would unravel defendants' bargains, undermine the finality of their convictions, and enlarge the case load of our already burdened appellate courts (Thomas, 34 NY3d at 585-586 [Garcia, J., dissenting]). Thomas has taken the predictable toll.",
+      "The effect can also be seen in the general approach taken by appellate courts in finding waivers invalid. Rather than engage in an assessment of the voluntariness of the individual waiver, courts attempt to apply the \"checklist of errors\" identified in Thomas. Unfortunately, other than identifying \"errors,\" that case offers no guidance as to how to assess those misstatements in determining whether the waiver is somehow \"irredeemable\" {**36 NY3d at 1021}(see Thomas, 34 NY3d at 584 [Garcia, J., dissenting] [noting that the majority holding \"leaves lower courts with an unfamiliar and undefined new framework\"]). The list includes statements that \"defendants' waivers would (1) operate as 'an absolute bar to the taking of a direct appeal,' (2) result in a 'loss of attendant rights to counsel and poor person relief,' and (3) impact defendants' 'postconviction relief separate from the direct appeal' \" (id. at 577, quoting id. at 565 [majority op]).",
+      "In eight out of the nine cases, the defendant seeks to challenge his sentence as excessive (see People v Bisono; People v Baker; People v Magee; People v Miller; People v Hardin; People v Ogando; People v Biaselli; People v Torres). In all eight of these cases, the defendant's written waiver included the right{**36 NY3d at 1023} to challenge the sentence imposed—in six of the eight, the oral colloquy reinforced this specific waiver (see Thomas, 34 NY3d at 583 [Garcia, J., dissenting] [pointing out that defendant Green's specific acknowledgment of her waiver of right to raise excessive sentence issue on appeal was not enough to prevent reversal and remand to Appellate Division for consideration of whether sentence was excessive]; see also Barrales, 179 AD3d at 1314). The record in each case demonstrates that the defendant had the opportunity to discuss the waiver with counsel, and each defendant acknowledged his understanding of the waiver of the appeal right. Each defendant received a sentence substantially less than the maximum he faced based on the charges (see e.g. People v Ogando [defendant, who was charged with second-degree murder, first-degree manslaughter, and first-degree gang assault, and faced a maximum sentence of life in prison without the possibility of parole, pleaded guilty to first-degree gang assault and seeks to challenge, among other things, the bargained-for sentence of eight years' imprisonment]; People v Hardin [defendant, who was charged with second-degree burglary and faced a maximum sentence of 15 years' imprisonment, pleaded guilty to attempted second-degree burglary and seeks to challenge the bargained-for sentence of two years' imprisonment]; see generally People v Callahan, 80 NY2d 273, 280 [1992] [noting that \"relevant factors\" in assessing an appeal waiver include \"the nature . . . of the agreement\" and \"the reasonableness of the bargain\"]). Several defendants had extensive criminal histories (see e.g. People v Baker [second felony offender]; People v Magee [same]; People v Hardin [46 prior misdemeanor convictions in New York State];, 25 NY3d 337, 342 [2015] [considering the defendant's background, including his \"extensive experience with the criminal justice system,\" in assessing voluntariness of appeal waiver]). Yet each waiver is deemed—for all purposes—invalid given the failure to specifically cure some unexplained combination of \"infirmities\" (see majority mem at 1017). Any lingering doubt that Thomas worked a sea change in our approach to appeal waivers has been dispelled.",
+      "Reinforcing the routine invalidation of appeal waivers that must necessarily result from our decision in Thomas is damaging enough. To make matters worse, the majority's reversal in People v Daniels expands Thomas's scope, making crystal clear{**36 NY3d at 1024} that a single error may be fatal to an appeal waiver regardless of the other circumstances demonstrating its voluntariness. It also casts further doubt on the continuing validity of this Court's pre-Thomas waiver precedent, particularly  (7 NY3d 737 [2006]). Accordingly, I dissent and would affirm in Daniels.",
+      "Defendant Daniels was charged with one count of first-degree assault (class B felony), one count of first-degree reckless endangerment (class D felony), one count of first-degree criminal use of a firearm (class B felony), and three counts of second-degree criminal possession of a weapon (class C felony), and faced a maximum prison sentence of 25 years. He pleaded guilty to second-degree criminal possession of a weapon (class C felony) and executed a written and oral appeal waiver, in exchange for which he received the bargained-for prison sentence of five years. He had two prior convictions, including one felony conviction. Although he had a history of mental health problems, defendant and his counsel assured the court that he was lucid and understood the proceedings. It also appears that defendant submitted a memorandum to the court, prepared by a psychotherapist prior to his guilty plea, that found he was lucid, coherent, and compliant with his medications.",
+      "The oral colloquy here compares favorably with that in Ramos. In Ramos, the court stated that defendant was \"giving up any and all rights to appeal this conviction and sentence; in other words, this is now final.\" The court further stated that \"[o]nce you agree to do this, not only will there not be any trial but there won't be any appeals; do you understand that this is final?\" (, 18 NY3d 257, 269-270 [2011, Read, J., dissenting] [quoting the Ramos colloquy]). While the language in the Ramos colloquy unequivocally indicates an absolute bar to appellate review, the colloquy at issue here acknowledged that an unlawful sentence may be appealed. Although the court overstated the loss of the right to counsel and poor person relief, the court, unlike in Ramos, elicited defense counsel's \"professional opinion\" that his client's waiver was \"knowing, intelligent and voluntary,\" and confirmed that defendant \"underst[ood] the rights [he was] waiving\" (see Thomas, 34 NY3d at 564 [\"The court's oral colloquy, specifically its inquiry of Thomas and resulting assurances that he had ample opportunity to discuss with counsel the meaning of the waiver and appellate rights he was surrendering, was sufficient to support a knowing and voluntary waiver under the totality of the circumstances\"]).",
+      "\"I hereby waive my right to appeal. I execute this waiver after being advised by the court and my attorney of the nature of the rights I am giving up. I have been advised of my right to take an appeal (CPL 450.10), to prosecute the appeal as a poor person and to have an attorney assigned in the event that I am indigent, and to submit a brief and/or argue before an appellate court on any issues relating to my conviction and sentence. \"I make this waiver voluntarily, knowingly and of my own free will\" (Bradshaw, 18 NY3d at 270 [2011, Read, J., dissenting] [quoting the Ramos written waiver]).",
+      "I join the majority's memorandum decision reversing in the nine appeals before us other than People v Daniels. However, in Daniels, I am in agreement with Judge Garcia that the majority goes beyond what is required by  (34 NY3d 545 [2019]) and effectively overrules our decision in  (7 NY3d 737 [2006]). Therefore, I join part IV of Judge Garcia's dissent.",
+      "In People v Bisono: On review of submissions pursuant to section 500.11 of the Rules of the Court of Appeals, order reversed{**36 NY3d at 1032} and case remitted to the Appellate Division, Second Department, for further proceedings in accordance with the memorandum herein.{**36 NY3d at 1033}",
+      "Chief Judge DiFiore and Judges Rivera, Stein, Fahey, Wilson and Feinman concur. Judge Garcia concurs in result in an opinion.",
+      "In People v Baker: On review of submissions pursuant to section 500.11 of the Rules of the Court of Appeals, order reversed and case remitted to the Appellate Division, Fourth Department, for further proceedings in accordance with the memorandum herein.",
+      "In People v Magee: On review of submissions pursuant to section 500.11 of the Rules of the Court of Appeals, order reversed and case remitted to the Appellate Division, Fourth Department, for further proceedings in accordance with the memorandum herein.",
+      "In People v Miller: On review of submissions pursuant to section 500.11 of the Rules of the Court of Appeals, order reversed and case remitted to the Appellate Division, Fourth Department, for further proceedings in accordance with the memorandum herein.",
+      "In People v Daniels: On review of submissions pursuant to section 500.11 of the Rules of the Court of Appeals, order reversed and case remitted to the Appellate Division, Second Department, for further proceedings in accordance with the memorandum herein.",
+      "Chief Judge DiFiore and Judges Rivera, Fahey, Wilson and Feinman concur. Judge Garcia dissents and votes to affirm in an opinion, in which Judge Stein concurs in part in a separate dissenting opinion.",
+      "In People v Hardin: On review of submissions pursuant to section 500.11 of the Rules of the Court of Appeals, order reversed and case remitted to the Appellate Division, Second Department, for further proceedings in accordance with the memorandum herein.",
+      "In People v Ogando: On review of submissions pursuant to section 500.11 of the Rules of the Court of Appeals, order reversed and case remitted to the Appellate Division, Second Department, for further proceedings in accordance with the memorandum herein.",
+      "In People v Biaselli: On review of submissions pursuant to section 500.11 of the Rules of the Court of Appeals, order reversed and case remitted to the Appellate Division, Fourth Department, for further proceedings in accordance with the memorandum herein.",
+      "In People v Torres: On review of submissions pursuant to section 500.11 of the Rules of the Court of Appeals, order reversed and case remitted to the Appellate Division, Second Department, for further proceedings in accordance with the memorandum herein.",
+      "In People v Rodriguez: On review of submissions pursuant to section 500.11 of the Rules of the Court of Appeals, order reversed and case remitted to the Appellate Division, Second Department, for further proceedings in accordance with the memorandum herein."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 2,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 5,
+    "labels": [
+      "*",
+      "1",
+      "2",
+      "3",
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <disopjd> in source HTML."
+    },
+    {
+      "code": "TRUNCATED_APPEARANCE_LINE",
+      "severity": "warning",
+      "detail": "Appearance-like line may be truncated: The Abbatoy Law Firm, PLLC , Rochester ( David M. Abbatoy, Jr. of counsel), for New York State Association of Criminal Defense Lawyers and others, amici curiae in the seventh above-entitled action."
+    },
+    {
+      "code": "TRUNCATED_APPEARANCE_LINE",
+      "severity": "warning",
+      "detail": "Appearance-like line may be truncated: The Abbatoy Law Firm, PLLC , Rochester ( David M. Abbatoy, Jr. of counsel), for New York State Association of Criminal Defense Lawyers and others, amici curiae in the tenth above-entitled action."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 6 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 11 table elements before or within the header region."
+    }
+  ]
+}

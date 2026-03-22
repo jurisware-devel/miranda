@@ -1,0 +1,122 @@
+{
+  "caseId": "2011_06425",
+  "sourcePath": "coa/2011/2011_06425.htm",
+  "notesPath": "coa/2011/2011_06425.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.559Z",
+  "source": {
+    "title": "People v Williams (2011 NY Slip Op 06425)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 5397,
+    "lineCount": 66,
+    "tagCounts": {
+      "a": 14,
+      "b": 4,
+      "body": 2,
+      "br": 4,
+      "div": 2,
+      "font": 10,
+      "head": 2,
+      "html": 2,
+      "i": 30,
+      "p": 13,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Williams",
+      "2011 NY Slip Op 06425 [17 NY3d 834]",
+      "September 13, 2011",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, October 12, 2011"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Appellant,",
+      "v",
+      "Marcelle E. Williams, Respondent."
+    ],
+    "citationLine": "2011 NY Slip Op 06425 17 NY3d 834",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Decided September 13, 2011",
+      "September 13, 2011",
+      "As corrected through Wednesday, October 12, 2011"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Michael C. Green, District Attorney , Rochester ( Kelly Christine Wolford of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Michael C. Green, District Attorney , Rochester ( Kelly Christine Wolford of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Timothy P. Donaher, Public Defender , Rochester ( Drew R. DuBrin of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Timothy P. Donaher, Public Defender , Rochester ( Drew R. DuBrin of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 4,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2011 NY Slip Op 06425",
+    "officialCitation": "17 NY3d 834",
+    "pageMarkerCount": 4
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**17 NY3d at 835} OPINION OF THE COURT",
+      "Memorandum. ",
+      "The reasonableness of a seizure, the existence of probable cause or reasonable suspicion, the classification of a detention as an arrest and the attenuation of evidence from police misconduct are all mixed questions of law and fact that are beyond this Court's review unless there is no record support for the determinations of the court below (see e.g. People v Wheeler, 2 NY3d 370, 373 [2004]; , 16 NY3d 596, 602{**17 NY3d at 836} [2011]; , 8 NY3d 899, 901 [2007]; People v Farrell, 59 NY2d 686, 688 [1983]; , 6 NY3d 790, 791 [2006]). Here, although different conclusions may not have been unreasonable, the record supports the Appellate Division's determination that defendant was arrested without probable cause (, 12 NY3d 28, 30-31 [2009]; cf. People v Hicks, 68 NY2d 234, 240 [1986]) and that the seizure of evidence from him was neither attenuated from the illegal arrest nor derived from a source that was sufficiently independent of it. Since it is reasonably possible that the introduction of the impermissibly seized evidence affected the verdict, defendant is entitled to vacatur of the conviction and a new trial (see e.g. People v Crimmins, 36 NY2d 230, 237 [1975]). An unrelated conviction must be overturned as well because it was premised on a guilty plea for which defendant was promised a sentence that would run concurrently with the punishment imposed in this case (see People v Fuggazzatto, 62 NY2d 862, 863 [1984]). "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

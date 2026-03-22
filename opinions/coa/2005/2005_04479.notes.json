@@ -1,0 +1,139 @@
+{
+  "caseId": "2005_04479",
+  "sourcePath": "coa/2005/2005_04479.htm",
+  "notesPath": "coa/2005/2005_04479.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.278Z",
+  "source": {
+    "title": "People v Moore (2005 NY Slip Op 04479)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 8134,
+    "lineCount": 75,
+    "tagCounts": {
+      "a": 6,
+      "appcouns": 1,
+      "b": 10,
+      "body": 2,
+      "br": 8,
+      "div": 4,
+      "font": 8,
+      "head": 2,
+      "html": 2,
+      "i": 24,
+      "p": 15,
+      "script": 4,
+      "style": 2,
+      "sup": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [
+      "appcouns"
+    ],
+    "strayClosingTags": [
+      "appcouns"
+    ]
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Moore",
+      "2005 NY Slip Op 04479 [5 NY3d 725]",
+      "June 7, 2005",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, August 24, 2005"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Appellant,",
+      "v",
+      "Jerry W. Moore, Respondent."
+    ],
+    "citationLine": "2005 NY Slip Op 04479 5 NY3d 725",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued April 14, 2005; decided June 7, 2005",
+      "June 7, 2005",
+      "As corrected through Wednesday, August 24, 2005"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Frank J. Clark , District Attorney , Buffalo ( J. Michael Marion of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Frank J. Clark , District Attorney , Buffalo ( J. Michael Marion of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Mary P. Walek , Buffalo, for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Mary P. Walek , Buffalo, for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 8,
+    "footnotesCount": 1
+  },
+  "citations": {
+    "slipOpinion": "2005 NY Slip Op 04479",
+    "officialCitation": "5 NY3d 725",
+    "pageMarkerCount": 3
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "OPINION OF THE COURT",
+      "Memorandum. "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 1,
+    "labels": [
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <appcouns> in source HTML."
+    },
+    {
+      "code": "STRAY_CLOSING_TAG",
+      "severity": "warning",
+      "detail": "Closing tag </appcouns> appears more times than opening tag <appcouns>."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

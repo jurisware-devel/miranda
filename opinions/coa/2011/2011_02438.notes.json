@@ -1,0 +1,142 @@
+{
+  "caseId": "2011_02438",
+  "sourcePath": "coa/2011/2011_02438.htm",
+  "notesPath": "coa/2011/2011_02438.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.528Z",
+  "source": {
+    "title": "People v Phillips (2011 NY Slip Op 02438)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 67864,
+    "lineCount": 217,
+    "tagCounts": {
+      "a": 70,
+      "b": 66,
+      "blockquote": 32,
+      "body": 2,
+      "br": 38,
+      "div": 4,
+      "font": 96,
+      "head": 2,
+      "html": 2,
+      "i": 104,
+      "p": 64,
+      "script": 4,
+      "span": 12,
+      "style": 2,
+      "sup": 30,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [
+      "span"
+    ],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Phillips",
+      "2011 NY Slip Op 02438 [16 NY3d 510]",
+      "March 29, 2011",
+      "Jones, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, June 1, 2011"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "James Phillips, Appellant."
+    ],
+    "citationLine": "2011 NY Slip Op 02438 16 NY3d 510",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued February 10, 2011; decided March 29, 2011",
+      "March 29, 2011",
+      "As corrected through Wednesday, June 1, 2011"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 63,
+    "footnotesCount": 15
+  },
+  "citations": {
+    "slipOpinion": "2011 NY Slip Op 02438",
+    "officialCitation": "16 NY3d 510",
+    "pageMarkerCount": 47
+  },
+  "opinionStructure": {
+    "totalWritings": 4,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "dissent": 1
+    },
+    "authors": [
+      "Jones",
+      "Lippman"
+    ],
+    "qualifierLines": [
+      "{**16 NY3d at 512} OPINION OF THE COURT",
+      "When crediting expert testimony in a CPL article 730 hearing, it is the role of the trial court to consider factors such as the qualifications of the expert witnesses. To conclude, as the dissent does, that the testimony of defendant's witnesses had more probative force because of their qualifications as neurological experts is to make a determination based on the weight of the evidence, a role beyond this Court's purview. It was for the instant trial court to credit, for example, the findings of Dr. Hicks, a licensed physician and forensic psychiatrist who also had training in neurology, over the testimony of Dr. Capruso, a licensed psychologist. This Court must defer to the findings of the trial court so long as there is record support for those determinations. Given the extensive record evidence in this case, we find no abuse of discretion and no basis to disturb defendant's judgment of conviction. ",
+      "Some six months later, defendant's \"restoration of fitness\" treatment team at Kirby Forensic Psychiatric Center announced that defendant was now fit to be tried. The treatment team's conclusion as to the efficacy of its restorative efforts, however, was not concurred in by the Hospital Forensics Committee, which, in accordance with the evaluation and recommendation of committee member Daniel Capruso, Ph.D., a diplomate in clinical neuropsychology, unanimously found that defendant remained unfit. ",
+      "Doctor Henry, the Director of the Department of Neurology at Bellevue, testified that she had interviewed defendant at Bellevue and, among other things, had elicited from him several sets of completely inconsistent responses to simple questions, which although differently worded, sought the same information. Based on her clinical findings, and after reviewing defendant's medical records, his brain scans, and the neuropsychological testing performed by Dr. Capruso, she concurred in the diagnosis of transcortical motor aphasia and agreed with Dr. Capruso that defendant's aphasia involved not only the compromise of his ability to use language expressively but also signficant impairment of his ability to think and understand. Defendant, she said, was capable of following simple directions and giving simple responses, but could not execute commands involving several steps—even when they were very straightforward—and was incapable of reliably responding to open-ended (i.e., non-yes-or-no) questions. She reviewed his brain scans in considerable detail and explained that the radiologically confirmed damage to his left frontal lobe correlated well to his expressive and cognitive deficiencies; the damage affected areas of the brain through which neural impulses necessary to those faculties had to pass. It was, she noted, \"a big lesion\" affecting \"[e]loquence, speech, your ability to communicate, to be verbal, to function in life, as it were, to process information.\" ",
+      "The Appellate Division affirmed defendant's judgment of conviction in a brief memorandum (68 AD3d 541 [2009]). It found no basis to disturb the trial court's weighing of the conflicting testimony. It agreed with the trial court that standardized tests were of \"limited value\" in determining legal competency and that Dr. Scheuer's testimony was \"very significant\" because of her extended contact with defendant (id. at 542). "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 15,
+    "labels": [
+      "1",
+      "2",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <span> in source HTML."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 4 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

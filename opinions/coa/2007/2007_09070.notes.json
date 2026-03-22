@@ -1,0 +1,116 @@
+{
+  "caseId": "2007_09070",
+  "sourcePath": "coa/2007/2007_09070.htm",
+  "notesPath": "coa/2007/2007_09070.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.374Z",
+  "source": {
+    "title": "People v Jones (2007 NY Slip Op 09070)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 10477,
+    "lineCount": 96,
+    "tagCounts": {
+      "a": 10,
+      "b": 14,
+      "blockquote": 10,
+      "body": 2,
+      "br": 10,
+      "div": 4,
+      "font": 16,
+      "head": 2,
+      "html": 2,
+      "i": 32,
+      "p": 17,
+      "script": 4,
+      "style": 2,
+      "sup": 4,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Jones",
+      "2007 NY Slip Op 09070 [9 NY3d 259]",
+      "November 20, 2007",
+      "Ciparick, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, January 9, 2008"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Matthew Jones, Appellant."
+    ],
+    "citationLine": "2007 NY Slip Op 09070 9 NY3d 259",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued October 17, 2007; decided November 20, 2007",
+      "November 20, 2007",
+      "As corrected through Wednesday, January 9, 2008"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 13,
+    "footnotesCount": 2
+  },
+  "citations": {
+    "slipOpinion": "2007 NY Slip Op 09070",
+    "officialCitation": "9 NY3d 259",
+    "pageMarkerCount": 7
+  },
+  "opinionStructure": {
+    "totalWritings": 2,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1
+    },
+    "authors": [
+      "Ciparick"
+    ],
+    "qualifierLines": [
+      "{**9 NY3d at 260} OPINION OF THE COURT",
+      "The next day, June 13, defendant appeared in court with counsel and sought dismissal of the information, contending that it was facially insufficient. The court denied the motion. Defendant then agreed to plead guilty to one count of disorderly conduct in satisfaction of all charges and was sentenced to time served. The Appellate Term later affirmed, with one Justice dissenting. A Judge of this Court granted leave to appeal and we now reverse, vacate the conviction and dismiss the information as facially insufficient. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 2,
+    "labels": [
+      "1",
+      "2"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 2 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

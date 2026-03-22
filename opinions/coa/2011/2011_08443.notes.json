@@ -1,0 +1,123 @@
+{
+  "caseId": "2011_08443",
+  "sourcePath": "coa/2011/2011_08443.htm",
+  "notesPath": "coa/2011/2011_08443.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.573Z",
+  "source": {
+    "title": "People v Bueno (2011 NY Slip Op 08443)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 30194,
+    "lineCount": 133,
+    "tagCounts": {
+      "a": 20,
+      "b": 22,
+      "blockquote": 8,
+      "body": 2,
+      "br": 18,
+      "div": 8,
+      "font": 46,
+      "head": 2,
+      "html": 2,
+      "i": 40,
+      "p": 37,
+      "script": 4,
+      "style": 2,
+      "sup": 8,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 4
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Bueno",
+      "2011 NY Slip Op 08443 [18 NY3d 160]",
+      "November 21, 2011",
+      "Read, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, January 25, 2012"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Christian Bueno, Appellant."
+    ],
+    "citationLine": "2011 NY Slip Op 08443 18 NY3d 160",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued October 11, 2011; decided November 21, 2011",
+      "November 21, 2011",
+      "As corrected through Wednesday, January 25, 2012"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 37,
+    "footnotesCount": 4
+  },
+  "citations": {
+    "slipOpinion": "2011 NY Slip Op 08443",
+    "officialCitation": "18 NY3d 160",
+    "pageMarkerCount": 22
+  },
+  "opinionStructure": {
+    "totalWritings": 4,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "dissent": 1
+    },
+    "authors": [
+      "Read",
+      "Lippman"
+    ],
+    "qualifierLines": [
+      "{**18 NY3d at 161} OPINION OF THE COURT",
+      "The bill that became chapter 262 of the Laws of 1985, which included EMTs within section 120.05 (3), was introduced at the behest of the City of New York. In its memorandum in support, the City justified the bill by pointing out that \"[i]n recent months, a number of EMS uniformed personnel have been assaulted, while others have been intentionally prevented or hindered in the performance of their duties\"; and that \"EMS personnel are sometimes called upon to enter unsafe areas or to deal with tense situations in responding to emergency calls\" (see Mem of Legis Representative of City of NY, Bill Jacket, L 1985, ch 262, at 5, 1985 McKinney's Session Laws of NY, at 3004). Here, for example, the EMTs were dispatched in the middle of a winter night to a residential address to treat individuals reportedly injured in a fight. ",
+      " Because I believe that the majority has ignored the plain words of Penal Law § 120.05 (3), I respectfully dissent. Under the majority's view, a person who knowingly assaults an on-duty emergency medical technician (EMT) (or any other type of public servant enumerated in the statute) and causes physical injury is guilty of assault in the second degree pursuant to section 120.05 (3). By contrast, the actual language of the statute provides that a person is guilty of assault in the second degree when \"[w]ith intent to prevent . . . [an] emergency medical service technician . . . from performing a lawful duty . . . he or she causes physical injury to such . . . technician.\" ",
+      "As the rule announced by the majority conflicts with the plain meaning of the statute, I dissent and I would reverse the order of the Appellate Division.{**18 NY3d at 172} "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 4,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 4 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "caseId": "2018_04684",
+  "sourcePath": "coa/2018/2018_04684.htm",
+  "notesPath": "coa/2018/2018_04684.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.018Z",
+  "source": {
+    "title": "Matter of People v Juarez (2018 NY Slip Op 04684)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 71128,
+    "lineCount": 194,
+    "tagCounts": {
+      "a": 96,
+      "b": 78,
+      "blockquote": 14,
+      "body": 2,
+      "br": 38,
+      "div": 24,
+      "font": 80,
+      "head": 2,
+      "html": 2,
+      "i": 332,
+      "opinion": 1,
+      "p": 122,
+      "script": 4,
+      "style": 2,
+      "sup": 32,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14,
+      "u": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "Matter of People v Juarez",
+      "2018 NY Slip Op 04684 [31 NY3d 1186]",
+      "June 27, 2018",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, October 3, 2018"
+    ],
+    "captionLines": [],
+    "citationLine": "2018 NY Slip Op 04684 31 NY3d 1186",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued June 5, 2018; decided June 27, 2018",
+      "June 27, 2018",
+      "As corrected through Wednesday, October 3, 2018"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Cyrus R. Vance, Jr. , District Attorney , New York City ( Diane N. Princ , Hilary Hassler and Melissa Mourges of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Cyrus R. Vance, Jr. , District Attorney , New York City ( Diane N. Princ , Hilary Hassler and Melissa Mourges of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Cahill Gordon & Reindel, LLP , New York City ( Joel Kurtzberg , Nicole Ligon and Ivan Torres of counsel), for Asian American Journalists Association and others, amici curiae.",
+        "sideGuess": null,
+        "terminalPhrase": "amici curiae.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Cahill Gordon & Reindel, LLP , New York City ( Joel Kurtzberg , Nicole Ligon and Ivan Torres of counsel), for Asian American Journalists Association and others, amici curiae.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Baker & Hostetler, LLP , Washington, D.C. ( Mark I. Bailen of counsel) and New York City ( Peter B. Shapiro of counsel), and Reporters Committee for Freedom of the Press , Washington, D.C. ( Bruce D. Brown , Gregg P. Leslie and Caitlin V. Vogus of counsel), for Reporters Committee for Freedom of the Press and others, amici curiae.",
+        "sideGuess": null,
+        "terminalPhrase": "amici curiae.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Baker & Hostetler, LLP , Washington, D.C. ( Mark I. Bailen of counsel) and New York City ( Peter B. Shapiro of counsel), and Reporters Committee for Freedom of the Press , Washington, D.C. ( Bruce D. Brown , Gregg P. Leslie and Caitlin V. Vogus of counsel), for Reporters Committee for Freedom of the Press and others, amici curiae.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Scott D. McNamara , District Attorneys Association of the State of New York ( Jordan K. Hummel and Nancy D. Killian of counsel), for District Attorneys Association of the State of New York, amicus curiae.",
+        "sideGuess": null,
+        "terminalPhrase": "amicus curiae.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Scott D. McNamara , District Attorneys Association of the State of New York ( Jordan K. Hummel and Nancy D. Killian of counsel), for District Attorneys Association of the State of New York, amicus curiae.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 68,
+    "footnotesCount": 16
+  },
+  "citations": {
+    "slipOpinion": "2018 NY Slip Op 04684",
+    "officialCitation": "31 NY3d 1186",
+    "pageMarkerCount": 39
+  },
+  "opinionStructure": {
+    "totalWritings": 5,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "dissent": 2
+    },
+    "authors": [
+      "Rivera",
+      "Fahey"
+    ],
+    "qualifierLines": [
+      "{**31 NY3d at 1187} OPINION OF THE COURT",
+      "Memorandum.",
+      "{**31 NY3d at 1191}We are not unsympathetic to Robles's policy-driven arguments, echoed by our dissenting colleagues, concerning how best to balance the interests of the expedient resolution of criminal actions against the right of a nonparty in a pending criminal action to seek appellate review of an order denying a motion to quash a subpoena when the State's long-standing interests in protecting the newsgathering role of reporters (see O'Neill v Oakgrove Constr., 71 NY2d 521 [1988]), or other weighty third-party concerns, are implicated. Nor do we minimize the significance of the rights provided by article I, § 8 of the New York State Constitution. However, the right to appeal is not premised on the nature of the challenge waged, and this Court cannot \"create a right to appeal out of thin air\" (Laing, 79 NY2d at 172). \"That the [l]egislature has not authorized an appeal from an order in a criminal proceeding is conclusive; and any arguments for a change in the practice . . . must be addressed to [that forum]\" (Facebook, 29 NY3d at 251 [internal quotation marks omitted]). ",
+      "The test also reflects our State's singular public policy to protect journalists and their sources. As we observed 30 years ago, there is a deep, \"consistent tradition in this State of providing the broadest possible protection to 'the sensitive role of gathering and disseminating news of public events' \" (O'Neill, 71 NY2d at 529, quoting Matter of Beach v Shanley, 62 NY2d 241, 256 [1984, Wachtler, J., concurring]). New York State's constitutional guarantee of freedom of speech and the press is far more expansive than the federal government's (compare NY Const, art I, § 8 with US Const 1st Amend). Long before the United States Supreme Court had made the First Amendment binding on the states, our State Constitution offered explicit protection for all \"citizen[s] [to] freely speak, write and publish [their] sentiments on all subjects,\" and forbade the legislature from passing any law that would \"restrain or abridge the liberty of speech or of the press\" (NY Const, art I, § 8; see also O'Neill, 71 NY2d at 529 n 3 [observing that \"(t)he protection afforded by the guarantees of free press and speech in the New York Constitution (remains) often broader than the minimum required by the First Amendment\"]).",
+      "The result of the majority's decision will be that Robles, other journalists, and nonparties will have to risk contempt if they are unwilling to comply with a subpoena order. In Robles' case, the choice is to testify and turn over her notes and breach her journalist's oath and ethics, or refuse to comply with Supreme Court's order and be held in contempt. The majority does not even clarify whether courts would have jurisdiction over her{**31 NY3d at 1206} possible, future appeal from a contempt order (but see Santangello, 38 NY2d at 540 [suggesting that contempt orders would be subject to appellate review]). This choice places Robles and all other journalists in a terrible bind. It is a reversal of our settled law and against our State's strong historical protections of journalists and the newsgathering process. I dissent.",
+      "In keeping with this tradition, the legislature enacted the Shield Law in 1970 (see L 1970, ch 615). The law was intended to \"make New York State—the Nation's principal center of news gathering and dissemination—the only state that clearly protects the public's right to know and the First Amendment rights of all legitimate newspapermen, reporters and television and radio broadcasters\" (Governor's Mem approving L 1970, ch 615, 1970 McKinney's Session Laws of NY at 3112). In his memorandum approving the Shield Law, Governor Nelson Rockefeller stated that \"[f]reedom of the press is one of the foundations upon which our form of government is based,\" and that \"[a] representative democracy, such as ours, cannot exist unless there is a free press both willing and able to keep the public informed of all the news\" (id.; see also Holmes, 22 NY3d at 308-309).",
+      "In his concurring opinion in Matter of Beach v Shanley (62 NY2d 241 [1984]), which we have subsequently cited with approval (see Holmes, 22 NY3d at 307, 311; O'Neill, 71 NY2d at 529), Judge Wachtler opined that article I, § 8 of the New York Constitution \"should leave no doubt that it necessarily affords a reporter or newspaper the right not to be held in contempt for refusal to disclose news sources to State investigators or investigative bodies, irrespective of any privileges granted by the Legislature now or in the future\" (Beach, 62 NY2d at 255 [Wachtler, J., concurring]). I would hold that the State Constitution similarly leaves no doubt that it necessarily affords a journalist the right to directly appeal from an order denying a motion to quash a subpoena issued in a criminal action, \"irrespective of any privileges granted by the Legislature now or in the future\" in the Criminal Procedure Law (id.). We need not wait for the legislature to act in order to uphold our tradition \"of providing the utmost protection of freedom of the press\" (Holmes, 22 NY3d at 307). I respectfully dissent."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 2,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 16,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "1",
+      "2"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 5 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

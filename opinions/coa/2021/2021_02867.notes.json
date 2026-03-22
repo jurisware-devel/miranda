@@ -1,0 +1,134 @@
+{
+  "caseId": "2021_02867",
+  "sourcePath": "coa/2021/2021_02867.htm",
+  "notesPath": "coa/2021/2021_02867.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.145Z",
+  "source": {
+    "title": "People v Brown (2021 NY Slip Op 02867)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 25077,
+    "lineCount": 101,
+    "tagCounts": {
+      "a": 24,
+      "b": 14,
+      "body": 2,
+      "br": 12,
+      "div": 16,
+      "font": 32,
+      "head": 2,
+      "html": 2,
+      "i": 100,
+      "opinion": 1,
+      "p": 46,
+      "script": 4,
+      "style": 2,
+      "sup": 4,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14,
+      "u": 8
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Brown",
+      "2021 NY Slip Op 02867 [37 NY3d 940]",
+      "May 6, 2021",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, July 21, 2021"
+    ],
+    "captionLines": [],
+    "citationLine": "2021 NY Slip Op 02867 37 NY3d 940",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Decided May 6, 2021",
+      "May 6, 2021",
+      "As corrected through Wednesday, July 21, 2021"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Robert S. Dean, Center for Appellate Litigation , New York City ( Jody Ratner of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Robert S. Dean, Center for Appellate Litigation , New York City ( Jody Ratner of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Darcel D. Clark, District Attorney , Bronx ( Kyle R. Silverstein of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Darcel D. Clark, District Attorney , Bronx ( Kyle R. Silverstein of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 24,
+    "footnotesCount": 2
+  },
+  "citations": {
+    "slipOpinion": "2021 NY Slip Op 02867",
+    "officialCitation": "37 NY3d 940",
+    "pageMarkerCount": 15
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Wilson"
+    ],
+    "qualifierLines": [
+      "{**37 NY3d at 941} OPINION OF THE COURT",
+      "Memorandum.",
+      "Because this error implicates the fundamental fairness of our criminal justice system, I dissent.",
+      "Instead of hearing what Mr. Brown wanted to say, we have only a record of the immense anger and disillusion he felt when the judicial system pulled the rug out from under him. Why should Mr. Brown, or anyone reading the court transcript or{**37 NY3d at 949} this dissent, have confidence that the court system operates by its own rules? I do not fault the sentencing court, which may have simply been confused, distracted, overburdened or inattentive, but two appellate courts, with the luxury of time to read the transcript, the briefs and the statutes, have decided that the rules do not matter. I dissent because Mr. Brown had the right to speak his mind at sentencing, did not waive that right, and I, for one, would have liked him to enter prison thinking the courts treated him fairly."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 2,
+    "labels": [
+      "1",
+      "2"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

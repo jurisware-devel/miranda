@@ -1,0 +1,109 @@
+{
+  "caseId": "2017_01022",
+  "sourcePath": "coa/2017/2017_01022.htm",
+  "notesPath": "coa/2017/2017_01022.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.932Z",
+  "source": {
+    "title": "People v Guerin (2017 NY Slip Op 01022)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 4292,
+    "lineCount": 73,
+    "tagCounts": {
+      "a": 4,
+      "b": 4,
+      "body": 2,
+      "br": 6,
+      "div": 6,
+      "font": 8,
+      "head": 2,
+      "html": 2,
+      "i": 16,
+      "opinion": 1,
+      "p": 15,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Guerin",
+      "2017 NY Slip Op 01022 [28 NY3d 1152]",
+      "February 9, 2017",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, March 29, 2017"
+    ],
+    "captionLines": [],
+    "citationLine": "2017 NY Slip Op 01022 28 NY3d 1152",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Submitted January 10, 2017; decided February 9, 2017",
+      "February 9, 2017",
+      "As corrected through Wednesday, March 29, 2017"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Lori P. Rieman , District Attorney , Little Valley ( William Preston Marshall of counsel), and Musacchio & Pyle, Esqs. , Gowanda ( James A. Musacchio of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Lori P. Rieman , District Attorney , Little Valley ( William Preston Marshall of counsel), and Musacchio & Pyle, Esqs. , Gowanda ( James A. Musacchio of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 4,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2017 NY Slip Op 01022",
+    "officialCitation": "28 NY3d 1152",
+    "pageMarkerCount": 3
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**28 NY3d at 1153} OPINION OF THE COURT",
+      "Memorandum."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

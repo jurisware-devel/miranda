@@ -1,0 +1,112 @@
+{
+  "caseId": "2010_09159",
+  "sourcePath": "coa/2010/2010_09159.htm",
+  "notesPath": "coa/2010/2010_09159.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.507Z",
+  "source": {
+    "title": "People v Frazier (2010 NY Slip Op 09159)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 12277,
+    "lineCount": 83,
+    "tagCounts": {
+      "a": 8,
+      "b": 4,
+      "body": 2,
+      "br": 4,
+      "div": 2,
+      "font": 18,
+      "head": 2,
+      "html": 2,
+      "i": 40,
+      "p": 21,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Frazier",
+      "2010 NY Slip Op 09159 [16 NY3d 36]",
+      "December 14, 2010",
+      "Lippman, Ch. J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, February 23, 2011"
+    ],
+    "captionLines": [
+      "v"
+    ],
+    "citationLine": "2010 NY Slip Op 09159 16 NY3d 36",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued November 15, 2010; decided December 14, 2010",
+      "December 14, 2010",
+      "As corrected through Wednesday, February 23, 2011"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 15,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2010 NY Slip Op 09159",
+    "officialCitation": "16 NY3d 36",
+    "pageMarkerCount": 8
+  },
+  "opinionStructure": {
+    "totalWritings": 2,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1
+    },
+    "authors": [
+      "Lippman"
+    ],
+    "qualifierLines": [
+      "{**16 NY3d at 39} OPINION OF THE COURT",
+      "After trial, defendant was convicted of three counts of burglary in the second degree, two counts of grand larceny in the third degree and one count of bail jumping. He was sentenced, as a persistent violent felony offender, to concurrent terms of 16 years to life for the burglary convictions to be served consecutive to concurrent terms of 2 to 4 years for the grand larceny convictions and consecutive to a term of 2 to 4 years on the bail jumping conviction. ",
+      "The Appellate Division modified, on the law, by directing that the sentences for the larceny convictions be served concurrently with the sentences for the burglary convictions and, as so modified, affirmed. The Court determined that, since larceny was the only crime that satisfied the intent element of burglary, the acts making up each crime could not be viewed as separate and distinct (58 AD3d 468, 469 [1st Dept 2009]). The Court also found that the People had satisfied their burden to establish defendant's competence to stand trial by a preponderance of the evidence. Finally, the Court rejected defendant's claim that the sentencing procedure under which he was adjudicated a persistent violent felony offender was unconstitutional. A Judge of this Court granted the People leave to appeal and defendant leave to cross-appeal, and we now modify. ",
+      "The Penal Law dictates that concurrent sentences are required \"[w]hen more than one sentence of imprisonment is imposed on a person for two or more offenses committed through a single act or omission, or through an act or omission which in itself constituted one of the offenses and also was a material element of the other\" (Penal Law § 70.25 [2]). We have held that a court must first look to the statutory definitions of the crimes to \"determine whether the actus reus element is, by definition, the same for both offenses . . . or if the actus reus for one offense is, by definition, a material element of the second offense\" (People v Laureano, 87 NY2d 640, 643 [1996]). The actus reus of the crime is \" '[t]he wrongful deed that comprises the physical components of a crime and that generally must be coupled with mens rea to establish criminal liability' \" (, 8 NY3d 493, 496 n 2 [2007], quoting Black's Law Dictionary 39 [8th ed 2004]).{**16 NY3d at 41} ",
+      "Defendant emphasizes the finding below that larceny was the only crime that satisfied burglary's intent requirement and posits that consecutive sentences would punish him twice for the same conduct. However, \"[t]he test is not whether the criminal intent is one and the same and inspiring the whole transaction, but whether separate acts have been committed with the requisite criminal intent\" (People v Day, 73 NY2d 208, 212 [1989] [internal quotation marks and citation omitted]). As noted above, the crimes at issue here are separate offenses that were committed through separate acts. Nor is one offense a material element of the other for sentencing purposes, as larceny is not a necessary component of burglary (see Day, 73 NY2d at 211). Concurrent sentences, therefore, are not required and the Appellate Division should exercise its discretion as to whether consecutive sentences are appropriate under the facts of this case. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 2 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

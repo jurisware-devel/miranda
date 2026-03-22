@@ -1,0 +1,122 @@
+{
+  "caseId": "2019_07644",
+  "sourcePath": "coa/2019/2019_07644.htm",
+  "notesPath": "coa/2019/2019_07644.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.069Z",
+  "source": {
+    "title": "People v Rodriguez (2019 NY Slip Op 07644)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 7007,
+    "lineCount": 80,
+    "tagCounts": {
+      "a": 16,
+      "b": 14,
+      "body": 2,
+      "br": 12,
+      "div": 8,
+      "font": 10,
+      "head": 2,
+      "html": 2,
+      "i": 26,
+      "opinion": 1,
+      "p": 16,
+      "script": 4,
+      "style": 2,
+      "sup": 4,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Rodriguez",
+      "2019 NY Slip Op 07644 [34 NY3d 967]",
+      "October 24, 2019",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, December 11, 2019"
+    ],
+    "captionLines": [],
+    "citationLine": "2019 NY Slip Op 07644 34 NY3d 967",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued September 11, 2019; decided October 24, 2019",
+      "October 24, 2019",
+      "As corrected through Wednesday, December 11, 2019"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Christina A. Swarns , Office of the Appellate Defender , New York City ( Stephen R. Strother and Eunice C. Lee of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Christina A. Swarns , Office of the Appellate Defender , New York City ( Stephen R. Strother and Eunice C. Lee of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Cyrus R. Vance, Jr. , District Attorney , New York City ( Valerie Figueredo and Eleanor J. Ostrow of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Cyrus R. Vance, Jr. , District Attorney , New York City ( Valerie Figueredo and Eleanor J. Ostrow of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 4,
+    "footnotesCount": 2
+  },
+  "citations": {
+    "slipOpinion": "2019 NY Slip Op 07644",
+    "officialCitation": "34 NY3d 967",
+    "pageMarkerCount": 4
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**34 NY3d at 968} OPINION OF THE COURT",
+      "Memorandum."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 2,
+    "labels": [
+      "1",
+      "2"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

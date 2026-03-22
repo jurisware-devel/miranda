@@ -1,0 +1,173 @@
+{
+  "caseId": "2020_06836",
+  "sourcePath": "coa/2020/2020_06836.htm",
+  "notesPath": "coa/2020/2020_06836.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.114Z",
+  "source": {
+    "title": "People v Pena (2020 NY Slip Op 06836)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 62137,
+    "lineCount": 165,
+    "tagCounts": {
+      "a": 74,
+      "b": 58,
+      "blockquote": 4,
+      "body": 2,
+      "br": 46,
+      "conopnjd": 2,
+      "disopjd": 2,
+      "div": 16,
+      "font": 68,
+      "head": 2,
+      "html": 2,
+      "i": 180,
+      "opinion": 3,
+      "p": 98,
+      "script": 4,
+      "style": 2,
+      "sup": 26,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14,
+      "u": 8
+    },
+    "unknownTags": [
+      "disopjd"
+    ],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Pena",
+      "2020 NY Slip Op 06836 [36 NY3d 978]",
+      "November 19, 2020",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, March 3, 2021"
+    ],
+    "captionLines": [],
+    "citationLine": "2020 NY Slip Op 06836 36 NY3d 978",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued September 9, 2020; decided November 19, 2020",
+      "November 19, 2020",
+      "As corrected through Wednesday, March 3, 2021"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Darcel D. Clark, District Attorney , Bronx ( Paul A. Andersen, Nancy D. Killian and Peter D. Coddington of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Darcel D. Clark, District Attorney , Bronx ( Paul A. Andersen, Nancy D. Killian and Peter D. Coddington of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "The Bronx Defenders , Bronx ( Morgan Everhart, Ilona Coleman and Ruth Hamilton of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "The Bronx Defenders , Bronx ( Morgan Everhart, Ilona Coleman and Ruth Hamilton of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 55,
+    "footnotesCount": 13
+  },
+  "citations": {
+    "slipOpinion": "2020 NY Slip Op 06836",
+    "officialCitation": "36 NY3d 978",
+    "pageMarkerCount": 33
+  },
+  "opinionStructure": {
+    "totalWritings": 8,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 4,
+      "concurrence": 1,
+      "dissent": 2
+    },
+    "authors": [
+      "Feinman",
+      "Wilson",
+      "Rivera"
+    ],
+    "qualifierLines": [
+      "{**36 NY3d at 978} OPINION OF THE COURT",
+      "Memorandum (concurring).",
+      "Judge Rivera and I conclude that the Vehicle and Traffic Law does not authorize stopping a vehicle solely because its center brake light does not work. Our concurring colleagues reach the opposite conclusion. The plurality, however, cannot or will not say whether an officer may stop a vehicle because of a faulty center brake light. Instead, the plurality offers a superficially appealing answer to explain its silence on what the law means: because two Judges say two lights are required, two Judges say three lights are required and three Judges say nothing, the statute sure is unclear, so the officer's view must be an objectively reasonable mistake if so many Judges have so much difficulty interpreting the statute. That superficial answer shirks our fundamental duty to construe statutes and cavalierly treats the underlying Fourth Amendment rights.",
+      "My disagreement with the concurrence is of the garden-variety nature: we have both tried to interpret a statute and come to opposite conclusions. My disagreement with the plurality is much different. By refusing to say what the Vehicle and Traffic Law permits, the plurality does not merely lead the Court to the wrong result in this case. Far more important, its approach—validating police conduct as a potential \"mistake\" of law without saying whether the conduct was in fact a mistake{**36 NY3d at 985} of law—licenses future police conduct that may, for all the plurality knows, constitute an unlawful abridgement of the Fourth Amendment rights of motorists. The plurality also abdicates our most fundamental roles: serving as the definitive statutory interpreter for the State of New York, and guarding the constitutional rights of those within our borders.",
+      "Judges are \"selected by society to give meaning to what the legislature has done\" (Felix Frankfurter, Some Reflections on the Reading of Statutes, 47 Colum L Rev 527, 529 [1947]; cf. Alexander Hamilton, Federalist No. 78 [1788] [as to statutes, \"it is the province of the courts to liquidate and fix their meaning and operation\"]). The job of the highest court in New York State—or in any state—when faced with a question of statutory interpretation is to interpret the statute. Sometimes, the legislature is not entirely clear in drafting statutes, or two portions of a statute say two different things, or the literal reading of a statute does not make a whole lot of sense. Resolving those sorts of issues is the bread and butter of appellate courts. Here, the lower courts held that driving with a nonworking center brake light is not a traffic violation under the Vehicle and Traffic Law provision governing brake lights, section 375 (40) (b). Our concurring colleagues reached a different conclusion, reading the Vehicle and Traffic Law, together with Department of Motor Vehicles (DMV) regulations, to prohibit driving with a broken center brake light. For the reasons set forth in part II, I agree with the lower courts' reading of the Vehicle and Traffic Law.",
+      "The plurality, however, refuses to say which interpretation of the Vehicle and Traffic Law is correct. It holds that \"the officer's interpretation of the Vehicle and Traffic Law was objectively reasonable\" (plurality mem at &mdash), without deciding whether the officer's interpretation is what the legislature set out as the law. The plurality's dodge is to conclude that because the statutory scheme says different things about a variety of vehicle lights at different places in the code, it is objectively reasonable for officers to stop vehicles with a nonfunctional center brake light, even if the legislature intended otherwise. That result is no different than if the plurality had decided, as the concurrence does, that the legislature made it a traffic{**36 NY3d at 986} infraction to operate a vehicle unless all three brake lights were working—except that the plurality refuses to reach any conclusion about what the legislature meant.",
+      "The plurality does not explain its refusal to state whether the officer's interpretation of the Vehicle and Traffic Law was a mistake of law, but cites authorities establishing that an officer's objectively reasonable mistake of law can provide probable cause to stop a vehicle: our decision in  (25 NY3d 130 [2015]), and the U.S. Supreme Court's decision in Heien v North Carolina (574 US 54 [2014]). In Guthrie, we held that an officer had probable cause to stop the defendant based on the officer's \"reasonable belief that defendant failed to stop at a valid stop sign\" in violation of the Vehicle and Traffic Law, though in fact the stop sign was not properly registered as required by the Vehicle and Traffic Law (25 NY3d at 140). We first determined the stop was based on a mistake of law because the driver did not commit a stop sign infraction (which the People conceded), and then turned to the question of whether the mistake was objectively reasonable (id. at 133-134). That is the way in which we should proceed here: first, is it a violation of the Vehicle and Traffic Law to drive with a defective center brake light? If it is, then, as the concurrence states, no mistake-of-law analysis is required: the stop was lawful. If it is not, we then turn to the question of the reasonableness of the mistake of law, as we did in Guthrie.",
+      "Knowing what the Vehicle and Traffic Law prohibits but refusing to construe it invites chaos. If the plurality believes that the Vehicle and Traffic Law does not in fact contain a traffic infraction for driving with a nonfunctional center brake light, but it was reasonable for Officer Thomas to believe otherwise, then the plurality should say so. The result in Mr.{**36 NY3d at 989} Pena's case would be the same, but the Court would make clear that, in the future, vehicle stops of cars with both side brake lights working will not be excused as reasonable mistakes of law, thus preserving constitutional rights the legislature has not deemed worthy of impinging. If, on the other hand, the plurality agrees with our concurring colleagues that the Vehicle and Traffic Law specifies an infraction for driving with a center brake light out, then it should so hold, advising officers and motorists alike that a nonworking center brake light is an infraction justifying a vehicle stop. No resort to mistake-of-law doctrine—which is meant to be reserved for cases where an error of law has been determined to have occurred—would be needed. Under either scenario, the legislature would have no need to act if we correctly determined its intent.",
+      "B. When our Court refuses to decide what infractions the Vehicle and Traffic Law contains, or when we extend the universe of traffic infractions beyond those created by statute, we both fail to effectuate the legislature's intent and fail to establish the constitutional limits of one of the most frequent and pervasive exercises of the State's police power: the vehicle stop{**36 NY3d at 990} (see Elizabeth Davis et al., Contacts Between the Police and the Public, 2015 at 4 [Oct. 2018], available at https://www.bjs.gov/content/pub/pdf/cpp15.pdf [last accessed Oct. 23, 2020] [over 19 million drivers experienced a police stop in the U.S. in 2015]; Charles R. Epp et al., Pulled Over: How Police Stops Define Race and Citizenship at 2[2014] [each year about 12% of all drivers are stopped by the police, and the share of racial minority drivers stopped is about double]). Those limits matter. An accumulating body of research demonstrates not only the frequency with which traffic stops escalate to tragic consequences (see Rivera, J., dissenting op at &mdash), but also the extent to which traffic stops reproduce racial disparities (see Emma Pierson et al., A Large-Scale Analysis of Racial Disparities in Police Stops Across the United States, Nature Human Behaviour [2020], available at http://web.stanford.edu/csimoiu/doc/traffic-stops.pdf [last accessed Oct. 23, 2020] [study of 95 million traffic stops finding Black drivers were more likely to be stopped, ticketed, searched, and arrested than white drivers, and that Hispanic drivers, when stopped, were more likely to be ticketed, searched, and arrested than white drivers]; Robert E. Worden et al., Traffic Stops by Suffolk County Police at 7, 48 [Sept. 2020], available at https://suffolkcountyny.gov/Portals/0/formsdocs/police%20reform/Traffic%20Stops%20by%20Suffolk%20County%20Police%2010.19.2020.pdf [last accessed Oct. 23, 2020] [study of over 130,000 traffic stops by Suffolk police finding that, compared to white drivers, Black and Hispanic drivers were more likely to be stopped for equipment violations, Black drivers were over three times more likely to be subjected to physical force, and Hispanic drivers were 16% more likely to be searched and 16% more likely to be arrested]; Charles R. Epp et al., Pulled Over: How Police Stops Define Race and Citizenship 143 [2014] [interview-based studies tracking the long-term harms of police stops have found that, \"(a)mong African Americans, the more stops the driver has experienced over his or her lifetime, the less they trust the police\"]). Enlarging police discretion to stop automobiles on the ground that the stop is an excusable mistake, without determining what the legislature intended, is fraught with untoward consequences.",
+      "Our concurring colleagues conclude that the DMV, with power delegated from the legislature, has determined that officers are authorized to stop vehicles solely because a center brake light bulb has burned out. Judge Rivera and I do not.{**36 NY3d at 991} But the approach of both the concurrence and the dissent is to state what the law is, so that no future Fourth Amendment violations involving center brake light failures would be excused as mistakes of law. The plurality, instead, grants unfettered discretion to police officers to stop vehicles for a center brake light failure, deeming it unnecessary to determine what the legislature has directed.",
+      "Relying largely on DMV regulations governing safety inspections, the concurrence concludes that driving with a non-lighting center brake light is a Vehicle and Traffic Law violation and thus the officer \"made no mistake of law in stopping [Mr. Pena's] vehicle\" (concurring op at &mdash). There are two fatal problems with the concurrence's approach. First, Vehicle and Traffic Law § 376-a grants police officers the power to issue a summons only for a \"violation of any provision of section three hundred seventy-five, three hundred seventy-six or three hundred eighty-one\" of the Vehicle and Traffic Law—not for violations of the DMV's regulations. The fact that Vehicle and Traffic Law § 376 (1) (b) authorizes the Commissioner to promulgate regulations does not transform a violation of a regulation into a violation of the Vehicle and Traffic Law.",
+      "Second, the concurrence conflates a set of requirements for the equipment and inspection of vehicles, on the one hand, with the set of offenses that provide a lawful basis for the police to stop a vehicle, on the other. The question before our Court is not whether Mr. Pena's vehicle was manufactured with the requisite number of brake lights (it was), nor whether the defective brake light that the officer observed could cause Mr. Pena's vehicle to fail an inspection based on DMV regulations (it could); the question is whether operating a vehicle with a nonfunctioning center brake light is a violation of the Vehicle and Traffic Law as defined by the legislature (it is not).",
+      "As the concurrence notes, the legislature has empowered the DMV Commissioner to promulgate regulations with the aim of \"conform[ing] vehicle lighting regulations to Federal requirements\" (Sponsor's Mem at 1, 3, Bill Jacket, L 1977, ch 592, 1977 McKinney's Session Laws of NY at 2376, 2377). The Commissioner has promulgated inspection regulations to that end, including the aforementioned requirement that vehicles manufactured since 1987 must be \"equipped\" with a center brake light, which must function in order to pass inspection (15 NYCRR 79.21 [e] [6]). However, the legislature has not amended Vehicle and Traffic Law § 375 (40) (b) to require drivers operating a vehicle on a public road to have a functioning{**36 NY3d at 995} center brake light, and thus the statute does not empower officers to stop a vehicle solely for a defective center brake light.",
+      "Contrary to the concurrence's view, then, the statutory mandate of \"at least two\" brake lights (Vehicle and Traffic Law § 375 [40] [b]) is not \"irreconcilably inconsistent\" with DMV regulations promulgated under section 376 (Vehicle and Traffic Law § 376 [4]). The regulations prescribe the lights with which vehicles must be equipped and which lights must work to pass inspection; the statute sets out how many lights must work when a driver operates a vehicle on public roads. However, by suggesting that DMV regulations \"govern\" to the extent they appear to conflict with the relevant statute (concurring op at &mdash), the concurrence proposes a novel and dangerous theory that by authorizing the DMV to promulgate safety equipment regulations in harmony with federal regulations, the DMV is empowered to modify the legislature's own statute determining when officers have probable cause to stop a vehicle.",
+      "The correct result here is to hold that the stop was not supported by probable cause because the legislature has not authorized the stop of a vehicle with two working brake lights, one on each side, and that the officer's error was not objectively reasonable. A tolerable, though incorrect, result would be to hold that the stop was based on a mistake of law but the mistake was reasonable; another tolerable though incorrect result would be the position of the concurrence. The only incorrect and intolerable position is that held by the plurality—that the Court of Appeals is not going to say whether the stop here was or was not authorized by the legislature, but instead is a mistake worth repeating.",
+      "The prosecution appeals from the Appellate Term's order affirming the suppression of all evidence stemming from an illegal traffic stop of defendant Robin Pena's vehicle. Rather than address head on what the Vehicle and Traffic Law requires, three members of the Court engage in a mistake of law analysis without first identifying whether the officer actually misunderstood the law. Two other members of the Court concur with the plurality in reversing the Appellate Term's decision, but on the grounds that the Vehicle and Traffic Law—as read through the lens of the Department of Motor Vehicles' safety inspection regulations—requires three working brake lights. I cannot join either opinion as both are wrong on the law.{**36 NY3d at 996}",
+      "I fully join Judge Wilson's dissent that the Court should resolve the Vehicle and Traffic Law question presented in this appeal before embarking on a mistake of law analysis (Wilson, J., dissenting op at &mdash). The plurality's failure to say what the Vehicle and Traffic Law means leaves motorists, law enforcement officers, and judges wondering what the law requires. This outcome does nothing to promote the law's development or ensure the safety of the public (id. at &mdash).",
+      "Even if I agreed with the plurality that certain provisions of the Vehicle and Traffic Law inject ambiguity into the analysis and suggest that a vehicle's middle brake lights, no matter the number, must be in good working condition, I would still affirm. First, as I explained in my dissent in  (25 NY3d 130, 148-149 [2015]), under New York's Constitution, an officer's mistake provides no basis to deny a defendant's motion to suppress evidence recovered during an illegal seizure. An ambiguous law is not a sufficient justification to relax our constitutional protections.",
+      "Chief Judge DiFiore and Judges Stein, Fahey, Garcia and Feinman concur, Judges Stein, Fahey and Garcia in a concurring memorandum and Chief Judge DiFiore and Judge Feinman in a separate concurring opinion by Judge Feinman; Judge Wilson dissents in an opinion, in which Judge Rivera concurs in part in a separate dissenting opinion."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 1,
+    "dissentCount": 2,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 13,
+    "labels": [
+      "*",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <disopjd> in source HTML."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 8 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

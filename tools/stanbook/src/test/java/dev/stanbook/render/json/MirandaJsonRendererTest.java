@@ -156,6 +156,97 @@ class MirandaJsonRendererTest {
     }
 
     @Test
+    void render_json_merges_header_and_points_of_counsel_appearances() {
+        String html = """
+            <html><body>
+            <table>
+              <tr><td>People v Example</td></tr>
+              <tr><td>2025 NY Slip Op 02100 (44 NY3d 1)</td></tr>
+              <tr><td>April 10, 2025</td></tr>
+              <tr><td>Court of Appeals</td></tr>
+              <tr><td><i>Mitchell H. Spinac</i>, Kingston, for appellant.</td></tr>
+            </table>
+            <CounselBlock type="points_of">
+              <div align="center"><b>POINTS OF COUNSEL</b></div>
+              <p><i>Mitchell H. Spinac</i>, Kingston, for appellant. I. First argument. II. Second argument.</p>
+              <p><i>Emmanuel C. Nneji, District Attorney</i>, Kingston, for respondent. I. Response argument.</p>
+              <p><i>Legal Action Network for Animals</i>, Great Neck, for amicus curiae. I. Amicus argument.</p>
+            </CounselBlock>
+            <p>OPINION OF THE COURT</p>
+            <p>Body text.</p>
+            </body></html>
+            """;
+
+        String json = StanbookPipeline.createDefault()
+            .render(new dev.stanbook.io.HtmlSourceLoader().load(Path.of("example.htm"), html));
+
+        assertThat(json).contains("\"text\":\"*Mitchell H. Spinac*, Kingston, for appellant.\"");
+        assertThat(json).contains("\"text\":\"*Emmanuel C. Nneji, District Attorney*, Kingston, for respondent.\"");
+        assertThat(json).contains("\"text\":\"*Legal Action Network for Animals*, Great Neck, for amicus curiae.\"");
+        assertThat(json).contains("\"pointsOfCounsel\":[");
+        assertThat(json).contains("Response argument.");
+        assertThat(json).contains("Amicus argument.");
+    }
+
+    @Test
+    void render_json_trims_non_numbered_points_of_counsel_arguments_from_appearances() {
+        String html = """
+            <html><body>
+            <table>
+              <tr><td>People v Example</td></tr>
+              <tr><td>2025 NY Slip Op 01673 [43 NY3d 584]</td></tr>
+              <tr><td>March 20, 2025</td></tr>
+              <tr><td>Court of Appeals</td></tr>
+              <tr><td><i>Julie A. Cianca, Public Defender</i>, Rochester (<i>David R. Juergens</i> of counsel), for appellant. When determining an offender's risk level, the court cannot use a coerced guilty plea as an automatic override. <i>Sandra Doorley, District Attorney</i>, Rochester (<i>Martin P. McCarthy</i> of counsel), for respondent. The SORA court properly applied the override.</td></tr>
+            </table>
+            <CounselBlock type="points_of">
+              <div align="center"><b>POINTS OF COUNSEL</b></div>
+              <p><i>Julie A. Cianca, Public Defender</i>, Rochester (<i>David R. Juergens</i> of counsel), for appellant. When determining an offender's risk level, the court cannot use a coerced guilty plea as an automatic override.</p>
+              <p><i>Sandra Doorley, District Attorney</i>, Rochester (<i>Martin P. McCarthy</i> of counsel), for respondent. The SORA court properly applied the override.</p>
+            </CounselBlock>
+            <p>OPINION OF THE COURT</p>
+            <p>Body text.</p>
+            </body></html>
+            """;
+
+        String json = StanbookPipeline.createDefault()
+            .render(new dev.stanbook.io.HtmlSourceLoader().load(Path.of("example.htm"), html));
+
+        assertThat(json).contains("\"text\":\"*Julie A. Cianca, Public Defender*, Rochester (*David R. Juergens* of counsel), for appellant.\"");
+        assertThat(json).contains("\"text\":\"*Sandra Doorley, District Attorney*, Rochester (*Martin P. McCarthy* of counsel), for respondent.\"");
+        assertThat(json).contains("\"pointsOfCounsel\":[");
+        assertThat(json).contains("automatic override");
+        assertThat(json).contains("properly applied the override");
+    }
+
+    @Test
+    void render_json_trims_plural_amici_curiae_appearance_lines() {
+        String html = """
+            <html><body>
+            <table>
+              <tr><td>People v Example</td></tr>
+              <tr><td>2008 NY Slip Op 04902 [10 NY3d 875]</td></tr>
+              <tr><td>June 3, 2008</td></tr>
+              <tr><td>Court of Appeals</td></tr>
+            </table>
+            <CounselBlock type="points_of">
+              <div align="center"><b>POINTS OF COUNSEL</b></div>
+              <p><i>Lorca Morello</i>, New York City, <i>Steven Banks, Richard Willstatter</i>, White Plains, and <i>Alfred O'Connor</i>, Albany, for Legal Aid Society and others, amici curiae. The amici argue that the lineup procedure was unreliable.</p>
+            </CounselBlock>
+            <p>OPINION OF THE COURT</p>
+            <p>Body text.</p>
+            </body></html>
+            """;
+
+        String json = StanbookPipeline.createDefault()
+            .render(new dev.stanbook.io.HtmlSourceLoader().load(Path.of("example.htm"), html));
+
+        assertThat(json).contains("\"text\":\"*Lorca Morello*, New York City, *Steven Banks, Richard Willstatter*, White Plains, and *Alfred O'Connor*, Albany, for Legal Aid Society and others, amici curiae.\"");
+        assertThat(json).contains("\"pointsOfCounsel\":[");
+        assertThat(json).contains("The amici argue that the lineup procedure was unreliable.");
+    }
+
+    @Test
     void render_json_emits_official_page_markers_as_inline_nodes() {
         var source = new SourceDocumentReader().read(Path.of("samples/2003_17888.htm"));
 

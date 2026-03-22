@@ -1,0 +1,121 @@
+{
+  "caseId": "2010_03754",
+  "sourcePath": "coa/2010/2010_03754.htm",
+  "notesPath": "coa/2010/2010_03754.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.477Z",
+  "source": {
+    "title": "People v Daly (2010 NY Slip Op 03754)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 5261,
+    "lineCount": 66,
+    "tagCounts": {
+      "a": 4,
+      "b": 4,
+      "body": 2,
+      "br": 4,
+      "div": 2,
+      "font": 10,
+      "head": 2,
+      "html": 2,
+      "i": 24,
+      "p": 13,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Daly",
+      "2010 NY Slip Op 03754 [14 NY3d 848]",
+      "May 4, 2010",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, June 9, 2010"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "John P. Daly, Appellant."
+    ],
+    "citationLine": "2010 NY Slip Op 03754 14 NY3d 848",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued March 22, 2010; decided May 4, 2010",
+      "May 4, 2010",
+      "As corrected through Wednesday, June 9, 2010"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Law Offices of Thomas F. Liotti , Garden City ( Thomas F. Liotti and Drummond C. Smith of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Law Offices of Thomas F. Liotti , Garden City ( Thomas F. Liotti and Drummond C. Smith of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Kathleen M. Rice, District Attorney , Mineola ( Andrea M. DiGregorio and Tammy J. Smiley of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Kathleen M. Rice, District Attorney , Mineola ( Andrea M. DiGregorio and Tammy J. Smiley of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 5,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2010 NY Slip Op 03754",
+    "officialCitation": "14 NY3d 848",
+    "pageMarkerCount": 4
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**14 NY3d at 849} OPINION OF THE COURT",
+      "Memorandum. "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

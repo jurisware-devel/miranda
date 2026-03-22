@@ -1,0 +1,104 @@
+{
+  "caseId": "2016_02555",
+  "sourcePath": "coa/2016/2016_02555.htm",
+  "notesPath": "coa/2016/2016_02555.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.871Z",
+  "source": {
+    "title": "People v Powell (2016 NY Slip Op 02555)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 20513,
+    "lineCount": 101,
+    "tagCounts": {
+      "a": 12,
+      "b": 4,
+      "body": 2,
+      "br": 6,
+      "div": 4,
+      "font": 32,
+      "head": 2,
+      "html": 2,
+      "i": 90,
+      "p": 60,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Powell",
+      "2016 NY Slip Op 02555 [27 NY3d 523]",
+      "April 5, 2016",
+      "Garcia, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, August 3, 2016"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Reginald Powell, Appellant."
+    ],
+    "citationLine": "2016 NY Slip Op 02555 27 NY3d 523",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued February 17, 2016; decided April 5, 2016",
+      "April 5, 2016",
+      "As corrected through Wednesday, August 3, 2016"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 28,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2016 NY Slip Op 02555",
+    "officialCitation": "27 NY3d 523",
+    "pageMarkerCount": 15
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [
+      "Garcia"
+    ],
+    "qualifierLines": [
+      "{**27 NY3d at 526} OPINION OF THE COURT"
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

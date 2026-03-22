@@ -1,0 +1,171 @@
+{
+  "caseId": "2026_00963",
+  "sourcePath": "coa/2026/2026_00963.htm",
+  "notesPath": "coa/2026/2026_00963.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.387Z",
+  "source": {
+    "title": "People v Rios (2026 NY Slip Op 00963)",
+    "publicationStatus": "slip_op_only"
+  },
+  "fileInfo": {
+    "byteSize": 43780,
+    "lineCount": 143,
+    "tagCounts": {
+      "a": 40,
+      "b": 4,
+      "blockquote": 38,
+      "body": 2,
+      "br": 19,
+      "dateline": 2,
+      "div": 24,
+      "font": 20,
+      "form": 2,
+      "head": 2,
+      "html": 2,
+      "i": 304,
+      "input": 1,
+      "opinion": 1,
+      "p": 100,
+      "sc": 4,
+      "script": 4,
+      "style": 2,
+      "table": 2,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [
+      "form",
+      "input"
+    ],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Rios",
+      "2026 NY Slip Op 00963",
+      "Decided on February 19, 2026",
+      "Court of Appeals",
+      "Troutman, J.",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "This opinion is uncorrected and subject to revision before publication in the Official Reports."
+    ],
+    "captionLines": [
+      "The People & c., Respondent,",
+      "v",
+      "Jonathan Rios, Appellant."
+    ],
+    "citationLine": "2026 NY Slip Op 00963",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "In People v Lopez (71 NY2d 662 [1988]), we articulated a narrow exception to the rule that defendants must move before the trial court&mdash;either to withdraw their plea or vacate their judgment of conviction&mdash;to preserve their challenge to the factual sufficiency of their plea allocution. The Lopez exception applies \"where the defendant's recitation of the facts underlying the crime pleaded to clearly casts significant doubt upon the defendant's guilt or otherwise calls into question the voluntariness of the plea\" ( id . at 666). If that occurs, and the trial court accepts the plea without inquiring further, \"the defendant may challenge the sufficiency of the allocution on direct appeal, notwithstanding that a formal postallocution motion was not made\" ( id .).",
+      "The People charged defendant by indictment with two counts of robbery in the second degree. Defendant pleaded guilty to one count of robbery in the second degree in satisfaction of the indictment. During the plea allocution, defendant admitted under oath that on August 27, 2019, he had forcibly stolen money, lighters, cigarettes, and beer from a clerk at a 7-Eleven while displaying what appeared to be a pistol, revolver, or other firearm. The court accepted defendant's plea and ordered the probation department to prepare a presentence investigation report (PSR). At his pre-sentence investigation interview, defendant said he did not rob anyone. Defendant stated that he robbed the store while doing confidential informant work for a \"Drug Task Force agent.\" Defendant also stated that he robbed the store to, as he later clarified, collect money from one of two clerks who owed money to a drug dealer.",
+      "Now that the issue presents itself, we hold that statements made at sentencing challenging the factual basis of a plea do not trigger the duty to inquire. Consequently, the Lopez exception to the preservation doctrine does not apply. The Lopez exception is based on the trial court's constitutional duty to ensure, prior to accepting a plea, that a defendant's plea is voluntary, knowing, and intelligent: \"[W]here a defendant's factual recitation negates an essential element of the crime pleaded to, the court may not accept the plea without making further inquiry to ensure that defendant understands the nature of the charge and that the plea is intelligently entered\" ( see Lopez , 71 NY2d at 666). In contrast, after the court accepts a defendant's plea&mdash;but before defendant is sentenced&mdash;the statutorily provided procedure for challenging the plea is a motion to withdraw the plea pursuant to CPL 220.60 (3). Inasmuch as the Lopez exception to that procedure arises from a trial court's failure to perform its mandatory \"duty to inquire further\" prior to accepting a questionable plea ( id .), it does not apply here. As a result, because defendant neither moved to withdraw the plea nor vacate the judgment of conviction, his challenge to his plea is not preserved for our review.",
+      "Our interpretation of People v Beasley (25 NY2d 483 [1969]) differs from that of our dissenting colleagues, who quote that decision out of context. This Court decided Beasley upon an appeal from a denial of a motion to vacate a judgment of conviction brought by an application for a \"writ of error Coram Nobis\" ( compare id . at 484, with People v Beasley , 31 AD2d 851, 851 [3d Dept 1969] [referring to the application as \"a motion to vacate a judgment convicting defendant . . . \"]). At that time, prior to the legislature enacting CPL 440.10, defendants could seek to vacate their conviction \"through a motion for a writ of error coram nobis\" ( People v Jones , 24 NY3d 623 , 627 [2014]). In other words, in Beasley , unlike here, the defendant preserved his challenge predicated on statements made at sentencing by first moving to vacate his judgment of conviction. Consequently, our holding in Beasley does not conflict with our holding today that defendant's challenge to his plea based on statements at sentencing required him first to make [*4] either a motion to withdraw the plea or to vacate the judgment of conviction in order to preserve his challenge for our review.",
+      "In People v Beasley , this Court adopted a clear rule that a \"court should conduct a hearing when at plea-taking or upon sentencing it appears the defendant misapprehends the nature of the charges or the consequences of [their] plea\" (25 NY2d 483, 488 [1969]). When such circumstances are present, our Court may review the sufficiency of the trial judge's inquiry into the plea's voluntariness even where the defendant never formally preserved their argument by moving to withdraw the plea or vacate the conviction ( see Beasley , 25 NY2d at 487-488, citing People v Nixon , 21 NY2d 338 [1967] [reviewing defendant's challenge to his guilty plea based on his sentencing statements despite his not moving to withdraw plea or vacate conviction], overruled on other grounds , People v Catu , 4 NY3d 242 [2005]). We have since reaffirmed the Beasley rule in People v Pastor (28 NY3d 1089 , 1090-1091 [2016]). In that case, we considered whether the defendant's statements at sentencing negated an element of the crime or cast doubt on the voluntariness of his plea, even though defendant failed to preserve his argument by moving to withdraw his plea or vacate his conviction ( id. ).",
+      "The court then engaged in the following colloquy with defendant: \"THE COURT: I told you that when you responded to the presentence investigation you had to answer [the probation officer's] questions honestly. So you are either lying to me or you were lying to them. THE DEFENDANT: Your Honor, I stand by what I said in the presentence investigation. THE COURT: So it's your position then that you lied to me when you took your plea? THE DEFENDANT: Sir, I wanted to bring forth &mdash; THE COURT: No. I don't want to hear an explanation. I want to hear an answer. THE DEFENDANT: No, sir. THE COURT: Okay. Well, they can't both be true so explain to me how that's possible. THE DEFENDANT: Your Honor, there was certain things that were not said. I do stand by what I told the presentencing investigation. THE COURT: It's your position then you are not guilty in this case? THE DEFENDANT: Sir, no. I knew what I was doing was illegal. THE COURT: What is it that you did that was illegal? THE DEFENDANT: Your Honor, I went to go pick up money from two clerks that owed a drug dealer. I was under the direction of [a] . . . multi drug task force agent. I believe you have a [\"]your eyes only[\"] folder in front of you from what the presentencing investigation said to me. That is how they were paying the drug dealer. THE COURT: When you took a plea before me, . . . you admitted to me that on August 27, 2019 you forcibly stole property from an employee at 7-Eleven. THE DEFENDANT: Yes, sir. I knew it was illegal, sir. That is why I'm pleading. THE COURT: That's not what you said to the person in the presentence investigation. You said you did not rob anyone and that the video footage from the 7-Eleven shows you high-fiving him after the robbery. THE DEFENDANT: That is correct, sir. It was illegal. I knew &mdash; THE COURT: You can't have it both ways, . . . either you robbed somebody or you didn't. I'm not in the business of taking pleas and sentencing people that are not guilty. THE DEFENDANT: Your Honor, I am guilty.\"",
+      "Defendant asserts that: (1) we may review his challenge to the guilty plea, because preservation was not required under People v Lopez (71 NY2d 662, 666 [1988]); (2) defendant's statements at sentencing negated the use of force element of the second-degree robbery charge to which he pleaded guilty, placing the validity of the plea in question and triggering the court's duty to inquire further; and (3) the court's inquiry at sentencing was insufficient to establish that defendant's plea was knowing and voluntary.",
+      "In Lopez , the Court adopted a \"narrow exception to the preservation requirement\" (71 NY2d at 666). In the \"rare case . . . where the defendant's recitation of the facts underlying the crime pleaded to clearly casts significant doubt upon the defendant's guilt or otherwise calls into question the voluntariness of the plea, . . . the trial court has a duty to inquire further to ensure that [the] defendant's guilty plea is knowing and voluntary\" ( id. ). In such cases, \"the court may not accept the plea without making further inquiry to ensure that [the] defendant understands the nature of the charge and that the plea is intelligently entered\" ( id. ). If the trial court fails to conduct a sufficient inquiry, \"the defendant may challenge the sufficiency of the allocution on direct appeal, notwithstanding that a formal [post-allocution] motion was not made\" ( id. , citing Beasley , 25 NY2d 483 and People v Serrano , 15 NY2d 304 [1965]). Mechanical application of the preservation rule in such circumstances serves no institutional goal, because the court's attention \"should have been instantly drawn to the problem, and the salutary purpose of the preservation rule is arguably not jeopardized\" ( id. ).",
+      "The majority's holding unfortunately disregards the Beasley rule, despite the rule's firm grounding in precedent ( see majority op at 6 [holding \"that statements made at sentencing challenging the factual basis of a plea do not trigger the duty to inquire\"]). Beasley 's citation to People v Nixon in particular confirms that there is a strong doctrinal basis for the rule that claims based on sentencing statements challenging the factual basis of a plea are not subject to preservation ( id. ). In Nixon , the defendant pleaded guilty to second-degree manslaughter, but later told the sentencing court that he had acted in self-defense (21 NY2d at 346). The sentencing court asked the defendant if he wished to withdraw his plea ( id. ). After consulting with counsel, the defendant stated unequivocally that he had no defense, and the court imposed sentence ( id. ). On appeal, the defendant argued that the sentencing court never questioned him about the factual basis for his plea even though his statements indicated that he might have a defense ( id. ). The Court reached and rejected the merits of the defendant's claim despite his not moving to withdraw his plea ( id. at 350).",
+      "Although there is a split among the Appellate Division departments on this issue, the First and Third Department correctly apply our rule, holding that a court must conduct an inquiry if it appears at sentencing that the defendant does not understand their charge or the consequences of the plea ( see Gresham , 151 AD3d at 1178 [\"(T)he Court of Appeals has recognized that a defendant may negate an element of the crime to which a plea has been entered or make a statement suggestive of an involuntary plea at post-plea proceedings, including sentencing , which may require the trial court to then conduct a further inquiry or give the defendant an opportunity to withdraw the plea\" (emphasis added)]; Dupree , 235 AD3d at 123 [\"(T)he court's obligation (to inquire) extends to comments during the plea colloquy or the sentencing proceeding\" (internal quotation marks omitted)]).",
+      "\"[O]nce a court has decided a legal issue, subsequent appeals presenting similar facts should be decided in conformity with the earlier decision\" ( People v Bing , 76 NY2d 331, 337-338 [1990]). This doctrine of stare decisis \"rests upon the principle that a court is an institution, not merely a collection of individuals, and that governing rules of law do not change merely because the personnel of the court changes\" ( id. at 338). \"Stare decisis promotes predictability in the law, engenders reliance on our decisions, encourages judicial restraint and reassures the public that our decisions arise from a continuum of legal principle rather than the personal caprice of the members of this Court\" ( Peque , 22 NY3d at 194). A \"compelling justification [to overrule precedent] may arise when the Court's prior holding 'leads to an unworkable rule, or . . . creates more questions than it resolves' \" ( Peque , NY2d at 194, quoting People v Taylor , 9 NY3d 129 , 149 [2007]), or when \" 'a preexisting rule, once thought defensible, no longer serves [*6] the ends of justice or withstands the cold light of logic and experience' \" ( id. , quoting Policano v Herbert , 7 NY3d 588 , 604 [2006]). No party has asked us to overrule Beasley and the majority furnishes no colorable reasons to do so. Thus, Beasley is controlling, and defendant's challenge to his guilty plea, based on his statements at sentencing that he claims negate the use of force element of second-degree robbery, falls within the Lopez exception to our preservation requirement ( Lopez , 71 NY2d at 666).",
+      "A primary objection to applying Lopez to claims based on statements made at sentencing is a pragmatic one, namely, the concern that it may incentivize defendants to make ambiguous statements and refrain from formally moving to withdraw their pleas or to vacate their convictions ( see Brown , 204 AD3d at 1520 [commenting that extending the Lopez exception to sentencing would \"incentivize( ) defendants to forgo formal plea-withdrawal motions\" and \"would effectively afford every defendant the unfettered option to withdraw (their) guilty plea at sentencing simply by negating an element of the pleaded-to crime and thereafter refusing to offer the follow-up assurances contemplated by Lopez \"]). That concern is overstated. First, ensuring the validity of a guilty plea is a constitutional requirement that protects a defendant's due process rights and the integrity of pleas generally. These individual and institutional interests supersede the preservation bar that the majority imposes, grounded solely in prudential concerns. Second, even when a defendant makes a motion to withdraw their plea at sentencing, the court must decide the motion on the record as it stands at that point, including statements that the defendant makes during the sentencing proceeding. This obviates any concern that the Beasley rule incentivizes defendants to undermine their guilty pleas at sentencing. Moreover, if a defendant's statements suggest a problem with their plea, the court can always inquire into whether the defendant wishes to make a motion to withdraw and, if appropriate, adjourn sentencing to allow them to file a written motion. If the defendant does not wish to submit a motion and relies on the statements at sentencing, the court should inquire further and ultimately render a decision [*7] whether or not to proceed to sentencing&mdash;a decision that is subject to appellate review. Either the record supports the defendant's claim or it does not. The expenditure of judicial resources is the same, regardless. In other words, if the court fulfills its obligation to ascertain that a defendant is pleading guilty knowingly and voluntarily, it may overcome the procedural hurdles that the majority relies on to foreclose a defendant's claim entirely. There is no justification for mechanical adherence to a preservation rule that does not protect the rights of defendants or assist the court's deliberative process. Such a rule is antithetical to a fair and just criminal law system.",
+      "Decided on February 19, 2026",
+      "THE COURT: When you took a plea before me, . . . you admitted to me that on August 27, 2019 you forcibly stole property from an employee at 7-Eleven."
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Kathleen P. Reardon, for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Kathleen P. Reardon, for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Amy N. Walendziak, for respondent. TROUTMAN , J.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": true,
+        "argumentTailPreview": "TROUTMAN , J.",
+        "sentenceText": "Amy N. Walendziak, for respondent.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Amy N. Walendziak, for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Amy N. Walendziak, for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 59,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2026 NY Slip Op 00963",
+    "officialCitation": "71 NY2d 662",
+    "pageMarkerCount": 7
+  },
+  "opinionStructure": {
+    "totalWritings": 4,
+    "byKind": {
+      "unknown": 2,
+      "opinion_of_the_court": 1,
+      "concurrence": 1
+    },
+    "authors": [
+      "Troutman",
+      "Rivera"
+    ],
+    "qualifierLines": [
+      "Our interpretation of People v Beasley (25 NY2d 483 [1969]) differs from that of our dissenting colleagues, who quote that decision out of context. This Court decided Beasley upon an appeal from a denial of a motion to vacate a judgment of conviction brought by an application for a \"writ of error Coram Nobis\" (compare id. at 484, with People v Beasley, 31 AD2d 851, 851 [3d Dept 1969] [referring to the application as \"a motion to vacate a judgment convicting defendant . . . \"]). At that time, prior to the legislature enacting CPL 440.10, defendants could seek to vacate their conviction \"through a motion for a writ of error coram nobis\" (, 24 NY3d 623, 627 [2014]). In other words, in Beasley, unlike here, the defendant preserved his challenge predicated on statements made at sentencing by first moving to vacate his judgment of conviction. Consequently, our holding in Beasley does not conflict with our holding today that defendant's challenge to his plea based on statements at sentencing required him first to make either a motion to withdraw the plea or to vacate the judgment of conviction in order to preserve his challenge for our review.",
+      "However, the Beasley Court did not expand that duty to cover situations in which a defendant merely recants their guilt at sentencing after entering a valid plea of guilty. Quite the opposite. In Beasley, we clarified that \"our holding is not based solely upon the statement made by defendant at sentencing\" (id. at 488 [emphasis added]). Instead, we found that, based on statements made at the plea proceeding, the trial court's inquiry prior to accepting the plea was \"insufficient to determine if the plea was entered intelligently\" (id.). Thus, the stand-alone duty promoted by our dissenting colleagues did not exist at the time of Beasley, and it does not exist now."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 1,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <form> in source HTML."
+    },
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <input> in source HTML."
+    },
+    {
+      "code": "APPEARANCE_LINE_WITH_ARGUMENT_TAIL",
+      "severity": "info",
+      "detail": "Appearance-like line continues into argument text after \"for respondent.\"."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 4 writings."
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "caseId": "2011_03677",
+  "sourcePath": "coa/2011/2011_03677.htm",
+  "notesPath": "coa/2011/2011_03677.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.542Z",
+  "source": {
+    "title": "People v Feliciano (2011 NY Slip Op 03677)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 36358,
+    "lineCount": 142,
+    "tagCounts": {
+      "a": 32,
+      "b": 22,
+      "blockquote": 12,
+      "body": 2,
+      "br": 12,
+      "div": 10,
+      "font": 50,
+      "head": 2,
+      "html": 2,
+      "i": 134,
+      "p": 45,
+      "script": 4,
+      "style": 2,
+      "sup": 8,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Feliciano",
+      "2011 NY Slip Op 03677 [17 NY3d 14]",
+      "May 5, 2011",
+      "Read, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, June 29, 2011"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Luis Feliciano, Appellant."
+    ],
+    "citationLine": "2011 NY Slip Op 03677 17 NY3d 14",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued March 24, 2011; decided May 5, 2011",
+      "May 5, 2011",
+      "As corrected through Wednesday, June 29, 2011"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 47,
+    "footnotesCount": 4
+  },
+  "citations": {
+    "slipOpinion": "2011 NY Slip Op 03677",
+    "officialCitation": "17 NY3d 14",
+    "pageMarkerCount": 24
+  },
+  "opinionStructure": {
+    "totalWritings": 2,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1
+    },
+    "authors": [
+      "Read"
+    ],
+    "qualifierLines": [
+      "{**17 NY3d at 16} OPINION OF THE COURT",
+      "On July 19, 2002, a week after he received defendant's letter, County Court issued a memorandum to the Greene County probation department, district attorney and public defender, attaching the letter. The judge noted that a VOP hearing was not subject to statutory speedy trial rules; however, citing CPL 410.30, he scheduled an appearance for August 20, 2002 \"in the interest of taking prompt, reasonable and appropriate action to cause defendant to appear and answer the pending Declaration of Delinquency\" (internal quotation marks omitted). County Court asked the district attorney to \"take appropriate action to ensure Defendant's presence,\" and instructed everyone to be prepared for a revocation hearing on August 20th, if necessary. ",
+      "In advance of defendant's scheduled release from prison to a halfway house, Pennsylvania officials notified the probation officer and arrangements were made to return defendant to Greene County. On May 24, 2007, the warrant was executed and a hearing was held in County Court, after which defendant was committed to the sheriff's custody without bail (see CPL 410.60 [reasonable cause hearing]). At this hearing, defense counsel informed the judge that his client was \"requesting that the time he served in prison in Pennsylvania [be] concurrent to the offense here in New York.\" Both the probation officer and the district attorney made clear that this proposal was unacceptable, and that the People would seek defendant's incarceration for 15 years. On May 24, 2007, the probation officer also amended the VOP complaint by adding a second count relating to the Pennsylvania crimes, and on May 29, 2007, defendant was arraigned again. ",
+      "The Supreme Court endorsed this approach, concluding that due process did not mandate a hearing promptly upon issuance of the parole-violation warrant and the detainer. The Court reasoned that the outstanding warrant did not deprive the parolee of any protected liberty interest: the possibility of future incarceration if a revocation was eventually ordered was too uncertain to constitute a liberty interest; the parolee's claim that the detainer made him ineligible for certain prison programs and caused a less desirable classification was insufficient to invoke due process; the unexecuted warrant did not deprive the parolee of the chance of concurrent sentences because the United States Parole Commission was authorized by statute to revoke parole and grant, retroactively, credit for time already served in prison for crimes committed while on parole; and the parolee made no claim that any evidence in his case would be \"vitiated by delay\" (Moody, 429 US at 88 n 9). "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 4,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 2 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

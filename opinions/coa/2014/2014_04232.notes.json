@@ -1,0 +1,106 @@
+{
+  "caseId": "2014_04232",
+  "sourcePath": "coa/2014/2014_04232.htm",
+  "notesPath": "coa/2014/2014_04232.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.748Z",
+  "source": {
+    "title": "People v McCray (2014 NY Slip Op 04232)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 20262,
+    "lineCount": 104,
+    "tagCounts": {
+      "a": 6,
+      "b": 4,
+      "blockquote": 6,
+      "body": 2,
+      "br": 6,
+      "div": 10,
+      "font": 30,
+      "head": 2,
+      "html": 2,
+      "i": 52,
+      "p": 58,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 6
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v McCray",
+      "2014 NY Slip Op 04232 [23 NY3d 621]",
+      "June 12, 2014",
+      "Smith, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, September 24, 2014"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Lionel McCray, Appellant."
+    ],
+    "citationLine": "2014 NY Slip Op 04232 23 NY3d 621",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued May 8, 2014; decided June 12, 2014",
+      "June 12, 2014",
+      "As corrected through Wednesday, September 24, 2014"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 31,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2014 NY Slip Op 04232",
+    "officialCitation": "23 NY3d 621",
+    "pageMarkerCount": 14
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [
+      "Smith"
+    ],
+    "qualifierLines": [
+      "{**23 NY3d at 624} OPINION OF THE COURT"
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

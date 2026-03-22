@@ -1,0 +1,109 @@
+{
+  "caseId": "2015_04790",
+  "sourcePath": "coa/2015/2015_04790.htm",
+  "notesPath": "coa/2015/2015_04790.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.807Z",
+  "source": {
+    "title": "People v Inoa (2015 NY Slip Op 04790)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 28545,
+    "lineCount": 105,
+    "tagCounts": {
+      "a": 16,
+      "b": 18,
+      "blockquote": 2,
+      "body": 2,
+      "br": 14,
+      "div": 6,
+      "font": 42,
+      "head": 2,
+      "html": 2,
+      "i": 68,
+      "p": 50,
+      "script": 4,
+      "style": 2,
+      "sup": 6,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Inoa",
+      "2015 NY Slip Op 04790 [25 NY3d 466]",
+      "June 10, 2015",
+      "Lippman, Ch. J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, July 27, 2015"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Jose Inoa, Appellant."
+    ],
+    "citationLine": "2015 NY Slip Op 04790 25 NY3d 466",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued May 6, 2015; decided June 10, 2015",
+      "June 10, 2015",
+      "As corrected through Wednesday, July 27, 2015"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 23,
+    "footnotesCount": 3
+  },
+  "citations": {
+    "slipOpinion": "2015 NY Slip Op 04790",
+    "officialCitation": "25 NY3d 466",
+    "pageMarkerCount": 20
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**25 NY3d at 467} OPINION OF THE COURT",
+      "At trial, Rivera was qualified by the court as an expert in decoding phone conversations. Some of his testimony bore upon the meanings of what were evidently consistently employed code words (e.g., \"onion\" for marijuana package, \"toy\" and \"malacachin\" for gun, and \"sneakers\" for thousands of dollars), but the bulk of it, covering a considerable portion of the trial transcript, consisted of interpreting portions of the phone conversation transcripts which, although sometimes veiled in their reference and import, were not encoded. Rivera's transcript explications did not, in the main, draw upon any body of non-case specific expertise, but rather the information that he had acquired from various sources, most notably Ms. Duran, as a member of the team investigating and prosecuting the Contreras murder. His interpretations essentially harmonized the recorded conversations with the prosecution's overall theory of how the murder plot was carried out, and almost without exception concurred with Ms. Duran's account of what had been communicated between the coconspirators."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 3,
+    "labels": [
+      "1",
+      "2",
+      "3"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

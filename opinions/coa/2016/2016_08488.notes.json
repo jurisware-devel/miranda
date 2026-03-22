@@ -1,0 +1,120 @@
+{
+  "caseId": "2016_08488",
+  "sourcePath": "coa/2016/2016_08488.htm",
+  "notesPath": "coa/2016/2016_08488.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.925Z",
+  "source": {
+    "title": "People v Bryant (2016 NY Slip Op 08488)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 6800,
+    "lineCount": 84,
+    "tagCounts": {
+      "a": 8,
+      "b": 4,
+      "blockquote": 14,
+      "body": 2,
+      "br": 6,
+      "div": 6,
+      "font": 12,
+      "head": 2,
+      "html": 2,
+      "i": 18,
+      "opinion": 1,
+      "p": 22,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Bryant",
+      "2016 NY Slip Op 08488 [28 NY3d 1094]",
+      "December 20, 2016",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, February 1, 2017"
+    ],
+    "captionLines": [],
+    "citationLine": "2016 NY Slip Op 08488 28 NY3d 1094",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Decided December 20, 2016",
+      "December 20, 2016",
+      "As corrected through Wednesday, February 1, 2017"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Cyrus R. Vance, Jr., District Attorney , New York City ( Joshua L. Haber and Hilary Hassler of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Cyrus R. Vance, Jr., District Attorney , New York City ( Joshua L. Haber and Hilary Hassler of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Robert S. Dean, Center for Appellate Litigation , New York City ( David J. Klem of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Robert S. Dean, Center for Appellate Litigation , New York City ( David J. Klem of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 8,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2016 NY Slip Op 08488",
+    "officialCitation": "28 NY3d 1094",
+    "pageMarkerCount": 5
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**28 NY3d at 1095} OPINION OF THE COURT",
+      "Memorandum.",
+      "The Appellate Division, with one Justice dissenting, found that \"defendant's waiver of his right to appeal was invalid\" (, 137 AD3d 401, 401 [2016]). We disagree."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

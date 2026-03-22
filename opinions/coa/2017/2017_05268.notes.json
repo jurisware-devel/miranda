@@ -1,0 +1,118 @@
+{
+  "caseId": "2017_05268",
+  "sourcePath": "coa/2017/2017_05268.htm",
+  "notesPath": "coa/2017/2017_05268.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.961Z",
+  "source": {
+    "title": "People v Ramsaran (2017 NY Slip Op 05268)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 5016,
+    "lineCount": 74,
+    "tagCounts": {
+      "a": 6,
+      "b": 4,
+      "body": 2,
+      "br": 6,
+      "div": 6,
+      "font": 10,
+      "head": 2,
+      "html": 2,
+      "i": 14,
+      "opinion": 1,
+      "p": 16,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Ramsaran",
+      "2017 NY Slip Op 05268 [29 NY3d 1070]",
+      "June 29, 2017",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, August 23, 2017"
+    ],
+    "captionLines": [],
+    "citationLine": "2017 NY Slip Op 05268 29 NY3d 1070",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Decided June 29, 2017",
+      "June 29, 2017",
+      "As corrected through Wednesday, August 23, 2017"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Joseph A. McBride , District Attorney , Norwich ( Michael J. Genute of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Joseph A. McBride , District Attorney , Norwich ( Michael J. Genute of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Cheryl F. Coleman , Albany, for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Cheryl F. Coleman , Albany, for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 4,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2017 NY Slip Op 05268",
+    "officialCitation": "29 NY3d 1070",
+    "pageMarkerCount": 4
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**29 NY3d at 1070} OPINION OF THE COURT",
+      "Memorandum."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

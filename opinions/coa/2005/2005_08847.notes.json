@@ -1,0 +1,130 @@
+{
+  "caseId": "2005_08847",
+  "sourcePath": "coa/2005/2005_08847.htm",
+  "notesPath": "coa/2005/2005_08847.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.296Z",
+  "source": {
+    "title": "People v Lewis (2005 NY Slip Op 08847)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 22938,
+    "lineCount": 153,
+    "tagCounts": {
+      "a": 30,
+      "b": 34,
+      "body": 2,
+      "br": 24,
+      "centerhd": 1,
+      "div": 16,
+      "font": 34,
+      "head": 2,
+      "html": 2,
+      "i": 28,
+      "p": 38,
+      "script": 4,
+      "style": 2,
+      "sup": 14,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [
+      "centerhd"
+    ],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Lewis",
+      "2005 NY Slip Op 08847 [5 NY3d 546]",
+      "November 21, 2005",
+      "Rosenblatt, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, January 25, 2006"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Craig Lewis, Appellant."
+    ],
+    "citationLine": "2005 NY Slip Op 08847 5 NY3d 546",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued October 18, 2005; decided November 21, 2005",
+      "November 21, 2005",
+      "As corrected through Wednesday, January 25, 2006"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 40,
+    "footnotesCount": 7
+  },
+  "citations": {
+    "slipOpinion": "2005 NY Slip Op 08847",
+    "officialCitation": "5 NY3d 546",
+    "pageMarkerCount": 16
+  },
+  "opinionStructure": {
+    "totalWritings": 4,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "dissent": 1
+    },
+    "authors": [
+      "Rosenblatt",
+      "R.S. Smith"
+    ],
+    "qualifierLines": [
+      "{**5 NY3d at 548} OPINION OF THE COURT",
+      "Defendant asked for a correct instruction to the effect that the People must show more than unlawful entry. The trial court refused the instruction, and later, in response to a question, told the jury the exact opposite. I do not believe defendant forfeited appellate review of this error, and I therefore dissent. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 7,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <centerhd> in source HTML."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 4 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

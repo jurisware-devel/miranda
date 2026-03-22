@@ -1,0 +1,118 @@
+{
+  "caseId": "2016_06856",
+  "sourcePath": "coa/2016/2016_06856.htm",
+  "notesPath": "coa/2016/2016_06856.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.900Z",
+  "source": {
+    "title": "People v Speaks (2016 NY Slip Op 06856)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 6784,
+    "lineCount": 76,
+    "tagCounts": {
+      "a": 6,
+      "b": 4,
+      "body": 2,
+      "br": 6,
+      "div": 6,
+      "font": 12,
+      "head": 2,
+      "html": 2,
+      "i": 22,
+      "opinion": 1,
+      "p": 20,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Speaks",
+      "2016 NY Slip Op 06856 [28 NY3d 990]",
+      "October 20, 2016",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, December 7, 2016"
+    ],
+    "captionLines": [],
+    "citationLine": "2016 NY Slip Op 06856 28 NY3d 990",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued September 8, 2016; decided October 20, 2016",
+      "October 20, 2016",
+      "As corrected through Wednesday, December 7, 2016"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Lynn W.L. Fahey, Appellate Advocates , New York City ( Nao Terai of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Lynn W.L. Fahey, Appellate Advocates , New York City ( Nao Terai of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Eric Gonzalez, Acting District Attorney , Brooklyn ( Lori Glachman, Leonard Joblove and Victor Barall of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Eric Gonzalez, Acting District Attorney , Brooklyn ( Lori Glachman, Leonard Joblove and Victor Barall of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 6,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2016 NY Slip Op 06856",
+    "officialCitation": "28 NY3d 990",
+    "pageMarkerCount": 5
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**28 NY3d at 991} OPINION OF THE COURT",
+      "Memorandum."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

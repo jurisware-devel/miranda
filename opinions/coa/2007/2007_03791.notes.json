@@ -1,0 +1,115 @@
+{
+  "caseId": "2007_03791",
+  "sourcePath": "coa/2007/2007_03791.htm",
+  "notesPath": "coa/2007/2007_03791.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.358Z",
+  "source": {
+    "title": "People v Bryant (2007 NY Slip Op 03791)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 11514,
+    "lineCount": 100,
+    "tagCounts": {
+      "a": 12,
+      "b": 14,
+      "blockquote": 8,
+      "body": 2,
+      "br": 10,
+      "div": 4,
+      "font": 18,
+      "head": 2,
+      "html": 2,
+      "i": 46,
+      "p": 21,
+      "script": 4,
+      "style": 2,
+      "sup": 4,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Bryant",
+      "2007 NY Slip Op 03791 [8 NY3d 530]",
+      "May 3, 2007",
+      "Jones, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, July 4, 2007"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Arthur Bryant, Appellant."
+    ],
+    "citationLine": "2007 NY Slip Op 03791 8 NY3d 530",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued March 20, 2007; decided May 3, 2007",
+      "May 3, 2007",
+      "As corrected through Wednesday, July 4, 2007"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 17,
+    "footnotesCount": 2
+  },
+  "citations": {
+    "slipOpinion": "2007 NY Slip Op 03791",
+    "officialCitation": "8 NY3d 530",
+    "pageMarkerCount": 8
+  },
+  "opinionStructure": {
+    "totalWritings": 2,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1
+    },
+    "authors": [
+      "Jones"
+    ],
+    "qualifierLines": [
+      "{**8 NY3d at 531} OPINION OF THE COURT"
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 2,
+    "labels": [
+      "1",
+      "2"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 2 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

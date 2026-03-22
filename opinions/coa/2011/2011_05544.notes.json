@@ -1,0 +1,118 @@
+{
+  "caseId": "2011_05544",
+  "sourcePath": "coa/2011/2011_05544.htm",
+  "notesPath": "coa/2011/2011_05544.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.556Z",
+  "source": {
+    "title": "People v Paulin (2011 NY Slip Op 05544)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 14310,
+    "lineCount": 100,
+    "tagCounts": {
+      "a": 20,
+      "b": 14,
+      "blockquote": 2,
+      "body": 2,
+      "br": 8,
+      "div": 8,
+      "font": 22,
+      "head": 2,
+      "html": 2,
+      "i": 68,
+      "p": 26,
+      "script": 4,
+      "style": 2,
+      "sup": 2,
+      "table": 8,
+      "td": 20,
+      "title": 2,
+      "tr": 20,
+      "u": 4
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Paulin",
+      "2011 NY Slip Op 05544 [17 NY3d 238]",
+      "June 28, 2011",
+      "Smith, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, August 31, 2011"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "David Lance Paulin, Appellant.",
+      "The People of the State of New York, Respondent, v Jesus Pratts, Appellant.",
+      "The People of the State of New York, Appellant, v James F. Phillips, Respondent."
+    ],
+    "citationLine": "2011 NY Slip Op 05544 17 NY3d 238",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued June 2, 2011; decided June 28, 2011",
+      "June 28, 2011",
+      "As corrected through Wednesday, August 31, 2011"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 22,
+    "footnotesCount": 1
+  },
+  "citations": {
+    "slipOpinion": "2011 NY Slip Op 05544",
+    "officialCitation": "17 NY3d 238",
+    "pageMarkerCount": 10
+  },
+  "opinionStructure": {
+    "totalWritings": 2,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1
+    },
+    "authors": [
+      "Smith"
+    ],
+    "qualifierLines": [
+      "{**17 NY3d at 241} OPINION OF THE COURT",
+      "Chief Judge Lippman and Judges Ciparick, Graffeo, Read, Pigott and Jones concur. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 1,
+    "labels": [
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 2 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 4 table elements before or within the header region."
+    }
+  ]
+}

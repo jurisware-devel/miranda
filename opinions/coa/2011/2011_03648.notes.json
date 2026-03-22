@@ -1,0 +1,125 @@
+{
+  "caseId": "2011_03648",
+  "sourcePath": "coa/2011/2011_03648.htm",
+  "notesPath": "coa/2011/2011_03648.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.538Z",
+  "source": {
+    "title": "People v Rivera (2011 NY Slip Op 03648)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 38821,
+    "lineCount": 130,
+    "tagCounts": {
+      "a": 25,
+      "b": 14,
+      "blockquote": 6,
+      "body": 2,
+      "br": 14,
+      "div": 8,
+      "font": 56,
+      "head": 2,
+      "html": 2,
+      "i": 82,
+      "p": 44,
+      "script": 4,
+      "style": 2,
+      "sup": 4,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": [
+      "a"
+    ]
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Rivera",
+      "2011 NY Slip Op 03648 [16 NY3d 654]",
+      "May 3, 2011",
+      "Smith, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, June 29, 2011"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Appellant,",
+      "v",
+      "Peter Rivera, Respondent."
+    ],
+    "citationLine": "2011 NY Slip Op 03648 16 NY3d 654",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued March 22, 2011; decided May 3, 2011",
+      "May 3, 2011",
+      "As corrected through Wednesday, June 29, 2011"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 45,
+    "footnotesCount": 2
+  },
+  "citations": {
+    "slipOpinion": "2011 NY Slip Op 03648",
+    "officialCitation": "16 NY3d 654",
+    "pageMarkerCount": 27
+  },
+  "opinionStructure": {
+    "totalWritings": 4,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "dissent": 1
+    },
+    "authors": [
+      "Smith",
+      "Graffeo"
+    ],
+    "qualifierLines": [
+      "{**16 NY3d at 655} OPINION OF THE COURT",
+      " When conduct falls under two or more penal provisions, this Court has consistently held that it is within the realm of a District Attorney's exercise of prosecutorial discretion to determine what offense to charge. Because the{**16 NY3d at 660} conduct at issue in this case—defendant's operation of a motor vehicle at a time when he was not privileged to do so and while under the influence of alcohol—could be prosecuted either as a violation of Vehicle and Traffic Law § 1196 (7) (f) or Vehicle and Traffic Law § 511 (3) (a) (i), the People's decision to charge the latter offense should not have been disturbed. Since, under the majority analysis, a driver like defendant who not only disregards the limitations in the conditional license but also drives drunk will receive the same penalty as a person who engages in a minor violation of the terms of a conditional license, I respectfully dissent. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 2,
+    "labels": [
+      "1",
+      "2"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "STRAY_CLOSING_TAG",
+      "severity": "warning",
+      "detail": "Closing tag </a> appears more times than opening tag <a>."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 4 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

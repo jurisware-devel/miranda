@@ -1,0 +1,124 @@
+{
+  "caseId": "2014_08215",
+  "sourcePath": "coa/2014/2014_08215.htm",
+  "notesPath": "coa/2014/2014_08215.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.772Z",
+  "source": {
+    "title": "People v Silva (2014 NY Slip Op 08215)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 20480,
+    "lineCount": 110,
+    "tagCounts": {
+      "a": 44,
+      "b": 16,
+      "body": 2,
+      "br": 16,
+      "div": 10,
+      "font": 30,
+      "head": 2,
+      "html": 2,
+      "i": 196,
+      "p": 53,
+      "script": 4,
+      "style": 2,
+      "sup": 4,
+      "table": 6,
+      "td": 18,
+      "title": 2,
+      "tr": 18,
+      "u": 8
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Silva",
+      "2014 NY Slip Op 08215 [24 NY3d 294]",
+      "November 24, 2014",
+      "Graffeo, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, January 21, 2015"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Julian Silva, Appellant.",
+      "The People of the State of New York, Respondent, v Pamela Hanson, Appellant."
+    ],
+    "citationLine": "2014 NY Slip Op 08215 24 NY3d 294",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued October 23, 2014; decided November 24, 2014",
+      "November 24, 2014",
+      "As corrected through Wednesday, January 21, 2015"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 28,
+    "footnotesCount": 2
+  },
+  "citations": {
+    "slipOpinion": "2014 NY Slip Op 08215",
+    "officialCitation": "24 NY3d 294",
+    "pageMarkerCount": 14
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Graffeo",
+      "Smith"
+    ],
+    "qualifierLines": [
+      "{**24 NY3d at 1} OPINION OF THE COURT",
+      "Although not every violation of CPL 310.30 is immune from normal preservation principles (, 20 NY3d 969, 971 [2012]; , 20 NY3d 615, 625 [2013]; , 21 NY3d 932, 934-935 [2013]; , 14 NY3d 426,{**24 NY3d at 4} 429-430 [2010]), a failure to apprise counsel about the specific contents of a substantive note from a deliberating jury violates the fundamental tenets of CPL 310.30 and qualifies as a mode of proceedings error (see e.g. People v Kisoon, 8 NY3d at 135). The record therefore must indicate compliance with adequate procedures under O'Rama because reviewing courts \"cannot assume\" that the proper procedure was utilized when the record is devoid of information as to how jury notes were handled (, 23 NY3d 986, 990 [2014]). The \"presumption of regularity\" (, 1 NY3d 44, 48 [2003]) cannot salvage an O'Rama error of this nature (, 13 NY3d 852, 852 [2009]) and this is not the first time—contrary to our dissenting colleague's belief—that a judge's apparent unawareness of a jury note or unresponsiveness has led to a new trial (, 14 NY3d 814, 816 [2010]). And, somewhat ironically, the dissent recognizes that the errors in these appeals were so fundamental that they are exempt from the preservation rule (see dissenting op at 302).",
+      "The majority seems to assume that a case in which a court responds to a jury note without proper input from defense counsel is indistinguishable from one in which the court neither seeks input from defense counsel nor responds at all, and that O'Rama must therefore be read as having superseded Lourido and Agosto. But O'Rama itself distinguished Agosto on the ground that in O'Rama \"the trial court did respond to the juror's inquiry\" (O'Rama, 78 NY2d at 280). Perhaps the distinction is a fine one, but it does not seem unreasonable to say that a response tainted by flawed procedure is worse than no response at all. Because I find O'Rama a troubling case, for reasons I have previously explained (see People v Walston, 23 NY3d 986, 990-992 [2014, Smith, J., concurring]), I would not extend it to a situation not clearly within its scope.",
+      "Thus I would apply Lourido and Agosto to these cases. The consequences of doing so are not obvious, because the delays here, about an hour in each case, were longer than in Agosto but shorter than in Lourido, and because the juries' inquiries in these cases, unlike the one in Agosto, were substantive. I would put Silva on the Agosto side of the line: I do not see, under all of the circumstances, a significant possibility that the failure to respond to the jury's note prejudiced defendant in that case. On the other hand, Hanson, like Lourido, involved a jury request for the read-back of critical testimony, and I cannot say there was no prejudice caused by the court's failure to respond. Thus I would affirm in Silva, but I concur in the decision to reverse in Hanson.",
+      "Lest my silence be taken for acquiescence, I will mention that I still think, as I did when I wrote my concurrence in Walston, that O'Rama's holding on the question of mode of proceedings error should be reconsidered in a proper case. But I do not think this case presents that issue. The problem I wrote about in Walston was the holding in O'Rama that a failure to follow O'Rama's teachings is an error exempt from the preservation requirement. Here, there is no indication in the record of either case that defendants ever saw or knew about the jury notes that went unanswered. Thus they cannot be faulted for failing to preserve any error, and whether we should revisit the O'Rama holding on preservation is a question for a future case.",
+      "Chief Judge Lippman and Judges Read, Pigott and Rivera concur; Judge Smith dissents in an opinion; Judge Abdus-Salaam taking no part.",
+      "Chief Judge Lippman and Judges Read, Pigott and Rivera concur; Judge Smith concurs in result in an opinion; Judge Abdus-Salaam taking no part."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 2,
+    "labels": [
+      "1",
+      "2"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 3 table elements before or within the header region."
+    }
+  ]
+}

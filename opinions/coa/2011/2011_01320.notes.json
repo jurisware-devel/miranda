@@ -1,0 +1,135 @@
+{
+  "caseId": "2011_01320",
+  "sourcePath": "coa/2011/2011_01320.htm",
+  "notesPath": "coa/2011/2011_01320.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.522Z",
+  "source": {
+    "title": "People v Prindle (2011 NY Slip Op 01320)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 19422,
+    "lineCount": 96,
+    "tagCounts": {
+      "a": 16,
+      "b": 10,
+      "blockquote": 8,
+      "body": 2,
+      "br": 12,
+      "div": 4,
+      "font": 28,
+      "head": 2,
+      "html": 2,
+      "i": 62,
+      "p": 31,
+      "script": 4,
+      "style": 2,
+      "sup": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Prindle",
+      "2011 NY Slip Op 01320 [16 NY3d 768]",
+      "February 22, 2011",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, April 13, 2011"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Michael Edward Prindle, Appellant."
+    ],
+    "citationLine": "2011 NY Slip Op 01320 16 NY3d 768",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued January 5, 2011; decided February 22, 2011",
+      "February 22, 2011",
+      "As corrected through Wednesday, April 13, 2011"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Timothy P. Donaher, Public Defender , Rochester ( Drew R. DuBrin of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Timothy P. Donaher, Public Defender , Rochester ( Drew R. DuBrin of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Michael C. Green, District Attorney , Rochester ( Leslie E. Swift of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Michael C. Green, District Attorney , Rochester ( Leslie E. Swift of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 25,
+    "footnotesCount": 1
+  },
+  "citations": {
+    "slipOpinion": "2011 NY Slip Op 01320",
+    "officialCitation": "16 NY3d 768",
+    "pageMarkerCount": 13
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Pigott"
+    ],
+    "qualifierLines": [
+      "{**16 NY3d at 769} OPINION OF THE COURT",
+      "Memorandum. ",
+      " A young woman returning from a baby shower is dead because this defendant, who was concerned about being arrested for the theft of a $400 snowplow blade, led police on a 2½-to-4-mile chase from the Town of Brighton into the City of Rochester, running at least five red lights, repeatedly driving at high speeds and in the lanes of oncoming traffic before plowing into the rear driver's side of the victim's vehicle. She did not die immediately, however, arriving at the hospital in a comatose state with a severe head injury, broken ribs and a broken pelvis, succumbing to her injuries five days later. Because I disagree with the majority's conclusions that such conduct did not amount to depraved indifference murder under the standard delineated in People v Register (60 NY2d 270 [1983], cert denied 466 US 953 [1984]), I dissent. "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 1,
+    "labels": [
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

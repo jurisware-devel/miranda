@@ -1,0 +1,119 @@
+{
+  "caseId": "2020_02530",
+  "sourcePath": "coa/2020/2020_02530.htm",
+  "notesPath": "coa/2020/2020_02530.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.098Z",
+  "source": {
+    "title": "People v Middleton (2020 NY Slip Op 02530)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 8145,
+    "lineCount": 77,
+    "tagCounts": {
+      "a": 10,
+      "b": 4,
+      "body": 2,
+      "br": 6,
+      "div": 6,
+      "font": 12,
+      "head": 2,
+      "html": 2,
+      "i": 34,
+      "opinion": 1,
+      "p": 23,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Middleton",
+      "2020 NY Slip Op 02530 [35 NY3d 952]",
+      "April 30, 2020",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, June 24, 2020"
+    ],
+    "captionLines": [],
+    "citationLine": "2020 NY Slip Op 02530 35 NY3d 952",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued March 17, 2020; decided April 30, 2020",
+      "April 30, 2020",
+      "As corrected through Wednesday, June 24, 2020"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Brafman & Associates, P.C. , New York City ( Mark M. Baker and Stuart Gold of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Brafman & Associates, P.C. , New York City ( Mark M. Baker and Stuart Gold of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "New York Prosecutors Training Institute, Inc. , Albany ( Lauren D. Konsul and Wendy Evans Lehmann of counsel), and J. Anthony Jordan, District Attorney , Fort Edward, for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "New York Prosecutors Training Institute, Inc. , Albany ( Lauren D. Konsul and Wendy Evans Lehmann of counsel), and J. Anthony Jordan, District Attorney , Fort Edward, for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 9,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2020 NY Slip Op 02530",
+    "officialCitation": "35 NY3d 952",
+    "pageMarkerCount": 5
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**35 NY3d at 953} OPINION OF THE COURT",
+      "Memorandum.",
+      "Concur: Chief Judge DiFiore and Judges Rivera, Stein, Fahey, Garcia, Wilson and Feinman."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

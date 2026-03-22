@@ -1,0 +1,137 @@
+{
+  "caseId": "2004_02514",
+  "sourcePath": "coa/2004/2004_02514.htm",
+  "notesPath": "coa/2004/2004_02514.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.231Z",
+  "source": {
+    "title": "People v Lewis (2004 NY Slip Op 02514)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 24588,
+    "lineCount": 126,
+    "tagCounts": {
+      "a": 18,
+      "b": 22,
+      "blockquote": 2,
+      "body": 2,
+      "br": 16,
+      "disop": 1,
+      "div": 8,
+      "font": 34,
+      "head": 2,
+      "html": 2,
+      "i": 86,
+      "p": 33,
+      "script": 4,
+      "style": 2,
+      "sup": 8,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [
+      "disop"
+    ],
+    "strayClosingTags": [
+      "disop"
+    ]
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Lewis",
+      "2004 NY Slip Op 02514 [2 NY3d 224]",
+      "April 6, 2004",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, June 16, 2004"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Anthony A. Lewis, Appellant."
+    ],
+    "citationLine": "2004 NY Slip Op 02514 2 NY3d 224",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued February 18, 2004; decided April 6, 2004",
+      "April 6, 2004",
+      "As corrected through Wednesday, June 16, 2004"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 31,
+    "footnotesCount": 4
+  },
+  "citations": {
+    "slipOpinion": "2004 NY Slip Op 02514",
+    "officialCitation": "2 NY3d 224",
+    "pageMarkerCount": 16
+  },
+  "opinionStructure": {
+    "totalWritings": 4,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "dissent": 1
+    },
+    "authors": [
+      "Rosenblatt",
+      "R.S. Smith"
+    ],
+    "qualifierLines": [
+      "{**2 NY3d at 226} OPINION OF THE COURT",
+      "After a jury found defendant guilty, a divided Appellate Division affirmed defendant's conviction (305 AD2d 993 [2003]). A dissenting Justice of that Court granted leave to appeal. Defendant challenges his conviction on several grounds. He asserts that {**2 NY3d at 228}the search warrant was not based on probable cause and that it was executed improperly. He also contends that the proof at the Sirois hearing was insufficient as a matter of law for the trial court to have concluded that defendant was responsible for the threat. While we reject these contentions, we agree with defendant, and with the Appellate Division dissenters, that because he was denied effective assistance of counsel, his conviction must be reversed, requiring a new trial. ",
+      "As we stated in Berroa, \"when a lawyer is called to testify against the client's interest the conflict is obvious\" (99 NY2d at 140). Here, had the court or the defense attorney pointed out the potential conflict, the prosecutor would have disclosed that he wanted testimony from defendant's attorney to close the circumstantial loop and prove that only defendant knew of the statement and the identity of the witness. Because counsel's testimony, however, went unprotested, the prosecutor was able to make his point and, with the help of defense counsel, prevail at the Sirois hearing. Our dissenting colleagues agree that the prosecution should not have been permitted to call defendant's attorney as a witness at the Sirois hearing but would, at most, order a new Sirois hearing. In our view, a new trial is also required because defense counsel crossed the line when, without protest, he gave testimony against his client. True, the testimony was an addendum to the informal remarks he made earlier, but by testifying, he became a witness for the prosecution. We agree with the dissenters that the testimony was neither earth-shattering nor insignificant (dissenting op at 231). That being so, it is inapt for us to weigh the importance of the testimony and draw fine distinctions as to where on the spectrum of harm it falls. If, as we all agree, the attorney's testimony had at least some significance, it was enough to rupture the attorney-client relationship not only for the Sirois hearing but for the balance of the trial itself. Accordingly, the order of the Appellate Division should be reversed and a new trial ordered.   ",
+      " I agree that the prosecutor should not have been permitted to call defense counsel as a witness at the Sirois hearing. I do not agree, however, that the error deprived defendant of the effective assistance of counsel at the Sirois hearing. And even if it did, I see no basis for requiring a new trial, as opposed to a new Sirois hearing. I therefore dissent. ",
+      "In sum, I conclude that appellant was not deprived of effective assistance of counsel. Since I believe that the evidence of his involvement in the threat to the witness was sufficient under the applicable legal standard and that his other claims of error are insubstantial, I dissent from the reversal of his conviction. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 4,
+    "labels": [
+      "1",
+      "2",
+      "1",
+      "2"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <disop> in source HTML."
+    },
+    {
+      "code": "STRAY_CLOSING_TAG",
+      "severity": "warning",
+      "detail": "Closing tag </disop> appears more times than opening tag <disop>."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 4 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

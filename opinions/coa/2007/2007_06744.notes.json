@@ -1,0 +1,121 @@
+{
+  "caseId": "2007_06744",
+  "sourcePath": "coa/2007/2007_06744.htm",
+  "notesPath": "coa/2007/2007_06744.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.368Z",
+  "source": {
+    "title": "People v Collier (2007 NY Slip Op 06744)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 3504,
+    "lineCount": 63,
+    "tagCounts": {
+      "a": 6,
+      "b": 4,
+      "body": 2,
+      "br": 4,
+      "div": 2,
+      "font": 6,
+      "head": 2,
+      "html": 2,
+      "i": 10,
+      "p": 9,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Collier",
+      "2007 NY Slip Op 06744 [9 NY3d 908]",
+      "September 18, 2007",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, November 14, 2007"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Andre Collier, Appellant."
+    ],
+    "citationLine": "2007 NY Slip Op 06744 9 NY3d 908",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Decided September 18, 2007",
+      "September 18, 2007",
+      "As corrected through Wednesday, November 14, 2007"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Eugene P. Grimmick , Troy, for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Eugene P. Grimmick , Troy, for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Patricia A. DeAngelis, District Attorney , Troy ( Anne L. Von Fricken Coonrad of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Patricia A. DeAngelis, District Attorney , Troy ( Anne L. Von Fricken Coonrad of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 3,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2007 NY Slip Op 06744",
+    "officialCitation": "9 NY3d 908",
+    "pageMarkerCount": 1
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      " OPINION OF THE COURT",
+      "Concur: Chief Judge Kaye and Judges Ciparick, Graffeo, Read, Smith, Pigott and Jones.  "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

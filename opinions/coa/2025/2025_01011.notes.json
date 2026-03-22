@@ -1,0 +1,165 @@
+{
+  "caseId": "2025_01011",
+  "sourcePath": "coa/2025/2025_01011.htm",
+  "notesPath": "coa/2025/2025_01011.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.311Z",
+  "source": {
+    "title": "People v Fredericks (2025 NY Slip Op 01011)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 44926,
+    "lineCount": 170,
+    "tagCounts": {
+      "a": 64,
+      "b": 41,
+      "blockquote": 4,
+      "body": 2,
+      "br": 33,
+      "counselblock": 1,
+      "div": 26,
+      "font": 44,
+      "head": 2,
+      "html": 2,
+      "i": 246,
+      "p": 92,
+      "script": 4,
+      "style": 2,
+      "sup": 6,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 10
+    },
+    "unknownTags": [],
+    "strayClosingTags": [
+      "b"
+    ]
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Fredericks",
+      "2025 NY Slip Op 01011 [43 NY3d 551]",
+      "February 20, 2025",
+      "Troutman, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, September 3, 2025"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Divine Fredericks, Appellant."
+    ],
+    "citationLine": "2025 NY Slip Op 01011 43 NY3d 551",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued January 8, 2025; decided February 20, 2025",
+      "Appeal, by permission of an Associate Judge of the Court of Appeals, from an order of the Appellate Division of the Supreme Court in the First Judicial Department, entered June 22, 2023. The Appellate Division affirmed (1) a judgment of the Supreme Court, Bronx County (Efrain Alvarado, J., at request for new counsel; Margaret L. Clancy, J., at jury trial and sentencing), which had convicted defendant, upon a jury verdict, of murder in the second degree, attempted murder in the second degree and criminal possession of a weapon in the second degree; and (2) an order of that Supreme Court (Margaret L. Clancy, J.), which had denied defendant's CPL 440.10 motion to vacate the judgment.",
+      "February 20, 2025",
+      "As corrected through Wednesday, September 3, 2025"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "points_of_counsel_only",
+    "pointsOfCounselCount": 1,
+    "appearanceLikeLines": [
+      {
+        "text": "Jenay Nurse Guilford, Center for Appellate Litigation , New York City ( V. Marika Meis of counsel), for appellant. I. Divine Fredericks' \"seemingly serious request\" for new counsel warranted a minimal inquiry, particularly where counsel opposed the application and made unsolicited comments opposing it. ( People v Porto , 16 NY3d 93 ; Gideon v Wainwright , 372 US 335; People v Medina , 44 NY2d 199; Wheat v United States , 486 US 153; People v Sawyer , 57 NY2d 12.) II. Counsel's conduct impermissibly took a position adverse to Divine Fredericks' demanding a new trial. ( People v Mitchell , 21 NY3d 964 ; People v Washington , 25 NY3d 1091 ; People v Ortiz , 76 NY2d 652; People v Carncross , 14 NY3d 319 .) III. The trial court abused discretion in summarily denying Divine Fredericks' pro se Criminal Procedure Law § 440.10 motion. ( Montes v Manufacturers Hanover Trust Co. , 197 AD2d 357; Lancaster v Kindor , 65 NY2d 804; Rosen v Raum , 164 AD2d 809; People v Roberts , 143 AD3d 843 ; Walker v Schult , 717 F3d 119.)",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": true,
+        "argumentTailPreview": "I. Divine Fredericks' \"seemingly serious request\" for new counsel warranted a minimal inquiry, particularly where counsel opposed the application and made unsol",
+        "sentenceText": "Jenay Nurse Guilford, Center for Appellate Litigation , New York City ( V. Marika Meis of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Darcel D. Clark, District Attorney , Bronx ( Nicole Neckles, Yael V. Levy and Rafael Curbelo of counsel), for respondent. I. The trial court prudently denied defendant's application for substitute counsel on a sufficiently developed record when after reviewing the generic, conclusory allegations in the application, speaking with counsel, and considering the history of the case, it found no genuine conflict of interest requiring appointment of substitute counsel. ( Morris v Slappy , 461 US 1; People v Sawyer , 57 NY2d 12; People v Sides , 75 NY2d 822; People v Watson , 26 NY3d 620 ; McKee v Harris , 649 F2d 927.) II. No conflict of interest was created by counsel's explanation, in response to defendant's request for substitute counsel, of the extent to which he had discussed the case with defendant and of his impression that defendant was unhappy with his assessment of the case. ( People v Ortiz , 76 NY2d 652; People v Rozzell , 20 NY2d 712; People v Mitchell , 2 NY3d 272 ; People v Sykes , 204 AD3d 1244 , lv denied 38 NY3d 1136; People v Safford , 74 AD3d 1835 .) III. The record amply supports the trial court's discretionary denial without a hearing of defendant's post-conviction motion raising unsubstantiated and implausible ineffective assistance of counsel allegations. ( People v Session , 34 NY2d 254; People v Tiger , 32 NY3d 91 ; People v Bachert , 69 NY2d 593; People v Satterfield , 66 NY2d 796; People v Jones , 24 NY3d 623 .)",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": true,
+        "argumentTailPreview": "I. The trial court prudently denied defendant's application for substitute counsel on a sufficiently developed record when after reviewing the generic, concluso",
+        "sentenceText": "Darcel D. Clark, District Attorney , Bronx ( Nicole Neckles, Yael V. Levy and Rafael Curbelo of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 2,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 45,
+    "footnotesCount": 3
+  },
+  "citations": {
+    "slipOpinion": "2025 NY Slip Op 01011",
+    "officialCitation": "43 NY3d 551",
+    "pageMarkerCount": 21
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Troutman",
+      "Rivera"
+    ],
+    "qualifierLines": [
+      "{**43 NY3d at 554} OPINION OF THE COURT",
+      "Defendant's remaining complaints similarly were not sufficiently specific and serious. The seriousness of defendant's allegation that counsel failed to visit him was undermined by other statements in the letter, which clearly indicated that counsel and his private investigator were communicating with defendant. Moreover, defendant failed to explain how defense counsel allegedly disrespected him and his wife. Nor did he provide any context regarding defense counsel allegedly hanging up on him. For instance, it is entirely unclear whether defense counsel intentionally or inadvertently hung up on defendant or whether defense counsel simply hung up because the conversation had ended. In this respect, defendant's complaints are akin to the preprinted allegations circled by the defendant in Porto: they lacked sufficient elaboration to signal to the trial court that the complaints were serious enough to warrant minimal inquiry (see id.). We thus disagree with the dissent's and defendant's attempt to equate the facts of this case to the \"serious possibility of irreconcilable conflict\" present in Sides (75 NY2d at 825). In our view, the trial court was entitled to review defendant's letter in its entirety and glean{**43 NY3d at 559} from its substance and tone that defendant's complaints merely reflected his dissatisfaction with counsel's advice rather than \"a complete breakdown of communication and . . . trust\" warranting a minimal inquiry (id.).",
+      "In any event, the court conducted a minimal inquiry when, in response to defendant's letter, it inquired further into the purported issues between defendant and counsel. Contrary to the dissent's assessment that the trial court failed to \" 'discern' whether defendant's complaints were 'meritorious' \" (dissenting op at 565, quoting Porto, 16 NY3d at 100), the court considered defendant's letter and counsel's in-court explanation together, which provided it sufficient information to understand \"the nature of the disagreement\" (Sides, 75 NY2d at 825) and conclude that there was not a genuine conflict or that any conflict was reconcilable. To the extent the dissent contends that the court's inquiry failed to meet the minimal inquiry standard, we emphasize that a minimal inquiry need only be that: minimal. The record demonstrates that the trial court met this minimal requirement.",
+      "I dissent."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 3,
+    "labels": [
+      "1",
+      "2",
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "STRAY_CLOSING_TAG",
+      "severity": "warning",
+      "detail": "Closing tag </b> appears more times than opening tag <b>."
+    },
+    {
+      "code": "APPEARANCE_LINE_WITH_ARGUMENT_TAIL",
+      "severity": "info",
+      "detail": "Appearance-like line continues into argument text after \"for appellant.\"."
+    },
+    {
+      "code": "APPEARANCE_LINE_WITH_ARGUMENT_TAIL",
+      "severity": "info",
+      "detail": "Appearance-like line continues into argument text after \"for respondent.\"."
+    },
+    {
+      "code": "POINTS_OF_COUNSEL_ONLY",
+      "severity": "info",
+      "detail": "Source uses POINTS OF COUNSEL without a separate APPEARANCES OF COUNSEL section."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

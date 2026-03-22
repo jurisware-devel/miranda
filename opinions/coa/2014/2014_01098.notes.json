@@ -1,0 +1,129 @@
+{
+  "caseId": "2014_01098",
+  "sourcePath": "coa/2014/2014_01098.htm",
+  "notesPath": "coa/2014/2014_01098.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.719Z",
+  "source": {
+    "title": "People v Martinez (2014 NY Slip Op 01098)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 47261,
+    "lineCount": 194,
+    "tagCounts": {
+      "a": 38,
+      "b": 40,
+      "blockquote": 14,
+      "body": 2,
+      "br": 26,
+      "div": 8,
+      "font": 62,
+      "head": 2,
+      "html": 2,
+      "i": 234,
+      "p": 66,
+      "script": 4,
+      "style": 2,
+      "sup": 16,
+      "table": 6,
+      "td": 18,
+      "title": 2,
+      "tr": 18,
+      "u": 4
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Martinez",
+      "2014 NY Slip Op 01098 [22 NY3d 551]",
+      "February 18, 2014",
+      "Read, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, April 9, 2014"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Christopher Martinez, Appellant.",
+      "The People of the State of New York, Respondent, v Selbin Martinez, Appellant."
+    ],
+    "citationLine": "2014 NY Slip Op 01098 22 NY3d 551",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued January 16, 2014; decided February 18, 2014",
+      "February 18, 2014",
+      "As corrected through Wednesday, April 9, 2014"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 67,
+    "footnotesCount": 8
+  },
+  "citations": {
+    "slipOpinion": "2014 NY Slip Op 01098",
+    "officialCitation": "22 NY3d 551",
+    "pageMarkerCount": 30
+  },
+  "opinionStructure": {
+    "totalWritings": 4,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "dissent": 1
+    },
+    "authors": [
+      "Read",
+      "Lippman"
+    ],
+    "qualifierLines": [
+      "{**22 NY3d at 554} OPINION OF THE COURT",
+      "The so-called \"Ranghelle Rule\" proved controversial within the Court (see People v Jones, 70 NY2d 547, 553 [1987] [Bellacosa, J., concurring on constraint of \"(t)he recently declared coup de grace that failure to turn over Rosario (9 NY2d 286) material 'constitutes per se error requiring that the conviction be reversed' \" (quoting Ranghelle, 69 NY2d at 63)]), and the law enforcement community. Finally, the legislature, as part of the Sexual Assault Reform Act (L 2000, ch 1), amended the Criminal Procedure Law to add a new section 240.75 to \"overturn[ ]\" the Ranghelle Rule, \"a top priority for law enforcement officials for more than 15 years\" (see Governor's Press Release, 2000 NY Legis Ann at 4). Section 240.75 prohibits reversal where a defendant has been deprived of Rosario material at a trial or other proceeding absent a reasonable possibility that the nondisclosure materially contributed to the result. ",
+      "Of course, it is difficult to imagine how defendants might have been prejudiced by the loss of the scratch 61, as the defense attorneys and the judge all no doubt knew. A scratch 61 is a handwritten complaint report that Officer Franco placed in a bin for typing, likely by a civilian employee of the police department. Defendants were provided the typewritten complaint report, which would have differed from the scratch 61 only if the typist made a mistake—i.e., the handwritten scratch 61 is not subject to editing before typing. Defendants therefore necessarily depend on a series of improbable events to create the {**22 NY3d at 568} prospect of prejudice. First, there must have been an error in transcription and that error must have resulted in omission from the complaint report of material that appeared in the scratch 61. Additionally, the omitted material must have contradicted something important that Irizarry said on the stand or in other statements made by or attributed to him. Based on such happenstance, Selbin suggests that perhaps \"the scratch 61 stated that at some point Irizarry claimed that neither of the assailants said anything to him,\" in which case the jury would have been less likely to believe that Selbin told him to \"Give it up,\" the only evidence of a threatened forcible taking. The dissent speculates that maybe the scratch 61 \"contained a description of the gunman that did not match Christopher['s appearance]\" in which case \"the People's case against him would have crumbled\" (dissenting op at 569). ",
+      "In People v Christopher Martinez: Judges Graffeo, Smith and Pigott concur with Judge Read; Chief Judge Lippman dissents and votes to reverse in an opinion in which Judges Rivera and Abdus-Salaam concur. ",
+      "In People v Selbin Martinez: Judges Graffeo, Smith and Pigott concur with Judge Read; Chief Judge Lippman concurs in result in a separate opinion in which Judges Rivera and Abdus-Salaam concur. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 8,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 4 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 3 table elements before or within the header region."
+    }
+  ]
+}

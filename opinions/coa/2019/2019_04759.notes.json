@@ -1,0 +1,119 @@
+{
+  "caseId": "2019_04759",
+  "sourcePath": "coa/2019/2019_04759.htm",
+  "notesPath": "coa/2019/2019_04759.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.060Z",
+  "source": {
+    "title": "People v Lopez-Mendoza (2019 NY Slip Op 04759)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 40705,
+    "lineCount": 128,
+    "tagCounts": {
+      "a": 38,
+      "b": 14,
+      "blockquote": 10,
+      "body": 2,
+      "br": 12,
+      "div": 12,
+      "font": 48,
+      "head": 2,
+      "html": 2,
+      "i": 74,
+      "p": 74,
+      "script": 4,
+      "style": 2,
+      "sup": 4,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 6
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Lopez-Mendoza",
+      "2019 NY Slip Op 04759 [33 NY3d 565]",
+      "June 13, 2019",
+      "Wilson, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, September 18, 2019"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Jaime Lopez-Mendoza, Appellant."
+    ],
+    "citationLine": "2019 NY Slip Op 04759 33 NY3d 565",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued May 2, 2019; decided June 13, 2019",
+      "June 13, 2019",
+      "As corrected through Wednesday, September 18, 2019"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 40,
+    "footnotesCount": 2
+  },
+  "citations": {
+    "slipOpinion": "2019 NY Slip Op 04759",
+    "officialCitation": "33 NY3d 565",
+    "pageMarkerCount": 23
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Wilson",
+      "Rivera"
+    ],
+    "qualifierLines": [
+      "{**33 NY3d at 567} OPINION OF THE COURT",
+      "In this case, which turned on the People and defendant's competing narratives of the sexual attack, counsel's actions were devastating to the defense. There is no reasonable strategy{**33 NY3d at 581} that renders this representation meaningful (, 5 NY3d 476, 480 [2005] [\"(O)ur decisions, and the United States Supreme Court's, have recognized that there may be cases in which a single failing in an otherwise competent performance is so 'egregious and prejudicial' as to deprive a defendant of (a) constitutional right\"], quoting , 5 NY3d 143, 152 [2005]; , 26 NY3d 321, 326-327 [2015] [counsel ineffective because defense strategy was not reasonable]). I dissent."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 2,
+    "labels": [
+      "1",
+      "2"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

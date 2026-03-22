@@ -1,0 +1,132 @@
+{
+  "caseId": "2014_04876",
+  "sourcePath": "coa/2014/2014_04876.htm",
+  "notesPath": "coa/2014/2014_04876.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.755Z",
+  "source": {
+    "title": "People v Garrett (2014 NY Slip Op 04876)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 56761,
+    "lineCount": 137,
+    "tagCounts": {
+      "a": 46,
+      "b": 22,
+      "blockquote": 4,
+      "body": 2,
+      "br": 14,
+      "disopjd": 1,
+      "div": 16,
+      "font": 72,
+      "head": 2,
+      "html": 2,
+      "i": 518,
+      "opinion": 2,
+      "p": 97,
+      "script": 4,
+      "style": 2,
+      "sup": 6,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 10
+    },
+    "unknownTags": [
+      "disopjd"
+    ],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Garrett",
+      "2014 NY Slip Op 04876 [23 NY3d 878]",
+      "June 30, 2014",
+      "Abdus-Salaam, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, October 8, 2014"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Appellant,",
+      "v",
+      "Mark Garrett, Respondent."
+    ],
+    "citationLine": "2014 NY Slip Op 04876 23 NY3d 878",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued June 3, 2014; decided June 30, 2014",
+      "June 30, 2014",
+      "As corrected through Wednesday, October 8, 2014"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 54,
+    "footnotesCount": 3
+  },
+  "citations": {
+    "slipOpinion": "2014 NY Slip Op 04876",
+    "officialCitation": "23 NY3d 878",
+    "pageMarkerCount": 35
+  },
+  "opinionStructure": {
+    "totalWritings": 5,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "concurrence": 2
+    },
+    "authors": [
+      "Abdus-Salaam",
+      "Lippman",
+      "Smith"
+    ],
+    "qualifierLines": [
+      "{**23 NY3d at 880} OPINION OF THE COURT",
+      "The jury returned a verdict convicting defendant of depraved indifference murder (see Penal Law § 125.25 [2]) and felony murder (id. at [3]), and in June 2000, he was sentenced to two concurrent indeterminate terms of 25 years to life in prison. The Appellate Division affirmed on direct appeal (, 8 AD3d 676 [2d Dept 2004], lv denied 3 NY3d 674 [2004]). The court held, among other things, that the suppression hearing evidence established that defendant's incriminating statements were made voluntarily after he was advised of his Miranda rights, and that the trial evidence was legally sufficient{**23 NY3d at 883} to establish defendant's guilt beyond a reasonable doubt (see id. at 676-677).",
+      " I concur on the ground that the impeachment evidence at issue is not material under Brady v Maryland (373 US 83 [1963]). In light of that conclusion, there is no need to reach the question of whether the evidence was suppressed. However, since the majority resolves both of these prongs in the People's favor, I write separately to express my belief that Detective O'Leary's knowledge of the allegations pending against him in the federal lawsuit should be imputed to the People. ",
+      "I do not know. But I am not complaining. As I explained in my dissent in Concepcion, the LaFontaine rule itself makes little sense to me, and if followed consistently (which it has not been) it will work enormous mischief. I thus welcome the majority's limitation of the rule—a limitation which perhaps amounts to an effective overruling of LaFontaine."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 2,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 3,
+    "labels": [
+      "1",
+      "2",
+      "3"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <disopjd> in source HTML."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 5 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

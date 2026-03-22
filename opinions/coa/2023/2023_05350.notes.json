@@ -1,0 +1,120 @@
+{
+  "caseId": "2023_05350",
+  "sourcePath": "coa/2023/2023_05350.htm",
+  "notesPath": "coa/2023/2023_05350.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.221Z",
+  "source": {
+    "title": "People v Douglas (2023 NY Slip Op 05350)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 26412,
+    "lineCount": 125,
+    "tagCounts": {
+      "a": 46,
+      "b": 22,
+      "body": 2,
+      "br": 16,
+      "div": 18,
+      "font": 32,
+      "head": 2,
+      "html": 2,
+      "i": 102,
+      "p": 58,
+      "script": 4,
+      "style": 2,
+      "sup": 8,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 12
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Douglas",
+      "2023 NY Slip Op 05350 [40 NY3d 385]",
+      "October 24, 2023",
+      "Singas, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, January 3, 2024"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Rakeem Douglas, Appellant."
+    ],
+    "citationLine": "2023 NY Slip Op 05350 40 NY3d 385",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued September 14, 2022; reargued September 14, 2023; decided October 24, 2023",
+      "October 24, 2023",
+      "As corrected through Wednesday, January 3, 2024"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 34,
+    "footnotesCount": 4
+  },
+  "citations": {
+    "slipOpinion": "2023 NY Slip Op 05350",
+    "officialCitation": "40 NY3d 385",
+    "pageMarkerCount": 15
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Singas",
+      "Rivera"
+    ],
+    "qualifierLines": [
+      "{**40 NY3d at 386} OPINION OF THE COURT",
+      "I dissent.{**40 NY3d at 390}"
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 4,
+    "labels": [
+      "*",
+      "1",
+      "2",
+      "3"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

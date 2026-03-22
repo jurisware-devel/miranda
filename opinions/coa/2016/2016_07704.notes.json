@@ -1,0 +1,110 @@
+{
+  "caseId": "2016_07704",
+  "sourcePath": "coa/2016/2016_07704.htm",
+  "notesPath": "coa/2016/2016_07704.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.912Z",
+  "source": {
+    "title": "People v Brewer (2016 NY Slip Op 07704)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 15883,
+    "lineCount": 98,
+    "tagCounts": {
+      "a": 20,
+      "b": 22,
+      "body": 2,
+      "br": 12,
+      "div": 18,
+      "font": 14,
+      "head": 2,
+      "html": 2,
+      "i": 46,
+      "p": 32,
+      "script": 4,
+      "style": 2,
+      "sup": 4,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 12
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Brewer",
+      "2016 NY Slip Op 07704 [28 NY3d 271]",
+      "November 17, 2016",
+      "Abdus-Salaam, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, January 25, 2017"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Timothy Brewer, Appellant."
+    ],
+    "citationLine": "2016 NY Slip Op 07704 28 NY3d 271",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued October 18, 2016; decided November 17, 2016",
+      "November 17, 2016",
+      "As corrected through Wednesday, January 25, 2017"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 20,
+    "footnotesCount": 2
+  },
+  "citations": {
+    "slipOpinion": "2016 NY Slip Op 07704",
+    "officialCitation": "28 NY3d 271",
+    "pageMarkerCount": 6
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [
+      "Abdus-Salaam"
+    ],
+    "qualifierLines": [
+      "{**28 NY3d at 274} OPINION OF THE COURT",
+      "Finally, the trial court did not abuse its discretion in concluding that the probative value of the evidence was not outweighed by potential prejudice. Plainly, almost all relevant, probative evidence the People seek to admit in a trial against a defendant will be, in a sense, prejudicial. The People generally wish to admit evidence supporting the theory that a defendant is guilty of the crime for which he is charged. Evidence which helps establish a defendant's guilt always can be considered evidence that \"prejudices\" him or her. But the probative value of a piece of evidence is not automatically outweighed by prejudice merely because the evidence is compelling. Here, \"[t]he point is that the damage resulted from something other than its tendency to prove propensity. That suggests that the evidence must have been relevant to something else, as indeed it was. . . . If this evidence was damaging, it was because it had the intended effect—it undermined the defendant's theory\" (People v Hudy, 73 NY2d 40, 72 [1988, Wachtler, Ch. J., dissenting], abrogated on other grounds by Carmell v Texas, 529 US 513 [2000]; see also People v Walker, 83 NY2d 455, 463 [1994] [the People's use of alias evidence while cross-examining defendant was within the sound discretion of the trial court, and \"there is no undue prejudice; there is only the expected—and, indeed, intended—negative impact that naturally flows from evidence admitted for the purpose of impeachment\"])."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 2,
+    "labels": [
+      "1",
+      "2"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

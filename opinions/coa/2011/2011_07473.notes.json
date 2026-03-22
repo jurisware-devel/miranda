@@ -1,0 +1,118 @@
+{
+  "caseId": "2011_07473",
+  "sourcePath": "coa/2011/2011_07473.htm",
+  "notesPath": "coa/2011/2011_07473.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.568Z",
+  "source": {
+    "title": "People v Credle (2011 NY Slip Op 07473)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 21637,
+    "lineCount": 102,
+    "tagCounts": {
+      "a": 12,
+      "b": 10,
+      "body": 2,
+      "br": 12,
+      "div": 4,
+      "font": 32,
+      "head": 2,
+      "html": 2,
+      "i": 98,
+      "p": 36,
+      "script": 4,
+      "style": 2,
+      "sup": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Credle",
+      "2011 NY Slip Op 07473 [17 NY3d 556]",
+      "October 25, 2011",
+      "Lippman, Ch. J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, December 7, 2011"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Dondi Credle, Appellant."
+    ],
+    "citationLine": "2011 NY Slip Op 07473 17 NY3d 556",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued September 6, 2011; decided October 25, 2011",
+      "October 25, 2011",
+      "As corrected through Wednesday, December 7, 2011"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 22,
+    "footnotesCount": 1
+  },
+  "citations": {
+    "slipOpinion": "2011 NY Slip Op 07473",
+    "officialCitation": "17 NY3d 556",
+    "pageMarkerCount": 15
+  },
+  "opinionStructure": {
+    "totalWritings": 4,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "dissent": 1
+    },
+    "authors": [
+      "Lippman",
+      "Pigott"
+    ],
+    "qualifierLines": [
+      "{**17 NY3d at 557} OPINION OF THE COURT",
+      "In Wilkins (68 NY2d at 274) we held that although \"the required concurrence of 12 grand jurors to a dismissal (CPL 190.25 [1]) was not [there] obtained because the question was not put to a vote,\" a dismissal could, and in that case should, have been inferred from the action, not of the grand jury, for it did not act, but of the prosecutor in withdrawing the case at a time when, although all of the People's witnesses had testified and the only prosecutorial function that remained was to instruct the jury on the law, the grand jury had asked for two additional witnesses (id. at 272). We explained that if a prosecutor could by withdrawing a case avoid the requirement of judicial authorization for resubmission, prosecutors would be free to re-present the same charges without limitation until they hit upon an apparently receptive panel. While such practice had been permitted at common law, it was the purpose of CPL 190.75 and its predecessor enactment (Code of Criminal Procedure § 270; see People ex rel. Flinn v Barr, 259 NY 104, 107-108 [1932]) to reign it in. The grand jury was, after all, an institution intended to check the accusatory power of the prosecutor's office, and the circumvention of a grand jury by means of unlimited and unsupervised re-presentation of matters that had not actually been dismissed by it, but merely withdrawn unilaterally by the prosecutor, was incompatible with and erosive of the grand jury's essential role. Determined that \"the 'beneficent purpose' of [the statute] . . . 'should not be nullified by a narrow technical construction which would[, while apparently following the letter of the law,] destroy its spirit' \" (Wilkins, 68 NY2d at 275, quoting Barr, 259 NY at 109), this Court in Wilkins reaffirmed that a prosecutor's withdrawal of a grand jury matter could under certain circumstances be tantamount to a dismissal. In so doing, we allowed that subsequent prosecutorial decisions respecting the re-presentation of withdrawn charges could, notwithstanding the absence of an actual dismissal by vote of the grand jury, be subject to the strictures of CPL 190.75 (3)—namely, that dismissed counts may not be re-presented without judicial leave and that they may be re-presented only once. ",
+      " I respectfully dissent because, in my view, the People's perfectly logical withdrawal of this case from a deadlocked grand jury is not the functional equivalent of a dismissal. Therefore, the People were not required to obtain court authorization before re-presentment of the case to another grand jury. ",
+      "In my view, our decision in Aarons is controlling. There we held that, \"in order to dismiss a charge, there must be a formal vote of the grand jury and 12 of its members must concur in that result\" (Aarons, 2 NY3d at 549; see CPL 190.25 [1] [stating that grand jury proceedings are not valid unless there is a quorum of 16 members and \"every . . . affirmative official action or decision\" has the concurrence of 12 members]). Our rationale in Aarons is applicable here, namely, that the language of CPL 190.60 (4) and 190.75 plainly indicates that \"the dismissal of a charge is for the grand jury to decide as part of its deliberations,\" and, therefore, \"a dismissal cannot occur absent the grand jury's actual conclusion that a dismissal is warranted\" (id. at 551 [emphasis supplied]). It therefore stands to reason that \"a concurrence of 12 jurors is necessary to effectuate a dismissal\" (id. at 552). "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 1,
+    "labels": [
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 4 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

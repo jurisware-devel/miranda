@@ -1,0 +1,115 @@
+{
+  "caseId": "2009_03589",
+  "sourcePath": "coa/2009/2009_03589.htm",
+  "notesPath": "coa/2009/2009_03589.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.430Z",
+  "source": {
+    "title": "People v Borrell (2009 NY Slip Op 03589)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 14681,
+    "lineCount": 84,
+    "tagCounts": {
+      "a": 20,
+      "b": 4,
+      "body": 2,
+      "br": 8,
+      "div": 2,
+      "font": 22,
+      "head": 2,
+      "html": 2,
+      "i": 56,
+      "p": 20,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Borrell",
+      "2009 NY Slip Op 03589 [12 NY3d 365]",
+      "May 5, 2009",
+      "Lippman, Ch. J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, June 17, 2009"
+    ],
+    "captionLines": [
+      "v"
+    ],
+    "citationLine": "2009 NY Slip Op 03589 12 NY3d 365",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued March 26, 2009; decided May 5, 2009",
+      "May 5, 2009",
+      "As corrected through Wednesday, June 17, 2009"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 18,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2009 NY Slip Op 03589",
+    "officialCitation": "12 NY3d 365",
+    "pageMarkerCount": 10
+  },
+  "opinionStructure": {
+    "totalWritings": 4,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "dissent": 1
+    },
+    "authors": [
+      "Lippman",
+      "Pigott"
+    ],
+    "qualifierLines": [
+      "{**12 NY3d at 367} OPINION OF THE COURT",
+      "Before us, by leave of a Judge of this Court, are appeals from an Appellate Division order granting defendant's petition for a writ of error coram nobis. The petition alleges that defendant, on consolidated appeals from two judgments convicting him of robbery and related crimes, was not afforded effective assistance of counsel. Although the Appellate Division made no express finding as to the manner in which defendant's appellate representation had been deficient, it would appear that it faulted{**12 NY3d at 368} counsel for failing to raise the issue of whether consecutive sentences had been properly imposed with respect to two counts of a 14-count Queens County indictment, both of which counts charged defendant with first degree robbery based on events which transpired in close succession during the armed robbery of a bar and its patrons on May 14, 1994. The Court's decision, however, said no more upon the issue than that the sentences on the two counts should have been concurrent since the underlying convictions arose from the same transaction (49 AD3d 890, 892-893 [2d Dept 2008]). But the dispositive question on this coram nobis application was not whether the consecutive sentences had been in error, but whether the failure of appellate counsel to raise the issue of the sentences' legality deprived defendant of the advocacy to which he was constitutionally entitled. ",
+      "While it may ultimately be determined that defendant should have been sentenced concurrently, as he now contends, and that the representation at issue would have been more efficacious had the issue been raised on the appeal, the relevant and, indeed, dispositive threshold issue on this coram nobis application is not whether defendant's representation could have been better but whether it was, on the whole, constitutionally adequate. This less exacting standard was met by counsel on the appeal. ",
+      " I respectfully dissent. Although the Appellate Division may not have expressly stated its reason for granting defendant's application for a writ of coram nobis, the court's order reveals that, at the very least, it viewed appellate counsel as ineffective for failing to challenge the propriety of defendant's sentences. Indeed, the court explicitly held that the sentences on two counts should not have run consecutively since the underlying convictions arose from the same transaction. In my view, it cannot be said that it was error for the court to grant defendant's application on this ground, as appellate courts routinely grant coram nobis applications when appellate counsel fails to raise an issue on direct appeal that the court concludes may have merit (, 59 AD3d 1106 [4th Dept 2009]; , 52 AD3d 1290 [4th Dept 2008]; , 43 AD3d 1453 [4th Dept 2007]; , 52 AD3d 938 [3d Dept 2008]; , 21 AD3d 599 [3d Dept 2005]). We should not discourage this practice. ",
+      "Although I believe the Appellate Division was correct in granting defendant's application, in my view, the court erred in the relief it then granted. The court modified defendant's sentence by correcting the alleged sentencing error but went further and modified the sentence by directing that the concurrent sentences imposed on two counts run consecutively to the sentences imposed on the remaining counts of that indictment. What is most troubling is that the Appellate Division was without authority to alter the validly imposed portion of defendant's sentence (see People v Yannicelli, 40 NY2d 598, 602 [1976]). The proper remedy for the matter was to assign new counsel and consider the appeal de novo (see People v Vasquez, 70 NY2d 1 [1987]; People v Casiano, 67 NY2d 906 [1986]). ",
+      "Judges Ciparick, Graffeo, Read, Smith and Jones concur with Chief Judge Lippman; Judge Pigott dissents and votes to affirm on the People's appeal and reverse and remit to the Appellate Division on the defendant's appeal in a separate opinion. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 4 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "caseId": "2021_04955",
+  "sourcePath": "coa/2021/2021_04955.htm",
+  "notesPath": "coa/2021/2021_04955.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.149Z",
+  "source": {
+    "title": "People v Guevara (2021 NY Slip Op 04955)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 7872,
+    "lineCount": 83,
+    "tagCounts": {
+      "a": 14,
+      "b": 14,
+      "body": 2,
+      "br": 12,
+      "div": 8,
+      "font": 10,
+      "head": 2,
+      "html": 2,
+      "i": 42,
+      "opinion": 1,
+      "p": 22,
+      "script": 4,
+      "style": 2,
+      "sup": 4,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Guevara",
+      "2021 NY Slip Op 04955 [37 NY3d 1014]",
+      "September 9, 2021",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, November 3, 2021"
+    ],
+    "captionLines": [],
+    "citationLine": "2021 NY Slip Op 04955 37 NY3d 1014",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Decided September 9, 2021",
+      "September 9, 2021",
+      "As corrected through Wednesday, November 3, 2021"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Caprice R. Jenerson, Office of the Appellate Defender , New York City ( Gabe Newland of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Caprice R. Jenerson, Office of the Appellate Defender , New York City ( Gabe Newland of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Cyrus R. Vance, Jr., District Attorney , New York City ( Susan Axelrod and Susan Gliner of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Cyrus R. Vance, Jr., District Attorney , New York City ( Susan Axelrod and Susan Gliner of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 7,
+    "footnotesCount": 2
+  },
+  "citations": {
+    "slipOpinion": "2021 NY Slip Op 04955",
+    "officialCitation": "37 NY3d 1014",
+    "pageMarkerCount": 4
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**37 NY3d at 1015} OPINION OF THE COURT",
+      "Memorandum."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 2,
+    "labels": [
+      "1",
+      "2"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

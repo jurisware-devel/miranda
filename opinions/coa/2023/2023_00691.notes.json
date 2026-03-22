@@ -1,0 +1,106 @@
+{
+  "caseId": "2023_00691",
+  "sourcePath": "coa/2023/2023_00691.htm",
+  "notesPath": "coa/2023/2023_00691.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.198Z",
+  "source": {
+    "title": "People v Myers (2023 NY Slip Op 00691)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 13802,
+    "lineCount": 89,
+    "tagCounts": {
+      "a": 8,
+      "b": 4,
+      "body": 2,
+      "br": 6,
+      "div": 8,
+      "font": 20,
+      "head": 2,
+      "html": 2,
+      "i": 24,
+      "p": 34,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 4
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Myers",
+      "2023 NY Slip Op 00691 [39 NY3d 130]",
+      "February 9, 2023",
+      "Garcia, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, March 29, 2023"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Michael Myers, Appellant."
+    ],
+    "citationLine": "2023 NY Slip Op 00691 39 NY3d 130",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued January 4, 2023; decided February 9, 2023",
+      "February 9, 2023",
+      "As corrected through Wednesday, March 29, 2023"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 18,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2023 NY Slip Op 00691",
+    "officialCitation": "39 NY3d 130",
+    "pageMarkerCount": 9
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [
+      "Garcia"
+    ],
+    "qualifierLines": [
+      "{**39 NY3d at 132} OPINION OF THE COURT",
+      "Acting Chief Judge Cannataro and Judges Rivera, Wilson, Singas and Troutman concur.{**39 NY3d at 137}"
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

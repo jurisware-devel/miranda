@@ -1,0 +1,104 @@
+{
+  "caseId": "2016_04253",
+  "sourcePath": "coa/2016/2016_04253.htm",
+  "notesPath": "coa/2016/2016_04253.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.883Z",
+  "source": {
+    "title": "People v Greenberg (2016 NY Slip Op 04253)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 11103,
+    "lineCount": 82,
+    "tagCounts": {
+      "a": 10,
+      "b": 8,
+      "body": 2,
+      "br": 6,
+      "div": 4,
+      "font": 18,
+      "head": 2,
+      "html": 2,
+      "i": 40,
+      "p": 22,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Greenberg",
+      "2016 NY Slip Op 04253 [27 NY3d 490]",
+      "June 2, 2016",
+      "Stein, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, July 20, 2016"
+    ],
+    "captionLines": [
+      "The People of the State of New York, by Eric T. Schneiderman, Attorney General of the State of New York, Respondent,",
+      "v",
+      "Maurice R. Greenberg et al., Appellants."
+    ],
+    "citationLine": "2016 NY Slip Op 04253 27 NY3d 490",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued May 3, 2016; decided June 2, 2016",
+      "June 2, 2016",
+      "As corrected through Wednesday, July 20, 2016"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 8,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2016 NY Slip Op 04253",
+    "officialCitation": "27 NY3d 490",
+    "pageMarkerCount": 8
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [
+      "Stein"
+    ],
+    "qualifierLines": [
+      "{**27 NY3d at 495} OPINION OF THE COURT"
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

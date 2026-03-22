@@ -1,0 +1,129 @@
+{
+  "caseId": "2015_05512",
+  "sourcePath": "coa/2015/2015_05512.htm",
+  "notesPath": "coa/2015/2015_05512.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.810Z",
+  "source": {
+    "title": "People v Lovett (2015 NY Slip Op 05512)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 7756,
+    "lineCount": 78,
+    "tagCounts": {
+      "a": 10,
+      "b": 4,
+      "body": 2,
+      "br": 6,
+      "div": 6,
+      "font": 14,
+      "frac": 2,
+      "head": 2,
+      "html": 2,
+      "i": 20,
+      "opinion": 1,
+      "p": 22,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [
+      "frac"
+    ],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Lovett",
+      "2015 NY Slip Op 05512 [25 NY3d 1088]",
+      "June 25, 2015",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, July 27, 2015"
+    ],
+    "captionLines": [],
+    "citationLine": "2015 NY Slip Op 05512 25 NY3d 1088",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued June 3, 2015; decided June 25, 2015",
+      "June 25, 2015",
+      "As corrected through Wednesday, July 27, 2015"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Richard M. Greenberg, Office of the Appellate Defender , New York City ( Margaret E. Knight of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Richard M. Greenberg, Office of the Appellate Defender , New York City ( Margaret E. Knight of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Cyrus R. Vance, Jr., District Attorney , New York City ( Nicole Coviello and Eleanor J. Ostrow of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Cyrus R. Vance, Jr., District Attorney , New York City ( Nicole Coviello and Eleanor J. Ostrow of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 9,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2015 NY Slip Op 05512",
+    "officialCitation": "25 NY3d 1088",
+    "pageMarkerCount": 6
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**25 NY3d at 1089} OPINION OF THE COURT",
+      "Memorandum.",
+      "Defendant appealed both the judgment of conviction and sentence and the orders denying his two postjudgment motions. The Appellate Division, with two Justices dissenting, modified the judgment in one respect, not relevant to this appeal, and otherwise affirmed the judgment and the two orders (116 AD3d 428 [1st Dept 2014]). A dissenting Justice granted defendant permission to appeal to us (2014 NY Slip Op 75464[U] [1st Dept 2014]).",
+      "Chief Judge Lippman and Judges Read, Pigott, Rivera, Abdus-Salaam, Stein and Fahey concur.",
+      "On defendant's appeal from so much of the order of the Appellate Division, First Department, as affirmed the order of Supreme Court, New York County, denying defendant's motion for resentencing, appeal dismissed; order otherwise appealed from affirmed, in a memorandum."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <frac> in source HTML."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

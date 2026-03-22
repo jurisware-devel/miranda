@@ -1,0 +1,178 @@
+{
+  "caseId": "2026_01447",
+  "sourcePath": "coa/2026/2026_01447.htm",
+  "notesPath": "coa/2026/2026_01447.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.396Z",
+  "source": {
+    "title": "People v Jones (2026 NY Slip Op 01447)",
+    "publicationStatus": "slip_op_only"
+  },
+  "fileInfo": {
+    "byteSize": 40424,
+    "lineCount": 119,
+    "tagCounts": {
+      "a": 36,
+      "b": 18,
+      "body": 2,
+      "br": 27,
+      "dateline": 2,
+      "div": 26,
+      "font": 18,
+      "form": 2,
+      "head": 2,
+      "html": 2,
+      "i": 248,
+      "input": 1,
+      "opinion": 1,
+      "p": 86,
+      "sc": 4,
+      "script": 2,
+      "style": 2,
+      "sup": 6,
+      "table": 2,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [
+      "form",
+      "input"
+    ],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Jones",
+      "2026 NY Slip Op 01447",
+      "Decided on March 17, 2026",
+      "Court of Appeals",
+      "Halligan, J.",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "This opinion is uncorrected and subject to revision before publication in the Official Reports."
+    ],
+    "captionLines": [
+      "The People & c., Respondent,",
+      "v",
+      "Joseph C. Jones, Appellant."
+    ],
+    "citationLine": "2026 NY Slip Op 01447",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "The team interviewed the absconder's girlfriend, who suggested that he \"may be in\" a certain city block in Rochester [FN1] . Nearly an hour later, the team traveled to that area. The investigator testified that he and his partner were in an unmarked vehicle and plainclothes when they observed the defendant walking from the direction of that city block. The investigator testified that he observed, from a distance of about twenty yards, that the defendant was \"right around five-eleven, one-eighty-five to two hundred pounds, and [ ] was wearing a black ski mask.\" He said this observation had \"significance,\" because the absconder's description was \"five &mdash; eleven, one hundred eighty pounds, one hundred and eighty-five pounds.\" Because of the ski mask, the investigator was unable to identify the defendant's race, his facial features, or other identifying characteristics. The partner likewise testified that the defendant \"met the physical &mdash; approximate physical description of the individual [they] were looking for\" but did not offer anything more specific.",
+      "The dissenting justices agreed that Hill 's reasonable belief test applied but would have held that it was not satisfied. According to the dissent, the People established only that the defendant \"matched the generic height and weight of the average male in the general population\" ( id. at 1413 [Ogden and Nowak, JJ., dissenting]). Notably, \"the pursuing officers could not see defendant's face or even discern defendant's race given that they were 20 to 30 yards away from defendant who was, reasonably, wearing a ski mask on a cold December day\" ( id. at 1415 [Ogden and Nowak, JJ., dissenting]. Moreover, the People did not \"call the approaching officers, and thus adduced no testimony with respect to their actions, observations, or whether they believed&mdash;reasonably or not&mdash;that defendant was the parole absconder\" ( id. at 1413-1414 [Ogden and Nowak, JJ., dissenting]).",
+      "The De Bour framework lays out four escalating \"levels\" of law enforcement intrusion and the degree of suspicion necessary to justify each of them. At the first level, police may engage in minimally intrusive questioning \"when there is some objective credible reason for that interference not necessarily indicative of criminality\" ( De Bour , 40 NY2d at 223). The second level \"permits a somewhat greater intrusion . . . to the extent necessary to gain explanatory information\" and requires \"a founded suspicion that criminal activity is afoot\" ( id. ). Once an officer \"entertains a reasonable suspicion that a particular person has committed, is committing or is about to commit a felony or misdemeanor,\" they may stop and detain that person ( id. ). Finally, at level four, an officer may arrest a person if they have probable cause to believe that a crime has been committed ( see id. ). Here, the parole investigators pursued the defendant, which the parties agree requires reasonable suspicion ( see People v Cleveland , 44 NY3d 8 , 11 [2025] [\"Pursuit of a fleeing suspect constitutes a level three detention\"]).",
+      "A review of De Bour cases indicates that a match in such broad terms does not permit the conduct here. The Appellate Division has typically required an officer, acting on a suspect's description, to point to more specific identifying features to demonstrate the reasonable suspicion necessary to justify a level three stop ( see e.g. People v Johnson , 22 AD3d 371 , 372 [1st Dept 2005] [officers showed a \"sufficiently specific\" match of \"clothing and physical characteristics\"]; People v Medina , 66 AD3d 555 , 556 [1st Dept [*4] 2009] [surveillance photos showing a \"striking strong resemblance to th(e) defendant\" supplied reasonable suspicion for a stop]). Likewise, numerous cases hold that although a match to a general description, even one more specific than that at issue here, may support level one or two encounters, such level of detail cannot, without more, justify more serious intrusions ( see e.g. People v Greenidge , 241 AD2d 395, 395 [1st Dept 1997] [holding that a match in \"general description\" could \"provide( ) the police with\" cause for a level two encounter]; People v Abdul-Mateen , 126 AD3d 986 , 987-988 [2d Dept 2015] [match in clothing, gender, and race could warrant a level two encounter]; People v Smith , 240 AD3d 1218 , 1220 [4th Dept 2025] [same]; People v Howard , 129 AD3d 1654 , 1654-1655 [4th Dept 2015] [generic description of black males carrying bags supplied the basis for a level one encounter]).",
+      "The Appellate Division majority further relied on the defendant's flight upon being approached, but we do not find this a sufficient ground to support the pursuit and arrest, either alone or in combination with the general match in description. For a suspect's flight to reasonably inform the officers' suspicion of criminal activity, there must be, at a minimum, some indication that the suspect knew they were fleeing from the police. After all, \"an individual has the right to be let alone and refuse to respond to police inquiry\" ( Cleveland , 44 NY3d at 12, quoting People v Holmes , 81 NY2d 1056, 1058 [1993]). Accordingly, we have underscored that a finding of reasonable suspicion \"may not rest on equivocal or 'innocuous behavior' that is susceptible of an innocent as well as a culpable interpretation\" ( Brannon , 16 NY3d at 602, quoting People v Carrasquillo , 54 NY2d 248, 252 [1981]) [FN3] . When it comes to the probative value of a suspect's flight, federal cases take a similar view ( see e.g. United States v Castle , 825 F3d 625, 629 [DC Cir 2016] [\"(I)n the context of a reasonable suspicion analysis, furtive gestures\" like flight \"are significant only if they were undertaken in response to police presence\" (internal quotation marks omitted)]; Illinois v Wardlow , 528 US 119, 121, 125 [2000] [flight supported inference of criminal activity when officers \"were working (in) uniform( )\" as part of a police \"caravan\"]).",
+      "The Appellate Division majority cites two additional points, neither of which we find sufficient. First, the majority noted that the defendant was found in the general area indicated by the absconder's girlfriend. But this point does not carry much weight: nearly an hour had elapsed, and the tip was just that he \"may\" be found in the general vicinity of a certain city block. Such a general description does not permit an inference, without more, that an individual encountered on a public street was the person sought. The majority also remarked that the defendant was wearing a ski mask, but the testimony established that the investigators did not find that unusual, given the cold weather conditions. None of these factors, alone or in combination, were sufficient to justify the pursuit of the defendant.",
+      "Just as New Yorkers have the right to be free from unreasonable governmental intrusion, law enforcement must also be able to execute warrants effectively and efficiently, and neither article I, § 12 of our Constitution nor the Fourth Amendment require certainty before they do so. But a warrant authorizes arrest only for the person named in the warrant, not for any person the officers may encounter who bears some passing resemblance to the suspect. Here, the record is simply insufficient to establish that the parole investigators did enough to corroborate identity before engaging in the pursuit of the defendant.",
+      "On December 20, 2017, plainclothes parole officers were searching for a parole absconder in Rochester pursuant to an active arrest warrant. According to the Arrest and Booking Data information sheet they had on hand, the officers knew the absconder was 6'1\" and weighed 180 pounds; they also knew his race, skin tone, age, and other personally identifying information such as his home address. The officers also had a photograph of the absconder. As part of their effort to locate the absconder, the officers spoke to his girlfriend, who told them that he might be found on the 100 block of Flanders Street.",
+      "Whether it was reasonable for officers to believe that defendant was the subject of the warrant presents a mixed question of law and fact. This Court may only review such determinations for a lack of record support ( see People v Brown , 25 NY3d 973 , 975-976 [2015]; People v Vandover , 20 NY3d 235 , 237-239 [2012]). Under this highly deferential standard, I would conclude that there was support in the record to find that the officers had a reasonable mistaken belief that defendant was the subject of the warrant.",
+      "In addition to the warrant itself, the parole officers had a picture of the subject and knew his height and weight (6' 1\", 180 lbs.), as well as his race and skin tone. According to officer testimony, they also interviewed the subject's girlfriend in person, who told the officers that defendant may be at the 100 block of Flanders Street in Rochester. The officers arrived at the scene around 45 minutes later when they happened upon defendant walking towards them down that block.",
+      "Defendant was also approached on the block the absconder's girlfriend said he would be on. Again, the majority's various arguments against the usefulness of this information veer into relitigating the lower courts' assessment of the evidence. One block of a specific street in a residential neighborhood&mdash;especially outside, and in the apparent cold&mdash;is as narrow a locale to search as any individual address. This block was [*6] also within a few minutes' walking distance of the target's home address, so it was not unreasonable to believe that he might be there. A tip that someone \"may\" be at a location is also sufficiently actionable to go to the location to see if someone matching the parolee's description is there. There was also no indication that the girlfriend said the parolee might only be there for some limited amount of time, and there is no record support to conclude that the usefulness of the tip somehow expired after 45 minutes. There was likewise no evidence indicating that the girlfriend was lying, and there is certainly no requirement that information from a girlfriend about her boyfriend's whereabouts is inherently unreliable.",
+      "Moreover, even if we were to apply a graduated De Bour analysis here, the record supports a finding that officers had reasonable suspicion to pursue defendant. While possessing all the information described above that led the investigators to believe defendant was the absconder, one of the officers saw defendant talking to fellow officers, and then saw defendant immediately take flight. At that point, the officer had reasonable suspicion to believe defendant was the absconder, and the officer could pursue him ( see People v Sierra , 83 NY2d 928, 930 [1994]). Once that pursuit was justified, the arrest was lawful based on the officer's observation of the gun in defendant's hand ( see People v Matienzo , 81 NY2d 778, 780 [1993] [\"In the circumstances presented, defendant's flight furnished reasonable suspicion that he had committed or was about to commit a crime such that pursuit by the officers was justified. Defendant's abandonment of the bag (containing narcotics) therefore was not in response to unlawful police conduct\" and that evidence supplied the necessary probable cause to arrest] [internal citations omitted]). Accordingly, even if the officers did not have probable cause to arrest the defendant when they first approached him or reasonable suspicion to detain him (and they did neither of these things at that point), they had the requisite reasonable suspicion to justify pursuit when defendant fled ( see People v Martinez , 80 NY2d 444, 447 [1992] [pursuing someone \"for the purpose of detaining them . . . results in a lesser interference with freedom than does an arrest (and) we have held that the police may . . . pursue an individual if they have information which, although not yielding the probable cause necessary to justify an arrest, provides them with a reasonable suspicion that a crime has been, is being, or is about to be committed\"]).",
+      "Decided on March 17, 2026"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "James A. Hobbs, for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "James A. Hobbs, for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Amy N. Walendziak, for respondent. HALLIGAN , J.:",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": true,
+        "argumentTailPreview": "HALLIGAN , J.:",
+        "sentenceText": "Amy N. Walendziak, for respondent.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Amy N. Walendziak, for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Amy N. Walendziak, for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 50,
+    "footnotesCount": 3
+  },
+  "citations": {
+    "slipOpinion": "2026 NY Slip Op 01447",
+    "officialCitation": "236 AD3d 1410",
+    "pageMarkerCount": 6
+  },
+  "opinionStructure": {
+    "totalWritings": 4,
+    "byKind": {
+      "unknown": 2,
+      "opinion_of_the_court": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Halligan",
+      "Cannataro"
+    ],
+    "qualifierLines": [
+      "The Appellate Division, Fourth Department, with two justices dissenting, affirmed Supreme Court's suppression order (see 236 AD3d 1410 [4th Dept 2025]). The majority rejected the defendant's argument that the encounter should have been evaluated under the framework developed in People v De Bour (40 NY2d 210 [1976]), instead applying the test set forth in Hill (236 AD3d at 1411). As to the first element of the Hill test, whether the officer has probable cause to make an arrest, the majority observed that there was no dispute that the officers possessed a valid arrest warrant; as to the second element, the majority \"conclude[d] that under the totality of the circumstances . . . the arresting officer's testimony establishe[d] that he reasonably believed that defendant was the absconder\" (id. at 1412). The defendant \"closely matched the height and weight provided in the parole absconder's description, covered his face with a ski mask, was in the location provided by the absconder's girlfriend, and immediately fled upon being approached by one of the [ ] team's unmarked vehicles\" (id.).",
+      "The dissenting justices agreed that Hill's reasonable belief test applied but would have held that it was not satisfied. According to the dissent, the People established only that the defendant \"matched the generic height and weight of the average male in the general population\" (id. at 1413 [Ogden and Nowak, JJ., dissenting]). Notably, \"the pursuing officers could not see defendant's face or even discern defendant's race given that they were 20 to 30 yards away from defendant who was, reasonably, wearing a ski mask on a cold December day\" (id. at 1415 [Ogden and Nowak, JJ., dissenting]. Moreover, the People did not \"call the approaching officers, and thus adduced no testimony with respect to their actions, observations, or whether they believed—reasonably or not—that defendant was the parole absconder\" (id. at 1413-1414 [Ogden and Nowak, JJ., dissenting]).",
+      "A dissenting justice granted the defendant leave to appeal.",
+      "The pursuing investigators' testimony establishes only that the defendant matched the absconder's description in a broad, generic sense, which is to say that he barely matched the description at all. From a distance of 20 to 30 yards away, the investigators saw a male walking from the direction of the city block that the absconder's girlfriend had identified. He was around 5' 11\", weighed 185 to 200 pounds, and was wearing a black ski mask. The investigators could not identify the defendant's race or say whether he resembled the photo that they were provided. The concern is not whether the defendant's description was \"reasonably close\" to that of the absconder (see dissenting op at 6), but rather that those concrete details, which establish only his general build, would fit any number of people. As the dissenting justices below observed, all this testimony demonstrates is that the pursuing investigators saw, from some distance, a man of average height and build flee upon being approached by another member of their team.",
+      "I agree with the courts below that the test developed by the U.S. Supreme Court in Hill v California (401 US 797 [1971]) should be applied to cases of mistaken identification of suspects by law enforcement, such as the one presented here. Applying that test, I conclude that there was record support for the lower courts' finding that the parole officers' belief that they had correctly identified the person they were looking for was reasonable under the circumstances. For these reasons, I respectfully dissent.",
+      "In sum, the record supports the affirmed finding that pursuit of defendant was not unconstitutional, and the order should be affirmed. For these reasons, I respectfully dissent."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 3,
+    "labels": [
+      "1",
+      "2",
+      "3"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <form> in source HTML."
+    },
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <input> in source HTML."
+    },
+    {
+      "code": "APPEARANCE_LINE_WITH_ARGUMENT_TAIL",
+      "severity": "info",
+      "detail": "Appearance-like line continues into argument text after \"for respondent.\"."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 4 writings."
+    }
+  ]
+}

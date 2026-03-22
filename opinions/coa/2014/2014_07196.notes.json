@@ -1,0 +1,120 @@
+{
+  "caseId": "2014_07196",
+  "sourcePath": "coa/2014/2014_07196.htm",
+  "notesPath": "coa/2014/2014_07196.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.764Z",
+  "source": {
+    "title": "People v Kims (2014 NY Slip Op 07196)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 42608,
+    "lineCount": 149,
+    "tagCounts": {
+      "a": 38,
+      "b": 18,
+      "blockquote": 12,
+      "body": 2,
+      "br": 14,
+      "div": 24,
+      "font": 58,
+      "frac": 2,
+      "head": 2,
+      "html": 2,
+      "i": 128,
+      "p": 122,
+      "script": 4,
+      "style": 2,
+      "sup": 6,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 18
+    },
+    "unknownTags": [
+      "frac"
+    ],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Kims",
+      "2014 NY Slip Op 07196 [24 NY3d 422]",
+      "October 23, 2014",
+      "Rivera, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, February 11, 2015"
+    ],
+    "captionLines": [
+      "v"
+    ],
+    "citationLine": "2014 NY Slip Op 07196 24 NY3d 422",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued September 11, 2014; decided October 23, 2014",
+      "October 23, 2014",
+      "As corrected through Wednesday, February 11, 2015"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 64,
+    "footnotesCount": 3
+  },
+  "citations": {
+    "slipOpinion": "2014 NY Slip Op 07196",
+    "officialCitation": "24 NY3d 422",
+    "pageMarkerCount": 28
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [
+      "Rivera"
+    ],
+    "qualifierLines": [
+      "{**24 NY3d at 425} OPINION OF THE COURT",
+      "The jury convicted defendant on all counts of the indictment, finding him guilty of criminal possession of a controlled substance in the first and third degrees (Penal Law §§ 220.21 [1]; 220.16 [1]), criminal possession of marihuana in the second degree (Penal Law § 221.25), and two counts of criminally using drug paraphernalia in the second degree (Penal Law § 220.50 [2], [3]). The court sentenced defendant as a second felony offender to 16 years' incarceration followed by five years' postrelease supervision on the criminal possession of a controlled substance in the first degree, 11 years' incarceration and three years' postrelease supervision on the criminal possession of a controlled substance in the third degree, three years' incarceration and two years' postrelease supervision on the criminal possession of marihuana in the second degree, and one year terms{**24 NY3d at 431} each on the two counts of criminally using drug paraphernalia in the second degree, all to run concurrently.",
+      "On defendant's appeal the Appellate Division, Fourth Department, in a 4-1 decision, modified on the law, reversing the convictions on the counts of criminal possession of a controlled substance in the first and third degrees, ordering a new trial on those counts, and otherwise affirmed the convictions on the remaining counts (96 AD3d 1595 [2012]). The majority concluded that the trial court committed reversible error in charging the jury on the presumption under section 220.25 (2) because the defendant was not within \"close proximity\" to the controlled substances at the time the substances were found, as required by the statute. The Appellate Division further concluded that the error was not harmless because there is no way to discern whether the jury relied on this charge, or the constructive possession instruction, in convicting defendant of criminal possession of a controlled substance in the first and third degrees. The majority rejected defendant's remaining arguments. One Justice dissented, in part, concluding that the trial evidence supported a determination that the apartment was used as a \"drug factory operation,\" and that defendant was in close proximity to the cocaine when he was apprehended outside, in his vehicle.",
+      "Thus, our discussion of the presumption was not necessary to our decision (see id. at 632 [concurring opinion]). We simply recognized that the presumption might apply in a proper case, including one in which a defendant is in the apartment, but not the same room where the drugs are found."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 3,
+    "labels": [
+      "1",
+      "2",
+      "3"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <frac> in source HTML."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

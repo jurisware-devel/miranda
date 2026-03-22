@@ -1,0 +1,117 @@
+{
+  "caseId": "2011_02482",
+  "sourcePath": "coa/2011/2011_02482.htm",
+  "notesPath": "coa/2011/2011_02482.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.531Z",
+  "source": {
+    "title": "People v Evans (2011 NY Slip Op 02482)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 22427,
+    "lineCount": 108,
+    "tagCounts": {
+      "a": 20,
+      "b": 14,
+      "body": 2,
+      "br": 14,
+      "div": 4,
+      "font": 34,
+      "head": 2,
+      "html": 2,
+      "i": 84,
+      "p": 31,
+      "script": 4,
+      "style": 2,
+      "sup": 4,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Evans",
+      "2011 NY Slip Op 02482 [16 NY3d 571]",
+      "March 31, 2011",
+      "Pigott, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, June 22, 2011"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Shareef Evans, Appellant."
+    ],
+    "citationLine": "2011 NY Slip Op 02482 16 NY3d 571",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued February 16, 2011; decided March 31, 2011",
+      "March 31, 2011",
+      "As corrected through Wednesday, June 22, 2011"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 27,
+    "footnotesCount": 2
+  },
+  "citations": {
+    "slipOpinion": "2011 NY Slip Op 02482",
+    "officialCitation": "16 NY3d 571",
+    "pageMarkerCount": 16
+  },
+  "opinionStructure": {
+    "totalWritings": 4,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "dissent": 1
+    },
+    "authors": [
+      "Pigott",
+      "Jones"
+    ],
+    "qualifierLines": [
+      "{**16 NY3d at 573} OPINION OF THE COURT",
+      " On this record, I believe that defendant received ineffective assistance of counsel. Therefore, I respectfully dissent. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 2,
+    "labels": [
+      "1",
+      "2"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 4 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

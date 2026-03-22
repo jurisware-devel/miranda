@@ -1,0 +1,145 @@
+{
+  "caseId": "2018_04776",
+  "sourcePath": "coa/2018/2018_04776.htm",
+  "notesPath": "coa/2018/2018_04776.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.020Z",
+  "source": {
+    "title": "People v Parker (2018 NY Slip Op 04776)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 53788,
+    "lineCount": 160,
+    "tagCounts": {
+      "a": 96,
+      "b": 56,
+      "body": 2,
+      "br": 36,
+      "disopjd": 2,
+      "div": 12,
+      "font": 64,
+      "head": 2,
+      "html": 2,
+      "i": 278,
+      "opinion": 1,
+      "p": 89,
+      "script": 4,
+      "style": 2,
+      "sup": 24,
+      "table": 6,
+      "td": 18,
+      "title": 2,
+      "tr": 18,
+      "u": 6
+    },
+    "unknownTags": [
+      "disopjd"
+    ],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Parker",
+      "2018 NY Slip Op 04776 [32 NY3d 49]",
+      "June 28, 2018",
+      "Rivera, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, November 7, 2018"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Lawrence Parker, Appellant.",
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Mark Nonni, Appellant."
+    ],
+    "citationLine": "2018 NY Slip Op 04776 32 NY3d 49",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued June 5, 2018; decided June 28, 2018",
+      "June 28, 2018",
+      "As corrected through Wednesday, November 7, 2018"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 49,
+    "footnotesCount": 12
+  },
+  "citations": {
+    "slipOpinion": "2018 NY Slip Op 04776",
+    "officialCitation": "32 NY3d 49",
+    "pageMarkerCount": 31
+  },
+  "opinionStructure": {
+    "totalWritings": 5,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "dissent": 2
+    },
+    "authors": [
+      "Rivera",
+      "Difiore",
+      "Garcia"
+    ],
+    "qualifierLines": [
+      "{**32 NY3d at 52} OPINION OF THE COURT",
+      "The Appellate Division affirmed the convictions with two Justices dissenting (, 135 AD3d 52 [1st Dept{**32 NY3d at 55}2015]). As relevant to the issues presented in this appeal, the majority concluded that the facts surrounding the police encounter, including defendants' flight from the police, justified the police action under De Bour. It also held that the knife protruding from defendant Nonni's backpack and the visible sledgehammer in defendant Parker's bag justified an immediate, protective search of their respective bags and persons (id. at 58). The Appellate Division did not address the O'Rama violation, which was not raised in that Court.",
+      "In advocating that we remit to the trial court for a reconstruction hearing, the dissenters and the People ignore our case law. Indeed, we rejected the same argument in Walston, and there is no basis to treat defendants' cases differently. Moreover, {**32 NY3d at 62}ordering reconstruction hearings as a matter of course would imperil one of the foundations of O'Rama: the necessity that courts fulfill their core responsibility of providing counsel with notice of the precise contents of a jury note so that counsel may participate in designing a response. We will not weaken that foundation or disregard our precedent. Simply stated, where the record does not establish compliance with CPL 310.30, the sole remedy is reversal and a new trial.",
+      "We have recognized in similar contexts that, where there is a significant ambiguity in the record, a reconstruction hearing is appropriate as we are not inclined to reverse trial verdicts on technical errors (, 1 NY3d 44, 49 [2003]). Thus, in  (18 NY3d 839 [2011]), we held that a reconstruction hearing was necessary to determine whether the defendant's right to be present for his Sandoval hearing was violated (see also People v Michalek, 82 NY2d 906, 907 [1994]; People v Monclavo, 87 NY2d 1029, 1031 [1996]). In addition, the Appellate Division has ordered reconstruction hearings to address whether an O'Rama error occurred (, 129 AD3d 404 [1st Dept 2015]; , 113 AD3d 1116 [4th Dept 2014]; , 105 AD3d 1322 [4th Dept 2013]; , 42 AD3d 901 [4th Dept 2007]). Indeed, in People v Cruz, we heard an appeal on an O'Rama issue after a reconstruction hearing had been held—a procedure that the presiding Chief Judge characterized as a \"very useful exercise\" (14 NY3d 814, 818 [2010, Lippman, Ch. J., concurring]).",
+      " I dissent for the reasons stated in my dissenting opinion in People v Morrison (32 NY3d 951 [2018] [decided today]).",
+      "Judges Stein, Fahey and Wilson concur; Chief Judge DiFiore dissents in an opinion, in which Judges Garcia and Feinman concur in a separate dissenting opinion by Judge Garcia."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 2,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 12,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <disopjd> in source HTML."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 5 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 3 table elements before or within the header region."
+    }
+  ]
+}

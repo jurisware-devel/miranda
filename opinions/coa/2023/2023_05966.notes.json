@@ -1,0 +1,128 @@
+{
+  "caseId": "2023_05966",
+  "sourcePath": "coa/2023/2023_05966.htm",
+  "notesPath": "coa/2023/2023_05966.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.227Z",
+  "source": {
+    "title": "People v Pastrana (2023 NY Slip Op 05966)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 23105,
+    "lineCount": 114,
+    "tagCounts": {
+      "a": 24,
+      "b": 18,
+      "body": 2,
+      "br": 18,
+      "disopjd": 2,
+      "div": 12,
+      "font": 28,
+      "head": 2,
+      "html": 2,
+      "i": 116,
+      "opinion": 1,
+      "p": 52,
+      "script": 4,
+      "style": 2,
+      "sup": 4,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 6
+    },
+    "unknownTags": [
+      "disopjd"
+    ],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Pastrana",
+      "2023 NY Slip Op 05966 [41 NY3d 23]",
+      "November 21, 2023",
+      "Troutman, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, April 10, 2024"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Pablo Pastrana, Appellant."
+    ],
+    "citationLine": "2023 NY Slip Op 05966 41 NY3d 23",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued September 13, 2023; decided November 21, 2023",
+      "November 21, 2023",
+      "As corrected through Wednesday, April 10, 2024"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 28,
+    "footnotesCount": 2
+  },
+  "citations": {
+    "slipOpinion": "2023 NY Slip Op 05966",
+    "officialCitation": "41 NY3d 23",
+    "pageMarkerCount": 13
+  },
+  "opinionStructure": {
+    "totalWritings": 5,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "dissent": 2
+    },
+    "authors": [
+      "Troutman",
+      "Rivera",
+      "Halligan"
+    ],
+    "qualifierLines": [
+      "{**41 NY3d at 26} OPINION OF THE COURT",
+      "I agree for the reasons discussed by the majority that defendant Pablo Pastrana's challenge to the roadblock that led to the search of his vehicle and the eventual discovery of an unlicensed loaded firearm and illegal amounts of marijuana is without merit, and that the Marihuana Regulation and Taxation Act is not retroactive. However, for the reasons I discuss in my dissent in People v Garcia (41 NY3d 62 [2023] [decided today]), defendant's Second Amendment facial challenge under New York State Rifle & Pistol Assn., Inc. v Bruen (597 US 1 [2022]) is preserved but meritless."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 2,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 2,
+    "labels": [
+      "*",
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <disopjd> in source HTML."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 5 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

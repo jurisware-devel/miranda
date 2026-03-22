@@ -1,0 +1,122 @@
+{
+  "caseId": "2023_05305",
+  "sourcePath": "coa/2023/2023_05305.htm",
+  "notesPath": "coa/2023/2023_05305.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.219Z",
+  "source": {
+    "title": "People v Cerda (2023 NY Slip Op 05305)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 36911,
+    "lineCount": 124,
+    "tagCounts": {
+      "a": 42,
+      "b": 22,
+      "body": 2,
+      "br": 16,
+      "div": 12,
+      "font": 44,
+      "head": 2,
+      "html": 2,
+      "i": 140,
+      "p": 68,
+      "script": 4,
+      "style": 2,
+      "sup": 8,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 6
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Cerda",
+      "2023 NY Slip Op 05305 [40 NY3d 369]",
+      "October 19, 2023",
+      "Lynch, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, December 27, 2023"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Sergio Cerda, Appellant."
+    ],
+    "citationLine": "2023 NY Slip Op 05305 40 NY3d 369",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued May 19, 2022; reargued September 14, 2023; decided October 19, 2023",
+      "October 19, 2023",
+      "As corrected through Wednesday, December 27, 2023"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 36,
+    "footnotesCount": 4
+  },
+  "citations": {
+    "slipOpinion": "2023 NY Slip Op 05305",
+    "officialCitation": "40 NY3d 369",
+    "pageMarkerCount": 21
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Lynch",
+      "Cannataro"
+    ],
+    "qualifierLines": [
+      "{**40 NY3d at 371} OPINION OF THE COURT",
+      "The constitutional right to present a defense encompasses \"the right to put before a jury evidence that might influence the determination of guilt\" (Taylor v Illinois, 484 US 400, 408 [1988] [internal quotation marks and citation omitted]; accord Jovanovic, 263 AD2d at 184). Defendant's entire defense was premised upon demonstrating that the complainant's allegations against him were untrue in that the petechial bruising was caused by her own actions or a third party. The forensic evidence confirming the presence of the complainant's saliva in the vicinity of her internal injuries, juxtaposed against the expert testimony that such injuries were consistent with digital penetration, speaks to an alternative, innocent explanation for the cause of the identified injuries and bears on the issue of guilt or innocence. The same may be said, albeit to a lesser extent, as to the detection of the male DNA in the mixed saliva sample and prostate specific antigen in the vicinity of the complainant's injuries. We are mindful that the laboratory reports did not exclude defendant as a contributor to the male DNA detected from the complainant's underwear and that no further comparisons could be made from the mixed saliva sample. At the same time, the reports did identify two male contributors. Although the prosecution maintains that the forensic findings are inconclusive and far from exculpatory, and create more questions than they answer, the inferences to be drawn from the findings present an issue of weight for the jury to assess, not admissibility (see People v Wesley, 83 NY2d 417, 427 [1994]; People v Dackowski, 50 NY2d 962, 963 [1980]; People v White, 40 NY2d 797, 799-800 [1976]). The dissent also deems defendant's offer of proof to be inconclusive, but it is neither the role of the trial court nor this Court to make that assessment. There is a difference between determining whether evidence is relevant for purposes of applying the CPL 60.42 (5){**40 NY3d at 378} exception, and whether that same evidence is decisive or not. Relevance is for the court to determine, decisiveness for the jury. As difficult and traumatic as child sex abuse cases are, the operative point is that the proffered evidence is medical documentation in support of defendant's alternative theory for complainant's injuries. By pursuing this defense, defendant did not seek to use the forensic evidence in violation of the statute, to impugn complainant's character by presenting her as a promiscuous female who could not be believed—a tactical attack based on now-rejected views of female sexuality.",
+      "We conclude that the trial court's exclusion of the forensic evidence \"deprived defendant of a meaningful opportunity to present a complete defense\" (Deverow, 38 NY3d at 168 [internal quotation marks omitted], citing Crane, 476 US at 690) and constituted an abuse of discretion as a matter of law under CPL 60.42 (5). Because the error cannot be considered harmless under the facts presented (see Deverow, 38 NY3d at 168; , 27 NY3d 127, 141 [2016]), a new trial is warranted. Far from being a \"degradation of the protections afforded by the Rape Shield Law\" as the dissent unfortunately asserts (see dissenting op at 379), our decision to apply the statutory exception is compelled by the nature of the evidence presented and the fair trial tenets of the Constitution. Our determination renders academic defendant's remaining contentions.{**40 NY3d at 379}",
+      "Because these reports provided only the slightest basis for defendant to suggest that the child had engaged in sexual activity—either with another individual or herself—the trial court saw fit to exclude this evidence under the Rape Shield Law. Indeed, the Rape Shield Law was designed to protect victims from this very type of evidence. Yet today, the majority misapplies an exception to the Rape Shield Law and orders a new trial, where the victim will be faced with the defense's suggestion that, sometime before this incident that occurred when she was 11 years old, she must have either engaged in sexual contact with an unidentifiable man or injured herself through vigorous masturbation. This degradation of the protections afforded by the Rape Shield Law, not to mention the trauma inflicted on this victim, is completely unwarranted. I dissent."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 4,
+    "labels": [
+      "*",
+      "1",
+      "2",
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

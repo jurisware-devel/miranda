@@ -1,0 +1,122 @@
+{
+  "caseId": "2021_06430",
+  "sourcePath": "coa/2021/2021_06430.htm",
+  "notesPath": "coa/2021/2021_06430.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.162Z",
+  "source": {
+    "title": "People v Romualdo (2021 NY Slip Op 06430)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 8010,
+    "lineCount": 82,
+    "tagCounts": {
+      "a": 12,
+      "b": 10,
+      "body": 2,
+      "br": 10,
+      "div": 8,
+      "font": 12,
+      "head": 2,
+      "html": 2,
+      "i": 32,
+      "opinion": 1,
+      "p": 22,
+      "script": 4,
+      "style": 2,
+      "sup": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Romualdo",
+      "2021 NY Slip Op 06430 [37 NY3d 1091]",
+      "November 18, 2021",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, January 19, 2022"
+    ],
+    "captionLines": [],
+    "citationLine": "2021 NY Slip Op 06430 37 NY3d 1091",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Decided November 18, 2021",
+      "November 18, 2021",
+      "As corrected through Wednesday, January 19, 2022"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Timothy D. Sini, District Attorne y, Riverhead ( Grazia DiVincenzo of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Timothy D. Sini, District Attorne y, Riverhead ( Grazia DiVincenzo of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Laurette D. Mulry, Legal Aid Society of Suffolk County, Inc., Appeals Bureau , Riverhead ( Felice B. Milani of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Laurette D. Mulry, Legal Aid Society of Suffolk County, Inc., Appeals Bureau , Riverhead ( Felice B. Milani of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 7,
+    "footnotesCount": 1
+  },
+  "citations": {
+    "slipOpinion": "2021 NY Slip Op 06430",
+    "officialCitation": "37 NY3d 1091",
+    "pageMarkerCount": 5
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**37 NY3d at 1092} OPINION OF THE COURT",
+      "Memorandum.",
+      "The order of the Appellate Division should be reversed and the case remitted to that Court for further proceedings in accordance with this memorandum."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 1,
+    "labels": [
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

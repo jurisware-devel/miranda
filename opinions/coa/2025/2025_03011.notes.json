@@ -1,0 +1,179 @@
+{
+  "caseId": "2025_03011",
+  "sourcePath": "coa/2025/2025_03011.htm",
+  "notesPath": "coa/2025/2025_03011.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.320Z",
+  "source": {
+    "title": "People v Lewis (2025 NY Slip Op 03011)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 66372,
+    "lineCount": 247,
+    "tagCounts": {
+      "a": 96,
+      "b": 67,
+      "blockquote": 76,
+      "body": 2,
+      "br": 47,
+      "counselblock": 1,
+      "div": 30,
+      "font": 70,
+      "head": 2,
+      "html": 2,
+      "i": 294,
+      "p": 111,
+      "script": 4,
+      "style": 2,
+      "sup": 24,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": [
+      "b"
+    ]
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Lewis",
+      "2025 NY Slip Op 03011 [44 NY3d 350]",
+      "May 20, 2025",
+      "Rivera, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, February 4, 2026"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Laquawn Lewis, Appellant."
+    ],
+    "citationLine": "2025 NY Slip Op 03011 44 NY3d 350",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued April 9, 2025; decided May 20, 2025",
+      "Appeal, by permission of the Chief Judge of the Court of Appeals, from an order of the Appellate Division of the Supreme Court in the Second Judicial Department, entered July 5, 2023. The Appellate Division affirmed a judgment of the Supreme Court, Queens County (Michael Aloise, J.), which had convicted defendant, upon a jury verdict, of robbery in the first degree, robbery in the second degree, assault in the first degree, assault in the second degree, and obstructing governmental administration in the second degree.",
+      "1. The trial court violated defendant's right to self-representation when it denied, without the requisite inquiry, his timely and unequivocal request to proceed pro se after he moved to withdraw his guilty plea. There was no other plausible reading of the colloquy than that defendant twice requested to represent himself, and in direct response to the court's question of whether he would represent himself at trial, answered in the simplest and most direct way with a single \"yes.\" The court responded that it would \"deal with that\" and immediately denied defendant's request, instructed defense counsel to continue his representation, and informed defendant that it would not consider any other request to proceed pro se until trial. The court's substantive response to defendant showed that it understood that defendant made an application that required resolution. Despite this recognition, the court's actions fell short of what the federal and state constitutions require. Once defendant invoked his right to self-representation, the court's duty was clear: ensure that defendant's waiver of counsel was made competently, intelligently, and voluntarily. Waiting until the morning of trial, months later, would be too late for defendant to prepare his own defense. The constitutional right to self-representation does not tolerate a court's unjustifiable delay in responding to a defendant's unequivocal request to proceed pro se. Nor may the court skip the inquiry entirely based on assumptions about a defendant's motive for making an unequivocal request.",
+      "May 20, 2025",
+      "As corrected through Wednesday, February 4, 2026"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "points_of_counsel_only",
+    "pointsOfCounselCount": 1,
+    "appearanceLikeLines": [
+      {
+        "text": "Patricia Panzer, Appellate Advocates , New York City ( David Fitzmaurice of counsel), for appellant. I. The court violated appellant's Sixth Amendment rights by (1) refusing to entertain his repeated pretrial requests to proceed pro se, and (2) summarily denying his counsel's pretrial request to be relieved following a conflict of interest. ( People v McIntyre , 36 NY2d 10; Faretta v California , 422 US 806; People v Sides , 75 NY2d 822; Matter of Kathleen K. [Steven K.] , 17 NY3d 380 ; People v Vivenzio , 62 NY2d 775.) II. The complainant's unexplained medical records&mdash;which were unaccompanied by any testimony from the complainant, his doctors, or a medical expert, and which indicated that his injuries were relatively minimal&mdash;were legally insufficient to prove \"serious physical injury\"; alternatively, defense counsel's mishandling of this issue amounted to ineffective assistance. ( Jackson v Virginia , 443 US 307; Strickland v Washington , 466 US 668; People v Benevento , 91 NY2d 708; People v Danielson , 9 NY3d 342 ; People v Garland , 32 NY3d 1094 .)",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": true,
+        "argumentTailPreview": "I. The court violated appellant's Sixth Amendment rights by (1) refusing to entertain his repeated pretrial requests to proceed pro se, and (2) summarily denyin",
+        "sentenceText": "Patricia Panzer, Appellate Advocates , New York City ( David Fitzmaurice of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Melinda Katz, District Attorney , Kew Gardens ( Charles T. Pollak and John M. Castellano of counsel), for respondent. I. Defendant's request to proceed pro se was equivocal, and, in any event, abandoned; moreover, the court properly denied counsel's request to be relieved. ( Faretta v California , 422 US 806; People v Arroyo , 98 NY2d 101; People v Silburn , 31 NY3d 144 ; United States v Frazier-El , 204 F3d 553; People v Holmes , 40 NY3d 947 .) II. Defendant's unpreserved legal sufficiency claim is beyond this Court's review and lacks merit. ( People v Shanks , 37 NY3d 244 ; People v Gilford , 16 NY3d 864 ; People v Gray , 86 NY2d 10; People v Finch , 23 NY3d 408 ; People v Mahboubian , 74 NY2d 174 .) III. Counsel provided meaningful representation. ( People v Satterfield , 66 NY2d 796; People v Borrell , 12 NY3d 365 ; People v Henry , 95 NY2d 563; People v Benevento , 91 NY2d 708; Strickland v Washington , 466 US 668.)",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": true,
+        "argumentTailPreview": "I. Defendant's request to proceed pro se was equivocal, and, in any event, abandoned; moreover, the court properly denied counsel's request to be relieved. ( Fa",
+        "sentenceText": "Melinda Katz, District Attorney , Kew Gardens ( Charles T. Pollak and John M. Castellano of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 2,
+    "appearancesCount": 3,
+    "opinionBlocksCount": 61,
+    "footnotesCount": 12
+  },
+  "citations": {
+    "slipOpinion": "2025 NY Slip Op 03011",
+    "officialCitation": "44 NY3d 350",
+    "pageMarkerCount": 34
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Rivera",
+      "Singas"
+    ],
+    "qualifierLines": [
+      "{**44 NY3d at 352} OPINION OF THE COURT",
+      "{**44 NY3d at 359}The dissent's conclusion that defendant's statements were equivocal when placed in broader context, because they reflect his dissatisfaction with counsel and not a genuine interest in self-representation (see dissenting op at 370-371), is not only belied by the record, but also unsupported by our precedent. Indeed, the cases cited by the dissent are distinguishable (see id. at 370), and none of them alter the straightforward rule from McIntyre that a court must inquire into a timely and unequivocal request to proceed pro se.",
+      " (3 NY3d 88 [2004]) also does not support the dissent's conclusion (see dissenting op at 369). The defendant in LaValle had made repeated complaints against his two lawyers on the day of jury selection (see 3 NY3d at 104). The court determined that the defendant's concerns with defense counsel were based on a disagreement over trial strategy (id. at 105). When the defendant again requested dismissal of defense counsel, and that the court permit him to represent{**44 NY3d at 360} himself, he explained that he could not follow defense counsels' trial strategy and accordingly, \" 'The only thing I see and that's my last option is to represent myself, not that I want to, I don't know [anything] about the law, but at least I have a chance to prove my innocence' \" (id.). In response to the court's warnings about the perils of self-representation, the defendant requested that the court consider appointing new lawyers if it was going to deny his request to proceed pro se (id.).",
+      "Nor does People v Payton (45 NY2d 300 [1978], revd on other grounds 445 US 573 [1980]) support the dissent's \"context\" rationale (see dissenting op at 370). The defendant in Payton made multiple requests for adjournments and other motions, which the Court concluded \"overshadowed\" his request to proceed pro se (45 NY2d at 314). Accordingly, the defendant did not \"demonstrate an actual fixed intention and desire to proceed without professional assistance in his defense\" (id.). In plain contrast, defendant made his request immediately after{**44 NY3d at 361} he moved to withdraw the guilty plea that he only made because of defense counsel's erroneous assumption about his persistent felony offender status—which defendant had contested, to no avail. Thus, defendant had reason to seek dismissal of defense counsel and rely on his own ability to present a defense at his upcoming trial. He communicated that desire clearly and succinctly.",
+      "This appeal is also distinguishable from  (37 NY3d 1218 [2022]). In that case, immediately after the court denied the defendant's request for counsel to be relieved, and just as the court commenced a pretrial suppression hearing, defendant stated that he \"would love to go pro se\" (id. at 1220 [Rivera, J., dissenting]). The court did not respond, and it instead asked the prosecution to clarify the scope of the hearing and call their first witness (id.). To the extent that the court's lack of response indicated that it did not consider the defendant's statement sufficiently unequivocal, there was no such silence here—the court's substantive response to defendant showed that it believed he made an unequivocal request. After defendant twice asserted he wanted to represent himself, the court asked rhetorically, \"You're going to represent yourself?\" Defendant answered, \"Yes.\" The court responded that it would \"deal with that\" and immediately denied defendant's request, instructed defense counsel to continue his representation, and informed defendant that it would not consider any other request to proceed pro se until trial. Defendant's statement was a request to proceed pro se, and the court understood as much. This record belies the dissent's claim that the court \"did not view defendant's request as genuine\" (dissenting {**44 NY3d at 362}op at 371). The court understood that defendant made an application that required resolution. Despite this recognition, the court's actions fell short of what the federal and state constitutions require. Once defendant invoked his right to self-representation, the court's duty was clear: ensure that defendant's waiver of counsel was \"made competently, intelligently and voluntarily\" (McIntyre, 36 NY2d at 17).",
+      "\"Delay in holding a hearing after the right [to self-{**44 NY3d at 363}representation] is unequivocally asserted undermines that right by forcing the accused to proceed with counsel in whom [they] ha[ve] no confidence and whom [they] may distrust. For that reason, a post hoc effort to construe as subsequently ambiguous a clear assertion of a desire to proceed on one's own . . . contravenes the right. It encourages courts to leave a [request] pending, in the hope that the request will eventually be construed as ambiguous\" (Raulerson v Wainwright, 469 US 966, 970 [1984, Marshall, J., dissenting]).",
+      " I agree with the majority that defendant said the words \"I would like to represent myself.\" I cannot agree, however, that, considered in context, these words expressed any sincere desire to forgo his right to counsel and act as his own attorney. Far from it. The record clearly demonstrates that defendant's statement was prompted by his dissatisfaction with yet another appointed attorney—his third—and was embedded within a litany of extraneous and unrelated requests, evidently designed to obstruct his criminal proceedings. We have long held that only unequivocal (i.e., clear, genuine, and unconditional) requests for self-representation merit a trial court's inquiry, and that courts must consider the circumstances motivating that request when assessing its seriousness. Because the majority spurns this established and practical approach, instead giving talismanic significance to words divorced from their context, and because it ignores the trial court's vital role in evaluating the equivocality of such requests, I dissent.",
+      "Furthermore, the defendant's request must also \"reflect a purposeful decision to relinquish the benefit of counsel\" (, 17 NY3d 380, 386 [2011]). Thus, if a defendant requests self-representation \"as a way of obtaining the dismissal of\" their assigned counsel, then the request is not unequivocal (, 8 NY3d 85, 88 [2006] [deeming equivocal the defendant's request for self-representation made in the alternative to a request for new counsel, and used by the defendant as leverage to compel counsel's dismissal]; see Duarte, 37 NY3d at 1219 [deeming equivocal the defendant's statement that he \"would love to go pro se\" made after the court denied his application for substitute counsel]; see also LaValle, 3 NY3d 88; Payton, 45 NY2d at 314). The majority fails to persuasively distinguish these cases. Similarly, a self-representation request that is \"overshadowed\" by requests for other relief is not unequivocal (Payton, 45 NY2d at 314; , 233 AD3d 623, 624 [1st Dept 2024]; People v Carter, 299 AD2d 418, 419 [2d Dept 2002]; , 210 AD3d 1302, 1304 [3d Dept 2022]; , 119 AD3d 1352, 1354 [4th Dept 2014]). Justice Thurgood Marshall's dissent in Raulerson v Wainwright—cited by the majority (see majority op at 362-363)—aligns with our precedent (469 US 966 [1984, Marshall, J., dissenting from denial of certiorari]). Justice Marshall explained that the rule requiring further inquiry into a defendant's assertion of their \"clear and unequivocal desire\" to represent themselves does \"not apply mechanically to repetitive motions, motions designed to obstruct, or motions that are made at inappropriate times\" (id. at 969 & n 1)."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 12,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "1",
+      "2",
+      "3"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "STRAY_CLOSING_TAG",
+      "severity": "warning",
+      "detail": "Closing tag </b> appears more times than opening tag <b>."
+    },
+    {
+      "code": "APPEARANCE_LINE_WITH_ARGUMENT_TAIL",
+      "severity": "info",
+      "detail": "Appearance-like line continues into argument text after \"for appellant.\"."
+    },
+    {
+      "code": "APPEARANCE_LINE_WITH_ARGUMENT_TAIL",
+      "severity": "info",
+      "detail": "Appearance-like line continues into argument text after \"for respondent.\"."
+    },
+    {
+      "code": "POINTS_OF_COUNSEL_ONLY",
+      "severity": "info",
+      "detail": "Source uses POINTS OF COUNSEL without a separate APPEARANCES OF COUNSEL section."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

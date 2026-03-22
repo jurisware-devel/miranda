@@ -1,0 +1,130 @@
+{
+  "caseId": "2011_08963",
+  "sourcePath": "coa/2011/2011_08963.htm",
+  "notesPath": "coa/2011/2011_08963.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.581Z",
+  "source": {
+    "title": "People v Bradshaw (2011 NY Slip Op 08963)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 43717,
+    "lineCount": 182,
+    "tagCounts": {
+      "a": 46,
+      "b": 34,
+      "blockquote": 32,
+      "body": 2,
+      "br": 24,
+      "div": 8,
+      "font": 62,
+      "head": 2,
+      "html": 2,
+      "i": 140,
+      "p": 64,
+      "script": 4,
+      "style": 2,
+      "sup": 14,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 4
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Bradshaw",
+      "2011 NY Slip Op 08963 [18 NY3d 257]",
+      "December 13, 2011",
+      "Ciparick, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, February 1, 2012"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Appellant,",
+      "v",
+      "Jay Jomar Bradshaw, Respondent."
+    ],
+    "citationLine": "2011 NY Slip Op 08963 18 NY3d 257",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued November 16, 2011; decided December 13, 2011",
+      "December 13, 2011",
+      "As corrected through Wednesday, February 1, 2012"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 71,
+    "footnotesCount": 7
+  },
+  "citations": {
+    "slipOpinion": "2011 NY Slip Op 08963",
+    "officialCitation": "18 NY3d 257",
+    "pageMarkerCount": 30
+  },
+  "opinionStructure": {
+    "totalWritings": 4,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "dissent": 1
+    },
+    "authors": [
+      "Ciparick",
+      "Read"
+    ],
+    "qualifierLines": [
+      "{**18 NY3d at 259} OPINION OF THE COURT",
+      "The Appellate Division, with two Justices dissenting, reversed the judgment of conviction and sentence. The court held that defendant's appeal waiver was unenforceable \"because . . . Supreme Court provided virtually no explanation regarding the waiver and took no measures to ensure that he, a first-[time] felony offender with a history of mental illness, understood it and was validly waiving his right to appeal\" (, 76 AD3d 566, 568 [2d Dept 2010]). While the majority acknowledged that, in certain instances, \"a detailed written waiver can supplement a trial court's on-the-record explanation of what a waiver of the right to appeal entails, and clarify possible ambiguities in that explanation,\" it concluded, given Supreme Court's \"extremely perfunctory\" discussion of the waiver, that this was not such a case (id. at 569). Having determined that defendant retained his right to appeal the denial of his suppression motion, the court further agreed with defendant that complainant's lineup identification of defendant should have been suppressed since the \"hearing record is inadequate to establish that his arrest was supported by probable cause\" (id. at 570). Finally, the court noted that Supreme Court erred in imposing the supplemental sex offender fee \"because the crime was committed prior to the effective date\" of the statute providing for such fee (id. at 573). ",
+      "The dissenting Justices would have modified the judgment of conviction and sentence to the extent that it was improper for Supreme Court to impose a supplemental sex offender fee, and, as so modified, would have affirmed (see id. at 581). The dissenters, relying on this Court's holding in  (7 NY3d 737 [2006]), concluded that Supreme Court's colloquy with defendant during the plea proceeding, combined with the executed written waiver form, demonstrated that \"defendant effectively waived his right to appeal,\" foreclosing any \"review of the denial of suppression of identification testimony\" (id. at {**18 NY3d at 264}579). Notwithstanding this position, the dissenters also opined that Supreme Court's denial of defendant's suppression motion was appropriate since the hearing record sufficiently established that defendant was in lawful custody at the time that complainant identified him in the lineup (see id. at 580-581). ",
+      "Nevertheless, the People, the dissenting Justices at the Appellate Division and the dissent here espouse that the oral colloquy during the plea proceeding combined with the written waiver mandates a finding that defendant's appeal waiver was effective. To support this position, they heavily rely on our decision in  (7 NY3d 737 [2006]). We reject this argument and conclude that Ramos is distinguishable from the case at bar. ",
+      "We disagree with the dissent's suggestion that we have \"transformed the taking of an appeal waiver\" into a \"game of chance,\" akin to the purchase of a lottery ticket (dissenting op at 268). Indeed, we advance no new rule today. Rather, we are simply applying our sound decisions—as we must—in Seaberg, Callahan, DeSimone, Lopez and Ramos to the particular circumstances of this case. And this precedent makes clear that \"[t]o facilitate appellate review,\" it is the trial court's obligation \"to ensure\" that a defendant's understanding of the appeal waiver is \"made apparent on the face of the record\" (Callahan, 80 NY2d at 280; see also Lopez, 6 NY3d at 256). In Ramos, the trial court met this obligation by eliciting an oral response on the record from defendant that he comprehended the appeal waiver. That oral assurance, combined with the signed written waiver, permitted a finding that the defendant entered into a knowing, voluntary and intelligent appeal waiver. Since there is no evidence from the oral colloquy that Supreme Court adequately assured itself that defendant understood the nature of the appeal waiver, our precedents require a finding that the appeal waiver was invalid. ",
+      "\"the court: Let me just put the whole plea on the record. You will be pleading guilty to rape in the first degree, with a promised sentence of nine years, to run concurrent with whatever you get in Queens and the Bronx.",
+      "\"the court: Now, other than what I have already promised you, which is the nine years, with my recommendation of concurrent sentencing, \"the defendant: No.\"",
+      "So why was the appeal waiver valid in Ramos but not in this case? Ramos was at least as fragile mentally as Bradshaw, who participated far more actively in the plea proceeding. And in{**18 NY3d at 274} Billingslea, we explained that although the \"better practice\" would be for the judge to explain to a defendant during the plea colloquy that \"though he ordinarily retains the right to an appeal even after pleading guilty, . . . he was being offered a particular plea by the prosecution on the condition that he give up that right,\" it was \"even better to secure a written waiver\" to the same effect (6 NY3d at 257 [emphasis added]). Further, in Ramos, we held that such a written waiver—and, as already mentioned, the written waivers in Ramos and in this case are identical—cured \"any ambiguity in the sentencing court's colloquy\" about whether the \"[d]efendant's waiver of his right to appeal was effective\" (7 NY3d at 738). Yet here, the majority completely discounts the written waiver, \"render[ing it] entirely superfluous\" in the words of the dissenters at the Appellate Division (76 AD3d 566, 579 [2d Dept 2010, Fisher, J., dissenting]). Put even more bluntly, we are evidently to assume that Bradshaw did not know what he was signing, and that defense counsel's and the court's representations are not to be believed. I respectfully dissent. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 7,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "1",
+      "2",
+      "3"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 4 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

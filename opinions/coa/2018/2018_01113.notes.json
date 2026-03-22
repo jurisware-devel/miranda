@@ -1,0 +1,132 @@
+{
+  "caseId": "2018_01113",
+  "sourcePath": "coa/2018/2018_01113.htm",
+  "notesPath": "coa/2018/2018_01113.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.985Z",
+  "source": {
+    "title": "People v Reyes (2018 NY Slip Op 01113)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 19235,
+    "lineCount": 102,
+    "tagCounts": {
+      "a": 14,
+      "b": 10,
+      "body": 2,
+      "br": 14,
+      "div": 14,
+      "font": 24,
+      "head": 2,
+      "html": 2,
+      "i": 72,
+      "opinion": 1,
+      "p": 51,
+      "script": 4,
+      "style": 2,
+      "sup": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14,
+      "u": 6
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Reyes",
+      "2018 NY Slip Op 01113 [31 NY3d 930]",
+      "February 15, 2018",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, May 2, 2018"
+    ],
+    "captionLines": [],
+    "citationLine": "2018 NY Slip Op 01113 31 NY3d 930",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued January 3, 2018; decided February 15, 2018",
+      "February 15, 2018",
+      "As corrected through Wednesday, May 2, 2018"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Eric Gonzalez , District Attorney , Brooklyn ( Thomas M. Ross and Leonard Joblove of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Eric Gonzalez , District Attorney , Brooklyn ( Thomas M. Ross and Leonard Joblove of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Seymour W. James, Jr. , The Legal Aid Society , New York City ( Allen Fallek of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Seymour W. James, Jr. , The Legal Aid Society , New York City ( Allen Fallek of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 26,
+    "footnotesCount": 1
+  },
+  "citations": {
+    "slipOpinion": "2018 NY Slip Op 01113",
+    "officialCitation": "31 NY3d 930",
+    "pageMarkerCount": 11
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Garcia"
+    ],
+    "qualifierLines": [
+      "{**31 NY3d at 930} OPINION OF THE COURT",
+      "Memorandum.",
+      "The Appellate Division, unlike this Court, may determine whether the weight of the evidence supports the verdict. Accordingly, I dissent, and would reverse the order of the Appellate Division and remit for a weight of the evidence review."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 1,
+    "labels": [
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

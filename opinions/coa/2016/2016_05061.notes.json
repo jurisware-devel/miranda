@@ -1,0 +1,114 @@
+{
+  "caseId": "2016_05061",
+  "sourcePath": "coa/2016/2016_05061.htm",
+  "notesPath": "coa/2016/2016_05061.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.895Z",
+  "source": {
+    "title": "People v Smith (2016 NY Slip Op 05061)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 35107,
+    "lineCount": 128,
+    "tagCounts": {
+      "a": 34,
+      "b": 22,
+      "blockquote": 4,
+      "body": 2,
+      "br": 14,
+      "div": 20,
+      "font": 30,
+      "head": 2,
+      "html": 2,
+      "i": 160,
+      "p": 78,
+      "script": 4,
+      "style": 2,
+      "sup": 6,
+      "table": 8,
+      "td": 20,
+      "title": 2,
+      "tr": 20,
+      "u": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Smith",
+      "2016 NY Slip Op 05061 [27 NY3d 652]",
+      "June 28, 2016",
+      "Abdus-Salaam, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, August 31, 2016"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Charles Smith, Appellant.",
+      "The People of the State of New York, Respondent, v Tyrell Ingram, Appellant.",
+      "The People of the State of New York, Respondent, v Isma McGhee, Also Known as Izzy, Appellant."
+    ],
+    "citationLine": "2016 NY Slip Op 05061 27 NY3d 652",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued June 1, 2016; decided June 28, 2016",
+      "June 28, 2016",
+      "As corrected through Wednesday, August 31, 2016"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 46,
+    "footnotesCount": 3
+  },
+  "citations": {
+    "slipOpinion": "2016 NY Slip Op 05061",
+    "officialCitation": "27 NY3d 652",
+    "pageMarkerCount": 14
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [
+      "Abdus-Salaam"
+    ],
+    "qualifierLines": [
+      "{**27 NY3d at 659} OPINION OF THE COURT",
+      "Opinion by Judge Abdus-Salaam. Chief Judge DiFiore and Judges Pigott, Rivera, Stein, Fahey and Garcia concur."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 3,
+    "labels": [
+      "1",
+      "2",
+      "3"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 4 table elements before or within the header region."
+    }
+  ]
+}

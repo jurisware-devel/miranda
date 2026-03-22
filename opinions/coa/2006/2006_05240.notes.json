@@ -1,0 +1,129 @@
+{
+  "caseId": "2006_05240",
+  "sourcePath": "coa/2006/2006_05240.htm",
+  "notesPath": "coa/2006/2006_05240.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.332Z",
+  "source": {
+    "title": "People v Swinton (2006 NY Slip Op 05240)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 4443,
+    "lineCount": 71,
+    "tagCounts": {
+      "a": 2,
+      "appcouns": 1,
+      "b": 6,
+      "body": 2,
+      "br": 4,
+      "div": 2,
+      "font": 8,
+      "head": 2,
+      "html": 2,
+      "i": 18,
+      "p": 14,
+      "script": 4,
+      "style": 2,
+      "table": 6,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [
+      "appcouns"
+    ],
+    "strayClosingTags": [
+      "appcouns"
+    ]
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Swinton",
+      "2006 NY Slip Op 05240 [7 NY3d 776]",
+      "July 6, 2006",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, September 20, 2006"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Joseph Swinton, Appellant.",
+      "The People of the State of New York, Respondent, v Silva Swinton, Appellant."
+    ],
+    "citationLine": "2006 NY Slip Op 05240 7 NY3d 776",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Decided July 6, 2006",
+      "July 6, 2006",
+      "As corrected through Wednesday, September 20, 2006"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Richard A. Brown, District Attorney , Kew Gardens ( Linda Cantoni of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Richard A. Brown, District Attorney , Kew Gardens ( Linda Cantoni of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 1,
+    "opinionBlocksCount": 5,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2006 NY Slip Op 05240",
+    "officialCitation": "7 NY3d 776",
+    "pageMarkerCount": 3
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**7 NY3d at 777} OPINION OF THE COURT",
+      "Memorandum. ",
+      "Judges G.B. Smith, Rosenblatt, Read and R.S. Smith concur in memorandum; Chief Judge Kaye and Judges Ciparick and Graffeo concur in result on constraint of People v Feingold (7 NY3d 288 [2006]). "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <appcouns> in source HTML."
+    },
+    {
+      "code": "STRAY_CLOSING_TAG",
+      "severity": "warning",
+      "detail": "Closing tag </appcouns> appears more times than opening tag <appcouns>."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 3 table elements before or within the header region."
+    }
+  ]
+}

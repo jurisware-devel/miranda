@@ -1,0 +1,126 @@
+{
+  "caseId": "2013_08287",
+  "sourcePath": "coa/2013/2013_08287.htm",
+  "notesPath": "coa/2013/2013_08287.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.708Z",
+  "source": {
+    "title": "People v Collier (2013 NY Slip Op 08287)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 23468,
+    "lineCount": 111,
+    "tagCounts": {
+      "a": 36,
+      "b": 14,
+      "blockquote": 2,
+      "body": 2,
+      "br": 14,
+      "div": 4,
+      "font": 32,
+      "head": 2,
+      "html": 2,
+      "i": 130,
+      "p": 30,
+      "script": 4,
+      "style": 2,
+      "sup": 4,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Collier",
+      "2013 NY Slip Op 08287 [22 NY3d 429]",
+      "December 12, 2013",
+      "Read, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, March 12, 2014"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Andre Collier, Appellant."
+    ],
+    "citationLine": "2013 NY Slip Op 08287 22 NY3d 429",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued November 13, 2013; decided December 12, 2013",
+      "December 12, 2013",
+      "As corrected through Wednesday, March 12, 2014"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 28,
+    "footnotesCount": 2
+  },
+  "citations": {
+    "slipOpinion": "2013 NY Slip Op 08287",
+    "officialCitation": "22 NY3d 429",
+    "pageMarkerCount": 15
+  },
+  "opinionStructure": {
+    "totalWritings": 4,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "dissent": 1
+    },
+    "authors": [
+      "Read",
+      "Lippman"
+    ],
+    "qualifierLines": [
+      "{**22 NY3d at 431} OPINION OF THE COURT",
+      "At a hearing on April 22, 2005, defendant was offered a plea bargain requiring him to plead guilty to two counts of robbery in the first degree (the first and fifth counts of the indictment) in satisfaction of the full indictment and several unindicted robberies. Under the terms of the proposed plea agreement, as described by County Court, defendant would be sentenced to a determinate term of 25 years in prison on the first count of the indictment, and five years on the fifth count, each to be followed by five years of postrelease supervision. Further, the judge retained discretion to direct these sentences to run either concurrently or consecutively, based upon his evaluation of the information in the yet-to-be-prepared presentence report. Defendant agreed to these terms and conditions and pleaded guilty. ",
+      "On June 17, 2005, defendant appeared for sentencing, and County Court declared him to be a second felony offender. Based on his review of the presentence report, the judge imposed the agreed-upon 25-year and five-year determinate sentences consecutively rather than concurrently. Defendant appealed, arguing that his sentence was excessive. On June 26, 2008, the Appellate Division affirmed the judgment, holding that defendant was \"precluded from challenging the sentence imposed as harsh and excessive\" because he had knowingly, intelligently and voluntarily waived his right to appeal (52 AD3d 1121, 1122 [3d Dept 2008], lv denied 11 NY3d 786 [2008]). ",
+      "At the resentencing hearing on January 13, 2011, defendant asked to withdraw his plea; the People, however, requested that County Court resentence defendant. By this time, six years had elapsed since the robberies charged in the indictment. Voicing his intention to \"impose a sentence that clearly ensures that [defendant] receives the benefit of the sentencing bargain,\" the judge sentenced him to concurrent determinate prison terms of 25 years on the first count of the indictment and 10 years on the fifth count, each to be followed by five years of postrelease supervision. ",
+      "\"defendant actually received a lesser sentence under the resentence than the one he agreed to under the plea agreement because County Court directed that the sentences run concurrently, instead of consecutively, thereby reducing his aggregate prison exposure{**22 NY3d at 433} from 30 to 25 years. Thus, defendant received a sentence that was better than 'the benefit of his bargain' upon resentencing, and County Court was not required to allow him to withdraw his plea\" (91 AD3d 987, 988 [3d Dept 2012]).",
+      "Defendant insists otherwise. He takes the position that his \"aggregate prison exposure\" is \"irrelevant\" even if more favorable than what he originally agreed to and received because his \"two sentences [were] separate and distinct and operate[d] independent[ly] [of] each other.\" And since the original \"plea bargain [could not] be legally fulfilled\" with respect to the five-{**22 NY3d at 435}year sentence on the fifth count of the indictment, \"both sentences must be vacated and [defendant] must [be] given the opportunity to withdraw his plea in its entirety.\" The dissent likewise contends that defendant's plea must be vacated because he \"pleaded guilty without knowledge that his bargained-for five-year sentence was half the minimum prescribed by law\" (dissenting op at 437). But as already discussed, once a defendant has pleaded guilty a reviewing court must make an objective determination of whether the ultimate sentence fulfilled the sentencing promise—here, a minimum determinate prison term of 25 years and a maximum determinate prison term of 30 years. The defendant's subjective interpretation of the agreement does not control (see Cataldo, 39 NY2d at 580; Paradiso, 689 F2d at 31). ",
+      "Defendant also claims that  (4 NY3d 242 [2005]) and its progeny prescribe plea vacatur because his due process rights were violated, and the dissent agrees (see dissenting op at 436). In Catu, the trial court did not advise the defendant during the plea colloquy that he was subject to a mandatory period of supervision after his release from prison, a direct consequence of his plea. Because a defendant pleading guilty must be aware of the direct consequences of a plea in order to knowingly, voluntarily and intelligently choose among alternative courses of action, the Catu court's failure to apprise the defendant of postrelease supervision required reversal of the conviction and vacatur of the plea. ",
+      " Because defendant's guilty plea was obtained in violation of his due process rights, vacatur of the plea is the proper remedy for the constitutional deprivation. Accordingly, I dissent. ",
+      "Contrary to the majority's contention, this case raises the same constitutional concerns addressed in our jurisprudence involving plea allocutions where courts failed to inform defendant of a mandatory term of postrelease supervision (PRS). The constitutional principle underlying our PRS cases is that, without knowledge of a direct consequence of her criminal conviction, a defendant's \"plea cannot be deemed knowing, voluntary and intelligent\" (Hill, 9 NY3d at 191; , 4 NY3d 242, 245 [2005]). The appropriate remedy for a constitutionally defective plea is automatic vacatur (Hill, 9 NY3d at 191 n 1; , 8 NY3d 541, 545 [2007]; , 7 NY3d 744, 746 [2006]; Catu, 4 NY3d at 245; McCarthy v United States, 394 US 459, 466 [1969] [\"if a defendant's guilty plea is not equally voluntary and knowing, it has been obtained in violation of due process and is therefore void\"]). This is true despite the theoretical feasibility under the law of resentencing defendant to a combined period of incarceration and PRS equal to or less than the maximum potential term to which defendant agreed (see Louree, 8 NY3d at 545; Van Deusen, 7 NY3d at 746; , 8 NY3d 342, 345 [2007]; , 1 NY3d 126, 130 [2003]). Harmless error analysis, including the majority's assessment of whether specific performance effectively \"cured\" the defect, has no place in this context because when a plea is obtained in violation of defendant's due process rights, \"no later events [can] rescue it\" (, 12 NY3d 390, 396 [2009, Pigott, J., dissenting]; see also Hill, 9 NY3d at 192; People v Coles, 62 NY2d 908, 910 [1984]).{**22 NY3d at 437} ",
+      "Judges Graffeo, Smith, Pigott and Abdus-Salaam concur with Judge Read; Chief Judge Lippman dissents in an opinion in which Judge Rivera concurs. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 2,
+    "labels": [
+      "*",
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 4 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

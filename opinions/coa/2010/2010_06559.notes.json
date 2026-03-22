@@ -1,0 +1,121 @@
+{
+  "caseId": "2010_06559",
+  "sourcePath": "coa/2010/2010_06559.htm",
+  "notesPath": "coa/2010/2010_06559.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.496Z",
+  "source": {
+    "title": "People v Ramirez (2010 NY Slip Op 06559)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 4512,
+    "lineCount": 66,
+    "tagCounts": {
+      "a": 6,
+      "b": 4,
+      "body": 2,
+      "br": 4,
+      "div": 2,
+      "font": 10,
+      "head": 2,
+      "html": 2,
+      "i": 18,
+      "p": 13,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Ramirez",
+      "2010 NY Slip Op 06559 [15 NY3d 824]",
+      "September 16, 2010",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, November 3, 2010"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Timoteo Ramirez, Appellant."
+    ],
+    "citationLine": "2010 NY Slip Op 06559 15 NY3d 824",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Decided September 16, 2010",
+      "September 16, 2010",
+      "As corrected through Wednesday, November 3, 2010"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Schlather, Stumbar, Parks & Salk, LLP , Ithaca ( Diane V. Bruns of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Schlather, Stumbar, Parks & Salk, LLP , Ithaca ( Diane V. Bruns of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Cyrus R. Vance, Jr., District Attorney , New York City ( Grace Vee of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Cyrus R. Vance, Jr., District Attorney , New York City ( Grace Vee of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 5,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2010 NY Slip Op 06559",
+    "officialCitation": "15 NY3d 824",
+    "pageMarkerCount": 4
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**15 NY3d at 825} OPINION OF THE COURT",
+      "Memorandum. "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

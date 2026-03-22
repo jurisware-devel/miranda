@@ -1,0 +1,137 @@
+{
+  "caseId": "2010_06609",
+  "sourcePath": "coa/2010/2010_06609.htm",
+  "notesPath": "coa/2010/2010_06609.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.497Z",
+  "source": {
+    "title": "People v Brabham (2010 NY Slip Op 06609)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 7263,
+    "lineCount": 76,
+    "tagCounts": {
+      "a": 10,
+      "b": 10,
+      "body": 2,
+      "br": 12,
+      "div": 4,
+      "font": 12,
+      "head": 2,
+      "html": 2,
+      "i": 16,
+      "p": 15,
+      "script": 4,
+      "style": 2,
+      "sup": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Brabham",
+      "2010 NY Slip Op 06609 [15 NY3d 841]",
+      "September 23, 2010",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, November 3, 2010"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Appellant,",
+      "v",
+      "Jesse Brabham, Respondent."
+    ],
+    "citationLine": "2010 NY Slip Op 06609 15 NY3d 841",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Decided September 23, 2010",
+      "September 23, 2010",
+      "As corrected through Wednesday, November 3, 2010"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Cyrus R. Vance, Jr., District Attorney , New York City ( Allen J. Vickey of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Cyrus R. Vance, Jr., District Attorney , New York City ( Allen J. Vickey of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Legal Aid Society , New York City ( Adrienne M. Gantt of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Legal Aid Society , New York City ( Adrienne M. Gantt of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 9,
+    "footnotesCount": 1
+  },
+  "citations": {
+    "slipOpinion": "2010 NY Slip Op 06609",
+    "officialCitation": "15 NY3d 841",
+    "pageMarkerCount": 5
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Pigott"
+    ],
+    "qualifierLines": [
+      "{**15 NY3d at 842} OPINION OF THE COURT",
+      "On review of submissions pursuant to section 500.11 of the Rules of the Court of Appeals (22 NYCRR 500.11), appeal dismissed upon the ground that the modification at the Appellate Division was not \"on the law alone or upon the law and such facts which, but for the determination of law, would not have led to . . . modification\" (CPL 450.90 [2] [a]). In view of the above, we have no occasion to comment on the dissent's position that Penal Law § 70.25 (2-c) mandates that the Appellate Division delineate its reasons for modifying the sentence. ",
+      "Concur: Chief Judge Lippman and Judges Ciparick, Graffeo, Read and Jones. Judge Pigott dissents in an opinion in which Judge Smith concurs.  ",
+      " We are dismissing the People's appeal because, in the majority's view, the modification by the Appellate Division was not \"on the law alone or upon the law and such facts which, but for the determination of law, would not have led to reversal or modification\" (CPL 450.90 [2] [a]). From that ruling, I respectfully dissent.{**15 NY3d at 843} ",
+      "Supreme Court sentenced defendant, under Penal Law § 70.25 (2-c), to consecutive terms of 4 to 8 years on the drug offense and 1½ to 3 years on the bail jumping offense. On appeal, the Appellate Division reduced defendant's sentence, \"as a matter of discretion in the interest of justice,\" by directing that the sentences be served concurrently rather than consecutively (66 AD3d 557 [2009]). The court simply stated that it found \"mitigating circumstances\" warranting a concurrent sentence for bail jumping, but failed to explain those factors on the record. ",
+      "Under Penal Law § 70.25 (2-c), when a defendant is convicted of bail jumping, that sentence shall run consecutively with defendant's other sentence. The statute further provides, however, that the court may, \"in the interest of justice,\" order a sentence to run concurrently if it finds mitigating circumstances that bear directly upon the manner in which the crime was committed (Penal Law § 70.25 [2-c]). If the court determines that consecutive sentences should not be ordered, it is required to make a \"statement on the record of the facts and circumstances upon which such determination is based\" (id.). Thus, under the clear language of the statute, the court's interest of justice jurisdiction in ordering concurrent sentences is limited to finding mitigating factors and making an explanatory statement of those factors on the record. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 1,
+    "labels": [
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

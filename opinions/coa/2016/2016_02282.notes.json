@@ -1,0 +1,126 @@
+{
+  "caseId": "2016_02282",
+  "sourcePath": "coa/2016/2016_02282.htm",
+  "notesPath": "coa/2016/2016_02282.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.864Z",
+  "source": {
+    "title": "People v Johnson (2016 NY Slip Op 02282)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 41183,
+    "lineCount": 147,
+    "tagCounts": {
+      "a": 18,
+      "b": 18,
+      "blockquote": 8,
+      "body": 2,
+      "br": 18,
+      "div": 16,
+      "font": 58,
+      "head": 2,
+      "html": 2,
+      "i": 162,
+      "p": 95,
+      "script": 4,
+      "style": 2,
+      "sup": 6,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 10
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Johnson",
+      "2016 NY Slip Op 02282 [27 NY3d 60]",
+      "March 29, 2016",
+      "Rivera, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, May 25, 2016"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Appellant,",
+      "v",
+      "Keith Johnson, Respondent."
+    ],
+    "citationLine": "2016 NY Slip Op 02282 27 NY3d 60",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued February 9, 2016; decided March 29, 2016",
+      "March 29, 2016",
+      "As corrected through Wednesday, May 25, 2016"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 56,
+    "footnotesCount": 3
+  },
+  "citations": {
+    "slipOpinion": "2016 NY Slip Op 02282",
+    "officialCitation": "27 NY3d 60",
+    "pageMarkerCount": 28
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Rivera",
+      "Pigott"
+    ],
+    "qualifierLines": [
+      "{**27 NY3d at 63} OPINION OF THE COURT",
+      "The jury found defendant guilty of robbery in the second degree (Penal Law § 160.10 [2] [b]), petit larceny (Penal Law § 155.25), menacing in the second degree (Penal Law § 120.14 [1]), and unlawful possession or use of an imitation pistol or revolver (Administrative Code of City of NY § 10-131 [g]). The court sentenced defendant to five years' incarceration followed by five years' postrelease supervision for the robbery conviction, to be served concurrently with three 30-day terms on the other counts.",
+      "The Appellate Division reversed the judgment and remanded for a new trial, holding that admission of codefendant's grand jury testimony was error under Bruton because the statements were facially incriminating as to defendant (123 AD3d 573, 575 [1st Dept 2014]). The dissenting Justice held that the statement{**27 NY3d at 67} was not facially incriminating as to defendant, because it was only inculpatory when linked with further evidence adduced at trial (id. at 579 [DeGrasse, J., dissenting]). A Justice of the Appellate Division granted the People leave to appeal (2015 NY Slip Op 63951[U] [1st Dept 2015]).",
+      "These statements were powerfully incriminating as to defendant, who was charged with acting in concert with codefendant, who had in turn admitted to the grand jury an element of the crime charged, namely that he was in possession of the drug-buy money. Moreover, the ordinary inferences to be{**27 NY3d at 70} drawn from the statements—without reference to any other evidence presented to the jury—were that defendant was involved in an arrangement to exchange drugs for cash, which explained why the man approached the car demanding \"the stuff\" immediately following defendant's return, and who willingly gave over money to complete the drug purchase. Further, and contrary to the dissent's suggestion (dissenting op at 77), curative instructions could not avoid the substantial risk that the jury would \"look[ ] to the incriminating extrajudicial statements in determining petitioner's guilt\" (Bruton, 391 US at 126).",
+      "We disagree with the dissent's characterization of the statement as a \"perfectly innocent explanation of the evening's events\" (dissenting op at 75). The dissent appears to focus on codefendant's excuses for his actions, while ignoring the obvious criminal aspects of the story as retold. There is nothing innocent about a stranger throwing money in a car and then shooting at the car as it pulls away. Even the codefendant perceived the events as suggestive of defendant's illicit conduct. As he explained, after the stranger approached, questioned defendants about \"the stuff,\" and put the prerecorded money in the car, codefendant knew \"it was time to get out of there\" and left the scene to avoid a \"situation.\"",
+      "The People also argue, and the dissent contends (dissenting op at 74-75), that the statements are not incriminating as to defendant because, read in isolation without reference to any other testimony or evidence, the statements do not ascribe criminal conduct to defendant. As we have explained, this is not a plausible reading of the grand jury statements. Codefendant stated defendant was in the car with him when codefendant took the drug-buy money, put it in his pants pocket, and drove away. His statement also acknowledged that he was familiar with \"undercover buy and bust\" operations and knew what constituted \"prerecorded buy money.\" Codefendant's statement explicitly stated that he had the $30 prerecorded buy money in his pocket when he was arrested. Codefendant attempted to give an explanation that he hoped would establish his innocence by suggesting that the officers fabricated their version of the events. In so doing he made statements that on their face incriminated defendant in the charged robbery, by explicitly admitting to possession of the robbery proceeds, and through appropriate inferences drawn from his statements connecting defendant's conduct outside the car to drug-related activity.",
+      "The dissent is incorrect that our holding will require severance of every joint trial involving a codefendant's false exculpatory statement and that our decision is an overbroad interpretation of what constitutes a \"facially incriminating\" statement (dissenting op at 76, 77). We do no more than apply existing United States Supreme Court precedent regarding the Confrontation Clause limitations on the admission of a non-testifying codefendant's statement.",
+      "I dissent from the majority's conclusion that the admission of the testimony codefendant Rushing gave before the grand jury constituted a Bruton error and deprived defendant of his Sixth Amendment right of confrontation. None of Rushing's statements facially incriminated anyone, and therefore, Bruton does not apply."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 3,
+    "labels": [
+      "1",
+      "2",
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

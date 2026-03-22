@@ -1,0 +1,100 @@
+{
+  "caseId": "2008_09251",
+  "sourcePath": "coa/2008/2008_09251.htm",
+  "notesPath": "coa/2008/2008_09251.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.407Z",
+  "source": {
+    "title": "People v George (2008 NY Slip Op 09251)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 4181,
+    "lineCount": 66,
+    "tagCounts": {
+      "a": 4,
+      "b": 4,
+      "body": 2,
+      "br": 4,
+      "div": 2,
+      "font": 10,
+      "head": 2,
+      "html": 2,
+      "i": 12,
+      "p": 13,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v George",
+      "2008 NY Slip Op 09251 [11 NY3d 848]",
+      "November 25, 2008",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, February 4, 2009"
+    ],
+    "captionLines": [
+      "v"
+    ],
+    "citationLine": "2008 NY Slip Op 09251 11 NY3d 848",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued October 21, 2008; decided November 25, 2008",
+      "November 25, 2008",
+      "As corrected through Wednesday, February 4, 2009"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 5,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2008 NY Slip Op 09251",
+    "officialCitation": "11 NY3d 848",
+    "pageMarkerCount": 4
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**11 NY3d at 849} OPINION OF THE COURT",
+      "Memorandum. "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

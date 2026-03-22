@@ -1,0 +1,116 @@
+{
+  "caseId": "2024_05818",
+  "sourcePath": "coa/2024/2024_05818.htm",
+  "notesPath": "coa/2024/2024_05818.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.294Z",
+  "source": {
+    "title": "People v Williams (2024 NY Slip Op 05818)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 4427,
+    "lineCount": 71,
+    "tagCounts": {
+      "a": 8,
+      "b": 4,
+      "body": 2,
+      "br": 6,
+      "div": 6,
+      "font": 8,
+      "head": 2,
+      "html": 2,
+      "i": 28,
+      "opinion": 1,
+      "p": 16,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 12,
+      "title": 2,
+      "tr": 12
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Williams",
+      "2024 NY Slip Op 05818 [42 NY3d 1049]",
+      "November 21, 2024",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431."
+    ],
+    "captionLines": [],
+    "citationLine": "2024 NY Slip Op 05818 42 NY3d 1049",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued October 16, 2024; decided November 21, 2024",
+      "November 21, 2024"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Twyla Carter, The Legal Aid Society , New York City ( Steven R. Berko of counsel), and Latham & Watkins LLP , New York City ( Jonathan Lippman, Richard D. Owens, Sara Gail Prudenti, Caroline C. Marshall, Alon Handler, Juan M. Palacio Moreno and Lydia Franzek of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Twyla Carter, The Legal Aid Society , New York City ( Steven R. Berko of counsel), and Latham & Watkins LLP , New York City ( Jonathan Lippman, Richard D. Owens, Sara Gail Prudenti, Caroline C. Marshall, Alon Handler, Juan M. Palacio Moreno and Lydia Franzek of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Melinda Katz, District Attorney , Kew Gardens ( Christopher J. Blira-Koessler and John M. Castellano of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Melinda Katz, District Attorney , Kew Gardens ( Christopher J. Blira-Koessler and John M. Castellano of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 4,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2024 NY Slip Op 05818",
+    "officialCitation": "42 NY3d 1049",
+    "pageMarkerCount": 3
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**42 NY3d at 1049} OPINION OF THE COURT",
+      "Memorandum."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

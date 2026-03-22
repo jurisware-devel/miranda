@@ -1,0 +1,120 @@
+{
+  "caseId": "2015_07781",
+  "sourcePath": "coa/2015/2015_07781.htm",
+  "notesPath": "coa/2015/2015_07781.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.826Z",
+  "source": {
+    "title": "People v Nealon (2015 NY Slip Op 07781)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 45869,
+    "lineCount": 135,
+    "tagCounts": {
+      "a": 50,
+      "b": 14,
+      "blockquote": 6,
+      "body": 2,
+      "br": 16,
+      "div": 14,
+      "font": 38,
+      "head": 2,
+      "html": 2,
+      "i": 368,
+      "p": 93,
+      "script": 4,
+      "style": 2,
+      "sup": 4,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 8
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Nealon",
+      "2015 NY Slip Op 07781 [26 NY3d 152]",
+      "October 27, 2015",
+      "Fahey, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, December 23, 2015"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Appellant,",
+      "v",
+      "Kenneth Nealon, Respondent."
+    ],
+    "citationLine": "2015 NY Slip Op 07781 26 NY3d 152",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued September 10, 2015; decided October 27, 2015",
+      "October 27, 2015",
+      "As corrected through Wednesday, December 23, 2015"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 52,
+    "footnotesCount": 2
+  },
+  "citations": {
+    "slipOpinion": "2015 NY Slip Op 07781",
+    "officialCitation": "26 NY3d 152",
+    "pageMarkerCount": 18
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Fahey",
+      "Lippman"
+    ],
+    "qualifierLines": [
+      "{**26 NY3d at 154} OPINION OF THE COURT",
+      "More recently, the Court decided  (15 NY3d 824 [2010]). In a brief memorandum decision, we wrote that \"although the record is silent as to whether Supreme Court showed the jury note to counsel as required in [O'Rama], defense counsel had notice of the contents of the note and the court's response, and failed to object at that time, when the error could have been cured\" (id. at 825-826). Citing Starling, we therefore held that defendant's claim was \"unpreserved for review\" (id. at 826, also citing , 14 NY3d 426, 429-430 [2010]).",
+      "The most effective way of both eliminating gamesmanship from, and assuring the full participation of counsel in, the critical phase of the trial initiated by a substantive post-submission jury inquiry is for appellate courts generally to demand scrupulous adherence to the not overly complex mode of proceeding prescribed in O'Rama. To the extent that we narrow the application of the mode of proceeding doctrine in this context, experience teaches that the price will be the toleration of a very serious species of error typically situated at the crux of a criminal trial—error which will predictably flourish in the ample shade of the preservation and harmless error doctrines. As the Appellate Division evidently understood, a dominant concern of this Court for the last 25 years has been to avoid such a degradation of essential process. Today's decisions, resting on a fairly obvious overreading of four fact-sensitive decisions to express a severe limitation of appellate oversight of the process following from a trial court's receipt of a substantive jury inquiry, lose sight of, and break with that jurisprudential context. And although the result of doing so in these cases may seem satisfying, there is good reason to fear that longitudinally this modern approach will not enhance, but impair the quality of the adversary process and the reliability of its outcome. For these reasons I dissent and would affirm the order of the Appellate Division."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 2,
+    "labels": [
+      "*",
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

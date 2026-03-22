@@ -1,0 +1,126 @@
+{
+  "caseId": "2011_00744",
+  "sourcePath": "coa/2011/2011_00744.htm",
+  "notesPath": "coa/2011/2011_00744.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.515Z",
+  "source": {
+    "title": "People v Harnett (2011 NY Slip Op 00744)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 21970,
+    "lineCount": 115,
+    "tagCounts": {
+      "a": 17,
+      "b": 8,
+      "body": 2,
+      "br": 8,
+      "div": 8,
+      "font": 32,
+      "head": 2,
+      "html": 2,
+      "i": 90,
+      "p": 36,
+      "script": 4,
+      "style": 2,
+      "sup": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 4
+    },
+    "unknownTags": [],
+    "strayClosingTags": [
+      "a"
+    ]
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Harnett",
+      "2011 NY Slip Op 00744 [16 NY3d 200]",
+      "February 10, 2011",
+      "Smith, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, April 13, 2011"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "David M. Harnett, Appellant."
+    ],
+    "citationLine": "2011 NY Slip Op 00744 16 NY3d 200",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued January 6, 2011; decided February 10, 2011",
+      "February 10, 2011",
+      "As corrected through Wednesday, April 13, 2011"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 35,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2011 NY Slip Op 00744",
+    "officialCitation": "16 NY3d 200",
+    "pageMarkerCount": 15
+  },
+  "opinionStructure": {
+    "totalWritings": 4,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "dissent": 1
+    },
+    "authors": [
+      "Smith",
+      "Ciparick"
+    ],
+    "qualifierLines": [
+      "{**16 NY3d at 203} OPINION OF THE COURT",
+      "Defendant did not move, either before or after sentence, to withdraw his plea. After being sentenced, however, he appealed to the Appellate Division, arguing that his plea was not knowing, voluntary and intelligent because he had not been warned of its possible consequences under SOMTA. The Appellate Division {**16 NY3d at 204}affirmed, with two Justices dissenting (72 AD3d 232 [2010]). A Justice of the Appellate Division granted leave to appeal, and we now affirm. ",
+      " Because I believe that civil confinement under the Sex Offender Management and Treatment Act (SOMTA) is so grave a deprivation of liberty that a plea should not be considered knowing and voluntary unless the defendant is aware of it, I respectfully dissent. ",
+      "I dissented in Gravino on the ground that because imposition of SORA registration is mandatory and known at the time of the plea, it ought to be considered a direct consequence of that plea (see id. at 561 [Ciparick, J., dissenting]). This rationale likewise applies to defendant's automatic eligibility for SOMTA review. All defendants convicted of sexual abuse in the first degree and sentenced to a prison term are \"detained sex offenders\" under SOMTA (Mental Hygiene Law § 10.03 [g]). The statute requires that the Attorney General and Commissioner of Mental Health receive notice of a detained sex offender's scheduled release date and provides the authority to take further action towards civil management, if warranted (Mental Hygiene Law § 10.05 [b], [d], [e], [g]; § 10.06 [a]). Nevertheless, I acknowledge that following our holding in Gravino, SOMTA review must be considered a collateral consequence. ",
+      "Under most circumstances, this would end our analysis, since a court's failure to warn a defendant of collateral consequences generally does not merit withdrawal of a plea (,{**16 NY3d at 209} 4 NY3d 242, 244 [2005]). Here, however, we are confronted with a consequence that, though technically nonpenal and not applied to every defendant, may result in a period of confinement lengthier than a defendant's prison sentence (see Mental Hygiene Law § 10.07 [f]; § 10.09 [a], [h]; § 10.10 [a]). In this sense, as the Appellate Division dissent noted, \"it constitutes a potentially greater deprivation of liberty than the criminal sentence imposed,\" and is closer to a direct consequence than those traditionally considered collateral (People v Harnett, 72 AD3d 232, 236 [3d Dept 2010]). ",
+      "Although SOMTA confinement follows a separate administrative evaluation, probable cause hearing, and jury trial, it is the initial conviction that determines a defendant's eligibility for that evaluative process. Even the majority here \"recommend[s] to trial courts that the possible effects of SOMTA be explained to anyone pleading guilty to an offense that may result in SOMTA proceedings\" (majority op at 207). The dissent below and the Supreme Court of New Jersey have aptly noted that where, as here, a potential consequence of a plea is confinement well beyond the penal sentence, fundamental fairness requires the defendant's knowledge of that consequence (see State v Bellamy, {**16 NY3d at 210}178 NJ 127, 139, 835 A2d 1231, 1238 [2003]; Harnett, 72 AD3d at 237). "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "STRAY_CLOSING_TAG",
+      "severity": "warning",
+      "detail": "Closing tag </a> appears more times than opening tag <a>."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 4 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

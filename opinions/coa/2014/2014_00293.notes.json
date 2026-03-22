@@ -1,0 +1,170 @@
+{
+  "caseId": "2014_00293",
+  "sourcePath": "coa/2014/2014_00293.htm",
+  "notesPath": "coa/2014/2014_00293.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.713Z",
+  "source": {
+    "title": "People v Cortez (2014 NY Slip Op 00293)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 55546,
+    "lineCount": 157,
+    "tagCounts": {
+      "a": 56,
+      "b": 22,
+      "blockquote": 6,
+      "body": 2,
+      "br": 18,
+      "conopn": 2,
+      "div": 12,
+      "font": 72,
+      "head": 2,
+      "html": 2,
+      "i": 372,
+      "p": 55,
+      "script": 4,
+      "style": 2,
+      "sup": 8,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14,
+      "u": 8
+    },
+    "unknownTags": [
+      "conopn"
+    ],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Cortez",
+      "2014 NY Slip Op 00293 [22 NY3d 1061]",
+      "January 21, 2014",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, March 19, 2014"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Paul Cortez, Appellant."
+    ],
+    "citationLine": "2014 NY Slip Op 00293 22 NY3d 1061",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued November 12, 2013; decided January 21, 2014",
+      "January 21, 2014",
+      "As corrected through Wednesday, March 19, 2014"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Law Office of Marc Fernich , New York City ( Marc Fernich of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Law Office of Marc Fernich , New York City ( Marc Fernich of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Cyrus R. Vance, Jr., District Attorney , New York City ( David M. Cohn and Hilary Hassler of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Cyrus R. Vance, Jr., District Attorney , New York City ( David M. Cohn and Hilary Hassler of counsel), for respondent.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Levitt & Kaizer, New York City ( Richard Ware Levitt and Dean M. Solomon of counsel), Joel B. Rudin, National Association of Criminal Defense Lawyers , and Richard Willstatter, New York State Association of Criminal Defense Lawyers , White Plains, for National Association of Criminal Defense Lawyers and another, amici curiae.",
+        "sideGuess": null,
+        "terminalPhrase": "amici curiae.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Levitt & Kaizer, New York City ( Richard Ware Levitt and Dean M. Solomon of counsel), Joel B. Rudin, National Association of Criminal Defense Lawyers , and Richard Willstatter, New York State Association of Criminal Defense Lawyers , White Plains, for National Association of Criminal Defense Lawyers and another, amici curiae.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 55,
+    "footnotesCount": 4
+  },
+  "citations": {
+    "slipOpinion": "2014 NY Slip Op 00293",
+    "officialCitation": "22 NY3d 1061",
+    "pageMarkerCount": 35
+  },
+  "opinionStructure": {
+    "totalWritings": 5,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "concurrence": 2
+    },
+    "authors": [
+      "Lippman",
+      "Abdus-salaam"
+    ],
+    "qualifierLines": [
+      "{**22 NY3d at 1062} OPINION OF THE COURT",
+      "Memorandum. ",
+      "Defendant was represented at trial by two attorneys; lead counsel Laura Miranda, Esq. was second-seated by an attorney (hereinafter \"co-counsel\") retained for her purported expertise in dealing with forensic evidence, the most crucial component of the People's case. Before the trial began, however, it was disclosed that co-counsel had been indicted by a New York County grand jury; she was alleged to have smuggled drugs to a client in prison. Inasmuch, then, as co-counsel faced prosecution by the Office of the New York County District Attorney, the same office that was concurrently prosecuting her client, Mr. Cortez, there was at least a potential conflict of interest; it was entirely plausible that co-counsel's natural concern over how she would be dealt with in her own case would inhibit the vigor of her opposition to her prosecutor's case against her client. A Gomberg hearing was thus held for the purpose of ascertaining on the record that defendant was knowingly electing to continue with co-counsel as his attorney notwithstanding any conflict that her prosecution might pose to her single-minded advocacy on his behalf (see People v Gomberg, 38 NY2d 307 [1975]). ",
+      " I agree that the trial court's inquiry into co-counsel's conflict of interest was deficient under our existing case law, and that the trial court erred by admitting the challenged journal entries into evidence. I also agree that these errors were harmless and did not deprive defendant of a fair trial. However, I write separately from Chief Judge Lippman and my two colleagues who join his concurring opinion to express my view that resolution of this case need not rest upon our adoption of a federal \"protocol\" governing a trial court's inquiry into an attorney's potential conflict of interest, or the novel expansion of the Molineux doctrine proposed in the Chief Judge's opinion. ",
+      "The Chief Judge's opinion apparently takes umbrage with this Court's reluctance to prescribe a particular \"format or catechism that the court must follow\" when conducting a {**22 NY3d at 1074}conflict inquiry (Lloyd, 51 NY2d at 112; see Caban, 70 NY2d at 697). Indeed, we have preferred to \"allow trial judges to tailor the inquiry to the particular circumstances to which the [conflict] waiver relates\" (Lippman, Ch. J., concurring op at 1064). ",
+      "The Chief Judge's opinion endorses, over our Gomberg line of cases, the stricter inquiry \"protocol\" outlined in United States v Curcio (680 F2d 881, 888-890 [1982]) and \"widely employed\" by the Second Circuit (Lippman, Ch. J., concurring op at 1065). Like our Gomberg inquiry, the Curcio \"procedures\" are intended \"to permit the court to determine whether the defendant's waiver of his right to conflict-free counsel is knowing and intelligent\" (United States v Rodriguez, 968 F2d 130, 139 [2d Cir 1992]). However, as the Chief Judge notes in his concurrence, the \"Curcio inquiry format\" is \"a significantly more particular and searching judicial inquiry than that described by Gomberg\" (Lippman, Ch. J., concurring op at 1065), as it requires a trial court to tick off six specific queries before it can be satisfied that the defendant validly waived the conflict. ",
+      "While I am in favor of clarifying the scope of a proper Gomberg inquiry (to the extent the need for such clarity exists), we need not resort to federal precedent to do so. By suggesting that trial{**22 NY3d at 1075} judges follow the Curcio inquiry, the Chief Judge's opinion retreats from decades of New York law, which requires \"no prescribed catechism that [trial courts] must follow in ascertaining a defendant's understanding of his [or her] choices\" (Caban, 70 NY2d at 697 [alterations and quotation marks omitted]). But as just explained, Gomberg's flexibility has its benefits, and I believe the Chief Judge's concurrence does not adequately consider how \"a significantly more particular and searching judicial inquiry\" could cause a trial court to infringe upon one right of the defendant in its effort to protect another (see Gomberg, 38 NY2d at 313; Lloyd, 51 NY2d at 111-112). ",
+      "Further, although the Curcio protocol has \"proved workable\" in federal conflict cases (Lippman, Ch. J., concurring op at 1066), it may not have the same success in New York courts. While we share the Second Circuit's concern for protecting a defendant's right to conflict-free counsel, we have taken a decidedly different approach to providing what we consider adequate constitutional safeguards of that right (compare Curcio, with e.g. Gomberg, 38 NY2d at 313; Caban, 70 NY2d at 697), and it is not clear whether the Curcio approach appropriately accounts for our concern that a trial court avoid delving too deeply into the attorney-client relationship for fear of upsetting the defendant's right to retain counsel of choice (see Gomberg, 38 NY2d at 313). ",
+      "The Chief Judge's opinion suggests that the Curcio protocol will resolve existing \"doubt . . . as to how a conflict waiver inquiry should proceed\" (Lippman, Ch. J., concurring op at 1066). While there have been some calls for further clarity regarding a trial judge's responsibilities in conducting a Gomberg inquiry (see e.g. Lloyd, 51 NY2d at 112 [Jones, H.R., J., dissenting] [noting that \"the responsibility of the Trial Judge in cases involving joint representation should be made clear\"]), and the trial judge in this case admitted that she \"never quite know[s] what to say about [an attorney's conflict]\" (see Lippman, Ch. J., concurring op at 1066 n 2), these \"doubts\" do not appear to be so widespread as to warrant a substantial alteration in our conflict inquiry jurisprudence. Further, any need to clarify how a trial judge should conduct a proper Gomberg inquiry can be achieved by resort to our existing precedent. ",
+      "I would not forgo our Gomberg conflict waiver jurisprudence, and to the extent that the Chief Judge's opinion relies on that precedent in holding that the trial court's conflict inquiry was deficient here, I concur in its rationale. I further agree that, although{**22 NY3d at 1076} the trial court did not secure a valid waiver from defendant, defendant failed to meet his burden to show that co-counsel's potential conflict operated on his defense and, thus, his ineffective assistance of counsel claim must be rejected (, 14 NY3d 1, 10 [2009]). ",
+      "The second issue in this case concerns the admission of defendant's journal entries about his former girlfriends—written several years prior to the murder of Ms. Woods—in which defendant expressed, among other things, extreme hostility towards the girlfriends and, arguably, women in general. The Chief Judge's opinion contends that the challenged journal entries are \"evidence of propensity\" that should have been subject to the rigors of \"Molineux's analytic framework\" (Lippman, Ch. J., concurring op at 1070). While I agree that the trial court abused its discretion as a matter of law in admitting the journal entries that, in my view, should have been excluded based upon relevance and redundancy grounds, I cannot subscribe to the unwarranted expansion of the Molineux doctrine proposed in the Chief Judge's concurrence. ",
+      "The trial court must be sensitive to \"the particular prejudice that may result when a jury is made aware of the fact that the defendant has previously committed crimes that are similar to the charged crime\" (People v Walker, 83 NY2d 455, 459 [1994] [describing these concerns in the Sandoval context]). The reason for this is obvious: \"it is much easier to believe in the guilt of an accused person when it is known or suspected that he [or she] has previously committed a similar crime\" (Molineux, 168 NY at 313). Thus, although the second part of the Molineux inquiry is similar to \"the test by which all relevant evidence is measured,\" a trial judge evaluating Molineux evidence must \"approach the normal balancing process with a heightened awareness of the unique kind of prejudice that extrinsic offense evidence can produce\" (People v Hudy, 73 NY2d 40, 69-70 [1988, Wachtler, Ch. J., dissenting], abrogated on other grounds by Carmell v Texas, 529 US 513 [2000]). ",
+      "The Chief Judge's opinion recognizes that \"Molineux's analytic framework\" is most frequently \"invoked where the prosecution proposes to introduce evidence of prior bad acts in proof of the crime charged\" (Lippman, Ch. J., concurring op at 1070). His opinion nonetheless proposes applying that framework here because the challenged journal entries contained defendant's prior bad thoughts that were admitted, essentially, as \"evidence of [his] propensity\" to act on his increasingly violent and misogynistic thoughts by murdering Ms. Woods (id.). ",
+      "The application of the Molineux rule suggested in the Chief Judge's concurrence represents a novel expansion of that doctrine which, in my view, is both unnecessary and ill advised. The Molineux rule was created to address a particular prejudice inherent to a particular type of proof: evidence of a defendant's prior crimes and bad acts. While we have recognized additional \"nonpropensity purposes\" for which prior crime evidence may be relevant beyond those announced in Molineux (, 21 NY3d 588, 594 [2013] [noting that \"(t)he Molineux categories\"—(1) intent, (2) motive, (3) knowledge, (4) common scheme or plan, or (5) identity of the defendant—\"are not exhaustive\"]), the Chief Judge's opinion points to no case in which we applied Molineux to evaluate the admission of evidence unrelated to a defendant's prior crime or misconduct.{**22 NY3d at 1078} ",
+      "Considering the new ground the Chief Judge's concurrence attempts to break, it provides little guidance on how to apply the expanded Molineux doctrine in future cases involving prior bad thought evidence. Ostensibly, this broadened doctrine could apply to any case involving evidence of a defendant's bad thoughts that are not part-and-parcel of the charged crime and that bear any indicia of criminal propensity. Identifying the journal entries as prior bad thought evidence was relatively straightforward here, but the task of determining whether evidence constitutes a prior bad thought that triggers the Molineux rule could prove unwieldy in future cases. The Chief Judge's opinion has also failed to consider whether the protocols attendant to the proffer of Molineux evidence—for example, the requirement that the prosecution make a pretrial application for a Molineux or Ventimiglia hearing (52 NY2d 350 [1981]), and the rule that the trial court issue limiting instructions to{**22 NY3d at 1079} accompany the admission of the evidence—apply when prior bad thoughts are at issue. ",
+      "Here, the Chief Judge's opinion concludes that the journal entries were \"too attenuated from any act to be relevant, even under some exception to the Molineux prohibition, to proving defendant's commission of Ms. Woods' murder\" (Lippman, Ch. J., concurring op at 1071). Indeed, the contested journal entries, which were about women other than Ms. Woods and{**22 NY3d at 1080} were temporally remote from her murder, neither addressed defendant's actions or attitude toward Woods nor revealed information about defendant's general state of mind that could not have easily been gleaned from the journal entries about the victim herself, which were admitted without any objection. Rather, the evidence was cumulative of admitted entries, bore little probative worth, and prejudicially suggested that defendant was generally a misogynist and a bad person. "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 2,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 4,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <conopn> in source HTML."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 5 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

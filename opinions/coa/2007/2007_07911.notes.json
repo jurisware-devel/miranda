@@ -1,0 +1,176 @@
+{
+  "caseId": "2007_07911",
+  "sourcePath": "coa/2007/2007_07911.htm",
+  "notesPath": "coa/2007/2007_07911.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.371Z",
+  "source": {
+    "title": "People v Taylor (2007 NY Slip Op 07911)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 111474,
+    "lineCount": 395,
+    "tagCounts": {
+      "a": 152,
+      "b": 134,
+      "blockquote": 40,
+      "body": 2,
+      "br": 78,
+      "div": 36,
+      "font": 150,
+      "head": 2,
+      "html": 2,
+      "i": 544,
+      "p": 112,
+      "script": 4,
+      "style": 2,
+      "sup": 64,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Taylor",
+      "2007 NY Slip Op 07911 [9 NY3d 129]",
+      "October 23, 2007",
+      "Ciparick, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, December 19, 2007"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "John Taylor, Appellant."
+    ],
+    "citationLine": "2007 NY Slip Op 07911 9 NY3d 129",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued September 10, 2007; decided October 23, 2007",
+      "October 23, 2007",
+      "As corrected through Wednesday, December 19, 2007"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 130,
+    "footnotesCount": 32
+  },
+  "citations": {
+    "slipOpinion": "2007 NY Slip Op 07911",
+    "officialCitation": "9 NY3d 129",
+    "pageMarkerCount": 74
+  },
+  "opinionStructure": {
+    "totalWritings": 6,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 3,
+      "concurrence": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Ciparick",
+      "Smith",
+      "Read"
+    ],
+    "qualifierLines": [
+      "{**9 NY3d at 137} OPINION OF THE COURT",
+      "Two Judges of the Court in a concurring opinion in Cahill opined that, because of the gravity of the argument and the Court's constitutional obligation to review capital cases, we were required to address the coerciveness of CPL 400.27 (10)'s jury instruction and the impact it had on reliable sentencing (see Cahill, 2 NY3d at 76-77 [G.B. Smith, J., concurring]). Upon consideration of the deadlock issue, the concurring opinion ultimately concluded that the statute failed because \"[i]t introduces a measure of uncertainty and unreliability into the deliberative process. Thus, there is a substantial risk that the jury verdict may not reflect the true conscience of the jury. As a constitutional matter, such a result cannot be countenanced in a capital case\" (2 NY3d at 83 [G.B. Smith, J., concurring]). ",
+      "Stare decisis is deeply rooted in the precept that we are bound by a rule of law—not the personalities that interpret the law. Thus, the closeness of a vote bears no weight as to a holding's precedential value as a \"controversy settled by a decision in which a majority concur should not be renewed without sound reasons\" (Semanchuck v Fifth Ave. & 37th St. Corp., 290 NY 412, 420 [1943]). \"[O]rdinarily the rule so established will be{**9 NY3d at 149} adopted in all subsequent cases to which it is applicable, without any reconsideration of its correctness in point of law\" (Henry Campbell Black, Law of Judicial Precedents, at 182 [1912]). The fact that reasonable minds may differ as to the result does not diminish the majority opinion's legal force. ",
+      "Perhaps mindful of the burden it faces in overturning such recent precedent, the People tweak their argument by conceding that LaValle was correctly decided as an as-applied constitutional challenge but that anything further was either plain error or dictum. In support of this position, the People and the dissent misinterpret our constitutional jurisprudence by invoking People v Stuart (100 NY2d 412 [2003]) in an attempt to undermine LaValle's holding. As Stuart has no application here, we reject that argument. ",
+      "We find fault in the dissent's view that United States v Salerno (481 US 739 [1987]) dictated a different result in LaValle—a contention never even raised in that case. Salerno's proposition that to be successful \"[a] facial challenge . . . must establish that no set of circumstances exists under which the Act would be valid\" does not sit well with our state due process protections afforded to capital proceedings under these circumstances (Salerno, 481 US at 745). In a capital appeal, the unacceptability of error and the need to protect liberties become glaringly apparent and call for heightened review (see Harris, 98 NY2d at 474 [\"By its very nature a capital case requires the most meticulous and thoughtful attention. A mistake discovered years later may not be correctable\"]). As such, neither Salerno nor Stuart adequately addresses a challenge that the capital sentencing procedure is inherently coercive and undermines proper consideration of mitigating and aggravating factors. Thus, it was not error for us to review the facial challenge of CPL 400.27 (10) in LaValle. Nor is there any sound reason in law for us to now rewrite history and recategorize our holding as dictum, as the People and dissent urge. ",
+      "Moreover, we cannot agree with the dissent that, under the guise of dictum, \"self-correction\" is mandated or even warranted (see dissenting op at 165), because doing so would condone a trial court's remaking of an unconstitutional statute into a new statute not subject to the legislative process. Surely, it was within our role to otherwise prevent the enforcement of an unconstitutional death penalty statute, as we did in LaValle, until the Legislature chooses to respond. To deem the courts bereft of such a power would undermine our system of checks and balances between our two coequal branches of government. ",
+      "Furthermore, comparing LaValle with Matter of Hynes, where severability was proper, offers an insightful contrast. In Matter of Hynes we severed an unconstitutional portion of the death penalty statute that penalized those who exercised their right to trial (see 92 NY2d at 628-629). Under the existing statute, a{**9 NY3d at 154} death-noticed defendant was permitted to plead guilty to first-degree murder and avoid the possibility of a death sentence. Thus, death could only be imposed on those who insisted on their innocence (see id. at 620). We determined that the offending part of the statute could be severed as it did not affect the conduct during the trial or penalty phase and that it still permitted plea bargaining (see id. at 628, 630 [\"Thus, while a defendant may not plead guilty to first degree murder while a notice of intent to seek the death penalty is pending, plea bargaining to lesser offenses even when a notice of intent is pending, or to first degree murder in the absence of a notice of intent, remains unaffected\"]). In LaValle, on the other hand, the invalid portion of the statute was inextricably interwoven with the sentencing procedure and necessary to effectuate the Legislature's intent. As correctly recognized in the concurring opinion, any attempt to sever the offending portion of the statute would result in a \"misshapen fragment of the original\" drafted by a court's impermissible use of a legislative pen (concurring op at 158). ",
+      "Finally, we reject the People's invitation to rewrite the deadlock instruction. This is because, under the proposed scheme, we would be obliged to materially rework the death penalty statute in a manner contrary to our role. In order to function, as proposed by the People and the dissent, a trial court would be required to inform the jury in advance the sentence it would likely impose in the event of a deadlock. To do so under the present statute would require the court to act without the benefit of a presentencing report in violation of CPL 380.30 and 390.20. Additionally, the new framework would be repugnant to the Legislature's intent as the court would have to conduct some sort of actuarial analysis and health assessment to determine a defendant's expected longevity as well{**9 NY3d at 155} as a thorough examination of the existence of convictions that may require consecutive sentencing. We would ultimately be left with capital punishment only for the aged, frail and those convicted of crimes eligible for consecutive sentencing—an entirely new capital punishment statute (cf. McMinn v Town of Oyster Bay, 66 NY2d 544, 552-553 [1985, Kaye, J., concurring] [\"(A) party may challenge the validity of a statute on its face by asserting the rights of others if individual applications cannot be meaningfully separated from one another\" (citation omitted)]; Association of Surrogates & Supreme Ct. Reporters Within City of N.Y. v State of New York, 79 NY2d 39 [1992] [An unconstitutional statute should not be severed if its only application would be for a small subset of the original class]). ",
+      " I concur in the result, on constraint of  (3 NY3d 88 [2004]). ",
+      "The two central holdings of LaValle are that the anticipatory deadlock instruction required in capital trials by CPL 400.27 (10) is unconstitutional, and that a different anticipatory deadlock instruction, which only the Legislature can provide, is constitutionally required. Judge Graffeo, Judge Read and I dissented from both holdings. In this case, no party or amicus asks us to overrule the first holding, but amicus Criminal Justice Legal Foundation, with the tepid endorsement of the People, asks us to overrule the second. The Court is unanimous in rejecting the invitation—indeed, all six of my colleagues simply ignore it. I will explain briefly why I think the second holding of LaValle should not be overruled. ",
+      "LaValle also held, or at least said, \"that under the present statute, the death penalty may not be imposed\" (3 NY2d at 131)—i.e., that the statute was invalid not just as applied to LaValle, but in all of its applications. The dissent, of which I was the author, said nothing about this feature of the LaValle decision. In my case, at least, that silence was not an oversight; I was silent because I thought then, as I think now, that any attempt to save a remnant of the death penalty statute through an exercise in \"application severability\" would be a mistake. Perhaps, as today's dissent suggests (dissenting op at 164), the LaValle majority should have explained why application severability would not work; I will offer an explanation now. ",
+      "I agree with much that is said in the dissent. Certainly, there was nothing coercive about the charge the trial judge gave in this case, and the statute did not prohibit him from giving it. Thus, there are cases, of which this is one, in which the 1995 death penalty statute could, under the reasoning of LaValle, be constitutionally applied. The question of application severability is whether a statute governing only those cases would be consistent with the intent of the Legislature that enacted the broader statute (see Association of Surrogates & Supreme Ct. Reporters Within City of N.Y. v State of New York, 79 NY2d 39, 47-48 [1992]). ",
+      "The dissent says yes, arguing, in effect, that the 1995 Legislature was so eager to enact a death penalty that it would have accepted almost anything that would survive a court test (see dissenting op at 171). There is no doubt some historical truth to this, but I approach the issue differently. I ask whether the death penalty statute, after being altered to comply with LaValle, is one a sensible Legislature that anticipated the LaValle{**9 NY3d at 158} decision might have enacted, and whether it bears a reasonable resemblance to the statute the Legislature did enact. I answer both of these questions no. The statute that would remain after the dissent's proposed rescue operation would be a misshapen fragment of the original—and to achieve even that result would require a rewriting of the statute that would make it less the creation of the Legislature than of this Court. ",
+      "In an effort to remove the LaValle problem from the statute, the dissent would rewrite it to provide that, before the death penalty can be considered, the trial judge must (or, perhaps, may) decide whether he or she will impose consecutive or concurrent sentences in the event of a jury deadlock. If the decision is for concurrent sentences, death is off the table, but a judge who chooses consecutive sentences may, if those sentences add up to more than the defendant's life expectancy, announce that decision to the jury, and then let the jury choose between death and life. This describes what Justice Fisher did here—but he did it before LaValle was decided, and therefore defendant made no objection to the procedure. (Indeed, defendant asked for an even stronger instruction than the one Justice Fisher gave.) In the post-LaValle world the dissent envisions—where a procedure like this is an indispensable prerequisite to a death penalty—no defendant will consent to it. Defendants will argue that it is unprecedented, unauthorized by statute, and unfair for a judge to make an advance promise to a jury about what a sentence will be. The argument has some merit: Is not a defendant entitled to be sentenced by a judge unconstrained by any previous commitment? ",
+      "Perhaps the Legislature could validly set that principle aside in some situations, and could create some procedures to make the sentencing promise more defensible; it might, for example, adopt a \"scheduling\" change of the kind suggested by the dissent, designed to make sure that the presentencing report precedes the judge's charge at the punishment trial (dissenting op at 173-174). But the Legislature has not done this. The whole new way of handling death cases suggested by the dissent is one that{**9 NY3d at 159} judges have thought up. It is one thing to say that a decision by the Legislature to adopt this peculiar procedure would be valid; it is another for a court to surmise that the 1995 Legislature would have adopted it, with no more basis for the surmise than that Legislature's favorable view of capital punishment (cf. Reno v American Civil Liberties Union, 521 US 844, 884 [1997] [declining to \"impose a limiting construction\" on a statute that \"provides no guidance what ever for limiting its coverage\"]; Randall v Sorrell, 548 US 557, —, 126 S Ct 2479, 2500 [2006] [rejecting severability where it would have required writing words into the statute or guessing at legislative intent]). ",
+      "The substantive problems with the dissent's reconstructed statute are even more serious than the procedural ones. The dissent suggests that the LaValle problem can be solved by reducing the class of defendants eligible for execution to those whose sentence in the event of deadlock would be \"so lengthy in relation to life expectancy\" that they would certainly die before being paroled (dissenting op at 174). But neither our Legislature nor any legislature anywhere, so far as I know, has adopted a \"life expectancy\" test for death eligibility—perhaps because such a test is so plainly a bad idea. Life expectancy depends on age and state of health, and neither of those should be a basis for deciding whom to execute. ",
+      "The dissent recognizes this problem, but underestimates its seriousness. No doubt there will be few 70-year-old first degree murderers (see dissenting op at 172), but what about 36 year olds? John Taylor was 36 at the time of the Wendy's murders. If he had killed only two people instead of five, he might, in the event of a jury deadlock, have faced a maximum sentence of 50 years. Would that, under the dissent's proposed rule, be enough to make him eligible for the death penalty? What if he were 42? Certainly, on some hypothetical but plausible scenario, Taylor could be executed while, under LaValle, a 20 year old who committed the exact same crimes could not be. This does not make sense. ",
+      "Perhaps, by doing even more surgery on the statute than the dissent proposes, we could solve this problem. The statute might be rewritten to make age and health irrelevant, by limiting the death sentence to defendants facing at least, say, 75 years in consecutive sentencing; the dissent may be obliquely suggesting such an arbitrary cutoff, in its remark that \"a defendant-specific 'actuarial analysis' is not required\" (dissenting op at 174). But the dissent does not embrace a simple minimum-years rule,{**9 NY3d at 160} perhaps recognizing that to do so would be to travel too far from the statute the Legislature actually enacted. ",
+      "I conclude that the LaValle majority was right to say that its holdings rendered the death penalty statute wholly invalid. I wish it were otherwise. Like the dissenters, I would prefer to save something of the statute, not because I want to help either side of the argument over the death penalty, but because I believe that on this issue, as on most other controversial issues of public policy, courts should defer to what legislatures decide (, 7 NY3d 338 [2006]). I continue to think LaValle was an unjustified interference with legislative authority. But, as I pointed out above, LaValle did not render the Legislature powerless. The Legislature can, if it has the will, repair the death penalty statute or repeal it. In doing either, it would bring the capital punishment issue back into the realm of democratic decision-making, where it belongs.  ",
+      " In  (3 NY3d 88 [2004]), the death sentence was vacated because the trial judge gave a coercive deadlock instruction to the jury. But no such coercive instruction was given in this case. Here, defendant John Taylor's death sentence is vacated on the basis of a non-coercive deadlock instruction. Fair-minded citizens might well be forgiven for wondering whether the Court of Appeals is simply unwilling ever to uphold a death sentence, no matter how the law is written (or may be rewritten), no matter how carefully the trial judge and the jury carry out their responsibilities. I respectfully dissent. ",
+      "I continue to believe that LaValle was wrongly decided for the reasons articulated by Judge R.S. Smith in his dissent, which I joined. Nonetheless, I accept the foregoing holdings as binding{**9 NY3d at 164} precedent for reasons of stare decisis. The majority has now, however, chosen to convert the spare closing comment in LaValle that \"under the present statute, the death penalty may not be imposed\" into our \"holding\" in that case that \"the death penalty sentencing statute is unconstitutional on its face\" (plurality op at 155). ",
+      "There was no discussion in LaValle of the deadlock instruction's facial constitutionality; the opinion is devoid of any legal reasoning to support a holding that the deadlock instruction in CPL 400.27 (10) is facially unconstitutional. While \"both the legitimacy and the ability of the judiciary to function dictate that legal issues that have been addressed by a jurisdiction should not be revisited every time they arise\" (plurality op at 148), this maxim presupposes that the legal issue in question has, in fact, been analyzed and decided by a court. To the extent that any judicial utterance in LaValle may be read as purporting to hold the deadlock instruction facially unconstitutional, it does not meet this test and is dictum. (\"A judge's power to bind is limited to the issue that is before him; he cannot transmute dictum into decision by waving a wand and uttering the word 'hold' \" [United States v Rubin, 609 F2d 51, 69 n 2 (2d Cir 1979, Friendly, J., concurring)].) ",
+      "Defendant also contends, though, that the deadlock instruction is facially unconstitutional precisely because it allows for far fewer constitutional applications than originally envisioned by the Legislature. Defendant surmises that the Legislature would have preferred no death penalty at all to the \"freakish\" regime left after LaValle. Similarly, the concurrence opines that \"any attempt to save a remnant of the death penalty statute through an exercise in 'application severability' would be a mistake\" (concurring op at 157). ",
+      "The concurrence protests, however, that \"a sensible Legislature\" anticipating the LaValle decision would not have enacted a statute this limited, which does not \"bear[ ] a reasonable resemblance to the statute the Legislature did enact\" (concurring op at 158). This amounts to pure judicial guesswork, as it finds no support whatsoever in the statute's text, structure, purpose or history—and the concurrence does not bother to claim otherwise. Professions of deference to the Legislature and judicial modesty ring hollow if a reviewing court is unwilling to uphold as much of a statute as possible, especially where the conventional sources for statutory interpretation (here, text and legislative history) clearly signal in this direction. Of course, the Legislature may always amend the death penalty statute in{**9 NY3d at 172} any number of ways, as the concurrence observes. The whole point of severability doctrine, however, is to salvage as much of the Legislature's handiwork as possible, and to free the Legislature from the burden of reenacting that which has already once successfully run the lawmaking gauntlet. There can be no doubt that the Legislature intended to make the death penalty enforceable against someone like defendant, who has been convicted of multiple counts of first-degree murder. ",
+      "The former standard was easily met in three of the six capital appeals considered by the Court, where the defendant was eligible for consecutive sentencing totaling in excess of 100 years. It eliminates the theoretical risk that an aged or frail defendant could be executed while \"a 20 year old who committed the exact same crimes could not be\" (concurring op at 159). The concurrence evidently does not consider such an approach to be a satisfactory or permissible limiting principle for constraining the statute. I disagree for reasons already explained. But even if I were to agree, the concurrence nowhere explains why the deadlock instruction is facially unconstitutional even though it{**9 NY3d at 175} may be constitutionally applied to a first-degree murderer who also stands convicted of a mandatory life-without-parole crime. Neither does the plurality. This aspect of today's decision contradicts and frustrates the Legislature's manifest intention when it amended sections 60.06 and 70.00 (5) of the Penal Law post-LaValle. ",
+      "The crime in this case was horrific: apparently to eliminate the witnesses to a robbery, seven human beings were shot in the head at point-blank range; five of them died. After a textbook trial, defendant was convicted of six counts of capital murder and sentenced to death by the jury. Yet, a majority of the Court vacates the sentence of death. Why? Not because the deadlock instruction delivered by the trial judge was coercive—it was not, as the concurrence concedes and the plurality does not dispute. Instead, John Taylor's death sentence is vacated because the deadlock instruction delivered in the capital trial of Stephen LaValle was coercive. ",
+      "It is, to say the least, highly unusual for us to declare a statute facially unconstitutional so that its constitutional applications fall by the wayside along with its unconstitutional ones. It is unheard of for us to do such a thing without explanation. The plurality points to our \"holding\" in LaValle that \"the death penalty sentencing statute is unconstitutional on its face\" (plurality op at 155). The careful reader, however, will not discover those words among the LaValle opinion's several self-styled \"holdings\"; the careful reader will not encounter any discussion of facial constitutionality or explanation why the deadlock instruction's constitutional and unconstitutional applications are not severable. Certainly, \"death is qualitatively different and thus subject to a heightened standard of reliability\" (LaValle, 3 NY3d at 127). But this does not mean that \"because of the unique severity and finality of a sentence of death, a defendant must be given every possible opportunity to escape from it\" (id. at 148-149 [R.S. Smith, J., dissenting]). It does not release an appellate court from the fundamental obligation to furnish the parties and the public with a reasoned explanation for its decision. I respectfully dissent.{**9 NY3d at 176} "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 1,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 32,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 6 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

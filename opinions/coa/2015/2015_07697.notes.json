@@ -1,0 +1,123 @@
+{
+  "caseId": "2015_07697",
+  "sourcePath": "coa/2015/2015_07697.htm",
+  "notesPath": "coa/2015/2015_07697.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.823Z",
+  "source": {
+    "title": "People ex rel. DeLia v Munsey (2015 NY Slip Op 07697)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 36608,
+    "lineCount": 118,
+    "tagCounts": {
+      "a": 26,
+      "b": 18,
+      "blockquote": 2,
+      "body": 2,
+      "br": 18,
+      "div": 12,
+      "font": 30,
+      "head": 2,
+      "html": 2,
+      "i": 152,
+      "p": 57,
+      "script": 4,
+      "style": 2,
+      "sup": 6,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 6
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People ex rel. DeLia v Munsey",
+      "2015 NY Slip Op 07697 [26 NY3d 124]",
+      "October 22, 2015",
+      "Stein, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, December 23, 2015"
+    ],
+    "captionLines": [
+      "The People of the State of New York ex rel. Lesley M. DeLia, as Director of Mental Hygiene Legal Service, on Behalf of Stephen S., Appellant,",
+      "v",
+      "Douglas Munsey, Respondent."
+    ],
+    "citationLine": "2015 NY Slip Op 07697 26 NY3d 124",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued September 11, 2015; decided October 22, 2015",
+      "October 22, 2015",
+      "As corrected through Wednesday, December 23, 2015"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 32,
+    "footnotesCount": 3
+  },
+  "citations": {
+    "slipOpinion": "2015 NY Slip Op 07697",
+    "officialCitation": "26 NY3d 124",
+    "pageMarkerCount": 14
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Stein",
+      "Abdus-salaam"
+    ],
+    "qualifierLines": [
+      "{**26 NY3d at 126} OPINION OF THE COURT",
+      "We disagree on all counts. The construction of Mental Hygiene Law § 33.15 advanced by the Hospital and our dissenting colleague abrogates the common-law writ of habeas corpus for mentally ill patients and is not supported by our case law, the rules of statutory construction, or principles of due process. As explained below, section 33.15 does not supplant the common-law writ of habeas corpus available through CPLR article 70.",
+      "The dissent suggests that \"there is no rational reason to determine that Mental Hygiene Law § 33.15 does not apply\" in habeas proceedings alleging an unauthorized retention (dissenting op at 136). Yet, in addition to contravening the purpose of the historic writ, ratification of the Hospital's interpretation of section 33.15 would undermine the procedural due process protections guaranteed by the various provisions of the Mental Hygiene Law requiring notice and regular judicial review in connection with a patient's commitment (see generally Epton, 19 NY2d at 505). It is beyond dispute that \"[t]he state 'has authority under its police power to protect the community from the dangerous tendencies of some who are mentally ill,' \" and that it \"may rely on its parens patriae power to provide care to its citizens who are unable to care for themselves because of mental illness\" (, 1 NY3d 362, 370 [2004], quoting Addington v Texas, 441 US 418, 426 [1979]). Nevertheless, it has long been recognized that involuntary civil commitment involves a \" 'massive curtailment of liberty' \" (Vitek v Jones, 445 US 480, 491 [1980], quoting Humphrey v Cady, 405 US 504, 509 [1972]) and, \"therefore[,] [it] cannot permissibly be accomplished without due process of law\" (Rodriguez v City of New York, 72 F3d 1051, 1061 [2d Cir 1995]; see Savastano v Nurnberg, 77 NY2d 300, 307 [1990]). Thus, contrary to the Hospital's contention, a patient may be involuntarily committed only where the standards for commitment and the procedures{**26 NY3d at 133} set forth in the Mental Hygiene Law—which satisfy the demands of due process—are met (see Matter of K.L., 1 NY3d at 371; Project Release v Prevost, 722 F2d 960, 971 [2d Cir 1983]; see generally Savastano, 77 NY2d at 305-309 [recognizing that the Mental Hygiene Law procedures and regulations provide a \"network of procedural safeguards\" for \"the due process rights of those involuntary patients\"]). This is not to say that every violation of the Mental Hygiene Law amounts to a due process violation or will entitle a patient to a writ of habeas corpus but, \"[w]ithout a court order of continued retention [in accordance with the Mental Hygiene Law], or the consent of the patient, the hospital must release the patient\" (Project Release, 722 F2d at 967; see People ex rel. Tweed, 60 NY at 569 [\"The law is no respecter of persons, and suffers no (person) . . . to be deprived of his (or her) liberty, except 'by due process of law;' and the writ of habeas corpus is as available . . . (to) he (or she) whom the popular voice would condemn\" (emphasis omitted)]).",
+      "The dissent's statement that \"patients will still receive the procedural protections required by due process\" if Mental Hygiene Law § 33.15 applies in a case such as this overlooks the fact that patients who are seeking a common-law writ under CPLR article 70 are alleging that they have already been deprived of due process by virtue of a violation of the procedural protections of the Mental Hygiene Law (dissenting op at 137). Thus, a conclusion that section 33.15, with its required hearing to determine the patient's mental status, is the exclusive habeas corpus avenue available to article 9 patients would permit the flagrant disregard—either deliberately or through laxity—of the due process protections provided throughout the Mental Hygiene Law, and there would be no effective remedy available to a patient for a facility's failure to comply with even the most basic of the statutory procedural requirements. Indeed, implicit in the dissent's assertion that application of section 33.15 does not violate the due process rights of a patient who establishes that his or her detention is unauthorized by the court or the Mental Hygiene Law is the dissent's conclusion that an article 9 patient has no enforceable due process rights so long as there exists proof that he or she could benefit from further treatment, regardless of whether that proof is presented six weeks or a matter of years after expiration of the court order authorizing the patient's retention. Such a view of section 33.15 would essentially nullify the{**26 NY3d at 134} procedural due process protections contained in other provisions of the Mental Hygiene Law, which are already defined by reference to the rights and interests at stake (see generally Savastano, 77 NY2d at 307). Moreover, under the dissent's reading, by failing to seek continued retention under section 9.33, thereby prompting the patient to seek a writ of habeas corpus, in cases such as this—where the patient's application is based on the facility's inaction—the Hospital would be able to shift the burden of proof to the patient to demonstrate his or her fitness in order to obtain release pursuant to section 33.15 (see Matter of Mental Hygiene Legal Servs. ex rel. James U. v Rhodes, 195 AD2d 160, 162 [3d Dept 1994]; Matter of Winslow v O'Neill, 153 AD2d 563, 564 [2d Dept 1989]). We cannot countenance, and the legislature surely did not intend, an interpretation of section 33.15 that would render meaningless such significant protections as are provided in Mental Hygiene Law article 9.",
+      "The majority reaches this ominous and untenable conclusion in spite of the plain language of Mental Hygiene Law § 33.15 (b) which expressly directs that where a person retained by a facility brings a writ of habeas corpus to question the cause and legality of his or her detention, \"[a] court shall examine the facts concerning the person's alleged mental disability and detention\" (emphasis added). The majority declares that Mental Hygiene Law § 33.15 neither applies upon the filing of a writ of habeas corpus nor requires the court to examine the facts concerning a person's mental condition prior to release. This proclamation is incongruous on its own terms, and the reasoning behind it is perplexing. By the majority's rationale, adherence to the statute is not required in cases such as this one because the statute does not in so many words expressly supplant the common-law writ of habeas corpus in the context of detentions under Mental Hygiene Law article 9. But surely that cannot be true, if \"shall\" means \"is required to\" (Black's Law Dictionary [10th ed 2014], shall). To the contrary, the statute on its face absolutely requires a factual determination of the patient's mental state and fitness for release \"[u]pon the return of such a writ of habeas corpus\" (Mental Hygiene Law § 33.15 [b]), and that unqualified statutory command is incompatible with the majority's decision to grant automatic release to patients upon the filing of a common-law habeas writ. Because the majority declines to follow the unambiguous language of the statute or acknowledge its clear practical purpose, I must respectfully dissent."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 3,
+    "labels": [
+      "1",
+      "2",
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

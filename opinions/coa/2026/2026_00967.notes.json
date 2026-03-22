@@ -1,0 +1,153 @@
+{
+  "caseId": "2026_00967",
+  "sourcePath": "coa/2026/2026_00967.htm",
+  "notesPath": "coa/2026/2026_00967.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.390Z",
+  "source": {
+    "title": "People v Anderson (2026 NY Slip Op 00967)",
+    "publicationStatus": "slip_op_only"
+  },
+  "fileInfo": {
+    "byteSize": 10527,
+    "lineCount": 82,
+    "tagCounts": {
+      "a": 12,
+      "b": 4,
+      "body": 2,
+      "br": 18,
+      "dateline": 2,
+      "div": 10,
+      "font": 8,
+      "form": 2,
+      "head": 2,
+      "html": 2,
+      "i": 64,
+      "input": 1,
+      "p": 32,
+      "sc": 2,
+      "script": 4,
+      "style": 2,
+      "table": 2,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [
+      "form",
+      "input"
+    ],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Anderson",
+      "2026 NY Slip Op 00967",
+      "Decided on February 19, 2026",
+      "Court of Appeals",
+      "Troutman, J.",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "This opinion is uncorrected and subject to revision before publication in the Official Reports."
+    ],
+    "captionLines": [
+      "The People & c., Respondent,",
+      "v",
+      "Kelly L. Anderson, Appellant."
+    ],
+    "citationLine": "2026 NY Slip Op 00967",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "First, defendant contends that unlike in Baque , the Appellate Division's discussion of the weight of the evidence contains no factual context or analysis of the evidence presented to the jury ( cf. Baque , 43 NY3d at 31). That is not a valid basis for remittal. Although we noted that the Appellate Division's decision in Baque did contain a discussion of the facts, we also reaffirmed that the Appellate Division is not required to \" 'manifest its weight of evidence review power by writing in all criminal cases' \" ( id. , quoting People v Bleakley , 69 NY2d 490, 496 [1987]), and that the Court may \" 'summarily affirm[ ] without explicitly addressing the merits of [the] defendant's challenge to the weight of the evidence' \" ( id. , quoting People v Romero , 7 NY3d 633 , 646 [2006]). Thus, there is no requirement that the intermediate appellate court reject a weight of the evidence contention by writing at any length, so long as the court does not \"manifestly fail[ ] to consider the issue\" or apply an incorrect legal principle ( id. [internal quotation marks omitted]). Here, the Appellate Division expressly rejected defendant's weight of the evidence challenge and did so by citing Bleakley and People v Danielson (9 NY3d 342 , 349 [2007])&mdash;citations that we noted in Baque indicated that the Appellate Division applied the correct legal standard ( see Baque , 43 NY3d at 31).",
+      "Next, defendant contends that the Appellate Division misunderstood its role when it stated that \"[t]o the extent there was conflicting testimony, we conclude that it merely presented an issue of credibility for the jury to resolve\" (220 AD3d at 1224 [internal quotation marks omitted]). We have repeatedly stated, however, that although the Appellate Division \"may substitute its own credibility determinations for those made by the jury in an appropriate case,\" the Appellate Division generally \"must afford deference to the fact-finder's opportunity to view the witnesses, hear the testimony and observe demeanor\" ( Baque , 43 NY3d at 30 [internal quotation marks omitted]; see Romero , 7 NY3d at 644-646; Bleakley , 69 NY2d at 495). This is because \"those who see and hear the witnesses can assess their credibility and reliability in a manner that is far superior to that of reviewing judges who must rely on the printed record\" ( People v Lane , 7 NY3d 888 , 890 [2006]). In stating that the conflicting testimony presented a credibility issue for the jury to resolve, the Appellate Division cited Lane , among other cases, indicating that the Appellate Division deferred to the jury's credibility determinations and that it did not view this as an appropriate case in which to substitute its own credibility determinations for that of the jury ( see 220 AD3d at 1224).",
+      "Decided on February 19, 2026"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Melissa K. Swartz, for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Melissa K. Swartz, for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Todd J. Casella, for respondent. TROUTMAN , J.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": true,
+        "argumentTailPreview": "TROUTMAN , J.",
+        "sentenceText": "Todd J. Casella, for respondent.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Todd J. Casella, for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Todd J. Casella, for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 14,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2026 NY Slip Op 00967",
+    "officialCitation": "43 NY3d 26",
+    "pageMarkerCount": 1
+  },
+  "opinionStructure": {
+    "totalWritings": 2,
+    "byKind": {
+      "unknown": 1,
+      "opinion_of_the_court": 1
+    },
+    "authors": [
+      "Troutman"
+    ],
+    "qualifierLines": [],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <form> in source HTML."
+    },
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <input> in source HTML."
+    },
+    {
+      "code": "APPEARANCE_LINE_WITH_ARGUMENT_TAIL",
+      "severity": "info",
+      "detail": "Appearance-like line continues into argument text after \"for respondent.\"."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 2 writings."
+    }
+  ]
+}

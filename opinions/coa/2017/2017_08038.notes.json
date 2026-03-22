@@ -1,0 +1,130 @@
+{
+  "caseId": "2017_08038",
+  "sourcePath": "coa/2017/2017_08038.htm",
+  "notesPath": "coa/2017/2017_08038.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.973Z",
+  "source": {
+    "title": "People v Hardee (2017 NY Slip Op 08038)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 26848,
+    "lineCount": 101,
+    "tagCounts": {
+      "a": 18,
+      "b": 4,
+      "body": 2,
+      "br": 10,
+      "div": 14,
+      "font": 38,
+      "head": 2,
+      "html": 2,
+      "i": 168,
+      "opinion": 1,
+      "p": 57,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14,
+      "u": 8
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Hardee",
+      "2017 NY Slip Op 08038 [30 NY3d 991]",
+      "November 16, 2017",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, December 27, 2017"
+    ],
+    "captionLines": [],
+    "citationLine": "2017 NY Slip Op 08038 30 NY3d 991",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued March 29, 2017; reargued October 11, 2017; decided November 16, 2017",
+      "November 16, 2017",
+      "As corrected through Wednesday, December 27, 2017"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Robert S. Dean, Center for Appellate Litigation , New York City ( Rachel T. Goldberg of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Robert S. Dean, Center for Appellate Litigation , New York City ( Rachel T. Goldberg of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Cyrus R. Vance, Jr., District Attorney , New York City ( Jessica Olive and Dana Poole of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Cyrus R. Vance, Jr., District Attorney , New York City ( Jessica Olive and Dana Poole of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 30,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2017 NY Slip Op 08038",
+    "officialCitation": "30 NY3d 991",
+    "pageMarkerCount": 18
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Stein"
+    ],
+    "qualifierLines": [
+      "{**30 NY3d at 991} OPINION OF THE COURT",
+      "Memorandum.",
+      "Upon defendant's appeal, the Appellate Division affirmed the judgment of conviction, with one Justice dissenting (126 AD3d 626 [1st Dept 2015]). The majority held, as relevant here, that \"defendant's actions both inside and outside of the vehicle created a 'perceptible risk' and supported a reasonable conclusion that a weapon that posed an actual and specific danger to their safety was secreted\" in the vehicle (id. at 628, quoting People v Mundo, 99 NY2d 55, 59 [2002]). The dissenting Justice disagreed, and would have held that defendant was entitled to suppression of the weapon because the evidence of his nervousness, glances into the back seat, and momentary failure to comply with the officers' directives to exit the vehicle was \"not sufficient to lead to a reasonable conclusion that a weapon located within the car presented an actual and specific danger to the officers' safety so as to justify a limited search of the car after defendant had been removed from the car and frisked without incident\" (id.). The dissenting Justice granted defendant leave to appeal to this Court (2015 NY Slip Op 76561[U] [1st Dept 2015]).",
+      "In short, the majority ignores the distinction we have always drawn between Torres and those cases in which we have upheld protective searches—namely, the requirement of an actual and specific threat to officer safety from a weapon located in the vehicle. Furthermore, the majority's ruling disregards the narrowness of the warrant exception as articulated in, and demonstrated by, our prior case law, and it unduly broadens the exception for a protective search beyond its purpose and rationale. In the absence of any record facts supporting the majority's conclusion that there was a substantial likelihood of a weapon in the vehicle that presented an actual and specific threat to the officers, Torres controls and the firearm should have been suppressed (see 74 NY2d at 230). I, therefore, dissent."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

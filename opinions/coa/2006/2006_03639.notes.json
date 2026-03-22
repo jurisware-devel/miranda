@@ -1,0 +1,116 @@
+{
+  "caseId": "2006_03639",
+  "sourcePath": "coa/2006/2006_03639.htm",
+  "notesPath": "coa/2006/2006_03639.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.324Z",
+  "source": {
+    "title": "People v Wells (2006 NY Slip Op 03639)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 31824,
+    "lineCount": 148,
+    "tagCounts": {
+      "a": 26,
+      "b": 30,
+      "blockquote": 8,
+      "body": 2,
+      "br": 22,
+      "div": 12,
+      "font": 48,
+      "head": 2,
+      "html": 2,
+      "i": 104,
+      "p": 36,
+      "script": 4,
+      "style": 2,
+      "sup": 12,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Wells",
+      "2006 NY Slip Op 03639 [7 NY3d 51]",
+      "May 11, 2006",
+      "Graffeo, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, July 19, 2006"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Terence Wells, Appellant."
+    ],
+    "citationLine": "2006 NY Slip Op 03639 7 NY3d 51",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued March 29, 2006; decided May 11, 2006",
+      "May 11, 2006",
+      "As corrected through Wednesday, July 19, 2006"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 40,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2006 NY Slip Op 03639",
+    "officialCitation": "7 NY3d 51",
+    "pageMarkerCount": 23
+  },
+  "opinionStructure": {
+    "totalWritings": 4,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "concurrence": 1
+    },
+    "authors": [
+      "Graffeo",
+      "G.B. Smith"
+    ],
+    "qualifierLines": [
+      "{**7 NY3d at 54} OPINION OF THE COURT",
+      "Chief Judge Kaye and Judges G.B. Smith, Ciparick, Rosenblatt, Read and R.S. Smith concur with Judge Graffeo; Judge G.B. Smith concurs in a separate opinion. ",
+      "Under the Equal Protection clauses of the federal and New York State constitutions (US Const, 14th Amend, § 1; NY Const, art I, § 11), peremptory challenges may not be used to exclude prospective jurors from jury service on the basis of race or gender (see Batson v Kentucky, 476 US 79 [1986]; J. E. B. v Alabama ex rel. T. B., 511 US 127 [1994]; People v Kern, 75 NY2d 638 [1990]; People v Allen, 86 NY2d 101 [1995]). A three-step process was set forth by the United States Supreme Court to address violations of this rule. First, a prima facie case of discriminatory purpose based on a pattern of peremptory challenges (e.g., all Hispanic or male jurors excluded), or other factors, must be established. Second, the prima facie case may be rebutted if the proponent of the strike(s) proffers a race/gender-neutral explanation that is related to the particular case to be tried. Third, the court must determine whether the explanation articulated is a pretext for discrimination (see Batson, 476 US at 96-98; see also J. E. B. v Alabama ex rel. T. B.).  Footnote 2: At \"step two\": (1) the explanation proffered by the prosecution need not be persuasive or plausible (see Purkett v Elem, 514 US 765 [1995]; see also People v Allen, 86 NY2d at 109 [Court stated \"step two is met by offering any facially neutral reason for the challenge—even if that reason is ill-founded—so long as the reason does not violate equal protection\"]); and (2) \" 'the issue is the facial validity of the prosecutor's explanation. Unless a discriminatory intent is inherent in the prosecutor's explanation, the reason offered will be deemed race neutral' \" (Purkett v Elem, 514 US at 768, quoting Hernandez v New York, 500 US 352, 360 [1991] [plurality op]; 500 US at 374 [O'Connor, J., concurring in judgment]). "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 1,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 4 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

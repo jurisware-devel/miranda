@@ -1,0 +1,121 @@
+{
+  "caseId": "2017_04385",
+  "sourcePath": "coa/2017/2017_04385.htm",
+  "notesPath": "coa/2017/2017_04385.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.953Z",
+  "source": {
+    "title": "For the People Theatres of N.Y., Inc. v City of New York (2017 NY Slip Op 04385)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 54150,
+    "lineCount": 173,
+    "tagCounts": {
+      "a": 18,
+      "b": 20,
+      "blockquote": 18,
+      "body": 2,
+      "br": 14,
+      "div": 24,
+      "font": 76,
+      "head": 2,
+      "html": 2,
+      "i": 218,
+      "p": 152,
+      "script": 4,
+      "style": 2,
+      "sup": 6,
+      "table": 6,
+      "td": 18,
+      "title": 2,
+      "tr": 18,
+      "u": 18
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "For the People Theatres of N.Y., Inc. v City of New York",
+      "2017 NY Slip Op 04385 [29 NY3d 340]",
+      "June 6, 2017",
+      "Fahey, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, August 16, 2017"
+    ],
+    "captionLines": [
+      "For the People Theatres of N.Y., Inc., Doing Business as Fair Theatre, Plaintiff, and JGJ Merchandise Corp., Doing Business as Vishans Video, Also Known as Mixed Emotions, Respondent,",
+      "v",
+      "City of New York et al., Appellants.",
+      "Ten's Cabaret, Inc., Formerly Known as Stringfellow's of New York, Ltd., et al., Respondents, v City of New York et al., Appellants."
+    ],
+    "citationLine": "2017 NY Slip Op 04385 29 NY3d 340",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued April 27, 2017; decided June 6, 2017",
+      "June 6, 2017",
+      "As corrected through Wednesday, August 16, 2017"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 89,
+    "footnotesCount": 3
+  },
+  "citations": {
+    "slipOpinion": "2017 NY Slip Op 04385",
+    "officialCitation": "29 NY3d 340",
+    "pageMarkerCount": 37
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [
+      "Fahey"
+    ],
+    "qualifierLines": [
+      "{**29 NY3d at 344} OPINION OF THE COURT",
+      "The Appellate Division stated that \"the City's evidence is subject to intermediate scrutiny\" (id. at 59 n 6), and instructed that the trial court should hold the City to a more \"heightened standard\" (id. at 63) than it had in 2010. At the same time, however, the Appellate Division mentioned that \" 'very little evidence is required' to uphold the constitutionality of the 2001 {**29 NY3d at 353}Amendments\" (id. at 62, quoting Alameda Books, 535 US at 451 [Kennedy, J., concurring]), and signaled that if the trial court found that most 60/40 establishments had any one of the characteristics of adult establishments identified in the 1994 study, then the City would have \"more than enough evidence to justify the City's 2001 ordinances\" (84 AD3d at 62 n 12; see also 131 AD3d 279, 289 [1st Dept 2015]).",
+      "Two Justices dissented. The dissenters believed that the City had \"sustained its burden as to sham compliance by demonstrating{**29 NY3d at 357} that by and large the essential character of the 60/40 businesses has not changed, even if their physical structure has\" (id. at 295 [Andrias, J., dissenting]).",
+      "The dissenting Justices gave the following reasoning.",
+      "\"Substantial evidence demonstrates that, notwithstanding the present availability of additional amenities or certain nonadult uses of their space, the adult eating and drinking establishments used for illustrative purposes retained a predominant sexual focus. These establishments typically feature topless dancing by multiple dancers on a daily basis for approximately 16 to 18 hours a day . . . with lap dancing provided in both the adult and the nonadult areas. . . . \"The adult book stores and video stores also retained a predominant focus on sexual materials or activities. The evidence of promotion, based on signage, displays in some front windows and throughout the stores, and layout, combined with the evidence of the presence of large numbers of peep booths and the evidence of the sale of adult sex toys in the nonadult sections of the stores, demonstrates that most of the stores . . . emphasized the promotion of sexual materials over nonadult materials\" (id. at 300-302 [Andrias, J., dissenting] [footnote omitted]).",
+      "The dissenters focused on the majority's use of an improper legal standard.",
+      "\"The majority's mechanical and mathematical approach, under which the predominant sexual focus in the 60/40 businesses' activities is quantitatively outweighed by signage, policies towards minors, and layouts, is inadequate under the dictates of the Court of Appeals and this Court, and elevates the City's burden of proof. In identifying certain factors relevant in assessing the character of the adult establishments, this Court did not call for a mechanical application by which each factor is to be weighted equally and tallied to arrive at a quantitative conclusion\" (id. at 302 [Andrias, J., dissenting] [emphasis added]).",
+      "The City appealed. Because the two-Justice dissent was on a question or questions of law in appellants' favor, we have jurisdiction over this appeal under CPLR 5601 (a).{**29 NY3d at 358}",
+      "Our 2005 decision in this litigation applied the appropriate standards. In discussing whether the City had met its initial burden at the first stage of Alameda Books, this Court noted that \"a municipality's burden to prove that it has a substantial interest in regulating a particular adult activity is not a very heavy one\" (6 NY3d at 80) and we quoted Justice Kennedy's concurrence in Alameda Books, which stated that \"very little evidence is required\" because generally \"courts should not be in the business of second-guessing fact-bound empirical assessments of city planners\" (id. [emphasis omitted], quoting Alameda Books, 535 US at 451 [Kennedy, J., concurring]). We ruled that given this modest evidentiary burden, the City had satisfied its initial \"burden to justify a secondary-effects rationale for the City's 2001 Amendments\" (6 NY3d at 81-82).",
+      "The Appellate Division in the decision on appeal exacerbated its earlier misguidance to the trial court by applying a rigidly mechanical approach to the determination of whether a predominant focus on sexually explicit entertainment remained. This too was error. As the dissent observed, the majority's four-prong checklist, with each factor weighing equally, placed subsidiary considerations such as signage on equal footing with the touchstone issue of emphasis on the promotion of sexually explicit activities or materials. Moreover, the Appellate Division counted factors that gave no support either to the City's conclusion or to plaintiffs' position (such as exclusion of minors by the topless clubs or lack of a uniform practice on exclusion of minors by the adult bookstores) as if they affirmatively counted against the City."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 3,
+    "labels": [
+      "1",
+      "2",
+      "3"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 3 table elements before or within the header region."
+    }
+  ]
+}

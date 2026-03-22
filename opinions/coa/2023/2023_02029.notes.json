@@ -1,0 +1,125 @@
+{
+  "caseId": "2023_02029",
+  "sourcePath": "coa/2023/2023_02029.htm",
+  "notesPath": "coa/2023/2023_02029.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.204Z",
+  "source": {
+    "title": "People v Hartle (2023 NY Slip Op 02029)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 39361,
+    "lineCount": 145,
+    "tagCounts": {
+      "a": 50,
+      "b": 30,
+      "blockquote": 4,
+      "body": 2,
+      "br": 20,
+      "div": 16,
+      "font": 42,
+      "head": 2,
+      "html": 2,
+      "i": 66,
+      "p": 78,
+      "script": 4,
+      "style": 2,
+      "sup": 12,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 10
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Hartle",
+      "2023 NY Slip Op 02029 [40 NY3d 39]",
+      "April 20, 2023",
+      "Garcia, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, August 30, 2023"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Mark A. Hartle, Appellant."
+    ],
+    "citationLine": "2023 NY Slip Op 02029 40 NY3d 39",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued February 9, 2023; decided April 20, 2023",
+      "April 20, 2023",
+      "As corrected through Wednesday, August 30, 2023"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 45,
+    "footnotesCount": 6
+  },
+  "citations": {
+    "slipOpinion": "2023 NY Slip Op 02029",
+    "officialCitation": "40 NY3d 39",
+    "pageMarkerCount": 20
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Garcia",
+      "Rivera"
+    ],
+    "qualifierLines": [
+      "{**40 NY3d at 41} OPINION OF THE COURT",
+      "The assertions in defendant's papers—from his attorneys, who state they did not believe the text messages were recoverable; from his mother, who claims she tried to call Verizon and ask for the deleted messages; and from defendant himself, who now represents that it was \"everyone's belief that such deleted material could not be recovered\"—are all inadequate, conclusory, and self-serving. Because the statute's focus is on \"the evidence's availability at the time of trial\" (dissenting op at 50-51), it is incumbent upon defendant to show an effort to obtain that evidence before trial. The existence of rooting technology that enabled the recovery of deleted messages on defendant's phone in 2018 is not evidence that no method existed to recover these messages in 2015. Nor has defendant made any representation as to the ability, at that time, of defendant's cell phone service provider to retrieve messages that had been so recently deleted. Defendant's affidavit states that \"[t]he photographs and text messages demonstrate that [the victim] did not testify truthfully\"—an argument his counsel advanced at trial. With the knowledge that he had, defendant could, of course, have cross-examined the victim at trial regarding whether she had exchanged text messages or photographs with defendant—he simply chose not to. Failure of his trial strategy does not permit defendant to resurrect his communications with the victim as newly discovered evidence.",
+      "This is not hypothetical case A (dissenting op at 49, 50 [defendant convicted of murder where decedent left a suicide note{**40 NY3d at 46} later hidden by a third party]) or B (id. at 49, 50 [defendant sees the suicide note but could not find it after he was charged with decedent's murder]). There are no \"novel questions\" here, nor are we concerned with the \"outer limits of a proposed legal rule\" (dissenting op at 47, 49 n 2). Rather, we apply our established approach to collateral attacks on a verdict brought pursuant to CPL 440.10 to a record demonstrating that before his arrest for sexually assaulting the 15-year-old victim, defendant deleted incriminating evidence of sexual contact with her and never sought to retrieve that deleted information before trial. As a result, he failed to meet his burden under CPL 440.10 and the trial court did not abuse its discretion in denying the motion without a hearing.",
+      "The majority creates a due diligence discovery standard and burden of production contrary to the statutory language in order to deprive defendant of this opportunity, which undermines the purpose of CPL 440.10 (1) (g) and the truth-seeking function of our legal system. Therefore, I dissent.{**40 NY3d at 47}"
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 6,
+    "labels": [
+      "*",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

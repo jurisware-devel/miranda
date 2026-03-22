@@ -1,0 +1,151 @@
+{
+  "caseId": "2018_08058",
+  "sourcePath": "coa/2018/2018_08058.htm",
+  "notesPath": "coa/2018/2018_08058.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.034Z",
+  "source": {
+    "title": "People v Jones (2018 NY Slip Op 08058)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 53060,
+    "lineCount": 156,
+    "tagCounts": {
+      "a": 52,
+      "b": 46,
+      "blockquote": 6,
+      "body": 2,
+      "br": 28,
+      "div": 22,
+      "font": 62,
+      "head": 2,
+      "html": 2,
+      "i": 214,
+      "opinion": 1,
+      "p": 107,
+      "script": 4,
+      "style": 2,
+      "sup": 20,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14,
+      "u": 20
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Jones",
+      "2018 NY Slip Op 08058 [32 NY3d 1146]",
+      "November 27, 2018",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, March 6, 2019"
+    ],
+    "captionLines": [],
+    "citationLine": "2018 NY Slip Op 08058 32 NY3d 1146",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued October 16, 2018; decided November 27, 2018.",
+      "November 27, 2018",
+      "As corrected through Wednesday, March 6, 2019"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Holwell Shuster & Goldberg LLP , New York City ( Scott M. Danner of counsel), and Office of the Appellate Defender , New York City ( Christina A. Swarns and Rosemary Herbert of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Holwell Shuster & Goldberg LLP , New York City ( Scott M. Danner of counsel), and Office of the Appellate Defender , New York City ( Christina A. Swarns and Rosemary Herbert of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Cyrus R. Vance, Jr. , District Attorney , New York City ( Ross D. Mazer and David M. Cohn of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Cyrus R. Vance, Jr. , District Attorney , New York City ( Ross D. Mazer and David M. Cohn of counsel), for respondent.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "White & Case LLP , Washington, D.C. ( Dana Foster of counsel), Robert S. Dean , Center for Appellate Litigation , New York City, New York State Association of Criminal Defense Attorneys , White Plains ( Richard D. Willstatter of counsel), and Chief Defenders Association of New York , Bronx ( Leanne G. Lapp of counsel), for Center for Appellate Litigation and others, amici curiae.",
+        "sideGuess": null,
+        "terminalPhrase": "amici curiae.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "White & Case LLP , Washington, D.C. ( Dana Foster of counsel), Robert S. Dean , Center for Appellate Litigation , New York City, New York State Association of Criminal Defense Attorneys , White Plains ( Richard D. Willstatter of counsel), and Chief Defenders Association of New York , Bronx ( Leanne G. Lapp of counsel), for Center for Appellate Litigation and others, amici curiae.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 60,
+    "footnotesCount": 10
+  },
+  "citations": {
+    "slipOpinion": "2018 NY Slip Op 08058",
+    "officialCitation": "32 NY3d 1146",
+    "pageMarkerCount": 30
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "concurrence": 1
+    },
+    "authors": [
+      "Rivera"
+    ],
+    "qualifierLines": [
+      "{**32 NY3d at 1147} OPINION OF THE COURT",
+      "Memorandum.",
+      "By this time, several federal judges and scholars had criticized RICO for being overly expansive as applied, and bringing within its prosecutorial net criminal activity that did not pose the type of structural problems that RICO was intended to address: the infiltration of legitimate businesses and institutions by criminal organizations (see United States v Anderson, 626 F2d 1358, 1364 n 8 [8th Cir 1980] [\"RICO has grown in popularity. Broad interpretation and simplistic resolution of the complicated statutory language pose the danger of enhancing this popularity beyond the intentions of Congress by bringing within the sphere of RICO minor offenses and by intruding on state power\"]; United States v Huber, 603 F2d 387, 395-396 [2d Cir 1979] [warning \"that the potentially broad reach of RICO poses a danger of abuse where a prosecutor attempts to apply the statute to situations for which it was not primarily intended\"]; United States v Altese, 542 F2d 104, 107-111 [2d Cir 1976, Van Graafeiland, J., dissenting] [\"The end result of the majority's expansive interpretation of (18 USC) § 1962(c) is to accord the word 'enterprise', intended by Congress to be synonymous with commercial business, parity with the term 'conspiracy' \"]; Gerald E. Lynch, RICO: The Crime of Being a Criminal, Parts I & II, 87 Colum L Rev 661, 661-662 [1987] [\"Congress viewed RICO principally as a tool for attacking the specific problem of infiltration of legitimate business by organized criminal syndicates . . . Instead, prosecutors have seized on the virtually unlimited sweep of the language of RICO to bring a wide variety of different prosecutions in the form of RICO indictments\"]). It also faced criticism for prosecution of defendants with tenuous connections to larger criminal schemes (see Barry Tarlow, RICO: The New Darling of the Prosecutor's Nursery, 49 Fordham L Rev 165, 169-171, n 11 [1980]).{**32 NY3d at 1152}"
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 1,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 10,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

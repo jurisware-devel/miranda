@@ -1,0 +1,121 @@
+{
+  "caseId": "2008_09252",
+  "sourcePath": "coa/2008/2008_09252.htm",
+  "notesPath": "coa/2008/2008_09252.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.407Z",
+  "source": {
+    "title": "People v Castellano (2008 NY Slip Op 09252)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 3718,
+    "lineCount": 63,
+    "tagCounts": {
+      "a": 4,
+      "b": 4,
+      "body": 2,
+      "br": 4,
+      "div": 2,
+      "font": 8,
+      "head": 2,
+      "html": 2,
+      "i": 16,
+      "p": 9,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Castellano",
+      "2008 NY Slip Op 09252 [11 NY3d 850]",
+      "November 25, 2008",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, February 4, 2009"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Roberto Castellano, Also Known as Roberto Castelan, Appellant."
+    ],
+    "citationLine": "2008 NY Slip Op 09252 11 NY3d 850",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued October 21, 2008; decided November 25, 2008",
+      "November 25, 2008",
+      "As corrected through Wednesday, February 4, 2009"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Patterson Belknap Webb & Tyler LLP , New York City ( Matthew J. Shepherd, Lisa E. Cleary, Norman Kee and Leonard Braman of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Patterson Belknap Webb & Tyler LLP , New York City ( Matthew J. Shepherd, Lisa E. Cleary, Norman Kee and Leonard Braman of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Robert T. Johnson, District Attorney , Bronx ( Mary Jo Blanchard, Joseph N. Ferdenzi, Karen Swiger and Lawrence H. Cunningham of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Robert T. Johnson, District Attorney , Bronx ( Mary Jo Blanchard, Joseph N. Ferdenzi, Karen Swiger and Lawrence H. Cunningham of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 3,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2008 NY Slip Op 09252",
+    "officialCitation": "11 NY3d 850",
+    "pageMarkerCount": 3
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**11 NY3d at 850} OPINION OF THE COURT",
+      "Concur: Chief Judge Kaye and Judges Ciparick, Graffeo, Read, Smith, Pigott and Jones.  "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

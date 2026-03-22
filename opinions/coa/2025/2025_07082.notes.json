@@ -1,0 +1,176 @@
+{
+  "caseId": "2025_07082",
+  "sourcePath": "coa/2025/2025_07082.htm",
+  "notesPath": "coa/2025/2025_07082.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.368Z",
+  "source": {
+    "title": "People v Smith (2025 NY Slip Op 07082)",
+    "publicationStatus": "slip_op_only"
+  },
+  "fileInfo": {
+    "byteSize": 34197,
+    "lineCount": 119,
+    "tagCounts": {
+      "a": 50,
+      "b": 34,
+      "body": 2,
+      "br": 35,
+      "dateline": 2,
+      "div": 14,
+      "font": 16,
+      "form": 2,
+      "head": 2,
+      "html": 2,
+      "i": 128,
+      "input": 1,
+      "opinion": 1,
+      "p": 59,
+      "para": 3,
+      "sc": 4,
+      "script": 4,
+      "style": 2,
+      "sup": 14,
+      "table": 2,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [
+      "form",
+      "input"
+    ],
+    "strayClosingTags": [
+      "p"
+    ]
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Smith",
+      "2025 NY Slip Op 07082",
+      "Decided on December 18, 2025",
+      "Court of Appeals",
+      "Troutman",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "This opinion is uncorrected and subject to revision before publication in the Official Reports."
+    ],
+    "captionLines": [
+      "The People & c., Respondent,",
+      "v",
+      "Mark A. Smith, Appellant."
+    ],
+    "citationLine": "2025 NY Slip Op 07082",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "At the charge conference, defendant requested that the jury be charged with the affirmative defense to robbery in the first degree, arguing that the BB gun was not a \"loaded weapon from which a shot readily capable of producing death or serious injury, could be discharged.\" The People responded that defendant had not presented sufficient evidence to avail himself of the affirmative defense. Defendant argued that a BB gun is not \"a weapon that can actually shoot you dead.\" The court replied: \"[I]t's a CO2 BB pistol, it's a little different. We are speculating either way.\" The court denied defendant's request.",
+      "§ 160.10 [2] [b]), not first-degree robbery under subdivision four (Penal Law § 160.15 [4]). If the People choose to charge robbery in the first degree, they must do so under subdivision one, two or three, and prove that the BB gun in use caused, or was capable of causing, death or serious physical injury (Penal Law § 160.15 [1]-[3]). The majority incorrectly holds that the People may obtain a conviction for first-degree robbery under subdivision four, unless the defendant proves that the particular BB gun at issue was not readily capable of producing death or serious injury. But analyzing the statutory scheme for robbery in its entirety reveals that the majority's reading of Penal Law § 160.15 (4) is unsupportable and not what the Legislature intended. Accordingly, I would remit for reduction to second-degree robbery and resentencing.",
+      "Decided on December 18, 2025"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Stephanie M. Stare, for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Stephanie M. Stare, for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Amy N. Walendziak, for respondent. TROUTMAN , J.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": true,
+        "argumentTailPreview": "TROUTMAN , J.",
+        "sentenceText": "Amy N. Walendziak, for respondent.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Amy N. Walendziak, for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Amy N. Walendziak, for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 29,
+    "footnotesCount": 7
+  },
+  "citations": {
+    "slipOpinion": "2025 NY Slip Op 07082",
+    "officialCitation": "228 AD3d 1324",
+    "pageMarkerCount": 5
+  },
+  "opinionStructure": {
+    "totalWritings": 4,
+    "byKind": {
+      "unknown": 2,
+      "opinion_of_the_court": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Troutman",
+      "Wilson"
+    ],
+    "qualifierLines": [
+      "Contrary to the dissent, nothing in the language or structure of Penal Law § 160.15 (4) suggest that it \"must be read to apply only . . . when the item displayed, which appeared to be a firearm, is not recovered or otherwise known\" (dissenting op at 6-7). The dissent goes to great lengths to find a difference between Penal Law §§ 160.15 (4) and 160.10 (2) (b), when the difference between the two sections is self-evident: there is an affirmative defense to the first-degree charge. The dissent's conclusion is, moreover, incompatible with People v Lopez (73 NY2d 214 [1989]), in which we upheld a first-degree robbery conviction where the victim testified that \"as the defendant announced the robbery he put his hand in the right side of his vest 'as if he had a gun' \" (id. at 218). The decisions of Appellate Division, Second Department, relied on by the dissent predate Lopez (see People v Bowman, 133 AD2d 701 [2d Dept 1987], lv denied 70 NY2d 953 [1988]; People v Jones, 54 AD2d 740 [2nd Dept 1976]), with the exception of People v Layton (302 AD2d 408 [2d Dept 2003]), which is based on a misreading of the affirmative defense as having been satisfied by evidence that the weapon used in that robbery \"was not a firearm\" (id.). Rather, the affirmative defense requires proof that the object displayed \"was not a loaded weapon from which a shot, readily capable of producing death or other serious physical injury, could be discharged\" (Penal Law § 160.15 [4]). The text of the statute is clear, and we are bound to give effect to its plain language (, 38 NY3d 199, 203 [2022]). The concerns identified in the dissent are properly left to the legislature (, 39 NY3d 306, 314 [2022] [\"(I)f the wording of the statute has created an unintended consequence, . . . it is the prerogative of the legislature, not this Court, to correct it\" (internal quotation marks omitted)]) and to the prudent exercise of prosecutorial discretion (see People v Eboli, 34 NY2d 281, 287 [1974] [\"(W)e have consistently held that overlapping in criminal statutes, and the opportunity for prosecutorial choice they represent, is no bar to prosecution\"]).",
+      "Under the majority's construction of the robbery statute, the People have two options when someone commits a robbery in which no one is injured, using a BB gun, toy gun, or anything that looks like a firearm but turns out not to be, such as a toothbrush cloaked in a way to make it appear to be a gun (see People v Lockwood, 52 NY2d 790, 791 [1980] [finding reversible error when defendant, who displayed a toothbrush during a robbery, requested but was not given the affirmative defense under subdivision four]; People v Baskerville, 60 NY2d 374, 378 [1983] [defendant displayed a black object covered by a towel that appeared to be a firearm]). First, and historically, if the People contend the object was readily capable of causing death or injury, either inherently so or because of the way in which it was used or threatened, the People have the burden to prove so if they wish to secure a first-degree robbery conviction. If the People conclude that the death-or-injury requirement is not met, the defendant can be charged with second-degree robbery for displaying a BB gun, toy gun or toothbrush. Second, though, the new option granted by the majority to the People is to charge the BB gun, toy gun, or toothbrush wielder with first-degree robbery and eliminate the People's burden to prove the object is \"readily capable of producing death or other serious physical injury\" for a first-degree robbery conviction where the weapon used appeared to be, but conclusively was not, a firearm. The majority's construction shifts the People's burden under subdivision's (2) and (3) of the first-degree burglary statute onto the defendant, to prove that the item resembling a firearm was not readily capable of producing serious physical injury or death. In the case of a toothbrush, that's not much of a burden, but the ease or difficulty is not the point . Under all other subdivisions of first-degree robbery, the Legislature clearly stated that to secure a conviction it is the People's burden to prove the object caused or was \"readily capable of producing death or injury\"—not the defendant's. Completely contrary to that clear statutory requirement, the majority now allows the People to shirk their burden under those subdivisions and secure a first-degree conviction by proving no more than what the Legislature denominated as second-degree robbery: use of what appears to be a firearm. In the process, the majority overturns decades of precedent in the Appellate Division to the contrary without acknowledgement or explanation . Moreover, the majority provides no rationale as to why, when the defendant is charged under subdivision four, the burden of proving the BB gun's capabilities, or lack thereof, shifts to the defendant. Such a shift makes sense only when the object displayed is unknown. Otherwise, we allow an \"unwarranted reduction in the People's burden of proof\" that is \"particularly objectionable because it authorizes convictions for first degree robbery on the basis of conduct that is at least one step removed from the type of behavior for which the Legislature intended to impose the highest punishment available within the robbery article\" (People v Lopez, 73 NY2d 214, 225 [1989] [Titone, J., dissenting in part and concurring in part]). Because of the majority's misconstruction of the robbery statute, the People will never have reason to charge under second-degree robbery, and where something that appears to be a firearm but is not is actually recovered, the People will have also no reason to charge under subdivisions (2) and (3) of the first-degree robbery statute. The majority's reading impermissibly extends liability under the Section 160 of the Penal law, as the majority places non-deadly toys, BB guns, and toothbrushes on equal footing with firearms, when the existence of second-degree robbery alone reveals the Legislature's intent to treat those items differently—that is, as class C, instead of class B, felonies (see People v Gottlieb, 36 NY2d 629, 632 [1975] [penal responsibility \"cannot be extended beyond the fair scope of the statutory mandate\"]; , 23 NY3d 455, 468 [2014] [\"If two constructions of a criminal statute are plausible, the one more favorable to the defendant should be adopted in accordance with the rule of lenity\" (alteration omitted)])."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 7,
+    "labels": [
+      "1",
+      "2",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <form> in source HTML."
+    },
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <input> in source HTML."
+    },
+    {
+      "code": "STRAY_CLOSING_TAG",
+      "severity": "warning",
+      "detail": "Closing tag </p> appears more times than opening tag <p>."
+    },
+    {
+      "code": "APPEARANCE_LINE_WITH_ARGUMENT_TAIL",
+      "severity": "info",
+      "detail": "Appearance-like line continues into argument text after \"for respondent.\"."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 4 writings."
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "caseId": "2013_07824",
+  "sourcePath": "coa/2013/2013_07824.htm",
+  "notesPath": "coa/2013/2013_07824.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.703Z",
+  "source": {
+    "title": "People v Howard (2013 NY Slip Op 07824)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 59338,
+    "lineCount": 189,
+    "tagCounts": {
+      "a": 22,
+      "b": 20,
+      "blockquote": 12,
+      "body": 2,
+      "br": 16,
+      "disop": 2,
+      "disopjd": 2,
+      "div": 20,
+      "font": 78,
+      "head": 2,
+      "html": 2,
+      "i": 164,
+      "p": 71,
+      "script": 4,
+      "style": 2,
+      "sup": 6,
+      "table": 6,
+      "td": 18,
+      "title": 2,
+      "tr": 18,
+      "u": 16
+    },
+    "unknownTags": [
+      "disop",
+      "disopjd"
+    ],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Howard",
+      "2013 NY Slip Op 07824 [22 NY3d 388]",
+      "November 26, 2013",
+      "Read, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, March 12, 2014"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Malik Howard, Appellant.",
+      "The People of the State of New York, Respondent, v Hilbert Stanley, Appellant."
+    ],
+    "citationLine": "2013 NY Slip Op 07824 22 NY3d 388",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued October 10, 2013; decided November 26, 2013",
+      "November 26, 2013",
+      "As corrected through Wednesday, March 12, 2014"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 81,
+    "footnotesCount": 3
+  },
+  "citations": {
+    "slipOpinion": "2013 NY Slip Op 07824",
+    "officialCitation": "22 NY3d 388",
+    "pageMarkerCount": 38
+  },
+  "opinionStructure": {
+    "totalWritings": 6,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 3,
+      "dissent": 2
+    },
+    "authors": [
+      "Read",
+      "Lippman",
+      "Abdus-salaam"
+    ],
+    "qualifierLines": [
+      "{**22 NY3d at 391} OPINION OF THE COURT",
+      "The Appellate Division affirmed, with two Justices dissenting in part (92 AD3d 176 [1st Dept 2012]). On appeal, defendants argued that because the object displayed by Howard during the robbery was a BB gun, not a firearm, the affirmative defense in Penal Law § 160.15 (4) was made out as a matter of law, and their convictions should be reduced to second-degree robbery. They also claimed that Lopez's testimony that Stanley placed an object against his back was insufficient to support a conviction for first-degree robbery. ",
+      "As an alternative holding, the Appellate Division concluded that the verdict was supported by legally sufficient evidence, and was not against the weight of the evidence. The court noted that it was enough to establish the \"display\" element of first-degree robbery that, even though Lopez was not sure the object pushed into his back was a gun, he could have \"reasonably . . . perceived Stanley's object to be a gun, particularly since [he] saw Howard holding a gun and at the same time felt Stanley place something against his back\" (92 AD3d at 179-180). Thus, {**22 NY3d at 400}the court distinguished other cases, relied on by the dissenters, where the People's evidence showed that \"only one gun was used during the crime and there [was] no indication that another firearm was displayed\" (id. at 181). ",
+      "The dissenters would have reduced the convictions of both defendants to second-degree robbery in the interest of justice. In their view, the \"undisputed evidence in the case\" focused solely on the BB gun (id. at 182 [Freedman, J., dissenting]), and it was not enough for Lopez to describe the object in his back as merely \"something,\" and to say that he did not know if it was a gun (id. at 184). One of the dissenting Justices granted Howard's motion for leave to appeal, and a Judge of this Court subsequently granted Stanley's related motion (19 NY3d 867 [2012]). ",
+      "The inclusion of the affirmative defense in Penal Law § 160.15 (4) is all that distinguishes first-degree robbery based upon the display of an apparent firearm from second-degree robbery{**22 NY3d at 410} based on the display of an apparent firearm (Penal Law § 160.10 [2] [b]). The legislature then has, for all practical purposes, left it, in the end, to defense counsel to assure that a client is not prosecuted excessively for a robbery involving the display of an imitation gun. The reasonable professional expectation reflected in the statute must be that counsel will interpose the defense when there is a basis to do so, thus giving effect to the statutory scheme's contemplated gradation in penal treatment. Counsel's failure to raise the defense was in the present legal and factual context a serious and inexplicable departure from prevailing, and indeed legislatively assumed, standards of professional practice. And, it is at least reasonably probable that had the defense been raised the outcome of the trial would have been significantly less adverse to defendants (see Strickland v Washington, 466 US 668, 694 [1984]). Indeed, raising the affirmative defense to first-degree robbery, which, with respect to the BB gun display, was entirely made out by the People's proof, was likely the single most obvious and efficacious act of advocacy counsel could have performed for clients whose prospects of outright acquittal by the time of trial were, dispassionately viewed, exceedingly dim. It is true that what is fundamentally at issue is one error, and the proper focus in evaluating a claim of ineffective representation is upon the total representational effort. Nonetheless, we have recognized that a single clear-cut error may be profoundly prejudicial and thus itself a sufficient ground for an ineffective assistance claim (, 5 NY3d 476 [2005]). Here, the failure of counsel to interpose the obvious and plainly meritorious affirmative defense more than likely resulted in an insufficiently supported and/or non-unanimous verdict. On this account as well, then, there should be a reversal and a new trial. Dissenting opinion by Abdus-Salaam, J. ",
+      "Nonetheless, I dissent from the majority's decision to uphold the showup identification of defendants. As Chief Judge Lippman explains in detail in his well-reasoned dissent (see dissenting op at 404-406), the showup was plainly unlawful under our decision in People v Johnson (81 NY2d 828 [1993]), wherein we invalidated a showup as a matter of law on a record that is not materially distinguishable from the one presented here (see id. at 829-831). Thus, as the Chief Judge rightly observes, \"[i]f the mixed question doctrine was not an impediment to review in Johnson, neither can it be here,\" and the showup in this case was \"simply illegal\" (dissenting op at 405). ",
+      "Judges Graffeo, Smith and Pigott concur with Judge Read; Chief Judge Lippman dissents and votes to reverse in an opinion in which Judge Rivera concurs; Judge Abdus-Salaam dissents and votes to reverse in a separate opinion. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 2,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 3,
+    "labels": [
+      "1",
+      "2",
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <disop> in source HTML."
+    },
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <disopjd> in source HTML."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 6 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 3 table elements before or within the header region."
+    }
+  ]
+}

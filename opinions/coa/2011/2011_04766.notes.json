@@ -1,0 +1,121 @@
+{
+  "caseId": "2011_04766",
+  "sourcePath": "coa/2011/2011_04766.htm",
+  "notesPath": "coa/2011/2011_04766.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.552Z",
+  "source": {
+    "title": "People v Lewie (2011 NY Slip Op 04766)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 42843,
+    "lineCount": 148,
+    "tagCounts": {
+      "a": 20,
+      "b": 10,
+      "blockquote": 10,
+      "body": 2,
+      "br": 12,
+      "div": 14,
+      "font": 62,
+      "head": 2,
+      "html": 2,
+      "i": 94,
+      "p": 58,
+      "script": 4,
+      "style": 2,
+      "sup": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 4
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Lewie",
+      "2011 NY Slip Op 04766 [17 NY3d 348]",
+      "June 9, 2011",
+      "Smith, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, September 14, 2011"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Alicia Lewie, Appellant."
+    ],
+    "citationLine": "2011 NY Slip Op 04766 17 NY3d 348",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued May 3, 2011; decided June 9, 2011",
+      "June 9, 2011",
+      "As corrected through Wednesday, September 14, 2011"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 64,
+    "footnotesCount": 1
+  },
+  "citations": {
+    "slipOpinion": "2011 NY Slip Op 04766",
+    "officialCitation": "17 NY3d 348",
+    "pageMarkerCount": 30
+  },
+  "opinionStructure": {
+    "totalWritings": 4,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "dissent": 1
+    },
+    "authors": [
+      "Smith",
+      "Jones"
+    ],
+    "qualifierLines": [
+      "{**17 NY3d at 353} OPINION OF THE COURT",
+      "It is, perhaps, conceivable that defendant did not actually know that Flint's maltreatment of Colbi created a risk to the child's life, but the jury could rationally find that she did know it. The dissent, in concluding otherwise, proceeds on the mistaken premise that \"[w]e know\" from the Appellate Division's dismissal of the first manslaughter count that defendant perceived no substantial and unjustifiable risk to Colbi's life during the child's last three days (dissenting op at 367). In fact, the dismissal establishes only that the People failed to prove defendant knew the injuries Colbi had already received{**17 NY3d at 358} were life-threatening. There is no inconsistency in holding, as the Appellate Division correctly did, that the People presented sufficient evidence that defendant knew—before and during the last days of Colbi's life—of a substantial and unjustifiable risk that Flint would injure him fatally. ",
+      "Our cases make clear that the word \"indifference\" is to be taken literally: \"depraved indifference is best understood as an utter disregard for the value of human life—a willingness to act . . . because one simply doesn't care whether grievous harm results or not\" (, 7 NY3d 288, 296 [2006], quoting 7 NY3d at 298 [Ciparick, J., dissenting], quoting , 6 NY3d 202, 214 [2005]). In other words, a person who is depravedly indifferent is not just willing to take a grossly unreasonable risk to human life—that person does not care how the risk turns out. This state of mind is found only in \"rare cases\" (Suarez, 6 NY3d at 218-219 [G.B. Smith, Rosenblatt and R.S. Smith, JJ., concurring]). Such cases do exist; in the situation before us, Flint pleaded guilty to depraved indifference murder, and we do not suggest that his plea was ill-founded. But depraved indifference to the life of another is still rare, and it is surely even rarer when the other person is one's own child. ",
+      "We have never held, and we now reject the argument, that the indelible right to counsel can attach by virtue of an attorney-client relationship in a Family Court or other civil proceeding.{**17 NY3d at 361} The indelible right, as Judge Kaye's concurring and dissenting opinion in Bing explained, has \"at its core the perception that in criminal cases—wholly unlike civil cases—the presence of an attorney is the most effective means we have of minimizing the disadvantage at which an accused is placed when . . . directly confronted with the awesome law enforcement machinery possessed by the State\" (76 NY2d at 351 [internal quotation marks omitted and emphasis added]). Thus while an attorney-client relationship formed in one criminal matter may sometimes bar questioning in another matter in the absence of counsel (see Lopez, 16 NY3d at 380), a relationship formed in a civil matter is not entitled to the same deference. ",
+      " I agree with the majority's dismissal of the reckless endangerment count. However, I dissent{**17 NY3d at 364} from that portion of the majority's opinion upholding defendant's conviction for manslaughter in the second degree (count seven of the indictment) because I do not believe this conviction was supported by legally sufficient evidence. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 1,
+    "labels": [
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 4 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

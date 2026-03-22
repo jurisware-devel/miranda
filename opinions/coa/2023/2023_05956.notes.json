@@ -1,0 +1,112 @@
+{
+  "caseId": "2023_05956",
+  "sourcePath": "coa/2023/2023_05956.htm",
+  "notesPath": "coa/2023/2023_05956.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.222Z",
+  "source": {
+    "title": "People v Ortega (2023 NY Slip Op 05956)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 33692,
+    "lineCount": 113,
+    "tagCounts": {
+      "a": 16,
+      "b": 18,
+      "blockquote": 2,
+      "body": 2,
+      "br": 8,
+      "div": 18,
+      "font": 40,
+      "head": 2,
+      "html": 2,
+      "i": 224,
+      "p": 66,
+      "script": 4,
+      "style": 2,
+      "sup": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 12
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Ortega",
+      "2023 NY Slip Op 05956 [40 NY3d 463]",
+      "November 20, 2023",
+      "Singas, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, February 28, 2024"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Yoselyn Ortega, Appellant."
+    ],
+    "citationLine": "2023 NY Slip Op 05956 40 NY3d 463",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued October 17, 2023; decided November 20, 2023",
+      "November 20, 2023",
+      "As corrected through Wednesday, February 28, 2024"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 37,
+    "footnotesCount": 1
+  },
+  "citations": {
+    "slipOpinion": "2023 NY Slip Op 05956",
+    "officialCitation": "40 NY3d 463",
+    "pageMarkerCount": 19
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [
+      "Singas"
+    ],
+    "qualifierLines": [
+      "{**40 NY3d at 468} OPINION OF THE COURT",
+      "Defendant objected to the admission of each autopsy report and Dr. Ely's testimony on the ground that they violated her constitutional right to confront the individual that conducted the autopsies. Supreme Court overruled defendant's objections. The jury ultimately found defendant guilty of two counts of murder in the first degree and two counts of murder in the second degree. The Appellate Division dismissed the two counts of murder in the second degree as \"inclusory concurrent counts of the first-degree murder counts\" and otherwise affirmed the judgment (202 AD3d 489, 492 [1st Dept 2022]). The Court agreed with Supreme Court that the admission of the autopsy reports through Dr. Ely did not violate defendant's right to confrontation, concluding that the reports were not testimonial because they \" '[did] not link the commission of the crime to a particular person' \" (id. at 491, quoting , 27 NY3d 294, 315 [2016], and citing , 11 NY3d 38, 42 [2008]). Regardless, the Court determined that \"any error was harmless under the standards for constitutional error\" (id. at 492, citing People v Crimmins, 36 NY2d 230 [1975]). A Judge of this Court granted defendant leave to appeal (38 NY3d 1073 [2022]).",
+      "In a fractured opinion one year after Bullcoming, the Supreme Court held that an expert witness's testimony regarding a DNA profile developed from semen found on a rape victim's vaginal swabs did not violate the Confrontation Clause even though the witness did not perform the DNA testing or construct the DNA profile (Williams v Illinois, 567 US 50 [2012]). The plurality offered two bases for its holding. First, the plurality asserted that the DNA profile was not offered for the truth of the matter asserted and thus, was not a testimonial statement (id. at 57-58). Alternatively, the plurality determined that the DNA report was not testimonial because the report was created before a suspect was identified, the report's primary purpose was not to \"obtain[ ] evidence to be used against petitioner\" but to assist in \"finding a rapist who was on the loose,\" and the DNA profile itself was not \"inherently inculpatory\" (id. at 58). Justice Thomas, in a concurrence, disagreed with both rationales of the plurality but would have held that the DNA report was not testimonial because it lacked \"the solemnity of an affidavit or deposition\" (id. at 111 [Thomas, J., concurring]). Therefore, while five Justices agreed that the DNA report was not testimonial, no rationale garnered a majority vote and Williams accordingly offers little guidance to our analysis (see Marks v United States, 430 US 188, 193 [1977]).",
+      "We agree that Freycinet's four-part framework for determining the testimonial nature of evidence does not survive Melendez-Diaz and Bullcoming. First, the Supreme Court in Melendez-Diaz made explicit that a statement need not be inherently inculpatory or \"directly accuse\" a defendant of wrongdoing to be considered testimonial (Melendez-Diaz, 557 US at 313). To the extent that the Williams plurality sought to establish such a litmus test for out-of-court statements, five Justices expressly rejected that approach (see Williams, 567 US at 114-117 [Thomas, J., concurring], 135-136 [Kagan, J., dissenting]). Freycinet's consideration of \"whether the contents of the report are a contemporaneous record of objective facts\" also fails under Supreme Court scrutiny (11 NY3d at 41). That a forensic report records \"near-contemporaneous observations\" of the test or procedure does not shield it from the Confrontation Clause's protections (Melendez-Diaz, 557 US at 315)."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 1,
+    "labels": [
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

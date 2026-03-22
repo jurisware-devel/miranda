@@ -1,0 +1,128 @@
+{
+  "caseId": "2011_07254",
+  "sourcePath": "coa/2011/2011_07254.htm",
+  "notesPath": "coa/2011/2011_07254.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.562Z",
+  "source": {
+    "title": "People v Rosario (2011 NY Slip Op 07254)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 45139,
+    "lineCount": 197,
+    "tagCounts": {
+      "a": 40,
+      "b": 36,
+      "blockquote": 26,
+      "body": 2,
+      "br": 24,
+      "div": 14,
+      "font": 62,
+      "head": 2,
+      "html": 2,
+      "i": 128,
+      "p": 63,
+      "script": 4,
+      "style": 2,
+      "sup": 14,
+      "table": 6,
+      "td": 18,
+      "title": 2,
+      "tr": 18,
+      "u": 18
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Rosario",
+      "2011 NY Slip Op 07254 [17 NY3d 501]",
+      "October 18, 2011",
+      "Read, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, December 7, 2011"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Appellant,",
+      "v",
+      "Angel Rosario, Respondent.",
+      "The People of the State of New York, Respondent, v Luis Parada, Appellant."
+    ],
+    "citationLine": "2011 NY Slip Op 07254 17 NY3d 501",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued September 7, 2011; decided October 18, 2011",
+      "October 18, 2011",
+      "As corrected through Wednesday, December 7, 2011"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 69,
+    "footnotesCount": 7
+  },
+  "citations": {
+    "slipOpinion": "2011 NY Slip Op 07254",
+    "officialCitation": "17 NY3d 501",
+    "pageMarkerCount": 30
+  },
+  "opinionStructure": {
+    "totalWritings": 4,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "dissent": 1
+    },
+    "authors": [
+      "Read",
+      "Smith"
+    ],
+    "qualifierLines": [
+      "{**17 NY3d at 506} OPINION OF THE COURT",
+      "The Appellate Division, with two Justices dissenting, affirmed the judgment, ruling that the trial judge properly admitted complainant's revelation to her cousin as a prompt outcry because \"it was made during the period wherein [complainant] was being sexually abused\" (67 AD3d 581, 582 [1st Dept 2009]). The court further concluded that while Supreme Court erroneously admitted complainant's disclosures to her aunt, the error was harmless. Finally, the court declined to reach, in the interest of justice, defendant's unpreserved challenges to the admission of certain prior consistent statements that complainant made to a pediatric nurse who examined her and a detective who interviewed her, and portions of the People's summation and, alternatively, rejected these challenges on the merits or considered any error to be harmless. Further, \"[t]o the extent the existing record permit[ted],\" the court concluded that defendant received effective assistance of counsel (id. at 583). ",
+      "The dissenting Justices would have exercised discretion in the interest of justice to decide defendant's unpreserved arguments, which they considered meritorious. In their view, the \"cumulative effect\" of the various unpreserved and preserved \"evidentiary errors on a conviction that rest[ed] essentially on the credibility of an 11-year-old child\" was not harmless (id. at 586). A dissenting Justice granted defendant permission to appeal to us. ",
+      "Chief Judge Lippman and Judges Ciparick, Graffeo, Pigott and Jones concur with Judge Read; Judge Smith dissents and votes to reverse in a separate opinion. ",
+      "Chief Judge Lippman and Judges Ciparick, Graffeo, Pigott and Jones concur with Judge Read; Judge Smith concurs in result in a separate opinion. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 7,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 4 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 3 table elements before or within the header region."
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "caseId": "2005_02567",
+  "sourcePath": "coa/2005/2005_02567.htm",
+  "notesPath": "coa/2005/2005_02567.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.272Z",
+  "source": {
+    "title": "People v McClemore (2005 NY Slip Op 02567)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 5472,
+    "lineCount": 75,
+    "tagCounts": {
+      "a": 6,
+      "appcouns": 1,
+      "b": 10,
+      "body": 2,
+      "br": 8,
+      "div": 4,
+      "font": 6,
+      "head": 2,
+      "html": 2,
+      "i": 16,
+      "p": 14,
+      "script": 4,
+      "style": 2,
+      "sup": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [
+      "appcouns"
+    ],
+    "strayClosingTags": [
+      "appcouns"
+    ]
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v McClemore",
+      "2005 NY Slip Op 02567 [4 NY3d 821]",
+      "March 31, 2005",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, June 29, 2005"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Antonio McClemore, Appellant."
+    ],
+    "citationLine": "2005 NY Slip Op 02567 4 NY3d 821",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Decided March 31, 2005",
+      "March 31, 2005",
+      "As corrected through Wednesday, June 29, 2005"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Gary A. Horton, Public Defender , Batavia ( Bridget L. Field of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Gary A. Horton, Public Defender , Batavia ( Bridget L. Field of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Lawrence Friedman, District Attorney , Batavia ( William G. Zickl of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Lawrence Friedman, District Attorney , Batavia ( William G. Zickl of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 6,
+    "footnotesCount": 1
+  },
+  "citations": {
+    "slipOpinion": "2005 NY Slip Op 02567",
+    "officialCitation": "4 NY3d 821",
+    "pageMarkerCount": 2
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "OPINION OF THE COURT",
+      "Memorandum. "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 1,
+    "labels": [
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <appcouns> in source HTML."
+    },
+    {
+      "code": "STRAY_CLOSING_TAG",
+      "severity": "warning",
+      "detail": "Closing tag </appcouns> appears more times than opening tag <appcouns>."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "caseId": "2016_04252",
+  "sourcePath": "coa/2016/2016_04252.htm",
+  "notesPath": "coa/2016/2016_04252.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.882Z",
+  "source": {
+    "title": "People v Hull (2016 NY Slip Op 04252)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 7709,
+    "lineCount": 78,
+    "tagCounts": {
+      "a": 6,
+      "b": 4,
+      "body": 2,
+      "br": 6,
+      "div": 6,
+      "font": 12,
+      "head": 2,
+      "html": 2,
+      "i": 24,
+      "opinion": 1,
+      "p": 24,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Hull",
+      "2016 NY Slip Op 04252 [27 NY3d 1056]",
+      "June 2, 2016",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, July 27, 2016"
+    ],
+    "captionLines": [],
+    "citationLine": "2016 NY Slip Op 04252 27 NY3d 1056",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued April 28, 2016; decided June 2, 2016",
+      "June 2, 2016",
+      "As corrected through Wednesday, July 27, 2016"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Edelstein & Grossman , New York City ( Jonathan I. Edelstein of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Edelstein & Grossman , New York City ( Jonathan I. Edelstein of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Richard D. Northrup, Jr. , District Attorney , Delhi ( John L. Hubbard of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Richard D. Northrup, Jr. , District Attorney , Delhi ( John L. Hubbard of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 8,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2016 NY Slip Op 04252",
+    "officialCitation": "27 NY3d 1056",
+    "pageMarkerCount": 5
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**27 NY3d at 1057} OPINION OF THE COURT",
+      "Memorandum.",
+      "At the conclusion of evidence, the People requested that the court instruct the jury on the lesser included offense of manslaughter in the first degree, which requires proof that defendant caused the death of another with \"intent to cause serious physical injury\" (Penal Law § 125.20 [1]). The court submitted the charge over defendant's objection, along with defendant's requested instructions on second-degree manslaughter, criminally negligent homicide and the defense of justification. The jury acquitted defendant of murder but found him guilty of manslaughter first. Defendant moved to set aside the verdict, arguing that there was no reasonable view of the evidence that he intended only to injure, but not kill, the victim{**27 NY3d at 1058} when he shot him in the forehead at point-blank range. The trial court denied the motion and the Appellate Division affirmed, with one Justice dissenting (125 AD3d 1099 [2015]). The dissenting Justice subsequently granted defendant leave to appeal (25 NY3d 955 [2015]).",
+      "Here, defendant's statements to the victim just before the shooting, coupled with evidence of the struggle and defendant's testimony that he \"wasn't aiming for nothing\" but \"wanted to stop [the victim's] forward momentum\" could have led the jury to conclude that defendant intended only to injure the victim and that the victim's movements during the struggle resulted in his death (see People v Ford, 66 NY2d 428, 441 [1985]). The fact that a bullet entered the victim's forehead does not necessarily mean defendant intended to kill him, as \"it is a matter of common experience that people who fire handguns do not always hit precisely the intended target\" (People v Butler, 86 AD2d 811, 815 [1st Dept 1982, Sandler, J., dissenting], revd for reasons stated in dissenting op 57 NY2d 664, 666 [1982])."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

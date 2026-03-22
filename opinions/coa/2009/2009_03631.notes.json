@@ -1,0 +1,138 @@
+{
+  "caseId": "2009_03631",
+  "sourcePath": "coa/2009/2009_03631.htm",
+  "notesPath": "coa/2009/2009_03631.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.432Z",
+  "source": {
+    "title": "People v Sevencan (2009 NY Slip Op 03631)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 4438,
+    "lineCount": 68,
+    "tagCounts": {
+      "a": 6,
+      "b": 4,
+      "body": 2,
+      "br": 4,
+      "div": 2,
+      "font": 8,
+      "head": 2,
+      "hist": 1,
+      "html": 2,
+      "i": 12,
+      "p": 11,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [
+      "hist"
+    ],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Sevencan",
+      "2009 NY Slip Op 03631 [12 NY3d 388]",
+      "May 7, 2009",
+      "Smith, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, June 17, 2009"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Salih Sevencan, Appellant."
+    ],
+    "citationLine": "2009 NY Slip Op 03631 12 NY3d 388",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Decided May 7, 2009",
+      "May 7, 2009",
+      "As corrected through Wednesday, June 17, 2009"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Appellate Advocates, New York City ( Lisa Napoli of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Appellate Advocates, New York City ( Lisa Napoli of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Charles J. Hynes, District Attorney, New York City ( Caroline R. Donhauser of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Charles J. Hynes, District Attorney, New York City ( Caroline R. Donhauser of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 5,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2009 NY Slip Op 03631",
+    "officialCitation": "12 NY3d 388",
+    "pageMarkerCount": 3
+  },
+  "opinionStructure": {
+    "totalWritings": 2,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1
+    },
+    "authors": [
+      "Smith"
+    ],
+    "qualifierLines": [
+      "{**12 NY3d at 388} OPINION OF THE COURT",
+      "Application pursuant to CPL 460.20 for a certificate granting leave to appeal dismissed by Judge Smith in a memorandum. Publication authorized by the Court.  "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <hist> in source HTML."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 2 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

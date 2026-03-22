@@ -1,0 +1,124 @@
+{
+  "caseId": "2013_06635",
+  "sourcePath": "coa/2013/2013_06635.htm",
+  "notesPath": "coa/2013/2013_06635.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.685Z",
+  "source": {
+    "title": "People v Santiago (2013 NY Slip Op 06635)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 10804,
+    "lineCount": 77,
+    "tagCounts": {
+      "a": 10,
+      "b": 10,
+      "body": 2,
+      "br": 8,
+      "div": 4,
+      "font": 16,
+      "head": 2,
+      "html": 2,
+      "i": 30,
+      "p": 17,
+      "script": 4,
+      "style": 2,
+      "sup": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Santiago",
+      "2013 NY Slip Op 06635 [22 NY3d 900]",
+      "October 15, 2013",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, December 11, 2013"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Carlos Santiago, Jr., Appellant."
+    ],
+    "citationLine": "2013 NY Slip Op 06635 22 NY3d 900",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued September 10, 2013; decided October 15, 2013",
+      "October 15, 2013",
+      "As corrected through Wednesday, December 11, 2013"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Timothy P. Donaher, Public Defender , Rochester ( Drew R. DuBrin of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Timothy P. Donaher, Public Defender , Rochester ( Drew R. DuBrin of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Sandra Doorley, District Attorney , Rochester ( Geoffrey Kaeuper of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Sandra Doorley, District Attorney , Rochester ( Geoffrey Kaeuper of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 9,
+    "footnotesCount": 1
+  },
+  "citations": {
+    "slipOpinion": "2013 NY Slip Op 06635",
+    "officialCitation": "22 NY3d 900",
+    "pageMarkerCount": 7
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**22 NY3d at 902} OPINION OF THE COURT",
+      "Memorandum. "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 1,
+    "labels": [
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

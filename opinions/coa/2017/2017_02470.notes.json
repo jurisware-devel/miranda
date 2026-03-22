@@ -1,0 +1,122 @@
+{
+  "caseId": "2017_02470",
+  "sourcePath": "coa/2017/2017_02470.htm",
+  "notesPath": "coa/2017/2017_02470.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.946Z",
+  "source": {
+    "title": "People v Valentin (2017 NY Slip Op 02470)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 29631,
+    "lineCount": 122,
+    "tagCounts": {
+      "a": 22,
+      "b": 10,
+      "blockquote": 10,
+      "body": 2,
+      "br": 14,
+      "div": 14,
+      "font": 38,
+      "head": 2,
+      "html": 2,
+      "i": 56,
+      "p": 67,
+      "script": 4,
+      "style": 2,
+      "sup": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 8
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Valentin",
+      "2017 NY Slip Op 02470 [29 NY3d 57]",
+      "March 30, 2017",
+      "Abdus-Salaam, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, May 31, 2017"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Appellant,",
+      "v",
+      "Carlos Valentin, Respondent."
+    ],
+    "citationLine": "2017 NY Slip Op 02470 29 NY3d 57",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued February 15, 2017; decided March 30, 2017",
+      "March 30, 2017",
+      "As corrected through Wednesday, May 31, 2017"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 38,
+    "footnotesCount": 1
+  },
+  "citations": {
+    "slipOpinion": "2017 NY Slip Op 02470",
+    "officialCitation": "29 NY3d 57",
+    "pageMarkerCount": 18
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Abdus-Salaam",
+      "Stein"
+    ],
+    "qualifierLines": [
+      "{**29 NY3d at 59} OPINION OF THE COURT",
+      "Defendant was convicted of manslaughter in the first degree. The Appellate Division, with one Justice dissenting, reversed, holding that the trial court improperly instructed the jury on the initial aggressor exception to justification (128 AD3d 428 [1st Dept 2015]). The dissenting Justice granted leave to appeal (2015 NY Slip Op 87471[U] [1st Dept 2015]), and we now reverse and remit to the Appellate Division for consideration of the issues raised but not determined on the appeal to that Court.",
+      "Hogan's testimony and timeline placed into issue whether defendant or McWillis was the initial aggressor as to the use of deadly force, especially when considering the brevity and intensity of the altercation. Certainly, there is a reasonable view of the evidence that McWillis was the initial aggressor as to physical force, because he picked up the mop handle and followed defendant before defendant ever used or threatened the use of a gun. However, the jury also could have reasonably concluded that defendant was the initial aggressor as to the use of deadly physical force, because he pulled out his loaded gun and shot Hogan and McWillis before McWillis in fact threatened him with the mop. And while there are instances where a \"normally innocuous item may constitute 'deadly physical {**29 NY3d at 62}force' \" (see dissenting op at 64; People v Dodt, 61 NY2d 408, 414 [1984]), under these circumstances, the jury reasonably could have concluded that the swinging mop handle did not. Thus, the court properly instructed the jury on the definition of an initial aggressor under Penal Law § 35.15.",
+      "Here, as the Appellate Division dissent noted, \"[n]o matter what the court charged in relation to the initial aggressor issue, [the jury could have reasonably concluded] there was simply no evidentiary support for a finding that defendant was justified in using deadly physical force against McWillis when faced with McWillis's either threatened or actual use of a mop handle\" (Valentin, 128 AD3d at 433 [Saxe, J., dissenting]). Our law has \"never required that an actor's belief as to the intention of another person to inflict serious injury be correct in order for the use of deadly force to be justified, but [it has] uniformly required that the belief comport with an objective notion of reasonableness\" (People v Goetz, 68 NY2d 96, 107 [1986]). Thus, the jury could have concluded that defendant's choice to respond to a swinging plastic mop handle with a loaded and operable gun was not reasonable, especially in light of his prior comments to police about taking the law into his own hands.",
+      "No reasonable view of the evidence could support a finding that defendant was the initial aggressor. Because this case hinged on a justification defense, defendant was prejudiced by the trial court's error of including the initial aggressor exception in its justification charge. Accordingly,{**29 NY3d at 63} I respectfully dissent, and would affirm the Appellate Division order remitting for a new trial.",
+      "Initially, the People assert that, because the plastic mop handle used by the victim was flimsy, its use could not constitute deadly force. The majority acknowledges that the swinging{**29 NY3d at 64} of a mop handle may, under particular circumstances, reasonably be viewed as presenting a threat of deadly physical force (see majority op at 61-62). Nonetheless, the dissenting Justice at the Appellate Division, with whom the majority here now agrees, concluded that \"there was simply no evidentiary support for a finding that defendant was justified in using deadly physical force against [Justin] McWillis when faced with McWillis's either threatened or actual use of a mop handle\" (128 AD3d 428, 433 [1st Dept 2015, Saxe, J., dissenting])."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 1,
+    "labels": [
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

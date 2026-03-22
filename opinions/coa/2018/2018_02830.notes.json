@@ -1,0 +1,137 @@
+{
+  "caseId": "2018_02830",
+  "sourcePath": "coa/2018/2018_02830.htm",
+  "notesPath": "coa/2018/2018_02830.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.993Z",
+  "source": {
+    "title": "People v Britton (2018 NY Slip Op 02830)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 26429,
+    "lineCount": 118,
+    "tagCounts": {
+      "a": 36,
+      "b": 22,
+      "blockquote": 4,
+      "body": 2,
+      "br": 14,
+      "div": 12,
+      "font": 32,
+      "head": 2,
+      "html": 2,
+      "i": 80,
+      "opinion": 1,
+      "p": 69,
+      "script": 4,
+      "style": 2,
+      "sup": 8,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14,
+      "u": 8
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Britton",
+      "2018 NY Slip Op 02830 [31 NY3d 1019]",
+      "April 26, 2018",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, June 27, 2018"
+    ],
+    "captionLines": [],
+    "citationLine": "2018 NY Slip Op 02830 31 NY3d 1019",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Decided April 26, 2018",
+      "April 26, 2018",
+      "As corrected through Wednesday, June 27, 2018"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Paul Skip Laisure, Appellate Advocates , New York City ( Denise A. Corsi of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Paul Skip Laisure, Appellate Advocates , New York City ( Denise A. Corsi of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Eric Gonzalez, District Attorney , Brooklyn ( Julian Joiris of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Eric Gonzalez, District Attorney , Brooklyn ( Julian Joiris of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 34,
+    "footnotesCount": 4
+  },
+  "citations": {
+    "slipOpinion": "2018 NY Slip Op 02830",
+    "officialCitation": "31 NY3d 1019",
+    "pageMarkerCount": 15
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Rivera"
+    ],
+    "qualifierLines": [
+      "{**31 NY3d at 1019} OPINION OF THE COURT",
+      "Memorandum.",
+      "Defendant's jury trial turned on competing narratives of the complainant and the defendant as the People had no physical evidence or eyewitnesses to the crimes charged. The jury acquitted defendant of first-degree rape (Penal Law § 130.35 [4]) and two counts of criminal sexual act in the first degree (Penal Law § 130.50 [4]), all felony charges, and convicted of one count of second-degree sexual abuse (Penal Law § 130.60 [2]), a misdemeanor. Despite the acquittal of the felony charges, the SORA court assessed defendant points for having committed the specific conduct on which these charges were based. On the particular facts of this case, in which the only evidence of the conduct for which defendant was assessed these points was rejected by the jury, the SORA court erred in finding clear and convincing evidence of the alleged sexual contact. Therefore, I would reverse the order adjudicating defendant a risk level two offender, and dissent from the majority's contrary determination on this appeal.",
+      "I dissent."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 4,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

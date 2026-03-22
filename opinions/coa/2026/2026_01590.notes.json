@@ -1,0 +1,194 @@
+{
+  "caseId": "2026_01590",
+  "sourcePath": "coa/2026/2026_01590.htm",
+  "notesPath": "coa/2026/2026_01590.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.405Z",
+  "source": {
+    "title": "People v Sabb (2026 NY Slip Op 01590)",
+    "publicationStatus": "slip_op_only"
+  },
+  "fileInfo": {
+    "byteSize": 49378,
+    "lineCount": 138,
+    "tagCounts": {
+      "a": 90,
+      "b": 46,
+      "blockquote": 2,
+      "body": 2,
+      "br": 41,
+      "dateline": 2,
+      "div": 26,
+      "font": 28,
+      "form": 2,
+      "head": 2,
+      "html": 2,
+      "i": 270,
+      "input": 1,
+      "opinion": 1,
+      "p": 72,
+      "para": 1,
+      "sc": 4,
+      "script": 2,
+      "style": 2,
+      "sup": 20,
+      "table": 2,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [
+      "form",
+      "input"
+    ],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Sabb",
+      "2026 NY Slip Op 01590",
+      "Decided on March 19, 2026",
+      "Court of Appeals",
+      "Rivera, J.",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "This opinion is uncorrected and subject to revision before publication in the Official Reports."
+    ],
+    "captionLines": [
+      "The People & c., Appellant,",
+      "v",
+      "Jhajuan Sabb, Respondent."
+    ],
+    "citationLine": "2026 NY Slip Op 01590",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "On appeal, defendant argued, as relevant here, that the consecutive sentences were unlawful. In a 3-2 decision, the Appellate Division modified Supreme Court's judgment to run the sentences [*2] concurrently, concluding that neither the allegations in the indictment nor defendant's admissions during his guilty plea allocutions established that the death and attempted assault \"arose from a separate and distinct pull of the [firearm's] trigger by defendant\" (238 AD3d 1212, 1212-1215, 1219 [3d Dept 2025] [internal quotation marks omitted]). Two Justices dissented in part, concluding that the consecutive sentences were not illegal, relying primarily on assertions in defendant's presentence report ( id. at 1216-1219 [Egan Jr., P.J., and Mackey, J., dissenting in part]). One of the dissenting Justices granted the prosecution leave to appeal (43 NY3d 1049 [2025]).",
+      "The prosecution's argument before us is that the information contained in the record as a whole authorized Supreme Court to sentence defendant consecutively. In support of that claim, the prosecution urges us to adopt a new, \"more flexible and commonsense approach\" to evaluating the legality of consecutive sentences imposed upon conviction by guilty plea. Under this proposed rule, an appellate court may consider all information available to the trial court, which, as in this case, would include the presentence report, grand jury minutes, and any pre-trial hearing testimony and exhibits. Defendant counters that there is no reason to deviate from our established precedent, which limits appellate review of consecutive sentences to the factual allegations in the indictment on the count pleaded to and a defendant's admissions during the plea allocutions. Defendant maintains that Supreme Court lacked authority to sentence him consecutively because the prosecution failed to satisfy its burden of establishing that the crimes to which defendant pleaded guilty were committed by separate and distinct acts, as required by law.",
+      "We now turn to the merits and conclude that, based on the factual assertions in the count of the indictment pleaded to and the plea allocutions, Supreme Court lacked authority to sentence defendant consecutively. We further reject the prosecution's and the dissent's invitation to ignore our established precedent by expanding the sources of information that an appellate court may consider when assessing the legality of consecutive sentences where the defendant has pleaded guilty.",
+      "The prosecution has the burden of establishing the legality of consecutive sentences ( People v Rosas , 8 NY3d 493 , 496 [2007], citing Laureano , 87 NY2d at 643; see also People v Day , 73 NY2d 208, 211 [1989] [\"The defendant benefits if either prong (of Penal Law § 70.25 [2]) is present, and the prosecution's burden is to countermand both prongs\"]), and it must satisfy its burden \"by identifying the facts which support [its] view\" ( Laureano , 87 NY2d at 644; see also People v Ramirez , 89 NY2d 444, 451 [1996] [\"Imposition of consecutive sentences (based on separate and distinct acts) must be supported by identifiable facts\"]; People v Dean , 8 NY3d 929 , 930-931 [2007] [\"A trial court may impose consecutive sentences when the facts demonstrate that the defendant's acts underlying the crimes are separate and distinct\" (internal quotation marks and citation omitted)]). An appellate court reviewing the legality of consecutive sentencing \"must first examine the statutory definitions of the crimes for which [the] defendant has been convicted\" and compare the actus reus elements of each to determine if they are, \"by definition, the same for both offenses . . . , or if the actus reus for one offense is . . . a material element of the second offense\" ( see Laureano , 87 NY2d at 643). \"If the statutory elements do overlap under either prong of [Penal Law § 70.25 (2)], the [prosecution] may yet establish the legality of consecutive sentencing by showing that the 'acts or omissions' committed by [the] defendant were separate and distinct acts\" ( id. [internal citations omitted]).",
+      "\"[W]here [the] defendant has pleaded guilty to one or more counts alleged in the indictment, [the prosecution] may rely on the allegations of those counts as well as the facts adduced at the [plea] allocution[s],\" and \"[w]here [the] defendant has been convicted upon a plea to a lesser offense than [*4] that charged in the indictment, the [prosecution] may rely only on those facts and circumstances admitted during the plea allocution[s]\" ( id. at 644, citing People v Griffin , 7 NY2d 511, 515 [1960]). This rule is based on a trial court's limited authority to sentence a defendant only upon a factual finding of guilt by the trier of fact after trial or upon a defendant's admissions during a guilty plea allocution. With respect to the latter, as this Court explained in People v Griffin , when a defendant \"plead[s] guilty to any lesser crime than that charged in the indictment,\" that plea \"does not presuppose the truth of the facts pleaded in the indictment\" (7 NY2d at 515 [internal quotation marks omitted]). Rather, the \"plea only admits the facts stated in the plea [allocution] as constituting the lesser crime\" ( id. ).",
+      "Defendant pleaded guilty to a reduced charge of first-degree manslaughter for causing the death of S.A., and to the first-degree attempted assault count charged in the indictment for the non-fatal injury of A.T., and the court imposed consecutive sentences. Under our established rule, we may consider the legality of the consecutive sentences based only on the facts defendant admitted at the plea allocution with respect to the manslaughter count, and the facts asserted in the indictment and admitted at the plea allocution with respect to the first-degree assault count pertaining to A.T. ( see Laureano , 87 NY2d at 644; see also Dean , 8 NY3d at 931 [sentencing court was \"without authority to impose consecutive sentences\" where the defendant pleaded guilty to three counts of possessing a sexual performance by a child, but the prosecution \"did not include the date and time of each of the allegedly separate acts of downloading the digital images set forth in the indictment, or include such facts in defendant's plea allocution(s)\"]).",
+      "As the statutory actus reus for each crime overlaps, because causing or attempting to cause serious physical injury or death by use of a firearm is required for each, the prosecution was required to establish that defendant's use of a firearm caused the injuries to S.A. and A.T. by \"separate and distinct acts\" ( see Laureano , 87 NY2d at 643). Given the court's questions and defendant's responses, the prosecution could have demonstrated the legality of consecutive sentencing by asking defendant to admit that he separately shot at the two victims, or that separate bullets from his firearm injured each victim. However, neither the plea allocutions nor the allegations supporting the attempted assault count of the indictment pertaining to A.T. contain a factual assertion that defendant separately shot at the two victims, or that each victim's injuries were caused by separate and distinct acts of defendant's use of the firearm. In other words, the prosecution failed to demonstrate that [*5] S.A.'s and A.T.'s respective injuries were not the result of defendant firing a single shot ( see People v Brathwaite , 63 NY2d 839, 841, 843 [1984] [holding that consecutive sentencing was lawful because the trial record showed at least nine shots were fired, and \"although the two deaths may be said to have occurred in the course of a single extended transaction . . . (,) it was separate 'acts' which caused (each victim's) death( ),\" given that there was \"no contention that it was the firing of the same shot that killed both (victims)\"]; McKnight , 16 NY3d at 48-49 [allowing consecutive sentencing where separate shots were fired at both victims but indicating concurrent sentencing would be mandated if the shots that hit one victim were the only shots fired at the other victim]; see also People v Battles , 16 NY3d 54 , 59 [2010] [permitting consecutive sentences for crimes committed against three victims whom defendant separately doused with gasoline, but requiring concurrent sentencing with respect to a fourth victim sprayed with gasoline as a result of the dousing of others]).",
+      "We decline this invitation to deviate from our precedent. Our existing rule is longstanding, straightforward, well-understood, and lower courts have applied it consistently ( see e.g. People v Pardy , 113 AD3d 1003 , 1003 [3d Dept 2014]; People v Pena , 259 AD2d 394, 394-395 [1st Dept 1999]; People v Robinson , 178 AD3d 861 , 862 [2d Dept 2019]; People v Quirk , 73 AD3d 1089 , 1090 [2d Dept 2010]; People v Wright , 229 AD3d 1094 , 1095 [4th Dept 2024]). The dissent invokes the finality of plea agreements and the importance of presentence reports, all the while disregarding [*6] our substantial body of caselaw making clear that the prosecution bears the burden of proving the legality of consecutive sentencing based on the indictment and plea allocution. [FN3] This rule recognizes that when a defendant pleads guilty, they must admit to the facts necessary for a sentence to be \"legal,\" meaning a sentence that comports with the law and falls within the statutory range for the crime of conviction. Thus, when a court assesses the legality of consecutive sentencing upon a guilty plea, the court cannot go beyond the defendant's admissions and consider information used to impose a sentence that is \"appropriate\" within those legal limits. [FN4] The dissent's post-plea material of choice&mdash;the presentence report&mdash;is an especially problematic document by which to determine the legality of a sentence, as the report may contain unverified hearsay.",
+      "Furthermore, despite the dissent's and the prosecution's contentions, our rule does not impose an undue burden on the prosecution to establish the legality of consecutive sentencing in cases where a defendant pleads guilty. Prosecutors regularly draft indictments, and they may request further inquiry of a defendant before the court accepts a plea to ensure the adequacy of the allocution and record. [FN5] Defendant's case illustrates the point. In response to the court's inquiry as to whether the allocutions were acceptable, the prosecutor needed only request that defendant admit he separately shot at the two victims or that their distinct injuries were caused by separate shots from his firearm. Thus, under our existing rule the prosecution could easily have established the legality of consecutive sentencing with a question or two, and there can be no excuse for their failure to do so.",
+      "On a Friday afternoon in May 2021, S.A., a hardworking husband and father of three young children, was walking to work when he stopped to speak to friends on a residential Albany street corner. Within minutes, defendant and his accomplices approached the corner in a red Subaru, aimed their loaded guns outside the windows, and fired a barrage of bullets at the group from their moving car. S.A. was struck in the torso and died at the hospital. A.T. was shot and survived after undergoing emergency surgery. Three additional victims were also shot and injured. A grand jury indicted defendant on seven felony counts, including second-degree murder, for which he faced a life sentence ( see Penal Law §§ 70.00 [2] [a]; 125.25 [1]-[2]). More than a year later, defendant negotiated a favorable plea deal and&mdash;avoiding a life sentence&mdash;pleaded guilty to the first-degree [*7] manslaughter of S.A. and first-degree attempted assault of A.T. As part of the negotiated plea the court sentenced defendant to 35 years in prison: 25 years for the manslaughter and 10 years for the attempted assault, to run consecutively in accordance with the plea agreement. Defendant also waived his right to appeal.",
+      "The majority faults the People for not asking defendant to \"admit he separately shot at the two victims or that their distinct injuries were caused by separate shots from his firearm\" (majority op at 13), apparently either requiring that defendant allocute that he pulled the trigger multiple times, [*8] or that different bullets struck the victims. To the extent it is the latter, that requirement would in effect foreclose consecutive sentencing under these circumstances, because a defendant in a drive-by shooting could not possibly know which bullet struck whom and the People are unlikely to be able to rule out magic bullet theories without expert ballistics analysis. One of plea bargaining's key functions is to bypass the parties' need to marshal such evidence for trial, conserving prosecutorial and judicial resources and rewarding defendants with more lenient sentences in exchange. An overly rigid approach to assessing whether indictments and plea allocutions establish that two crimes involved separate acts undermines that salutary process and may deprive defendants of beneficial bargains.",
+      "\"The presentence report may well be 'the single most important document at both the sentencing and correctional levels of the criminal process' \" ( People v Hicks , 98 NY2d 185, 189 [2002]). In 1970, the CPL \"codifie[d] the virtually uniform practice\" of considering pre-sentence reports \"before imposing sentence for a felony\" (Staff Comment of Temp St Commn on Rev of Penal Law & Crim Code, 1967 Proposed NY CPL 200.20 at 261) and \"strengthen[ed] th[at] policy . . . by clearly prohibiting sentence [for a felony] without a presentence report\" People v Aiss , 29 NY2d 403, 406 [1972]; see also CPL 390.20 [1], 390.30 [1] [presentence reports must describe \"the circumstances attending the commission of the offense\"]). Acknowledging this policy in People [*9] v Selikoff , we explained: \"To enable the court to perform its function, the statute mandates, and it is the public policy of this State to require, a presentence report before sentence be imposed . . . . A Judge may not ignore those provisions of law designed to assure that an appropriate sentence is imposed\" (35 NY2d 227, 238 [1974]; see e.g. People v Breaux , 24 AD3d 261 , 262 [1st Dept 2005]; People v O'Dell , 105 AD2d 987, 987 [3d Dept 1984]). Although the majority distinguishes the People's burden to demonstrate the legality of the sentence from the sentencing court's exercise of discretion in imposing an appropriate sentence ( see majority op at 11-12), it does not necessarily follow that presentence reports can inform only the latter inquiry. Indeed, we went on to explain in Selikoff that \"any sentence 'promise' at the time of plea is, as a matter of law and strong public policy, conditioned upon its being lawful and appropriate in light of the subsequent presentence report or information obtained from other reliable sources\" (35 NY2d at 238 [emphasis added]). The sentencing court here was therefore required to consider the presentence report to ensure that consecutive sentencing was lawful and appropriate.",
+      "We readily endorse the practice of defendants pleading guilty to impossible or nonexistent crimes even though, in those circumstances, a defendant's allocution is not only deficient, it is based on a legal fiction, and, most significantly for our purposes here, \"no factual basis for the plea is required\" ( People v Johnson , 23 NY3d 973 , 975 [2014]). We allow such pleas to facilitate the plea-bargaining process; so why invalidate the mutually beneficial plea here&mdash;to real crimes that validly support defendant's bargained-for sentence&mdash;based on a hyper-technical reading? After all, defendant admitted guilt to manslaughter rather than murder, avoiding a life sentence; one count of [*11] attempted assault rather than four, avoiding possible consecutive sentences on those counts; and avoided any conviction of criminal possession of a weapon. [FN5] The majority contends that defendant's 35-year sentence would have been legal if the People had simply had defendant allocute to one additional fact. That contention equally demonstrates that any supposed deficiency in the allocution could have easily been cured if the sentencing court or the People were alerted to it. In theory, the People could seek to remedy that problem by withdrawing from the plea agreement. But they do not seek that remedy here because, as the People acknowledged in briefing, the years that passed between the original trial date and when the defendant's appeal was heard have weakened the People's ability to secure a conviction at trial.",
+      "Decided on March 19, 2026"
+    ],
+    "authorLine": "Even if there were any ambiguity in the plea colloquy, defendant's presentence report sufficiently shows that he and his accomplice sprayed 16 bullets at the victims from a moving car, thus adequately demonstrating that A.T. and S.A. were struck by different bullets ( see People v Brathwaite , 63 NY2d 839, 843 [1984]; People v Moon , 119 AD3d 1293 , 1295 [3d Dept 2014, Stein, J.P.]; People v Holmes , 92 AD3d 957 , 957 [2d Dept 2012]; Cruz v Raymond , 2013 WL 5530641, *7, 2013 US Dist LEXIS 144069, *18-20 [ED NY Sept. 30, 2013, No 10-CV-1491 (DLI)] [applying New York law]). The majority rejects the presentence report's help, broadly concluding that sentencing courts are limited to the accusatory instrument and plea allocution ( see majority op at 7, 12) and that allowing sentencing courts to \"consider all information available to the trial court . . . would require overruling decades of well-established precedent\" (majority op at 10). But allowing courts to consider presentence reports specifically, in view of their contents, function, and status, does not in fact require that radical step. I instead agree with Justice Egan's thoughtful dissent that the sentencing court was permitted, and indeed required , to consider this specific document, which is uniquely created by statutory mandate for purposes of sentencing, when determining defendant's permissible sentence (238 AD3d 1212, 1216-1219 [3d Dept 2025, Egan, J.P., concurring in part and dissenting in part]).",
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Emily Schultz, for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Emily Schultz, for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Steven M. Sharp, for respondent. RIVERA , J.:",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": true,
+        "argumentTailPreview": "RIVERA , J.:",
+        "sentenceText": "Steven M. Sharp, for respondent.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Steven M. Sharp, for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Steven M. Sharp, for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 44,
+    "footnotesCount": 10
+  },
+  "citations": {
+    "slipOpinion": "2026 NY Slip Op 01590",
+    "officialCitation": "238 AD3d 1212",
+    "pageMarkerCount": 11
+  },
+  "opinionStructure": {
+    "totalWritings": 4,
+    "byKind": {
+      "unknown": 2,
+      "opinion_of_the_court": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Rivera",
+      "Singas"
+    ],
+    "qualifierLines": [
+      "On appeal, defendant argued, as relevant here, that the consecutive sentences were unlawful. In a 3-2 decision, the Appellate Division modified Supreme Court's judgment to run the sentences concurrently, concluding that neither the allegations in the indictment nor defendant's admissions during his guilty plea allocutions established that the death and attempted assault \"arose from a separate and distinct pull of the [firearm's] trigger by defendant\" (238 AD3d 1212, 1212-1215, 1219 [3d Dept 2025] [internal quotation marks omitted]). Two Justices dissented in part, concluding that the consecutive sentences were not illegal, relying primarily on assertions in defendant's presentence report (id. at 1216-1219 [Egan Jr., P.J., and Mackey, J., dissenting in part]). One of the dissenting Justices granted the prosecution leave to appeal (43 NY3d 1049 [2025]).",
+      "We now turn to the merits and conclude that, based on the factual assertions in the count of the indictment pleaded to and the plea allocutions, Supreme Court lacked authority to sentence defendant consecutively. We further reject the prosecution's and the dissent's invitation to ignore our established precedent by expanding the sources of information that an appellate court may consider when assessing the legality of consecutive sentences where the defendant has pleaded guilty.",
+      "Penal Law § 70.25 (2) mandates concurrent sentences \"for two or more offenses committed through a single act or omission, or through an act or omission which in itself constituted one of the offenses and also was a material element of the other.\" The Court has explained this binary requirement as prohibiting consecutive sentences \"where a single act constitutes two offenses, or . . . a single act constitutes one of the offenses and a material element of the other\" (Laureano, 87 NY2d at 643). Where consecutive sentences are permissible, a trial court nonetheless retains discretion to impose concurrent sentences (, 16 NY3d 43, 48 [2010]; , 28 NY3d 368, 377 n 4 [2016]).",
+      "As the statutory actus reus for each crime overlaps, because causing or attempting to cause serious physical injury or death by use of a firearm is required for each, the prosecution was required to establish that defendant's use of a firearm caused the injuries to S.A. and A.T. by \"separate and distinct acts\" (see Laureano, 87 NY2d at 643). Given the court's questions and defendant's responses, the prosecution could have demonstrated the legality of consecutive sentencing by asking defendant to admit that he separately shot at the two victims, or that separate bullets from his firearm injured each victim. However, neither the plea allocutions nor the allegations supporting the attempted assault count of the indictment pertaining to A.T. contain a factual assertion that defendant separately shot at the two victims, or that each victim's injuries were caused by separate and distinct acts of defendant's use of the firearm. In other words, the prosecution failed to demonstrate that S.A.'s and A.T.'s respective injuries were not the result of defendant firing a single shot (see People v Brathwaite, 63 NY2d 839, 841, 843 [1984] [holding that consecutive sentencing was lawful because the trial record showed at least nine shots were fired, and \"although the two deaths may be said to have occurred in the course of a single extended transaction . . . (,) it was separate 'acts' which caused (each victim's) death( ),\" given that there was \"no contention that it was the firing of the same shot that killed both (victims)\"]; McKnight, 16 NY3d at 48-49 [allowing consecutive sentencing where separate shots were fired at both victims but indicating concurrent sentencing would be mandated if the shots that hit one victim were the only shots fired at the other victim]; , 16 NY3d 54, 59 [2010] [permitting consecutive sentences for crimes committed against three victims whom defendant separately doused with gasoline, but requiring concurrent sentencing with respect to a fourth victim sprayed with gasoline as a result of the dousing of others]).",
+      "Contrary to the dissent's assertions, the prosecutor should have been aware at the time of the plea, based on our unambiguous caselaw, that they had the burden of ensuring defendant allocuted to sufficient facts to establish that he separately shot at the two victims or that the victims were injured by separate bullets, in order for consecutive sentencing to be legally authorized. But because the prosecutor failed to satisfy their burden and place on the record the alleged \"separate and distinct\" acts underlying the two crimes (see Laureano, 87 NY2d at 643, 645), the trial court had no legal authority to impose consecutive sentences in this case.",
+      "The prosecution argues, and the dissent takes up the charge, that we should adopt a different rule that would allow an appellate court evaluating the legality of consecutive sentences to consider all information available to the trial court. That expansion of the sources the prosecution can rely on to meet its burden, which the prosecution characterizes as a \"more flexible\" approach, would require overruling decades of well-established precedent, and neither the prosecution nor the dissent provides any basis for upending our jurisprudence in such a fashion (see Section III.A., supra; see also Laureano, 87 NY2d at 644; Dean, 8 NY3d at 931). Indeed, the dissent elides that its approach would require us to expand or amend our existing caselaw. To the extent that the prosecution and the dissent claim the current rule unfairly curtails a sentencing court's discretion to impose consecutive sentences where the defendant accepts a mutually beneficial plea bargain, the Laureano majority implicitly rejected this same argument as raised by the dissent (see 87 NY2d at 645-646; id. at 648-649 [Bellacosa, J., dissenting]).",
+      "We decline this invitation to deviate from our precedent. Our existing rule is longstanding, straightforward, well-understood, and lower courts have applied it consistently (, 113 AD3d 1003, 1003 [3d Dept 2014]; People v Pena, 259 AD2d 394, 394-395 [1st Dept 1999]; , 178 AD3d 861, 862 [2d Dept 2019]; , 73 AD3d 1089, 1090 [2d Dept 2010]; , 229 AD3d 1094, 1095 [4th Dept 2024]). The dissent invokes the finality of plea agreements and the importance of presentence reports, all the while disregarding our substantial body of caselaw making clear that the prosecution bears the burden of proving the legality of consecutive sentencing based on the indictment and plea allocution. This rule recognizes that when a defendant pleads guilty, they must admit to the facts necessary for a sentence to be \"legal,\" meaning a sentence that comports with the law and falls within the statutory range for the crime of conviction. Thus, when a court assesses the legality of consecutive sentencing upon a guilty plea, the court cannot go beyond the defendant's admissions and consider information used to impose a sentence that is \"appropriate\" within those legal limits. The dissent's post-plea material of choice—the presentence report—is an especially problematic document by which to determine the legality of a sentence, as the report may contain unverified hearsay.",
+      "Furthermore, despite the dissent's and the prosecution's contentions, our rule does not impose an undue burden on the prosecution to establish the legality of consecutive sentencing in cases where a defendant pleads guilty. Prosecutors regularly draft indictments, and they may request further inquiry of a defendant before the court accepts a plea to ensure the adequacy of the allocution and record. Defendant's case illustrates the point. In response to the court's inquiry as to whether the allocutions were acceptable, the prosecutor needed only request that defendant admit he separately shot at the two victims or that their distinct injuries were caused by separate shots from his firearm. Thus, under our existing rule the prosecution could easily have established the legality of consecutive sentencing with a question or two, and there can be no excuse for their failure to do so.",
+      "In sum, the trial court could not lawfully impose consecutive sentences in this case. The prosecution did not request before the Appellate Division, nor before us, that the matter be remitted for it to withdraw its consent to the pleas, and therefore, as the Appellate Division ordered below, defendant's sentences must be run concurrently. Accordingly, the Appellate Division order insofar as appealed from should be affirmed.",
+      "Even if there were any ambiguity in the plea colloquy, defendant's presentence report sufficiently shows that he and his accomplice sprayed 16 bullets at the victims from a moving car, thus adequately demonstrating that A.T. and S.A. were struck by different bullets (see People v Brathwaite, 63 NY2d 839, 843 [1984]; , 119 AD3d 1293, 1295 [3d Dept 2014, Stein, J.P.]; , 92 AD3d 957, 957 [2d Dept 2012]; Cruz v Raymond, 2013 WL 5530641, *7, 2013 US Dist LEXIS 144069, *18-20 [ED NY Sept. 30, 2013, No 10-CV-1491 (DLI)] [applying New York law]). The majority rejects the presentence report's help, broadly concluding that sentencing courts are limited to the accusatory instrument and plea allocution (see majority op at 7, 12) and that allowing sentencing courts to \"consider all information available to the trial court . . . would require overruling decades of well-established precedent\" (majority op at 10). But allowing courts to consider presentence reports specifically, in view of their contents, function, and status, does not in fact require that radical step. I instead agree with Justice Egan's thoughtful dissent that the sentencing court was permitted, and indeed required, to consider this specific document, which is uniquely created by statutory mandate for purposes of sentencing, when determining defendant's permissible sentence (238 AD3d 1212, 1216-1219 [3d Dept 2025, Egan, J.P., concurring in part and dissenting in part]).",
+      "As the majority observes (see majority op at 7-8), we have previously limited sentencing courts to considering accusatory instruments and plea allocutions in assessing the legality of consecutive sentencing (, 8 NY3d 929, 931 [2007]; , 12 NY3d 21, 26 n 1 [2009]). Yet we have never applied that rule to specifically exclude presentence reports. Given presentencing reports' unique nature, and given that a case cannot be moved to sentencing until a court reviews the presentence report, it defies logic to now mandate that in determining a defendant's permissible sentence, a court must blind itself to the information in the report that it was required to review. Nor would I conclude that a presentence report cannot be considered because it contains facts not found by a jury or admitted by the defendant (see majority op at 12). That logic is at odds with our approach in cases concerning sentences imposed after a trial, where we permit the People to demonstrate the sentence's legality by \"offer[ing] facts from the trial record\" (Laureano, 87 NY2d at 644). In any case, as Justice Egan noted below, unlike with other materials in the record, there is a procedure for defendants to contest allegations in the presentence report, and a defendant necessarily admits the report's contents to which they raise no objection (see 238 AD3d at 1218 [Egan, J.P., concurring in part and dissenting in part], citing CPL 400.10). That is the case here, where after successfully striking one paragraph from the presentence report, defendant affirmed that he had no further objection to its contents. Finally, to the extent the majority invokes the sentencing court's \"limited authority to sentence a defendant\" based on Sixth Amendment concerns (see majority op at 7), the Supreme Court has specifically held that jury trial rights do not attach in the consecutive sentencing context (see Ice, 555 US at 164). In sum, there is no good reason to tie sentencing courts' hands by prohibiting them from considering a document created specifically for sentencing purposes when determining the legality of a sentence.",
+      "I dissent."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 10,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <form> in source HTML."
+    },
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <input> in source HTML."
+    },
+    {
+      "code": "APPEARANCE_LINE_WITH_ARGUMENT_TAIL",
+      "severity": "info",
+      "detail": "Appearance-like line continues into argument text after \"for respondent.\"."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 4 writings."
+    }
+  ]
+}

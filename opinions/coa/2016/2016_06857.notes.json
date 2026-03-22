@@ -1,0 +1,120 @@
+{
+  "caseId": "2016_06857",
+  "sourcePath": "coa/2016/2016_06857.htm",
+  "notesPath": "coa/2016/2016_06857.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.900Z",
+  "source": {
+    "title": "People v Kangas (2016 NY Slip Op 06857)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 9382,
+    "lineCount": 78,
+    "tagCounts": {
+      "a": 6,
+      "b": 4,
+      "blockquote": 2,
+      "body": 2,
+      "br": 6,
+      "div": 6,
+      "font": 14,
+      "head": 2,
+      "html": 2,
+      "i": 26,
+      "opinion": 1,
+      "p": 23,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Kangas",
+      "2016 NY Slip Op 06857 [28 NY3d 984]",
+      "October 20, 2016",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, November 30, 2016"
+    ],
+    "captionLines": [],
+    "citationLine": "2016 NY Slip Op 06857 28 NY3d 984",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued September 14, 2016; decided October 20, 2016",
+      "October 20, 2016",
+      "As corrected through Wednesday, November 30, 2016"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Leonard & Curley, PLLC , Rome ( Mark C. Curley of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Leonard & Curley, PLLC , Rome ( Mark C. Curley of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Scott D. McNamara, District Attorney , Utica ( Steven G. Cox of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Scott D. McNamara, District Attorney , Utica ( Steven G. Cox of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 9,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2016 NY Slip Op 06857",
+    "officialCitation": "28 NY3d 984",
+    "pageMarkerCount": 6
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**28 NY3d at 985} OPINION OF THE COURT",
+      "Memorandum.",
+      "County Court correctly held that the applicable statute is CPLR 4518 (a), which was amended in 2002 (see L 2002, ch 136, § 1) to provide that an \"electronic record . . . shall be admissible in a tangible exhibit that is a true and accurate representation of such electronic record\" (CPLR 4518 [a]). The statute further provides that the court \"may consider the {**28 NY3d at 986}method or manner by which the electronic record was stored, maintained or retrieved in determining whether the exhibit is a true and accurate representation of such electronic record,\" but \"[a]ll other circumstances of the making of the memorandum or record . . . may be proved to affect its weight,\" and \"shall not affect its admissibility\" (id. [emphasis added])."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "caseId": "2005_03278",
+  "sourcePath": "coa/2005/2005_03278.htm",
+  "notesPath": "coa/2005/2005_03278.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.273Z",
+  "source": {
+    "title": "People v Loren (2005 NY Slip Op 03278)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 8623,
+    "lineCount": 84,
+    "tagCounts": {
+      "a": 6,
+      "b": 10,
+      "blockquote": 2,
+      "body": 2,
+      "br": 8,
+      "div": 4,
+      "font": 16,
+      "head": 2,
+      "html": 2,
+      "i": 8,
+      "p": 13,
+      "script": 4,
+      "style": 2,
+      "sup": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Loren",
+      "2005 NY Slip Op 03278 [4 NY3d 411]",
+      "April 28, 2005",
+      "Rosenblatt, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, June 08, 2005"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Aaron J. Loren, Appellant."
+    ],
+    "citationLine": "2005 NY Slip Op 03278 4 NY3d 411",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued March 31, 2005; decided April 28, 2005",
+      "April 28, 2005",
+      "As corrected through Wednesday, June 08, 2005"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 10,
+    "footnotesCount": 1
+  },
+  "citations": {
+    "slipOpinion": "2005 NY Slip Op 03278",
+    "officialCitation": "4 NY3d 411",
+    "pageMarkerCount": 7
+  },
+  "opinionStructure": {
+    "totalWritings": 2,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1
+    },
+    "authors": [
+      "Rosenblatt"
+    ],
+    "qualifierLines": [
+      "{**4 NY3d at 412} OPINION OF THE COURT"
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 1,
+    "labels": [
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 2 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

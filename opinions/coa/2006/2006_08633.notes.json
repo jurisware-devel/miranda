@@ -1,0 +1,119 @@
+{
+  "caseId": "2006_08633",
+  "sourcePath": "coa/2006/2006_08633.htm",
+  "notesPath": "coa/2006/2006_08633.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.338Z",
+  "source": {
+    "title": "People v Cagle (2006 NY Slip Op 08633)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 13780,
+    "lineCount": 102,
+    "tagCounts": {
+      "a": 10,
+      "b": 14,
+      "blockquote": 6,
+      "body": 2,
+      "br": 14,
+      "div": 4,
+      "font": 22,
+      "head": 2,
+      "html": 2,
+      "i": 18,
+      "p": 21,
+      "script": 4,
+      "style": 2,
+      "sup": 4,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Cagle",
+      "2006 NY Slip Op 08633 [7 NY3d 647]",
+      "November 20, 2006",
+      "Kaye, Ch.J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, January 17, 2007"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Sterling A. Cagle, Appellant."
+    ],
+    "citationLine": "2006 NY Slip Op 08633 7 NY3d 647",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued October 19, 2006; decided November 20, 2006",
+      "November 20, 2006",
+      "As corrected through Wednesday, January 17, 2007"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 18,
+    "footnotesCount": 2
+  },
+  "citations": {
+    "slipOpinion": "2006 NY Slip Op 08633",
+    "officialCitation": "7 NY3d 647",
+    "pageMarkerCount": 10
+  },
+  "opinionStructure": {
+    "totalWritings": 4,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "dissent": 1
+    },
+    "authors": [
+      "Kaye",
+      "R.S. Smith"
+    ],
+    "qualifierLines": [
+      "{**7 NY3d at 648} OPINION OF THE COURT",
+      "The People contended that the 10-year period should be tolled for the entire time defendant spent serving the sentence of imprisonment on his robbery conviction—including while in the day-reporting program—and thus his current felonies were committed within the statutory period. County Court rejected defendant's argument and sentenced him as a second felony offender to concurrent sentences of imprisonment of 4½ to 9 years. A divided Appellate Division affirmed, as do we. ",
+      "Moreover, before acceptance into a day-reporting program, an inmate must sign both a memorandum of agreement and copy of the day-reporting rules (7 NYCRR 1926.1). These documents specify that participation in the program \"is a privilege which may be revoked at any time\" and that the inmate \"remain[s] in the custody of [DOCS]\" (7 NYCRR 1926.2 [c]; 1926.3). The program imposes reporting duties and travel restrictions, including prior approval requirements for any method of transportation the inmate uses, for obtaining a driver's license and for having a motor vehicle (7 NYCRR 1926.3). Permission is also required before participants take any medication (except in exigent circumstances), obtain a credit card or enter into a{**7 NY3d at 651} contract, and they must surrender the full amount of their employment earnings to the day-reporting center for documentation and proper deductions. Thus, inmates in day-reporting programs are merely granted the revocable privilege of serving their sentences of imprisonment under less strict conditions of supervision than other prisoners under lock and key. "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 2,
+    "labels": [
+      "1",
+      "2"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 4 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

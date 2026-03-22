@@ -1,0 +1,111 @@
+{
+  "caseId": "2022_03928",
+  "sourcePath": "coa/2022/2022_03928.htm",
+  "notesPath": "coa/2022/2022_03928.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.188Z",
+  "source": {
+    "title": "People v Galindo (2022 NY Slip Op 03928)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 21313,
+    "lineCount": 100,
+    "tagCounts": {
+      "a": 24,
+      "b": 22,
+      "blockquote": 12,
+      "body": 2,
+      "br": 16,
+      "div": 6,
+      "font": 26,
+      "head": 2,
+      "html": 2,
+      "i": 64,
+      "p": 30,
+      "script": 4,
+      "style": 2,
+      "sup": 8,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Galindo",
+      "2022 NY Slip Op 03928 [38 NY3d 199]",
+      "June 16, 2022",
+      "Rivera, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, August 24, 2022"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Appellant,",
+      "v",
+      "Carlos Galindo, Respondent."
+    ],
+    "citationLine": "2022 NY Slip Op 03928 38 NY3d 199",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued May 18, 2022; decided June 16, 2022",
+      "June 16, 2022",
+      "As corrected through Wednesday, August 24, 2022"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 14,
+    "footnotesCount": 4
+  },
+  "citations": {
+    "slipOpinion": "2022 NY Slip Op 03928",
+    "officialCitation": "38 NY3d 199",
+    "pageMarkerCount": 12
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [
+      "Rivera"
+    ],
+    "qualifierLines": [
+      "{**38 NY3d at 201} OPINION OF THE COURT"
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 4,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

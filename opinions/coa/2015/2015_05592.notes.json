@@ -1,0 +1,110 @@
+{
+  "caseId": "2015_05592",
+  "sourcePath": "coa/2015/2015_05592.htm",
+  "notesPath": "coa/2015/2015_05592.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.812Z",
+  "source": {
+    "title": "People v Henderson (2015 NY Slip Op 05592)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 18098,
+    "lineCount": 97,
+    "tagCounts": {
+      "a": 18,
+      "b": 10,
+      "blockquote": 2,
+      "body": 2,
+      "br": 10,
+      "div": 12,
+      "font": 28,
+      "head": 2,
+      "html": 2,
+      "i": 46,
+      "p": 38,
+      "script": 4,
+      "style": 2,
+      "sup": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 6
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Henderson",
+      "2015 NY Slip Op 05592 [25 NY3d 534]",
+      "June 30, 2015",
+      "Abdus-Salaam, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, August 19, 2015"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "William Henderson, Appellant."
+    ],
+    "citationLine": "2015 NY Slip Op 05592 25 NY3d 534",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued June 1, 2015; decided June 30, 2015",
+      "June 30, 2015",
+      "As corrected through Wednesday, August 19, 2015"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 21,
+    "footnotesCount": 1
+  },
+  "citations": {
+    "slipOpinion": "2015 NY Slip Op 05592",
+    "officialCitation": "25 NY3d 534",
+    "pageMarkerCount": 13
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [
+      "Abdus-Salaam"
+    ],
+    "qualifierLines": [
+      "{**25 NY3d at 536} OPINION OF THE COURT",
+      "Defendant also argues that his felony murder conviction rests on legally insufficient evidence because there is no evidence that he committed the murder \"in furtherance of\" a burglary. He asserts that the statutory language \"in furtherance of\" requires that the death be caused in order to advance or promote the underlying felony. We have not interpreted \"in furtherance of\" so narrowly. The felony murder statute is intended to punish a perpetrator for a death he or she caused during the commission of a felony, but not a death that is coincidental to the felony (see People v Hernandez, 82 NY2d 309, 317 [1993]). The \"in furtherance of\" element requires \"a logical nexus between a murder and a felony\" (Cahill, 2 NY3d at 101-102 [Graffeo, J., concurring in part and dissenting in part], citing People v Lewis, 111 Misc 2d 682 [Sup Ct, NY County 1981]). Here, there is a clear logical nexus between defendant's felony of unlawfully entering the victim's apartment to assault him and the homicide, which was certainly not coincidental. Limiting the \"in furtherance of\" element to murders that promote or advance the felony, as defendant suggests, would exclude from felony murder a large class of murders. Given that the purpose of the felony murder statute was to broaden liability for deaths that occur during the commission of certain enumerated felonies, the legislature could not have possibly intended such a result (see Cahill, 2 NY3d at 66-68). Thus, defendant's conviction for felony murder is based upon legally sufficient evidence."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 1,
+    "labels": [
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

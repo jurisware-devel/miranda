@@ -1,0 +1,121 @@
+{
+  "caseId": "2008_05774",
+  "sourcePath": "coa/2008/2008_05774.htm",
+  "notesPath": "coa/2008/2008_05774.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.396Z",
+  "source": {
+    "title": "People v Packer (2008 NY Slip Op 05774)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 3737,
+    "lineCount": 67,
+    "tagCounts": {
+      "a": 4,
+      "b": 4,
+      "body": 2,
+      "br": 4,
+      "div": 2,
+      "font": 8,
+      "head": 2,
+      "html": 2,
+      "i": 12,
+      "p": 12,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Packer",
+      "2008 NY Slip Op 05774 [10 NY3d 915]",
+      "June 25, 2008",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, August 20, 2008"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Appellant,",
+      "v",
+      "Andrew Packer, Respondent."
+    ],
+    "citationLine": "2008 NY Slip Op 05774 10 NY3d 915",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Decided June 25, 2008",
+      "June 25, 2008",
+      "As corrected through Wednesday, August 20, 2008"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Robert M. Morgenthau, District Attorney, New York City ( Eric Rosen and Sheryl Feldman of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Robert M. Morgenthau, District Attorney, New York City ( Eric Rosen and Sheryl Feldman of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Legal Aid Society, New York City ( Ellen Dille of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Legal Aid Society, New York City ( Ellen Dille of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 4,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2008 NY Slip Op 05774",
+    "officialCitation": "10 NY3d 915",
+    "pageMarkerCount": 3
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**10 NY3d at 916} OPINION OF THE COURT",
+      "Memorandum. "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

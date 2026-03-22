@@ -1,0 +1,112 @@
+{
+  "caseId": "2009_05367",
+  "sourcePath": "coa/2009/2009_05367.htm",
+  "notesPath": "coa/2009/2009_05367.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.440Z",
+  "source": {
+    "title": "People v Buchanan (2009 NY Slip Op 05367)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 8231,
+    "lineCount": 85,
+    "tagCounts": {
+      "a": 4,
+      "b": 4,
+      "body": 2,
+      "br": 8,
+      "div": 6,
+      "font": 12,
+      "head": 2,
+      "html": 2,
+      "i": 10,
+      "p": 15,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Buchanan",
+      "2009 NY Slip Op 05367 [13 NY3d 1]",
+      "June 30, 2009",
+      "Per Curiam",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, August 26, 2009"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Ingvue E. Buchanan, Appellant."
+    ],
+    "citationLine": "2009 NY Slip Op 05367 13 NY3d 1",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "June 30, 2009",
+      "As corrected through Wednesday, August 26, 2009"
+    ],
+    "authorLine": "Per Curiam",
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 13,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2009 NY Slip Op 05367",
+    "officialCitation": "13 NY3d 1",
+    "pageMarkerCount": 5
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Read"
+    ],
+    "qualifierLines": [
+      "{**13 NY3d at 3} OPINION OF THE COURT",
+      "Per Curiam. ",
+      "Defendant was convicted of second degree murder, and the Appellate Division affirmed, with two Justices dissenting (53 AD3d 46 [2008]). An Appellate Division Justice granted leave to appeal, and we now reverse. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": true,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

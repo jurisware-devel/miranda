@@ -1,0 +1,151 @@
+{
+  "caseId": "2005_01268",
+  "sourcePath": "coa/2005/2005_01268.htm",
+  "notesPath": "coa/2005/2005_01268.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.267Z",
+  "source": {
+    "title": "People v Seeber (2005 NY Slip Op 01268)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 16964,
+    "lineCount": 97,
+    "tagCounts": {
+      "a": 10,
+      "appcouns": 1,
+      "b": 14,
+      "blockquote": 6,
+      "body": 2,
+      "br": 14,
+      "div": 4,
+      "font": 14,
+      "head": 2,
+      "html": 2,
+      "i": 66,
+      "p": 27,
+      "script": 4,
+      "style": 2,
+      "sup": 4,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [
+      "appcouns"
+    ],
+    "strayClosingTags": [
+      "appcouns"
+    ]
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Seeber",
+      "2005 NY Slip Op 01268 [4 NY3d 780]",
+      "February 17, 2005",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, May 04, 2005"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Katherine M. Seeber, Appellant."
+    ],
+    "citationLine": "2005 NY Slip Op 01268 4 NY3d 780",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued January 13, 2005; decided February 17, 2005",
+      "February 17, 2005",
+      "As corrected through Wednesday, May 04, 2005"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Eugene P. Grimmick , Troy, for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Eugene P. Grimmick , Troy, for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "James A. Murphy, III, District Attorney , Ballston Spa ( Nicholas E. Tishler of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "James A. Murphy, III, District Attorney , Ballston Spa ( Nicholas E. Tishler of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 22,
+    "footnotesCount": 2
+  },
+  "citations": {
+    "slipOpinion": "2005 NY Slip Op 01268",
+    "officialCitation": "4 NY3d 780",
+    "pageMarkerCount": 6
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "R.S. Smith"
+    ],
+    "qualifierLines": [
+      "OPINION OF THE COURT",
+      "Memorandum. ",
+      "Accordingly, I dissent and vote to reverse defendant's conviction. "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 2,
+    "labels": [
+      "1",
+      "2"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <appcouns> in source HTML."
+    },
+    {
+      "code": "STRAY_CLOSING_TAG",
+      "severity": "warning",
+      "detail": "Closing tag </appcouns> appears more times than opening tag <appcouns>."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

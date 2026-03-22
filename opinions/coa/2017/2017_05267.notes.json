@@ -1,0 +1,121 @@
+{
+  "caseId": "2017_05267",
+  "sourcePath": "coa/2017/2017_05267.htm",
+  "notesPath": "coa/2017/2017_05267.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.961Z",
+  "source": {
+    "title": "People v Prindle (2017 NY Slip Op 05267)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 20683,
+    "lineCount": 111,
+    "tagCounts": {
+      "a": 30,
+      "b": 22,
+      "blockquote": 2,
+      "body": 2,
+      "br": 16,
+      "div": 12,
+      "font": 28,
+      "head": 2,
+      "html": 2,
+      "i": 185,
+      "p": 38,
+      "script": 4,
+      "style": 2,
+      "sup": 8,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 6
+    },
+    "unknownTags": [],
+    "strayClosingTags": [
+      "i"
+    ]
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Prindle",
+      "2017 NY Slip Op 05267 [29 NY3d 463]",
+      "June 29, 2017",
+      "Wilson, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, August 30, 2017"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Michael E. Prindle, Appellant."
+    ],
+    "citationLine": "2017 NY Slip Op 05267 29 NY3d 463",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued June 1, 2017; decided June 29, 2017",
+      "June 29, 2017",
+      "As corrected through Wednesday, August 30, 2017"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 21,
+    "footnotesCount": 4
+  },
+  "citations": {
+    "slipOpinion": "2017 NY Slip Op 05267",
+    "officialCitation": "29 NY3d 463",
+    "pageMarkerCount": 13
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [
+      "Wilson"
+    ],
+    "qualifierLines": [
+      "{**29 NY3d at 465} OPINION OF THE COURT",
+      "Although Rivera and several of our cases following it include dissents questioning the soundness of our construction of New York's persistent felony offender statute (Giles, 24 NY3d at 1073-1076 [Abdus-Salaam, J., concurring in part and dissenting in part]; Battles, 16 NY3d at 59-68 [Lippman, Ch. J., dissenting in part]; Rivera, 5 NY3d at 71-76 [Kaye, Ch. J., dissenting]; Rivera, 5 NY3d at 76-83 [Ciparick, J., dissenting]), that construction has withstood both Sixth Amendment{**29 NY3d at 468} scrutiny and the test of time. For the reasons elaborated in our prior cases and the principle of stare decisis, our construction withstands Mr. Prindle's suit as well.",
+      "\"[i]n practical terms, the legislative command that sentencing courts consider the defendant's 'history and character' and the 'nature and circumstances' of the defendant's criminal conduct merely makes explicit what sentencing courts have always done in deciding where, within a range, to impose a sentence . . . The practice . . . falls squarely within the most traditional discretionary sentencing role of the judge\" (Rivera, 5 NY3d at 69; see id. at 71 [reiterating that \"the requirement that the sentencing justice reach an opinion as to the defendant's history and character is merely another way of saying that the court should exercise its discretion\"]; Giles, 24 NY3d at 1071-1072 [Smith, J., concurring]; Quinones, 12 NY3d at 130; Rosen, 96 NY2d at 335)."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 4,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "STRAY_CLOSING_TAG",
+      "severity": "warning",
+      "detail": "Closing tag </i> appears more times than opening tag <i>."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

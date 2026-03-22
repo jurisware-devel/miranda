@@ -1,0 +1,120 @@
+{
+  "caseId": "2010_07249",
+  "sourcePath": "coa/2010/2010_07249.htm",
+  "notesPath": "coa/2010/2010_07249.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.498Z",
+  "source": {
+    "title": "People v Syville (2010 NY Slip Op 07249)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 25225,
+    "lineCount": 126,
+    "tagCounts": {
+      "a": 28,
+      "b": 24,
+      "blockquote": 4,
+      "body": 2,
+      "br": 14,
+      "div": 10,
+      "font": 38,
+      "head": 2,
+      "html": 2,
+      "i": 72,
+      "p": 32,
+      "style": 2,
+      "sup": 8,
+      "table": 6,
+      "td": 18,
+      "title": 2,
+      "tr": 18,
+      "u": 6
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Syville",
+      "2010 NY Slip Op 07249 [15 NY3d 391]",
+      "October 14, 2010",
+      "Graffeo, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, December 22, 2010"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Nathaniel Syville, Appellant.",
+      "The People of the State of New York, Respondent, v Tony Council, Appellant."
+    ],
+    "citationLine": "2010 NY Slip Op 07249 15 NY3d 391",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued September 14, 2010; decided October 14, 2010",
+      "October 14, 2010",
+      "As corrected through Wednesday, December 22, 2010"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 32,
+    "footnotesCount": 4
+  },
+  "citations": {
+    "slipOpinion": "2010 NY Slip Op 07249",
+    "officialCitation": "15 NY3d 391",
+    "pageMarkerCount": 18
+  },
+  "opinionStructure": {
+    "totalWritings": 2,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1
+    },
+    "authors": [
+      "Graffeo"
+    ],
+    "qualifierLines": [
+      "{**15 NY3d at 394} OPINION OF THE COURT",
+      "In the course of interviewing a prospective appellate attorney in January 2009, Council's mother discovered that trial counsel had not filed a notice of appeal. At this point in time, both the 30-day period for filing a timely notice of appeal and the CPL 460.30 one-year grace period had long since expired. Eventually, Council hired an appellate lawyer, who filed an application for coram nobis relief in April 2009. In response to that application and the affidavits detailed above, the People submitted a two-paragraph affirmation asserting that, given the trial attorney's{**15 NY3d at 397} acknowledgment that defendant had timely requested that he file a notice of appeal and that his failure to do so was the result of law office failure, the People did not oppose Council's request for relief. Despite the People's lack of opposition, the Appellate Division denied Council coram nobis relief in a brief memorandum opinion, citing CPL 460.30. After Council's subsequent request for rehearing and reconsideration was denied, a Judge of this Court granted Council leave to appeal (13 NY3d 859 [2009]). ",
+      "Chief Judge Lippman and Judges Ciparick, Read, Smith, Pigott and Jones concur. "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 4,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 2 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 3 table elements before or within the header region."
+    }
+  ]
+}

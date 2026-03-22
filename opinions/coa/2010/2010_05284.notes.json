@@ -1,0 +1,150 @@
+{
+  "caseId": "2010_05284",
+  "sourcePath": "coa/2010/2010_05284.htm",
+  "notesPath": "coa/2010/2010_05284.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.490Z",
+  "source": {
+    "title": "People v Valencia (2010 NY Slip Op 05284)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 21737,
+    "lineCount": 107,
+    "tagCounts": {
+      "a": 32,
+      "b": 18,
+      "blockquote": 2,
+      "body": 2,
+      "br": 16,
+      "div": 4,
+      "font": 32,
+      "head": 2,
+      "html": 2,
+      "i": 76,
+      "p": 33,
+      "script": 4,
+      "style": 2,
+      "sup": 6,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Valencia",
+      "2010 NY Slip Op 05284 [14 NY3d 927]",
+      "June 17, 2010",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, August 18, 2010"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Appellant,",
+      "v",
+      "Albeiro Valencia, Respondent."
+    ],
+    "citationLine": "2010 NY Slip Op 05284 14 NY3d 927",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued April 29, 2010; decided June 17, 2010",
+      "June 17, 2010",
+      "As corrected through Wednesday, August 18, 2010"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Kathleen M. Rice, District Attorney , Mineola ( Judith R. Sternberg , Peter A. Weinstein and Tammy J. Smiley of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Kathleen M. Rice, District Attorney , Mineola ( Judith R. Sternberg , Peter A. Weinstein and Tammy J. Smiley of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Marianne Karas , Armonk, for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Marianne Karas , Armonk, for respondent.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Richard D. Willstatter , New York City, Richard J. Barbuto and Stefani Goldin for New York State Association of Criminal Defense Lawyers and another, amici curiae.",
+        "sideGuess": null,
+        "terminalPhrase": "amici curiae.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Richard D. Willstatter , New York City, Richard J. Barbuto and Stefani Goldin for New York State Association of Criminal Defense Lawyers and another, amici curiae.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 27,
+    "footnotesCount": 3
+  },
+  "citations": {
+    "slipOpinion": "2010 NY Slip Op 05284",
+    "officialCitation": "14 NY3d 927",
+    "pageMarkerCount": 15
+  },
+  "opinionStructure": {
+    "totalWritings": 5,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "concurrence": 2
+    },
+    "authors": [
+      "Graffeo",
+      "Jones"
+    ],
+    "qualifierLines": [
+      "{**14 NY3d at 927} OPINION OF THE COURT",
+      "Memorandum. ",
+      "We are now affirming the reduction to assault in the second degree, but on narrower grounds, with which I concur, because of the lack of evidence to support all the elements of depraved indifference assault. But this leaves an open issue: does the voluntary consumption of alcohol to the point of extreme inebriation preclude the formation of a depravedly indifferent state of mind? ",
+      " While I agree with the result in the majority's memorandum, I write separately to express my position on the necessity of a temporal connection between mens rea and actus reus in the context of depraved indifference offenses.{**14 NY3d at 932} ",
+      "\"it is a basic premise of Anglo-American criminal law that the physical conduct and the state of mind must concur. Although it is sometimes assumed that there cannot be such concurrence unless the mental and physical aspects exist at precisely the same moment of time, the better view is that there is concurrence when the defendant's mental state actuates the physical{**14 NY3d at 934} conduct\" (LaFave, Substantive Criminal Law § 6.3 [a], at 451 [2d ed] [footnotes omitted]).",
+      "Based on the foregoing, the mens rea component of depraved indifference assault may not be satisfied by considering the defendant's state of mind at a point much earlier in time than the accident, in this instance when he was drinking at his friend's house. As such, it cannot be argued that defendant's mental state at the time he was drinking actuated his physical conduct. Stated differently, in this case, there is no concurrence of mens rea and actus reus. In conclusion, defendant's state of mind when he consumed the alcohol was too temporally remote from the act of driving to support a conviction of assault in the first degree. "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 2,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 3,
+    "labels": [
+      "*",
+      "1",
+      "2"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 5 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "caseId": "2015_04877",
+  "sourcePath": "coa/2015/2015_04877.htm",
+  "notesPath": "coa/2015/2015_04877.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.809Z",
+  "source": {
+    "title": "People v Lashway (2015 NY Slip Op 04877)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 15457,
+    "lineCount": 89,
+    "tagCounts": {
+      "a": 8,
+      "b": 4,
+      "body": 2,
+      "br": 6,
+      "div": 4,
+      "font": 22,
+      "frac": 2,
+      "head": 2,
+      "html": 2,
+      "i": 64,
+      "p": 38,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [
+      "frac"
+    ],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Lashway",
+      "2015 NY Slip Op 04877 [25 NY3d 478]",
+      "June 11, 2015",
+      "Pigott, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, July 27, 2015"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Steven Lashway, Appellant."
+    ],
+    "citationLine": "2015 NY Slip Op 04877 25 NY3d 478",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued May 7, 2015; decided June 11, 2015",
+      "June 11, 2015",
+      "As corrected through Wednesday, July 27, 2015"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 16,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2015 NY Slip Op 04877",
+    "officialCitation": "25 NY3d 478",
+    "pageMarkerCount": 10
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [
+      "Pigott"
+    ],
+    "qualifierLines": [
+      "{**25 NY3d at 480} OPINION OF THE COURT",
+      "The Appellate Division, with one Justice dissenting, affirmed (112 AD3d 1235 [3d Dept 2013]). As relevant to this appeal, the Court rejected defendant's claim that County Court erred in denying his request for an adjournment (id. at 1237). The Court noted that the Board's updated recommendation stated only that it \" 'reviewed' \" the subject documents, and not that it relied upon them (id.). Even \"[m]ore significantly,\" it stated, {**25 NY3d at 482}\"County Court was not bound by the Board's recommendation as to whether to modify defendant's risk assessment level, and there is no evidence—nor does defendant argue—that County Court was in possession of, let alone considered, the subject documents in making its determination\" (id. at 1237-1238 [citations omitted]). Rather, County Court had denied the modification based on \"the finding that defendant had a mental abnormality, his violation of parole, his assaultive behavior while in custody and the presumptive override resulting from his prior felony conviction of a sex crime\" (id. at 1238). Although the Court recognized that defendant was entitled to discovery of the materials, it noted that \"discovery is subject to certain limitations and the court has 'considerable discretion to supervise the discovery process' \" (id., quoting , 91 AD3d 1087, 1092 [3d Dept 2012]). The Court concluded that County Court had not abused its discretion in declining to adjourn the hearing in light of defendant's \"protracted delay\" in requesting the documents (id. at 1238-1239). Furthermore, the majority disagreed with the dissent that the denial of the adjournment deprived defendant of due process, observing that \"[d]ue process is 'a flexible concept' and a defendant's due process rights in [a reclassification] context are similar, but not identical to, the rights of a defendant in an initial risk assessment\" (id. at 1239 [citations omitted]). In this case, the Court held, \"defendant was neither denied the ability to offer relevant materials in support of his application nor prevented from defending himself against any evidence or documentation relied upon by County Court in deciding such application\" (id.).",
+      "Justice Spain dissented and voted to reverse the denial of defendant's application to modify his classification and remit for a hearing (see id. at 1239-1240). Justice Spain concluded that \"defendant was deprived of due process of law by County Court's failure to abide [his] motion . . . for access to copies of all of the records that the Board . . . reviewed and listed in making its updated recommendations\" (id.). He reasoned that the recommendation of the Board, although not binding on the court, \"in practice . . . is often among the most influential factors considered by a sentencing court\" (id.). Thus, in the context of a reclassification proceeding in which the defendant has the burden of proof, \"the defense will frequently focus its challenge on the underlying basis for the Board's adverse recommendation\" (id.). According to the dissent, due process requires that a{**25 NY3d at 483} defendant be \"afforded access—through prehearing discovery—to all material considered on or influencing his reclassification petition\" (id. at 1241). Moreover, \"[d]efendant's right to submit any information relevant to the review of his reclassification request would, in many cases, be rendered meaningless if he were not entitled to review and address all materials considered by the Board\" (id. [internal quotation marks and citation omitted]). In the dissent's view, County Court did not itself rely on the materials withheld; however, it did \"expressly rely on the Board's recommendation, which did consider the materials\" (id.). Although it could not be discerned whether the denial of the withheld material affected the reclassification determination, the dissent concluded that he could \"not agree that the error was harmless or overlook the deleterious precedential value of an affirmance in this case\" (id. at 1242)."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <frac> in source HTML."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

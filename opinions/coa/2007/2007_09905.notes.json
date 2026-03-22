@@ -1,0 +1,113 @@
+{
+  "caseId": "2007_09905",
+  "sourcePath": "coa/2007/2007_09905.htm",
+  "notesPath": "coa/2007/2007_09905.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.378Z",
+  "source": {
+    "title": "People v Cuadrado (2007 NY Slip Op 09905)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 8522,
+    "lineCount": 88,
+    "tagCounts": {
+      "a": 6,
+      "b": 4,
+      "blockquote": 4,
+      "body": 2,
+      "br": 4,
+      "div": 6,
+      "font": 16,
+      "head": 2,
+      "html": 2,
+      "i": 18,
+      "p": 17,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 4
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Cuadrado",
+      "2007 NY Slip Op 09905 [9 NY3d 362]",
+      "December 18, 2007",
+      "Smith, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, January 23, 2008"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "William Cuadrado, Appellant."
+    ],
+    "citationLine": "2007 NY Slip Op 09905 9 NY3d 362",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued November 13, 2007; decided December 18, 2007",
+      "December 18, 2007",
+      "As corrected through Wednesday, January 23, 2008"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 14,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2007 NY Slip Op 09905",
+    "officialCitation": "9 NY3d 362",
+    "pageMarkerCount": 7
+  },
+  "opinionStructure": {
+    "totalWritings": 2,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1
+    },
+    "authors": [
+      "Smith"
+    ],
+    "qualifierLines": [
+      "{**9 NY3d at 363} OPINION OF THE COURT",
+      "In 2004, 12 years after pleading guilty, defendant moved under CPL 440.10 to vacate his assault conviction, relying on the invalid waiver of indictment. Supreme Court granted the motion, but the Appellate Division reversed, with one Justice dissenting (, 37 AD3d 218 [1st Dept 2007]). An Appellate Division Justice granted leave to appeal, and we now affirm the order of the Appellate Division. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 2 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

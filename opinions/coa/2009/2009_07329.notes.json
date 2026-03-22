@@ -1,0 +1,125 @@
+{
+  "caseId": "2009_07329",
+  "sourcePath": "coa/2009/2009_07329.htm",
+  "notesPath": "coa/2009/2009_07329.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.443Z",
+  "source": {
+    "title": "People v Hardy (2009 NY Slip Op 07329)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 7714,
+    "lineCount": 79,
+    "tagCounts": {
+      "a": 10,
+      "b": 10,
+      "blockquote": 4,
+      "body": 2,
+      "br": 8,
+      "div": 4,
+      "font": 12,
+      "head": 2,
+      "html": 2,
+      "i": 18,
+      "p": 18,
+      "script": 4,
+      "style": 2,
+      "sup": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Hardy",
+      "2009 NY Slip Op 07329 [13 NY3d 805]",
+      "October 15, 2009",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, December 30, 2009"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "J.W. Hardy, Jr., Appellant."
+    ],
+    "citationLine": "2009 NY Slip Op 07329 13 NY3d 805",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued September 17, 2009; decided October 15, 2009",
+      "October 15, 2009",
+      "As corrected through Wednesday, December 30, 2009"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "James S. Hinman , Rochester, for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "James S. Hinman , Rochester, for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Joseph V. Cardone, District Attorney , Albion ( Katherine Bogan of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Joseph V. Cardone, District Attorney , Albion ( Katherine Bogan of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 12,
+    "footnotesCount": 1
+  },
+  "citations": {
+    "slipOpinion": "2009 NY Slip Op 07329",
+    "officialCitation": "13 NY3d 805",
+    "pageMarkerCount": 5
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**13 NY3d at 806} OPINION OF THE COURT",
+      "Memorandum. "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 1,
+    "labels": [
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

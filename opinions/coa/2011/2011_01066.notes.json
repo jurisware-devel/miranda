@@ -1,0 +1,113 @@
+{
+  "caseId": "2011_01066",
+  "sourcePath": "coa/2011/2011_01066.htm",
+  "notesPath": "coa/2011/2011_01066.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.518Z",
+  "source": {
+    "title": "People v Muhammad (2011 NY Slip Op 01066)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 10575,
+    "lineCount": 89,
+    "tagCounts": {
+      "a": 8,
+      "b": 10,
+      "body": 2,
+      "br": 8,
+      "div": 4,
+      "font": 18,
+      "head": 2,
+      "html": 2,
+      "i": 20,
+      "p": 20,
+      "script": 4,
+      "style": 2,
+      "sup": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Muhammad",
+      "2011 NY Slip Op 01066 [16 NY3d 184]",
+      "February 17, 2011",
+      "Pigott, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, April 6, 2011"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Mujahid Muhammad, Appellant."
+    ],
+    "citationLine": "2011 NY Slip Op 01066 16 NY3d 184",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued January 12, 2011; decided February 17, 2011",
+      "February 17, 2011",
+      "As corrected through Wednesday, April 6, 2011"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 14,
+    "footnotesCount": 1
+  },
+  "citations": {
+    "slipOpinion": "2011 NY Slip Op 01066",
+    "officialCitation": "16 NY3d 184",
+    "pageMarkerCount": 8
+  },
+  "opinionStructure": {
+    "totalWritings": 2,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1
+    },
+    "authors": [
+      "Pigott"
+    ],
+    "qualifierLines": [
+      "{**16 NY3d at 186} OPINION OF THE COURT"
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 1,
+    "labels": [
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 2 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

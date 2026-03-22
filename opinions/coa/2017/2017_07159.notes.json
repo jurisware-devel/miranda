@@ -1,0 +1,127 @@
+{
+  "caseId": "2017_07159",
+  "sourcePath": "coa/2017/2017_07159.htm",
+  "notesPath": "coa/2017/2017_07159.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.964Z",
+  "source": {
+    "title": "People v Wright (2017 NY Slip Op 07159)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 5274,
+    "lineCount": 76,
+    "tagCounts": {
+      "a": 4,
+      "b": 4,
+      "body": 2,
+      "br": 6,
+      "div": 6,
+      "font": 10,
+      "head": 2,
+      "html": 2,
+      "i": 30,
+      "opinion": 1,
+      "p": 18,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Wright",
+      "2017 NY Slip Op 07159 [30 NY3d 933]",
+      "October 12, 2017",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, November 22, 2017"
+    ],
+    "captionLines": [],
+    "citationLine": "2017 NY Slip Op 07159 30 NY3d 933",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued September 13, 2017; decided October 12, 2017",
+      "October 12, 2017",
+      "As corrected through Wednesday, November 22, 2017"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Lynn W.L. Fahey, Appellate Advocates , New York City ( Mark W. Vorkink of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Lynn W.L. Fahey, Appellate Advocates , New York City ( Mark W. Vorkink of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Eric Gonzalez, Acting District Attorney , Brooklyn ( Jean M. Joyce and Leonard Joblove of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Eric Gonzalez, Acting District Attorney , Brooklyn ( Jean M. Joyce and Leonard Joblove of counsel), for respondent.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Wilmer Cutler Pickering Hale and Door LLP , New York City ( Tiffany E. Payne and Mark G. Matuschak of counsel), Lindsay A. Lewis , Committee of the National Association of Criminal Defense Lawyers , New York City, and Richard D. Willstatter, Committee of the New York State Association of Criminal Defense Lawyers , White Plains, for National Association of Criminal Defense Lawyers and another, amici curiae.",
+        "sideGuess": null,
+        "terminalPhrase": "amici curiae.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Wilmer Cutler Pickering Hale and Door LLP , New York City ( Tiffany E. Payne and Mark G. Matuschak of counsel), Lindsay A. Lewis , Committee of the National Association of Criminal Defense Lawyers , New York City, and Richard D. Willstatter, Committee of the New York State Association of Criminal Defense Lawyers , White Plains, for National Association of Criminal Defense Lawyers and another, amici curiae.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 4,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2017 NY Slip Op 07159",
+    "officialCitation": "30 NY3d 933",
+    "pageMarkerCount": 4
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**30 NY3d at 934} OPINION OF THE COURT",
+      "Memorandum."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "caseId": "2022_02771",
+  "sourcePath": "coa/2022/2022_02771.htm",
+  "notesPath": "coa/2022/2022_02771.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.179Z",
+  "source": {
+    "title": "People v Wakefield (2022 NY Slip Op 02771)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 104524,
+    "lineCount": 235,
+    "tagCounts": {
+      "a": 110,
+      "b": 94,
+      "blockquote": 6,
+      "body": 2,
+      "br": 54,
+      "div": 28,
+      "font": 126,
+      "head": 2,
+      "html": 2,
+      "i": 380,
+      "p": 183,
+      "script": 4,
+      "style": 2,
+      "sup": 42,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 22
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Wakefield",
+      "2022 NY Slip Op 02771 [38 NY3d 367]",
+      "April 26, 2022",
+      "DiFiore, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, October 5, 2022"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "John Wakefield, Appellant."
+    ],
+    "citationLine": "2022 NY Slip Op 02771 38 NY3d 367",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued March 15, 2022; decided April 26, 2022",
+      "April 26, 2022",
+      "As corrected through Wednesday, October 5, 2022"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 99,
+    "footnotesCount": 21
+  },
+  "citations": {
+    "slipOpinion": "2022 NY Slip Op 02771",
+    "officialCitation": "38 NY3d 367",
+    "pageMarkerCount": 62
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "concurrence": 1
+    },
+    "authors": [
+      "DiFiore",
+      "Rivera"
+    ],
+    "qualifierLines": [
+      "{**38 NY3d at 371} OPINION OF THE COURT",
+      "In a concurring opinion, one Justice opined that there was no need to address the relative merit of defendant's arguments as to the violation of his right to confrontation, in light of the absence of \"any meaningful attempt by defendant to gain access {**38 NY3d at 380}to, or compel disclosure of, the source code prior to trial\" (175 AD3d at 173).",
+      "At issue in Wesley was the general acceptance of DNA evidence—specifically, the restriction fragment length polymorphism (RFLP) methodology, including the assessment of a visual \"match\" between DNA samples. There, in a concurring opinion, Chief Judge Kaye warned of the \"pitfalls of self-validation by a small group\" and urged caution in accepting technology that had been validated by individuals with a commercial or professional interest in promoting its use, \"developed {**38 NY3d at 381}in commercial laboratories under conditions of secrecy, preventing emergence of independent views\" and had not been peer-reviewed (83 NY2d at 439-440 [internal quotation marks and citations omitted]). Notwithstanding these concerns, Chief Judge Kaye ultimately agreed that, at the time the appeal was decided, \"RFLP-based forensic analysis [was] generally accepted as reliable\" (id. at 445) and those testing procedures were accepted as the standard methodology used in the scientific community until the advent of the PCR STR method used today.",
+      "Defendant and the concurrence raise the legitimate concern that the technology at issue is proprietary and the developer of the software is involved in many of the validation studies. This skepticism, however, must be tempered by the import of the empirical evidence of reliability demonstrated here and the acceptance of the methodology by the relevant scientific community. First, Dr. Perlin's hearing testimony established that, in forensic science, \"most validation studies are internal and they're not published,\" but the FBI's Quality Assurance Standards require that \"a developmental validation for a particular {**38 NY3d at 382}technology\" be published (see also NIST, DNA Mixture Interpretation: A NIST Scientific Foundation Review at 64 [NISTIR 8351-DRAFT June 2021], https://nvlpubs.nist.gov/nistpubs/ir/2021/NIST.IR.8351-draft.pdf). The interest of the developer was addressed at the Frye hearing in this case and, contrary to defendant's argument, Dr. Perlin's involvement in many of the validation studies does not preclude a determination of general acceptance as a matter of law. The concurrence's claim to the contrary ignores that the performance of validation studies by Dr. Perlin, the State Lab and independent agencies was entirely consistent with the scientific method (see e.g. Executive Office of the President, President's Council of Advisors on Science and Technology, Report to the President: Forensic Science in Criminal Courts: Ensuring Scientific Validity of Feature-Comparison Methods at 46 [Sept. 2016] https://obamawhitehouse.archives.gov/sites/default/files/microsites/ostp/PCAST/pcast_forensic_science_report_final.pdf [published after the Frye hearing was held]). Here, unlike in Wesley, there were developer and independent validation studies and laboratory internal validation studies, many published and peer-reviewed. The technology was approved for use by NIST and for forensic casework in New York by both the DNA Subcommittee and the full CFS—entities that were established, in part, in response to the concerns raised in Wesley as to the lack of independent scientific validation of DNA technology (Governor's Approval Mem, Bill Jacket, L 1994, ch 737; Executive Law § 995-b). Importantly, the Lab, in accepting the TrueAllele Casework System after approval by the CFS, must still conduct additional validation of the program and the hearing testimony indicates that they did so in this case. In addition, NIST's use of the TrueAllele system for its standard reference materials{**38 NY3d at 383} likewise demonstrates confidence within the relevant community that the system generates accurate results.",
+      "At defendant's trial, the court admitted DNA results developed using the TrueAllele methodology, even though at the time its source code and underlying algorithms were kept from independent evaluators and the defense as trade secrets. The court's decision was an abuse of discretion as a matter of law because it relied on validation studies by interested parties and evaluations founded on incomplete information about TrueAllele's computer-based methodology. Without defense counsel and objective, expert third-party access to and evaluation of the underlying algorithms and source code, the court could not conclude that TrueAllele's brand of probabilistic genotyping was generally accepted within the forensic science community. However, I concur in the result and would affirm defendant's conviction because the evidence against him was overwhelming and the error, even when considered with the other alleged trial errors raised on this appeal, could not have contributed to the guilty verdict.",
+      "\"[T]he particular procedure need not be 'unanimously indorsed' by the scientific community but must be 'generally accept[ed] as reliable' \" (Wesley, 83 NY2d at 423, quoting People v Middleton, 54 NY2d 42, 49 [1981]). However, \"[a] showing that an expert's opinion has 'some support' is not sufficient to establish general acceptance in the relevant scientific community\" (Williams, 35 NY3d at 37, quoting , 22 NY3d 762, 783 [2014]). A novel method \"should be supported by those with no professional interest in its acceptance\" because \"Frye demands an objective, unbiased review\" (id. at 42). Indeed, \"a proprietary program exclusively developed and controlled by\" one individual \"is not 'an appropriate substitute for the thoughtful exchange of ideas . . . envisioned by Frye.' It is an invitation to bias\" (id. at 41 [citation omitted], quoting Wesley, 83 NY2d at 441 [Kaye, Ch. J., concurring]).",
+      "Second, the majority places undue reliance on evaluations by regulatory entities that had only partial information; the widely accepted nature of TrueAllele's underlying mathematical principles; validation studies in which Dr. Perlin was conflicted due to his financial interest in TrueAllele; and the perceived efficacy of probabilistic genotyping (see majority op at 381-383). We have previously rejected or been skeptical of each of these types of \"supporting evidence.\" In Williams, we made clear that \"insular endorsement[s]\" by executive branch agencies—here, the DNA Subcommittee of the New York State Forensic Science Committee and NIST—cannot \"supplant the courts' obligation to ensure\" that a scientific technique has gained general acceptance within the scientific community (35 NY3d at 41). Notably, the reliance on these agencies by the majority—and a description of them as \"the relevant scientific community\" for the purposes of the Frye hearing (majority op at 375-376)—is a jarring turnabout for the Court, given that it is the same view unsuccessfully advocated by a minority in Williams two years ago (see Williams, 35 NY3d at 49-50 and n 1 [DiFiore, Ch. J., concurring]). That is particularly true in this appeal because Dr. Perlin criticized the PCAST Report, arguing that \"NIST lacks expertise in modern statistical analysis\"—which would presumably be a prerequisite to being a part of the relevant scientific community that is qualified to evaluate TrueAllele (Letter from Dr. Mark Perlin, Chief Scientific and Executive Officer, Cybergenetics, to Dr. John Holdren, PCAST Co-Chair, Sept. 16, 2016 at 3, available at https://www.cybgen.com/information/newsroom/2016/sep/files/letter.pdf; see Kwong at 289).",
+      "Third, as for the validation studies, the majority acknowledges that Dr. Perlin conducted or was involved in the majority of them. Given Dr. Perlin's \"professional interest in [TrueAllele's] acceptance\" (id.), the studies must be viewed with a healthy dose of skepticism and cannot support a conclusion of general acceptance. The majority attempts to minimize this obvious conflict of interest with an unsupported statement that internal validation studies and validation studies conducted by laboratories using the software are \"entirely consistent with the scientific method\" and because Dr. Perlin's interest was raised at the hearing (majority op at 382). Contrary to the majority's view, such conflicts do present serious concerns about the integrity of the studies (see Wesley, 83 NY2d at 441 [Kaye,{**38 NY3d at 401} Ch. J., concurring]). As the literature shows, conflicts have long been a source of concern within the scientific community and the standard procedure is to disclose such financial interests, not to assume, as the majority does, that they have little impact on the study itself (see e.g. Singapore Statement on Research Integrity, World Conferences on Research Integrity [2010], https://wcrif.org/statement; Sheldon Krimsky & L.S. Rothenberg, Financial Interest and Its Disclosure in Scientific Publications, 280 JAMA 225 [1998]; Jerome P. Kassirer & Marcia Angell, Financial Conflicts of Interest in Biomedical Research, 329 New Eng J Med 570 [1993]). Put another way, mere disclosure of a conflict of interest and subsequent peer review cannot overcome the potential for bias. Dr. Perlin's professional interest in a favorable assessment of TrueAllele was raised at the hearing, but its significance was discounted, and the validation studies were treated as if conducted by disinterested third parties, confirming, rather than refuting, the court's abuse of its discretion. The remaining two validation studies not involving Dr. Perlin are similarly of little value because they were conducted by the New York State Police FIC, which presented a different form of conflict, as they had already invested significant time and money in adopting TrueAllele for internal use.",
+      "Thus, while peer review might be an appropriate factor for consideration under the federal Daubert standard, it is insufficient under Frye (cf. Powell, 37 NY3d at 514 [Rivera, J., dissenting]).",
+      "Here, the totality of the evidence presented at trial, excluding the erroneously admitted TrueAllele DNA evidence, was overwhelming proof of defendant's guilt. There was unchallenged DNA evidence obtained using traditional methods that linked defendant to the crime, with combined probabilities of inclusion—for both decedent and defendant—of 1 in 1,088 for the DNA obtained from decedent's shirt collar, and 1 in 422 for the DNA obtained from decedent's right dorsal forearm. Defendant also did not contest that he had been in decedent's{**38 NY3d at 406} apartment. Moreover, three individuals testified that defendant made inculpatory statements with similar details to each of them about stealing from and killing decedent. Although defendant asserts that those witnesses were unreliable, and that the \"jailhouse\" witnesses in particular had motive to lie, trial counsel successfully brought those matters to the attention of the jury. Given this evidence, there is \"no reasonable possibility\" that a jury would have acquitted defendant (id. at 237, 241-242). Thus, because the error was harmless under the more demanding constitutional standard, defendant is not entitled to a new trial (cf. id. at 242 [explaining that an error is harmless under the nonconstitutional standard when \"there is a significant probability, rather than only a rational possibility, in the particular case that the jury would have acquitted the defendant had it not been for the error or errors which occurred\"]; , 38 NY3d 1010, 1016 [2022, Rivera, J., dissenting] [decided today] [explaining that admission of FST DNA results was not harmless under nonconstitutional standard because \"(t)here was no eyewitness who saw defendant in possession of the gun, no admission of his guilt, and no video recording depicting him holding the gun at any time\"])."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 1,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 21,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

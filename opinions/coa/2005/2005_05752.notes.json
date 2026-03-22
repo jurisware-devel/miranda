@@ -1,0 +1,148 @@
+{
+  "caseId": "2005_05752",
+  "sourcePath": "coa/2005/2005_05752.htm",
+  "notesPath": "coa/2005/2005_05752.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.289Z",
+  "source": {
+    "title": "People v Hill (2005 NY Slip Op 05752)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 16539,
+    "lineCount": 98,
+    "tagCounts": {
+      "a": 2,
+      "appcouns": 1,
+      "b": 4,
+      "blockquote": 18,
+      "body": 2,
+      "br": 8,
+      "div": 6,
+      "font": 16,
+      "head": 2,
+      "html": 2,
+      "i": 22,
+      "p": 29,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [
+      "appcouns"
+    ],
+    "strayClosingTags": [
+      "appcouns"
+    ]
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Hill",
+      "2005 NY Slip Op 05752 [5 NY3d 772]",
+      "July 6, 2005",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, October 12, 2005"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Appellant,",
+      "v",
+      "Garth M. Hill, Respondent."
+    ],
+    "citationLine": "2005 NY Slip Op 05752 5 NY3d 772",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued June 9, 2005; decided July 6, 2005",
+      "July 6, 2005",
+      "As corrected through Wednesday, October 12, 2005"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "William J. Fitzpatrick , District Attorney , Syracuse ( James P. Maxwell and Victoria M. White of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "William J. Fitzpatrick , District Attorney , Syracuse ( James P. Maxwell and Victoria M. White of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Thomas W. Ryan , Syracuse, for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Thomas W. Ryan , Syracuse, for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 26,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2005 NY Slip Op 05752",
+    "officialCitation": "5 NY3d 772",
+    "pageMarkerCount": 7
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "R.S. Smith"
+    ],
+    "qualifierLines": [
+      "OPINION OF THE COURT",
+      "Memorandum. ",
+      "I do not believe, however (and I do not read the majority's memorandum as suggesting), that the prosecutor's error was a deliberate attempt to stack the cards against defendant in the grand jury. It seems, rather, that the prosecutor chose an unduly conservative way of handling what he might well have seen as a tricky problem. It is understandable that he was reluctant to say to the grand jury that seven of the people listed were alibi witnesses, without mentioning that one of them had told the police the alibi was false; such a partial disclosure might have been viewed by the prosecutor as misleading, and likely to create unwarranted doubts about the quality of the case against defendant. On the other hand, the prosecutor might have been concerned that, if he told the grand jurors the contents of the police report on the Dixon interview, he would later be accused of prejudicing grand jurors against defendant. I believe the prosecutor could properly have chosen either of these alternatives, and should have chosen one of them, but I conclude that his decision to do neither was nothing worse than a good faith misjudgment. ",
+      "This case involves neither deliberate prosecutorial misconduct nor incomprehensible instructions, but a good faith error that had only limited impact on the grand jury proceedings. I believe that an error of this kind should not require dismissal of an indictment, and I therefore dissent. "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <appcouns> in source HTML."
+    },
+    {
+      "code": "STRAY_CLOSING_TAG",
+      "severity": "warning",
+      "detail": "Closing tag </appcouns> appears more times than opening tag <appcouns>."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

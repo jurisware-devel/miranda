@@ -1,0 +1,148 @@
+{
+  "caseId": "2024_05873",
+  "sourcePath": "coa/2024/2024_05873.htm",
+  "notesPath": "coa/2024/2024_05873.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.296Z",
+  "source": {
+    "title": "People v Shader (2024 NY Slip Op 05873)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 62671,
+    "lineCount": 183,
+    "tagCounts": {
+      "a": 128,
+      "b": 78,
+      "body": 2,
+      "br": 48,
+      "div": 12,
+      "font": 68,
+      "frac": 4,
+      "head": 2,
+      "html": 2,
+      "i": 216,
+      "p": 93,
+      "script": 4,
+      "style": 2,
+      "sup": 36,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 6
+    },
+    "unknownTags": [
+      "frac"
+    ],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Shader",
+      "2024 NY Slip Op 05873 [43 NY3d 129]",
+      "November 26, 2024",
+      "Troutman, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, April 30, 2025"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Timothy Shader, Appellant."
+    ],
+    "citationLine": "2024 NY Slip Op 05873 43 NY3d 129",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued October 17, 2024; decided November 26, 2024",
+      "November 26, 2024",
+      "As corrected through Wednesday, April 30, 2025"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 48,
+    "footnotesCount": 18
+  },
+  "citations": {
+    "slipOpinion": "2024 NY Slip Op 05873",
+    "officialCitation": "43 NY3d 129",
+    "pageMarkerCount": 33
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Troutman",
+      "Wilson"
+    ],
+    "qualifierLines": [
+      "{**43 NY3d at 131} OPINION OF THE COURT",
+      "Our dissenting colleagues' approach to modification proceedings would insulate that process from the primary goal of SORA, namely \" 'to protect the public from the danger of recidivism posed by sex offenders, to assist the criminal justice system to identify, investigate, apprehend and prosecute sex offenders, and to comply with the Federal Crime Control Act' \" (, 41 NY3d 573, 584 [2024], quoting People v Stevens, 91 NY2d 270, 275 [1998]). Put another way, the statute aims to \" 'protect[ ] members of the community, particularly their children, by notifying them of the presence of individuals in their midst who may present a danger' \" and to \" 'enhance[ ] law enforcement authorities' ability to investigate and prosecute future sex crimes' \" (id., quoting Doe v Pataki, 120 F3d 1263, 1266 [2d Cir 1997]). These overarching goals are as relevant to a modification proceeding as they are to an initial risk level classification.",
+      "Our dissenting colleagues' interpretation of the statute would, if adopted by this Court, \"expose[ ] the public to the risk the statute was enacted to protect against\" (id. at 585) by limiting, as a matter of law, the types of convictions the SORA court{**43 NY3d at 136} could consider in determining whether to lower a defendant's risk level (see dissenting op at 140-145). The dissent's analogy to  (41 NY3d 279 [2023]) is inapt because the defendant in that case never committed an offense that was sexual in nature (see id. at 281). Here, in stark contrast, defendant committed a serious sexual assault and was responsible for a string of sex offenses, and the question is whether his more recent criminal conduct bears on the risk of his committing future sex offenses. Under the dissent's proposed rule, the SORA court would be prohibited from considering that defendant violated the law and his parole when he was caught with burglary tools after being convicted of raping a young woman during the course of a burglary also committed while defendant was on parole (see dissenting op at 140-145). We decline to endorse that untenable result.",
+      "The dissent altogether ignores the burden of proof by speculating about the specific kinds of burglary tools that may have been in defendant's possession and the manner in which he used those tools (see dissenting op at 143-144). The dissent's approach is tantamount to requiring the lower courts, contrary to the clear directive of the Correction Law, to construe the record in the light most favorable to the defendant. The error is most clearly demonstrated by the dissent's own citation to Correction Law § 168-o (3), which governs petitions filed by the People for an upward modification of an offender's risk level. In those circumstances, the People must show that the defendant's risk of reoffense has increased since the initial risk-level adjudication, and the proof must establish a heightened threat to the community that the defendant will commit another sex offense. Thus, unlike the provision that governs here, section 168-o (3) assigns to the People the burden of demonstrating entitlement to such a modification by clear and convincing evidence. In short, it was not the People's burden on this defendant's petition to show that his postrelease crimes were sexually motivated.",
+      "Next, according to the dissent, the SORA court erred by relying on the prior sex offenses committed by the defendant without \"engag[ing] with what has changed since\" (dissenting op at 145). As detailed above, this is simply a misreading of the{**43 NY3d at 137} record. As a general matter, the dissent's approach again misapprehends the nature of the modification proceeding. The original risk level designation is presumed to apply, and the defendant has the burden of demonstrating by clear and convincing evidence that a modification of that risk level is warranted (see Correction Law § 168-o [2]). The SORA court would be remiss if it did not give weight to the serious, indeed heinous, nature of defendant's crimes. The dissent's flawed premise—that the statute guarantees to every level two and level three sex offender the ability to obtain a modification to level one—is unsupported by the statute's text and misapprehends SORA's \"legislative purpose\" (Brown, 41 NY3d at 281), which is to \"further 'the protection of the community against people who have shown themselves capable of committing sex crimes' \" (id. at 290-291). The legislature has rejected that premise by providing that certain sex offenders, like level three sex offenders, must register \"for life\" (Correction Law § 168-h [2]). Modification proceedings offer those defendants an opportunity to prove to a magistrate that the original assessment should no longer apply; they do not guarantee relief from this obligation.",
+      "Rather than committing the parade of errors listed by the dissent, the SORA court, under the proper framework, considered all the \"relevant materials and evidence\" and made an informed judgment about which risk level designation was appropriate (id. § 168-o [4]). The court's conclusion that defendant demonstrated entitlement to some relief from the more stringent requirements of a risk level three designation was an appropriate exercise of the SORA court's discretion in keeping with its statutory responsibility to protect the public.",
+      "Finally, contrary to the dissent's suggestion, appellate review of modification proceedings is robust. While the statute broadly confers upon the SORA court the discretion to grant or deny a modification petition without deference to the decision of the Board (see id.; Lashway, 25 NY3d at 483), the Appellate Division has the power to exercise its own discretion in an appropriate case and grant a defendant's petition even absent an abuse of discretion by the SORA court (see Davis, 179 AD3d at 192 [modifying risk level classification to level one on the facts and in the interest of justice]; , 192 AD3d 55, 58 [4th Dept 2020, Troutman, J.] [\"Although we do not conclude that the court abused its discretion in denying defendant youthful offender status, we choose to exercise our{**43 NY3d at 138} discretion in the interest of justice to determine that defendant is a youthful offender\"]), and we review for legal error or lack of record support (see Lashway, 25 NY3d at 483). We do not blame our colleagues or the lower courts for failing to do what we might have done in the first instance (cf. dissenting op at 151 [\"Mr. Shader cannot do better; we can\"]).",
+      "Chief Judge Wilson (dissenting)."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 18,
+    "labels": [
+      "1",
+      "2",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <frac> in source HTML."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

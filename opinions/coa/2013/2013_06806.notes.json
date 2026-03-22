@@ -1,0 +1,139 @@
+{
+  "caseId": "2013_06806",
+  "sourcePath": "coa/2013/2013_06806.htm",
+  "notesPath": "coa/2013/2013_06806.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.690Z",
+  "source": {
+    "title": "People v Clermont (2013 NY Slip Op 06806)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 27638,
+    "lineCount": 95,
+    "tagCounts": {
+      "a": 18,
+      "b": 4,
+      "blockquote": 2,
+      "body": 2,
+      "br": 8,
+      "div": 2,
+      "em": 2,
+      "font": 40,
+      "head": 2,
+      "html": 2,
+      "i": 118,
+      "p": 39,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Clermont",
+      "2013 NY Slip Op 06806 [22 NY3d 931]",
+      "October 22, 2013",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, January 1, 2014"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Jocelyn Clermont, Appellant."
+    ],
+    "citationLine": "2013 NY Slip Op 06806 22 NY3d 931",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued September 11, 2013; decided October 22, 2013",
+      "October 22, 2013",
+      "As corrected through Wednesday, January 1, 2014"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Lynn W.L. Fahey, Appellate Advocates , New York City ( Allegra Glashausser of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Lynn W.L. Fahey, Appellate Advocates , New York City ( Allegra Glashausser of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Richard A. Brown, District Attorney , Kew Gardens ( Suzanne H. Sullivan and John M. Castellano of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Richard A. Brown, District Attorney , Kew Gardens ( Suzanne H. Sullivan and John M. Castellano of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 33,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2013 NY Slip Op 06806",
+    "officialCitation": "22 NY3d 931",
+    "pageMarkerCount": 19
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Rivera"
+    ],
+    "qualifierLines": [
+      "{**22 NY3d at 932} OPINION OF THE COURT",
+      "Memorandum. ",
+      "The order of the Appellate Division should be modified by remitting to Supreme Court for further proceedings in accordance with this memorandum and, as so modified, affirmed. In the event defendant prevails on the suppression issue, the conviction should be vacated and the indictment dismissed; alternatively, if the People prevail, the judgment should be amended to reflect that result. ",
+      "On appeal, defendant sought reversal of his conviction based on the ineffective assistance of his first attorney. The Appellate Division affirmed the judgment in a divided decision (95 AD3d 1349 [2d Dept 2012]). The majority concluded that counsel's representation had not fallen below the constitutional standard but the dissent disagreed, reasoning that multiple errors by the attorney in relation to defendant's suppression application warranted remittal of the case to Supreme Court. The Appellate Division dissenter granted defendant leave to appeal to this Court (19 NY3d 1030 [2012]). ",
+      "We agree with the dissent that defendant is entitled to relief. In his written motion requesting a hearing, counsel misstated the facts relating to the arrest, indicating that defendant had been involved in a motor vehicle stop rather than a street encounter with police. At the suppression hearing, the attorney did not marshal the facts for the court and made no legal argument. This, coupled with his failure to make appropriate argument in his motion papers or to submit a post-hearing memorandum, meant that the defense never supplied the hearing court with any legal rationale for granting suppression. Moreover, after the court issued a decision describing the sequence of events in a manner that differed significantly from the testimony of the police officer (the only witness at the hearing) and was adverse to the defense, defendant's attorney made no motion to reargue or otherwise correct the court's apparent factual error. Counsel never ascertained whether the court decided the motion based on the hearing proof or a misunderstanding of the officer's uncontradicted testimony. ",
+      " I do not consider this issue \"close under our complex De Bour jurisprudence\" (majority mem at 934). Based on the record before us, the detective's testimony makes clear that, as a matter of law, suppression is warranted. To say that Supreme Court could have concluded otherwise and found requisite reasonable suspicion is to say that Supreme Court could have committed reversible error by reaching a legal conclusion for which there is no record support. I would grant that branch of defendant's motion to suppress physical evidence and dismiss the indictment. Accordingly, I dissent. ",
+      "Defendant was arrested and charged with criminal possession of a weapon. Prior to defendant's trial, counsel moved as part of{**22 NY3d at 935} an omnibus motion to suppress the weapon, a gun seized shortly after defendant's arrest. However, in that branch of defendant's omnibus motion that sought suppression of physical evidence, counsel recited a wholly different factual scenario from the events actually leading up to defendant's arrest and the seizure of the gun. Counsel incorrectly stated that police officers approached defendant while he was seated in an automobile, and that after they forcibly removed him from the vehicle, a gun fell out onto the ground. This was a complete fiction. The correct facts were that the officers had observed defendant walking on the street, arrested him after a chase on foot, and seized the gun from a private yard near where he was arrested. Additionally, because counsel's legal argument was based on these incorrect facts, he also failed to tailor the legal standards to the specifics of defendant's case. Although counsel's motion papers stated that he was \"unaware of many of the relevant facts necessary to [his] preparation of the defense,\" and requested permission to submit a post-hearing memorandum, \"so that [he] might more effectively represent the interests of [defendant],\" he never filed such memorandum. ",
+      "\"Arrests are made of individuals, not of neighborhoods. When we single out the latter, more likely than not congested areas peopled in the main by those who are socially and economically deprived, we subject all its residents, the vast majority of whom are sure to be free of criminal taint, to an immeasurably greater risk of invasion than those who live elsewhere\" (People v McRay, 51 NY2d 594, 606-607 [1980, Fuchsberg, J., concurring]).",
+      "The majority concludes that a person standing on the street, who makes the most innocent of movements—in this case adjusting a waistband—is subject to inquiry simply because that person is walking in a neighborhood known to the police for its gang activity. I cannot agree with the underlying assumption that persons stopped by police in such an area of the community are more likely to be engaged in criminal activity than those who walk or live in any other neighborhood. We have already rejected this assumption and today's decision ignores the wisdom of our prior case law. I dissent. "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

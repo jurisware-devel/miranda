@@ -1,0 +1,135 @@
+{
+  "caseId": "2020_02096",
+  "sourcePath": "coa/2020/2020_02096.htm",
+  "notesPath": "coa/2020/2020_02096.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.093Z",
+  "source": {
+    "title": "People v Perez (2020 NYSlipOp 02096)",
+    "publicationStatus": "unknown"
+  },
+  "fileInfo": {
+    "byteSize": 72940,
+    "lineCount": 188,
+    "tagCounts": {
+      "a": 118,
+      "b": 74,
+      "body": 2,
+      "br": 40,
+      "div": 26,
+      "font": 78,
+      "head": 2,
+      "html": 2,
+      "i": 274,
+      "p": 106,
+      "script": 4,
+      "style": 2,
+      "sup": 32,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 30
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Perez",
+      "2020 NYSlipOp 02096",
+      "March 26, 2020",
+      "Feinman, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, July 22, 2020"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Jose Perez, Appellant."
+    ],
+    "citationLine": "People v Perez , 162 AD3d 1083 , affirmed.",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued February 13, 2020; decided March 26, 2020",
+      "March 26, 2020",
+      "As corrected through Wednesday, July 22, 2020"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 63,
+    "footnotesCount": 16
+  },
+  "citations": {
+    "slipOpinion": null,
+    "officialCitation": "162 AD3d 1083",
+    "pageMarkerCount": 38
+  },
+  "opinionStructure": {
+    "totalWritings": 5,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "concurrence": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Feinman",
+      "Fahey",
+      "Wilson"
+    ],
+    "qualifierLines": [
+      "{**35 NY3d at 87}OPINION OF THE COURT",
+      " I agree with the result reached by the Court, and I vote to affirm, but I cannot join the majority opinion. As the dissent explains, the People disavowed and therefore did not preserve the argument that defendant's criminal conviction in New Jersey was tantamount to endangering the welfare of a child. Accordingly, the Court of Appeals has no power to review the issue (, 20 NY3d 1087, 1087 [2013]).",
+      "The People initially advanced a theory of equivalency between New York's endangering the welfare of a child statute{**35 NY3d at 111} and New Jersey's lewdness statute, but expressly renounced that theory when they realized they had been reading from the wrong script. The sole issue the People preserved was that risk factor 9 permitted the assessment of 30 points based on Mr. Perez's conduct. The majority's resolution—that Mr. Perez's conviction was comparable under North's essential elements test to a conviction of endangering the welfare of a child—is wholly unpreserved. In any event, it is unsupported by, and indeed in contravention of, the Guidelines and the legislature's mandate that a board of experts determine how to measure the risk of future offense. Because risk factor 9 requires a conviction or adjudication for the award of points, the SORA court improperly assessed Mr. Perez 30 points based on his \"conduct.\" I therefore dissent."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 1,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 16,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 5 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "caseId": "2017_07383",
+  "sourcePath": "coa/2017/2017_07383.htm",
+  "notesPath": "coa/2017/2017_07383.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.970Z",
+  "source": {
+    "title": "People v Andujar (2017 NY Slip Op 07383)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 37971,
+    "lineCount": 134,
+    "tagCounts": {
+      "a": 70,
+      "b": 46,
+      "blockquote": 2,
+      "body": 2,
+      "br": 32,
+      "div": 6,
+      "font": 46,
+      "head": 2,
+      "html": 2,
+      "i": 122,
+      "p": 60,
+      "script": 4,
+      "style": 2,
+      "sup": 20,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Andujar",
+      "2017 NY Slip Op 07383 [30 NY3d 160]",
+      "October 24, 2017",
+      "Rivera, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, December 27, 2017"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "John Andujar, Appellant."
+    ],
+    "citationLine": "2017 NY Slip Op 07383 30 NY3d 160",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued September 5, 2017; decided October 24, 2017",
+      "October 24, 2017",
+      "As corrected through Wednesday, December 27, 2017"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 30,
+    "footnotesCount": 10
+  },
+  "citations": {
+    "slipOpinion": "2017 NY Slip Op 07383",
+    "officialCitation": "30 NY3d 160",
+    "pageMarkerCount": 22
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Rivera",
+      "Stein"
+    ],
+    "qualifierLines": [
+      "{**30 NY3d at 162} OPINION OF THE COURT",
+      "{**30 NY3d at 166}This interpretation effectuates the legislative purpose of Vehicle and Traffic Law § 397. \"When presented with a question of statutory interpretation, our primary consideration 'is to ascertain and give effect to the intention of the Legislature' \" (, 7 NY3d 653, 660 [2006], quoting Riley v County of Broome, 95 NY2d 455, 463 [2000]). While \"the words of the statute are the best evidence of the Legislature's intent,\" legislative history may also be relevant as an aid to construction of the meaning of words (Riley, 95 NY2d at 463). Contrary to the dissent's assertion, letters in support of the legislation do indeed shed light on the legislative intent (dissenting op at 170). The bill sought to \"make it difficult for criminals to receive [p]olice emergency broadcasts\" and \"prevent lawbreakers from obtaining police radio information\" while operating a motor vehicle (Letter from Syracuse Chief of Police and Letter from Brooklyn Chamber of Commerce, Bill Jacket, L 1933, ch 405 at 6, 7). The statute addresses the unique harm posed by police scanners used in conjunction with motor vehicles—for instance, in the case of vehicles \"equipped with police radios for lookout purposes when crimes are committed,\" or \"tow trucks equipped with police radios for the purpose of securing towing business at [the] scene of automobile accidents\" (Letter from Office for Local Government, Bill Jacket, L 1966, ch 620 at 11). Overall, there is nothing in the plain language of the statute or the legislative history that suggests the term \"equip\" should be given anything other than its obvious meaning.",
+      "Given the purpose of the legislation—to reduce access inside motor vehicles to police radio signals—it is irrelevant whether the device is mounted, lying on the seat, or in a defendant's pocket so long as the device is readily accessible for immediate{**30 NY3d at 167} use in the vehicle. If not, and in direct violation of the legislative intent, lookouts could listen to police emergency broadcasts while operating getaway vehicles and tow truck operators could scan police frequencies to be first at the scene of automobile accidents so long as the scanners involved are not physically connected to the respective vehicles. To give the statutory terms this narrow construction advocated by the defendant and the dissent \"would be inimical to the public policy underlying [the statute] and would conflict with the legislative intent which is apparent in the language of the statute as a whole . . . . Moreover, [this] construction, if given effect, could, as a practical matter, frustrate the very purpose of the legislation\" (Matter of Capital Newspapers, Div. of Hearst Corp. v Whalen, 69 NY2d 246, 252 [1987]).",
+      "The dissent concedes that attachment is not necessary (dissenting op at 170). Nevertheless, all of the examples utilized by the dissent involve a physical or wireless connection. As such, the dissent would find a vehicle to be equipped with a radio scanner if the portable device was in defendant's pocket and the audio played through the vehicle's speakers, rather than the device's speakers. We assume the dissent would agree that a vehicle is equipped with a radio scanner if the portable device was battery operated and placed on a removable dashboard mount—like a portable GPS device—even if the audio played through the device's own speakers. Yet according to the dissent's analysis the vehicle is not equipped if the same scanner is turned on and lying in the driver's lap. This is a distinction without meaning, and the dissent is unable to point to any definition of the word \"equip\" or anything in this statute's legislative history in which physical connection or wireless linkage is fundamental.",
+      " I respectfully dissent. The superseding information in this case charged defendant with violating Vehicle and Traffic Law § 397. The information alleged that a police officer responding to a motor vehicle accident noticed defendant operating a tow truck near the accident site. When stopped, defendant informed the officer that he had received a telephone call regarding an accident. The police officer stated in the information that, during his interaction with defendant, he observed a \"radio receiver, also known as a scanner,\" in defendant's front left jacket pocket, which—when switched on by the officer—was capable of receiving frequencies allocated for police use. The question before us is whether, based on these allegations, the accusatory instrument was facially sufficient to charge defendant with violating Vehicle and Traffic Law § 397. I would answer that question in the negative."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 10,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "caseId": "2009_01242",
+  "sourcePath": "coa/2009/2009_01242.htm",
+  "notesPath": "coa/2009/2009_01242.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.421Z",
+  "source": {
+    "title": "People v Guerrero (2009 NY Slip Op 01242)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 12424,
+    "lineCount": 81,
+    "tagCounts": {
+      "a": 8,
+      "b": 4,
+      "blockquote": 4,
+      "body": 2,
+      "br": 4,
+      "div": 2,
+      "font": 20,
+      "head": 2,
+      "html": 2,
+      "i": 52,
+      "p": 19,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 4
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Guerrero",
+      "2009 NY Slip Op 01242 [12 NY3d 45]",
+      "February 19, 2009",
+      "Read, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, April 1, 2009"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Felix Soriano Guerrero, Appellant."
+    ],
+    "citationLine": "2009 NY Slip Op 01242 12 NY3d 45",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued January 8, 2009; decided February 19, 2009",
+      "February 19, 2009",
+      "As corrected through Wednesday, April 1, 2009"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 14,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2009 NY Slip Op 01242",
+    "officialCitation": "12 NY3d 45",
+    "pageMarkerCount": 9
+  },
+  "opinionStructure": {
+    "totalWritings": 2,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1
+    },
+    "authors": [
+      "Read"
+    ],
+    "qualifierLines": [
+      "{**12 NY3d at 46} OPINION OF THE COURT",
+      "The Senate-Assembly Memorandum in Support of the 1983 legislation—the \"subject and purpose\" of which was to \"provide[ ] the revenues necessary to finance the 1983-84 State Budget\" (see Bill Jacket, L 1983, ch 15, at 9)—states as follows: "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 2 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

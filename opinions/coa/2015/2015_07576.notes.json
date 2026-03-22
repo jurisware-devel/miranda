@@ -1,0 +1,122 @@
+{
+  "caseId": "2015_07576",
+  "sourcePath": "coa/2015/2015_07576.htm",
+  "notesPath": "coa/2015/2015_07576.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.820Z",
+  "source": {
+    "title": "People v Izzo (2015 NY Slip Op 07576)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 11831,
+    "lineCount": 83,
+    "tagCounts": {
+      "a": 8,
+      "b": 8,
+      "blockquote": 4,
+      "body": 2,
+      "br": 6,
+      "div": 6,
+      "font": 16,
+      "head": 2,
+      "html": 2,
+      "i": 16,
+      "opinion": 1,
+      "p": 32,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Izzo",
+      "2015 NY Slip Op 07576 [26 NY3d 999]",
+      "October 20, 2015",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, December 16, 2015"
+    ],
+    "captionLines": [],
+    "citationLine": "2015 NY Slip Op 07576 26 NY3d 999",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued September 11, 2015; decided October 20, 2015",
+      "October 20, 2015",
+      "As corrected through Wednesday, December 16, 2015"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Adam J. Bevelacqua , New York City, for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Adam J. Bevelacqua , New York City, for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Weeden A. Wetmore , District Attorney , Elmira ( Damian M. Sonsire of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Weeden A. Wetmore , District Attorney , Elmira ( Damian M. Sonsire of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 14,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2015 NY Slip Op 07576",
+    "officialCitation": "26 NY3d 999",
+    "pageMarkerCount": 7
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**26 NY3d at 1000} OPINION OF THE COURT",
+      "Memorandum.",
+      "The order of the Appellate Division should be reversed, without costs, and the matter remitted to County Court for further proceedings in accordance with this memorandum.",
+      "The Appellate Division, with two Justices dissenting, affirmed (120 AD3d 860 [2014]). It agreed with County Court's assessment of points under risk factors 3 and 7. Regarding defendant's downward departure request, the Appellate Division held that although County Court had not expressly referenced that request, it had discussed the factors relied upon by defendant, and thus provided an adequate basis for intelligent appellate review. It concluded that defendant had failed to establish, by a preponderance of the evidence, that a downward departure was warranted. The dissent disagreed with the assessment of points under both risk factors 3 and 7, and concluded that defendant's application for a downward departure should be remitted.",
+      "The Appellate Division majority was persuaded that there was clear and convincing evidence that defendant engaged in \"grooming\" behavior. However, the dissent concluded, and we agree, that given the expert evidence (unrebutted by the People) \"defendant is significantly lacking in sexual and social maturity, has difficulty in understanding and interpreting social cues, functions socially at the level of a young teenager of roughly the same age as his victims, and would be unable to maintain appropriate relationships with young women of his chronological age\" (120 AD3d at 864 [Garry, J., dissenting]), there was no clear and convincing evidence that he purposefully \"groomed\" the victims for the primary purpose of victimizing them, or, aside from grooming, had any relationship with the girls that would count for factor 7. Accordingly, we agree with defendant that he should not have been assessed points under factor 7. Because the courts below used an incorrect RAI score, we remit to County Court for determination of the downward departure application in accordance with  (23 NY3d 841 [2014])."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

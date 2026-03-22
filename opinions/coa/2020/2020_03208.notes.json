@@ -1,0 +1,120 @@
+{
+  "caseId": "2020_03208",
+  "sourcePath": "coa/2020/2020_03208.htm",
+  "notesPath": "coa/2020/2020_03208.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.101Z",
+  "source": {
+    "title": "People v Harris (2020 NY Slip Op 03208)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 6569,
+    "lineCount": 76,
+    "tagCounts": {
+      "a": 10,
+      "b": 4,
+      "body": 2,
+      "br": 6,
+      "div": 6,
+      "font": 10,
+      "head": 2,
+      "html": 2,
+      "i": 34,
+      "opinion": 1,
+      "p": 20,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Harris",
+      "2020 NY Slip Op 03208 [35 NY3d 1010]",
+      "June 9, 2020",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, July 29, 2020"
+    ],
+    "captionLines": [],
+    "citationLine": "2020 NY Slip Op 03208 35 NY3d 1010",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Decided June 9, 2020",
+      "June 9, 2020",
+      "As corrected through Wednesday, July 29, 2020"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Janet E. Sabel, The Legal Aid Society , New York City ( Michael C. Taglieri of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Janet E. Sabel, The Legal Aid Society , New York City ( Michael C. Taglieri of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Cyrus R. Vance, Jr., District Attorney , New York City ( Aaron Zucker of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Cyrus R. Vance, Jr., District Attorney , New York City ( Aaron Zucker of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 6,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2020 NY Slip Op 03208",
+    "officialCitation": "35 NY3d 1010",
+    "pageMarkerCount": 4
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**35 NY3d at 1011} OPINION OF THE COURT",
+      "Memorandum.",
+      "The order of the Appellate Division should be reversed and this case remitted to Supreme Court for further proceedings in accordance with this memorandum.",
+      "Defendant was convicted, upon a guilty plea, of criminal possession of stolen property in the fourth degree (Penal Law § 165.45 [1]). Prior to his conviction, defendant moved to suppress physical evidence found inside a suitcase that he was carrying at the time of his arrest, relying on People v Gokey (60 NY2d 309 [1983]), and arguing that exigent circumstances were needed to justify a warrantless search of the closed suitcase. Supreme Court determined that Gokey did not apply and, therefore, made no findings regarding the existence of exigent circumstances. The Appellate Division affirmed on a different ground, determining, as both defendant and the People argued, that Gokey did apply and accepting the People's argument that exigent circumstances—namely, the protection of evidence or the safety of the police or the public—justified the search (174 AD3d 185 [1st Dept 2019]). A dissenting Justice granted leave to appeal, and we now reverse and remit."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

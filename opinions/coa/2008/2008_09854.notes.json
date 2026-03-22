@@ -1,0 +1,125 @@
+{
+  "caseId": "2008_09854",
+  "sourcePath": "coa/2008/2008_09854.htm",
+  "notesPath": "coa/2008/2008_09854.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.411Z",
+  "source": {
+    "title": "People v Mills (2008 NY Slip Op 09854)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 24220,
+    "lineCount": 140,
+    "tagCounts": {
+      "a": 48,
+      "b": 28,
+      "blockquote": 14,
+      "body": 2,
+      "br": 16,
+      "div": 10,
+      "font": 36,
+      "head": 2,
+      "html": 2,
+      "i": 82,
+      "p": 37,
+      "script": 4,
+      "style": 2,
+      "sup": 10,
+      "table": 6,
+      "td": 18,
+      "title": 2,
+      "tr": 18,
+      "u": 4
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Mills",
+      "2008 NY Slip Op 09854 [11 NY3d 527]",
+      "December 17, 2008",
+      "Read, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, January 28, 2009"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Donald Mills, Appellant.",
+      "The People of the State of New York, Respondent, v Jose Then, Appellant."
+    ],
+    "citationLine": "2008 NY Slip Op 09854 11 NY3d 527",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued November 18, 2008; decided December 17, 2008",
+      "December 17, 2008",
+      "As corrected through Wednesday, January 28, 2009"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 41,
+    "footnotesCount": 5
+  },
+  "citations": {
+    "slipOpinion": "2008 NY Slip Op 09854",
+    "officialCitation": "11 NY3d 527",
+    "pageMarkerCount": 17
+  },
+  "opinionStructure": {
+    "totalWritings": 2,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1
+    },
+    "authors": [
+      "Read"
+    ],
+    "qualifierLines": [
+      "{**11 NY3d at 530} OPINION OF THE COURT",
+      "On April 20, 1995, Mills pleaded guilty in County Court to criminal possession of a controlled substance in the second degree (Penal Law § 220.18 [1]), a class A-II felony, in exchange for the promised sentence of an indeterminate term of three years to life in prison. This sentence was imposed on July 26, 1995, to run concurrently with a 2 to 6 years' sentence resulting from Mills' conviction, in a separate proceeding, of criminal possession of a weapon in the third degree (Penal Law § 265.02), a class D felony. ",
+      "The Appellate Division unanimously affirmed in a memorandum, stating that ",
+      "In a decision and order dated April 10, 2006, Supreme Court ruled in Then's favor. Supreme Court concluded that while various \"lower court decisions . . . have concerned issues similar to that currently before this court\" (citations omitted), Then's case was \"[u]nique\" because he was \"currently in the custody of the Department of Corrections on two separate A-II felony convictions, albeit, his incarceration on the [1999 conviction was the] result of a parole violation resulting from his second A-II conviction\"; and that \"the purposes underlying the drug reform act call[ed] for eligibility in [Then's] case.\" On April 24, 2006, Supreme Court resentenced Then to a determinate term of five years' imprisonment and a five-year period of postrelease supervision for the 1999 conviction, to run concurrently with a determinate term of six years' imprisonment and a five-year period of postrelease supervision for the 2003 conviction. ",
+      "Moreover, while the introducer's memorandum states that the statute would apply to \"[t]hose class A-II felony controlled substance offenders who . . . at the time of the petition are . . . more than 12 months from being eligible for the temporary release program established pursuant to section 851 of the correction law\" (Senate Introducer's Mem in Support, Bill Jacket{**11 NY3d at 536} at 3), this does not conflict with the three-year limitation. As the New York City Bar Association made clear in its description of the 2005 DLRA's eligibility provisions: \"The bill would allow non-violent A-II offenders more than twelve months away from temporary release eligibility with three years or longer left to serve the opportunity to petition for resentencing\" (Letter of John H. Doyle, III, Chair, Council on Criminal Justice, Association of the Bar of the City of New York, Bill Jacket at 22). ",
+      "Chief Judge Kaye and Judges Ciparick, Graffeo, Smith, Pigott and Jones concur.{**11 NY3d at 538} "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 5,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 2 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 3 table elements before or within the header region."
+    }
+  ]
+}

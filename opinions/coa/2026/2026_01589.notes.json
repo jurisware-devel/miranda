@@ -1,0 +1,162 @@
+{
+  "caseId": "2026_01589",
+  "sourcePath": "coa/2026/2026_01589.htm",
+  "notesPath": "coa/2026/2026_01589.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.403Z",
+  "source": {
+    "title": "People v Billups (2026 NY Slip Op 01589)",
+    "publicationStatus": "slip_op_only"
+  },
+  "fileInfo": {
+    "byteSize": 18265,
+    "lineCount": 85,
+    "tagCounts": {
+      "a": 18,
+      "b": 10,
+      "body": 2,
+      "br": 22,
+      "dateline": 2,
+      "div": 8,
+      "font": 14,
+      "form": 2,
+      "head": 2,
+      "html": 2,
+      "i": 86,
+      "input": 1,
+      "p": 38,
+      "sc": 2,
+      "script": 2,
+      "style": 2,
+      "sup": 2,
+      "table": 2,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [
+      "form",
+      "input"
+    ],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Billups",
+      "2026 NY Slip Op 01589",
+      "Decided on March 19, 2026",
+      "Court of Appeals",
+      "Garcia, J.",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "This opinion is uncorrected and subject to revision before publication in the Official Reports."
+    ],
+    "captionLines": [
+      "The People & c., Respondent,",
+      "v",
+      "Ricky Billups, Appellant."
+    ],
+    "citationLine": "2026 NY Slip Op 01589",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "To determine whether consecutive sentences are permitted, a sentencing court must first examine the statutory elements of the crimes and determine whether those elements overlap \"under either prong\" of Penal Law § 70.25 (2) and, if they do, \"the People may yet establish the legality of consecutive sentencing by showing that the 'acts or omissions' committed by defendant were separate and distinct acts\" ( People v Laureano , 87 NY2d 640, 643 [1996] [making clear it is the People's burden to establish the legality of consecutive sentences]). That is, where sufficient evidence of separate and distinct acts is presented by the People, \"consecutive sentences are possible regardless of whether the statutory elements of the offenses overlap\" ( People v Salcedo , 92 NY2d 1019, 1021 [1998]).",
+      "Wright made clear that the analysis would be different in a situation involving a conviction under a simple possession statute that \"defines the crime solely in terms of dominion and control\" ( id. at 366-367). Three such scenarios were considered by the Court one year later in People v Brown , where this Court addressed \"whether a sentence imposed for 'simple' knowing, unlawful possession of a loaded weapon (i.e., without any intent to use) was properly run consecutively to the sentence for another crime committed with the same weapon\" (21 NY3d 739, 744 [2013]). We held that because \"these three defendants completed the crime of possession independently of their commission of the later crimes, . . . consecutive sentencing was permissible\" ( id. ). There, each defendant argued that consecutive sentences were prohibited because \"possession was subsumed within use\" ( id. at 749). But in each case, [*3] we determined that the People proffered sufficient evidence for the Court to conclude that the \"defendants clearly possessed the guns they used to commit their crimes well before firing them\": in Brown , defendant had \"dominion and control\" over the gun before he encountered the victim; in Harris , defendant \"fortuitously\" encountered the victim and \"possessed the gun for at least the 20 minutes before he shot\" him; and in Carter , defendant was handed the gun and \"stopped in a convenience store while armed to talk to\" acquaintances \"some minutes\" before the murder ( id. at 751). This evidence was sufficient to show that the possessory act was separate and distinct from the substantive crime, meriting consecutive sentences.",
+      "Defendant relies on a single sentence from Brown , which he reads as implying that the People must show that the gun was obtained before the intent to commit a crime with it was formed ( id. at 751 [\"(s)o long as a defendant knowingly unlawfully possesses a loaded firearm before forming the intent to cause a crime with that weapon, the possessory crime has already been completed, and consecutive sentencing is permissible\"]), and maintains that the timing of the formation of that intent provides the relevant framework for analyzing simple possession cases. While this language in isolation may have caused some confusion ( see e.g. People v Graham , 215 AD3d 998 , 1010 [3d Dept 2023]; People v Michel , 144 AD3d 948 , 949 [2d Dept 2016]), the analysis in Brown establishes that this approach is not applicable where only simple possession is involved. When assessing the legality of consecutive sentences for a defendant convicted of possession of a weapon with intent to use it unlawfully and a substantive crime with a possessory element, the relevant inquiry is when the defendant formed the intent to commit the substantive crime. But in cases of simple possession, the relevant inquiry is when the act of possession was complete, determined by whether the People proffered sufficient evidence to conclude that the defendant obtained \"dominion and control\" over the weapon before committing the substantive crime ( id. at 751; see Wright , 19 NY3d at 366-367) [FN*] .",
+      "Decided on March 19, 2026"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Victorien Wu, for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Victorien Wu, for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Stephen J. Kress, for respondent. GARCIA , J.:",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": true,
+        "argumentTailPreview": "GARCIA , J.:",
+        "sentenceText": "Stephen J. Kress, for respondent.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Stephen J. Kress, for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Stephen J. Kress, for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 15,
+    "footnotesCount": 1
+  },
+  "citations": {
+    "slipOpinion": "2026 NY Slip Op 01589",
+    "officialCitation": "233 AD3d 492",
+    "pageMarkerCount": 4
+  },
+  "opinionStructure": {
+    "totalWritings": 2,
+    "byKind": {
+      "unknown": 1,
+      "opinion_of_the_court": 1
+    },
+    "authors": [
+      "Garcia"
+    ],
+    "qualifierLines": [
+      "Defendant was sentenced as a second violent felony offender to 15 years in prison on his conviction for simple possession of a weapon, to run consecutively to concurrent prison terms on felony murder and robbery convictions, for an aggregate sentence of 40 years to life. He contends that because the People failed to establish that he formed the intent to rob the victim after his acquisition of the weapon, consecutive sentences were not authorized under Penal Law § 70.25. We hold that consecutive sentences were lawfully imposed and therefore affirm.",
+      "At sentencing, the People requested that each defendant's sentence for their simple possession charges run consecutively to their remaining charges, for an aggregate sentence of 40 years to life. The trial judge agreed and sentenced both defendants accordingly. On appeal, the Appellate Division affirmed, holding that the consecutive sentences were lawful and declining defendant's request to run those sentences concurrently in the interest of justice (233 AD3d 492 [1st Dept 2024]). A Judge of this Court granted leave to appeal (43 NY3d 1006 [2025]).",
+      "Penal Law § 70.25 (2) governs consecutive sentencing, providing that \"[w]hen more than one sentence of imprisonment is imposed on a person for two or more offenses committed through a single act or omission, or through an act or omission which in itself constituted one of the offenses and also was a material element of the other, the sentences . . . must run concurrently.\" Otherwise, the decision to impose consecutive sentences is a matter of discretion; the statute provides that \"when multiple sentences of imprisonment are imposed on a person at the same time . . . the sentence or sentences imposed by the court shall run either concurrently or consecutively . . . in such manner as the court directs at the time of sentence\" (Penal Law § 70.25 [1]).",
+      "We note that even where permissible, the imposition of consecutive sentences is discretionary (see People v Truesdell, 70 NY2d 809, 811 [1987]). And where a sentencing judge has exercised that discretion and run a simple weapon possession charge consecutively with other crimes, it remains within the Appellate Division's interest of justice jurisdiction to reduce that sentence, based on the individual circumstances of each defendant, as it did with co-defendant here (, 155 AD3d 476, 476-477 [1st Dept 2017] [affirming the legality of consecutive sentences, but modifying co-defendant's sentences to run concurrently in the interest of justice])."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 1,
+    "labels": [
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <form> in source HTML."
+    },
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <input> in source HTML."
+    },
+    {
+      "code": "APPEARANCE_LINE_WITH_ARGUMENT_TAIL",
+      "severity": "info",
+      "detail": "Appearance-like line continues into argument text after \"for respondent.\"."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 2 writings."
+    }
+  ]
+}

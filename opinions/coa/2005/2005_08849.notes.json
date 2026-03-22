@@ -1,0 +1,136 @@
+{
+  "caseId": "2005_08849",
+  "sourcePath": "coa/2005/2005_08849.htm",
+  "notesPath": "coa/2005/2005_08849.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.297Z",
+  "source": {
+    "title": "People v Carvajal (2005 NY Slip Op 08849)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 66497,
+    "lineCount": 261,
+    "tagCounts": {
+      "a": 54,
+      "b": 62,
+      "blockquote": 54,
+      "body": 2,
+      "br": 36,
+      "div": 12,
+      "font": 96,
+      "head": 2,
+      "html": 2,
+      "i": 196,
+      "p": 90,
+      "script": 4,
+      "style": 2,
+      "sup": 26,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Carvajal",
+      "2005 NY Slip Op 08849 [6 NY3d 305]",
+      "November 22, 2005",
+      "Kaye, Ch.J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, April 19, 2006"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Alvaro Carvajal, Appellant."
+    ],
+    "citationLine": "2005 NY Slip Op 08849 6 NY3d 305",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued October 19, 2005; decided November 22, 2005",
+      "November 22, 2005",
+      "As corrected through Wednesday, April 19, 2006"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 102,
+    "footnotesCount": 13
+  },
+  "citations": {
+    "slipOpinion": "2005 NY Slip Op 08849",
+    "officialCitation": "6 NY3d 305",
+    "pageMarkerCount": 47
+  },
+  "opinionStructure": {
+    "totalWritings": 4,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "dissent": 1
+    },
+    "authors": [
+      "Kaye",
+      "G.B. Smith"
+    ],
+    "qualifierLines": [
+      "{**6 NY3d at 307} OPINION OF THE COURT",
+      "A few responses to the dissent are in order. First, because we conclude that jurisdiction is predicated on a conspiracy in New York to possess cocaine, we need not consider whether jurisdiction might also be established under CPL 20.20 (1) (a) or any other theory (see Kassebaum, 95 NY2d at 621). We are bound, of course, by principles of judicial restraint not to decide questions unnecessary to the disposition of the appeal. ",
+      "Second, at trial, defendant never alleged any constitutional violation, federal or state, concerning his prosecution by New York (see dissenting op at 321-322). Defendant's references in his brief to article I, § 2 of the New York State Constitution are offered in support of his claim that \"New York courts have given the jurisdictional exceptions in Criminal Procedure Law Article 20 'a restrictive interpretation and operation' \" (quoting Bellacosa, Practice Commentary, McKinney's Cons Laws of NY, Book 11A, CPL 20.40 [1981]). Nowhere in his brief does defendant contend that, on a constitutional ground, the Legislature lacked the power to vest jurisdiction in the manner it has chosen. The dissent's assertions that defendant's convictions violate article III, § 2 of the Federal Constitution, the Sixth Amendment and article I, § 2 of the State Constitution are premised on theories that were simply not raised by defendant at trial—or indeed in this Court. ",
+      "{**6 NY3d at 317}Third, we perceive no \"extension\" of Kassebaum in our ruling (see dissenting op at 324-325). In Kassebaum, territorial jurisdiction over the crime of attempted criminal possession of a controlled substance was established under CPL 20.20 (1) (a)—a different subsection than that discussed here. ",
+      "Finally, at bottom, our dissenting colleague maintains that our holding is correct only if the possession offense—the object of the conspiracy—is actually committed in New York (dissenting op at 330). The Legislature, however, concluded otherwise. In this coast-to-coast drug trafficking operation, defendant conspired in New York with his New York cohorts to bring cocaine to New York, thus affording a basis for the assertion of jurisdiction under our statutory scheme to prosecute him, jointly with his coconspirators, here. Defendant's contention that his trial attorney was ineffective lacks merit. ",
+      " Because the Constitution of the United States, the Constitution of the State of New York and the laws of the State of New York do not permit a person to be found guilty of criminal possession of a controlled substance on a theory of constructive possession rather than actual possession where both the substance and the defendant are in California, I dissent. ",
+      "Defendant was convicted of conspiracy in the second degree and three counts of criminal possession of a controlled substance in the first degree. Defendant's sentence included 12½ to 25 years for conspiracy, to run concurrently with terms of 20 years to life on two possession counts, and a consecutive term of 15 years to life on the third possession count. ",
+      "It should be clear what the dissent is saying with respect to territorial jurisdiction and preservation. Because territorial jurisdiction goes to the authority of the court to try a defendant for the particular crimes in issue, no preservation is necessary (People v Patterson, 39 NY2d 288, 295 [1976] [\"A defendant in a criminal case cannot waive, or even consent to, error that would affect the organization of the court or the mode of proceedings proscribed by law\"], citing Cancemi v People, 18 NY 128, 138 [1858]). "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 13,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 4 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

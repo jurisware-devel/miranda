@@ -1,0 +1,131 @@
+{
+  "caseId": "2023_05968",
+  "sourcePath": "coa/2023/2023_05968.htm",
+  "notesPath": "coa/2023/2023_05968.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.229Z",
+  "source": {
+    "title": "People v Cabrera (2023 NY Slip Op 05968)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 67932,
+    "lineCount": 175,
+    "tagCounts": {
+      "a": 60,
+      "b": 40,
+      "blockquote": 2,
+      "body": 2,
+      "br": 24,
+      "div": 20,
+      "font": 80,
+      "head": 2,
+      "html": 2,
+      "i": 574,
+      "p": 131,
+      "script": 4,
+      "style": 2,
+      "sup": 14,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Cabrera",
+      "2023 NY Slip Op 05968 [41 NY3d 35]",
+      "November 21, 2023",
+      "Halligan, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, April 17, 2024"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Ramon Cabrera, Appellant."
+    ],
+    "citationLine": "2023 NY Slip Op 05968 41 NY3d 35",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued September 13, 2023; decided November 21, 2023",
+      "November 21, 2023",
+      "As corrected through Wednesday, April 17, 2024"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 68,
+    "footnotesCount": 7
+  },
+  "citations": {
+    "slipOpinion": "2023 NY Slip Op 05968",
+    "officialCitation": "41 NY3d 35",
+    "pageMarkerCount": 39
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Halligan",
+      "Rivera"
+    ],
+    "qualifierLines": [
+      "{**41 NY3d at 38} OPINION OF THE COURT",
+      "Cabrera relies on this passage of Patterson, contending that his unpreserved Bruen-based challenges are reviewable \"because they are based on an intervening Supreme Court decision that overruled binding precedent after judgment was entered,\" and the dissent in People v Garcia (41 NY3d 62 [2023]), decided today, takes the same view. In addition to Patterson, Cabrera points to People v Baker (23 NY2d 307 [1968]), in which this Court reviewed the merits of an unpreserved claim under the Confrontation Clause. At the time of trial, the claim in Baker had been squarely foreclosed by Delli Paoli v United States (352 US 232 [1957]), but Delli Paoli was subsequently overruled by Bruton v United States (391 US 123 [1968]). Again relying upon O'Connor, we concluded that \"[t]he error cannot be ignored upon the ground that no proper objection was made since in this pre-Bruton case their admission under limiting instructions was proper\" (Baker, 23 NY2d at 317 [citation omitted]).",
+      "These cases demonstrate the high bar for excusing preservation on the basis of an intervening U.S. Supreme Court decision. There can be little doubt that Bruen effected a dramatic change in how States may regulate possession of guns in public, or that this Court—like others around the nation—will face an array of significant questions in its wake. On that point, we agree with the dissent in Garcia. But as with virtually all our prior cases regarding unpreserved constitutional challenges, adjudication of those issues will have to await a case in which they have been duly preserved.",
+      "At the time of Cabrera's conviction in January 2018 and appeal to the Appellate Division in early 2022, neither this Court nor the U.S. Supreme Court had determined whether New York's proper cause requirement violated the Second Amendment. While Hughes could fairly be read to adopt intermediate scrutiny in the Second Amendment context, as the dissent in Garcia notes (Garcia, 41 NY3d at 77 [Rivera, J., dissenting] [decided today]), it did not consider the proper cause requirement or address any of the Second Amendment arguments the defendant now asks us to consider: whether the Second Amendment invalidates a conviction for unlicensed possession where the licensing scheme includes a proper cause requirement; whether New York's licensing scheme imposes a residency{**41 NY3d at 48} requirement and, if so, whether the Second Amendment bars that condition; or whether the Second Amendment precludes classification and sentencing disparities between in-home and public possession.",
+      "Moreover, unlike the challenge to the affirmative defense in Patterson, the arguments that Cabrera now presses were not unanticipated at the time of his trial. Bruen rested on the U.S. Supreme Court's prior decisions in District of Columbia v Heller (554 US 570 [2008]) and McDonald v Chicago (561 US 742 [2010]). Those rulings did not speak directly to how the Second Amendment right applied outside the home or resolve the appropriate level of scrutiny, and it is clear that early on, some courts and individual judges viewed Heller as dispensing with means-end scrutiny—just as the Supreme Court eventually held in Bruen (see Ezell v City of Chicago, 651 F3d 684, 708 [7th Cir 2011] [applying more rigorous scrutiny to Second Amendment challenge to Chicago's prohibition on firing ranges]; Heller v District of Columbia, 670 F3d 1244, 1271 [DC Cir 2011, Kavanaugh, J., dissenting] [\"Heller and McDonald leave little doubt that courts are to assess gun bans and regulations based on text, history, and tradition, not by a balancing test such as strict or intermediate scrutiny\"]; Moore v Madigan, 702 F3d 933, 937, 942 [7th Cir 2012] [Circuit Court was \"bound by the Supreme Court's historical analysis\" as \"central\" to Heller, therefore holding the Second Amendment applied outside the home]; Peruta v County of San Diego, 742 F3d 1144, 1167, 1173-1175, 1179 [9th Cir 2014], revd on reh en banc 824 F3d 919 [9th Cir 2016] [opining that the Second Circuit did not properly grapple with history in Kachalsky and that the gun regulations at issue in Drake v Filko (724 F3d 426 [3d Cir 2013]), Woollard v Gallagher (712 F3d 865 [4th Cir 2014]), and Kachalsky should have been struck down even under intermediate scrutiny]; Kanter v Barr, 919 F3d 437, 451 [7th Cir 2019, Barrett, J., dissenting] [arguing a categorical felony ban on lawful handgun possession was unconstitutional because \"(f)ounding-era legislatures did not strip felons of the right to bear arms simply because of their status as felons\"]).",
+      "After the federal district court granted summary judgment to New York City and the Second Circuit affirmed, the U.S. Supreme Court granted certiorari in January 2019 to evaluate the constitutionality of the challenged city and state regulations. Although the Supreme Court later dismissed the case as moot following an amendment to the relevant statute and regulation (see NYSRPA v CNY, 590 US 336, 339 [2020]), the dissent and concurrence raised serious doubts about the means-ends test, relied heavily on the historical reasoning laid out in Heller, and noted the Court's eagerness to revisit the issue (590 US at 340 [Kavanaugh, J., concurring] [agreeing with Justice Alito's dissent that federal and state courts should refocus on historical analysis and signaling that \"(t)he Court should address that issue soon\"]). The Bruen plaintiffs themselves took a similar approach, explicitly arguing in their February 2018 complaint that Kachalsky \"was wrongly decided\" and that it should be overruled (see also Libertarian Party of Erie County v Cuomo, 970 F3d 106, 127 [2d Cir 2020] [noting plaintiffs contended that \"Kachalsky was wrongly decided\"]). Given these developments, we cannot conclude that the potential success of these arguments was so unanticipated as to excuse preservation.",
+      "Second, unlike the intervening decisions relied upon in Baker and Patterson, Bruen did not directly address the constitutional questions that Cabrera now seeks to raise. Bruen ruled that New York's proper cause standard for issuance of public carry licenses violates the Second and Fourteenth Amendments{**41 NY3d at 50} (Bruen, 597 US at 8-11, 17, 37). It did not address the rest of New York's licensing scheme or the interplay between the invalidation of New York's proper cause requirement and state statutes criminalizing unlicensed possession of a firearm, as the dissent in Garcia acknowledges (Garcia, 41 NY3d at 80-81 [Rivera, J., dissenting] [decided today]). In fact, several of the Bruen concurrences explicitly noted that the opinion \"decide[d] nothing about who may lawfully possess a firearm or the requirements that must be met to buy a gun\" (597 US at 72 [Alito, J., concurring]); that it did \"not prohibit States from imposing licensing requirements for carrying a handgun\" (id. at 79 [Kavanaugh, J., concurring]); and that it did not \"cast doubt on longstanding prohibitions on the possession of firearms by felons and the mentally ill\" (id. at 81, quoting Heller, 554 US at 626-627). For this reason, the circumstances of this case are distinguishable from those presented in O'Connor, on which we relied in both Patterson and Baker.",
+      "For the above reasons, we do not reach the merits of Cabrera's constitutional challenges on an underdeveloped record and without the benefit of the careful consideration by the courts and the parties below. We take no position on whether Cabrera would have had standing to bring his Bruen claims had he timely raised them, or on the merits of the various Bruen claims addressed in the dissent to People v Garcia (41 NY3d 62 [2023] [decided today]).",
+      "To protect the Fifth Amendment right against self-incrimination, Miranda warnings are mandated prior to the interrogation of a suspect who is in custody (Miranda v Arizona, 384 US 436, 444, 457 [1966]). Custodial interrogation is \"questioning initiated by law enforcement officers after a person has been taken into custody or otherwise deprived of his freedom of action in any significant way\" (id. at 444). Miranda rights \"become applicable as soon as a suspect's freedom of action is curtailed to a 'degree associated with formal arrest' {**41 NY3d at 57}\" (Berkemer v McCarty, 468 US 420, 440 [1984], quoting California v Beheler, 463 US 1121, 1125 [1983 per curiam]; United States v Newton, 369 F3d 659, 676-677 [2d Cir 2004] [a person in handcuffs was in custody for Miranda purposes, even when the police officers informed the defendant that they were not under arrest]). \"Handcuffs are generally recognized as a hallmark of a formal arrest\" (United States v Newton, 369 F3d 659, 676-677 [2d Cir 2004], citing New York v Quarles, 467 US 649, 655 [1984]). While handcuffing can be \"reasonable to the officers' investigatory purpose under the Fourth Amendment, [it] nevertheless place[s the suspect] in custody for purposes of Miranda\" (United States v Newton, 369 F3d 659, 676-677 [2d Cir 2004], citing Berkemer, 468 US at 440)."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": true,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 7,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "1",
+      "2",
+      "3"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

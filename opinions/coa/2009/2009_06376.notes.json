@@ -1,0 +1,121 @@
+{
+  "caseId": "2009_06376",
+  "sourcePath": "coa/2009/2009_06376.htm",
+  "notesPath": "coa/2009/2009_06376.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.442Z",
+  "source": {
+    "title": "People v Maliszewski (2009 NY Slip Op 06376)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 3975,
+    "lineCount": 64,
+    "tagCounts": {
+      "a": 4,
+      "b": 4,
+      "body": 2,
+      "br": 4,
+      "div": 2,
+      "font": 6,
+      "head": 2,
+      "html": 2,
+      "i": 14,
+      "p": 12,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Maliszewski",
+      "2009 NY Slip Op 06376 [13 NY3d 756]",
+      "September 3, 2009",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, October 28, 2009"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Peter J. Maliszewski, Appellant."
+    ],
+    "citationLine": "2009 NY Slip Op 06376 13 NY3d 756",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Decided September 3, 2009",
+      "September 3, 2009",
+      "As corrected through Wednesday, October 28, 2009"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Davison Law Office , Canandaigua ( Mary P. Davison of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Davison Law Office , Canandaigua ( Mary P. Davison of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Donald H. Dodd, District Attorney , Oswego ( Michael G. Cianfarano of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Donald H. Dodd, District Attorney , Oswego ( Michael G. Cianfarano of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 4,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2009 NY Slip Op 06376",
+    "officialCitation": "13 NY3d 756",
+    "pageMarkerCount": 2
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**13 NY3d at 757} OPINION OF THE COURT",
+      "Memorandum. "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

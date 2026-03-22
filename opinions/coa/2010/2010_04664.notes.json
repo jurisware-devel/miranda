@@ -1,0 +1,126 @@
+{
+  "caseId": "2010_04664",
+  "sourcePath": "coa/2010/2010_04664.htm",
+  "notesPath": "coa/2010/2010_04664.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.483Z",
+  "source": {
+    "title": "People v Wilson (2010 NY Slip Op 04664)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 6904,
+    "lineCount": 75,
+    "tagCounts": {
+      "a": 10,
+      "b": 10,
+      "body": 2,
+      "br": 8,
+      "div": 4,
+      "font": 12,
+      "head": 2,
+      "html": 2,
+      "i": 20,
+      "p": 15,
+      "script": 4,
+      "style": 2,
+      "sup": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Wilson",
+      "2010 NY Slip Op 04664 [14 NY3d 895]",
+      "June 3, 2010",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, July 14, 2010"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Desirie Wilson, Appellant."
+    ],
+    "citationLine": "2010 NY Slip Op 04664 14 NY3d 895",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Decided June 3, 2010",
+      "June 3, 2010",
+      "As corrected through Wednesday, July 14, 2010"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Legal Aid Society , New York City ( Adrienne Gantt of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Legal Aid Society , New York City ( Adrienne Gantt of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Robert T. Johnson, District Attorney , Bronx ( Kayonia L. Whetstone of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Robert T. Johnson, District Attorney , Bronx ( Kayonia L. Whetstone of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 7,
+    "footnotesCount": 1
+  },
+  "citations": {
+    "slipOpinion": "2010 NY Slip Op 04664",
+    "officialCitation": "14 NY3d 895",
+    "pageMarkerCount": 5
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**14 NY3d at 896} OPINION OF THE COURT",
+      "Memorandum. ",
+      "After a nonjury trial, defendant was convicted of attempted aggravated harassment in the second degree, a misdemeanor. She appealed her conviction, which was affirmed by the Appellate Division in a divided decision. One of the Appellate Division dissenters granted defendant leave to appeal. ",
+      "Defendant's claim that the trial court lacked subject matter jurisdiction to issue a judgment of conviction may be considered on appeal, despite her failure to timely raise the issue, because it falls within an exception to the preservation rule (see People v Casey, 95 NY2d 354, 365 [2000]; see e.g. People v Nicometi, 12 NY2d 428 [1963]). Even assuming that defendant's case was tried in Supreme Court, she is not entitled to reversal of her conviction on jurisdictional grounds because Supreme Court possesses concurrent subject matter jurisdiction over the trial of unindicted misdemeanor offenses (see People v Correa, 15 NY3d 213 [2010] [decided herewith]). Anticipating this holding, defendant argues in the alternative that, even if Supreme Court may resolve misdemeanor charges, the transfer of her case from New York City Criminal Court to Supreme Court was impermissible since court rules creating the Criminal Division of the Supreme Court in Bronx County and directing the reassignment of certain misdemeanor cases to that court for trial were not in effect on the date of her conviction (see id.; 22 NYCRR parts 42, 142). Given that Supreme Court had the power to hear the case, the transfer error defendant alleges is the equivalent of an improper venue claim, which is not jurisdictional in nature and is waived if not timely raised (, 6 NY3d 305, 312 [2005] [\"venue issues—which relate only to the proper place of trial, rather than to the power of the court to hear and determine the case—are waivable\"] [emphasis and citation omitted]). Because defendant did not object in the trial court to the (purported) transfer of her case to Supreme Court, we may not consider this alternative claim. "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 1,
+    "labels": [
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

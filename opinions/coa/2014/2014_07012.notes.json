@@ -1,0 +1,103 @@
+{
+  "caseId": "2014_07012",
+  "sourcePath": "coa/2014/2014_07012.htm",
+  "notesPath": "coa/2014/2014_07012.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.760Z",
+  "source": {
+    "title": "People v Wells (2014 NY Slip Op 07012)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 8623,
+    "lineCount": 78,
+    "tagCounts": {
+      "a": 6,
+      "b": 6,
+      "body": 2,
+      "br": 6,
+      "div": 4,
+      "font": 14,
+      "head": 2,
+      "html": 2,
+      "i": 16,
+      "opinion": 1,
+      "p": 30,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Wells",
+      "2014 NY Slip Op 07012 [24 NY3d 971]",
+      "October 16, 2014",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, December 3, 2014"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Diane Wells, Appellant."
+    ],
+    "citationLine": "2014 NY Slip Op 07012 24 NY3d 971",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued September 11, 2014; decided October 16, 2014",
+      "October 16, 2014",
+      "As corrected through Wednesday, December 3, 2014"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 13,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2014 NY Slip Op 07012",
+    "officialCitation": "24 NY3d 971",
+    "pageMarkerCount": 6
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**24 NY3d at 972} OPINION OF THE COURT",
+      "Memorandum."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

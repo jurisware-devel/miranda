@@ -1,0 +1,114 @@
+{
+  "caseId": "2010_05243",
+  "sourcePath": "coa/2010/2010_05243.htm",
+  "notesPath": "coa/2010/2010_05243.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.487Z",
+  "source": {
+    "title": "People v Dreyden (2010 NY Slip Op 05243)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 12541,
+    "lineCount": 89,
+    "tagCounts": {
+      "a": 10,
+      "b": 4,
+      "blockquote": 2,
+      "body": 2,
+      "br": 8,
+      "div": 2,
+      "font": 20,
+      "head": 2,
+      "html": 2,
+      "i": 48,
+      "p": 23,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Dreyden",
+      "2010 NY Slip Op 05243 [15 NY3d 100]",
+      "June 15, 2010",
+      "Pigott, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, August 4, 2010"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "James Dreyden, Appellant."
+    ],
+    "citationLine": "2010 NY Slip Op 05243 15 NY3d 100",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued April 29, 2010; decided June 15, 2010",
+      "June 15, 2010",
+      "As corrected through Wednesday, August 4, 2010"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 20,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2010 NY Slip Op 05243",
+    "officialCitation": "15 NY3d 100",
+    "pageMarkerCount": 9
+  },
+  "opinionStructure": {
+    "totalWritings": 4,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "dissent": 1
+    },
+    "authors": [
+      "Pigott",
+      "Smith"
+    ],
+    "qualifierLines": [
+      "{**15 NY3d at 102} OPINION OF THE COURT",
+      "The dissent asserts that the test for whether a flaw in an accusatory instrument is jurisdictional is whether that flaw consisted of an omission of elements of the charged crime (dissenting op at 105). We do not construe jurisdictional defects so narrowly. The test is, simply, whether the accusatory instrument failed to supply defendant with sufficient notice of the charged crime to satisfy the demands of due process and double jeopardy (see Kalin, 12 NY3d at 231-232; see also People v Casey, 95 NY2d 354, 366 [2000]). Here, the misdemeanor complaint, insofar as it described the arresting officer's conclusion that defendant had a gravity knife, failed to give any support or explanation whatsoever for the officer's belief. That violation of the \"reasonable cause\" requirement amounted to a jurisdictional defect. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 4 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "caseId": "2022_05919",
+  "sourcePath": "coa/2022/2022_05919.htm",
+  "notesPath": "coa/2022/2022_05919.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.191Z",
+  "source": {
+    "title": "People v Baines (2022 NY Slip Op 05919)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 14527,
+    "lineCount": 101,
+    "tagCounts": {
+      "a": 18,
+      "b": 14,
+      "blockquote": 2,
+      "body": 2,
+      "br": 12,
+      "div": 12,
+      "font": 20,
+      "head": 2,
+      "html": 2,
+      "i": 60,
+      "p": 42,
+      "script": 4,
+      "style": 2,
+      "sup": 4,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 6
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Baines",
+      "2022 NY Slip Op 05919 [39 NY3d 1]",
+      "October 20, 2022",
+      "Troutman, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, December 7, 2022"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Donnell Baines, Appellant."
+    ],
+    "citationLine": "2022 NY Slip Op 05919 39 NY3d 1",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued September 13, 2022; decided October 20, 2022",
+      "October 20, 2022",
+      "As corrected through Wednesday, December 7, 2022"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 24,
+    "footnotesCount": 2
+  },
+  "citations": {
+    "slipOpinion": "2022 NY Slip Op 05919",
+    "officialCitation": "39 NY3d 1",
+    "pageMarkerCount": 9
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [
+      "Troutman"
+    ],
+    "qualifierLines": [
+      "{**39 NY3d at 4} OPINION OF THE COURT",
+      "Acting Chief Judge Cannataro and Judges Rivera, Garcia, Wilson and Singas concur."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 2,
+    "labels": [
+      "1",
+      "2"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

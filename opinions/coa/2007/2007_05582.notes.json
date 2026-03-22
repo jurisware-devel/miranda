@@ -1,0 +1,123 @@
+{
+  "caseId": "2007_05582",
+  "sourcePath": "coa/2007/2007_05582.htm",
+  "notesPath": "coa/2007/2007_05582.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.365Z",
+  "source": {
+    "title": "People v Litto (2007 NY Slip Op 05582)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 39666,
+    "lineCount": 176,
+    "tagCounts": {
+      "a": 26,
+      "b": 26,
+      "blockquote": 38,
+      "body": 2,
+      "br": 16,
+      "div": 14,
+      "font": 60,
+      "head": 2,
+      "html": 2,
+      "i": 92,
+      "p": 50,
+      "script": 4,
+      "style": 2,
+      "sup": 10,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 12
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Litto",
+      "2007 NY Slip Op 05582 [8 NY3d 692]",
+      "June 27, 2007",
+      "Kaye, Ch.J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, August 22, 2007"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Appellant,",
+      "v",
+      "Vincent Litto, Respondent."
+    ],
+    "citationLine": "2007 NY Slip Op 05582 8 NY3d 692",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued May 30, 2007; decided June 27, 2007",
+      "June 27, 2007",
+      "As corrected through Wednesday, August 22, 2007"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 57,
+    "footnotesCount": 5
+  },
+  "citations": {
+    "slipOpinion": "2007 NY Slip Op 05582",
+    "officialCitation": "8 NY3d 692",
+    "pageMarkerCount": 29
+  },
+  "opinionStructure": {
+    "totalWritings": 2,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1
+    },
+    "authors": [
+      "Kaye"
+    ],
+    "qualifierLines": [
+      "{**8 NY3d at 693} OPINION OF THE COURT",
+      "Upon defendant's motion for dismissal of the indictment and inspection of the grand jury minutes, Supreme Court found the evidence before the grand jury legally sufficient on all except counts two and six. The court determined that ingestion of hydrocarbon does not fall within Vehicle and Traffic Law § 1192 (3), driving while intoxicated, and therefore could not serve as a basis for the count of vehicular manslaughter. The evidence, however, was sufficient to sustain the grand jury's conclusion that the victim's death was a direct result of defendant's reckless conduct. The Appellate Division, with one Justice dissenting, affirmed. The court reasoned that, among other amendments in the Vehicle and Traffic Law, the Legislature's 1966 enactment of a separate provision prohibiting driving while ability impaired by drugs implied that the provision prohibiting driving while intoxicated did not proscribe such conduct. We agree with the determinations of Supreme Court and the Appellate Division and now affirm. Defendant stands accused of the 12 remaining criminal charges. ",
+      "Opposed to the amendment, the New York State Automobile Association found fault with the difficulty of enforcement for such low amounts of alcohol in the blood and wondered why \"little mention is made of the impairment produced by fatigue, tension, the taking of medicines or even indisposition caused by indigestion\" (Letter from NY State Auto Assn, Bill Jacket, at 12). The Governor's memorandum, however, indicated that the amendment ",
+      "The Department of Health recommended disapproval, for while \"[t]he law has established standards for determining degrees of intoxication which can be accurately determined by chemical tests,\" research was necessary before standards could{**8 NY3d at 703} be devised for ascertaining impairment by the use of drugs (Letter from Counsel for Dept of Health, Apr. 11, 1966, Bill Jacket, at 23). The Department of Mental Hygiene concurred that \"[a]s contrasted with the standard of intoxication, for which presumptions are created, based on medical research, that certain proportions of alcohol in the blood have certain legal consequences, there is no comparable standard set up for various quantities of the defined drugs\" (Letter from Counsel for Dept of Mental Hygiene, June 6, 1966, Bill Jacket, at 27). ",
+      "The concept of making it unlawful per se to drive with a specific blood alcohol content was patterned after programs in England and Scandinavia. The Automobile Association reversed its opposition because of new research studies, including by the Department of Transportation and the Department of Health, Education and Welfare (Mem in Support of NY State Auto Assn, Feb. 27, 1970, Bill Jacket, at 21). In his memorandum, the Governor wrote: "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 5,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 2 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

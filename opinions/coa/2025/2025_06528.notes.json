@@ -1,0 +1,168 @@
+{
+  "caseId": "2025_06528",
+  "sourcePath": "coa/2025/2025_06528.htm",
+  "notesPath": "coa/2025/2025_06528.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.351Z",
+  "source": {
+    "title": "People v Johnson (2025 NY Slip Op 06528)",
+    "publicationStatus": "slip_op_only"
+  },
+  "fileInfo": {
+    "byteSize": 59871,
+    "lineCount": 149,
+    "tagCounts": {
+      "a": 68,
+      "b": 34,
+      "body": 2,
+      "br": 35,
+      "dateline": 2,
+      "div": 18,
+      "font": 18,
+      "form": 2,
+      "head": 2,
+      "html": 2,
+      "i": 446,
+      "input": 1,
+      "opinion": 1,
+      "p": 124,
+      "para": 1,
+      "sc": 4,
+      "script": 4,
+      "style": 2,
+      "sup": 14,
+      "table": 2,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [
+      "form",
+      "input"
+    ],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Johnson",
+      "2025 NY Slip Op 06528",
+      "Decided on November 24, 2025",
+      "Court of Appeals",
+      "Halligan, J.",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "This opinion is uncorrected and subject to revision before publication in the Official Reports."
+    ],
+    "captionLines": [
+      "The People & c., Respondent,",
+      "v",
+      "Omar Johnson, Appellant."
+    ],
+    "citationLine": "2025 NY Slip Op 06528",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "We hold that although the defendant waived his right to appeal as part of a plea bargain, his facial constitutional challenge nonetheless survives. The defendant was directly affected by his criminal prosecution and conviction, and we conclude that he therefore has standing to challenge the licensing scheme even though he did not apply for a firearm license. But his claim fails on the merits. Before the trial court, the defendant argued only that Bruen 's invalidation of the licensing scheme's \"proper cause\" requirement rendered the state's entire licensing scheme unconstitutional. That requirement is severable from the rest of the licensing scheme under New York law, and the defendant has not shown that there is no set of circumstances in which the licensing scheme would be valid. We therefore affirm.",
+      "On July 30, 2022, police were called to defendant Omar Johnson's home in response to a 911 call reporting that he had hit his domestic partner. While investigating the incident, an officer discovered a loaded 9-millimeter pistol in the defendant's moped parked on the street in front of his home. After ascertaining that the defendant did not have a valid license for the pistol, the officer arrested the defendant, and he was indicted for various counts of criminal weapon possession and possession of ammunition. These events occurred shortly after the U.S. Supreme Court decided Bruen on June 23, 2022, and before the amendments to the state's firearm licensing scheme went into effect on September 1, 2022. [FN1]",
+      "The defendant moved to dismiss the indictment. Rather than attacking any specific provisions of the licensing scheme, he argued broadly that Bruen effectively \"struck down New York's public carry licensing system\" by invalidating the \"proper cause\" requirement. The defendant further contended that because the charges against him rested \"solely on the basis that he did not obtain a license to carry a firearm,\" the indictment could not stand.",
+      "On appeal, the defendant renewed his argument that Bruen invalidated the state's entire firearm licensing scheme, notwithstanding his waiver. He argued that a Bruen claim cannot be waived because it \"relates to a right of constitutional dimension going to the very heart of the process\" (quoting People v Benjamin , 216 AD3d 1457 , 1457 [4th Dept 2023] [internal quotation marks omitted]). He also argued in the alternative that the waiver was not knowing and voluntary. On the merits, he continued to assert that Bruen 's invalidation of the proper cause requirement rendered the entire licensing scheme unconstitutional, and also challenged for the first time several other provisions of the then-extant licensing scheme, such as the \"good moral character\" requirement, the requirement that an applicant be 21 years old, and the prohibition on possession by convicted felons.",
+      "On the other hand, we have held unenforceable waivers that \"transcend the individual concerns of the defendant\" and \"embrace the reality of fairness in the process itself\" ( Seaberg , 74 NY2d at 9; see also People v Muniz , 91 NY2d 570, 574 [1998] [waivers implicating \"a public policy consideration that transcends the individual concerns of a particular defendant to obtain appellate review\" cannot be enforced]). One example we gave in Seaberg was a constitutional speedy trial claim (74 NY2d at 9). That claim cannot be waived on appeal because it implicates \"a societal interest in providing a speedy trial which exists separate from, and at times in opposition to, the interests of the accused\" ( People v Blakley , 34 NY2d 311, 314 [1974] [internal citation omitted]) [FN2] . Another example was a challenge to the illegality of a sentence ( Seaberg , 74 NY2d at 9, citing People v Francabandera , 33 NY2d 429, 434 n 2 [1974]), which implicates a court's authority to sentence a defendant. Since Seaberg , we have also held that matters going to \"the jurisdiction of the court\" may not be waived ( Thomas , 34 NY3d at 566).",
+      "Here, the defendant has undoubtedly suffered a cognizable injury. Given his prosecution and conviction for unlicensed gun possession, he has an \"actual legal stake in the matter being adjudicated\" and has suffered a harm that is \"sufficiently concrete and particularized to warrant judicial intervention\" ( Stevens , 40 NY3d at 515 [internal quotation marks omitted]). The defendant's injury is also within the \"zone of interests sought to be promoted or protected by the statutory provision\" ( id. [internal quotation marks omitted]). Although the text of Penal Law § 265.03 (3) does not reference unlicensed possession of a firearm, a defendant may avoid prosecution under that provision by producing a valid firearm license ( see Penal Law § 265.20 [a] [3]; David , 41 NY3d at 96). Thus, as this Court has recognized, \"New York's criminal weapon possession laws prohibit only unlicensed possession of handguns\" ( People v Hughes , 22 NY3d 44 , 50 [2013]). And here, the only basis for the defendant's conviction was that he possessed a gun without a license.",
+      "Guidance from the U.S. Supreme Court instructing that a defendant need not comply with what he alleges is an unconstitutional licensing scheme to challenge a criminal conviction reinforces our conclusion. For example, in Staub v City of Baxley (355 US 313 [1958]), a defendant was prosecuted for soliciting union membership without obtaining a permit. The Court held that \"the failure to apply for a license under an ordinance which on its face violates the Constitution does not preclude review of a judgment of conviction under such an ordinance\" ( id. at 319). Similarly, in Shuttlesworth v City of Birmingham (394 US 147 [1969]), the defendant was prosecuted for participating in a civil rights march because he failed to comply with a city ordinance requiring a permit for all public demonstrations. Again, the Court held that a person criminally prosecuted for violating a licensing law need not apply for a license in order to \"attack its constitutionality\" ( id. at 151).",
+      "The People and the Attorney General further argue that United States v Decastro (682 F3d 160 [2d Cir 2012]) requires a different result. Decastro rested on federal concepts of standing, which do not bind us, as noted. In any event, Decastro presented different circumstances. The defendant there was prosecuted for violating a federal law that prohibits transporting a firearm purchased in one state to another, and he argued that New York's gun licensing scheme effectively compelled him to leave the state to purchase a gun and then carry it back across state lines. The Second Circuit held that he lacked standing to challenge the constitutionality of the state's gun licensing scheme because he failed to apply for a license ( id. at 164).",
+      "Bruen presented a challenge to one discrete aspect of New York's firearm licensing scheme: the \"proper cause\" requirement. The Court's analysis and holding was confined to that provision and did not address any other aspect of New York's licensing scheme ( see Bruen , 597 US at 16, 31, 39, 60, 67, 70-71). To the contrary, Bruen instructed that states are not prohibited from imposing licensing requirements on persons who wish to carry a gun for self-defense. The Court observed that Second Amendment rights are subject to \"well-defined restrictions\" and expressed approval for the gun licensing regimes of 43 states with \"shall-issue\" licensing regimes, \"which often require applicants to undergo a background check or pass a firearms safety course\" ( Bruen , 597 US at 38 & n 9). Several concurrences made similar points ( see id. at 79-81 [Kavanaugh, J., concurring] [noting that \"the Second Amendment allows a variety of gun regulations\" including \"prohibitions on the possession of firearms by felons and the mentally ill, or laws forbidding the carrying of firearms in sensitive places\" (internal quotation marks omitted)]; id. at 72 [Alito, J., concurring] [stressing that the Court's holding \"decides nothing about who may lawfully possess a firearm or the requirements that must be met to buy a gun\"]).",
+      "We find the \"proper cause\" requirement severable. The text and structure of the licensing scheme evince a clear legislative intent to regulate the lawful purchase, possession, and use of firearms. The licensing scheme is detailed and multi-faceted; the \"proper cause\" provision was just one aspect of a much broader scheme that includes a variety of distinct requirements. For example, a separate provision sets forth various eligibility criteria to obtain a license, including that the applicant be over 21 years of age, of good [*3] moral character, not a convicted felon, and not an unlawful user of a controlled substance ( see Penal Law § 400.00 [1]). Another provision sets forth the types of licenses that an applicant may obtain ( see Penal Law § 400.00 [2]). Other provisions set forth the procedures for applying and reviewing gun license applications ( see Penal Law § 400.00 [2]-[5]). We find it implausible that the Legislature would have intended for all of these other provisions to be invalidated simply because the \"proper cause\" requirement was deemed unenforceable.",
+      "This Court has long recognized that plea bargaining is \"a vital part of our criminal justice system,\" without which \"New York's law enforcement system would collapse\" ( People v Seaberg , 74 NY2d 1, 7 [1989]; accord People v Thomas , 34 NY3d 545 , 557 [2019]; see generally People v Selikoff , 35 NY2d 227, 232-235 [1974], cert denied 419 US 1122 [1975]). \"Aside from conserving judicial resources and providing finality in criminal proceedings, the plea bargaining process affords the accused the opportunity to obtain a conviction on reduced charges and more lenient punishment in a truncated process that hopefully starts the offender on the road to possible rehabilitation\" ( Thomas , 34 NY3d at 557 [internal quotation marks, brackets, and citation omitted]; Seaberg , 74 NY2d at 7; Selikoff , 35 NY2d at 232-235; see also Santobello v New York , 404 US 257, 261 [1971]). Although the process \"necessarily includes the surrender of many guaranteed rights . . . when there is no constitutional or statutory mandate and no public policy prohibiting it, an accused may waive any right which he or she enjoys\" ( Seaberg , 74 NY2d at 7).",
+      "In view of these public policy considerations, this Court has stated that only a \"narrow class of appellate claims\" may be raised in the face of an appeal waiver ( see People v Muniz , 91 NY2d 570, 574 [1998]). Although we have described this class in varying ways, the only claims we have historically recognized as excepted from the Seaberg rule are those implicating (1) the voluntariness of the plea, (2) the defendant's competency to stand trial, (3) the constitutional right to a speedy trial, (4) the court's jurisdiction over the case, or (5) the legality of the sentence imposed ( see People v Lopez , 6 NY3d 248 , 255 [2006]; People v Campbell , 97 NY2d 532, 535 [2002]; Seaberg , 74 NY2d at 9). As we explained in Seaberg itself, \"[t]hese rights are recognized as a matter of fairness to the accused but they also embrace the reality of fairness in the process itself and, therefore, a defendant may not waive them\" ( Seaberg , 74 NY2d at 9 [emphasis added]).",
+      "More specifically, voluntariness challenges cannot be waived because they call into question whether a defendant actually understood and agreed to the plea and appeal waiver following a negotiation process [*5] free from coercion or deception ( see Thomas , 34 NY3d at 559). Competency challenges are essentially a subset of voluntariness challenges: they cannot be waived because of the \"inherent contradiction in arguing that a defendant may be incompetent, and yet knowingly or intelligently waive his right[s]\" ( see People v Armlin , 37 NY2d 167, 172 [1975]). Similarly, constitutional speedy trial claims are unwaivable because of the \"inherently coercive\" impact that severe trial delays can have on pleas and appeal waivers ( People v Blakley , 34 NY2d 311, 313 [1974]). As we explained in Seaberg , such delays \"may result in the loss of evidence or an accused's inability to respond to criminal charges, thereby compelling innocent persons to plead guilty out of necessity\" (74 NY2d at 9; see also Blakley , 34 NY2d at 314-315). Finally, challenges to the court's jurisdiction or the legality of a sentence cannot be waived because they implicate judicial authority to accept and enforce the terms of even a voluntary plea deal and appeal waiver ( see People v McLaughlin , 80 NY2d 466, 471 [1992]; Campbell , 97 NY2d at 535).",
+      "Seaberg was very specific and narrow in describing the type of public policy considerations that are important enough to meet that standard. As the majority acknowledges, this Court agreed with the defendant in Seaberg that constitutional speedy trial claims are illustrative of \"matters in which the interests of society transcend the individual concerns of the defendant\" (74 NY2d at 9). The majority nonetheless relegates to a dismissive footnote our substantive reasoning that \"[s]ociety has a recognized interest in speedy trials because trial delay may result in the loss of evidence or an accused's inability to respond to criminal charges, thereby compelling innocent persons to plead guilty out of necessity. Because of this societal interest, a defendant may not waive such claims\" (74 NY2d at 9 [emphasis added]). As discussed above, our concern was specifically that \"the nature of the speedy trial guarantee renders [an appeal waiver] condition inherently coercive in a plea bargaining situation\" ( Blakley , 34 NY2d at 313). The majority also ignores our statement in Seaberg that even where a claim may be said to \"implicate society's interest in the integrity of the criminal process,\" enforcement of an appeal waiver is warranted if \"that interest is protected by the procedural and substantive requirements imposed on the Trial Judge before the defendant may be sentenced\" ( Seaberg , 74 NY2d at 9).",
+      "Decided on November 24, 2025"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Benjamin Rutkin-Becker, for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Benjamin Rutkin-Becker, for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Emily A. Aldridge, for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Emily A. Aldridge, for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 64,
+    "footnotesCount": 7
+  },
+  "citations": {
+    "slipOpinion": "2025 NY Slip Op 06528",
+    "officialCitation": "216 AD3d 1457",
+    "pageMarkerCount": 6
+  },
+  "opinionStructure": {
+    "totalWritings": 4,
+    "byKind": {
+      "unknown": 2,
+      "opinion_of_the_court": 1,
+      "concurrence": 1
+    },
+    "authors": [
+      "Halligan",
+      "Cannataro"
+    ],
+    "qualifierLines": [
+      "In furtherance of these interests, we have enforced waivers of various constitutional rights—a point highlighted by the concurrence (concurring op at 6). Those include the right to appeal Fourth Amendment suppression rulings (see People v Kemp, 94 NY2d 831, 833 [1999]), Fifth Amendment suppression rulings (, 34 NY3d 545, 553-554 [2019]), and double jeopardy claims (see People v Allen, 86 NY2d 599, 603 [1995]). But each of these types of claims presents a challenge to the legality of a specific proceeding concerning a particular defendant, akin to an as-applied constitutional challenge, rather than a broad claim that a statute was facially invalid.",
+      "The concurrence opines that our holding today will increase the burden on courts and litigants (concurring op at 13-14). But as with any claim, a facial constitutional challenge must be preserved in the trial court (see Cabrera, 41 NY3d at 42-43). Additionally, our precedent leaves no doubt that such a challenge faces an \"extraordinary burden . . . of proving . . . that the challenged provision suffers wholesale constitutional impairment\" to prevail (, 40 NY3d 55, 61 [2023] [internal quotation marks and citation omitted]), and we assume that, consistent with their obligations to the court, attorneys will only bring such claims if they have a nonfrivolous basis for meeting this rigorous standard. Nor is it clear that enforcing appeal waivers would always lighten the workload; a brief review of recent Appellate Division cases reveals numerous instances in which the court upheld an appeal waiver but proceeded anyway to resolve a constitutional claim on the merits (, 226 AD3d 520, 521 [1st Dept 2024]; , 227 AD3d 480, 482 [1st Dept 2024]; , 237 AD3d 643, 644 [1st Dept 2025]). And permitting appellate review of fully preserved facial constitutional challenges should promote judicial economy by ensuring prompt resolution of viable challenges to criminal prosecutions under a particular statute.",
+      "Bruen presented a challenge to one discrete aspect of New York's firearm licensing scheme: the \"proper cause\" requirement. The Court's analysis and holding was confined to that provision and did not address any other aspect of New York's licensing scheme (see Bruen, 597 US at 16, 31, 39, 60, 67, 70-71). To the contrary, Bruen instructed that states are not prohibited from imposing licensing requirements on persons who wish to carry a gun for self-defense. The Court observed that Second Amendment rights are subject to \"well-defined restrictions\" and expressed approval for the gun licensing regimes of 43 states with \"shall-issue\" licensing regimes, \"which often require applicants to undergo a background check or pass a firearms safety course\" (Bruen, 597 US at 38 & n 9). Several concurrences made similar points (see id. at 79-81 [Kavanaugh, J., concurring] [noting that \"the Second Amendment allows a variety of gun regulations\" including \"prohibitions on the possession of firearms by felons and the mentally ill, or laws forbidding the carrying of firearms in sensitive places\" (internal quotation marks omitted)]; id. at 72 [Alito, J., concurring] [stressing that the Court's holding \"decides nothing about who may lawfully possess a firearm or the requirements that must be met to buy a gun\"])."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 1,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 7,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "1",
+      "2",
+      "3"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <form> in source HTML."
+    },
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <input> in source HTML."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 4 writings."
+    }
+  ]
+}

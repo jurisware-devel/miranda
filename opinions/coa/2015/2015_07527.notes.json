@@ -1,0 +1,126 @@
+{
+  "caseId": "2015_07527",
+  "sourcePath": "coa/2015/2015_07527.htm",
+  "notesPath": "coa/2015/2015_07527.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.816Z",
+  "source": {
+    "title": "People v Poleun (2015 NY Slip Op 07527)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 6067,
+    "lineCount": 80,
+    "tagCounts": {
+      "a": 4,
+      "b": 4,
+      "body": 2,
+      "br": 6,
+      "div": 6,
+      "font": 10,
+      "frac": 2,
+      "head": 2,
+      "html": 2,
+      "i": 18,
+      "opinion": 1,
+      "p": 26,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [
+      "frac"
+    ],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Poleun",
+      "2015 NY Slip Op 07527 [26 NY3d 973]",
+      "October 15, 2015",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, November 18, 2015"
+    ],
+    "captionLines": [],
+    "citationLine": "2015 NY Slip Op 07527 26 NY3d 973",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued September 9, 2015; decided October 15, 2015",
+      "October 15, 2015",
+      "As corrected through Wednesday, November 18, 2015"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "David J. Farrugia , Public Defender , Lockport ( Joseph G. Frazier of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "David J. Farrugia , Public Defender , Lockport ( Joseph G. Frazier of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Michael J. Violante , District Attorney , Lockport ( Laura T. Bittner of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Michael J. Violante , District Attorney , Lockport ( Laura T. Bittner of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 9,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2015 NY Slip Op 07527",
+    "officialCitation": "26 NY3d 973",
+    "pageMarkerCount": 4
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**26 NY3d at 974} OPINION OF THE COURT",
+      "Memorandum."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <frac> in source HTML."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

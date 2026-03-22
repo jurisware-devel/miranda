@@ -1,0 +1,122 @@
+{
+  "caseId": "2015_09315",
+  "sourcePath": "coa/2015/2015_09315.htm",
+  "notesPath": "coa/2015/2015_09315.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.849Z",
+  "source": {
+    "title": "People v Pavone (2015 NY Slip Op 09315)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 47410,
+    "lineCount": 143,
+    "tagCounts": {
+      "a": 22,
+      "b": 6,
+      "blockquote": 4,
+      "body": 2,
+      "br": 14,
+      "div": 16,
+      "font": 66,
+      "head": 2,
+      "html": 2,
+      "i": 184,
+      "p": 120,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 12
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Pavone",
+      "2015 NY Slip Op 09315 [26 NY3d 629]",
+      "December 17, 2015",
+      "Rivera, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, March 30, 2016"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Anthony V. Pavone, Appellant."
+    ],
+    "citationLine": "2015 NY Slip Op 09315 26 NY3d 629",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued November 18, 2015; decided December 17, 2015",
+      "December 17, 2015",
+      "As corrected through Wednesday, March 30, 2016"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 68,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2015 NY Slip Op 09315",
+    "officialCitation": "26 NY3d 629",
+    "pageMarkerCount": 32
+  },
+  "opinionStructure": {
+    "totalWritings": 5,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "concurrence": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Rivera",
+      "Stein",
+      "Pigott"
+    ],
+    "qualifierLines": [
+      "{**26 NY3d at 631} OPINION OF THE COURT",
+      "The jury deliberated for approximately three hours before returning guilty verdicts on all charges. The court thereafter sentenced defendant to concurrent terms of life imprisonment{**26 NY3d at 638} without parole on each murder count and 10 years' imprisonment, followed by five years' postrelease supervision, on the weapons possession count.",
+      "The Appellate Division affirmed, with one Justice dissenting (117 AD3d 1329 [3d Dept 2014]). The Court concluded that the admission of testimony regarding defendant's post-Miranda silence was harmless error because there was overwhelming evidence of guilt beyond a reasonable doubt and defendant failed to establish his EED defense. The dissent would have reversed because the evidence against the EED defense was not so overwhelming to support a conclusion that there was no reasonable possibility that use of defendant's silence affected the jury's rejection of the defense (id. at 1337 [Garry, J., dissenting]). A Judge of this Court granted defendant leave to appeal (24 NY3d 963 [2014]).",
+      "This Court has also recognized that Miranda warnings contain an implied promise that a defendant's silence will not be used against the defendant (Doyle v Ohio, 426 US 610, 619 [1976]). In this Court's first Conyers decision, the Court held that protection of a defendant's right to remain silent was, in part, derived from the state constitutional privilege against self-incrimination, and the People could not use defendant's post-arrest silence against the defendant, even absent Miranda warnings (People v Conyers, 49 NY2d 174, 179 [1980] [Conyers I], citing NY Const, art I, § 6, vacated 449 US 809 [1980]; see People v Savage, 50 NY2d 673, 682 [1980, Cooke, Ch. J., concurring] [highlighting that Conyers I \"was founded on the State's implied promise not to use against a defendant the constitutionally guaranteed right to remain silent\" (emphasis added)]). The Court explained that the right to remain silent was a \"fundamental right\" under our State Constitution, long protected and recognized under New York law (Conyers I, 49 NY2d at 180).",
+      "Unlike our dissenting colleague (dissenting op at 648), we are unable to say that under these facts the violation of defendant's constitutional right to remain silent requires a new trial. There was overwhelming proof that defendant did not suffer under an extreme emotional disturbance and no reasonable possibility that the inclusion of testimony about defendant's silence contributed to his conviction (see People v Maher, 89 NY2d 456, 462-463 [1997] [defendant's \"emotional disturbance (as) a thwarted lover\" did not indicate he suffered from EED when his actions could have been construed as a \"plan,\" which included a pattern of escalating threats, and did not appear \"reasonable\"]). Therefore the constitutional violation of defendant's right to remain silent was harmless error.",
+      " I agree with the plurality's conclusion that defendant received the effective assistance of counsel at trial. However, with respect to the issue of whether defendant's right to remain silent was violated, I respectfully concur in result only. In my view, defendant failed to preserve any of his challenges to the People's use of his silence (, 25 NY3d 185, 190 [2015]). Therefore, we cannot consider whether there was error and, if so, whether the error was harmless.  ",
+      " I dissent for reasons stated in the dissenting opinion of Justice Garry at the Appellate Division."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 1,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 5 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

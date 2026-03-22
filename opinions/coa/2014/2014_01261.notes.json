@@ -1,0 +1,121 @@
+{
+  "caseId": "2014_01261",
+  "sourcePath": "coa/2014/2014_01261.htm",
+  "notesPath": "coa/2014/2014_01261.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.724Z",
+  "source": {
+    "title": "People v Santiago (2014 NY Slip Op 01261)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 37724,
+    "lineCount": 158,
+    "tagCounts": {
+      "a": 40,
+      "b": 14,
+      "blockquote": 6,
+      "body": 2,
+      "br": 14,
+      "div": 18,
+      "font": 54,
+      "head": 2,
+      "html": 2,
+      "i": 138,
+      "p": 57,
+      "script": 4,
+      "style": 2,
+      "sup": 4,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Santiago",
+      "2014 NY Slip Op 01261 [22 NY3d 740]",
+      "February 25, 2014",
+      "Pigott, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, May 28, 2014"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Cheryl Santiago, Appellant."
+    ],
+    "citationLine": "2014 NY Slip Op 01261 22 NY3d 740",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued January 15, 2014; decided February 25, 2014",
+      "February 25, 2014",
+      "As corrected through Wednesday, May 28, 2014"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 63,
+    "footnotesCount": 2
+  },
+  "citations": {
+    "slipOpinion": "2014 NY Slip Op 01261",
+    "officialCitation": "22 NY3d 740",
+    "pageMarkerCount": 26
+  },
+  "opinionStructure": {
+    "totalWritings": 4,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "dissent": 1
+    },
+    "authors": [
+      "Pigott",
+      "Rivera"
+    ],
+    "qualifierLines": [
+      "{**22 NY3d at 743} OPINION OF THE COURT",
+      " Defense counsel's failure to object to the prosecutor's use during summation of a PowerPoint presentation that manipulated the evidence, and was designed to inflame the passion of the jury in order to engender prejudice against the defendant, constitutes an error of the type that so tainted the jury's deliberative process as to deny defendant a fair trial. Given the egregious nature of defense counsel's error, I disagree with the majority's conclusion that defendant received meaningful representation. Therefore, I dissent.{**22 NY3d at 752} ",
+      "Furthermore, while any defense counsel may be concerned about interrupting the prosecutor's summation and as a consequence \"look[ing] bad to the jury, or draw[ing] rebuke from the judge\" (Fisher, 18 NY3d at 970 [Smith, J., dissenting]), the fact is that attorneys do object—defense counsel and prosecutors alike (see e.g. id. at 969 [noting that the prosecutor objected three times during the defendant's summation]), and generally they must do so to preserve arguments regarding summation (compare Ashwal, 39 NY2d at 108-109 with LaValle, 3 NY3d at 116; see also majority op at 751). Here, there was no discernible strategic advantage in staying quiet when defense counsel was faced with the powerful imagery presented by the prosecutor. ",
+      "The majority concedes that the PowerPoint failed to \"aid[ ] the jury in its fact-finding function,\" but, nevertheless, concludes that the objection to the PowerPoint was \"not so 'clear-cut' or 'dispositive' \" (majority op at 751). I cannot agree that if, as the majority states, the summation fell below our standard for acceptable summation commentary, defense counsel's objection would have been an exercise in futility. It is simply not a fair trial if the prosecution puts before the jury in summation a \"horrid and gruesome\" portrayal of the body of the child, where the PowerPoint \"could only have served, under the circumstances of this case, to have aroused the passions and the resentment of the jury against defendant and to have kept{**22 NY3d at 756} it from fairly and objectively considering the issues before it\" (People v Wood, 79 NY2d 958, 961 [1992, Titone, J., dissenting]). "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 2,
+    "labels": [
+      "*",
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 4 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

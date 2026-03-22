@@ -1,0 +1,118 @@
+{
+  "caseId": "2024_02084",
+  "sourcePath": "coa/2024/2024_02084.htm",
+  "notesPath": "coa/2024/2024_02084.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.258Z",
+  "source": {
+    "title": "People v Dufresne (2024 NY Slip Op 02084)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 3672,
+    "lineCount": 71,
+    "tagCounts": {
+      "a": 6,
+      "b": 4,
+      "body": 2,
+      "br": 6,
+      "div": 6,
+      "font": 6,
+      "head": 2,
+      "html": 2,
+      "i": 20,
+      "opinion": 1,
+      "p": 10,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Dufresne",
+      "2024 NY Slip Op 02084 [42 NY3d 973]",
+      "April 18, 2024",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, November 20, 2024"
+    ],
+    "captionLines": [],
+    "citationLine": "2024 NY Slip Op 02084 42 NY3d 973",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Decided April 18, 2024",
+      "April 18, 2024",
+      "As corrected through Wednesday, November 20, 2024"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Jenay Nurse Guilford , Center for Appellate Litigation , New York ( Shaina R. Watrous of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Jenay Nurse Guilford , Center for Appellate Litigation , New York ( Shaina R. Watrous of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Alvin L. Bragg, Jr. , District Attorney , New York ( Amanda Katherine Regan , Steven C. Wu and John T. Hughes of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Alvin L. Bragg, Jr. , District Attorney , New York ( Amanda Katherine Regan , Steven C. Wu and John T. Hughes of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 3,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2024 NY Slip Op 02084",
+    "officialCitation": "42 NY3d 973",
+    "pageMarkerCount": 2
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**42 NY3d at 973} OPINION OF THE COURT",
+      "Concur: Chief Judge Wilson and Judges Rivera, Garcia, Singas, Cannataro, Troutman and Halligan."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

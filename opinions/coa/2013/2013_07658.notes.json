@@ -1,0 +1,141 @@
+{
+  "caseId": "2013_07658",
+  "sourcePath": "coa/2013/2013_07658.htm",
+  "notesPath": "coa/2013/2013_07658.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.698Z",
+  "source": {
+    "title": "People v Hernandez (2013 NY Slip Op 07658)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 17557,
+    "lineCount": 88,
+    "tagCounts": {
+      "a": 16,
+      "b": 10,
+      "blockquote": 2,
+      "body": 2,
+      "br": 12,
+      "div": 4,
+      "font": 26,
+      "head": 2,
+      "html": 2,
+      "i": 144,
+      "p": 26,
+      "script": 4,
+      "style": 2,
+      "sup": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Hernandez",
+      "2013 NY Slip Op 07658 [22 NY3d 972]",
+      "November 19, 2013",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, January 29, 2014"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Felix Hernandez, Appellant."
+    ],
+    "citationLine": "2013 NY Slip Op 07658 22 NY3d 972",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued September 11, 2013; decided November 19, 2013",
+      "November 19, 2013",
+      "As corrected through Wednesday, January 29, 2014"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Steven Banks, The Legal Aid Society , New York City ( Bonnie C. Brennan of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Steven Banks, The Legal Aid Society , New York City ( Bonnie C. Brennan of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Cyrus R. Vance, Jr., District Attorney , New York City ( Hope Korenstein and Patrick J. Hynes of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Cyrus R. Vance, Jr., District Attorney , New York City ( Hope Korenstein and Patrick J. Hynes of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 20,
+    "footnotesCount": 1
+  },
+  "citations": {
+    "slipOpinion": "2013 NY Slip Op 07658",
+    "officialCitation": "22 NY3d 972",
+    "pageMarkerCount": 12
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Pigott"
+    ],
+    "qualifierLines": [
+      "{**22 NY3d at 973} OPINION OF THE COURT",
+      "Memorandum. ",
+      "Defendant appealed, and a divided panel of the Appellate Division affirmed defendant's judgment of conviction and sentence and the order denying defendant's motion to vacate his plea (see 98 AD3d 449, 449-458 [1st Dept 2012]). In two separate concurring opinions, three Justices determined that the hearing court's factual and credibility findings were supported by the record, and that \"defendant did not establish that he was prejudiced by his counsel's inadequate advice on the deportation consequences of his guilty plea\" because \"defendant did not demonstrate a 'reasonable probability that, but for counsel's errors, he would not have pleaded guilty and would have insisted on going to trial' \" (id. at 450 [Sweeny, J., concurring], quoting Hill v Lockhart, 474 US 52, 59 [1985]; see also id. at 450-451 [Manzanet-Daniels, J., concurring]). ",
+      "Two Justices dissented and voted to reverse because, in their view, defendant had established the requisite prejudice. In particular, the dissenters opined, defendant's testimony showed that he had pleaded guilty in order to \"minimize his separation from his six children\" (id. at 457 [Freedman, J., dissenting]). The dissenters further asserted that the hearing court's findings of fact and credibility determinations were unsupported by the record (id.). A Justice of the Appellate Division granted defendant leave to appeal to this Court, and we affirm. ",
+      "Additionally, the Court observed, \"Whether Padilla is entitled to relief on his claim will depend on whether he can satisfy Strickland's second prong, prejudice, a matter we leave to the Kentucky courts to consider in the first instance\" (id. at 369). The Court reiterated that Strickland's prejudice prong hinged on \"whether 'there is a reasonable probability that, but for counsel's unprofessional errors, the result of the proceeding would have been different' \" (id. at 366, quoting Strickland, 466 US at 694). In describing the prejudice prong, the Court repeatedly cited Hill v Lockhart and Roe v Flores-Ortega (see Padilla, 559 US at 369-373), both of which described the \"reasonable probability\" standard of prejudice in the plea context (see Hill, 474 US at 59; see Flores-Ortega, 528 US at 485). The Court further stated that the dissenting Justices' fear of a flood{**22 NY3d at 976} of new litigation resulting from the Court's decision was unfounded because \"to obtain relief on this type of claim, a petitioner must convince the court that a decision to reject the plea bargain would have been rational under the circumstances\" (Padilla, 559 US at 372). ",
+      "If a defendant who is not a United States citizen \"has significant ties to his or her country of origin, or has only resided in the United States for a relatively brief period of time, or has no family here, a decision to proceed to trial in lieu of a favorable plea agreement may be irrational in the face of overwhelming evidence of guilt and a potentially lengthy prison sentence\" (, 97 AD3d 170, 183-184 [2d Dept 2012]). Hernandez, by contrast, has lived in the United States since 1994, has been a legal permanent resident here since 1997, and was the primary caretaker of his six children, all of whom live in the United States, as does his sister. Moreover, the evidence of his guilt was far from overwhelming. As Justice Freedman noted in her dissent at the Appellate Division, ",
+      "\"Celeste Hernandez, the complainant, was the People's main witness, and the outcome of the case would largely have depended on the jury's evaluation{**22 NY3d at 978} of the complainant's and defendant's credibility. Virginia Hernandez, defendant's wife, was listed on the People's witness list, but she did not observe the incident leading to the charges. Defendant's eight-year-old daughter, who was sleeping on the couch next to Celeste during the incident, was also listed as a witness, but the substance of her testimony was uncertain, as was the weight that a jury would accord to it. There was no corroborating physical evidence\" (98 AD3d 449, 457 [1st Dept 2012, Freedman, J., dissenting]).",
+      "In my view, and for all the reasons set out in the well-reasoned Appellate Division dissent (see id. at 451-458), there is no record support for the lower courts' rejection of defendant's claim that he would have gone to trial and not pleaded guilty had he been warned of the deportation consequences of his plea. ",
+      "I would vacate Hernandez's guilty plea. Accordingly, I dissent. "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 1,
+    "labels": [
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

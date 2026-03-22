@@ -1,0 +1,118 @@
+{
+  "caseId": "2021_01936",
+  "sourcePath": "coa/2021/2021_01936.htm",
+  "notesPath": "coa/2021/2021_01936.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.139Z",
+  "source": {
+    "title": "People v Perez (2021 NY Slip Op 01936)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 4139,
+    "lineCount": 73,
+    "tagCounts": {
+      "a": 6,
+      "b": 4,
+      "body": 2,
+      "br": 6,
+      "div": 6,
+      "font": 8,
+      "head": 2,
+      "html": 2,
+      "i": 14,
+      "opinion": 1,
+      "p": 14,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Perez",
+      "2021 NY Slip Op 01936 [36 NY3d 1093]",
+      "March 30, 2021",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, May 26, 2021"
+    ],
+    "captionLines": [],
+    "citationLine": "2021 NY Slip Op 01936 36 NY3d 1093",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Decided March 30, 2021",
+      "March 30, 2021",
+      "As corrected through Wednesday, May 26, 2021"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Hug Law PLLC , Albany ( Matthew C. Hug of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Hug Law PLLC , Albany ( Matthew C. Hug of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "P. David Soares, District Attorney , Albany ( Emily Schultz of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "P. David Soares, District Attorney , Albany ( Emily Schultz of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 2,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2021 NY Slip Op 01936",
+    "officialCitation": "36 NY3d 1093",
+    "pageMarkerCount": 3
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**36 NY3d at 1093} OPINION OF THE COURT",
+      "Memorandum."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

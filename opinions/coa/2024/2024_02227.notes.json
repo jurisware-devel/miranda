@@ -1,0 +1,127 @@
+{
+  "caseId": "2024_02227",
+  "sourcePath": "coa/2024/2024_02227.htm",
+  "notesPath": "coa/2024/2024_02227.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.268Z",
+  "source": {
+    "title": "People v Franklin (2024 NY Slip Op 02227)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 57591,
+    "lineCount": 197,
+    "tagCounts": {
+      "a": 100,
+      "b": 74,
+      "blockquote": 2,
+      "body": 2,
+      "br": 46,
+      "div": 34,
+      "font": 70,
+      "head": 2,
+      "html": 2,
+      "i": 436,
+      "p": 120,
+      "script": 4,
+      "stmcs": 2,
+      "style": 2,
+      "summary": 1,
+      "sup": 34,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 26
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Franklin",
+      "2024 NY Slip Op 02227 [42 NY3d 157]",
+      "April 25, 2024",
+      "Halligan, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, October 9, 2024"
+    ],
+    "captionLines": [],
+    "citationLine": "2024 NY Slip Op 02227 42 NY3d 157",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued March 14, 2024; decided April 25, 2024",
+      "Appeal, by permission of an Associate Judge of the Court of Appeals, from an order of the Appellate Division of the Supreme Court in the Second Judicial Department, entered July 6, 2022. The Appellate Division (1) reversed, on the law, a judgment of the Supreme Court, Queens County (Ira H. Margulis, J.), which had convicted defendant, upon a jury verdict, of criminal possession of a weapon in the second degree; and (2) ordered a new trial.",
+      "April 25, 2024",
+      "As corrected through Wednesday, October 9, 2024"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 123,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 70,
+    "footnotesCount": 16
+  },
+  "citations": {
+    "slipOpinion": "2024 NY Slip Op 02227",
+    "officialCitation": "42 NY3d 157",
+    "pageMarkerCount": 34
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [
+      "Halligan"
+    ],
+    "qualifierLines": [
+      "{**42 NY3d at 159} OPINION OF THE COURT",
+      "We find it significant that a CJA interview report is routinely prepared for all arrestees in New York City. The information collected is the same in every case, regardless of the particular facts or the elements of the relevant crime: the interviewer collects a predetermined set of pedigree information from the defendant{**42 NY3d at 166} and makes a recommendation to the court as to the defendant's suitability for pretrial release. As for the verification step (see dissenting op at 173), the record indicates that the defendant provides the verification source and contact information, and there is no indication that the CJA employees conduct any independent inquiries.",
+      "The dissent opines, without any record support, that CJA interviewers are \"standing in the shoes of a law enforcement officer\" (dissenting op at 176). To the extent this characterization sweeps in practices \"everywhere else in the state\" (id. at 171), our decision rests on the facts before us in this case, not suppositions about other approaches to providing pretrial services. As explained, while CJA employees work within the court system, they are not \"principally charged with uncovering and prosecuting criminal behavior\" (Clark, 576 US at 249), and for this reason are not law enforcement officers as contemplated by the Supreme Court's Confrontation Clause jurisprudence.",
+      "Aarons, J. (dissenting).",
+      "And for that effort, the majority concludes that a jailhouse interview report generated at the start of a criminal prosecution and submitted to the court to utilize in a core judicial decision concerning a defendant's liberty is not a \"testimonial\" statement. Because the Sixth Amendment right of confrontation applies to the CJA report at issue here, I respectfully dissent."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 16,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "*",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

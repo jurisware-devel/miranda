@@ -1,0 +1,123 @@
+{
+  "caseId": "2020_06941",
+  "sourcePath": "coa/2020/2020_06941.htm",
+  "notesPath": "coa/2020/2020_06941.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.124Z",
+  "source": {
+    "title": "People v Edwards (2020 NY Slip Op 06941)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 20983,
+    "lineCount": 96,
+    "tagCounts": {
+      "a": 26,
+      "b": 4,
+      "blockquote": 4,
+      "body": 2,
+      "br": 10,
+      "div": 6,
+      "font": 26,
+      "head": 2,
+      "html": 2,
+      "i": 118,
+      "opinion": 1,
+      "p": 51,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Edwards",
+      "2020 NY Slip Op 06941 [36 NY3d 946]",
+      "November 24, 2020",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, January 27, 2021"
+    ],
+    "captionLines": [],
+    "citationLine": "2020 NY Slip Op 06941 36 NY3d 946",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Decided November 24, 2020",
+      "November 24, 2020",
+      "As corrected through Wednesday, January 27, 2021"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Law Offices of Danielle Neroni , Albany ( Angela Kelley of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Law Offices of Danielle Neroni , Albany ( Angela Kelley of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Robert M. Carney, District Attorney , Schenectady ( Peter H. Willis of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Robert M. Carney, District Attorney , Schenectady ( Peter H. Willis of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 24,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2020 NY Slip Op 06941",
+    "officialCitation": "36 NY3d 946",
+    "pageMarkerCount": 12
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**36 NY3d at 946} OPINION OF THE COURT",
+      "Memorandum.",
+      "Wilson J. (dissenting).",
+      "Mr. Edwards was arrested and arraigned on an 11-count indictment. For the injuries to the two passengers, Mr. Edwards was charged with two counts of assault in the first degree (a class B felony), aggravated vehicular assault (a class C felony), assault in the second degree (a class D felony), vehicular assault in the second degree (a class E felony), as well as reckless driving, driving while intoxicated (both misdemeanors), and speeding (a traffic infraction). Supreme Court dismissed 2 of the 11 counts (first-degree assault) for lack of legally sufficient evidence demonstrating that Mr. Edwards possessed the requisite mens rea: depraved indifference to human life. The People appealed the dismissal, and the Appellate Division, in a split decision, ordered the reinstatement of the dismissed charges (, 182 AD3d 929 [3d Dept 2020]). Justice Lynch, dissenting, agreed with Supreme Court and concluded that the undisputed evidence of Mr. Edwards' deceleration prior to the crash demonstrated his \"conscious avoidance of risk\" which Justice Lynch noted is \"the antithesis of a complete disregard for the safety of others\" (id. at 931-932 [Lynch, J., dissenting], quoting , 24 NY3d 48, 54 [2014]).",
+      "Moreover, depraved indifference is not just a common-law heritage; it must be read in the context of the legislature's treatment of assaults in general, and vehicular assaults in particular. The Penal Law sets out a graduated system of punishment that assigns different levels of criminal culpability to different crimes. In  (14 NY3d 927 [2010]), another intoxicated vehicular assault case, we gave proper deference to the legislature's chosen scheme by holding that the evidence there was sufficient to sustain the charges for vehicular assault (Penal Law § 120.03 [1]), and assault in the second degree (Penal Law § 120.05 [4]), but not for depraved indifference. Even though the intoxicated defendant drove at high speed at night for miles in the wrong direction, and notwithstanding attempts by oncoming drivers to \"warn him of the danger he was creating\" (id. at 928 [Graffeo, J., concurring]), we held that there was \"insufficient evidence to . . . establish that [Mr. Valencia] acted with the culpable mental state of depraved indifference\" (id. at 927-928).",
+      "The crime in Valencia occurred before the legislature's latest enactment of yet another vehicle-related crime: aggravated vehicular assault (Penal Law § 120.04-a). Created in 2007, partially in response to our Court's evolving depraved indifference jurisprudence (see Valencia, 14 NY3d at 930 [Graffeo, J., concurring] [describing the legislative history of the enactment]), aggravated vehicular assault is a class C felony, punishable by up to 15 years in prison. It requires the People to show, among other conditions, that the defendant caused serious injury to a person while driving recklessly, with intoxication as a condition that satisfies the statute, elevating what otherwise would be a class D felony (punishable by up to seven years in prison) to a class C felony."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "caseId": "2026_01627",
+  "sourcePath": "coa/2026/2026_01627.htm",
+  "notesPath": "coa/2026/2026_01627.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.407Z",
+  "source": {
+    "title": "People v Henderson (2026 NY Slip Op 01627)",
+    "publicationStatus": "slip_op_only"
+  },
+  "fileInfo": {
+    "byteSize": 42578,
+    "lineCount": 125,
+    "tagCounts": {
+      "a": 48,
+      "b": 12,
+      "blockquote": 4,
+      "body": 2,
+      "br": 23,
+      "dateline": 2,
+      "div": 24,
+      "font": 26,
+      "form": 2,
+      "head": 2,
+      "html": 2,
+      "i": 260,
+      "input": 1,
+      "opinion": 1,
+      "p": 98,
+      "sc": 4,
+      "script": 2,
+      "style": 2,
+      "sup": 4,
+      "table": 2,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [
+      "form",
+      "input"
+    ],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Henderson",
+      "2026 NY Slip Op 01627",
+      "Decided on March 19, 2026",
+      "Court of Appeals",
+      "Troutman, J.",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "This opinion is uncorrected and subject to revision before publication in the Official Reports."
+    ],
+    "captionLines": [
+      "The People & c., Respondent,",
+      "v",
+      "Lashawn Miller Henderson, Appellant."
+    ],
+    "citationLine": "2026 NY Slip Op 01627",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Generally, evidence of a defendant's prior possession of drugs is inadmissible at trial to show their intent to sell drugs or knowing possession of drugs on another occasion ( see e.g. People v Valentin , 29 NY3d 150 , 156 [2017]; People v Blair , 90 NY2d 1003, 1005 [1997]; People v Alvino , 71 NY2d 233, 246 [1987]; People v Crandall , 67 NY2d 111, 119 [1986]). This follows from our longstanding Molineux rule, which provides that \"evidence of a defendant's uncharged crimes or prior misconduct is not admissible if it cannot logically be connected to some specific material issue in the case, and tends only to demonstrate the defendant's propensity to commit the crime charged\" ( People v Cass , 18 NY3d 553 , 559 [2012]; see People v Molineux (168 NY 264 [1901]). When evidence of prior uncharged crimes or misconduct is logically connected to some specific material issue in the case&mdash;such as intent, motive, knowledge, common scheme or plan, or identity of the defendant&mdash;the evidence falls under an exception to the Molineux rule, and a court may admit the evidence if its probative value outweighs its potential for prejudice to the defendant ( see id . at 559-560).",
+      "Early one morning in October 2019, a SWAT team executed a search warrant at a home in Rochester, using controlled explosives to force open the door. Inside, defendant and his girlfriend were in bed in the south bedroom. Defendant's father was in the west bedroom with defendant's 11-year-old sister, and his grandmother was in the living room. While searching the premises, the police found cocaine, scales, and packaging materials like plates, razors, and baggies. They arrested and charged every adult in the home. A grand jury subsequently indicted defendant and his father on three counts of criminal possession of a controlled substance in the third degree, based on \"intent to sell\" (Penal Law § 220.16 [1]); one count of criminal possession of a controlled substance in the third degree, based on weight (§ 220.16 [12]); and four counts of criminally using drug paraphernalia in the second degree (§ 220.50 [2], [3]).",
+      "The People called their Molineux witness, an officer with the Rochester Police Department's Tactical Unit who arrested defendant in March 2017. For the first time, the People explained that they sought to introduce Molineux evidence only for the purposes of proving \"knowing possession and intent.\" The court's limiting instructions directed the jury to consider the Molineux evidence for only those purposes.",
+      "The officer testified that during a snowstorm, in March 2017, he and his partner investigated a \"suspicious\" parked BMW occupied by defendant and two other men. He also testified about an Audi&mdash;\"parked approximately 50 feet behind the [BMW]\"&mdash;which the officer knew was registered to defendant. The officer testified that he looked through the windows of the Audi and saw a \"white, rocky substance in little baggies in the driver's door, in plain view.\" After a search warrant was obtained, the car was found to contain cocaine, marijuana, defendant's ID cards, and mail addressed to defendant. The People then introduced a certificate of conviction showing that defendant had pleaded guilty to one count of attempted criminal possession of a controlled substance in the third degree, in satisfaction of the charges resulting from the 2017 incident, and was sentenced to one year of incarceration. The court then repeated its limiting instructions to the jury.",
+      "Defendant did not call any witnesses, but the parties stipulated that defendant's father was convicted of criminal possession of the cocaine found in the sneakers in both the west and south bedrooms, with the intent to sell. That stipulation was read to the jury. During summation, the People referenced the Molineux evidence regarding defendant's previous drug conviction and argued that defendant and his father were running a drug business together.",
+      "At the Appellate Division, defense counsel argued that the trial court erred in admitting the Molineux evidence. The Court rejected the argument, stating that \"the testimony regarding defendant's prior conviction is relevant and admissible with respect to the issue of defendant's intent to sell drugs inasmuch as it is probative of defendant's knowing possession of . . . and . . . intent to sell the cocaine located throughout the apartment\" (234 AD3d 1254, 1257-1258 [4th Dept 2025] [citations and internal quotation marks omitted]). The Court further held that the trial court \"did not abuse its discretion in concluding that the probative value of the evidence outweighed its prejudicial effect\" and that the court's limiting instructions \"mitigated any prejudice to defendant\" ( id . at 1258 [internal quotation marks omitted]).",
+      "Despite the venerable roots of this rule, courts sometimes struggle when considering its well-established exceptions, whereby evidence of uncharged crimes or prior misconduct may be admissible to prove \"some element of the crime under consideration\" ( Telfair , 41 NY3d at 114 [internal quotation marks omitted]). For example, evidence of uncharged crimes or prior misconduct may \"be relevant[] to show: (1) intent, (2) motive, (3) knowledge, (4) common scheme or plan, or (5) identity of the defendant\" ( People v Leonard , 29 NY3d 1 , 7 [2017]). But courts must not allow these exceptions to swallow the rule. To prevent that from happening, courts must engage in a careful analysis and avoid the temptation to apply these exceptions too broadly.",
+      "As the People concede, evidence of prior acts offered to prove intent may fail at step one of the Molineux analysis when intent is easily inferable ( see Leonard , 29 NY3d at 8). Here, the element of intent was not disputed by defendant, an unsurprising fact given our observation in Alvino that \"[i]n most cases involving criminal sale of drugs, intent is readily inferable from the sale itself and evidence of prior uncharged crimes is neither necessary nor permissible to establish it\" (71 NY2d 233, 246 [1987]). Similar to when a defendant is caught in a drug transaction, here \"[t]he intent [to sell the cocaine] is so apparent . . . under the facts and circumstances of this case[] that the introduction of evidence of other and dissimilar offenses cannot be justified as an attempt to prove intent\" ( People v Harvey , 235 NY 282, 296 [1923]).",
+      "The trial court's erroneous admission of Molineux evidence was not harmless. A Molineux error may be found harmless only if both \"the proof of the defendant's guilt, without reference to the error, is overwhelming\" and \"there is no significant probability . . . that the jury would have acquitted the defendant had it not been for the error\" ( People v Arafet , 13 NY3d 460 , 467 [2009] [internal quotation marks omitted], quoting People v Crimmins , 36 NY2d 230, 241-242 [1975]). [*7] That is not the case here.",
+      "As an initial matter, I disagree that the Molineux evidence was admitted in error. As the Appellate Division recognized, Supreme Court properly identified a non-propensity purpose for which the evidence was relevant ( see 234 AD3d at 1257-1258). Both knowing possession and intent to sell&mdash;on the part of defendant&mdash;were contested at trial ( cf. People v Valentin , 29 NY3d 150 , 156 [2017]). Defendant's entire theory was that, as an overnight guest, he did not possess or control the drugs in his father's apartment, and consequently only the person who possessed the drugs could have the requisite intent to sell them. Indeed, during summation defense counsel argued that defendant had no physical or constructive possession of the drugs, no knowledge of the presence of the drugs in any of the rooms in the home, and that there was no evidence \"that he was intending to sell\" drugs. As the Appellate Division held, testimony of defendant's prior conviction was admissible \"inasmuch as it is probative of defendant's knowing possession of and intent to sell the cocaine located throughout the apartment\" (234 AD3d at 1257-1258). It was then within the trial court's discretion to determine whether the evidence's probative value exceeded the potential for [*9] prejudice, and that decision \"may not be disturbed simply because a contrary determination could have been made or would have been reasonable\" ( People v Morris , 21 NY3d 588 , 597 [2013]). I agree with the Appellate Division's conclusion that \"the court did not abuse its discretion in concluding that the probative value of the evidence outweighed its prejudicial effect\" (234 AD3d at 1258).",
+      "The People presented ample evidence at trial establishing that defendant exercised dominion and control over the south bedroom. Defendant dressed himself using clothes taken from the pile on the floor of the bedroom, strongly suggesting that the clothes belonged to him. Defendant kept keys to the apartment and the front door of the building on the windowsill next to the bed. The sneakers containing vials of drugs hung over the bed&mdash;an unusual way to store sneakers that would at least suggest that the person sleeping there possessed them and wanted them within reach of the bed for some purpose. Scales commonly used to weigh drugs were found in a shoebox along with an assortment of defendant's personal belongings, including letters to both \"Lashawn Miller-Henderson\" and \"Lashawn Miller\" (the latter potentially defendant's father, or potentially defendant himself without the latter half of his last name), each addressed to the same location, [FN*] During summation, the People argued that the existence of these letters and the state of the apartment showed that both men lived together at a previous address, and had just moved together to this apartment. But whether this letter was intended for his father at their mutual address, or for defendant by a sender who had not bothered to spell his full last name, either notion points towards guilt and not away from it. as well as a photo of defendant with someone other than his father. The razor and plate with cocaine residue and the unused plastic bags were found in the bedroom as well. It is also undisputed that defendant's father lived in a separate bedroom in the apartment (the west bedroom), and aside from the presence of a letter addressed to \"Lashawn Miller,\" there was no proof that anything else in that bedroom belonged to the father.",
+      "Finally, there is no dispute that the trial court issued several detailed and sufficient limiting instructions. The trial court instructed the jury that the Molineux evidence was not being offered \"for the purpose of proving that the defendant had a propensity or predisposition to commit the crimes charged\" and was only offered regarding \"the question of knowing possession and intent.\" The jury heard this instruction three times: before and after the jury first received the Molineux evidence, and during the court's final jury instructions. The court's instructions were \"well-timed, thorough, and in no way compounded the potential prejudice to defendant\" ( People v Morris , 21 NY3d 588 , 598 [2013]). Defendant's argument that the limiting instructions should not be used as a cure-all for Molineux errors misses the point. This Court has always acknowledged the potential for limiting instructions to offset potential prejudice ( see People v Frumusa , 29 NY3d 364 , 373 [2017] [\"(A) limiting instruction generally may be used to minimize any potential undue prejudice from the admission of evidence\"]; People v Israel , 26 NY3d 236 , 244 [2015]; People v Small , 12 NY3d 732 , 733 [2009]). At the very least, these instructions mitigated the risk that the jury would improperly consider the Molineux evidence for propensity purposes ( see Morris, 21 NY3d at 598 [\"Jurors are presumed to have followed a trial judge's limiting instructions\"]), and thus counsel in favor of a harmlessness finding here.",
+      "Decided on March 19, 2026"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Clea Weiss, for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Clea Weiss, for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Ryan P. Ashe, for respondent. TROUTMAN , J.:",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": true,
+        "argumentTailPreview": "TROUTMAN , J.:",
+        "sentenceText": "Ryan P. Ashe, for respondent.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Ryan P. Ashe, for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Ryan P. Ashe, for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 57,
+    "footnotesCount": 1
+  },
+  "citations": {
+    "slipOpinion": "2026 NY Slip Op 01627",
+    "officialCitation": "29 NY3d 150",
+    "pageMarkerCount": 10
+  },
+  "opinionStructure": {
+    "totalWritings": 4,
+    "byKind": {
+      "unknown": 2,
+      "opinion_of_the_court": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Troutman",
+      "Cannataro"
+    ],
+    "qualifierLines": [
+      "Two Justices dissented, concluding that the trial court erred in admitting the Molineux evidence (see id. at 1258-1262). They further opined that the error was not harmless (see id. at 1261-1262). One of the dissenting Justices granted leave to appeal.",
+      "The main issue at trial was whether defendant had constructive or knowing possession of the contraband distributed throughout three rooms in the apartment. We agree with the dissenting Justices below that defendant's possession of cocaine in his car in 2017 was not relevant to that issue. The two incidents involved different locations, different circumstances, different theories of possession, and took place around two years apart.",
+      "If the dissent had their way, however, \"evidence of a defendant's uncharged crimes\" would be admissible anytime a defendant denies engaging in a similar crime on another occasion, even if the uncharged crime cannot \"logically be connected to some specific material issue in the case, and tends only to demonstrate the defendant's propensity to commit the crime charged\" (, 44 NY3d 455, 459 [2025] [internal quotation marks omitted]; , 42 NY3d 439, 455 [2024]; see dissenting op at 4). That would be counter to the foundational policy undergirding the Molineux rule:",
+      "The dissent's accusation, that we are somehow following \"a concerning trend by this Court of 'circumventing' Molineux's two-step analysis,\" could not be further from the truth (dissenting op at 4), given that we explicitly reaffirm that long-established analysis in this very opinion (see supra at 7). The only \"trend\" that we are following is over a century of precedent, as is our obligation under the doctrine of stare decisis.",
+      "Similarly, where, as here, defendant's theory of the case is that he was never in possession of the drugs found in his father's apartment in 2019—and that they were his father's drugs—the fact that defendant was caught with drugs in 2017 \"merely tended to show [defendant's] propensity to sell drugs\" (Blair, 90 NY2d at 1005). The 2017 incident was otherwise not \"linked to a specific material issue or fact relating to the crime charged\" in 2019 (id.). Defendant never asserted that the drugs found in the apartment were for personal use or were otherwise not being sold. His strategy at trial was to establish that all the contraband in the house belonged to his father, not him. Despite what the dissent contends (see dissenting op at 4), defendant's references to his father pleading guilty to possessing cocaine found in the south bedroom, with the intent to sell, did not make it somehow permissible for the jury to consider defendant's unrelated conviction of drug possession in 2017. Given that defendant never questioned what we phrased in Molineux as the \"conclusive inference of criminal intent which proof of the act itself affords\"—here the intent to sell cocaine—the court erred in admitting the Molineux evidence (Molineux, 168 NY at 299).",
+      "Although the dissent repeatedly references residue allegedly found on paraphernalia concealed in shoeboxes located in the south bedroom (see dissenting op at 2, 6), no one was charged with possessing cocaine found in those shoeboxes. Without the court's admission of improper propensity evidence, the jury would be left with little more than defendant and his girlfriend being awakened on an air mattress during a SWAT team raid after spending the night at the apartment of defendant's father in a bedroom where no contraband was visible. Furthermore, the inferences the dissent draws from this limited circumstantial evidence are highly debatable and hardly convincing (see id. at 6). As a result, the proof of defendant's guilt, without reference to the Molineux error, was not overwhelming and so \"the error cannot be classified as harmless\" (, 33 NY3d 454, 461 [2019]).",
+      "Contrary to the majority, I would hold that the trial court properly admitted the Molineux evidence to prove defendant's knowing possession and intent to sell drugs. But even if it was error to admit the Molineux evidence, I would nevertheless hold that any error was harmless given the overwhelming proof of defendant's guilt and the remote possibility that the evidence in question affected this jury's well-considered split verdict. Therefore, I respectfully dissent.",
+      "The majority's conclusion that the People failed to identify a non-propensity issue to which the evidence is relevant (majority op at 13) represents the most recent example in a concerning trend by this Court of \"circumventing\" Molineux's two-step analysis (, 41 NY3d 107, 130 [2023] [Cannataro, J., dissenting]); , 42 NY3d 439 [2024]). With the latest iteration of this new approach, it is now questionable whether \"this case-specific, discretionary exercise\" continues to \"remain[] within the sound province of the trial court\" (Morris, 21 NY3d at 596-597), or if the recent restrictions placed on the use of Molineux evidence ensure that appellate courts review—and reject—admission of this evidence solely as a matter of law."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 1,
+    "labels": [
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <form> in source HTML."
+    },
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <input> in source HTML."
+    },
+    {
+      "code": "APPEARANCE_LINE_WITH_ARGUMENT_TAIL",
+      "severity": "info",
+      "detail": "Appearance-like line continues into argument text after \"for respondent.\"."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 4 writings."
+    }
+  ]
+}

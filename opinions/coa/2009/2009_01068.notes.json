@@ -1,0 +1,113 @@
+{
+  "caseId": "2009_01068",
+  "sourcePath": "coa/2009/2009_01068.htm",
+  "notesPath": "coa/2009/2009_01068.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.418Z",
+  "source": {
+    "title": "People v Ryan (2009 NY Slip Op 01068)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 9788,
+    "lineCount": 84,
+    "tagCounts": {
+      "a": 8,
+      "b": 10,
+      "body": 2,
+      "br": 8,
+      "div": 4,
+      "font": 16,
+      "head": 2,
+      "html": 2,
+      "i": 40,
+      "p": 16,
+      "script": 4,
+      "style": 2,
+      "sup": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Ryan",
+      "2009 NY Slip Op 01068 [12 NY3d 28]",
+      "February 12, 2009",
+      "Ciparick, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, April 1, 2009"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Rickey J. Ryan, Appellant."
+    ],
+    "citationLine": "2009 NY Slip Op 01068 12 NY3d 28",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued January 15, 2009; decided February 12, 2009",
+      "February 12, 2009",
+      "As corrected through Wednesday, April 1, 2009"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 10,
+    "footnotesCount": 1
+  },
+  "citations": {
+    "slipOpinion": "2009 NY Slip Op 01068",
+    "officialCitation": "12 NY3d 28",
+    "pageMarkerCount": 7
+  },
+  "opinionStructure": {
+    "totalWritings": 2,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1
+    },
+    "authors": [
+      "Ciparick"
+    ],
+    "qualifierLines": [
+      "{**12 NY3d at 29} OPINION OF THE COURT"
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 1,
+    "labels": [
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 2 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

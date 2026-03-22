@@ -1,0 +1,134 @@
+{
+  "caseId": "2018_03173",
+  "sourcePath": "coa/2018/2018_03173.htm",
+  "notesPath": "coa/2018/2018_03173.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.999Z",
+  "source": {
+    "title": "People v Odum (2018 NY Slip Op 03173)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 54905,
+    "lineCount": 158,
+    "tagCounts": {
+      "a": 66,
+      "b": 46,
+      "blockquote": 8,
+      "body": 2,
+      "br": 26,
+      "div": 12,
+      "font": 64,
+      "head": 2,
+      "html": 2,
+      "i": 328,
+      "p": 72,
+      "script": 4,
+      "style": 2,
+      "sup": 20,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 6
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Odum",
+      "2018 NY Slip Op 03173 [31 NY3d 344]",
+      "May 3, 2018",
+      "Stein, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, August 8, 2018"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Appellant,",
+      "v",
+      "Donald Odum, Respondent."
+    ],
+    "citationLine": "2018 NY Slip Op 03173 31 NY3d 344",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued March 27, 2018; decided May 3, 2018",
+      "May 3, 2018",
+      "As corrected through Wednesday, August 8, 2018"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 40,
+    "footnotesCount": 10
+  },
+  "citations": {
+    "slipOpinion": "2018 NY Slip Op 03173",
+    "officialCitation": "31 NY3d 344",
+    "pageMarkerCount": 31
+  },
+  "opinionStructure": {
+    "totalWritings": 5,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "concurrence": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Stein",
+      "Wilson",
+      "Difiore"
+    ],
+    "qualifierLines": [
+      " {**31 NY3d at 346} OPINION OF THE COURT",
+      "The statute was not amended to permit evidence of a refusal at trial until 1973, in response to a concurring opinion by Judge Jasen in Paddock (see Sponsor's Mem, Bill Jacket, L 1973, ch 351). In his concurrence, Judge Jasen urged the legislature to amend the statute to permit evidence of refusals because \"there is no constitutional right to refuse to submit to such a test, [and] it necessarily follows that there can be no constitutional prohibitions to prevent comment upon the accused's failure to take the test\" (Paddock, 29 NY2d at 505 [Jasen, J., concurring];{**31 NY3d at 353} see Sponsor's Mem at 2, Bill Jacket, L 1973, ch 351 [noting that \"the prohibition on commenting on the refusal to take the test is strictly statutory\"]). Given the previously well-established rule that evidence of a refusal was inadmissible, the 1973 amendment was in derogation of common law. Therefore, it should be strictly construed (see Rust v Reyer, 91 NY2d 355, 360 [1998]; see also McKinney's Cons Laws of NY, Book 1, Statutes § 304), further supporting an interpretation of the statute that would apply the two-hour limitation in Vehicle and Traffic Law § 1194 (2) (a) to the evidentiary provision in Vehicle and Traffic Law § 1194 (2) (f).",
+      "Finally, although we agree with the Appellate Term's conclusion that the warning pertaining to the admissibility of defendant's refusal was legally inaccurate and, therefore, inappropriate, we note again, as Judge Jasen did in his concurrence in Paddock, that the rights asserted by defendant here—insofar as they relate to breath tests—are statutory, not constitutional (see Smith, 18 NY3d at 548; Kates, 53 NY2d at 594-595; Thomas, 46 NY2d at 109; Paddock, 29 NY2d at 505 [Jasen, J., concurring]). The legislature is free to amend the statute to clarify the scope of the statutory rights, particularly in light of the express clarification in Birchfield that warrantless breath tests are constitutionally permissible (579 US at &mdash, 136 S Ct at 2184). However, it is not for this Court, by judicial fiat, to strike the express protections that the legislature has provided to motorists in Vehicle and Traffic Law § 1194 (2) on the ground that those protections merely \"set up arbitrary obstacles to . . . necessary evidence collection\" (DiFiore, Ch. J., dissenting op at 357).",
+      "In sum, because the warnings given to defendant were at least partially inaccurate—i.e., as to the admissibility at trial of his refusal to submit to testing—the courts below properly suppressed the results of the breathalyzer test on the ground that defendant's consent to take the test was involuntary. The People's remaining argument regarding the accuracy of the warning of license suspension—the crux of the dissent—is both irrelevant to our analysis and academic. Further, the People's argument concerning the admissibility of defendant's initial refusal to take the breathalyzer lacks merit inasmuch as defendant did not \"persist[ ] in the refusal\" (Vehicle and Traffic Law § 1194 [2] [f]).",
+      " I join the majority, but write separately because law enforcement officials must have clear rules as to what they may tell a motorist suspected of impaired driving. I agree with my dissenting colleagues that the license suspension warning that police gave Mr. Odum—that the Department of Motor Vehicles would suspend or revoke his license if he refused the test—was correct (see 2012 NY St Dept of Motor Vehicles Op No. 1-12 at 2). Providing that warning to motorists, even after expiration of the two-hour period, does not constitute coercion, and does not render their subsequent consent involuntarily given.",
+      " In this case we are once again called to interpret an enigmatic statute as to its precise parameters in obtaining evidence for criminal prosecutions of intoxicated motorists. Specifically, we are asked to pick up where this Court left off in People v Atkins (85 NY2d 1007 [1995]), and answer whether the two-hour rule in Vehicle and Traffic Law § 1194 (2) (a), which governs the deemed consent scenario, nonetheless applies to the administration of refusal warnings to a motorist who thereafter expressly consents to a breath test more than two hours from arrest. Because the only interpretation consistent with the purpose of the statute, our precedent, and the record before us is that the statutory two-hour rule has no such applicability to the refusal warnings provided to the motorist who consents to a breath test, I respectfully dissent.",
+      "For those reasons, I dissent."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 1,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 10,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 5 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

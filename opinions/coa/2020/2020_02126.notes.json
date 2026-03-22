@@ -1,0 +1,120 @@
+{
+  "caseId": "2020_02126",
+  "sourcePath": "coa/2020/2020_02126.htm",
+  "notesPath": "coa/2020/2020_02126.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.098Z",
+  "source": {
+    "title": "People v Delorbe (2020 NY Slip Op 02126)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 35723,
+    "lineCount": 126,
+    "tagCounts": {
+      "a": 60,
+      "b": 22,
+      "blockquote": 8,
+      "body": 2,
+      "br": 16,
+      "div": 16,
+      "font": 40,
+      "head": 2,
+      "html": 2,
+      "i": 238,
+      "p": 62,
+      "script": 4,
+      "style": 2,
+      "sup": 8,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 10
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Delorbe",
+      "2020 NY Slip Op 02126 [35 NY3d 112]",
+      "March 31, 2020",
+      "Garcia, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, July 22, 2020"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Jose Delorbe, Appellant."
+    ],
+    "citationLine": "2020 NY Slip Op 02126 35 NY3d 112",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued February 13, 2020; decided March 31, 2020",
+      "March 31, 2020",
+      "As corrected through Wednesday, July 22, 2020"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 36,
+    "footnotesCount": 4
+  },
+  "citations": {
+    "slipOpinion": "2020 NY Slip Op 02126",
+    "officialCitation": "35 NY3d 112",
+    "pageMarkerCount": 19
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "concurrence": 1
+    },
+    "authors": [
+      "Garcia",
+      "Wilson"
+    ],
+    "qualifierLines": [
+      "{**35 NY3d at 115} OPINION OF THE COURT"
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 1,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 4,
+    "labels": [
+      "1",
+      "2",
+      "1",
+      "2"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

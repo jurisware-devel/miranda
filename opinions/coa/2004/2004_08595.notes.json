@@ -1,0 +1,124 @@
+{
+  "caseId": "2004_08595",
+  "sourcePath": "coa/2004/2004_08595.htm",
+  "notesPath": "coa/2004/2004_08595.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.254Z",
+  "source": {
+    "title": "People v Resek (2004 NY Slip Op 08595)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 25786,
+    "lineCount": 126,
+    "tagCounts": {
+      "a": 26,
+      "b": 32,
+      "blockquote": 2,
+      "body": 2,
+      "br": 22,
+      "div": 6,
+      "font": 38,
+      "head": 2,
+      "html": 2,
+      "i": 120,
+      "p": 33,
+      "script": 4,
+      "style": 2,
+      "sup": 12,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Resek",
+      "2004 NY Slip Op 08595 [3 NY3d 385]",
+      "November 23, 2004",
+      "Rosenblatt, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, January 19, 2005."
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Rene Resek, Appellant."
+    ],
+    "citationLine": "2004 NY Slip Op 08595 3 NY3d 385",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued October 21, 2004; decided November 23, 2004",
+      "November 23, 2004",
+      "As corrected through Wednesday, January 19, 2005."
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 27,
+    "footnotesCount": 6
+  },
+  "citations": {
+    "slipOpinion": "2004 NY Slip Op 08595",
+    "officialCitation": "3 NY3d 385",
+    "pageMarkerCount": 18
+  },
+  "opinionStructure": {
+    "totalWritings": 4,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "dissent": 1
+    },
+    "authors": [
+      "Rosenblatt",
+      "Graffeo"
+    ],
+    "qualifierLines": [
+      "{**3 NY3d at 387} OPINION OF THE COURT",
+      "Our dissenting colleagues contend that the trial court acted within its discretion in allowing the stolen car testimony \"to complete the narrative.\" (Dissenting op at 391.) While in a Molineux context we have used this phrase in several cases (People{**3 NY3d at 390} v Molineux, 168 NY 264 [1901]), these decisions should not be interpreted as automatically allowing the prosecution to introduce evidence of uncharged crimes merely because the evidence is said to complete the narrative or furnish background information. On the contrary, under our Molineux jurisprudence, we begin with the premise that uncharged crimes are inadmissible and, from there, carve out exceptions (see People v Rojas, 97 NY2d 32 [2001]; see also Prince, Richardson on Evidence §§ 4-501—4-516, at 175-194 [Farrell 11th ed 1995]). ",
+      "Our result is congruent with cases in which we have held that uncharged crimes, although used to complete the narrative, were too prejudicial to be admitted (see, e.g., People v Cook, 42 NY2d 204 [1977]; People v Stanard, 32 NY2d 143 [1973]). We are unable to accept the dissent's view that the trial court properly chose to \"inform jurors about the underlying facts and circumstances\" with detailed instructions on the limited purpose of the evidence (dissenting op at 391). Had the narrative in fact been completed, and the trial court told the jury all of the facts and circumstances, the jury would have learned that the grand jury cleared defendant of the stolen car charge. ",
+      " Our recent decisions in People v Tosca (98 NY2d 660 [2002]) and People v Till (87 NY2d 835 [1995]) illustrate that, in some circumstances, a trial court has the discretion to admit evidence of uncharged crimes closely related to the charges levied to provide the jury with necessary background information or to complete the narrative of relevant events if the probative value of such evidence exceeds its potential for prejudice. Discretion, by its very nature, provides a court with the flexibility to choose among viable alternative courses of action after considering relevant facts and circumstances with due regard for fundamental fairness to the accused. The trial court in this case faced a dilemma—suppress evidence that defendant possessed a stolen vehicle, which would possibly encourage speculation among the jury regarding the reason the police initially approached defendant, or inform jurors about the underlying facts and circumstances with detailed instructions on the limited purpose being served by the evidence. The court in this case, as we approved in Tosca and Till, chose the latter option. Under our precedent, that decision was not an abuse of discretion. I therefore dissent and would affirm the order of the Appellate Division. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 6,
+    "labels": [
+      "1",
+      "2",
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 4 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

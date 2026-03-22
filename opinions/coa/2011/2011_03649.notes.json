@@ -1,0 +1,117 @@
+{
+  "caseId": "2011_03649",
+  "sourcePath": "coa/2011/2011_03649.htm",
+  "notesPath": "coa/2011/2011_03649.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.539Z",
+  "source": {
+    "title": "People v Alonso (2011 NY Slip Op 03649)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 17642,
+    "lineCount": 101,
+    "tagCounts": {
+      "a": 20,
+      "b": 14,
+      "body": 2,
+      "br": 14,
+      "div": 4,
+      "font": 26,
+      "head": 2,
+      "html": 2,
+      "i": 68,
+      "p": 28,
+      "script": 4,
+      "style": 2,
+      "sup": 4,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Alonso",
+      "2011 NY Slip Op 03649 [16 NY3d 581]",
+      "May 3, 2011",
+      "Lippman, Ch. J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, June 22, 2011"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Appellant,",
+      "v",
+      "Robert Alonso and Emilia Alonso, Respondents."
+    ],
+    "citationLine": "2011 NY Slip Op 03649 16 NY3d 581",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued March 22, 2011; decided May 3, 2011",
+      "May 3, 2011",
+      "As corrected through Wednesday, June 22, 2011"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 21,
+    "footnotesCount": 2
+  },
+  "citations": {
+    "slipOpinion": "2011 NY Slip Op 03649",
+    "officialCitation": "16 NY3d 581",
+    "pageMarkerCount": 12
+  },
+  "opinionStructure": {
+    "totalWritings": 4,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "dissent": 1
+    },
+    "authors": [
+      "Lippman",
+      "Jones"
+    ],
+    "qualifierLines": [
+      "{**16 NY3d at 583} OPINION OF THE COURT",
+      "Accordingly, I dissent and would vote to affirm the Appellate Division order. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 2,
+    "labels": [
+      "1",
+      "2"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 4 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

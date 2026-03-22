@@ -1,0 +1,110 @@
+{
+  "caseId": "2015_07784",
+  "sourcePath": "coa/2015/2015_07784.htm",
+  "notesPath": "coa/2015/2015_07784.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.828Z",
+  "source": {
+    "title": "People v Walker (2015 NY Slip Op 07784)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 19708,
+    "lineCount": 101,
+    "tagCounts": {
+      "a": 20,
+      "b": 14,
+      "blockquote": 10,
+      "body": 2,
+      "br": 12,
+      "div": 10,
+      "font": 32,
+      "head": 2,
+      "html": 2,
+      "i": 66,
+      "p": 36,
+      "script": 4,
+      "style": 2,
+      "sup": 4,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 4
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Walker",
+      "2015 NY Slip Op 07784 [26 NY3d 170]",
+      "October 27, 2015",
+      "Stein, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, December 30, 2015"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Christopher E. Walker, Appellant."
+    ],
+    "citationLine": "2015 NY Slip Op 07784 26 NY3d 170",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued September 17, 2015; decided October 27, 2015",
+      "October 27, 2015",
+      "As corrected through Wednesday, December 30, 2015"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 21,
+    "footnotesCount": 2
+  },
+  "citations": {
+    "slipOpinion": "2015 NY Slip Op 07784",
+    "officialCitation": "26 NY3d 170",
+    "pageMarkerCount": 15
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [
+      "Stein"
+    ],
+    "qualifierLines": [
+      "{**26 NY3d at 171} OPINION OF THE COURT"
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 2,
+    "labels": [
+      "1",
+      "2"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

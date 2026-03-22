@@ -1,0 +1,108 @@
+{
+  "caseId": "2024_05819",
+  "sourcePath": "coa/2024/2024_05819.htm",
+  "notesPath": "coa/2024/2024_05819.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.295Z",
+  "source": {
+    "title": "People v Robles (2024 NY Slip Op 05819)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 10310,
+    "lineCount": 84,
+    "tagCounts": {
+      "a": 12,
+      "b": 10,
+      "body": 2,
+      "br": 10,
+      "div": 6,
+      "font": 14,
+      "head": 2,
+      "html": 2,
+      "i": 36,
+      "p": 22,
+      "script": 4,
+      "style": 2,
+      "sup": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Robles",
+      "2024 NY Slip Op 05819 [42 NY3d 694]",
+      "November 21, 2024",
+      "Garcia, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, March 5, 2025"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Eddie Robles, Appellant."
+    ],
+    "citationLine": "2024 NY Slip Op 05819 42 NY3d 694",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued October 16, 2024; decided November 21, 2024",
+      "November 21, 2024",
+      "As corrected through Wednesday, March 5, 2025"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 9,
+    "footnotesCount": 1
+  },
+  "citations": {
+    "slipOpinion": "2024 NY Slip Op 05819",
+    "officialCitation": "42 NY3d 694",
+    "pageMarkerCount": 6
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [
+      "Garcia"
+    ],
+    "qualifierLines": [
+      "{**42 NY3d at 695} OPINION OF THE COURT",
+      "The Appellate Division, with one Justice dissenting, agreed with defendant that his statement should have been suppressed, but held that the error was harmless (211 AD3d 1516 [4th Dept 2022]). The Court concluded that \"[b]ecause [the gun] would have been admissible at trial . . . there is no reasonable possibility that the [trial] court's error in failing to suppress defendant's statement admitting possession of the firearm contributed to his decision to plead guilty\" (id. at 1518). The dissenting Justice, who would have held the record insufficient to support a determination that defendant \"would have pleaded guilty without regard to the error\" (id. at 1520 [Lindley, J., dissenting]), granted leave to appeal, and we now reverse."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 1,
+    "labels": [
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "caseId": "2023_03187",
+  "sourcePath": "coa/2023/2023_03187.htm",
+  "notesPath": "coa/2023/2023_03187.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.211Z",
+  "source": {
+    "title": "People v Bradford (2023 NY Slip Op 03187)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 30332,
+    "lineCount": 127,
+    "tagCounts": {
+      "a": 86,
+      "b": 54,
+      "blockquote": 2,
+      "body": 2,
+      "br": 32,
+      "div": 16,
+      "font": 32,
+      "head": 2,
+      "html": 2,
+      "i": 158,
+      "opinion": 1,
+      "p": 47,
+      "script": 4,
+      "style": 2,
+      "sup": 22,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14,
+      "u": 8
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Bradford",
+      "2023 NY Slip Op 03187 [40 NY3d 938]",
+      "June 13, 2023",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, October 4, 2023"
+    ],
+    "captionLines": [],
+    "citationLine": "2023 NY Slip Op 03187 40 NY3d 938",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Decided June 13, 2023",
+      "June 13, 2023",
+      "As corrected through Wednesday, October 4, 2023"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Thomas P. Theophilos , Buffalo, for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Thomas P. Theophilos , Buffalo, for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Brooks T. Baker , District Attorney , Bath ( John C. Tunney of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Brooks T. Baker , District Attorney , Bath ( John C. Tunney of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 24,
+    "footnotesCount": 11
+  },
+  "citations": {
+    "slipOpinion": "2023 NY Slip Op 03187",
+    "officialCitation": "40 NY3d 938",
+    "pageMarkerCount": 15
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Rivera"
+    ],
+    "qualifierLines": [
+      "{**40 NY3d at 939} OPINION OF THE COURT",
+      "Memorandum.",
+      "The Appellate Division order should be reversed and the matter remitted to County Court for further proceedings in accordance with this memorandum.",
+      "County Court denied defendant's CPL 440.10 motion without a hearing, concluding that the use of a stun belt is not a constitutional issue and is therefore waivable, and that trial counsel was not ineffective for failing to object to the use of the belt. The Appellate Division affirmed over a two-Justice dissent (, 204 AD3d 1483 [4th Dept 2022]). Citing  (24 NY3d 1196 [2015]), the majority held that \"improper use of a stun belt is not a mode of proceedings error\" and therefore \"the failure to object to [its] use means that reversal would not have been required on a direct appeal\" (204 AD3d at 1484 [internal quotation marks and emphasis omitted]). The majority also rejected defendant's ineffective assistance of counsel claim, holding that defendant did not establish that the belt was visible to the jury and therefore did not \"make a sufficient showing of egregiousness or that his right to a fair trial was compromised\" (id. at 1485). The dissenters would have reversed and remitted for a hearing on the ineffective assistance claim on the ground that the trial \"court erred in summarily denying defendant's CPL 440.10 motion\" (id. at 1487). One of the dissenting Justices granted leave to appeal.",
+      "Contrary to the view of the majority, Cooke does not control this case or foreclose defendant's argument that a mode of proceedings error occurred. That decision did not reference the precise issue presented by defendant; it simply cited  (108 AD3d 1221 [4th Dept 2013]) in a string cite for the proposition that a \"trial court's failure to make a finding of necessity for [a] stun belt's use does not constitute an unwaivable mode of proceedings error\" (Cooke, 24 NY3d at 1197). However, the asserted mode of proceedings error in this appeal is not simply the court's failure to make the relevant finding but \"the Sheriff's unilateral decision to require defendant to wear a stun belt during trial without the knowledge of the court\" (Schrock at 1226 [Fahey, J., dissenting]).",
+      "Here, by contrast, the trial court was never aware that defendant was wearing a stun belt and defendant never consented to its use. The decision to require defendant to wear the belt—a decision that belongs solely to the court—was made by the Sheriff's Department pursuant to its standing policy, and not in response to a specific security concern regarding defendant. Schrock is factually similar, except that the defendant there \"advised [counsel] that he was wearing the stun belt\" but \"did not complain about it,\" suggesting that he may have consented to its use (108 AD3d at 1222). Then-Justice Fahey dissented, arguing that \"the usurpation of the court's power to determine {**40 NY3d at 945}whether to require defendant to wear a stun belt is no different from the delegation of court powers found to have constituted mode of proceedings errors\" (id. at 1227 [Fahey, J., dissenting]). As he explained, \"[t]he error . . . lies not in the fact that defendant had to wear a stun belt, but in the fact that the Sheriff usurped the power of the court to make a determination regarding the use of the stun belt to restrain defendant\" (id.). I find our former colleague's reasoning sound. The Sheriff's actions denied the court the opportunity to \"exercise[ ] full and proper control over the application of that device to defendant\" (id.), and that usurpation strikes at the heart of the integrity of the judicial process. Quite simply, \"[w]e cannot allow court personnel or law enforcement officers to exercise powers reserved to the court\" (id.)."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 11,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

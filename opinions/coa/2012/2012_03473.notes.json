@@ -1,0 +1,112 @@
+{
+  "caseId": "2012_03473",
+  "sourcePath": "coa/2012/2012_03473.htm",
+  "notesPath": "coa/2012/2012_03473.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.603Z",
+  "source": {
+    "title": "People v Liden (2012 NY Slip Op 03473)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 12088,
+    "lineCount": 89,
+    "tagCounts": {
+      "a": 10,
+      "b": 4,
+      "blockquote": 2,
+      "body": 2,
+      "br": 4,
+      "div": 6,
+      "font": 20,
+      "head": 2,
+      "html": 2,
+      "i": 36,
+      "p": 19,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 4
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Liden",
+      "2012 NY Slip Op 03473 [19 NY3d 271]",
+      "May 3, 2012",
+      "Smith, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, June 27, 2012"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Scott Liden, Appellant."
+    ],
+    "citationLine": "2012 NY Slip Op 03473 19 NY3d 271",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued March 19, 2012; decided May 3, 2012",
+      "May 3, 2012",
+      "As corrected through Wednesday, June 27, 2012"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 16,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2012 NY Slip Op 03473",
+    "officialCitation": "19 NY3d 271",
+    "pageMarkerCount": 9
+  },
+  "opinionStructure": {
+    "totalWritings": 2,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1
+    },
+    "authors": [
+      "Smith"
+    ],
+    "qualifierLines": [
+      "{**19 NY3d at 273} OPINION OF THE COURT"
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 2 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

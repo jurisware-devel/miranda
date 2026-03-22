@@ -1,0 +1,117 @@
+{
+  "caseId": "2013_08286",
+  "sourcePath": "coa/2013/2013_08286.htm",
+  "notesPath": "coa/2013/2013_08286.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.707Z",
+  "source": {
+    "title": "People v Pignataro (2013 NY Slip Op 08286)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 16579,
+    "lineCount": 113,
+    "tagCounts": {
+      "a": 34,
+      "b": 18,
+      "body": 2,
+      "br": 12,
+      "div": 10,
+      "font": 22,
+      "head": 2,
+      "html": 2,
+      "i": 128,
+      "p": 25,
+      "script": 4,
+      "style": 2,
+      "sup": 6,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 6
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Pignataro",
+      "2013 NY Slip Op 08286 [22 NY3d 381]",
+      "December 12, 2013",
+      "Rivera, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, March 5, 2014"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Anthony S. Pignataro, Appellant."
+    ],
+    "citationLine": "2013 NY Slip Op 08286 22 NY3d 381",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued November 12, 2013; decided December 12, 2013",
+      "December 12, 2013",
+      "As corrected through Wednesday, March 5, 2014"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 23,
+    "footnotesCount": 3
+  },
+  "citations": {
+    "slipOpinion": "2013 NY Slip Op 08286",
+    "officialCitation": "22 NY3d 381",
+    "pageMarkerCount": 10
+  },
+  "opinionStructure": {
+    "totalWritings": 2,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1
+    },
+    "authors": [
+      "Rivera"
+    ],
+    "qualifierLines": [
+      "{**22 NY3d at 383} OPINION OF THE COURT",
+      "Meanwhile, defendant appealed Supreme Court's resentencing order to the Appellate Division, which affirmed in a memorandum opinion (, 93 AD3d 1250 [4th Dept 2012]). Defendant appeals from the Appellate Division order, claiming that Penal Law § 70.85 is unconstitutional because it denies him the right to vacate his guilty plea. His appeal squarely presents this Court with the question of the constitutionality of section 70.85, which we left open in  (12 NY3d 390 [2009]). A Judge of this Court granted defendant leave to appeal, and we affirm. "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 3,
+    "labels": [
+      "1",
+      "2",
+      "3"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 2 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

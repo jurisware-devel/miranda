@@ -1,0 +1,108 @@
+{
+  "caseId": "2023_02755",
+  "sourcePath": "coa/2023/2023_02755.htm",
+  "notesPath": "coa/2023/2023_02755.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.209Z",
+  "source": {
+    "title": "People v Reid (2023 NY Slip Op 02755)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 14920,
+    "lineCount": 90,
+    "tagCounts": {
+      "a": 16,
+      "b": 16,
+      "blockquote": 2,
+      "body": 2,
+      "br": 10,
+      "div": 6,
+      "font": 18,
+      "head": 2,
+      "html": 2,
+      "i": 72,
+      "p": 32,
+      "script": 4,
+      "style": 2,
+      "sup": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Reid",
+      "2023 NY Slip Op 02755 [40 NY3d 198]",
+      "May 23, 2023",
+      "Cannataro, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, October 18, 2023"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Dwight Reid, Appellant."
+    ],
+    "citationLine": "2023 NY Slip Op 02755 40 NY3d 198",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued April 20, 2023; decided May 23, 2023",
+      "May 23, 2023",
+      "As corrected through Wednesday, October 18, 2023"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 14,
+    "footnotesCount": 1
+  },
+  "citations": {
+    "slipOpinion": "2023 NY Slip Op 02755",
+    "officialCitation": "40 NY3d 198",
+    "pageMarkerCount": 8
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [
+      "Cannataro"
+    ],
+    "qualifierLines": [
+      "{**40 NY3d at 201} OPINION OF THE COURT"
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 1,
+    "labels": [
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

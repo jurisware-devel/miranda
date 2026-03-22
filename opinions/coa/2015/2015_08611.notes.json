@@ -1,0 +1,114 @@
+{
+  "caseId": "2015_08611",
+  "sourcePath": "coa/2015/2015_08611.htm",
+  "notesPath": "coa/2015/2015_08611.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.838Z",
+  "source": {
+    "title": "People v Golo (2015 NY Slip Op 08611)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 11339,
+    "lineCount": 84,
+    "tagCounts": {
+      "a": 10,
+      "b": 8,
+      "blockquote": 2,
+      "body": 2,
+      "br": 6,
+      "div": 4,
+      "font": 18,
+      "frac": 2,
+      "head": 2,
+      "html": 2,
+      "i": 28,
+      "p": 26,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [
+      "frac"
+    ],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Golo",
+      "2015 NY Slip Op 08611 [26 NY3d 358]",
+      "November 23, 2015",
+      "Abdus-Salaam, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, February 3, 2016"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Ally Golo, Appellant."
+    ],
+    "citationLine": "2015 NY Slip Op 08611 26 NY3d 358",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued October 22, 2015; decided November 23, 2015",
+      "November 23, 2015",
+      "As corrected through Wednesday, February 3, 2016"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 11,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2015 NY Slip Op 08611",
+    "officialCitation": "26 NY3d 358",
+    "pageMarkerCount": 8
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [
+      "Abdus-Salaam"
+    ],
+    "qualifierLines": [
+      "{**26 NY3d at 360} OPINION OF THE COURT",
+      "In April 2004, defendant pleaded guilty to criminal sale of a controlled substance in the third degree, a class B felony, and he was sentenced in June 2004 to an indeterminate prison term of from 31/3 to 10 years. Defendant had committed that crime in April 2003. Days after he was sentenced on this drug charge, defendant was sentenced, upon his guilty plea to two counts each of robbery in the first degree and of endangering the welfare of a child, in connection with robberies that had occurred in May and June 2003. For these crimes, he was sentenced to two determinate seven-year prison terms for the robbery counts to be served concurrently with each other and two one-year terms for the endangering counts."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <frac> in source HTML."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

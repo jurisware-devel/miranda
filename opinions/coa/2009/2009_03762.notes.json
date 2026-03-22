@@ -1,0 +1,149 @@
+{
+  "caseId": "2009_03762",
+  "sourcePath": "coa/2009/2009_03762.htm",
+  "notesPath": "coa/2009/2009_03762.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.434Z",
+  "source": {
+    "title": "People v Weaver (2009 NY Slip Op 03762)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 69154,
+    "lineCount": 181,
+    "tagCounts": {
+      "a": 24,
+      "b": 26,
+      "blockquote": 10,
+      "body": 2,
+      "br": 20,
+      "disop": 1,
+      "div": 16,
+      "font": 86,
+      "head": 2,
+      "html": 2,
+      "i": 286,
+      "p": 67,
+      "script": 4,
+      "style": 2,
+      "sup": 10,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 8
+    },
+    "unknownTags": [
+      "disop"
+    ],
+    "strayClosingTags": [
+      "disop"
+    ]
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Weaver",
+      "2009 NY Slip Op 03762 [12 NY3d 433]",
+      "May 12, 2009",
+      "Lippman, Ch.J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, July 1, 2009"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Scott C. Weaver, Appellant."
+    ],
+    "citationLine": "2009 NY Slip Op 03762 12 NY3d 433",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued March 24, 2009; decided May 12, 2009",
+      "May 12, 2009",
+      "As corrected through Wednesday, July 1, 2009"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 75,
+    "footnotesCount": 5
+  },
+  "citations": {
+    "slipOpinion": "2009 NY Slip Op 03762",
+    "officialCitation": "12 NY3d 433",
+    "pageMarkerCount": 42
+  },
+  "opinionStructure": {
+    "totalWritings": 6,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 3,
+      "dissent": 2
+    },
+    "authors": [
+      "Lippman",
+      "Smith",
+      "Read"
+    ],
+    "qualifierLines": [
+      "{**12 NY3d at 436} OPINION OF THE COURT",
+      "One Justice dissented and would have suppressed the evidence obtained from the GPS tracking device. The dissenting opinion agreed that there was no Fourth Amendment violation, but found a violation of defendant's corresponding rights under the State Constitution—stating that citizens \"have a reasonable expectation that their every move will not be continuously and indefinitely monitored by a technical device without their knowledge, except where a warrant has been issued based on probable cause\" (id. at 145). The dissenting Justice granted defendant leave to appeal (10 NY3d 966 [2008]) and we now reverse.{**12 NY3d at 438} ",
+      "\"The protection guaranteed by the Amendments [the Fourth and Fifth] is much broader in scope [than the protection of property]. The makers of our Constitution undertook to secure conditions favorable to the pursuit of happiness. They recognized the significance of man's spiritual nature, of his feelings and of his intellect. They knew that only a part of the pain, pleasure and satisfactions of life are to be found in material things. They sought to protect Americans in their beliefs, their thoughts, their emotions and their sensations. They conferred, as against the Government, the right to be let alone—the most comprehensive of rights and the right most valued by civilized men. To protect that right, every unjustifiable intrusion by the Government upon the privacy of the individual, whatever the means employed, must be deemed a violation of the Fourth Amendment. And the use, as evidence in a criminal proceeding, of facts ascertained by such intrusion must be deemed a violation of the Fifth\" (id. at 478-479 [dissenting op]).",
+      "Brandeis's dissent was resonant, even in the years immediately after the case's decision. And, some 12 years later, at the New York State Constitutional Convention of 1938, the view that there should be constitutional protection against governmental infringements of privacy not involving any offense against property found vindication in this state's analogue to the Fourth Amendment, only then adopted. Our constitutional{**12 NY3d at 439} provision (art I, § 12), in addition to tracking the language of the Fourth Amendment, provides: ",
+      "Since Katz, the existence of a privacy interest within the Fourth Amendment's protective ambit has been understood to depend upon whether the individual asserting the interest has demonstrated a subjective expectation of privacy and whether that expectation would be accepted as reasonable by society (see Katz, 389 US at 361 [Harlan, J., concurring]). However, while Katz purported to deemphasize location as a determinant in judging the reach of the Fourth Amendment, the analysis it seemed to require naturally reintroduced considerations of place back into the calculus since the social reasonableness of an individual's expectation of privacy will quite often turn upon the quality of the space inhabited or traversed, i.e., whether it is{**12 NY3d at 440} public or private space. An individual has been held to have a significantly reduced expectation of privacy when passing along a public way, particularly in a motor vehicle. ",
+      "Knotts, of course, opens by adverting to Olmstead and the eventual vindication of the Olmstead dissent in Katz, and there is every evidence from the decision that the Court was acutely aware of its obligation in the post-Katz era to assure, as one court has succinctly (and perhaps disapprovingly) put it, that Fourth Amendment jurisprudence \"keep[s] pace with the march of science\" (United States v Garcia, 474 F3d 994, 997 [7th Cir 2007, Posner, J.]). The science at issue in Knotts was, as noted, quite modest, amounting to no more than an incremental improvement over following a car by the unassisted eye (see id. at 998). This being so, the Court quite reasonably concluded that the technology \"in this case\" (Knotts, 460 US at 282 [emphasis added]) raised no Fourth Amendment issue, but pointedly acknowledged and reserved for another day the question of whether a Fourth Amendment issue would be posed if \"twenty-four hour surveillance of any citizen of this country [were] possible, without judicial knowledge or supervision\" (id. at 283). To say that that day has arrived involves no melodrama; 26 years after Knotts, GPS technology, even in its present state of evolution, quite simply and matter-of-factly forces the issue. ",
+      "Contrary to the dissenting views, the gross intrusion at issue is not less cognizable as a search by reason of what the Legislature has or has not done to regulate technological surveillance. Nor does the bare preference for legislatively devised rules and remedies in this area constitute a ground for treating the facts at bar as of subconstitutional import. Before us is a defendant whose movements have, for no apparent reason, been tracked and recorded relentlessly for 65 days. It is quite clear that this would not and, indeed, realistically could not have been done without GPS and that this dragnet use of the technology at the sole discretion of law enforcement authorities to pry into the details of people's daily lives is not consistent with the values at the core of our State Constitution's prohibition against unreasonable searches. ",
+      "The proposition that some devices are too modern and sophisticated to be used freely in police investigation is not a defensible rule of constitutional law. As technology improves, investigation becomes more efficient—and, as long as the investigation does not invade anyone's privacy, that may be a good thing. It bears remembering that criminals can, and will, use the most modern and efficient tools available to them, and will not get warrants before doing so. To limit police use of the same tools is to guarantee that the efficiency of law enforcement will increase more slowly than the efficiency of law breakers. If the people of{**12 NY3d at 449} our state think it worthwhile to impose such limits, that should be done through legislation, not through ad hoc constitutional adjudication, for reasons well explained in Judge Read's dissent (Read, J., dissenting at 457-458). ",
+      "The theory that some investigative tools are simply too good to be used without a warrant finds no support in any authority interpreting the Federal or New York Constitution. Knotts, despite the majority's attempt to distinguish it, seems to me to establish conclusively that the Fourth Amendment did not prohibit the police \"from augmenting the sensory faculties bestowed upon them at birth with such enhancement as science and technology afforded them\" (460 US at 282). And no New York authority suggests that we would reject Knotts as a matter of state constitutional law. Knotts was a unanimous decision as to its result (though three Justices declined to endorse the language I have quoted [460 US at 288 (Stevens, J., concurring)]); and, in my view, it was an easy one. If the majority is holding—as it apparently is—that police may never, in the absence of exigent circumstances or probable cause, track a suspect with a GPS device, it has imposed a totally unjustified limitation on law enforcement. It has also presented future courts with the essentially impossible task of deciding which investigative tools are so efficient and modern that they are subject to the same prohibition. ",
+      "For the reasons explained above, I would have no problem at all with this case if the device had been attached to the car with the consent of the car's owner or co-owner, or if the police had{**12 NY3d at 450} found some other way to track defendant's movements electronically without trespassing on his property. But, like the majority, I do not care for the idea of a police officer—or anyone else—sneaking under someone's car in the middle of the night to attach a tracking device. I find this the hard aspect of the case (cf. Knotts, 460 US at 286 [Brennan, J., concurring] [\"this would have been a much more difficult case if respondent had challenged, not merely . . . the monitoring of the beeper . . . but . . . its original installation\"]), but I conclude, as did a federal Court of Appeals in a substantially identical case (United States v Garcia, 474 F3d 994 [7th Cir 2007]), that what the police did was not an unconstitutional search. (Defendant does not argue that the attachment of the device was a seizure of the car, and I do not consider that possibility.) ",
+      "As the majority points out, the privacy protected by the constitutional prohibition of unreasonable searches and the property rights protected by the laws against trespass have been divorced for decades. The Supreme Court held in Katz v United States (389 US 347, 353 [1967]) that Fourth Amendment protections turn not on whether there was an intrusion upon private property but on whether government conduct \"violated the privacy upon which [a person] justifiably relied.\" The accepted test for whether there has been a \"search\" for Fourth Amendment purposes has become that stated in Justice Harlan's concurrence in Katz: Did government action invade a \"reasonable expectation of privacy\" (id. at 360; see e.g. Samson v California, 547 US 843, 847 [2006])? The test under the New York Constitution is the same (e.g. People v Quackenbush, 88 NY2d 534, 541 [1996]). The attachment of the GPS device in this case violated defendant's property rights, but it did not invade his privacy. ",
+      "According to the investigator, the State Police maintain a \"small fleet of undercover cars,\" which may be made available to assist local police agencies with surveillance. The GPS monitoring technology used in this case was less intrusive or informative than physical surveillance of defendant would have been; it was a less optimal way for the police to figure out defendant's movements. But the State Police have limited resources. They may not always have personnel handy to engage in surveillance at the request of a local police agency, or a vehicle's location (for example, in a sparsely populated area) may make it difficult to trail or watch undetected. As Judge Smith observes, to limit police use of GPS monitoring technology, which is readily available to criminals, \"guarantee[s] that the efficiency of law enforcement will increase more slowly than the efficiency of law breakers\" (Smith, J., dissenting at 448). ",
+      "Surely, it is up to the judiciary to protect New Yorkers' individual constitutional rights—there is no doubt whatsoever about that; surely, we may establish a greater level of protection under our State Constitution for those rights than the Supreme Court recognizes under a parallel provision of the national Constitution—equally, there is no doubt whatsoever about that; and surely, technological advances may threaten individual privacy by enabling otherwise prohibitively costly surveillance. As a result, safeguards against potential government (and perhaps{**12 NY3d at 460} private) abuse of these technologies should be explored in New York: protections have, after all, been put into place by many other states' legislatures. But as the majority opinion's thin legal analysis and Judge Smith's dissent show, federal and New York precedents do not transmute GPS-assisted monitoring for information that could have been easily gotten by traditional physical surveillance into a constitutionally prohibited search. By ruling otherwise, the majority calls the Court's institutional integrity into question, and denies New Yorkers the full benefit of the carefully wrought balance between privacy and security interests that other states have struck for their citizens through legislation. For these reasons and those expressed by Judge Smith, I respectfully dissent. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 2,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 5,
+    "labels": [
+      "*",
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <disop> in source HTML."
+    },
+    {
+      "code": "STRAY_CLOSING_TAG",
+      "severity": "warning",
+      "detail": "Closing tag </disop> appears more times than opening tag <disop>."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 6 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

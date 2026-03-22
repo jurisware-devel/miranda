@@ -1,0 +1,166 @@
+{
+  "caseId": "2026_00826",
+  "sourcePath": "coa/2026/2026_00826.htm",
+  "notesPath": "coa/2026/2026_00826.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.380Z",
+  "source": {
+    "title": "People v Guerrero (2026 NY Slip Op 00826)",
+    "publicationStatus": "slip_op_only"
+  },
+  "fileInfo": {
+    "byteSize": 43105,
+    "lineCount": 134,
+    "tagCounts": {
+      "a": 52,
+      "b": 38,
+      "body": 2,
+      "br": 37,
+      "dateline": 2,
+      "div": 16,
+      "font": 22,
+      "form": 2,
+      "head": 2,
+      "html": 2,
+      "i": 142,
+      "input": 1,
+      "opinion": 1,
+      "p": 90,
+      "para": 2,
+      "sc": 4,
+      "script": 4,
+      "style": 2,
+      "sup": 16,
+      "table": 2,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [
+      "form",
+      "input"
+    ],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Guerrero",
+      "2026 NY Slip Op 00826",
+      "Decided on February 17, 2026",
+      "Court of Appeals",
+      "Troutman, J.",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "This opinion is uncorrected and subject to revision before publication in the Official Reports."
+    ],
+    "captionLines": [
+      "The People & c., Respondent,",
+      "v",
+      "Errick Guerrero, Appellant."
+    ],
+    "citationLine": "2026 NY Slip Op 00826",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "After defendant's arraignment, the People moved to prevent removal on the ground that extraordinary circumstances existed that should prevent transfer to Family Court ( see CPL 722.23 [1] [a], [d]). Specifically, the People asserted that the facts and circumstances of this premeditated attack were frightening and extraordinary and bespoke a level of criminal liability inappropriate for adjudication in Family Court. They argued that police reports provided to the court demonstrated the existence of such circumstances and asserted that, in February 2021, defendant and his accomplices, each with a knife and one with a handgun, planned to break into the victim's home to rob him and then did so, whereupon they displayed their weapons, seized the victim, and threatened to stab him. One accomplice took the victim's shotgun and struck him with it three times, causing physical injury. Defendant opposed the motion, asserting that he was diagnosed with bipolar disorder, schizophrenia, attention deficit hyperactivity disorder, and oppositional defiant disorder, conditions for which he was prescribed medication and received weekly therapy.",
+      "The court convened a hearing, where a probation officer testified that, between May 2016 and January 2021, defenant received eight Family Court appearance tickets and two [*2] adjudications resulting in terms of supervision. Defendant \"maxed out\" the first term of supervision in November 2017, and the second term expired by the time he was released from a juvenile detention facility in September 2020. Most recently, defendant received an appearance ticket in January 2021 for unauthorized use of a motor vehicle. Since 2016, he had been receiving several Family Court services, each of which the probation officer identified by name. However, the last time defendant appeared in the youth part prior to this incident, his mother declined services on his behalf.",
+      "The People argued that defendant had engaged in an escalating pattern of criminal behavior despite having received Family Court services for the past five years. Defendant argued that it was important that he continue to receive services through Family Court because he needed those services to treat his mental health diagnoses.",
+      "Preliminarily, defendant failed to preserve his contention that the court erred in considering the totality of the circumstances and was instead required to engage in a two-part inquiry, the first part of which is satisfied only if \" 'highly unusual and heinous facts are proven and there is a strong proof that the young person is not amenable or would not benefit in any way from the heightened services in the family court' \" ( People v T.P. , 73 Misc 3d 1215 [A] [Nassau County Ct 2021]). Defendant did not argue for the application of such a test before the youth part. Instead, he urged the court to deny the motion upon consideration of the totality of the circumstances. Defendant also failed to preserve his challenge under Family Court Act § 381.2 (1) to the admissibility of evidence related to prior proceedings in Family Court ( cf. People v Dukes , 186 AD3d 1073 , 1074 [4th Dept 2020], affd 37 NY3d 1085 [2021]). Defendant failed to object to the admission of the probation officer's testimony and indeed failed to object to or otherwise dispute any of the People's evidence. Furthermore, unlike our dissenting colleagues, who make repeated reference to the transcript of the subsequent trial, we reject the parties' invitation to consider evidence that was not before the court when it decided the motion.",
+      "The only question before us is whether the youth part, considering the totality of the facts and circumstances before it, abused its discretion as a matter of law in determining that extraordinary circumstances existed that should prevent removal to Family Court ( see CPL 722.23 [1] [d]). The statute does not define extraordinary circumstances, in contrast to other statutes where the legislature has provided explicit guidance about what constitutes extraordinary circumstances in other contexts ( see Domestic Relations Law § 72 [2]; Matter of Suarez v Williams , 26 NY3d 440 , 446-448 [2015]; see also CPL former 65.20 [9]; People v Cintron , 75 NY2d 249, 254-255 [1990]). The absence of such guidance evinces a legislative intent to leave the extraordinary circumstances determination within the broad discretion of the court. That intent is confirmed by remarks of the legislation's sponsor during the Assembly floor debate. In answering questions about the meaning of \"extraordinary circumstances,\" he repeatedly emphasized the importance of judicial discretion and need for individualized determinations, explaining that the judge is to have \"ultimate discretion\" and \"must look at all the circumstances of the case, as well as the circumstances\" of the young defendant (NY Assembly Debate on 2017 NY Assembly Bill A3009C, April 8, 2017 [hereinafter, \"Debate\"], at 21, 39), that \"every case is going to be looked at by the judge individually, to determine what kind of factors&mdash;both aggravating and mitigating&mdash;there are in the case, to determine whether or not\" extraordinary circumstances exist, and that the extraordinary circumstances standard \"is to be determined and shaped by a judge's ruling\" ( id. at 83-84).",
+      "CPL 722.23 was adopted as part of the 2017 Raise the Age legislation, which was intended to ensure \"that youth who are charged with a crime may be treated in a more age appropriate manner\" (Assembly Mem in Support of 2017 NY Assembly Bill A04935). The extraordinary circumstances provision operates as an exception to the general rule that for all but certain enumerated offenses, the age of criminal responsibility will be 18.",
+      "Relying on this scientific consensus, and consistent with the trend in other states, the Legislature enacted Raise the Age in 2017 ( see L 2017, ch 59, § 1, part WWW). The goal was clear: to \"unequivocally stat[e] that children should not be treated like adults &mdash; especially in our prison system &mdash; because they are children and they are immature. We know that they will make mistakes. As children, they should always have an opportunity to get back on the right track\" (NY Assembly Debate on 2017 NY Assembly Bill A3009C, April 8, 2017, at 86 [hereinafter \"Assembly Debate\"]). Legislators explained that it does not \"serve society\" to take a \"young person who did something stupid\" and \"marginaliz[e] him with a criminal record\" ( id. at 49-50), which is \"a short-[sighted], and a proven ineffective approach\" that \"does not keep our communities safer\" ( id. at 86).",
+      "Only in the rarest cases should the mere fact of repeated involvement in the juvenile justice system suffice as proof that a youth is not amenable to services. Sadly, many young people who receive Family Court services re-offend. In 2023, the youth felony recidivism rate in New York City was 32.3% (NYC Mayor's Office of Criminal Justice, NYC Youth Crime in Context: Arrest & Recidivism [2025], https://criminaljustice.cityofnewyork.us/reports/nyc-youth-crime-in-context-arrest-recidivism [last accessed Jan. 23, 2026]). And \"state-level data on recidivism consistently show that youth who are released from correctional confinement experience high rates of rearrest, new adjudications (in juvenile court) or convictions (in adult court), and reincarceration\" (Richard Mendel, Why Youth Incarceration Fails: An Updated Review of the Evidence [March 1, 2023], https://www.sentencingproject.org/reports/why-youth-incarceration-fails-an-updated-review-of-the-evidence [last accessed Jan. 23, 2026]; see also The Annie E. Casey Foundation, No Place for Kids: The Case for Reducing Juvenile Incarceration at 10 [2011], available at https://assets.aecf.org/m/resourcedoc/aecf-NoPlaceForKidsFullReport-2011.pdf [last accessed January 23, 2026] [70% to 80% of youth released from residential corrections program were rearrested within 2-3 years]).",
+      "Decided on February 17, 2026"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Bradley E. Keem, for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Bradley E. Keem, for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Elisabeth A. Dannan, for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Elisabeth A. Dannan, for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 45,
+    "footnotesCount": 8
+  },
+  "citations": {
+    "slipOpinion": "2026 NY Slip Op 00826",
+    "officialCitation": "235 AD3d 1276",
+    "pageMarkerCount": 8
+  },
+  "opinionStructure": {
+    "totalWritings": 4,
+    "byKind": {
+      "unknown": 2,
+      "opinion_of_the_court": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Troutman",
+      "Halligan"
+    ],
+    "qualifierLines": [
+      "The Appellate Division affirmed on the basis that defendant participated in a violent home invasion involving weapons and injuries to the victim, and that, despite the Family Court services provided to him over the five years of his involvement with the criminal justice system, he \"made no appreciable positive response and continues to engage in escalating criminal behavior\" (235 AD3d 1276, 1278 [4th Dept 2025]). Thus, the Appellate Division concluded that, \"under the totality of the circumstances, and taking into account the mitigating factors and the substantial aggravating factors, the court did not abuse its discretion in determining that extraordinary circumstances exist warranting that this case remain in the youth part\" (id.). One dissenting Justice concluded that the court abused its discretion (see id. at 1279). Relying on select remarks by the sponsor of the Raise the Age legislation during the Assembly floor debate, the dissenting Justice opined that the legislature intended for the extraordinary circumstances exception to establish a high standard not satisfied here (see id. at 1280-1283). The dissenting Justice granted leave to appeal.",
+      "Preliminarily, defendant failed to preserve his contention that the court erred in considering the totality of the circumstances and was instead required to engage in a two-part inquiry, the first part of which is satisfied only if \" 'highly unusual and heinous facts are proven and there is a strong proof that the young person is not amenable or would not benefit in any way from the heightened services in the family court' \" (, 73 Misc 3d 1215[A] [Nassau County Ct 2021]). Defendant did not argue for the application of such a test before the youth part. Instead, he urged the court to deny the motion upon consideration of the totality of the circumstances. Defendant also failed to preserve his challenge under Family Court Act § 381.2 (1) to the admissibility of evidence related to prior proceedings in Family Court (, 186 AD3d 1073, 1074 [4th Dept 2020], affd 37 NY3d 1085 [2021]). Defendant failed to object to the admission of the probation officer's testimony and indeed failed to object to or otherwise dispute any of the People's evidence. Furthermore, unlike our dissenting colleagues, who make repeated reference to the transcript of the subsequent trial, we reject the parties' invitation to consider evidence that was not before the court when it decided the motion.",
+      "Contrary to the dissent's concern, our decision today does not treat reoffense \"in and of itself\" as extraordinary (dissenting op at 12). This is not a case of mere reoffense but of chronic, repeated reoffense and escalating criminal behavior. By the time of the hearing, defendant's history far exceeded one or two youthful transgressions. Moreover, the crime here is deeply troubling. We do not agree with the dissent that a robbery home invasion is a \"typical\" youth crime (id. at 2) nor that the salient facts here \"could readily describe any burglary, robbery, or other violent felony\" (id. at 12). In the floor debate, the bill's sponsor provided an example of a far less serious burglary, where \"a bunch of young kids who happened on a porch . . . see that there's nobody in the house and they decide to have a party inside\" (Debate at 22). In that case, an intent to commit a crime inside the house other than the trespass—e.g., criminal mischief—could elevate the trespass to burglary in the second degree, a violent felony (see Penal Law §§ 70.02 [1] [b]; 140.25 [2]; 145.00 [1]; , 5 NY3d 546, 551-552 [2005]). Such a case, said the sponsor, \"could go to\" Family Court \"if nobody had a gun or a knife or a weapon or used it\" (Debate at 22).",
+      "That example does not describe the only type of case that should go to Family Court. Nor do the more serious counterexamples mentioned by the dissent—where a defendant targets an elderly victim or acts as a ringleader—describe the only types of cases that should remain in superior court. Most cases, like this one, fall somewhere in the middle, and thus are properly subject to judicial discretion. The dissent's opinion to the contrary would largely remove from these determinations any judicial discretion—a feature the legislation's drafters believed was crucial to the statute's proper functioning.",
+      "The record here cannot support a determination of \"extraordinary circumstances.\" The facts of the defendant's crime are certainly troubling, but they are also typical of many violent felonies which are nonetheless presumptively removable to Family Court. The sparse information regarding the defendant's Family Court history, which includes only a few facts regarding some of his previous tickets and adjudications and his five years of services, cannot support a finding that he would not be amenable to additional services, particularly in light of his mental health history. Because affirming on these facts will lower the bar for finding extraordinary circumstances in a manner fundamentally inconsistent with the Legislature's intent that removal be available in all but the most serious cases, I respectfully dissent.",
+      "In short, nothing in this record—neither the limited evidence of the defendant's re-offense nor the nature of the crime—can support a finding of extraordinary circumstances. Youth Part judges have significant discretion to determine when to grant a motion by the People to prevent removal (see majority op at 6), but the statutory structure and legislative history constrain that discretion, as they do whenever a court applies a statute. The statute treats violent felonies as presumptively removable. And the legislative history confirms that the goal of Raise the Age is to treat \"kids' lives [as] worth saving\" by giving them services, rather than locking them in adult prisons, so they have a shot at \"better outcomes for their lives\" (Assembly Debate at 21, 74). To fulfill that promise, \"extraordinary circumstances\" must be \"a high standard\" meant for only the rarest of cases (id. at 38), rather than for the many system-involved youth who return to Family Court. In light of that objective, I would not conclude that the record here evinces the requisite \"strong proof\" that the defendant cannot benefit from services in any way. Accordingly, I dissent."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 8,
+    "labels": [
+      "1",
+      "2",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <form> in source HTML."
+    },
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <input> in source HTML."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 4 writings."
+    }
+  ]
+}

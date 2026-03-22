@@ -1,0 +1,122 @@
+{
+  "caseId": "2007_09903",
+  "sourcePath": "coa/2007/2007_09903.htm",
+  "notesPath": "coa/2007/2007_09903.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.377Z",
+  "source": {
+    "title": "People v Gajadhar (2007 NY Slip Op 09903)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 38761,
+    "lineCount": 146,
+    "tagCounts": {
+      "a": 26,
+      "b": 22,
+      "blockquote": 10,
+      "body": 2,
+      "br": 16,
+      "div": 14,
+      "font": 60,
+      "head": 2,
+      "html": 2,
+      "i": 160,
+      "p": 50,
+      "script": 4,
+      "style": 2,
+      "sup": 8,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Gajadhar",
+      "2007 NY Slip Op 09903 [9 NY3d 438]",
+      "December 18, 2007",
+      "Graffeo, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, February 6, 2008"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Winston Gajadhar, Appellant."
+    ],
+    "citationLine": "2007 NY Slip Op 09903 9 NY3d 438",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued November 13, 2007; decided December 18, 2007",
+      "December 18, 2007",
+      "As corrected through Wednesday, February 6, 2008"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 54,
+    "footnotesCount": 4
+  },
+  "citations": {
+    "slipOpinion": "2007 NY Slip Op 09903",
+    "officialCitation": "9 NY3d 438",
+    "pageMarkerCount": 28
+  },
+  "opinionStructure": {
+    "totalWritings": 4,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "dissent": 1
+    },
+    "authors": [
+      "Graffeo",
+      "Ciparick"
+    ],
+    "qualifierLines": [
+      "{**9 NY3d at 439} OPINION OF THE COURT",
+      "Following Cancemi, questions were raised about the efficacy of a ban on jury trial waivers in criminal cases. This culminated in a 1935 proposal by the Judicial Council seeking legislative adoption of a concurrent resolution in favor of a constitutional amendment to include noncapital criminal cases within the scope of the waiver language that had been added to article I, section 2 in 1846 for civil trials (see 2d Rep of NY Jud Council, at 97, reprinted in 1936 NY Legis Doc No. 48 [C], at 3). The Council recognized that the proposed language was broad enough to \"legalize trial by jury of less than twelve men, as well as a complete waiver of the jury\" but that the exact scope of the amendment would have to be determined by the judiciary (2d Rep of NY Jud Council, at 100). The Council firmly believed{**9 NY3d at 444} that there was \"little doubt at present that such waiver permitted under proper conditions w[ould] be a desirable and valuable part of criminal procedure\" (id.). ",
+      "In our view, however, the history of article I, section 2 and our subsequent decisions construing the meaning of the provision's evolving text reveal that there is no longer a constitutional impediment to a defendant consenting to the continuation of deliberations by 11 jurors in conformance with the explicit procedures set forth in article I, section 2. The 1938 constitutional amendments clearly dispelled the notion that a defendant cannot consent to an alteration of the common-law jury of 12 in a noncapital criminal case. Since the waiver language in article I, section 2 for civil cases permits juries of less than 12, unlike the dissent, we are not persuaded that the identical language, when applied to criminal cases, prohibits a{**9 NY3d at 447} defendant's waiver allowing deliberations to continue with 11 jurors.  ",
+      "Equally significant is the fact that permitting a waiver of the common-law jury under article I, section 2 is consistent with the principle that criminal defendants can waive many fundamental constitutional rights: the right to confront accusers (see e.g. People v Hansen, 95 NY2d 227, 230 [2000]); the right to counsel (, 8 NY3d 85, 88 [2006]); the privilege against self-incrimination (see e.g. People v Lee, 58 NY2d 491, 494 [1983]); the right to testify and to present a defense (, 3 NY3d 210, 217 [2004]); the right to be free from unreasonable searches and seizures (see generally People v Esajerre, 35 NY2d 463, 467 [1974]); and the right to be present during trial proceedings (, 1 NY3d 44, 48 [2003]). After a defendant enters a knowing, voluntary and intelligent waiver of any of these rights, that choice cannot be challenged on appeal (see People v Henriquez, 3 NY3d at 216-217). We do not see sufficient justification for applying a different rule to the right to a jury trial. Contrary to the dissent's analysis, the constitution now entrusts to a defendant the decision whether to allow a jury to continue deliberating with 11 members when a juror becomes unexpectedly unavailable. Therefore, the rights guaranteed by article I, section 2 are personal to the accused. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 4,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 4 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

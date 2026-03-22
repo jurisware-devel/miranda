@@ -1,0 +1,136 @@
+{
+  "caseId": "2016_04323",
+  "sourcePath": "coa/2016/2016_04323.htm",
+  "notesPath": "coa/2016/2016_04323.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.885Z",
+  "source": {
+    "title": "People v Reynolds (2016 NY Slip Op 04323)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 21107,
+    "lineCount": 118,
+    "tagCounts": {
+      "a": 24,
+      "b": 22,
+      "blockquote": 12,
+      "body": 2,
+      "br": 20,
+      "div": 8,
+      "font": 32,
+      "head": 2,
+      "html": 2,
+      "i": 70,
+      "opinion": 1,
+      "p": 66,
+      "script": 4,
+      "style": 2,
+      "sup": 8,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Reynolds",
+      "2016 NY Slip Op 04323 [27 NY3d 1099]",
+      "June 7, 2016",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, August 17, 2016"
+    ],
+    "captionLines": [],
+    "citationLine": "2016 NY Slip Op 04323 27 NY3d 1099",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued April 27, 2016; decided June 7, 2016",
+      "June 7, 2016",
+      "As corrected through Wednesday, August 17, 2016"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Richard M. Greenberg, Office of the Appellate Defender , New York City ( Michael S. Woodruff and Margaret E. Knight of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Richard M. Greenberg, Office of the Appellate Defender , New York City ( Michael S. Woodruff and Margaret E. Knight of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Cyrus R. Vance, Jr., District Attorney , New York City ( Vincent Rivellese and Christopher P. Marinelli of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Cyrus R. Vance, Jr., District Attorney , New York City ( Vincent Rivellese and Christopher P. Marinelli of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 26,
+    "footnotesCount": 4
+  },
+  "citations": {
+    "slipOpinion": "2016 NY Slip Op 04323",
+    "officialCitation": "27 NY3d 1099",
+    "pageMarkerCount": 15
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Rivera"
+    ],
+    "qualifierLines": [
+      "{**27 NY3d at 1100} OPINION OF THE COURT",
+      "Memorandum.",
+      " Defendant failed to preserve his claim that his plea of guilty should be vacated because it was conditioned on an alleged illegal presentence condition that he remain incarcerated for an additional six months prior to sentencing. As we recently stated in  (27 NY3d 212, 214 [2016]), \"[w]hen a defendant pleads guilty to a crime, he or she generally must move to withdraw the plea or otherwise object to its entry prior to the imposition of sentence to preserve a challenge to the validity of the plea for appellate review.\" While this Court has recognized an \"illegal sentence\" as \"a narrow exception to the preservation rule\" (, 2 NY3d 310, 315 [2004] [internal quotation marks and citation omitted]), the Appellate Division correctly held that the plea was not conditioned on an illegal sentence, nor was the actual sentence imposed illegal. Contrary to the dissent's view, defendant's case is procedurally distinguishable from People v Avery (85 NY2d 503, 504 [1995]) and People v Rodney E. (77 NY2d 672, 673 [1991]) (dissenting op at 1103-1104) in an important respect. In those cases, the issue was violation of an allegedly illegal presentencing condition that triggered defendant's sentence. Here, defendant's sentence was premised on a violation of an admittedly lawful presentence condition—he could not be arrested—and the issue of the propriety of the plea could certainly have been raised prior to sentencing. Thus, defendant's challenge to the presentencing incarceration, which was not part of the sentence, is subject to the preservation rule (see Williams, 27 NY3d at 224).",
+      "For the reasons I have stated, there is no express statutory authority granting a court the discretion to impose a post-conviction, presentencing term of incarceration like the one imposed here. As a consequence, defendant's six-month incarceratory \"interim\" condition is illegal. Therefore, I dissent and would reverse the Appellate Division, vacate defendant's plea, and remit for further proceedings."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 4,
+    "labels": [
+      "*",
+      "1",
+      "2",
+      "3"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

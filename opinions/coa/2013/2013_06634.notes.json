@@ -1,0 +1,117 @@
+{
+  "caseId": "2013_06634",
+  "sourcePath": "coa/2013/2013_06634.htm",
+  "notesPath": "coa/2013/2013_06634.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.684Z",
+  "source": {
+    "title": "People v Shabazz (2013 NY Slip Op 06634)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 11206,
+    "lineCount": 78,
+    "tagCounts": {
+      "a": 4,
+      "b": 6,
+      "body": 2,
+      "br": 8,
+      "div": 2,
+      "font": 18,
+      "head": 2,
+      "html": 2,
+      "i": 44,
+      "p": 23,
+      "script": 4,
+      "style": 2,
+      "table": 6,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Shabazz",
+      "2013 NY Slip Op 06634 [22 NY3d 896]",
+      "October 15, 2013",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, December 11, 2013"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Omar Shabazz, Appellant.",
+      "The People of the State of New York, Respondent, v Donald Perrington, Appellant."
+    ],
+    "citationLine": "2013 NY Slip Op 06634 22 NY3d 896",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued September 4, 2013; decided October 15, 2013",
+      "October 15, 2013",
+      "As corrected through Wednesday, December 11, 2013"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 3,
+    "opinionBlocksCount": 15,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2013 NY Slip Op 06634",
+    "officialCitation": "22 NY3d 896",
+    "pageMarkerCount": 8
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Pigott"
+    ],
+    "qualifierLines": [
+      "{**22 NY3d at 897} OPINION OF THE COURT",
+      "Memorandum. ",
+      "We conclude that the courts below erred by focusing on the inconsistency between the female codefendant's trial testimony and her pretrial statement to Perrington's lawyer. Knowledge that a declaration is against penal interests must be assessed \"at the time\" it was made (People v Osorio, 75 NY2d 80, 86 [1989]), and later recantations generally affect the weight and credibility that a factfinder should ascribe to the statement. Applying this legal standard, there was adequate evidence to establish admissibility under the particular facts of this case: the handgun was found in a handbag located in the rear of the automobile directly adjacent to the female codefendant; she was the only woman in the vehicle; and the circumstances under which the utterance was declared make it clear that the statement{**22 NY3d at 899} was against her interests. Contrary to the dissent's contention, there was also sufficient proof that the woman was not available to testify. Finally, the exclusion of the statement cannot be deemed harmless because the People's case was not overwhelming. Defendants are therefore entitled to a new trial.  ",
+      " The trial court and the Appellate Division (89 AD3d 529 [1st Dept 2011]) concluded that defendants failed to establish the female codefendant's unavailability or confirm the reliability of her statement with competent independent evidence. These are the first and fourth elements of the declaration against penal interest exception (People v Settles, 46 NY2d 154, 167 [1978]). The majority memorandum omits any analysis concerning defendants' failure to meet the first element of that test, which, in my view, is dispositive. Therefore, I respectfully dissent. ",
+      "The majority memorandum makes the conclusory statement that \"there was also sufficient proof\" of the female codefendant's {**22 NY3d at 900}unavailability (majority mem at 899), but that is not the standard by which judicial determinations concerning the admissibility of declarations against penal interest are reviewed. The trial court here considered the arguments made by the defense concerning their \"efforts\" to secure the female codefendant's presence and concluded, in the proper exercise of its discretion, that the defense did not meet its burden of establishing her unavailability (see People v Brensic, 70 NY2d 9, 15 [1987] [providing that the party offering the declaration against penal interest must satisfy all elements]; see also People v Branham, 59 AD3d 272, 273 [1st Dept 2009], lv denied 12 NY3d 814 [2009]). On this record, it could hardly be said that the trial court abused its discretion when it denied the admission of the statement on the ground that the defense failed to establish the female codefendant's unavailability. In my view, it was unnecessary for the majority to address the reliability element of the declaration against penal interest exception, and I would affirm the order of the Appellate Division. ",
+      "Chief Judge Lippman and Judges Graffeo, Read and Rivera concur; Judge Pigott dissents and votes to affirm in an opinion in which Judge Smith concurs; Judge Abdus-Salaam taking no part. ",
+      "In each case: Order reversed and a new trial ordered, in a memorandum.  "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 3 table elements before or within the header region."
+    }
+  ]
+}

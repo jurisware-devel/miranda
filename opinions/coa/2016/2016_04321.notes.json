@@ -1,0 +1,129 @@
+{
+  "caseId": "2016_04321",
+  "sourcePath": "coa/2016/2016_04321.htm",
+  "notesPath": "coa/2016/2016_04321.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.884Z",
+  "source": {
+    "title": "People v Mack (2016 NY Slip Op 04321)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 39406,
+    "lineCount": 141,
+    "tagCounts": {
+      "a": 80,
+      "b": 34,
+      "blockquote": 6,
+      "body": 2,
+      "br": 26,
+      "div": 14,
+      "font": 34,
+      "head": 2,
+      "html": 2,
+      "i": 270,
+      "p": 77,
+      "script": 4,
+      "style": 2,
+      "sup": 14,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 8
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Mack",
+      "2016 NY Slip Op 04321 [27 NY3d 534]",
+      "June 7, 2016",
+      "Fahey, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, August 17, 2016"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Appellant,",
+      "v",
+      "Terrance L. Mack, Respondent."
+    ],
+    "citationLine": "2016 NY Slip Op 04321 27 NY3d 534",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued September 10, 2015; reargued April 26, 2016; decided June 7, 2016",
+      "June 7, 2016",
+      "As corrected through Wednesday, August 17, 2016"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 45,
+    "footnotesCount": 7
+  },
+  "citations": {
+    "slipOpinion": "2016 NY Slip Op 04321",
+    "officialCitation": "27 NY3d 534",
+    "pageMarkerCount": 16
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Fahey",
+      "Rivera"
+    ],
+    "qualifierLines": [
+      "{**27 NY3d at 536} OPINION OF THE COURT",
+      "On appeal, the Appellate Division reversed the judgment and ordered a new trial (117 AD3d 1450 [4th Dept 2014]). The Appellate Division held that the trial court's failure to provide a meaningful response to the jury's substantive requests before accepting the verdict constituted a mode of proceedings error for which preservation was not required (see id. at 1451). The dissenting Justice would have affirmed, concluding that any error did not constitute a mode of proceedings error and, in any event, that there was no error because the jury implicitly rescinded its earlier requests (see id. at 1452 [Lindley, J., dissenting]).",
+      "The dissenting Justice granted the People leave to appeal to this Court (23 NY3d 1027 [2014]). We now reverse.",
+      "Nor does it matter, as the majority contends, that defense counsel was on notice of the court's failure to respond (majority op at 541). The majority in People v Nealon relied on this same argument to impose a preservation requirement in cases where a court fails to comply with the other half of its CPL 310.30 core responsibility, namely the requirement to provide defense counsel with meaningful notice of a jury's substantive request and an opportunity for counsel to participate in the formulation of a response (26 NY3d 152, 161-162 [2015]). The dissent in Nealon effectively explained why a failure to object is irrelevant to a mode of proceedings error.",
+      "\"Conceptually, of course, whether an error is deemed to compromise the basic structure of a trial and thus to qualify as one affecting the mode of proceedings cannot depend upon whether it involves a deviation as to which an objection is capable of being made. Mode of proceedings errors are by reason of their fundamental incompatibility with essential process nonwaivable . . . . Neither the gravity of such error nor the consequently primary judicial obligation to avoid its commission is logically diminished or relieved by reason of the circumstance that a defendant is able to, but does not contemporaneously, protest its occurrence\" (id. at 166 [Lippman, Ch. J., dissenting], citing People v Patterson, 39 NY2d 288, 295 [1976]).",
+      "As a final point, the majority here contends that the preservation rule is necessary to avoid incentivizing gamesmanship by defense counsel who would merely fail to challenge a CPL 310.30 error in order to create an appellate issue (majority op at 543-544). The argument is no more persuasive in this case than it was in Nealon because it is grounded on speculation about defense counsel's motives, and demonstrates a misunderstanding of the court's duty under CPL 310.30. As the dissent in Nealon argued,",
+      "In defendant's case, while the court was discussing with counsel and the prosecutor its response to pending substantive jury notes, the court received indication that the jury had reached a verdict. When the court accepted the verdict without providing any response to the pending notes, or without alternatively asking the jurors whether they had withdrawn their requests, the court failed to comply with its core{**27 NY3d at 549} responsibility under CPL 310.30. The court's inaction constituted a mode of proceedings error for which preservation is unnecessary, and, under the circumstances of this case, warrants reversal and a new trial (O'Rama, 78 NY2d at 279; Kisoon, 8 NY3d at 135; CPL 310.30; Silva, 24 NY3d at 300, 300 n 1 [a judge's unresponsiveness to a jury request may lead to a new trial]). Therefore, I dissent and would affirm the Appellate Division."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 7,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

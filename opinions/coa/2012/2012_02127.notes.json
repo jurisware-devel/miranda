@@ -1,0 +1,121 @@
+{
+  "caseId": "2012_02127",
+  "sourcePath": "coa/2012/2012_02127.htm",
+  "notesPath": "coa/2012/2012_02127.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.594Z",
+  "source": {
+    "title": "People v Miller (2012 NY Slip Op 02127)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 20833,
+    "lineCount": 106,
+    "tagCounts": {
+      "a": 6,
+      "b": 6,
+      "blockquote": 14,
+      "body": 2,
+      "br": 8,
+      "div": 6,
+      "font": 32,
+      "head": 2,
+      "html": 2,
+      "i": 86,
+      "p": 29,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 30
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Miller",
+      "2012 NY Slip Op 02127 [18 NY3d 704]",
+      "March 22, 2012",
+      "Smith, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, May 23, 2012"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Appellant,",
+      "v",
+      "Jeffery H. Miller, Respondent."
+    ],
+    "citationLine": "2012 NY Slip Op 02127 18 NY3d 704",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued February 16, 2012; decided March 22, 2012",
+      "March 22, 2012",
+      "As corrected through Wednesday, May 23, 2012"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 30,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2012 NY Slip Op 02127",
+    "officialCitation": "18 NY3d 704",
+    "pageMarkerCount": 15
+  },
+  "opinionStructure": {
+    "totalWritings": 4,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "dissent": 1
+    },
+    "authors": [
+      "Smith",
+      "Read"
+    ],
+    "qualifierLines": [
+      "{**18 NY3d at 706} OPINION OF THE COURT",
+      "Until 1996, the statute did not contain the final (\"Whenever\") sentence; it ended with \"verdicts thereon.\" In several cases decided under the earlier version of the statute, we ordered a new trial where a verdict sheet had been submitted to the jury that, in addition to identifying the crimes charged, listed some of the crimes' statutory elements (People v Nimmons, 72 NY2d 830 [1988]; People v Taylor, 76 NY2d 873 [1990]; People v Kelly, 76 NY2d 1013 [1990]; see also People v Sotomayer, 79 NY2d 1029, 1030 [1992] [reversible error to submit a verdict sheet that \"recited more\" than CPL 310.20 allowed]). In Spivey, we said that \"unless the parties agree\" the submission of such a verdict sheet \"is reversible error\" (81 NY2d at 361). And in {**18 NY3d at 708}Damiano we rejected, over a strong dissent, the idea that an error of this kind could \"be deemed harmless\"; that approach, we said, would be inconsistent with \"our decisions strictly construing this provision\" (87 NY2d at 484-485). ",
+      "In arguing to the contrary, the People rely not on the statutory language contained in the 1996 amendment, but on language in the memorandum by which Governor Pataki expressed his approval of that amendment (Governor's Approval Mem, Bill Jacket, L 1996, ch 630, at 7-9, reprinted in 1996 McKinney's Session Laws of NY, at 1907-1909). The Approval Memorandum acknowledges that \"from time to time\" judges might in the future place notations on verdict sheets beyond what the newly amended statute would permit (Bill Jacket, L 1996, ch 630, at 9, 1996 McKinney's Session Laws of NY, at 1909). The memorandum adds: ",
+      "The implicit reasoning of the Approval Memorandum—reasoning the People urge us to follow here—is this: In Owens, in the passage the Approval Memorandum cites, we held that an error in submitting portions of a written charge to the jury was not subject to harmless error analysis because \"the distribution of written instructions to the jury is not expressly authorized by law\" (69 NY2d at 591-592). From this it is inferred that Spivey and Damiano rejected harmless error analysis because annotated verdict sheets were also \"not expressly authorized by law\" (though neither Spivey nor Damiano, nor any other case involving annotated verdict sheets, says this). And, the reasoning concludes, since some verdict sheet annotations are authorized by law under the 1996 amendment, an error as to what annotations are permissible may now be deemed harmless. ",
+      "We find this reasoning too attenuated to justify rejecting Spivey's and Damiano's holding on the harmless error issue. We recognize that, as the dissent points out, it was the Governor who proposed the 1996 amendment, and his view of what it means is relevant legislative history. But legislative history cannot supply something that is just not in the statute. ",
+      " I would uphold the conviction because the complained-of error was harmless. The majority rejects this option on the ground that the Legislature's amendment of CPL 310.20 in 1996 \"left intact\" our precedents holding \"that harmless error analysis cannot be applied where a verdict sheet exceeds the limitations that section 310.20 (2) imposes\" (majority op at 708). On the contrary, the 1996 amendment was specifically intended to countermand these and other precedents thought to create \"hyper-technical rules . . . bestow[ing] new trials on fairly convicted criminals\" (Governor's Approval Mem, Bill Jacket, L 1996, ch 630, at 9, reprinted in 1996 McKinney's Session Laws of NY, at 1909), such as the defendant in this case. Accordingly, I respectfully dissent. ",
+      "In 1996, the Governor submitted a Program Bill to the Legislature that, as he explained in his Approval Memorandum, was meant to prevent \"the needless reversal of dozens of fairly obtained criminal convictions . . . occasioned by the Court of Appeals' decisions in People v. Page, 72 N.Y.2d 69 (1988), and People v. Spivey, 81 N.Y.2d 356 (1993)\" (Bill Jacket, L 1996, ch 630, at 7, 1996 McKinney's Session Laws of NY, at 1907). The Governor's proposed bill was introduced in the Senate \"at the request of the Governor\" on July 11, 1996 as Senate Bill S7929 (Preiser, Practice Commentaries, McKinney's Cons Laws of NY, Book 11A, CPL 310.20, at 350 [2002 ed]). The Governor issued a message of necessity to the Senate, which passed the bill that same day. Senate Bill S7929 was then delivered to the Assembly, where it was substituted for Assembly Bill A11155-A; the Governor likewise issued a message of necessity to the Assembly, which also passed the bill on July 11, 1996. Senate Bill S7929 was then returned to the Senate, which delivered it to the Governor on September 3, 1996. The Governor signed the bill on September 4, 1996, which thereby became chapter 630 of the Laws of 1996. He simultaneously issued a detailed Approval Memorandum. ",
+      "The majority dismisses the Approval Memorandum's reasoning as \"too attenuated to justify rejecting\" the holdings of Spivey and People v Damiano (87 NY2d 477 [1996]) \"on the harmless error issue\" (majority op at 709), as though the Governor's statements were some species of post-enactment \"spin\" or propaganda. But the Governor was explaining his bill, drafted by his lawyers at his direction to carry out his policy. And the Legislature agreed with him: both houses enacted the Governor's Program Bill, without amendment, pursuant to messages of necessity, the same day it was introduced. Under these circumstances, the Governor's view of section 2, which is perfectly consonant with the amendment's language, should be dispositive. "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 4 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

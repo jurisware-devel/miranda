@@ -1,0 +1,118 @@
+{
+  "caseId": "2016_05883",
+  "sourcePath": "coa/2016/2016_05883.htm",
+  "notesPath": "coa/2016/2016_05883.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.897Z",
+  "source": {
+    "title": "People v Fletcher (2016 NY Slip Op 05883)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 4061,
+    "lineCount": 73,
+    "tagCounts": {
+      "a": 6,
+      "b": 4,
+      "body": 2,
+      "br": 6,
+      "div": 6,
+      "font": 6,
+      "head": 2,
+      "html": 2,
+      "i": 14,
+      "opinion": 1,
+      "p": 14,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Fletcher",
+      "2016 NY Slip Op 05883 [27 NY3d 1177]",
+      "August 25, 2016",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, September 28, 2016"
+    ],
+    "captionLines": [],
+    "citationLine": "2016 NY Slip Op 05883 27 NY3d 1177",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Decided August 25, 2016",
+      "August 25, 2016",
+      "As corrected through Wednesday, September 28, 2016"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Lynn W.L. Fahey, Appellate Advocates , New York City ( Dina Zloczower of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Lynn W.L. Fahey, Appellate Advocates , New York City ( Dina Zloczower of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Kenneth P. Thompson, District Attorney , Brooklyn ( Howard B. Goodman of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Kenneth P. Thompson, District Attorney , Brooklyn ( Howard B. Goodman of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 2,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2016 NY Slip Op 05883",
+    "officialCitation": "27 NY3d 1177",
+    "pageMarkerCount": 2
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**27 NY3d at 1178} OPINION OF THE COURT",
+      "Memorandum."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

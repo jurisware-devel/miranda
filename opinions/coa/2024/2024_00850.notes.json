@@ -1,0 +1,112 @@
+{
+  "caseId": "2024_00850",
+  "sourcePath": "coa/2024/2024_00850.htm",
+  "notesPath": "coa/2024/2024_00850.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.248Z",
+  "source": {
+    "title": "People ex rel. Rankin v Brann (2024 NY Slip Op 00850)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 23532,
+    "lineCount": 104,
+    "tagCounts": {
+      "a": 30,
+      "b": 30,
+      "body": 2,
+      "br": 18,
+      "div": 12,
+      "font": 28,
+      "head": 2,
+      "html": 2,
+      "i": 42,
+      "p": 38,
+      "script": 4,
+      "style": 2,
+      "sup": 10,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 6
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People ex rel. Rankin v Brann",
+      "2024 NY Slip Op 00850 [41 NY3d 436]",
+      "February 20, 2024",
+      "Garcia, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, June 26, 2024"
+    ],
+    "captionLines": [
+      "The People of the State of New York ex rel. Douglas G. Rankin, on Behalf of Tyrone Waller, Respondent,",
+      "v",
+      "Cynthia Brann, Commissioner, New York City Department of Correction, Appellant."
+    ],
+    "citationLine": "2024 NY Slip Op 00850 41 NY3d 436",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued January 9, 2024; decided February 20, 2024",
+      "February 20, 2024",
+      "As corrected through Wednesday, June 26, 2024"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 19,
+    "footnotesCount": 5
+  },
+  "citations": {
+    "slipOpinion": "2024 NY Slip Op 00850",
+    "officialCitation": "41 NY3d 436",
+    "pageMarkerCount": 13
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [
+      "Garcia"
+    ],
+    "qualifierLines": [
+      "{**41 NY3d at 438} OPINION OF THE COURT"
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 5,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

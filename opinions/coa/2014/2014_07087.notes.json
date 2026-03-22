@@ -1,0 +1,121 @@
+{
+  "caseId": "2014_07087",
+  "sourcePath": "coa/2014/2014_07087.htm",
+  "notesPath": "coa/2014/2014_07087.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.762Z",
+  "source": {
+    "title": "People v O'Daniel (2014 NY Slip Op 07087)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 18926,
+    "lineCount": 112,
+    "tagCounts": {
+      "a": 28,
+      "b": 26,
+      "blockquote": 4,
+      "body": 2,
+      "br": 22,
+      "div": 6,
+      "font": 28,
+      "head": 2,
+      "html": 2,
+      "i": 30,
+      "p": 49,
+      "script": 4,
+      "style": 2,
+      "sup": 10,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v O'Daniel",
+      "2014 NY Slip Op 07087 [24 NY3d 134]",
+      "October 21, 2014",
+      "Pigott, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, December 17, 2014"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "William O'Daniel, Appellant."
+    ],
+    "citationLine": "2014 NY Slip Op 07087 24 NY3d 134",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued September 16, 2014; decided October 21, 2014",
+      "October 21, 2014",
+      "As corrected through Wednesday, December 17, 2014"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 26,
+    "footnotesCount": 5
+  },
+  "citations": {
+    "slipOpinion": "2014 NY Slip Op 07087",
+    "officialCitation": "24 NY3d 134",
+    "pageMarkerCount": 13
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Pigott",
+      "Lippman"
+    ],
+    "qualifierLines": [
+      "{**24 NY3d at 136} OPINION OF THE COURT",
+      "{**24 NY3d at 142}Judges Graffeo, Read, Smith, Rivera and Abdus-Salaam concur; Chief Judge Lippman dissents in an opinion."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 5,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

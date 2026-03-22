@@ -1,0 +1,129 @@
+{
+  "caseId": "2026_00638",
+  "sourcePath": "coa/2026/2026_00638.htm",
+  "notesPath": "coa/2026/2026_00638.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.372Z",
+  "source": {
+    "title": "People v Alba (2026 NY Slip Op 00638)",
+    "publicationStatus": "slip_op_only"
+  },
+  "fileInfo": {
+    "byteSize": 3951,
+    "lineCount": 67,
+    "tagCounts": {
+      "a": 8,
+      "b": 4,
+      "body": 2,
+      "br": 17,
+      "dateline": 2,
+      "div": 6,
+      "font": 8,
+      "form": 2,
+      "head": 2,
+      "html": 2,
+      "i": 6,
+      "input": 1,
+      "p": 14,
+      "script": 4,
+      "style": 2,
+      "table": 2,
+      "td": 12,
+      "title": 2,
+      "tr": 12
+    },
+    "unknownTags": [
+      "form",
+      "input"
+    ],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Alba",
+      "2026 NY Slip Op 00638",
+      "Decided on February 11, 2026",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "This opinion is uncorrected and subject to revision before publication in the Official Reports."
+    ],
+    "captionLines": [
+      "The People & c., Respondent,",
+      "v",
+      "Darling Alba, Appellant."
+    ],
+    "citationLine": "2026 NY Slip Op 00638",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Decided on February 11, 2026"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Mark W. Zeno, for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Mark W. Zeno, for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "David Gagne, for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "David Gagne, for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 3,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2026 NY Slip Op 00638",
+    "officialCitation": "7 NY3d 831",
+    "pageMarkerCount": 1
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "MEMORANDUM:"
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <form> in source HTML."
+    },
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <input> in source HTML."
+    }
+  ]
+}

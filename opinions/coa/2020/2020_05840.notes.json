@@ -1,0 +1,126 @@
+{
+  "caseId": "2020_05840",
+  "sourcePath": "coa/2020/2020_05840.htm",
+  "notesPath": "coa/2020/2020_05840.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.109Z",
+  "source": {
+    "title": "People v Batticks (2020 NY Slip Op 05840)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 52346,
+    "lineCount": 195,
+    "tagCounts": {
+      "a": 68,
+      "b": 46,
+      "blockquote": 106,
+      "body": 2,
+      "br": 32,
+      "div": 16,
+      "font": 62,
+      "head": 2,
+      "html": 2,
+      "i": 198,
+      "p": 85,
+      "script": 4,
+      "style": 2,
+      "sup": 20,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 10
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Batticks",
+      "2020 NY Slip Op 05840 [35 NY3d 561]",
+      "October 20, 2020",
+      "DiFiore, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, January 6, 2021"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Jonathan Batticks, Appellant."
+    ],
+    "citationLine": "2020 NY Slip Op 05840 35 NY3d 561",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued September 9, 2020; decided October 20, 2020",
+      "October 20, 2020",
+      "As corrected through Wednesday, January 6, 2021"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 49,
+    "footnotesCount": 10
+  },
+  "citations": {
+    "slipOpinion": "2020 NY Slip Op 05840",
+    "officialCitation": "35 NY3d 561",
+    "pageMarkerCount": 30
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "DiFiore",
+      "Wilson"
+    ],
+    "qualifierLines": [
+      "{**35 NY3d at 563} OPINION OF THE COURT"
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 10,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

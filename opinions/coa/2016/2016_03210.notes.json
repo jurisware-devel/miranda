@@ -1,0 +1,118 @@
+{
+  "caseId": "2016_03210",
+  "sourcePath": "coa/2016/2016_03210.htm",
+  "notesPath": "coa/2016/2016_03210.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.876Z",
+  "source": {
+    "title": "People v Wallace (2016 NY Slip Op 03210)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 6258,
+    "lineCount": 78,
+    "tagCounts": {
+      "a": 10,
+      "b": 4,
+      "body": 2,
+      "br": 6,
+      "div": 6,
+      "font": 10,
+      "head": 2,
+      "html": 2,
+      "i": 32,
+      "opinion": 1,
+      "p": 22,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Wallace",
+      "2016 NY Slip Op 03210 [27 NY3d 1037]",
+      "April 28, 2016",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, July 13, 2016"
+    ],
+    "captionLines": [],
+    "citationLine": "2016 NY Slip Op 03210 27 NY3d 1037",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued March 22, 2016; decided April 28, 2016",
+      "April 28, 2016",
+      "As corrected through Wednesday, July 13, 2016"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Paul, Weiss, Rifkind, Wharton & Garrison LLP , New York City ( Katherine Kelly Fell and Kyle Adam Wirshba of counsel), and Seymour W. James, Jr., The Legal Aid Society , New York City ( Lawrence T. Hausman of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Paul, Weiss, Rifkind, Wharton & Garrison LLP , New York City ( Katherine Kelly Fell and Kyle Adam Wirshba of counsel), and Seymour W. James, Jr., The Legal Aid Society , New York City ( Lawrence T. Hausman of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Cyrus R. Vance, Jr., District Attorney , New York City ( Ellen Stanfield Friedman and Sylvia Wertheimer of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Cyrus R. Vance, Jr., District Attorney , New York City ( Ellen Stanfield Friedman and Sylvia Wertheimer of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 7,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2016 NY Slip Op 03210",
+    "officialCitation": "27 NY3d 1037",
+    "pageMarkerCount": 4
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**27 NY3d at 1038} OPINION OF THE COURT",
+      "Memorandum."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

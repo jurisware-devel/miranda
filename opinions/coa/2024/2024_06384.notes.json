@@ -1,0 +1,153 @@
+{
+  "caseId": "2024_06384",
+  "sourcePath": "coa/2024/2024_06384.htm",
+  "notesPath": "coa/2024/2024_06384.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.301Z",
+  "source": {
+    "title": "People v Rufus (2024 NY Slip Op 06384)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 19042,
+    "lineCount": 123,
+    "tagCounts": {
+      "a": 46,
+      "b": 36,
+      "body": 2,
+      "br": 27,
+      "counselblock": 1,
+      "div": 18,
+      "font": 18,
+      "head": 2,
+      "html": 2,
+      "i": 78,
+      "p": 39,
+      "script": 4,
+      "style": 2,
+      "sup": 4,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": [
+      "b"
+    ]
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Rufus",
+      "2024 NY Slip Op 06384 [43 NY3d 268]",
+      "December 19, 2024",
+      "Rivera, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, June 18, 2025"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Parris J. Rufus, Appellant."
+    ],
+    "citationLine": "2024 NY Slip Op 06384 43 NY3d 268",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued November 20, 2024; decided December 19, 2024",
+      "Appeal, by permission of a Justice of the Appellate Division of the Supreme Court in the Fourth Judicial Department, from an order of that Court, entered October 6, 2023. The Appellate Division affirmed a judgment of the Monroe County Court (Meredith A. Vacca, J.), which had convicted defendant, after a nonjury trial, of driving while intoxicated. People v Rufus , 220 AD3d 1162 , affirmed.",
+      "December 19, 2024",
+      "As corrected through Wednesday, June 18, 2025",
+      "Appeal, by permission of a Justice of the Appellate Division of the Supreme Court in the Fourth Judicial Department, from an order of that Court, entered October 6, 2023. The Appellate Division affirmed a judgment of the Monroe County Court (Meredith A. Vacca, J.), which had convicted defendant, after a nonjury trial, of driving while intoxicated."
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "points_of_counsel_only",
+    "pointsOfCounselCount": 1,
+    "appearanceLikeLines": [
+      {
+        "text": "Fiandach & Fiandach , Rochester ( Edward L. Fiandach of counsel), for appellant. I. Crossing the fog line with the right front tire was an insufficient basis for the stop of the motor vehicle. ( People v Malinsky , 15 NY2d 86; People v Berrios , 28 NY2d 361; People v Guthrie , 25 NY3d 130 ; Steigelman v Transervice Lease Corp. , 145 AD3d 439 ; Guerrero v Milla , 135 AD3d 635 .) II. The verdict in this case was both insufficient and against the weight of the evidence presented at trial. ( People v Bleakley , 69 NY2d 490; People v Cruz , 48 NY2d 419; People v Hammond , 35 AD3d 905 ; People v Rosado , 158 Misc 2d 50; People v Ardila , 85 NY2d 846.)",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": true,
+        "argumentTailPreview": "I. Crossing the fog line with the right front tire was an insufficient basis for the stop of the motor vehicle. ( People v Malinsky , 15 NY2d 86; People v Berri",
+        "sentenceText": "Fiandach & Fiandach , Rochester ( Edward L. Fiandach of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Sandra Doorley, District Attorney , Rochester ( Amy N. Walendziak of counsel), for respondent. I. The New York State Troopers had probable cause to stop defendant's vehicle. ( People v Vandover , 20 NY3d 235 ; People v Brown , 25 NY3d 973 ; People v Estrella , 10 NY3d 945 ; People v Howard , 22 NY3d 388 ; People v Harrison , 57 NY2d 470.) II. Defendant's contentions are not reviewable by this Court, and are otherwise without merit. ( People v Hawkins , 11 NY3d 484 ; People v Gray , 86 NY2d 10; People v Finger , 95 NY2d 894; People v Santi , 3 NY3d 234 ; People v Ramos , 19 NY3d 133 .)",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": true,
+        "argumentTailPreview": "I. The New York State Troopers had probable cause to stop defendant's vehicle. ( People v Vandover , 20 NY3d 235 ; People v Brown , 25 NY3d 973 ; People v Estre",
+        "sentenceText": "Sandra Doorley, District Attorney , Rochester ( Amy N. Walendziak of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 2,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 12,
+    "footnotesCount": 2
+  },
+  "citations": {
+    "slipOpinion": "2024 NY Slip Op 06384",
+    "officialCitation": "43 NY3d 268",
+    "pageMarkerCount": 8
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [
+      "Rivera"
+    ],
+    "qualifierLines": [
+      "{**43 NY3d at 270} OPINION OF THE COURT",
+      "A divided Appellate Division affirmed, concluding that the record supported the suppression court's determination that Trooper Tiwana had probable cause to believe that defendant violated Vehicle and Traffic Law § 1128 (a) before stopping his vehicle because he had observed the vehicle \"swerve and cross over the white fog line three times within a tenth of a mile\" (220 AD3d 1162, 1163 [4th Dept 2023]). The majority also rejected defendant's remaining claims. The dissenting Justices would have reversed the conviction solely on the lack of probable cause because, in their view, there was no evidence of defendant's{**43 NY3d at 272} unsafe driving (see id. at 1163-1167 [Curran & Ogden, JJ., dissenting]). One of the dissenting Justices granted defendant leave to appeal."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 2,
+    "labels": [
+      "1",
+      "2"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "STRAY_CLOSING_TAG",
+      "severity": "warning",
+      "detail": "Closing tag </b> appears more times than opening tag <b>."
+    },
+    {
+      "code": "APPEARANCE_LINE_WITH_ARGUMENT_TAIL",
+      "severity": "info",
+      "detail": "Appearance-like line continues into argument text after \"for appellant.\"."
+    },
+    {
+      "code": "APPEARANCE_LINE_WITH_ARGUMENT_TAIL",
+      "severity": "info",
+      "detail": "Appearance-like line continues into argument text after \"for respondent.\"."
+    },
+    {
+      "code": "POINTS_OF_COUNSEL_ONLY",
+      "severity": "info",
+      "detail": "Source uses POINTS OF COUNSEL without a separate APPEARANCES OF COUNSEL section."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

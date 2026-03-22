@@ -1,0 +1,136 @@
+{
+  "caseId": "2013_04275",
+  "sourcePath": "coa/2013/2013_04275.htm",
+  "notesPath": "coa/2013/2013_04275.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.674Z",
+  "source": {
+    "title": "People v Lam (2013 NY Slip Op 04275)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 11011,
+    "lineCount": 84,
+    "tagCounts": {
+      "a": 10,
+      "b": 10,
+      "blockquote": 2,
+      "body": 2,
+      "br": 12,
+      "div": 4,
+      "font": 18,
+      "head": 2,
+      "html": 2,
+      "i": 46,
+      "p": 22,
+      "script": 4,
+      "style": 2,
+      "sup": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Lam",
+      "2013 NY Slip Op 04275 [21 NY3d 958]",
+      "June 11, 2013",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, August 28, 2013"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Ray Lam, Appellant."
+    ],
+    "citationLine": "2013 NY Slip Op 04275 21 NY3d 958",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued April 24, 2013; decided June 11, 2013",
+      "June 11, 2013",
+      "As corrected through Wednesday, August 28, 2013"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Steven Banks, Legal Aid Society , New York City ( Martin M. Lucente of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Steven Banks, Legal Aid Society , New York City ( Martin M. Lucente of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Cyrus R. Vance, Jr., District Attorney , New York City ( Andrew E. Seewald and Eleanor J. Ostrow of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Cyrus R. Vance, Jr., District Attorney , New York City ( Andrew E. Seewald and Eleanor J. Ostrow of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 16,
+    "footnotesCount": 1
+  },
+  "citations": {
+    "slipOpinion": "2013 NY Slip Op 04275",
+    "officialCitation": "21 NY3d 958",
+    "pageMarkerCount": 8
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Smith"
+    ],
+    "qualifierLines": [
+      "{**21 NY3d at 959} OPINION OF THE COURT",
+      "Memorandum. ",
+      "Two other features of this case seem to me to call for comment. First, while I find much to admire in the Second Circuit's Mastrovincenzo opinion, I am not convinced—and we should not decide, in a case without a useful record—that we should accept its \"dominant purpose\" test (435 F3d at 95). Here, it does not matter what test is applied: the only issue is whether to assume the facts in the People's favor, as the majority apparently does, or in defendant's favor, as I think we should. Certainly, today's memorandum should not be viewed as committing us to follow Mastrovincenzo. ",
+      "It is not clear to me why LaFontaine permits either the Appellate Term or the majority to proceed in this way; but I welcome the erosion of LaFontaine. This case confirms my belief that the LaFontaine rule is essentially unworkable (see Concepcion, 17 NY3d at 201-207 [Smith, J., dissenting]). "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 1,
+    "labels": [
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

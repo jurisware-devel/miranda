@@ -1,0 +1,133 @@
+{
+  "caseId": "2019_08978",
+  "sourcePath": "coa/2019/2019_08978.htm",
+  "notesPath": "coa/2019/2019_08978.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.080Z",
+  "source": {
+    "title": "People v Mairena (2019 NY Slip Op 08978)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 82990,
+    "lineCount": 191,
+    "tagCounts": {
+      "a": 66,
+      "b": 40,
+      "blockquote": 14,
+      "body": 2,
+      "br": 24,
+      "div": 36,
+      "font": 90,
+      "head": 2,
+      "html": 2,
+      "i": 420,
+      "p": 136,
+      "script": 4,
+      "style": 2,
+      "sup": 16,
+      "table": 6,
+      "td": 18,
+      "title": 2,
+      "tr": 18,
+      "u": 30
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Mairena",
+      "2019 NY Slip Op 08978 [34 NY3d 473]",
+      "December 17, 2019",
+      "Stein, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, May 20, 2020"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "David Mairena, Appellant.",
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Mauricio Altamirano, Appellant."
+    ],
+    "citationLine": "2019 NY Slip Op 08978 34 NY3d 473",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued November 20, 2019; decided December 17, 2019",
+      "December 17, 2019",
+      "As corrected through Wednesday, May 20, 2020"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 86,
+    "footnotesCount": 8
+  },
+  "citations": {
+    "slipOpinion": "2019 NY Slip Op 08978",
+    "officialCitation": "34 NY3d 473",
+    "pageMarkerCount": 44
+  },
+  "opinionStructure": {
+    "totalWritings": 5,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "concurrence": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Stein",
+      "Fahey",
+      "Rivera"
+    ],
+    "qualifierLines": [
+      "{**34 NY3d at 477} OPINION OF THE COURT",
+      "However, the rule \"is not . . . that closing arguments in a criminal case must be uncontrolled or even unrestrained\" (Herring, 422 US at 862). Rather, the Supreme Court explained in Herring that the trial \"judge must be and is given great latitude in controlling the duration and limiting the scope of closing summations\" (id.; see People v Ashwal, 39 NY2d 105, 109 [1976] [\"It is fundamental that the jury must decide the issues on the evidence, and therefore fundamental that counsel, in summing up, must stay within the four corners of the evidence and avoid irrelevant comments which have no bearing on any legitimate issue in the case\" (internal quotation marks and citation omitted)]). Moreover, although \"[t]here is no way to know whether . . . appropriate arguments in summation might have affected the ultimate judgment in [a] case\" (422 US at 864), the Supreme Court has since emphasized in Glebe v Frost that \"[n]one of [its] cases clearly requires placing improper restriction of closing argument in [the] narrow category\" of structural errors (574 US 21, 23 [2014]), as opposed to a \"trial error . . . reviewable for harmlessness\" (id. at 22). Of course, even \"[m]ost constitutional mistakes call for reversal only if the government cannot demonstrate harmlessness\" (id. at 23). It is \"[o]nly the rare type of error—in general, one that infect[s] the entire trial process and necessarily render[s] [it] fundamentally unfair—[that] requires automatic reversal\" (id. [internal quotation marks and citation omitted]). Although Glebe was decided pursuant{**34 NY3d at 483} to the deferential standard applied under the Antiterrorism and Effective Death Penalty Act of 1996 and, thus, leaves open the question of whether harmless error analysis applies to trial court rulings that operate to restrict counsel's strategic choices regarding summation, it nevertheless makes clear that Herring does not compel a conclusion that \"the restriction of summation . . . amounts to structural error\" (574 US at 24). Of course, regardless of whether the error is structural, \"summation matters\" as the dissent puts it (dissenting op at 499), and \"the right of the defense to make a closing summary of the evidence to the trier of the facts\" implicates the Sixth Amendment (Herring, 422 US at 860). Nevertheless, short of a complete deprivation of the right to present a summation (see id.; , 31 NY3d 1183, 1185 [2018]), it cannot be said that Supreme Court precedent requires us to reconsider our well-established case law holding that the improper reversal of a prior charging ruling that impacts summation is subject to harmless error analysis.",
+      "Smalling and Miller do not require a different analysis. Smalling, although the most recent, is the least instructive. The decision is set forth in a one-paragraph memorandum, in which we ordered a new trial when the trial court initially complied with its promise not to charge on constructive possession but then provided the instruction in response to a jury note during deliberations. Defendant had argued that the additional charge was prejudicial and there was good reason to believe the jury convicted defendant on the erroneously given charge. Notably, the People argued that any error from the additional charge was harmless, relying on  (27 NY3d 423, 439 [2016]). Defendant distinguished Badalamenti as a case involving a final instruction and not a response to a jury request. We concluded that defendant was prejudiced, citing Greene and CPL 300.10 (4), and held that \"[u]nder the unique circumstances of this case, the error [was] not harmless\" (29 NY3d at 982), citing  (16 AD3d 1046 [4th Dept 2005]), a case which applied the Crimmins harmless error doctrine to a supplemental instruction. Thus, Smalling is distinguishable, as it did not determine the impact on the summation under a harmless error analysis, but as limited by the parties' arguments, Smalling focused on if and how \"the error infected or tainted the verdict\" under a traditional harmless error analysis (Crimmins, 36 NY2d at 242), which even the majority does not apply to the instant appeals.",
+      "When defense counsel charts the course of summation based on the trial judge's description of the charge, and then after summation the judge fails to give the promised instruction or gives a previously denied instruction as requested by defense counsel, the judge should offer to reopen summations so that counsel may address the jury in light of the charge as actually given. Not only would reopening summations ensure the fairness of the proceeding, but it would also avoid a potential appealable issue. Absent such opportunity to mitigate the prejudice to the defense from the court's error, the conviction should be reversed and a new trial ordered. I dissent.",
+      "Chief Judge DiFiore and Judges Garcia and Feinman concur; Judge Fahey concurs in result in an opinion; Judge Rivera dissents in an opinion in which Judge Wilson concurs."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 1,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 8,
+    "labels": [
+      "1",
+      "2",
+      "*",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 5 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 3 table elements before or within the header region."
+    }
+  ]
+}

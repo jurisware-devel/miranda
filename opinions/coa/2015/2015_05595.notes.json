@@ -1,0 +1,105 @@
+{
+  "caseId": "2015_05595",
+  "sourcePath": "coa/2015/2015_05595.htm",
+  "notesPath": "coa/2015/2015_05595.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.812Z",
+  "source": {
+    "title": "People v Pacquette (2015 NY Slip Op 05595)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 12019,
+    "lineCount": 90,
+    "tagCounts": {
+      "a": 6,
+      "b": 4,
+      "body": 2,
+      "br": 6,
+      "div": 10,
+      "font": 18,
+      "head": 2,
+      "html": 2,
+      "i": 44,
+      "p": 34,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 6
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Pacquette",
+      "2015 NY Slip Op 05595 [25 NY3d 575]",
+      "June 30, 2015",
+      "Pigott, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, August 26, 2015"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Dean Pacquette, Appellant."
+    ],
+    "citationLine": "2015 NY Slip Op 05595 25 NY3d 575",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued June 4, 2015; decided June 30, 2015",
+      "June 30, 2015",
+      "As corrected through Wednesday, August 26, 2015"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 18,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2015 NY Slip Op 05595",
+    "officialCitation": "25 NY3d 575",
+    "pageMarkerCount": 8
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [
+      "Pigott"
+    ],
+    "qualifierLines": [
+      "{**25 NY3d at 577} OPINION OF THE COURT"
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

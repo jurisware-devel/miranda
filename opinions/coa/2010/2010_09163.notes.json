@@ -1,0 +1,121 @@
+{
+  "caseId": "2010_09163",
+  "sourcePath": "coa/2010/2010_09163.htm",
+  "notesPath": "coa/2010/2010_09163.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.511Z",
+  "source": {
+    "title": "People v Sweeper (2010 NY Slip Op 09163)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 4054,
+    "lineCount": 65,
+    "tagCounts": {
+      "a": 4,
+      "b": 4,
+      "body": 2,
+      "br": 4,
+      "div": 2,
+      "font": 8,
+      "head": 2,
+      "html": 2,
+      "i": 22,
+      "p": 11,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Sweeper",
+      "2010 NY Slip Op 09163 [15 NY3d 925]",
+      "December 14, 2010",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, February 9, 2011"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Bruce Sweeper, Appellant."
+    ],
+    "citationLine": "2010 NY Slip Op 09163 15 NY3d 925",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Decided December 14, 2010",
+      "December 14, 2010",
+      "As corrected through Wednesday, February 9, 2011"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Center for Appellate Litigation , New York City ( Susan H. Salomon and Robert S. Dean of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Center for Appellate Litigation , New York City ( Susan H. Salomon and Robert S. Dean of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Cyrus R. Vance, Jr., District Attorney , New York City ( Patricia Curran of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Cyrus R. Vance, Jr., District Attorney , New York City ( Patricia Curran of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 2,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2010 NY Slip Op 09163",
+    "officialCitation": "15 NY3d 925",
+    "pageMarkerCount": 3
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**15 NY3d at 926} OPINION OF THE COURT",
+      "Memorandum. "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

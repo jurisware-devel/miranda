@@ -1,0 +1,125 @@
+{
+  "caseId": "2016_02554",
+  "sourcePath": "coa/2016/2016_02554.htm",
+  "notesPath": "coa/2016/2016_02554.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.870Z",
+  "source": {
+    "title": "People v Nelson (2016 NY Slip Op 02554)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 41695,
+    "lineCount": 138,
+    "tagCounts": {
+      "a": 8,
+      "b": 4,
+      "blockquote": 16,
+      "body": 2,
+      "br": 10,
+      "div": 14,
+      "font": 34,
+      "head": 2,
+      "html": 2,
+      "i": 234,
+      "p": 99,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 10
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Nelson",
+      "2016 NY Slip Op 02554 [27 NY3d 361]",
+      "April 5, 2016",
+      "Fahey, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, July 13, 2016"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Joel Nelson, Appellant."
+    ],
+    "citationLine": "2016 NY Slip Op 02554 27 NY3d 361",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued February 18, 2016; decided April 5, 2016",
+      "April 5, 2016",
+      "As corrected through Wednesday, July 13, 2016"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 58,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2016 NY Slip Op 02554",
+    "officialCitation": "27 NY3d 361",
+    "pageMarkerCount": 16
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "concurrence": 1
+    },
+    "authors": [
+      "Fahey",
+      "Garcia"
+    ],
+    "qualifierLines": [
+      "{**27 NY3d at 364} OPINION OF THE COURT",
+      "The Appellate Division affirmed, with one Justice dissenting (, 125 AD3d 58 [2d Dept 2014]). The Appellate Division was troubled by the trial court's failure to alert counsel to the issue when it first noticed the shirts, and stated that the \"better course would have been to immediately inform Walton's family members that their conduct could potentially imperil the legitimacy of the trial, and give them an opportunity to voluntarily acquiesce to defense counsel's request, thus obviating the need for explicit direction from the trial court\" (id. at 63). The Court nevertheless declined to create a per se rule requiring reversal \"whenever a spectator brings a depiction of a deceased victim into a courtroom\" because \"each particular instance of challenged conduct calls for a sui generis determination of its potential effect on the jury, made in light of the particular circumstances of the case\" (id.). The Court held that, under the particular circumstances of the case, the trial court's determination \"that the spectator conduct did not threaten the ability of the jury to remain impartial\" was not error (id. at 64).",
+      "The dissenting Justice agreed \"that a per se rule compelling reversal in every case involving such a display is not tenable\" (id. at 67 [Dickerson, J., dissenting]). The dissent disagreed, however, with the conclusion that defendant was not deprived of his fundamental right to a fair trial under the circumstances (see id. at 70-71).",
+      "The dissenting Justice granted defendant leave to appeal to this Court (2015 NY Slip Op 68346[U] [2d Dept 2015]). We now affirm.",
+      "No court should tolerate a vocal outburst by a spectator on the ground that the spectator had a First Amendment right to express his or her views on the proceedings. The court similarly should not entertain such concerns when the spectator conduct is nonverbal (see Musladin, 549 US at 79 [Stevens, J., concurring]).",
+      "{**27 NY3d at 371}A similar risk is presented by images of a deceased victim displayed by spectators in the courtroom, either on their clothing or by some other method. Such depictions may be viewed by the jury as an appeal to sympathy for the deceased victim and the spectators wearing the display, and perhaps as a request to hold the defendant responsible for their loss (see Musladin, 549 US at 83 [Souter, J., concurring]; Meghan E. Lind, Hearts on Their Sleeves: Symbolic Displays of Emotion by Spectators in Criminal Trials, 98 J Crim L & Criminology 1147, 1153-1154 [2008]). We therefore conclude that spectator displays of a deceased victim's portrait or photograph should be prohibited in the courtroom during trial. Here, the trial court erred in failing to instruct the spectators to remove the shirts or cover them upon defense counsel's objection.",
+      "Nevertheless, we agree with the Appellate Division that a per se rule requiring reversal whenever a spectator displays a photograph of a deceased victim during trial is untenable (see Nelson, 125 AD3d at 63; id. at 67-68 [Dickerson, J., dissenting]). We further decline to apply the Williams and Flynn framework to hold that such displays are necessarily so inherently prejudicial that they require reversal and a new trial in every case (see Musladin, 549 US at 75-76). That framework, at least as traditionally applied, suggests that certain courtroom conduct is so inherently prejudicial that it requires reversal and a new trial whenever such conduct occurs during trial (see Williams, 425 US at 504-505). In other words, that framework presumes both that there was error and that the error cannot be harmless because the defendant has been deprived of a fair trial thereby (see People v Crimmins, 36 NY2d 230, 238 [1975]).",
+      "I concur with the majority that defendant was not deprived of a fair trial. I write separately because I would adopt the standard the Supreme Court applies to state-sponsored courtroom practices that raise similar issues instead of the abuse of discretion standard applied by the majority (see majority op at 369-370). Under this standard, appellate courts would examine the totality of the circumstances to determine whether the spectator conduct at issue presents \"an unacceptable risk . . . of impermissible factors coming into play\" (Holbrook v Flynn, 475 US 560, 570 [1986] [internal quotation marks and citation omitted]). The majority's approach is thoughtful and, as it applies to these facts, correctly focuses on the trial court's failure to take remedial measures. An abuse of discretion standard may lead, however, to inconsistent rulings by trial courts and permits harmless error analysis by appellate courts even though spectator conduct may implicate a defendant's \"self-standing\" right to a fair trial (People v Crimmins, 36 NY2d 230, 238 [1975]).",
+      "Concurring in the judgment in Musladin, Justice Souter asserted that Williams and Flynn evinced an \"intent to adopt a standard at [a] general and comprehensive level . . . that . . . reaches the behavior of spectators\" (Musladin, 549 US at 82 [Souter, J., concurring]; see also id. at 78-79 [Stevens, J., concurring]). I agree, and would apply the Williams/Flynn standard here.",
+      "As the Musladin majority noted, the inquiry in Williams and Flynn asked \"whether the practices furthered an essential state interest,\" suggesting the standard \"appl[ied] only to state-sponsored practices\" (id. at 76). Certainly, the question of state interest is a factor with no relevance to the facts and circumstances here. Nevertheless, as Justice Souter concluded, the trial court \"has an affirmative obligation to control the courtroom and keep it free of improper influence\" whether the improper conduct is by a state actor \"or an individual\" (id. at 82 [Souter, J., concurring]).",
+      "Applying the first factor, the offending shirts in this case bore the victim's photograph and the phrase \"Remembering Leo Walton.\" Such images could \"raise a risk of improper considerations\" inasmuch as the photograph and written message could be construed as \"an appeal for sympathy . . . and a call for some response\" that a juror might interpret to mean \"a verdict of guilty\" (Musladin, 549 US at 82-83 [Souter, J., concurring]; see generally People v Stevens, 76 NY2d 833, 835 [1990] [\"photographs of the victim taken while he or she was alive . . . may . . . arouse the jury's emotions\"]). As other courts confronted with similar displays have noted, however, jurors were just as \"likely to have viewed the buttons as signs of grief instead of a collective call for . . . conviction\" (Iromuanya, 282 Neb at 828, 806 NW2d at 432). The spectators were silent, evidently few in number, and their T-shirts were partially covered. Moreover, unlike the wearing of law enforcement uniforms by persons in the gallery, these T-shirts gave no suggestion of state approval of the spectator's message (cf.{**27 NY3d at 377} Woods, 923 F2d at 1458-1460 [noting \"(a)bout half of the spectators appear to be wearing prison guard uniforms\" and \"(t)he officers in this case were there . . . to communicate a message to the jury\" even though \"no state interest c(ould) justify the uniformed presence of these off-duty correctional officers\" (footnotes omitted)]).",
+      "{**27 NY3d at 378}Lastly, I agree with my colleagues that \"[t]rial courts have the inherent authority and the affirmative obligation to control conduct and decorum in the courtroom, in order to promote the fair administration of justice for all\" (majority op at 367). Unquestionably, the better practice here would have been for Supreme Court to have responded to the spectator conduct by taking steps to end the display, but I cannot agree that all spectator displays of a deceased victim's photograph should be banned outright (see majority op at 370-371). This is not to say that any particular memorial or other display by spectators is permissible, or that certain conduct necessitates a specific response. The risk of prejudice presented by spectator conduct should always be evaluated on a case-by-case basis (see Musladin, 549 US at 83 [Souter, J., concurring]; Iromuanya, 282 Neb at 827, 806 NW2d at 432 [noting that Justice Souter \"declined to embrace a per se rule\" regarding memorial buttons and instead concluded that the issue in each case is whether the risk is unacceptable])."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 1,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

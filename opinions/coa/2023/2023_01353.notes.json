@@ -1,0 +1,155 @@
+{
+  "caseId": "2023_01353",
+  "sourcePath": "coa/2023/2023_01353.htm",
+  "notesPath": "coa/2023/2023_01353.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.202Z",
+  "source": {
+    "title": "People v Regan (2023 NY Slip Op 01353)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 94480,
+    "lineCount": 238,
+    "tagCounts": {
+      "a": 96,
+      "b": 70,
+      "blockquote": 6,
+      "body": 2,
+      "br": 40,
+      "div": 26,
+      "font": 112,
+      "frac": 4,
+      "head": 2,
+      "html": 2,
+      "i": 422,
+      "p": 164,
+      "script": 4,
+      "style": 2,
+      "sup": 32,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 20
+    },
+    "unknownTags": [
+      "frac"
+    ],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Regan",
+      "2023 NY Slip Op 01353 [39 NY3d 459]",
+      "March 16, 2023",
+      "Wilson, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, July 26, 2023"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Andrew J. Regan, Appellant."
+    ],
+    "citationLine": "2023 NY Slip Op 01353 39 NY3d 459",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued February 9, 2023; decided March 16, 2023",
+      "March 16, 2023",
+      "As corrected through Wednesday, July 26, 2023"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 95,
+    "footnotesCount": 16
+  },
+  "citations": {
+    "slipOpinion": "2023 NY Slip Op 01353",
+    "officialCitation": "39 NY3d 459",
+    "pageMarkerCount": 55
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Wilson",
+      "Singas"
+    ],
+    "qualifierLines": [
+      "{**39 NY3d at 461} OPINION OF THE COURT",
+      "Before trial, defendant moved to dismiss the accusatory instrument, contending that his due process right to prompt prosecution had been violated by the excessive preindictment delay (see generally Singer, 44 NY2d 241 [1978]; NY Const, art I, § 6). County Court denied defendant's motion. At trial, defendant no longer claimed he did not have sexual contact with the complainant; instead, he claimed that she had led him into her bedroom and the two voluntarily had sex while both their partners were elsewhere in the apartment. Defendant was convicted upon a jury verdict of rape in the first degree (Penal Law § 130.35 [2]). The Appellate Division, as relevant here, affirmed the judgment in a split decision (196 AD3d 735 [3d Dept 2021]). A dissenting Justice at the Appellate Division granted defendant permission to appeal the Appellate Division's order. We now reverse the Appellate Division's order.",
+      "Applying the Taranovich factors to this case, the delay was considerable. Although \"there is no specific length of time that automatically results in a due process violation,\" longer delays are more likely to inflict greater harms (, 39 NY3d 92, 97 [2022], citing Taranovich, 37 NY2d at 445-446; see also People v Cousart, 58 NY2d 62, 68 [1982] [citing Singer for the proposition that \"a five-year delay prior to trial raises a presumption of prejudice\"]). In People v Staley, we held that a \"wholly unexplained 31-month delay\" was an \"extraordinary time-lapse\" that \"would, without question, be cause for dismissal of the indictment\" even without any showing of prejudice (see 41 NY2d at 790-793). Even the People concede that the delay here was \"excessive.\" The fact that the Legislature removed the statute of limitations does not change our analysis (see Singas, J., dissenting op at 487 n 7) and if anything {**39 NY3d at 467}heightens the need for constitutional vigilance (see Singer, 44 NY2d at 253 [\"it cannot be assumed that the Statute of Limitations will adequately protect the defendant against the potential prejudice inherent in any delay, since in this State there is no Statute of Limitations for (rape in the first degree)\"]). Under the most charitable interpretation of the record and our case law, the People cannot satisfactorily account for 31 months of their four-year delay.",
+      "The People's explanation of their conduct is, as both the People and the dissents concede, a factor that \"weighs in the defendant's favor\" (Singas, J., dissenting op at 490; 196 AD3d at 737 [\"the preindictment delay of four years was lengthy and the reasons for the delay proffered by the People certainly left something to be desired\"]). \"Generally when there has been a protracted delay, certainly over a period of years, the burden is on the prosecution to establish good cause\" (Singer, 44 NY2d at 254; Decker, 13 NY3d at 14). It has not established good cause in this case. Here, 24 months are wholly unexplained by the record or any of the People's papers in this matter and seven months at a point late in the timeline are flimsily justified as necessary to decide the case required DNA evidence and then figure out how to get DNA evidence from defendant. The People's own submissions demonstrate the emptiness of the claim that the police and the People did not know how to obtain defendant's DNA and could not have figured it out sooner: not only did the assigned ADA obtain guidance on the warrant process in November of 2010—two years before the People filed their ultimately successful warrant application—but the investigator who eventually prepared the warrant application managed to figure out the procedure in part of a day. Indeed, our own case law dating back to at least 1982 provides the needed guidance on how to address this routine legal matter (see Matter of Abe A., 56 NY2d 288 [1982]).",
+      "Judge Singas misapplies the People's burden based on a reading of Singer that is not grounded in the Court's explanation{**39 NY3d at 469} of its holding. In her account, \"the Court emphasized consideration of the People's possible bad faith in delaying prosecution\" (Singas, J., dissenting op at 491). Although the Singer court noted that the People may have \"had a legitimate reason\" for the delay (namely, a strategy to question the defendant under \"more favorable conditions\"), it reiterated the well-settled principle that \"the burden is on the prosecution to establish good cause,\" and \"if commencement of the action has been delayed for a lengthy period, without good cause, the defendant may be entitled to a dismissal although there may be no showing of special prejudice\" (44 NY2d at 254 [emphasis added]). Nowhere did the Singer court mention bad faith or distinguish between the positive presence of bad faith and the mere lack of good faith—it was only the dissent who used the term \"bad faith,\" and only to comment that \"there [wa]s no indication that this decision was made in bad faith\" (id. at 258 [Gabrielli, J., dissenting in part]). Although \"bad faith . . . obviously would weigh heavily in favor of dismissal of the indictment\" (, 12 NY3d 51, 56-57 [2009]), we have never lightened the prosecution's burden to explain itself merely because the record does not establish the People's bad faith (see Singas, J., dissenting op at 490-492). As in Singer, the record and the briefing in this case are devoid of any explanation for the People's delay, although here the People had multiple opportunities to provide one.",
+      "By contrast, we are much more solicitous of the People when they offer even a colorable explanation for their delay, for instance when the witnesses are cowed by the defendant's threats (see Decker, 13 NY3d at 14; Vernace, 96 NY2d at 887). Other acceptable reasons for preindictment delay relate to the People's \"need to investigate to discover the offender, to eliminate unfounded charges, and to gather sufficient evidence prior{**39 NY3d at 470} to the commencement of a prosecution\" (People v Lesiuk, 81 NY2d 485, 490 [1993], citing Singer, 44 NY2d at 254). Judge Singas acknowledges that no such extenuating factors are present here (see Singas, J., dissenting op at 490 [\"The People lack a credible justification for the . . . delay\"]).",
+      "Indeed, Judge Singas goes so far as to propose that the delay arose from \"investigators' disbelief of [the complainant's] account of the incident, or their apathy toward her trauma,\" or even their \"enduring cultural attitudes towards sexual violence\" (id. at 492), but also maintains \"that law enforcement proceeded with no bad faith\" (id. at 491-492). Rather, those explanations would, in her dissent's view, \"dilute[ ] the significance of this factor\" (id. at 492) because \"[l]aw enforcement's mistreatment of an innocent victim, or even bad faith toward a victim\" (id. at 490-491 n 10), is not the kind of bad faith our laws protect against. We reject that analysis.",
+      "Turning to the remaining three Taranovich factors, they do not weigh in defendant's favor, but they also do not overcome the People's sizeable, unexplained delay. As we recently noted in People v Johnson, the third factor refers to both the seriousness and the complexity of the crime (see 39 NY3d at 97). Defendant was accused and ultimately convicted of a heinous crime. However, the preparation to which the People attribute a delay for the prosecution of this particular crime was not complex. The People had the complainant's sworn statement and witness interviews immediately; the only missing evidence was the DNA evidence from defendant, which could have been obtained with speed and ease. In saying this, we do not disregard the difficulties prosecutors may face in \"preparing a rape victim to testify,\" dealing with \"the intricacies of DNA evidence and mixture analysis,\" or \"confronting deeply entrenched preconceptions of rape held by juries and judges alike\" (Singas, J., dissenting op at 488). If there were any evidence in the record that any of those difficulties contributed to the delay here, the outcome of this case might well be different. But the People have never contended, and there is no suggestion in the record, that the complainant in this case was reluctant to testify, or that investigators had any difficulty processing or interpreting the DNA evidence once it was finally collected. Nor do we hold that the six months between defendant's arrest and trial, during which the People presumably prepared the complainant to testify, was unreasonable. Rather, the procedure to obtain defendant's DNA was simple, and the People have not asserted{**39 NY3d at 471} that any delay in this case was caused by the intricacies of prosecution. The prosecution knew full well that, in determining the truth of defendant's assertion that he had no sexual contact with the complainant, DNA evidence could conclusively disprove his claim. Obtaining that proof took a day's worth of paperwork, a few days to execute the warrant, and three months to obtain the lab results. When a serious crime has been committed and there are no significant obstacles to prosecution, the interests of the People, the public, the victim, and the defendant all favor prompt prosecution.",
+      "We recognize that \"[t]he Taranovich framework is a holistic one—that is, 'no one factor or combination of the factors . . . is necessarily decisive or determinative of the [prompt prosecution] claim' \" (Johnson, 39 NY3d at 96, quoting Taranovich, 37{**39 NY3d at 472}NY2d at 445). Although Judge Singas complains that we focus on just one Taranovich factor, the length of the delay (Singas, J., dissenting op at 493), that statement is truer of her dissent, which focuses on one component of the third factor: the gravity of the crime, allowing the seriousness of the offense to swamp all other factors. She concedes the first two factors favor defendant. Our precedent establishes that the absence of proof of the fifth does not overcome a lengthy unexplained delay, and the fourth factor is not implicated here. In contrast, she devotes most of her analysis to the seriousness of the offense (see id. at 475-483, 486-488, 493-494). She dismisses the relevance of cases solely on the basis that they involved less serious offenses (see id. at 490). Counterintuitively to her exposition of the systemic reluctance or indifference to prosecute sexual assault, she would permit greater unexplained prosecutorial laxity in rape cases than she would in burglary or robbery cases (and even where the other component of the third factor, the difficulty of the particular prosecution, cuts against the People). In this case, the balance of the factors weighs in favor of dismissal.",
+      "Although that prompt prosecution right formally belongs to defendant, it also vindicates the interests of victims and the rest of society by ensuring prompt adjudications and reinforcing society's expectation that crime will be taken seriously (see Matter of Benjamin L., 92 NY2d 660, 667 [1999]; Staley, 41 NY2d at 792). Those considerations are particularly weighty in sexual assault cases, where, as our dissenting colleague so aptly chronicles in parts II and III of her dissent, distrust of the criminal justice system is rife, and regrettably, often justified.",
+      "Here, the complainant immediately reported the rape and identified defendant as her assailant. Defendant denied having sex with her. She submitted to an invasive search, and her boyfriend submitted to a DNA test. Thus, defendant's story could have been promptly assessed by the simple measure of obtaining a warrant for his DNA. Yet the People waited more than three years to obtain a warrant. We agree with Judge Singas's diagnosis of the still-pervasive problem of law enforcement's inability to recognize the seriousness of sexual assault: that problem manifests itself in \"the premature ending of rape investigations, closing cases as based on 'unfounded' allegations, and devoting less time and resources to investigating{**39 NY3d at 473} such cases\" (Singas, J., dissenting op at 492). It results in \"structural barriers that victims confront in pursuing sexual assault prosecutions\" (id. at 492). Indeed, those barriers are clearly reflected here by the People's inaction in response to the complainant's prompt report to the police that she had been raped by defendant. That the People here cannot offer any explanation for 31 months of delay illustrates the reality of Judge Singas's spirited concern for the torpid prosecution of sexual assaults against women.",
+      "The constitutional guarantee of a prompt prosecution places a burden on the State, when prosecuting crimes, to do so with alacrity. Contrary to Judge Singas's contention, we are not \"impos[ing] a de facto 31-month limitation on first-degree rape investigations\" (Singas, J., dissenting op at 493). The problem here is not simply the expanse of time between when the crime occurred and when defendant was charged, but the complete failure of the People to proffer any excuse which even colorably justifies that delay. Our Constitution allows for modest unexcused delays; it allows for lengthy justifiable delays. But it does not allow for lengthy unexplained or, as here, inexplicable delays caused by lethargy or ignorance of basic prosecutorial procedures. The constitutional prompt prosecution guarantee benefits defendants, victims and society at large, and it is the role of the courts to protect it (see Singer, 44 NY2d at 254; Matter of Benjamin L., 92 NY2d at 667). In this case, the police and prosecutors did not take defendant's constitutional rights or the complainant's sexual assault seriously; they did not act expeditiously with regard to either. Their delay violated defendant's constitutional right to a prompt prosecution.",
+      " Despite years of progress by lawmakers and courts, including this Court, to dismantle unreasonable barriers to rape prosecutions, women who report sexual violence continue to face an uphill battle to hold those who rape them accountable. It is a harder fight after today. With the majority decision, the scales, once again, weigh against{**39 NY3d at 475} women's voices. While the majority aims to punish the People for the pre-accusatory delay in securing DNA evidence—a delay that had no discernible impact on defendant's ability to defend himself—the result is a stunning nullification of a jury's first-degree rape conviction and the reinforcement of the bleak history of the treatment of sexual assault victims. Because there was no due process violation, today's decision serves only to undermine New York's recent gains in ensuring that sexual assault victims are treated fairly by the criminal justice system. Accordingly, I must dissent.",
+      "The Appellate Division, with two Justices dissenting, affirmed defendant's judgment of conviction. As relevant here, the Court upheld the denial of defendant's motion to dismiss, concluding that \"the seriousness of the offense, the fact that defendant was not incarcerated pretrial and the absence of any demonstrated prejudice outweigh[ed] the four-year delay and the shortcomings in the People's reasons therefor\" (196 AD3d at 737).",
+      "\"The relevance of the People's good faith\" is greater for preindictment than postindictment delay, such that a longer delay will be tolerated (Wiggins, 31 NY3d at 12). Necessarily then, that law enforcement proceeded with no bad faith must also mean more in the preindictment context, particularly where there has been no showing of prejudice (see Doggett, 505 US at 657 [\"to warrant granting relief, negligence unaccompanied by particularized trial prejudice must have lasted longer than negligence demonstrably causing such prejudice\"]). After all, following a lengthy preindictment delay that was not occasioned by good cause, a defendant only \"may be entitled to a dismissal\" where there is \"no showing of special prejudice\" after a proper balancing of all factors (Singer, 44 NY2d at 254). In Singer, the Court emphasized consideration of the People's possible bad faith in delaying prosecution (as the dissent recognized [id. at 257-258, Gabrielli, J., dissenting]), appreciating its critical importance in light of defendant's lack of actual prejudice, and opined that the defendant's due process rights might have been violated because these other factors tipped the balance in the defendant's favor (id. at 254-255). Indeed, the Court remitted the case for a hearing on this issue alone. But in suggesting that a defendant must never show actual prejudice, even when there is no bad faith, the majority turns{**39 NY3d at 492} speedy trial precedent on its head. Because defendant can establish little to no actual prejudice here, the People's lack of bad faith dilutes the significance of this factor, especially in light of the seriousness of the crime.",
+      "Acting Chief Judge Cannataro and Judges Rivera and Troutman concur. Judge Garcia dissents for the reasons stated in so much of the majority opinion of Justice Christine M. Clark at the Appellate Division that upheld the denial of the motion to dismiss the indictment on constitutional speedy trial grounds (see 196 AD3d 735, 737 [3d Dept 2021]). Judge Singas dissents and votes to affirm in an opinion."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 16,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <frac> in source HTML."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

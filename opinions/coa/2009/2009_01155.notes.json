@@ -1,0 +1,114 @@
+{
+  "caseId": "2009_01155",
+  "sourcePath": "coa/2009/2009_01155.htm",
+  "notesPath": "coa/2009/2009_01155.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.419Z",
+  "source": {
+    "title": "People v Elysee (2009 NY Slip Op 01155)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 11950,
+    "lineCount": 93,
+    "tagCounts": {
+      "a": 8,
+      "b": 10,
+      "blockquote": 10,
+      "body": 2,
+      "br": 8,
+      "div": 4,
+      "font": 20,
+      "head": 2,
+      "html": 2,
+      "i": 18,
+      "p": 21,
+      "script": 4,
+      "style": 2,
+      "sup": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Elysee",
+      "2009 NY Slip Op 01155 [12 NY3d 100]",
+      "February 17, 2009",
+      "Jones, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, April 15, 2009"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Fritz Elysee, Appellant."
+    ],
+    "citationLine": "2009 NY Slip Op 01155 12 NY3d 100",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued January 7, 2009; decided February 17, 2009",
+      "February 17, 2009",
+      "As corrected through Wednesday, April 15, 2009"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 14,
+    "footnotesCount": 1
+  },
+  "citations": {
+    "slipOpinion": "2009 NY Slip Op 01155",
+    "officialCitation": "12 NY3d 100",
+    "pageMarkerCount": 9
+  },
+  "opinionStructure": {
+    "totalWritings": 2,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1
+    },
+    "authors": [
+      "Jones"
+    ],
+    "qualifierLines": [
+      "{**12 NY3d at 102} OPINION OF THE COURT"
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 1,
+    "labels": [
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 2 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

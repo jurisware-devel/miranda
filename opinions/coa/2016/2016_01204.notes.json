@@ -1,0 +1,125 @@
+{
+  "caseId": "2016_01204",
+  "sourcePath": "coa/2016/2016_01204.htm",
+  "notesPath": "coa/2016/2016_01204.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.852Z",
+  "source": {
+    "title": "People v Gross (2016 NY Slip Op 01204)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 27177,
+    "lineCount": 108,
+    "tagCounts": {
+      "a": 32,
+      "b": 4,
+      "blockquote": 2,
+      "body": 2,
+      "br": 10,
+      "div": 13,
+      "font": 38,
+      "head": 2,
+      "html": 2,
+      "i": 96,
+      "p": 56,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 8
+    },
+    "unknownTags": [],
+    "strayClosingTags": [
+      "div"
+    ]
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Gross",
+      "2016 NY Slip Op 01204 [26 NY3d 689]",
+      "February 18, 2016",
+      "Abdus-Salaam, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, April 13, 2016"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Gordon Gross, Appellant."
+    ],
+    "citationLine": "2016 NY Slip Op 01204 26 NY3d 689",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued January 12, 2016; decided February 18, 2016",
+      "February 18, 2016",
+      "As corrected through Wednesday, April 13, 2016"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 33,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2016 NY Slip Op 01204",
+    "officialCitation": "26 NY3d 689",
+    "pageMarkerCount": 18
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Abdus-Salaam",
+      "Rivera"
+    ],
+    "qualifierLines": [
+      "{**26 NY3d at 691} OPINION OF THE COURT",
+      "{**26 NY3d at 693}County Court denied the motion, holding that the failure of defendant's trial counsel to object to the admission of the child's prior disclosures did not render her ineffective. Additionally, the court found that defendant's trial counsel was not ineffective for failing to call an expert witness, noting that defendant did not offer an expert opinion that some indicia of sex abuse would have been likely. Thus, based on the record alone the court rejected defendant's arguments and denied his motion. The Appellate Division, with two Justices dissenting, affirmed, concluding that the testimony regarding the child's prior disclosures did not constitute improper bolstering because it was not admitted for its truth but rather to demonstrate how the child disclosed the abuse, thereby commencing the investigation into her allegations (, 118 AD3d 1383, 1384 [4th Dept 2014]). Further, the Court concluded that defendant received meaningful representation despite his trial counsel's failure to object to the prosecutor's summation comments or to call a medical expert to testify on defendant's behalf. Therefore, the Court concluded that trial counsel was not ineffective. The dissenting Justices voted to reverse. In their view, defendant's trial counsel's failure to object to inadmissible testimony regarding the child's prior consistent statements deprived him of his right to effective assistance of counsel (see id. at 1386).",
+      "Trial counsel's failure to request that a limiting instruction be given to the jury that the child's testimony concerning the disclosures she made to other individuals should not be accepted for the truth of her allegations, does not render her ineffective in light of the totality of her representation of defendant (see People v Benevento, 91 NY2d 708, 712 [1998] [requiring examination of the totality of counsel's performance to evaluate effectiveness]; People v Baldi, 54 NY2d 137, 147 [1981]). Moreover, defense counsel was not ineffective for failing to object to the prosecutor's summation comments referencing the testimony of the witnesses to whom the victim had disclosed. Despite the dissent's argument to the contrary, the failure to object to the prosecutor's statement on summation does not negate the overall meaningful representation provided to defendant by his counsel. Defense counsel zealously advocated for defendant, making multiple successful objections which limited the testimony of several prosecution witnesses. Additionally, defense counsel may have made a strategic choice not to object during summation given that the witnesses were not able to testify to the specifics of the child's allegations (, 21 NY3d 393, 405-406 [2013]). She may have felt that such an objection would not be worthwhile given the limited testimony elicited from the witnesses. Such a strategic decision does not support a finding of ineffectiveness (, 21 NY3d 393, 405-406 [2013]).",
+      "The prosecutor's exhortation to the jury was an invitation to misuse the testimony, and was especially prejudicial to the defense because the People lacked corroborating physical evidence of the abuse, the victim was the sole witness to defendant's actions, and the ultimate determination of guilt turned on the victim's credibility. Under such circumstances, defense counsel's failure to timely object and request an instruction directing the jury to ignore the prosecutor's argument constitutes ineffective assistance, mandating reversal and a new trial. Therefore, I dissent.",
+      "The premise of Ludwig is that testimony from a witness that the victim disclosed abuse is admissible for the \"legitimate nonhearsay purposes\" of \"explaining the investigative process and completing the narrative of events leading to the defendant's arrest\" (id. at 231-232). According to this reasoning, the testimony is admissible solely \"to depict for the jury the circumstances attendant to the disclosure that triggered the investigation\" (id. at 232). However, I continue to believe that Ludwig was wrongly decided because, as the dissent in that case explained, the majority's approach \"eviscerates the hearsay rule and allows wholesale circumvention of the prompt outcry rule by countenancing the admission of prior consistent statements that provide a 'narrative' or 'investigative purpose' even where the investigative purpose is not in issue\" (Ludwig, 24 NY3d at 235 [Lippman, Ch. J., dissenting]). Notwithstanding the Ludwig majority's determination to the contrary, \"these {**26 NY3d at 698}statements are obviously introduced to bolster the complainant's credibility and establish the truth of the accusation\" (id. at 236 [Lippman, Ch. J., dissenting]), and do little to ensure the reliability of the victim's testimony (id. at 237)."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "STRAY_CLOSING_TAG",
+      "severity": "warning",
+      "detail": "Closing tag </div> appears more times than opening tag <div>."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

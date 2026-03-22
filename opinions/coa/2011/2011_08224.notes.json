@@ -1,0 +1,115 @@
+{
+  "caseId": "2011_08224",
+  "sourcePath": "coa/2011/2011_08224.htm",
+  "notesPath": "coa/2011/2011_08224.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.571Z",
+  "source": {
+    "title": "People v Medina (2011 NY Slip Op 08224)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 17537,
+    "lineCount": 104,
+    "tagCounts": {
+      "a": 16,
+      "b": 14,
+      "blockquote": 8,
+      "body": 2,
+      "br": 10,
+      "div": 4,
+      "font": 28,
+      "head": 2,
+      "html": 2,
+      "i": 26,
+      "p": 29,
+      "script": 4,
+      "style": 2,
+      "sup": 4,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Medina",
+      "2011 NY Slip Op 08224 [18 NY3d 98]",
+      "November 17, 2011",
+      "Lippman, Ch. J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, January 11, 2012"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Juan Medina, Appellant."
+    ],
+    "citationLine": "2011 NY Slip Op 08224 18 NY3d 98",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued October 11, 2011; decided November 17, 2011",
+      "November 17, 2011",
+      "As corrected through Wednesday, January 11, 2012"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 21,
+    "footnotesCount": 2
+  },
+  "citations": {
+    "slipOpinion": "2011 NY Slip Op 08224",
+    "officialCitation": "18 NY3d 98",
+    "pageMarkerCount": 13
+  },
+  "opinionStructure": {
+    "totalWritings": 2,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1
+    },
+    "authors": [
+      "Lippman"
+    ],
+    "qualifierLines": [
+      "{**18 NY3d at 100} OPINION OF THE COURT"
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 2,
+    "labels": [
+      "1",
+      "2"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 2 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

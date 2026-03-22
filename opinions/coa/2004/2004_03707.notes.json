@@ -1,0 +1,113 @@
+{
+  "caseId": "2004_03707",
+  "sourcePath": "coa/2004/2004_03707.htm",
+  "notesPath": "coa/2004/2004_03707.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.237Z",
+  "source": {
+    "title": "People v Nieves (2004 NY Slip Op 03707)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 20082,
+    "lineCount": 115,
+    "tagCounts": {
+      "a": 18,
+      "b": 22,
+      "body": 2,
+      "br": 14,
+      "div": 10,
+      "font": 28,
+      "head": 2,
+      "html": 2,
+      "i": 38,
+      "p": 26,
+      "script": 4,
+      "style": 2,
+      "sup": 8,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Nieves",
+      "2004 NY Slip Op 03707 [2 NY3d 310]",
+      "May 6, 2004",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, June 30, 2004"
+    ],
+    "captionLines": [
+      "v"
+    ],
+    "citationLine": "2004 NY Slip Op 03707 2 NY3d 310",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued March 24, 2004; decided May 6, 2004",
+      "May 6, 2004",
+      "As corrected through Wednesday, June 30, 2004"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 24,
+    "footnotesCount": 4
+  },
+  "citations": {
+    "slipOpinion": "2004 NY Slip Op 03707",
+    "officialCitation": "2 NY3d 310",
+    "pageMarkerCount": 13
+  },
+  "opinionStructure": {
+    "totalWritings": 2,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1
+    },
+    "authors": [
+      "Graffeo"
+    ],
+    "qualifierLines": [
+      "{**2 NY3d at 312} OPINION OF THE COURT"
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 4,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 2 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

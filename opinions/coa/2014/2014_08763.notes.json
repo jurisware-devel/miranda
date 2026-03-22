@@ -1,0 +1,118 @@
+{
+  "caseId": "2014_08763",
+  "sourcePath": "coa/2014/2014_08763.htm",
+  "notesPath": "coa/2014/2014_08763.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.780Z",
+  "source": {
+    "title": "People v Ingram (2014 NY Slip Op 08763)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 3878,
+    "lineCount": 74,
+    "tagCounts": {
+      "a": 4,
+      "b": 4,
+      "body": 2,
+      "br": 6,
+      "div": 6,
+      "font": 6,
+      "head": 2,
+      "html": 2,
+      "i": 12,
+      "opinion": 1,
+      "p": 16,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Ingram",
+      "2014 NY Slip Op 08763 [24 NY3d 1105]",
+      "December 16, 2014",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, March 11, 2015"
+    ],
+    "captionLines": [],
+    "citationLine": "2014 NY Slip Op 08763 24 NY3d 1105",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Decided December 16, 2014",
+      "December 16, 2014",
+      "As corrected through Wednesday, March 11, 2015"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Frank A. Sedita, III, District Attorney , Buffalo ( David A. Heraty of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Frank A. Sedita, III, District Attorney , Buffalo ( David A. Heraty of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Legal Aid Bureau of Buffalo, Inc. , Buffalo ( Sherry A. Chase of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Legal Aid Bureau of Buffalo, Inc. , Buffalo ( Sherry A. Chase of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 4,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2014 NY Slip Op 08763",
+    "officialCitation": "24 NY3d 1105",
+    "pageMarkerCount": 2
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**24 NY3d at 1107} OPINION OF THE COURT",
+      "Memorandum."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "caseId": "2013_03122",
+  "sourcePath": "coa/2013/2013_03122.htm",
+  "notesPath": "coa/2013/2013_03122.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.662Z",
+  "source": {
+    "title": "People v Oathout (2013 NY Slip Op 03122)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 14135,
+    "lineCount": 92,
+    "tagCounts": {
+      "a": 14,
+      "b": 10,
+      "body": 2,
+      "br": 8,
+      "div": 4,
+      "font": 22,
+      "head": 2,
+      "html": 2,
+      "i": 40,
+      "p": 23,
+      "script": 4,
+      "style": 2,
+      "sup": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Oathout",
+      "2013 NY Slip Op 03122 [21 NY3d 127]",
+      "May 2, 2013",
+      "Pigott, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, June 26, 2013"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Christopher Oathout, Appellant."
+    ],
+    "citationLine": "2013 NY Slip Op 03122 21 NY3d 127",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued March 21, 2013; decided May 2, 2013",
+      "May 2, 2013",
+      "As corrected through Wednesday, June 26, 2013"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 17,
+    "footnotesCount": 1
+  },
+  "citations": {
+    "slipOpinion": "2013 NY Slip Op 03122",
+    "officialCitation": "21 NY3d 127",
+    "pageMarkerCount": 10
+  },
+  "opinionStructure": {
+    "totalWritings": 2,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1
+    },
+    "authors": [
+      "Pigott"
+    ],
+    "qualifierLines": [
+      "{**21 NY3d at 128} OPINION OF THE COURT"
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 1,
+    "labels": [
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 2 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

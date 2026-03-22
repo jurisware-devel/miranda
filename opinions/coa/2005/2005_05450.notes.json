@@ -1,0 +1,116 @@
+{
+  "caseId": "2005_05450",
+  "sourcePath": "coa/2005/2005_05450.htm",
+  "notesPath": "coa/2005/2005_05450.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.284Z",
+  "source": {
+    "title": "People v Hanley (2005 NY Slip Op 05450)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 14735,
+    "lineCount": 100,
+    "tagCounts": {
+      "a": 6,
+      "b": 10,
+      "body": 2,
+      "br": 8,
+      "div": 6,
+      "font": 24,
+      "head": 2,
+      "html": 2,
+      "i": 20,
+      "p": 25,
+      "script": 4,
+      "style": 2,
+      "sup": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 2
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Hanley",
+      "2005 NY Slip Op 05450 [5 NY3d 108]",
+      "June 29, 2005",
+      "Ciparick, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, August 24, 2005"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Thomas Hanley, Appellant."
+    ],
+    "citationLine": "2005 NY Slip Op 05450 5 NY3d 108",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued June 2, 2005; decided June 29, 2005",
+      "June 29, 2005",
+      "As corrected through Wednesday, August 24, 2005"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 20,
+    "footnotesCount": 1
+  },
+  "citations": {
+    "slipOpinion": "2005 NY Slip Op 05450",
+    "officialCitation": "5 NY3d 108",
+    "pageMarkerCount": 11
+  },
+  "opinionStructure": {
+    "totalWritings": 2,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1
+    },
+    "authors": [
+      "Ciparick"
+    ],
+    "qualifierLines": [
+      "{**5 NY3d at 110} OPINION OF THE COURT",
+      "Defendant was charged with three counts of robbery in the first degree for the October 29, 1997, November 5, 1997 and January 20, 1998 incidents and one count of menacing in the third degree for the January 24, 1998 incident. During the trial, defendant attempted to call a witness, a third bartender at Wilson's, to impeach McEnroe and Byrne. The witness purportedly would have testified that both complainants had a bad reputation{**5 NY3d at 112} in the community for truth and veracity. The court refused to allow the testimony. Defendant was convicted on all counts, and sentenced to concurrent terms of 10 years imprisonment on each robbery count and one year on the menacing count. ",
+      "The Appellate Division modified the judgment by vacating defendant's conviction for robbery in the first degree on the second count. The Court also reduced the sentence for the menacing conviction to three months—the maximum sentence for that crime. Two Justices dissented solely on the ground that the failure to allow defendant to call a witness who would have testified that McEnroe and Byrne had a bad reputation in the community for truthfulness and veracity deprived the defendant of a fair trial as it excluded material and relevant evidence. A Justice of the Appellate Division granted leave to appeal and we now reverse. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 1,
+    "labels": [
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 2 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

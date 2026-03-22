@@ -1,0 +1,130 @@
+{
+  "caseId": "2014_02969",
+  "sourcePath": "coa/2014/2014_02969.htm",
+  "notesPath": "coa/2014/2014_02969.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.733Z",
+  "source": {
+    "title": "People v Lewis (2014 NY Slip Op 02969)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 27892,
+    "lineCount": 125,
+    "tagCounts": {
+      "a": 50,
+      "b": 30,
+      "blockquote": 4,
+      "body": 2,
+      "br": 24,
+      "div": 12,
+      "font": 36,
+      "frac": 2,
+      "head": 2,
+      "html": 2,
+      "i": 110,
+      "p": 57,
+      "script": 4,
+      "style": 2,
+      "sup": 12,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 6
+    },
+    "unknownTags": [
+      "frac"
+    ],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Lewis",
+      "2014 NY Slip Op 02969 [23 NY3d 179]",
+      "May 1, 2014",
+      "Pigott, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, July 30, 2014"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Anthony Lewis, Appellant."
+    ],
+    "citationLine": "2014 NY Slip Op 02969 23 NY3d 179",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued February 12, 2014; decided May 1, 2014",
+      "May 1, 2014",
+      "As corrected through Wednesday, July 30, 2014"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 31,
+    "footnotesCount": 6
+  },
+  "citations": {
+    "slipOpinion": "2014 NY Slip Op 02969",
+    "officialCitation": "23 NY3d 179",
+    "pageMarkerCount": 17
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "concurrence": 1
+    },
+    "authors": [
+      "Pigott",
+      "Graffeo"
+    ],
+    "qualifierLines": [
+      "{**23 NY3d at 183} OPINION OF THE COURT"
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 1,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 6,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "1",
+      "2",
+      "3"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <frac> in source HTML."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "caseId": "2016_07108",
+  "sourcePath": "coa/2016/2016_07108.htm",
+  "notesPath": "coa/2016/2016_07108.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.910Z",
+  "source": {
+    "title": "People v Pabon (2016 NY Slip Op 07108)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 26790,
+    "lineCount": 113,
+    "tagCounts": {
+      "a": 22,
+      "b": 16,
+      "blockquote": 6,
+      "body": 2,
+      "br": 14,
+      "div": 6,
+      "font": 26,
+      "head": 2,
+      "html": 2,
+      "i": 66,
+      "p": 59,
+      "script": 4,
+      "style": 2,
+      "sup": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Pabon",
+      "2016 NY Slip Op 07108 [28 NY3d 147]",
+      "November 1, 2016",
+      "Rivera, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, January 4, 2017"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Luis A. Pabon, Appellant."
+    ],
+    "citationLine": "2016 NY Slip Op 07108 28 NY3d 147",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued September 14, 2016; decided November 1, 2016",
+      "November 1, 2016",
+      "As corrected through Wednesday, January 4, 2017"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 31,
+    "footnotesCount": 1
+  },
+  "citations": {
+    "slipOpinion": "2016 NY Slip Op 07108",
+    "officialCitation": "28 NY3d 147",
+    "pageMarkerCount": 12
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "concurrence": 1
+    },
+    "authors": [
+      "Rivera",
+      "Pigott"
+    ],
+    "qualifierLines": [
+      "{**28 NY3d at 150} OPINION OF THE COURT",
+      "The Appellate Division affirmed the conviction, with one Justice dissenting (126 AD3d 1447 [4th Dept 2015]). As relevant here, the Court held that the indictment was not time-barred because CPL 30.10 (3) (f) tolled the statute of limitations for defendant's crime until the victim attained the age of 18. The Court further concluded that admission of the investigator's opinion testimony was harmless error because \"in a nonjury trial, the court is presumed to be capable of disregarding any improper or unduly prejudicial aspect of the evidence\" (id. at 1448). The Court also summarily rejected defendant's claim that he was denied appellate review by the judge's refusal to sequester the named items (id. at 1449).",
+      "The dissent would have reversed and dismissed the indictment as time-barred, concluding that application of CPL 30.10 (3) (f) to toll the five-year limitations period of CPL 30.10 (3) (e) would render the latter superfluous and ineffective (id. at 1450). The dissenting Justice granted defendant leave to appeal (25 NY3d 1174 [2015, DeJoseph, J.]).",
+      "I would affirm for reasons stated in the memorandum of the Appellate Division (126 AD3d 1447 [2015])."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 1,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 1,
+    "labels": [
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

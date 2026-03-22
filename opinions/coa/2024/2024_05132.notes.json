@@ -1,0 +1,106 @@
+{
+  "caseId": "2024_05132",
+  "sourcePath": "coa/2024/2024_05132.htm",
+  "notesPath": "coa/2024/2024_05132.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.285Z",
+  "source": {
+    "title": "People v Sharp (2024 NY Slip Op 05132)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 15944,
+    "lineCount": 102,
+    "tagCounts": {
+      "a": 8,
+      "b": 4,
+      "blockquote": 22,
+      "body": 2,
+      "br": 6,
+      "div": 6,
+      "font": 22,
+      "head": 2,
+      "html": 2,
+      "i": 82,
+      "p": 36,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Sharp",
+      "2024 NY Slip Op 05132 [42 NY3d 369]",
+      "October 17, 2024",
+      "Rivera, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, December 11, 2024"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Eric D. Sharp, Appellant."
+    ],
+    "citationLine": "2024 NY Slip Op 05132 42 NY3d 369",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued September 12, 2024; decided October 17, 2024",
+      "October 17, 2024",
+      "As corrected through Wednesday, December 11, 2024"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 18,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2024 NY Slip Op 05132",
+    "officialCitation": "42 NY3d 369",
+    "pageMarkerCount": 10
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [
+      "Rivera"
+    ],
+    "qualifierLines": [
+      "{**42 NY3d at 371} OPINION OF THE COURT",
+      "The Appellate Division affirmed with one Justice dissenting (214 AD3d 1428 [4th Dept 2023]). The sole issue dividing the Court was defendant's claim that he was denied his right to be present during consideration of the prosecution's Sandoval application. The majority concluded that defendant had not been denied this right. The dissent concluded that defendant, although present for the later Sandoval proceeding, was denied an opportunity to meaningfully participate (see id. at 1429 [Curran, J., dissenting]). The dissenting Justice granted defendant leave to appeal."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

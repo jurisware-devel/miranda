@@ -1,0 +1,113 @@
+{
+  "caseId": "2010_07251",
+  "sourcePath": "coa/2010/2010_07251.htm",
+  "notesPath": "coa/2010/2010_07251.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.499Z",
+  "source": {
+    "title": "People v McKinnon (2010 NY Slip Op 07251)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 15931,
+    "lineCount": 94,
+    "tagCounts": {
+      "a": 12,
+      "b": 4,
+      "body": 2,
+      "br": 8,
+      "div": 6,
+      "font": 26,
+      "head": 2,
+      "html": 2,
+      "i": 38,
+      "p": 24,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v McKinnon",
+      "2010 NY Slip Op 07251 [15 NY3d 311]",
+      "October 14, 2010",
+      "Smith, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, November 24, 2010"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Donald McKinnon, Appellant."
+    ],
+    "citationLine": "2010 NY Slip Op 07251 15 NY3d 311",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued September 16, 2010; decided October 14, 2010",
+      "October 14, 2010",
+      "As corrected through Wednesday, November 24, 2010"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 22,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2010 NY Slip Op 07251",
+    "officialCitation": "15 NY3d 311",
+    "pageMarkerCount": 12
+  },
+  "opinionStructure": {
+    "totalWritings": 4,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "dissent": 1
+    },
+    "authors": [
+      "Smith",
+      "Pigott"
+    ],
+    "qualifierLines": [
+      "{**15 NY3d at 313} OPINION OF THE COURT",
+      " I respectfully dissent and would affirm the order of the Appellate Division. The majority states that it will not infer \"that whatever the jury saw must have supported its verdict\" because when conducting a review of the sufficiency of the evidence, this Court \"cannot rely on facts of which no record is made\" (majority op at 316). But that only underscores the critical flaw in the majority's holding, namely, that it is the burden of defendant—the objecting party—and not the People, to develop an adequate record for appellate review (see People v Johnson, 205 AD2d 309 [1st Dept 1994], lv denied 84 NY2d 827 [1994], citing People v Olivo, 52 NY2d 309, 320 [1981]). "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 4 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

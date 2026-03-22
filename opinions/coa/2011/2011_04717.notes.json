@@ -1,0 +1,121 @@
+{
+  "caseId": "2011_04717",
+  "sourcePath": "coa/2011/2011_04717.htm",
+  "notesPath": "coa/2011/2011_04717.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.549Z",
+  "source": {
+    "title": "People v Pacquette (2011 NY Slip Op 04717)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 41576,
+    "lineCount": 162,
+    "tagCounts": {
+      "a": 28,
+      "b": 30,
+      "blockquote": 44,
+      "body": 2,
+      "br": 22,
+      "div": 4,
+      "font": 60,
+      "head": 2,
+      "html": 2,
+      "i": 106,
+      "p": 46,
+      "script": 4,
+      "style": 2,
+      "sup": 12,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Pacquette",
+      "2011 NY Slip Op 04717 [17 NY3d 87]",
+      "June 7, 2011",
+      "Read, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, July 13, 2011"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Dean Pacquette, Appellant."
+    ],
+    "citationLine": "2011 NY Slip Op 04717 17 NY3d 87",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued May 3, 2011; decided June 7, 2011",
+      "June 7, 2011",
+      "As corrected through Wednesday, July 13, 2011"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 48,
+    "footnotesCount": 6
+  },
+  "citations": {
+    "slipOpinion": "2011 NY Slip Op 04717",
+    "officialCitation": "17 NY3d 87",
+    "pageMarkerCount": 29
+  },
+  "opinionStructure": {
+    "totalWritings": 4,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "dissent": 1
+    },
+    "authors": [
+      "Read",
+      "Lippman"
+    ],
+    "qualifierLines": [
+      "{**17 NY3d at 89} OPINION OF THE COURT"
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 6,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "1",
+      "2"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 4 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

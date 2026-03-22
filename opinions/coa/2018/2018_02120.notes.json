@@ -1,0 +1,137 @@
+{
+  "caseId": "2018_02120",
+  "sourcePath": "coa/2018/2018_02120.htm",
+  "notesPath": "coa/2018/2018_02120.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.989Z",
+  "source": {
+    "title": "People v Boyd (2018 NY Slip Op 02120)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 29630,
+    "lineCount": 118,
+    "tagCounts": {
+      "a": 22,
+      "b": 18,
+      "blockquote": 8,
+      "body": 2,
+      "br": 16,
+      "div": 20,
+      "font": 36,
+      "head": 2,
+      "html": 2,
+      "i": 108,
+      "opinion": 1,
+      "p": 65,
+      "script": 4,
+      "style": 2,
+      "sup": 4,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14,
+      "u": 12
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Boyd",
+      "2018 NY Slip Op 02120 [31 NY3d 953]",
+      "March 27, 2018",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, May 16, 2018"
+    ],
+    "captionLines": [],
+    "citationLine": "2018 NY Slip Op 02120 31 NY3d 953",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Decided March 27, 2018",
+      "March 27, 2018",
+      "As corrected through Wednesday, May 16, 2018"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Marianne Karas , Thornwood, for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Marianne Karas , Thornwood, for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Darcel D. Clark , District Attorney , Bronx ( Emily Anne Aldridge of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Darcel D. Clark , District Attorney , Bronx ( Emily Anne Aldridge of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 39,
+    "footnotesCount": 2
+  },
+  "citations": {
+    "slipOpinion": "2018 NY Slip Op 02120",
+    "officialCitation": "31 NY3d 953",
+    "pageMarkerCount": 17
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Rivera"
+    ],
+    "qualifierLines": [
+      "{**31 NY3d at 954} OPINION OF THE COURT",
+      "Memorandum.",
+      "The dissenting Justices, by contrast, maintained that the dismissal \"removed defendant's only defense from consideration, namely, that he only possessed the air pistol\" (id. at 65 [Acosta, P.J., and Gesmer, J., dissenting]). As the dissent cogently argued, far from allowing the jury to reach a compromise verdict, submitting the air pistol count would have enabled the jury to focus on the \"straightforward\" question at heart of the case, \"that is, did defendant possess both [the air pistol and the handgun] or just the air pistol?\" (id. at 66).",
+      "The Appellate Division majority's conclusion that submission of two unrelated charges \"could only confuse the jurors or permit jury nullification during jury deliberations\" is unfounded (152 AD3d at 57). What confusion could possibly come from submission of an offense on which the People had entered extensive evidence and defendant had admitted guilt? As the dissent commented, \"this was not a complicated case\" (152 AD3d at 66 [Acosta, P.J., and Gesmer, J., dissenting]). Asking the jury to consider defendant's guilt on the air pistol count would not have kept the jury from exercising its fact-finding duty.",
+      "Ironically, it appears that by permitting evidence on the air pistol but not charging on this count, the trial court affirmatively created confusion. As the dissent noted,",
+      "While a trial court need not grant a defendant's request to submit a charge on a non-inclusive less serious offense in all cases, it is an abuse of discretion to dismiss the lesser count where, as here, the People present evidence of defendant's guilt of the less serious offense as a central part of its case-in-chief, and defendant admits guilt to the lesser crime in sole defense against the greater offense. Not presenting the count here was the equivalent of denying the defendant the opportunity to fully present his defense, denying him a fair trial, and encouraging reverse nullification. I dissent."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 2,
+    "labels": [
+      "1",
+      "2"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

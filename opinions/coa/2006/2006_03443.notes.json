@@ -1,0 +1,115 @@
+{
+  "caseId": "2006_03443",
+  "sourcePath": "coa/2006/2006_03443.htm",
+  "notesPath": "coa/2006/2006_03443.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.319Z",
+  "source": {
+    "title": "People v Burton (2006 NY Slip Op 03443)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 18460,
+    "lineCount": 101,
+    "tagCounts": {
+      "a": 14,
+      "b": 18,
+      "body": 2,
+      "br": 12,
+      "div": 4,
+      "font": 26,
+      "head": 2,
+      "html": 2,
+      "i": 68,
+      "p": 22,
+      "script": 4,
+      "style": 2,
+      "sup": 6,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Burton",
+      "2006 NY Slip Op 03443 [6 NY3d 584]",
+      "May 2, 2006",
+      "Graffeo, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, June 07, 2006"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Thomas Burton, Appellant."
+    ],
+    "citationLine": "2006 NY Slip Op 03443 6 NY3d 584",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued March 23, 2006; decided May 2, 2006",
+      "May 2, 2006",
+      "As corrected through Wednesday, June 07, 2006"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 16,
+    "footnotesCount": 3
+  },
+  "citations": {
+    "slipOpinion": "2006 NY Slip Op 03443",
+    "officialCitation": "6 NY3d 584",
+    "pageMarkerCount": 12
+  },
+  "opinionStructure": {
+    "totalWritings": 2,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1
+    },
+    "authors": [
+      "Graffeo"
+    ],
+    "qualifierLines": [
+      "{**6 NY3d at 586} OPINION OF THE COURT"
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 3,
+    "labels": [
+      "1",
+      "2",
+      "3"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 2 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

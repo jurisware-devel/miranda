@@ -1,0 +1,117 @@
+{
+  "caseId": "2011_07474",
+  "sourcePath": "coa/2011/2011_07474.htm",
+  "notesPath": "coa/2011/2011_07474.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.569Z",
+  "source": {
+    "title": "People v Davis (2011 NY Slip Op 07474)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 21719,
+    "lineCount": 106,
+    "tagCounts": {
+      "a": 6,
+      "b": 6,
+      "body": 2,
+      "br": 8,
+      "div": 10,
+      "font": 30,
+      "head": 2,
+      "html": 2,
+      "i": 144,
+      "p": 30,
+      "script": 4,
+      "style": 2,
+      "table": 6,
+      "td": 18,
+      "title": 2,
+      "tr": 18,
+      "u": 8
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Davis",
+      "2011 NY Slip Op 07474 [17 NY3d 633]",
+      "October 25, 2011",
+      "Pigott, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, December 14, 2011"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Appellant,",
+      "v",
+      "Makeda Davis, Respondent.",
+      "The People of the State of New York, Appellant, v Fayola McIntosh, Respondent."
+    ],
+    "citationLine": "2011 NY Slip Op 07474 17 NY3d 633",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued September 6, 2011; decided October 25, 2011",
+      "October 25, 2011",
+      "As corrected through Wednesday, December 14, 2011"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 30,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2011 NY Slip Op 07474",
+    "officialCitation": "17 NY3d 633",
+    "pageMarkerCount": 14
+  },
+  "opinionStructure": {
+    "totalWritings": 4,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "dissent": 1
+    },
+    "authors": [
+      "Pigott",
+      "Lippman"
+    ],
+    "qualifierLines": [
+      "{**17 NY3d at 636} OPINION OF THE COURT",
+      "In People v Davis, the Appellate Division, with two Justices dissenting, reversed the judgment of conviction and dismissed the indictment, but granted the People leave to apply for an order of Supreme Court permitting them to resubmit the charges to another grand jury, holding that the People's prevote withdrawal of the case from the first grand jury constituted \"the functional equivalent of a dismissal\" under this Court's holding in People v Wilkins, requiring the People to obtain court permission before re-presentment (72 AD3d 53, 65 [1st Dept 2010]). ",
+      "Judges Ciparick, Graffeo, Read, Smith and Jones concur with Judge Pigott; Chief Judge Lippman in a separate concurring opinion in which Judges Ciparick and Jones concur. ",
+      "Judges Graffeo, Read and Smith concur with Judge Pigott; Chief Judge Lippman dissents in a separate opinion in which Judges Ciparick and Jones concur. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 4 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 3 table elements before or within the header region."
+    }
+  ]
+}

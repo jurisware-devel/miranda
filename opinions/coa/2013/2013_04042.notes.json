@@ -1,0 +1,118 @@
+{
+  "caseId": "2013_04042",
+  "sourcePath": "coa/2013/2013_04042.htm",
+  "notesPath": "coa/2013/2013_04042.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.671Z",
+  "source": {
+    "title": "People v Padilla (2013 NY Slip Op 04042)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 19378,
+    "lineCount": 106,
+    "tagCounts": {
+      "a": 22,
+      "b": 16,
+      "body": 2,
+      "br": 14,
+      "div": 4,
+      "font": 26,
+      "head": 2,
+      "html": 2,
+      "i": 46,
+      "p": 30,
+      "script": 4,
+      "style": 2,
+      "sup": 4,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Padilla",
+      "2013 NY Slip Op 04042 [21 NY3d 268]",
+      "June 6, 2013",
+      "Pigott, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, August 14, 2013"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Kenneth Padilla, Appellant."
+    ],
+    "citationLine": "2013 NY Slip Op 04042 21 NY3d 268",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued May 2, 2013; decided June 6, 2013",
+      "June 6, 2013",
+      "As corrected through Wednesday, August 14, 2013"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 26,
+    "footnotesCount": 2
+  },
+  "citations": {
+    "slipOpinion": "2013 NY Slip Op 04042",
+    "officialCitation": "21 NY3d 268",
+    "pageMarkerCount": 12
+  },
+  "opinionStructure": {
+    "totalWritings": 4,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "dissent": 1
+    },
+    "authors": [
+      "Pigott",
+      "Rivera"
+    ],
+    "qualifierLines": [
+      "{**21 NY3d at 270} OPINION OF THE COURT",
+      " The officer's search of a vehicle which involved intentional violations of the police department's official vehicle inventory guidelines, the surrender of property from the vehicle to a third party in abrogation of those guidelines, the exclusion of that property from the official inventory list, and a warrantless search for narcotics, and which culminated in the complete physical disassembly of the contents of the trunk compartment, exceeded the bounds of a permissible warrantless search. I therefore dissent from the majority opinion's conclusion that such conduct is permissible so long as part of an asserted \"inventory\" of an impounded vehicle. ",
+      "Today's decision has the potential to encourage officers to ignore established written police protocols, and use the opportunity provided by circumstances supporting a valid inventory search to instead exercise discretion in such a way as to convert a valid vehicle inventory into a constitutionally impermissible warrantless search. Therefore, I dissent. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 2,
+    "labels": [
+      "1",
+      "2"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 4 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "caseId": "2024_06236",
+  "sourcePath": "coa/2024/2024_06236.htm",
+  "notesPath": "coa/2024/2024_06236.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.300Z",
+  "source": {
+    "title": "People v Garcia (2024 NY Slip Op 06236)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 4408,
+    "lineCount": 75,
+    "tagCounts": {
+      "a": 6,
+      "b": 4,
+      "body": 2,
+      "br": 6,
+      "div": 6,
+      "font": 6,
+      "head": 2,
+      "html": 2,
+      "i": 36,
+      "opinion": 1,
+      "p": 18,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Garcia",
+      "2024 NY Slip Op 06236 [42 NY3d 1077]",
+      "December 12, 2024",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, March 12, 2025"
+    ],
+    "captionLines": [],
+    "citationLine": "2024 NY Slip Op 06236 42 NY3d 1077",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued November 20, 2024; decided December 12, 2024",
+      "December 12, 2024",
+      "As corrected through Wednesday, March 12, 2025"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Patricia Pazner , Appellate Advocates , New York City ( David Fitzmaurice of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Patricia Pazner , Appellate Advocates , New York City ( David Fitzmaurice of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Melinda Katz , District Attorney , Kew Gardens ( Christopher J. Blira-Koessler and John M. Castellano of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Melinda Katz , District Attorney , Kew Gardens ( Christopher J. Blira-Koessler and John M. Castellano of counsel), for respondent.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Steptoe LLP , New York City ( James L. Brochin , Michelle L. Levin , Gilana Keller , Ciara Davis amd Meredith Lewis of counsel), and The Innocence Project , New York City ( Matthew A. Wasserman of counsel), for The Innocence Project, Inc., amicus curiae.",
+        "sideGuess": null,
+        "terminalPhrase": "amicus curiae.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Steptoe LLP , New York City ( James L. Brochin , Michelle L. Levin , Gilana Keller , Ciara Davis amd Meredith Lewis of counsel), and The Innocence Project , New York City ( Matthew A. Wasserman of counsel), for The Innocence Project, Inc., amicus curiae.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 4,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2024 NY Slip Op 06236",
+    "officialCitation": "42 NY3d 1077",
+    "pageMarkerCount": 2
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**42 NY3d at 1077} OPINION OF THE COURT",
+      "Memorandum."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "caseId": "2021_05391",
+  "sourcePath": "coa/2021/2021_05391.htm",
+  "notesPath": "coa/2021/2021_05391.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.150Z",
+  "source": {
+    "title": "People v Timko (2021 NY Slip Op 05391)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 4304,
+    "lineCount": 74,
+    "tagCounts": {
+      "a": 6,
+      "b": 4,
+      "body": 2,
+      "br": 6,
+      "div": 6,
+      "font": 6,
+      "head": 2,
+      "html": 2,
+      "i": 14,
+      "opinion": 1,
+      "p": 16,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Timko",
+      "2021 NY Slip Op 05391 [37 NY3d 1030]",
+      "October 7, 2021",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, November 10, 2021"
+    ],
+    "captionLines": [],
+    "citationLine": "2021 NY Slip Op 05391 37 NY3d 1030",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Decided October 7, 2021",
+      "October 7, 2021",
+      "As corrected through Wednesday, November 10, 2021"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Law Offices of Michael Pollok, PLLC , Red Hook ( Michael S. Pollok of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Law Offices of Michael Pollok, PLLC , Red Hook ( Michael S. Pollok of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Miriam E. Rocah, District Attorney , White Plains ( Brian R. Pouliot, William C. Milaccio and Steven A. Bender of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Miriam E. Rocah, District Attorney , White Plains ( Brian R. Pouliot, William C. Milaccio and Steven A. Bender of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 4,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2021 NY Slip Op 05391",
+    "officialCitation": "37 NY3d 1030",
+    "pageMarkerCount": 2
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**37 NY3d at 1030} OPINION OF THE COURT",
+      "Memorandum."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

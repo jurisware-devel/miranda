@@ -1,0 +1,122 @@
+{
+  "caseId": "2015_02552",
+  "sourcePath": "coa/2015/2015_02552.htm",
+  "notesPath": "coa/2015/2015_02552.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.787Z",
+  "source": {
+    "title": "People v Brown (2015 NY Slip Op 02552)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 15101,
+    "lineCount": 97,
+    "tagCounts": {
+      "a": 7,
+      "b": 6,
+      "blockquote": 2,
+      "body": 2,
+      "br": 10,
+      "div": 6,
+      "font": 20,
+      "head": 2,
+      "html": 2,
+      "i": 70,
+      "opinion": 1,
+      "p": 47,
+      "script": 4,
+      "style": 2,
+      "table": 6,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": [
+      "a"
+    ]
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Brown",
+      "2015 NY Slip Op 02552 [25 NY3d 973]",
+      "March 26, 2015",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, June 10, 2015"
+    ],
+    "captionLines": [],
+    "citationLine": "2015 NY Slip Op 02552 25 NY3d 973",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued February 12, 2015; decided March 26, 2015",
+      "March 26, 2015",
+      "As corrected through Wednesday, June 10, 2015"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 22,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2015 NY Slip Op 02552",
+    "officialCitation": "25 NY3d 973",
+    "pageMarkerCount": 9
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Pigott"
+    ],
+    "qualifierLines": [
+      "{**25 NY3d at 975} OPINION OF THE COURT",
+      "Memorandum.",
+      "The Appellate Division, with two Justices dissenting, determined that Supreme Court should have suppressed the showup identification of defendant William Brown (115 AD3d 38 [1st Dept 2014]) and the showup identification of and property seized from defendant Patrick Thomas (115 AD3d 69 [1st Dept 2014]) because the police lacked reasonable suspicion to stop and detain them. Accordingly, the Court reversed the judgment of conviction and sentence in each case, granted defendants' respective motions to suppress and remanded for a new trial preceded by an independent source hearing. In each case, one of the dissenting Justices granted the People leave to appeal to us (2014 NY Slip Op 66369[U] [1st Dept 2014]; 2014 NY Slip Op 66368[U] [1st Dept 2014]).",
+      "While acknowledging that \"determinations as to reasonable suspicion typically present a mixed question of law and fact,\" the dissent cites People v McRay (51 NY2d 594 [1980]) for the proposition that these cases instead involve a straight-up question of law—namely, \"the minimum showing necessary to establish reasonable suspicion\" (dissenting op at 976 [internal quotation marks omitted]). In McRay, though, the Appellate Division reversed the suppression court on the ground that the People's proof was insufficient as a matter of law to support probable cause to arrest (id. at 605). When we disagreed and reversed, we therefore remitted to the Appellate Division for{**25 NY3d at 976} factual review, emphasizing that an inference of probable cause was permitted, but not required, on the facts established (id. at 605-606). Here, by contrast, the Appellate Division reversed the suppression court because, when exercising its independent fact-finding powers, it drew a different inference from the established facts, thus deciding a mixed question of law and fact. The dissenting Judge strongly disagrees with the Appellate Division. But the views of individual Judges of this Court on the merits of defendants' suppression motions are beside the point because the Criminal Procedure Law simply does not vest us with jurisdiction to entertain these appeals.",
+      " Although determinations as to reasonable suspicion typically present a mixed question of law and fact, where the issue presented involves the \"minimum showing necessary to establish\" reasonable suspicion, \"a question of law is presented for [our] review\" (People v McRay, 51 NY2d 594, 601 [1980]). Here, the Appellate Division erred as a matter of law in holding that the undisputed facts and the reasonable inferences drawn therefrom failed to satisfy the minimum showing necessary to establish reasonable suspicion. Therefore, I dissent and would reverse the order of the Appellate Division and remit the cases to that Court for a review of the facts in accordance with this Court's decision in People v McRay. ",
+      "Indeed, \"[b]y disapproving of the stop of defendant[s], . . . [the majority] is discouraging police work that is not only constitu{**25 NY3d at 979}tionally proper but also laudable. Such a precedent will serve to impede effective law enforcement and interfere with the protection and safety of the public\" (People v Brown, 115 AD3d 38, 41 [2014, Tom, J.P. and Saxe, J., dissenting]). I would reverse the order of the Appellate Division and remit the cases to that Court for a review of the facts in accordance with this Court's decision in People v McRay.",
+      "Chief Judge Lippman and Judges Read, Rivera, Abdus-Salaam, Stein and Fahey concur; Judge Pigott dissents in an opinion.",
+      "In each case: Appeal dismissed upon the ground that the reversal by the Appellate Division was not \"on the law alone or upon the law and such facts which, but for the determination of law, would not have led to reversal\" (CPL 450.90 [2] [a]), in a memorandum."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "STRAY_CLOSING_TAG",
+      "severity": "warning",
+      "detail": "Closing tag </a> appears more times than opening tag <a>."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 3 table elements before or within the header region."
+    }
+  ]
+}

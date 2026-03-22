@@ -1,0 +1,123 @@
+{
+  "caseId": "2017_05174",
+  "sourcePath": "coa/2017/2017_05174.htm",
+  "notesPath": "coa/2017/2017_05174.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.960Z",
+  "source": {
+    "title": "People v Price (2017 NY Slip Op 05174)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 41696,
+    "lineCount": 135,
+    "tagCounts": {
+      "a": 56,
+      "b": 34,
+      "body": 2,
+      "br": 26,
+      "div": 12,
+      "font": 56,
+      "head": 2,
+      "html": 2,
+      "i": 194,
+      "p": 63,
+      "script": 4,
+      "style": 2,
+      "sup": 14,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 6
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Price",
+      "2017 NY Slip Op 05174 [29 NY3d 472]",
+      "June 27, 2017",
+      "Stein, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, September 6, 2017"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Chris Price, Appellant."
+    ],
+    "citationLine": "2017 NY Slip Op 05174 29 NY3d 472",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued April 26, 2017; decided June 27, 2017",
+      "June 27, 2017",
+      "As corrected through Wednesday, September 6, 2017"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 34,
+    "footnotesCount": 7
+  },
+  "citations": {
+    "slipOpinion": "2017 NY Slip Op 05174",
+    "officialCitation": "29 NY3d 472",
+    "pageMarkerCount": 27
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "concurrence": 1
+    },
+    "authors": [
+      "Stein",
+      "Rivera"
+    ],
+    "qualifierLines": [
+      "{**29 NY3d at 473} OPINION OF THE COURT",
+      "Here, the People sought to establish that the printout was a digital image from defendant's web page. The majority concludes that the People failed to submit testimony that courts have previously found sufficient to authenticate a photograph: testimony from a forensic computer expert, the person who took the picture, or a third party who either was present at the time or who has personal knowledge about the accuracy of the image (majority op at 477-478). The majority does not decide whether the People may only rely on this type of proof, or whether other evidence would suffice. In response to the People's proposed test for the authentication of social media evidence, the majority states that, \"[a]ssuming without deciding that a photograph may be authenticated through the method proposed by the People, the evidence presented here . . . was exceedingly sparse,\" and then concludes that \"the authentication requirement cannot be satisfied solely by proof that defendant's surname and picture appears on the profile page\" (majority op at 478-479). This approach hints at, but does not confirm, the proof that would satisfy the People's burden. However, we cannot know whether the printout of the digital image was authenticated without knowing how to measure the adequacy of the People's proof (see Stop the Beach Renourishment,{**29 NY3d at 484} Inc. v Florida Dept. of Environmental Protection, 560 US 702, 716, 737 [2010] [rejecting the concurrence's insistence that \"this case does not require those questions to be addressed\" because \"(o)ne cannot know whether a takings claim is invalid without knowing what standard it has failed to meet\"])."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 1,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 7,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

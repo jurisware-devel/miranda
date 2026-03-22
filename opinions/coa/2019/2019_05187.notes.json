@@ -1,0 +1,129 @@
+{
+  "caseId": "2019_05187",
+  "sourcePath": "coa/2019/2019_05187.htm",
+  "notesPath": "coa/2019/2019_05187.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.064Z",
+  "source": {
+    "title": "People v Hill (2019 NY Slip Op 05187)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 8467,
+    "lineCount": 81,
+    "tagCounts": {
+      "a": 16,
+      "b": 4,
+      "body": 2,
+      "br": 10,
+      "div": 6,
+      "font": 10,
+      "head": 2,
+      "html": 2,
+      "i": 64,
+      "opinion": 1,
+      "p": 25,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Hill",
+      "2019 NY Slip Op 05187 [33 NY3d 1076]",
+      "June 27, 2019",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, August 21, 2019"
+    ],
+    "captionLines": [],
+    "citationLine": "2019 NY Slip Op 05187 33 NY3d 1076",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Decided June 27, 2019",
+      "June 27, 2019",
+      "As corrected through Wednesday, August 21, 2019"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Dechert LLP , New York City ( Hector Gonzalez , Siobhan M. Namazi and Timothy Ly of counsel), and Janet E. Sabel , The Legal Aid Society , New York City ( David Crow and Andrew C. Fine of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Dechert LLP , New York City ( Hector Gonzalez , Siobhan M. Namazi and Timothy Ly of counsel), and Janet E. Sabel , The Legal Aid Society , New York City ( David Crow and Andrew C. Fine of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Darcel D. Clark , District Attorney , Bronx ( Shera Knight of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Darcel D. Clark , District Attorney , Bronx ( Shera Knight of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 9,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2019 NY Slip Op 05187",
+    "officialCitation": "33 NY3d 1076",
+    "pageMarkerCount": 4
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Fahey"
+    ],
+    "qualifierLines": [
+      "{**33 NY3d at 1076} OPINION OF THE COURT",
+      "Memorandum.",
+      "The order of the Appellate Division should be affirmed. We conclude that, on this record, there is no basis to disturb the suppression determination. Contrary to the dissent, the Appellate Division did not run afoul of our decision in People v LaFontaine (92 NY2d 470 [1998]) or its progeny (, 26 NY3d 813, 826 [2016]).",
+      "The present case clearly falls into the category where the trial court's decision has discrete sections enabling an appellate{**33 NY3d at 1078} court to discern which issues it has considered and decided, and yet the Appellate Division reviewed an issue that the trial court had not decided adversely to defendant, offering \"an entirely distinct alternative ground for affirmance\" (, 23 NY3d 878, 885 n 2 [2014]). If a suppression court writes a \"fully articulated\" decision adverse to a defendant (Nicholson, 26 NY3d at 826), but omits discussion of a particular issue raised by the defendant, our law mandates that an appellate court cannot resolve the issue and must remit. Whether our interpretation of CPL 470.15 (1), in LaFontaine and its progeny, is \"undesirable from a policy point of view\" (Concepcion, 17 NY3d at 202 [Smith, J., dissenting]) is a question for another day. LaFontaine is the law and, until such time as that precedent is overruled, \"we are constrained by that decision, and . . . cannot be arbitrary in applying it\" (, 20 NY3d 44, 58 [2012, Pigott, J., dissenting])."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

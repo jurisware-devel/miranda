@@ -1,0 +1,116 @@
+{
+  "caseId": "2020_02026",
+  "sourcePath": "coa/2020/2020_02026.htm",
+  "notesPath": "coa/2020/2020_02026.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.091Z",
+  "source": {
+    "title": "People v Tsintzelis (2020 NY Slip Op 02026)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 14444,
+    "lineCount": 104,
+    "tagCounts": {
+      "a": 36,
+      "b": 28,
+      "body": 2,
+      "br": 20,
+      "div": 8,
+      "font": 18,
+      "head": 2,
+      "html": 2,
+      "i": 94,
+      "opinion": 1,
+      "p": 33,
+      "script": 4,
+      "style": 2,
+      "sup": 10,
+      "table": 6,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Tsintzelis",
+      "2020 NY Slip Op 02026 [35 NY3d 925]",
+      "March 24, 2020",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, June 17, 2020"
+    ],
+    "captionLines": [],
+    "citationLine": "2020 NY Slip Op 02026 35 NY3d 925",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued February 12, 2020; decided March 24, 2020",
+      "March 24, 2020",
+      "As corrected through Wednesday, June 17, 2020"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 10,
+    "footnotesCount": 5
+  },
+  "citations": {
+    "slipOpinion": "2020 NY Slip Op 02026",
+    "officialCitation": "35 NY3d 925",
+    "pageMarkerCount": 8
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "concurrence": 1
+    },
+    "authors": [
+      "Rivera"
+    ],
+    "qualifierLines": [
+      "{**35 NY3d at 926} OPINION OF THE COURT",
+      "Memorandum.",
+      " I concur that the Appellate Division should be reversed because the analyst's respective testimony violated the Confrontation Clause rights of each defendant. In both appeals, the analyst failed to identify the stages of testing with which she was directly involved or the extent of her independent analysis on the raw data generated from the DNA testing. Given the analyst's limited participation in the testing, it was necessary for her to clarify which stages of testing she actually performed and her overall role in the process as a predicate to determining whether she was an \"analyst with the requisite personal knowledge\" (People v John, 27 NY3d 294, 313 [2016]). Her testimony fell short of that constitutional threshold."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 1,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 5,
+    "labels": [
+      "1",
+      "2",
+      "1",
+      "2",
+      "3"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 3 table elements before or within the header region."
+    }
+  ]
+}

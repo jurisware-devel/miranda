@@ -1,0 +1,114 @@
+{
+  "caseId": "2014_00899",
+  "sourcePath": "coa/2014/2014_00899.htm",
+  "notesPath": "coa/2014/2014_00899.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.715Z",
+  "source": {
+    "title": "People v Reed (2014 NY Slip Op 00899)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 18680,
+    "lineCount": 96,
+    "tagCounts": {
+      "a": 8,
+      "b": 4,
+      "body": 2,
+      "br": 8,
+      "div": 2,
+      "font": 28,
+      "head": 2,
+      "html": 2,
+      "i": 28,
+      "p": 32,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Reed",
+      "2014 NY Slip Op 00899 [22 NY3d 530]",
+      "February 13, 2014",
+      "Pigott, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, April 2, 2014"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Lance J. Reed, Appellant."
+    ],
+    "citationLine": "2014 NY Slip Op 00899 22 NY3d 530",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued January 6, 2014; decided February 13, 2014",
+      "February 13, 2014",
+      "As corrected through Wednesday, April 2, 2014"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 28,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2014 NY Slip Op 00899",
+    "officialCitation": "22 NY3d 530",
+    "pageMarkerCount": 13
+  },
+  "opinionStructure": {
+    "totalWritings": 4,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "dissent": 1
+    },
+    "authors": [
+      "Pigott",
+      "Lippman"
+    ],
+    "qualifierLines": [
+      "{**22 NY3d at 532} OPINION OF THE COURT",
+      "The jury found defendant guilty of two counts of first-degree robbery as an accessory and one count of second-degree murder as an accessory, acquitting him of the weapon possession charge. County Court then denied defendant's motion for a trial order of dismissal. The Appellate Division affirmed the judgment (97 AD3d 1142 [2012]). Two Justices dissented, one of whom granted defendant leave to appeal to this Court. ",
+      " Because the People failed to prove a crucial requisite element of felony murder and two counts of robbery in the first degree—that there was a forcible taking of property—I would find that the evidence was not legally sufficient to support the judgment of conviction. I therefore dissent. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 4 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "caseId": "2022_07023",
+  "sourcePath": "coa/2022/2022_07023.htm",
+  "notesPath": "coa/2022/2022_07023.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.194Z",
+  "source": {
+    "title": "People v Cruz (2022 NY Slip Op 07023)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 3856,
+    "lineCount": 71,
+    "tagCounts": {
+      "a": 6,
+      "b": 4,
+      "body": 2,
+      "br": 6,
+      "div": 6,
+      "font": 6,
+      "head": 2,
+      "html": 2,
+      "i": 12,
+      "opinion": 1,
+      "p": 10,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Cruz",
+      "2022 NY Slip Op 07023 [39 NY3d 973]",
+      "December 13, 2022",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, February 1, 2023"
+    ],
+    "captionLines": [],
+    "citationLine": "2022 NY Slip Op 07023 39 NY3d 973",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Decided December 13, 2022",
+      "December 13, 2022",
+      "As corrected through Wednesday, February 1, 2023"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Twyla Carter, The Legal Aid Society , New York City ( Harold V. Ferguson, Jr. , of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Twyla Carter, The Legal Aid Society , New York City ( Harold V. Ferguson, Jr. , of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Alvin L. Bragg, Jr., District Attorney , New York City ( Alan Gadlin of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Alvin L. Bragg, Jr., District Attorney , New York City ( Alan Gadlin of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 3,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2022 NY Slip Op 07023",
+    "officialCitation": "39 NY3d 973",
+    "pageMarkerCount": 2
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**39 NY3d at 973} OPINION OF THE COURT",
+      "Concur: Acting Chief Judge Cannataro and Judges Rivera, Garcia, Wilson, Singas and Troutman."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "caseId": "2020_02682",
+  "sourcePath": "coa/2020/2020_02682.htm",
+  "notesPath": "coa/2020/2020_02682.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.101Z",
+  "source": {
+    "title": "People v Holz (2020 NY Slip Op 02682)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 19859,
+    "lineCount": 109,
+    "tagCounts": {
+      "a": 32,
+      "b": 18,
+      "body": 2,
+      "br": 14,
+      "div": 12,
+      "font": 26,
+      "head": 2,
+      "html": 2,
+      "i": 42,
+      "p": 52,
+      "script": 4,
+      "style": 2,
+      "sup": 6,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 6
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Holz",
+      "2020 NY Slip Op 02682 [35 NY3d 55]",
+      "May 7, 2020",
+      "Fahey, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, July 8, 2020"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "David M. Holz, Appellant."
+    ],
+    "citationLine": "2020 NY Slip Op 02682 35 NY3d 55",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Submitted April 28, 2020; decided May 7, 2020",
+      "May 7, 2020",
+      "As corrected through Wednesday, July 8, 2020"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 26,
+    "footnotesCount": 3
+  },
+  "citations": {
+    "slipOpinion": "2020 NY Slip Op 02682",
+    "officialCitation": "35 NY3d 55",
+    "pageMarkerCount": 12
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [
+      "Fahey"
+    ],
+    "qualifierLines": [
+      "{**35 NY3d at 57} OPINION OF THE COURT",
+      "A single Justice dissented, asserting that whether a guilty plea \"ensues from\" a suppression order depends on whether there is a \"reasonable possibility that the [alleged suppression] error contributed to the plea\" (id. at 1422 [Whalen, P.J., dissenting] [internal quotation marks omitted]). The dissenting Justice would have reached the merits of defendant's challenge to the suppression determination (see id. at 1425-1427).",
+      "The dissenting Justice granted defendant leave to appeal to this Court, and we now reverse.",
+      "A defendant who pleads guilty to one count will invariably take into consideration that other counts are satisfied by the plea. Importantly, a count satisfied by a guilty plea bears the double jeopardy consequences of a judgment of conviction. The judgment in this case prevents the People from prosecuting defendant again for the October 3, 2014 burglary, even though defendant did not plead to that count (see Holz, 167 AD3d at 1423 [Whalen, P.J., dissenting], citing CPL 40.20 [1]; 40.30 [1] [a]; 220.30 [2])."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 3,
+    "labels": [
+      "1",
+      "2",
+      "3"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "caseId": "2016_01205",
+  "sourcePath": "coa/2016/2016_01205.htm",
+  "notesPath": "coa/2016/2016_01205.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.853Z",
+  "source": {
+    "title": "People v Jin Cheng Lin (2016 NY Slip Op 01205)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 66243,
+    "lineCount": 181,
+    "tagCounts": {
+      "a": 24,
+      "b": 14,
+      "blockquote": 30,
+      "body": 2,
+      "br": 12,
+      "div": 24,
+      "font": 92,
+      "head": 2,
+      "html": 2,
+      "i": 180,
+      "p": 160,
+      "script": 4,
+      "style": 2,
+      "sup": 4,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 18
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Jin Cheng Lin",
+      "2016 NY Slip Op 01205 [26 NY3d 701]",
+      "February 18, 2016",
+      "Rivera, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, April 13, 2016"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Jin Cheng Lin, Appellant."
+    ],
+    "citationLine": "2016 NY Slip Op 01205 26 NY3d 701",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued January 12, 2016; decided February 18, 2016",
+      "February 18, 2016",
+      "As corrected through Wednesday, April 13, 2016"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 92,
+    "footnotesCount": 2
+  },
+  "citations": {
+    "slipOpinion": "2016 NY Slip Op 01205",
+    "officialCitation": "26 NY3d 701",
+    "pageMarkerCount": 45
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [
+      "Rivera"
+    ],
+    "qualifierLines": [
+      "{**26 NY3d at 705} OPINION OF THE COURT",
+      "The dissenting justice opined that the confession should have been suppressed, and the videotape and notes admitted as evidence of the involuntariness of defendant's confession (105 AD3d at 763 [Hall, J.]). The dissenter granted defendant leave to appeal (21 NY3d 1012 [2013]). We now affirm."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 2,
+    "labels": [
+      "1",
+      "2"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

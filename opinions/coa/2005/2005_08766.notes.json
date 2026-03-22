@@ -1,0 +1,112 @@
+{
+  "caseId": "2005_08766",
+  "sourcePath": "coa/2005/2005_08766.htm",
+  "notesPath": "coa/2005/2005_08766.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.294Z",
+  "source": {
+    "title": "People v Turner (2005 NY Slip Op 08766)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 22897,
+    "lineCount": 112,
+    "tagCounts": {
+      "a": 2,
+      "b": 6,
+      "blockquote": 2,
+      "body": 2,
+      "br": 4,
+      "div": 14,
+      "font": 34,
+      "head": 2,
+      "html": 2,
+      "i": 118,
+      "p": 31,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 4
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Turner",
+      "2005 NY Slip Op 08766 [5 NY3d 476]",
+      "November 17, 2005",
+      "R.S. Smith, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, January 4, 2006"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Appellant,",
+      "v",
+      "Herman Turner, Respondent."
+    ],
+    "citationLine": "2005 NY Slip Op 08766 5 NY3d 476",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued October 20, 2005; decided November 17, 2005",
+      "November 17, 2005",
+      "As corrected through Wednesday, January 4, 2006"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 32,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2005 NY Slip Op 08766",
+    "officialCitation": "5 NY3d 476",
+    "pageMarkerCount": 16
+  },
+  "opinionStructure": {
+    "totalWritings": 2,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1
+    },
+    "authors": [
+      "R.S. Smith"
+    ],
+    "qualifierLines": [
+      "{**5 NY3d at 478} OPINION OF THE COURT"
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 2 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

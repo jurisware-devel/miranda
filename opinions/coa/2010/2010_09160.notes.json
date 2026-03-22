@@ -1,0 +1,152 @@
+{
+  "caseId": "2010_09160",
+  "sourcePath": "coa/2010/2010_09160.htm",
+  "notesPath": "coa/2010/2010_09160.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.509Z",
+  "source": {
+    "title": "People v Battles (2010 NY Slip Op 09160)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 48254,
+    "lineCount": 148,
+    "tagCounts": {
+      "a": 26,
+      "b": 18,
+      "blockquote": 20,
+      "body": 2,
+      "br": 14,
+      "disop": 1,
+      "div": 4,
+      "font": 64,
+      "head": 2,
+      "html": 2,
+      "i": 295,
+      "p": 57,
+      "script": 4,
+      "style": 2,
+      "sup": 6,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [
+      "disop"
+    ],
+    "strayClosingTags": [
+      "disop",
+      "i"
+    ]
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Battles",
+      "2010 NY Slip Op 09160 [16 NY3d 54]",
+      "December 14, 2010",
+      "Pigott, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, February 23, 2011"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Calvin Battles, Appellant."
+    ],
+    "citationLine": "2010 NY Slip Op 09160 16 NY3d 54",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued November 15, 2010; decided December 14, 2010",
+      "December 14, 2010",
+      "As corrected through Wednesday, February 23, 2011"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 61,
+    "footnotesCount": 3
+  },
+  "citations": {
+    "slipOpinion": "2010 NY Slip Op 09160",
+    "officialCitation": "16 NY3d 54",
+    "pageMarkerCount": 31
+  },
+  "opinionStructure": {
+    "totalWritings": 6,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 3,
+      "dissent": 2
+    },
+    "authors": [
+      "Pigott",
+      "Lippman",
+      "Jones"
+    ],
+    "qualifierLines": [
+      "{**16 NY3d at 57} OPINION OF THE COURT",
+      "After a jury trial, defendant was convicted of depraved indifference murder (Penal Law § 125.25 [2]), second-degree manslaughter (Penal Law § 125.15 [1]), and three counts of depraved indifference assault (Penal Law § 120.10 [3]). He was sentenced as a persistent felony offender to concurrent sentences of 25 years to life on the depraved indifference murder and manslaughter convictions, to be followed by consecutive terms of 25 years to life on the depraved indifference assault convictions related to Gregory Davis and Wheeler, and a consecutive term of 20 years to life on the depraved indifference assault conviction related to Elliott, for an aggregate sentence of 95 years to life. ",
+      "Penal Law § 70.25 requires that concurrent sentences be imposed \"for two or more offenses committed through a single act or omission, or through an act or omission which in itself constituted one of the offenses and also was a material element of the other\" (Penal Law § 70.25 [2]). To determine whether consecutive sentences are permitted, a court must first look to the statutory definitions of the crimes at issue (People v Frazier, 16 NY3d 36 [2010] [decided today]). ",
+      "We conclude, however, that the sentence imposed pertaining to Wheeler must run concurrent to the other sentences. Wheeler was never doused with gasoline, but rather, was sprayed as a result of the dousing of the others. Thus, the risk-creating conduct for his conviction was the same act as that of the others and running his sentence concurrently is required. ",
+      "As Chief Judge Kaye and Judge Ciparick pointed out in their dissents in Rivera, Rosen's attempt at harmonizing New York's persistent felony offender sentencing scheme with Apprendi was, at the time, at least arguably viable. Walton v Arizona (497 US 639 [1990]), although cast in doubt by Apprendi, had not yet been overruled, and Walton seemed to support the notion, essential to Rosen's rationale, that a defendant's mere eligibility for an enhanced sentence was sufficient to vest a judge with authority to impose such a sentence, notwithstanding the need for a further judicial finding to actually permit the sentence. Once Walton was overruled by Ring, however, our ensuing cases, Rivera and Quinones, were deprived of essential support, for Ring, applying Apprendi, held that where a jury verdict was not itself sufficient to support the punishment—where the imposition of punishment could not go forward before some additional judicial finding was made—the punishment could not be constitutionally imposed (536 US at 602). This basic point—that the power of the judge to impose a particular sentence derives from and can be no greater than that afforded by the verdict (or the defendant's admissions)—was, as noted, forcefully reiterated in Blakely (542 US at 303) and Cunningham (549 US at 290) and, indeed, characterized in both decisions as a \"bright line\" rule. ",
+      "{**16 NY3d at 68}Accordingly, while I concur with the majority's modification, I dissent in part and would further modify the appealed order. Defendant is, in my view, entitled to the vacatur of his sentences on the first-degree assault counts and should be resentenced on those counts as a second felony offender. ",
+      " Because I believe that defendant's sentences as to all four victims should be modified to run concurrently, I respectfully dissent. ",
+      "Penal Law § 70.25 (2) provides that concurrent sentences must be imposed when two or more offenses are committed \"through a single act or omission\" or {**16 NY3d at 69}\"through an act or omission which in itself constituted one of the offenses and also was a material element of the other.\" In People v Ramirez (89 NY2d 444 [1996]), this Court explained that \"[s]ection 70.25 (2) does not prohibit convictions of multiple offenses containing overlapping elements. Rather, the statute prohibits double punishment for an act or omission which violates more than one section of the law and is accordingly punishable in different ways\" (89 NY2d at 451 n 5). To determine whether concurrent sentences are required, this Court instructed that ",
+      "\"[a] sentencing court must first examine the statutory definitions of the crimes for which defendant has been convicted. Because both prongs of Penal Law § 70.25 (2) refer to the 'act or omission,' that is, the 'actus reus' that constitutes the offense (see, Penal Law § 15.00 [1] [bodily movement]; Penal Law § 15.00 [3] [failure to act]), the court must determine whether the actus reus element is, by definition, the same for both offenses (under the first prong of the statute), or if the actus reus for one offense is, by definition, a material element of the second offense (under the second prong). If it is neither, then the People have satisfied their obligation of showing that concurrent sentences are not required. If the statutory elements do overlap under either prong of the statute, the People may yet establish the legality of consecutive sentencing by showing that the 'acts or omissions' committed by defendant were separate and distinct acts\" (Laureano, 87 NY2d at 643 [case citations omitted]).",
+      "That is, when a defendant is convicted of multiple offenses, the sentencing court, in addition to reviewing the Penal Law provisions under which defendant was convicted, must review the relevant evidence adduced at trial and the trial court's jury charge to determine whether any of the crimes for which defendant was convicted were single act offenses (for concurrent sentencing purposes). ",
+      "In People v Rosas, this Court held that the sentences imposed on defendant, who was convicted of two counts of first-degree murder under Penal Law § 125.27 (1) (a) (vii) for causing the deaths of two individuals during the same criminal transaction, must be served concurrently. Rosas provides support for the proposition that the actus reus for a depraved indifference offense is the act in a series of risk-creating acts that is both necessary and sufficient to cause the result for which defendant will be held criminally liable (see Rosas, 8 NY3d at 499 [Regarding the statutory definition of \"act\" in Penal Law § 15.00 (1) (\"a bodily movement\"), the Rosas majority noted that the purpose of the statutory definition \"draws a line between a prohibited 'act'—'a bodily movement,' or actus reus—and a '(c)ulpable mental state' (Penal Law § 15.00 [6])—a state of mind, or mens rea. The statute could not have been designed to require courts to distinguish between one and several bodily {**16 NY3d at 71}movements, because the distinction will be difficult or impossible in many cases as the dissent recognizes\"]; Rosas, 8 NY3d at 503 n 4 [The dissent noted, \"for sentencing purposes, we need concern ourselves only with the particular act(s) that fulfill the act element(s) of the offense of which a defendant is charged. For example, to accomplish a second-degree intentional murder, a single act offense, a defendant necessarily engages in many bodily acts—but the only one the People must prove to support the conviction is the act that causes the victim's death\"]). ",
+      "The fact that defendant was acquitted of two felony murder counts based on the jury's finding that the underlying felony, arson in the second degree, was not established by the People does not require a different conclusion. For purposes of determining whether concurrent or consecutive sentences were warranted for defendant's convictions of the instant depraved indifference offenses, his single act of causing the fire need not have been an intentional act. The jury's finding that defendant was guilty of the depraved {**16 NY3d at 72}indifference counts was not dependent on whether defendant intentionally set the fire. Given the evidence that the fire ignited directly after defendant, with lighter in hand, pushed Elliott who fell back into the gasoline-soaked living room, it is reasonable to conclude the jury found that defendant recklessly caused the fire through an act of depraved indifference. ",
+      "Under the majority's theory, sentencing judges would be allowed to select and designate specific preliminary acts as the operative actus reus in depraved indifference crimes so as to thwart the requirement of concurrent sentencing for a \"single act\" and permit consecutive sentencing. Not only would this be contrary to this Court's long-settled interpretation of section 70.25 (2) and violative of the legislative intent of the statute, it would create uncertainty in the law because application of section 70.25 (2) would depend on the depravity of defendant in committing certain preliminary acts. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 2,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 3,
+    "labels": [
+      "1",
+      "2",
+      "3"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <disop> in source HTML."
+    },
+    {
+      "code": "STRAY_CLOSING_TAG",
+      "severity": "warning",
+      "detail": "Closing tag </disop> appears more times than opening tag <disop>."
+    },
+    {
+      "code": "STRAY_CLOSING_TAG",
+      "severity": "warning",
+      "detail": "Closing tag </i> appears more times than opening tag <i>."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 6 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

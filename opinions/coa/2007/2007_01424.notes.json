@@ -1,0 +1,137 @@
+{
+  "caseId": "2007_01424",
+  "sourcePath": "coa/2007/2007_01424.htm",
+  "notesPath": "coa/2007/2007_01424.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.348Z",
+  "source": {
+    "title": "People v Jackson (2007 NY Slip Op 01424)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 13885,
+    "lineCount": 92,
+    "tagCounts": {
+      "a": 6,
+      "b": 10,
+      "blockquote": 2,
+      "body": 2,
+      "br": 16,
+      "div": 4,
+      "font": 22,
+      "head": 2,
+      "html": 2,
+      "i": 62,
+      "p": 26,
+      "script": 4,
+      "style": 2,
+      "sup": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Jackson",
+      "2007 NY Slip Op 01424 [8 NY3d 869]",
+      "February 22, 2007",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, April 25, 2007"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Edward Jackson, Appellant."
+    ],
+    "citationLine": "2007 NY Slip Op 01424 8 NY3d 869",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued January 10, 2007; decided February 22, 2007",
+      "February 22, 2007",
+      "As corrected through Wednesday, April 25, 2007"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Legal Aid Society , New York City ( William Carney and Steven Banks of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Legal Aid Society , New York City ( William Carney and Steven Banks of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Robert T. Johnson, District Attorney , Bronx ( Dimitri Maisonet, Joseph N. Ferdenzi and Allen H. Saperstein of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Robert T. Johnson, District Attorney , Bronx ( Dimitri Maisonet, Joseph N. Ferdenzi and Allen H. Saperstein of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 21,
+    "footnotesCount": 1
+  },
+  "citations": {
+    "slipOpinion": "2007 NY Slip Op 01424",
+    "officialCitation": "8 NY3d 869",
+    "pageMarkerCount": 10
+  },
+  "opinionStructure": {
+    "totalWritings": 5,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "concurrence": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Smith",
+      "Pigott"
+    ],
+    "qualifierLines": [
+      "{**8 NY3d at 870}OPINION OF THE COURT",
+      "Memorandum. ",
+      " I respectfully dissent and vote to reverse because, in my view, the trial court improperly admitted the testimony concerning the alleged uncharged sexual assault. Such error was not harmless and deprived defendant of a fair trial. "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 1,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 1,
+    "labels": [
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 5 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

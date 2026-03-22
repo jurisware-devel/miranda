@@ -1,0 +1,139 @@
+{
+  "caseId": "2009_09267",
+  "sourcePath": "coa/2009/2009_09267.htm",
+  "notesPath": "coa/2009/2009_09267.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.455Z",
+  "source": {
+    "title": "People v Wrotten (2009 NY Slip Op 09267)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 29773,
+    "lineCount": 126,
+    "tagCounts": {
+      "a": 22,
+      "b": 22,
+      "blockquote": 4,
+      "body": 2,
+      "br": 18,
+      "disop": 1,
+      "div": 4,
+      "font": 40,
+      "head": 2,
+      "html": 2,
+      "i": 82,
+      "p": 36,
+      "script": 4,
+      "style": 2,
+      "sup": 8,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [
+      "disop"
+    ],
+    "strayClosingTags": [
+      "disop"
+    ]
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Wrotten",
+      "2009 NY Slip Op 09267 [14 NY3d 33]",
+      "December 15, 2009",
+      "Ciparick, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, March 31, 2010"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Appellant,",
+      "v",
+      "Juwanna Wrotten, Respondent."
+    ],
+    "citationLine": "2009 NY Slip Op 09267 14 NY3d 33",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued November 17, 2009; decided December 15, 2009",
+      "December 15, 2009",
+      "As corrected through Wednesday, March 31, 2010"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 35,
+    "footnotesCount": 4
+  },
+  "citations": {
+    "slipOpinion": "2009 NY Slip Op 09267",
+    "officialCitation": "14 NY3d 33",
+    "pageMarkerCount": 19
+  },
+  "opinionStructure": {
+    "totalWritings": 6,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 3,
+      "dissent": 2
+    },
+    "authors": [
+      "Ciparick",
+      "Jones",
+      "Smith"
+    ],
+    "qualifierLines": [
+      "{**14 NY3d at 36} OPINION OF THE COURT",
+      "Defendant was convicted of second degree assault only. On appeal, a divided Appellate Division reversed and vacated the conviction, holding that, in the absence of any express legislative authorization, Supreme Court lacked authority to permit the admission of televised testimony (, 60 AD3d 165, 167 [1st Dept 2008]). The dissent concluded that Supreme Court retained discretion under its inherent powers and Judiciary Law § 2-b (3) to utilize this new procedure without legislative authorization (Wrotten, 60 AD3d at 192). A Justice of that court granted leave to appeal and we now reverse. ",
+      "Live televised testimony is certainly not the equivalent of in-person testimony, and the decision to excuse a witness's presence in the courtroom should be weighed carefully. Televised testimony requires a case-specific finding of necessity; it is an exceptional procedure to be used only in exceptional circumstances. We do not decide here whether Supreme Court's finding of necessity rested on clear and convincing evidence, as the Appellate Division did not address that question. We only pass on whether Supreme Court had authority to utilize a procedure \"necessary to carry into effect the powers and jurisdiction possessed by it\" (Judiciary Law § 2-b [3]). As the dissent below correctly noted, \"[i]n the absence of direction from the Legislature, Supreme Court retained discretion . . . to determine what steps, if any, could be taken to permit this prosecution to proceed notwithstanding the complaining witness's inability to be physically present in the courtroom\" (Wrotten, 60 AD3d at 192). ",
+      " In the absence of any express legislative authorization, the trial court here lacked the authority to permit the complainant to testify from California via live two-way television. Accordingly, I dissent and would affirm the order of the Appellate Division. ",
+      " I join Judge Jones's dissent, but add my own because I think that the majority's opinion is wrong on the constitutional issue as well as the statutory one. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 2,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 4,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <disop> in source HTML."
+    },
+    {
+      "code": "STRAY_CLOSING_TAG",
+      "severity": "warning",
+      "detail": "Closing tag </disop> appears more times than opening tag <disop>."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 6 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

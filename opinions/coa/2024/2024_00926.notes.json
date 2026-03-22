@@ -1,0 +1,132 @@
+{
+  "caseId": "2024_00926",
+  "sourcePath": "coa/2024/2024_00926.htm",
+  "notesPath": "coa/2024/2024_00926.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.249Z",
+  "source": {
+    "title": "People v Watts (2024 NY Slip Op 00926)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 84921,
+    "lineCount": 199,
+    "tagCounts": {
+      "a": 94,
+      "b": 58,
+      "body": 2,
+      "br": 36,
+      "div": 20,
+      "font": 96,
+      "head": 2,
+      "html": 2,
+      "i": 348,
+      "p": 125,
+      "script": 4,
+      "style": 2,
+      "sup": 24,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Watts",
+      "2024 NY Slip Op 00926 [42 NY3d 60]",
+      "February 22, 2024",
+      "Cannataro, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, September 25, 2024"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Darryl Watts, Appellant."
+    ],
+    "citationLine": "2024 NY Slip Op 00926 42 NY3d 60",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued January 10, 2024; decided February 22, 2024",
+      "February 22, 2024",
+      "As corrected through Wednesday, September 25, 2024"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 68,
+    "footnotesCount": 12
+  },
+  "citations": {
+    "slipOpinion": "2024 NY Slip Op 00926",
+    "officialCitation": "42 NY3d 60",
+    "pageMarkerCount": 47
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Cannataro",
+      "Rivera"
+    ],
+    "qualifierLines": [
+      "{**42 NY3d at 63} OPINION OF THE COURT",
+      "Beyond the financial and administrative costs, the State also has a \"compelling interest\" in protecting its citizens by promptly notifying the public of registrants who pose a heightened threat of recidivism (see Pataki, 3 F Supp 2d at 470). Delaying the classification of incompetent registrants threatens that interest, in that it risks that some dangerous registrants will be released into the community for lengthy periods without accurate risk-level designations or public notice. Defendant and the dissent dispute this point, noting that{**42 NY3d at 70} offenders must still register with the Division of Criminal Justice Services at least 10 days prior to their release (see dissenting op at 81-82); however, risk-level classification determines the scope of information available to the public upon registration. Because the online sex offender database lists only level two and level three offenders (Correction Law § 168-q), members of the public who search the database will not be informed of a registrant without a risk level, regardless of the actual risk they pose.",
+      "The dissent asserts that the State's interest in protecting the public is not advanced by classifying offenders while they are in OMH custody under Mental Hygiene Law article 9. However, defendant has never limited his due process argument to his specific situation. Rather, defendant argues that it is unconstitutional to classify any incompetent registrant during the period of their disability. As Mathews itself holds, \"procedural due process rules are shaped by the risk of error inherent in the truthfinding process as applied to the generality of cases, not the rare exceptions\" (424 US at 344). The dissent is also selective in its analysis of the effects of Mental Hygiene Law article 9 confinement. Just as article 9 confinement shields the public from offenders, it also shields offenders from the public and its stigma, which cannot in this context impact any offender's \"ability to live in a community and obtain or maintain employment\" (David W., 95 NY2d at 137). Further, although it is possible that an offender may be denied placement at a particular residential treatment facility, such as a nursing home, as a result of their risk level (dissenting op at 90), this merely reinforces that an offender's risk level is useful in determining which custodial settings are suitable, and to avoid placing a potentially dangerous offender in an inappropriate facility.",
+      "The People more aptly analogize this situation to the multitude of civil proceedings in which comparatively greater private interests are threatened, but which under current law may proceed notwithstanding questions regarding a party's competency. These include civil commitment proceedings under the Sex Offender Management and Treatment Act (SOMTA) (, 88 AD3d 212 [3d Dept 2011], appeal dismissed 21 NY3d 1038 [2013]; United States v Comstock, 627 F3d 513 [4th Cir 2010], cert denied 564 US 1030 [2011]; Matter of Oxner, 440 SC 5, 889 SE2d 586 [2023]; In re Detention of Morgan, 180 Wash 2d 312, 330 P3d 774 [2014]; Moore v Superior Ct., 50 Cal 4th 802, 237 P3d 530 [2010]; Commonwealth v Burgess, 450 Mass 366, 878 NE2d 921 [2008]; In re Commitment of Weekly, 2011 IL App [1st] 102276, 956 NE2d 634 [Ill App Ct 2011], appeal denied 963 NE2d 246, 357 Ill Dec 293 [2012]; State ex rel. Nixon v Kinder, 129 SW3d 5 [Mo Ct App 2003], cert denied 543 US 979 [2004]), federal immigration removal proceedings (Munoz-Monsalve v Mukasey, 551 F3d 1 [1st Cir 2008]; Brue v Gonzales, 464 F3d 1227, 1232-1233 [10th Cir 2006]; Nee Hao Wong v Immigration & Naturalization Serv., 550 F2d 521 [9th Cir 1977]), and termination of parental rights proceedings (Matter of Joyce T., 65 NY2d 39, 50 [1985]). In addition, the Appellate Division has held that an order of protection can be issued against an incompetent respondent in a family offense proceeding (, 81 AD3d 1079, 1081 [3d Dept 2011]). Under defendant's and the dissent's logic, incompetency would prevent the State from issuing such orders for the protection of domestic violence victims because they \"place [the respondent] in jeopardy of criminal prosecution\" in the event the respondent proceeds to contact (or harm) the subjects of the{**42 NY3d at 73} protective order (see dissenting op at 83). Due process has not been held to require competency determinations in these types of proceedings—even though they can result in civil confinement, deportation, the severing of family relationships, and the threat of future prosecution—and it therefore follows that due process is not offended by the failure to hold a competency hearing before determining which of three risk-level classifications should be assigned to a convicted sex offender (see Parris, 153 AD3d at 80).",
+      "The dissent's broader assertion that there is \"no need to balance interests\" under Mathews because the \"courts and the legislature have already struck a balance favoring\" a competency requirement (dissenting op at 80) finds no support in statute or case law. We cannot \"presume\" that the legislature contemplated a CPL article 730 equivalent for SORA through silence, or through the provision of basic procedural safeguards like notice, counsel, and a hearing held on a specific timeline prior to a registrant's release (see id. at 78). The decision to foreclose the classification of incompetent registrants during the period of their disability would create very real administrative burdens and public safety risks which do not exist under the current scheme and which must be weighed against the conjectured additional benefit to incompetent registrants. Our decision today respects the need for flexibility and limiting principles outside the criminal context to facilitate the government's ability to protect the citizens of this State whose interests may come into conflict with those of incompetent registrants. Balance and pragmatism are not antithetical to fundamental fairness; rather, they are essential to the administration of justice and demanded by the Constitution (see Lassiter v Department of Social Servs. of Durham Cty., 452 US 18, 24-25 [1981] [instructing that \"what 'fundamental fairness' consists of in a particular situation\" cannot be determined without \"assessing the several interests that are at stake\"]; see Morrissey, 408 US at 481 [\"To say that the concept of due process is flexible does not mean that judges are at large to apply{**42 NY3d at 74} it to any and all relationships. Its flexibility is in its scope once it has been determined that some process is due; it is a recognition that not all situations calling for procedural safeguards call for the same kind of procedure\"]).",
+      "Defendant has a mental disability. He is also a convicted sex offender who for most of his prosecution was found unfit to stand trial. After his release and during his SORA risk classification hearing defendant was confined to a psychiatric facility. His counsel requested a competency hearing to determine whether defendant understood the nature and consequences of the SORA proceedings and was capable of assisting with his defense. No one disputes that this request was well founded given defendant's chronic mental illness, history of unfitness to stand trial, immediate commitment upon completion of his sentence, and disorganized and illogical communications with counsel. Nor does anyone dispute that defendant has a protected liberty interest that entitled him to a hearing adequate to guard against the risk of an erroneous risk classification, as due process requires. I cannot agree with the majority that the SORA hearing held with defendant's competency in doubt satisfies due process. If he could not understand the proceedings, could not lucidly communicate with his counsel in preparing arguments to the court, and lacked the ability to understand the consequences of the court's judgment, the hearing was a mockery. We are a society of laws and those laws protect the mentally disabled. I dissent from the majority's endorsement of this injustice."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 12,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

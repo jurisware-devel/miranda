@@ -1,0 +1,131 @@
+{
+  "caseId": "2025_04940",
+  "sourcePath": "coa/2025/2025_04940.htm",
+  "notesPath": "coa/2025/2025_04940.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.334Z",
+  "source": {
+    "title": "People v Tapia (2025 NY Slip Op 04940)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 9097,
+    "lineCount": 98,
+    "tagCounts": {
+      "a": 6,
+      "b": 15,
+      "body": 2,
+      "br": 21,
+      "div": 14,
+      "font": 12,
+      "head": 2,
+      "html": 2,
+      "i": 30,
+      "opinion": 1,
+      "p": 30,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": [
+      "b"
+    ]
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Tapia",
+      "2025 NY Slip Op 04940 [44 NY3d 1036]",
+      "September 11, 2025",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, February 4, 2026"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Felix Tapia, Appellant."
+    ],
+    "citationLine": "2025 NY Slip Op 04940 44 NY3d 1036",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Decided September 11, 2025",
+      "Appeal, by permission of a Justice of the Appellate Division of the Supreme Court in the First Judicial Department, from an order of that Court, entered September 19, 2024. The Appellate Division affirmed a judgment of the Supreme Court, New York County (Laura A. Ward, J., at suppression hearing; Daniel Conviser, J., at plea and sentencing), which had convicted defendant, upon a plea of guilty, of criminal sale of a controlled substance in the third degree and criminal possession of a controlled substance in the third degree.",
+      "September 11, 2025",
+      "As corrected through Wednesday, February 4, 2026"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Twyla Carter , The Legal Aid Society , New York City ( Harold V. Ferguson, Jr. of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Twyla Carter , The Legal Aid Society , New York City ( Harold V. Ferguson, Jr. of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Alvin L. Bragg, Jr. , District Attorney , New York City ( Jacob C. Marcus , Stephen C. Wu and Amanda Katherine Regan of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Alvin L. Bragg, Jr. , District Attorney , New York City ( Jacob C. Marcus , Stephen C. Wu and Amanda Katherine Regan of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 1,
+    "opinionBlocksCount": 8,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2025 NY Slip Op 04940",
+    "officialCitation": "44 NY3d 1036",
+    "pageMarkerCount": 5
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**44 NY3d at 1037} OPINION OF THE COURT",
+      "Memorandum.",
+      "The Appellate Division affirmed the subsequent judgment of conviction, with one Justice dissenting (230 AD3d 1009 [1st Dept 2024]). The dissenting Justice granted defendant leave to appeal (42 NY3d 1055 [2024])."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "STRAY_CLOSING_TAG",
+      "severity": "warning",
+      "detail": "Closing tag </b> appears more times than opening tag <b>."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "caseId": "2013_08193",
+  "sourcePath": "coa/2013/2013_08193.htm",
+  "notesPath": "coa/2013/2013_08193.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.706Z",
+  "source": {
+    "title": "People v O'Toole (2013 NY Slip Op 08193)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 21536,
+    "lineCount": 113,
+    "tagCounts": {
+      "a": 8,
+      "b": 4,
+      "body": 2,
+      "br": 12,
+      "div": 6,
+      "font": 30,
+      "head": 2,
+      "html": 2,
+      "i": 108,
+      "p": 37,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 4
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v O'Toole",
+      "2013 NY Slip Op 08193 [22 NY3d 335]",
+      "December 10, 2013",
+      "Smith, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, February 26, 2014"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Appellant,",
+      "v",
+      "Donald O'Toole, Respondent."
+    ],
+    "citationLine": "2013 NY Slip Op 08193 22 NY3d 335",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued November 14, 2013; decided December 10, 2013",
+      "December 10, 2013",
+      "As corrected through Wednesday, February 26, 2014"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 36,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2013 NY Slip Op 08193",
+    "officialCitation": "22 NY3d 335",
+    "pageMarkerCount": 14
+  },
+  "opinionStructure": {
+    "totalWritings": 6,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 3,
+      "concurrence": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Smith",
+      "Rivera",
+      "Pigott"
+    ],
+    "qualifierLines": [
+      "{**22 NY3d at 336} OPINION OF THE COURT",
+      "Here, as in Acevedo, we see no \"practical, rational\" escape from the conclusion that the jury's finding at the first trial was inconsistent with evidence presented by the People at the second one. The first jury acquitted defendant of first degree robbery and convicted him of second degree robbery. It could not logically have done so without finding that the People had failed to prove beyond a reasonable doubt that the robbery involved the display of a firearm. The dissent would distinguish Acevedo on the ground that in that case the first jury affirmatively found Acevedo's testimony to be true and Jakiela's untrue, whereas here the first jury found only reasonable doubt about Horsey's testimony that he was robbed at gunpoint; but the distinction is a false one. In any criminal case, an acquittal is only a finding of reasonable doubt, not a finding that defendant is in fact innocent. The first jury's acquittal in Acevedo implied only that the jury was not convinced beyond a reasonable doubt that Jakiela was telling the truth, and our comment that the jury \"concluded that Jakiela's testimony was incredible\" (69 NY2d at 488) meant no more than this.{**22 NY3d at 339} ",
+      "It is nonetheless true, as the People and the dissent point out, that the application of Acevedo can cause practical problems. There is force to the People's argument, paraphrased by the dissent, that the facts they sought to prove at the second trial \"were the facts the victim told police, and . . . they should not be required to put on a case pretending the facts were any different\" (dissenting op at 340). The likelihood that such problems will arise leads us to suggest that collateral estoppel should be applied sparingly in criminal cases—as it has been to date; this is the first case since Acevedo, decided 26 years ago, in which we have held the doctrine applicable. ",
+      " I concur in the result and agree that People v Acevedo (69 NY2d 478 [1987]) controls the decision on{**22 NY3d at 340} this appeal so that the People were barred by collateral estoppel from introducing evidence of the displayed firearm at the second trial. I part ways with the majority where it advocates \"that collateral estoppel should be applied sparingly in criminal cases\" (majority op at 339). "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 1,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 6 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

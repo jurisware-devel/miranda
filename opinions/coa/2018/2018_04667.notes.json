@@ -1,0 +1,121 @@
+{
+  "caseId": "2018_04667",
+  "sourcePath": "coa/2018/2018_04667.htm",
+  "notesPath": "coa/2018/2018_04667.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.016Z",
+  "source": {
+    "title": "People v Harris (2018 NY Slip Op 04667)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 6837,
+    "lineCount": 80,
+    "tagCounts": {
+      "a": 10,
+      "b": 14,
+      "body": 2,
+      "br": 10,
+      "div": 8,
+      "font": 12,
+      "head": 2,
+      "html": 2,
+      "i": 36,
+      "opinion": 1,
+      "p": 20,
+      "script": 4,
+      "style": 2,
+      "sup": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Harris",
+      "2018 NY Slip Op 04667 [31 NY3d 1183]",
+      "June 26, 2018",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, October 3, 2018"
+    ],
+    "captionLines": [],
+    "citationLine": "2018 NY Slip Op 04667 31 NY3d 1183",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued June 7, 2018; decided June 26, 2018",
+      "June 26, 2018",
+      "As corrected through Wednesday, October 3, 2018"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Kramer Levin Naftalis & Frankel LLP , New York City ( Daniel P. Schumeister of counsel), and Seymour W. James, Jr., The Legal Aid Society , New York City ( David Crow of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Kramer Levin Naftalis & Frankel LLP , New York City ( Daniel P. Schumeister of counsel), and Seymour W. James, Jr., The Legal Aid Society , New York City ( David Crow of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Eric Gonzalez, District Attorney , Brooklyn ( Rebecca L. Visgaitis and Leonard Joblove of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Eric Gonzalez, District Attorney , Brooklyn ( Rebecca L. Visgaitis and Leonard Joblove of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 6,
+    "footnotesCount": 1
+  },
+  "citations": {
+    "slipOpinion": "2018 NY Slip Op 04667",
+    "officialCitation": "31 NY3d 1183",
+    "pageMarkerCount": 5
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**31 NY3d at 1184} OPINION OF THE COURT",
+      "Memorandum."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 1,
+    "labels": [
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

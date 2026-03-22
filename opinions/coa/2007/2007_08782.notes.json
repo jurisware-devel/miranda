@@ -1,0 +1,120 @@
+{
+  "caseId": "2007_08782",
+  "sourcePath": "coa/2007/2007_08782.htm",
+  "notesPath": "coa/2007/2007_08782.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.373Z",
+  "source": {
+    "title": "People v Hill (2007 NY Slip Op 08782)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 16099,
+    "lineCount": 97,
+    "tagCounts": {
+      "a": 24,
+      "b": 14,
+      "blockquote": 2,
+      "body": 2,
+      "br": 14,
+      "div": 4,
+      "font": 28,
+      "head": 2,
+      "html": 2,
+      "i": 76,
+      "p": 21,
+      "script": 4,
+      "style": 2,
+      "sup": 4,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Hill",
+      "2007 NY Slip Op 08782 [9 NY3d 189]",
+      "November 15, 2007",
+      "Kaye, Ch.J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, December 26, 2007"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Anthony Hill, Appellant."
+    ],
+    "citationLine": "2007 NY Slip Op 08782 9 NY3d 189",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued October 16, 2007; decided November 15, 2007",
+      "November 15, 2007",
+      "As corrected through Wednesday, December 26, 2007"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 18,
+    "footnotesCount": 2
+  },
+  "citations": {
+    "slipOpinion": "2007 NY Slip Op 08782",
+    "officialCitation": "9 NY3d 189",
+    "pageMarkerCount": 12
+  },
+  "opinionStructure": {
+    "totalWritings": 4,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "dissent": 1
+    },
+    "authors": [
+      "Kaye",
+      "Pigott"
+    ],
+    "qualifierLines": [
+      "{**9 NY3d at 190} OPINION OF THE COURT",
+      "The dissent incorrectly believes that Catu and Van Deusen turned on the question whether \"the defendant got the full benefit of her plea bargain\" (dissenting op at 194); thus, the dissent attempts to undo the prejudice of defendant's involuntary guilty plea. Rather, Catu, Van Deusen and Louree made clear that the courts violated the defendant's due process rights—;not the defendant's sentencing expectations. Therefore, we vacated the defendants' involuntary guilty pleas to remedy the constitutional violations. Here, we are constrained to give the same relief, exposing defendant to the full penalty of at least a 25-year prison term. ",
+      " I respectfully dissent and would affirm the order of the Appellate Division. A grand jury charged defendant in a 32-count indictment with raping, sodomizing, and sexually abusing his daughter. A jury trial commenced on April 22, 2002, at which defendant's daughter, then 16, was the first to testify. She recounted for the jury in detail over several hours how defendant raped and abused her over a six-year period, beginning in 1994, when she was nine years old. Following the daughter's direct-examination testimony, defendant informed the court that he wished to plead guilty to the top count of the indictment, first-degree rape, in full satisfaction of the charges. Defendant admitted that his daughter's direct-examination testimony was true, and specifically, that he had forced her to have sex with him since she was nine years old. The court accepted defendant's plea and informed him that he would serve a prison sentence of 15 years. It is undisputed that no mention was made of any mandatory postrelease supervision. At sentencing, the court imposed the negotiated 15-year prison sentence. ",
+      "In March 2004, approximately two years later, defendant challenged his judgment of conviction, arguing that his plea was involuntary because he had not been informed that his prison sentence carried a five-year period of postrelease supervision.{**9 NY3d at 194} Following proceedings before Supreme Court, defendant's sentence was modified to a term of 12½ years in prison and 2½ years of postrelease supervision. The Appellate Division, with two Justices dissenting, affirmed defendant's modified sentence. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 2,
+    "labels": [
+      "1",
+      "2"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 4 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

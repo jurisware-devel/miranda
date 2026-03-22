@@ -1,0 +1,120 @@
+{
+  "caseId": "2015_09188",
+  "sourcePath": "coa/2015/2015_09188.htm",
+  "notesPath": "coa/2015/2015_09188.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.842Z",
+  "source": {
+    "title": "People v Smalls (2015 NY Slip Op 09188)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 10041,
+    "lineCount": 82,
+    "tagCounts": {
+      "a": 14,
+      "b": 4,
+      "body": 2,
+      "br": 6,
+      "div": 6,
+      "font": 14,
+      "head": 2,
+      "html": 2,
+      "i": 56,
+      "opinion": 1,
+      "p": 30,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Smalls",
+      "2015 NY Slip Op 09188 [26 NY3d 1064]",
+      "December 15, 2015",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, February",
+      "3, 2016"
+    ],
+    "captionLines": [],
+    "citationLine": "2015 NY Slip Op 09188 26 NY3d 1064",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued November 17, 2015; decided December 15, 2015",
+      "December 15, 2015",
+      "As corrected through Wednesday, February"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Seymour W. James, Jr., The Legal Aid Society , New York City ( Lawrence T. Hausman of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Seymour W. James, Jr., The Legal Aid Society , New York City ( Lawrence T. Hausman of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Robert T. Johnson, District Attorney , Bronx ( Marianne Stracquadanio, Joseph N. Ferdenzi and Karen Swiger of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Robert T. Johnson, District Attorney , Bronx ( Marianne Stracquadanio, Joseph N. Ferdenzi and Karen Swiger of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 11,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2015 NY Slip Op 09188",
+    "officialCitation": "26 NY3d 1064",
+    "pageMarkerCount": 6
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**26 NY3d at 1065} OPINION OF THE COURT",
+      "Memorandum.",
+      "By a misdemeanor information, the People charged defendant Dennis P. Smalls with criminal possession of a controlled{**26 NY3d at 1066} substance in the seventh degree and unlawful possession of a knife (see Administrative Code of City of NY § 10-133 [b]). After his arraignment on the information, defendant moved to dismiss the information on facial sufficiency grounds, and the court denied his motion. Thereafter, defendant pleaded guilty to the charge of seventh-degree criminal possession of a controlled substance in full satisfaction of the information. In exchange for his plea, defendant received a sentence of 30 days in jail, which was set to run concurrently with his sentence upon an unrelated misdemeanor charge and with his punishment for violating the terms of his parole in a prior felony case."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

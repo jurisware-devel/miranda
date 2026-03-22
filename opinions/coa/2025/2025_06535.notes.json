@@ -1,0 +1,171 @@
+{
+  "caseId": "2025_06535",
+  "sourcePath": "coa/2025/2025_06535.htm",
+  "notesPath": "coa/2025/2025_06535.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.355Z",
+  "source": {
+    "title": "People v Williams (2025 NY Slip Op 06535)",
+    "publicationStatus": "slip_op_only"
+  },
+  "fileInfo": {
+    "byteSize": 34014,
+    "lineCount": 118,
+    "tagCounts": {
+      "a": 38,
+      "b": 14,
+      "blockquote": 6,
+      "body": 2,
+      "br": 25,
+      "dateline": 2,
+      "div": 14,
+      "font": 16,
+      "form": 2,
+      "head": 2,
+      "html": 2,
+      "i": 80,
+      "input": 1,
+      "opinion": 1,
+      "p": 68,
+      "para": 3,
+      "sc": 4,
+      "script": 4,
+      "style": 2,
+      "sup": 4,
+      "table": 2,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [
+      "form",
+      "input"
+    ],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Williams",
+      "2025 NY Slip Op 06535",
+      "Decided on November 25, 2025",
+      "Court of Appeals",
+      "Cannataro, J.",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "This opinion is uncorrected and subject to revision before publication in the Official Reports."
+    ],
+    "captionLines": [
+      "The People & c., Respondent,",
+      "v",
+      "Locksley Williams, Appellant."
+    ],
+    "citationLine": "2025 NY Slip Op 06535",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Defendant contends that the People's obligation to certify facial sufficiency should be treated the same as the requirement that they certify compliance with their discovery obligations under CPL article 245. A comparison of the text of the relevant provisions reveals why this interpretation is incorrect. CPL 30.30 (5), as originally enacted in 2019, specifically stated that any \"statement of trial readiness must be accompanied or preceded by a certification of good faith compliance with the disclosure requirements of [CPL 245.20] and the defense shall be afforded an opportunity to be heard on the record as to whether the disclosure requirements have been met.\" Mirroring this provision, CPL 245.50 (3) provided that \"the prosecution shall not be deemed ready for trial for purposes of [CPL 30.30] until it has filed a proper certificate\" of compliance (former CPL 245.50 [3] [emphasis added]). [FN*] Based on this language, we explained in People v Bay that \"[r]ead together, CPL 245.50 and [CPL] 30.30 require that due diligence must be conducted prior to filing a\" certificate of compliance (41 NY3d 200, 212, 216 [2023]). Thus, unlike the subdivision (5-a) certification requirement, the legislature specifically provided that an invalid certificate of compliance would render the People's accompanying statement of readiness illusory. The legislature could have, but did not, similarly tie the accuracy of certification pursuant to subdivision (5-a) to the People's trial readiness. It is this legislative choice that the dissent ignores when it insists without citation that \"the problem that the speedy trial framework and CPL 30.30 (5-a) address is prosecutorial delay\" (dissenting op at 9), conflating CPL 30.30 (5-a) with the preceding subdivision and disregarding significant differences between the two.",
+      "Explaining the operative intent behind the earlier version, the Sponsor's Memo stated that it would provide that a \"statement of readiness shall not be valid unless the prosecuting attorney certifies that all counts are converted and facially sufficient and that those counts that are not have been dismissed\" (Senate Introducer's Mem in Support of 2019 NY Senate Bill S1738 at 1 [emphasis added]). However the language employed in the earlier bill went much further in its application, essentially requiring dismissal of a statement of readiness whenever the accusatory instrument did not actually comply with CPL 100.40. The version ultimately enacted into law more closely tracks the Sponsor's stated intent; indeed, it uses the Sponsor's memo language verbatim to require only that the People \"certif[y] that all counts charged in the accusatory instrument\" are facially sufficient. This provides some evidence that the legislature considered, and rejected, language tying the People's readiness to the actual facial sufficiency of the accusatory instrument in favor of a requirement that they \"certif[y]\" its sufficiency ( see Kimmel v State , 29 NY3d 386, 397 [2017] [concluding that \"earlier bills (may) shed light on the critical differences\" in the version that was ultimately enacted]).",
+      "CPL 30.30 (5-a) does not define \"certifies,\" but the meaning of this term is well established and understood to mean attesting to the accuracy or truth of a statement or document. For example, the plain meaning of \"certify\" is to \"confirm or attest often by a document under hand or seal as being true, meeting a standard, or being as represented\" (Merriam-Webster's Unabridged Dictionary [Merriam-Webster], certify [https://unabridged.merriam-webster.com/unabridged/certify]. Similarly, Black's Law Dictionary defines \"certify\" as \"[t]o authenticate or verify in writing\" and \"[t]o attest as being true or as meeting certain criteria\" (Black's Law Dictionary 284 [11th ed. 2019]). Likewise, Black's Law Dictionary defines \"certification\" as \"[t]he act of attesting; esp., the process of giving someone or something an official document stating that a specified standard has been satisfied\" (Black's Law Dictionary 284 [11th ed. 2019]). The prosecutor's argument, adopted by the majority, that their CPL 30.30 (5-a) certification was nothing more than a bald assertion and should not be understood by the court as an assurance of its accuracy, is contrary to this understanding. Their argument is also illogical on its own terms. What would be the point of requiring certification if that certification can be inaccurate, with no consequences? If the prosecution and the majority were correct, the legislature would have no need to require certification as a prerequisite to a valid SOR. Instead, submission of the SOR alone would stop the speedy trial clock, because the certification would offer no additional assurance to defendants or courts that the prosecution had satisfied its statutory requirements. But the legislature does require certification, and we may not undermine that choice by stripping the requirement of all [*5] meaning ( see Molik , 32 NY3d at 37 [stating that \"a statutory construction which renders one part meaningless should be avoided\"] [internal quotation marks and citation omitted]).",
+      "As to the purported legislative purpose, the majority asserts, citing a practice commentary, that CPL 30.30 (5-a) ends \"the historical practice by the People of removing hearsay allegations and declaring trial readiness on some counts in an accusatory instrument, but not others\" (majority op at 7, citing William C. Donnino, Prac Commentaries, McKinney's Cons Laws of NY, CPL 30.30). I do not doubt that this is another salutary effect of CPL 30.30 (5-a), but that cannot mean, as the majority claims, that \"[b]y tying readiness to a certification that all counts are facially sufficient and properly converted, CPL 30.30 (5-a) makes trial readiness a singular event for the entire accusatory instrument\" (majority op at 7-8). If a CPL 30.30 (5-a) certification need not be accurate, as the majority holds, then a prosecutor's \"singular\" statement of readiness may be illusory, as in the present appeal. Here, the prosecutor certified that all counts in an accusatory instrument met the pre-trial statutory requirements even where they obviously did not. By rendering CPL 30.30 (5-a) practically ineffectual, the majority itself frustrates what it identifies as the statutory purpose of abolishing partial readiness. In contrast, CPL 30.30 (5-a), as properly interpreted, means that the prosecution can only be in a state of complete readiness or unreadiness. Here, by its plain language, CPL 30.30 (5-a) invalidates the SOR at issue entirely, thus placing the prosecution in a state of unreadiness.",
+      "An invalid SOR cannot stop the speedy trial clock and if the prosecution fails subsequently to submit a valid SOR before the statutory time to declare readiness expires, then a defendant's CPL 30.30 motion to dismiss must be granted (CPL 30.30 [1]; 170.30 [1] [e]; 210.20 [1] [g]). The majority's assertion that a count's facial sufficiency is a legal question that may not have a clear answer diverts from the issue before us, because here, the prosecution conceded that the count was not facially sufficient (majority op at 4-5). The majority claims that \"it is reasonable to conclude that the legislature did not want to require the severe sanction of dismissal of the entire accusatory instrument as a consequence of the insufficiency of a single count\" (majority op at 8). But that is exactly what CPL 30.30 (5-a) mandates with its automatic invalidation of the SOR when a prosecutor erroneously certifies that all counts are CPL compliant. We are not at liberty to ignore that language.",
+      "Decided on November 25, 2025",
+      "Defendant contends that the People's obligation to certify facial sufficiency should be treated the same as the requirement that they certify compliance with their discovery obligations under CPL article 245. A comparison of the text of the relevant provisions reveals why this interpretation is incorrect. CPL 30.30 (5), as originally enacted in 2019, specifically stated that any \"statement of trial readiness must be accompanied or preceded by a certification of good faith compliance with the disclosure requirements of [CPL 245.20] and the defense shall be afforded an opportunity to be heard on the record as to whether the disclosure requirements have been met.\" Mirroring this provision, CPL 245.50 (3) provided that \"the prosecution shall not be deemed ready for trial for purposes of [CPL 30.30] until it has filed a proper certificate\" of compliance (former CPL 245.50 [3] [emphasis added]). [FN*]"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Anna Jouravleva, for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Anna Jouravleva, for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Melissa Owen, for respondent. CANNATARO , J.:",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": true,
+        "argumentTailPreview": "CANNATARO , J.:",
+        "sentenceText": "Melissa Owen, for respondent.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Melissa Owen, for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Melissa Owen, for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 39,
+    "footnotesCount": 2
+  },
+  "citations": {
+    "slipOpinion": "2025 NY Slip Op 06535",
+    "officialCitation": "83 Misc 3d 21",
+    "pageMarkerCount": 5
+  },
+  "opinionStructure": {
+    "totalWritings": 4,
+    "byKind": {
+      "unknown": 2,
+      "opinion_of_the_court": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Cannataro",
+      "Rivera"
+    ],
+    "qualifierLines": [
+      "On its face, the clear language of CPL 30.30 (5-a) requires that the People, in conjunction with filing their statement of readiness, certify that each count of the accusatory instrument is supported by facially sufficient, nonhearsay allegations, and that any counts that are not so supported have been dismissed. However, the statute does not provide for any readiness-related consequence for a mistaken or incorrect certification (, 42 NY3d 377, 394 [2024, Rivera, J., dissenting] [\"statutory interpretation is not an invitation to rewrite the law by 'discovering' some meaning not intended by the drafters or ignoring words and their clear and obvious import\"]). Such a requirement would make little sense because facial sufficiency is a legal question—sometimes a close legal question—and the People cannot reasonably be expected to attest accurately to the outcome of a defendant's challenge to the facial sufficiency of the instrument (, 78 Misc 3d 1239 [A], 2023 NY Slip Op 50482[U], *6 [Crim Ct, Kings County 2023] [in determining that one count of accusatory instrument was facially insufficient, the court \"reviewed numerous, often conflicting cases . . . (and conducted) a careful analysis of the allegations\"]).",
+      "Defendant contends that the People's obligation to certify facial sufficiency should be treated the same as the requirement that they certify compliance with their discovery obligations under CPL article 245. A comparison of the text of the relevant provisions reveals why this interpretation is incorrect. CPL 30.30 (5), as originally enacted in 2019, specifically stated that any \"statement of trial readiness must be accompanied or preceded by a certification of good faith compliance with the disclosure requirements of [CPL 245.20] and the defense shall be afforded an opportunity to be heard on the record as to whether the disclosure requirements have been met.\" Mirroring this provision, CPL 245.50 (3) provided that \"the prosecution shall not be deemed ready for trial for purposes of [CPL 30.30] until it has filed a proper certificate\" of compliance (former CPL 245.50 [3] [emphasis added]). Based on this language, we explained in People v Bay that \"[r]ead together, CPL 245.50 and [CPL] 30.30 require that due diligence must be conducted prior to filing a\" certificate of compliance (41 NY3d 200, 212, 216 [2023]). Thus, unlike the subdivision (5-a) certification requirement, the legislature specifically provided that an invalid certificate of compliance would render the People's accompanying statement of readiness illusory. The legislature could have, but did not, similarly tie the accuracy of certification pursuant to subdivision (5-a) to the People's trial readiness. It is this legislative choice that the dissent ignores when it insists without citation that \"the problem that the speedy trial framework and CPL 30.30 (5-a) address is prosecutorial delay\" (dissenting op at 9), conflating CPL 30.30 (5-a) with the preceding subdivision and disregarding significant differences between the two.",
+      "I dissent.",
+      "We have repeatedly recognized—and the majority fails to accept—that the problem the speedy trial framework addresses is prosecutorial delay (, 14 NY3d 61, 64 [2010] [stating that the \"dominant legislative intent informing CPL 30.30 . . . (is) to discourage prosecutorial inaction\"]). The legislature determined that SOR invalidation was a necessary consequence to incentivize prosecutors to expeditiously confirm the accuracy of their accusatory instruments, and to do so before their time to declare readiness expires, and thus enacted CPL 30.30 (5-a) (, 79 Misc 3d 129[A], 2023 NY Slip Op 50688[U], 2023 WL 4414616 [App Term, 2d Dept, 2d, 11th & 13th Jud Dists 2023], appeal withdrawn, 40 NY3d 952 [2023] [examining the legislative purpose of CPL 30.30 (5-a) by relying on the legislative memorandum for the similar Senate Bill 1738, whose purpose was to \"amend( ) section 30.30 of the Criminal Penal Law to ensure cases go to trial in a reasonable timeframe\"]). Dismissal of the accusatory instrument, based on the prosecution's failure to timely file a valid SOR, furthers the important legislative policy reflected in the speedy trial law. That policy serves all parties and the public interest, because it ensures that criminal prosecutions are appropriately prompt, reduces the stress on defendants caused by unnecessary delay, and promotes confidence in our judicial system by guarding against the deterioration of evidence over extended periods. The majority's holding serves only to increase delay and excuse prosecutorial noncompliance. That is not what the legislature intended."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 2,
+    "labels": [
+      "*",
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <form> in source HTML."
+    },
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <input> in source HTML."
+    },
+    {
+      "code": "APPEARANCE_LINE_WITH_ARGUMENT_TAIL",
+      "severity": "info",
+      "detail": "Appearance-like line continues into argument text after \"for respondent.\"."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 4 writings."
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "caseId": "2013_03936",
+  "sourcePath": "coa/2013/2013_03936.htm",
+  "notesPath": "coa/2013/2013_03936.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.669Z",
+  "source": {
+    "title": "People v Hampton (2013 NY Slip Op 03936)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 27242,
+    "lineCount": 143,
+    "tagCounts": {
+      "a": 32,
+      "b": 26,
+      "blockquote": 20,
+      "body": 2,
+      "br": 16,
+      "div": 10,
+      "font": 40,
+      "head": 2,
+      "html": 2,
+      "i": 84,
+      "p": 39,
+      "script": 4,
+      "style": 2,
+      "sup": 10,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 6
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Hampton",
+      "2013 NY Slip Op 03936 [21 NY3d 277]",
+      "June 4, 2013",
+      "Read, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, August 21, 2013"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Grady Hampton, Appellant."
+    ],
+    "citationLine": "2013 NY Slip Op 03936 21 NY3d 277",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued April 23, 2013; decided June 4, 2013",
+      "June 4, 2013",
+      "As corrected through Wednesday, August 21, 2013"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 42,
+    "footnotesCount": 5
+  },
+  "citations": {
+    "slipOpinion": "2013 NY Slip Op 03936",
+    "officialCitation": "21 NY3d 277",
+    "pageMarkerCount": 19
+  },
+  "opinionStructure": {
+    "totalWritings": 2,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1
+    },
+    "authors": [
+      "Read"
+    ],
+    "qualifierLines": [
+      "{**21 NY3d at 279} OPINION OF THE COURT",
+      "In a decision and order dated February 17, 2010, Acting Supreme Court Justice Daniel R. Palmieri, the judge to whom the case was reassigned, denied defendant's motion (27 Misc 3d 492 [Sup Ct, Nassau County 2010]). As to the Judiciary Law claim, Justice Palmieri determined that, because a motion to set aside a verdict concerns only questions of law, a substitute judge familiar with the proceedings could decide it and, thus, a mistrial was not warranted. He declared that he had \"read and become familiar with the entire record of the trial . . . submitted by the parties,\" consisting of \"the complete trial transcript, including all recorded colloquy, legal arguments and rulings\" (id. at 495, 496). Upon applying the standard for assessing legal sufficiency to the evidence at hand, Justice Palmieri concluded that the People had presented a legally sufficient case to the jury that defendant committed the crimes for which he was convicted. He subsequently sentenced defendant to concurrent terms of imprisonment of 20 years to life on the murder conviction and 10 years on the gun possession convictions, to be followed by five years of postrelease supervision.{**21 NY3d at 284} "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 5,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 2 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

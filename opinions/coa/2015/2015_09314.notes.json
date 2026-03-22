@@ -1,0 +1,119 @@
+{
+  "caseId": "2015_09314",
+  "sourcePath": "coa/2015/2015_09314.htm",
+  "notesPath": "coa/2015/2015_09314.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.848Z",
+  "source": {
+    "title": "People v Holley (2015 NY Slip Op 09314)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 32583,
+    "lineCount": 454,
+    "tagCounts": {
+      "a": 30,
+      "b": 10,
+      "blockquote": 4,
+      "body": 2,
+      "br": 14,
+      "div": 18,
+      "font": 46,
+      "head": 2,
+      "html": 2,
+      "i": 152,
+      "p": 77,
+      "script": 4,
+      "style": 2,
+      "sup": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 12
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Holley",
+      "2015 NY Slip Op 09314 [26 NY3d 514]",
+      "December 17, 2015",
+      "Fahey, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting",
+      "Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, March 2, 2016"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Todd Holley, Appellant."
+    ],
+    "citationLine": "2015 NY Slip Op 09314 26 NY3d 514",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued November 17, 2015; decided December 17, 2015",
+      "December 17, 2015",
+      "As corrected through Wednesday, March 2, 2016"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 46,
+    "footnotesCount": 1
+  },
+  "citations": {
+    "slipOpinion": "2015 NY Slip Op 09314",
+    "officialCitation": "26 NY3d 514",
+    "pageMarkerCount": 22
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "concurrence": 1
+    },
+    "authors": [
+      "Fahey",
+      "Abdus-salaam"
+    ],
+    "qualifierLines": [
+      "{**26 NY3d at 517} OPINION OF THE COURT",
+      " I agree with the majority that the People carried their burden of production at the Wade hearing in this case and that defendant failed to meet his burden to demonstrate that the police-arranged photo identification procedure was unduly suggestive (see majority op at 525; see also People v Chipp, 75 NY2d 327, 335 [1990]). Furthermore, I concur in the majority's rejection of defendant's challenges to the nisi prius court's admission into evidence of the lineup identification, the in-court identification testimony and Detective Mazuroski's brief testimony about his investigation in this case (see majority op at 525-526). Nonetheless, I write separately to explain my disagreement with the majority's adoption of a \"presumption of suggestiveness\" that allegedly arises whenever the People fail to present at a Wade hearing a physical copy of a photo array that has previously been shown to an identifying witness (see majority op at 517-518, 521-524). In my view, the presumption lacks a solid legal foundation and risks creating unnecessary confusion about the proper application of existing legal standards governing a suppression hearing."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 1,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 1,
+    "labels": [
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

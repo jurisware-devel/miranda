@@ -1,0 +1,116 @@
+{
+  "caseId": "2009_08676",
+  "sourcePath": "coa/2009/2009_08676.htm",
+  "notesPath": "coa/2009/2009_08676.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.451Z",
+  "source": {
+    "title": "People v Davis (2009 NY Slip Op 08676)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 17561,
+    "lineCount": 89,
+    "tagCounts": {
+      "a": 14,
+      "b": 4,
+      "blockquote": 2,
+      "body": 2,
+      "br": 8,
+      "div": 2,
+      "font": 26,
+      "head": 2,
+      "html": 2,
+      "i": 76,
+      "p": 24,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Davis",
+      "2009 NY Slip Op 08676 [14 NY3d 20]",
+      "November 24, 2009",
+      "Ciparick, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, March 24, 2010"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "George Davis, Appellant."
+    ],
+    "citationLine": "2009 NY Slip Op 08676 14 NY3d 20",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued October 22, 2009; decided November 24, 2009",
+      "November 24, 2009",
+      "As corrected through Wednesday, March 24, 2010"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 21,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2009 NY Slip Op 08676",
+    "officialCitation": "14 NY3d 20",
+    "pageMarkerCount": 12
+  },
+  "opinionStructure": {
+    "totalWritings": 4,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "dissent": 1
+    },
+    "authors": [
+      "Ciparick",
+      "Jones"
+    ],
+    "qualifierLines": [
+      "{**14 NY3d at 21} OPINION OF THE COURT",
+      "Defendant and the dissenting opinion urge us to reach a different result here because the agency defense was charged, permitting the jury to find defendant an agent of the buyer, rather than a seller, and treat him accordingly. Nothing about the agency defense, however, requires a defendant to be charged with possession, though he may confess to it. The agency defense is a well-established \"interpretation of the statutory definition of the term 'sell' \" (People v Andujas, 79 NY2d 113, 117 [1992]). Although \"[r]eading the statute literally, any passing of drugs from one person to another would constitute a sale\" (People v Lam Lek Chong, 45 NY2d 64, 72 [1978]), we have held that \"[o]ne who acts solely as the agent of the buyer cannot be convicted of the crime of selling narcotics\" (id. at 73). This assertion of agency is not a complete defense because it acknowledges defendant's wrongdoing. A defendant who asserts the agency defense acknowledges that he is guilty of a crime, but it is not necessarily a crime for which he is charged. ",
+      "Because the agency defense is a defense, not a separate crime under the sale statute, it does not alter our analysis under Glover. Thus, as the Appellate Division correctly noted and the dissenting opinion acknowledges, a ruling that drug possession is a lesser included offense of a drug sale count in agency defense cases would require an exception to the Glover test. We decline to fashion such an exception. Determining whether to charge a defendant with possession of a controlled substance initially is a standard exercise of prosecutorial discretion. Supreme Court therefore did not err in refusing to submit the charge of criminal possession of a controlled substance in the seventh degree to the jury as a lesser included offense of criminal sale of a controlled substance in the third degree. ",
+      " Relying on People v Glover (57 NY2d 61 [1982]), the majority holds Supreme Court did not err in refusing to charge criminal possession of a controlled substance in the seventh degree as a lesser included offense of criminal sale of a controlled substance in the third degree. I disagree because a trial judge's failure or refusal to charge seventh degree or simple possession as a lesser included offense in a drug case where the agency defense is properly submitted to the jury may{**14 NY3d at 25} lead to incongruous and deleterious results. Under the circumstances of this case, therefore, an exception to Glover is warranted. Accordingly, I dissent and would reverse the order of the Appellate Division. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 4 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

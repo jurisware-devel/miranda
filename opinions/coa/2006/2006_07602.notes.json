@@ -1,0 +1,118 @@
+{
+  "caseId": "2006_07602",
+  "sourcePath": "coa/2006/2006_07602.htm",
+  "notesPath": "coa/2006/2006_07602.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.336Z",
+  "source": {
+    "title": "People v Cuttita (2006 NY Slip Op 07602)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 20341,
+    "lineCount": 119,
+    "tagCounts": {
+      "a": 22,
+      "b": 26,
+      "blockquote": 4,
+      "body": 2,
+      "br": 16,
+      "div": 8,
+      "font": 30,
+      "head": 2,
+      "html": 2,
+      "i": 42,
+      "p": 23,
+      "script": 4,
+      "style": 2,
+      "sup": 10,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Cuttita",
+      "2006 NY Slip Op 07602 [7 NY3d 500]",
+      "October 24, 2006",
+      "Graffeo, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, December 13, 2006"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Frank Cuttita, Appellant."
+    ],
+    "citationLine": "2006 NY Slip Op 07602 7 NY3d 500",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued September 14, 2006; decided October 24, 2006",
+      "October 24, 2006",
+      "As corrected through Wednesday, December 13, 2006"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 22,
+    "footnotesCount": 5
+  },
+  "citations": {
+    "slipOpinion": "2006 NY Slip Op 07602",
+    "officialCitation": "7 NY3d 500",
+    "pageMarkerCount": 14
+  },
+  "opinionStructure": {
+    "totalWritings": 2,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1
+    },
+    "authors": [
+      "Graffeo"
+    ],
+    "qualifierLines": [
+      "{**7 NY3d at 502} OPINION OF THE COURT"
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 5,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 2 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

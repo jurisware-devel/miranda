@@ -1,0 +1,113 @@
+{
+  "caseId": "2012_07227",
+  "sourcePath": "coa/2012/2012_07227.htm",
+  "notesPath": "coa/2012/2012_07227.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.632Z",
+  "source": {
+    "title": "People v Alvarez (2012 NY Slip Op 07227)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 12871,
+    "lineCount": 94,
+    "tagCounts": {
+      "a": 8,
+      "b": 6,
+      "blockquote": 2,
+      "body": 2,
+      "br": 4,
+      "div": 8,
+      "font": 20,
+      "head": 2,
+      "html": 2,
+      "i": 62,
+      "p": 25,
+      "script": 4,
+      "style": 2,
+      "table": 6,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 6
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Alvarez",
+      "2012 NY Slip Op 07227 [20 NY3d 75]",
+      "October 30, 2012",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, January 2, 2013"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Luis Alvarez, Appellant.",
+      "The People of the State of New York, Respondent, v William George, Appellant."
+    ],
+    "citationLine": "2012 NY Slip Op 07227 20 NY3d 75",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued September 7, 2012; decided October 30, 2012",
+      "October 30, 2012",
+      "As corrected through Wednesday, January 2, 2013"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 24,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2012 NY Slip Op 07227",
+    "officialCitation": "20 NY3d 75",
+    "pageMarkerCount": 9
+  },
+  "opinionStructure": {
+    "totalWritings": 2,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1
+    },
+    "authors": [
+      "Lippman"
+    ],
+    "qualifierLines": [
+      "{**20 NY3d at 78} OPINION OF THE COURT",
+      "Judges Ciparick, Graffeo, Read, Smith, Pigott and Jones concur. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 2 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 3 table elements before or within the header region."
+    }
+  ]
+}

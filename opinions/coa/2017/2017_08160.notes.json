@@ -1,0 +1,141 @@
+{
+  "caseId": "2017_08160",
+  "sourcePath": "coa/2017/2017_08160.htm",
+  "notesPath": "coa/2017/2017_08160.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.975Z",
+  "source": {
+    "title": "People v Helms (2017 NY Slip Op 08160)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 21959,
+    "lineCount": 113,
+    "tagCounts": {
+      "a": 28,
+      "b": 22,
+      "blockquote": 2,
+      "body": 2,
+      "br": 18,
+      "div": 12,
+      "font": 30,
+      "head": 2,
+      "headnote": 1,
+      "headnoteblock": 1,
+      "html": 2,
+      "i": 76,
+      "p": 43,
+      "script": 4,
+      "style": 2,
+      "sup": 8,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 6
+    },
+    "unknownTags": [
+      "headnoteblock"
+    ],
+    "strayClosingTags": [
+      "headnote",
+      "headnoteblock"
+    ]
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Helms",
+      "2017 NY Slip Op 08160 [30 NY3d 259]",
+      "November 20, 2017",
+      "Fahey, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, January 17, 2018"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Appellant, v Marlo S. Helms, Respondent."
+    ],
+    "citationLine": "2017 NY Slip Op 08160 30 NY3d 259",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued October 12, 2017; decided November 20, 2017",
+      "November 20, 2017",
+      "As corrected through Wednesday, January 17, 2018"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 23,
+    "footnotesCount": 4
+  },
+  "citations": {
+    "slipOpinion": "2017 NY Slip Op 08160",
+    "officialCitation": "30 NY3d 259",
+    "pageMarkerCount": 14
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "concurrence": 1
+    },
+    "authors": [
+      "Fahey",
+      "Rivera"
+    ],
+    "qualifierLines": [
+      "{**30 NY3d at 261} OPINION OF THE COURT",
+      "The Appellate Division dissenter would have affirmed the judgment on the ground that there is \"no substantive difference between the burglary statutes in New York and Georgia,\" meaning that the Georgia conviction may serve as predicate for enhanced sentencing (141 AD3d at 1143). That review was based upon both the Georgia statute criminalizing burglary (Ga Code Ann former § 16-7-1 [a]) and additional Georgia statutes that establish \"principles of criminal liability and culpability\" therein (141 AD3d at 1143). The Appellate Division dissenter subsequently granted the People leave to appeal to this Court (28 NY3d 939 [2016])."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 1,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 4,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <headnoteblock> in source HTML."
+    },
+    {
+      "code": "STRAY_CLOSING_TAG",
+      "severity": "warning",
+      "detail": "Closing tag </headnote> appears more times than opening tag <headnote>."
+    },
+    {
+      "code": "STRAY_CLOSING_TAG",
+      "severity": "warning",
+      "detail": "Closing tag </headnoteblock> appears more times than opening tag <headnoteblock>."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

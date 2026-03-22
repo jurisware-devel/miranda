@@ -1,0 +1,129 @@
+{
+  "caseId": "2024_02125",
+  "sourcePath": "coa/2024/2024_02125.htm",
+  "notesPath": "coa/2024/2024_02125.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.259Z",
+  "source": {
+    "title": "People v Mosley (2024 NY Slip Op 02125)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 50709,
+    "lineCount": 152,
+    "tagCounts": {
+      "a": 102,
+      "b": 52,
+      "body": 2,
+      "br": 32,
+      "div": 14,
+      "font": 58,
+      "head": 2,
+      "html": 2,
+      "i": 308,
+      "p": 83,
+      "script": 4,
+      "style": 2,
+      "sup": 20,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 6
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Mosley",
+      "2024 NY Slip Op 02125 [41 NY3d 640]",
+      "April 23, 2024",
+      "Halligan, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, August 28, 2024"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Farod Mosley, Appellant."
+    ],
+    "citationLine": "2024 NY Slip Op 02125 41 NY3d 640",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued February 14, 2024; decided April 23, 2024",
+      "April 23, 2024",
+      "As corrected through Wednesday, August 28, 2024"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 44,
+    "footnotesCount": 10
+  },
+  "citations": {
+    "slipOpinion": "2024 NY Slip Op 02125",
+    "officialCitation": "41 NY3d 640",
+    "pageMarkerCount": 28
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "concurrence": 1
+    },
+    "authors": [
+      "Halligan",
+      "Rivera"
+    ],
+    "qualifierLines": [
+      "{**41 NY3d at 642} OPINION OF THE COURT",
+      "Mosley argues that the trial court abused its discretion in admitting Kilburn's testimony. The Appellate Division (with two Justices dissenting) rejected this contention, holding that the People demonstrated Kilburn was more likely than the jury to correctly identify Mosley in the video. Because the People failed to establish that Kilburn's testimony would aid the jury in making an independent assessment regarding whether the person in the video was Mosley, we reverse.",
+      "First, the People did not establish that Kilburn was sufficiently familiar with Mosley to render his identification helpful to the jury. When addressing this issue during voir dire,{**41 NY3d at 651} Kilburn testified only that he had \"sat in rooms with Mr. Mosley,\" \"walked side by side with Mr. Mosley,\" and \"had the occasion to speak with him.\" Though Kilburn represented that he had interacted with Mosley \"a number\" of times, he failed to specify how many times, for how long, or what the nature of those interactions were. Indeed, it is unclear from the record whether Kilburn interacted with Mosley on more than one day (, 200 AD3d 1658, 1661 [2021, Whalen, P.J. & Lindley, J., dissenting] [characterizing Kilburn as having recalled \"only a single day on which these interactions took place\"]). Though Kilburn also referenced looking at photographs of Mosley, this is not a proper basis for familiarity (see Pierce, 136 F3d at 774; see also Sanchez, 247 NJ at 471-472, 255 A3d at 1130; LaPierre, 998 F2d at 1465). Far from having interactions with Mosley in a variety of circumstances, Kilburn testified that he had never had \"street\" interactions with Mosley, and it is unclear whether he ever interacted with Mosley outside of the police station. Kilburn was not familiar with Mosley's appearance at the time the shooting occurred; he did not meet him until seven months later. Nor did Kilburn know what Mosley was wearing on the day of the shooting.",
+      "[3] Finally, the error in admitting Kilburn's identification was not harmless. We start by asking whether \"the evidence is overwhelming in the first instance,\" because \"unless the proof {**41 NY3d at 653}of the defendant's guilt, without reference to the error, is overwhelming, there is no occasion for consideration of any doctrine of harmless error\" (, 34 NY3d 473, 484-485 [2019] [internal quotation marks omitted], quoting People v Crimmins, 36 NY2d 230, 241 [1975]). Here, the evidence is far from overwhelming: The only evidence tying Mosley to the crime was the low-quality video and Kilburn's identification testimony (, 200 AD3d 1658 [2021, Whalen, P.J. & Lindley, J., dissenting]). Without Kilburn's testimony, the People presented no more evidence than they did in their first indictment, which was dismissed for insufficient evidence. The error thus cannot be deemed harmless and requires reversal for a new trial.",
+      "Video surveillance recordings are regularly proffered in criminal cases to establish a defendant's guilt. Clear images of the perpetrator of course aid the trier of fact because, where identity is at issue, such images may be compared with the defendant in court. That was not the case in this appeal, where it is undisputed the video was low-quality. Indeed, nothing connected defendant to the crimes charged except the testimony of a police officer who had no personal knowledge of the crime or defendant's guilt, but who identified defendant as the person shown in a blurry video image shooting at a van. I concur with the majority that this testimony did not aid the jury in determining whether defendant was the shooter in the video, that admission of this testimony was not harmless error and that the Appellate Division should be reversed and a new trial ordered (see majority op at 642-643, 652-653). I also agree with much of the majority's analysis of the challenges and dangers that noneyewitness testimony poses, especially where, as here, the witness is a law enforcement official (id. at 646-647). However, I do not adopt the majority's totality of the circumstances test because it partially relies on irrelevant and subjective factors which may hinder the truth-seeking process."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 1,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 10,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "*",
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

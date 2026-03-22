@@ -1,0 +1,136 @@
+{
+  "caseId": "2006_08283",
+  "sourcePath": "coa/2006/2006_08283.htm",
+  "notesPath": "coa/2006/2006_08283.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.337Z",
+  "source": {
+    "title": "People v Carter (2006 NY Slip Op 08283)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 5013,
+    "lineCount": 68,
+    "tagCounts": {
+      "a": 2,
+      "appcouns": 1,
+      "b": 4,
+      "body": 2,
+      "br": 4,
+      "div": 2,
+      "font": 10,
+      "head": 2,
+      "html": 2,
+      "i": 18,
+      "p": 14,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [
+      "appcouns"
+    ],
+    "strayClosingTags": [
+      "appcouns"
+    ]
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Carter",
+      "2006 NY Slip Op 08283 [7 NY3d 875]",
+      "November 16, 2006",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, January 17, 2007"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Natsu Carter, Appellant."
+    ],
+    "citationLine": "2006 NY Slip Op 08283 7 NY3d 875",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued October 19, 2006; decided November 16, 2006",
+      "November 16, 2006",
+      "As corrected through Wednesday, January 17, 2007"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "David P. Elkovitch , Auburn, for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "David P. Elkovitch , Auburn, for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "James B. Vargason, District Attorney , Auburn ( Christopher T. Valdina of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "James B. Vargason, District Attorney , Auburn ( Christopher T. Valdina of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 6,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2006 NY Slip Op 08283",
+    "officialCitation": "7 NY3d 875",
+    "pageMarkerCount": 4
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**7 NY3d at 876}OPINION OF THE COURT",
+      "Memorandum. "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <appcouns> in source HTML."
+    },
+    {
+      "code": "STRAY_CLOSING_TAG",
+      "severity": "warning",
+      "detail": "Closing tag </appcouns> appears more times than opening tag <appcouns>."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "caseId": "2005_03697",
+  "sourcePath": "coa/2005/2005_03697.htm",
+  "notesPath": "coa/2005/2005_03697.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.275Z",
+  "source": {
+    "title": "People v Schulz (2005 NY Slip Op 03697)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 31108,
+    "lineCount": 143,
+    "tagCounts": {
+      "a": 18,
+      "b": 22,
+      "blockquote": 2,
+      "body": 2,
+      "br": 18,
+      "div": 8,
+      "font": 46,
+      "head": 2,
+      "html": 2,
+      "i": 64,
+      "p": 49,
+      "script": 4,
+      "style": 2,
+      "sup": 8,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 8
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Schulz",
+      "2005 NY Slip Op 03697 [4 NY3d 521]",
+      "May 5, 2005",
+      "G.B. Smith, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, June 29, 2005"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Stephen G. Schulz, Appellant."
+    ],
+    "citationLine": "2005 NY Slip Op 03697 4 NY3d 521",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued March 30, 2005; decided May 5, 2005",
+      "May 5, 2005",
+      "As corrected through Wednesday, June 29, 2005"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 48,
+    "footnotesCount": 4
+  },
+  "citations": {
+    "slipOpinion": "2005 NY Slip Op 03697",
+    "officialCitation": "4 NY3d 521",
+    "pageMarkerCount": 22
+  },
+  "opinionStructure": {
+    "totalWritings": 4,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "dissent": 1
+    },
+    "authors": [
+      "G.B. Smith",
+      "Rosenblatt"
+    ],
+    "qualifierLines": [
+      "{**4 NY3d at 524} OPINION OF THE COURT",
+      " Respectfully, I dissent from so much of the Court's decision as upholds the denial of defendant's CPL 440.10 (1) (g) motion without a hearing. On the record before us, the possibility of defendant's actual innocence is too high to justify denial of the CPL 440.10 motion without a hearing. The majority determined that the case is legally sufficient, and no one can quarrel with that. My discomfort stems from the combined effect of two rulings: the first, denying the introduction at trial of Guilfoyle's photograph; and the second, summarily denying defendant's posttrial motion after the primary victim, Ruiz (who at trial said defendant was not the robber), submitted an affidavit stating that she is 90% certain that the person in the photograph—Guilfoyle—was the robber. Coming on the heels of a borderline ruling disallowing Guilfoyle's photograph at trial, the affidavit is too potent to be cast aside. ",
+      "The CPL 440.10 motion, however, should not have been denied without a hearing, and in my view it was an abuse of discretion to, in effect, reject the Ruiz affidavit out of hand. Rather than affirming the denial of a hearing, this Court should remand so that Ruiz can be called before the court, under oath, to give her a chance to see Guilfoyle under court-arranged auspices. The court could then determine whether the conviction was a miscarriage of justice. As a dissenter, of course, I cannot make this happen. It would seem to me, though, that there is nothing to be lost and everything to be gained if this chapter were fulfilled. The Guilfoyle photograph is too blurry to justify any kind of certainty. After seeing Guilfoyle in person, however, Ruiz may conclude that he is not the robber. If so, the case is over and justice is served. But if Ruiz insists that Guilfoyle is the man who robbed her, I should think that any right-minded prosecutor would want to know of it. Given the affirmance, the prosecutor's alternative is to do nothing and never put Ruiz to a test before the wise and experienced judge who heard this case. Given her affidavit, Ruiz's testimony at a CPL 440.10 hearing would necessarily produce an additional measure of truth. Prosecutorial inaction would be lawful, but regrettable. The interests of finality count for a great deal, and may be alluring, but they are not always consistent with the higher ends of justice. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 4,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 4 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

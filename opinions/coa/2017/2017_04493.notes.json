@@ -1,0 +1,121 @@
+{
+  "caseId": "2017_04493",
+  "sourcePath": "coa/2017/2017_04493.htm",
+  "notesPath": "coa/2017/2017_04493.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.955Z",
+  "source": {
+    "title": "People v Bethune (2017 NY Slip Op 04493)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 15478,
+    "lineCount": 108,
+    "tagCounts": {
+      "a": 20,
+      "b": 18,
+      "body": 2,
+      "br": 20,
+      "div": 10,
+      "font": 24,
+      "head": 2,
+      "html": 2,
+      "i": 58,
+      "opinion": 1,
+      "p": 36,
+      "script": 4,
+      "style": 2,
+      "sup": 6,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 4
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Bethune",
+      "2017 NY Slip Op 04493 [29 NY3d 539]",
+      "June 8, 2017",
+      "Wilson, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, September 20, 2017"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Jamar Bethune, Appellant."
+    ],
+    "citationLine": "2017 NY Slip Op 04493 29 NY3d 539",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued April 27, 2017; decided June 8, 2017",
+      "June 8, 2017",
+      "As corrected through Wednesday, September 20, 2017"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 21,
+    "footnotesCount": 3
+  },
+  "citations": {
+    "slipOpinion": "2017 NY Slip Op 04493",
+    "officialCitation": "29 NY3d 539",
+    "pageMarkerCount": 11
+  },
+  "opinionStructure": {
+    "totalWritings": 5,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "concurrence": 2
+    },
+    "authors": [
+      "Wilson",
+      "Fahey",
+      "Garcia"
+    ],
+    "qualifierLines": [
+      "{**29 NY3d at 541} OPINION OF THE COURT",
+      " I agree fully with the majority opinion. I write separately to express an opposing view with respect to the \"recommended practice[s]\" discussed in Judge Fahey's concurring opinion (concurring op at 544). Rather than a \"full adversarial\" hearing (concurring op at 544), I believe the appropriate practice is best determined by the trial court on the facts and circumstances of a given case, with due regard for judicial resources. As the majority notes, \"[n]ot every dispute about the record mandates a reconstruction hearing\" (majority op at 542, citing People v Santorelli, 95 NY2d 412, 424 [2000]; see also People v Glass, 43 NY2d 283, 286[1977]). Similarly, I would not recommend involving a trial judge in some form of dialogue with a court reporter unless a dispute as to any proposed change to the transcript arises."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 2,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 3,
+    "labels": [
+      "1",
+      "2",
+      "3"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 5 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

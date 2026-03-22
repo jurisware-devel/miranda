@@ -1,0 +1,118 @@
+{
+  "caseId": "2014_01208",
+  "sourcePath": "coa/2014/2014_01208.htm",
+  "notesPath": "coa/2014/2014_01208.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.721Z",
+  "source": {
+    "title": "People v Thomas (2014 NY Slip Op 01208)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 32537,
+    "lineCount": 128,
+    "tagCounts": {
+      "a": 20,
+      "b": 18,
+      "blockquote": 20,
+      "body": 2,
+      "br": 12,
+      "div": 12,
+      "font": 48,
+      "head": 2,
+      "html": 2,
+      "i": 64,
+      "p": 27,
+      "script": 4,
+      "style": 2,
+      "sup": 6,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 8
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Thomas",
+      "2014 NY Slip Op 01208 [22 NY3d 629]",
+      "February 20, 2014",
+      "Lippman, Ch. J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, April 30, 2014"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Adrian P. Thomas, Appellant."
+    ],
+    "citationLine": "2014 NY Slip Op 01208 22 NY3d 629",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued January 14, 2014; decided February 20, 2014",
+      "February 20, 2014",
+      "As corrected through Wednesday, April 30, 2014"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 29,
+    "footnotesCount": 3
+  },
+  "citations": {
+    "slipOpinion": "2014 NY Slip Op 01208",
+    "officialCitation": "22 NY3d 629",
+    "pageMarkerCount": 23
+  },
+  "opinionStructure": {
+    "totalWritings": 2,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1
+    },
+    "authors": [
+      "Lippman"
+    ],
+    "qualifierLines": [
+      "{**22 NY3d at 635} OPINION OF THE COURT",
+      "\"While there was once a different view, it is now . . . undisputed that one may not be 'coerced' into {**22 NY3d at 643}waiving his constitutional privilege by the withholding of a substantial right to engage in one's occupation or of any other substantial or fundamental exercise of life, liberty, and the pursuit of happiness (Gardner v. Broderick, 392 U. S. 273, 279, supra; Garrity v. New Jersey, 385 U. S. 493, 497)\" (id. at 273 [Breitel, J., concurring] [emphasis supplied])."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 3,
+    "labels": [
+      "1",
+      "2",
+      "3"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 2 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

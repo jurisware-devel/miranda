@@ -1,0 +1,115 @@
+{
+  "caseId": "2008_09856",
+  "sourcePath": "coa/2008/2008_09856.htm",
+  "notesPath": "coa/2008/2008_09856.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.412Z",
+  "source": {
+    "title": "People v Ford (2008 NY Slip Op 09856)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 19019,
+    "lineCount": 108,
+    "tagCounts": {
+      "a": 26,
+      "b": 18,
+      "blockquote": 4,
+      "body": 2,
+      "br": 16,
+      "div": 4,
+      "font": 28,
+      "head": 2,
+      "html": 2,
+      "i": 90,
+      "p": 31,
+      "script": 4,
+      "style": 2,
+      "sup": 6,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Ford",
+      "2008 NY Slip Op 09856 [11 NY3d 875]",
+      "December 17, 2008",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, March 4, 2009"
+    ],
+    "captionLines": [
+      "v"
+    ],
+    "citationLine": "2008 NY Slip Op 09856 11 NY3d 875",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued November 19, 2008; decided December 17, 2008",
+      "December 17, 2008",
+      "As corrected through Wednesday, March 4, 2009"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 26,
+    "footnotesCount": 3
+  },
+  "citations": {
+    "slipOpinion": "2008 NY Slip Op 09856",
+    "officialCitation": "11 NY3d 875",
+    "pageMarkerCount": 13
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Jones"
+    ],
+    "qualifierLines": [
+      "{**11 NY3d at 876} OPINION OF THE COURT",
+      "Memorandum. "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 3,
+    "labels": [
+      "1",
+      "2",
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

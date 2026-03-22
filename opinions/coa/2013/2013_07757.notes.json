@@ -1,0 +1,150 @@
+{
+  "caseId": "2013_07757",
+  "sourcePath": "coa/2013/2013_07757.htm",
+  "notesPath": "coa/2013/2013_07757.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.699Z",
+  "source": {
+    "title": "People v Heidgen (2013 NY Slip Op 07757)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 57748,
+    "lineCount": 201,
+    "tagCounts": {
+      "a": 78,
+      "b": 46,
+      "blockquote": 2,
+      "body": 2,
+      "br": 26,
+      "disop": 2,
+      "disopjd": 2,
+      "div": 16,
+      "font": 76,
+      "head": 2,
+      "html": 2,
+      "i": 160,
+      "p": 77,
+      "script": 4,
+      "style": 2,
+      "sup": 16,
+      "table": 8,
+      "td": 20,
+      "title": 2,
+      "tr": 20,
+      "u": 12
+    },
+    "unknownTags": [
+      "disop",
+      "disopjd"
+    ],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Heidgen",
+      "2013 NY Slip Op 07757 [22 NY3d 259]",
+      "November 21, 2013",
+      "Lippman, Ch. J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, February 19, 2014"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Martin Heidgen, Appellant.",
+      "The People of the State of New York, Respondent, v Taliyah Taylor, Appellant.",
+      "The People of the State of New York, Respondent, v Franklin McPherson, Appellant."
+    ],
+    "citationLine": "2013 NY Slip Op 07757 22 NY3d 259",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued October 8, 2013; decided November 21, 2013",
+      "November 21, 2013",
+      "As corrected through Wednesday, February 19, 2014"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 79,
+    "footnotesCount": 8
+  },
+  "citations": {
+    "slipOpinion": "2013 NY Slip Op 07757",
+    "officialCitation": "22 NY3d 259",
+    "pageMarkerCount": 37
+  },
+  "opinionStructure": {
+    "totalWritings": 6,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 3,
+      "dissent": 2
+    },
+    "authors": [
+      "Lippman",
+      "Smith",
+      "Read"
+    ],
+    "qualifierLines": [
+      "{**22 NY3d at 267} OPINION OF THE COURT",
+      "The Appellate Division affirmed, finding the evidence legally sufficient to support the conviction (87 AD3d 1016 [2d Dept 2011]). The Court also determined that the allegations of juror misconduct in defendant's CPL 330.30 motion were properly rejected. One Justice dissented in part and would have modified to reduce the convictions of murder in the second degree to manslaughter in the second degree and the convictions of assault in the first degree to assault in the second degree. The dissent would have found the evidence legally insufficient to support a finding of depraved indifference to human life, since the People failed to establish that defendant was aware of, and indifferent to, the grave risks presented by his conduct. The dissent would have found defendant \"too inebriated to form such a mens rea\" (87 AD3d at 1034). The dissenting Justice granted defendant leave to appeal to this Court (17 NY3d 957 [2011]) and we now affirm. ",
+      "One Justice dissented and would have modified, in the interest of justice, by reducing the second degree murder conviction to manslaughter in the second degree. The dissent would have found that the People failed to prove that defendant was aware that he was driving the wrong way on the highway and disregarded the grave risk of death to others. The dissenting Justice granted defendant leave to appeal to this Court (19 NY3d 969 [2012]) and we now affirm. ",
+      "Valencia is, however, distinguishable from the present cases. There, the trial judge, as the factfinder, determined that the defendant had been \"oblivious\" to the risks caused by his drunk driving at the time of the offense, but nevertheless convicted him of depraved indifference assault based simply on his earlier acts of drinking to the point of extreme intoxication, despite defendant's awareness that he would be driving in that condition later that evening (see 14 NY3d at 928 [Graffeo, J., concurring]). To the contrary, in each of the instant appeals, the jury was asked to decide whether the defendant was incapable of forming the requisite mental state by reason of his or her intoxication and each jury rejected the argument that defendant's impairment rose to that level. Further, none of the instant appeals presents the question of whether the mens rea of depraved indifference must be contemporaneous with the actus reus of the offense.{**22 NY3d at 276} ",
+      " We have said several times that depraved indifference to human life is a very unusual state of mind (, 17 NY3d 348, 359 [2011]; , 6 NY3d 202, 212 [2005]; , 3 NY3d 266, 270 [2004]). But experience shows that juries, especially in cases with inflammatory facts, will often find depraved indifference where the evidence does not support it, and as a result we have reversed many convictions in recent years because the proof of this mens rea was insufficient (, 21 NY3d 393, 408 n [2013, Smith, J., concurring] [collecting cases]). ",
+      "I find the Heidgen and McPherson cases to be indistinguishable from  (14 NY3d 927 [2010]), another case involving a drunken wrong-way driver. The majority distinguishes Valencia on the ground that there was, in that case, a finding of fact that defendant was oblivious to the risks he was running (majority op at 275). But our memorandum in Valencia does not rely on, or even mention, that finding; it says the evidence was \"insufficient\" to support a finding of depraved indifference. If it was insufficient there, it is insufficient here. ",
+      "I do not suggest that Taylor was legally insane (though I am somewhat surprised she did not raise an insanity defense), or{**22 NY3d at 285} that she had an extreme emotional disturbance as that term is used in the Penal Law (§ 125.25 [1] [a]; such a disturbance reduces what would otherwise be intentional murder to manslaughter, but is not mentioned in the depraved indifference murder statute). Still, it is hardly debatable that, even by comparison with other intoxicated drivers, Taylor was in a highly abnormal condition. Depraved indifference—the willingness to risk harm because one simply does not care—is a more clear-sighted and cold-blooded state of mind than the one this record shows. I would therefore reduce Taylor's conviction, as well as Heidgen's and McPherson's, to second degree manslaughter. Dissenting opinion by Read, J. ",
+      " Judge Smith amply demonstrates that the evidence in these three cases is insufficient to support murder convictions under our depraved indifference murder jurisprudence as it has stood at least since  (7 NY3d 288 [2006]) overruled People v Register (60 NY2d 270 [1983], cert denied 466 US 953 [1984]). We have elsewhere recounted the stepwise progression of our retreat from Register (see generally Feingold, 7 NY3d at 290-294; , 7 NY3d 588 [2006]), and there is no need to repeat that narrative here. Suffice it to say that jettisoning Register was controversial. Only three of the current members of the Court participated in the relevant decisions; and two of the three were not persuaded that overruling Register was wise or necessary, at least not initially (, 6 NY3d 202, 219 [2005, Read, J., concurring in result on constraint; Graffeo, J., dissenting]). But the Court ultimately decided that depraved indifference is a culpable mental state; that recklessness, no matter how extreme, is not enough by itself to support a conviction for the crime of depraved indifference murder. Under Register, by contrast, a conviction for depraved indifference murder hinged upon an objective assessment of the degree of risk presented by the defendant's reckless conduct. ",
+      "Judges Graffeo, Pigott, Rivera and Abdus-Salaam concur with Chief Judge Lippman; Judge Smith dissents in an opinion in which Judge Read concurs in a separate opinion. "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 2,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 8,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <disop> in source HTML."
+    },
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <disopjd> in source HTML."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 6 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 4 table elements before or within the header region."
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "caseId": "2015_07779",
+  "sourcePath": "coa/2015/2015_07779.htm",
+  "notesPath": "coa/2015/2015_07779.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.824Z",
+  "source": {
+    "title": "People v Denson (2015 NY Slip Op 07779)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 35295,
+    "lineCount": 129,
+    "tagCounts": {
+      "a": 26,
+      "b": 4,
+      "blockquote": 6,
+      "body": 2,
+      "br": 10,
+      "div": 12,
+      "font": 50,
+      "head": 2,
+      "html": 2,
+      "i": 140,
+      "p": 93,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 8
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Denson",
+      "2015 NY Slip Op 07779 [26 NY3d 179]",
+      "October 27, 2015",
+      "Fahey, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, December 30, 2015"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Raymond Denson, Appellant."
+    ],
+    "citationLine": "2015 NY Slip Op 07779 26 NY3d 179",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued September 9, 2015; decided October 27, 2015",
+      "October 27, 2015",
+      "As corrected through Wednesday, December 30, 2015"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 53,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2015 NY Slip Op 07779",
+    "officialCitation": "26 NY3d 179",
+    "pageMarkerCount": 24
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Fahey",
+      "Pigott"
+    ],
+    "qualifierLines": [
+      "{**26 NY3d at 183} OPINION OF THE COURT",
+      "The court found defendant guilty as charged. A divided Appellate Division affirmed (, 114 AD3d 543 [1st Dept 2014]), and one of the dissenting Justices granted defendant leave to appeal to this Court. We now affirm.",
+      "For these reasons, I dissent and would vote to reverse."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

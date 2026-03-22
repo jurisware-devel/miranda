@@ -1,0 +1,106 @@
+{
+  "caseId": "2024_02725",
+  "sourcePath": "coa/2024/2024_02725.htm",
+  "notesPath": "coa/2024/2024_02725.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.269Z",
+  "source": {
+    "title": "People v Nektalov (2024 NY Slip Op 02725)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 9257,
+    "lineCount": 85,
+    "tagCounts": {
+      "a": 20,
+      "b": 4,
+      "body": 2,
+      "br": 6,
+      "div": 8,
+      "font": 14,
+      "head": 2,
+      "html": 2,
+      "i": 32,
+      "p": 22,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 4
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Nektalov",
+      "2024 NY Slip Op 02725 [42 NY3d 363]",
+      "May 16, 2024",
+      "Singas, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, December 4, 2024"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Samual Nektalov, Appellant."
+    ],
+    "citationLine": "2024 NY Slip Op 02725 42 NY3d 363",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued April 17, 2024; decided May 16, 2024",
+      "May 16, 2024",
+      "As corrected through Wednesday, December 4, 2024"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 10,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2024 NY Slip Op 02725",
+    "officialCitation": "42 NY3d 363",
+    "pageMarkerCount": 6
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [
+      "Singas"
+    ],
+    "qualifierLines": [
+      "{**42 NY3d at 366} OPINION OF THE COURT",
+      "Defendant pleaded guilty to criminal possession of a controlled substance in the seventh degree. The Appellate Term affirmed, with one Justice dissenting (78 Misc 3d 1 [App Term, 2d Dept, 2d, 11th & 13th Jud Dists 2022]). The court held that Detective Fortunato's testimony sufficiently established \"that the detective had probable cause to lawfully stop the vehicle due to an apparent violation of Vehicle and Traffic Law § 375 (12-a) (b) (2)\" (id. at 6 [internal quotation marks omitted]). A Judge of this Court granted defendant leave to appeal (39 NY3d 1156 [2023])."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

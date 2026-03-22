@@ -1,0 +1,128 @@
+{
+  "caseId": "2017_04386",
+  "sourcePath": "coa/2017/2017_04386.htm",
+  "notesPath": "coa/2017/2017_04386.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.955Z",
+  "source": {
+    "title": "People v Viruet (2017 NY Slip Op 04386)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 27195,
+    "lineCount": 116,
+    "tagCounts": {
+      "a": 36,
+      "b": 18,
+      "blockquote": 2,
+      "body": 2,
+      "br": 18,
+      "div": 6,
+      "font": 38,
+      "frac": 4,
+      "head": 2,
+      "html": 2,
+      "i": 64,
+      "p": 57,
+      "script": 4,
+      "style": 2,
+      "sup": 6,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [
+      "frac"
+    ],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Viruet",
+      "2017 NY Slip Op 04386 [29 NY3d 527]",
+      "June 6, 2017",
+      "Garcia, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, September 20, 2017"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Miguel Viruet, Appellant."
+    ],
+    "citationLine": "2017 NY Slip Op 04386 29 NY3d 527",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued April 27, 2017; decided June 6, 2017",
+      "June 6, 2017",
+      "As corrected through Wednesday, September 20, 2017"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 29,
+    "footnotesCount": 3
+  },
+  "citations": {
+    "slipOpinion": "2017 NY Slip Op 04386",
+    "officialCitation": "29 NY3d 527",
+    "pageMarkerCount": 18
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Garcia",
+      "Wilson"
+    ],
+    "qualifierLines": [
+      "{**29 NY3d at 529} OPINION OF THE COURT",
+      " I fully concur in the majority's excellent exposition of why the trial court erred in failing to provide an adverse inference jury instruction. However, I cannot agree that the error was harmless. I therefore would reverse and remit for a new trial.",
+      "{**29 NY3d at 538}Where, as here, evidence, even if substantial, is not overwhelming, that ends the harmless error inquiry, and defendant is entitled to a new trial. To act otherwise is to usurp the jury's role as trier of fact. The question is not whether we think that giving the requested instruction would have changed the outcome: that question is for the jury to determine on retrial, weighing it along with the evidence and other instructions. I therefore respectfully dissent."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 3,
+    "labels": [
+      "*",
+      "1",
+      "2"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <frac> in source HTML."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

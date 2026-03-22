@@ -1,0 +1,116 @@
+{
+  "caseId": "2013_02106",
+  "sourcePath": "coa/2013/2013_02106.htm",
+  "notesPath": "coa/2013/2013_02106.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.656Z",
+  "source": {
+    "title": "People v Hanley (2013 NY Slip Op 02106)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 15037,
+    "lineCount": 98,
+    "tagCounts": {
+      "a": 46,
+      "b": 18,
+      "body": 2,
+      "br": 12,
+      "div": 4,
+      "font": 22,
+      "head": 2,
+      "html": 2,
+      "i": 88,
+      "p": 21,
+      "script": 4,
+      "style": 2,
+      "sup": 6,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Hanley",
+      "2013 NY Slip Op 02106 [20 NY3d 601]",
+      "March 28, 2013",
+      "Graffeo, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, May 15, 2013"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Kirk Hanley, Appellant."
+    ],
+    "citationLine": "2013 NY Slip Op 02106 20 NY3d 601",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued February 12, 2013; decided March 28, 2013",
+      "March 28, 2013",
+      "As corrected through Wednesday, May 15, 2013"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 16,
+    "footnotesCount": 3
+  },
+  "citations": {
+    "slipOpinion": "2013 NY Slip Op 02106",
+    "officialCitation": "20 NY3d 601",
+    "pageMarkerCount": 10
+  },
+  "opinionStructure": {
+    "totalWritings": 2,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1
+    },
+    "authors": [
+      "Graffeo"
+    ],
+    "qualifierLines": [
+      "{**20 NY3d at 603} OPINION OF THE COURT",
+      "Instead of proceeding to trial, defendant abandoned his potential defenses and pleaded guilty to the indictment after the court promised to impose a determinate prison sentence between 12 and 15 years on the kidnapping charge, with five years of postrelease supervision, together with lesser concurrent sentences on the remaining offenses. During the plea colloquy, defendant admitted that he \"held another person at gunpoint against [her] will.\" The court sentenced defendant to an aggregate prison term of 14 years and five years of postrelease supervision.  "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 3,
+    "labels": [
+      "1",
+      "2",
+      "3"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 2 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

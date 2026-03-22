@@ -1,0 +1,133 @@
+{
+  "caseId": "2018_06849",
+  "sourcePath": "coa/2018/2018_06849.htm",
+  "notesPath": "coa/2018/2018_06849.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.025Z",
+  "source": {
+    "title": "People v Crespo (2018 NY Slip Op 06849)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 62126,
+    "lineCount": 181,
+    "tagCounts": {
+      "a": 80,
+      "b": 64,
+      "blockquote": 4,
+      "body": 2,
+      "br": 30,
+      "div": 24,
+      "font": 66,
+      "head": 2,
+      "html": 2,
+      "i": 354,
+      "p": 102,
+      "script": 4,
+      "style": 2,
+      "sup": 26,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 20
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Crespo",
+      "2018 NY Slip Op 06849 [32 NY3d 176]",
+      "October 16, 2018",
+      "DiFIORE, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, December 26, 2018"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Appellant,",
+      "v",
+      "Raymond Crespo, Respondent."
+    ],
+    "citationLine": "2018 NY Slip Op 06849 32 NY3d 176",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued February 8, 2018; reargued September 12, 2018; decided October 16, 2018",
+      "October 16, 2018",
+      "As corrected through Wednesday, December 26, 2018"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 59,
+    "footnotesCount": 13
+  },
+  "citations": {
+    "slipOpinion": "2018 NY Slip Op 06849",
+    "officialCitation": "32 NY3d 176",
+    "pageMarkerCount": 32
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "DiFIORE",
+      "Rivera"
+    ],
+    "qualifierLines": [
+      "{**32 NY3d at 178} OPINION OF THE COURT",
+      "The People's reliance on People v Smith (68 NY2d 737 [1986]) and People v Reason (37 NY2d 351 [1975]) is misplaced as in{**32 NY3d at 191} both cases this Court recognized the defendants' mid-jury selection request to proceed pro se. In Smith, the Court held that the defendant's request was timely interposed after the judge addressed the first panel of prospective jurors (68 NY2d at 740-741). In Reason, the defendant requested to represent himself after the prosecutor moved the case to trial and after having observed voir dire and the prosecutor's questioning of prospective jurors (brief for respondent at 11 in People v Reason, 37 NY2d 351 [1975]; 37 NY2d at 360 n 2 [Jasen, J., dissenting]). Thus, there is no support for the People's assertion—and the majority's assumption—that this Court has never adopted the rule that a defendant timely interposes a request for self-representation after jury selection has begun but before the prosecutor's opening statement.",
+      "In general, \"the strong presumption that the law is settled by a particular ruling may be rebutted . . . only in exceptional cases\" (, 9 NY3d 129, 149 [2007]), where, for instance, a rule has proved unworkable, creates more questions than it resolves (see id.), or, when seen in \"the cold light of logic and experience,\" \"[it] no longer serves the ends of justice\" (, 7 NY3d 588, 604 [2006, Kaye, Ch. J., dissenting in part]). Considerations of stare decisis require us to balance the stability of the law and the legitimacy of past expectations, on the one hand, against \"the lessons of experience and the force of better reasoning\" on the other (Burnet v Coronado Oil & Gas Co., 285 US 393, 407-408 [1932, Brandeis, J., dissenting], quoted in Bing, 76 NY2d at 338).",
+      "Here, there is no rule that has proved unworkable, created more questions than it resolved or, in \"the cold light of logic and experience,\" \"no longer serves the ends of justice\" (Policano, 7 NY3d at 604 [Kaye, Ch. J., dissenting in part]). To the contrary, the bright-line rule announced in McIntyre ensures consistency and certainty. Everyone knows when the prosecutor's{**32 NY3d at 193} opening statement commences. The People's rule, now adopted by the majority—that a trial would begin with jury selection—creates ambiguity. Does jury selection begin when the jury is brought into the courtroom? Before or after the jurors are addressed by the judge? If the judge says \"welcome,\" and the defendant then interrupts to interpose a motion to proceed pro se, is the motion now untimely?",
+      "Defendant's request to proceed pro se was interposed before the beginning of the prosecutor's opening statement. To reject the request as untimely was clear error by the trial court. Therefore, the Appellate Division properly reversed and ordered a new trial. Forty years of jurisprudence would make this a straightforward case and readily lead us to affirm.{**32 NY3d at 197} Astonishingly, the majority decides otherwise, reaching its conclusion in disregard of the demands of stare decisis and our well-established rule. I dissent."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 13,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "caseId": "2005_04614",
+  "sourcePath": "coa/2005/2005_04614.htm",
+  "notesPath": "coa/2005/2005_04614.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.280Z",
+  "source": {
+    "title": "People v Rivera (2005 NY Slip Op 04614)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 62853,
+    "lineCount": 255,
+    "tagCounts": {
+      "a": 94,
+      "b": 98,
+      "blockquote": 8,
+      "body": 2,
+      "br": 56,
+      "disop": 1,
+      "div": 8,
+      "font": 80,
+      "head": 2,
+      "html": 2,
+      "i": 408,
+      "p": 66,
+      "script": 4,
+      "style": 2,
+      "sup": 46,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 4
+    },
+    "unknownTags": [
+      "disop"
+    ],
+    "strayClosingTags": [
+      "disop"
+    ]
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Rivera",
+      "2005 NY Slip Op 04614 [5 NY3d 61]",
+      "June 9, 2005",
+      "Rosenblatt, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, August 24, 2005"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "William Rivera, Appellant."
+    ],
+    "citationLine": "2005 NY Slip Op 04614 5 NY3d 61",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued April 26, 2005; decided June 9, 2005",
+      "June 9, 2005",
+      "As corrected through Wednesday, August 24, 2005"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 66,
+    "footnotesCount": 23
+  },
+  "citations": {
+    "slipOpinion": "2005 NY Slip Op 04614",
+    "officialCitation": "5 NY3d 61",
+    "pageMarkerCount": 39
+  },
+  "opinionStructure": {
+    "totalWritings": 6,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 3,
+      "dissent": 2
+    },
+    "authors": [
+      "Rosenblatt",
+      "Kaye",
+      "Ciparick"
+    ],
+    "qualifierLines": [
+      "{**5 NY3d at 63} OPINION OF THE COURT",
+      "The Supreme Court has held that a judge (as opposed to a jury) may find the fact of a defendant's prior conviction without violating the Sixth Amendment (see Almendarez-Torres v United States, 523 US 224, 226-227 [1998]). Defendant does not argue to the contrary. We are bound by this holding, which the Supreme Court has repeatedly reaffirmed (see Apprendi, 530 US at 487-490; Blakely, 542 US at 301; United States v Booker, 543 US 220, 244 [2005]). Although a majority of the present Justices of the Supreme Court have expressed disagreement with Almendarez-Torres (see Shepard v United States, 544 US 13, —, 125 S Ct 1254, 1264 [2005] [Thomas, J., concurring]), we recognize that Court's obvious prerogative to overrule its own decisions and we therefore follow Almendarez-Torres until the Supreme Court rules otherwise (cf. Roper v Simmons, 543 US 551, 594 [2005] [O'Connor, J., dissenting]). Here, the trial judge committed no Sixth Amendment violation by finding as fact that defendant had twice before suffered felony convictions. ",
+      " Because I believe that Apprendi v New Jersey (530 US 466 [2000]), as reaffirmed and clarified by Ring v Arizona (536 US 584 [2002]), Blakely v Washington (542 US 296 [2004]), and United States v Booker (543 US 220 [2005]), compels a different result, I respectfully dissent from the majority opinion. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 2,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 23,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <disop> in source HTML."
+    },
+    {
+      "code": "STRAY_CLOSING_TAG",
+      "severity": "warning",
+      "detail": "Closing tag </disop> appears more times than opening tag <disop>."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 6 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

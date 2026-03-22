@@ -1,0 +1,120 @@
+{
+  "caseId": "2018_03305",
+  "sourcePath": "coa/2018/2018_03305.htm",
+  "notesPath": "coa/2018/2018_03305.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.003Z",
+  "source": {
+    "title": "People v Wallace (2018 NY Slip Op 03305)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 28542,
+    "lineCount": 119,
+    "tagCounts": {
+      "a": 30,
+      "b": 18,
+      "blockquote": 4,
+      "body": 2,
+      "br": 14,
+      "div": 12,
+      "font": 32,
+      "head": 2,
+      "html": 2,
+      "i": 144,
+      "p": 52,
+      "script": 4,
+      "style": 2,
+      "sup": 6,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 6
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Wallace",
+      "2018 NY Slip Op 03305 [31 NY3d 503]",
+      "May 8, 2018",
+      "Feinman, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, September 5, 2018"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Akeem Wallace, Appellant."
+    ],
+    "citationLine": "2018 NY Slip Op 03305 31 NY3d 503",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued March 28, 2018; decided May 8, 2018",
+      "May 8, 2018",
+      "As corrected through Wednesday, September 5, 2018"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 30,
+    "footnotesCount": 3
+  },
+  "citations": {
+    "slipOpinion": "2018 NY Slip Op 03305",
+    "officialCitation": "31 NY3d 503",
+    "pageMarkerCount": 15
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "concurrence": 1
+    },
+    "authors": [
+      "Feinman",
+      "Stein"
+    ],
+    "qualifierLines": [
+      "{**31 NY3d at 505} OPINION OF THE COURT",
+      "The dissenter opined that because defendant possessed the weapon at his \"place of business,\" the evidence was legally insufficient to establish that defendant violated Penal Law § 265.03 (3) (id. at 1495). The dissent reasoned that \"the statute [was] clear and unambiguous on its face . . . [and] if the legislature had wanted to limit the places of business to which the exception of section 265.03 (3) applies, it could easily have done so\" (id.). The dissenting Justice granted defendant leave to appeal to this Court (2017 NY Slip Op 97796[U] [2017])."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 1,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 3,
+    "labels": [
+      "*",
+      "1",
+      "2"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

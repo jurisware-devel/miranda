@@ -1,0 +1,136 @@
+{
+  "caseId": "2004_02516",
+  "sourcePath": "coa/2004/2004_02516.htm",
+  "notesPath": "coa/2004/2004_02516.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.233Z",
+  "source": {
+    "title": "People v Jones (2004 NY Slip Op 02516)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 36374,
+    "lineCount": 139,
+    "tagCounts": {
+      "a": 26,
+      "b": 30,
+      "blockquote": 4,
+      "body": 2,
+      "br": 20,
+      "disop": 1,
+      "div": 4,
+      "font": 46,
+      "head": 2,
+      "html": 2,
+      "i": 260,
+      "p": 42,
+      "script": 4,
+      "style": 2,
+      "sup": 12,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [
+      "disop"
+    ],
+    "strayClosingTags": [
+      "disop"
+    ]
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Jones",
+      "2004 NY Slip Op 02516 [2 NY3d 235]",
+      "April 6, 2004",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, June 16, 2004"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Corey Jones, Appellant."
+    ],
+    "citationLine": "2004 NY Slip Op 02516 2 NY3d 235",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued February 19, 2004; decided April 6, 2004",
+      "April 6, 2004",
+      "As corrected through Wednesday, June 16, 2004"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 40,
+    "footnotesCount": 6
+  },
+  "citations": {
+    "slipOpinion": "2004 NY Slip Op 02516",
+    "officialCitation": "2 NY3d 235",
+    "pageMarkerCount": 22
+  },
+  "opinionStructure": {
+    "totalWritings": 4,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "dissent": 1
+    },
+    "authors": [
+      "Graffeo",
+      "Ciparick"
+    ],
+    "qualifierLines": [
+      "{**2 NY3d at 237} OPINION OF THE COURT",
+      " Because Supreme Court erred as a matter of law when it denied suppression of a lineup identification procedure conducted after an illegal arrest made in violation of Payton v New York (445 US 573 [1980]) and in the absence of counsel, I respectfully dissent. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 6,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <disop> in source HTML."
+    },
+    {
+      "code": "STRAY_CLOSING_TAG",
+      "severity": "warning",
+      "detail": "Closing tag </disop> appears more times than opening tag <disop>."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 4 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "caseId": "2011_01363",
+  "sourcePath": "coa/2011/2011_01363.htm",
+  "notesPath": "coa/2011/2011_01363.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.523Z",
+  "source": {
+    "title": "People v Alonzo (2011 NY Slip Op 01363)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 9713,
+    "lineCount": 85,
+    "tagCounts": {
+      "a": 10,
+      "b": 4,
+      "body": 2,
+      "br": 4,
+      "div": 6,
+      "font": 18,
+      "head": 2,
+      "html": 2,
+      "i": 22,
+      "p": 17,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Alonzo",
+      "2011 NY Slip Op 01363 [16 NY3d 267]",
+      "February 24, 2011",
+      "Smith, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, April 20, 2011"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Appellant,",
+      "v",
+      "Jose Casiano Alonzo, Respondent."
+    ],
+    "citationLine": "2011 NY Slip Op 01363 16 NY3d 267",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued January 13, 2011; decided February 24, 2011",
+      "February 24, 2011",
+      "As corrected through Wednesday, April 20, 2011"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 13,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2011 NY Slip Op 01363",
+    "officialCitation": "16 NY3d 267",
+    "pageMarkerCount": 8
+  },
+  "opinionStructure": {
+    "totalWritings": 2,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1
+    },
+    "authors": [
+      "Smith"
+    ],
+    "qualifierLines": [
+      "{**16 NY3d at 268} OPINION OF THE COURT",
+      "There is no infallible formula for deciding how many crimes are committed in a particular sequence of events. In each case,{**16 NY3d at 270} the ultimate question is which result is more consistent with the Legislature's intention. As a general rule, however, it may be said that where a defendant, in an uninterrupted course of conduct directed at a single victim, violates a single provision of the Penal Law, he commits but a single crime. Thus, a physical attack by one person upon another is normally but one assault, though the attacker may hit the victim several times. A contrary rule would offer a temptation to abuse: Where there were 10 swings of a fist, a prosecutor might obtain 10 convictions growing out of a single incident—and could even seek 10 consecutive sentences, for Penal Law § 70.25 (2) does not require concurrent sentencing for crimes committed through separate acts. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 2 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

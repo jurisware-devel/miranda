@@ -1,0 +1,148 @@
+{
+  "caseId": "2025_03692",
+  "sourcePath": "coa/2025/2025_03692.htm",
+  "notesPath": "coa/2025/2025_03692.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.334Z",
+  "source": {
+    "title": "People v Bacon (2025 NY Slip Op 03692)",
+    "publicationStatus": "slip_op_only"
+  },
+  "fileInfo": {
+    "byteSize": 37988,
+    "lineCount": 130,
+    "tagCounts": {
+      "a": 32,
+      "b": 20,
+      "blockquote": 14,
+      "body": 2,
+      "br": 26,
+      "dateline": 2,
+      "div": 20,
+      "font": 16,
+      "form": 2,
+      "head": 2,
+      "html": 2,
+      "i": 126,
+      "input": 1,
+      "opinion": 1,
+      "p": 88,
+      "sc": 2,
+      "script": 4,
+      "style": 2,
+      "sup": 6,
+      "table": 2,
+      "td": 12,
+      "title": 2,
+      "tr": 12
+    },
+    "unknownTags": [
+      "form",
+      "input"
+    ],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Bacon",
+      "2025 NY Slip Op 03692",
+      "Decided on June 18, 2025",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "This opinion is uncorrected and subject to revision before publication in the Official Reports."
+    ],
+    "captionLines": [
+      "The People & c., Respondent,",
+      "v",
+      "Zavearr Bacon, Appellant."
+    ],
+    "citationLine": "2025 NY Slip Op 03692",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Decided on June 18, 2025"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Samir Deger-Sen, for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Samir Deger-Sen, for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Julia Gorski, for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Julia Gorski, for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 50,
+    "footnotesCount": 3
+  },
+  "citations": {
+    "slipOpinion": "2025 NY Slip Op 03692",
+    "officialCitation": "41 NY3d 35",
+    "pageMarkerCount": 5
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Rivera"
+    ],
+    "qualifierLines": [
+      "MEMORANDUM:",
+      "When the prosecution suddenly announced, moments before the close of their case at trial, that they would not call the victims to testify, defendant voiced his opposition. He asserted to the court that the prosecution rested without calling the victims and \"[t]here was no ability to cross-examine.\" Defendant's assertion was more than adequate to preserve his challenge to the admission of the victims' statements as a violation of the Sixth Amendment Confrontation Clause. It was certainly more adequate than saying \"[w]e don't have that witness here\"—a statement we have previously found sufficient to preserve a Confrontation Clause challenge (, 25 NY3d 77, 82 [2015] [internal quotation marks omitted]). Contrary to the majority's view, that defendant also moved to dismiss on the alternative ground that the prosecution's case was legally insufficient, and that defense counsel responded to the trial court's inquiry on that issue, does not change the fact that defendant advised the court that his accusers' statements were presented to the jury without an opportunity to cross-examine the speakers. I dissent.",
+      "Defendant preserved his challenge by objecting that the prosecutor did not call the victims and that he was denied the opportunity to cross-examine and test the credibility of the female victim's identification of defendant as one of the perpetrators. The majority's contrary conclusion is a distorted view of the record and our caselaw. I dissent and would not let stand this clear constitutional violation of defendant's right to confront his accusers."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 3,
+    "labels": [
+      "*",
+      "1",
+      "2"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <form> in source HTML."
+    },
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <input> in source HTML."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    }
+  ]
+}

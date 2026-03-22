@@ -1,0 +1,104 @@
+{
+  "caseId": "2020_06838",
+  "sourcePath": "coa/2020/2020_06838.htm",
+  "notesPath": "coa/2020/2020_06838.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.115Z",
+  "source": {
+    "title": "People v Balkman (2020 NY Slip Op 06838)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 10474,
+    "lineCount": 82,
+    "tagCounts": {
+      "a": 10,
+      "b": 4,
+      "body": 2,
+      "br": 6,
+      "div": 4,
+      "font": 16,
+      "head": 2,
+      "html": 2,
+      "i": 34,
+      "p": 22,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Balkman",
+      "2020 NY Slip Op 06838 [35 NY3d 556]",
+      "November 19, 2020",
+      "Feinman, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, December 30, 2020"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Everett D. Balkman, Appellant."
+    ],
+    "citationLine": "2020 NY Slip Op 06838 35 NY3d 556",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued October 14, 2020; decided November 19, 2020",
+      "November 19, 2020",
+      "As corrected through Wednesday, December 30, 2020"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 9,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2020 NY Slip Op 06838",
+    "officialCitation": "35 NY3d 556",
+    "pageMarkerCount": 7
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [
+      "Feinman"
+    ],
+    "qualifierLines": [
+      "{**35 NY3d at 557} OPINION OF THE COURT"
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

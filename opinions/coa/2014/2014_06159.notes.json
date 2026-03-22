@@ -1,0 +1,112 @@
+{
+  "caseId": "2014_06159",
+  "sourcePath": "coa/2014/2014_06159.htm",
+  "notesPath": "coa/2014/2014_06159.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.758Z",
+  "source": {
+    "title": "People v Perales (2014 NY Slip Op 06159)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 4818,
+    "lineCount": 73,
+    "tagCounts": {
+      "a": 6,
+      "b": 4,
+      "body": 2,
+      "br": 6,
+      "div": 4,
+      "font": 8,
+      "head": 2,
+      "html": 2,
+      "i": 4,
+      "opinion": 1,
+      "p": 14,
+      "script": 4,
+      "span": 2,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [
+      "span"
+    ],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Perales",
+      "2014 NY Slip Op 06159 [24 NY3d 939]",
+      "September 16, 2014",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, October 29, 2014"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Richard Perales, Appellant."
+    ],
+    "citationLine": "2014 NY Slip Op 06159 24 NY3d 939",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Decided September 16, 2014",
+      "September 16, 2014",
+      "As corrected through Wednesday, October 29, 2014"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 5,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2014 NY Slip Op 06159",
+    "officialCitation": "24 NY3d 939",
+    "pageMarkerCount": 3
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**24 NY3d at 940} OPINION OF THE COURT",
+      "Memorandum.",
+      "The order of the Appellate Division should be reversed and defendant's application for a writ of error coram nobis seeking leave to file a late notice of appeal granted and the case remitted to the Appellate Division for further proceedings in accordance with this memorandum."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <span> in source HTML."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

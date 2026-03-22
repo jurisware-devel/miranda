@@ -90,6 +90,9 @@ public final class MirandaJsonRenderer {
     private static final Pattern POINTS_OF_COUNSEL_ARGUMENT_PATTERN = Pattern.compile(
         "\\s+(?:[IVX]+|\\d+)\\.\\s+"
     );
+    private static final Pattern APPEARANCE_SENTENCE_END_PATTERN = Pattern.compile(
+        "(?i)^.*?\\b(?:for\\s+(?:appellant|respondent|petitioner|appellee|claimant|defendant|plaintiff)|amic(?:us|i)\\s+curiae)\\."
+    );
     public String render(SourceDocument source, ReflowedDocument document) {
         List<Writing> writings = buildWritings(document, null);
         TerminalSummary terminalSummary = extractTerminalSummary(source, document);
@@ -159,6 +162,7 @@ public final class MirandaJsonRenderer {
 
     private List<Map<String, Object>> buildAppearances(ReflowedDocument document) {
         List<Map<String, Object>> appearances = new ArrayList<>();
+        Set<String> seenAppearanceKeys = new LinkedHashSet<>();
         for (var item : document.lowered().header().items()) {
             if (item.type() != HeaderItemType.COUNSEL) {
                 continue;
@@ -167,14 +171,13 @@ public final class MirandaJsonRenderer {
             if (appearanceText.isEmpty()) {
                 continue;
             }
-            Map<String, Object> appearance = new LinkedHashMap<>();
-            appearance.put("side", inferAppearanceSide(appearanceText));
-            appearance.put("text", appearanceText);
-            appearance.put("provenance", provenance(item.line().lineNumber(), item.line().lineNumber()));
-            appearances.add(appearance);
-        }
-        if (!appearances.isEmpty()) {
-            return appearances;
+            addAppearance(
+                appearances,
+                seenAppearanceKeys,
+                appearanceText,
+                item.line().lineNumber(),
+                item.line().lineNumber()
+            );
         }
 
         for (HtmlLabeledBlock block : document.lowered().sectioned().source().htmlDocument().pointsOfCounsel()) {
@@ -182,13 +185,27 @@ public final class MirandaJsonRenderer {
             if (appearanceText.isEmpty()) {
                 continue;
             }
-            Map<String, Object> appearance = new LinkedHashMap<>();
-            appearance.put("side", inferAppearanceSide(appearanceText));
-            appearance.put("text", appearanceText);
-            appearance.put("provenance", provenance(block.startLine(), block.endLine()));
-            appearances.add(appearance);
+            addAppearance(appearances, seenAppearanceKeys, appearanceText, block.startLine(), block.endLine());
         }
         return appearances;
+    }
+
+    private void addAppearance(
+        List<Map<String, Object>> appearances,
+        Set<String> seenAppearanceKeys,
+        String appearanceText,
+        int startLine,
+        int endLine
+    ) {
+        String normalizedKey = appearanceText.trim().replaceAll("\\s+", " ").toLowerCase(Locale.ROOT);
+        if (!seenAppearanceKeys.add(normalizedKey)) {
+            return;
+        }
+        Map<String, Object> appearance = new LinkedHashMap<>();
+        appearance.put("side", inferAppearanceSide(appearanceText));
+        appearance.put("text", appearanceText);
+        appearance.put("provenance", provenance(startLine, endLine));
+        appearances.add(appearance);
     }
 
     private String trimPointsOfCounselArguments(String text) {
@@ -203,6 +220,10 @@ public final class MirandaJsonRenderer {
         Matcher matcher = POINTS_OF_COUNSEL_ARGUMENT_PATTERN.matcher(trimmed);
         if (matcher.find()) {
             return trimmed.substring(0, matcher.start()).trim();
+        }
+        Matcher sentenceEndMatcher = APPEARANCE_SENTENCE_END_PATTERN.matcher(trimmed);
+        if (sentenceEndMatcher.find()) {
+            return sentenceEndMatcher.group().trim();
         }
         return trimmed;
     }

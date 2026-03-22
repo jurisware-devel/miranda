@@ -1,0 +1,135 @@
+{
+  "caseId": "2013_01019",
+  "sourcePath": "coa/2013/2013_01019.htm",
+  "notesPath": "coa/2013/2013_01019.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.650Z",
+  "source": {
+    "title": "People v Pealer (2013 NY Slip Op 01019)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 28013,
+    "lineCount": 125,
+    "tagCounts": {
+      "a": 34,
+      "b": 14,
+      "blockquote": 2,
+      "body": 2,
+      "br": 18,
+      "div": 10,
+      "font": 34,
+      "frac": 2,
+      "head": 2,
+      "html": 2,
+      "i": 216,
+      "p": 37,
+      "script": 4,
+      "style": 2,
+      "sup": 4,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 6
+    },
+    "unknownTags": [
+      "frac"
+    ],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Pealer",
+      "2013 NY Slip Op 01019 [20 NY3d 447]",
+      "February 19, 2013",
+      "Graffeo, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, April 17, 2013"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Robert Pealer, Appellant."
+    ],
+    "citationLine": "2013 NY Slip Op 01019 20 NY3d 447",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued January 3, 2013; decided February 19, 2013",
+      "February 19, 2013",
+      "As corrected through Wednesday, April 17, 2013"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 38,
+    "footnotesCount": 2
+  },
+  "citations": {
+    "slipOpinion": "2013 NY Slip Op 01019",
+    "officialCitation": "20 NY3d 447",
+    "pageMarkerCount": 16
+  },
+  "opinionStructure": {
+    "totalWritings": 6,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 3,
+      "dissent": 1,
+      "concurrence": 1
+    },
+    "authors": [
+      "Graffeo",
+      "Pigott",
+      "Smith"
+    ],
+    "qualifierLines": [
+      "{**20 NY3d at 451} OPINION OF THE COURT",
+      "For these reasons, we believe that the US Supreme Court's primary purpose test, and the analytical framework articulated in Rawlins, Freycinet and Brown, indicate that the breathalyzer calibration documents offered in this case were not testimonial in nature. Although it has been suggested that Melendez-Diaz pronounced a shift in Confrontation Clause analysis that might call our precedent into question, we reject this assertion. Melendez-Diaz itself avowed that it was not breaking new ground because it \"involve[d] little more than the application of [the] holding in Crawford\" (557 US at 329). Moreover, both before and after Melendez-Diaz was decided, a virtually uniform national consensus emerged classifying documents similar to these as nontestimonial (see e.g. State v Benson, 287 P3d 927,{**20 NY3d at 456} 932 [Kan 2012]; Chambers v State, 2012 Ark 407, *8, — SW3d —, — [2012]; State v Lutz, 820 NW2d 111, 117-118 [ND 2012]; State v Britt, 283 Neb 600, 603, 813 NW2d 434, 437 [2012]; Matthies v State, 85 So 3d 838, 844 [Miss 2012], cert denied 568 US —, 133 S Ct 317 [2012]; Commonwealth v Zeininger, 459 Mass 775, 788-789, 947 NE2d 1060, 1070 [2011], cert denied 565 US —, 132 S Ct 462 [2011]; State v Chun, 194 NJ 54, 144, 943 A2d 114, 167-168 [2008], cert denied 555 US 825 [2008]; State v Fischer, 272 Neb 963, 971-972, 726 NW2d 176, 182-183 [2007]; Rackoff v State, 281 Ga 306, 309, 637 SE2d 706, 709 [2006]; Commonwealth v Walther, 189 SW3d 570, 575 [Ky 2006]; State v Carter, 326 Mont 427, 437, 114 P3d 1001, 1007 [2005]). Additionally, the Appellate Divisions that have considered this issue have concurred that, even under Melendez-Diaz, these types of records fall outside the ambit of the Confrontation Clause (, 93 AD3d 953, 953-954 [3d Dept 2012]; , 79 AD3d 1060, 1061-1062 [2d Dept 2010]). ",
+      " While I concur with the majority's Confrontation Clause analysis, I part company with it on the reasonableness of the police officer's initial stop of defendant. The suppression court ruled that the police officer lacked probable cause to stop the defendant but for the fact that defendant had a Finger Lakes Community College sticker in the rear window (police officer: \"I can't recall what side it was on, the left or the right\"). ",
+      " I join Judge Graffeo's majority opinion, and add this concurrence to reply to the dissent. ",
+      "I concede that my dissenting colleague has a point; like him, I am uncomfortable with what happened in this case. It presents an extreme example of the opportunities given to law enforcement officers by the United States Supreme Court's holding in Whren v United States (517 US 806 [1996]), and ours in People v Robinson (97 NY2d 341 [2001]), that a traffic stop made with probable cause may not be challenged as pretextual—i.e., that the motive for the stop is irrelevant. Here, the pretext—a small sticker in a corner of a car's rear window—is as transparent as the sticker. But under Whren and Robinson that does not matter. ",
+      "The dissent suggests that, where police blatantly exploit a trivial offense, we can avoid the more unpleasant consequences of Whren and Robinson by finding the officers' actions to be \"not objectively reasonable\" (dissenting op at 457). The dissent's position is similar to that of the dissenters in Atwater v Lago Vista (532 US 318, 360-373 [2001, O'Connor, J., dissenting])—a case involving an arrest, not just a traffic stop. In Atwater, a woman was arrested, without a warrant, for an offense (having her children in the front seat of a car without seatbelts) punishable only by a fine under state law. The Supreme Court majority held that the arrest was consistent with the Fourth Amendment. It concluded that a state does not violate the Federal Constitution when it authorizes warrantless arrest for a criminal offense, no matter how minor (532 US at 354).{**20 NY3d at 459} ",
+      "Today's dissent would hold that, under the State Constitution, an officer may be held to have acted unreasonably in stopping a car for a trivial violation of a statute. I would not accept this rule. Where the challenge is only to a traffic stop, the interference with a person's liberty is much less than when that person is arrested or searched. And while the dissent's rule may seem attractive in this case, it will be hard to administer: defendants will not hesitate to invoke it on less sympathetic facts than these, and deciding whether an officer used good judgment in stopping a car will become part of the routine fare of judges deciding suppression motions. The certainty and predictability that result from the Whren and Robinson holdings will be in large part lost. ",
+      "My reluctance to agree with the dissent is fortified by my distaste for the suppression of relevant evidence as a remedy for every mistake a police officer makes. As I have said before, I think that the exclusionary rule is a blunt instrument that lets too many guilty people go free (, 12 NY3d 433, 451 [2009, Smith, J., dissenting]; , 20 NY3d 907, 909-910 [2012, Smith, J., dissenting]). There are surely other remedies for law enforcement that is too aggressive. Here, the remedy seems obvious enough: the legislature can amend Vehicle and Traffic Law § 375 [1] [b] [i] to remove the ban on small, transparent stickers. That is preferable, I think, to dismissing a well-founded drunk driving prosecution because we think the sticker law has been over-enforced.{**20 NY3d at 460} "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 1,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 2,
+    "labels": [
+      "1",
+      "2"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <frac> in source HTML."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 6 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

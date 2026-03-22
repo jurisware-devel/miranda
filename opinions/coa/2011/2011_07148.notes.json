@@ -1,0 +1,124 @@
+{
+  "caseId": "2011_07148",
+  "sourcePath": "coa/2011/2011_07148.htm",
+  "notesPath": "coa/2011/2011_07148.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.561Z",
+  "source": {
+    "title": "People v Crampe (2011 NY Slip Op 07148)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 35762,
+    "lineCount": 147,
+    "tagCounts": {
+      "a": 12,
+      "b": 12,
+      "blockquote": 50,
+      "body": 2,
+      "br": 8,
+      "div": 8,
+      "font": 52,
+      "head": 2,
+      "html": 2,
+      "i": 138,
+      "p": 45,
+      "script": 4,
+      "span": 28,
+      "style": 2,
+      "sup": 2,
+      "table": 6,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 8
+    },
+    "unknownTags": [
+      "span"
+    ],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Crampe",
+      "2011 NY Slip Op 07148 [17 NY3d 469]",
+      "October 13, 2011",
+      "Read, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431."
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Alexander G. Crampe, Appellant.",
+      "The People of the State of New York, Respondent, v Blake Wingate, Appellant."
+    ],
+    "citationLine": "2011 NY Slip Op 07148 17 NY3d 469",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued September 15, 2011; decided October 13, 2011",
+      "October 13, 2011"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 50,
+    "footnotesCount": 1
+  },
+  "citations": {
+    "slipOpinion": "2011 NY Slip Op 07148",
+    "officialCitation": "17 NY3d 469",
+    "pageMarkerCount": 25
+  },
+  "opinionStructure": {
+    "totalWritings": 2,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1
+    },
+    "authors": [
+      "Read"
+    ],
+    "qualifierLines": [
+      "{**17 NY3d at 472} OPINION OF THE COURT",
+      "The case went to trial, and the jury convicted defendant of the charged crimes. Supreme Court subsequently sentenced him to prison terms of 2 to 4 years on the stolen property charge, and one year on the drug possession charge, to run concurrently. ",
+      "Chief Judge Lippman and Judges Ciparick, Graffeo, Smith, Pigott and Jones concur. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 1,
+    "labels": [
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <span> in source HTML."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 2 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 3 table elements before or within the header region."
+    }
+  ]
+}

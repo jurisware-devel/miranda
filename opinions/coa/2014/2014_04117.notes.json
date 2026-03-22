@@ -1,0 +1,136 @@
+{
+  "caseId": "2014_04117",
+  "sourcePath": "coa/2014/2014_04117.htm",
+  "notesPath": "coa/2014/2014_04117.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.745Z",
+  "source": {
+    "title": "People v Gillotti (2014 NY Slip Op 04117)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 75018,
+    "lineCount": 193,
+    "tagCounts": {
+      "a": 74,
+      "b": 36,
+      "blockquote": 22,
+      "body": 2,
+      "br": 24,
+      "div": 24,
+      "font": 98,
+      "frac": 2,
+      "head": 2,
+      "html": 2,
+      "i": 284,
+      "p": 152,
+      "script": 4,
+      "style": 2,
+      "sup": 12,
+      "table": 6,
+      "td": 18,
+      "title": 2,
+      "tr": 18,
+      "u": 22
+    },
+    "unknownTags": [
+      "frac"
+    ],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Gillotti",
+      "2014 NY Slip Op 04117 [23 NY3d 841]",
+      "June 10, 2014",
+      "Abdus-Salaam, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, October 8, 2014"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Neil Gillotti, Appellant.",
+      "The People of the State of New York, Respondent, v George F. Fazio, Appellant."
+    ],
+    "citationLine": "2014 NY Slip Op 04117 23 NY3d 841",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued April 30, 2014; decided June 10, 2014",
+      "June 10, 2014",
+      "As corrected through Wednesday, October 8, 2014"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 94,
+    "footnotesCount": 6
+  },
+  "citations": {
+    "slipOpinion": "2014 NY Slip Op 04117",
+    "officialCitation": "23 NY3d 841",
+    "pageMarkerCount": 48
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Abdus-Salaam",
+      "Smith"
+    ],
+    "qualifierLines": [
+      "{**23 NY3d at 844} OPINION OF THE COURT",
+      "In reaching this conclusion, we recognize, as the partial dissent does (see op of Smith, J., dissenting in part at 866-869), that scoring points under factors 3 and 7 may overestimate the risk of reoffense and danger to the public posed by quite a few child pornography offenders. But we think it best to address that concern through the departure process rather than ignoring the plain language of the guidelines in favor of the vague and non-authoritative Position Statement. At the same time, in deciding a child pornography offender's application for a downward departure, a SORA court should, in the exercise of its discretion, give particularly strong consideration to the possibility that adjudicating the offender in accordance with the guidelines point score and without departing downward might lead to an excessive level of registration.",
+      " I agree that the order of the Appellate Division in People v Gillotti should be reversed for the reasons stated in section II-C of the majority opinion. I otherwise dissent, because I think the majority opinion is flawed in its discussion of guidelines factors 3 and 7 and of the Board of Examiners' Position Statement. Before discussing these topics, however, I will say a few words about the overall problem presented by the application of the Sex Offender Registration Act (Correction Law art 6-C) (SORA) to people who commit child pornography offenses. ",
+      "Of course I agree—who does not?—that child pornography is an enormous evil, \"uniquely harmful\" to its victims (majority op at 855). And while I have expressed elsewhere my doubt that severe punishment of \"minor and peripheral\" consumers will be an effective way of combating the evil (, 19 NY3d 290, 312-313 [2012, Smith, J., concurring]), I am not reopening that argument today. I do not suggest that the defendants before us were minor offenders, that they did not deserve criminal punishment, or that the punishments given them were too severe. Perhaps they were too light.",
+      "Judges Graffeo, Read, Pigott and Rivera concur with Judge Abdus-Salaam; Judge Smith dissents in part in an opinion in which Chief Judge Lippman concurs.",
+      "Judges Graffeo, Read, Pigott and Rivera concur with Judge Abdus-Salaam; Judge Smith dissents in an opinion in which Chief Judge Lippman concurs."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 6,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <frac> in source HTML."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 3 table elements before or within the header region."
+    }
+  ]
+}

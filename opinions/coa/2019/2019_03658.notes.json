@@ -1,0 +1,146 @@
+{
+  "caseId": "2019_03658",
+  "sourcePath": "coa/2019/2019_03658.htm",
+  "notesPath": "coa/2019/2019_03658.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.055Z",
+  "source": {
+    "title": "People v Meyers (2019 NY Slip Op 03658)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 25890,
+    "lineCount": 111,
+    "tagCounts": {
+      "a": 47,
+      "b": 10,
+      "body": 2,
+      "br": 10,
+      "div": 18,
+      "font": 30,
+      "head": 2,
+      "html": 2,
+      "i": 226,
+      "opinion": 1,
+      "p": 57,
+      "script": 4,
+      "style": 2,
+      "sup": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14,
+      "u": 12
+    },
+    "unknownTags": [],
+    "strayClosingTags": [
+      "a"
+    ]
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Meyers",
+      "2019 NY Slip Op 03658 [33 NY3d 1018]",
+      "May 9, 2019",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, July 19, 2019"
+    ],
+    "captionLines": [],
+    "citationLine": "2019 NY Slip Op 03658 33 NY3d 1018",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Decided May 9, 2019",
+      "May 9, 2019",
+      "As corrected through Wednesday, July 19, 2019"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Halscott Megaro, P.A. , Orlando, Florida ( Patrick Michael Megaro of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Halscott Megaro, P.A. , Orlando, Florida ( Patrick Michael Megaro of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Madeline Singas , District Attorney , Mineola ( Pamela Kelly-Pincus of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Madeline Singas , District Attorney , Mineola ( Pamela Kelly-Pincus of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 31,
+    "footnotesCount": 1
+  },
+  "citations": {
+    "slipOpinion": "2019 NY Slip Op 03658",
+    "officialCitation": "33 NY3d 1018",
+    "pageMarkerCount": 14
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "concurrence": 1
+    },
+    "authors": [
+      "Garcia"
+    ],
+    "qualifierLines": [
+      "{**33 NY3d at 1020} OPINION OF THE COURT",
+      "Memorandum.",
+      "The results were harsh and widespread. Applying O'Rama, the Appellate Divisions began reversing convictions based on unpreserved claims in any case where the record failed to show adequate compliance with CPL 310.30. Countless reversals resulted (, 32 NY3d 951, 960-962 [2018, Garcia, J., dissenting] [collecting cases]). Meanwhile, O'Rama faced sharp criticism for its \"cursory rationale\" that \"d[id] not seem very persuasive\" (, 23 NY3d 986, 991 [2014, Smith, J., concurring]).",
+      "Those decisions were harshly criticized for skirting O'Rama's mandate. The dissenters in both cases lamented the Court's unprincipled and haphazard abandonment of one of O'Rama's two core tenets (see Mack, 27 NY3d at 545-547 [Rivera, J., dissenting]; Nealon, 26 NY3d at 164 [Lippman, Ch. J., dissenting]). Indeed, not long before, this Court had reinforced that \"[a] court's failure to supply a meaningful notice or response constitutes error affecting the mode of proceedings, and therefore presents a question of law for appellate review even{**33 NY3d at 1023} in the absence of timely objection\" (, 21 NY3d 687, 692 [2013] [emphasis added]; , 26 NY3d 217, 228 [2015, Rivera, J., concurring] [noting that the trial court's \"failure to fulfil these responsibilities constitutes a mode of proceedings error, which does not require preservation\"]). Following our lead, the Appellate Divisions were, prior to Nealon and Mack, consistently excusing preservation failures wherever the trial record did not demonstrate compliance with either of the court's two duties: the duty to provide meaningful notice of a jury note, or the duty to respond (, 117 AD3d 1450, 1451 [1st Dept 2014]; , 116 AD3d 886, 887 [2d Dept 2014]; , 101 AD3d 1386 [3d Dept 2012]; , 84 AD3d 836 [2d Dept 2011]). In Nealon and Mack, however, we sharply reversed course.",
+      "Compounding the confusion, the Court based its new dichotomy on the notion that, where the trial court complies with its meaningful notice requirement, defense counsel is equipped with \"all the knowledge required to make an objection,\" and thus preservation is required (Nealon, 26 NY3d at 162). But meaningful notice, we maintained, required far more than \"objection-enabling\" notice of the error (id. at 166 [Lippman, Ch. J., dissenting] [noting that \"objection-enabling notice is not enough to meet the trial court's core notice obligation\"]); anything short of a \"verbatim\" reading \"in open court\" would not suffice (Mack, 27 NY3d at 542). Despite the Court's promise that \"lack of notice is the key determinant in classifying a particular procedure as a mode of proceedings error\"—since \"counsel generally cannot object to an error of which he or she is unaware\" (id. at 541)—we continued to mandate reversal, regardless of preservation, even in cases where \"counsel was made aware of the existence of the note\" (see Walston, 23 NY3d at 990 [emphasis added]).",
+      "Shortly after Nealon and Mack, the Court was offered another opportunity to scale back the damage of O'Rama. In People v Parker, the record did not contain a verbatim reading of two jury notes, but it strongly \"support[ed] the conclusion that the parties and the court discussed the content of the jury notes . . . at an off-the-record proceeding\" (Parker, 32 NY3d at 62 [DiFiore, Ch. J., dissenting]). Because of the record's ambiguity, the People asserted that a reconstruction hearing—rather than automatic reversal—was the appropriate remedy {**33 NY3d at 1024}in order to determine whether or not defense counsel had received meaningful notice of the notes.",
+      "The Court declined that invitation, instead holding that, \"where the record does not establish compliance with CPL 310.30, the sole remedy is reversal and a new trial\" (Parker, 32 NY3d at 62; see also Morrison, 32 NY3d at 952 [\"The trial court's failure to provide counsel with meaningful notice of a substantive jury note is a mode of proceedings error that requires reversal\"]). \"[I]t is the court's responsibility,\" we held, to ensure \"specific, record proof\" of O'Rama compliance for \"each note,\" and accordingly, in the absence of affirmative record proof, \"a mode of proceedings error occur[s] requiring reversal\" (Parker, 32 NY3d at 60-61). The Parker per se reversal rule thus \"operates without regard to the specific facts of whether counsel actually received meaningful notice of the content of the jury note\" (Parker, 32 NY3d at 66 [DiFiore, Ch. J., dissenting]); record ambiguity, by itself, warrants reversal. As a result of Parker's holding, the Court reversed convictions in three cases, \"even though the record d[id] not conclusively establish that [an] error occurred, and in fact suggest[ed] that it did not\" (Morrison, 32 NY3d at 974 [Garcia, J., dissenting]; see also Parker, 32 NY3d at 62).",
+      "Notably, had defendant asserted an O'Rama error of a lesser degree, he presumably would have been entitled to automatic reversal of his convictions. For instance, had the trial court read the note nearly verbatim but failed to mention a single word, defendant would have secured an outright reversal (see Walston, 23 NY3d at 988). Automatic reversal would similarly be required if the trial court had provided defendant verbatim notice of the note's precise contents during an off-the-record proceeding, and simply failed to so indicate on the record (see Parker, 32 NY3d at 66 n 2 [DiFiore, Ch. J., dissenting]). Yet where the record substantiates a defendant's claim that he received no notice whatsoever of a jury note's existence, automatic reversal is no longer available. The import of that holding—the greater the error, the lesser the relief—is loaded with unfairness.",
+      "At bottom, the majority's strained attempt to circumvent Parker hinges on an arbitrary and unsupported distinction. While I concur in the majority's ends—limiting Parker's reach—I am not persuaded by its means.",
+      "I remain convinced that the O'Rama rule—exacerbated by Parker—is unfair and unworkable, generating contorted holdings aimed at avoiding absurd results. We can only hope that, sooner rather than later, the legislature will finally relieve us (see Morrison, 32 NY3d at 974 [Garcia, J., dissenting])."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 1,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 1,
+    "labels": [
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "STRAY_CLOSING_TAG",
+      "severity": "warning",
+      "detail": "Closing tag </a> appears more times than opening tag <a>."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

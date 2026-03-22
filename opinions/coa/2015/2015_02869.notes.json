@@ -1,0 +1,132 @@
+{
+  "caseId": "2015_02869",
+  "sourcePath": "coa/2015/2015_02869.htm",
+  "notesPath": "coa/2015/2015_02869.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.799Z",
+  "source": {
+    "title": "People v Jarvis (2015 NY Slip Op 02869)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 14462,
+    "lineCount": 98,
+    "tagCounts": {
+      "a": 14,
+      "b": 10,
+      "blockquote": 2,
+      "body": 2,
+      "br": 12,
+      "div": 8,
+      "font": 22,
+      "head": 2,
+      "html": 2,
+      "i": 56,
+      "opinion": 1,
+      "p": 43,
+      "script": 4,
+      "style": 2,
+      "sup": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Jarvis",
+      "2015 NY Slip Op 02869 [25 NY3d 968]",
+      "April 7, 2015",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, June 3, 2015"
+    ],
+    "captionLines": [],
+    "citationLine": "2015 NY Slip Op 02869 25 NY3d 968",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued February 19, 2015; decided April 7, 2015",
+      "April 7, 2015",
+      "As corrected through Wednesday, June 3, 2015"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Sandra Doorley, District Attorney , Rochester ( Geoffrey Kaeuper of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Sandra Doorley, District Attorney , Rochester ( Geoffrey Kaeuper of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "William G. Pixley , Pittsford, for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "William G. Pixley , Pittsford, for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 20,
+    "footnotesCount": 1
+  },
+  "citations": {
+    "slipOpinion": "2015 NY Slip Op 02869",
+    "officialCitation": "25 NY3d 968",
+    "pageMarkerCount": 10
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Pigott"
+    ],
+    "qualifierLines": [
+      "{**25 NY3d at 969} OPINION OF THE COURT",
+      "Memorandum.",
+      " In 1992, following a jury trial, defendant was convicted, on compelling evidence, of two counts of murder in the second degree for the fatal shooting of two men. Now, 23 years later, the majority holds that defense counsel was ineffective for not objecting at trial when the prosecutor elicited testimony from a prosecution witness, Charlotte Barnwell, that defendant threatened her prior to her testimony. County Court had earlier ruled that such testimony was inadmissible unless the issue of Barnwell's delay in coming forward was raised on cross-examination. The majority further holds that defense counsel's presentation of an alibi defense through three alibi witnesses constitutes ineffective assistance. In my view, defendant failed to meet his burden of establishing the absence of a strategic or other legitimate explanation for defense counsel's alleged errors. Therefore, I dissent and would affirm the judgment of conviction. "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 1,
+    "labels": [
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

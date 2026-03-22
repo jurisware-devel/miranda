@@ -1,0 +1,148 @@
+{
+  "caseId": "2024_02842",
+  "sourcePath": "coa/2024/2024_02842.htm",
+  "notesPath": "coa/2024/2024_02842.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.274Z",
+  "source": {
+    "title": "People v Watkins (2024 NY Slip Op 02842)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 89308,
+    "lineCount": 218,
+    "tagCounts": {
+      "a": 112,
+      "b": 46,
+      "blockquote": 18,
+      "body": 2,
+      "br": 38,
+      "disopjd": 2,
+      "div": 20,
+      "font": 92,
+      "head": 2,
+      "html": 2,
+      "i": 512,
+      "opinion": 1,
+      "p": 155,
+      "script": 4,
+      "style": 2,
+      "sup": 20,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 14
+    },
+    "unknownTags": [
+      "disopjd"
+    ],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Watkins",
+      "2024 NY Slip Op 02842 [42 NY3d 635]",
+      "May 23, 2024",
+      "Halligan, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, February 19, 2025"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Mark Watkins, Appellant."
+    ],
+    "citationLine": "2024 NY Slip Op 02842 42 NY3d 635",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued April 18, 2024; decided May 23, 2024",
+      "May 23, 2024",
+      "As corrected through Wednesday, February 19, 2025"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 89,
+    "footnotesCount": 10
+  },
+  "citations": {
+    "slipOpinion": "2024 NY Slip Op 02842",
+    "officialCitation": "42 NY3d 635",
+    "pageMarkerCount": 45
+  },
+  "opinionStructure": {
+    "totalWritings": 7,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 3,
+      "concurrence": 1,
+      "dissent": 2
+    },
+    "authors": [
+      "Halligan",
+      "Wilson",
+      "Troutman",
+      "Rivera"
+    ],
+    "qualifierLines": [
+      "{**42 NY3d at 637} OPINION OF THE COURT",
+      "No clear entitlement to a cross-racial identification charge existed at the time of Watkins' trial in July 2017. We had provided general guidance on identification charges in People v Whalen, which upheld a trial court's decision to give a minimal identification charge instead of the more expansive one requested by defense counsel (59 NY2d 273, 278-279 [1983]). We noted there the potential for inaccuracy in visual identification evidence and cautioned that the \"better practice is to grant a defendant's request and give the expanded charge\" (id. at 279). Nonetheless, we held that the failure to do so was not reversible error, provided that the court \"gives a general instruction on weighing witnesses' credibility and . . . states that identification must be proven beyond a reasonable doubt\" (id.). We reached the same conclusion in People v Knight, again noting that the better practice is to grant a request for an{**42 NY3d at 642} expanded identification charge but reaffirming that the refusal to do so is not reversible error where the charge given \"was a correct statement of the law which sufficiently apprised the jury that the reasonable doubt standard applied to identification\" (87 NY2d 873, 874 [1995]; see also id. at 876 [Titone, J., dissenting] [similarly describing an expanded identification charge as \"a discretionary matter rather than a legal requirement\" under Whalen]; accord People v Lopez, 1 AD3d 168 [1st Dept 2003]). Thus, as we explained in Boone, entitlement to an identification charge had previously been \"always a matter for the Trial Judge's discretion, provided that the trial court convey[ed] to the jury that the People have to establish the perpetrator's identity beyond a reasonable doubt\" (Boone, 30 NY3d at 536 [citations and internal quotation marks omitted]).",
+      "Our characterization of this rule as a \"new approach\" to the specific challenges of cross-racial identifications is notable (Boone, 30 NY3d at 537). Though a cross-racial identification charge had been recommended by both the American Bar Association and the New York State Justice Task Force and added to the CJI, as Judge Troutman's dissent notes (see Troutman, J., dissenting op at 656-657), this Court's precedent had long vested the trial court with discretion over the content of an eyewitness identification charge (see Whalen, 59 NY2d at 279; Knight, 87 NY2d at 874). The Appellate Division had relied upon that precedent to consistently uphold the trial courts' exercise of discretion to omit the cross-racial portion of the identification charge, where the defendant neither introduced expert testimony regarding the cross-race effect nor cross-examined the People's witnesses about their ability to identify people of the defendant's race (, 129 AD3d 1099 [2d Dept 2015]). Therefore, we cannot say that a legal argument in support of the cross-racial identification charge had \"clear prospects\" at the time of the representation (Borrell, 12 NY3d at 369) or was otherwise \"so compelling that a failure to make it amounted to ineffective assistance of counsel\" (Keschner, 25 NY3d at 723-724). Given the state of the law at the time, the decision to forgo a request for the cross-racial identification charge was not the kind of \"egregious\" single error that rises to the level of ineffective assistance (Caban, 5 NY3d at 152; see also Clark, 28 NY3d at 565 [trial counsel not ineffective for failing to object to practice that lower courts had sanctioned based on precedent from this Court]).",
+      "Chief Judge Wilson (concurring).",
+      "I concur in the majority opinion because I believe the representation here was constitutionally sufficient. In that regard, it is important to remember that the rule we set out in  (30 NY3d 521 [2017]) was a rule of evidence we adopted to help improve the fairness of trials, and not a determination that the failure to give such an instruction where a cross-racial identification occurred would always violate due process. Mr. Watkins' counsel did request and obtain the pattern expanded jury charge instructing the jury of the potential unreliability of eyewitness identifications generally, and counsel used facts in the record concerning the victim's delay, condition and opportunity for{**42 NY3d at 646} observation to attack the victim's identification as erroneous. Other than counsel's failure to request the cross-racial identification charge in addition to the expanded unreliability charge, there is no claim that counsel's representation was ineffective. For these reasons, I agree with the majority that counsel's representation did not fall below the constitutional floor.",
+      "All defendants deserve better than bare constitutional sufficiency. They deserve high-quality representation—thorough, informed advocacy that fully vindicates their rights and minimizes the chance of wrongful conviction. We should want indigent defense to be funded so that counsel can routinely take the types of steps my dissenting colleagues highlight—rereading the model cross-racial charge in the pattern instructions, researching the ABA and New York State Justice Task Force recommendations contained in a footnote, and noting that our Court had heard argument on the issue and set the case for reargument—and therefore conclude that Mr. Watkins could benefit from a request for the charge in his trial, whether that meant obtaining the charge or preserving the issue for direct appeal if his request was denied.",
+      "Mr. Watkins was tried in New York City in 2016-2017, before the statewide implementation of the Hurrell-Harring reforms. His attorney was not an institutional public defender, but an independent attorney assigned pursuant to County Law article 18-B. As noted above, due to the fact that pay for 18-B attorneys remained fixed at the 2004 rate, Mr. Watkins' attorney likely received about half as much compensation for work on this case as he would in federal court or private practice. On that level of pay, many 18-B attorneys were unable to afford support staff, online research services, or private office space (aff of Kim Taylor-Thompson in New York County Lawyers Assn. v State of New York, Sup Ct, NY County, index No. 156916/2021, available at 2022 WL 22310112). Because very few attorneys were willing to work under such conditions, attorneys like Mr. Watkins' suffered from an overwhelming caseload—panel attorneys in nearby courts report having over 100 concurrent cases (Jacob Kaye, Assigned counsel scores pay increase—for now, Queens Daily Eagle, Aug. 2, 2022, available at https://queenseagle.com/all/2022/8/2/assigned-counsel-scores-pay-increase-for-now",
+      "Our precedent favors a reversal on this appeal, but the majority declines to follow it despite acknowledging the heightened risk that defendant Mark Watkins was wrongly convicted for these crimes. I cannot acquiesce. We should not hesitate to rectify the injustice caused by the failure of Watkins's trial counsel to request a cross-racial identification charge of the sort contained in New York's Criminal Jury Instructions at the time of trial. Because the importance of instructing juries as to the dangers of cross-racial identifications was widely understood at the time of Watkins's trial, his counsel was ineffective in failing to request such an instruction here, where the victim was a different race than the assailant, a stranger to the assailant, and the only witness in a case where there was no corroborating evidence. I therefore dissent.",
+      "But that does not mean that at the time of Watkins's trial a court could not abuse its discretion as a matter of law by failing to grant a cross-racial identification charge under facts similar to this case, or that counsel reasonably should have been unaware of the availability of the charge. Indeed, on similarly concerning facts, the concurrence in Boone would have held \"that the trial court abused its discretion in denying defendant's request for a cross-racial identification charge\" (30 NY3d at 538 [Garcia, J., concurring]).",
+      "Spanish-speaking persons from the Caribbean and Latin America and their generational descendants residing in the United States have a similar history of racialization. Mexicans{**42 NY3d at 663} were classified and discriminated against as a non-white population, subject to segregation in school and excluded from juries (see Judith Pérez-Soria, Mexican immigrants in the United States: A review of the literature on integration, segregation and discrimination, 18 Estudios Fronterizos 1 [2017]; Hernandez v Texas, 347 US 475, 480-481 [1954] [finding that \"systematic exclusion\" from jury service of \"persons of Mexican descent\" violated equal protection]; Clare Sheridan, \"Another White Race:\" Mexican Americans and the Paradox of Whiteness in Jury Selection, 21 L & Hist Rev 109 [2003] [discussing Hernandez]; Westminster School Dist. of Orange County v Mendez, 161 F2d 774, 781 [9th Cir 1947] [holding that \"segregation of school children of Mexican descent\" violated equal protection and due process]). And Puerto Ricans have been racialized as a justification for continuing the colonial status of Puerto Rico (see De Lima v Bidwell, 182 US 1 [1901]; Downes v Bidwell, 182 US 244 [1901]). In the Insular Cases, the United States Supreme Court \"describe[d] inhabitants of Puerto Rico and other unincorporated territories as 'savage tribes' and 'alien races' \" in order to deny their \"equal humanity\" (Natalie Gomez-Velez, What U.S. v. Vaello-Madero and the Insular Cases Can Teach About Anti-CRT Campaigns, 94 NY St BJ 20, 21 [Mar./Apr. 2022]). Recently, in United States v Vaello-Madero, Justice Gorsuch criticized the Court for \"leav[ing] the Insular Cases on the books,\" observing that the cases \"are shameful\" and \"claim support in academic work of the period, ugly racial stereotypes, and the theories of Social Darwinists\" (596 US 159, 184-186 [Gorsuch, J., concurring]). Justice Sotomayor agreed that \"it 'is past time to acknowledge the gravity' of the error of the Insular Cases,\" which \"were premised on beliefs both odious and wrong\" (id. at 194 n 4 [Sotomayor, J., dissenting]).",
+      "The majority concludes that, at the time of defendant's trial, \"a legal argument in support of the cross-racial identification charge\" was not \"so compelling that a failure to make it amounted to ineffective assistance of counsel\" (majority op at 644). I disagree and join in full Judge Troutman's well-reasoned dissent. As my colleague explains, courts and scholars recognized the cross-race effect long before we decided Boone, and since 2011, the Criminal Jury Instructions has recommended, where applicable, a cross-racial identification instruction. Therefore, \"the importance of instructing juries as to the dangers of cross-racial identifications was widely understood\" at the time of defendant's trial (Troutman, J., dissenting op at 652). Accordingly, defense counsel had a basis to request that the jury be given a cross-racial identification charge (id. at 658)."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 1,
+    "dissentCount": 2,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 10,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "*",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <disopjd> in source HTML."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 7 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

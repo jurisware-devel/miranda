@@ -1,0 +1,129 @@
+{
+  "caseId": "2009_01016",
+  "sourcePath": "coa/2009/2009_01016.htm",
+  "notesPath": "coa/2009/2009_01016.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.415Z",
+  "source": {
+    "title": "People v Taveras (2009 NY Slip Op 01016)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 14112,
+    "lineCount": 101,
+    "tagCounts": {
+      "a": 12,
+      "b": 14,
+      "blockquote": 2,
+      "body": 2,
+      "br": 10,
+      "div": 4,
+      "font": 22,
+      "frac": 4,
+      "head": 2,
+      "html": 2,
+      "i": 30,
+      "p": 31,
+      "script": 4,
+      "style": 2,
+      "sup": 4,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [
+      "frac"
+    ],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Taveras",
+      "2009 NY Slip Op 01016 [12 NY3d 21]",
+      "February 11, 2009",
+      "Graffeo, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, April 1, 2009"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Juan Taveras, Appellant."
+    ],
+    "citationLine": "2009 NY Slip Op 01016 12 NY3d 21",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued January 6, 2009; decided February 11, 2009",
+      "February 11, 2009",
+      "As corrected through Wednesday, April 1, 2009"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 18,
+    "footnotesCount": 2
+  },
+  "citations": {
+    "slipOpinion": "2009 NY Slip Op 01016",
+    "officialCitation": "12 NY3d 21",
+    "pageMarkerCount": 10
+  },
+  "opinionStructure": {
+    "totalWritings": 2,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1
+    },
+    "authors": [
+      "Graffeo"
+    ],
+    "qualifierLines": [
+      "{**12 NY3d at 23} OPINION OF THE COURT",
+      "At sentencing, the court imposed an aggregate term of 4 to 12 years in prison. To accomplish this result, the court sentenced defendant to 11/3 to 4 years for each of the six felony convictions, running two of the sentences for the first-degree falsifying business records counts and the sentence on the third-degree criminal sexual act count consecutively to one another and concurrently to the remaining sentences. The court also issued orders of protection directing defendant to avoid contact with his victims. ",
+      "The Penal Law provides that concurrent sentences are mandatory \"for two or more offenses committed through a single act or omission, or through an act or omission which in itself constituted one of the offenses and also was a material element of the other\" (Penal Law § 70.25 [2]). Pursuant to this directive, we have recognized that consecutive sentences may not be imposed \"(1) where a single act constitutes two offenses, or (2) where a single act constitutes one of the offenses and a material element of the other\" (People v Laureano, 87 NY2d 640, 643 [1996]). Under either prong of the statute, the People bear the burden of demonstrating the legality of consecutive sentences. ",
+      "In resolving whether concurrent sentences are required, \"the sentencing court must first examine the statutory definitions of the crimes for which defendant has been convicted\" (id.). And in undertaking this review, we have observed: ",
+      "\"Because both prongs of Penal Law § 70.25 (2) refer to the 'act or omission,' that is, the 'actus reus' that constitutes the offense, the court must determine whether the actus reus element is, by definition, the same for both offenses (under the first prong of the statute), or if the actus reus for one offense is, by definition, a material element of the second offense (under the second prong). If it is neither, then the People have satisfied their obligation of showing that concurrent sentences are not required\" (id. [citations omitted]).",
+      "In Catone, defendant struck and killed a girl in a pedestrian crosswalk, reduced his speed for a moment and then sped away. Following a jury trial, he was convicted of second-degree manslaughter and felony leaving the scene of an accident, and was sentenced to consecutive terms of imprisonment. On appeal, we held that concurrent sentences were required under Penal Law § 70.25 (2), reasoning that reckless manslaughter was a material element of leaving the scene of an accident without reporting because an element of the latter crime, as it was then defined, required that a person cause the death of another through his own culpable conduct. ",
+      "Acting Chief Judge Ciparick and Judges Read, Smith, Pigott and Jones concur. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 2,
+    "labels": [
+      "1",
+      "2"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <frac> in source HTML."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 2 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

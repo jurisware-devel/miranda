@@ -1,0 +1,116 @@
+{
+  "caseId": "2007_03754",
+  "sourcePath": "coa/2007/2007_03754.htm",
+  "notesPath": "coa/2007/2007_03754.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.356Z",
+  "source": {
+    "title": "People v Newton (2007 NY Slip Op 03754)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 11084,
+    "lineCount": 95,
+    "tagCounts": {
+      "a": 10,
+      "b": 14,
+      "blockquote": 6,
+      "body": 2,
+      "br": 10,
+      "div": 4,
+      "font": 18,
+      "head": 2,
+      "html": 2,
+      "i": 16,
+      "p": 17,
+      "script": 4,
+      "style": 2,
+      "sup": 4,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Newton",
+      "2007 NY Slip Op 03754 [8 NY3d 460]",
+      "May 1, 2007",
+      "Read, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, June 6, 2007"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "James W. Newton, Jr., Appellant."
+    ],
+    "citationLine": "2007 NY Slip Op 03754 8 NY3d 460",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued March 21, 2007; decided May 1, 2007",
+      "May 1, 2007",
+      "As corrected through Wednesday, June 6, 2007"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 14,
+    "footnotesCount": 2
+  },
+  "citations": {
+    "slipOpinion": "2007 NY Slip Op 03754",
+    "officialCitation": "8 NY3d 460",
+    "pageMarkerCount": 8
+  },
+  "opinionStructure": {
+    "totalWritings": 2,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1
+    },
+    "authors": [
+      "Read"
+    ],
+    "qualifierLines": [
+      "{**8 NY3d at 461} OPINION OF THE COURT",
+      "Defendant subsequently pleaded guilty to the violation of probation, with the understanding that the trial judge would impose a determinate sentence of five years of imprisonment to be followed by three years of postrelease supervision, which would run concurrently with his sentence for the sodomy conviction. On March 5, 2004, the court sentenced defendant as a second felony offender to an indeterminate prison term of 2 to 4 years for the sodomy conviction, and to the agreed-upon concurrent sentence for the violation of probation. The Appellate Division affirmed the judgment of conviction, rejecting defendant's argument that the trial court should have instructed the jury to consider intoxication in connection with the third-degree sodomy charge. A Judge of this Court granted defendant leave to appeal, and we now affirm. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 2,
+    "labels": [
+      "1",
+      "2"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 2 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

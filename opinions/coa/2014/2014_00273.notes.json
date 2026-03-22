@@ -1,0 +1,105 @@
+{
+  "caseId": "2014_00273",
+  "sourcePath": "coa/2014/2014_00273.htm",
+  "notesPath": "coa/2014/2014_00273.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.712Z",
+  "source": {
+    "title": "People v Beaty (2014 NY Slip Op 00273)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 7676,
+    "lineCount": 82,
+    "tagCounts": {
+      "a": 16,
+      "b": 10,
+      "body": 2,
+      "br": 8,
+      "div": 4,
+      "font": 14,
+      "head": 2,
+      "html": 2,
+      "i": 24,
+      "p": 13,
+      "script": 4,
+      "style": 2,
+      "sup": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Beaty",
+      "2014 NY Slip Op 00273 [22 NY3d 490]",
+      "January 16, 2014",
+      "Per Curiam",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, March 26, 2014"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Katisha Beaty, Appellant."
+    ],
+    "citationLine": "2014 NY Slip Op 00273 22 NY3d 490",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "January 16, 2014",
+      "As corrected through Wednesday, March 26, 2014"
+    ],
+    "authorLine": "Per Curiam",
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 7,
+    "footnotesCount": 1
+  },
+  "citations": {
+    "slipOpinion": "2014 NY Slip Op 00273",
+    "officialCitation": "22 NY3d 490",
+    "pageMarkerCount": 6
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**22 NY3d at 491} OPINION OF THE COURT",
+      "Per Curiam. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": true,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 1,
+    "labels": [
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

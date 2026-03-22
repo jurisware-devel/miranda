@@ -1,0 +1,132 @@
+{
+  "caseId": "2012_08054",
+  "sourcePath": "coa/2012/2012_08054.htm",
+  "notesPath": "coa/2012/2012_08054.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.636Z",
+  "source": {
+    "title": "People v Gavazzi (2012 NY Slip Op 08054)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 13675,
+    "lineCount": 86,
+    "tagCounts": {
+      "a": 8,
+      "b": 4,
+      "blockquote": 10,
+      "body": 2,
+      "br": 8,
+      "div": 2,
+      "font": 22,
+      "head": 2,
+      "html": 2,
+      "i": 64,
+      "p": 26,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Gavazzi",
+      "2012 NY Slip Op 08054 [20 NY3d 907]",
+      "November 27, 2012",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, January 16, 2013"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Appellant,",
+      "v",
+      "John M. Gavazzi, Respondent."
+    ],
+    "citationLine": "2012 NY Slip Op 08054 20 NY3d 907",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued October 16, 2012; decided November 27, 2012",
+      "November 27, 2012",
+      "As corrected through Wednesday, January 16, 2013"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Joseph A. McBride, District Attorney , Norwich ( Michael J. Genute of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Joseph A. McBride, District Attorney , Norwich ( Michael J. Genute of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "John D. Cameron, Public Defender , Norwich, for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "John D. Cameron, Public Defender , Norwich, for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 23,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2012 NY Slip Op 08054",
+    "officialCitation": "20 NY3d 907",
+    "pageMarkerCount": 10
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Smith"
+    ],
+    "qualifierLines": [
+      "{**20 NY3d at 908} OPINION OF THE COURT",
+      "Memorandum. ",
+      "Finally, contrary to our dissenting colleague, suppression is warranted because the name requirement of CPL 690.45 (1) \"operates directly to protect and preserve a constitutionally guaranteed right of the citizen\" (People v Patterson, 78 NY2d 711, 717 [1991]; , 9 NY3d 277, 280-281 [2007]). The right safeguarded by the name requirement is the right that is protected by the constitutional requirement of a warrant (US Const 4th Amend; NY Const, art I, § 12)—the right to have a \"neutral and detached magistrate\" (Johnson v United States, 333 US 10, 14 [1948]) sign the warrant to search one's house.  "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

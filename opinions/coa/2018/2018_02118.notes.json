@@ -1,0 +1,140 @@
+{
+  "caseId": "2018_02118",
+  "sourcePath": "coa/2018/2018_02118.htm",
+  "notesPath": "coa/2018/2018_02118.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.988Z",
+  "source": {
+    "title": "People v Perez (2018 NY Slip Op 02118)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 45246,
+    "lineCount": 160,
+    "tagCounts": {
+      "a": 44,
+      "b": 30,
+      "blockquote": 66,
+      "body": 2,
+      "br": 24,
+      "div": 16,
+      "font": 56,
+      "head": 2,
+      "html": 2,
+      "i": 204,
+      "opinion": 1,
+      "p": 73,
+      "script": 4,
+      "style": 2,
+      "sup": 12,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14,
+      "u": 8
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Perez",
+      "2018 NY Slip Op 02118 [31 NY3d 964]",
+      "March 27, 2018",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, May 16, 2018"
+    ],
+    "captionLines": [],
+    "citationLine": "2018 NY Slip Op 02118 31 NY3d 964",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued February 13, 2018; decided March 27, 2018",
+      "March 27, 2018",
+      "As corrected through Wednesday, May 16, 2018"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Seymour W. James, Jr. , The Legal Aid Society , New York City ( Steven J. Miraglia of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Seymour W. James, Jr. , The Legal Aid Society , New York City ( Steven J. Miraglia of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Darcel D. Clark , District Attorney , Bronx ( Shera Knight , Nancy D. Killian and Gina Mignola of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Darcel D. Clark , District Attorney , Bronx ( Shera Knight , Nancy D. Killian and Gina Mignola of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 44,
+    "footnotesCount": 5
+  },
+  "citations": {
+    "slipOpinion": "2018 NY Slip Op 02118",
+    "officialCitation": "31 NY3d 964",
+    "pageMarkerCount": 27
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Rivera"
+    ],
+    "qualifierLines": [
+      "{**31 NY3d at 965} OPINION OF THE COURT",
+      "Memorandum.",
+      "The Appellate Division affirmed the conviction and sentence in a 3-2 decision, and, as relevant to this appeal, concluded that the police had a credible reason to follow defendant and that the police intrusion was justified (, 142 AD3d 410, 416 [1st Dept 2016]). The dissent argued that \"from the inception of his encounter with the police, defendant's conduct was consistent with his constitutional right to avoid contact{**31 NY3d at 971} with the police\" and the \"detention and frisk of defendant by grabbing his wrists, pulling up his sleeves, and removing a weapon from his body was not justified\" (id. at 417-418 [Gische and Manzanet-Daniels, JJ., dissenting]). One of the dissenting Justices granted defendant leave to appeal (2016 NY Slip Op 92762[U] [1st Dept 2016]). ",
+      "{**31 NY3d at 973}Defendant claims that when Officer Rodriguez saw him on the ninth floor, the officer did not have an objective, credible reason to approach and ask if defendant lived in the building. We need not decide the propriety of the initial inquiry, however, because, as discussed by the Appellate Division dissent, there is no legal support for the defendant's subsequent detention and frisk. Regardless of whether Officer Rodriguez had \"an objective, credible reason\" to follow defendant simply because defendant pushed the button after the officer asked him to keep the elevator door open, when the officer approached defendant on the ninth floor, he had no information that defendant was involved in criminal activity, and defendant did nothing to provide reasonable suspicion that he had or was about to commit a crime. Thus, there was no justification for the officer's use of physical force—in other words, there was no support for a level three intrusion.",
+      "Is it that defendant did not respond to the officer's questions about where he lived or whether he was carrying a weapon? That cannot be enough either, because \"while the police had the right to make the inquiry, defendant had a constitutional right not to respond\" (see Howard, 50 NY2d at 590 [no probable cause existed where individual walked quickly away from police, ignored their requests to talk, and then ran away, as he had \"the right to be let alone\" (citation omitted)]). Furthermore, if, as this Court has previously held, walking away from an officer and refusing to respond \"cannot serve to create a reasonable suspicion of criminality,\" neither can staying put and {**31 NY3d at 975}remaining silent (see e.g. Moore, 6 NY3d 496 [no reasonable suspicion existed where individual walked away from police, continuing after they yelled at him not to move]; Holmes, 81 NY2d at 1057-1058 [no reasonable suspicion existed where individual walked away as patrol car approached and then ran as officers exited the car, since flight alone is \"insufficient to justify pursuit because an individual has a right 'to be let alone' and refuse to respond to police inquiry\"]; People v May, 81 NY2d 725, 728 [1992] [individual moved car slowly away as police approached, which \"could not serve to create a reasonable suspicion of criminality given defendant's right . . . to refuse to respond to police inquiry\" (citation omitted)]). This case illustrates the imperative for judicial protection of the right to be let alone. As a resident of the building, how else could defendant exercise this right and not escalate the police encounter, other than to remain silent (, 26 NY3d 139, 150 [2015, Rivera, J., dissenting] [\"what happens if the person approached refuses to answer, and remains silent, or says, 'I do not have to talk to you.' Or, what if the individual simply walks away? Given that an individual in a police-initiated encounter may seek to exercise that person's 'right to be let alone,' and this Court's previous statements that an individual need not talk to an officer and may walk away from the police in a noncustodial encounter, the potential for escalation seems all too likely\" (citations omitted)]).",
+      "As I have previously argued, police encounters must be scrutinized carefully for constitutional compliance in order to avoid the criminalization of indeterminate behavior based on the nature of the surroundings or a person's attempts to avoid{**31 NY3d at 980} contact with law enforcement (see Barksdale, 26 NY3d at 144 [Rivera, J., dissenting]; , 24 NY3d 1138, 1169 [2014, Rivera, J., dissenting]; , 22 NY3d 931, 934 [2013, Rivera, J., dissenting]). Our Court's recent approach to police interactions with the public, both on the streets and private property—including the decision in the instant appeal—risks authorizing the escalation of police-initiated encounters where a person exercises the right to be let alone, giving license to violations of the right to privacy. I believe the Court is charting a dangerous course, one that has the potential to render appellate judicial review meaningless, imperil individual liberty, and diminish civil rights. Therefore, I dissent."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 5,
+    "labels": [
+      "1",
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

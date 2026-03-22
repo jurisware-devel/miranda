@@ -1,0 +1,125 @@
+{
+  "caseId": "2024_02225",
+  "sourcePath": "coa/2024/2024_02225.htm",
+  "notesPath": "coa/2024/2024_02225.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.267Z",
+  "source": {
+    "title": "People v Baez (2024 NY Slip Op 02225)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 46426,
+    "lineCount": 145,
+    "tagCounts": {
+      "a": 52,
+      "b": 42,
+      "body": 2,
+      "br": 30,
+      "div": 14,
+      "font": 48,
+      "head": 2,
+      "html": 2,
+      "i": 188,
+      "p": 73,
+      "script": 4,
+      "style": 2,
+      "sup": 18,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 8
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Baez",
+      "2024 NY Slip Op 02225 [42 NY3d 124]",
+      "April 25, 2024",
+      "Cannataro, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, October 2, 2024"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Melvin Baez, Appellant."
+    ],
+    "citationLine": "2024 NY Slip Op 02225 42 NY3d 124",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued March 12, 2024; decided April 25, 2024",
+      "April 25, 2024",
+      "As corrected through Wednesday, October 2, 2024"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 39,
+    "footnotesCount": 9
+  },
+  "citations": {
+    "slipOpinion": "2024 NY Slip Op 02225",
+    "officialCitation": "42 NY3d 124",
+    "pageMarkerCount": 23
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Cannataro",
+      "Rivera"
+    ],
+    "qualifierLines": [
+      "{**42 NY3d at 126} OPINION OF THE COURT",
+      "The majority concedes that there are discrepancies in the chain of custody and acknowledges that the prosecution failed to fill these gaps, but attempts to make up for the missing links through speculation and obfuscation (see majority op 129-130, 131-132). Try as it might, the majority cannot explain away the lack of evidence regarding who, specifically, if anyone, was present and ensured the envelope was not handled when it was left in the precinct overnight, or how and why the contents of the evidence bag changed. By rewriting our law so that a chain of custody deficiency is now treated as a weight of the evidence problem, the majority disregards the judiciary's essential role as a gatekeeper on questions of admissibility in order to affirm a conviction obtained with questionable evidence. I dissent."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 9,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "1",
+      "2"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "caseId": "2017_03444",
+  "sourcePath": "coa/2017/2017_03444.htm",
+  "notesPath": "coa/2017/2017_03444.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.949Z",
+  "source": {
+    "title": "People v Valentin (2017 NY Slip Op 03444)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 18167,
+    "lineCount": 100,
+    "tagCounts": {
+      "a": 24,
+      "b": 18,
+      "blockquote": 4,
+      "body": 2,
+      "br": 14,
+      "div": 6,
+      "font": 28,
+      "head": 2,
+      "html": 2,
+      "i": 70,
+      "p": 42,
+      "script": 4,
+      "style": 2,
+      "sup": 6,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Valentin",
+      "2017 NY Slip Op 03444 [29 NY3d 150]",
+      "May 2, 2017",
+      "DiFiore, Ch. J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, June 21, 2017"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Jose Valentin, Appellant."
+    ],
+    "citationLine": "2017 NY Slip Op 03444 29 NY3d 150",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued March 28, 2017; decided May 2, 2017",
+      "May 2, 2017",
+      "As corrected through Wednesday, June 21, 2017"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 20,
+    "footnotesCount": 3
+  },
+  "citations": {
+    "slipOpinion": "2017 NY Slip Op 03444",
+    "officialCitation": "29 NY3d 150",
+    "pageMarkerCount": 13
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**29 NY3d at 151} OPINION OF THE COURT"
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 3,
+    "labels": [
+      "1",
+      "2",
+      "3"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "caseId": "2023_05967",
+  "sourcePath": "coa/2023/2023_05967.htm",
+  "notesPath": "coa/2023/2023_05967.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.228Z",
+  "source": {
+    "title": "People v Rivera (2023 NY Slip Op 05967)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 16915,
+    "lineCount": 98,
+    "tagCounts": {
+      "a": 16,
+      "b": 18,
+      "body": 2,
+      "br": 16,
+      "div": 8,
+      "font": 22,
+      "head": 2,
+      "html": 2,
+      "i": 72,
+      "opinion": 1,
+      "p": 45,
+      "script": 4,
+      "style": 2,
+      "sup": 4,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Rivera",
+      "2023 NY Slip Op 05967 [41 NY3d 936]",
+      "November 21, 2023",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, April 10, 2024"
+    ],
+    "captionLines": [],
+    "citationLine": "2023 NY Slip Op 05967 41 NY3d 936",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued September 13, 2023; decided November 21, 2023",
+      "November 21, 2023",
+      "As corrected through Wednesday, April 10, 2024"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Julie A. Cianca, Public Defender , Rochester ( Guy A. Talia and Janet C. Somes of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Julie A. Cianca, Public Defender , Rochester ( Guy A. Talia and Janet C. Somes of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Sandra Doorley, District Attorney , Rochester ( Lisa Gray of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Sandra Doorley, District Attorney , Rochester ( Lisa Gray of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 17,
+    "footnotesCount": 2
+  },
+  "citations": {
+    "slipOpinion": "2023 NY Slip Op 05967",
+    "officialCitation": "41 NY3d 936",
+    "pageMarkerCount": 10
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "concurrence": 1
+    },
+    "authors": [
+      "Rivera"
+    ],
+    "qualifierLines": [
+      "{**41 NY3d at 937} OPINION OF THE COURT",
+      "Memorandum.",
+      "Unsurprisingly, and quite rationally, federal and state law restrict gun possession by minors. These legislative restrictions do not run afoul of the Second Amendment. As Justice Alito approvingly noted in his New York State Rifle & Pistol Assn., Inc. v Bruen concurrence, \"federal law generally forbids the possession of a handgun by a person who is under the age of 18\" (597 US 1, 73 [2022], citing 18 USC § 922 [x] [2]-[5]). New York State similarly has historically barred nonmilitary personnel under 21 years old from obtaining a gun license (Penal Law § 400.00 [1])."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 1,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 2,
+    "labels": [
+      "*",
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

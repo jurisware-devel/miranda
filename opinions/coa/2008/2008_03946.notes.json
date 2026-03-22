@@ -1,0 +1,128 @@
+{
+  "caseId": "2008_03946",
+  "sourcePath": "coa/2008/2008_03946.htm",
+  "notesPath": "coa/2008/2008_03946.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.387Z",
+  "source": {
+    "title": "People v Sparber (2008 NY Slip Op 03946)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 29093,
+    "lineCount": 164,
+    "tagCounts": {
+      "a": 56,
+      "b": 46,
+      "body": 2,
+      "br": 22,
+      "div": 12,
+      "font": 40,
+      "head": 2,
+      "html": 2,
+      "i": 138,
+      "p": 47,
+      "script": 4,
+      "style": 2,
+      "sup": 16,
+      "table": 12,
+      "td": 24,
+      "title": 2,
+      "tr": 24,
+      "u": 4
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Sparber",
+      "2008 NY Slip Op 03946 [10 NY3d 457]",
+      "April 29, 2008",
+      "Ciparick, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, July 2, 2008"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Daniel Sparber, Appellant.",
+      "The People of the State of New York, Respondent, v Robert Thomas, Appellant.",
+      "The People of the State of New York, Respondent, v John Lingle, Appellant.",
+      "The People of the State of New York, Respondent, v Manuel Rodriguez, Appellant.",
+      "The People of the State of New York, Respondent, v Anthony Ware, Appellant."
+    ],
+    "citationLine": "2008 NY Slip Op 03946 10 NY3d 457",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued March 12, 2008; decided April 29, 2008",
+      "April 29, 2008",
+      "As corrected through Wednesday, July 2, 2008"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 39,
+    "footnotesCount": 8
+  },
+  "citations": {
+    "slipOpinion": "2008 NY Slip Op 03946",
+    "officialCitation": "10 NY3d 457",
+    "pageMarkerCount": 19
+  },
+  "opinionStructure": {
+    "totalWritings": 2,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1
+    },
+    "authors": [
+      "Ciparick"
+    ],
+    "qualifierLines": [
+      "{**10 NY3d at 464} OPINION OF THE COURT",
+      "On April 21, 2004, a jury convicted defendant Lingle of second degree arson and first degree reckless endangerment. He was sentenced as a second felony offender to a 14-year determinate sentence on the arson count and a concurrent indeterminate sentence of 3½ to 7 years on the reckless endangerment count. In pronouncing these sentences, the court failed to mention a mandatory five-year PRS term. Instead, the PRS term was reflected in the court worksheet, which the judge signed. That term was also noted in the commitment sheet prepared by the court clerk and signed by the judge. ",
+      "Defendant Ware was convicted of first degree attempted robbery, first degree attempted assault and second degree criminal possession of a weapon. For those convictions, he was sentenced to a concurrent determinate term of 14 years' imprisonment on each count. Because defendant was a second violent felony offender, the PRS term was a mandatory five years. It was not mentioned at sentencing, but it appears on the commitment sheet and on a \"file jacket,\" which is similar to a court worksheet. Both of these documents were signed by the court clerk and not otherwise endorsed by the sentencing judge. ",
+      "Chief Judge Kaye and Judges Graffeo, Read, Smith, Pigott and Jones concur. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 8,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 2 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 6 table elements before or within the header region."
+    }
+  ]
+}

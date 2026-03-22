@@ -1,0 +1,120 @@
+{
+  "caseId": "2013_06730",
+  "sourcePath": "coa/2013/2013_06730.htm",
+  "notesPath": "coa/2013/2013_06730.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.687Z",
+  "source": {
+    "title": "People v Glynn (2013 NY Slip Op 06730)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 26101,
+    "lineCount": 122,
+    "tagCounts": {
+      "a": 22,
+      "b": 10,
+      "blockquote": 8,
+      "body": 2,
+      "br": 12,
+      "div": 10,
+      "font": 38,
+      "head": 2,
+      "html": 2,
+      "i": 58,
+      "p": 38,
+      "script": 4,
+      "style": 2,
+      "sup": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 6
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Glynn",
+      "2013 NY Slip Op 06730 [21 NY3d 614]",
+      "October 17, 2013",
+      "Pigott, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, December 4, 2013"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "John G. Glynn, Appellant."
+    ],
+    "citationLine": "2013 NY Slip Op 06730 21 NY3d 614",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued September 9, 2013; decided October 17, 2013",
+      "October 17, 2013",
+      "As corrected through Wednesday, December 4, 2013"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 41,
+    "footnotesCount": 1
+  },
+  "citations": {
+    "slipOpinion": "2013 NY Slip Op 06730",
+    "officialCitation": "21 NY3d 614",
+    "pageMarkerCount": 18
+  },
+  "opinionStructure": {
+    "totalWritings": 4,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "dissent": 1
+    },
+    "authors": [
+      "Pigott",
+      "Abdus-salaam"
+    ],
+    "qualifierLines": [
+      "{**21 NY3d at 616} OPINION OF THE COURT",
+      " I agree with the majority that the trial judge did not abuse his discretion as a matter of law in refusing to recuse himself and that the conduct of defendant's first attorney did not rise to the level of ineffective assistance of counsel. Nonetheless, I cannot concur in the majority's view that defendant's second attorney provided him with meaningful representation. The hallmark of meaningful representation is the provision of reasonably competent legal advocacy by \"an attorney devoted to the client's best interests\" (People v Ortiz, 76 NY2d 652, 656 [1990]). At critical junctures in the proceedings in this case, however, defendant's second attorney abandoned his client's interests to settle a long-standing personal dispute with the judge, and otherwise undermined his client's defense. Thus, defendant was denied the effective assistance of counsel, and his conviction should be reversed. Because the majority concludes otherwise, I must respectfully dissent. ",
+      "Of course, counsel's claims that the judge was apathetic, ignored principle in favor of expediency and had failed to do his duty could not have helped defendant or endeared him to the court. In fact, immediately after counsel's rant, the court sentenced defendant to an aggregate prison term of six years, consisting of a four-year prison term, a consecutive two-year prison term and two concurrent one-year definite jail terms, whereas the court could have sentenced defendant to an aggregate concurrent prison term of 1½ years (see Penal Law §§ 70.25, 70.70 [3] [b] [iii]). Notably, before trial—and before counsel's egregious behavior—the court had offered defendant a determinate four-year prison term in exchange for his plea of guilty to criminal possession of marihuana in the second degree, in full satisfaction of the indictment. In short, confronted with an already{**21 NY3d at 624} difficult situation, counsel decided to repeatedly antagonize the judge and make matters worse for his client without any strategic reason for doing so, thus failing to meet reasonable professional standards of competence. ",
+      "In sum, several times during the proceedings in County Court, defendant's lawyer essentially left him to fend for himself while counsel engaged in a series of personal spats with the trial judge. Moreover, counsel led the jury to believe that defendant had no credibility, little dignity and no real defense. Standing trial with years of his life on the line, defendant sat in court and looked on as his lawyer fought with the judge, insinuated that defendant was a liar and caricatured him as a buffoon. No one in that situation would seriously believe that he or she was receiving the fair trial guaranteed by the State Constitution. I certainly would not, and therefore I dissent and vote to reverse the order of the Appellate Division. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 1,
+    "labels": [
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 4 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

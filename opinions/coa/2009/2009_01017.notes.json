@@ -1,0 +1,104 @@
+{
+  "caseId": "2009_01017",
+  "sourcePath": "coa/2009/2009_01017.htm",
+  "notesPath": "coa/2009/2009_01017.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.415Z",
+  "source": {
+    "title": "People v Romeo (2009 NY Slip Op 01017)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 17765,
+    "lineCount": 99,
+    "tagCounts": {
+      "a": 4,
+      "b": 4,
+      "blockquote": 2,
+      "body": 2,
+      "br": 4,
+      "div": 6,
+      "font": 26,
+      "head": 2,
+      "html": 2,
+      "i": 54,
+      "p": 30,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Romeo",
+      "2009 NY Slip Op 01017 [12 NY3d 51]",
+      "February 11, 2009",
+      "Ciparick, Acting Ch.J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, April 8, 2009"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Appellant,",
+      "v",
+      "Anthony Romeo, Respondent."
+    ],
+    "citationLine": "2009 NY Slip Op 01017 12 NY3d 51",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued January 7, 2009; decided February 11, 2009",
+      "February 11, 2009",
+      "As corrected through Wednesday, April 8, 2009"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 27,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2009 NY Slip Op 01017",
+    "officialCitation": "12 NY3d 51",
+    "pageMarkerCount": 12
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**12 NY3d at 53} OPINION OF THE COURT",
+      "On July 23, 1999, 12 years after having been indicted for the Fire Island murder, defendant moved in Suffolk County Court to dismiss the murder indictment on constitutional and statutory speedy trial grounds. The court denied the application. Six years later, in November 2005, defendant was brought back to Suffolk County following amendments to the Canada-United{**12 NY3d at 55} States Extradition Treaty that allowed for the \"borrowing\" of defendant from Canada. Defendant was arraigned on the Suffolk County indictment and, in February 2006, entered a guilty plea to manslaughter in the first degree and was sentenced to a term of imprisonment of 7 to 21 years to be served concurrently with the Canadian sentence. Defendant appealed, asserting that the 19-year postindictment delay deprived him of his constitutional right to a speedy trial. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

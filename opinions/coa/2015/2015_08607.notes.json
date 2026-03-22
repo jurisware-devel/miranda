@@ -1,0 +1,127 @@
+{
+  "caseId": "2015_08607",
+  "sourcePath": "coa/2015/2015_08607.htm",
+  "notesPath": "coa/2015/2015_08607.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.835Z",
+  "source": {
+    "title": "People v Harris (2015 NY Slip Op 08607)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 24746,
+    "lineCount": 105,
+    "tagCounts": {
+      "a": 36,
+      "b": 26,
+      "blockquote": 4,
+      "body": 2,
+      "br": 20,
+      "div": 6,
+      "font": 36,
+      "frac": 4,
+      "head": 2,
+      "html": 2,
+      "i": 110,
+      "p": 33,
+      "script": 4,
+      "style": 2,
+      "sup": 8,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [
+      "frac"
+    ],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Harris",
+      "2015 NY Slip Op 08607 [26 NY3d 321]",
+      "November 23, 2015",
+      "Lippman, Ch. J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, January 27, 2016"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Davon Harris, Appellant."
+    ],
+    "citationLine": "2015 NY Slip Op 08607 26 NY3d 321",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued October 15, 2015; decided November 23, 2015",
+      "November 23, 2015",
+      "As corrected through Wednesday, January 27, 2016"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 18,
+    "footnotesCount": 4
+  },
+  "citations": {
+    "slipOpinion": "2015 NY Slip Op 08607",
+    "officialCitation": "26 NY3d 321",
+    "pageMarkerCount": 17
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Abdus-salaam"
+    ],
+    "qualifierLines": [
+      "{**26 NY3d at 323} OPINION OF THE COURT",
+      " This Court has made clear on numerous occasions that an attorney may not be found to have rendered ineffective assistance where a reasonable strategy exists{**26 NY3d at 329} to support his or her performance (, 21 NY3d 393, 406 [2013]; , 16 NY3d 571, 575-576 [2011]; People v Satterfield, 66 NY2d 796, 798-799 [1985]). A claim of ineffective assistance of counsel is not an opportunity for courts to \"second-guess whether a course chosen by defendant's counsel was the best trial strategy, or even a good one, so long as defendant was afforded meaningful representation\" (Satterfield, 66 NY2d at 799-800). \"[A] reviewing court must avoid confusing 'true ineffectiveness with mere losing tactics and according undue significance to retrospective analysis' \" (People v Benevento, 91 NY2d 708, 712 [1998], quoting People v Baldi, 54 NY2d 137, 146 [1981]). Thus, in view of the totality of defense counsel's representation, the strategies he or she employs need only be reasonable or plausible; we do not require that the strategy be a winning approach. Because in my opinion defendant's trial counsel had a reasonable strategy, I dissent."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 4,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <frac> in source HTML."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

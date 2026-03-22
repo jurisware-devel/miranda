@@ -1,0 +1,122 @@
+{
+  "caseId": "2016_08586",
+  "sourcePath": "coa/2016/2016_08586.htm",
+  "notesPath": "coa/2016/2016_08586.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.929Z",
+  "source": {
+    "title": "People v Bridgeforth (2016 NY Slip Op 08586)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 34185,
+    "lineCount": 140,
+    "tagCounts": {
+      "a": 32,
+      "b": 32,
+      "blockquote": 2,
+      "body": 2,
+      "br": 22,
+      "div": 20,
+      "font": 50,
+      "head": 2,
+      "html": 2,
+      "i": 242,
+      "p": 68,
+      "script": 4,
+      "style": 2,
+      "sup": 10,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Bridgeforth",
+      "2016 NY Slip Op 08586 [28 NY3d 567]",
+      "December 22, 2016",
+      "Abdus-Salaam, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, March 1, 2017"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Joseph Bridgeforth, Appellant."
+    ],
+    "citationLine": "2016 NY Slip Op 08586 28 NY3d 567",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued November 17, 2016; decided December 22, 2016",
+      "December 22, 2016",
+      "As corrected through Wednesday, March 1, 2017"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 41,
+    "footnotesCount": 5
+  },
+  "citations": {
+    "slipOpinion": "2016 NY Slip Op 08586",
+    "officialCitation": "28 NY3d 567",
+    "pageMarkerCount": 24
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "concurrence": 1
+    },
+    "authors": [
+      "Abdus-Salaam",
+      "Garcia"
+    ],
+    "qualifierLines": [
+      "{**28 NY3d at 570} OPINION OF THE COURT",
+      "In People v Payne and its companion cases involving \"reverse Batson\" challenges, the defendants argued that the trial courts erred at step one in concluding that the prosecution had \"shown a prima facie case of discrimination merely by noting that all of the challenged jurors were white\" (88 NY2d at 181-182). This Court did not address or resolve whether white prospective jurors constituted a cognizable group or whether the striking of white jurors raised an inference of discrimination because the trial courts' subsequent rulings \"on the ultimate issue of purposeful discrimination and pretext moot this first-step issue\" (id.). Similarly, in People v Hecker and its companion case, People v Black, we did not review whether the defendants met their prima facie burden because \"[o]nce a party has placed its race-neutral reasons on the record,\" step one \"becomes 'moot' \" (People v Hecker, 15 NY3d 625, 652 [2010] [citations omitted]; see also id. at 666-667 [Smith, J., concurring in People v Black and dissenting in People v Hecker])."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 1,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 5,
+    "labels": [
+      "1",
+      "2",
+      "1",
+      "2",
+      "3"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

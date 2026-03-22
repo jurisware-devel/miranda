@@ -1,0 +1,100 @@
+{
+  "caseId": "2011_08964",
+  "sourcePath": "coa/2011/2011_08964.htm",
+  "notesPath": "coa/2011/2011_08964.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.582Z",
+  "source": {
+    "title": "People v Omowale (2011 NY Slip Op 08964)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 5522,
+    "lineCount": 67,
+    "tagCounts": {
+      "a": 6,
+      "b": 4,
+      "body": 2,
+      "br": 4,
+      "div": 2,
+      "font": 10,
+      "head": 2,
+      "html": 2,
+      "i": 20,
+      "p": 14,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Omowale",
+      "2011 NY Slip Op 08964 [18 NY3d 825]",
+      "December 13, 2011",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, March 7, 2012"
+    ],
+    "captionLines": [
+      "v"
+    ],
+    "citationLine": "2011 NY Slip Op 08964 18 NY3d 825",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Decided December 13, 2011",
+      "December 13, 2011",
+      "As corrected through Wednesday, March 7, 2012"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 5,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2011 NY Slip Op 08964",
+    "officialCitation": "18 NY3d 825",
+    "pageMarkerCount": 4
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**18 NY3d at 826} OPINION OF THE COURT",
+      "Memorandum. "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

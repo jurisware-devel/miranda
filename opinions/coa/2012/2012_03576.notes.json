@@ -1,0 +1,109 @@
+{
+  "caseId": "2012_03576",
+  "sourcePath": "coa/2012/2012_03576.htm",
+  "notesPath": "coa/2012/2012_03576.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.608Z",
+  "source": {
+    "title": "People v Gilliam (2012 NY Slip Op 03576)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 7172,
+    "lineCount": 78,
+    "tagCounts": {
+      "a": 18,
+      "b": 10,
+      "body": 2,
+      "br": 4,
+      "div": 2,
+      "font": 8,
+      "head": 2,
+      "html": 2,
+      "i": 68,
+      "p": 25,
+      "script": 4,
+      "style": 2,
+      "table": 10,
+      "td": 20,
+      "title": 2,
+      "tr": 20
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Gilliam",
+      "2012 NY Slip Op 03576 [19 NY3d 842]",
+      "May 8, 2012",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, June 20, 2012"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Tyray Gilliam, Appellant.",
+      "The People of the State of New York, Respondent, v Alberto de Luna, Appellant.",
+      "The People of the State of New York, Respondent, v Quintrell Joe, Appellant.",
+      "The People of the State of New York, Respondent, v Darnell Norton, Appellant."
+    ],
+    "citationLine": "2012 NY Slip Op 03576 19 NY3d 842",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Decided May 8, 2012",
+      "May 8, 2012",
+      "As corrected through Wednesday, June 20, 2012"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 8,
+    "opinionBlocksCount": 7,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2012 NY Slip Op 03576",
+    "officialCitation": "19 NY3d 842",
+    "pageMarkerCount": 3
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**19 NY3d at 844} OPINION OF THE COURT",
+      "Memorandum. ",
+      "In each case, the order of the Appellate Division should be reversed and the matter remitted to that Court for further proceedings in accordance with this memorandum. ",
+      "Chief Judge Lippman and Judges Ciparick, Graffeo, Read, Smith, Pigott and Jones concur.{**19 NY3d at 845} ",
+      "In People v de Luna: On review of submissions pursuant to section 500.11 of the Rules of the Court of Appeals (22 NYCRR 500.11), order reversed and case remitted to the Appellate Division, First Department, for further proceedings in accordance with the memorandum herein. ",
+      "In People v Gilliam, People v Joe and People v Norton: On review of submissions pursuant to section 500.11 of the Rules of the Court of Appeals (22 NYCRR 500.11), order reversed and case remitted to the Appellate Division, Fourth Department, for further proceedings in accordance with the memorandum herein.  "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 5 table elements before or within the header region."
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "caseId": "2018_07927",
+  "sourcePath": "coa/2018/2018_07927.htm",
+  "notesPath": "coa/2018/2018_07927.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.031Z",
+  "source": {
+    "title": "People v Garland (2018 NY Slip Op 07927)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 21380,
+    "lineCount": 100,
+    "tagCounts": {
+      "a": 24,
+      "b": 18,
+      "body": 2,
+      "br": 18,
+      "div": 8,
+      "font": 26,
+      "head": 2,
+      "html": 2,
+      "i": 52,
+      "opinion": 1,
+      "p": 47,
+      "script": 4,
+      "style": 2,
+      "sup": 6,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Garland",
+      "2018 NY Slip Op 07927 [32 NY3d 1094]",
+      "November 20, 2018",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, January 30, 2019"
+    ],
+    "captionLines": [],
+    "citationLine": "2018 NY Slip Op 07927 32 NY3d 1094",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Decided November 20, 2018",
+      "November 20, 2018",
+      "As corrected through Wednesday, January 30, 2019"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Robert S. Dean , Center for Appellate Litigation , New York City ( David Bernstein of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Robert S. Dean , Center for Appellate Litigation , New York City ( David Bernstein of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Darcel D. Clark , District Attorney , Bronx ( James J. Wen of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Darcel D. Clark , District Attorney , Bronx ( James J. Wen of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 20,
+    "footnotesCount": 3
+  },
+  "citations": {
+    "slipOpinion": "2018 NY Slip Op 07927",
+    "officialCitation": "32 NY3d 1094",
+    "pageMarkerCount": 12
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Wilson"
+    ],
+    "qualifierLines": [
+      "{**32 NY3d at 1095} OPINION OF THE COURT",
+      "Memorandum.",
+      "As the dissent notes, there is certainly record evidence favorable to the defense that, when viewed in isolation, might have presented an issue of fact for the jury. That said, viewing the evidence in the light most favorable to the People, as our legal sufficiency standard requires, we have no trouble concluding that the jury acted rationally in finding that the victim's gunshot wound constituted a \"serious physical injury\" (Penal Law § 10.00 [10]).",
+      "Accordingly, I dissent."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 3,
+    "labels": [
+      "1",
+      "2",
+      "3"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

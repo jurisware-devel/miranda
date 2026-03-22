@@ -1,0 +1,105 @@
+{
+  "caseId": "2014_04874",
+  "sourcePath": "coa/2014/2014_04874.htm",
+  "notesPath": "coa/2014/2014_04874.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.753Z",
+  "source": {
+    "title": "People v Haggerty (2014 NY Slip Op 04874)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 14131,
+    "lineCount": 95,
+    "tagCounts": {
+      "a": 6,
+      "b": 4,
+      "body": 2,
+      "br": 6,
+      "div": 10,
+      "font": 22,
+      "head": 2,
+      "html": 2,
+      "i": 8,
+      "p": 46,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 6
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Haggerty",
+      "2014 NY Slip Op 04874 [23 NY3d 871]",
+      "June 30, 2014",
+      "Rivera, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, October 8, 2014"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "John F. Haggerty, Jr., Appellant, et al., Defendant."
+    ],
+    "citationLine": "2014 NY Slip Op 04874 23 NY3d 871",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued June 3, 2014; decided June 30, 2014",
+      "June 30, 2014",
+      "As corrected through Wednesday, October 8, 2014"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 23,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2014 NY Slip Op 04874",
+    "officialCitation": "23 NY3d 871",
+    "pageMarkerCount": 10
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [
+      "Rivera"
+    ],
+    "qualifierLines": [
+      "{**23 NY3d at 873} OPINION OF THE COURT"
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "caseId": "2014_02326",
+  "sourcePath": "coa/2014/2014_02326.htm",
+  "notesPath": "coa/2014/2014_02326.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.730Z",
+  "source": {
+    "title": "People v Perez (2014 NY Slip Op 02326)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 46784,
+    "lineCount": 162,
+    "tagCounts": {
+      "a": 26,
+      "b": 18,
+      "body": 2,
+      "br": 10,
+      "div": 24,
+      "font": 62,
+      "frac": 2,
+      "head": 2,
+      "html": 2,
+      "i": 190,
+      "p": 142,
+      "script": 4,
+      "style": 2,
+      "table": 10,
+      "td": 22,
+      "title": 2,
+      "tr": 22,
+      "u": 28
+    },
+    "unknownTags": [
+      "frac"
+    ],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Perez",
+      "2014 NY Slip Op 02326 [23 NY3d 89]",
+      "April 3, 2014",
+      "Smith, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, July 16, 2014"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Reynaldo Perez, Appellant.",
+      "The People of the State of New York, Respondent, v Ivan Calaff, Appellant.",
+      "The People of the State of New York, Respondent, v Alexander Dockery, Also Known as John Harris, Appellant.",
+      "The People of the State of New York, Respondent, v Teofilo Lopez, Also Known as Garcia Lopez, Also Known as Isidoro Garcia, Appellant."
+    ],
+    "citationLine": "2014 NY Slip Op 02326 23 NY3d 89",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued February 20, 2014; decided April 3, 2014",
+      "April 3, 2014",
+      "As corrected through Wednesday, July 16, 2014"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 77,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2014 NY Slip Op 02326",
+    "officialCitation": "23 NY3d 89",
+    "pageMarkerCount": 30
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Smith",
+      "Rivera"
+    ],
+    "qualifierLines": [
+      "{**23 NY3d at 95} OPINION OF THE COURT",
+      "Teofilo Lopez, having absconded before trial, was convicted in absentia of several counts of robbery in 1999. He was sentenced to concurrent terms of imprisonment, the longest of which was 15 years. The record contains a form dated August 23, 1999, apparently signed on Lopez's behalf by his attorney, addressed \"TO MY ATTORNEY/OR THE COURT CLERK,\" which says: \"Please file a timely notice of appeal on my behalf.\" The parties agree that this document may be considered a timely notice of appeal.",
+      "Today's majority opinions in Perez and Dockery violate the defendants' fundamental rights to appeal their appellate convictions and, as a consequence, the Court's decisions in these cases undermine public confidence in the legal profession and our system of justice. I dissent.",
+      "We ignore what science and experience tells us at our own peril. As related to the specific issues involved in this case, there is simply no reason not to acknowledge the scientific reality of differences based on age in cases involving requests to extend the period of time to appeal. The United States Supreme Court's conclusion in the context of sentencing that \"criminal procedure laws that fail to take defendants' youthfulness into account at all [are] flawed\" (Graham, 560 US at 76), is no less true in cases involving minor children and their right to appellate review (, 21 NY3d 497, 506 [2013, Graffeo, J., concurring] [\"Young people who find themselves in {**23 NY3d at 111}the criminal courts are not comparable to adults in many respects—and our jurisprudence should reflect that fact\"]).",
+      "Concern over the potential impact of untimely appeals on the criminal justice system, however, must not outweigh our responsibility to ensure the rights of defendants. For, as justice delayed lessens public confidence in our legal system, so do denials of rights to appellate review of defendants failed by their attorneys, and defendants whose youth impacts their ability to understand and appreciate the appellate process. I dissent.",
+      "Judges Graffeo, Read and Pigott concur with Judge Smith; Judge Rivera dissents in an opinion in which Chief Judge Lippman concurs; Judge Abdus-Salaam taking no part.",
+      "Chief Judge Lippman and Judges Graffeo, Read, Pigott and Rivera concur; Judge Abdus-Salaam taking no part."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <frac> in source HTML."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 5 table elements before or within the header region."
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "caseId": "2009_01249",
+  "sourcePath": "coa/2009/2009_01249.htm",
+  "notesPath": "coa/2009/2009_01249.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.423Z",
+  "source": {
+    "title": "People v Hoti (2009 NY Slip Op 01249)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 3932,
+    "lineCount": 62,
+    "tagCounts": {
+      "a": 8,
+      "b": 4,
+      "body": 2,
+      "br": 4,
+      "div": 2,
+      "font": 6,
+      "head": 2,
+      "html": 2,
+      "i": 14,
+      "p": 9,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Hoti",
+      "2009 NY Slip Op 01249 [12 NY3d 742]",
+      "February 19, 2009",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, April 29, 2009"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Bajro Hoti, Appellant."
+    ],
+    "citationLine": "2009 NY Slip Op 01249 12 NY3d 742",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Decided February 19, 2009",
+      "February 19, 2009",
+      "As corrected through Wednesday, April 29, 2009"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Center for Appellate Litigation , New York City ( Mark W. Zeno of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Center for Appellate Litigation , New York City ( Mark W. Zeno of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Robert M. Morgenthau, District Attorney , New York City ( Richard Nahas of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Robert M. Morgenthau, District Attorney , New York City ( Richard Nahas of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 3,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2009 NY Slip Op 01249",
+    "officialCitation": "12 NY3d 742",
+    "pageMarkerCount": 2
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**12 NY3d at 743} OPINION OF THE COURT",
+      "Concur: Judges Ciparick, Graffeo, Read, Smith, Pigott and Jones. Taking no part: Chief Judge Lippman.  "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

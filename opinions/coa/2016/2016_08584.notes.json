@@ -1,0 +1,119 @@
+{
+  "caseId": "2016_08584",
+  "sourcePath": "coa/2016/2016_08584.htm",
+  "notesPath": "coa/2016/2016_08584.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.927Z",
+  "source": {
+    "title": "People v Warrington (2016 NY Slip Op 08584)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 15409,
+    "lineCount": 97,
+    "tagCounts": {
+      "a": 10,
+      "b": 4,
+      "blockquote": 22,
+      "body": 2,
+      "br": 6,
+      "div": 6,
+      "font": 24,
+      "head": 2,
+      "html": 2,
+      "i": 60,
+      "opinion": 1,
+      "p": 38,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Warrington",
+      "2016 NY Slip Op 08584 [28 NY3d 1116]",
+      "December 22, 2016",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, February 8, 2017"
+    ],
+    "captionLines": [],
+    "citationLine": "2016 NY Slip Op 08584 28 NY3d 1116",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued November 16, 2016; decided December 22, 2016",
+      "December 22, 2016",
+      "As corrected through Wednesday, February 8, 2017"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Kathleen B. Hogan, District Attorney , Lake George ( Jason M. Carusone and Emilee B. Davenport of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Kathleen B. Hogan, District Attorney , Lake George ( Jason M. Carusone and Emilee B. Davenport of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Paul J. Connolly , Delmar, for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Paul J. Connolly , Delmar, for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 18,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2016 NY Slip Op 08584",
+    "officialCitation": "28 NY3d 1116",
+    "pageMarkerCount": 11
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**28 NY3d at 1117} OPINION OF THE COURT",
+      "Memorandum."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

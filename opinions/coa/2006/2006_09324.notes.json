@@ -1,0 +1,121 @@
+{
+  "caseId": "2006_09324",
+  "sourcePath": "coa/2006/2006_09324.htm",
+  "notesPath": "coa/2006/2006_09324.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.342Z",
+  "source": {
+    "title": "People v Parker (2006 NY Slip Op 09324)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 3555,
+    "lineCount": 64,
+    "tagCounts": {
+      "a": 2,
+      "b": 4,
+      "body": 2,
+      "br": 4,
+      "div": 2,
+      "font": 8,
+      "head": 2,
+      "html": 2,
+      "i": 8,
+      "p": 9,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Parker",
+      "2006 NY Slip Op 09324 [7 NY3d 907]",
+      "December 14, 2006",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, February 7, 2007"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Clay Parker, Also Known as Trife, Appellant."
+    ],
+    "citationLine": "2006 NY Slip Op 09324 7 NY3d 907",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Decided December 14, 2006",
+      "December 14, 2006",
+      "As corrected through Wednesday, February 7, 2007"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Paul J. Connolly , Delmar, for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Paul J. Connolly , Delmar, for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "P. David Soares, District Attorney, Albany ( Laura Conley O'Hanlon of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "P. David Soares, District Attorney, Albany ( Laura Conley O'Hanlon of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 3,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2006 NY Slip Op 09324",
+    "officialCitation": "7 NY3d 907",
+    "pageMarkerCount": 3
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**7 NY3d at 907}OPINION OF THE COURT",
+      "Concur: Chief Judge Kaye and Judges Ciparick, Rosenblatt, Graffeo, Read, Smith and Pigott.  "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

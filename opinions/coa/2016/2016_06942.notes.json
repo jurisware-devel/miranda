@@ -1,0 +1,109 @@
+{
+  "caseId": "2016_06942",
+  "sourcePath": "coa/2016/2016_06942.htm",
+  "notesPath": "coa/2016/2016_06942.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.903Z",
+  "source": {
+    "title": "People v Wilson (2016 NY Slip Op 06942)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 13371,
+    "lineCount": 92,
+    "tagCounts": {
+      "a": 8,
+      "b": 10,
+      "body": 2,
+      "br": 10,
+      "div": 10,
+      "font": 16,
+      "head": 2,
+      "html": 2,
+      "i": 64,
+      "p": 32,
+      "script": 4,
+      "style": 2,
+      "sup": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 4
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Wilson",
+      "2016 NY Slip Op 06942 [28 NY3d 67]",
+      "October 25, 2016",
+      "Pigott, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, December 14, 2016"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Charles K. Wilson, Appellant."
+    ],
+    "citationLine": "2016 NY Slip Op 06942 28 NY3d 67",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued September 8, 2016; decided October 25, 2016",
+      "October 25, 2016",
+      "As corrected through Wednesday, December 14, 2016"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 16,
+    "footnotesCount": 1
+  },
+  "citations": {
+    "slipOpinion": "2016 NY Slip Op 06942",
+    "officialCitation": "28 NY3d 67",
+    "pageMarkerCount": 7
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [
+      "Pigott"
+    ],
+    "qualifierLines": [
+      "{**28 NY3d at 69} OPINION OF THE COURT",
+      "The matter proceeded to trial. Defendant did not testify or call any witnesses. He was ultimately convicted of, among other things, attempted murder in the second degree, and sentenced to an aggregate term of 50 years. The Appellate Division modified by reversing that part of the judgment convicting defendant of attempted murder in the second degree, dismissing the ninth count of the amended indictment and ordering the sentences on the remaining counts to run concurrently as to each other (resulting in an aggregate sentence of 25 years), and otherwise affirmed (120 AD3d 1531, 1532 [4th Dept 2014]). As relevant here, the Appellate Division held that County Court \"did not err in determining that defendant's statements to the police during a brief exchange, made by defendant after he refused to waive his Miranda rights, were voluntary and{**28 NY3d at 72} thus were admissible for impeachment purposes\" (id. at 1533 [citations omitted])."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 1,
+    "labels": [
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "caseId": "2014_07200",
+  "sourcePath": "coa/2014/2014_07200.htm",
+  "notesPath": "coa/2014/2014_07200.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.765Z",
+  "source": {
+    "title": "People v Turner (2014 NY Slip Op 07200)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 17287,
+    "lineCount": 107,
+    "tagCounts": {
+      "a": 26,
+      "b": 10,
+      "blockquote": 16,
+      "body": 2,
+      "br": 14,
+      "div": 6,
+      "font": 28,
+      "head": 2,
+      "html": 2,
+      "i": 72,
+      "p": 47,
+      "script": 4,
+      "style": 2,
+      "sup": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Turner",
+      "2014 NY Slip Op 07200 [24 NY3d 254]",
+      "October 23, 2014",
+      "Lippman, Ch. J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, January 14, 2015"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Genna A. Turner, Appellant."
+    ],
+    "citationLine": "2014 NY Slip Op 07200 24 NY3d 254",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued September 17, 2014; decided October 23, 2014",
+      "October 23, 2014",
+      "As corrected through Wednesday, January 14, 2015"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 24,
+    "footnotesCount": 1
+  },
+  "citations": {
+    "slipOpinion": "2014 NY Slip Op 07200",
+    "officialCitation": "24 NY3d 254",
+    "pageMarkerCount": 13
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Abdus-salaam"
+    ],
+    "qualifierLines": [
+      "{**24 NY3d at 256} OPINION OF THE COURT",
+      "On appeal, defendant argued, among other things, that her plea was involuntary while the People countered that defendant's{**24 NY3d at 258} claim was unpreserved for appellate review. The Appellate Division affirmed the judgment. The majority extended the holding in  (15 NY3d 725 [2010]), ruling defendant's failure to object to the imposition of PRS, despite her opportunity to do so, rendered her challenge unpreserved (107 AD3d 1543, 1547 [4th Dept 2013]). Noting that defendant indicated that she knew of the PRS term before sentencing was imposed, the majority reasoned that \"defendant could have sought relief from the sentencing court in advance of the sentence's imposition,\" and thus \"Louree's rationale for dispensing with the preservation requirement is not presently applicable\" (id. at 1547, quoting Murray, 15 NY3d at 727). Two Justices dissented from this ruling, and this appeal is before us by leave of one of them (21 NY3d 1047 [2013]).",
+      "Louree recognized that a defendant has the opportunity to withdraw a plea \"any time before the imposition of sentence\" (8 NY3d at 545-546). After discussing PRS, but before the sentence{**24 NY3d at 261} was actually imposed here, defendant's counsel asked the trial court a number of questions concerning completion of the plea-in-satisfaction form, counsel requested that a letter written by defendant be made part of the sentencing memorandum, and also requested that the trial court make a recommendation to the Department of Corrections that defendant be designated a special needs inmate. Defendant had ample opportunity to object to the imposition of PRS or to withdraw her plea before the sentence was imposed. Thus, preservation of her Catu argument was required, and defendant did not preserve that argument.",
+      "Because defendant had ample opportunity to object to the imposition of PRS and to request withdrawal of her plea, she was required to preserve her Catu argument. Therefore, I dissent and would affirm the Appellate Division order."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 1,
+    "labels": [
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

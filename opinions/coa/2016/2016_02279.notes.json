@@ -1,0 +1,121 @@
+{
+  "caseId": "2016_02279",
+  "sourcePath": "coa/2016/2016_02279.htm",
+  "notesPath": "coa/2016/2016_02279.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.861Z",
+  "source": {
+    "title": "People v DiPippo (2016 NY Slip Op 02279)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 45069,
+    "lineCount": 130,
+    "tagCounts": {
+      "a": 34,
+      "b": 18,
+      "body": 2,
+      "br": 18,
+      "div": 10,
+      "font": 64,
+      "head": 2,
+      "html": 2,
+      "i": 222,
+      "p": 89,
+      "script": 4,
+      "style": 2,
+      "sup": 6,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 4
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v DiPippo",
+      "2016 NY Slip Op 02279 [27 NY3d 127]",
+      "March 29, 2016",
+      "Stein, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, June 1, 2016"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Anthony DiPippo, Appellant."
+    ],
+    "citationLine": "2016 NY Slip Op 02279 27 NY3d 127",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued January 7, 2016; decided March 29, 2016",
+      "March 29, 2016",
+      "As corrected through Wednesday, June 1, 2016"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 45,
+    "footnotesCount": 3
+  },
+  "citations": {
+    "slipOpinion": "2016 NY Slip Op 02279",
+    "officialCitation": "27 NY3d 127",
+    "pageMarkerCount": 31
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Stein",
+      "Fahey"
+    ],
+    "qualifierLines": [
+      "{**27 NY3d at 130} OPINION OF THE COURT",
+      "Viewed in its totality, if proved through appropriate witness testimony at trial, defendant's proffer demonstrated that:{**27 NY3d at 140} Gombert knew and had access to the victim; he was familiar with the road near which the victim's remains were found; he had a history of allegedly assaulting other young girls with whom he was familiar in a manner uniquely similar to the prosecution's theory of how the victim was killed; and that Gombert allegedly made statements indicating that he had sexually abused the victim around the time of her disappearance and that defendant and Krivak were prosecuted for crimes that he had committed. As in Primo, this evidence was sufficiently probative to be admissible (see 96 NY2d at 357). Contrary to County Court's determination and the dissent's position, defendant's inability to place Gombert with the victim on the day, or at the precise location, of her disappearance does not eviscerate the probative value of defendant's third-party culpability evidence or render it speculative (cf. Negron, 26 NY3d at 269). Such evidence would undoubtedly strengthen any proffer. However, the strength of the evidence necessary to establish the admissibility of proof relating to a third party's culpability will depend, among other things, on the nature of the crime. Here, inasmuch as the exact time and place of the crime are subject to dispute given the circumstances of the victim's disappearance and the lengthy period of time that elapsed before her body was discovered—which explains the absence of direct proof in defendant's proffer tying Gombert to the crime scene—Gombert's declarations against penal interest are sufficiently probative. Thus, although a jury would be free to discredit Santoro's account of Gombert's admissions and defendant's theory that Gombert was actually the perpetrator, it was error to preclude him from presenting the evidence in question because \"its probative value plainly outweigh[ed] the dangers of delay, prejudice and confusion\" (Primo, 96 NY2d at 357; cf. Negron, 26 NY3d at 269; compare King, 27 NY3d at 157-158; Gamble, 18 NY3d at 398; Schulz, 4 NY3d at 528).",
+      "In so holding, we do not alter the rules of admissibility for third-party culpability evidence. The facts as presented in Primo do not, as the dissent implies, constitute the minimum proof required for the admission of evidence of third-party culpability. It is true that the defendant in Primo was able to connect the gun used in commission of the charged shooting to a third party, who the shooting victim placed at the scene (see 96 NY2d at 357). Tellingly, however, we have no victim in this case who can identify those present at the time of death, and{**27 NY3d at 141} the instrument of the victim's death cannot be connected to either defendant or Gombert. This case is, therefore, plainly distinguishable from Primo and, understandably, the type of third-party culpability proof available to defendant here is different; nevertheless, it does not lack in probative value or fail to establish Gombert's connection to the crime.",
+      "For the first time, we are allowing a theory of third-party culpability to go forward based on an offer of proof consisting entirely of hearsay. Defendant's offer of{**27 NY3d at 142} proof fell far short of that presented in People v Primo (96 NY2d 351 [2001]), the only case before today in which this Court has held that a trial court abused its discretion as a matter of law in precluding such evidence. This decision imposes an undue restraint upon the discretion of trial courts to weigh the probative versus prejudicial value of third-party culpability evidence and make a reasoned decision regarding its admissibility. I respectfully dissent."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 3,
+    "labels": [
+      "1",
+      "2",
+      "3"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "caseId": "2013_00881",
+  "sourcePath": "coa/2013/2013_00881.htm",
+  "notesPath": "coa/2013/2013_00881.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.646Z",
+  "source": {
+    "title": "People v Warren (2013 NY Slip Op 00881)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 11994,
+    "lineCount": 87,
+    "tagCounts": {
+      "a": 8,
+      "b": 10,
+      "body": 2,
+      "br": 8,
+      "div": 4,
+      "font": 18,
+      "head": 2,
+      "html": 2,
+      "i": 24,
+      "p": 18,
+      "script": 4,
+      "style": 2,
+      "sup": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Warren",
+      "2013 NY Slip Op 00881 [20 NY3d 393]",
+      "February 12, 2013",
+      "Read, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, April 3, 2013"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Appellant,",
+      "v",
+      "Damien Warren, Respondent."
+    ],
+    "citationLine": "2013 NY Slip Op 00881 20 NY3d 393",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued January 7, 2013; decided February 12, 2013",
+      "February 12, 2013",
+      "As corrected through Wednesday, April 3, 2013"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 12,
+    "footnotesCount": 1
+  },
+  "citations": {
+    "slipOpinion": "2013 NY Slip Op 00881",
+    "officialCitation": "20 NY3d 393",
+    "pageMarkerCount": 8
+  },
+  "opinionStructure": {
+    "totalWritings": 2,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1
+    },
+    "authors": [
+      "Read"
+    ],
+    "qualifierLines": [
+      "{**20 NY3d at 395} OPINION OF THE COURT",
+      "The jury convicted Warren and acquitted Williams of both crimes charged, while the judge acquitted Howard. County Court sentenced Warren to concurrent terms of imprisonment of 25 years to life for murder, and 15 years followed by five years of postrelease supervision on the weapon possession conviction. Warren appealed on the ground that the judge's refusal to direct Howard to testify outside the jury's presence deprived him of his right to a fair trial. The Appellate Division unanimously agreed and reversed the judgment of conviction and sentence (87 AD3d 36 [4th Dept 2011]). A Judge of this Court granted the People leave to appeal (18 NY3d 862 [2011]), and we now affirm. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 1,
+    "labels": [
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 2 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

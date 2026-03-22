@@ -1,0 +1,126 @@
+{
+  "caseId": "2024_03319",
+  "sourcePath": "coa/2024/2024_03319.htm",
+  "notesPath": "coa/2024/2024_03319.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.279Z",
+  "source": {
+    "title": "People v Thomas (2024 NY Slip Op 03319)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 33740,
+    "lineCount": 129,
+    "tagCounts": {
+      "a": 50,
+      "b": 26,
+      "blockquote": 6,
+      "body": 2,
+      "br": 20,
+      "div": 14,
+      "font": 38,
+      "head": 2,
+      "html": 2,
+      "i": 162,
+      "p": 59,
+      "script": 4,
+      "style": 2,
+      "sup": 10,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 8
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Thomas",
+      "2024 NY Slip Op 03319 [42 NY3d 236]",
+      "June 18, 2024",
+      "Cannataro, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, October 16, 2024"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Kevin L. Thomas, Appellant."
+    ],
+    "citationLine": "2024 NY Slip Op 03319 42 NY3d 236",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued April 17, 2024; decided June 18, 2024",
+      "June 18, 2024",
+      "As corrected through Wednesday, October 16, 2024"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 34,
+    "footnotesCount": 5
+  },
+  "citations": {
+    "slipOpinion": "2024 NY Slip Op 03319",
+    "officialCitation": "42 NY3d 236",
+    "pageMarkerCount": 18
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Cannataro",
+      "Rivera"
+    ],
+    "qualifierLines": [
+      "{**42 NY3d at 238} OPINION OF THE COURT",
+      "Two Justices dissented and would have granted suppression, concluding that defendant was detained beyond what was reasonable under the circumstances because the police officers lacked a founded suspicion that criminality was afoot after the justification for the traffic stop had been exhausted. An Appellate Division Justice granted defendant leave to appeal (39 NY3d 1081 [2023]).",
+      "As a threshold matter, this appeal falls outside the LaFontaine/Concepcion rule that the intermediate appellate court—and, in turn, we—may not review issues \" 'either decided in an appellant's favor, or not ruled upon, by the trial court' \" (, 17 NY3d 192, 195 [2011], quoting People v LaFontaine, 92 NY2d 470, 474 [1998]). Members of this Court have roundly criticized the rule (see Concepcion, 17 NY3d at 201 [Smith, J., joined by Pigott, J., dissenting] [\"LaFontaine . . . was a mistake, and a serious one . . . I had hoped that this would provide the occasion for giving that case a decent burial, but the majority ill-advisedly resurrects it\"]; , 18 NY3d 948, 949 [2012, Pigott, J., joined by Smith, J., dissenting] [\"For the reasons that Judge Smith stated in his dissent in . . . Concepcion . . . , I remain convinced that . . . LaFontaine . . . should be overruled\"]). And while the rule survives, we have, over recent years, narrowly construed it to mitigate nonsensical results (, 26 NY3d 813, 817 [2016] [\"(T)he Appellate Division does not exceed its statutory authority or run afoul of our decisions in . . . LaFontaine . . . and . . . Concepcion . . . when it relies on the record to discern the unarticulated predicate for the trial court's evidentiary ruling\"]; , 23 NY3d 878, 885 n 2 [2014] [distinguishing between \"separate alternative grounds for decision\" which the LaFontaine rule covers and components of a \"single multipronged legal ruling\" which it does not]; id. at 899 [Smith, J., concurring] [endorsing the Garrett \"majority's limitation of the rule\"]).",
+      "The Appellate Division majority, like County Court, rejected defendant's claims that the drugs found in his vehicle should have been suppressed, concluding that the officers had a founded suspicion of criminality based on defendant's conduct{**42 NY3d at 244} before the traffic stop, his statements in response to police questioning, and his status as a parolee. The Appellate Division dissent correctly references this Court's decision in Banks for the proposition that \" ' \"the officer's action in stopping the vehicle must be justified at its inception and the seizure must be reasonably related in scope, including its length, to the circumstances which justified the detention in the first instance\" ' \" (211 AD3d at 1332, quoting , 183 AD3d 1196, 1198 [3d Dept 2020], quoting Banks, 85 NY2d at 562). Further, both the suppression court and the Appellate Division majority also correctly referenced People v McMillan, and People v Huntley, for the notion that \" 'in any evaluation of the reasonableness of a particular search or seizure,' . . . 'the fact of defendant's status as a parolee is always relevant and may be critical' \" (McMillan, 29 NY3d 145, 148-149 [2017], quoting Huntley, 43 NY2d 175, 181 [1977]). However, the suppression court and both the Appellate Division majority and dissent all evaluated whether the officers' actions here were supported by founded suspicion (see 211 AD3d at 1330; id. at 1332-1333 [Aarons, J., dissenting]). These references to \"founded suspicion\" appear to have their genesis in a different Banks decision, issued by the Third Department,  (148 AD3d 1359, 1360 [3d Dept 2017]). In that decision, the Appellate Division cited to our 1995 decision in Banks for the erroneous proposition that officers must have a \"founded suspicion that criminal activity is afoot\" to justify extending the scope of the detention beyond the circumstances giving rise to a vehicular stop (Banks, 148 AD3d at 1360). But this Court in Banks held that the defendant in that case was illegally detained because \"defendant's nervousness and the innocuous discrepancies in his and [a codefendant's] answers to the Trooper's questions regarding the origin, destination and timing of their trip did not alone, as a matter of law, provide a basis for reasonable suspicion of criminality\" (85 NY2d at 562, citing People v Milaski, 62 NY2d 147, 156 [1984]).",
+      "Notably, in his post-suppression hearing memorandum, defendant conceded that the officer had probable cause to stop him for failing to stop at the stop sign, but argued that \"[a] police officer m[a]y not artificially extend the detention\" incident to a traffic stop \"in order to investigate some unrelated crime or offense for which the officer does not have reasonable suspicion or probable cause.\" On appeal, both defendant and the prosecution refer to the lesser \"founded suspicion\" standard {**42 NY3d at 245}at different points in their briefing. As we reaffirm today, that is not the proper standard (see majority op at 240). However, the parties also expressly discuss whether the officers had reasonable suspicion to prolong defendant's detention. Defendant, relying on Banks and Milaski, repeats the argument he asserted before the Appellate Division that",
+      "I would affirm the Appellate Division and end the matter now rather than remit for what will be a perfunctory determination by that Court that the officers were justified in both the stop and subsequent detention. Therefore, while I join fully the majority's articulation of the proper standard to be applied, I dissent from its decision to delay that application in defendant's case."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 5,
+    "labels": [
+      "1",
+      "2",
+      "1",
+      "2",
+      "3"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "caseId": "2022_07024",
+  "sourcePath": "coa/2022/2022_07024.htm",
+  "notesPath": "coa/2022/2022_07024.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.195Z",
+  "source": {
+    "title": "People v Heiserman (2022 NY Slip Op 07024)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 7597,
+    "lineCount": 78,
+    "tagCounts": {
+      "a": 6,
+      "b": 4,
+      "body": 2,
+      "br": 6,
+      "div": 6,
+      "font": 12,
+      "head": 2,
+      "html": 2,
+      "i": 26,
+      "opinion": 1,
+      "p": 22,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Heiserman",
+      "2022 NY Slip Op 07024 [39 NY3d 988]",
+      "December 13, 2022",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, February 22, 2023"
+    ],
+    "captionLines": [],
+    "citationLine": "2022 NY Slip Op 07024 39 NY3d 988",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Decided December 13, 2022",
+      "December 13, 2022",
+      "As corrected through Wednesday, February 22, 2023"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Jonathan J. Miller, Acting District Attorney , Malone ( Jennifer M. Hollis of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Jonathan J. Miller, Acting District Attorney , Malone ( Jennifer M. Hollis of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "G. Scott Walling , Slingerlands, for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "G. Scott Walling , Slingerlands, for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 8,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2022 NY Slip Op 07024",
+    "officialCitation": "39 NY3d 988",
+    "pageMarkerCount": 5
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "{**39 NY3d at 989} OPINION OF THE COURT",
+      "Memorandum.",
+      "On appeal, the Appellate Division reversed, holding that the trial court erred in refusing to grant defendant's request for a justification charge (204 AD3d 1249 [3d Dept 2022]). The Appellate Division concluded that, viewing the evidence in the light most favorable to defendant, there was a \"reasonable view of the evidence that the use of the pepper spray constituted excessive force in this scenario\" (id. at 1251). Two Justices dissented, and a dissenting Justice granted the People leave to appeal to this Court.",
+      "Acting Chief Judge Cannataro and Judges Rivera, Garcia, Wilson, Singas and Troutman concur."
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

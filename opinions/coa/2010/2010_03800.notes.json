@@ -1,0 +1,115 @@
+{
+  "caseId": "2010_03800",
+  "sourcePath": "coa/2010/2010_03800.htm",
+  "notesPath": "coa/2010/2010_03800.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.479Z",
+  "source": {
+    "title": "People v Rivera (2010 NY Slip Op 03800)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 11524,
+    "lineCount": 90,
+    "tagCounts": {
+      "a": 12,
+      "b": 14,
+      "body": 2,
+      "br": 10,
+      "div": 4,
+      "font": 18,
+      "head": 2,
+      "html": 2,
+      "i": 26,
+      "p": 18,
+      "script": 4,
+      "style": 2,
+      "sup": 4,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Rivera",
+      "2010 NY Slip Op 03800 [15 NY3d 207]",
+      "May 6, 2010",
+      "Jones, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, September 1, 2010"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Alex Rivera, Appellant."
+    ],
+    "citationLine": "2010 NY Slip Op 03800 15 NY3d 207",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued March 24, 2010; decided May 6, 2010",
+      "May 6, 2010",
+      "As corrected through Wednesday, September 1, 2010"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 12,
+    "footnotesCount": 2
+  },
+  "citations": {
+    "slipOpinion": "2010 NY Slip Op 03800",
+    "officialCitation": "15 NY3d 207",
+    "pageMarkerCount": 8
+  },
+  "opinionStructure": {
+    "totalWritings": 2,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1
+    },
+    "authors": [
+      "Jones"
+    ],
+    "qualifierLines": [
+      "{**15 NY3d at 209} OPINION OF THE COURT",
+      "On the following day—April 11, 2003—the jury convicted defendant of 10 of the 11 counts submitted to the jury, acquitting him only of second-degree weapons possession. Defendant was sentenced, as a persistent violent felony offender, to three consecutive prison terms of 25 years to life for the robbery counts, to run concurrently with concurrent prison terms of 25 years to life for the third-degree weapons possession and burglary counts, and one year for the petit larceny and unlawful imprisonment counts. The Appellate Division modified the judgment, on the law and as a matter of discretion in the interest of justice, with respect to the sentences imposed (60 AD3d 788 [2d Dept 2009]). As relevant here, the Appellate Division held that \"[t]he trial court did not improvidently exercise its discretion in refusing to accept a partial verdict\" (id. at 789). A Judge of this Court granted defendant leave to appeal (12 NY3d 920 [2009]), and we now modify the order of the Appellate Division. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 2,
+    "labels": [
+      "1",
+      "2"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 2 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

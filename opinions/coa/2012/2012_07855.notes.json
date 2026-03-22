@@ -1,0 +1,118 @@
+{
+  "caseId": "2012_07855",
+  "sourcePath": "coa/2012/2012_07855.htm",
+  "notesPath": "coa/2012/2012_07855.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.634Z",
+  "source": {
+    "title": "People v Best (2012 NY Slip Op 07855)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 17235,
+    "lineCount": 92,
+    "tagCounts": {
+      "a": 30,
+      "b": 10,
+      "body": 2,
+      "br": 12,
+      "div": 4,
+      "font": 22,
+      "head": 2,
+      "html": 2,
+      "i": 80,
+      "p": 21,
+      "script": 4,
+      "style": 2,
+      "sup": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Best",
+      "2012 NY Slip Op 07855 [19 NY3d 739]",
+      "November 20, 2012",
+      "Ciparick, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, December 26, 2012"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Emil Best, Appellant."
+    ],
+    "citationLine": "2012 NY Slip Op 07855 19 NY3d 739",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued October 11, 2012; decided November 20, 2012",
+      "November 20, 2012",
+      "As corrected through Wednesday, December 26, 2012"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 17,
+    "footnotesCount": 1
+  },
+  "citations": {
+    "slipOpinion": "2012 NY Slip Op 07855",
+    "officialCitation": "19 NY3d 739",
+    "pageMarkerCount": 10
+  },
+  "opinionStructure": {
+    "totalWritings": 4,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "dissent": 1
+    },
+    "authors": [
+      "Ciparick",
+      "Lippman"
+    ],
+    "qualifierLines": [
+      "{**19 NY3d at 742} OPINION OF THE COURT",
+      " The presumption of innocence for those accused is \"the undoubted law, axiomatic and elementary, and its enforcement lies at the foundation of the administration of our criminal law\" (Coffin v United States, 156 US 432, 453 [1895]). The unwarranted shackling of defendants strikes at the heart of the right to be presumed innocent, and for the reasons that follow, I respectfully dissent. ",
+      "The People urge the Court to assume that the unexplained use of handcuffs and restraints will never have an effect on a judge's determination of a defendant's guilt or innocence. To take the People's position is to obviate the need for any harmless error analysis in a bench trial, as they propose that a judge will always be insulated from prejudice on any matter. To make this assumption is to degrade a defendant's right to be presumed innocent. Visible shackles give the impression to any trier of fact that a person is violent, a miscreant, and cannot be trusted (, 18 NY3d 145, 158 [2011, Lippman, Ch. J., dissenting] [shackling is \"understood to be reserved for the management of dangerous and explosive individuals—persons presumptively predisposed to violent crime\"]). ",
+      "I continue to believe that \"[g]iven the very basic interests at stake, and the ease with which they can properly be afforded the judicial consideration they are due, there should be a clear rule that the failure to make a record to justify restraining a defendant at trial will necessitate a new trial\" (, 17 NY3d 941, 947 [2011, Lippman, Ch. J., dissenting]). This rule should be no less imperative in bench trials, where the judge is the sole trier of fact. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 1,
+    "labels": [
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 4 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

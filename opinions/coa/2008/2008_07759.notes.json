@@ -1,0 +1,147 @@
+{
+  "caseId": "2008_07759",
+  "sourcePath": "coa/2008/2008_07759.htm",
+  "notesPath": "coa/2008/2008_07759.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.401Z",
+  "source": {
+    "title": "People v Kozlowski (2008 NY Slip Op 07759)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 61968,
+    "lineCount": 226,
+    "tagCounts": {
+      "a": 68,
+      "b": 68,
+      "blockquote": 6,
+      "body": 2,
+      "br": 36,
+      "div": 14,
+      "font": 116,
+      "frac": 2,
+      "head": 2,
+      "html": 2,
+      "i": 172,
+      "p": 71,
+      "script": 4,
+      "style": 2,
+      "sup": 30,
+      "table": 6,
+      "td": 18,
+      "title": 2,
+      "tr": 18
+    },
+    "unknownTags": [
+      "frac"
+    ],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Kozlowski",
+      "2008 NY Slip Op 07759 [11 NY3d 223]",
+      "October 16, 2008",
+      "Ciparick, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, December 10, 2008"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "L. Dennis Kozlowski, Appellant.",
+      "The People of the State of New York, Respondent, v Mark H. Swartz, Appellant."
+    ],
+    "citationLine": "2008 NY Slip Op 07759 11 NY3d 223",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued September 2, 2008; decided October 16, 2008",
+      "October 16, 2008",
+      "As corrected through Wednesday, December 10, 2008"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 73,
+    "footnotesCount": 15
+  },
+  "citations": {
+    "slipOpinion": "2008 NY Slip Op 07759",
+    "officialCitation": "11 NY3d 223",
+    "pageMarkerCount": 57
+  },
+  "opinionStructure": {
+    "totalWritings": 2,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1
+    },
+    "authors": [
+      "Ciparick"
+    ],
+    "qualifierLines": [
+      "{**11 NY3d at 229} OPINION OF THE COURT",
+      "In this appeal relating to the convictions of two former executives{**11 NY3d at 230} for crimes associated with corporate wrongdoing, we are asked to determine whether the admission of an attorney's testimony concerning certain facts related to a corporate internal investigation improperly conveyed to the jury an opinion regarding defendants' guilt. We conclude that this testimony—and the prosecutor's summation comments thereon—did not convey such an opinion. Second, we hold that Supreme Court did not abuse its discretion in quashing defendants' subpoena duces tecum, which sought the factual portions of certain interview notes and a memorandum prepared during the course of the internal investigation. Although defendants satisfied the minimal threshold showing necessary for enforcement, the materials defendants requested are shielded from production by the qualified privilege covering trial preparation materials (see CPLR 3101 [d] [2]). Finally, we do not reach the question whether the fines imposed under Penal Law § 80.00 violated Apprendi v New Jersey (530 US 466 [2000]), because we conclude that if error exists it was harmless. ",
+      "At trial, defendants did not move to reopen the subpoena question following the director-witnesses' testimony. In the course of Boies's direct, however, they objected that they had not seen a privileged memorandum that described how Boies Schiller had discovered the illicit August 1999 bonus. The prosecutor responded by reiterating Tyco's claim that no materials prepared by Boies Schiller during the investigation had been shared with the People, stating: \"I want to emphasize that neither the defense nor the prosecution has access to . . . materials that have been held to be privileged.\" Defense counsel further explained, however, that \"[i]t seems like that memorandum is the sole source of information that [Boies is] relying on for his testimony, and I think it would be inappropriate for us not to have access to [it].\" The court agreed and ordered production of the memorandum. ",
+      "Defendants were convicted and Supreme Court imposed concurrent prison terms of 81/3 to 25 years on each of the four bonus counts. In addition, the court ordered joint restitution of $134,351,397 and that fines of $35 million and $70 million be imposed on Swartz and Kozlowski, respectively. With one exception—where the amount was $3 million less—each of these fines corresponded to the amounts set forth in the indictment and amounts that defendants affirmatively testified to having taken. Responding to defendants' constitutional argument against imposition of the fines, Supreme Court held that \"Apprendi applies to the terms of prison sentences as opposed to fines.\" ",
+      "Here, in contrast, Boies testified to facts. This testimony was in no sense hypothetical. Indeed, defendants were provided with Boies Schiller's work product memorandum that led to the discovery of the 1999 bonuses. Boies's testimony, when considered as a whole, relayed to the jury his preliminary findings during the investigation and the reaction of Tyco's directors and senior management when they were confronted with those findings. For example, Boies's discovery that \"[t]here was no documentation\" of the bonuses does not constitute a legal conclusion of guilt—the jury still had to determine defendants' intent at the time of the taking. Similarly, testimony that Breen resolved on the basis of Boies's \"inherent\" recommendation to remove Swartz immediately or that the board took Boies's{**11 NY3d at 241} advice and agreed to pay Swartz $50 million in severance to facilitate such removal are not conclusions but facts, which—at most—support an inference of criminal guilt. Kozlowski and Swartz vigorously argued that they were entitled to the bonuses and never contested receiving them. And Swartz maintained that the board stood behind him even after it learned of his alleged improprieties. The People were entitled to present evidence casting doubt on those theories. In sum, Boies recounted facts, which the jurors, in light of their experience, could use to test the merits of the charges levied against defendants (see Creasy, 236 NY at 222; Ciaccio, 47 NY2d at 439). ",
+      "Here, defendants were not engaged in \"general discovery\" regarding the director-witness statements. Instead, they identified{**11 NY3d at 243} the specific director-witness interview notes and memorandum that they sought by referring Supreme Court to Tyco's privilege log. Defendants pointed to undisputed facts, arguing that after the directors were made aware of at least some of defendants' questionable activities through the Boies Schiller investigation, they continued to permit Swartz to exercise substantial authority as the CFO of Tyco until September 11, 2002—the day before he was indicted—and voted to pay him $50 million in severance just one day after the last of the relevant director interviews. On the basis of these facts, defendants asserted that the \"directors witnesses . . . did not believe Mr. Swartz had engaged in any wrongful conduct and only 'changed their tune' after the District Attorney obtained an indictment.\" The People argue that this factual showing was insufficient. ",
+      "Here, the director-witness interview notes and memorandum were prepared to assist Tyco's preparation for civil litigations that eventually commenced. In its motion to quash the subpoena, Tyco asserted that these materials were shielded by the attorney-client privilege, stating at oral argument that \"[t]hose are interviews with Tyco employees . . . [who] are communicating with counsel for a . . . legal purpose.\" Assuming that these communications were confidential, this assertion may well be correct. In this Court, however, neither the People nor defendants urge us to hold that the director-witness interview materials are attorney-client privileged. Instead, defendants assert that those statements are merely conditionally-privileged trial preparation materials, while the People contend that they are absolutely privileged work product.{**11 NY3d at 245} ",
+      "Defendants cite no authority for the proposition that disclosure of historical privileged documents waives the privilege covering trial preparation materials created in a subsequent internal investigation. We decline to so hold. We reach this conclusion because a trial court has discretion to limit waiver of the qualified privilege covering trial preparation to matters actually referenced in disclosed materials. Here, the materials produced to the grand jury did not—and could not—refer to director-witness interview notes and a memorandum produced in a subsequent internal investigation.  ",
+      "Defendants also urge that \"testimonial\" waivers occurred at the first trial when Tyco's lawyers and employees testified regarding privileged communications that occurred prior to the internal investigation. Here, again, however, there is no showing that the jury in the first trial needed the director-witness interview notes and memorandum to properly assess the evidence. ",
+      "According to defendants, the \"most damaging\" testimonial waiver occurred during the testimony of David Boies. But they point to no impermissible use of the director-witness statements. Boies's direct testimony was limited to facts concerning the interview with Foley, his July 17, 2002 conversations with Swartz and Fort, his recommendation to Breen regarding Swartz's continued employment and his recommendation that{**11 NY3d at 249} the board approve Swartz's severance package. At no point in his testimony did Boies seek to bolster his statements with the aid of the relevant director-witness statements. Moreover, in response to defendants' specific request, Supreme Court ordered disclosure of a privileged memorandum upon which a portion of Boies's testimony was based. At that time, defendants did not request any disclosure of the director-witness statements. Thus, under these circumstances, there was no waiver and no abuse of discretion (compare Nobles, 422 US at 239-240 [work product privilege over portions of investigator's report waived where \"respondent sought to adduce the testimony of the investigator\" regarding witness statements contained in the report]). ",
+      "Chief Judge Kaye and Judges Graffeo, Read, Smith, Pigott and Jones concur. "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 15,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <frac> in source HTML."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 2 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 3 table elements before or within the header region."
+    }
+  ]
+}

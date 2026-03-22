@@ -1,0 +1,136 @@
+{
+  "caseId": "2003_19674",
+  "sourcePath": "coa/2003/2003_19674.htm",
+  "notesPath": "coa/2003/2003_19674.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.216Z",
+  "source": {
+    "title": "People v Andrew (2003 NY Slip Op 19674)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 4574,
+    "lineCount": 67,
+    "tagCounts": {
+      "a": 2,
+      "appcouns": 1,
+      "b": 4,
+      "body": 2,
+      "br": 4,
+      "div": 2,
+      "font": 6,
+      "head": 2,
+      "html": 2,
+      "i": 20,
+      "p": 13,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [
+      "appcouns"
+    ],
+    "strayClosingTags": [
+      "appcouns"
+    ]
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Andrew",
+      "2003 NY Slip Op 19674 [1 NY3d 546]",
+      "December 18, 2003",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, March 10, 2004"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Larry Andrew, Also Known as Larry Andrews, Appellant."
+    ],
+    "citationLine": "2003 NY Slip Op 19674 1 NY3d 546",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued November 20, 2003; decided December 18, 2003",
+      "December 18, 2003",
+      "As corrected through Wednesday, March 10, 2004"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "De Nice Powell , New York City, and Lynn W.L. Fahey for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "De Nice Powell , New York City, and Lynn W.L. Fahey for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Richard A. Brown , District Attorney , Kew Gardens ( Thomas S. Berkman and John M. Castellano of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Richard A. Brown , District Attorney , Kew Gardens ( Thomas S. Berkman and John M. Castellano of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 5,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2003 NY Slip Op 19674",
+    "officialCitation": "1 NY3d 546",
+    "pageMarkerCount": 2
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "OPINION OF THE COURT",
+      "Memorandum. "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <appcouns> in source HTML."
+    },
+    {
+      "code": "STRAY_CLOSING_TAG",
+      "severity": "warning",
+      "detail": "Closing tag </appcouns> appears more times than opening tag <appcouns>."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

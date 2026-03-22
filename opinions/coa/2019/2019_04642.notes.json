@@ -1,0 +1,134 @@
+{
+  "caseId": "2019_04642",
+  "sourcePath": "coa/2019/2019_04642.htm",
+  "notesPath": "coa/2019/2019_04642.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.058Z",
+  "source": {
+    "title": "People v Giuca (2019 NY Slip Op 04642)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 63033,
+    "lineCount": 152,
+    "tagCounts": {
+      "a": 60,
+      "b": 38,
+      "body": 2,
+      "br": 24,
+      "div": 6,
+      "font": 68,
+      "frac": 4,
+      "head": 2,
+      "html": 2,
+      "i": 212,
+      "p": 102,
+      "script": 4,
+      "style": 2,
+      "sup": 16,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [
+      "frac"
+    ],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Giuca",
+      "2019 NY Slip Op 04642 [33 NY3d 462]",
+      "June 11, 2019",
+      "DiFiore, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, August 28, 2019"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Appellant,",
+      "v",
+      "John Giuca, Respondent."
+    ],
+    "citationLine": "2019 NY Slip Op 04642 33 NY3d 462",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued April 30, 2019; decided June 11, 2019",
+      "June 11, 2019",
+      "As corrected through Wednesday, August 28, 2019"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 50,
+    "footnotesCount": 8
+  },
+  "citations": {
+    "slipOpinion": "2019 NY Slip Op 04642",
+    "officialCitation": "33 NY3d 462",
+    "pageMarkerCount": 33
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "DiFiore",
+      "Rivera"
+    ],
+    "qualifierLines": [
+      "{**33 NY3d at 466} OPINION OF THE COURT",
+      "Given his knowledge of the court history of JA's burglary case and the extensive impeachment material elicited at trial, defense counsel was able to argue forcefully that JA was testifying falsely to curry favor from the court and the prosecutor in connection with his pending case. Contrary to the dissent's position, the undisclosed impeachment evidence at issue here, like that in Turner, was more of the same evidence that was available to the defense and used to impeach the witness at trial. The disclosed evidence provided ample basis for defense counsel to argue to the jury that JA had a bias in favor of the People, as he hoped to receive a benefit in exchange for his testimony, and that the People's failure to request bail in his{**33 NY3d at 478} open burglary case despite his drug program violations was the benefit conferred. Nor can it be ignored that, as noted, the People presented strong evidence of defendant's guilt at trial—including defendant's self-incriminating statements to his friends, his efforts to dispose of the gun shortly after the murder and the physical evidence from his house (the blanket) recovered from the crime scene. In sum, given the above, there is no reasonable possibility that the failure to disclose the particular evidence would have affected the verdict.",
+      "The applicable standard, that there was no reasonable possibility that the result of the proceeding would have been different if the undisclosed material had been turned over, is an extremely low bar. It is lower than \"reasonable probability,\" which \"does not require demonstration by a preponderance that disclosure of the suppressed evidence would have resulted ultimately in the defendant's acquittal\" (Kyles v Whitley, 514 US 419, 434 [1995]). Even under the higher reasonable probability standard, \"[t]he question is not whether the defendant would more likely than not have received a different verdict with the evidence, but whether in its absence [the defendant] received a fair trial, understood as a trial resulting in a verdict worthy of confidence\" (id.; , 115 AD3d 854, 854 [2d Dept 2014] [\"To establish a fact by a preponderance of the evidence means to prove that the fact is more likely than not to have occurred\"], citing Matter of Tammie Z., 66 NY2d 1 [1985]). The relevant question then is whether a reasonable possibility exists that the suppressed evidence may have affected the outcome of defendant's case. On this record, I cannot say that not even one juror would have thought JA held out hope—corroborated by the conduct of the prosecutor and her office—for favorable treatment by the courts or otherwise sought to curry the prosecutor's favor in JA's drug case. At least one juror could conclude that it was not simply the court, as usual, giving multiple chances to a person in rehabilitation—as suggested by the prosecutor in her summation and by the majority here (majority op at 471, 475-476 and n 6)—but rather, special treatment for JA as the People's witness. Of course, just one juror would have been enough to change the outcome of defendant's trial (see Turner, 582 US at —, 137 S Ct at 1897 [Kagan, J., dissenting] [suppressed evidence \"could well have flipped one or more jurors—which is all Brady requires\"]).",
+      "Finally, as all the Justices in Turner agreed, expansive disclosure should be the norm and the \"better course is to take care to disclose any evidence favorable to the defendant\" (Turner, 582 US at —, 137 S Ct at 1893). Even the dissent joined in this part of the majority opinion, agreeing that \"such {**33 NY3d at 487}evidence ought to be disclosed to defendants as a matter of course\" (Turner, 582 US at —, 137 S Ct at 1897 [Kagan, J., dissenting]). Indeed, a generous policy of disclosure of Brady material fully aligns with our recognized interests in finding the truth and rejecting efforts at gaming the criminal justice system that undermine the truth-finding process (Strickler v Greene, 527 US 263, 280-281 [1999] [The Brady line of cases \"illustrate the special role played by the American prosecutor in the search for truth in criminal trials\"]). \"[T]he Brady rule's 'overriding concern [is] with the justice of the finding of guilt,' and . . . the Government's 'interest . . . in a criminal prosecution is not that it shall win a case, but that justice shall be done' \" (Turner, 582 US at —, 137 S Ct at 1893 [citations omitted]). All this reflects the principled view that \"[c]onstitutional requirements aside, turning over exculpatory materials is a core responsibility of all prosecutors\" (Turner, 582 US at —, 137 S Ct at 1897 [Kagan, J., dissenting]). \"Put another way, 'When there is substantial room for doubt, the prosecutor is not to decide for the court what is admissible or for the defense what is useful' \" (People v Andre W., 44 NY2d 179, 185 [1978], quoting Griffin v United States, 183 F2d 990, 993 [DC Cir 1950]). The District Attorney's Office here asserts that it is the policy of its office \"generally to disclose all information that is identified as even arguably favorable to the defense, regardless of the prosecutor's assessment of the materiality of that information.\" This correct articulation of the prosecutor's duty comes too late for defendant.",
+      "Since there is a reasonable possibility that counsel's use of the suppressed information would have changed the result of the proceedings, defendant met his burden in support of his 440.10 motion for a new trial (Fuentes, 12 NY3d at 263; People v Vilardi, 76 NY2d 67, 77 [1990]). The majority's reversal of the Appellate Division order granting the same is erroneous on the law as applied to the record before us. I dissent."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 8,
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <frac> in source HTML."
+    },
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

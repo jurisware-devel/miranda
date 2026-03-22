@@ -1,0 +1,110 @@
+{
+  "caseId": "2023_05957",
+  "sourcePath": "coa/2023/2023_05957.htm",
+  "notesPath": "coa/2023/2023_05957.notes.json",
+  "generatedAt": "2026-03-22T19:41:27.223Z",
+  "source": {
+    "title": "People v Jordan (2023 NY Slip Op 05957)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 18957,
+    "lineCount": 95,
+    "tagCounts": {
+      "a": 14,
+      "b": 14,
+      "body": 2,
+      "br": 12,
+      "div": 6,
+      "font": 24,
+      "head": 2,
+      "html": 2,
+      "i": 50,
+      "p": 38,
+      "script": 4,
+      "style": 2,
+      "sup": 4,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16,
+      "u": 2
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Jordan",
+      "2023 NY Slip Op 05957 [40 NY3d 396]",
+      "November 20, 2023",
+      "Garcia, J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, January 3, 2024"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Donna Jordan, Appellant."
+    ],
+    "citationLine": "2023 NY Slip Op 05957 40 NY3d 396",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued October 17, 2023; decided November 20, 2023",
+      "November 20, 2023",
+      "As corrected through Wednesday, January 3, 2024"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 16,
+    "footnotesCount": 2
+  },
+  "citations": {
+    "slipOpinion": "2023 NY Slip Op 05957",
+    "officialCitation": "40 NY3d 396",
+    "pageMarkerCount": 11
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [
+      "Garcia"
+    ],
+    "qualifierLines": [
+      "{**40 NY3d at 398} OPINION OF THE COURT",
+      "We first made clear that the testifying criminalist need not have been involved in each step of the procedures required to generate the DNA profiles (27 NY3d at 312-313). This rule is consistent with the view of other courts that the preliminary steps involved in the creation of DNA samples are \"essentially ministerial tasks\" (see United States v Robinson, 2023 WL 6066691,*4, 2023 US Dist LEXIS 165537, *13-14 [WD Wash, Sept. 18, 2023, No. 2:22-cr-00212-TL, Lin, J.]; see also Williams, 567 US at 100-101 [Breyer, J., concurring] [categorizing preliminary stages of DNA testing as \"highly automated\" and{**40 NY3d at 401} \"mostly automated\"]).These preliminary stages are processes that simply prepare the DNA samples for testing, during which \"the analyst's role is to facilitate the operation of a machine\" (State v Lui, 179 Wash 2d 457, 487, 315 P3d 493, 507 [2014 en banc]; see also John, 27 NY3d at 300 [describing these procedures as \"extraction (to release the DNA from any cells), quantitation (to determine how much DNA was present), (and) amplification (to make millions of copies of the specific locations . . . to be tested)\"]). Errors made at this stage \"may often be detected from the profile itself,\" which provides \"a further safeguard\" (Williams, 567 US at 85)."
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 2,
+    "labels": [
+      "1",
+      "2"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

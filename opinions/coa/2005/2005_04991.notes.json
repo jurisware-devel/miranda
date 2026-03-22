@@ -1,0 +1,135 @@
+{
+  "caseId": "2005_04991",
+  "sourcePath": "coa/2005/2005_04991.htm",
+  "notesPath": "coa/2005/2005_04991.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.283Z",
+  "source": {
+    "title": "People v Daniels (2005 NY Slip Op 04991)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 4974,
+    "lineCount": 71,
+    "tagCounts": {
+      "a": 2,
+      "appcouns": 1,
+      "b": 6,
+      "body": 2,
+      "br": 4,
+      "div": 2,
+      "font": 6,
+      "head": 2,
+      "html": 2,
+      "i": 48,
+      "p": 16,
+      "script": 4,
+      "style": 2,
+      "table": 6,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [
+      "appcouns"
+    ],
+    "strayClosingTags": [
+      "appcouns"
+    ]
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Daniels",
+      "2005 NY Slip Op 04991 [5 NY3d 738]",
+      "June 14, 2005",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, September 14, 2005"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Charles Daniels, Appellant.",
+      "The People of the State of New York, Respondent, v Byron Robinson, Appellant."
+    ],
+    "citationLine": "2005 NY Slip Op 04991 5 NY3d 738",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued April 26, 2005; decided June 14, 2005",
+      "June 14, 2005",
+      "As corrected through Wednesday, September 14, 2005"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Mischel Neuman & Horn, P.C. , New York City ( James E. Neuman of counsel), and Richard D. Willstatter for New York State Association of Criminal Defense Lawyers and another, amici curiae in the first and second above-entitled actions.",
+        "sideGuess": null,
+        "terminalPhrase": null,
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Mischel Neuman & Horn, P.C. , New York City ( James E. Neuman of counsel), and Richard D. Willstatter for New York State Association of Criminal Defense Lawyers and another, amici curiae in the first and second above-entitled actions.",
+        "possiblyTruncated": true
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 4,
+    "opinionBlocksCount": 5,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2005 NY Slip Op 04991",
+    "officialCitation": "5 NY3d 738",
+    "pageMarkerCount": 2
+  },
+  "opinionStructure": {
+    "totalWritings": 1,
+    "byKind": {
+      "opinion_of_the_court": 1
+    },
+    "authors": [],
+    "qualifierLines": [
+      "OPINION OF THE COURT",
+      "Memorandum. ",
+      "Chief Judge Kaye and Judges G.B. Smith, Ciparick, Rosenblatt, Graffeo, Read and R.S. Smith concur. ",
+      "In each case: Order affirmed in a memorandum.  "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 0,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "UNKNOWN_TAG",
+      "severity": "info",
+      "detail": "Encountered unknown tag <appcouns> in source HTML."
+    },
+    {
+      "code": "STRAY_CLOSING_TAG",
+      "severity": "warning",
+      "detail": "Closing tag </appcouns> appears more times than opening tag <appcouns>."
+    },
+    {
+      "code": "TRUNCATED_APPEARANCE_LINE",
+      "severity": "warning",
+      "detail": "Appearance-like line may be truncated: Mischel Neuman & Horn, P.C. , New York City ( James E. Neuman of counsel), and Richard D. Willstatter for New York State Association of Criminal Defense Lawyers and another, amici curiae in the first and second above-entitled actions."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 3 table elements before or within the header region."
+    }
+  ]
+}

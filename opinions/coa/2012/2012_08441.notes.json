@@ -1,0 +1,135 @@
+{
+  "caseId": "2012_08441",
+  "sourcePath": "coa/2012/2012_08441.htm",
+  "notesPath": "coa/2012/2012_08441.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.640Z",
+  "source": {
+    "title": "People v Mox (2012 NY Slip Op 08441)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 14096,
+    "lineCount": 87,
+    "tagCounts": {
+      "a": 16,
+      "b": 10,
+      "blockquote": 4,
+      "body": 2,
+      "br": 12,
+      "div": 4,
+      "font": 22,
+      "head": 2,
+      "html": 2,
+      "i": 64,
+      "p": 23,
+      "script": 4,
+      "style": 2,
+      "sup": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Mox",
+      "2012 NY Slip Op 08441 [20 NY3d 936]",
+      "December 11, 2012",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, January 30, 2013"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Appellant,",
+      "v",
+      "Michael Mox, Respondent."
+    ],
+    "citationLine": "2012 NY Slip Op 08441 20 NY3d 936",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued November 13, 2012; decided December 11, 2012",
+      "December 11, 2012",
+      "As corrected through Wednesday, January 30, 2013"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Sandra Doorley, District Attorney , Rochester ( Geoffrey Kaeuper of counsel), for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Sandra Doorley, District Attorney , Rochester ( Geoffrey Kaeuper of counsel), for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Easton Thompson Kasperek Shiffrin LLP , Rochester ( William T. Easton of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Easton Thompson Kasperek Shiffrin LLP , Rochester ( William T. Easton of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 18,
+    "footnotesCount": 1
+  },
+  "citations": {
+    "slipOpinion": "2012 NY Slip Op 08441",
+    "officialCitation": "20 NY3d 936",
+    "pageMarkerCount": 10
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Smith"
+    ],
+    "qualifierLines": [
+      "{**20 NY3d at 937} OPINION OF THE COURT",
+      "Memorandum. ",
+      "With one Justice dissenting, the Appellate Division reversed defendant's conviction, holding that defendant's plea allocution raised doubts as to his guilt of first-degree manslaughter as it tended to negate the intent element of that crime. The majority further held that County Court failed to fulfill its duty to make further inquiry to ensure the plea was knowing and voluntary (, 84 AD3d 1723, 1724 [4th Dept 2011]). "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 1,
+    "labels": [
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

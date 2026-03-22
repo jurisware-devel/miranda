@@ -1,0 +1,132 @@
+{
+  "caseId": "2010_05674",
+  "sourcePath": "coa/2010/2010_05674.htm",
+  "notesPath": "coa/2010/2010_05674.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.493Z",
+  "source": {
+    "title": "People v King (2010 NY Slip Op 05674)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 5929,
+    "lineCount": 70,
+    "tagCounts": {
+      "a": 2,
+      "b": 4,
+      "body": 2,
+      "br": 8,
+      "div": 2,
+      "font": 10,
+      "head": 2,
+      "html": 2,
+      "i": 6,
+      "p": 15,
+      "script": 4,
+      "style": 2,
+      "table": 4,
+      "td": 14,
+      "title": 2,
+      "tr": 14
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v King",
+      "2010 NY Slip Op 05674 [15 NY3d 736]",
+      "June 29, 2010",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, September 8, 2010"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Brian S. King, Appellant."
+    ],
+    "citationLine": "2010 NY Slip Op 05674 15 NY3d 736",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued June 3, 2010; decided June 29, 2010",
+      "June 29, 2010",
+      "As corrected through Wednesday, September 8, 2010"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "appearances_only",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": [
+      {
+        "text": "Michael M. Mohun , Cowlesville, for appellant.",
+        "sideGuess": "appellant",
+        "terminalPhrase": "for appellant.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Michael M. Mohun , Cowlesville, for appellant.",
+        "possiblyTruncated": false
+      },
+      {
+        "text": "Lawrence Friedman, District Attorney , Batavia ( William G. Zickl of counsel), for respondent.",
+        "sideGuess": "respondent",
+        "terminalPhrase": "for respondent.",
+        "hasArgumentTail": false,
+        "argumentTailPreview": null,
+        "sentenceText": "Lawrence Friedman, District Attorney , Batavia ( William G. Zickl of counsel), for respondent.",
+        "possiblyTruncated": false
+      }
+    ]
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 2,
+    "opinionBlocksCount": 9,
+    "footnotesCount": 0
+  },
+  "citations": {
+    "slipOpinion": "2010 NY Slip Op 05674",
+    "officialCitation": "15 NY3d 736",
+    "pageMarkerCount": 4
+  },
+  "opinionStructure": {
+    "totalWritings": 3,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 1,
+      "dissent": 1
+    },
+    "authors": [
+      "Smith"
+    ],
+    "qualifierLines": [
+      "{**15 NY3d at 737} OPINION OF THE COURT",
+      "Memorandum. ",
+      " The majority's three-sentence memorandum makes it appear as though deference to findings below{**15 NY3d at 738} that are \"beyond this Court's further review\" requires us to reverse the lower courts' rulings. But those findings are quoted out of context. I think the facts found below require us to affirm. ",
+      "As far as I can deduce from the majority memorandum, these facts are the basis for its conclusion that \"any evidence flowing from the stop must be suppressed\" (majority op at 737). The conclusion makes no sense to me. I see no indication in this record that any police officer did anything wrong—and indeed, County Court found that \"the police officer committed nothing illegal or unreasonable\" in stopping defendant's friend's motorcycle. County Court did, as the majority says, find that defendant did not stop \"voluntarily,\" but it clearly did not find that the officer intentionally detained him. At most, the stop was involuntary in the same way that it would be if defendant had been stopped by a flat tire—or, to use County Court's own analogy, if he had been a passenger in a motor vehicle that was stopped because of a traffic infraction by the driver. No right of defendant's was violated, and there is no reason to suppress the evidence against him. "
+    ],
+    "hasMemorandum": true,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 0,
+    "labels": [],
+    "hasFootnotesHeading": false
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 3 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}

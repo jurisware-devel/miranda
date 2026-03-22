@@ -1,0 +1,117 @@
+{
+  "caseId": "2006_01249",
+  "sourcePath": "coa/2006/2006_01249.htm",
+  "notesPath": "coa/2006/2006_01249.notes.json",
+  "generatedAt": "2026-03-22T19:41:26.313Z",
+  "source": {
+    "title": "People v Moore (2006 NY Slip Op 01249)",
+    "publicationStatus": "published"
+  },
+  "fileInfo": {
+    "byteSize": 18295,
+    "lineCount": 99,
+    "tagCounts": {
+      "a": 6,
+      "b": 10,
+      "blockquote": 2,
+      "body": 2,
+      "br": 12,
+      "div": 4,
+      "font": 32,
+      "head": 2,
+      "html": 2,
+      "i": 62,
+      "p": 26,
+      "script": 4,
+      "style": 2,
+      "sup": 2,
+      "table": 4,
+      "td": 16,
+      "title": 2,
+      "tr": 16
+    },
+    "unknownTags": [],
+    "strayClosingTags": []
+  },
+  "header": {
+    "hasPrimaryHeaderTable": true,
+    "primaryHeaderTableLines": [
+      "People v Moore",
+      "2006 NY Slip Op 01249 [6 NY3d 496]",
+      "February 21, 2006",
+      "Kaye, Ch.J.",
+      "Court of Appeals",
+      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
+      "As corrected through Wednesday, May 24, 2006"
+    ],
+    "captionLines": [
+      "The People of the State of New York, Respondent,",
+      "v",
+      "Calvin Moore, Appellant."
+    ],
+    "citationLine": "2006 NY Slip Op 01249 6 NY3d 496",
+    "courtLine": "Court of Appeals",
+    "dateLines": [
+      "Argued January 3, 2006; decided February 21, 2006",
+      "February 21, 2006",
+      "As corrected through Wednesday, May 24, 2006"
+    ],
+    "authorLine": null,
+    "appearanceSectionType": "none",
+    "pointsOfCounselCount": 0,
+    "appearanceLikeLines": []
+  },
+  "sections": {
+    "summarySectionsCount": 0,
+    "headnotesCount": 0,
+    "pointsOfCounselCount": 0,
+    "appearancesCount": 0,
+    "opinionBlocksCount": 23,
+    "footnotesCount": 1
+  },
+  "citations": {
+    "slipOpinion": "2006 NY Slip Op 01249",
+    "officialCitation": "6 NY3d 496",
+    "pageMarkerCount": 15
+  },
+  "opinionStructure": {
+    "totalWritings": 4,
+    "byKind": {
+      "opinion_of_the_court": 1,
+      "unknown": 2,
+      "dissent": 1
+    },
+    "authors": [
+      "Kaye",
+      "R.S. Smith"
+    ],
+    "qualifierLines": [
+      "{**6 NY3d at 497} OPINION OF THE COURT",
+      "Finally, addressing the dissent, the Court's decision today is wholly in line with our precedent: a forcible stop requires reasonable suspicion that the suspect has committed a crime, not merely the founded suspicion—triggering the officers' common-law right of inquiry—present here. Surely the possibility that defendant had a gun merited investigation by the police, just not immediately at gunpoint. "
+    ],
+    "hasMemorandum": false,
+    "hasPerCuriam": false,
+    "concurrenceCount": 0,
+    "dissentCount": 1,
+    "mixedWritingCount": 0
+  },
+  "footnotes": {
+    "count": 1,
+    "labels": [
+      "*"
+    ],
+    "hasFootnotesHeading": true
+  },
+  "anomalies": [
+    {
+      "code": "MULTIPLE_WRITINGS",
+      "severity": "info",
+      "detail": "Companion JSON reports 4 writings."
+    },
+    {
+      "code": "MULTIPLE_HEADER_TABLES",
+      "severity": "info",
+      "detail": "Found 2 table elements before or within the header region."
+    }
+  ]
+}
