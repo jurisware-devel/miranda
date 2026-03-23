@@ -1,155 +1,99 @@
 {
+  "notesVersion": "1.0",
   "caseId": "2023_01352",
   "sourcePath": "coa/2023/2023_01352.htm",
-  "notesPath": "coa/2023/2023_01352.notes.json",
-  "generatedAt": "2026-03-22T19:47:13.169Z",
-  "source": {
-    "title": "People v Guerra (2023 NY Slip Op 01352)",
-    "publicationStatus": "published"
+  "provenance": {
+    "creationMode": "codex_updated",
+    "reviewStatus": "codex_amended",
+    "lastUpdatedAt": "2026-03-22T20:18:23.166Z",
+    "updatedBy": "codex",
+    "confidence": "medium"
   },
-  "fileInfo": {
-    "byteSize": 40076,
-    "lineCount": 131,
-    "tagCounts": {
-      "a": 40,
-      "b": 18,
-      "blockquote": 4,
-      "body": 2,
-      "br": 14,
-      "div": 16,
-      "em": 2,
-      "font": 48,
-      "head": 2,
-      "html": 2,
-      "i": 284,
-      "opinion": 1,
-      "p": 78,
-      "script": 4,
-      "style": 2,
-      "sup": 6,
-      "table": 4,
-      "td": 14,
-      "title": 2,
-      "tr": 14,
-      "u": 8
+  "decisionStructure": {
+    "decisionForm": "memorandum",
+    "hasMajority": true,
+    "mainWritingKind": "memorandum",
+    "mainWritingAuthor": null,
+    "isMemorandum": true,
+    "isPerCuriam": true,
+    "isOpinionOfTheCourt": true,
+    "notes": "The court resolves the appeal by memorandum and includes at least one separate writing."
+  },
+  "writings": [
+    {
+      "order": 1,
+      "author": null,
+      "kind": "memorandum",
+      "label": "OPINION OF THE COURT",
+      "hasJoiners": true,
+      "joiners": [
+        "Cannataro",
+        "Garcia",
+        "Singas",
+        "Troutman"
+      ],
+      "scope": "memorandum disposition",
+      "relationshipToResult": "controls the court's disposition",
+      "confidence": "high"
     },
-    "unknownTags": [],
-    "strayClosingTags": []
-  },
-  "header": {
-    "hasPrimaryHeaderTable": true,
-    "primaryHeaderTableLines": [
-      "People v Guerra",
-      "2023 NY Slip Op 01352 [39 NY3d 1158]",
-      "March 16, 2023",
-      "Court of Appeals",
-      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
-      "As corrected through Wednesday, July 26, 2023"
-    ],
-    "captionLines": [],
-    "citationLine": "2023 NY Slip Op 01352 39 NY3d 1158",
-    "courtLine": "Court of Appeals",
-    "dateLines": [
-      "Argued February 7, 2023; decided March 16, 2023",
-      "March 16, 2023",
-      "As corrected through Wednesday, July 26, 2023"
-    ],
-    "authorLine": null,
-    "appearanceSectionType": "appearances_only",
-    "pointsOfCounselCount": 0,
-    "appearanceLikeLines": [
+    {
+      "order": 2,
+      "author": "Wilson",
+      "kind": "dissent",
+      "label": "dissenting",
+      "hasJoiners": false,
+      "joiners": [
+        "Rivera"
+      ],
+      "scope": null,
+      "relationshipToResult": "disagrees with the court's disposition",
+      "confidence": "medium"
+    }
+  ],
+  "resultStructure": {
+    "hasMultipleResults": false,
+    "hasMultipleLowerCourtRulings": false,
+    "resultUnits": [
       {
-        "text": "Winston & Strawn LLP , New York City ( Kelly A. Librera , Patrick S. Opdyke and Robert S. Pannullo of counsel), and Twyla Carter , The Legal Aid Society , New York City ( David Crow of counsel), for appellant.",
-        "sideGuess": "appellant",
-        "terminalPhrase": "for appellant.",
-        "hasArgumentTail": false,
-        "argumentTailPreview": null,
-        "sentenceText": "Winston & Strawn LLP , New York City ( Kelly A. Librera , Patrick S. Opdyke and Robert S. Pannullo of counsel), and Twyla Carter , The Legal Aid Society , New York City ( David Crow of counsel), for appellant.",
-        "possiblyTruncated": false
-      },
-      {
-        "text": "Darcel D. Clark , District Attorney , Bronx ( T. Charles Won , Nancy D. Killian and Peter D. Coddington of counsel), for respondent.",
-        "sideGuess": "respondent",
-        "terminalPhrase": "for respondent.",
-        "hasArgumentTail": false,
-        "argumentTailPreview": null,
-        "sentenceText": "Darcel D. Clark , District Attorney , Bronx ( T. Charles Won , Nancy D. Killian and Peter D. Coddington of counsel), for respondent.",
-        "possiblyTruncated": false
+        "label": "disposition",
+        "disposition": "Order affirmed, in a memorandum."
       }
     ],
-    "companionAppearances": []
+    "mixedResultDisposition": false,
+    "confidence": "low"
   },
-  "sections": {
-    "summarySectionsCount": 0,
-    "headnotesCount": 0,
-    "pointsOfCounselCount": 0,
-    "appearancesCount": 0,
-    "opinionBlocksCount": 43,
-    "footnotesCount": 3
-  },
-  "citations": {
-    "slipOpinion": "2023 NY Slip Op 01352",
-    "officialCitation": "39 NY3d 1158",
-    "pageMarkerCount": 23
-  },
-  "opinionStructure": {
-    "totalWritings": 3,
-    "byKind": {
-      "opinion_of_the_court": 1,
-      "unknown": 1,
-      "dissent": 1
+  "sourceFeatures": {
+    "citationShape": {
+      "slipOpinionLineIncludesOfficialCitation": true,
+      "officialCitationInParentheses": false,
+      "officialCitationInBrackets": true
     },
-    "authors": [
-      "Wilson"
+    "counselShape": {
+      "usesAppearancesOfCounsel": true,
+      "usesPointsOfCounsel": false,
+      "appearancesMustBeDerivedFromPointsOfCounsel": false
+    },
+    "headerQuirks": [
+      "official citation is embedded in a bracketed slip-op header line"
     ],
-    "qualifierLines": [
-      "{**39 NY3d at 1159} OPINION OF THE COURT",
-      "Memorandum.",
-      "Innocent people go to prison and guilty people go free when we exclude relevant evidence. Our blanket prohibition on using any evidence of the victim's character or prior bad acts in considering a dispute as to who was the first aggressor undermines our \"truth-seeking function\" by barring the consideration of facts relevant to a material issue (, 35 NY3d 173, 178 [2020]). Excluding that evidence is especially concerning because it offends \"our basic philosophic belief that, everything considered, in criminal cases there is to be greater latitude in admitting exculpatory evidence than in determining whether prejudicial potentialities in proof offered to show guilt should result in its exclusion\" (Matter of Robert S., 52 NY2d 1046, 1053 [1981, Fuchsberg, J., dissenting], citing 1 Wigmore, Evidence, § 194]). {**39 NY3d at 1167}Given its potential to obscure the truth, the Miller rule has been sharply criticized (see e.g. Robert S., 52 NY2d at 1052 [Fuchsberg, J., dissenting]; Williams v Lord, 996 F2d 1481, 1485 [2d Cir 1993, Cardamone, J., concurring]).",
-      "The majority counters not so much by defending the court's conduct in this case—which involves a limiting instruction on already-introduced evidence—but in imagining a hypothetical case in which some rule one might extract from the dissent were applied differently to an incomplete set of facts (see majority mem at 1160 n). I would \"reject the hypothetical on threshold grounds\" (see Paul Gewirtz, The Jurisprudence of Hypotheticals, 32 J Legal Educ 120, 121 [1982]). The majority speculates that a defendant accused of murdering a 17-year-old victim might offer direct evidence of a prior youthful offense to show the killing was justified (majority mem at 1160 n), \"but one cannot simply assume that the checks [in the system] fail\" (Gewirtz at 121). In the majority's hypothetical, a trial judge would have found the evidence relevant, insufficiently prejudicial, and noncumulative at the very least, and a jury would weigh it along with all other relevant evidence. Suppose—to alter the majority's hypothetical a bit—the 17-year-old victim had several youthful offender adjudications resulting from attempted knifepoint robberies over the past year in the exact location where the killing took place and was found shot by the defendant, knife in hand. Surely in such a context the previous attempted robberies would help a jury decide whether the defendant was the first aggressor. Although hypotheticals can help us think more clearly and design better rules (see id. at 120-121), the majority's textureless hypothetical does not help us grapple with the limiting instruction at issue in this case.",
-      "The limiting instruction here, which prevented the jury from considering Mr. Pitt's past acts as evidence suggesting that he was the initial aggressor, does not serve the purpose of the youthful offender laws because Mr. Pitt's past acts were already revealed to the jury. Moreover, Mr. Guerra, not Mr. Pitt, was on trial. Mr. Guerra's right to a complete defense required the trial court to permit the jury to consider Mr. Pitt's prior similar violent acts as part of the evidence bearing on which of the two was the first aggressor. Whatever the rule might be in a case in which the victim's past acts were wholly obscured from the jury by virtue of a youthful offender adjudication, this{**39 NY3d at 1172} is not that case. Accordingly, I dissent and would remit for a new trial.",
-      "Acting Chief Judge Cannataro and Judges Garcia, Singas and Troutman concur; Judge Wilson dissents in an opinion, in which Judge Rivera concurs."
-    ],
-    "hasMemorandum": true,
-    "hasPerCuriam": false,
-    "concurrenceCount": 0,
-    "dissentCount": 1,
-    "mixedWritingCount": 0
+    "sourceQuirks": []
   },
-  "footnotes": {
-    "count": 3,
-    "labels": [
-      "*",
-      "1",
-      "2"
-    ],
-    "hasFootnotesHeading": true
+  "stanbookHints": {
+    "treatAsPlurality": false,
+    "noMajorityWriting": false,
+    "multipleOrdersResolved": false,
+    "deriveAppearancesFrom": "header_lines",
+    "officialCitationSource": "bracketed_header_citation",
+    "sourceTypos": [],
+    "parserCautions": [
+      "do not assume a full signed majority opinion structure when the source says Memorandum.",
+      "preserve separate writings as distinct opinion records rather than folding them into the main writing."
+    ]
   },
-  "anomalies": [
+  "analysisNotes": [
     {
-      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
-      "severity": "warning",
-      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
-    },
-    {
-      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
-      "severity": "warning",
-      "detail": "Raw appearance sentence is not reproduced in companion JSON: Winston & Strawn LLP , New York City ( Kelly A. Librera , Patrick S. Opdyke and Robert S. Pannullo of counsel), and Twyla Carter , The Legal Aid Society , New York City ( David Crow of counsel), for appellant."
-    },
-    {
-      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
-      "severity": "warning",
-      "detail": "Raw appearance sentence is not reproduced in companion JSON: Darcel D. Clark , District Attorney , Bronx ( T. Charles Won , Nancy D. Killian and Peter D. Coddington of counsel), for respondent."
-    },
-    {
-      "code": "MULTIPLE_WRITINGS",
-      "severity": "info",
-      "detail": "Companion JSON reports 3 writings."
-    },
-    {
-      "code": "MULTIPLE_HEADER_TABLES",
-      "severity": "info",
-      "detail": "Found 2 table elements before or within the header region."
+      "type": "structure",
+      "text": "The court resolves the appeal by memorandum and the source also includes separate writing(s)."
     }
   ]
 }

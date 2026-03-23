@@ -1,145 +1,111 @@
 {
+  "notesVersion": "1.0",
   "caseId": "2023_05972",
   "sourcePath": "coa/2023/2023_05972.htm",
-  "notesPath": "coa/2023/2023_05972.notes.json",
-  "generatedAt": "2026-03-22T19:47:13.196Z",
-  "source": {
-    "title": "People v Rodriguez (2023 NY Slip Op 05972)",
-    "publicationStatus": "published"
+  "provenance": {
+    "creationMode": "codex_updated",
+    "reviewStatus": "codex_amended",
+    "lastUpdatedAt": "2026-03-22T20:18:23.192Z",
+    "updatedBy": "codex",
+    "confidence": "medium"
   },
-  "fileInfo": {
-    "byteSize": 53233,
-    "lineCount": 183,
-    "tagCounts": {
-      "a": 74,
-      "b": 58,
-      "blockquote": 4,
-      "body": 2,
-      "br": 30,
-      "div": 24,
-      "font": 60,
-      "frac": 2,
-      "head": 2,
-      "html": 2,
-      "i": 282,
-      "p": 107,
-      "script": 4,
-      "style": 2,
-      "sup": 24,
-      "table": 4,
-      "td": 16,
-      "title": 2,
-      "tr": 16,
-      "u": 18
-    },
-    "unknownTags": [
-      "frac"
-    ],
-    "strayClosingTags": []
+  "decisionStructure": {
+    "decisionForm": "opinion_of_the_court",
+    "hasMajority": true,
+    "mainWritingKind": "opinion_of_the_court",
+    "mainWritingAuthor": "Rivera",
+    "isMemorandum": false,
+    "isPerCuriam": false,
+    "isOpinionOfTheCourt": true,
+    "notes": "The source presents a signed opinion of the court."
   },
-  "header": {
-    "hasPrimaryHeaderTable": true,
-    "primaryHeaderTableLines": [
-      "People v Rodriguez",
-      "2023 NY Slip Op 05972 [41 NY3d 1, 2023]",
-      "November 21, 2023",
-      "Rivera, J.",
-      "Court of Appeals",
-      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
-      "As corrected through Wednesday, April 3, 2024"
-    ],
-    "captionLines": [
-      "The People of the State of New York, Respondent,",
-      "v",
-      "Lance Rodriguez, Appellant."
-    ],
-    "citationLine": "2023 NY Slip Op 05972 41 NY3d 1, 2023",
-    "courtLine": "Court of Appeals",
-    "dateLines": [
-      "Argued November 16, 2022; reargued October 18, 2023; decided November 21, 2023",
-      "November 21, 2023",
-      "As corrected through Wednesday, April 3, 2024"
-    ],
-    "authorLine": null,
-    "appearanceSectionType": "none",
-    "pointsOfCounselCount": 0,
-    "appearanceLikeLines": [],
-    "companionAppearances": []
-  },
-  "sections": {
-    "summarySectionsCount": 0,
-    "headnotesCount": 0,
-    "pointsOfCounselCount": 0,
-    "appearancesCount": 0,
-    "opinionBlocksCount": 61,
-    "footnotesCount": 12
-  },
-  "citations": {
-    "slipOpinion": "2023 NY Slip Op 05972",
-    "officialCitation": "41 NY3d 1, 2023",
-    "pageMarkerCount": 29
-  },
-  "opinionStructure": {
-    "totalWritings": 3,
-    "byKind": {
-      "opinion_of_the_court": 1,
-      "unknown": 1,
-      "dissent": 1
-    },
-    "authors": [
-      "Rivera",
-      "Singas"
-    ],
-    "qualifierLines": [
-      "{**41 NY3d 1, at 4} OPINION OF THE COURT",
-      "The dissent rejects this comparison, positing that the police must engage in more \"significant show[s] of authority to stop a motor vehicle\" than a bicycle because, it reasons, the police \"almost always\" must \"activate their car's lights or sirens, or block the vehicle's movement, resulting in 'a possibly unsettling show of authority' and potentially creating 'substantial anxiety' \" and that \"much less is typically required to stop a bicycle\" (dissenting op at 20, quoting Prouse, 440 US at 657). This may be true but does little to further the dissent's position since the police may make these same displays of authority to a bicyclist. Moreover, whether directed at a driver or a bicyclist, a command to stop by armed agents of the State is unsettling, frightening and destabilizing. Indeed, an armed officer's command to stop—in this case, from a moving car—arguably constitutes a more robust display of authority and, in turn, induces more anxiety than lights and sirens. And, when a police vehicle passes or runs parallel to a bicyclist the rider is physically vulnerable in ways that an automobile driver is not. The sudden wind loads and aerodynamic forces acting on a bicyclist create instability and loss of control, potentially leading to injurious collisions and falls.",
-      "Moreover, once the police initiate contact, a reasonable bicyclist ordered to stop would not feel free to ride away (cf. May, 81 NY2d at 728). Indeed, \"studies over the last several decades on the social psychology of compliance, conformity,{**41 NY3d 1, at 10} social influence, and politeness have all converged on a single conclusion: the extent to which people feel free to refuse to comply is extremely limited under situationally induced pressures\" (Janice Nadler, No Need to Shout: Bus Sweeps and the Psychology of Coercion, 2002 Sup Ct Rev 153, 155 [2002] [collecting and summarizing studies]). The dissent ignores this long-known, popularly-understood reality. By contrast, our analysis is grounded in the very \"reasonableness\" which the dissent insists should be its \"touchstone\" (dissenting op at 18), in that it appropriately squares our search and seizure jurisprudence with this basic reality.",
-      "The dissent appears troubled by the effects of today's decision on the actions of the police, yet also seems internally conflicted. On the one hand, the dissent appears distressed over our holding's purported encouragement of more \"pretextual stops\" and potential to erode \"privacy for . . . [bi]cyclists\" (dissenting op at 21). However, this fear is unfounded. To borrow the dissent's phrasing, the rule we set today not only \"ensures that bicyclists cannot be stopped based on an officer's hunch or curiosity\" (dissenting op at 21), but also ensures that the police may not initiate an encounter with them absent reasonable suspicion of a crime or probable cause of a traffic violation. The dissent should train its alarm on its own approach which, by permitting police intrusions upon a bicyclist on lesser quanta of proof, would promote the very pretextual stops it fears (dissenting op at 21). Our application to bicyclists of the well-understood automobile exception follows logically from our precedents and strikes a sensible balance between \"the government's interest in the detection and apprehension of criminals against the encroachment involved with respect to an individual's right to privacy and personal security\" (People v Cantor, 36 NY2d 106, 111 [1975]). The dissent's approach would greatly diminish the latter interest.",
-      "Contradicting itself, the dissent also urges that our holding will result in too few stops and arrests, claiming—without any basis in fact or law—that, after today, \"instead of acting to rid our streets of the deadly menace presented by loaded firearms, the police will be forced to ignore a cyclist with a waistband bulge, for no reason other than that the person happened to be riding a bicycle\" (dissenting op at 21). Hardly. And hyperbole is not constitutional analysis. Indeed, nothing in today's decision remotely requires the police to leave \"what is seen . . . unseen\" (dissenting op at 21), that is, to cease surveillance of bicyclists{**41 NY3d 1, at 11} with suspiciously bulky waistbands. It merely reminds them of the constitutional limitations on their ability to intrude upon those bicyclists' personal liberty without some additional proof of criminal wrongdoing (see e.g. Holmes, 81 NY2d at 1058 [reasonable suspicion was absent where defendant stood in an area known for drug trafficking with an unidentified bulge in his jacket pocket]; People v Stewart, 41 NY2d 65, 69 [1976] [observing that \"a bulge in the pocket, unlike a waistband bulge, could be caused by any number of innocuous objects\"]).",
-      "The dissent's uncontroversial observation that \"a bicycle simply is not a car\" is of no moment (dissenting op at 19); we agree that the two are different forms of transportation. The point is that, in every relevant, legally-significant way, bicycles are similar to cars for purposes of a police encounter. Consequently, the Federal and State Constitutions shield bicyclists from unwarranted government intrusions to the same extent as they do with respect to motorists. We therefore conclude that bicycle stops, like automobile stops, are seizures under both constitutions, which the police lack the authority to conduct absent reasonable suspicion of criminal activity or{**41 NY3d 1, at 13} probable cause that the bicyclist has violated the rules of the road (see Hinshaw, 35 NY3d at 430).",
-      "A police officer observed defendant Lance Rodriguez riding a bicycle while clutching a bulky object at his waistband. The officer asked defendant to stop and, upon doing so, defendant admitted that he was carrying a gun. Today, the majority abandons this Court's long-settled precedent, overturns a gun conviction stemming from reasonable police action, and creates a new rule that transforms any stop of a bicycle from a facts and circumstances inquiry into a per se seizure. Because I would adhere to our well established jurisprudence, and because stare decisis principles should not be so carelessly disregarded, I dissent.",
-      "I dissent.",
-      "{**41 NY3d 1, at 22}Chief Judge Wilson and Judges Troutman and Egan Jr. concur. Judge Singas dissents and votes to affirm in an opinion, in which Judges Garcia and Cannataro concur. Judge Halligan took no part."
-    ],
-    "hasMemorandum": false,
-    "hasPerCuriam": false,
-    "concurrenceCount": 0,
-    "dissentCount": 1,
-    "mixedWritingCount": 0
-  },
-  "footnotes": {
-    "count": 12,
-    "labels": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7",
-      "8",
-      "9",
-      "1",
-      "2",
-      "*"
-    ],
-    "hasFootnotesHeading": true
-  },
-  "anomalies": [
+  "writings": [
     {
-      "code": "UNKNOWN_TAG",
-      "severity": "info",
-      "detail": "Encountered unknown tag <frac> in source HTML."
+      "order": 1,
+      "author": "Rivera",
+      "kind": "opinion_of_the_court",
+      "label": "OPINION OF THE COURT",
+      "hasJoiners": true,
+      "joiners": [
+        "Wilson",
+        "Troutman",
+        "Egan Jr. [FN*]"
+      ],
+      "scope": "main court writing",
+      "relationshipToResult": "controls the court's disposition",
+      "confidence": "high"
     },
     {
-      "code": "MULTIPLE_WRITINGS",
-      "severity": "info",
-      "detail": "Companion JSON reports 3 writings."
+      "order": 2,
+      "author": "Singas",
+      "kind": "dissent",
+      "label": "dissenting",
+      "hasJoiners": false,
+      "joiners": [
+        "Garcia",
+        "Cannataro"
+      ],
+      "scope": null,
+      "relationshipToResult": "disagrees with the court's disposition",
+      "confidence": "medium"
+    }
+  ],
+  "resultStructure": {
+    "hasMultipleResults": false,
+    "hasMultipleLowerCourtRulings": false,
+    "resultUnits": [
+      {
+        "label": "disposition",
+        "disposition": "Order reversed, defendant's motion to suppress granted and indictment dismissed."
+      }
+    ],
+    "mixedResultDisposition": false,
+    "confidence": "low"
+  },
+  "sourceFeatures": {
+    "citationShape": {
+      "slipOpinionLineIncludesOfficialCitation": true,
+      "officialCitationInParentheses": false,
+      "officialCitationInBrackets": true
+    },
+    "counselShape": {
+      "usesAppearancesOfCounsel": false,
+      "usesPointsOfCounsel": false,
+      "appearancesMustBeDerivedFromPointsOfCounsel": false
+    },
+    "headerQuirks": [
+      "official citation is embedded in a bracketed slip-op header line",
+      "argument line reflects a reargument before decision"
+    ],
+    "sourceQuirks": [
+      "source uses nonstandard tag(s): frac"
+    ]
+  },
+  "stanbookHints": {
+    "treatAsPlurality": false,
+    "noMajorityWriting": false,
+    "multipleOrdersResolved": false,
+    "deriveAppearancesFrom": null,
+    "officialCitationSource": "bracketed_header_citation",
+    "sourceTypos": [
+      {
+        "location": "html_markup",
+        "issue": "nonstandard tag(s): frac",
+        "effect": "lightweight HTML extraction should not assume only standard reporter tags appear in the source"
+      }
+    ],
+    "parserCautions": [
+      "preserve separate writings as distinct opinion records rather than folding them into the main writing."
+    ]
+  },
+  "analysisNotes": [
+    {
+      "type": "structure",
+      "text": "The source reflects both an original argument and a later reargument before decision."
     },
     {
-      "code": "MULTIPLE_HEADER_TABLES",
-      "severity": "info",
-      "detail": "Found 2 table elements before or within the header region."
+      "type": "source",
+      "text": "The HTML includes nonstandard tag markup (frac), which is a small parser-risk signal."
     }
   ]
 }

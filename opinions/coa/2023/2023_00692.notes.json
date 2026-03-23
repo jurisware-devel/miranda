@@ -1,112 +1,79 @@
 {
+  "notesVersion": "1.0",
   "caseId": "2023_00692",
   "sourcePath": "coa/2023/2023_00692.htm",
-  "notesPath": "coa/2023/2023_00692.notes.json",
-  "generatedAt": "2026-03-22T19:47:13.168Z",
-  "source": {
-    "title": "People v Sanders (2023 NY Slip Op 00692)",
-    "publicationStatus": "published"
+  "provenance": {
+    "creationMode": "codex_updated",
+    "reviewStatus": "codex_amended",
+    "lastUpdatedAt": "2026-03-22T20:18:23.165Z",
+    "updatedBy": "codex",
+    "confidence": "high"
   },
-  "fileInfo": {
-    "byteSize": 10791,
-    "lineCount": 84,
-    "tagCounts": {
-      "a": 14,
-      "b": 14,
-      "blockquote": 2,
-      "body": 2,
-      "br": 10,
-      "div": 6,
-      "em": 2,
-      "font": 14,
-      "head": 2,
-      "html": 2,
-      "i": 34,
-      "p": 20,
-      "script": 4,
-      "style": 2,
-      "sup": 2,
-      "table": 4,
-      "td": 16,
-      "title": 2,
-      "tr": 16
-    },
-    "unknownTags": [],
-    "strayClosingTags": []
+  "decisionStructure": {
+    "decisionForm": "opinion_of_the_court",
+    "hasMajority": true,
+    "mainWritingKind": "opinion_of_the_court",
+    "mainWritingAuthor": "Rivera",
+    "isMemorandum": false,
+    "isPerCuriam": false,
+    "isOpinionOfTheCourt": true,
+    "notes": "The source presents a signed opinion of the court."
   },
-  "header": {
-    "hasPrimaryHeaderTable": true,
-    "primaryHeaderTableLines": [
-      "People v Sanders",
-      "2023 NY Slip Op 00692 [39 NY3d 216]",
-      "February 9, 2023",
-      "Rivera, J.",
-      "Court of Appeals",
-      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
-      "As corrected through Wednesday, April 12, 2023"
-    ],
-    "captionLines": [
-      "The People of the State of New York, Respondent,",
-      "v",
-      "Oscar Sanders, Appellant."
-    ],
-    "citationLine": "2023 NY Slip Op 00692 39 NY3d 216",
-    "courtLine": "Court of Appeals",
-    "dateLines": [
-      "Argued January 5, 2023; decided February 9, 2023",
-      "February 9, 2023",
-      "As corrected through Wednesday, April 12, 2023"
-    ],
-    "authorLine": null,
-    "appearanceSectionType": "none",
-    "pointsOfCounselCount": 0,
-    "appearanceLikeLines": [],
-    "companionAppearances": []
-  },
-  "sections": {
-    "summarySectionsCount": 0,
-    "headnotesCount": 0,
-    "pointsOfCounselCount": 0,
-    "appearancesCount": 0,
-    "opinionBlocksCount": 10,
-    "footnotesCount": 1
-  },
-  "citations": {
-    "slipOpinion": "2023 NY Slip Op 00692",
-    "officialCitation": "39 NY3d 216",
-    "pageMarkerCount": 6
-  },
-  "opinionStructure": {
-    "totalWritings": 1,
-    "byKind": {
-      "opinion_of_the_court": 1
-    },
-    "authors": [
-      "Rivera"
-    ],
-    "qualifierLines": [
-      "{**39 NY3d at 218} OPINION OF THE COURT",
-      "\"I understand that it's this [c]ourt's policy, I just learned this minutes ago, to keep my client in handcuffs while the jury comes out and renders their verdict. But it's my understanding that the law allows for the defense and [p]rosecution to poll the jury with the idea in mind that perhaps the unanimity of the jury can be questioned even when the foreperson announces a unanimous jury. And with that in mind, being that the defendant is in handcuffs while they announce that verdict, especially in the case of if it's a verdict of guilty, lends pressure to anyone who might dissent during that polling to be influenced negatively against anyone in handcuffs, and certainly in this case, I would say that's true for [defendant]. So I'm asking you to leave him uncuffed during the reading of the verdict for that reason.\"",
-      "Acting Chief Judge Cannataro and Judges Garcia, Wilson, Singas and Troutman concur."
-    ],
-    "hasMemorandum": false,
-    "hasPerCuriam": false,
-    "concurrenceCount": 0,
-    "dissentCount": 0,
-    "mixedWritingCount": 0
-  },
-  "footnotes": {
-    "count": 1,
-    "labels": [
-      "*"
-    ],
-    "hasFootnotesHeading": true
-  },
-  "anomalies": [
+  "writings": [
     {
-      "code": "MULTIPLE_HEADER_TABLES",
-      "severity": "info",
-      "detail": "Found 2 table elements before or within the header region."
+      "order": 1,
+      "author": "Rivera",
+      "kind": "opinion_of_the_court",
+      "label": "OPINION OF THE COURT",
+      "hasJoiners": true,
+      "joiners": [
+        "Cannataro",
+        "Garcia",
+        "Wilson",
+        "Singas",
+        "Troutman"
+      ],
+      "scope": "main court writing",
+      "relationshipToResult": "controls the court's disposition",
+      "confidence": "high"
     }
-  ]
+  ],
+  "resultStructure": {
+    "hasMultipleResults": false,
+    "hasMultipleLowerCourtRulings": false,
+    "resultUnits": [
+      {
+        "label": "disposition",
+        "disposition": "Order reversed and a new trial ordered."
+      }
+    ],
+    "mixedResultDisposition": false,
+    "confidence": "low"
+  },
+  "sourceFeatures": {
+    "citationShape": {
+      "slipOpinionLineIncludesOfficialCitation": true,
+      "officialCitationInParentheses": false,
+      "officialCitationInBrackets": true
+    },
+    "counselShape": {
+      "usesAppearancesOfCounsel": false,
+      "usesPointsOfCounsel": false,
+      "appearancesMustBeDerivedFromPointsOfCounsel": false
+    },
+    "headerQuirks": [
+      "official citation is embedded in a bracketed slip-op header line"
+    ],
+    "sourceQuirks": []
+  },
+  "stanbookHints": {
+    "treatAsPlurality": false,
+    "noMajorityWriting": false,
+    "multipleOrdersResolved": false,
+    "deriveAppearancesFrom": null,
+    "officialCitationSource": "bracketed_header_citation",
+    "sourceTypos": [],
+    "parserCautions": []
+  },
+  "analysisNotes": []
 }

@@ -1,140 +1,103 @@
 {
+  "notesVersion": "1.0",
   "caseId": "2023_05965",
   "sourcePath": "coa/2023/2023_05965.htm",
-  "notesPath": "coa/2023/2023_05965.notes.json",
-  "generatedAt": "2026-03-22T19:47:13.189Z",
-  "source": {
-    "title": "People v Telfair (2023 NY Slip Op 05965)",
-    "publicationStatus": "published"
+  "provenance": {
+    "creationMode": "codex_updated",
+    "reviewStatus": "codex_amended",
+    "lastUpdatedAt": "2026-03-22T20:18:23.185Z",
+    "updatedBy": "codex",
+    "confidence": "medium"
   },
-  "fileInfo": {
-    "byteSize": 62423,
-    "lineCount": 185,
-    "tagCounts": {
-      "a": 112,
-      "b": 50,
-      "blockquote": 2,
-      "body": 2,
-      "br": 30,
-      "div": 12,
-      "font": 66,
-      "head": 2,
-      "html": 2,
-      "i": 424,
-      "p": 120,
-      "script": 4,
-      "style": 2,
-      "sup": 22,
-      "table": 4,
-      "td": 16,
-      "title": 2,
-      "tr": 16,
-      "u": 6
-    },
-    "unknownTags": [],
-    "strayClosingTags": []
+  "decisionStructure": {
+    "decisionForm": "opinion_of_the_court",
+    "hasMajority": true,
+    "mainWritingKind": "opinion_of_the_court",
+    "mainWritingAuthor": "Halligan",
+    "isMemorandum": false,
+    "isPerCuriam": false,
+    "isOpinionOfTheCourt": true,
+    "notes": "The source presents a signed opinion of the court."
   },
-  "header": {
-    "hasPrimaryHeaderTable": true,
-    "primaryHeaderTableLines": [
-      "People v Telfair",
-      "2023 NY Slip Op 05965 [41 NY3d 107]",
-      "November 21, 2023",
-      "Halligan, J.",
-      "Court of Appeals",
-      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
-      "As corrected through Wednesday, April 24, 2024"
-    ],
-    "captionLines": [
-      "The People of the State of New York, Respondent,",
-      "v",
-      "Sebastian Telfair, Appellant."
-    ],
-    "citationLine": "2023 NY Slip Op 05965 41 NY3d 107",
-    "courtLine": "Court of Appeals",
-    "dateLines": [
-      "Argued September 13, 2023; decided November 21, 2023",
-      "November 21, 2023",
-      "As corrected through Wednesday, April 24, 2024"
-    ],
-    "authorLine": null,
-    "appearanceSectionType": "none",
-    "pointsOfCounselCount": 0,
-    "appearanceLikeLines": [],
-    "companionAppearances": []
-  },
-  "sections": {
-    "summarySectionsCount": 0,
-    "headnotesCount": 0,
-    "pointsOfCounselCount": 0,
-    "appearancesCount": 0,
-    "opinionBlocksCount": 63,
-    "footnotesCount": 11
-  },
-  "citations": {
-    "slipOpinion": "2023 NY Slip Op 05965",
-    "officialCitation": "41 NY3d 107",
-    "pageMarkerCount": 32
-  },
-  "opinionStructure": {
-    "totalWritings": 5,
-    "byKind": {
-      "opinion_of_the_court": 1,
-      "unknown": 2,
-      "concurrence": 1,
-      "dissent": 1
-    },
-    "authors": [
-      "Halligan",
-      "Rivera",
-      "Cannataro"
-    ],
-    "qualifierLines": [
-      "{**41 NY3d at 110} OPINION OF THE COURT",
-      "The Appellate Division affirmed, concluding that Supreme Court properly exercised its discretion in admitting the Molineux evidence because it was relevant and probative of Telfair's knowing possession of the guns; that Telfair had placed the element in issue by claiming a lack of knowledge; and that any potential prejudice was offset by the multiple limiting instructions (198 AD3d 678 [2d Dept 2021]). Justice Barros dissented and granted the defendant's application for leave to appeal to this Court and for a stay of execution of the judgment, which we extended pending determination of this appeal.",
-      "The key question at trial was knowledge: whether Telfair knew that the guns were in his truck. That focus was clear at a pretrial hearing, in defense counsel's opening statement and on summation, and in an exchange with the court following the jury's question on the significance of the Molineux evidence. While the dissent insists there is no meaningful difference between knowledge and mistake here (dissenting op at 121), the distinction seems plain: for example, one might know an item had been in a car but mistakenly think it had been removed, as opposed to having no knowledge it had ever been there in the first place. Precedent bears that out; Molineux and its progeny distinguish between \"mistake or accident\" and \"intent or guilty knowledge\" (Molineux, 168 NY at 297-305; Cass, 18 NY3d at 560). But our disagreement with the dissent on the nature of the defense is not dispositive of the outcome here. Whether labelled as knowledge or mistake, the evidence regarding the 2006 and 2007 incidents did not increase the possibility that Telfair knew there were guns in his car in June 2017.",
-      "Molineux and later cases rest on the proposition that in circumstances where \"intent is not to be inferred from the commission of the act,\" \"proof of intent is often unobtainable except by evidence of successive repetitions of the act\" (Molineux, 168 NY at 297-298). For example, in a case alleging check forgery, evidence that \"at or near the same time . . . the defendant had passed, or had in his possession, similar forged instruments\" would be relevant to prove intent, and the same is true for allegations of \"passing counterfeit money,\" \"receiving stolen property and obtaining money under false pretenses\" (id.). In these instances, the admission of prior bad acts evidence is \"founded on the law of probabilities\" (People v Ingram, 71 NY2d 474, 479 [1988]), as the dissent notes, or a theory of warning (id. at 482 [Kaye, J., concurring]).",
-      "Evidence of the 2006 and 2007 incidents was not relevant to whether Telfair knew that the guns in question were in his vehicle in 2017. The warning theory has no application here; that Telfair unknowingly possessed other guns in two completely different circumstances about 10 years prior could not have put him on notice that there might have been guns in his truck{**41 NY3d at 116} this time. As for the law of probabilities, the dissent (echoing the prosecutor's summation) argues that \"defendant's history of repeatedly transporting firearms outside the jurisdictions in which they were licensed, as well as the similarity of his excuses when caught\" refute his defense here (dissenting op at 122). But in Ingram, on which the dissent relies, the Court emphasized the factual similarity and temporal proximity of the later robbery to the one at issue in concluding that the evidence was properly admitted to cast doubt on the defendant's claim of innocence (Ingram, 71 NY2d at 480).",
-      "The dissent's assertion that today's ruling \"destabilizes our century-old Molineux jurisprudence\" is puzzling, to say the least (dissenting op at 130). Our disagreement turns on whether this particular Molineux evidence is relevant to an issue other than defendant's propensity to possess guns. If anything, it is the dissent's view that would upset our precedent. Neither the People nor the dissent have identified any New York appellate decision upholding reliance upon a defendant's prior possession of a gun to show subsequent knowing possession of a different gun, let alone doing so where the circumstances of the prior incident are so remote and distinct from those of the charged incident. The case cited by the Appellate Division below allowed testimony that the defendant knowingly possessed a gun in his residence two years earlier to prove his knowing possession of the same gun within the same residence (, 141 AD3d 1079, 1080-1081 [4th Dept 2016]; , 112 AD3d 994, 995 [3d Dept 2013] [testimony that defendant had purchased and used or displayed the same gun relevant to defendant's knowing possession of that same gun four years later]). Rather, the Appellate Division has held that evidence of prior possession of a different gun is not necessarily relevant to whether a defendant knowingly possessed a new firearm (, 139 AD3d 208, 213 [1st Dept 2016]).",
-      "As for the dissent's suggestion that we proceed blithely here, consistent with our duty to safeguard the rights of criminal defendants to a fair trial, we have reversed in numerous cases when Molineux evidence was improperly admitted (see e.g.{**41 NY3d at 118} People v Vargas, 88 NY2d 856 [1996] [reversing conviction for rape, sodomy, sexual abuse, and attempted robbery on Molineux grounds]; Hudy, 73 NY2d 40 [reversing conviction for multiple counts of sexual abuse and endangering child welfare on Molineux grounds]; Ely, 68 NY2d 520 [reversing murder conviction on Molineux grounds]; People v Santarelli, 49 NY2d 241 [1980] [same]; Zackowitz, 254 NY 192 [Cardozo, Ch. J.] [same]). If, as the dissent suggests, the People are regularly relying on Molineux evidence of prior gun possession to prove current knowing possession of different guns—which the dearth of case law on the topic suggests is not the case—we have no doubt that the People will be able to conform their tactics to our holding today in order to avoid reversal of firearm possession convictions on appeal.",
-      "First, contrary to the majority's conclusion, defendant's facial constitutional challenge to New York State's gun licensing regime, based on the United States Supreme Court's holding in New York State Rifle & Pistol Assn., Inc. v Bruen (597 US 1, 11 [2022]), is preserved. However, the claim is without merit for the reasons discussed in my dissent in People v Garcia (41 NY3d 62 [2023]), decided today. Defendant's alternative argument that his conviction violates the Privileges and Immunities Clause because, according to defendant, New York imposes an in-state residency requirement for obtaining a gun license also fails. Whether New York prohibits nonresidents from obtaining a gun license is an open question (, 21 NY3d 580, 582 [2013] [finding that a part-time resident could obtain New York license regardless of their domicile]). Defendant's out-of-state residency is disputed, and because he did not apply for a license, we do not know whether he would have been denied a license because of a nonresidency prohibition or because he was a New York resident. As I discuss in Garcia, remittal is not appropriate in this context because it would turn his criminal proceeding into a quasi-administrative licensing hearing.",
-      "The majority concludes that admission of this evidence was error under People v Molineux (168 NY 264 [1901]) because it had no relevance to the People's case. I believe the majority has fundamentally misconstrued our prior case law and infringed upon the discretion of the trial court. Indeed, it is difficult to avoid the conclusion that today's decision severely curtails a venerated evidentiary rule that has been in use since 1901. And it does so in the context of a gun-possession case, at a time when unlawful possession of firearms in this state is more persistent and threatening than ever. I therefore respectfully dissent.",
-      "Even then-Associate Judge Kaye, in a concurrence from which the majority appears to draw inspiration, agreed that evidence of the subsequent robbery was relevant to prove the defendant's \"intent\" to commit the charged offense, \"eliminate[ ] the element of innocent intent,\" and \"negative accident or inadvertence,\" based on the common understanding that \"[s]imilar results, quite simply, do not usually occur through abnormal causes\" (see id. at 482 [Kaye, J., concurring] [internal quotation marks omitted]). As she put it, the Molineux evidence \"tend[ed] to decrease the possibility that [the defendant's] presence with [the companion] on the earlier occasion was coincidental or otherwise innocent\" (id. at 483).",
-      "In his briefs to this Court, defendant adopts the dissenting Justice's reasoning below that the evidence was prejudicial because the gun in the 2006 incident was placed \"in a pillow that was imprinted with his baby's photograph\" and the 2007 incident involved defendant \"operating a vehicle at an excessive rate of speed without a valid driver['s] license\" (198 AD3d 678, 689 [2d Dept 2021, Barros, J., dissenting]). Neither of those points demonstrate that the evidence was so prejudicial that its admission amounted to an abuse of discretion. Defendants' prior crimes were not particularly \"heinous\" (see Robinson, 68 NY2d at 549-550; compare Molineux, 168 NY 264 [evidence admitted that the defendant had previously killed a man by poisoning him with mercury]). It is difficult to grasp the prejudice caused by the child's photograph on the defendant's pillow: it was not the child's pillow, and the child was not present. The acts of speeding and driving with an expired license are not the type of conduct an average person is likely to feel compelled to punish regardless of the merits of the actual offense charged. Moreover, it is unclear whether defendant made specific and timely objections to these portions of the testimony. And to the extent the remoteness of the incidents and the fact that they involved different guns and necessarily different excuses on defendant's part diminished their probative value,{**41 NY3d at 129} they also diminished the risk of prejudice as the average juror is capable of recognizing and accounting for those differences (and as discussed below, the jurors here apparently did so)."
-    ],
-    "hasMemorandum": false,
-    "hasPerCuriam": false,
-    "concurrenceCount": 1,
-    "dissentCount": 1,
-    "mixedWritingCount": 0
-  },
-  "footnotes": {
-    "count": 11,
-    "labels": [
-      "1",
-      "2",
-      "3",
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7",
-      "8"
-    ],
-    "hasFootnotesHeading": true
-  },
-  "anomalies": [
+  "writings": [
     {
-      "code": "MULTIPLE_WRITINGS",
-      "severity": "info",
-      "detail": "Companion JSON reports 5 writings."
+      "order": 1,
+      "author": "Halligan",
+      "kind": "opinion_of_the_court",
+      "label": "OPINION OF THE COURT",
+      "hasJoiners": true,
+      "joiners": [
+        "Wilson",
+        "Troutman"
+      ],
+      "scope": "main court writing",
+      "relationshipToResult": "controls the court's disposition",
+      "confidence": "high"
     },
     {
-      "code": "MULTIPLE_HEADER_TABLES",
-      "severity": "info",
-      "detail": "Found 2 table elements before or within the header region."
+      "order": 2,
+      "author": "Rivera",
+      "kind": "concurrence",
+      "label": "concurring",
+      "hasJoiners": false,
+      "joiners": [],
+      "scope": null,
+      "relationshipToResult": "agrees with the disposition but offers separate reasoning",
+      "confidence": "medium"
+    },
+    {
+      "order": 3,
+      "author": "Cannataro",
+      "kind": "dissent",
+      "label": "dissenting",
+      "hasJoiners": false,
+      "joiners": [
+        "Garcia",
+        "Singas"
+      ],
+      "scope": null,
+      "relationshipToResult": "disagrees with the court's disposition",
+      "confidence": "medium"
     }
-  ]
+  ],
+  "resultStructure": {
+    "hasMultipleResults": false,
+    "hasMultipleLowerCourtRulings": false,
+    "resultUnits": [
+      {
+        "label": "disposition",
+        "disposition": "Order reversed and a new trial ordered."
+      }
+    ],
+    "mixedResultDisposition": false,
+    "confidence": "low"
+  },
+  "sourceFeatures": {
+    "citationShape": {
+      "slipOpinionLineIncludesOfficialCitation": true,
+      "officialCitationInParentheses": false,
+      "officialCitationInBrackets": true
+    },
+    "counselShape": {
+      "usesAppearancesOfCounsel": false,
+      "usesPointsOfCounsel": false,
+      "appearancesMustBeDerivedFromPointsOfCounsel": false
+    },
+    "headerQuirks": [
+      "official citation is embedded in a bracketed slip-op header line"
+    ],
+    "sourceQuirks": []
+  },
+  "stanbookHints": {
+    "treatAsPlurality": false,
+    "noMajorityWriting": false,
+    "multipleOrdersResolved": false,
+    "deriveAppearancesFrom": null,
+    "officialCitationSource": "bracketed_header_citation",
+    "sourceTypos": [],
+    "parserCautions": [
+      "preserve separate writings as distinct opinion records rather than folding them into the main writing."
+    ]
+  },
+  "analysisNotes": []
 }

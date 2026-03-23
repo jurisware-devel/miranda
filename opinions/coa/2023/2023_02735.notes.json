@@ -1,113 +1,79 @@
 {
+  "notesVersion": "1.0",
   "caseId": "2023_02735",
   "sourcePath": "coa/2023/2023_02735.htm",
-  "notesPath": "coa/2023/2023_02735.notes.json",
-  "generatedAt": "2026-03-22T19:47:13.175Z",
-  "source": {
-    "title": "People v Saenger (2023 NY Slip Op 02735)",
-    "publicationStatus": "published"
+  "provenance": {
+    "creationMode": "codex_updated",
+    "reviewStatus": "codex_amended",
+    "lastUpdatedAt": "2026-03-22T20:18:23.172Z",
+    "updatedBy": "codex",
+    "confidence": "high"
   },
-  "fileInfo": {
-    "byteSize": 20451,
-    "lineCount": 105,
-    "tagCounts": {
-      "a": 40,
-      "b": 22,
-      "blockquote": 2,
-      "body": 2,
-      "br": 16,
-      "div": 12,
-      "font": 24,
-      "head": 2,
-      "html": 2,
-      "i": 82,
-      "p": 42,
-      "script": 4,
-      "style": 2,
-      "sup": 8,
-      "table": 4,
-      "td": 16,
-      "title": 2,
-      "tr": 16,
-      "u": 6
-    },
-    "unknownTags": [],
-    "strayClosingTags": []
+  "decisionStructure": {
+    "decisionForm": "opinion_of_the_court",
+    "hasMajority": true,
+    "mainWritingKind": "opinion_of_the_court",
+    "mainWritingAuthor": "Troutman",
+    "isMemorandum": false,
+    "isPerCuriam": false,
+    "isOpinionOfTheCourt": true,
+    "notes": "The source presents a signed opinion of the court."
   },
-  "header": {
-    "hasPrimaryHeaderTable": true,
-    "primaryHeaderTableLines": [
-      "People v Saenger",
-      "2023 NY Slip Op 02735 [39 NY3d 433]",
-      "May 18, 2023",
-      "Troutman, J.",
-      "Court of Appeals",
-      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
-      "As corrected through Wednesday, July 5, 2023"
-    ],
-    "captionLines": [
-      "The People of the State of New York, Respondent,",
-      "v",
-      "Michael Saenger, Appellant."
-    ],
-    "citationLine": "2023 NY Slip Op 02735 39 NY3d 433",
-    "courtLine": "Court of Appeals",
-    "dateLines": [
-      "Argued April 19, 2023; decided May 18, 2023",
-      "May 18, 2023",
-      "As corrected through Wednesday, July 5, 2023"
-    ],
-    "authorLine": null,
-    "appearanceSectionType": "none",
-    "pointsOfCounselCount": 0,
-    "appearanceLikeLines": [],
-    "companionAppearances": []
-  },
-  "sections": {
-    "summarySectionsCount": 0,
-    "headnotesCount": 0,
-    "pointsOfCounselCount": 0,
-    "appearancesCount": 0,
-    "opinionBlocksCount": 22,
-    "footnotesCount": 4
-  },
-  "citations": {
-    "slipOpinion": "2023 NY Slip Op 02735",
-    "officialCitation": "39 NY3d 433",
-    "pageMarkerCount": 11
-  },
-  "opinionStructure": {
-    "totalWritings": 1,
-    "byKind": {
-      "opinion_of_the_court": 1
-    },
-    "authors": [
-      "Troutman"
-    ],
-    "qualifierLines": [
-      "{**39 NY3d at 436} OPINION OF THE COURT"
-    ],
-    "hasMemorandum": false,
-    "hasPerCuriam": false,
-    "concurrenceCount": 0,
-    "dissentCount": 0,
-    "mixedWritingCount": 0
-  },
-  "footnotes": {
-    "count": 4,
-    "labels": [
-      "1",
-      "2",
-      "3",
-      "4"
-    ],
-    "hasFootnotesHeading": true
-  },
-  "anomalies": [
+  "writings": [
     {
-      "code": "MULTIPLE_HEADER_TABLES",
-      "severity": "info",
-      "detail": "Found 2 table elements before or within the header region."
+      "order": 1,
+      "author": "Troutman",
+      "kind": "opinion_of_the_court",
+      "label": "OPINION OF THE COURT",
+      "hasJoiners": true,
+      "joiners": [
+        "Wilson",
+        "Rivera",
+        "Garcia",
+        "Singas",
+        "Cannataro"
+      ],
+      "scope": "main court writing",
+      "relationshipToResult": "controls the court's disposition",
+      "confidence": "high"
     }
-  ]
+  ],
+  "resultStructure": {
+    "hasMultipleResults": false,
+    "hasMultipleLowerCourtRulings": false,
+    "resultUnits": [
+      {
+        "label": "disposition",
+        "disposition": "Order modified in accordance with the opinion herein and, as so modified, affirmed."
+      }
+    ],
+    "mixedResultDisposition": false,
+    "confidence": "low"
+  },
+  "sourceFeatures": {
+    "citationShape": {
+      "slipOpinionLineIncludesOfficialCitation": true,
+      "officialCitationInParentheses": false,
+      "officialCitationInBrackets": true
+    },
+    "counselShape": {
+      "usesAppearancesOfCounsel": false,
+      "usesPointsOfCounsel": false,
+      "appearancesMustBeDerivedFromPointsOfCounsel": false
+    },
+    "headerQuirks": [
+      "official citation is embedded in a bracketed slip-op header line"
+    ],
+    "sourceQuirks": []
+  },
+  "stanbookHints": {
+    "treatAsPlurality": false,
+    "noMajorityWriting": false,
+    "multipleOrdersResolved": false,
+    "deriveAppearancesFrom": null,
+    "officialCitationSource": "bracketed_header_citation",
+    "sourceTypos": [],
+    "parserCautions": []
+  },
+  "analysisNotes": []
 }

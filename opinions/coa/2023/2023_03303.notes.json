@@ -1,154 +1,100 @@
 {
+  "notesVersion": "1.0",
   "caseId": "2023_03303",
   "sourcePath": "coa/2023/2023_03303.htm",
-  "notesPath": "coa/2023/2023_03303.notes.json",
-  "generatedAt": "2026-03-22T19:47:13.183Z",
-  "source": {
-    "title": "People v Anthony (2023 NY Slip Op 03303)",
-    "publicationStatus": "published"
+  "provenance": {
+    "creationMode": "codex_updated",
+    "reviewStatus": "codex_amended",
+    "lastUpdatedAt": "2026-03-22T20:18:23.179Z",
+    "updatedBy": "codex",
+    "confidence": "medium"
   },
-  "fileInfo": {
-    "byteSize": 55202,
-    "lineCount": 155,
-    "tagCounts": {
-      "a": 80,
-      "b": 34,
-      "blockquote": 2,
-      "body": 2,
-      "br": 26,
-      "div": 32,
-      "font": 64,
-      "head": 2,
-      "html": 2,
-      "i": 190,
-      "opinion": 1,
-      "p": 111,
-      "script": 4,
-      "style": 2,
-      "sup": 14,
-      "table": 4,
-      "td": 14,
-      "title": 2,
-      "tr": 14,
-      "u": 22
+  "decisionStructure": {
+    "decisionForm": "memorandum",
+    "hasMajority": true,
+    "mainWritingKind": "memorandum",
+    "mainWritingAuthor": null,
+    "isMemorandum": true,
+    "isPerCuriam": true,
+    "isOpinionOfTheCourt": true,
+    "notes": "The court resolves the appeal by memorandum and includes at least one separate writing."
+  },
+  "writings": [
+    {
+      "order": 1,
+      "author": null,
+      "kind": "memorandum",
+      "label": "OPINION OF THE COURT",
+      "hasJoiners": true,
+      "joiners": [
+        "Garcia",
+        "Singas",
+        "Cannataro",
+        "Troutman",
+        "Halligan"
+      ],
+      "scope": "memorandum disposition",
+      "relationshipToResult": "controls the court's disposition",
+      "confidence": "high"
     },
-    "unknownTags": [],
-    "strayClosingTags": []
-  },
-  "header": {
-    "hasPrimaryHeaderTable": true,
-    "primaryHeaderTableLines": [
-      "People v Anthony",
-      "2023 NY Slip Op 03303 [40 NY3d 976]",
-      "June 15, 2023",
-      "Court of Appeals",
-      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
-      "As corrected through Wednesday, October 25, 2023"
-    ],
-    "captionLines": [],
-    "citationLine": "2023 NY Slip Op 03303 40 NY3d 976",
-    "courtLine": "Court of Appeals",
-    "dateLines": [
-      "Decided June 15, 2023",
-      "June 15, 2023",
-      "As corrected through Wednesday, October 25, 2023"
-    ],
-    "authorLine": null,
-    "appearanceSectionType": "appearances_only",
-    "pointsOfCounselCount": 0,
-    "appearanceLikeLines": [
+    {
+      "order": 2,
+      "author": "Rivera",
+      "kind": "dissent",
+      "label": "dissenting",
+      "hasJoiners": false,
+      "joiners": [
+        "Wilson"
+      ],
+      "scope": null,
+      "relationshipToResult": "disagrees with the court's disposition",
+      "confidence": "medium"
+    }
+  ],
+  "resultStructure": {
+    "hasMultipleResults": false,
+    "hasMultipleLowerCourtRulings": false,
+    "resultUnits": [
       {
-        "text": "The Legal Aid Society , New York City ( Nancy E. Little of counsel), for appellant.",
-        "sideGuess": "appellant",
-        "terminalPhrase": "for appellant.",
-        "hasArgumentTail": false,
-        "argumentTailPreview": null,
-        "sentenceText": "The Legal Aid Society , New York City ( Nancy E. Little of counsel), for appellant.",
-        "possiblyTruncated": false
-      },
-      {
-        "text": "Melinda Katz , District Attorney , Kew Gardens ( Rebecca Nealon of counsel), for respondent.",
-        "sideGuess": "respondent",
-        "terminalPhrase": "for respondent.",
-        "hasArgumentTail": false,
-        "argumentTailPreview": null,
-        "sentenceText": "Melinda Katz , District Attorney , Kew Gardens ( Rebecca Nealon of counsel), for respondent.",
-        "possiblyTruncated": false
+        "label": "disposition",
+        "disposition": "On review of submissions pursuant to section 500.11 of the Rules of the Court of Appeals (22 NYCRR 500.11), order affirmed, without costs, in a memorandum."
       }
     ],
-    "companionAppearances": []
+    "mixedResultDisposition": false,
+    "confidence": "low"
   },
-  "sections": {
-    "summarySectionsCount": 0,
-    "headnotesCount": 0,
-    "pointsOfCounselCount": 0,
-    "appearancesCount": 0,
-    "opinionBlocksCount": 64,
-    "footnotesCount": 7
-  },
-  "citations": {
-    "slipOpinion": "2023 NY Slip Op 03303",
-    "officialCitation": "40 NY3d 976",
-    "pageMarkerCount": 31
-  },
-  "opinionStructure": {
-    "totalWritings": 3,
-    "byKind": {
-      "opinion_of_the_court": 1,
-      "unknown": 1,
-      "dissent": 1
+  "sourceFeatures": {
+    "citationShape": {
+      "slipOpinionLineIncludesOfficialCitation": true,
+      "officialCitationInParentheses": false,
+      "officialCitationInBrackets": true
     },
-    "authors": [
-      "Rivera"
+    "counselShape": {
+      "usesAppearancesOfCounsel": true,
+      "usesPointsOfCounsel": false,
+      "appearancesMustBeDerivedFromPointsOfCounsel": false
+    },
+    "headerQuirks": [
+      "official citation is embedded in a bracketed slip-op header line"
     ],
-    "qualifierLines": [
-      "{**40 NY3d at 977} OPINION OF THE COURT",
-      "Memorandum."
-    ],
-    "hasMemorandum": true,
-    "hasPerCuriam": false,
-    "concurrenceCount": 0,
-    "dissentCount": 1,
-    "mixedWritingCount": 0
+    "sourceQuirks": []
   },
-  "footnotes": {
-    "count": 7,
-    "labels": [
-      "*",
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6"
-    ],
-    "hasFootnotesHeading": true
+  "stanbookHints": {
+    "treatAsPlurality": false,
+    "noMajorityWriting": false,
+    "multipleOrdersResolved": false,
+    "deriveAppearancesFrom": "header_lines",
+    "officialCitationSource": "bracketed_header_citation",
+    "sourceTypos": [],
+    "parserCautions": [
+      "do not assume a full signed majority opinion structure when the source says Memorandum.",
+      "preserve separate writings as distinct opinion records rather than folding them into the main writing."
+    ]
   },
-  "anomalies": [
+  "analysisNotes": [
     {
-      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
-      "severity": "warning",
-      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
-    },
-    {
-      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
-      "severity": "warning",
-      "detail": "Raw appearance sentence is not reproduced in companion JSON: The Legal Aid Society , New York City ( Nancy E. Little of counsel), for appellant."
-    },
-    {
-      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
-      "severity": "warning",
-      "detail": "Raw appearance sentence is not reproduced in companion JSON: Melinda Katz , District Attorney , Kew Gardens ( Rebecca Nealon of counsel), for respondent."
-    },
-    {
-      "code": "MULTIPLE_WRITINGS",
-      "severity": "info",
-      "detail": "Companion JSON reports 3 writings."
-    },
-    {
-      "code": "MULTIPLE_HEADER_TABLES",
-      "severity": "info",
-      "detail": "Found 2 table elements before or within the header region."
+      "type": "structure",
+      "text": "The court resolves the appeal by memorandum and the source also includes separate writing(s)."
     }
   ]
 }

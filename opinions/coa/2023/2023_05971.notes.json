@@ -1,170 +1,99 @@
 {
+  "notesVersion": "1.0",
   "caseId": "2023_05971",
   "sourcePath": "coa/2023/2023_05971.htm",
-  "notesPath": "coa/2023/2023_05971.notes.json",
-  "generatedAt": "2026-03-22T19:47:13.195Z",
-  "source": {
-    "title": "People v Espinosa (2023 NY Slip Op 05971)",
-    "publicationStatus": "published"
+  "provenance": {
+    "creationMode": "codex_updated",
+    "reviewStatus": "codex_amended",
+    "lastUpdatedAt": "2026-03-22T20:18:23.191Z",
+    "updatedBy": "codex",
+    "confidence": "medium"
   },
-  "fileInfo": {
-    "byteSize": 41586,
-    "lineCount": 131,
-    "tagCounts": {
-      "a": 62,
-      "b": 22,
-      "body": 2,
-      "br": 20,
-      "div": 24,
-      "font": 46,
-      "head": 2,
-      "html": 2,
-      "i": 296,
-      "opinion": 1,
-      "p": 83,
-      "script": 4,
-      "style": 2,
-      "sup": 8,
-      "table": 4,
-      "td": 14,
-      "title": 2,
-      "tr": 14,
-      "u": 16
+  "decisionStructure": {
+    "decisionForm": "memorandum",
+    "hasMajority": true,
+    "mainWritingKind": "memorandum",
+    "mainWritingAuthor": null,
+    "isMemorandum": true,
+    "isPerCuriam": true,
+    "isOpinionOfTheCourt": true,
+    "notes": "The court resolves the appeal by memorandum and includes at least one separate writing."
+  },
+  "writings": [
+    {
+      "order": 1,
+      "author": null,
+      "kind": "memorandum",
+      "label": "OPINION OF THE COURT",
+      "hasJoiners": true,
+      "joiners": [
+        "Wilson",
+        "Garcia",
+        "Singas",
+        "Cannataro",
+        "Troutman",
+        "Halligan"
+      ],
+      "scope": "memorandum disposition",
+      "relationshipToResult": "controls the court's disposition",
+      "confidence": "high"
     },
-    "unknownTags": [],
-    "strayClosingTags": []
-  },
-  "header": {
-    "hasPrimaryHeaderTable": true,
-    "primaryHeaderTableLines": [
-      "People v Espinosa",
-      "2023 NY Slip Op 05971 [40 NY3d 1065]",
-      "November 21, 2023",
-      "Court of Appeals",
-      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
-      "As corrected through Wednesday, February 7, 2024"
-    ],
-    "captionLines": [],
-    "citationLine": "2023 NY Slip Op 05971 40 NY3d 1065",
-    "courtLine": "Court of Appeals",
-    "dateLines": [
-      "Argued October 17, 2023; decided November 21, 2023",
-      "November 21, 2023",
-      "As corrected through Wednesday, February 7, 2024"
-    ],
-    "authorLine": null,
-    "appearanceSectionType": "appearances_only",
-    "pointsOfCounselCount": 0,
-    "appearanceLikeLines": [
+    {
+      "order": 2,
+      "author": "Rivera",
+      "kind": "dissent",
+      "label": "dissenting",
+      "hasJoiners": false,
+      "joiners": [],
+      "scope": null,
+      "relationshipToResult": "disagrees with the court's disposition",
+      "confidence": "medium"
+    }
+  ],
+  "resultStructure": {
+    "hasMultipleResults": false,
+    "hasMultipleLowerCourtRulings": false,
+    "resultUnits": [
       {
-        "text": "Patricia Pazner, Appellate Advocates , New York City ( Sam Feldman of counsel), for appellant.",
-        "sideGuess": "appellant",
-        "terminalPhrase": "for appellant.",
-        "hasArgumentTail": false,
-        "argumentTailPreview": null,
-        "sentenceText": "Patricia Pazner, Appellate Advocates , New York City ( Sam Feldman of counsel), for appellant.",
-        "possiblyTruncated": false
-      },
-      {
-        "text": "Melinda Katz, District Attorney , Kew Gardens ( Amanda Iannuzzi and John M. Castellano of counsel), for respondent.",
-        "sideGuess": "respondent",
-        "terminalPhrase": "for respondent.",
-        "hasArgumentTail": false,
-        "argumentTailPreview": null,
-        "sentenceText": "Melinda Katz, District Attorney , Kew Gardens ( Amanda Iannuzzi and John M. Castellano of counsel), for respondent.",
-        "possiblyTruncated": false
-      },
-      {
-        "text": "The Legal Aid Society , New York City ( David Loftis , Jenny S. Cheung , Jessica Goldthwaite and J. David Pollock of counsel), for The Legal Aid Society, amicus curiae.",
-        "sideGuess": null,
-        "terminalPhrase": "amicus curiae.",
-        "hasArgumentTail": false,
-        "argumentTailPreview": null,
-        "sentenceText": "The Legal Aid Society , New York City ( David Loftis , Jenny S. Cheung , Jessica Goldthwaite and J. David Pollock of counsel), for The Legal Aid Society, amicus curiae.",
-        "possiblyTruncated": false
+        "label": "disposition",
+        "disposition": "Order affirmed, in a memorandum."
       }
     ],
-    "companionAppearances": []
+    "mixedResultDisposition": false,
+    "confidence": "low"
   },
-  "sections": {
-    "summarySectionsCount": 0,
-    "headnotesCount": 0,
-    "pointsOfCounselCount": 0,
-    "appearancesCount": 0,
-    "opinionBlocksCount": 45,
-    "footnotesCount": 4
-  },
-  "citations": {
-    "slipOpinion": "2023 NY Slip Op 05971",
-    "officialCitation": "40 NY3d 1065",
-    "pageMarkerCount": 22
-  },
-  "opinionStructure": {
-    "totalWritings": 3,
-    "byKind": {
-      "opinion_of_the_court": 1,
-      "unknown": 1,
-      "dissent": 1
+  "sourceFeatures": {
+    "citationShape": {
+      "slipOpinionLineIncludesOfficialCitation": true,
+      "officialCitationInParentheses": false,
+      "officialCitationInBrackets": true
     },
-    "authors": [
-      "Rivera"
+    "counselShape": {
+      "usesAppearancesOfCounsel": true,
+      "usesPointsOfCounsel": false,
+      "appearancesMustBeDerivedFromPointsOfCounsel": false
+    },
+    "headerQuirks": [
+      "official citation is embedded in a bracketed slip-op header line"
     ],
-    "qualifierLines": [
-      "{**40 NY3d at 1065} OPINION OF THE COURT",
-      "Memorandum.",
-      "In addition to decisional law and state professional rules, the United States Supreme Court and this Court look to professional norms in assessing defense counsel's effectiveness (see Strickland, 466 US at 688; , 15 NY3d 8, 18 [2010]). \"[P]revailing norms of practice as reflected in American Bar Association standards and the like . . . are guides to determining what is reasonable . . . [because] these standards may be valuable measures of the prevailing professional norms of effective representation\" (Padilla v Kentucky, 559 US 356, 366-367 [2010] [internal quotation marks and citations omitted]; , 28 NY3d 556, 563 [2016] [looking to ABA Standards to determine whether counsel was ineffective for declining to pursue a justification defense at the defendant's insistence]; , 30 NY3d 347, 367-368 [2017, Rivera, J., dissenting] [professional norms relevant in determining whether counsel was ineffective for, after filing a notice of appeal, failing to either perfect the appeal or advise the defendant of how to do so, resulting in the appeal's dismissal]).",
-      "The prosecution's reliance on Williams v Illinois (567 US 50 [2012]) is similarly unpersuasive. Williams involved a forensic expert who testified that a DNA profile generated by an outside laboratory based on evidence collected as part of a rape kit matched the defendant's DNA profile that was already in the government's possession as part of an earlier, unrelated case (see id. at 56). A plurality of the Court concluded that \"[o]ut-of-court statements that are related by [a testifying] expert solely for the purpose of explaining the assumptions on which [the expert's] opinion rests\" are not subject to confrontation, in relevant part, because they are \"not prepared for the primary purpose of accusing a targeted individual\" (id. at 58, 84). Justice Thomas concurred only in the judgment, agreeing that the Confrontation Clause did not cover the underlying DNA profile, but on the basis—which no other Justice endorsed—that the profile was \"not a statement by a witness within the meaning of the Confrontation Clause\" because it lacked \"the solemnity of an affidavit or deposition\" (id. at 111 [Thomas, J., concurring] [internal quotation marks and alteration omitted]).",
-      "Justice Thomas squarely rejected the plurality's targeted-individual test (see id. at 114 [\"There is no textual justification . . . for limiting the confrontation right to statements made after the accused's identity became known\"]). So too did Justice Kagan who, joined by three other Justices, dissented, but agreed with Justice Thomas that none of the Court's prior cases had held that a testimonial statement \"must be meant to accuse a previously identified individual\" and that the plurality's targeted-individual test \"derives neither from the text nor from the history of the Confrontation Clause\" (id. at 135 [Kagan, J., dissenting]). Thus, before defendant's 2016 trial, a majority of the Justices specifically rejected the targeted-individual test the prosecution argues controlled at the time.{**40 NY3d at 1075}",
-      "The majority erroneously concludes that our decision in  (31 NY3d 1067 [2018]) controls this case and compels the conclusion that defense counsel here was not ineffective (majority mem at 1066). That conclusion is mistaken. First, we issued that one-paragraph memorandum more than two years after defendant's trial and thus it could not have dissuaded counsel from raising a Confrontation Clause objection to the DNA evidence—the only question relevant to deciding whether counsel was ineffective. ",
-      "The Appellate Division's description of defense counsel's actions in Rodriguez thus sheds light on our summary decision there and confirms that we did not, as the majority suggests, foreclose an ineffectiveness claim based on pre-John conduct. Our holding in Rodriguez that the record failed to establish counsel's ineffectiveness was based on the assumption \"that counsel failed to assert a meritorious Confrontation Clause challenge\" (31 NY3d at 1068). From that premise, we then concluded that \"the alleged omission d[id] not 'involve an issue that [was] so clear-cut and dispositive that no reasonable defense counsel would have failed to assert it' \" (Rodriguez, 31 NY3d at 1068, quoting McGee, 20 NY3d at 518). As our memorandum decision and the record of that criminalist's testimony suggest, the defendant's allegations of a meritorious confrontation claim may have been exaggerated—based on the law at the time—and not clear-cut grounds for a defense objection (see{**40 NY3d at 1078} id.; Rodriguez, 153 AD3d at 239-247). As we further noted, on that record, defendant also failed to demonstrate \" 'that the decision to forgo the contention could not have been grounded in a legitimate trial strategy' \" (Rodriguez, 31 NY3d at 1068, quoting McGee, 20 NY3d at 518). Notably, the defendant in Rodriguez did not advance an ineffective assistance of counsel claim at the Appellate Division, and made that claim for the first time on appeal to our Court (compare Rodriguez, 153 AD3d at 235, with id., 31 NY3d at 1068).",
-      "I dissent."
-    ],
-    "hasMemorandum": true,
-    "hasPerCuriam": false,
-    "concurrenceCount": 0,
-    "dissentCount": 1,
-    "mixedWritingCount": 0
+    "sourceQuirks": []
   },
-  "footnotes": {
-    "count": 4,
-    "labels": [
-      "1",
-      "2",
-      "3",
-      "4"
-    ],
-    "hasFootnotesHeading": true
+  "stanbookHints": {
+    "treatAsPlurality": false,
+    "noMajorityWriting": false,
+    "multipleOrdersResolved": false,
+    "deriveAppearancesFrom": "header_lines",
+    "officialCitationSource": "bracketed_header_citation",
+    "sourceTypos": [],
+    "parserCautions": [
+      "do not assume a full signed majority opinion structure when the source says Memorandum.",
+      "preserve separate writings as distinct opinion records rather than folding them into the main writing."
+    ]
   },
-  "anomalies": [
+  "analysisNotes": [
     {
-      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
-      "severity": "warning",
-      "detail": "Raw source suggests 3 appearance line(s), but companion JSON has 0."
-    },
-    {
-      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
-      "severity": "warning",
-      "detail": "Raw appearance sentence is not reproduced in companion JSON: Patricia Pazner, Appellate Advocates , New York City ( Sam Feldman of counsel), for appellant."
-    },
-    {
-      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
-      "severity": "warning",
-      "detail": "Raw appearance sentence is not reproduced in companion JSON: Melinda Katz, District Attorney , Kew Gardens ( Amanda Iannuzzi and John M. Castellano of counsel), for respondent."
-    },
-    {
-      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
-      "severity": "warning",
-      "detail": "Raw appearance sentence is not reproduced in companion JSON: The Legal Aid Society , New York City ( David Loftis , Jenny S. Cheung , Jessica Goldthwaite and J. David Pollock of counsel), for The Legal Aid Society, amicus curiae."
-    },
-    {
-      "code": "MULTIPLE_WRITINGS",
-      "severity": "info",
-      "detail": "Companion JSON reports 3 writings."
-    },
-    {
-      "code": "MULTIPLE_HEADER_TABLES",
-      "severity": "info",
-      "detail": "Found 2 table elements before or within the header region."
+      "type": "structure",
+      "text": "The court resolves the appeal by memorandum and the source also includes separate writing(s)."
     }
   ]
 }

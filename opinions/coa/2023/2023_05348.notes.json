@@ -1,131 +1,106 @@
 {
+  "notesVersion": "1.0",
   "caseId": "2023_05348",
   "sourcePath": "coa/2023/2023_05348.htm",
-  "notesPath": "coa/2023/2023_05348.notes.json",
-  "generatedAt": "2026-03-22T19:47:13.184Z",
-  "source": {
-    "title": "People v Lovett (2023 NY Slip Op 05348)",
-    "publicationStatus": "published"
+  "provenance": {
+    "creationMode": "codex_updated",
+    "reviewStatus": "codex_amended",
+    "lastUpdatedAt": "2026-03-22T20:18:23.181Z",
+    "updatedBy": "codex",
+    "confidence": "medium"
   },
-  "fileInfo": {
-    "byteSize": 10912,
-    "lineCount": 84,
-    "tagCounts": {
-      "a": 6,
-      "b": 4,
-      "body": 2,
-      "br": 6,
-      "div": 6,
-      "font": 16,
-      "head": 2,
-      "html": 2,
-      "i": 50,
-      "opinion": 1,
-      "p": 33,
-      "script": 4,
-      "style": 2,
-      "table": 4,
-      "td": 14,
-      "title": 2,
-      "tr": 14
+  "decisionStructure": {
+    "decisionForm": "memorandum",
+    "hasMajority": true,
+    "mainWritingKind": "memorandum",
+    "mainWritingAuthor": null,
+    "isMemorandum": true,
+    "isPerCuriam": true,
+    "isOpinionOfTheCourt": true,
+    "notes": "The court resolves the appeal by memorandum and includes at least one separate writing."
+  },
+  "writings": [
+    {
+      "order": 1,
+      "author": null,
+      "kind": "memorandum",
+      "label": "OPINION OF THE COURT",
+      "hasJoiners": true,
+      "joiners": [
+        "Wilson",
+        "Garcia",
+        "Singas",
+        "Cannataro",
+        "Troutman",
+        "Halligan"
+      ],
+      "scope": "memorandum disposition",
+      "relationshipToResult": "controls the court's disposition",
+      "confidence": "high"
     },
-    "unknownTags": [],
-    "strayClosingTags": []
-  },
-  "header": {
-    "hasPrimaryHeaderTable": true,
-    "primaryHeaderTableLines": [
-      "People v Lovett",
-      "2023 NY Slip Op 05348 [40 NY3d 1018]",
-      "October 24, 2023",
-      "Court of Appeals",
-      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
-      "As corrected through Wednesday, December 20, 2023"
-    ],
-    "captionLines": [],
-    "citationLine": "2023 NY Slip Op 05348 40 NY3d 1018",
-    "courtLine": "Court of Appeals",
-    "dateLines": [
-      "Decided October 24, 2023",
-      "October 24, 2023",
-      "As corrected through Wednesday, December 20, 2023"
-    ],
-    "authorLine": null,
-    "appearanceSectionType": "appearances_only",
-    "pointsOfCounselCount": 0,
-    "appearanceLikeLines": [
+    {
+      "order": 2,
+      "author": "Rivera",
+      "kind": "dissent",
+      "label": "dissenting",
+      "hasJoiners": false,
+      "joiners": [],
+      "scope": null,
+      "relationshipToResult": "disagrees with the court's disposition",
+      "confidence": "medium"
+    }
+  ],
+  "resultStructure": {
+    "hasMultipleResults": false,
+    "hasMultipleLowerCourtRulings": false,
+    "resultUnits": [
       {
-        "text": "J. Anthony Jordan, District Attorney , Fort Edward ( Taylor Fitzsimmons of counsel), for appellant.",
-        "sideGuess": "appellant",
-        "terminalPhrase": "for appellant.",
-        "hasArgumentTail": false,
-        "argumentTailPreview": null,
-        "sentenceText": "J. Anthony Jordan, District Attorney , Fort Edward ( Taylor Fitzsimmons of counsel), for appellant.",
-        "possiblyTruncated": false
+        "label": "disposition",
+        "disposition": "On review of submissions pursuant to section 500.11 of the Rules of the Court of Appeals (22 NYCRR 500.11), order affirmed, in a memorandum."
       }
     ],
-    "companionAppearances": []
+    "mixedResultDisposition": false,
+    "confidence": "low"
   },
-  "sections": {
-    "summarySectionsCount": 0,
-    "headnotesCount": 0,
-    "pointsOfCounselCount": 0,
-    "appearancesCount": 0,
-    "opinionBlocksCount": 14,
-    "footnotesCount": 0
-  },
-  "citations": {
-    "slipOpinion": "2023 NY Slip Op 05348",
-    "officialCitation": "40 NY3d 1018",
-    "pageMarkerCount": 7
-  },
-  "opinionStructure": {
-    "totalWritings": 3,
-    "byKind": {
-      "opinion_of_the_court": 1,
-      "unknown": 1,
-      "dissent": 1
+  "sourceFeatures": {
+    "citationShape": {
+      "slipOpinionLineIncludesOfficialCitation": true,
+      "officialCitationInParentheses": false,
+      "officialCitationInBrackets": true
     },
-    "authors": [
-      "Rivera"
+    "counselShape": {
+      "usesAppearancesOfCounsel": true,
+      "usesPointsOfCounsel": false,
+      "appearancesMustBeDerivedFromPointsOfCounsel": false
+    },
+    "headerQuirks": [
+      "official citation is embedded in a bracketed slip-op header line"
     ],
-    "qualifierLines": [
-      "{**40 NY3d at 1019} OPINION OF THE COURT",
-      "Memorandum.",
-      "Because the People agreed in Town Court that CPL 30.30 applied to the simplified traffic information, the issue is unreviewable (see CPL 470.05 [2]). Contrary to the dissent's suggestion, we engender no unjust result by applying our well-settled principles governing reviewability to reject the People's attempt to reinstate the accusatory instrument against this pro se defendant, now almost two years after dismissal, by renouncing their express concession that CPL 30.30 applied.",
-      "{**40 NY3d at 1022}I dissent."
-    ],
-    "hasMemorandum": true,
-    "hasPerCuriam": false,
-    "concurrenceCount": 0,
-    "dissentCount": 1,
-    "mixedWritingCount": 0
+    "sourceQuirks": [
+      "appearances section includes a respondent-precluded line instead of a normal responsive appearance"
+    ]
   },
-  "footnotes": {
-    "count": 0,
-    "labels": [],
-    "hasFootnotesHeading": false
+  "stanbookHints": {
+    "treatAsPlurality": false,
+    "noMajorityWriting": false,
+    "multipleOrdersResolved": false,
+    "deriveAppearancesFrom": "header_lines",
+    "officialCitationSource": "bracketed_header_citation",
+    "sourceTypos": [],
+    "parserCautions": [
+      "do not assume a full signed majority opinion structure when the source says Memorandum.",
+      "treat the respondent-precluded line as an appearance-section outcome, not a normal counsel entry.",
+      "preserve separate writings as distinct opinion records rather than folding them into the main writing."
+    ]
   },
-  "anomalies": [
+  "analysisNotes": [
     {
-      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
-      "severity": "warning",
-      "detail": "Raw source suggests 1 appearance line(s), but companion JSON has 0."
+      "type": "counsel",
+      "text": "The appearances section is asymmetric because the respondent is marked as precluded rather than listed with a conventional appearance line."
     },
     {
-      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
-      "severity": "warning",
-      "detail": "Raw appearance sentence is not reproduced in companion JSON: J. Anthony Jordan, District Attorney , Fort Edward ( Taylor Fitzsimmons of counsel), for appellant."
-    },
-    {
-      "code": "MULTIPLE_WRITINGS",
-      "severity": "info",
-      "detail": "Companion JSON reports 3 writings."
-    },
-    {
-      "code": "MULTIPLE_HEADER_TABLES",
-      "severity": "info",
-      "detail": "Found 2 table elements before or within the header region."
+      "type": "structure",
+      "text": "The court resolves the appeal by memorandum and the source also includes separate writing(s)."
     }
   ]
 }

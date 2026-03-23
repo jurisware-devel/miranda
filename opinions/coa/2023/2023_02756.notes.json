@@ -1,118 +1,93 @@
 {
+  "notesVersion": "1.0",
   "caseId": "2023_02756",
   "sourcePath": "coa/2023/2023_02756.htm",
-  "notesPath": "coa/2023/2023_02756.notes.json",
-  "generatedAt": "2026-03-22T19:47:13.176Z",
-  "source": {
-    "title": "People v Muhammad (2023 NY Slip Op 02756)",
-    "publicationStatus": "published"
+  "provenance": {
+    "creationMode": "codex_updated",
+    "reviewStatus": "codex_amended",
+    "lastUpdatedAt": "2026-03-22T20:18:23.173Z",
+    "updatedBy": "codex",
+    "confidence": "medium"
   },
-  "fileInfo": {
-    "byteSize": 26895,
-    "lineCount": 123,
-    "tagCounts": {
-      "a": 14,
-      "b": 10,
-      "blockquote": 10,
-      "body": 2,
-      "br": 11,
-      "div": 22,
-      "font": 34,
-      "head": 2,
-      "html": 2,
-      "i": 68,
-      "p": 58,
-      "script": 4,
-      "style": 2,
-      "sup": 2,
-      "table": 4,
-      "td": 16,
-      "title": 2,
-      "tr": 16,
-      "u": 16
-    },
-    "unknownTags": [],
-    "strayClosingTags": []
+  "decisionStructure": {
+    "decisionForm": "opinion_of_the_court",
+    "hasMajority": true,
+    "mainWritingKind": "opinion_of_the_court",
+    "mainWritingAuthor": "Rivera",
+    "isMemorandum": false,
+    "isPerCuriam": false,
+    "isOpinionOfTheCourt": true,
+    "notes": "The source presents a signed opinion of the court."
   },
-  "header": {
-    "hasPrimaryHeaderTable": true,
-    "primaryHeaderTableLines": [
-      "People v Muhammad",
-      "2023 NY Slip Op 02756 [40 NY3d 26]",
-      "May 23, 2023",
-      "Rivera, J.",
-      "Court of Appeals",
-      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
-      "As corrected through Wednesday, August 9, 2023"
-    ],
-    "captionLines": [
-      "The People of the State of New York, Respondent,",
-      "v",
-      "Hanza Muhammad, Appellant."
-    ],
-    "citationLine": "2023 NY Slip Op 02756 40 NY3d 26",
-    "courtLine": "Court of Appeals",
-    "dateLines": [
-      "Argued April 20, 2023; decided May 23, 2023",
-      "May 23, 2023",
-      "As corrected through Wednesday, August 9, 2023"
-    ],
-    "authorLine": null,
-    "appearanceSectionType": "none",
-    "pointsOfCounselCount": 0,
-    "appearanceLikeLines": [],
-    "companionAppearances": []
-  },
-  "sections": {
-    "summarySectionsCount": 0,
-    "headnotesCount": 0,
-    "pointsOfCounselCount": 0,
-    "appearancesCount": 0,
-    "opinionBlocksCount": 37,
-    "footnotesCount": 1
-  },
-  "citations": {
-    "slipOpinion": "2023 NY Slip Op 02756",
-    "officialCitation": "40 NY3d 26",
-    "pageMarkerCount": 16
-  },
-  "opinionStructure": {
-    "totalWritings": 3,
-    "byKind": {
-      "opinion_of_the_court": 1,
-      "unknown": 1,
-      "concurrence": 1
-    },
-    "authors": [
-      "Rivera",
-      "Garcia"
-    ],
-    "qualifierLines": [
-      "{**40 NY3d at 29} OPINION OF THE COURT"
-    ],
-    "hasMemorandum": false,
-    "hasPerCuriam": false,
-    "concurrenceCount": 1,
-    "dissentCount": 0,
-    "mixedWritingCount": 0
-  },
-  "footnotes": {
-    "count": 1,
-    "labels": [
-      "*"
-    ],
-    "hasFootnotesHeading": true
-  },
-  "anomalies": [
+  "writings": [
     {
-      "code": "MULTIPLE_WRITINGS",
-      "severity": "info",
-      "detail": "Companion JSON reports 3 writings."
+      "order": 1,
+      "author": "Rivera",
+      "kind": "opinion_of_the_court",
+      "label": "OPINION OF THE COURT",
+      "hasJoiners": true,
+      "joiners": [
+        "Wilson",
+        "Cannataro",
+        "Troutman",
+        "Halligan"
+      ],
+      "scope": "main court writing",
+      "relationshipToResult": "controls the court's disposition",
+      "confidence": "high"
     },
     {
-      "code": "MULTIPLE_HEADER_TABLES",
-      "severity": "info",
-      "detail": "Found 2 table elements before or within the header region."
+      "order": 2,
+      "author": "Garcia",
+      "kind": "concurrence",
+      "label": "concurring",
+      "hasJoiners": false,
+      "joiners": [
+        "Singas"
+      ],
+      "scope": null,
+      "relationshipToResult": "agrees with the disposition but offers separate reasoning",
+      "confidence": "medium"
     }
-  ]
+  ],
+  "resultStructure": {
+    "hasMultipleResults": false,
+    "hasMultipleLowerCourtRulings": false,
+    "resultUnits": [
+      {
+        "label": "disposition",
+        "disposition": "Order reversed and a new trial ordered."
+      }
+    ],
+    "mixedResultDisposition": false,
+    "confidence": "low"
+  },
+  "sourceFeatures": {
+    "citationShape": {
+      "slipOpinionLineIncludesOfficialCitation": true,
+      "officialCitationInParentheses": false,
+      "officialCitationInBrackets": true
+    },
+    "counselShape": {
+      "usesAppearancesOfCounsel": false,
+      "usesPointsOfCounsel": false,
+      "appearancesMustBeDerivedFromPointsOfCounsel": false
+    },
+    "headerQuirks": [
+      "official citation is embedded in a bracketed slip-op header line"
+    ],
+    "sourceQuirks": []
+  },
+  "stanbookHints": {
+    "treatAsPlurality": false,
+    "noMajorityWriting": false,
+    "multipleOrdersResolved": false,
+    "deriveAppearancesFrom": null,
+    "officialCitationSource": "bracketed_header_citation",
+    "sourceTypos": [],
+    "parserCautions": [
+      "preserve separate writings as distinct opinion records rather than folding them into the main writing."
+    ]
+  },
+  "analysisNotes": []
 }

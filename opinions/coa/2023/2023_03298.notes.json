@@ -1,111 +1,80 @@
 {
+  "notesVersion": "1.0",
   "caseId": "2023_03298",
   "sourcePath": "coa/2023/2023_03298.htm",
-  "notesPath": "coa/2023/2023_03298.notes.json",
-  "generatedAt": "2026-03-22T19:47:13.178Z",
-  "source": {
-    "title": "People ex rel. E.S. v Superintendent, Livingston Corr. Facility (2023 NY Slip Op 03298)",
-    "publicationStatus": "published"
+  "provenance": {
+    "creationMode": "codex_updated",
+    "reviewStatus": "codex_amended",
+    "lastUpdatedAt": "2026-03-22T20:18:23.174Z",
+    "updatedBy": "codex",
+    "confidence": "high"
   },
-  "fileInfo": {
-    "byteSize": 20436,
-    "lineCount": 97,
-    "tagCounts": {
-      "a": 26,
-      "b": 16,
-      "blockquote": 2,
-      "body": 2,
-      "br": 10,
-      "div": 6,
-      "font": 22,
-      "head": 2,
-      "html": 2,
-      "i": 70,
-      "p": 44,
-      "script": 4,
-      "style": 2,
-      "sup": 2,
-      "table": 4,
-      "td": 16,
-      "title": 2,
-      "tr": 16
-    },
-    "unknownTags": [],
-    "strayClosingTags": []
+  "decisionStructure": {
+    "decisionForm": "opinion_of_the_court",
+    "hasMajority": true,
+    "mainWritingKind": "opinion_of_the_court",
+    "mainWritingAuthor": "Halligan",
+    "isMemorandum": false,
+    "isPerCuriam": false,
+    "isOpinionOfTheCourt": true,
+    "notes": "The source presents a signed opinion of the court."
   },
-  "header": {
-    "hasPrimaryHeaderTable": true,
-    "primaryHeaderTableLines": [
-      "People ex rel. E.S. v Superintendent, Livingston Corr. Facility",
-      "2023 NY Slip Op 03298 [40 NY3d 230]",
-      "June 15, 2023",
-      "Halligan, J.",
-      "Court of Appeals",
-      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
-      "As corrected through Wednesday, October 25, 2023"
-    ],
-    "captionLines": [
-      "The People of the State of New York ex rel. E.S., Respondent,",
-      "v",
-      "Superintendent, Livingston Correctional Facility, et al., Appellants."
-    ],
-    "citationLine": "2023 NY Slip Op 03298 40 NY3d 230",
-    "courtLine": "Court of Appeals",
-    "dateLines": [
-      "Argued May 17, 2023; decided June 15, 2023",
-      "June 15, 2023",
-      "As corrected through Wednesday, October 25, 2023"
-    ],
-    "authorLine": null,
-    "appearanceSectionType": "none",
-    "pointsOfCounselCount": 0,
-    "appearanceLikeLines": [],
-    "companionAppearances": []
-  },
-  "sections": {
-    "summarySectionsCount": 0,
-    "headnotesCount": 0,
-    "pointsOfCounselCount": 0,
-    "appearancesCount": 0,
-    "opinionBlocksCount": 20,
-    "footnotesCount": 1
-  },
-  "citations": {
-    "slipOpinion": "2023 NY Slip Op 03298",
-    "officialCitation": "40 NY3d 230",
-    "pageMarkerCount": 10
-  },
-  "opinionStructure": {
-    "totalWritings": 1,
-    "byKind": {
-      "opinion_of_the_court": 1
-    },
-    "authors": [
-      "Halligan"
-    ],
-    "qualifierLines": [
-      "{**40 NY3d at 233} OPINION OF THE COURT",
-      "[1] {**40 NY3d at 234}The Appellate Division reversed, with two Justices dissenting (193 AD3d 57 [4th Dept 2021]). The Court held that while the statutory language at issue appeared to cover youthful offenders, nothing in SARA's legislative history indicated an intent to impose the school grounds condition on youthful offenders. The dissent noted the majority's concession that petitioner fell within the literal language of section 259-c (14) and took issue with the view that applying the plain language would defeat the legislative intent underlying the youthful offender scheme (see 193 AD3d at 64-65).",
-      "Respondents—the Superintendent of the Livingston Correctional Facility and the New York State Board of Parole—appealed as of right pursuant to CPLR 5601 (a), based on the two-Justice dissent. We now reverse."
-    ],
-    "hasMemorandum": false,
-    "hasPerCuriam": false,
-    "concurrenceCount": 0,
-    "dissentCount": 0,
-    "mixedWritingCount": 0
-  },
-  "footnotes": {
-    "count": 1,
-    "labels": [
-      "*"
-    ],
-    "hasFootnotesHeading": true
-  },
-  "anomalies": [
+  "writings": [
     {
-      "code": "MULTIPLE_HEADER_TABLES",
-      "severity": "info",
-      "detail": "Found 2 table elements before or within the header region."
+      "order": 1,
+      "author": "Halligan",
+      "kind": "opinion_of_the_court",
+      "label": "OPINION OF THE COURT",
+      "hasJoiners": true,
+      "joiners": [
+        "Wilson",
+        "Rivera",
+        "Garcia",
+        "Singas",
+        "Cannataro",
+        "Troutman"
+      ],
+      "scope": "main court writing",
+      "relationshipToResult": "controls the court's disposition",
+      "confidence": "high"
     }
-  ]
+  ],
+  "resultStructure": {
+    "hasMultipleResults": false,
+    "hasMultipleLowerCourtRulings": false,
+    "resultUnits": [
+      {
+        "label": "disposition",
+        "disposition": "Order insofar as appealed from reversed, without costs, proceeding converted to a declaratory judgment action and judgment granted in accordance with the opinion herein."
+      }
+    ],
+    "mixedResultDisposition": false,
+    "confidence": "low"
+  },
+  "sourceFeatures": {
+    "citationShape": {
+      "slipOpinionLineIncludesOfficialCitation": true,
+      "officialCitationInParentheses": false,
+      "officialCitationInBrackets": true
+    },
+    "counselShape": {
+      "usesAppearancesOfCounsel": false,
+      "usesPointsOfCounsel": false,
+      "appearancesMustBeDerivedFromPointsOfCounsel": false
+    },
+    "headerQuirks": [
+      "official citation is embedded in a bracketed slip-op header line"
+    ],
+    "sourceQuirks": []
+  },
+  "stanbookHints": {
+    "treatAsPlurality": false,
+    "noMajorityWriting": false,
+    "multipleOrdersResolved": false,
+    "deriveAppearancesFrom": null,
+    "officialCitationSource": "bracketed_header_citation",
+    "sourceTypos": [],
+    "parserCautions": []
+  },
+  "analysisNotes": []
 }

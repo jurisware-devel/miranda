@@ -1,153 +1,103 @@
 {
+  "notesVersion": "1.0",
   "caseId": "2023_01468",
   "sourcePath": "coa/2023/2023_01468.htm",
-  "notesPath": "coa/2023/2023_01468.notes.json",
-  "generatedAt": "2026-03-22T19:47:13.171Z",
-  "source": {
-    "title": "People v Ba (2023 NY Slip Op 01468)",
-    "publicationStatus": "published"
+  "provenance": {
+    "creationMode": "codex_updated",
+    "reviewStatus": "codex_amended",
+    "lastUpdatedAt": "2026-03-22T20:18:23.169Z",
+    "updatedBy": "codex",
+    "confidence": "medium"
   },
-  "fileInfo": {
-    "byteSize": 20699,
-    "lineCount": 101,
-    "tagCounts": {
-      "a": 26,
-      "b": 10,
-      "body": 2,
-      "br": 14,
-      "div": 14,
-      "font": 24,
-      "head": 2,
-      "html": 2,
-      "i": 132,
-      "opinion": 1,
-      "p": 42,
-      "script": 4,
-      "style": 2,
-      "sup": 2,
-      "table": 4,
-      "td": 14,
-      "title": 2,
-      "tr": 14,
-      "u": 6
+  "decisionStructure": {
+    "decisionForm": "mixed",
+    "hasMajority": null,
+    "mainWritingKind": "per_curiam",
+    "mainWritingAuthor": null,
+    "isMemorandum": false,
+    "isPerCuriam": true,
+    "isOpinionOfTheCourt": true,
+    "notes": "The source reflects an opinion of the court with separate writings and split alignment in the final vote line."
+  },
+  "writings": [
+    {
+      "order": 1,
+      "author": null,
+      "kind": "per_curiam",
+      "label": "OPINION OF THE COURT",
+      "hasJoiners": false,
+      "joiners": [],
+      "scope": "main court writing",
+      "relationshipToResult": "sets the lead court rationale but may not supply a single majority rationale",
+      "confidence": "medium"
     },
-    "unknownTags": [],
-    "strayClosingTags": []
-  },
-  "header": {
-    "hasPrimaryHeaderTable": true,
-    "primaryHeaderTableLines": [
-      "People v Ba",
-      "2023 NY Slip Op 01468 [39 NY3d 1130]",
-      "March 21, 2023",
-      "Court of Appeals",
-      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
-      "As corrected through Wednesday, June 7, 2023"
-    ],
-    "captionLines": [],
-    "citationLine": "2023 NY Slip Op 01468 39 NY3d 1130",
-    "courtLine": "Court of Appeals",
-    "dateLines": [
-      "Argued February 8, 2023; decided March 21, 2023",
-      "March 21, 2023",
-      "As corrected through Wednesday, June 7, 2023"
-    ],
-    "authorLine": null,
-    "appearanceSectionType": "appearances_only",
-    "pointsOfCounselCount": 0,
-    "appearanceLikeLines": [
+    {
+      "order": 2,
+      "author": "Garcia",
+      "kind": "concurrence",
+      "label": "concurring",
+      "hasJoiners": false,
+      "joiners": [],
+      "scope": null,
+      "relationshipToResult": "agrees with the disposition but offers separate reasoning",
+      "confidence": "medium"
+    },
+    {
+      "order": 3,
+      "author": "Troutman",
+      "kind": "concurrence",
+      "label": "concurring",
+      "hasJoiners": false,
+      "joiners": [],
+      "scope": null,
+      "relationshipToResult": "agrees with the disposition but offers separate reasoning",
+      "confidence": "medium"
+    }
+  ],
+  "resultStructure": {
+    "hasMultipleResults": false,
+    "hasMultipleLowerCourtRulings": false,
+    "resultUnits": [
       {
-        "text": "Twyla Carter, The Legal Aid Society , New York City ( Lauren E. Jones of counsel), for appellant.",
-        "sideGuess": "appellant",
-        "terminalPhrase": "for appellant.",
-        "hasArgumentTail": false,
-        "argumentTailPreview": null,
-        "sentenceText": "Twyla Carter, The Legal Aid Society , New York City ( Lauren E. Jones of counsel), for appellant.",
-        "possiblyTruncated": false
-      },
-      {
-        "text": "Alvin L. Bragg, Jr., District Attorney , New York City ( Meghan McLoughlin , Steven C. Wu and Samuel Z. Goldfine of counsel), for respondent.",
-        "sideGuess": "respondent",
-        "terminalPhrase": "for respondent.",
-        "hasArgumentTail": false,
-        "argumentTailPreview": null,
-        "sentenceText": "Alvin L. Bragg, Jr., District Attorney , New York City ( Meghan McLoughlin , Steven C. Wu and Samuel Z. Goldfine of counsel), for respondent.",
-        "possiblyTruncated": false
+        "label": "disposition",
+        "disposition": "Order insofar as appealed from reversed and case remitted to the Appellate Term, First Department, for a determination whether defendant's sentence is unduly harsh or severe (CPL 470.15 [6] [b])."
       }
     ],
-    "companionAppearances": []
+    "mixedResultDisposition": false,
+    "confidence": "low"
   },
-  "sections": {
-    "summarySectionsCount": 0,
-    "headnotesCount": 0,
-    "pointsOfCounselCount": 0,
-    "appearancesCount": 0,
-    "opinionBlocksCount": 24,
-    "footnotesCount": 1
-  },
-  "citations": {
-    "slipOpinion": "2023 NY Slip Op 01468",
-    "officialCitation": "39 NY3d 1130",
-    "pageMarkerCount": 11
-  },
-  "opinionStructure": {
-    "totalWritings": 5,
-    "byKind": {
-      "opinion_of_the_court": 1,
-      "unknown": 2,
-      "mixed": 1,
-      "concurrence": 1
+  "sourceFeatures": {
+    "citationShape": {
+      "slipOpinionLineIncludesOfficialCitation": true,
+      "officialCitationInParentheses": false,
+      "officialCitationInBrackets": true
     },
-    "authors": [
-      "Garcia",
-      "Troutman"
+    "counselShape": {
+      "usesAppearancesOfCounsel": true,
+      "usesPointsOfCounsel": false,
+      "appearancesMustBeDerivedFromPointsOfCounsel": false
+    },
+    "headerQuirks": [
+      "official citation is embedded in a bracketed slip-op header line"
     ],
-    "qualifierLines": [
-      "{**39 NY3d at 1130} OPINION OF THE COURT",
-      "Concur: Acting Chief Judge Cannataro and Judges Rivera, Garcia, Wilson, Singas and Troutman, Judge Garcia in a concurring opinion, in which Acting Chief Judge Cannataro and Judge Singas concur and Judge Troutman in a separate concurring opinion, in which Judges Rivera and Wilson concur.{**39 NY3d at 1131}",
-      " (concurring)",
-      ". I agree with my concurring colleagues that the case should be remitted for the Appellate Term to review defendant's sentence. While I do not assume that the Appellate Term misapprehended its plenary power to reduce a sentence as \"unduly harsh or severe\" (CPL 470.15 [6] [b]), I agree that the better course in this unique case is to have that court clarify its basis for declining to reduce defendant's $500 fine.",
-      "As my concurring colleagues note, the negotiated sentence may provide support for the court's conclusion that it is not unduly harsh or severe (Troutman, J., concurring op at 1136). That is especially true where, as here, the sentence was a fine and the defendant chose to pay that amount over the option to perform community service. My concurring colleagues would read the language of the Appellate Term decision to mean the court believed itself bound to affirm the sentence merely because it was the result of a plea bargain (Troutman, J., concurring op at 1136-1137). I read the Appellate Term's holding instead to mean that it did not find defendant's sentence unduly harsh or severe under these circumstances (see Delgado, 80 NY2d at 783), but agree to remit to that court for clarification of the basis for its decision.",
-      "Sentence disparities result. Indeed, there is empirical evidence of \"troubling racial disparities in plea-bargained cases,\" not only in the severity of sentence but in the prosecutor's willingness to offer defendants the chance to plead to reduced charges (Daniel S. McConkie, Jr., Plea Bargaining for the People, 104 Marq L Rev 1031, 1056 [2021]; see Ram Subramanian et al., Vera Institute of Justice, In the Shadows: A Review of the Research on Plea Bargaining at 24-29 [Sept. 2020];{**39 NY3d at 1136} Carlos Berdejó, Criminalizing Race: Racial Disparities in Plea-Bargaining, 59 BC L Rev 1187, 1213-1238 [2018]; see also Ring v Arizona, 536 US 584, 617 [2002, Breyer, J., concurring]). The Justices of our intermediate appellate courts—experienced in reviewing cases on the cold page and assessing the severity of legions of sentences for the same classes of offenses—may be less likely to be affected by certain kinds of bias that lead to sentencing disparities (see Michael M. O'Hear, Appellate Review of Sentences: Reconsidering Deference, 51 Wm & Mary L Rev 2123, 2141-2143 [2010])."
-    ],
-    "hasMemorandum": false,
-    "hasPerCuriam": false,
-    "concurrenceCount": 1,
-    "dissentCount": 0,
-    "mixedWritingCount": 1
+    "sourceQuirks": []
   },
-  "footnotes": {
-    "count": 1,
-    "labels": [
-      "*"
-    ],
-    "hasFootnotesHeading": true
+  "stanbookHints": {
+    "treatAsPlurality": false,
+    "noMajorityWriting": false,
+    "multipleOrdersResolved": false,
+    "deriveAppearancesFrom": "header_lines",
+    "officialCitationSource": "bracketed_header_citation",
+    "sourceTypos": [],
+    "parserCautions": [
+      "do not infer a single majority rationale from concurring-in-result or split vote language alone.",
+      "preserve separate writings as distinct opinion records rather than folding them into the main writing."
+    ]
   },
-  "anomalies": [
+  "analysisNotes": [
     {
-      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
-      "severity": "warning",
-      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
-    },
-    {
-      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
-      "severity": "warning",
-      "detail": "Raw appearance sentence is not reproduced in companion JSON: Twyla Carter, The Legal Aid Society , New York City ( Lauren E. Jones of counsel), for appellant."
-    },
-    {
-      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
-      "severity": "warning",
-      "detail": "Raw appearance sentence is not reproduced in companion JSON: Alvin L. Bragg, Jr., District Attorney , New York City ( Meghan McLoughlin , Steven C. Wu and Samuel Z. Goldfine of counsel), for respondent."
-    },
-    {
-      "code": "MULTIPLE_WRITINGS",
-      "severity": "info",
-      "detail": "Companion JSON reports 5 writings."
-    },
-    {
-      "code": "MULTIPLE_HEADER_TABLES",
-      "severity": "info",
-      "detail": "Found 2 table elements before or within the header region."
+      "type": "stanbook",
+      "text": "The vote line reflects concurring-in-result or otherwise split alignment, so no single majority rationale should be assumed from the source alone."
     }
   ]
 }

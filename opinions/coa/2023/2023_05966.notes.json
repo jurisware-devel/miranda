@@ -1,129 +1,116 @@
 {
+  "notesVersion": "1.0",
   "caseId": "2023_05966",
   "sourcePath": "coa/2023/2023_05966.htm",
-  "notesPath": "coa/2023/2023_05966.notes.json",
-  "generatedAt": "2026-03-22T19:47:13.189Z",
-  "source": {
-    "title": "People v Pastrana (2023 NY Slip Op 05966)",
-    "publicationStatus": "published"
+  "provenance": {
+    "creationMode": "codex_updated",
+    "reviewStatus": "codex_amended",
+    "lastUpdatedAt": "2026-03-22T20:18:23.186Z",
+    "updatedBy": "codex",
+    "confidence": "medium"
   },
-  "fileInfo": {
-    "byteSize": 23105,
-    "lineCount": 114,
-    "tagCounts": {
-      "a": 24,
-      "b": 18,
-      "body": 2,
-      "br": 18,
-      "disopjd": 2,
-      "div": 12,
-      "font": 28,
-      "head": 2,
-      "html": 2,
-      "i": 116,
-      "opinion": 1,
-      "p": 52,
-      "script": 4,
-      "style": 2,
-      "sup": 4,
-      "table": 4,
-      "td": 16,
-      "title": 2,
-      "tr": 16,
-      "u": 6
-    },
-    "unknownTags": [
-      "disopjd"
-    ],
-    "strayClosingTags": []
+  "decisionStructure": {
+    "decisionForm": "opinion_of_the_court",
+    "hasMajority": true,
+    "mainWritingKind": "opinion_of_the_court",
+    "mainWritingAuthor": "Troutman",
+    "isMemorandum": false,
+    "isPerCuriam": false,
+    "isOpinionOfTheCourt": true,
+    "notes": "The source presents a signed opinion of the court."
   },
-  "header": {
-    "hasPrimaryHeaderTable": true,
-    "primaryHeaderTableLines": [
-      "People v Pastrana",
-      "2023 NY Slip Op 05966 [41 NY3d 23]",
-      "November 21, 2023",
-      "Troutman, J.",
-      "Court of Appeals",
-      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
-      "As corrected through Wednesday, April 10, 2024"
-    ],
-    "captionLines": [
-      "The People of the State of New York, Respondent,",
-      "v",
-      "Pablo Pastrana, Appellant."
-    ],
-    "citationLine": "2023 NY Slip Op 05966 41 NY3d 23",
-    "courtLine": "Court of Appeals",
-    "dateLines": [
-      "Argued September 13, 2023; decided November 21, 2023",
-      "November 21, 2023",
-      "As corrected through Wednesday, April 10, 2024"
-    ],
-    "authorLine": null,
-    "appearanceSectionType": "none",
-    "pointsOfCounselCount": 0,
-    "appearanceLikeLines": [],
-    "companionAppearances": []
-  },
-  "sections": {
-    "summarySectionsCount": 0,
-    "headnotesCount": 0,
-    "pointsOfCounselCount": 0,
-    "appearancesCount": 0,
-    "opinionBlocksCount": 28,
-    "footnotesCount": 2
-  },
-  "citations": {
-    "slipOpinion": "2023 NY Slip Op 05966",
-    "officialCitation": "41 NY3d 23",
-    "pageMarkerCount": 13
-  },
-  "opinionStructure": {
-    "totalWritings": 5,
-    "byKind": {
-      "opinion_of_the_court": 1,
-      "unknown": 2,
-      "dissent": 2
-    },
-    "authors": [
-      "Troutman",
-      "Rivera",
-      "Halligan"
-    ],
-    "qualifierLines": [
-      "{**41 NY3d at 26} OPINION OF THE COURT",
-      "I agree for the reasons discussed by the majority that defendant Pablo Pastrana's challenge to the roadblock that led to the search of his vehicle and the eventual discovery of an unlicensed loaded firearm and illegal amounts of marijuana is without merit, and that the Marihuana Regulation and Taxation Act is not retroactive. However, for the reasons I discuss in my dissent in People v Garcia (41 NY3d 62 [2023] [decided today]), defendant's Second Amendment facial challenge under New York State Rifle & Pistol Assn., Inc. v Bruen (597 US 1 [2022]) is preserved but meritless."
-    ],
-    "hasMemorandum": false,
-    "hasPerCuriam": false,
-    "concurrenceCount": 0,
-    "dissentCount": 2,
-    "mixedWritingCount": 0
-  },
-  "footnotes": {
-    "count": 2,
-    "labels": [
-      "*",
-      "*"
-    ],
-    "hasFootnotesHeading": true
-  },
-  "anomalies": [
+  "writings": [
     {
-      "code": "UNKNOWN_TAG",
-      "severity": "info",
-      "detail": "Encountered unknown tag <disopjd> in source HTML."
+      "order": 1,
+      "author": "Troutman",
+      "kind": "opinion_of_the_court",
+      "label": "OPINION OF THE COURT",
+      "hasJoiners": true,
+      "joiners": [
+        "Garcia",
+        "Singas",
+        "Cannataro"
+      ],
+      "scope": "main court writing",
+      "relationshipToResult": "controls the court's disposition",
+      "confidence": "high"
     },
     {
-      "code": "MULTIPLE_WRITINGS",
-      "severity": "info",
-      "detail": "Companion JSON reports 5 writings."
+      "order": 2,
+      "author": "Rivera",
+      "kind": "dissent",
+      "label": "dissenting",
+      "hasJoiners": false,
+      "joiners": [],
+      "scope": null,
+      "relationshipToResult": "disagrees with the court's disposition",
+      "confidence": "medium"
     },
     {
-      "code": "MULTIPLE_HEADER_TABLES",
-      "severity": "info",
-      "detail": "Found 2 table elements before or within the header region."
+      "order": 3,
+      "author": "Halligan",
+      "kind": "dissent",
+      "label": "dissenting",
+      "hasJoiners": false,
+      "joiners": [
+        "Wilson"
+      ],
+      "scope": null,
+      "relationshipToResult": "disagrees with the court's disposition",
+      "confidence": "medium"
+    }
+  ],
+  "resultStructure": {
+    "hasMultipleResults": false,
+    "hasMultipleLowerCourtRulings": false,
+    "resultUnits": [
+      {
+        "label": "disposition",
+        "disposition": "Order affirmed."
+      }
+    ],
+    "mixedResultDisposition": false,
+    "confidence": "low"
+  },
+  "sourceFeatures": {
+    "citationShape": {
+      "slipOpinionLineIncludesOfficialCitation": true,
+      "officialCitationInParentheses": false,
+      "officialCitationInBrackets": true
+    },
+    "counselShape": {
+      "usesAppearancesOfCounsel": false,
+      "usesPointsOfCounsel": false,
+      "appearancesMustBeDerivedFromPointsOfCounsel": false
+    },
+    "headerQuirks": [
+      "official citation is embedded in a bracketed slip-op header line"
+    ],
+    "sourceQuirks": [
+      "source uses nonstandard tag(s): disopjd"
+    ]
+  },
+  "stanbookHints": {
+    "treatAsPlurality": false,
+    "noMajorityWriting": false,
+    "multipleOrdersResolved": false,
+    "deriveAppearancesFrom": null,
+    "officialCitationSource": "bracketed_header_citation",
+    "sourceTypos": [
+      {
+        "location": "html_markup",
+        "issue": "nonstandard tag(s): disopjd",
+        "effect": "lightweight HTML extraction should not assume only standard reporter tags appear in the source"
+      }
+    ],
+    "parserCautions": [
+      "preserve separate writings as distinct opinion records rather than folding them into the main writing."
+    ]
+  },
+  "analysisNotes": [
+    {
+      "type": "source",
+      "text": "The HTML includes nonstandard tag markup (disopjd), which is a small parser-risk signal."
     }
   ]
 }

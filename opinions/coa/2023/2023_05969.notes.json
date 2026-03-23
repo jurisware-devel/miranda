@@ -1,141 +1,105 @@
 {
+  "notesVersion": "1.0",
   "caseId": "2023_05969",
   "sourcePath": "coa/2023/2023_05969.htm",
-  "notesPath": "coa/2023/2023_05969.notes.json",
-  "generatedAt": "2026-03-22T19:47:13.193Z",
-  "source": {
-    "title": "People v Garcia (2023 NY Slip Op 05969)",
-    "publicationStatus": "published"
+  "provenance": {
+    "creationMode": "codex_updated",
+    "reviewStatus": "codex_amended",
+    "lastUpdatedAt": "2026-03-22T20:18:23.189Z",
+    "updatedBy": "codex",
+    "confidence": "medium"
   },
-  "fileInfo": {
-    "byteSize": 65280,
-    "lineCount": 210,
-    "tagCounts": {
-      "a": 42,
-      "b": 40,
-      "blockquote": 38,
-      "body": 2,
-      "br": 26,
-      "div": 44,
-      "font": 76,
-      "frac": 4,
-      "head": 2,
-      "html": 2,
-      "i": 312,
-      "p": 133,
-      "script": 4,
-      "style": 2,
-      "sup": 14,
-      "table": 4,
-      "td": 16,
-      "title": 2,
-      "tr": 16,
-      "u": 38
-    },
-    "unknownTags": [
-      "frac"
-    ],
-    "strayClosingTags": []
+  "decisionStructure": {
+    "decisionForm": "opinion_of_the_court",
+    "hasMajority": true,
+    "mainWritingKind": "opinion_of_the_court",
+    "mainWritingAuthor": "Halligan",
+    "isMemorandum": false,
+    "isPerCuriam": false,
+    "isOpinionOfTheCourt": true,
+    "notes": "The source presents a signed opinion of the court."
   },
-  "header": {
-    "hasPrimaryHeaderTable": true,
-    "primaryHeaderTableLines": [
-      "People v Garcia",
-      "2023 NY Slip Op 05969 [41 NY3d 62]",
-      "November 21, 2023",
-      "Halligan, J.",
-      "Court of Appeals",
-      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
-      "As corrected through Wednesday, April 17, 2024"
-    ],
-    "captionLines": [
-      "The People of the State of New York, Respondent,",
-      "v",
-      "George Garcia, Appellant."
-    ],
-    "citationLine": "2023 NY Slip Op 05969 41 NY3d 62",
-    "courtLine": "Court of Appeals",
-    "dateLines": [
-      "Argued September 13, 2023; decided November 21, 2023",
-      "November 21, 2023",
-      "As corrected through Wednesday, April 17, 2024"
-    ],
-    "authorLine": null,
-    "appearanceSectionType": "none",
-    "pointsOfCounselCount": 0,
-    "appearanceLikeLines": [],
-    "companionAppearances": []
-  },
-  "sections": {
-    "summarySectionsCount": 0,
-    "headnotesCount": 0,
-    "pointsOfCounselCount": 0,
-    "appearancesCount": 0,
-    "opinionBlocksCount": 83,
-    "footnotesCount": 7
-  },
-  "citations": {
-    "slipOpinion": "2023 NY Slip Op 05969",
-    "officialCitation": "41 NY3d 62",
-    "pageMarkerCount": 37
-  },
-  "opinionStructure": {
-    "totalWritings": 3,
-    "byKind": {
-      "opinion_of_the_court": 2,
-      "unknown": 1
-    },
-    "authors": [
-      "Halligan",
-      "Rivera"
-    ],
-    "qualifierLines": [
-      "{**41 NY3d at 65} OPINION OF THE COURT",
-      "Following a January 2019 jury trial, Garcia was convicted of two counts of criminal possession of a weapon in the second degree—one count for possessing a loaded gun outside his home or place of business under Penal Law § 265.03 (3) and one count for possessing a loaded gun with the intent to use it unlawfully against another person under Penal Law § 265.03 (1) (b). Supreme Court sentenced him to the statutory minimum sentence, two 31/2-year terms in prison to be served concurrently.",
-      "[1] This case is distinguishable from Miller. To be sure, notwithstanding the \"broad discretion\" of the trial judge to manage voir dire, any restrictions imposed must still afford counsel fair opportunity to question prospective jurors about \"relevant matters\" (, 28 NY3d 355, 358 [2016]; dissenting op at 86). But here, unlike in Miller, while the trial court precluded general questions about jurors' views on self-defense, counsel and the court both questioned jurors extensively about their ability to be fair given the facts of the case, including asking jurors broad questions such as their view on \"the whole issue of gun control\" and \"gun licensing,\" and their ability to \"apply the law that applies to this case\" as instructed notwithstanding those personal views. On this record, we do not agree that the trial court abused its discretion such that the jurors' ability to follow and apply the law as to Garcia's defense for his actions was inadequately explored.",
-      " (dissenting)",
-      ". Defendant George Garcia was convicted upon a jury verdict of two counts of second-degree weapons possession (Penal Law § 265.03 [1] [b], [3]), for threatening someone with a gun. Defendant advances several arguments in support of his appeal. I dissent because two of these claims have merit and require reversal of his conviction.",
-      "As these cases illustrate, the Bruen majority has wrought a change in the law with immeasurable effects on the safety of our neighborhoods. The Supreme Court will have to answer open questions regarding what regulations are constitutional under its \"rigid history-only approach\" (Bruen, 597 US at 103 [Breyer, J., dissenting]; see United States v Rahimi, 61 F4th 443 [5th Cir], cert granted 600 US —, 143 S Ct 2688 [2023]). We are in uncharted and dangerous territory, waiting to see how the law will develop in this post-Bruen era. But with or without the Supreme Court's introspection, it falls to the rest of the federal and state judiciary to determine what legislatures may do to curb gun violence. For now, the majority has merely delayed resolution of these first Bruen-spawned challenges to our State's gun laws (People v Cabrera, 41 NY3d at 39).",
-      "The most troubling aspect of the majority's standard is that it requires prescience on counsel's part akin to clairvoyance. For example, the majority asserts that counsel should have made the arguments in defendant's New York criminal prosecution that eventually succeeded in Bruen, notwithstanding Second Circuit precedent rejecting those same claims and their underlying analysis. In support, the majority states that Kachalsky did not bind our Court (Cabrera, 41 NY3d at 47). That's true, but neither did the decisions from the Seventh and D.C. Circuits—including the respective dissenting opinions by two judges before their appointment to the Supreme Court—cited by the majority as providing a basis for counsel to have realized that they should have asserted claims long rejected by both the Second Circuit and this Court ({**41 NY3d at 79}Kachalsky, 701 F3d 81; Hughes, 22 NY3d 44). The majority's citation to Peruta v County of San Diego (742 F3d 1144, 1167, 1173-1175, 1179 [9th Cir 2014], revd on reh en banc 824 F3d 919 [9th Cir 2016]) is especially curious, because that Court (sitting en banc) employed a historical analysis and yet concluded that the Second Amendment does not protect a public carry of concealed weapons and upheld California's good cause requirement. None of these decisions could or should have put defense counsel on notice that theories shopped around the country with limited success—and having failed miserably in New York—would miraculously be embraced as winning arguments in our state trial courts.",
-      "As Justice Marshall stated in Farmer v Sumner, \"[t]he fact that petitioner did not raise a Booth claim below rather obviously reflects the fact that Booth had not been handed down at the time. Petitioner should not be penalized for not being prescient\" (489 US 1060, 1061 [1989] [Marshall, J., dissenting]). Similarly, counsel cannot be faulted for failing to intuit that almost a decade after Hughes, the Supreme Court would adopt a completely different legal framework and hold the proper cause provision unconstitutional.",
-      "The standard adopted by the majority \"cut[s] back on the hard won exemptions by which we have softened the rigors of the preservation doctrine when applied to certain fundamental constitutional rights\" (People v Thomas, 50 NY2d 467, 474 [1980] [Fuchsberg, J., concurring]). Our \"procedural rules should be so designed as to keep unjust results to a minimum\" (, 23 NY3d 408, 416 [2014]).",
-      "Defendant's facial challenge that the entirety of New York's gun licensing regime is unconstitutional is without merit. The{**41 NY3d at 81} petitioners in Bruen did not challenge Penal Law § 265.03 (3)—the section defendant was convicted of violating. More to the point, the Bruen majority struck down only the \"proper cause\" provision of the regulatory scheme, which required that an applicant for a public carry license establish that they had a reason other than self-defense protection to possess a gun in public (Bruen at 11). Defendant's suggestion that the majority's holding nullifies New York's regulation of public gun possession is belied by the Bruen majority's reference to certain common regulatory requirements (id. at 38), as well as Justice Kavanaugh's concurring opinion, joined by Chief Justice Roberts, that states are not prohibited \"from imposing licensing requirements for carrying a handgun for self-defense\" (id. at 79). A solid majority of the United States Supreme Court recognizes some form of gun possession regulation as constitutional.",
-      "I dissent."
-    ],
-    "hasMemorandum": false,
-    "hasPerCuriam": false,
-    "concurrenceCount": 0,
-    "dissentCount": 0,
-    "mixedWritingCount": 0
-  },
-  "footnotes": {
-    "count": 7,
-    "labels": [
-      "1",
-      "2",
-      "1",
-      "2",
-      "3",
-      "4",
-      "5"
-    ],
-    "hasFootnotesHeading": true
-  },
-  "anomalies": [
+  "writings": [
     {
-      "code": "UNKNOWN_TAG",
-      "severity": "info",
-      "detail": "Encountered unknown tag <frac> in source HTML."
+      "order": 1,
+      "author": "Halligan",
+      "kind": "opinion_of_the_court",
+      "label": "OPINION OF THE COURT",
+      "hasJoiners": true,
+      "joiners": [
+        "Wilson",
+        "Garcia",
+        "Singas",
+        "Cannataro",
+        "Troutman"
+      ],
+      "scope": "main court writing",
+      "relationshipToResult": "controls the court's disposition",
+      "confidence": "high"
     },
     {
-      "code": "MULTIPLE_WRITINGS",
-      "severity": "info",
-      "detail": "Companion JSON reports 3 writings."
+      "order": 2,
+      "author": "Rivera",
+      "kind": "dissent",
+      "label": "dissenting",
+      "hasJoiners": false,
+      "joiners": [],
+      "scope": null,
+      "relationshipToResult": "disagrees with the court's disposition",
+      "confidence": "medium"
+    }
+  ],
+  "resultStructure": {
+    "hasMultipleResults": false,
+    "hasMultipleLowerCourtRulings": false,
+    "resultUnits": [
+      {
+        "label": "disposition",
+        "disposition": "Order affirmed."
+      }
+    ],
+    "mixedResultDisposition": false,
+    "confidence": "low"
+  },
+  "sourceFeatures": {
+    "citationShape": {
+      "slipOpinionLineIncludesOfficialCitation": true,
+      "officialCitationInParentheses": false,
+      "officialCitationInBrackets": true
     },
+    "counselShape": {
+      "usesAppearancesOfCounsel": false,
+      "usesPointsOfCounsel": false,
+      "appearancesMustBeDerivedFromPointsOfCounsel": false
+    },
+    "headerQuirks": [
+      "official citation is embedded in a bracketed slip-op header line"
+    ],
+    "sourceQuirks": [
+      "source uses nonstandard tag(s): frac"
+    ]
+  },
+  "stanbookHints": {
+    "treatAsPlurality": false,
+    "noMajorityWriting": false,
+    "multipleOrdersResolved": false,
+    "deriveAppearancesFrom": null,
+    "officialCitationSource": "bracketed_header_citation",
+    "sourceTypos": [
+      {
+        "location": "html_markup",
+        "issue": "nonstandard tag(s): frac",
+        "effect": "lightweight HTML extraction should not assume only standard reporter tags appear in the source"
+      }
+    ],
+    "parserCautions": [
+      "preserve separate writings as distinct opinion records rather than folding them into the main writing."
+    ]
+  },
+  "analysisNotes": [
     {
-      "code": "MULTIPLE_HEADER_TABLES",
-      "severity": "info",
-      "detail": "Found 2 table elements before or within the header region."
+      "type": "source",
+      "text": "The HTML includes nonstandard tag markup (frac), which is a small parser-risk signal."
     }
   ]
 }

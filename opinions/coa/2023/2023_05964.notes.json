@@ -1,132 +1,111 @@
 {
+  "notesVersion": "1.0",
   "caseId": "2023_05964",
   "sourcePath": "coa/2023/2023_05964.htm",
-  "notesPath": "coa/2023/2023_05964.notes.json",
-  "generatedAt": "2026-03-22T19:47:13.187Z",
-  "source": {
-    "title": "People v Debellis (2023 NY Slip Op 05964)",
-    "publicationStatus": "published"
+  "provenance": {
+    "creationMode": "codex_updated",
+    "reviewStatus": "codex_amended",
+    "lastUpdatedAt": "2026-03-22T20:18:23.184Z",
+    "updatedBy": "codex",
+    "confidence": "medium"
   },
-  "fileInfo": {
-    "byteSize": 48470,
-    "lineCount": 152,
-    "tagCounts": {
-      "a": 66,
-      "b": 42,
-      "blockquote": 4,
-      "body": 2,
-      "br": 30,
-      "div": 12,
-      "font": 56,
-      "head": 2,
-      "html": 2,
-      "i": 146,
-      "p": 89,
-      "para": 1,
-      "script": 4,
-      "style": 2,
-      "sup": 18,
-      "table": 4,
-      "td": 16,
-      "title": 2,
-      "tr": 16,
-      "u": 6
-    },
-    "unknownTags": [],
-    "strayClosingTags": []
+  "decisionStructure": {
+    "decisionForm": "opinion_of_the_court",
+    "hasMajority": true,
+    "mainWritingKind": "opinion_of_the_court",
+    "mainWritingAuthor": "Wilson",
+    "isMemorandum": false,
+    "isPerCuriam": false,
+    "isOpinionOfTheCourt": true,
+    "notes": "The source presents a signed opinion of the court."
   },
-  "header": {
-    "hasPrimaryHeaderTable": true,
-    "primaryHeaderTableLines": [
-      "People v Debellis",
-      "2023 NY Slip Op 05964 [40 NY3d 431]",
-      "November 21, 2023",
-      "Wilson, J.",
-      "Court of Appeals",
-      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
-      "As corrected through Wednesday, February 7, 2024"
-    ],
-    "captionLines": [
-      "The People of the State of New York, Respondent,",
-      "v",
-      "Anthony Debellis, Appellant."
-    ],
-    "citationLine": "2023 NY Slip Op 05964 40 NY3d 431",
-    "courtLine": "Court of Appeals",
-    "dateLines": [
-      "Argued March 16, 2023; reargued October 19, 2023; decided November 21, 2023",
-      "November 21, 2023",
-      "As corrected through Wednesday, February 7, 2024"
-    ],
-    "authorLine": null,
-    "appearanceSectionType": "none",
-    "pointsOfCounselCount": 0,
-    "appearanceLikeLines": [],
-    "companionAppearances": []
-  },
-  "sections": {
-    "summarySectionsCount": 0,
-    "headnotesCount": 0,
-    "pointsOfCounselCount": 0,
-    "appearancesCount": 0,
-    "opinionBlocksCount": 45,
-    "footnotesCount": 9
-  },
-  "citations": {
-    "slipOpinion": "2023 NY Slip Op 05964",
-    "officialCitation": "40 NY3d 431",
-    "pageMarkerCount": 27
-  },
-  "opinionStructure": {
-    "totalWritings": 3,
-    "byKind": {
-      "opinion_of_the_court": 1,
-      "unknown": 1,
-      "dissent": 1
-    },
-    "authors": [
-      "Wilson",
-      "Cannataro"
-    ],
-    "qualifierLines": [
-      "{**40 NY3d at 433} OPINION OF THE COURT",
-      "The jury, of course, would have had every right not to credit Mr. Debellis's testimony. But even if the trial court believed that Mr. Debellis's testimony was far-fetched, that cannot justify his lawyer's request for a meritless jury instruction instead of an instruction that fit the very theory of the case he announced in his opening statement when Mr. Debellis's testimony supported that—and only that—defense. Where evidence exists upon which the jury could reasonably find that a particular defense applies, questions as to the credibility of the defendant's testimony or inconsistencies in the evidence presented do not disentitle the defendant to an instruction on the defense; those questions of fact are to be resolved by the jury (, 14 NY3d 488, 494-495 [2010]). Here, the dissent's identification of facts that could lead one to believe that Mr. Debellis's testimony was not credible makes out a good closing argument for the prosecution to make to the jury—which is exactly the point: the jury was deprived of the opportunity to determine which account was true because counsel failed to seek an instruction that would have made that determination legally relevant. Because the evidence, \"viewed in the light most favorable to the accused, sufficiently support[ed] [the] claimed defense,\" Mr. Debellis would have been entitled to a jury instruction on voluntary surrender (People v Watts, 57 NY2d 299, 301 [1982]). That instruction would have allowed the jury to decide the case with proper consideration of the sole defense Mr. Debellis had advanced throughout the trial to justify his actions.",
-      "Moreover, this is not a case of a defendant suggesting we confuse \"true ineffectiveness with mere losing tactics and accord[ ] undue significance to retrospective analysis\" (Benevento, 91 NY2d at 712, quoting People v Baldi, 54 NY2d 137, 146 [1981]). No reasonable strategy could have supported counsel's failure to request a jury charge on the statutory voluntary surrender defense while at the same time pursuing a meritless temporary and lawful possession defense. Voluntary surrender was the only defense applicable to Mr. Debellis's testimony and the very defense counsel alluded to in presenting the case. Instead of requesting this charge, after conceding all elements of the crime, counsel advanced no defense. Although counsel may have implicitly hoped for jury nullification, forfeiting the instruction that would have provided a legal basis for the exact defense supported by trial testimony and counsel's own argument to the jury cannot \"reflect[ ] a reasonable and legitimate strategy under the circumstances and evidence presented\" (Benevento, 91 NY2d at 713). As our dissenting colleagues recognize, counsel \"convincingly portrayed defendant as a sympathetic individual attempting to comply with the law\" (dissenting op at 446)—yet failed to request the instruction that would have identified the law with which Mr. Debellis was attempting to comply, leaving him bereft of a path to acquittal.",
-      "Finally, we reject the suggestion that our standard of meaningful representation \"viewed in totality\" allows us to justify ineffective performance on a core issue at trial via effective performance on ancillary pretrial issues (Benevento, 91 NY2d at 712, quoting Baldi, 54 NY2d at 147). The fact that counsel presented a \"beneficial\" plea deal to Mr. Debellis before trial (dissenting op at 445) does not absolve counsel of the responsibility to provide meaningful representation at trial or{**40 NY3d at 440} to pursue the defense supported by Mr. Debellis's trial testimony.",
-      "Today the majority holds that defense counsel was ineffective for not requesting a jury charge that would have allowed the jury to find that defendant's possession of the unlicensed gun was lawful because, at trial, defendant claimed for the{**40 NY3d at 441} first time that he was on his way to a police agency to surrender the gun. Because no reasonable view of the undisputed facts supports such a charge, defendant was not entitled to it. Nor was counsel's overall performance deficient. Nevertheless, defendant, who denied having a weapon when asked by the police and who was allowed access to the area where he had hidden a loaded gun based on that false statement, thereby endangering the life of the officer who stopped him and numerous nearby civilians, now has his unlawful possession of a weapon conviction reversed by this Court. Because that result ignores the facts, lacks common sense, and is dangerous as a matter of policy, I dissent.",
-      "Therefore, I dissent."
-    ],
-    "hasMemorandum": false,
-    "hasPerCuriam": false,
-    "concurrenceCount": 0,
-    "dissentCount": 1,
-    "mixedWritingCount": 0
-  },
-  "footnotes": {
-    "count": 9,
-    "labels": [
-      "1",
-      "2",
-      "3",
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6"
-    ],
-    "hasFootnotesHeading": true
-  },
-  "anomalies": [
+  "writings": [
     {
-      "code": "MULTIPLE_WRITINGS",
-      "severity": "info",
-      "detail": "Companion JSON reports 3 writings."
+      "order": 1,
+      "author": "Wilson",
+      "kind": "opinion_of_the_court",
+      "label": "OPINION OF THE COURT",
+      "hasJoiners": true,
+      "joiners": [
+        "Rivera",
+        "Troutman",
+        "Halligan"
+      ],
+      "scope": "main court writing",
+      "relationshipToResult": "controls the court's disposition",
+      "confidence": "high"
     },
     {
-      "code": "MULTIPLE_HEADER_TABLES",
-      "severity": "info",
-      "detail": "Found 2 table elements before or within the header region."
+      "order": 2,
+      "author": "Cannataro",
+      "kind": "dissent",
+      "label": "dissenting",
+      "hasJoiners": false,
+      "joiners": [
+        "Garcia",
+        "Singas"
+      ],
+      "scope": null,
+      "relationshipToResult": "disagrees with the court's disposition",
+      "confidence": "medium"
+    }
+  ],
+  "resultStructure": {
+    "hasMultipleResults": false,
+    "hasMultipleLowerCourtRulings": false,
+    "resultUnits": [
+      {
+        "label": "disposition",
+        "disposition": "Order reversed and a new trial ordered."
+      }
+    ],
+    "mixedResultDisposition": false,
+    "confidence": "low"
+  },
+  "sourceFeatures": {
+    "citationShape": {
+      "slipOpinionLineIncludesOfficialCitation": true,
+      "officialCitationInParentheses": false,
+      "officialCitationInBrackets": true
+    },
+    "counselShape": {
+      "usesAppearancesOfCounsel": false,
+      "usesPointsOfCounsel": false,
+      "appearancesMustBeDerivedFromPointsOfCounsel": false
+    },
+    "headerQuirks": [
+      "official citation is embedded in a bracketed slip-op header line",
+      "argument line reflects a reargument before decision"
+    ],
+    "sourceQuirks": [
+      "source uses nonstandard tag(s): para"
+    ]
+  },
+  "stanbookHints": {
+    "treatAsPlurality": false,
+    "noMajorityWriting": false,
+    "multipleOrdersResolved": false,
+    "deriveAppearancesFrom": null,
+    "officialCitationSource": "bracketed_header_citation",
+    "sourceTypos": [
+      {
+        "location": "html_markup",
+        "issue": "nonstandard tag(s): para",
+        "effect": "lightweight HTML extraction should not assume only standard reporter tags appear in the source"
+      }
+    ],
+    "parserCautions": [
+      "preserve separate writings as distinct opinion records rather than folding them into the main writing."
+    ]
+  },
+  "analysisNotes": [
+    {
+      "type": "structure",
+      "text": "The source reflects both an original argument and a later reargument before decision."
+    },
+    {
+      "type": "source",
+      "text": "The HTML includes nonstandard tag markup (para), which is a small parser-risk signal."
     }
   ]
 }

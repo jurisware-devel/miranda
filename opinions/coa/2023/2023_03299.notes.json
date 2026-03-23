@@ -1,149 +1,103 @@
 {
+  "notesVersion": "1.0",
   "caseId": "2023_03299",
   "sourcePath": "coa/2023/2023_03299.htm",
-  "notesPath": "coa/2023/2023_03299.notes.json",
-  "generatedAt": "2026-03-22T19:47:13.180Z",
-  "source": {
-    "title": "People ex rel. Rivera v Superintendent, Woodbourne Corr. Facility (2023 NY Slip Op 03299)",
-    "publicationStatus": "published"
+  "provenance": {
+    "creationMode": "codex_updated",
+    "reviewStatus": "codex_amended",
+    "lastUpdatedAt": "2026-03-22T20:18:23.176Z",
+    "updatedBy": "codex",
+    "confidence": "medium"
   },
-  "fileInfo": {
-    "byteSize": 118411,
-    "lineCount": 299,
-    "tagCounts": {
-      "a": 170,
-      "b": 102,
-      "blockquote": 16,
-      "body": 2,
-      "br": 54,
-      "div": 26,
-      "font": 144,
-      "head": 2,
-      "html": 2,
-      "i": 626,
-      "p": 171,
-      "script": 4,
-      "style": 2,
-      "sup": 48,
-      "table": 4,
-      "td": 16,
-      "title": 2,
-      "tr": 16,
-      "u": 20
-    },
-    "unknownTags": [],
-    "strayClosingTags": []
+  "decisionStructure": {
+    "decisionForm": "opinion_of_the_court",
+    "hasMajority": true,
+    "mainWritingKind": "opinion_of_the_court",
+    "mainWritingAuthor": "Singas",
+    "isMemorandum": false,
+    "isPerCuriam": false,
+    "isOpinionOfTheCourt": true,
+    "notes": "The source presents a signed opinion of the court."
   },
-  "header": {
-    "hasPrimaryHeaderTable": true,
-    "primaryHeaderTableLines": [
-      "People ex rel. Rivera v Superintendent, Woodbourne Corr. Facility",
-      "2023 NY Slip Op 03299 [40 NY3d 307]",
-      "June 15, 2023",
-      "Singas, J.",
-      "Court of Appeals",
-      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
-      "As corrected through Wednesday, November 22, 2023"
-    ],
-    "captionLines": [
-      "The People of the State of New York ex rel. Danny Rivera, Appellant,",
-      "v",
-      "Superintendent, Woodbourne Correctional Facility, et al., Respondents."
-    ],
-    "citationLine": "2023 NY Slip Op 03299 40 NY3d 307",
-    "courtLine": "Court of Appeals",
-    "dateLines": [
-      "Argued May 17, 2023; decided June 15, 2023",
-      "June 15, 2023",
-      "As corrected through Wednesday, November 22, 2023"
-    ],
-    "authorLine": null,
-    "appearanceSectionType": "none",
-    "pointsOfCounselCount": 0,
-    "appearanceLikeLines": [],
-    "companionAppearances": []
-  },
-  "sections": {
-    "summarySectionsCount": 0,
-    "headnotesCount": 0,
-    "pointsOfCounselCount": 0,
-    "appearancesCount": 0,
-    "opinionBlocksCount": 97,
-    "footnotesCount": 24
-  },
-  "citations": {
-    "slipOpinion": "2023 NY Slip Op 03299",
-    "officialCitation": "40 NY3d 307",
-    "pageMarkerCount": 71
-  },
-  "opinionStructure": {
-    "totalWritings": 5,
-    "byKind": {
-      "opinion_of_the_court": 1,
-      "unknown": 2,
-      "dissent": 2
-    },
-    "authors": [
-      "Singas",
-      "Rivera",
-      "Halligan"
-    ],
-    "qualifierLines": [
-      "{**40 NY3d at 309} OPINION OF THE COURT",
-      "Judge Rivera's dissent acknowledges that the intent-effects test requires \"focus on the punitive nature of the scheme itself, not on any idiosyncratic application of the law to an individual petitioner\" and characterizes the carceral effect of the school grounds condition as a \"common reality\" (Rivera, J., dissenting op at 328, 333). Nevertheless, the dissent inconsistently asserts \"that the size of the class subject to the residency restriction is irrelevant to petitioner's facial Ex Post Facto Clause challenge\" (id. at 334) and that \"[t]he fact that some offenders identify compliant housing in time for their release date, and thus are not kept in prison, does not change the analysis\" (id. at 331). Whether an effect is idiosyncratic or common necessarily{**40 NY3d at 315} rests on the proportion of the subjected class experiencing the effect; in fact, this is the crux of the ex post facto analysis.",
-      "As a general matter, \"the prohibition extends to criminal, not to civil, cases\" (3 Dallas [3 US] at 399 [Iredell, J., concurring]) and this Court has noted that it generally \"applies only to penal statutes\" (Kellogg v Travis, 100 NY2d 407, 410 [2003], citing Collins v Youngblood, 497 US 37, 41 n 2 [1990]). However, the Court has also recognized that because the Ex Post Facto Clause prohibits \"after the fact\" punishment, even a statute intended to be civil in nature may violate the Clause if, in operation, the law is sufficiently punitive to overcome the legislative intent for civil regulation (id. at 410 [noting that \"where the challenged statute does not seek to impose a punishment,{**40 NY3d at 327}it does not run afoul of the Ex Post Facto Clause\"]). Punishment is the sine qua non of an ex post facto violation.",
-      "The majority posits that \"the proportion of the subjected class experiencing the effect . . . is the crux of the ex post facto analysis\" (majority op at 314-315). My dissenting colleague {**40 NY3d at 329}Judge Halligan suggests that Seling does not \"allow[ ] us to focus our analysis exclusively on that group of offenders\" who are subject to incarceration solely because they are SORA level 3 offenders who are unable to locate SARA-compliant housing because \"we do not know how many individuals have been, or likely will be, subject to prolonged incarceration due to SARA's residency restriction\" (Halligan, J., dissenting op at 343). Both \"criticisms\" buckle under scrutiny on their own terms. Neither opinion even attempts to set a minimum threshold number of persons previously or currently incarcerated as a result of the statutory scheme before an individual may challenge it under the Ex Post Facto Clause, although both are quick to conclude that petitioner has failed to meet their unknown numerical floor. Whatever number they have in mind—if any—both the majority and Judge Halligan fail to explain why we should disregard numerous court decisions that confirm that there are many such individuals (, 174 AD3d 992, 996-997 [3d Dept 2019, Garry, P.J., concurring]).",
-      "I dissent.",
-      "I nonetheless dissent because I do not believe the majority sufficiently grapples with whether mounting evidence that SARA-type restrictions have no beneficial impact on public safety (or worse yet, may be deleterious) renders SARA's retroactive application excessive and thus violative of the Ex Post Facto Clause. As the majority explains, even if the legislature intended SARA to be civil in nature, sufficiently punitive purpose or effect can negate the legislature's intent for Ex Post Facto purposes. Analyzing whether a statute is punitive in effect requires consideration of \"the statute's proportionality to its nonpunitive purpose\" (majority op at 318 see Hudson v United States, 522 US 93, 101 [1997] [characterizing excessiveness factor of intent-effects test as proportionality inquiry]).",
-      "Petitioner asserts, albeit only glancingly, that there is no empirical evidence demonstrating that SARA's restrictions in fact work to protect children from high-risk sex offenders, and that credible evidence indicates the restrictions may even exacerbate the risk of sexual recidivism against children. Petitioner points us to a Justice Department report concluding that \"there is no empirical support for the effectiveness of residence restrictions,\" and that \"a number of negative unintended consequences have been empirically identified\" (United States Department of Justice, Office of Justice Programs, Sex Offender Management Assessment and Planning Initiative at 205 [2017]); an article reaching the same conclusion (Ira M. Ellman, When Animus Matters and Sex Crime Underreporting Does Not: The Problematic Sex Offender Registry, 7 U Pa J L & Pub Affs 1 [2021]); a federal appellate decision that acknowledged the absence of evidence that \"residential restrictions have any beneficial effect on recidivism rates\" in finding Michigan's {**40 NY3d at 346}sex offender statute excessive (Does #1-5 v Snyder, 834 F3d 696, 705 [6th Cir 2016]); a state high court decision concluding that the efficacy of the same statutory scheme was, at a minimum, unclear (see People v Betts, 507 Mich 527, 561, 968 NW2d 497, 514 [2021]); and Justice Sotomayor's similar observations in a statement regarding denial of certiorari from this Court's decision in Johnson (see Ortiz v Breslin, 595 US — 142 S Ct 914 [2022] [Sotomayor, J., statement]). Additionally, the dissent references an empirical study of sex offender recidivism cited in petitioner's habeas petition (see Jill S. Levenson & Andrea L. Hern, Sex Offender Residence Restrictions: Unintended Consequences and Community Reentry, 9 Just Rsch & Poly [Issue 1] 59, 61 [2007]) and a New York City Bar report highlighting empirical doubt about SARA's efficacy (see New York City Bar Association, The Impact and Legality of Sex Offender Residency Restrictions Created by New York's Sexual Assault Reform Act [Oct. 2016]). Similar concerns are raised by an Advisory Committee on Criminal Law and Procedure convened by New York's Chief Administrative Judge (see Residency Restrictions for Certain Sex Offenders, 2017 Rep of Advisory Comm on Crim Law & Pro to Chief Admin Judge of Cts of St of NY at 29-30).",
-      "Like my dissenting colleagues, I find this evidence deeply troubling. One might find the absence of any counter to it sufficient to resolve the question of whether SARA is excessive, as Judge Rivera's dissent does: any measure that does nothing to promote a desired goal while imposing significant burdens is arguably excessive and out of proportion by definition. But these issues were not well-aired before this Court, and given the importance of the question, I am not prepared at this juncture to hold that SARA has punitive effect and thus violates the Ex Post Facto Clause. Instead, I would clarify that this question is not controlled by our decision in People ex rel. Johnson and remit so that the Appellate Division may fully consider whether SARA's school residency restriction is excessive in relation to its nonpunitive purpose (, 39 NY3d 92, 98 [2022] [reversing and remitting to the Appellate Division, absent request from either party, to conduct factual and legal review under the proper framework]). I respectfully dissent."
-    ],
-    "hasMemorandum": false,
-    "hasPerCuriam": false,
-    "concurrenceCount": 0,
-    "dissentCount": 2,
-    "mixedWritingCount": 0
-  },
-  "footnotes": {
-    "count": 24,
-    "labels": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7",
-      "8",
-      "9",
-      "10",
-      "11",
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7",
-      "8",
-      "9",
-      "10",
-      "1",
-      "2",
-      "3"
-    ],
-    "hasFootnotesHeading": true
-  },
-  "anomalies": [
+  "writings": [
     {
-      "code": "MULTIPLE_WRITINGS",
-      "severity": "info",
-      "detail": "Companion JSON reports 5 writings."
+      "order": 1,
+      "author": "Singas",
+      "kind": "opinion_of_the_court",
+      "label": "OPINION OF THE COURT",
+      "hasJoiners": true,
+      "joiners": [
+        "Garcia",
+        "Cannataro",
+        "Troutman"
+      ],
+      "scope": "main court writing",
+      "relationshipToResult": "controls the court's disposition",
+      "confidence": "high"
     },
     {
-      "code": "MULTIPLE_HEADER_TABLES",
-      "severity": "info",
-      "detail": "Found 2 table elements before or within the header region."
+      "order": 2,
+      "author": "Rivera",
+      "kind": "dissent",
+      "label": "dissenting",
+      "hasJoiners": false,
+      "joiners": [
+        "Wilson"
+      ],
+      "scope": null,
+      "relationshipToResult": "disagrees with the court's disposition",
+      "confidence": "medium"
+    },
+    {
+      "order": 3,
+      "author": "Halligan",
+      "kind": "dissent",
+      "label": "dissenting",
+      "hasJoiners": false,
+      "joiners": [],
+      "scope": null,
+      "relationshipToResult": "disagrees with the court's disposition",
+      "confidence": "medium"
     }
-  ]
+  ],
+  "resultStructure": {
+    "hasMultipleResults": false,
+    "hasMultipleLowerCourtRulings": false,
+    "resultUnits": [
+      {
+        "label": "disposition",
+        "disposition": "Order insofar as appealed from affirmed, without costs."
+      }
+    ],
+    "mixedResultDisposition": false,
+    "confidence": "low"
+  },
+  "sourceFeatures": {
+    "citationShape": {
+      "slipOpinionLineIncludesOfficialCitation": true,
+      "officialCitationInParentheses": false,
+      "officialCitationInBrackets": true
+    },
+    "counselShape": {
+      "usesAppearancesOfCounsel": false,
+      "usesPointsOfCounsel": false,
+      "appearancesMustBeDerivedFromPointsOfCounsel": false
+    },
+    "headerQuirks": [
+      "official citation is embedded in a bracketed slip-op header line"
+    ],
+    "sourceQuirks": []
+  },
+  "stanbookHints": {
+    "treatAsPlurality": false,
+    "noMajorityWriting": false,
+    "multipleOrdersResolved": false,
+    "deriveAppearancesFrom": null,
+    "officialCitationSource": "bracketed_header_citation",
+    "sourceTypos": [],
+    "parserCautions": [
+      "preserve separate writings as distinct opinion records rather than folding them into the main writing."
+    ]
+  },
+  "analysisNotes": []
 }

@@ -1,137 +1,87 @@
 {
+  "notesVersion": "1.0",
   "caseId": "2023_02030",
   "sourcePath": "coa/2023/2023_02030.htm",
-  "notesPath": "coa/2023/2023_02030.notes.json",
-  "generatedAt": "2026-03-22T19:47:13.173Z",
-  "source": {
-    "title": "People v Solomon (2023 NY Slip Op 02030)",
-    "publicationStatus": "published"
+  "provenance": {
+    "creationMode": "codex_updated",
+    "reviewStatus": "codex_amended",
+    "lastUpdatedAt": "2026-03-22T20:18:23.170Z",
+    "updatedBy": "codex",
+    "confidence": "high"
   },
-  "fileInfo": {
-    "byteSize": 5278,
-    "lineCount": 79,
-    "tagCounts": {
-      "a": 8,
-      "b": 10,
-      "body": 2,
-      "br": 10,
-      "div": 8,
-      "font": 10,
-      "head": 2,
-      "html": 2,
-      "i": 18,
-      "opinion": 1,
-      "p": 18,
-      "script": 4,
-      "style": 2,
-      "sup": 2,
-      "table": 4,
-      "td": 14,
-      "title": 2,
-      "tr": 14
-    },
-    "unknownTags": [],
-    "strayClosingTags": []
+  "decisionStructure": {
+    "decisionForm": "memorandum",
+    "hasMajority": true,
+    "mainWritingKind": "memorandum",
+    "mainWritingAuthor": null,
+    "isMemorandum": true,
+    "isPerCuriam": true,
+    "isOpinionOfTheCourt": true,
+    "notes": "The decision is a memorandum disposition."
   },
-  "header": {
-    "hasPrimaryHeaderTable": true,
-    "primaryHeaderTableLines": [
-      "People v Solomon",
-      "2023 NY Slip Op 02030 [39 NY3d 1114]",
-      "April 20, 2023",
-      "Court of Appeals",
-      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
-      "As corrected through Wednesday, May 17, 2023"
-    ],
-    "captionLines": [],
-    "citationLine": "2023 NY Slip Op 02030 39 NY3d 1114",
-    "courtLine": "Court of Appeals",
-    "dateLines": [
-      "Argued March 15, 2023; decided April 20, 2023",
-      "April 20, 2023",
-      "As corrected through Wednesday, May 17, 2023"
-    ],
-    "authorLine": null,
-    "appearanceSectionType": "appearances_only",
-    "pointsOfCounselCount": 0,
-    "appearanceLikeLines": [
+  "writings": [
+    {
+      "order": 1,
+      "author": null,
+      "kind": "memorandum",
+      "label": "OPINION OF THE COURT",
+      "hasJoiners": true,
+      "joiners": [
+        "Wilson",
+        "Rivera",
+        "Garcia",
+        "Singas",
+        "Cannataro",
+        "Troutman"
+      ],
+      "scope": "memorandum disposition",
+      "relationshipToResult": "controls the court's disposition",
+      "confidence": "high"
+    }
+  ],
+  "resultStructure": {
+    "hasMultipleResults": false,
+    "hasMultipleLowerCourtRulings": false,
+    "resultUnits": [
       {
-        "text": "Brian P. Conaty, Acting District Attorney , Monticello ( Danielle K. Blackaby of counsel), for appellant.",
-        "sideGuess": "appellant",
-        "terminalPhrase": "for appellant.",
-        "hasArgumentTail": false,
-        "argumentTailPreview": null,
-        "sentenceText": "Brian P. Conaty, Acting District Attorney , Monticello ( Danielle K. Blackaby of counsel), for appellant.",
-        "possiblyTruncated": false
-      },
-      {
-        "text": "The Law Offices of Nathaniel Z. Marmur, PLLC , NewYork City ( Nathaniel Z. Marmur of counsel), for respondent.",
-        "sideGuess": "respondent",
-        "terminalPhrase": "for respondent.",
-        "hasArgumentTail": false,
-        "argumentTailPreview": null,
-        "sentenceText": "The Law Offices of Nathaniel Z. Marmur, PLLC , NewYork City ( Nathaniel Z. Marmur of counsel), for respondent.",
-        "possiblyTruncated": false
+        "label": "disposition",
+        "disposition": "Order affirmed, in a memorandum."
       }
     ],
-    "companionAppearances": []
+    "mixedResultDisposition": false,
+    "confidence": "low"
   },
-  "sections": {
-    "summarySectionsCount": 0,
-    "headnotesCount": 0,
-    "pointsOfCounselCount": 0,
-    "appearancesCount": 0,
-    "opinionBlocksCount": 5,
-    "footnotesCount": 1
-  },
-  "citations": {
-    "slipOpinion": "2023 NY Slip Op 02030",
-    "officialCitation": "39 NY3d 1114",
-    "pageMarkerCount": 4
-  },
-  "opinionStructure": {
-    "totalWritings": 1,
-    "byKind": {
-      "opinion_of_the_court": 1
+  "sourceFeatures": {
+    "citationShape": {
+      "slipOpinionLineIncludesOfficialCitation": true,
+      "officialCitationInParentheses": false,
+      "officialCitationInBrackets": true
     },
-    "authors": [],
-    "qualifierLines": [
-      "{**39 NY3d at 1115} OPINION OF THE COURT",
-      "Memorandum."
+    "counselShape": {
+      "usesAppearancesOfCounsel": true,
+      "usesPointsOfCounsel": false,
+      "appearancesMustBeDerivedFromPointsOfCounsel": false
+    },
+    "headerQuirks": [
+      "official citation is embedded in a bracketed slip-op header line"
     ],
-    "hasMemorandum": true,
-    "hasPerCuriam": false,
-    "concurrenceCount": 0,
-    "dissentCount": 0,
-    "mixedWritingCount": 0
+    "sourceQuirks": []
   },
-  "footnotes": {
-    "count": 1,
-    "labels": [
-      "*"
-    ],
-    "hasFootnotesHeading": true
+  "stanbookHints": {
+    "treatAsPlurality": false,
+    "noMajorityWriting": false,
+    "multipleOrdersResolved": false,
+    "deriveAppearancesFrom": "header_lines",
+    "officialCitationSource": "bracketed_header_citation",
+    "sourceTypos": [],
+    "parserCautions": [
+      "do not assume a full signed majority opinion structure when the source says Memorandum."
+    ]
   },
-  "anomalies": [
+  "analysisNotes": [
     {
-      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
-      "severity": "warning",
-      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
-    },
-    {
-      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
-      "severity": "warning",
-      "detail": "Raw appearance sentence is not reproduced in companion JSON: Brian P. Conaty, Acting District Attorney , Monticello ( Danielle K. Blackaby of counsel), for appellant."
-    },
-    {
-      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
-      "severity": "warning",
-      "detail": "Raw appearance sentence is not reproduced in companion JSON: The Law Offices of Nathaniel Z. Marmur, PLLC , NewYork City ( Nathaniel Z. Marmur of counsel), for respondent."
-    },
-    {
-      "code": "MULTIPLE_HEADER_TABLES",
-      "severity": "info",
-      "detail": "Found 2 table elements before or within the header region."
+      "type": "structure",
+      "text": "The court resolves the appeal by memorandum rather than a full signed majority opinion."
     }
   ]
 }

@@ -1,127 +1,106 @@
 {
+  "notesVersion": "1.0",
   "caseId": "2023_03300",
   "sourcePath": "coa/2023/2023_03300.htm",
-  "notesPath": "coa/2023/2023_03300.notes.json",
-  "generatedAt": "2026-03-22T19:47:13.180Z",
-  "source": {
-    "title": "People v Worley (2023 NY Slip Op 03300)",
-    "publicationStatus": "published"
+  "provenance": {
+    "creationMode": "codex_updated",
+    "reviewStatus": "codex_amended",
+    "lastUpdatedAt": "2026-03-22T20:18:23.177Z",
+    "updatedBy": "codex",
+    "confidence": "medium"
   },
-  "fileInfo": {
-    "byteSize": 19005,
-    "lineCount": 115,
-    "tagCounts": {
-      "a": 24,
-      "b": 14,
-      "blockquote": 24,
-      "body": 2,
-      "br": 12,
-      "div": 14,
-      "font": 26,
-      "frac": 2,
-      "head": 2,
-      "html": 2,
-      "i": 74,
-      "p": 38,
-      "script": 4,
-      "style": 2,
-      "sup": 4,
-      "table": 4,
-      "td": 16,
-      "title": 2,
-      "tr": 16,
-      "u": 8
-    },
-    "unknownTags": [
-      "frac"
-    ],
-    "strayClosingTags": []
+  "decisionStructure": {
+    "decisionForm": "opinion_of_the_court",
+    "hasMajority": true,
+    "mainWritingKind": "opinion_of_the_court",
+    "mainWritingAuthor": "Rivera",
+    "isMemorandum": false,
+    "isPerCuriam": false,
+    "isOpinionOfTheCourt": true,
+    "notes": "The source presents a signed opinion of the court."
   },
-  "header": {
-    "hasPrimaryHeaderTable": true,
-    "primaryHeaderTableLines": [
-      "People v Worley",
-      "2023 NY Slip Op 03300 [40 NY3d 129]",
-      "June 15, 2023",
-      "Rivera, J.",
-      "Court of Appeals",
-      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
-      "As corrected through Wednesday, September 20, 2023"
-    ],
-    "captionLines": [
-      "The People of the State of New York, Respondent,",
-      "v",
-      "Michael Worley, Appellant."
-    ],
-    "citationLine": "2023 NY Slip Op 03300 40 NY3d 129",
-    "courtLine": "Court of Appeals",
-    "dateLines": [
-      "Argued May 18, 2023; decided June 15, 2023",
-      "June 15, 2023",
-      "As corrected through Wednesday, September 20, 2023"
-    ],
-    "authorLine": null,
-    "appearanceSectionType": "none",
-    "pointsOfCounselCount": 0,
-    "appearanceLikeLines": [],
-    "companionAppearances": []
-  },
-  "sections": {
-    "summarySectionsCount": 0,
-    "headnotesCount": 0,
-    "pointsOfCounselCount": 0,
-    "appearancesCount": 0,
-    "opinionBlocksCount": 24,
-    "footnotesCount": 2
-  },
-  "citations": {
-    "slipOpinion": "2023 NY Slip Op 03300",
-    "officialCitation": "40 NY3d 129",
-    "pageMarkerCount": 12
-  },
-  "opinionStructure": {
-    "totalWritings": 3,
-    "byKind": {
-      "opinion_of_the_court": 1,
-      "unknown": 1,
-      "concurrence": 1
-    },
-    "authors": [
-      "Rivera",
-      "Garcia"
-    ],
-    "qualifierLines": [
-      "{**40 NY3d at 131} OPINION OF THE COURT"
-    ],
-    "hasMemorandum": false,
-    "hasPerCuriam": false,
-    "concurrenceCount": 1,
-    "dissentCount": 0,
-    "mixedWritingCount": 0
-  },
-  "footnotes": {
-    "count": 2,
-    "labels": [
-      "1",
-      "2"
-    ],
-    "hasFootnotesHeading": true
-  },
-  "anomalies": [
+  "writings": [
     {
-      "code": "UNKNOWN_TAG",
-      "severity": "info",
-      "detail": "Encountered unknown tag <frac> in source HTML."
+      "order": 1,
+      "author": "Rivera",
+      "kind": "opinion_of_the_court",
+      "label": "OPINION OF THE COURT",
+      "hasJoiners": true,
+      "joiners": [
+        "Wilson",
+        "Troutman",
+        "Halligan"
+      ],
+      "scope": "main court writing",
+      "relationshipToResult": "controls the court's disposition",
+      "confidence": "high"
     },
     {
-      "code": "MULTIPLE_WRITINGS",
-      "severity": "info",
-      "detail": "Companion JSON reports 3 writings."
+      "order": 2,
+      "author": "Garcia",
+      "kind": "concurrence",
+      "label": "concurring",
+      "hasJoiners": false,
+      "joiners": [
+        "Singas",
+        "Cannataro"
+      ],
+      "scope": null,
+      "relationshipToResult": "agrees with the disposition but offers separate reasoning",
+      "confidence": "medium"
+    }
+  ],
+  "resultStructure": {
+    "hasMultipleResults": false,
+    "hasMultipleLowerCourtRulings": false,
+    "resultUnits": [
+      {
+        "label": "disposition",
+        "disposition": "Order reversed, without costs, and matter remitted to Supreme Court, Kings County, for further proceedings in accordance with the opinion herein."
+      }
+    ],
+    "mixedResultDisposition": false,
+    "confidence": "low"
+  },
+  "sourceFeatures": {
+    "citationShape": {
+      "slipOpinionLineIncludesOfficialCitation": true,
+      "officialCitationInParentheses": false,
+      "officialCitationInBrackets": true
     },
+    "counselShape": {
+      "usesAppearancesOfCounsel": false,
+      "usesPointsOfCounsel": false,
+      "appearancesMustBeDerivedFromPointsOfCounsel": false
+    },
+    "headerQuirks": [
+      "official citation is embedded in a bracketed slip-op header line"
+    ],
+    "sourceQuirks": [
+      "source uses nonstandard tag(s): frac"
+    ]
+  },
+  "stanbookHints": {
+    "treatAsPlurality": false,
+    "noMajorityWriting": false,
+    "multipleOrdersResolved": false,
+    "deriveAppearancesFrom": null,
+    "officialCitationSource": "bracketed_header_citation",
+    "sourceTypos": [
+      {
+        "location": "html_markup",
+        "issue": "nonstandard tag(s): frac",
+        "effect": "lightweight HTML extraction should not assume only standard reporter tags appear in the source"
+      }
+    ],
+    "parserCautions": [
+      "preserve separate writings as distinct opinion records rather than folding them into the main writing."
+    ]
+  },
+  "analysisNotes": [
     {
-      "code": "MULTIPLE_HEADER_TABLES",
-      "severity": "info",
-      "detail": "Found 2 table elements before or within the header region."
+      "type": "source",
+      "text": "The HTML includes nonstandard tag markup (frac), which is a small parser-risk signal."
     }
   ]
 }

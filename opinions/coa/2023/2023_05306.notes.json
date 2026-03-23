@@ -1,134 +1,88 @@
 {
+  "notesVersion": "1.0",
   "caseId": "2023_05306",
   "sourcePath": "coa/2023/2023_05306.htm",
-  "notesPath": "coa/2023/2023_05306.notes.json",
-  "generatedAt": "2026-03-22T19:47:13.184Z",
-  "source": {
-    "title": "People v Justice A. (2023 NY Slip Op 05306)",
-    "publicationStatus": "published"
+  "provenance": {
+    "creationMode": "codex_updated",
+    "reviewStatus": "codex_amended",
+    "lastUpdatedAt": "2026-03-22T20:18:23.181Z",
+    "updatedBy": "codex",
+    "confidence": "high"
   },
-  "fileInfo": {
-    "byteSize": 6620,
-    "lineCount": 77,
-    "tagCounts": {
-      "a": 6,
-      "b": 4,
-      "body": 2,
-      "br": 6,
-      "div": 6,
-      "font": 10,
-      "head": 2,
-      "html": 2,
-      "i": 18,
-      "opinion": 1,
-      "p": 22,
-      "script": 4,
-      "style": 2,
-      "table": 4,
-      "td": 14,
-      "title": 2,
-      "tr": 14
-    },
-    "unknownTags": [],
-    "strayClosingTags": []
+  "decisionStructure": {
+    "decisionForm": "memorandum",
+    "hasMajority": true,
+    "mainWritingKind": "memorandum",
+    "mainWritingAuthor": null,
+    "isMemorandum": true,
+    "isPerCuriam": true,
+    "isOpinionOfTheCourt": true,
+    "notes": "The decision is a memorandum disposition."
   },
-  "header": {
-    "hasPrimaryHeaderTable": true,
-    "primaryHeaderTableLines": [
-      "People v Justice A.",
-      "2023 NY Slip Op 05306 [40 NY3d 1009]",
-      "October 19, 2023",
-      "Court of Appeals",
-      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
-      "As corrected through Wednesday, November 29, 2023"
-    ],
-    "captionLines": [],
-    "citationLine": "2023 NY Slip Op 05306 40 NY3d 1009",
-    "courtLine": "Court of Appeals",
-    "dateLines": [
-      "Decided October 19, 2023",
-      "October 19, 2023",
-      "As corrected through Wednesday, November 29, 2023"
-    ],
-    "authorLine": null,
-    "appearanceSectionType": "appearances_only",
-    "pointsOfCounselCount": 0,
-    "appearanceLikeLines": [
+  "writings": [
+    {
+      "order": 1,
+      "author": null,
+      "kind": "memorandum",
+      "label": "OPINION OF THE COURT",
+      "hasJoiners": true,
+      "joiners": [
+        "Wilson",
+        "Rivera",
+        "Garcia",
+        "Singas",
+        "Cannataro",
+        "Troutman",
+        "Halligan"
+      ],
+      "scope": "memorandum disposition",
+      "relationshipToResult": "controls the court's disposition",
+      "confidence": "high"
+    }
+  ],
+  "resultStructure": {
+    "hasMultipleResults": false,
+    "hasMultipleLowerCourtRulings": false,
+    "resultUnits": [
       {
-        "text": "Twyla Carter, The Legal Aid Society , New York City ( Hannah Gladstein of counsel), for appellant.",
-        "sideGuess": "appellant",
-        "terminalPhrase": "for appellant.",
-        "hasArgumentTail": false,
-        "argumentTailPreview": null,
-        "sentenceText": "Twyla Carter, The Legal Aid Society , New York City ( Hannah Gladstein of counsel), for appellant.",
-        "possiblyTruncated": false
-      },
-      {
-        "text": "Alvin L. Bragg, Jr., District Attorney , New York City ( Franklin R. Guenthner and Steven C. Wu of counsel), for respondent.",
-        "sideGuess": "respondent",
-        "terminalPhrase": "for respondent.",
-        "hasArgumentTail": false,
-        "argumentTailPreview": null,
-        "sentenceText": "Alvin L. Bragg, Jr., District Attorney , New York City ( Franklin R. Guenthner and Steven C. Wu of counsel), for respondent.",
-        "possiblyTruncated": false
+        "label": "disposition",
+        "disposition": "On review of submissions pursuant to section 500.11 of the Rules of the Court of Appeals (22 NYCRR 500.11), order reversed, defendant's motion to dismiss pursuant to CPL 30.30 granted and accusatory instrument dismissed, in a memorandum."
       }
     ],
-    "companionAppearances": []
+    "mixedResultDisposition": false,
+    "confidence": "low"
   },
-  "sections": {
-    "summarySectionsCount": 0,
-    "headnotesCount": 0,
-    "pointsOfCounselCount": 0,
-    "appearancesCount": 0,
-    "opinionBlocksCount": 7,
-    "footnotesCount": 0
-  },
-  "citations": {
-    "slipOpinion": "2023 NY Slip Op 05306",
-    "officialCitation": "40 NY3d 1009",
-    "pageMarkerCount": 4
-  },
-  "opinionStructure": {
-    "totalWritings": 1,
-    "byKind": {
-      "opinion_of_the_court": 1
+  "sourceFeatures": {
+    "citationShape": {
+      "slipOpinionLineIncludesOfficialCitation": true,
+      "officialCitationInParentheses": false,
+      "officialCitationInBrackets": true
     },
-    "authors": [],
-    "qualifierLines": [
-      "{**40 NY3d at 1010} OPINION OF THE COURT",
-      "Memorandum."
+    "counselShape": {
+      "usesAppearancesOfCounsel": true,
+      "usesPointsOfCounsel": false,
+      "appearancesMustBeDerivedFromPointsOfCounsel": false
+    },
+    "headerQuirks": [
+      "official citation is embedded in a bracketed slip-op header line"
     ],
-    "hasMemorandum": true,
-    "hasPerCuriam": false,
-    "concurrenceCount": 0,
-    "dissentCount": 0,
-    "mixedWritingCount": 0
+    "sourceQuirks": []
   },
-  "footnotes": {
-    "count": 0,
-    "labels": [],
-    "hasFootnotesHeading": false
+  "stanbookHints": {
+    "treatAsPlurality": false,
+    "noMajorityWriting": false,
+    "multipleOrdersResolved": false,
+    "deriveAppearancesFrom": "header_lines",
+    "officialCitationSource": "bracketed_header_citation",
+    "sourceTypos": [],
+    "parserCautions": [
+      "do not assume a full signed majority opinion structure when the source says Memorandum."
+    ]
   },
-  "anomalies": [
+  "analysisNotes": [
     {
-      "code": "JSON_APPEARANCE_COUNT_MISMATCH",
-      "severity": "warning",
-      "detail": "Raw source suggests 2 appearance line(s), but companion JSON has 0."
-    },
-    {
-      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
-      "severity": "warning",
-      "detail": "Raw appearance sentence is not reproduced in companion JSON: Twyla Carter, The Legal Aid Society , New York City ( Hannah Gladstein of counsel), for appellant."
-    },
-    {
-      "code": "JSON_APPEARANCE_MISSING_RAW_SENTENCE",
-      "severity": "warning",
-      "detail": "Raw appearance sentence is not reproduced in companion JSON: Alvin L. Bragg, Jr., District Attorney , New York City ( Franklin R. Guenthner and Steven C. Wu of counsel), for respondent."
-    },
-    {
-      "code": "MULTIPLE_HEADER_TABLES",
-      "severity": "info",
-      "detail": "Found 2 table elements before or within the header region."
+      "type": "structure",
+      "text": "The court resolves the appeal by memorandum rather than a full signed majority opinion."
     }
   ]
 }

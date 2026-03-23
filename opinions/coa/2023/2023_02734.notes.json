@@ -1,129 +1,91 @@
 {
+  "notesVersion": "1.0",
   "caseId": "2023_02734",
   "sourcePath": "coa/2023/2023_02734.htm",
-  "notesPath": "coa/2023/2023_02734.notes.json",
-  "generatedAt": "2026-03-22T19:47:13.174Z",
-  "source": {
-    "title": "People v Johnson (2023 NY Slip Op 02734)",
-    "publicationStatus": "published"
+  "provenance": {
+    "creationMode": "codex_updated",
+    "reviewStatus": "codex_amended",
+    "lastUpdatedAt": "2026-03-22T20:18:23.172Z",
+    "updatedBy": "codex",
+    "confidence": "medium"
   },
-  "fileInfo": {
-    "byteSize": 68780,
-    "lineCount": 162,
-    "tagCounts": {
-      "a": 50,
-      "b": 26,
-      "blockquote": 10,
-      "body": 2,
-      "br": 20,
-      "div": 24,
-      "font": 82,
-      "head": 2,
-      "html": 2,
-      "i": 488,
-      "p": 123,
-      "script": 4,
-      "style": 2,
-      "sup": 10,
-      "table": 4,
-      "td": 16,
-      "title": 2,
-      "tr": 16,
-      "u": 18
-    },
-    "unknownTags": [],
-    "strayClosingTags": []
+  "decisionStructure": {
+    "decisionForm": "opinion_of_the_court",
+    "hasMajority": true,
+    "mainWritingKind": "opinion_of_the_court",
+    "mainWritingAuthor": "Wilson",
+    "isMemorandum": false,
+    "isPerCuriam": false,
+    "isOpinionOfTheCourt": true,
+    "notes": "The source presents a signed opinion of the court."
   },
-  "header": {
-    "hasPrimaryHeaderTable": true,
-    "primaryHeaderTableLines": [
-      "People v Johnson",
-      "2023 NY Slip Op 02734 [40 NY3d 172]",
-      "May 18, 2023",
-      "Wilson, J.",
-      "Court of Appeals",
-      "Published by New York State Law Reporting Bureau pursuant to Judiciary Law § 431.",
-      "As corrected through Wednesday, October 11, 2023"
-    ],
-    "captionLines": [
-      "The People of the State of New York, Respondent,",
-      "v",
-      "Tyquan Johnson, Appellant."
-    ],
-    "citationLine": "2023 NY Slip Op 02734 40 NY3d 172",
-    "courtLine": "Court of Appeals",
-    "dateLines": [
-      "Argued April 18, 2023; decided May 18, 2023",
-      "May 18, 2023",
-      "As corrected through Wednesday, October 11, 2023"
-    ],
-    "authorLine": null,
-    "appearanceSectionType": "none",
-    "pointsOfCounselCount": 0,
-    "appearanceLikeLines": [],
-    "companionAppearances": []
-  },
-  "sections": {
-    "summarySectionsCount": 0,
-    "headnotesCount": 0,
-    "pointsOfCounselCount": 0,
-    "appearancesCount": 0,
-    "opinionBlocksCount": 74,
-    "footnotesCount": 5
-  },
-  "citations": {
-    "slipOpinion": "2023 NY Slip Op 02734",
-    "officialCitation": "40 NY3d 172",
-    "pageMarkerCount": 40
-  },
-  "opinionStructure": {
-    "totalWritings": 3,
-    "byKind": {
-      "opinion_of_the_court": 1,
-      "unknown": 1,
-      "concurrence": 1
-    },
-    "authors": [
-      "Wilson",
-      "Rivera"
-    ],
-    "qualifierLines": [
-      "{**40 NY3d at 174} OPINION OF THE COURT",
-      "Mr. Johnson moved to suppress the drugs found on his person as the fruits of an illegal search and seizure. At the suppression hearing, Officer Pike testified that he thought it was not \"common\" for someone to move from the driver to the passenger seat of a car and that Mr. Johnson's moving his upper torso back toward the driver's seat meant there was \"potential\" that Mr. Johnson could be trying to stash or retrieve a weapon. He also considered it suspicious that Mr. Johnson was pulling up his pants and attempting to buckle his belt because suspects commonly hide weapons in their waistband. The court denied the motion to suppress, and the case proceeded to a bench trial. Mr. Johnson was convicted of two counts of criminal possession of a controlled substance in the third degree and was sentenced to five years on each count, to run concurrently. On appeal, Mr. Johnson renewed his arguments that Officer Pike's initial request to stop violated level one of De Bour; that the Officer's questioning violated level two, and that the stop and frisk violated level three. The Appellate Division affirmed, summarily holding that \"the action taken by [Officer Pike] was justified in its inception and at every subsequent stage of the encounter leading to [Mr. Johnson]'s arrest\" (206 AD3d 1702, 1702-1703 [4th Dept 2022]). We now reverse.",
-      "Concerns about the Court's atomization of police action and the potential for reverse engineering a lawful basis for an unjustified, escalating intrusion were identified in a strongly worded dissent by Judge Fuchsberg in People v Samuels (50 NY2d 1035 [1980]). In his view, \"the mushrooming lexicographical distinctions into which the reasonableness of street stops and seizures are being categorized present a disturbing problem\" (id. at 1039-1040 [Fuchsberg, J., dissenting]). \"Since the circumstances of no two stops are ever precisely the same,\" he continued, \"the semantics necessarily employed to effect such compartmentalization, however well intended, in the end make it all the easier to substitute labels for liberties\" (id. at 1040). He welcomed what he regarded as \"a trend away from the artificial and 'unworkable' hierarchy of police conduct erected in People v De Bour\" (id., quoting Note, People v De Bour: The Power of the Police to Stop and Frisk Citizens, 30 Syracuse L Rev 893 [1979]).",
-      "In Samuels, an officer followed the defendant after he saw the defendant purchase a holster from a novelty shop and{**40 NY3d at 189} asked the defendant why he had made the purchase (50 NY2d 1035, 1036-1037 [1980]). The defendant did not respond, and instead put his hand in his coat pocket (id. at 1037). The officer commanded the defendant to remove his hand from his pocket; defendant did not comply (id.). The officer then grabbed the defendant's hand through his coat pocket and discovered a gun (id.).In upholding what was essentially a frisk, the Court acknowledged that the defendant's failure to respond to the officer's question would not have justified further action by the police, but that placing his hand in his pocket and refusing to withdraw it elevated the officer's \"interest in his own safety\" to a \"sufficient basis for his grabbing the [defendant's] hand through the coat\" (id.). And yet, the arresting officer testified that police indiscriminately confronted patrons who examined holsters (id. at 1039 n 1 [Fuchsberg, J., dissenting]).",
-      "Assume that, here, defendant had not merely said that he had nothing on him but also then tried to walk around the officer{**40 NY3d at 192} or back towards his vehicle. Would the officer have let him walk away? That is unlikely since the officer testified that, before either he or defendant had even exited their vehicles, he believed—despite a glaring lack of evidence—that defendant possessed a weapon. More likely, the officer would have stopped defendant and conducted the frisk anyway. So much for the right to be left alone. I have previously identified this same dilemma, noting that upholding a stop and frisk based on a defendant's refusal to respond to a level one or level two inquiry \"suggests that members of the public must affirmatively respond to officers or risk forfeiting their freedom, a proposition we have clearly and unequivocally rejected\" (Perez, 31 NY3d at 978 [Rivera, J., dissenting]).",
-      "Simply stated, De Bour's framework has proved itself to be \"an unworkable\" one that \"creates more questions than it resolves\" (, 9 NY3d 129, 149 [2007]), \"no longer serves the ends of justice or withstands the cold light of logic and experience\" (, 7 NY3d 588, 604 [2006] [internal quotation marks omitted]), and has simply been undermined by \"the 'lessons of experience and the force of better reasoning' \" (People v Bing, 76 NY2d 331, 338 [1990], quoting Burnet v Coronado Oil & Gas Co., 285 US 393, 407-408 [1932, Brandeis, J., dissenting]). Although the Court viewed De Bour's approach as sensible when adopting it in 1976, and when reaffirming it in 1992, its application during the many years since has diminished its vitality, to the point that the events of the present now overshadow the good intentions of the past. The De Bour framework has calcified into an \"archaic {**40 NY3d at 195}and obsolete doctrine which has lost its touch with reality\" (People v Hobson, 39 NY2d 479, 487 [1976]). Our experiences with De Bour supply a \"compelling justification\" for adopting an approach to police-initiated encounters that better safeguards the right to be let alone, public safety and officer security (, 22 NY3d 168, 194 [2013]).",
-      "This wiser approach values autonomy and avoids \"substitut[ing] labels for liberties\" (Samuels, 50 NY2d at 1040 [Fuchsberg, J., dissenting]). It also leaves ample room for police action at times of heightened concern for public safety. For example, if an officer receives a reliable tip from an anonymous source or a confidential informant that a person has committed, is about to commit or planning a felony or misdemeanor, the officer would remain able to approach and inquire (see Florida v J.L., 529 US 266, 270-271 [2000]; , 24 NY3d 1138, 1140 [2014]). Or if a person approaches an officer and identifies someone on the street as involved in a crime, the officer may approach and inquire (People v Moore, 32 NY2d 67, 69 [1973]). And, of course, if an officer personally observes conduct that supplies reasonable suspicion that crime is afoot—not merely based on an incredulous view of innocent conduct, as was the case here—an officer may approach (id.). The Court has found such police interactions to be lawful under levels three and four of De Bour.",
-      "Justice Sotomayor has aptly described the flaws in the federal approach. In Utah v Strieff, Justice Sotomayor powerfully described how the United States Supreme Court \"has allowed an officer to stop you for whatever reason [they] want[ ]—so long as [they] can point to a pretextual justification after the fact\" and reminded us that, under Terry and its progeny, although the requisite \"justification must provide specific reasons why the officer suspected you were breaking the law, . . . it may factor in your ethnicity, . . . where you live, . . . what you were wearing, . . . and how you behaved\" (579 US 232, 252 [2016, Sotomayor, J., dissenting] [citations omitted]). Justice Sotomayor discussed the dreadful consequences that attend this conduct, which the Fourth Amendment tolerates, including intrusive frisks, possible handcuffing and jailing, fingerprinting and DNA collection, and—even if innocent—an arrest record (id. at 253). The Justice also observed that \"[f]or generations, black and brown parents have given their children 'the talk'—instructing them never to run down the street; always keep your hands where they can be seen; do not even think of talking back to a stranger—all out of fear of how an officer with a gun will react to them\" (id. at 254). The Supreme Court's post-Terry reading of the Fourth Amendment, Justice Sotomayor concluded, \"implies that you are not a citizen of a democracy but the subject of a carceral state, just waiting to be cataloged\" (id.)"
-    ],
-    "hasMemorandum": false,
-    "hasPerCuriam": false,
-    "concurrenceCount": 1,
-    "dissentCount": 0,
-    "mixedWritingCount": 0
-  },
-  "footnotes": {
-    "count": 5,
-    "labels": [
-      "*",
-      "1",
-      "2",
-      "3",
-      "4"
-    ],
-    "hasFootnotesHeading": true
-  },
-  "anomalies": [
+  "writings": [
     {
-      "code": "MULTIPLE_WRITINGS",
-      "severity": "info",
-      "detail": "Companion JSON reports 3 writings."
+      "order": 1,
+      "author": "Wilson",
+      "kind": "opinion_of_the_court",
+      "label": "OPINION OF THE COURT",
+      "hasJoiners": true,
+      "joiners": [
+        "Garcia",
+        "Singas",
+        "Cannataro",
+        "Troutman"
+      ],
+      "scope": "main court writing",
+      "relationshipToResult": "controls the court's disposition",
+      "confidence": "high"
     },
     {
-      "code": "MULTIPLE_HEADER_TABLES",
-      "severity": "info",
-      "detail": "Found 2 table elements before or within the header region."
+      "order": 2,
+      "author": "Rivera",
+      "kind": "concurrence",
+      "label": "concurring",
+      "hasJoiners": false,
+      "joiners": [],
+      "scope": null,
+      "relationshipToResult": "agrees with the disposition but offers separate reasoning",
+      "confidence": "medium"
     }
-  ]
+  ],
+  "resultStructure": {
+    "hasMultipleResults": false,
+    "hasMultipleLowerCourtRulings": false,
+    "resultUnits": [
+      {
+        "label": "disposition",
+        "disposition": "Order reversed and indictment dismissed."
+      }
+    ],
+    "mixedResultDisposition": false,
+    "confidence": "low"
+  },
+  "sourceFeatures": {
+    "citationShape": {
+      "slipOpinionLineIncludesOfficialCitation": true,
+      "officialCitationInParentheses": false,
+      "officialCitationInBrackets": true
+    },
+    "counselShape": {
+      "usesAppearancesOfCounsel": false,
+      "usesPointsOfCounsel": false,
+      "appearancesMustBeDerivedFromPointsOfCounsel": false
+    },
+    "headerQuirks": [
+      "official citation is embedded in a bracketed slip-op header line"
+    ],
+    "sourceQuirks": []
+  },
+  "stanbookHints": {
+    "treatAsPlurality": false,
+    "noMajorityWriting": false,
+    "multipleOrdersResolved": false,
+    "deriveAppearancesFrom": null,
+    "officialCitationSource": "bracketed_header_citation",
+    "sourceTypos": [],
+    "parserCautions": [
+      "preserve separate writings as distinct opinion records rather than folding them into the main writing."
+    ]
+  },
+  "analysisNotes": []
 }
