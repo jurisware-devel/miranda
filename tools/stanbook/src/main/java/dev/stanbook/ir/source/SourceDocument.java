@@ -7,14 +7,9 @@ import java.util.List;
 public record SourceDocument(
     Path path,
     List<SourceLine> lines,
-    HtmlNormalizedDocument htmlDocument,
-    SourceNotes notes
+    HtmlNormalizedDocument htmlDocument
 ) {
     public SourceDocument(Path path, List<SourceLine> lines) {
-        this(path, lines, null, null);
-    }
-
-    public SourceDocument(Path path, List<SourceLine> lines, HtmlNormalizedDocument htmlDocument) {
-        this(path, lines, htmlDocument, null);
+        this(path, lines, null);
     }
 }

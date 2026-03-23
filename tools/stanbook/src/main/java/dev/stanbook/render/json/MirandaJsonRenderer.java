@@ -18,9 +18,6 @@ import dev.stanbook.ir.render.BlockType;
 import dev.stanbook.ir.render.ReflowedBlock;
 import dev.stanbook.ir.render.ReflowedDocument;
 import dev.stanbook.ir.source.SourceDocument;
-import dev.stanbook.ir.source.SourceNoteAppearance;
-import dev.stanbook.ir.source.SourceNoteAnomaly;
-import dev.stanbook.ir.source.SourceNotes;
 import dev.stanbook.ir.source.SourceLine;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -91,7 +88,7 @@ public final class MirandaJsonRenderer {
         Pattern.CASE_INSENSITIVE
     );
     private static final Pattern POINTS_OF_COUNSEL_ARGUMENT_PATTERN = Pattern.compile(
-        "(?<=\\.)\\s+(?:[IVX]+|\\d+)\\.\\s+"
+        "\\s+(?:[IVX]+|\\d+)\\.\\s+"
     );
     private static final Pattern APPEARANCE_SENTENCE_END_PATTERN = Pattern.compile(
         "(?i)^.*?\\b(?:for\\s+(?:appellant|respondent|petitioner|appellee|claimant|defendant|plaintiff)|amic(?:us|i)\\s+curiae)\\."
@@ -108,7 +105,7 @@ public final class MirandaJsonRenderer {
         List<Writing> normalizedWritings = classifyEffectiveWritings(preservedWritings, disposition);
         List<Diagnostic> diagnostics = buildDiagnostics(source, document, normalizedWritings, disposition);
         ExtractionAssessment extraction = assessExtraction(source, document, normalizedWritings, diagnostics);
-        List<Map<String, Object>> appearances = buildAppearances(source, document);
+        List<Map<String, Object>> appearances = buildAppearances(document);
         Map<String, Object> root = new LinkedHashMap<>();
         root.put("version", "0.1");
         root.put("documentType", "opinion");
@@ -163,13 +160,7 @@ public final class MirandaJsonRenderer {
         return captionLines;
     }
 
-    private List<Map<String, Object>> buildAppearances(SourceDocument source, ReflowedDocument document) {
-        if (shouldPreferNotesAppearances(source.notes())) {
-            List<Map<String, Object>> noteAppearances = buildAppearancesFromNotes(source.notes());
-            if (!noteAppearances.isEmpty()) {
-                return noteAppearances;
-            }
-        }
+    private List<Map<String, Object>> buildAppearances(ReflowedDocument document) {
         List<Map<String, Object>> appearances = new ArrayList<>();
         Set<String> seenAppearanceKeys = new LinkedHashSet<>();
         for (var item : document.lowered().header().items()) {
@@ -195,42 +186,6 @@ public final class MirandaJsonRenderer {
                 continue;
             }
             addAppearance(appearances, seenAppearanceKeys, appearanceText, block.startLine(), block.endLine());
-        }
-        return appearances;
-    }
-
-    private boolean shouldPreferNotesAppearances(SourceNotes notes) {
-        if (notes == null) {
-            return false;
-        }
-        return notes.hasAnomalyCode("MALFORMED_APPEARANCES_CONTAINER")
-            || notes.hasAnomalyCode("JSON_APPEARANCE_MISSING_RAW_SENTENCE")
-            || notes.hasAnomalyCode("JSON_APPEARANCE_COUNT_MISMATCH")
-            || notes.hasAnomalyCode("JSON_APPEARANCE_TRUNCATED")
-            || notes.hasAnomalyCode("JSON_APPEARANCE_MULTI_SIDE_MERGE");
-    }
-
-    private List<Map<String, Object>> buildAppearancesFromNotes(SourceNotes notes) {
-        if (notes == null) {
-            return List.of();
-        }
-        List<Map<String, Object>> appearances = new ArrayList<>();
-        Set<String> seenAppearanceKeys = new LinkedHashSet<>();
-        int syntheticLineNumber = 1;
-        for (SourceNoteAppearance appearanceLine : notes.appearanceLikeLines()) {
-            if (appearanceLine == null) {
-                continue;
-            }
-            String appearanceText = trimPointsOfCounselArguments(
-                appearanceLine.sentenceText() == null || appearanceLine.sentenceText().isBlank()
-                    ? appearanceLine.text()
-                    : appearanceLine.sentenceText()
-            );
-            if (appearanceText.isEmpty()) {
-                continue;
-            }
-            addAppearance(appearances, seenAppearanceKeys, appearanceText, syntheticLineNumber, syntheticLineNumber);
-            syntheticLineNumber += 1;
         }
         return appearances;
     }
@@ -344,7 +299,7 @@ public final class MirandaJsonRenderer {
     private Map<String, Object> buildRenderingHints(ReflowedDocument document, ExtractionAssessment extraction) {
         Map<String, Object> hints = new LinkedHashMap<>();
         hints.put("hasOfficialPageMarkers", document.lowered().publicationStatus().name().equals("PUBLISHED"));
-        hints.put("hasAppearances", !buildAppearances(document.lowered().sectioned().source(), document).isEmpty());
+        hints.put("hasAppearances", !buildAppearances(document).isEmpty());
         hints.put("hasFootnotes", extraction.structuredFootnotesHighConfidence() && !document.lowered().footnotes().footnotes().isEmpty());
         hints.put("usesOpinionSourceFallback", !extraction.structuredOpinionsHighConfidence());
         hints.put("usesFootnoteSourceFallback", !extraction.structuredFootnotesHighConfidence());
@@ -449,29 +404,7 @@ public final class MirandaJsonRenderer {
             ));
         }
 
-        if (source.notes() != null && source.notes().anomalies() != null) {
-            for (SourceNoteAnomaly anomaly : source.notes().anomalies()) {
-                diagnostics.add(new Diagnostic(
-                    "notes_" + anomaly.code().toLowerCase(Locale.ROOT),
-                    severityFromNotes(anomaly.severity()),
-                    anomaly.detail(),
-                    firstHeaderLineNumber
-                ));
-            }
-        }
-
         return List.copyOf(diagnostics);
-    }
-
-    private dev.stanbook.diagnostics.Severity severityFromNotes(String severity) {
-        if (severity == null) {
-            return dev.stanbook.diagnostics.Severity.INFO;
-        }
-        return switch (severity.trim().toLowerCase(Locale.ROOT)) {
-            case "error" -> dev.stanbook.diagnostics.Severity.ERROR;
-            case "warning" -> dev.stanbook.diagnostics.Severity.WARNING;
-            default -> dev.stanbook.diagnostics.Severity.INFO;
-        };
     }
 
     private ExtractionAssessment assessExtraction(

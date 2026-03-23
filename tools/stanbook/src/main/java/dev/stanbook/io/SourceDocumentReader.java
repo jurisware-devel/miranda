@@ -9,7 +9,6 @@ import java.nio.file.Path;
 
 public final class SourceDocumentReader {
     private final HtmlSourceLoader htmlSourceLoader = new HtmlSourceLoader();
-    private final SourceNotesReader sourceNotesReader = new SourceNotesReader();
 
     public SourceDocument read(Path path) {
         Path resolvedPath = resolveExistingPath(path);
@@ -17,13 +16,7 @@ public final class SourceDocumentReader {
         if (!lowerName.endsWith(".htm") && !lowerName.endsWith(".html")) {
             throw new IllegalArgumentException("Expected an .htm or .html file: " + resolvedPath);
         }
-        SourceDocument source = htmlSourceLoader.load(resolvedPath, readWithFallback(resolvedPath));
-        return new SourceDocument(
-            source.path(),
-            source.lines(),
-            source.htmlDocument(),
-            sourceNotesReader.readIfPresent(resolvedPath)
-        );
+        return htmlSourceLoader.load(resolvedPath, readWithFallback(resolvedPath));
     }
 
     private Path resolveExistingPath(Path path) {

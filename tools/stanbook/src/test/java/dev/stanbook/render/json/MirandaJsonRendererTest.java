@@ -2,15 +2,9 @@ package dev.stanbook.render.json;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import dev.stanbook.io.HtmlSourceLoader;
 import dev.stanbook.io.SourceDocumentReader;
 import dev.stanbook.pipeline.StanbookPipeline;
-import dev.stanbook.ir.source.SourceDocument;
-import dev.stanbook.ir.source.SourceNoteAnomaly;
-import dev.stanbook.ir.source.SourceNoteAppearance;
-import dev.stanbook.ir.source.SourceNotes;
 import java.nio.file.Path;
-import java.util.List;
 import org.junit.jupiter.api.Test;
 
 class MirandaJsonRendererTest {
@@ -250,53 +244,6 @@ class MirandaJsonRendererTest {
         assertThat(json).contains("\"text\":\"*Lorca Morello*, New York City, *Steven Banks, Richard Willstatter*, White Plains, and *Alfred O'Connor*, Albany, for Legal Aid Society and others, amici curiae.\"");
         assertThat(json).contains("\"pointsOfCounsel\":[");
         assertThat(json).contains("The amici argue that the lineup procedure was unreliable.");
-    }
-
-    @Test
-    void render_json_uses_notes_backed_appearance_recovery_for_malformed_container_cases() {
-        String html = """
-            <html><body>
-            <table>
-              <tr><td>People v Example</td></tr>
-              <tr><td>2004 NY Slip Op 02259 [2 NY3d 725]</td></tr>
-              <tr><td>March 25, 2004</td></tr>
-              <tr><td>Court of Appeals</td></tr>
-            </table>
-            <p>APPEARANCES OF COUNSEL</p>
-            <p><i>Center for Appellate Litigation</i>, New York City (<i>Laura I. Appleman</i> and <i>Robert S. Dean</i> of counsel), for appellant.</p>
-            <p><i>Robert M. Morgenthau, District Attorney</i>, New York City (<i>Meredith Boylan</i> and <i>Susan Axelrod</i> of counsel), for respondent.</appcouns>
-            <p>OPINION OF THE COURT</p>
-            <p>Body text.</p>
-            </body></html>
-            """;
-
-        HtmlSourceLoader loader = new HtmlSourceLoader();
-        SourceDocument source = loader.load(Path.of("example.htm"), html);
-        SourceNotes notes = new SourceNotes(
-            "example",
-            new SourceNotes.HeaderNotes(List.of(
-                new SourceNoteAppearance(
-                    "Center for Appellate Litigation, New York City (Laura I. Appleman and Robert S. Dean of counsel), for appellant.",
-                    "appellant",
-                    "Center for Appellate Litigation, New York City (Laura I. Appleman and Robert S. Dean of counsel), for appellant."
-                ),
-                new SourceNoteAppearance(
-                    "Robert M. Morgenthau, District Attorney, New York City (Meredith Boylan and Susan Axelrod of counsel), for respondent.",
-                    "respondent",
-                    "Robert M. Morgenthau, District Attorney, New York City (Meredith Boylan and Susan Axelrod of counsel), for respondent."
-                )
-            )),
-            List.of(
-                new SourceNoteAnomaly("MALFORMED_APPEARANCES_CONTAINER", "warning", "Malformed appearances container.")
-            )
-        );
-        SourceDocument sourceWithNotes = new SourceDocument(source.path(), source.lines(), source.htmlDocument(), notes);
-
-        String json = StanbookPipeline.createDefault().render(sourceWithNotes);
-
-        assertThat(json).contains("\"text\":\"Center for Appellate Litigation, New York City (Laura I. Appleman and Robert S. Dean of counsel), for appellant.\"");
-        assertThat(json).contains("\"text\":\"Robert M. Morgenthau, District Attorney, New York City (Meredith Boylan and Susan Axelrod of counsel), for respondent.\"");
-        assertThat(json).contains("\"code\":\"notes_malformed_appearances_container\"");
     }
 
     @Test
