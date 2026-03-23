@@ -60,7 +60,7 @@ public final class HtmlSourceLoader {
         Pattern.CASE_INSENSITIVE
     );
     private static final Pattern LEADING_ROLE_ANNOTATION_PATTERN = Pattern.compile(
-        "^\\((?<role>[^)]+)\\)\\.(?<rest>\\s*.*)$"
+        "^\\((?<role>[^)]+)\\)[.:](?<rest>\\s*.*)$"
     );
 
     public SourceDocument load(Path path, String rawHtml) {
@@ -520,12 +520,13 @@ public final class HtmlSourceLoader {
             opinionCategory
         );
         if (!remainder.isEmpty()) {
+            String consumedInlinePrefix = line.substring(0, Math.max(line.length() - remainder.length(), 0));
             addOpinionBlock(
                 blocks,
                 accumulator,
                 HtmlOpinionBlockType.PARAGRAPH,
                 remainder,
-                trimLeadingInlineText(inlines, inlineTrimLength(rawAuthorLine)),
+                trimLeadingInlineText(inlines, inlineTrimLength(consumedInlinePrefix)),
                 sourceTagFor(sourceElement),
                 opinionCategory
             );

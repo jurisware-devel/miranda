@@ -163,6 +163,10 @@ class HtmlSourceLoaderTest {
             """;
 
         var document = new HtmlSourceLoader().load(Path.of("example.htm"), html);
+        var dissentParagraphBlock = document.htmlDocument().opinionBlocks().stream()
+            .filter(block -> block.text().contains("Applying the relevant factors"))
+            .findFirst()
+            .orElseThrow();
         var paragraphLine = document.lines().stream()
             .filter(line -> line.text().contains("Applying the relevant factors"))
             .findFirst()
@@ -171,6 +175,8 @@ class HtmlSourceLoaderTest {
         assertThat(paragraphLine.text()).isEqualTo("Applying the relevant factors (*see People v Taranovich*, 37 NY2d 442 [1975]).");
         assertThat(paragraphLine.inlines()).isNotNull();
         assertThat(paragraphLine.inlines()).anyMatch(node -> node instanceof EmphasisInline);
+        assertThat(dissentParagraphBlock.text()).isEqualTo("Applying the relevant factors (*see People v Taranovich*, 37 NY2d 442 [1975]).");
+        assertThat(dissentParagraphBlock.lineNumber()).isEqualTo(paragraphLine.lineNumber());
     }
 
     @Test
