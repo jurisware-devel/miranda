@@ -178,6 +178,19 @@ class RealSampleJsonRegressionTest {
     }
 
     @Test
+    void html_repo_sample_keeps_authored_majority_and_dissent_markers_in_body_blocks() {
+        var source = new SourceDocumentReader().read(Path.of("../../opinions/coa/2026/2026_01446.htm"));
+
+        String json = StanbookPipeline.createDefault().render(source);
+
+        assertThat(json).contains("\"caseId\":\"2026_01446\"");
+        assertThat(json).contains("\"kind\":\"opinion_of_the_court\",\"author\":\"Cannataro\"");
+        assertThat(json).contains("\"text\":\"CANNATARO, J.:\"");
+        assertThat(json).contains("\"kind\":\"dissent\",\"author\":\"Rivera\"");
+        assertThat(json).contains("\"text\":\"RIVERA, J. (dissenting):\"");
+    }
+
+    @Test
     void html_repo_sample_keeps_per_curiam_majority_author_null() {
         var source = new SourceDocumentReader().read(Path.of("../../opinions/coa/2005/2005_09811.htm"));
 

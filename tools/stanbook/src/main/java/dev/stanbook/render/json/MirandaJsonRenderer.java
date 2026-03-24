@@ -566,9 +566,6 @@ public final class MirandaJsonRenderer {
 
         for (OpinionComponent component : document.lowered().opinionBody().components()) {
             String author = authorFor(component);
-            if (component.type() == OpinionComponentType.METADATA) {
-                continue;
-            }
             if (component.type() == OpinionComponentType.SUBHEADER) {
                 if (current != null) {
                     current.blocks.addAll(blocksForComponent(document, component));

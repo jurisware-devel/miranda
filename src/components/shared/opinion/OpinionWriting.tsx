@@ -34,38 +34,11 @@ const blockText = (block?: OpinionBlockNode | null): string => {
   return "";
 };
 
-const normalizeHeadingText = (text?: string | null): string => {
-  return (text ?? "")
-    .replace(/\{\*\*[^}]+\}/g, " ")
-    .replace(/\s+/g, " ")
-    .trim()
-    .replace(/\.+$/, "")
-    .toLowerCase();
-};
-
-const formatAuthorLine = (author?: string | null): string => {
-  const normalized = (author ?? "").trim();
-  if (!normalized || normalized.toLowerCase() === "per curiam") return "";
-  if (/,/.test(normalized)) return normalized;
-  return `${normalized}, J.`;
-};
-
 const OpinionWriting: React.FC<OpinionWritingProps> = ({
   writing,
   opinionSourceUrl,
 }) => {
   const blocks = writing.blocks ?? [];
-  const firstBlock = blocks[0];
-  const secondBlock = blocks[1];
-  const firstBlockText = blockText(firstBlock);
-  const secondBlockText = blockText(secondBlock);
-  const authorLine = formatAuthorLine(writing.author);
-  const showInlineAuthorLine = Boolean(
-    authorLine &&
-      isRecognizedWritingQualifier(firstBlockText) &&
-      !normalizeHeadingText(firstBlockText).includes(normalizeHeadingText(authorLine)) &&
-      !normalizeHeadingText(secondBlockText).startsWith(normalizeHeadingText(authorLine)),
-  );
 
   return (
     <section className="opinion-writing">
@@ -77,11 +50,6 @@ const OpinionWriting: React.FC<OpinionWritingProps> = ({
               opinionSourceUrl={opinionSourceUrl}
               className={isRecognizedWritingQualifier(blockText(block)) ? "opinion-block--qualifier" : undefined}
             />
-            {blockIndex === 0 && showInlineAuthorLine ? (
-              <p className="opinion-block opinion-block--paragraph opinion-block--qualifier">
-                {authorLine}
-              </p>
-            ) : null}
           </React.Fragment>
         ))}
       </div>

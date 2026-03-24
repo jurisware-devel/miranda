@@ -451,7 +451,7 @@ class MirandaJsonRendererTest {
     }
 
     @Test
-    void render_json_preserves_unclassified_opinion_blocks_as_unknown_writing() {
+    void render_json_preserves_standalone_author_markers_as_writing_blocks() {
         String html = """
             <html><body>
             <table>
@@ -470,9 +470,10 @@ class MirandaJsonRendererTest {
         String json = StanbookPipeline.createDefault()
             .render(new dev.stanbook.io.HtmlSourceLoader().load(Path.of("example.htm"), html));
 
-        assertThat(json).contains("\"kind\":\"unknown\"");
+        assertThat(json).contains("\"kind\":\"dissent\"");
         assertThat(json).contains("\"provenance\":{\"startLine\":9,\"endLine\":9}");
         assertThat(json).contains("\"author\":\"Garcia\"");
+        assertThat(json).contains("\"text\":\"Garcia, J. (dissenting).\"");
         assertThat(json).doesNotContain("\"text\":\" (dissenting).\"");
         assertThat(json).contains("\"kind\":\"opinion_of_the_court\"");
         assertThat(json).contains("Body text.");
@@ -667,8 +668,33 @@ class MirandaJsonRendererTest {
 
         assertThat(json).contains("\"sourceTags\":[\"opinion\",\"para\"]");
         assertThat(json).contains("\"sourceCategories\":[\"dissenting\"]");
+        assertThat(json).contains("\"text\":\"WILSON, Chief Judge (dissenting):\"");
         assertThat(json).contains("\"type\":\"quote\",\"sourceTag\":\"para\",\"opinionCategory\":\"dissenting\"");
         assertThat(json).contains("\"sourceTag\":\"para\"");
         assertThat(json).contains("\"opinionCategory\":\"dissenting\"");
+    }
+
+    @Test
+    void render_json_keeps_authored_majority_marker_in_opinion_blocks() {
+        String html = """
+            <html><body>
+            <table>
+              <tr><td>People v Example</td></tr>
+              <tr><td>2026 NY Slip Op 00021</td></tr>
+              <tr><td>March 20, 2026</td></tr>
+              <tr><td>Court of Appeals</td></tr>
+              <tr><td>Cannataro, J.</td></tr>
+            </table>
+            <sc>CANNATARO</sc>, J.:
+            <p>Majority opening.</p>
+            </body></html>
+            """;
+
+        String json = StanbookPipeline.createDefault()
+            .render(new dev.stanbook.io.HtmlSourceLoader().load(Path.of("example.htm"), html));
+
+        assertThat(json).contains("\"kind\":\"opinion_of_the_court\",\"author\":\"Cannataro\"");
+        assertThat(json).contains("\"text\":\"CANNATARO, J.:\"");
+        assertThat(json).contains("\"text\":\"Majority opening.\"");
     }
 }

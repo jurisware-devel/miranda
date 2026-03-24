@@ -274,7 +274,7 @@ public final class HtmlSourceLoader {
                         accumulator,
                         HtmlOpinionBlockType.AUTHOR_MARKER,
                         authorMarker,
-                        null,
+                        List.of(new TextInline(authorMarker)),
                         sourceTagFor(element),
                         opinionCategoryFor(element)
                     );
@@ -320,12 +320,13 @@ public final class HtmlSourceLoader {
                 continue;
             }
             if ("sc".equalsIgnoreCase(tag)) {
+                String authorLine = renderAuthorLine(element);
                 addOpinionBlock(
                     blocks,
                     accumulator,
                     HtmlOpinionBlockType.AUTHOR_MARKER,
-                    renderAuthorLine(element),
-                    null,
+                    authorLine,
+                    List.of(new TextInline(authorLine)),
                     sourceTagFor(element),
                     opinionCategoryFor(element)
                 );
@@ -515,7 +516,7 @@ public final class HtmlSourceLoader {
             accumulator,
             HtmlOpinionBlockType.AUTHOR_MARKER,
             authorLine,
-            null,
+            List.of(new TextInline(authorLine)),
             sourceTagFor(sourceElement),
             opinionCategory
         );

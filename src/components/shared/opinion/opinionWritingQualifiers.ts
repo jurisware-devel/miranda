@@ -3,7 +3,7 @@ const normalizeHeadingText = (text?: string | null): string => {
     .replace(/\{\*\*[^}]+\}/g, " ")
     .replace(/\s+/g, " ")
     .trim()
-    .replace(/\.+$/, "")
+    .replace(/[.:]+$/, "")
     .toLowerCase();
 };
 
@@ -23,5 +23,8 @@ export const isRecognizedWritingQualifier = (text?: string | null): boolean => {
   if (/^memorandum \((?:concurring|dissenting)(?: in part| in result)?\)$/.test(normalized)) {
     return true;
   }
-  return /^(?:chief judge .+|.+, j)\. \((?:concurring|dissenting)(?: in part| in result| in .+)?\)$/.test(normalized);
+  if (/^(?:chief judge .+|.+, j)$/.test(normalized)) {
+    return true;
+  }
+  return /^(?:chief judge .+|.+, j)\.?(?::)? \((?:concurring|dissenting)(?: in part| in result| in .+)?\)$/.test(normalized);
 };

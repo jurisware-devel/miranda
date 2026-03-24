@@ -10,6 +10,7 @@ import InlineMarkdown from "./InlineMarkdown";
 import OpinionAppearances from "./OpinionAppearances";
 import OpinionHeader from "./OpinionHeader";
 import OpinionWriting from "./OpinionWriting";
+import { isRecognizedWritingQualifier } from "./opinionWritingQualifiers";
 
 type OpinionDocumentViewProps = {
   document: OpinionDocument;
@@ -26,10 +27,133 @@ type FallbackOpinionLine = {
   text?: string | null;
 };
 
-const normalizeWritings = (writings: OpinionWritingType[]) => {
-  return writings.reduce<OpinionWritingType[]>((accumulator, writing) => {
+const fallbackOpinionLines = (document: OpinionDocument): FallbackOpinionLine[] => {
+  return document.fallback?.opinionLines ??
+    ((document.source as { fallback?: { opinionLines?: FallbackOpinionLine[] | null } | null } | null)
+      ?.fallback?.opinionLines ?? []);
+};
+
+const blockPlainText = (block?: OpinionWritingType["blocks"] extends infer Blocks
+  ? Blocks extends (infer Block)[] | null | undefined
+    ? Block
+    : never
+  : never): string => {
+  if (!block || !("inlines" in block) || !block.inlines?.length) return "";
+  return block.inlines
+    .map((node) => {
+      if (node.type === "text" || node.type === "page_marker") {
+        return node.text ?? "";
+      }
+      if ("children" in node) {
+        return (node.children ?? [])
+          .map((child) => ("text" in child ? (child.text ?? "") : ""))
+          .join("");
+      }
+      return "";
+    })
+    .join("")
+    .trim();
+};
+
+const recoverBlockText = (
+  block: NonNullable<OpinionWritingType["blocks"]>[number],
+  fallbackLinesByNumber: Map<number, string>,
+) => {
+  const existingText = blockPlainText(block);
+  if (existingText || !block.provenance?.startLine || block.provenance?.startLine !== block.provenance?.endLine) {
+    return existingText;
+  }
+  return fallbackLinesByNumber.get(block.provenance.startLine) ?? "";
+};
+
+const trimLeadingColonFromNodes = (nodes: NonNullable<NonNullable<OpinionWritingType["blocks"]>[number]["inlines"]>) => {
+  let trimmed = false;
+  return nodes.map((node) => {
+    if (trimmed) return node;
+    if (node.type === "text") {
+      const nextText = (node.text ?? "").replace(/^:\s*/, "");
+      if (nextText !== (node.text ?? "")) {
+        trimmed = true;
+        return { ...node, text: nextText };
+      }
+      if ((node.text ?? "").length > 0) {
+        trimmed = true;
+      }
+      return node;
+    }
+    if ("children" in node && node.children?.length) {
+      const nextChildren = trimLeadingColonFromNodes(node.children);
+      if (nextChildren !== node.children) {
+        trimmed = true;
+        return { ...node, children: nextChildren };
+      }
+    }
+    return node;
+  });
+};
+
+const trimLeadingColonFromFirstBlock = (writing: OpinionWritingType): OpinionWritingType => {
+  const blocks = [...(writing.blocks ?? [])];
+  const firstBlock = blocks[0];
+  if (!firstBlock || !("inlines" in firstBlock) || !firstBlock.inlines?.length) {
+    return writing;
+  }
+  blocks[0] = {
+    ...firstBlock,
+    inlines: trimLeadingColonFromNodes(firstBlock.inlines),
+  };
+  return {
+    ...writing,
+    blocks,
+  };
+};
+
+const recoveredQualifierBlocks = (
+  writing: OpinionWritingType,
+  fallbackLinesByNumber: Map<number, string>,
+) => {
+  const blocks = writing.blocks ?? [];
+  if (!blocks.length) return [];
+
+  const recovered = blocks
+    .map((block) => {
+      const text = recoverBlockText(block, fallbackLinesByNumber).trim();
+      if (!text) return null;
+      return {
+        type: "paragraph" as const,
+        inlines: [{ type: "text" as const, text }],
+        provenance: block.provenance,
+      };
+    })
+    .filter((block) => block && isRecognizedWritingQualifier(block.inlines?.[0]?.text))
+    .filter(Boolean);
+
+  return recovered;
+};
+
+const shouldAbsorbQualifierIntoNextWriting = (
+  current: OpinionWritingType,
+  next: OpinionWritingType | undefined,
+  fallbackLinesByNumber: Map<number, string>,
+) => {
+  if (!next || (current.kind?.trim().toLowerCase() ?? "") !== "unknown") {
+    return false;
+  }
+  return recoveredQualifierBlocks(current, fallbackLinesByNumber).length > 0;
+};
+
+const normalizeWritings = (document: OpinionDocument, writings: OpinionWritingType[]) => {
+  const fallbackLinesByNumber = new Map(
+    fallbackOpinionLines(document)
+      .filter((line): line is Required<Pick<FallbackOpinionLine, "lineNumber" | "text">> =>
+        typeof line?.lineNumber === "number" && typeof line?.text === "string")
+      .map((line) => [line.lineNumber, line.text.trim()]),
+  );
+
+  return writings.reduce<OpinionWritingType[]>((accumulator, writing, index) => {
     const kind = writing.kind?.trim().toLowerCase() ?? "";
     const previous = accumulator[accumulator.length - 1];
+    const next = writings[index + 1];
 
     // Stanbook occasionally emits a trailing "mixed" writing that is really a continuation
     // of the preceding opinion body. Fold it back in so the body stays contiguous.
@@ -37,6 +161,16 @@ const normalizeWritings = (writings: OpinionWritingType[]) => {
       accumulator[accumulator.length - 1] = {
         ...previous,
         blocks: [...(previous.blocks ?? []), ...(writing.blocks ?? [])],
+      };
+      return accumulator;
+    }
+
+    if (shouldAbsorbQualifierIntoNextWriting(writing, next, fallbackLinesByNumber)) {
+      const qualifierBlocks = recoveredQualifierBlocks(writing, fallbackLinesByNumber);
+      const nextWriting = trimLeadingColonFromFirstBlock(next!);
+      writings[index + 1] = {
+        ...nextWriting,
+        blocks: [...qualifierBlocks, ...(nextWriting.blocks ?? [])],
       };
       return accumulator;
     }
@@ -51,9 +185,7 @@ const opinionAppearances = (document: OpinionDocument) => {
 };
 
 const fallbackWritingsFromSource = (document: OpinionDocument): OpinionWritingType[] => {
-  const rawLines = (document.fallback?.opinionLines ??
-    ((document.source as { fallback?: { opinionLines?: FallbackOpinionLine[] | null } | null } | null)
-      ?.fallback?.opinionLines ?? []))
+  const rawLines = fallbackOpinionLines(document)
     .map((line) => line?.text?.trim() ?? "")
     .filter(Boolean);
   if (!rawLines.length) return [];
@@ -93,7 +225,7 @@ const OpinionDocumentView: React.FC<OpinionDocumentViewProps> = ({
   const bodyScrollRef = useRef<HTMLDivElement | null>(null);
   const writings = useMemo(
     () => {
-      const normalized = normalizeWritings(document.opinions?.filter(Boolean) ?? []);
+      const normalized = normalizeWritings(document, document.opinions?.filter(Boolean) ?? []);
       return normalized.length ? normalized : fallbackWritingsFromSource(document);
     },
     [document],

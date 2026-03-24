@@ -1,5 +1,5 @@
 import React from "react";
-import { buildScopedCasePath, isValidCanonicalCaseId, roleFromPathname } from "../../../core/routing/canonicalCaseRouting";
+import { buildCanonicalCasePath, isValidCanonicalCaseId } from "../../../core/routing/canonicalCaseRouting";
 import type { OpinionInlineNode } from "../../../core/opinions/types";
 
 type InlineContentProps = {
@@ -22,10 +22,9 @@ export const resolveOpinionHref = (href?: string | null, opinionSourceUrl?: stri
   if (!href) return "";
   if (/^(#|https?:\/\/|mailto:)/i.test(href)) return href;
 
-  const role = roleFromPathname(pathname);
   const directCaseId = extractCaseIdFromOpinionHref(href);
   if (directCaseId) {
-    return buildScopedCasePath(role, directCaseId);
+    return buildCanonicalCasePath(directCaseId);
   }
 
   if (!opinionSourceUrl) return href;
@@ -34,13 +33,15 @@ export const resolveOpinionHref = (href?: string | null, opinionSourceUrl?: stri
     const resolvedUrl = new URL(href, opinionSourceUrl);
     const resolvedCaseId = extractCaseIdFromOpinionHref(resolvedUrl.pathname);
     if (resolvedCaseId) {
-      return buildScopedCasePath(role, resolvedCaseId);
+      return buildCanonicalCasePath(resolvedCaseId);
     }
     return resolvedUrl.toString();
   } catch {
     return href;
   }
 };
+
+const isMirandaCaseHref = (href: string) => /^\/(?:case|admin\/case|sub\/case|pub\/case)\//.test(href);
 
 const renderFootnoteLabel = (node: OpinionInlineNode) => {
   if (node.type !== "footnote_reference") return null;
@@ -98,6 +99,14 @@ const InlineContent: React.FC<InlineContentProps> = ({ nodes, opinionSourceUrl }
                 <React.Fragment key={key}>
                   <InlineContent nodes={node.children} opinionSourceUrl={opinionSourceUrl} />
                 </React.Fragment>
+              );
+            }
+
+            if (isMirandaCaseHref(href)) {
+              return (
+                <a key={key} href={href}>
+                  <InlineContent nodes={node.children} opinionSourceUrl={opinionSourceUrl} />
+                </a>
               );
             }
 

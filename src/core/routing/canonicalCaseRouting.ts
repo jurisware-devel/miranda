@@ -26,6 +26,10 @@ export const buildScopedCasePath = (role: AppRole, caseId: string) => {
   return `/${scopeFromRole(role)}/case/${encodeURIComponent(caseId)}`;
 };
 
+export const buildCanonicalCasePath = (caseId: string) => {
+  return `/case/${encodeURIComponent(caseId)}`;
+};
+
 type CanonicalCaseRedirectInput = {
   caseId: string;
   role: AppRole;

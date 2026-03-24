@@ -26,7 +26,7 @@ test("OpinionDocumentView renders structured opinion content from sample JSON", 
   assert.match(html, /People v Rios/);
   assert.doesNotMatch(html, /Kathleen P\. Reardon, for appellant\./);
   assert.match(html, /<em>People v Lopez<\/em>/);
-  assert.match(html, /href="\/pub\/case\/2013_07651"/);
+  assert.match(html, /href="\/case\/2013_07651"/);
 });
 
 test("OpinionDocumentView renders footnote references and the footnotes panel from sample JSON", () => {
@@ -98,12 +98,12 @@ test("OpinionDocumentView does not synthesize a per curiam heading from author m
 
   const html = renderToStaticMarkup(<OpinionDocumentView document={sample} />);
 
-  assert.match(html, />Opinion of the Court</);
   assert.match(html, /Body text\./);
+  assert.doesNotMatch(html, />Opinion of the Court</);
   assert.doesNotMatch(html, />majority</);
 });
 
-test("OpinionDocumentView synthesizes authored headings for separate concurrences and dissents", () => {
+test("OpinionDocumentView does not synthesize authored headings for separate writings", () => {
   const sample: OpinionDocument = {
     header: { title: "Example Case" },
     opinions: [
@@ -132,13 +132,13 @@ test("OpinionDocumentView synthesizes authored headings for separate concurrence
 
   const html = renderToStaticMarkup(<OpinionDocumentView document={sample} />);
 
-  assert.match(html, /Feinman, J\. \(concurring\)\./);
-  assert.match(html, /Wilson, J\. \(dissenting\)\./);
+  assert.doesNotMatch(html, /Feinman, J\. \(concurring\)\./);
+  assert.doesNotMatch(html, /Wilson, J\. \(dissenting\)\./);
   assert.match(html, /Concurrence text\./);
   assert.match(html, /Dissent text\./);
 });
 
-test("OpinionDocumentView synthesizes authored Opinion of the Court headings", () => {
+test("OpinionDocumentView does not synthesize authored Opinion of the Court headings", () => {
   const sample: OpinionDocument = {
     header: { title: "Example Case" },
     opinions: [
@@ -157,7 +157,7 @@ test("OpinionDocumentView synthesizes authored Opinion of the Court headings", (
 
   const html = renderToStaticMarkup(<OpinionDocumentView document={sample} />);
 
-  assert.match(html, /Opinion of the Court by Halligan, J\./);
+  assert.doesNotMatch(html, /Opinion of the Court by Halligan, J\./);
   assert.match(html, /Plurality text\./);
 });
 
@@ -188,7 +188,7 @@ test("OpinionDocumentView does not duplicate a separate-writing heading already 
   assert.equal(matches.length, 1);
 });
 
-test("OpinionDocumentView synthesizes an Opinion of the Court heading for anonymous effective writings", () => {
+test("OpinionDocumentView does not synthesize an Opinion of the Court heading for anonymous effective writings", () => {
   const sample: OpinionDocument = {
     header: { title: "Example Case" },
     opinions: [
@@ -206,7 +206,7 @@ test("OpinionDocumentView synthesizes an Opinion of the Court heading for anonym
 
   const html = renderToStaticMarkup(<OpinionDocumentView document={sample} />);
 
-  assert.match(html, />Opinion of the Court</);
+  assert.doesNotMatch(html, />Opinion of the Court</);
   assert.match(html, /Body text\./);
 });
 
@@ -313,6 +313,16 @@ test("OpinionDocumentView folds malformed mixed continuations into the preceding
 
   assert.match(html, /waived the right to the effective assistance of counsel/);
   assert.doesNotMatch(html, />Univ of Chicago L Rev 263/);
+});
+
+test("OpinionDocumentView recovers a source-authored dissent heading when Stanbook separates the metadata line from the writing", () => {
+  const sample = loadSample("2026_01446.json");
+  const html = renderToStaticMarkup(<OpinionDocumentView document={sample} />);
+
+  assert.match(html, /class="opinion-block opinion-block--qualifier opinion-block--paragraph">CANNATARO, J\.:\s*<\/p>/);
+  assert.match(html, /RIVERA, J\. \(dissenting\):/);
+  assert.match(html, /class="opinion-block opinion-block--qualifier opinion-block--paragraph">RIVERA, J\. \(dissenting\):<\/p>/);
+  assert.match(html, />\s*The prosecution charged defendant with aggravated harassment 14 months after/);
 });
 
 test("OpinionDocumentView renders fallback memorandum body when no structured opinion blocks are present", () => {

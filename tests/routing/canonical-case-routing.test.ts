@@ -1,6 +1,8 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { resolveOpinionHref } from "../../src/components/shared/opinion/InlineContent";
+import React from "react";
+import { renderToStaticMarkup } from "react-dom/server";
+import InlineContent, { resolveOpinionHref } from "../../src/components/shared/opinion/InlineContent";
 import {
   buildScopedCasePath,
   isValidCanonicalCaseId,
@@ -73,13 +75,13 @@ test("maps scoped pathnames back to app roles", () => {
   assert.equal(roleFromPathname("/pub/case/2017_03560"), "guest");
 });
 
-test("rewrites opinion-internal case html links to scoped Miranda case routes", () => {
+test("rewrites opinion-internal case html links to canonical Miranda case routes", () => {
   const target = resolveOpinionHref(
     "../2007/2007_09814.htm",
     "http://localhost:5173/@fs/Users/jonathan/Projects/miranda/opinions/coa/2017/2017_03560.json",
     "/admin/case/2017_03560",
   );
-  assert.equal(target, "/admin/case/2007_09814");
+  assert.equal(target, "/case/2007_09814");
 });
 
 test("preserves non-case relative opinion links as resolved asset urls", () => {
@@ -92,4 +94,32 @@ test("preserves non-case relative opinion links as resolved asset urls", () => {
     target,
     "http://localhost:5173/@fs/Users/jonathan/Projects/miranda/opinions/coa/pdfs/appendix.pdf",
   );
+});
+
+test("renders canonical Miranda case links without opening a new tab", () => {
+  const originalWindow = (globalThis as { window?: Window }).window;
+  (globalThis as { window?: { location: { pathname: string } } }).window = {
+    location: { pathname: "/admin/case/2017_03560" },
+  };
+
+  try {
+    const html = renderToStaticMarkup(
+      React.createElement(InlineContent, {
+        opinionSourceUrl: "http://localhost:5173/@fs/Users/jonathan/Projects/miranda/opinions/coa/2017/2017_03560.json",
+        nodes: [
+          {
+            type: "link",
+            href: "../2008/2008_04122.htm",
+            children: [{ type: "text", text: "People v Example" }],
+          },
+        ],
+      }),
+    );
+
+    assert.match(html, /href="\/case\/2008_04122"/);
+    assert.doesNotMatch(html, /target="_blank"/);
+    assert.doesNotMatch(html, /rel="noreferrer"/);
+  } finally {
+    (globalThis as { window?: Window }).window = originalWindow;
+  }
 });
