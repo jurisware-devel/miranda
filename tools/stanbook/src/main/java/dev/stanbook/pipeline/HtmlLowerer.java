@@ -183,7 +183,7 @@ public final class HtmlLowerer {
             return new HtmlComponentBuilder(OpinionComponentType.MAJORITY, OpinionRole.MAJORITY, null, false);
         }
 
-        String author = toTitleCase(normalized.substring(0, commaIndex).trim());
+        String author = normalizeAuthorName(normalized.substring(0, commaIndex).trim());
         return componentBuilderForRole(author, roleAnnotation(normalized.substring(commaIndex + 1)));
     }
 
@@ -207,7 +207,7 @@ public final class HtmlLowerer {
             remainder = remainder.substring(0, openParen).trim();
         }
         remainder = remainder.replaceFirst("[.:]+$", "").trim();
-        return toTitleCase(remainder);
+        return normalizeAuthorName(remainder);
     }
 
     private String roleAnnotation(String text) {
@@ -285,6 +285,13 @@ public final class HtmlLowerer {
 
         String lower = token.toLowerCase(Locale.ROOT);
         return Character.toUpperCase(lower.charAt(0)) + lower.substring(1);
+    }
+
+    private String normalizeAuthorName(String name) {
+        if (name == null || name.isBlank()) {
+            return name;
+        }
+        return toTitleCase(name.replaceAll("\\.(?=[A-Z][a-z])", ". "));
     }
 
     private List<SourceLine> trimTrailingBlanks(List<SourceLine> sourceLines) {

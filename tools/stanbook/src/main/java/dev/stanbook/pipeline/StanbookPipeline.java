@@ -7,6 +7,7 @@ import dev.stanbook.ir.render.ReflowedOpinion;
 import dev.stanbook.ir.source.SourceDocument;
 import dev.stanbook.parse.header.HeaderParser;
 import dev.stanbook.render.json.MirandaJsonRenderer;
+import dev.stanbook.render.json.MirandaJsonRenderer.CanonicalTextDiagnostic;
 import dev.stanbook.reflow.FootnoteReflower;
 import dev.stanbook.reflow.OpinionReflower;
 
@@ -54,5 +55,9 @@ public final class StanbookPipeline {
 
     public String render(SourceDocument source) {
         return mirandaJsonRenderer.render(source, reflow(source));
+    }
+
+    public CanonicalTextDiagnostic diagnoseCanonicalText(SourceDocument source) {
+        return mirandaJsonRenderer.diagnoseCanonicalText(source, reflow(source));
     }
 }

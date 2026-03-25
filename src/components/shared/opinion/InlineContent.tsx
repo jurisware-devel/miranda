@@ -18,7 +18,7 @@ export const extractCaseIdFromOpinionHref = (href: string) => {
   return isValidCanonicalCaseId(caseId) ? caseId : "";
 };
 
-export const resolveOpinionHref = (href?: string | null, opinionSourceUrl?: string, pathname?: string) => {
+export const resolveOpinionHref = (href?: string | null, opinionSourceUrl?: string) => {
   if (!href) return "";
   if (/^(#|https?:\/\/|mailto:)/i.test(href)) return href;
 
@@ -75,8 +75,6 @@ const pageMarkerPageText = (node: Extract<OpinionInlineNode, { type: "page_marke
 
 const InlineContent: React.FC<InlineContentProps> = ({ nodes, opinionSourceUrl }) => {
   if (!nodes?.length) return null;
-  const currentPathname =
-    typeof window !== "undefined" && window.location?.pathname ? window.location.pathname : "/";
 
   return (
     <>
@@ -93,7 +91,7 @@ const InlineContent: React.FC<InlineContentProps> = ({ nodes, opinionSourceUrl }
               </em>
             );
           case "link": {
-            const href = resolveOpinionHref(node.href, opinionSourceUrl, currentPathname);
+            const href = resolveOpinionHref(node.href, opinionSourceUrl);
             if (!href) {
               return (
                 <React.Fragment key={key}>

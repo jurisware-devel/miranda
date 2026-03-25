@@ -41,6 +41,15 @@ class RealSampleJsonRegressionTest {
     }
 
     @Test
+    void html_summary_disposition_sample_matches_canonical_text_via_fallback_lines() {
+        var source = new SourceDocumentReader().read(Path.of("samples/2004_00098.htm"));
+
+        var diagnostic = StanbookPipeline.createDefault().diagnoseCanonicalText(source);
+
+        assertThat(diagnostic.matches()).isTrue();
+    }
+
+    @Test
     void html_sample_output_preserves_separate_opinion_structure() {
         var source = new SourceDocumentReader().read(Path.of("samples/2026_00963.htm"));
 
@@ -65,6 +74,8 @@ class RealSampleJsonRegressionTest {
         assertThat(json).contains("\"type\":\"page_marker\"");
         assertThat(json).contains("\"text\":\" OPINION OF THE COURT\"");
         assertThat(json).contains("Graffeo, J.");
+        assertThat(json).contains("\"kind\":\"dissent\",\"author\":\"G.B. Smith\"");
+        assertThat(json).doesNotContain("\"kind\":\"dissent\",\"author\":\"G.b.smith\"");
         assertThat(json).contains("\"disposition\":{");
         assertThat(json).contains("\"text\":\"Chief Judge Kaye and Judges Ciparick, Rosenblatt and Read concur with Judge Graffeo;");
         assertThat(json).contains("G.B. Smith, J. (dissenting).");
@@ -106,6 +117,55 @@ class RealSampleJsonRegressionTest {
         assertThat(json).contains("\"author\":\"Ciparick\"");
         assertThat(json).contains("\"text\":\"{**3 NY3d at 81}\"");
         assertThat(json).contains("\"text\":\" OPINION OF THE COURT\"");
+    }
+
+    @Test
+    void html_repo_sample_matches_canonical_text_when_disposition_contains_emphasis_markup() {
+        var source = new SourceDocumentReader().read(Path.of("../../opinions/coa/2004/2004_04789.htm"));
+
+        var diagnostic = StanbookPipeline.createDefault().diagnoseCanonicalText(source);
+
+        assertThat(diagnostic.matches()).isTrue();
+    }
+
+    @Test
+    void html_repo_sample_preserves_header_history_lines_and_terminal_in_each_case_disposition() {
+        var source = new SourceDocumentReader().read(Path.of("../../opinions/coa/2004/2004_07523.htm"));
+
+        String json = StanbookPipeline.createDefault().render(source);
+        var diagnostic = StanbookPipeline.createDefault().diagnoseCanonicalText(source);
+
+        assertThat(json).contains("\"history\":[");
+        assertThat(json).contains("\"text\":\"*People v Santi*, 308 AD2d 464, affirmed.\"");
+        assertThat(json).contains("\"text\":\"*People v Corines*, 308 AD2d 457, affirmed.\"");
+        assertThat(diagnostic.matches()).isTrue();
+    }
+
+    @Test
+    void html_repo_sample_does_not_double_count_terminal_page_marker_before_footnote() {
+        var source = new SourceDocumentReader().read(Path.of("../../opinions/coa/2006/2006_01249.htm"));
+
+        var diagnostic = StanbookPipeline.createDefault().diagnoseCanonicalText(source);
+
+        assertThat(diagnostic.matches()).isTrue();
+    }
+
+    @Test
+    void html_repo_sample_matches_canonical_text_when_source_html_wraps_multiple_paragraphs_on_one_line() {
+        var source = new SourceDocumentReader().read(Path.of("../../opinions/coa/2011/2011_00744.htm"));
+
+        var diagnostic = StanbookPipeline.createDefault().diagnoseCanonicalText(source);
+
+        assertThat(diagnostic.matches()).isTrue();
+    }
+
+    @Test
+    void html_repo_sample_does_not_duplicate_footnotes_embedded_in_malformed_quote_blocks() {
+        var source = new SourceDocumentReader().read(Path.of("../../opinions/coa/2008/2008_05780.htm"));
+
+        var diagnostic = StanbookPipeline.createDefault().diagnoseCanonicalText(source);
+
+        assertThat(diagnostic.matches()).isTrue();
     }
 
     @Test
@@ -188,6 +248,7 @@ class RealSampleJsonRegressionTest {
         assertThat(json).contains("\"text\":\"CANNATARO, J.:\"");
         assertThat(json).contains("\"kind\":\"dissent\",\"author\":\"Rivera\"");
         assertThat(json).contains("\"text\":\"RIVERA, J. (dissenting):\"");
+        assertThat(json).contains("\"terminal\":[{\"type\":\"decided_date\",\"text\":\"Decided March 17, 2026\"");
     }
 
     @Test

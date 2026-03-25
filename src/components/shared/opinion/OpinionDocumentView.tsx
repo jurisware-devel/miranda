@@ -27,26 +27,34 @@ type FallbackOpinionLine = {
   text?: string | null;
 };
 
+type OpinionBlock = NonNullable<OpinionWritingType["blocks"]>[number];
+type OpinionInlineNodes = NonNullable<OpinionBlock["inlines"]>;
+type RecoveredQualifierBlock = Extract<OpinionBlock, { type: "paragraph" }>;
+type ConcreteFallbackOpinionLine = {
+  lineNumber: number;
+  text: string;
+};
+
+const hasInlineNodes = (block: OpinionBlock | null | undefined): block is OpinionBlock & { inlines: OpinionInlineNodes } => {
+  return Array.isArray(block?.inlines);
+};
+
 const fallbackOpinionLines = (document: OpinionDocument): FallbackOpinionLine[] => {
   return document.fallback?.opinionLines ??
     ((document.source as { fallback?: { opinionLines?: FallbackOpinionLine[] | null } | null } | null)
       ?.fallback?.opinionLines ?? []);
 };
 
-const blockPlainText = (block?: OpinionWritingType["blocks"] extends infer Blocks
-  ? Blocks extends (infer Block)[] | null | undefined
-    ? Block
-    : never
-  : never): string => {
-  if (!block || !("inlines" in block) || !block.inlines?.length) return "";
+const blockPlainText = (block?: OpinionBlock): string => {
+  if (!hasInlineNodes(block) || !block.inlines.length) return "";
   return block.inlines
-    .map((node) => {
+    .map((node): string => {
       if (node.type === "text" || node.type === "page_marker") {
         return node.text ?? "";
       }
       if ("children" in node) {
         return (node.children ?? [])
-          .map((child) => ("text" in child ? (child.text ?? "") : ""))
+          .map((child): string => ("text" in child ? (child.text ?? "") : ""))
           .join("");
       }
       return "";
@@ -56,7 +64,7 @@ const blockPlainText = (block?: OpinionWritingType["blocks"] extends infer Block
 };
 
 const recoverBlockText = (
-  block: NonNullable<OpinionWritingType["blocks"]>[number],
+  block: OpinionBlock,
   fallbackLinesByNumber: Map<number, string>,
 ) => {
   const existingText = blockPlainText(block);
@@ -66,14 +74,17 @@ const recoverBlockText = (
   return fallbackLinesByNumber.get(block.provenance.startLine) ?? "";
 };
 
-const trimLeadingColonFromNodes = (nodes: NonNullable<NonNullable<OpinionWritingType["blocks"]>[number]["inlines"]>) => {
+const trimLeadingColonFromNodes = (nodes: OpinionInlineNodes): OpinionInlineNodes => {
   let trimmed = false;
-  return nodes.map((node) => {
+  let changed = false;
+
+  const nextNodes = nodes.map((node): OpinionInlineNodes[number] => {
     if (trimmed) return node;
     if (node.type === "text") {
       const nextText = (node.text ?? "").replace(/^:\s*/, "");
       if (nextText !== (node.text ?? "")) {
         trimmed = true;
+        changed = true;
         return { ...node, text: nextText };
       }
       if ((node.text ?? "").length > 0) {
@@ -85,17 +96,20 @@ const trimLeadingColonFromNodes = (nodes: NonNullable<NonNullable<OpinionWriting
       const nextChildren = trimLeadingColonFromNodes(node.children);
       if (nextChildren !== node.children) {
         trimmed = true;
+        changed = true;
         return { ...node, children: nextChildren };
       }
     }
     return node;
   });
+
+  return changed ? nextNodes : nodes;
 };
 
 const trimLeadingColonFromFirstBlock = (writing: OpinionWritingType): OpinionWritingType => {
   const blocks = [...(writing.blocks ?? [])];
   const firstBlock = blocks[0];
-  if (!firstBlock || !("inlines" in firstBlock) || !firstBlock.inlines?.length) {
+  if (!hasInlineNodes(firstBlock) || !firstBlock.inlines.length) {
     return writing;
   }
   blocks[0] = {
@@ -111,12 +125,12 @@ const trimLeadingColonFromFirstBlock = (writing: OpinionWritingType): OpinionWri
 const recoveredQualifierBlocks = (
   writing: OpinionWritingType,
   fallbackLinesByNumber: Map<number, string>,
-) => {
+): RecoveredQualifierBlock[] => {
   const blocks = writing.blocks ?? [];
   if (!blocks.length) return [];
 
   const recovered = blocks
-    .map((block) => {
+    .map((block): RecoveredQualifierBlock | null => {
       const text = recoverBlockText(block, fallbackLinesByNumber).trim();
       if (!text) return null;
       return {
@@ -125,8 +139,11 @@ const recoveredQualifierBlocks = (
         provenance: block.provenance,
       };
     })
-    .filter((block) => block && isRecognizedWritingQualifier(block.inlines?.[0]?.text))
-    .filter(Boolean);
+    .filter((block): block is RecoveredQualifierBlock => {
+      if (!block) return false;
+      const firstInline = block.inlines?.[0];
+      return firstInline?.type === "text" && isRecognizedWritingQualifier(firstInline.text);
+    });
 
   return recovered;
 };
@@ -143,11 +160,11 @@ const shouldAbsorbQualifierIntoNextWriting = (
 };
 
 const normalizeWritings = (document: OpinionDocument, writings: OpinionWritingType[]) => {
-  const fallbackLinesByNumber = new Map(
+  const fallbackLinesByNumber = new Map<number, string>(
     fallbackOpinionLines(document)
-      .filter((line): line is Required<Pick<FallbackOpinionLine, "lineNumber" | "text">> =>
+      .filter((line): line is ConcreteFallbackOpinionLine =>
         typeof line?.lineNumber === "number" && typeof line?.text === "string")
-      .map((line) => [line.lineNumber, line.text.trim()]),
+      .map((line): [number, string] => [line.lineNumber, line.text.trim()]),
   );
 
   return writings.reduce<OpinionWritingType[]>((accumulator, writing, index) => {

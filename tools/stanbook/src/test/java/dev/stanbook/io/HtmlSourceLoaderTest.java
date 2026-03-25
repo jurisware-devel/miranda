@@ -251,6 +251,29 @@ class HtmlSourceLoaderTest {
     }
 
     @Test
+    void hoists_leading_whitespace_out_of_emphasis_nodes_in_body_text() {
+        String html = """
+            <html><body>
+            <table>
+              <tr><td>People v Example</td></tr>
+              <tr><td>2026 NY Slip Op 00013</td></tr>
+              <tr><td>Court of Appeals</td></tr>
+            </table>
+            <p>Years later, we reiterated that flight must be accompanied by other suggestive conduct (<i>People v Pines</i>, 99 NY2d 525, 527 [2002], citing<i> Martinez</i>, 80 NY2d at 447-448).</p>
+            </body></html>
+            """;
+
+        var document = new HtmlSourceLoader().load(Path.of("example.htm"), html);
+        var line = document.lines().stream()
+            .filter(sourceLine -> sourceLine.text().contains("flight must be accompanied"))
+            .findFirst()
+            .orElseThrow();
+
+        assertThat(line.text())
+            .isEqualTo("Years later, we reiterated that flight must be accompanied by other suggestive conduct (*People v Pines*, 99 NY2d 525, 527 [2002], citing *Martinez*, 80 NY2d at 447-448).");
+    }
+
+    @Test
     void extracts_summary_headnotes_and_points_of_counsel_from_custom_tags() {
         String html = """
             <html><body>
@@ -329,6 +352,31 @@ class HtmlSourceLoaderTest {
                 assertThat(block.sourceTag()).isEqualTo("para");
                 assertThat(block.opinionCategory()).isEqualTo("dissenting");
             });
+    }
+
+    @Test
+    void does_not_merge_nested_structural_dissent_heading_into_prior_paragraph() {
+        String html = """
+            <html><body>
+            <table>
+              <tr><td>People v Example</td></tr>
+              <tr><td>2003 NY Slip Op 00001 [1 NY3d 1]</td></tr>
+              <tr><td>October 28, 2003</td></tr>
+              <tr><td>Court of Appeals</td></tr>
+            </table>
+            <p>OPINION OF THE COURT</p>
+            <p>Graffeo, J.</p>
+            <p>Accordingly, the order should be affirmed.
+            <disop><disopjd>Dissenting opinion by G.B.Smith, J.</disopjd>
+            <p>G.B. Smith, J. (dissenting). I dissent.</p></disop>
+            </body></html>
+            """;
+
+        var document = new HtmlSourceLoader().load(Path.of("example.htm"), html);
+
+        assertThat(document.htmlDocument().opinionBlocks()).extracting(block -> block.text())
+            .contains("Accordingly, the order should be affirmed.")
+            .doesNotContain("Accordingly, the order should be affirmed. Dissenting opinion by G.B.Smith, J.");
     }
 
 }

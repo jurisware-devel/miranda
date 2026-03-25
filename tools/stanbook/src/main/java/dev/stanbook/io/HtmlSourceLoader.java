@@ -34,6 +34,12 @@ public final class HtmlSourceLoader {
     private static final Pattern FOOTNOTE_BLOCK_PATTERN = Pattern.compile(
         "(?is)<a\\s+name=\"(?<anchor>\\d+)FN\"[^>]*>\\s*<b>Footnote\\s+(?<label>[^:]+):</b>\\s*</a>(?<body>.*?)(?=<a\\s+name=\"\\d+FN\"|<form\\b|$)"
     );
+    private static final Pattern FOOTNOTES_HEADING_HTML_PATTERN = Pattern.compile(
+        "(?is)<div\\s+align=\"center\">.*?footnotes.*?</div>"
+    );
+    private static final Pattern FOOTNOTE_ANCHOR_NAME_PATTERN = Pattern.compile("(?i)\\d+FN");
+    private static final Pattern FOOTNOTE_LABEL_PATTERN = Pattern.compile("(?i)^Footnote\\s+(?<label>[^:]+):$");
+    private static final Pattern FOOTNOTE_LABEL_PREFIX_PATTERN = Pattern.compile("(?i)^Footnote\\s+[^:]+:.*$");
     private static final Pattern FOOTNOTE_CASE_NAME_PATTERN = Pattern.compile("(?i)\\d+CASE");
     private static final Pattern AUTHOR_MARKER_PATTERN = Pattern.compile(
         "^(?:Chief Judge\\s+[A-Z][A-Za-z.' -]+|(?:[A-Z][A-Za-z.' -]+|[A-Z][A-Z.' -]+)(?:,\\s*(?:[A-Z][A-Za-z.' -]+|[A-Z][A-Z.' -]+))*(?:\\s+and\\s+(?:[A-Z][A-Za-z.' -]+|[A-Z][A-Z.' -]+))?,\\s+(?:J\\.|JJ\\.|Chief Judge))(?:\\s*\\([^)]*\\))?[.:]?$"
@@ -265,6 +271,9 @@ public final class HtmlSourceLoader {
             if (isFootnotesHeading(element)) {
                 break;
             }
+            if (isFootnoteSectionContent(element)) {
+                break;
+            }
 
             if (isStructuralOpinionHeadingNode(element)) {
                 String authorMarker = structuralOpinionHeadingToAuthorMarker(element);
@@ -283,8 +292,9 @@ public final class HtmlSourceLoader {
             }
 
             if ("p".equalsIgnoreCase(tag) || "para".equalsIgnoreCase(tag) || "blockquote".equalsIgnoreCase(tag)) {
-                String rendered = renderInline(element);
-                List<InlineNode> inlines = extractInlineNodes(element);
+                Element normalizedElement = stripNestedOpinionStructure(element);
+                String rendered = renderInline(normalizedElement);
+                List<InlineNode> inlines = extractInlineNodes(normalizedElement);
                 if (splitLeadingAuthorMarker(blocks, accumulator, rendered, inlines, element)) {
                     continue;
                 }
@@ -300,11 +310,12 @@ public final class HtmlSourceLoader {
                 continue;
             }
             if ("div".equalsIgnoreCase(tag)) {
-                String rendered = renderInline(element);
+                Element normalizedElement = stripNestedOpinionStructure(element);
+                String rendered = renderInline(normalizedElement);
                 if (rendered.isBlank()) {
                     continue;
                 }
-                List<InlineNode> inlines = extractInlineNodes(element);
+                List<InlineNode> inlines = extractInlineNodes(normalizedElement);
                 if (splitLeadingAuthorMarker(blocks, accumulator, rendered, inlines, element)) {
                     continue;
                 }
@@ -347,14 +358,12 @@ public final class HtmlSourceLoader {
     }
 
     private FootnoteExtraction extractFootnoteLines(Document document, String rawHtml, LineAccumulator accumulator) {
-        int footnotesStart = rawHtml.toLowerCase().indexOf("<div align=\"center\"><b>footnotes</b></div>");
-        if (footnotesStart < 0) {
-            footnotesStart = rawHtml.toLowerCase().indexOf("<div align=\"center\"><b>footnotes");
-        }
-        if (footnotesStart < 0) {
+        Matcher headingMatcher = FOOTNOTES_HEADING_HTML_PATTERN.matcher(rawHtml);
+        if (!headingMatcher.find()) {
             return new FootnoteExtraction(null, List.of());
         }
-        String footnotesHtml = rawHtml.substring(footnotesStart);
+
+        String footnotesHtml = rawHtml.substring(headingMatcher.start());
         Matcher matcher = FOOTNOTE_BLOCK_PATTERN.matcher(footnotesHtml);
         if (!matcher.find()) {
             return new FootnoteExtraction(null, List.of());
@@ -457,8 +466,22 @@ public final class HtmlSourceLoader {
         if (!(node instanceof Element element) || !"div".equalsIgnoreCase(element.tagName())) {
             return false;
         }
-        return normalizeText(renderInline(element)).equals("Footnotes");
+        String normalized = normalizeText(renderInline(element));
+        String withoutLeadingMarker = normalized.replaceFirst("^\\{\\*\\*[^}]+\\}\\s*", "");
+        return withoutLeadingMarker.equals("Footnotes");
     }
+
+    private boolean isFootnoteSectionContent(Element element) {
+        String normalized = normalizeText(renderInline(element));
+        if (normalized.isEmpty()) {
+            return false;
+        }
+        String withoutLeadingMarker = normalized.replaceFirst("^\\{\\*\\*[^}]+\\}\\s*", "");
+        return withoutLeadingMarker.equals("Footnotes")
+            || FOOTNOTE_LABEL_PATTERN.matcher(withoutLeadingMarker).matches()
+            || FOOTNOTE_LABEL_PREFIX_PATTERN.matcher(withoutLeadingMarker).matches();
+    }
+
 
     private boolean isStructuralOpinionHeadingNode(Element element) {
         String tag = element.tagName();
@@ -758,11 +781,17 @@ public final class HtmlSourceLoader {
         return "para".equals(tag)
             || "centerhd".equals(tag)
             || "conopn".equals(tag)
-            || "conopnjd".equals(tag)
             || "disop".equals(tag)
+            || "conopnjd".equals(tag)
             || "disopjd".equals(tag)
             || "disconop".equals(tag)
             || "opinion".equals(tag);
+    }
+
+    private Element stripNestedOpinionStructure(Element element) {
+        Element clone = element.clone();
+        clone.select("conopn, conopnjd, disop, disopjd, disconop, opinion").remove();
+        return clone;
     }
 
     private String appendRoleAnnotation(String authorLine, String opinionCategory) {
@@ -812,10 +841,6 @@ public final class HtmlSourceLoader {
         if ("br".equals(tag)) {
             return "\n";
         }
-        if ("sup".equals(tag) && element.text().matches("\\[FN\\d+\\]")) {
-            return "";
-        }
-
         String content = element.childNodes().stream()
             .map(this::renderInline)
             .reduce("", String::concat);
@@ -861,9 +886,15 @@ public final class HtmlSourceLoader {
         }
         if ("sup".equals(tag)) {
             String text = normalizeTextFragment(element.text());
-            Matcher matcher = Pattern.compile("\\[FN(?<label>\\d+)\\]").matcher(text);
+            Matcher matcher = Pattern.compile("^\\[FN(?<label>[^\\]]*)\\](?<rest>.*)$").matcher(text);
             if (matcher.matches()) {
-                return List.of(new FootnoteReferenceInline(matcher.group("label")));
+                List<InlineNode> nodes = new ArrayList<>();
+                nodes.add(new FootnoteReferenceInline(matcher.group("label")));
+                String rest = matcher.group("rest");
+                if (rest != null && !rest.isBlank()) {
+                    nodes.addAll(textNodesFromFragment(normalizeTextFragment(rest.trim())));
+                }
+                return List.copyOf(nodes);
             }
             Element anchor = element.selectFirst("a[name]");
             if (anchor != null) {
@@ -1171,14 +1202,28 @@ public final class HtmlSourceLoader {
             if (node instanceof EmphasisInline emphasisInline) {
                 List<InlineNode> normalizedChildren = normalizeInlineNodes(emphasisInline.children());
                 if (normalizedChildren != null && !normalizedChildren.isEmpty()) {
-                    normalizedNodes.add(new EmphasisInline(normalizedChildren));
+                    BoundaryWhitespace boundaryWhitespace = hoistBoundaryWhitespace(normalizedChildren);
+                    if (!boundaryWhitespace.leadingWhitespace().isEmpty()) {
+                        normalizedNodes.add(new TextInline(boundaryWhitespace.leadingWhitespace()));
+                    }
+                    normalizedNodes.add(new EmphasisInline(boundaryWhitespace.children()));
+                    if (!boundaryWhitespace.trailingWhitespace().isEmpty()) {
+                        normalizedNodes.add(new TextInline(boundaryWhitespace.trailingWhitespace()));
+                    }
                 }
                 continue;
             }
             if (node instanceof LinkInline linkInline) {
                 List<InlineNode> normalizedChildren = normalizeInlineNodes(linkInline.children());
                 if (normalizedChildren != null && !normalizedChildren.isEmpty()) {
-                    normalizedNodes.add(new LinkInline(linkInline.href(), normalizedChildren));
+                    BoundaryWhitespace boundaryWhitespace = hoistBoundaryWhitespace(normalizedChildren);
+                    if (!boundaryWhitespace.leadingWhitespace().isEmpty()) {
+                        normalizedNodes.add(new TextInline(boundaryWhitespace.leadingWhitespace()));
+                    }
+                    normalizedNodes.add(new LinkInline(linkInline.href(), boundaryWhitespace.children()));
+                    if (!boundaryWhitespace.trailingWhitespace().isEmpty()) {
+                        normalizedNodes.add(new TextInline(boundaryWhitespace.trailingWhitespace()));
+                    }
                 }
                 continue;
             }
@@ -1205,6 +1250,114 @@ public final class HtmlSourceLoader {
             return null;
         }
         return List.copyOf(spacingNormalized);
+    }
+
+    private BoundaryWhitespace hoistBoundaryWhitespace(List<InlineNode> children) {
+        String leadingWhitespace = extractLeadingWhitespace(children);
+        String trailingWhitespace = extractTrailingWhitespace(children);
+        List<InlineNode> trimmedChildren = trimTrailingWhitespace(trimLeadingWhitespace(children));
+        return new BoundaryWhitespace(
+            leadingWhitespace,
+            trimmedChildren == null ? List.of() : trimmedChildren,
+            trailingWhitespace
+        );
+    }
+
+    private String extractLeadingWhitespace(List<InlineNode> nodes) {
+        if (nodes == null || nodes.isEmpty()) {
+            return "";
+        }
+        InlineNode first = nodes.getFirst();
+        if (first instanceof TextInline textInline) {
+            return leadingWhitespace(textInline.text());
+        }
+        if (first instanceof EmphasisInline emphasisInline) {
+            return extractLeadingWhitespace(emphasisInline.children());
+        }
+        if (first instanceof LinkInline linkInline) {
+            return extractLeadingWhitespace(linkInline.children());
+        }
+        return "";
+    }
+
+    private String extractTrailingWhitespace(List<InlineNode> nodes) {
+        if (nodes == null || nodes.isEmpty()) {
+            return "";
+        }
+        InlineNode last = nodes.getLast();
+        if (last instanceof TextInline textInline) {
+            return trailingWhitespace(textInline.text());
+        }
+        if (last instanceof EmphasisInline emphasisInline) {
+            return extractTrailingWhitespace(emphasisInline.children());
+        }
+        if (last instanceof LinkInline linkInline) {
+            return extractTrailingWhitespace(linkInline.children());
+        }
+        return "";
+    }
+
+    private List<InlineNode> trimLeadingWhitespace(List<InlineNode> nodes) {
+        if (nodes == null || nodes.isEmpty()) {
+            return null;
+        }
+        List<InlineNode> trimmed = new ArrayList<>(nodes);
+        InlineNode first = trimmed.getFirst();
+        if (first instanceof TextInline textInline) {
+            String updated = trimLeadingWhitespace(textInline.text());
+            if (updated.isEmpty()) {
+                trimmed.removeFirst();
+            } else {
+                trimmed.set(0, new TextInline(updated));
+            }
+        } else if (first instanceof EmphasisInline emphasisInline) {
+            List<InlineNode> children = trimLeadingWhitespace(emphasisInline.children());
+            if (children == null || children.isEmpty()) {
+                trimmed.removeFirst();
+            } else {
+                trimmed.set(0, new EmphasisInline(children));
+            }
+        } else if (first instanceof LinkInline linkInline) {
+            List<InlineNode> children = trimLeadingWhitespace(linkInline.children());
+            if (children == null || children.isEmpty()) {
+                trimmed.removeFirst();
+            } else {
+                trimmed.set(0, new LinkInline(linkInline.href(), children));
+            }
+        }
+        return trimmed.isEmpty() ? null : List.copyOf(trimmed);
+    }
+
+    private List<InlineNode> trimTrailingWhitespace(List<InlineNode> nodes) {
+        if (nodes == null || nodes.isEmpty()) {
+            return null;
+        }
+        List<InlineNode> trimmed = new ArrayList<>(nodes);
+        InlineNode last = trimmed.getLast();
+        int lastIndex = trimmed.size() - 1;
+        if (last instanceof TextInline textInline) {
+            String updated = trimTrailingWhitespace(textInline.text());
+            if (updated.isEmpty()) {
+                trimmed.removeLast();
+            } else {
+                trimmed.set(lastIndex, new TextInline(updated));
+            }
+        } else if (last instanceof EmphasisInline emphasisInline) {
+            List<InlineNode> children = trimTrailingWhitespace(emphasisInline.children());
+            if (children == null || children.isEmpty()) {
+                trimmed.removeLast();
+            } else {
+                trimmed.set(lastIndex, new EmphasisInline(children));
+            }
+        } else if (last instanceof LinkInline linkInline) {
+            List<InlineNode> children = trimTrailingWhitespace(linkInline.children());
+            if (children == null || children.isEmpty()) {
+                trimmed.removeLast();
+            } else {
+                trimmed.set(lastIndex, new LinkInline(linkInline.href(), children));
+            }
+        }
+        return trimmed.isEmpty() ? null : List.copyOf(trimmed);
     }
 
     private Character previousVisibleChar(List<InlineNode> nodes, int index) {
@@ -1311,6 +1464,38 @@ public final class HtmlSourceLoader {
         return null;
     }
 
+    private String leadingWhitespace(String text) {
+        int index = 0;
+        while (index < text.length() && Character.isWhitespace(text.charAt(index))) {
+            index++;
+        }
+        return text.substring(0, index);
+    }
+
+    private String trailingWhitespace(String text) {
+        int index = text.length();
+        while (index > 0 && Character.isWhitespace(text.charAt(index - 1))) {
+            index--;
+        }
+        return text.substring(index);
+    }
+
+    private String trimLeadingWhitespace(String text) {
+        int index = 0;
+        while (index < text.length() && Character.isWhitespace(text.charAt(index))) {
+            index++;
+        }
+        return text.substring(index);
+    }
+
+    private String trimTrailingWhitespace(String text) {
+        int index = text.length();
+        while (index > 0 && Character.isWhitespace(text.charAt(index - 1))) {
+            index--;
+        }
+        return text.substring(0, index);
+    }
+
     private boolean followsOpeningPunctuation(Character character) {
         return character != null && "([{\"'".indexOf(character) >= 0;
     }
@@ -1374,6 +1559,12 @@ public final class HtmlSourceLoader {
             return new TrimResult(node == null ? null : List.of(node), remainingToTrim, trimLeadingWhitespace);
         }
     }
+
+    private record BoundaryWhitespace(
+        String leadingWhitespace,
+        List<InlineNode> children,
+        String trailingWhitespace
+    ) {}
 
     private record UrlCollection(
         List<InlineNode> children,

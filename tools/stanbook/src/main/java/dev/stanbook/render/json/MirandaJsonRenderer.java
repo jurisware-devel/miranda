@@ -57,7 +57,7 @@ public final class MirandaJsonRenderer {
     private static final DateTimeFormatter LONG_MONTH_DATE =
         DateTimeFormatter.ofPattern("MMMM d, uuuu", Locale.US);
     private static final Pattern DISPOSITION_ACTION_PATTERN = Pattern.compile(
-        "^(?:Accordingly,\\s+)?(?:The\\s+)?(?:order|judgment|appeal|motion|petition)\\b.*\\b(affirmed|reversed|modified|dismissed|vacated|remitted|adjudged|granted|denied)\\b.*$",
+        "^(?:Accordingly,\\s+)?(?:In each case[:,]\\s+)?(?:The\\s+)?(?:order|judgment|appeal|motion|petition)\\b.*\\b(affirmed|reversed|modified|dismissed|vacated|remitted|adjudged|granted|denied)\\b.*$",
         Pattern.CASE_INSENSITIVE
     );
     private static final Pattern STRONG_DISPOSITION_ACTION_PATTERN = Pattern.compile(
@@ -66,7 +66,7 @@ public final class MirandaJsonRenderer {
         Pattern.CASE_INSENSITIVE
     );
     private static final Pattern DISPOSITION_LEAD_PATTERN = Pattern.compile(
-        "^(?:On review of submissions|The\\s+(?:order|judgment|appeal|motion|petition)\\b|Order\\b|Judgment\\b|Appeal\\b|Motion\\b|Petition\\b).+",
+        "^(?:On review of submissions|In each case[:,]\\s+(?:The\\s+)?(?:order|judgment|appeal|motion|petition)\\b|The\\s+(?:order|judgment|appeal|motion|petition)\\b|Order\\b|Judgment\\b|Appeal\\b|Motion\\b|Petition\\b).+",
         Pattern.CASE_INSENSITIVE
     );
     private static final Pattern DISPOSITION_JUDGE_LINE_PATTERN = Pattern.compile(
@@ -74,6 +74,12 @@ public final class MirandaJsonRenderer {
     );
     private static final Pattern DECIDED_LINE_PATTERN = Pattern.compile(
         "^(?:Decided(?: on)?\\s+)?(?<date>[A-Z][a-z]+\\s+\\d{1,2},\\s+\\d{4})$"
+    );
+    private static final Pattern FOOTNOTE_LABEL_LINE_PATTERN = Pattern.compile(
+        "(?i)^Footnote\\s+[^:]+:.*$"
+    );
+    private static final Pattern EMBEDDED_FOOTNOTES_SECTION_PATTERN = Pattern.compile(
+        "(?is)\\bFootnotes\\b\\s+Footnote\\s+\\d+:"
     );
     private static final Pattern DISPOSITION_OPINION_BY_SPLIT_PATTERN = Pattern.compile(
         "(?=\\bOpinion by\\b)",
@@ -93,15 +99,20 @@ public final class MirandaJsonRenderer {
     private static final Pattern APPEARANCE_SENTENCE_END_PATTERN = Pattern.compile(
         "(?i)^.*?\\b(?:for\\s+(?:appellant|respondent|petitioner|appellee|claimant|defendant|plaintiff)|amic(?:us|i)\\s+curiae)\\."
     );
+    private static final Pattern CANONICAL_TOKEN_PATTERN = Pattern.compile(
+        "\\p{L}[\\p{L}\\p{N}'’.-]*|\\p{N}+|[\\p{P}\\p{S}]"
+    );
+
     public String render(SourceDocument source, ReflowedDocument document) {
         List<Writing> writings = buildWritings(document, null);
-        TerminalSummary terminalSummary = extractTerminalSummary(source, document);
-        if (terminalSummary == null) {
-            terminalSummary = extractTerminalSummary(writings);
-        }
+        TerminalSummary terminalSummary = chooseTerminalSummary(
+            extractTerminalSummary(source, document),
+            extractTerminalSummary(writings)
+        );
         List<Writing> trimmedWritings = trimTerminalSummary(writings, terminalSummary);
         DispositionInfo disposition = buildDisposition(document, terminalSummary);
-        List<Writing> preservedWritings = preserveUnclassifiedBlocks(document, trimmedWritings, disposition);
+        List<Map<String, Object>> terminal = buildTerminal(document, terminalSummary, disposition);
+        List<Writing> preservedWritings = preserveUnclassifiedBlocks(document, trimmedWritings, disposition, terminalSummary);
         List<Writing> normalizedWritings = classifyEffectiveWritings(preservedWritings, disposition);
         List<Diagnostic> diagnostics = buildDiagnostics(source, document, normalizedWritings, disposition);
         ExtractionAssessment extraction = assessExtraction(source, document, normalizedWritings, diagnostics);
@@ -113,11 +124,36 @@ public final class MirandaJsonRenderer {
         root.put("header", buildHeader(document, appearances));
         root.put("opinions", extraction.structuredOpinionsHighConfidence() ? buildOpinions(normalizedWritings) : List.of());
         root.put("disposition", disposition == null ? null : disposition.json());
+        root.put("terminal", terminal);
         root.put("footnotes", extraction.structuredFootnotesHighConfidence() ? buildFootnotes(document) : List.of());
         root.put("renderingHints", buildRenderingHints(document, extraction));
         root.put("debug", buildDebug(diagnostics, extraction));
         root.put("fallback", buildFallbackSource(source, document));
         return renderValue(root);
+    }
+
+    public CanonicalTextDiagnostic diagnoseCanonicalText(SourceDocument source, ReflowedDocument document) {
+        List<Writing> writings = buildWritings(document, null);
+        TerminalSummary terminalSummary = chooseTerminalSummary(
+            extractTerminalSummary(source, document),
+            extractTerminalSummary(writings)
+        );
+        List<Writing> trimmedWritings = trimTerminalSummary(writings, terminalSummary);
+        DispositionInfo disposition = buildDisposition(document, terminalSummary);
+        List<Map<String, Object>> terminal = buildTerminal(document, terminalSummary, disposition);
+        List<Writing> preservedWritings = preserveUnclassifiedBlocks(document, trimmedWritings, disposition, terminalSummary);
+        List<Writing> normalizedWritings = classifyEffectiveWritings(preservedWritings, disposition);
+
+        String sourceText = renderCanonicalSourceText(source, document);
+        String structuredText = renderCanonicalStructuredText(source, document, normalizedWritings, disposition, terminal);
+        String normalizedSourceText = normalizeForQa(sourceText);
+        String normalizedStructuredText = normalizeForQa(structuredText);
+        return new CanonicalTextDiagnostic(
+            normalizedSourceText.equals(normalizedStructuredText),
+            sourceText,
+            structuredText,
+            diffText(normalizedSourceText, normalizedStructuredText)
+        );
     }
 
     private Map<String, Object> buildSource(SourceDocument source, ReflowedDocument document, ExtractionAssessment extraction) {
@@ -140,10 +176,26 @@ public final class MirandaJsonRenderer {
         header.put("court", firstHeaderValue(document, HeaderItemType.COURT));
         header.put("decisionDate", extractDecisionDate(document));
         header.put("appearances", appearances);
+        header.put("history", buildHeaderHistory(document));
         header.put("summarySections", buildLabeledBlocks(document.lowered().sectioned().source(), document.lowered().sectioned().source().htmlDocument().summarySections()));
         header.put("headnotes", buildHeadnotes(document.lowered().sectioned().source(), document.lowered().sectioned().source().htmlDocument().headnotes()));
         header.put("pointsOfCounsel", buildLabeledBlocks(document.lowered().sectioned().source(), document.lowered().sectioned().source().htmlDocument().pointsOfCounsel()));
         return header;
+    }
+
+    private List<Map<String, Object>> buildHeaderHistory(ReflowedDocument document) {
+        List<Map<String, Object>> history = new ArrayList<>();
+        for (var item : document.lowered().header().items()) {
+            if (item.type() != HeaderItemType.ACTION) {
+                continue;
+            }
+            Map<String, Object> entry = new LinkedHashMap<>();
+            entry.put("type", "action");
+            entry.put("text", item.line().text());
+            entry.put("provenance", provenance(item.line().lineNumber(), item.line().lineNumber()));
+            history.add(entry);
+        }
+        return history.isEmpty() ? List.of() : List.copyOf(history);
     }
 
     private List<String> extractCaptionLines(ReflowedDocument document) {
@@ -250,6 +302,324 @@ public final class MirandaJsonRenderer {
             items.add(item);
         }
         return items;
+    }
+
+    private String renderCanonicalSourceText(SourceDocument source, ReflowedDocument document) {
+        List<String> lines = new ArrayList<>();
+        for (Map<String, Object> item : buildHeaderHistory(document)) {
+            appendCanonicalLines(lines, (String) item.get("text"));
+        }
+        appendCanonicalLabeledBlocks(lines, source.htmlDocument().summarySections());
+        appendCanonicalHeadnotes(lines, source.htmlDocument().headnotes());
+        appendCanonicalLabeledBlocks(lines, source.htmlDocument().pointsOfCounsel());
+        appendCanonicalOpinionLines(lines, source);
+        appendCanonicalFootnoteLines(lines, source);
+        return String.join("\n", lines);
+    }
+
+    private void appendCanonicalLabeledBlocks(List<String> lines, List<HtmlLabeledBlock> blocks) {
+        for (HtmlLabeledBlock block : blocks) {
+            appendCanonicalLines(lines, block.text());
+        }
+    }
+
+    private void appendCanonicalHeadnotes(List<String> lines, List<HtmlHeadnote> headnotes) {
+        for (HtmlHeadnote headnote : headnotes) {
+            for (String classification : headnote.classifications()) {
+                appendCanonicalLines(lines, classification);
+            }
+            appendCanonicalLines(lines, headnote.text());
+        }
+    }
+
+    private void appendCanonicalOpinionLines(List<String> lines, SourceDocument source) {
+        if (!source.htmlDocument().opinionBlocks().isEmpty()) {
+            for (var block : source.htmlDocument().opinionBlocks()) {
+                if (isRedundantFootnoteOpinionBlock(block.text(), !source.htmlDocument().footnotes().isEmpty())) {
+                    continue;
+                }
+                appendCanonicalLines(lines, block.text());
+            }
+            return;
+        }
+        appendCanonicalSourceLines(lines, source, source.htmlDocument().fallbackOpinionLineNumbers());
+    }
+
+    private void appendCanonicalFootnoteLines(List<String> lines, SourceDocument source) {
+        if (source.htmlDocument().footnotesHeadingLine() != null && !source.htmlDocument().footnotes().isEmpty()) {
+            appendCanonicalLines(lines, "Footnotes");
+        }
+        for (Footnote footnote : lowerFootnotesForCanonical(source)) {
+            appendCanonicalLines(lines, "Footnote " + footnote.label() + ":");
+            appendCanonicalSourceLines(
+                lines,
+                source,
+                footnote.lines().stream().map(SourceLine::lineNumber).toList()
+            );
+        }
+    }
+
+    private List<Footnote> lowerFootnotesForCanonical(SourceDocument source) {
+        List<Footnote> footnotes = new ArrayList<>();
+        source.htmlDocument().footnotes().forEach(footnote -> footnotes.add(new Footnote(
+            footnote.label(),
+            footnote.lineNumbers().stream()
+                .map(lineNumber -> source.lines().get(lineNumber - 1))
+                .toList(),
+            footnote.lineNumbers().getFirst(),
+            footnote.lineNumbers().getLast()
+        )));
+        return List.copyOf(footnotes);
+    }
+
+    private void appendCanonicalSourceLines(List<String> lines, SourceDocument source, List<Integer> lineNumbers) {
+        Set<Integer> seen = new LinkedHashSet<>();
+        for (Integer lineNumber : lineNumbers) {
+            if (lineNumber == null || !seen.add(lineNumber)) {
+                continue;
+            }
+            if (lineNumber < 1 || lineNumber > source.lines().size()) {
+                continue;
+            }
+            SourceLine sourceLine = source.lines().get(lineNumber - 1);
+            String text = sourceLine.inlines() != null && !sourceLine.inlines().isEmpty()
+                ? flattenInlineNodes(sourceLine.inlines())
+                : sourceLine.text();
+            if (!text.isBlank()) {
+                String trimmed = text.trim();
+                if (OFFICIAL_PAGE_MARKER_PATTERN.matcher(trimmed).matches() && !lines.isEmpty()) {
+                    String previous = lines.getLast().trim();
+                    if (trimmed.equals(previous) || previous.endsWith(trimmed)) {
+                        continue;
+                    }
+                }
+                lines.add(text);
+            }
+        }
+    }
+
+    private String renderCanonicalStructuredText(
+        SourceDocument source,
+        ReflowedDocument document,
+        List<Writing> writings,
+        DispositionInfo disposition,
+        List<Map<String, Object>> terminal
+    ) {
+        List<String> lines = new ArrayList<>();
+        for (Map<String, Object> item : buildHeaderHistory(document)) {
+            appendCanonicalLines(lines, (String) item.get("text"));
+        }
+        appendCanonicalLabeledBlockJson(lines, document.lowered().sectioned().source().htmlDocument().summarySections());
+        appendCanonicalHeadnoteJson(lines, document.lowered().sectioned().source().htmlDocument().headnotes());
+        appendCanonicalLabeledBlockJson(lines, document.lowered().sectioned().source().htmlDocument().pointsOfCounsel());
+        boolean useFallbackOpinionLines = writings.isEmpty() && !opinionFallbackLineNumbers(source, document).isEmpty();
+        if (useFallbackOpinionLines) {
+            appendCanonicalSourceLines(lines, source, opinionFallbackLineNumbers(source, document));
+        } else {
+            boolean hasStructuredFootnotes = !document.lowered().footnotes().footnotes().isEmpty();
+            for (Writing writing : writings) {
+                for (ReflowedBlock block : writing.blocks()) {
+                    String flattened = flattenCanonicalOpinionBlockText(block, hasStructuredFootnotes);
+                    if (isRedundantFootnoteOpinionBlock(flattened, hasStructuredFootnotes)) {
+                        continue;
+                    }
+                    appendCanonicalLines(lines, flattened);
+                }
+            }
+        }
+        if (!useFallbackOpinionLines && disposition != null) {
+            appendCanonicalLines(lines, disposition.text());
+        }
+        if (!useFallbackOpinionLines) {
+            for (Map<String, Object> item : terminal) {
+                appendCanonicalLines(lines, (String) item.get("text"));
+            }
+        }
+        if (!document.lowered().footnotes().footnotes().isEmpty()) {
+            appendCanonicalLines(lines, "Footnotes");
+        }
+        for (Footnote footnote : document.lowered().footnotes().footnotes()) {
+            appendCanonicalLines(lines, "Footnote " + footnote.label() + ":");
+            for (ReflowedBlock block : document.footnotes().blocksByStartLine().getOrDefault(footnote.startLine(), List.of())) {
+                appendCanonicalLines(lines, flattenBlockText(block));
+            }
+        }
+        return String.join("\n", lines);
+    }
+
+    private boolean isRedundantFootnoteOpinionBlock(String text, boolean hasParsedFootnotes) {
+        if (!hasParsedFootnotes || text == null || text.isBlank()) {
+            return false;
+        }
+        String trimmed = text.trim().replaceFirst("^\\{\\*\\*[^}]+\\}\\s*", "");
+        return "Footnotes".equals(trimmed)
+            || trimmed.startsWith("Footnotes\n")
+            || trimmed.startsWith("Footnotes ")
+            || FOOTNOTE_LABEL_LINE_PATTERN.matcher(trimmed).matches()
+            || trimmed.startsWith("Footnote ");
+    }
+
+    private void appendCanonicalLabeledBlockJson(List<String> lines, List<HtmlLabeledBlock> blocks) {
+        for (HtmlLabeledBlock block : blocks) {
+            appendCanonicalLines(lines, block.text());
+        }
+    }
+
+    private void appendCanonicalHeadnoteJson(List<String> lines, List<HtmlHeadnote> headnotes) {
+        for (HtmlHeadnote headnote : headnotes) {
+            for (String classification : headnote.classifications()) {
+                appendCanonicalLines(lines, classification);
+            }
+            appendCanonicalLines(lines, headnote.text());
+        }
+    }
+
+    private String flattenBlockText(ReflowedBlock block) {
+        if (block.blocks() != null && !block.blocks().isEmpty()) {
+            List<String> parts = new ArrayList<>();
+            for (ReflowedBlock child : block.blocks()) {
+                String text = flattenBlockText(child);
+                if (!text.isBlank()) {
+                    parts.add(text);
+                }
+            }
+            return String.join("\n", parts);
+        }
+        return flattenInlineNodes(blockInlines(block));
+    }
+
+    private String flattenCanonicalOpinionBlockText(ReflowedBlock block, boolean hasParsedFootnotes) {
+        if (block.blocks() != null && !block.blocks().isEmpty()) {
+            List<String> parts = new ArrayList<>();
+            for (ReflowedBlock child : block.blocks()) {
+                String text = flattenCanonicalOpinionBlockText(child, hasParsedFootnotes);
+                if (isRedundantFootnoteOpinionBlock(text, hasParsedFootnotes)) {
+                    break;
+                }
+                if (!text.isBlank()) {
+                    parts.add(text);
+                }
+            }
+            return String.join("\n", parts);
+        }
+        return trimEmbeddedFootnotesSection(flattenInlineNodes(blockInlines(block)), hasParsedFootnotes);
+    }
+
+    private String trimEmbeddedFootnotesSection(String text, boolean hasParsedFootnotes) {
+        if (!hasParsedFootnotes || text == null || text.isBlank()) {
+            return text;
+        }
+        Matcher matcher = EMBEDDED_FOOTNOTES_SECTION_PATTERN.matcher(text);
+        if (!matcher.find()) {
+            return text;
+        }
+        return text.substring(0, matcher.start()).stripTrailing();
+    }
+
+    private String flattenInlineNodes(List<InlineNode> nodes) {
+        StringBuilder text = new StringBuilder();
+        for (InlineNode node : nodes) {
+            if (node instanceof TextInline textInline) {
+                text.append(textInline.text());
+            } else if (node instanceof EmphasisInline emphasisInline) {
+                text.append(flattenInlineNodes(emphasisInline.children()));
+            } else if (node instanceof LinkInline linkInline) {
+                text.append(flattenInlineNodes(linkInline.children()));
+            } else if (node instanceof FootnoteReferenceInline footnoteReferenceInline) {
+                text.append("[FN").append(footnoteReferenceInline.label()).append("]");
+            } else if (node instanceof PageMarkerInline pageMarkerInline) {
+                text.append(pageMarkerInline.text());
+            }
+        }
+        return text.toString();
+    }
+
+    private void appendCanonicalLines(List<String> lines, String text) {
+        if (text == null || text.isBlank()) {
+            return;
+        }
+        for (String line : text.split("\\R", -1)) {
+            if (!line.isBlank()) {
+                String trimmed = line.trim();
+                if (OFFICIAL_PAGE_MARKER_PATTERN.matcher(trimmed).matches() && !lines.isEmpty()) {
+                    String previous = lines.getLast().trim();
+                    if (trimmed.equals(previous) || previous.endsWith(trimmed)) {
+                        continue;
+                    }
+                }
+                lines.add(line);
+            }
+        }
+    }
+
+    private String diffText(String sourceText, String structuredText) {
+        List<String> sourceLines = List.of(sourceText.split("\\R", -1));
+        List<String> structuredLines = List.of(structuredText.split("\\R", -1));
+        int prefix = 0;
+        while (prefix < sourceLines.size()
+            && prefix < structuredLines.size()
+            && sourceLines.get(prefix).equals(structuredLines.get(prefix))) {
+            prefix++;
+        }
+        if (prefix == sourceLines.size() && prefix == structuredLines.size()) {
+            return "No differences.";
+        }
+
+        int sourceSuffix = sourceLines.size() - 1;
+        int structuredSuffix = structuredLines.size() - 1;
+        while (sourceSuffix >= prefix
+            && structuredSuffix >= prefix
+            && sourceLines.get(sourceSuffix).equals(structuredLines.get(structuredSuffix))) {
+            sourceSuffix--;
+            structuredSuffix--;
+        }
+
+        int contextStart = Math.max(0, prefix - 2);
+        int sourceContextEnd = Math.min(sourceLines.size() - 1, sourceSuffix + 2);
+        int structuredContextEnd = Math.min(structuredLines.size() - 1, structuredSuffix + 2);
+
+        List<String> diff = new ArrayList<>();
+        diff.add("@@ source line " + (prefix + 1) + " / structured line " + (prefix + 1) + " @@");
+        for (int index = contextStart; index <= sourceContextEnd; index++) {
+            String marker = index < prefix || index > sourceSuffix ? " " : "-";
+            diff.add(marker + " " + sourceLines.get(index));
+        }
+        diff.add("@@");
+        for (int index = contextStart; index <= structuredContextEnd; index++) {
+            String marker = index < prefix || index > structuredSuffix ? " " : "+";
+            diff.add(marker + " " + structuredLines.get(index));
+        }
+        return String.join("\n", diff);
+    }
+
+    private String normalizeForQa(String text) {
+        if (text == null || text.isBlank()) {
+            return "";
+        }
+        String normalizedText = removePageMarkers(collapseRepeatedPageMarkers(text));
+        normalizedText = normalizedText.replace("*", "");
+        List<String> tokens = new ArrayList<>();
+        Matcher matcher = CANONICAL_TOKEN_PATTERN.matcher(normalizedText);
+        while (matcher.find()) {
+            String token = matcher.group();
+            if (isQaFormattingToken(token)) {
+                continue;
+            }
+            tokens.add(token);
+        }
+        return String.join(" ", tokens);
+    }
+
+    private boolean isQaFormattingToken(String token) {
+        return "*".equals(token);
+    }
+
+    private String collapseRepeatedPageMarkers(String text) {
+        return text.replaceAll("(\\{\\*\\*[^}]+\\})\\s+\\1", "$1");
+    }
+
+    private String removePageMarkers(String text) {
+        return text.replaceAll("\\{\\*\\*[^}]+\\}", " ");
     }
 
     private List<Map<String, Object>> buildOpinions(List<Writing> writings) {
@@ -700,7 +1070,8 @@ public final class MirandaJsonRenderer {
     private List<Writing> preserveUnclassifiedBlocks(
         ReflowedDocument document,
         List<Writing> writings,
-        DispositionInfo disposition
+        DispositionInfo disposition,
+        TerminalSummary terminalSummary
     ) {
         if (document.opinion().blocks().isEmpty()) {
             return writings;
@@ -711,6 +1082,14 @@ public final class MirandaJsonRenderer {
         boolean[] emitted = new boolean[writings.size()];
 
         for (ReflowedBlock block : document.opinion().blocks()) {
+            if (withinTerminalSummary(block, terminalSummary)) {
+                flushFallbackWriting(document.lowered().sectioned().source(), ordered, fallbackBlocks);
+                continue;
+            }
+            if (isRepresentedByFootnotes(block, document)) {
+                flushFallbackWriting(document.lowered().sectioned().source(), ordered, fallbackBlocks);
+                continue;
+            }
             if (isRepresentedByDisposition(block, disposition)) {
                 flushFallbackWriting(document.lowered().sectioned().source(), ordered, fallbackBlocks);
                 continue;
@@ -740,6 +1119,19 @@ public final class MirandaJsonRenderer {
             }
         }
         return List.copyOf(ordered);
+    }
+
+    private boolean isRepresentedByFootnotes(ReflowedBlock block, ReflowedDocument document) {
+        if (block.sourceLines().isEmpty()) {
+            return false;
+        }
+        var footnotesSection = document.lowered().sectioned().section(dev.stanbook.ir.section.SectionType.FOOTNOTES);
+        if (footnotesSection.isEmpty()) {
+            return false;
+        }
+        int start = block.sourceLines().getFirst();
+        int end = block.sourceLines().getLast();
+        return start >= footnotesSection.get().startLine() && end <= footnotesSection.get().endLine();
     }
 
     private int ownerIndexForBlock(ReflowedBlock block, List<Writing> writings) {
@@ -1172,6 +1564,10 @@ public final class MirandaJsonRenderer {
             return terminalDisposition;
         }
 
+        if (!document.lowered().opinionBody().components().isEmpty()) {
+            return null;
+        }
+
         return document.lowered().header().items().stream()
             .filter(item -> item.type() == HeaderItemType.ACTION)
             .findFirst()
@@ -1184,10 +1580,10 @@ public final class MirandaJsonRenderer {
             return null;
         }
 
-        List<String> dispositionParagraphs = new ArrayList<>();
+        List<TerminalParagraph> dispositionParagraphs = new ArrayList<>();
         boolean sawDispositionAction = false;
-        for (String paragraph : terminalSummary.paragraphs()) {
-            String stripped = paragraph.trim();
+        for (TerminalParagraph paragraph : terminalSummary.paragraphs()) {
+            String stripped = paragraph.text().trim();
             if (stripped.isEmpty()) {
                 if (!dispositionParagraphs.isEmpty()) {
                     break;
@@ -1196,17 +1592,17 @@ public final class MirandaJsonRenderer {
             }
             if (dispositionParagraphs.isEmpty()) {
                 if (isDispositionActionLine(stripped) || DISPOSITION_JUDGE_LINE_PATTERN.matcher(stripped).matches()) {
-                    dispositionParagraphs.add(stripped);
+                    dispositionParagraphs.add(paragraph);
                     sawDispositionAction = sawDispositionAction || isDispositionActionLine(stripped);
                 }
                 continue;
             }
             if (!sawDispositionAction && DISPOSITION_JUDGE_LINE_PATTERN.matcher(stripped).matches()) {
-                dispositionParagraphs.add(stripped);
+                dispositionParagraphs.add(paragraph);
                 continue;
             }
             if (isDispositionActionLine(stripped) || isDispositionTextContinuation(stripped)) {
-                dispositionParagraphs.add(stripped);
+                dispositionParagraphs.add(paragraph);
                 sawDispositionAction = sawDispositionAction || isDispositionActionLine(stripped);
                 continue;
             }
@@ -1218,9 +1614,14 @@ public final class MirandaJsonRenderer {
         }
 
         String text = dispositionParagraphs.stream()
+            .map(TerminalParagraph::text)
             .reduce((left, right) -> left + " " + right)
             .orElse(null);
-        return dispositionInfo(text, terminalSummary.startLine(), terminalSummary.endLine());
+        return dispositionInfo(
+            text,
+            dispositionParagraphs.getFirst().startLine(),
+            dispositionParagraphs.getLast().endLine()
+        );
     }
 
     private boolean isDispositionLine(String text) {
@@ -1251,7 +1652,7 @@ public final class MirandaJsonRenderer {
             .map(section -> section.startLine() - 1)
             .orElse(lines.size());
 
-        List<SourceLine> collected = new ArrayList<>();
+        List<TerminalParagraph> collected = new ArrayList<>();
         int index = upperBoundExclusive - 1;
         while (index >= 0) {
             while (index >= 0 && lines.get(index).text().trim().isEmpty()) {
@@ -1270,7 +1671,17 @@ public final class MirandaJsonRenderer {
             if (!isTerminalSummaryParagraph(paragraph)) {
                 break;
             }
-            collected.addAll(0, paragraph);
+            String text = paragraph.stream()
+                .map(SourceLine::text)
+                .map(String::trim)
+                .filter(line -> !line.isEmpty())
+                .reduce((left, right) -> left + " " + right)
+                .orElse("");
+            collected.addFirst(new TerminalParagraph(
+                text,
+                paragraph.getFirst().lineNumber(),
+                paragraph.getLast().lineNumber()
+            ));
         }
 
         if (collected.isEmpty()) {
@@ -1278,18 +1689,13 @@ public final class MirandaJsonRenderer {
         }
 
         String text = collected.stream()
-            .map(SourceLine::text)
-            .map(String::trim)
+            .map(TerminalParagraph::text)
             .reduce((left, right) -> left + " " + right)
             .orElse("");
         return new TerminalSummary(
-            collected.stream()
-                .map(SourceLine::text)
-                .map(String::trim)
-                .filter(line -> !line.isEmpty())
-                .toList(),
-            collected.getFirst().lineNumber(),
-            collected.getLast().lineNumber(),
+            List.copyOf(collected),
+            collected.getFirst().startLine(),
+            collected.getLast().endLine(),
             text
         );
     }
@@ -1316,6 +1722,18 @@ public final class MirandaJsonRenderer {
         return !text.isEmpty() && isTerminalSummaryLine(text);
     }
 
+    private TerminalSummary chooseTerminalSummary(TerminalSummary sourceSummary, TerminalSummary writingSummary) {
+        if (sourceSummary == null) {
+            return writingSummary;
+        }
+        if (writingSummary == null) {
+            return sourceSummary;
+        }
+        return writingSummary.paragraphs().size() > sourceSummary.paragraphs().size()
+            ? writingSummary
+            : sourceSummary;
+    }
+
     private List<ReflowedBlock> trimTerminalSummaryBlocks(List<ReflowedBlock> blocks, TerminalSummary terminalSummary) {
         if (terminalSummary == null) {
             return List.copyOf(blocks);
@@ -1326,7 +1744,7 @@ public final class MirandaJsonRenderer {
     }
 
     private boolean withinTerminalSummary(ReflowedBlock block, TerminalSummary terminalSummary) {
-        if (block.sourceLines().isEmpty()) {
+        if (terminalSummary == null || block.sourceLines().isEmpty()) {
             return false;
         }
         int start = block.sourceLines().getFirst();
@@ -1363,12 +1781,16 @@ public final class MirandaJsonRenderer {
             return null;
         }
 
-        List<String> paragraphs = collected.stream()
-            .map(this::blockText)
-            .map(String::trim)
-            .filter(text -> !text.isEmpty())
+        List<TerminalParagraph> paragraphs = collected.stream()
+            .map(block -> new TerminalParagraph(
+                blockText(block).trim(),
+                block.sourceLines().getFirst(),
+                block.sourceLines().getLast()
+            ))
+            .filter(paragraph -> !paragraph.text().isEmpty())
             .toList();
         String text = paragraphs.stream()
+            .map(TerminalParagraph::text)
             .reduce((left, right) -> left + " " + right)
             .orElse("");
         return new TerminalSummary(
@@ -1377,6 +1799,31 @@ public final class MirandaJsonRenderer {
             collected.getLast().sourceLines().getLast(),
             text
         );
+    }
+
+    private List<Map<String, Object>> buildTerminal(
+        ReflowedDocument document,
+        TerminalSummary terminalSummary,
+        DispositionInfo disposition
+    ) {
+        if (terminalSummary == null || terminalSummary.paragraphs().isEmpty()) {
+            return List.of();
+        }
+
+        List<Map<String, Object>> terminal = new ArrayList<>();
+        for (TerminalParagraph paragraph : terminalSummary.paragraphs()) {
+            if (disposition != null
+                && paragraph.startLine() >= disposition.startLine()
+                && paragraph.endLine() <= disposition.endLine()) {
+                continue;
+            }
+            Map<String, Object> item = new LinkedHashMap<>();
+            item.put("type", DECIDED_LINE_PATTERN.matcher(paragraph.text()).matches() ? "decided_date" : "other");
+            item.put("text", paragraph.text());
+            item.put("provenance", provenance(paragraph.startLine(), paragraph.endLine()));
+            terminal.add(item);
+        }
+        return terminal.isEmpty() ? List.of() : List.copyOf(terminal);
     }
 
     private List<Writing> trimTerminalSummary(List<Writing> writings, TerminalSummary terminalSummary) {
@@ -1621,10 +2068,16 @@ public final class MirandaJsonRenderer {
     private record DispositionInfo(String text, int startLine, int endLine, Map<String, Object> json) {}
 
     private record TerminalSummary(
-        List<String> paragraphs,
+        List<TerminalParagraph> paragraphs,
         int startLine,
         int endLine,
         String text
+    ) {}
+
+    private record TerminalParagraph(
+        String text,
+        int startLine,
+        int endLine
     ) {}
 
     private record ExtractionAssessment(
@@ -1652,6 +2105,13 @@ public final class MirandaJsonRenderer {
         String href,
         int resumeIndex,
         String trailingText
+    ) {}
+
+    public record CanonicalTextDiagnostic(
+        boolean matches,
+        String sourceText,
+        String structuredText,
+        String diff
     ) {}
 
     private static final class WritingAccumulator {

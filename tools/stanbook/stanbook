@@ -2,12 +2,13 @@
 
 set -euo pipefail
 
-if [[ $# -ne 1 ]]; then
+if [[ $# -lt 1 ]]; then
   echo "Usage: stanbook <path>" >&2
+  echo "   or: stanbook --qa-diff <html-file>" >&2
   exit 2
 fi
 
 script_dir="${0:A:h}"
 
 cd "$script_dir"
-exec mvn -q exec:java -Dexec.args="$1"
+exec mvn -q exec:java -Dexec.args="$*"
