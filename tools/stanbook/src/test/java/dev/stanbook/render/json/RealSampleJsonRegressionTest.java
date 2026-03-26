@@ -120,6 +120,32 @@ class RealSampleJsonRegressionTest {
     }
 
     @Test
+    void html_repo_sample_preserves_bare_text_opinion_author_byline_in_blocks() {
+        var source = new SourceDocumentReader().read(Path.of("../../opinions/coa/2024/2024_05873.htm"));
+
+        String json = StanbookPipeline.createDefault().render(source);
+
+        assertThat(json).contains("\"caseId\":\"2024_05873\"");
+        assertThat(json).contains("\"author\":\"Troutman\"");
+        assertThat(json).contains("\"text\":\"Troutman, J.\"");
+        assertThat(json.split("\\\"text\\\":\\\" OPINION OF THE COURT\\\"", -1)).hasSize(2);
+    }
+
+    @Test
+    void html_repo_sample_trims_vaughn_amicus_arguments_out_of_header_appearances() {
+        var source = new SourceDocumentReader().read(Path.of("../../opinions/coa/2024/2024_05874.htm"));
+
+        String json = StanbookPipeline.createDefault().render(source);
+
+        assertThat(json).contains("\"caseId\":\"2024_05874\"");
+        assertThat(json).contains("\"text\":\"*Proskauer Rose LLP*, New York City (*Russell L. Hirschhorn, Portia S. Proctor* and *Dakshïna H. Chetti* of counsel), and *The Innocence Project, Inc.*, New York City (*Matthew A. Wasserman* and *Lauren Gottesman* of counsel), for The Innocence Project, Inc., amicus curiae.\"");
+        assertThat(json).contains("\"pointsOfCounsel\":[");
+        assertThat(json).contains("I. Expert testimony about the science of eyewitness identification and memory helps safeguard against the risk of wrongful convictions.");
+        assertThat(json).doesNotContain("\"provenance\":{\"startLine\":18,\"endLine\":18}}");
+        assertThat(json).doesNotContain("\"appearances\":[{\"side\":\"appellant\",\"text\":\"*Patricia Pazner, Appellate Advocates*, New York City (*Sam Feldman* of counsel), for appellant. When appellant's trial turned on identifications");
+    }
+
+    @Test
     void html_repo_sample_matches_canonical_text_when_disposition_contains_emphasis_markup() {
         var source = new SourceDocumentReader().read(Path.of("../../opinions/coa/2004/2004_04789.htm"));
 
@@ -162,6 +188,24 @@ class RealSampleJsonRegressionTest {
     @Test
     void html_repo_sample_does_not_duplicate_footnotes_embedded_in_malformed_quote_blocks() {
         var source = new SourceDocumentReader().read(Path.of("../../opinions/coa/2008/2008_05780.htm"));
+
+        var diagnostic = StanbookPipeline.createDefault().diagnoseCanonicalText(source);
+
+        assertThat(diagnostic.matches()).isTrue();
+    }
+
+    @Test
+    void html_repo_sample_matches_canonical_text_for_multiline_blockquote_colloquy() {
+        var source = new SourceDocumentReader().read(Path.of("../../opinions/coa/2009/2009_03410.htm"));
+
+        var diagnostic = StanbookPipeline.createDefault().diagnoseCanonicalText(source);
+
+        assertThat(diagnostic.matches()).isTrue();
+    }
+
+    @Test
+    void html_repo_sample_matches_canonical_text_when_spaced_ellipsis_touches_preceding_word() {
+        var source = new SourceDocumentReader().read(Path.of("../../opinions/coa/2005/2005_03278.htm"));
 
         var diagnostic = StanbookPipeline.createDefault().diagnoseCanonicalText(source);
 

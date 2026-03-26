@@ -97,7 +97,10 @@ public final class MirandaJsonRenderer {
         "\\s+(?:[IVX]+|\\d+)\\.\\s+"
     );
     private static final Pattern APPEARANCE_SENTENCE_END_PATTERN = Pattern.compile(
-        "(?i)^.*?\\b(?:for\\s+(?:appellant|respondent|petitioner|appellee|claimant|defendant|plaintiff)|amic(?:us|i)\\s+curiae)\\."
+        "(?i)^.*?\\b(?:for\\s+(?:appellant|respondent|petitioner|appellee|claimant|defendant|plaintiff)|for\\s+[^.]*?,\\s+amic(?:us|i)\\s+curiae|amic(?:us|i)\\s+curiae)\\."
+    );
+    private static final Pattern APPEARANCE_MARKER_PATTERN = Pattern.compile(
+        "(?i)\\b(?:for\\s+(?:appellant|respondent|petitioner|appellee|claimant|defendant|plaintiff)|for\\s+[^.]*?,\\s+amic(?:us|i)\\s+curiae|amic(?:us|i)\\s+curiae)\\."
     );
     private static final Pattern CANONICAL_TOKEN_PATTERN = Pattern.compile(
         "\\p{L}[\\p{L}\\p{N}'’.-]*|\\p{N}+|[\\p{P}\\p{S}]"
@@ -215,8 +218,12 @@ public final class MirandaJsonRenderer {
     private List<Map<String, Object>> buildAppearances(ReflowedDocument document) {
         List<Map<String, Object>> appearances = new ArrayList<>();
         Set<String> seenAppearanceKeys = new LinkedHashSet<>();
+        List<HtmlLabeledBlock> pointsOfCounsel = document.lowered().sectioned().source().htmlDocument().pointsOfCounsel();
         for (var item : document.lowered().header().items()) {
             if (item.type() != HeaderItemType.COUNSEL) {
+                continue;
+            }
+            if (!pointsOfCounsel.isEmpty() && hasMultipleAppearanceMarkers(item.line().text())) {
                 continue;
             }
             String appearanceText = trimPointsOfCounselArguments(item.line().text());
@@ -232,7 +239,7 @@ public final class MirandaJsonRenderer {
             );
         }
 
-        for (HtmlLabeledBlock block : document.lowered().sectioned().source().htmlDocument().pointsOfCounsel()) {
+        for (HtmlLabeledBlock block : pointsOfCounsel) {
             String appearanceText = trimPointsOfCounselArguments(block.text());
             if (appearanceText.isEmpty()) {
                 continue;
@@ -278,6 +285,21 @@ public final class MirandaJsonRenderer {
             return sentenceEndMatcher.group().trim();
         }
         return trimmed;
+    }
+
+    private boolean hasMultipleAppearanceMarkers(String text) {
+        if (text == null || text.isBlank()) {
+            return false;
+        }
+        Matcher matcher = APPEARANCE_MARKER_PATTERN.matcher(text);
+        int count = 0;
+        while (matcher.find()) {
+            count++;
+            if (count > 1) {
+                return true;
+            }
+        }
+        return false;
     }
 
     private List<Map<String, Object>> buildHeadnotes(SourceDocument source, List<HtmlHeadnote> headnotes) {
@@ -598,6 +620,7 @@ public final class MirandaJsonRenderer {
         }
         String normalizedText = removePageMarkers(collapseRepeatedPageMarkers(text));
         normalizedText = normalizedText.replace("*", "");
+        normalizedText = normalizedText.replaceAll("(?<=\\S)\\s*\\.\\s*\\.\\s*\\.(?=\\s|\\p{Punct}|$)", " ...");
         List<String> tokens = new ArrayList<>();
         Matcher matcher = CANONICAL_TOKEN_PATTERN.matcher(normalizedText);
         while (matcher.find()) {

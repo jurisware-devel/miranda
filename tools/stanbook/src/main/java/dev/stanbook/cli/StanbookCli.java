@@ -2,6 +2,7 @@ package dev.stanbook.cli;
 
 import dev.stanbook.io.SourceDocumentReader;
 import dev.stanbook.pipeline.StanbookPipeline;
+import dev.stanbook.pipeline.StanbookPipeline.RenderedJson;
 import dev.stanbook.render.json.MirandaJsonRenderer.CanonicalTextDiagnostic;
 import java.io.IOException;
 import java.io.PrintStream;
@@ -11,10 +12,12 @@ import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Stream;
 
 public final class StanbookCli {
     private static final int QA_MISMATCH_REPORT_LIMIT = 10;
+    private static final String STRICT_QA_ENV = "STANBOOK_STRICT_QA";
 
     private StanbookCli() {}
 
@@ -26,6 +29,10 @@ public final class StanbookCli {
     }
 
     static int run(String[] args, PrintStream out, PrintStream err) {
+        return run(args, out, err, System.getenv());
+    }
+
+    static int run(String[] args, PrintStream out, PrintStream err, Map<String, String> env) {
         if (args.length == 2 && "--qa-diff".equals(args[0])) {
             return qaDiff(Path.of(args[1]), out, err);
         }
@@ -38,7 +45,7 @@ public final class StanbookCli {
 
         Path path = Path.of(args[0]);
         if (Files.isDirectory(path)) {
-            return renderDirectory(path, err);
+            return renderDirectory(path, err, env);
         }
 
         if (!Files.isRegularFile(path)) {
@@ -52,7 +59,22 @@ public final class StanbookCli {
             return 2;
         }
 
-        out.print(renderFile(path));
+        boolean strictQa = isStrictQaEnabled(env);
+        RenderedJson rendered = renderFile(path);
+        CanonicalTextDiagnostic diagnostic = rendered.canonicalTextDiagnostic();
+        if (!diagnostic.matches()) {
+            err.println("stanbook: qa mismatch for " + path);
+            err.println("stanbook: canonical-text-match=false source-lines="
+                + countLines(diagnostic.sourceText())
+                + " structured-lines="
+                + countLines(diagnostic.structuredText()));
+            if (strictQa) {
+                err.println("stanbook: strict QA failure");
+                return 1;
+            }
+        }
+
+        out.print(rendered.json());
         return 0;
     }
 
@@ -118,18 +140,41 @@ public final class StanbookCli {
     }
 
     private static int renderDirectory(Path root, PrintStream err) {
+        return renderDirectory(root, err, System.getenv());
+    }
+
+    private static int renderDirectory(Path root, PrintStream err, Map<String, String> env) {
         List<Path> htmlFiles = collectHtmlFiles(root, err);
         if (htmlFiles == null) {
             return 1;
         }
 
+        boolean strictQa = isStrictQaEnabled(env);
         int processed = 0;
         int failed = 0;
+        int qaMatched = 0;
+        int qaMismatched = 0;
+        List<String> qaMismatchReports = new ArrayList<>();
         for (Path htmlFile : htmlFiles) {
             Path jsonFile = siblingJsonPath(htmlFile);
             err.println("stanbook: " + htmlFile + " -> " + jsonFile);
             try {
-                Files.writeString(jsonFile, renderFile(htmlFile), StandardCharsets.UTF_8);
+                RenderedJson rendered = renderFile(htmlFile);
+                CanonicalTextDiagnostic diagnostic = rendered.canonicalTextDiagnostic();
+                if (diagnostic.matches()) {
+                    qaMatched += 1;
+                } else {
+                    qaMismatched += 1;
+                    if (qaMismatchReports.size() < QA_MISMATCH_REPORT_LIMIT) {
+                        qaMismatchReports.add(formatQaSummary(root, htmlFile, diagnostic));
+                    }
+                    if (strictQa) {
+                        err.println("stanbook: strict QA failure for " + htmlFile);
+                        failed += 1;
+                        continue;
+                    }
+                }
+                Files.writeString(jsonFile, rendered.json(), StandardCharsets.UTF_8);
                 processed += 1;
             } catch (Exception exception) {
                 err.println("stanbook: failed for " + htmlFile);
@@ -143,8 +188,19 @@ public final class StanbookCli {
         }
 
         err.println("stanbook-dir: wrote " + processed + " JSON file(s)");
+        err.println("stanbook-dir: qa-files-checked " + htmlFiles.size());
+        err.println("stanbook-dir: qa-files-matched " + qaMatched);
+        err.println("stanbook-dir: qa-files-mismatched " + qaMismatched);
+        if (!qaMismatchReports.isEmpty()) {
+            err.println("stanbook-dir: qa-mismatches");
+            qaMismatchReports.forEach(err::println);
+        }
         if (failed > 0) {
             err.println("stanbook-dir: " + failed + " file(s) failed");
+            return 1;
+        }
+        if (strictQa && qaMismatched > 0) {
+            err.println("stanbook-dir: strict QA failure");
             return 1;
         }
         return 0;
@@ -163,11 +219,11 @@ public final class StanbookCli {
         }
     }
 
-    private static String renderFile(Path path) {
+    private static RenderedJson renderFile(Path path) {
         var reader = new SourceDocumentReader();
         var pipeline = StanbookPipeline.createDefault();
         var source = reader.read(path);
-        return pipeline.render(source);
+        return pipeline.renderWithDiagnostic(source);
     }
 
     private static boolean isHtmlFile(Path path) {
@@ -187,6 +243,27 @@ public final class StanbookCli {
         return displayPath
             + System.lineSeparator()
             + diagnostic.diff();
+    }
+
+    private static String formatQaSummary(Path root, Path htmlFile, CanonicalTextDiagnostic diagnostic) {
+        String displayPath = root.equals(htmlFile) ? htmlFile.getFileName().toString() : root.relativize(htmlFile).toString();
+        return displayPath
+            + " (canonical-text-match=false, source-lines="
+            + countLines(diagnostic.sourceText())
+            + ", structured-lines="
+            + countLines(diagnostic.structuredText())
+            + ")";
+    }
+
+    private static boolean isStrictQaEnabled(Map<String, String> env) {
+        String value = env.get(STRICT_QA_ENV);
+        if (value == null) {
+            return false;
+        }
+        return switch (value.trim().toLowerCase()) {
+            case "", "0", "false", "no", "off" -> false;
+            default -> true;
+        };
     }
 
     private static Path siblingJsonPath(Path htmlFile) {

@@ -90,6 +90,35 @@ class HtmlSourceLoaderTest {
     }
 
     @Test
+    void captures_bare_text_author_marker_after_centered_opinion_heading() {
+        String html = """
+            <html><body>
+            <table>
+              <tr><td>People v Example</td></tr>
+              <tr><td>2026 NY Slip Op 00008</td></tr>
+              <tr><td>Court of Appeals</td></tr>
+            </table>
+            <div align="center">OPINION OF THE COURT</div>
+
+            Halligan, J.
+
+            <p>Majority text.</p>
+            </body></html>
+            """;
+
+        var document = new HtmlSourceLoader().load(Path.of("example.htm"), html);
+
+        assertThat(document.htmlDocument().opinionBlocks()).extracting(block -> block.type())
+            .containsSequence(
+                HtmlOpinionBlockType.PARAGRAPH,
+                HtmlOpinionBlockType.AUTHOR_MARKER,
+                HtmlOpinionBlockType.PARAGRAPH
+            );
+        assertThat(document.htmlDocument().opinionBlocks()).extracting(block -> block.text())
+            .contains("OPINION OF THE COURT", "Halligan, J.", "Majority text.");
+    }
+
+    @Test
     void recognizes_multi_judge_inline_concurrence_author_markers() {
         String html = """
             <html><body>

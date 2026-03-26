@@ -43,6 +43,45 @@ class StanbookCliTest {
     }
 
     @Test
+    void run_warns_on_qa_mismatch_during_single_file_render() throws Exception {
+        Path html = Path.of("../../opinions/coa/2005/2005_03278.htm");
+
+        ByteArrayOutputStream out = new ByteArrayOutputStream();
+        ByteArrayOutputStream err = new ByteArrayOutputStream();
+
+        int exitCode = StanbookCli.run(
+            new String[] {html.toString()},
+            new PrintStream(out, true, StandardCharsets.UTF_8),
+            new PrintStream(err, true, StandardCharsets.UTF_8),
+            java.util.Map.of()
+        );
+
+        assertThat(exitCode).isZero();
+        assertThat(out.toString(StandardCharsets.UTF_8)).contains("\"caseId\":\"2005_03278\"");
+        assertThat(err.toString(StandardCharsets.UTF_8)).contains("stanbook: qa mismatch for");
+        assertThat(err.toString(StandardCharsets.UTF_8)).contains("canonical-text-match=false");
+    }
+
+    @Test
+    void run_fails_single_file_render_in_strict_qa_mode() throws Exception {
+        Path html = Path.of("../../opinions/coa/2005/2005_03278.htm");
+
+        ByteArrayOutputStream out = new ByteArrayOutputStream();
+        ByteArrayOutputStream err = new ByteArrayOutputStream();
+
+        int exitCode = StanbookCli.run(
+            new String[] {html.toString()},
+            new PrintStream(out, true, StandardCharsets.UTF_8),
+            new PrintStream(err, true, StandardCharsets.UTF_8),
+            java.util.Map.of("STANBOOK_STRICT_QA", "1")
+        );
+
+        assertThat(exitCode).isEqualTo(1);
+        assertThat(out.toString(StandardCharsets.UTF_8)).isEmpty();
+        assertThat(err.toString(StandardCharsets.UTF_8)).contains("stanbook: strict QA failure");
+    }
+
+    @Test
     void run_renders_directory_to_sibling_json_files() throws Exception {
         Path root = tempDir.resolve("opinions");
         Files.createDirectories(root.resolve("2026"));
@@ -72,6 +111,33 @@ class StanbookCliTest {
         assertThat(out.toString(StandardCharsets.UTF_8)).isEmpty();
         assertThat(Files.readString(json, StandardCharsets.UTF_8)).contains("\"title\":\"People v Example\"");
         assertThat(err.toString(StandardCharsets.UTF_8)).contains("stanbook-dir: wrote 1 JSON file(s)");
+        assertThat(err.toString(StandardCharsets.UTF_8)).contains("stanbook-dir: qa-files-checked 1");
+        assertThat(err.toString(StandardCharsets.UTF_8)).contains("stanbook-dir: qa-files-matched 1");
+        assertThat(err.toString(StandardCharsets.UTF_8)).contains("stanbook-dir: qa-files-mismatched 0");
+    }
+
+    @Test
+    void run_fails_directory_render_in_strict_qa_mode_without_writing_mismatched_json() throws Exception {
+        Path root = tempDir.resolve("opinions");
+        Files.createDirectories(root.resolve("2005"));
+        Path html = root.resolve("2005/mismatch.htm");
+        Files.copy(Path.of("../../opinions/coa/2005/2005_03278.htm"), html);
+
+        ByteArrayOutputStream out = new ByteArrayOutputStream();
+        ByteArrayOutputStream err = new ByteArrayOutputStream();
+
+        int exitCode = StanbookCli.run(
+            new String[] {root.toString()},
+            new PrintStream(out, true, StandardCharsets.UTF_8),
+            new PrintStream(err, true, StandardCharsets.UTF_8),
+            java.util.Map.of("STANBOOK_STRICT_QA", "1")
+        );
+
+        Path json = root.resolve("2005/mismatch.json");
+        assertThat(exitCode).isEqualTo(1);
+        assertThat(Files.exists(json)).isFalse();
+        assertThat(err.toString(StandardCharsets.UTF_8)).contains("stanbook-dir: qa-files-mismatched 1");
+        assertThat(err.toString(StandardCharsets.UTF_8)).contains("stanbook: strict QA failure for");
     }
 
     @Test

@@ -251,7 +251,21 @@ export const formatCaseDateLabel = (
 export const formatCaseCitationLine = (item: CaseItem, now?: Date) => {
   const citation =
     item.ny3dCite?.trim() || item.slipOp?.trim() || item.citation?.trim() || "";
-  const dateLabel = formatCaseDateLabel(item.decisionDate, now);
+  const normalizedPublicationStatus = (item.publicationStatus ?? "").trim().toLowerCase();
+  const officialReporterCitation = extractOfficialReporterCitation(item.ny3dCite ?? item.citation ?? "");
+  const inferredPublished = Boolean(
+    officialReporterCitation &&
+      OFFICIAL_REPORTER_CITATION_PATTERN.test(officialReporterCitation) &&
+      !/NY Slip Op/i.test(officialReporterCitation),
+  );
+  const parsedDecisionDate = item.decisionDate ? new Date(item.decisionDate) : null;
+  const publishedDecisionYear =
+    (normalizedPublicationStatus === "published" || inferredPublished) &&
+    parsedDecisionDate &&
+    !Number.isNaN(parsedDecisionDate.valueOf())
+      ? parsedDecisionDate.getFullYear().toString()
+      : "";
+  const dateLabel = publishedDecisionYear || formatCaseDateLabel(item.decisionDate, now);
   if (citation && dateLabel) return `${citation} (${dateLabel})`;
   if (citation) return citation;
   if (dateLabel) return `(${dateLabel})`;

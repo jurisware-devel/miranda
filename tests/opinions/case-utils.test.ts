@@ -10,6 +10,7 @@ import {
   buildOpinionJsonCandidateUrls,
   buildOpinionPdfCandidateUrls,
   extractOfficialReporterCitation,
+  formatCaseCitationLine,
 } from "../../src/core/utils/caseUtils";
 import type { CaseItem } from "../../src/core/types";
 
@@ -147,6 +148,45 @@ test("extractOfficialReporterCitation isolates the official cite from mixed slip
   assert.equal(
     extractOfficialReporterCitation("2025 NY Slip Op 02100 (44 NY3d 1)"),
     "44 NY3d 1",
+  );
+});
+
+test("formatCaseCitationLine shows only the decision year for published decisions", () => {
+  const caseItem = {
+    caseId: "2026_00963",
+    court: "coa",
+    publicationStatus: "published",
+    decisionDate: "2026-02-25",
+    ny3dCite: "42 NY3d 973",
+  } as CaseItem;
+
+  assert.equal(formatCaseCitationLine(caseItem), "42 NY3d 973 (2026)");
+});
+
+test("formatCaseCitationLine infers published status from an official reporter citation", () => {
+  const caseItem = {
+    caseId: "2025_06534",
+    court: "coa",
+    decisionDate: "2025-11-25",
+    ny3dCite: "44 NY3d 302",
+    slipOp: "2025 NY Slip Op 06534",
+  } as CaseItem;
+
+  assert.equal(formatCaseCitationLine(caseItem), "44 NY3d 302 (2025)");
+});
+
+test("formatCaseCitationLine keeps the full recent date for unpublished decisions", () => {
+  const caseItem = {
+    caseId: "2026_00963",
+    court: "coa",
+    publicationStatus: "slip_opinion",
+    decisionDate: "2026-02-25",
+    slipOp: "2026 NY Slip Op 00963",
+  } as CaseItem;
+
+  assert.equal(
+    formatCaseCitationLine(caseItem, new Date("2026-03-26T12:00:00Z")),
+    "2026 NY Slip Op 00963 (Feb 24, 2026)",
   );
 });
 
