@@ -146,6 +146,19 @@ class RealSampleJsonRegressionTest {
     }
 
     @Test
+    void html_repo_sample_preserves_caption_and_appearances_when_nested_before_opinion_start() {
+        var source = new SourceDocumentReader().read(Path.of("../../opinions/coa/2025/2025_03602.htm"));
+
+        String json = StanbookPipeline.createDefault().render(source);
+
+        assertThat(json).contains("\"caseId\":\"2025_03602\"");
+        assertThat(json).contains("\"caption\":[\"The People of the State of New York, Respondent,\",\"v\",\"Christopher Baldner, Appellant.\"]");
+        assertThat(json).contains("\"appearances\":[");
+        assertThat(json).contains("\"text\":\"*Larkin Ingrassia PLLC*, Newburgh (*John Ingrassia* of counsel), *Michael Bongiorno*, Bardonia, *Anthony L. Ricco*, New York City, and *O'Connell & Aronowitz*, Albany (*Stephen Coffey* of counsel), for appellant.\"");
+        assertThat(json).contains("\"text\":\"*Letitia James, Attorney General*, New York City (*Matthew B. Keller, Barbara D. Underwood* and *Ira M. Feinberg* of counsel), for respondent.\"");
+    }
+
+    @Test
     void html_repo_sample_matches_canonical_text_when_disposition_contains_emphasis_markup() {
         var source = new SourceDocumentReader().read(Path.of("../../opinions/coa/2004/2004_04789.htm"));
 

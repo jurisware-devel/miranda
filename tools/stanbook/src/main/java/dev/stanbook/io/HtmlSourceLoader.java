@@ -114,29 +114,20 @@ public final class HtmlSourceLoader {
             return List.copyOf(headerLines);
         }
 
-        int opinionStartIndex = findTopLevelOpinionStartIndex(body);
-        if (opinionStartIndex < 0) {
+        Element firstOpinionStart = findFirstOpinionStartElement(body);
+        if (firstOpinionStart == null) {
             return List.copyOf(headerLines);
         }
 
-        for (int index = 0; index < opinionStartIndex; index++) {
-            Node node = body.childNode(index);
-            if (node instanceof TextNode textNode) {
-                addHeaderLine(headerLines, accumulator, textNode.text());
-                continue;
-            }
-            if (!(node instanceof Element element)) {
-                continue;
-            }
-            String tag = element.tagName();
-            if ("table".equalsIgnoreCase(tag)) {
-                if (element != primaryHeaderTable) {
-                    addHeaderLinesFromTable(headerLines, accumulator, element);
-                }
-                continue;
-            }
-            if ("div".equalsIgnoreCase(tag) || "p".equalsIgnoreCase(tag)) {
-                addHeaderLine(headerLines, accumulator, renderInline(element));
+        for (Node node : body.childNodes()) {
+            if (!appendHeaderContentBeforeOpinionStart(
+                headerLines,
+                accumulator,
+                node,
+                firstOpinionStart,
+                primaryHeaderTable
+            )) {
+                break;
             }
         }
 
@@ -459,16 +450,75 @@ public final class HtmlSourceLoader {
         return List.copyOf(lineNumbers);
     }
 
-    private int findTopLevelOpinionStartIndex(Element body) {
-        for (int index = 0; index < body.childNodeSize(); index++) {
-            if (!(body.childNode(index) instanceof Element element)) {
-                continue;
-            }
+    private Element findFirstOpinionStartElement(Element body) {
+        for (Element element : body.select("sc, p, para, blockquote, div[align=center], conopnjd, disopjd")) {
             if (isOpinionStartNode(element)) {
-                return index;
+                return element;
             }
         }
-        return -1;
+        return null;
+    }
+
+    private boolean appendHeaderContentBeforeOpinionStart(
+        List<HtmlHeaderLine> headerLines,
+        LineAccumulator accumulator,
+        Node node,
+        Element opinionStart,
+        Element primaryHeaderTable
+    ) {
+        if (node == opinionStart) {
+            return false;
+        }
+        if (node instanceof TextNode textNode) {
+            addHeaderLine(headerLines, accumulator, textNode.text());
+            return true;
+        }
+        if (!(node instanceof Element element)) {
+            return true;
+        }
+
+        if (element == primaryHeaderTable) {
+            return true;
+        }
+
+        String tag = element.tagName();
+        if (containsNode(element, opinionStart)) {
+            if (!"div".equalsIgnoreCase(tag)) {
+                return false;
+            }
+            for (Node child : element.childNodes()) {
+                if (!appendHeaderContentBeforeOpinionStart(
+                    headerLines,
+                    accumulator,
+                    child,
+                    opinionStart,
+                    primaryHeaderTable
+                )) {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        if ("table".equalsIgnoreCase(tag)) {
+            addHeaderLinesFromTable(headerLines, accumulator, element);
+            return true;
+        }
+        if ("div".equalsIgnoreCase(tag) || "p".equalsIgnoreCase(tag)) {
+            addHeaderLine(headerLines, accumulator, renderInline(element));
+            return true;
+        }
+        return true;
+    }
+
+    private boolean containsNode(Element ancestor, Element descendant) {
+        if (ancestor == null || descendant == null) {
+            return false;
+        }
+        if (ancestor == descendant) {
+            return true;
+        }
+        return descendant.parents().contains(ancestor);
     }
 
     private boolean isFootnotesHeading(Node node) {
