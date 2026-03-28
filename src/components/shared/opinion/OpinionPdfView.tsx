@@ -12,6 +12,22 @@ type OpinionPdfViewProps = {
   opinionDocument?: OpinionDocument | null;
 };
 
+export const shouldUseExternalPdfViewer = (nav?: {
+  userAgent?: string;
+  platform?: string;
+  maxTouchPoints?: number;
+}): boolean => {
+  if (!nav) return false;
+
+  const userAgent = nav.userAgent ?? "";
+  const platform = nav.platform ?? "";
+  const maxTouchPoints = nav.maxTouchPoints ?? 0;
+  const isIOSDevice = /iPad|iPhone|iPod/i.test(userAgent) || /iPad|iPhone|iPod/i.test(platform);
+  const isIPadDesktopMode = platform === "MacIntel" && maxTouchPoints > 1;
+
+  return isIOSDevice || isIPadDesktopMode;
+};
+
 const OpinionPdfView: React.FC<OpinionPdfViewProps> = ({
   caseItem,
   courtsById,
@@ -19,6 +35,7 @@ const OpinionPdfView: React.FC<OpinionPdfViewProps> = ({
   opinionDocument,
 }) => {
   const [showHeader, setShowHeader] = useState(false);
+  const [preferExternalPdfView, setPreferExternalPdfView] = useState(false);
   const bodyScrollRef = useRef<HTMLDivElement | null>(null);
   const pdfPublishedSubtitle = formatOpinionSubtitle({
     publicationStatus: opinionDocument?.source?.publicationStatus,
@@ -38,6 +55,15 @@ const OpinionPdfView: React.FC<OpinionPdfViewProps> = ({
   useEffect(() => {
     setShowHeader(false);
   }, [caseItem.caseId, opinionDocument?.source?.caseId]);
+
+  useEffect(() => {
+    if (typeof navigator === "undefined") {
+      setPreferExternalPdfView(false);
+      return;
+    }
+
+    setPreferExternalPdfView(shouldUseExternalPdfViewer(navigator));
+  }, []);
 
   const handleHeaderToggle = () => {
     setShowHeader((value) => !value);
@@ -92,14 +118,26 @@ const OpinionPdfView: React.FC<OpinionPdfViewProps> = ({
                 ) : null}
               </div>
             ) : null}
-            <div className="case-detail__pdf-actions">
+            <div
+              className={
+                preferExternalPdfView
+                  ? "case-detail__pdf-actions case-detail__pdf-actions--visible"
+                  : "case-detail__pdf-actions"
+              }
+            >
               <a className="case-detail__pdf-link" href={opinionPdfUrl} target="_blank" rel="noreferrer">
-                View PDF
+                {preferExternalPdfView ? "Open PDF in browser" : "View PDF"}
               </a>
             </div>
-            <div className="case-detail__pdf-frame-wrap">
-              <iframe title="Opinion PDF" src={opinionPdfUrl} className="case-detail__pdf-frame" />
-            </div>
+            {preferExternalPdfView ? (
+              <p className="case-detail__pdf-fallback-note">
+                iPhone and iPad browsers open this opinion in the native PDF viewer for reliable paging.
+              </p>
+            ) : (
+              <div className="case-detail__pdf-frame-wrap">
+                <iframe title="Opinion PDF" src={opinionPdfUrl} className="case-detail__pdf-frame" />
+              </div>
+            )}
           </div>
         </section>
       </div>

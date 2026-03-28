@@ -1543,6 +1543,10 @@ body.route-theme-pub {
   margin: 14px 0 16px;
 }
 
+.case-detail__pdf-actions--visible {
+  display: flex;
+}
+
 .case-detail__pdf-link {
   display: inline-flex;
   align-items: center;
@@ -1577,6 +1581,15 @@ body.route-theme-pub {
   width: 100%;
   min-height: 80vh;
   border: 0;
+}
+
+.case-detail__pdf-fallback-note {
+  margin: 0 auto;
+  max-width: 38rem;
+  color: #475569;
+  font-size: 0.96rem;
+  line-height: 1.5;
+  text-align: center;
 }
 
 .case-detail__opinion-content :is(p, ul, ol, blockquote) {
