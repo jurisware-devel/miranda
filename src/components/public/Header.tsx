@@ -69,10 +69,13 @@ const AppHeader: React.FC<AppHeaderProps> = ({
                       compact
                       phaseOptions={filters.phaseOptions}
                       courtOptions={filters.courtOptions}
+                      publicationStatusOptions={filters.publicationStatusOptions}
                       selectedPhase={filters.selectedPhase}
                       onPhaseChange={filters.onPhaseChange}
                       selectedCourt={filters.selectedCourt}
                       onCourtChange={filters.onCourtChange}
+                      selectedPublicationStatus={filters.selectedPublicationStatus}
+                      onPublicationStatusChange={filters.onPublicationStatusChange}
                       nameQuery={filters.nameQuery}
                       onNameQueryChange={filters.onNameQueryChange}
                       sortOrder={filters.sortOrder}
@@ -88,10 +91,13 @@ const AppHeader: React.FC<AppHeaderProps> = ({
             <CaseFilters
               phaseOptions={filters.phaseOptions}
               courtOptions={filters.courtOptions}
+              publicationStatusOptions={filters.publicationStatusOptions}
               selectedPhase={filters.selectedPhase}
               onPhaseChange={filters.onPhaseChange}
               selectedCourt={filters.selectedCourt}
               onCourtChange={filters.onCourtChange}
+              selectedPublicationStatus={filters.selectedPublicationStatus}
+              onPublicationStatusChange={filters.onPublicationStatusChange}
               nameQuery={filters.nameQuery}
               onNameQueryChange={filters.onNameQueryChange}
               sortOrder={filters.sortOrder}

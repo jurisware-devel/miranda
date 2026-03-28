@@ -51,6 +51,9 @@ const AdminApp: React.FC<AdminAppProps> = ({ capabilities }) => {
     courtOptions,
     selectedCourt,
     setSelectedCourt,
+    publicationStatusOptions,
+    selectedPublicationStatus,
+    setSelectedPublicationStatus,
     nameQuery,
     setNameQuery,
     sortOrder,
@@ -73,6 +76,7 @@ const AdminApp: React.FC<AdminAppProps> = ({ capabilities }) => {
     setNameQuery,
     setSortOrder,
     setSelectedCourt,
+    setSelectedPublicationStatus,
   });
 
   const tagsById = useMemo(() => mapTagsById(tags), [tags]);
@@ -86,13 +90,16 @@ const AdminApp: React.FC<AdminAppProps> = ({ capabilities }) => {
   const filters = useMemo<CaseFilterControls>(
     () => ({
       phaseOptions,
-            courtOptions,
+      courtOptions,
+      publicationStatusOptions,
       selectedPhase,
       onPhaseChange: setSelectedPhase,
       selectedTagIds,
       onTagChange: setSelectedTagIds,
       selectedCourt,
       onCourtChange: setSelectedCourt,
+      selectedPublicationStatus,
+      onPublicationStatusChange: setSelectedPublicationStatus,
       nameQuery,
       onNameQueryChange: setNameQuery,
       sortOrder,
@@ -100,13 +107,16 @@ const AdminApp: React.FC<AdminAppProps> = ({ capabilities }) => {
     }),
     [
       phaseOptions,
-            courtOptions,
+      courtOptions,
+      publicationStatusOptions,
       selectedPhase,
       setSelectedPhase,
       selectedTagIds,
       setSelectedTagIds,
       selectedCourt,
       setSelectedCourt,
+      selectedPublicationStatus,
+      setSelectedPublicationStatus,
       nameQuery,
       setNameQuery,
       sortOrder,

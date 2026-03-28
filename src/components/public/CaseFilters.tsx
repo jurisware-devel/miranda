@@ -7,10 +7,13 @@ type Option = { value: string; label: string };
 type CaseFiltersProps = {
   phaseOptions: Option[];
   courtOptions: Option[];
+  publicationStatusOptions: Option[];
   selectedPhase: string | null;
   onPhaseChange: (value: string | null) => void;
   selectedCourt: string | null;
   onCourtChange: (value: string | null) => void;
+  selectedPublicationStatus: string | null;
+  onPublicationStatusChange: (value: string | null) => void;
   nameQuery: string;
   onNameQueryChange: (value: string) => void;
   sortOrder: string;
@@ -23,10 +26,13 @@ type CaseFiltersProps = {
 const CaseFilters: React.FC<CaseFiltersProps> = ({
   phaseOptions,
   courtOptions,
+  publicationStatusOptions,
   selectedPhase,
   onPhaseChange,
   selectedCourt,
   onCourtChange,
+  selectedPublicationStatus,
+  onPublicationStatusChange,
   nameQuery,
   onNameQueryChange,
   sortOrder,
@@ -37,6 +43,7 @@ const CaseFilters: React.FC<CaseFiltersProps> = ({
 }) => {
   const [phaseOpen, setPhaseOpen] = useState(false);
   const [courtOpen, setCourtOpen] = useState(false);
+  const [publicationStatusOpen, setPublicationStatusOpen] = useState(false);
   const dropdownMenuStyle = { maxHeight: 320, overflowY: "auto" as const };
   const selectStyle = compact ? undefined : { minWidth: 200 };
   const inputStyle = compact ? undefined : { minWidth: 240 };
@@ -85,6 +92,58 @@ const CaseFilters: React.FC<CaseFiltersProps> = ({
                   onCourtChange(null);
                 }}
                 aria-label="Clear court filter"
+              >
+                <CloseCircleOutlined />
+              </button>
+            ) : null}
+          </Button>
+        </Dropdown>
+      ),
+    },
+    {
+      key: "publicationStatus",
+      node: (
+        <Dropdown
+          trigger={["click"]}
+          open={publicationStatusOpen}
+          onOpenChange={setPublicationStatusOpen}
+          menu={{
+            style: dropdownMenuStyle,
+            items: [
+              ...(selectedPublicationStatus ? [{ key: "__clear__", label: "Any Publication Status" }] : []),
+              ...publicationStatusOptions.map((option) => ({
+                key: option.value,
+                label: option.label,
+              })),
+            ],
+            selectable: true,
+            multiple: false,
+            selectedKeys: selectedPublicationStatus ? [selectedPublicationStatus] : [],
+            onSelect: (info) => {
+              if (info.key === "__clear__") {
+                onPublicationStatusChange(null);
+              } else {
+                onPublicationStatusChange(info.key as string);
+              }
+              setPublicationStatusOpen(false);
+            },
+          }}
+          disabled={disabled}
+        >
+          <Button className="case-tags-trigger" style={selectStyle}>
+            {selectedPublicationStatus
+              ? publicationStatusOptions.find((option) => option.value === selectedPublicationStatus)?.label ??
+                selectedPublicationStatus
+              : "Any Publication Status"}
+            {selectedPublicationStatus ? (
+              <button
+                type="button"
+                className="case-filter-clear"
+                onClick={(event) => {
+                  event.stopPropagation();
+                  onPublicationStatusChange(null);
+                }}
+                aria-label="Clear publication status filter"
               >
                 <CloseCircleOutlined />
               </button>
@@ -175,7 +234,6 @@ const CaseFilters: React.FC<CaseFiltersProps> = ({
       ),
     },
   ];
-
 
   if (!wrapClassName) {
     return <>{items.map((item) => item.node)}</>;

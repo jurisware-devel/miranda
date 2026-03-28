@@ -41,6 +41,30 @@ export const extractOfficialReporterCitation = (value?: string | null): string =
   return match?.[0]?.trim() ?? source;
 };
 
+export const isCasePublished = (item: CaseItem) => {
+  const courtCode = normalizeCourtCode(item.court);
+  const officialReporterCitation = extractOfficialReporterCitation(item.ny3dCite ?? item.citation ?? "");
+
+  if (courtCode === "coa") {
+    return Boolean(
+      officialReporterCitation &&
+        /\b\d+\s+NY3d\s+\d+\b/i.test(officialReporterCitation) &&
+        !/NY Slip Op/i.test(officialReporterCitation),
+    );
+  }
+
+  const normalizedPublicationStatus = (item.publicationStatus ?? "").trim().toLowerCase();
+  if (normalizedPublicationStatus === "published") {
+    return true;
+  }
+
+  return Boolean(
+    officialReporterCitation &&
+      OFFICIAL_REPORTER_CITATION_PATTERN.test(officialReporterCitation) &&
+      !/NY Slip Op/i.test(officialReporterCitation),
+  );
+};
+
 const resolveOpinionObjectPath = (opinionUrl?: string | null) => {
   const source = (opinionUrl ?? "").trim();
   if (!source) return "";
@@ -251,16 +275,9 @@ export const formatCaseDateLabel = (
 export const formatCaseCitationLine = (item: CaseItem, now?: Date) => {
   const citation =
     item.ny3dCite?.trim() || item.slipOp?.trim() || item.citation?.trim() || "";
-  const normalizedPublicationStatus = (item.publicationStatus ?? "").trim().toLowerCase();
-  const officialReporterCitation = extractOfficialReporterCitation(item.ny3dCite ?? item.citation ?? "");
-  const inferredPublished = Boolean(
-    officialReporterCitation &&
-      OFFICIAL_REPORTER_CITATION_PATTERN.test(officialReporterCitation) &&
-      !/NY Slip Op/i.test(officialReporterCitation),
-  );
   const parsedDecisionDate = item.decisionDate ? new Date(item.decisionDate) : null;
   const publishedDecisionYear =
-    (normalizedPublicationStatus === "published" || inferredPublished) &&
+    isCasePublished(item) &&
     parsedDecisionDate &&
     !Number.isNaN(parsedDecisionDate.valueOf())
       ? parsedDecisionDate.getFullYear().toString()

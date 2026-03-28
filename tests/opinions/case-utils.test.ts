@@ -11,6 +11,7 @@ import {
   buildOpinionPdfCandidateUrls,
   extractOfficialReporterCitation,
   formatCaseCitationLine,
+  isCasePublished,
 } from "../../src/core/utils/caseUtils";
 import type { CaseItem } from "../../src/core/types";
 
@@ -173,6 +174,27 @@ test("formatCaseCitationLine infers published status from an official reporter c
   } as CaseItem;
 
   assert.equal(formatCaseCitationLine(caseItem), "44 NY3d 302 (2025)");
+});
+
+test("isCasePublished treats CoA publication as the presence of a NY3d citation", () => {
+  const publishedCase = {
+    caseId: "2025_06534",
+    court: "coa",
+    decisionDate: "2025-11-25",
+    ny3dCite: "44 NY3d 302",
+    slipOp: "2025 NY Slip Op 06534",
+    publicationStatus: "slip_opinion",
+  } as CaseItem;
+  const unpublishedCase = {
+    caseId: "2026_01588",
+    court: "coa",
+    decisionDate: "2026-03-26",
+    slipOp: "2026 NY Slip Op 01588",
+    publicationStatus: "published",
+  } as CaseItem;
+
+  assert.equal(isCasePublished(publishedCase), true);
+  assert.equal(isCasePublished(unpublishedCase), false);
 });
 
 test("formatCaseCitationLine keeps the full recent date for unpublished decisions", () => {

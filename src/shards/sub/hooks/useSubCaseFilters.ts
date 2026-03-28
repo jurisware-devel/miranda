@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import type { CaseItem, CasePhaseItem, CaseTagItem, CourtItem, PhaseItem } from "../../../core/types";
-import { getCourtBadgeLabel, getCourtCode, mapCourtsById } from "../../../core/utils/caseUtils";
+import { getCourtBadgeLabel, getCourtCode, isCasePublished, mapCourtsById } from "../../../core/utils/caseUtils";
 
 export const useSubCaseFilters = (
   cases: CaseItem[],
@@ -12,6 +12,7 @@ export const useSubCaseFilters = (
   const [selectedPhase, setSelectedPhaseInternal] = useState<string | null>(null);
   const [selectedTagIds, setSelectedTagIdsInternal] = useState<string[]>([]);
   const [selectedCourt, setSelectedCourtInternal] = useState<string | null>(null);
+  const [selectedPublicationStatus, setSelectedPublicationStatusInternal] = useState<string | null>(null);
   const [nameQuery, setNameQuery] = useState("");
   const [debouncedNameQuery, setDebouncedNameQuery] = useState("");
   const [sortOrder, setSortOrderInternal] = useState("date_desc");
@@ -43,6 +44,11 @@ export const useSubCaseFilters = (
         label: getCourtBadgeLabel(courtId, courtsById),
       }));
   }, [cases, courtsById]);
+
+  const publicationStatusOptions = useMemo(
+    () => [{ value: "published", label: "Published" }],
+    [],
+  );
 
   const casePhaseIdsByCaseId = useMemo(() => {
     const map = new Map<string, Set<string>>();
@@ -99,6 +105,9 @@ export const useSubCaseFilters = (
       if (selectedCourt && getCourtCode(item.court) !== selectedCourt) {
         return false;
       }
+      if (selectedPublicationStatus === "published" && !isCasePublished(item)) {
+        return false;
+      }
       if (selectedTagIds.length) {
         if (caseTagIdsByCaseId.size === 0) return false;
         const tagIds = caseTagIdsByCaseId.get(item.caseId);
@@ -109,7 +118,16 @@ export const useSubCaseFilters = (
       if (!query) return true;
       return (item.caseName ?? "").toLowerCase().includes(query);
     });
-  }, [sortedCases, selectedPhase, selectedCourt, selectedTagIds, debouncedNameQuery, casePhaseIdsByCaseId, caseTagIdsByCaseId]);
+  }, [
+    sortedCases,
+    selectedPhase,
+    selectedCourt,
+    selectedPublicationStatus,
+    selectedTagIds,
+    debouncedNameQuery,
+    casePhaseIdsByCaseId,
+    caseTagIdsByCaseId,
+  ]);
 
   const setSelectedPhase = (value: string | null) => {
     setSelectedPhaseInternal(value);
@@ -123,6 +141,11 @@ export const useSubCaseFilters = (
 
   const setSelectedCourt = (value: string | null) => {
     setSelectedCourtInternal(value);
+    setCurrentPage(1);
+  };
+
+  const setSelectedPublicationStatus = (value: string | null) => {
+    setSelectedPublicationStatusInternal(value);
     setCurrentPage(1);
   };
 
@@ -144,12 +167,15 @@ export const useSubCaseFilters = (
   return {
     phaseOptions,
     courtOptions,
+    publicationStatusOptions,
     selectedPhase,
     setSelectedPhase,
     selectedTagIds,
     setSelectedTagIds,
     selectedCourt,
     setSelectedCourt,
+    selectedPublicationStatus,
+    setSelectedPublicationStatus,
     nameQuery,
     setNameQuery: handleNameQueryChange,
     sortOrder,

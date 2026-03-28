@@ -40,6 +40,9 @@ const SubApp: React.FC<SubAppProps> = ({ enableData }) => {
     courtOptions,
     selectedCourt,
     setSelectedCourt,
+    publicationStatusOptions,
+    selectedPublicationStatus,
+    setSelectedPublicationStatus,
     nameQuery,
     setNameQuery,
     sortOrder,
@@ -63,6 +66,7 @@ const SubApp: React.FC<SubAppProps> = ({ enableData }) => {
     setNameQuery,
     setSortOrder,
     setSelectedCourt,
+    setSelectedPublicationStatus,
   });
 
   const tagsById = useMemo(() => mapTagsById(tags), [tags]);
@@ -76,13 +80,16 @@ const SubApp: React.FC<SubAppProps> = ({ enableData }) => {
   const filters = useMemo<CaseFilterControls>(
     () => ({
       phaseOptions,
-            courtOptions,
+      courtOptions,
+      publicationStatusOptions,
       selectedPhase,
       onPhaseChange: setSelectedPhase,
       selectedTagIds,
       onTagChange: setSelectedTagIds,
       selectedCourt,
       onCourtChange: setSelectedCourt,
+      selectedPublicationStatus,
+      onPublicationStatusChange: setSelectedPublicationStatus,
       nameQuery,
       onNameQueryChange: setNameQuery,
       sortOrder,
@@ -90,13 +97,16 @@ const SubApp: React.FC<SubAppProps> = ({ enableData }) => {
     }),
     [
       phaseOptions,
-            courtOptions,
+      courtOptions,
+      publicationStatusOptions,
       selectedPhase,
       setSelectedPhase,
       selectedTagIds,
       setSelectedTagIds,
       selectedCourt,
       setSelectedCourt,
+      selectedPublicationStatus,
+      setSelectedPublicationStatus,
       nameQuery,
       setNameQuery,
       sortOrder,

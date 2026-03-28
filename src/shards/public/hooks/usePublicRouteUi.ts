@@ -6,6 +6,7 @@ type UsePublicRouteUiOptions = {
   setSelectedTagIds: (value: string[]) => void;
   setNameQuery: (value: string) => void;
   setSelectedCourt: (value: string | null) => void;
+  setSelectedPublicationStatus: (value: string | null) => void;
   setSortOrder: (value: string) => void;
 };
 
@@ -15,6 +16,7 @@ export const usePublicRouteUi = ({
   setNameQuery,
   setSortOrder,
   setSelectedCourt,
+  setSelectedPublicationStatus,
 }: UsePublicRouteUiOptions) => {
   const location = useLocation();
   const navigate = useNavigate();
@@ -32,6 +34,7 @@ export const usePublicRouteUi = ({
     setSelectedTagIds([state.tagId]);
     setNameQuery("");
     setSelectedCourt(null);
+    setSelectedPublicationStatus(null);
     setSortOrder("date_desc");
     navigate(casesPath, { replace: true, state: null });
   }, [
@@ -43,6 +46,7 @@ export const usePublicRouteUi = ({
     setSelectedTagIds,
     setSortOrder,
     setSelectedCourt,
+    setSelectedPublicationStatus,
   ]);
 
   return {
